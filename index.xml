@@ -7,13 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 23 Nov 2020 20:45:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Week of Testing Intro: What is k6? What is Load Impact? What is k6 Cloud?</title>
-      <link>https://nicolevanderhoeven.github.io/work/week-of-testing-intro/</link>
+      <title>My work in testing</title>
+      <link>https://nicolevanderhoeven.github.io/work/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/work/</guid>
+      <description>Places I&amp;rsquo;ve worked k6.io (2020-Present) Developer Advocate (remote)
+I joined k6.io in November 2020 as a Developer Advocate, specializing in Performance Testing. k6 is a free and open source tool for load testing, with the goal of making the process as developer-friendly as possible. The company also has a related SaaS platform, k6 Cloud, which is an easy way to scale up load tests on the cloud.
+So far, I&amp;rsquo;ve created a series of videos on YouTube covering my Week of Testing of the k6 ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>Week of Testing: Intro</title>
+      <link>https://nicolevanderhoeven.github.io/blog/week-of-testing-intro/</link>
       <pubDate>Mon, 23 Nov 2020 20:45:31 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/work/week-of-testing-intro/</guid>
+      <guid>https://nicolevanderhoeven.github.io/blog/week-of-testing-intro/</guid>
       <description>Today was my first day at k6.io! I&amp;rsquo;m happy to announce that I&amp;rsquo;ve joined as their newest Developer Advocate for Performance Testing. k6 is a company I&amp;rsquo;ve had my eye on for a while, even (or maybe especially) when I was working for a competitor, Tricentis Flood. I always admired k6&amp;rsquo;s stance on open source, their involvement with the developer community, and the slick web app that brings load testing into the hands of many developers and testers.</description>
     </item>
     

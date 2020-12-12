@@ -62,7 +62,7 @@ Op 1 juni heeft de landelijke GGD Ghor aangekondigd dat iedereen met klachten ee
     </item>
     
     <item>
-      <title>Entrevista Con Señor Performo en PerfBytes Español</title>
+      <title>Entrevista con Señor Performo en PerfBytes Español</title>
       <link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link>
       <pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate>
       
@@ -79,7 +79,92 @@ Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker. </description>
       <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
       <description>Originally posted on Tricentis Flood.
 In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
+  Transcript: Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week. That user had previously asked about test data in Flood Element.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 16: How do I use test data with Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</link>
+      <pubDate>Tue, 09 Jun 2020 22:18:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</guid>
+      <description>Originally posted on Tricentis Flood.
+In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&amp;rsquo;ll find a copy of the Element script I used below.
+‍   Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?</description>
+    </item>
+    
+    <item>
+      <title>Hybrid load testing: the best of testing using protocols and real browsers</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</link>
+      <pubDate>Tue, 02 Jun 2020 22:21:11 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</guid>
+      <description>At PerfGuild 2020, I spoke about hybrid load testing and how to mix two different approaches to load testing: protocol-based and browser-based.
+Here’s the unlisted video from that presentation:
   </description>
+    </item>
+    
+    <item>
+      <title>Load testing on the Google Cloud Platform</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</link>
+      <pubDate>Thu, 28 May 2020 22:25:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</guid>
+      <description>Originally posted here.
+We&amp;rsquo;re excited to welcome another cloud provider to the Flood lineup, giving you even more options for running your load tests. You can now use Flood to run load tests on the Google Cloud Platform (GCP).
+Many of you have requested an integration with Google Cloud, citing many of its strengths:
+ Full integrations with open-source tools like Influx and Redis World-class security High-performance global network  Seamless access to other apps in the Google ecosystem, such as Search and Maps</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 15: How do I install Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</link>
+      <pubDate>Tue, 12 May 2020 22:45:18 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</guid>
+      <description>Originally posted here.
+In this Flood Element tutorial, I demonstrate the steps required to install Flood Element, including dependencies it requires. Flood Element is an open-source browser-based load testing tool created by Tricentis Flood.
+Learn more about Flood Element
+Installation instructions for NodeJS
+Installation instructions for Yarn
+Installation instructions for Element
+Video: Getting Started with Element
+Guides: Using Element with Flood‍
+  Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
+    </item>
+    
+    <item>
+      <title>Innovation in Isolation</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200505-innovation-in-isolation/</link>
+      <pubDate>Tue, 05 May 2020 22:59:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200505-innovation-in-isolation/</guid>
+      <description>Originally posted here.
+We&amp;rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&amp;rsquo;re doing to keep self-isolation from being too isolating— and maybe it&amp;rsquo;ll help your team too!
+Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out.</description>
+    </item>
+    
+    <item>
+      <title>Mitad de allá y mitad de aquí: reflexiones de una políglota multinacional</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</link>
+      <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</guid>
+      <description>Originally posted on Medium.
+Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me miran e inmediatamente hablan en inglés. Siempre están sorprendidos cuando respondo en Tagalog. «¿Pero por qué tienes la piel clara?» me preguntan, como si fuera algo que se puede comprar en una tienda. A través de mi piel no pueden ver mi lugar de nacimiento y juventud en las Filipinas, o cuánto echo de menos la voz del vendedor de taho cuando caminas por las calles: «Tahoooooooo!</description>
+    </item>
+    
+    <item>
+      <title>Why AirBNB Plus Could Make or Break AirBNB</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20180224-why-airbnb-plus/</link>
+      <pubDate>Sat, 24 Feb 2018 23:24:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20180224-why-airbnb-plus/</guid>
+      <description>Originally published on Medium.
+“We’ve done the anywhere part,” Brian Chesky announced a few days ago, “but AirBNB is still, for some, an alternative way of travelling… until today.”
+AirBNB Plus is a new tier of service that AirBNB have introduced for homes and hosts that go beyond the Superhost standard.
+Here’s what an AirBNB Plus listing means:
+  The home has been verified by an AirBNB representative in person to have passed a 100-point checklist of quality.</description>
     </item>
     
   </channel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google cloud on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/google-cloud/</link>
+    <description>Recent content in google cloud on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Thu, 28 May 2020 22:25:06 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/google-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load testing on the Google Cloud Platform</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</link>
+      <pubDate>Thu, 28 May 2020 22:25:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</guid>
+      <description>Originally posted here.
+We&amp;rsquo;re excited to welcome another cloud provider to the Flood lineup, giving you even more options for running your load tests. You can now use Flood to run load tests on the Google Cloud Platform (GCP).
+Many of you have requested an integration with Google Cloud, citing many of its strengths:
+ Full integrations with open-source tools like Influx and Redis World-class security High-performance global network  Seamless access to other apps in the Google ecosystem, such as Search and Maps</description>
+    </item>
+    
+  </channel>
+</rss>

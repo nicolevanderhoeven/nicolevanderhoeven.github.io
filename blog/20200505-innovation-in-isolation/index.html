@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Innovation in Isolation | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Innovation in Isolation" />
+<meta property="og:description" content="Originally posted here.
+We&rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&rsquo;re doing to keep self-isolation from being too isolating— and maybe it&rsquo;ll help your team too!
+Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200505-innovation-in-isolation/" />
+<meta property="article:published_time" content="2020-05-05T22:59:57+01:00" />
+<meta property="article:modified_time" content="2020-05-05T22:59:57+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Innovation in Isolation"/>
+<meta name="twitter:description" content="Originally posted here.
+We&rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&rsquo;re doing to keep self-isolation from being too isolating— and maybe it&rsquo;ll help your team too!
+Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200512-aaf15/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&text=Innovation%20in%20Isolation">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&is_video=false&description=Innovation%20in%20Isolation">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Innovation%20in%20Isolation&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&name=Innovation%20in%20Isolation&description=Originally%20posted%20here.%0aWe%26rsquo%3bve%20always%20been%20a%20fully%20distributed%20team%20at%20Flood%2c%20but%20the%20current%20world%20crisis%20has%20still%20changed%20the%20way%20we%20work.%20Here%20are%20some%20of%20the%20things%20we%26rsquo%3bre%20doing%20to%20keep%20self-isolation%20from%20being%20too%20isolating%e2%80%94%20and%20maybe%20it%26rsquo%3bll%20help%20your%20team%20too%21%0aWithin%20the%20Flood%20team%2c%20flooders-in-training%20%28aka%20children%29%20have%20made%20more%20surprise%20appearances%20in%20team%20meetings.%20Work%20has%20been%20punctuated%20with%20grocery%20runs%20to%20buy%20essentials%20before%20they%20run%20out.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&t=Innovation%20in%20Isolation">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#encouraging-banter">Encouraging banter</a></li>
+    <li><a href="#over-communicating">Over-communicating</a></li>
+    <li><a href="#doing-stuff">Doing stuff</a>
+      <ul>
+        <li><a href="#boinc">BOINC</a></li>
+        <li><a href="#gig-great-ideas-gathering">GIG: Great Ideas Gathering</a></li>
+      </ul>
+    </li>
+    <li><a href="#its-not-easy">It&rsquo;s not easy</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Innovation in Isolation
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-05-05 22:59:57 &#43;0100 &#43;0100" itemprop="datePublished">2020-May-05</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/culture" rel="tag">culture</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/innovation-in-isolation">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/innovation-in-isolation">here</a>.</em></p>
+<p>We&rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&rsquo;re doing to keep self-isolation from being <em>too</em> isolating— and maybe it&rsquo;ll help your team too!</p>
+<p>Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out. Some of us who were out of our home countries when all this happened have had to arrange emergency travel before international borders shut. It would be foolish to deny the impact on team morale as the entire world goes through this collective trauma, eyes glued to numbers that increase by the minute.</p>
+<p>Not exactly the most productive work environment.</p>
+<p>Yet there&rsquo;s still work to be done (something we&rsquo;re grateful for), and there are still many features we&rsquo;d love to bring to Flood. So how do we keep everyone motivated to release and maintain software?</p>
+<h2 id="encouraging-banter">Encouraging banter</h2>
+<p>Work shouldn&rsquo;t be all about work. Understanding everyone&rsquo;s personal circumstances is vital to a team&rsquo;s ability to work together professionally. We use Slack as our primary communication tool throughout the day, and we already had quite a few non-work channels on there (#anything, #hobbies, #gaming, #drones, and #travel to name a few). Now we have one for COVID-related chatter as well.</p>
+<p><img src="/blog/assets/20200505-01.jpg" alt=""></p>
+<p>In this channel, we share news from our parts of the world, post photos of things that are sold out in our local supermarkets, talk about new hobbies we&rsquo;ve taken up to stay sane, and discuss the struggles of co-working with spouses and children who are now also working or studying from home.</p>
+<p>Having a dedicated channel gives people license to open up about what&rsquo;s going on in their personal lives, and it helps the team understand where everyone&rsquo;s headspace is at. We also use #eng-covid-19 for memes. A lot of memes. It&rsquo;s easier to work through a tough situation if you can laugh about it together.</p>
+<h2 id="over-communicating">Over-communicating</h2>
+<p>Our co-founder and Product Manager, Ivan Vanderbyl, recently <a href="https://enterprisersproject.com/article/2020/4/9-collaboration-tool-tips-remote-teams">wrote a great article</a> with some tips for keeping communication lines open. This is particularly important during this crisis, where schedules and priorities can change quickly.</p>
+<ul>
+<li>Emojis - We use emojis as a non-verbal cue to convey tone, approval, agreement, and disagreement. We add emojis to messages we send and also use them as reactions on Slack to messages from other people. Even when you don&rsquo;t have an answer or when a response is not required, emojis signal acknowledgment so that nobody feels like they&rsquo;re shouting into the void. Over time, we&rsquo;ve developed emojis that are specific to Flood culture, such as the avocado:</li>
+</ul>
+<p><img src="/blog/assets/20200505-02.jpeg" alt="">
+<em>Source: Our <a href="https://twitter.com/flood_io/status/1230166412066512896">Twitter account</a></em></p>
+<p>‍We even have a fruit-based vocabulary of emojis that we can use in our Slack status messages to convey our general mood. Being in Carrot Mode, for instance, means that you&rsquo;re trying to focus and would appreciate not being direct messaged or @ mentioned.</p>
+<p><img src="/blog/assets/20200505-03.png" alt=""></p>
+<p>‍When working remotely, and especially when in self-isolation, everyone has their own cadence for working. It&rsquo;s on each person to communicate that schedule so that others can respect it.</p>
+<ul>
+<li>
+<p>Text chat - We&rsquo;re used to working asynchronously due to time zones, so text-based discussions are necessary. We try to over-communicate and &ldquo;think out loud&rdquo; before making decisions just in case we have to suddenly stop working due to illness or other pandemic-related reasons. Even something as simple as leaving a link to a document that we&rsquo;re working on means that someone else will be able to find it if we&rsquo;re unavailable.</p>
+</li>
+<li>
+<p>Voice chat - We tend to use voice chat for quick discussions or updates about work-related things. It&rsquo;s also great for those of us in Europe who are suffering from slower internet connection speeds at certain times of the day due to everyone being home and streaming Netflix.</p>
+</li>
+<li>
+<p>Video calls - Video calls are for team retros, 1:1 calls with managers, and personal or sensitive conversations where body language is crucial. It&rsquo;s also great for recreating that &ldquo;hanging out at a pub&rdquo; vibe. Speaking of which&hellip; welcome to the Flood pub!</p>
+</li>
+</ul>
+<p><img src="/blog/assets/20200505-04.jpeg" alt=""></p>
+<p>The Flood Pub is open on Friday afternoons. It&rsquo;s where we all hang out together with a beverage of our choice and talk about things that are entirely not work-related. We hop on a Zoom call together, Tim (our General Manager) fires up the &ldquo;jukebox&rdquo; (Spotify playlist), and we end the week by getting some facetime with each other—just as we would do (and have done) if we were together in person.</p>
+<p><img src="/blog/assets/20200505-05.jpeg" alt=""></p>
+<p>‍Meeting in this low-pressure context lets us talk about things we wouldn&rsquo;t mention otherwise. It&rsquo;s also a fun way to check in with each other after another week at work (and in quarantine).</p>
+<h2 id="doing-stuff">Doing stuff</h2>
+<p>While communicating openly is productive, getting stuff done as a team boosts spirits.  Here&rsquo;s what we&rsquo;ve done recently to kick our output into high gear.</p>
+<h3 id="boinc">BOINC</h3>
+<p>Like most of you, we&rsquo;ve been cooped up in our houses, watching events unfold and feeling helpless as things happen that are beyond our control. BOINC gives us a chance to do something to contribute that IS in our control.</p>
+<p>BOINC is a platform by the University of California Berkeley that lets you volunteer your spare computer (or mobile device!) processing power to science. From the official site, Boinc &ldquo;downloads scientific jobs to your computers and runs them invisibly in the background.&rdquo;</p>
+<p>In our case, we wanted to help sequence proteins like the novel coronavirus using Rosetta@Home. BOINC is a perfect fit for Flood because we are in the unique position of starting up and managing thousands of virtual machines 24/7. Our Ops team has been hard at work automating the donation of our computing power to the Rosetta@Home project when these machines aren&rsquo;t being used.</p>
+<p><img src="/blog/assets/20200505-06.jpeg" alt=""></p>
+<p>We&rsquo;re proud to say our contribution is INcreasing over time as our engineers find new ways to streamline the process. We&rsquo;re already in the <a href="https://www.boincstats.com/stats/-1/user/detail/87605321733/overview">top 5% of BOINC users in the world</a> by contribution.</p>
+<h3 id="gig-great-ideas-gathering">GIG: Great Ideas Gathering</h3>
+<p>Every year, the mothership (Tricentis) runs a three-day hackathon called GIG. Two weeks ago was the first-ever GIG where most participants, not just the Flood team, were working remotely.</p>
+<p>The theory behind hackathons is that the daily grind can be exhausting after a while, and it can sometimes be beneficial to introduce a short burst of work to revitalize the team. Hackathons provide a framework for small groups to pitch, execute, and report on a single idea without committing too much time to it. Everyone gets a chance to step away from regular duties and work furiously together on something they might not have otherwise gotten to work on.</p>
+<p>A hackathon where the team members are separated by distance and timezone is certainly another beast, but here are some lessons we learned about remote hackathons:</p>
+<ul>
+<li>
+<p><strong>Come up with a good idea</strong>: This is easier said than done, but a good hackathon idea is a creative solution that delivers a lot of value. Here are the ideas we came up with:</p>
+<ul>
+<li>
+<p>Floody - Use AI to improve onboarding by walking new users through the steps for running a flood (live on Flood now!)</p>
+</li>
+<li>
+<p>Flood Bot - Add smarter checks to detect patterns in load tests and help flooders understand their results (prototype)</p>
+</li>
+<li>
+<p>Flood Gate - Use AWS Fargate to reduce costs in provisioning, scaling, and managing virtual servers by about 30% (proof of concept)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>When thinking up ideas for GIG, we didn&rsquo;t commit to releasing them publicly. Even a project idea that doesn&rsquo;t end up making it into the finished product is an occasional worthwhile detour for team productivity and morale.</p>
+<ul>
+<li>
+<p><strong>Limit scope</strong>: GIG is a sprint, not a marathon. While my team (comprised of Jason Rizio and me) was planning out what we wanted to do, we quickly realized that there was a lot more that we wanted to do, but it just wasn&rsquo;t feasible within the strict timeframe. In the end, we decided to go for an incremental piece of work that we could push to production before the deadline instead of completing just one step towards something abstract and unreleasable.The other Flood teams also needed to whittle down the scope to a smaller, completable chunk: a working prototype.</p>
+</li>
+<li>
+<p><strong>Clarify assignments</strong>: With members on different timezones, it was essential to have an initial meeting to plan out everything that needed to be done and by when. In this situation particularly, we found it useful to split apart the project into independent chunks, to minimize the need to collaborate in real-time.</p>
+</li>
+<li>
+<p><strong>Touch base regularly</strong>: When working independently, team members can quickly diverge off the main path. To avoid that, we met up at least daily by hopping on an audio call on Zoom to spend a few minutes updating each other on the work we&rsquo;d done. Doing this gives others a chance to help out when one member encounters roadblocks.For anything that didn&rsquo;t need to be real-time, we worked asynchronously on chat. Here&rsquo;s a screenshot of the number of messages and files exchanged to our dedicated GIG Slack channel during the event:</p>
+</li>
+</ul>
+<p><img src="/blog/assets/20200505-07.jpeg" alt=""></p>
+<p>‍Yup, 1,535 messages and 60 files in 3 days. That&rsquo;s collaboration!</p>
+<p>We generally prefer public rather than private channels, and we certainly stuck to that throughout GIG. When you&rsquo;re working with more than one person, it&rsquo;s counterproductive to have private conversations that can&rsquo;t be referenced by other people.</p>
+<p>We also learned that it&rsquo;s useful to keep tabs on what the other teams are doing. After the event started, my team realized that another team was changing a page on the Flood app that we intended to use. Luckily, both teams were able to work around it.</p>
+<p>It&rsquo;s also only fair to let other teams chime in on important decisions within the project that might affect future work— like the name for your mascot.</p>
+<p><img src="/blog/assets/20200505-08.jpeg" alt=""></p>
+<ul>
+<li><strong>Leave time for the video</strong>: It&rsquo;s not just about doing the work; it&rsquo;s about communicating what you&rsquo;ve done in a way that others can appreciate. Here&rsquo;s a video that my team (composed of Jason Rizio and me) put together for Floody and our improvements to the onboarding process:</li>
+</ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OeIPWovOua4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ul>
+<li><strong>Celebrate</strong>: After the work is done, don&rsquo;t forget to pat each other on the back for the hard work! For us, this meant <a href="https://twitter.com/c_a_dunlop/status/1246111919762591746">a round of tacos</a> for everyone and a trip to the Flood pub. (Why do we have so many food-based rewards?)</li>
+</ul>
+<h2 id="its-not-easy">It&rsquo;s not easy</h2>
+<p>Keeping a team unified and working efficiently towards a common goal is always tricky, and working remotely, especially during a world crisis, doesn&rsquo;t change that. Distributed team members need to put in more effort to consciously over-communicate, make room for each other&rsquo;s unique circumstances, and do little projects that foster creativity when we&rsquo;re all feeling a little lackluster. Incorporating these tips can create a culture of healthy productivity within a remote team.</p>
+<p>‍</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#encouraging-banter">Encouraging banter</a></li>
+    <li><a href="#over-communicating">Over-communicating</a></li>
+    <li><a href="#doing-stuff">Doing stuff</a>
+      <ul>
+        <li><a href="#boinc">BOINC</a></li>
+        <li><a href="#gig-great-ideas-gathering">GIG: Great Ideas Gathering</a></li>
+      </ul>
+    </li>
+    <li><a href="#its-not-easy">It&rsquo;s not easy</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&text=Innovation%20in%20Isolation">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&is_video=false&description=Innovation%20in%20Isolation">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Innovation%20in%20Isolation&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&title=Innovation%20in%20Isolation">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&name=Innovation%20in%20Isolation&description=Originally%20posted%20here.%0aWe%26rsquo%3bve%20always%20been%20a%20fully%20distributed%20team%20at%20Flood%2c%20but%20the%20current%20world%20crisis%20has%20still%20changed%20the%20way%20we%20work.%20Here%20are%20some%20of%20the%20things%20we%26rsquo%3bre%20doing%20to%20keep%20self-isolation%20from%20being%20too%20isolating%e2%80%94%20and%20maybe%20it%26rsquo%3bll%20help%20your%20team%20too%21%0aWithin%20the%20Flood%20team%2c%20flooders-in-training%20%28aka%20children%29%20have%20made%20more%20surprise%20appearances%20in%20team%20meetings.%20Work%20has%20been%20punctuated%20with%20grocery%20runs%20to%20buy%20essentials%20before%20they%20run%20out.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200505-innovation-in-isolation%2f&t=Innovation%20in%20Isolation">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

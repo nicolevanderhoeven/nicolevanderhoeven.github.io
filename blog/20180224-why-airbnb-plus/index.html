@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Why AirBNB Plus Could Make or Break AirBNB | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Why AirBNB Plus Could Make or Break AirBNB" />
+<meta property="og:description" content="Originally published on Medium.
+“We’ve done the anywhere part,” Brian Chesky announced a few days ago, “but AirBNB is still, for some, an alternative way of travelling… until today.”
+AirBNB Plus is a new tier of service that AirBNB have introduced for homes and hosts that go beyond the Superhost standard.
+Here’s what an AirBNB Plus listing means:
+  The home has been verified by an AirBNB representative in person to have passed a 100-point checklist of quality." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20180224-why-airbnb-plus/" />
+<meta property="article:published_time" content="2018-02-24T23:24:00+01:00" />
+<meta property="article:modified_time" content="2018-02-24T23:24:00+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Why AirBNB Plus Could Make or Break AirBNB"/>
+<meta name="twitter:description" content="Originally published on Medium.
+“We’ve done the anywhere part,” Brian Chesky announced a few days ago, “but AirBNB is still, for some, an alternative way of travelling… until today.”
+AirBNB Plus is a new tier of service that AirBNB have introduced for homes and hosts that go beyond the Superhost standard.
+Here’s what an AirBNB Plus listing means:
+  The home has been verified by an AirBNB representative in person to have passed a 100-point checklist of quality."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&text=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&is_video=false&description=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&name=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB&description=Originally%20published%20on%20Medium.%0a%e2%80%9cWe%e2%80%99ve%20done%20the%20anywhere%20part%2c%e2%80%9d%20Brian%20Chesky%20announced%20a%20few%20days%20ago%2c%20%e2%80%9cbut%20AirBNB%20is%20still%2c%20for%20some%2c%20an%20alternative%20way%20of%20travelling%e2%80%a6%20until%20today.%e2%80%9d%0aAirBNB%20Plus%20is%20a%20new%20tier%20of%20service%20that%20AirBNB%20have%20introduced%20for%20homes%20and%20hosts%20that%20go%20beyond%20the%20Superhost%20standard.%0aHere%e2%80%99s%20what%20an%20AirBNB%20Plus%20listing%20means%3a%0a%20%20The%20home%20has%20been%20verified%20by%20an%20AirBNB%20representative%20in%20person%20to%20have%20passed%20a%20100-point%20checklist%20of%20quality.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&t=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Why AirBNB Plus Could Make or Break AirBNB
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2018-02-24 23:24:00 &#43;0100 CET" itemprop="datePublished">2018-Feb-24</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/travel" rel="tag">travel</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Originally published on <a href="https://medium.com/@n_vanderhoeven/why-airbnb-plus-could-make-or-break-airbnb-36c39a2c1669">Medium</a>.</p>
+<p>“We’ve done the anywhere part,” Brian Chesky announced a few days ago, “but AirBNB is still, for some, an alternative way of travelling… until today.”</p>
+<p><a href="https://www.airbnb.com/plus">AirBNB Plus</a> is a new tier of service that AirBNB have introduced for homes and hosts that go beyond the Superhost standard.</p>
+<p><img src="/blog/assets/20180224-01.jpg" alt=""></p>
+<p><strong>Here’s what an AirBNB Plus listing means:</strong></p>
+<ul>
+<li>
+<p>The home has been verified by an AirBNB representative in person to have passed a 100-point checklist of quality. AirBNB has not yet publicly released the contents of the checklist.</p>
+</li>
+<li>
+<p>The home comes with a list of extra amenities, such as a fully-stocked kitchen, wireless internet, and even paintings on the wall.</p>
+</li>
+<li>
+<p>The host has received an average rating of at least 4.8 out of 5 stars.</p>
+</li>
+<li>
+<p>You will be able to check in reliably at any time of the day. This could be due to an electronic keypad, safe lockbox or simply a host that’s willing to come out and let you in when you’re ready.</p>
+</li>
+<li>
+<p>You automatically get premium support from a designated AirBNB Plus team in case anything goes wrong.</p>
+</li>
+<li>
+<p>AirBNB has indicated that for now, only those who are already Superhosts will be eligible to request AirBNB Plus status.</p>
+</li>
+<li>
+<p>According to <a href="https://www.theverge.com/2018/2/22/17040684/airbnb-plus-hotels-standard-amenities-service-loyalty-program">the Verge</a>, the host needs to pay $149 to apply to be considered for AirBNB Plus status.</p>
+</li>
+</ul>
+<p>AirBNB Plus listings are already available in several cities around the world: Austin, Barcelona, Cape Town, Chicago, Los Angeles, London, Melbourne, Milan, Rome, San Francisco, Shanghai, Sydney and Toronto, so you can <a href="https://www.airbnb.com/s/select_homes">go check them out yourself</a>.</p>
+<p>On the surface, this sounds like a great idea. I almost always travel with AirBNB, and when I’ve chosen to book a typical hotel, it’s always because I couldn’t find a Superhost listing to book. I’ve had bad experiences with AirBNB in the past, and have since decided to only book with Superhosts. However, even that is not a real guarantee of quality — in contrast to AirBNB Plus, becoming a Superhost has much less stringent rules.</p>
+<p><strong>Here’s what a Superhost listing means:</strong></p>
+<ul>
+<li>
+<p>The host has received an average of at least a 4.8-star rating for all stays.</p>
+</li>
+<li>
+<p>The host reponds to messages within 24 hours at least 90% of the time.</p>
+</li>
+<li>
+<p>At least 10 guests have stayed at the property in the last year.</p>
+</li>
+<li>
+<p>The host has never cancelled a reservation.</p>
+</li>
+</ul>
+<p>It’s almost entirely review-based: the requirement to maintain at least a 4.8-star rating is the most difficult hurdle. There are otherwise no quality requirements that the listing must maintain. In effect, Superhosts are community-selected, which is tricky because a string of teenagers used to hostels and leaving glowing reviews on a listing could make it appear more attractive than it actually is. I’ve stayed with Superhosts that had faulty showers, unstable internet and a kitchen that consisted of a sink and a kettle.</p>
+<p>So I really like the idea of a higher class of accommodations that have been independently inspected. This is the first time they have ever offered anything like a guarantee for the quality of their things. Previously there was still a bit of a risk with booking an AirBNB, but this should dispel all doubt. AirBNB is doing what every company does after its initial growth spurt: it’s bunkering down, standardising its product… and, in effect, increasing some of its prices.</p>
+<p>While price increases are not explicitly mentioned, it seems reasonable to expect that listings in this new category would fetch higher prices. After all, it costs more labour on AirBNB’s part to inspect these listings and it also costs the host at least $149, not to mention extra costs spent to meet the 100-point checklist. AirBNB Plus is no doubt a premium offering, catered towards a wealthier clientele.</p>
+<p>Another concern is that the line between AirBNBs and hotels are blurring, and not necessarily in a good way. The original appeal of an AirBNB was that it was someone’s personal home, with all the quirks and defects that come with it. AirBNB’s overwhelming success then brought about a new class of landlords who buy properties with the specific intention to rent them via the platform. Already there are several boutique hotels that have been allowed to list accommodations as well.</p>
+<p>The new Plus tier seems to narrow the gap between corporate hotel chains and spare rooms owned by real locals substantially. This feels less like a disruption of the hotel industry and more like a return to the status quo. I remain a huge fan of the brand, and I worry that AirBNB will lose that disruptive “plucky startup” charm — because they’re no longer a startup. They’re a major player, and if this announcement is anything to go by, they’re about to get even bigger.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&text=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&is_video=false&description=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&title=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&name=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB&description=Originally%20published%20on%20Medium.%0a%e2%80%9cWe%e2%80%99ve%20done%20the%20anywhere%20part%2c%e2%80%9d%20Brian%20Chesky%20announced%20a%20few%20days%20ago%2c%20%e2%80%9cbut%20AirBNB%20is%20still%2c%20for%20some%2c%20an%20alternative%20way%20of%20travelling%e2%80%a6%20until%20today.%e2%80%9d%0aAirBNB%20Plus%20is%20a%20new%20tier%20of%20service%20that%20AirBNB%20have%20introduced%20for%20homes%20and%20hosts%20that%20go%20beyond%20the%20Superhost%20standard.%0aHere%e2%80%99s%20what%20an%20AirBNB%20Plus%20listing%20means%3a%0a%20%20The%20home%20has%20been%20verified%20by%20an%20AirBNB%20representative%20in%20person%20to%20have%20passed%20a%20100-point%20checklist%20of%20quality.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20180224-why-airbnb-plus%2f&t=Why%20AirBNB%20Plus%20Could%20Make%20or%20Break%20AirBNB">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

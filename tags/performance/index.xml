@@ -62,7 +62,7 @@ Op 1 juni heeft de landelijke GGD Ghor aangekondigd dat iedereen met klachten ee
     </item>
     
     <item>
-      <title>Entrevista Con Señor Performo en PerfBytes Español</title>
+      <title>Entrevista con Señor Performo en PerfBytes Español</title>
       <link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link>
       <pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate>
       
@@ -79,7 +79,58 @@ Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker. </description>
       <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
       <description>Originally posted on Tricentis Flood.
 In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
+  Transcript: Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week. That user had previously asked about test data in Flood Element.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 16: How do I use test data with Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</link>
+      <pubDate>Tue, 09 Jun 2020 22:18:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</guid>
+      <description>Originally posted on Tricentis Flood.
+In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&amp;rsquo;ll find a copy of the Element script I used below.
+‍   Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?</description>
+    </item>
+    
+    <item>
+      <title>Hybrid load testing: the best of testing using protocols and real browsers</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</link>
+      <pubDate>Tue, 02 Jun 2020 22:21:11 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</guid>
+      <description>At PerfGuild 2020, I spoke about hybrid load testing and how to mix two different approaches to load testing: protocol-based and browser-based.
+Here’s the unlisted video from that presentation:
   </description>
+    </item>
+    
+    <item>
+      <title>Load testing on the Google Cloud Platform</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</link>
+      <pubDate>Thu, 28 May 2020 22:25:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</guid>
+      <description>Originally posted here.
+We&amp;rsquo;re excited to welcome another cloud provider to the Flood lineup, giving you even more options for running your load tests. You can now use Flood to run load tests on the Google Cloud Platform (GCP).
+Many of you have requested an integration with Google Cloud, citing many of its strengths:
+ Full integrations with open-source tools like Influx and Redis World-class security High-performance global network  Seamless access to other apps in the Google ecosystem, such as Search and Maps</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 15: How do I install Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</link>
+      <pubDate>Tue, 12 May 2020 22:45:18 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</guid>
+      <description>Originally posted here.
+In this Flood Element tutorial, I demonstrate the steps required to install Flood Element, including dependencies it requires. Flood Element is an open-source browser-based load testing tool created by Tricentis Flood.
+Learn more about Flood Element
+Installation instructions for NodeJS
+Installation instructions for Yarn
+Installation instructions for Element
+Video: Getting Started with Element
+Guides: Using Element with Flood‍
+  Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
     </item>
     
   </channel>

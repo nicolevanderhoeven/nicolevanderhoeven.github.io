@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flood.io on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/flood.io/</link>
+    <description>Recent content in flood.io on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Wed, 07 Oct 2020 14:15:45 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/flood.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Become a Load Tester</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</link>
+      <pubDate>Wed, 07 Oct 2020 14:15:45 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</guid>
+      <description>Originally posted here.
+Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.
+In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.
+  Background required for load testing Load testing can be quite technical.</description>
+    </item>
+    
+    <item>
+      <title>How to Write a Load Test Plan</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200921-how-to-write-a-load-test-plan/</link>
+      <pubDate>Mon, 21 Sep 2020 16:33:23 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200921-how-to-write-a-load-test-plan/</guid>
+      <description>Originally posted here.
+People often start load testing by creating a script in their favorite load testing tool, but good load testing starts before that. Planning a load test may seem like a tedious exercise, but it is essential to ensuring the success of your testing.
+A test plan should answer why, what, who, when, and how the testing will be carried out.
+A good test plan, particularly for load testing, includes the following components:</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 17: How do I use unique test data on Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</link>
+      <pubDate>Thu, 18 Jun 2020 21:58:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
+      <description>Originally posted on Tricentis Flood.
+In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

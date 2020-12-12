@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Nov 2020 20:45:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Places I&#39;ve worked</title>
       <link>https://nicolevanderhoeven.github.io/work/</link>
@@ -21,23 +21,76 @@ So far, I&amp;rsquo;ve created a series of videos on YouTube covering my Week of
     
     <item>
       <title>Week of Testing: Intro</title>
-      <link>https://nicolevanderhoeven.github.io/blog/week-of-testing-intro/</link>
+      <link>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</link>
       <pubDate>Mon, 23 Nov 2020 20:45:31 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/blog/week-of-testing-intro/</guid>
+      <guid>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</guid>
       <description>Today was my first day at k6.io! I&amp;rsquo;m happy to announce that I&amp;rsquo;ve joined as their newest Developer Advocate for Performance Testing. k6 is a company I&amp;rsquo;ve had my eye on for a while, even (or maybe especially) when I was working for a competitor, Tricentis Flood. I always admired k6&amp;rsquo;s stance on open source, their involvement with the developer community, and the slick web app that brings load testing into the hands of many developers and testers.</description>
     </item>
     
     <item>
       <title>How to Become a Load Tester</title>
-      <link>https://nicolevanderhoeven.github.io/blog/how-to-become-a-load-tester/</link>
-      <pubDate>Fri, 10 Jul 2020 14:15:45 +0100</pubDate>
+      <link>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</link>
+      <pubDate>Wed, 07 Oct 2020 14:15:45 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/blog/how-to-become-a-load-tester/</guid>
+      <guid>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</guid>
       <description>Originally posted here.
 Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.
 In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.
   Background required for load testing Load testing can be quite technical.</description>
+    </item>
+    
+    <item>
+      <title>How to Write a Load Test Plan</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200921-how-to-write-a-load-test-plan/</link>
+      <pubDate>Mon, 21 Sep 2020 16:33:23 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200921-how-to-write-a-load-test-plan/</guid>
+      <description>Originally posted here.
+People often start load testing by creating a script in their favorite load testing tool, but good load testing starts before that. Planning a load test may seem like a tedious exercise, but it is essential to ensuring the success of your testing.
+A test plan should answer why, what, who, when, and how the testing will be carried out.
+A good test plan, particularly for load testing, includes the following components:</description>
+    </item>
+    
+    <item>
+      <title>Performance Testing FOMO</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</link>
+      <pubDate>Wed, 22 Jul 2020 21:30:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</guid>
+      <description>On this episode of Joe Colantonio’s TestGuild performance podcast, I talked about how human factors are often not taken into consideration when designing load tests, which is a mistake that can have serious consequences.
+ </description>
+    </item>
+    
+    <item>
+      <title>Performanceverbeteringen voor de coronalijn: de kracht van angst</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200704-performanceverbeteringen-voor-de-coronalijn/</link>
+      <pubDate>Sat, 04 Jul 2020 21:35:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200704-performanceverbeteringen-voor-de-coronalijn/</guid>
+      <description>Originally published on Medium. English version here.
+Op 1 juni heeft de landelijke GGD Ghor aangekondigd dat iedereen met klachten een coronatest zou kunnen aanvragen door de afsprakenlijn (0800–1202) te bellen. De belofte: vandaag het telefoongesprek, morgen de coronatest en over twee dagen de uitslag. Echter was het in werkelijkheid niet zo makkelijk. Op de eerste dag was er chaos en veel Nederlanders meldden verbindingsproblemen vanwege drukte op de overbelaste systemen.</description>
+    </item>
+    
+    <item>
+      <title>Entrevista Con Señor Performo en PerfBytes Español</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link>
+      <pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</guid>
+      <description>Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.
+Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker. </description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 17: How do I use unique test data on Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</link>
+      <pubDate>Thu, 18 Jun 2020 21:58:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
+      <description>Originally posted on Tricentis Flood.
+In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
+  </description>
     </item>
     
   </channel>

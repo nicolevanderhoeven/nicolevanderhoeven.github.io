@@ -7,37 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Places I&#39;ve worked</title>
-      <link>https://nicolevanderhoeven.github.io/work/</link>
-      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/work/</guid>
-      <description>Places I&amp;rsquo;ve worked k6.io (2020-Present) Developer Advocate (remote)
-I joined k6.io in November 2020 as a Developer Advocate, specializing in Performance Testing. k6 is a free and open source tool for load testing, with the goal of making the process as developer-friendly as possible. The company also has a related SaaS platform, k6 Cloud, which is an easy way to scale up load tests on the cloud.
-So far, I&amp;rsquo;ve created a series of videos on YouTube covering my Week of Testing of the k6 ecosystem.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 23 Nov 2020 20:45:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week of Testing: Intro</title>
-      <link>https://nicolevanderhoeven.github.io/blog/week-of-testing-intro/</link>
+      <link>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</link>
       <pubDate>Mon, 23 Nov 2020 20:45:31 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/blog/week-of-testing-intro/</guid>
+      <guid>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</guid>
       <description>Today was my first day at k6.io! I&amp;rsquo;m happy to announce that I&amp;rsquo;ve joined as their newest Developer Advocate for Performance Testing. k6 is a company I&amp;rsquo;ve had my eye on for a while, even (or maybe especially) when I was working for a competitor, Tricentis Flood. I always admired k6&amp;rsquo;s stance on open source, their involvement with the developer community, and the slick web app that brings load testing into the hands of many developers and testers.</description>
     </item>
     
     <item>
       <title>How to Become a Load Tester</title>
-      <link>https://nicolevanderhoeven.github.io/blog/how-to-become-a-load-tester/</link>
-      <pubDate>Fri, 10 Jul 2020 14:15:45 +0100</pubDate>
+      <link>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</link>
+      <pubDate>Wed, 07 Oct 2020 14:15:45 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/blog/how-to-become-a-load-tester/</guid>
+      <guid>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</guid>
       <description>Originally posted here.
 Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.
 In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.
   Background required for load testing Load testing can be quite technical.</description>
+    </item>
+    
+    <item>
+      <title>How to Write a Load Test Plan</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200921-how-to-write-a-load-test-plan/</link>
+      <pubDate>Mon, 21 Sep 2020 16:33:23 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200921-how-to-write-a-load-test-plan/</guid>
+      <description>Originally posted here.
+People often start load testing by creating a script in their favorite load testing tool, but good load testing starts before that. Planning a load test may seem like a tedious exercise, but it is essential to ensuring the success of your testing.
+A test plan should answer why, what, who, when, and how the testing will be carried out.
+A good test plan, particularly for load testing, includes the following components:</description>
+    </item>
+    
+    <item>
+      <title>Performanceverbeteringen voor de coronalijn: de kracht van angst</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200704-performanceverbeteringen-voor-de-coronalijn/</link>
+      <pubDate>Sat, 04 Jul 2020 21:35:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200704-performanceverbeteringen-voor-de-coronalijn/</guid>
+      <description>Originally published on Medium. English version here.
+Op 1 juni heeft de landelijke GGD Ghor aangekondigd dat iedereen met klachten een coronatest zou kunnen aanvragen door de afsprakenlijn (0800–1202) te bellen. De belofte: vandaag het telefoongesprek, morgen de coronatest en over twee dagen de uitslag. Echter was het in werkelijkheid niet zo makkelijk. Op de eerste dag was er chaos en veel Nederlanders meldden verbindingsproblemen vanwege drukte op de overbelaste systemen.</description>
     </item>
     
   </channel>

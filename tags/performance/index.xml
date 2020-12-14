@@ -7,7 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 23 Nov 2020 20:45:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Nov 2020 20:03:04 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week of Testing: Day 5 - The thing about learning in public</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201128-week-of-testing-5/</link>
+      <pubDate>Sat, 28 Nov 2020 20:03:04 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201128-week-of-testing-5/</guid>
+      <description>Yesterday I mentioned that I&amp;rsquo;d used the constant-vus executor to recreate the stepped load profile. Well, the thing about learning publicly is that it also means making mistakes publicly!
+I was kindly informed by a few of my new colleagues that constant-vus was not the most optimal way to recreate the stepped load profile. Simme wrote up a little function so I wouldn&amp;rsquo;t have to repeat myself so much, and Pepe Cano and Pawel Suwala (the CTO of k6 himself) both told me nicely that using stages would have been the better solution.</description>
+    </item>
+    
+    <item>
+      <title>Week of Testing: Day 4 - Load profiles on k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201127-week-of-testing-4/</link>
+      <pubDate>Fri, 27 Nov 2020 19:54:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201127-week-of-testing-4/</guid>
+      <description>k6 has a cool feature where even if you start a load test locally via the CLI, you can still stream the results to k6 Cloud. It&amp;rsquo;s an interesting compromise between debugging a test locally (and therefore not paying for cloud infrastructure) and sharing results for load tests run on the cloud. It worked seamlessly, too.
+I also wanted to see how to recreate a specific load profile that I commonly use - the stepped load profile.</description>
+    </item>
+    
+    <item>
+      <title>Week of Testing: Day 3 - Running a load test locally using k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201126-week-of-testing-3/</link>
+      <pubDate>Thu, 26 Nov 2020 19:31:33 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201126-week-of-testing-3/</guid>
+      <description>I&amp;rsquo;ve had my fun playing around with k6 Cloud, the SaaS component. For Day 3, I thought it was time to jump into the heart of k6: k6 the open source load testing tool.
+First impressions: logging was a little sparser than I expect, coming from having used load testing tools that just do this for me automatically. I think one of the first things I&amp;rsquo;ll do with k6 is to create my own little &amp;ldquo;load testing starting script&amp;rdquo; that I&amp;rsquo;ll always use, with all of the appropriate logging already set up.</description>
+    </item>
+    
+    <item>
+      <title>Week of Testing: Day 2 - Comparing tests against a baseline</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</link>
+      <pubDate>Wed, 25 Nov 2020 19:21:53 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</guid>
+      <description>Day 2 of my Week of Testing!
+Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.
+Today I learned that on k6, you can actually set one test to be a baseline.</description>
+    </item>
+    
+    <item>
+      <title>Week of Testing: Day 1 - Running a load test on k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201124-week-of-testing-1/</link>
+      <pubDate>Tue, 24 Nov 2020 19:13:03 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201124-week-of-testing-1/</guid>
+      <description>On my first real day of testing with k6.io, I wanted to jump right in and figure out how to run a load test on k6 Cloud. k6 has documentation on this, but I didn&amp;rsquo;t use it for this test, since the point of a week of testing is to record how easy the product is to use.
+My verdict: I&amp;rsquo;m pleasantly surprised with how easily everything went.</description>
+    </item>
+    
     <item>
       <title>Week of Testing: Intro</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</link>
@@ -131,6 +182,16 @@ Installation instructions for Element
 Video: Getting Started with Element
 Guides: Using Element with Flood‍
   Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 11: What are the best JMeter plugins?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</link>
+      <pubDate>Tue, 14 Apr 2020 19:47:53 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
+      <description>In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times.</description>
     </item>
     
   </channel>

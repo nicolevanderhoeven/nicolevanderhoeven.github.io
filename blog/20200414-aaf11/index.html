@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Ask a Flooder 11: What are the best JMeter plugins? | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Ask a Flooder 11: What are the best JMeter plugins?" />
+<meta property="og:description" content="In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200414-aaf11/" />
+<meta property="article:published_time" content="2020-04-14T19:47:53+01:00" />
+<meta property="article:modified_time" content="2020-04-14T19:47:53+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ask a Flooder 11: What are the best JMeter plugins?"/>
+<meta name="twitter:description" content="In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200505-innovation-in-isolation/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&text=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&is_video=false&description=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&name=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f&description=In%20this%20video%2c%20I%20talk%20about%20how%20to%20install%20the%20JMeter%20Plugin%20Manager%20as%20well%20as%20other%20plugins%2c%20what%20the%20best%20JMeter%20plugins%20are%2c%20and%20why%20you%20need%20them.%20JMeter%20is%20an%20open-source%20load%20testing%20tool%20that%20is%20already%20robust%2c%20but%20there%20are%20some%20fantastic%20plugins%20that%20have%20been%20developed%20for%20it%20that%20you%20might%20want%20to%20use%20in%20your%20next%20load%20test.%0a%20%20Hi%20everyone%2c%20Nicole%20here%2c%20back%20again%20for%20another%20Ask%20a%20Flooder%2c%20and%20I%20hope%20everybody%20is%20staying%20alert%2c%20not%20anxious%2c%20during%20these%20crazy%20times.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&t=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-a-jmeter-plugin">What is a JMeter plugin?</a></li>
+    <li><a href="#how-do-you-install-a-jmeter-plugin">How do you install a JMeter plugin?</a></li>
+    <li><a href="#what-are-the-top-3-jmeter-plugins">What are the top 3 JMeter plugins?</a>
+      <ul>
+        <li><a href="#custom-thread-groups">Custom Thread Groups</a></li>
+        <li><a href="#throughput-shaping-timer">Throughput Shaping Timer</a></li>
+        <li><a href="#http2-request-sampler">HTTP/2 Request Sampler</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Ask a Flooder 11: What are the best JMeter plugins?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-04-14 19:47:53 &#43;0100 &#43;0100" itemprop="datePublished">2020-Apr-14</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/jmeter" rel="tag">jmeter</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/ask-a-flooder-11-what-are-the-best-jmeter-plugins">
+
+<p>In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/eYyLoH-FQrk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times. In today&rsquo;s Ask a Flooder, our customer asks: &ldquo;What are the best JMeter plugins?&rdquo;</p>
+<h2 id="what-is-a-jmeter-plugin">What is a JMeter plugin?</h2>
+<p>So first, I want to talk about what a JMeter plugin is and how you can actually install one. Apache JMeter is a really great, robust load testing that is one of my personal favorites. There are still some things that could be done better or could be extended, and the great thing about being an open-source tool is that anybody, pretty much, can just jump in and develop these plugins for JMeter to extend functionality, so that it supports more protocols or to customize load profiles in a way that is easier. We already have <a href="https://flood.io/blog/jmeter-plugins-the-top-10-plugins-and-how-they-help">a blog post on this</a>, and I will leave a link to that article as well in the description because it goes into a lot more detail. However, I still want to give you my personal top 3 JMeter plugins.</p>
+<h2 id="how-do-you-install-a-jmeter-plugin">How do you install a JMeter plugin?</h2>
+<p>You can install a plugin for JMeter in two ways.</p>
+<p>One is to download it from <a href="https://jmeter-plugins.org/">JMeter Plugins</a>, which I will give you a link to, and then you paste that into either the lib — it&rsquo;s usually in the lib folder, but it could be in the ext (extensions) folder. Each plugin is going to differ as to what you need to copy into what folder, but that&rsquo;s why I prefer the second method, which is the <a href="https://jmeter-plugins.org/wiki/PluginsManager/">Plugin Manager</a>.</p>
+<p>The Plugin Manager is a plugin itself, so you will initially need to do that copy and pasting of the jar file. Once you have the JMeter Plugin Manager installed, downloading and installing a plugin is as simple as choosing which ones you want and then clicking install. JMeter restarts, and that&rsquo;s pretty much it. So I do recommend that the Plugin Manager be the first plugin that you install. But that&rsquo;s still not my top 3 favorite - that&rsquo;s just an optional step.</p>
+<h2 id="what-are-the-top-3-jmeter-plugins">What are the top 3 JMeter plugins?</h2>
+<h3 id="custom-thread-groups">Custom Thread Groups</h3>
+<p>Now for the actual plugins. My #1 favorite is the Custom Thread Groups. See, with JMeter, you get the standard default thread group, and all that does is it asks you how many users you want to run, how many loops, the duration, and the ramp-up. That&rsquo;s it. So that&rsquo;s good for a lot of uses, but it doesn&rsquo;t really help you in cases where maybe you want to plan a spike test, and you want to make sure that all the users have fully ramped up and gotten to a certain point, and then all hit the server at once. Or maybe you want to do a step load. Previously I&rsquo;ve discussed stress testing and how a step load can be useful for that. In that case, the Thread Group doesn&rsquo;t quite cut it because it only ramps up a user, and then it continues at the same level of load for the duration of the test.</p>
+<p>So, if you want any sort of variation in the middle (increasing users or decreasing), then you&rsquo;re going to want something else.The Custom Thread Groups plugin has a lot of different types of thread groups. My favorite is the Ultimate One because you can probably do almost anything on that one. It also has the Stepping, Concurrency, Arrivals, and Free-Form Arrivals, so you have quite a few options.</p>
+<h3 id="throughput-shaping-timer">Throughput Shaping Timer</h3>
+<p>Plugin #2 is the Throughput Shaping Timer. I love it because not a lot of load testing tools, even the proprietary ones, actually have this. This is really handy when you have a project where you&rsquo;re given a requirement that isn&rsquo;t in terms of the number of users; it&rsquo;s in terms of hits per second, or requests per second, or something to do with the actual throughput of the test.</p>
+<p>The problem with that is that the throughput tends to change, so you can&rsquo;t actually take as a given that it&rsquo;ll remain constant for the duration of the test. Things like response time or latency are going to affect that throughput. For instance, when you have one user or one thread that&rsquo;s running, and it sends a request and receives the response back in one second, you can&rsquo;t necessarily say that that&rsquo;s going to be the same when there are a thousand threads doing the same thing. The server&rsquo;s under more load, so maybe it&rsquo;ll take five seconds instead of one second— but that&rsquo;s already changed your throughput. Before, one thread was doing one request per second, and now it&rsquo;s doing one request every five seconds.</p>
+<p>So it can get a little complicated, and the Throughput Shaping Timer is one of my favorites because it promises to solve all that. The Throughput Shaping Timer dynamically changes the think time, so at the beginning of a test, for instance, when there are no response time issues and requests are being returned really quickly, it might increase the think time so that it slows down your load test. So you&rsquo;re not going over that throughput that you wanted to maintain. And then later on in the test, when all the users are ramped up, then it&rsquo;ll decrease the think time that it uses. So it&rsquo;s great because you just have this consistent throughput throughout your test. It&rsquo;s a really intelligent way to test.</p>
+<p>I do want to say, though, that you do also want to play around with this a bit and make sure you understand how this works. One page could have several requests in it, and you&rsquo;ll want to take that into consideration when you&rsquo;re choosing what to set in that timer.</p>
+<h3 id="http2-request-sampler">HTTP/2 Request Sampler</h3>
+<p>My #3 is the HTTP/2 Sampler. If you don&rsquo;t know what HTTP/2 is, it&rsquo;s an upgraded or next-generation protocol to the normal HTTP that we already use. The HTTP/2 protocol is supposed to be faster and more efficient, so more and more web apps are switching to it because of that.</p>
+<p>The problem is that JMeter&rsquo;s HTTP request sampler is only really for HTTP sites, so the HTTP/2 sampler is an upgraded version of the HTTP sampler. It&rsquo;s really easy to use. The experience is pretty much going to be the same for you, but in the background, it uses the faster HTTP/2 protocol rather than the slower one.</p>
+<p>My colleague, Jason Rizio, actually <a href="https://flood.io/blog/jmeter-tutorial-http2-test">wrote a whole blog post about this</a>, so if you want to learn more, I will put a link in the description.</p>
+<p>I hope that answered your question, and until next time, happy flooding!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-a-jmeter-plugin">What is a JMeter plugin?</a></li>
+    <li><a href="#how-do-you-install-a-jmeter-plugin">How do you install a JMeter plugin?</a></li>
+    <li><a href="#what-are-the-top-3-jmeter-plugins">What are the top 3 JMeter plugins?</a>
+      <ul>
+        <li><a href="#custom-thread-groups">Custom Thread Groups</a></li>
+        <li><a href="#throughput-shaping-timer">Throughput Shaping Timer</a></li>
+        <li><a href="#http2-request-sampler">HTTP/2 Request Sampler</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&text=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&is_video=false&description=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&title=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&name=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f&description=In%20this%20video%2c%20I%20talk%20about%20how%20to%20install%20the%20JMeter%20Plugin%20Manager%20as%20well%20as%20other%20plugins%2c%20what%20the%20best%20JMeter%20plugins%20are%2c%20and%20why%20you%20need%20them.%20JMeter%20is%20an%20open-source%20load%20testing%20tool%20that%20is%20already%20robust%2c%20but%20there%20are%20some%20fantastic%20plugins%20that%20have%20been%20developed%20for%20it%20that%20you%20might%20want%20to%20use%20in%20your%20next%20load%20test.%0a%20%20Hi%20everyone%2c%20Nicole%20here%2c%20back%20again%20for%20another%20Ask%20a%20Flooder%2c%20and%20I%20hope%20everybody%20is%20staying%20alert%2c%20not%20anxious%2c%20during%20these%20crazy%20times.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200414-aaf11%2f&t=Ask%20a%20Flooder%2011%3a%20What%20are%20the%20best%20JMeter%20plugins%3f">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

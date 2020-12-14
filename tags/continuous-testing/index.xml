@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>continuous testing on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/continuous-testing/</link>
+    <description>Recent content in continuous testing on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Wed, 25 Nov 2020 19:21:53 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/continuous-testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week of Testing: Day 2 - Comparing tests against a baseline</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</link>
+      <pubDate>Wed, 25 Nov 2020 19:21:53 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</guid>
+      <description>Day 2 of my Week of Testing!
+Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.
+Today I learned that on k6, you can actually set one test to be a baseline.</description>
+    </item>
+    
+  </channel>
+</rss>

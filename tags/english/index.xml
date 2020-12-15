@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 14 Dec 2020 20:13:13 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 22:00:34 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link>
+      <pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid>
+      <description>I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended this very excellent video by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.</description>
+    </item>
+    
     <item>
       <title>How I use Roam Research for D&amp;D: Session Notes</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201214-roam-for-dnd/</link>

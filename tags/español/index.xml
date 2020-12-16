@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 22 Jun 2020 21:56:02 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2020 18:18:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
+      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
+      <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
+  Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+    </item>
+    
     <item>
       <title>Entrevista con Señor Performo en PerfBytes Español</title>
       <link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link>

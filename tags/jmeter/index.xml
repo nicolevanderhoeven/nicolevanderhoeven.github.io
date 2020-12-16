@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Nov 2020 19:54:06 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2020 18:18:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
+      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
+      <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
+  Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+    </item>
+    
     <item>
       <title>Week of Testing: Day 4 - Load profiles on k6</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201127-week-of-testing-4/</link>
@@ -35,7 +45,8 @@ First impressions: logging was a little sparser than I expect, coming from havin
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
       <description>In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
-  Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times.</description>
+  Audio version here:
+ Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times.</description>
     </item>
     
   </channel>

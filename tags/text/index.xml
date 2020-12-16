@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 23 Nov 2020 20:45:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2020 18:18:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
+      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
+      <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
+  Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+    </item>
+    
     <item>
       <title>Week of Testing: Intro</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</link>
@@ -59,7 +69,8 @@ Op 1 juni heeft de landelijke GGD Ghor aangekondigd dat iedereen met klachten ee
       <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
       <description>Originally posted on Tricentis Flood.
 In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
-  Transcript: Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week. That user had previously asked about test data in Flood Element.</description>
+  Or listen to the audio version instead:
+ Transcript: Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week.</description>
     </item>
     
     <item>
@@ -70,7 +81,8 @@ In this video, I talk about how to ensure that Flood Element uses unique test da
       <guid>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</guid>
       <description>Originally posted on Tricentis Flood.
 In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&amp;rsquo;ll find a copy of the Element script I used below.
-‍   Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?</description>
+‍   And, if you prefer, here&amp;rsquo;s the audio version:
+ Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?</description>
     </item>
     
     <item>
@@ -99,7 +111,8 @@ Installation instructions for Yarn
 Installation instructions for Element
 Video: Getting Started with Element
 Guides: Using Element with Flood‍
-  Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
+  Audio version here:
+ Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
     </item>
     
     <item>

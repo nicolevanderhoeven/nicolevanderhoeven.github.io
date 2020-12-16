@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/mobile/</link>
+    <description>Recent content in mobile on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Tue, 28 Apr 2020 23:21:08 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ask a Flooder 13: How do you do mobile load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</link>
+      <pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</guid>
+      <description>Originally posted here.
+How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
+  Or listen to the audio version here:
+ Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
+    </item>
+    
+  </channel>
+</rss>

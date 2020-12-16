@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> On-premise load testing advantages and disadvantages | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="On-premise load testing advantages and disadvantages" />
+<meta property="og:description" content="Originally posted here.
+Where you run your load test can affect the results that you get as well as your project&rsquo;s bottom line. In general, there are two infrastructure options to consider for load testing your apps: on-premise and cloud. Which type of environment is best for load testing both web or mobile apps?
+Differences between on-premise and cloud load testing What is on-premise load testing? On-premise load testing is running your performance or load testing scripts on load generators you physically control." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200430-on-premise-load-testing/" />
+<meta property="article:published_time" content="2020-04-30T23:06:59+01:00" />
+<meta property="article:modified_time" content="2020-04-30T23:06:59+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="On-premise load testing advantages and disadvantages"/>
+<meta name="twitter:description" content="Originally posted here.
+Where you run your load test can affect the results that you get as well as your project&rsquo;s bottom line. In general, there are two infrastructure options to consider for load testing your apps: on-premise and cloud. Which type of environment is best for load testing both web or mobile apps?
+Differences between on-premise and cloud load testing What is on-premise load testing? On-premise load testing is running your performance or load testing scripts on load generators you physically control."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200428-aaf13/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200505-innovation-in-isolation/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&text=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&is_video=false&description=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=On-premise%20load%20testing%20advantages%20and%20disadvantages&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&name=On-premise%20load%20testing%20advantages%20and%20disadvantages&description=Originally%20posted%20here.%0aWhere%20you%20run%20your%20load%20test%20can%20affect%20the%20results%20that%20you%20get%20as%20well%20as%20your%20project%26rsquo%3bs%20bottom%20line.%20In%20general%2c%20there%20are%20two%20infrastructure%20options%20to%20consider%20for%20load%20testing%20your%20apps%3a%20on-premise%20and%20cloud.%20Which%20type%20of%20environment%20is%20best%20for%20load%20testing%20both%20web%20or%20mobile%20apps%3f%0aDifferences%20between%20on-premise%20and%20cloud%20load%20testing%20What%20is%20on-premise%20load%20testing%3f%20On-premise%20load%20testing%20is%20running%20your%20performance%20or%20load%20testing%20scripts%20on%20load%20generators%20you%20physically%20control.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&t=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#differences-between-on-premise-and-cloud-load-testing">Differences between on-premise and cloud load testing</a>
+      <ul>
+        <li><a href="#what-is-on-premise-load-testing">What is on-premise load testing?</a></li>
+        <li><a href="#what-is-cloud-load-testing">What is cloud load testing?</a></li>
+        <li><a href="#pros-and-cons-of-on-premise-load-testing">Pros and cons of on-premise load testing</a></li>
+        <li><a href="#cloud-vs-on-premise-load-testing-how-do-you-decide">Cloud vs. on-premise load testing: how do you decide?</a>
+          <ul>
+            <li><a href="#why-are-you-running-a-load-test">Why are you running a load test?</a></li>
+            <li><a href="#who-is-the-intended-audience-of-your-application">Who is the intended audience of your application?‍</a></li>
+            <li><a href="#what-is-your-budget">What is your budget?</a></li>
+            <li><a href="#how-many-virtual-users-do-you-want-to-run">How many virtual users do you want to run?</a></li>
+          </ul>
+        </li>
+        <li><a href="#advantages-of-on-premise-load-testing">Advantages of on-premise load testing</a>
+          <ul>
+            <li><a href="#increased-control">Increased control</a></li>
+            <li><a href="#greater-data-security">Greater data security</a></li>
+            <li><a href="#lower-cost-and-lower-barrier-to-entry-in-some-situations">Lower cost and lower barrier to entry in some situations</a></li>
+            <li><a href="#fewer-variations-due-to-latency">Fewer variations due to latency</a></li>
+          </ul>
+        </li>
+        <li><a href="#disadvantages-of-on-premise-load-testing">Disadvantages of on-premise load testing</a>
+          <ul>
+            <li><a href="#higher-cost-in-some-situations">Higher cost in some situations</a></li>
+            <li><a href="#geographical-limitations">Geographical limitations</a></li>
+            <li><a href="#more-setup">More setup</a></li>
+            <li><a href="#less-flexibility">Less flexibility</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#on-premise-load-testing-best-practices">On-premise load testing best practices</a>
+      <ul>
+        <li><a href="#run-baseline-tests">Run baseline tests</a></li>
+        <li><a href="#consider-using-containers-or-virtual-machine-images">Consider using containers or virtual machine images</a></li>
+        <li><a href="#dont-neglect-monitoring">Don&rsquo;t neglect monitoring</a></li>
+        <li><a href="#spend-time-on-a-framework-for-gathering-data">Spend time on a framework for gathering data</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-run-an-on-premise-load-test-with-flood-agent">How to run an on-premise load test with Flood Agent</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        On-premise load testing advantages and disadvantages
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-04-30 23:06:59 &#43;0100 &#43;0100" itemprop="datePublished">2020-Apr-30</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/on-premise-load-testing-advantages-and-disadvantages">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/on-premise-load-testing-advantages-and-disadvantages">here</a>.</em></p>
+<p>Where you run your load test can affect the results that you get as well as your project&rsquo;s bottom line. In general, there are two infrastructure options to consider for load testing your apps: on-premise and cloud. Which type of environment is best for load testing both web or mobile apps?</p>
+<h2 id="differences-between-on-premise-and-cloud-load-testing">Differences between on-premise and cloud load testing</h2>
+<h3 id="what-is-on-premise-load-testing">What is on-premise load testing?</h3>
+<p>On-premise load testing is running your performance or load testing scripts on load generators you physically control. Typically, these load generators are machines that are either in your office or data center. In on-premise load testing, you are responsible for all aspects of the maintenance of the load generators, including hardware upgrades and software installations such as testing tools, but that also comes with increased control and security.</p>
+<h3 id="what-is-cloud-load-testing">What is cloud load testing?</h3>
+<p>In cloud load testing, you run your load tests on a service provider&rsquo;s machines, effectively outsourcing the provisioning and maintenance of your load generators. Running &ldquo;on the cloud&rdquo; means you&rsquo;re paying someone else to be responsible for these machines. In cloud load testing, you don&rsquo;t &ldquo;own&rdquo; the machines your test is running on; it&rsquo;s more like renting some time on someone&rsquo;s data center whenever you need it. Cloud-based infrastructure isn&rsquo;t necessarily less secure than on-premise infrastructure, but there are certainly more security considerations to keep in mind.</p>
+<h3 id="pros-and-cons-of-on-premise-load-testing">Pros and cons of on-premise load testing</h3>
+<p>On-premise load testing is no better or worse than cloud load testing; it just depends on what you need. There&rsquo;s a meme that the cloud is just a fancy term for someone else&rsquo;s computer— but <a href="https://www.zdnet.com/article/stop-saying-the-cloud-is-just-someone-elses-computer-because-its-not/">that&rsquo;s an oversimplification</a> that glosses over nuances that might make a difference to your bottom line.</p>
+<p>Here are some questions to ask yourself when deciding between load testing on the cloud or on-premise.</p>
+<p>‍<img src="/blog/assets/20200430-01.jpg" alt=""></p>
+<p><em>Test infrastructure can make or break your load tests.</em></p>
+<h3 id="cloud-vs-on-premise-load-testing-how-do-you-decide">Cloud vs. on-premise load testing: how do you decide?</h3>
+<h4 id="why-are-you-running-a-load-test">Why are you running a load test?</h4>
+<p>If your intention for running load tests is to test your web application&rsquo;s load balancing, the source of the web traffic, and the location of your environment, may not be as important. If you intend to do stress testing, you may want the scalability of a cloud setup.</p>
+<h4 id="who-is-the-intended-audience-of-your-application">Who is the intended audience of your application?‍</h4>
+<p>Load testing is most accurate when it is as realistic to the production workload and user base as possible. Running a load test on-premises means that the traffic comes from one location, which could be ideal if your application is an internal one.</p>
+<h5 id="do-you-have-the-resources-in-your-teamcompany-to-maintain-load-generators">Do you have the resources in your team/company to maintain load generators?</h5>
+<p>All machines need to be provisioned, set up, and maintained to function correctly. Depending on how many machines you need, you may even need a team of trained professionals to monitor your environment.</p>
+<h4 id="what-is-your-budget">What is your budget?</h4>
+<p>Both cloud and on-premise load testing have costs. Cloud load testing requires a smaller outlay of cash initially but may cost more to maintain as you continue to pay for the computing time. On-premise load testing requires more money upfront but may cost less to maintain in the long run.</p>
+<h4 id="how-many-virtual-users-do-you-want-to-run">How many virtual users do you want to run?</h4>
+<p>The number of virtual users you intend to test your application against correlates to the number of load generators you require. In general, the more machines you need, the more expensive it becomes (for both cloud and on-premise load testing), but if you only need a handful of users, perhaps you can find a machine or two on-premise that could do the trick.</p>
+<h3 id="advantages-of-on-premise-load-testing">Advantages of on-premise load testing</h3>
+<p>‍
+<img src="/blog/assets/20200430-02.jpg" alt=""></p>
+<h4 id="increased-control">Increased control</h4>
+<p>Since you own the machines you&rsquo;re testing on, you can set your environment up with your exact specifications in mind. You&rsquo;ll be able to make hardware upgrades or update versions of operating systems and load testing tools whenever you want, without needing to liaise with a third-party provider. This option can come in handy if you routinely use non-standard configurations or legacy software. If you&rsquo;re also doing other types of non-functional testing, like security testing, it may be easier to change the configuration on on-premise machines.</p>
+<h4 id="greater-data-security">Greater data security</h4>
+<p>The question of cloud vs. on-premises may be a business decision. Some industries or businesses with stringent compliance and regulatory requirements may have no choice but to run tests on-premise because owning the load generators also means controlling who has access to the data that&rsquo;s on them. An on-premise environment lets you lock down access if necessary. With cloud load testing, you&rsquo;d need to have security arrangements with the cloud provider that you choose so that any test data or identifying client information seen or accessed by your test scripts remains confidential.</p>
+<h4 id="lower-cost-and-lower-barrier-to-entry-in-some-situations">Lower cost and lower barrier to entry in some situations</h4>
+<p>If you don&rsquo;t intend to run too many users of your test script and you already have a spare machine or two at the office, on-premise load testing may be the easiest and most cost-effective way to get started. This way, you avoid having to request the budget for a new tool and needing to train your team on a new interface.</p>
+<h4 id="fewer-variations-due-to-latency">Fewer variations due to latency</h4>
+<p>Controlling your own load generators means controlling the network they run on. If your corporate network is generally stable, and your test scenarios don&rsquo;t involve testing from different geographical locations, reported response times (and user experience) more closely reflect server processing time rather than latency and travel time.</p>
+<h3 id="disadvantages-of-on-premise-load-testing">Disadvantages of on-premise load testing</h3>
+<p>‍
+<img src="/blog/assets/20200430-03.jpg" alt=""></p>
+<h4 id="higher-cost-in-some-situations">Higher cost in some situations</h4>
+<p>Maintaining your own load generators comes with a higher up-front cost, which may be a showstopper for smaller projects or companies. The more concurrent users you require for your load test, the more machines you need, the more licenses you need for your testing tool (unless it&rsquo;s open source), and the longer it takes to recover your investment.</p>
+<h4 id="geographical-limitations">Geographical limitations</h4>
+<p>Since all your machines are in one place, you can&rsquo;t accurately simulate the user experience for customers who might access your web app from another location. You also can&rsquo;t fully test the effect of CDNs and other tools that your application might employ to keep response times low. Web apps that can be accessed by anyone on the internet might require performance tests that take into account customers from different regions.</p>
+<h4 id="more-setup">More setup</h4>
+<p>You need to do all the setup yourself for both hardware and software components. You also need a way to coordinate your test, so that load generators start and end when you want them to. You may want to divert some resources towards environment management.</p>
+<h4 id="less-flexibility">Less flexibility</h4>
+<p>With on-premise load generators, you can&rsquo;t add, remove, or scale up nodes on the fly according to your test— something cloud load testing excels at.</p>
+<h2 id="on-premise-load-testing-best-practices">On-premise load testing best practices</h2>
+<p>The environment you&rsquo;re testing in is especially important when you&rsquo;re using your own infrastructure. Here are some best practices for a performance testing strategy that involves on-premise load generation.</p>
+<h3 id="run-baseline-tests">Run baseline tests</h3>
+<p>Treat load testing like a scientific experiment. Before you begin changing variables to improve performance, spend some time figuring out your test configuration so that it&rsquo;s repeatable. Pay attention to things like workloads, business processes, the number of users you&rsquo;re running per load generator, test environment configuration values, script pacing and think time set in your testing tool, and test script transactions. Make sure that the resource utilization on your machines remains healthy during a test; otherwise, you&rsquo;re load testing the load generators themselves rather than your application servers.</p>
+<p>Then, run a few tests against your application servers without making any changes. This way, you create a &ldquo;control group&rdquo; or control test against which to compare future tests.</p>
+<p>This process is called <em>baselining</em> your application performance.</p>
+<p>‍<img src="/blog/assets/20200430-04.jpg" alt="">
+<em>Flood&rsquo;s Project View lets you track an application&rsquo;s performance over time and compare recent tests to a baseline</em>
+‍</p>
+<h3 id="consider-using-containers-or-virtual-machine-images">Consider using containers or virtual machine images</h3>
+<p>Along the lines of reducing variables, it&rsquo;s especially important to use load generators that are as identical as you can make them. You can manually check that you&rsquo;re installing the same software and tools on each one, or you can do as cloud providers do and automate this process.</p>
+<p>It&rsquo;s easy to miss software that are necessary for monitoring or the load testing tool you&rsquo;re using. For example, JMeter and Gatling require certain versions of Java. Test automation or browser-level load testing tools might require web browsers.</p>
+<p>You can use <a href="https://www.docker.com/resources/what-container">containers such as Docker</a> to create a standalone package of everything you need for your  test. Alternatively, if you&rsquo;re using virtual machines, you can also create a full system image that you can use for every virtual machine.</p>
+<p>The difference between the two is that a container lets you be more granular about what is included in the package that you then deploy to all your load generators. Virtual machines include hardware components that you can set, whereas containers are software-only, decreasing package sizes.</p>
+<p>Using containers or images allows you to keep your load generators as identical as possible (in terms of hardware and software) so that you can assume similar results from each one.</p>
+<p>‍‍<img src="/blog/assets/20200430-05.jpg" alt="">
+‍</p>
+<h3 id="dont-neglect-monitoring">Don&rsquo;t neglect monitoring</h3>
+<p>It&rsquo;s easy to forget that your application servers aren&rsquo;t the only ones that need monitoring. Your load generators need monitoring as well, so that they don&rsquo;t end up being the bottleneck in your tests. Here&rsquo;s  <a href="https://flood.io/blog/load-testing-tutorial-server-monitoring">a starter list of server metrics</a> that you should consider monitoring.</p>
+<p>You might also consider how you can integrate <a href="https://stackify.com/mistakes-evaluating-application-performance-management/">performance management</a> tools you already use into your monitoring strategy.</p>
+<h3 id="spend-time-on-a-framework-for-gathering-data">Spend time on a framework for gathering data</h3>
+<p>One of the biggest challenges in on-premise load testing is figuring out how to get data from your tests. Each machine runs your test script independently of the others, so at the end of your test, you&rsquo;re likely to end up with several results files. After you download these off every machine, how do you combine them into a single summary?</p>
+<p>Manually collating results is an option, but it&rsquo;s a tedious one. You can copy all the files into one directory and then concatenate them so that you end up with one giant one. Depending on the size of those results files and how long you ran the test, however, this may not be feasible. For larger files, you might consider aggregating the data and increasing the granularity, so that instead of seeing raw response time for every transaction, you only see the average response time for every 15 seconds. You can use a tool like <a href="https://www.elastic.co/logstash">Logstash</a> for this.</p>
+<p>It takes some time and technical expertise to set up a framework for results gathering that works for your purposes, especially if you want to go a step further and have real-time results.</p>
+<p>Of course, you can also skip this part by just using the framework we&rsquo;ve already set up on Flood. Tim Koopmans, our co-founder, created the first prototype of what would become Flood specifically because he got tired of having to set up this framework for every engagement.</p>
+<h2 id="how-to-run-an-on-premise-load-test-with-flood-agent">How to run an on-premise load test with Flood Agent</h2>
+<p>‍
+The easiest way to get started with an on-premise load test is by using <a href="https://flood.io/blog/introducing-flood-agent-standalone-infrastructure-for-load-testing">Flood Agent</a>. Flood Agent is an executable that you can install onto a machine that effectively turns it into a full-fledged load generator.     Then, you can start a test from the Flood web interface and have your test script start running on your machines.</p>
+<p>Agent takes care of a few typical problems we&rsquo;ve discussed so far:</p>
+<ul>
+<li>It uses containers to ensure that load generators are identically provisioned.</li>
+<li>It automatically gathers CPU, memory, and network metrics on load generators.</li>
+<li>It coordinates the execution of the load test so that you only need to start it from one central place.</li>
+<li>It enables real-time monitoring of results while the test is running.</li>
+<li>It aggregates and collates all the results for you into a dashboard.</li>
+</ul>
+<p>We think Agent addresses pain points that we&rsquo;ve seen over and over again in our own on-premise performance testing projects as well as in our customers'. Agent is a <a href="https://github.com/flood-io/flood-agent/releases/latest">free download</a> and works with <a href="https://guides.flood.io/scripting-and-tools/choosing-a-tool">all performance testing tools that Flood supports</a>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>On-premise load testing is still a valid option despite the growth in popularity of cloud-based infrastructure, and it has its advantages and disadvantages. This type of load testing trades a little bit of flexibility for increased data security and control, which is a tradeoff that some companies may be willing to make.</p>
+<p>On-premise load testing has traditionally included a lot of tedious setup and maintenance. Still, you can reduce maintenance effort by creating an internal load testing framework upfront that automates coordination, monitoring, and results collection. Using Flood Agent can mitigate time spent on this initial setup.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#differences-between-on-premise-and-cloud-load-testing">Differences between on-premise and cloud load testing</a>
+      <ul>
+        <li><a href="#what-is-on-premise-load-testing">What is on-premise load testing?</a></li>
+        <li><a href="#what-is-cloud-load-testing">What is cloud load testing?</a></li>
+        <li><a href="#pros-and-cons-of-on-premise-load-testing">Pros and cons of on-premise load testing</a></li>
+        <li><a href="#cloud-vs-on-premise-load-testing-how-do-you-decide">Cloud vs. on-premise load testing: how do you decide?</a>
+          <ul>
+            <li><a href="#why-are-you-running-a-load-test">Why are you running a load test?</a></li>
+            <li><a href="#who-is-the-intended-audience-of-your-application">Who is the intended audience of your application?‍</a></li>
+            <li><a href="#what-is-your-budget">What is your budget?</a></li>
+            <li><a href="#how-many-virtual-users-do-you-want-to-run">How many virtual users do you want to run?</a></li>
+          </ul>
+        </li>
+        <li><a href="#advantages-of-on-premise-load-testing">Advantages of on-premise load testing</a>
+          <ul>
+            <li><a href="#increased-control">Increased control</a></li>
+            <li><a href="#greater-data-security">Greater data security</a></li>
+            <li><a href="#lower-cost-and-lower-barrier-to-entry-in-some-situations">Lower cost and lower barrier to entry in some situations</a></li>
+            <li><a href="#fewer-variations-due-to-latency">Fewer variations due to latency</a></li>
+          </ul>
+        </li>
+        <li><a href="#disadvantages-of-on-premise-load-testing">Disadvantages of on-premise load testing</a>
+          <ul>
+            <li><a href="#higher-cost-in-some-situations">Higher cost in some situations</a></li>
+            <li><a href="#geographical-limitations">Geographical limitations</a></li>
+            <li><a href="#more-setup">More setup</a></li>
+            <li><a href="#less-flexibility">Less flexibility</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#on-premise-load-testing-best-practices">On-premise load testing best practices</a>
+      <ul>
+        <li><a href="#run-baseline-tests">Run baseline tests</a></li>
+        <li><a href="#consider-using-containers-or-virtual-machine-images">Consider using containers or virtual machine images</a></li>
+        <li><a href="#dont-neglect-monitoring">Don&rsquo;t neglect monitoring</a></li>
+        <li><a href="#spend-time-on-a-framework-for-gathering-data">Spend time on a framework for gathering data</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-run-an-on-premise-load-test-with-flood-agent">How to run an on-premise load test with Flood Agent</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&text=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&is_video=false&description=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=On-premise%20load%20testing%20advantages%20and%20disadvantages&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&title=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&name=On-premise%20load%20testing%20advantages%20and%20disadvantages&description=Originally%20posted%20here.%0aWhere%20you%20run%20your%20load%20test%20can%20affect%20the%20results%20that%20you%20get%20as%20well%20as%20your%20project%26rsquo%3bs%20bottom%20line.%20In%20general%2c%20there%20are%20two%20infrastructure%20options%20to%20consider%20for%20load%20testing%20your%20apps%3a%20on-premise%20and%20cloud.%20Which%20type%20of%20environment%20is%20best%20for%20load%20testing%20both%20web%20or%20mobile%20apps%3f%0aDifferences%20between%20on-premise%20and%20cloud%20load%20testing%20What%20is%20on-premise%20load%20testing%3f%20On-premise%20load%20testing%20is%20running%20your%20performance%20or%20load%20testing%20scripts%20on%20load%20generators%20you%20physically%20control.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200430-on-premise-load-testing%2f&t=On-premise%20load%20testing%20advantages%20and%20disadvantages">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

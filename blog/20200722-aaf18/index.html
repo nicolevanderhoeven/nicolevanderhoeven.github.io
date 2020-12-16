@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Ask a Flooder 18: How do I load test video streaming with JMeter? | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Ask a Flooder 18: How do I load test video streaming with JMeter?" />
+<meta property="og:description" content="Originally posted here.
+In this video, I answer the question: &ldquo;How do I load test video streaming with JMeter?&rdquo;   Or listen to the audio version here:
+ HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&rsquo;s what I&rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200722-aaf18/" />
+<meta property="article:published_time" content="2020-07-22T22:49:15+01:00" />
+<meta property="article:modified_time" content="2020-07-22T22:49:15+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ask a Flooder 18: How do I load test video streaming with JMeter?"/>
+<meta name="twitter:description" content="Originally posted here.
+In this video, I answer the question: &ldquo;How do I load test video streaming with JMeter?&rdquo;   Or listen to the audio version here:
+ HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&rsquo;s what I&rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200806-aaf20/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&text=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&is_video=false&description=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&name=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f&description=Originally%20posted%20here.%0aIn%20this%20video%2c%20I%20answer%20the%20question%3a%20%26ldquo%3bHow%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f%26rdquo%3b%20%20%20Or%20listen%20to%20the%20audio%20version%20here%3a%0a%20HTTP%20Live%20Streaming%20%28HLS%29%20and%20performance%20One%20of%20the%20most%20popular%20protocols%20for%20video%20streaming%20is%20HTTP%20Live%20Streaming%2c%20or%20HLS%2c%20and%20that%26rsquo%3bs%20what%20I%26rsquo%3bm%20going%20to%20show%20you%20today.%20An%20HLS%20video%20ends%20with%20the%20%5bfile%20extension%20.m3u8%e2%80%8d%5d%28https%3a%2f%2fdevstreaming-cdn.apple.com%2fvideos%2fstreaming%2fexamples%2fbipbop_4x3%2fbipbop_4x3_variant.m3u8%5d%28https%3a%2f%2fdevstreaming-cdn.apple.com%2fvideos%2fstreaming%2fexamples%2fbipbop_4x3%2fbipbop_4x3_variant.m3u8%29.%20According%20to%20the%20HLS%20protocol%2c%20when%20a%20video%20is%20streamed%2c%20the%20first%20request%20sent%20must%20be%20a%20manifest.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&t=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#http-live-streaming-hls-and-performance">HTTP Live Streaming (HLS) and performance</a></li>
+    <li><a href="#how-to-load-test-video-streaming-with-jmeter">How to load test video streaming with JMeter</a>
+      <ul>
+        <li><a href="#downloading-and-installing-the-ubik-video-streaming-plugin">Downloading and installing the Ubik Video Streaming plugin</a></li>
+        <li><a href="#using-the-jmeter-plugin-in-your-load-testing-script">Using the JMeter plugin in your load testing script</a></li>
+        <li><a href="#ramping-up-your-load-test-on-flood">Ramping up your load test on Flood</a></li>
+        <li><a href="#analyzing-video-streaming-load-test-results">Analyzing video streaming load test results</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Ask a Flooder 18: How do I load test video streaming with JMeter?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-07-22 22:49:15 &#43;0100 &#43;0100" itemprop="datePublished">2020-Jul-22</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/jmeter" rel="tag">jmeter</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ubik" rel="tag">ubik</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/ask-a-flooder-18-how-do-i-load-test-video-streaming-with-jmeter-video">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/ask-a-flooder-18-how-do-i-load-test-video-streaming-with-jmeter-video">here</a>.</em></p>
+<p>In this video, I answer the question: &ldquo;How do I load test video streaming with JMeter?&rdquo;
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Q00briuogto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>Or listen to the audio version here:</p>
+
+
+<iframe src="https://open.spotify.com/embed-podcast/episode/69F5lmOeFfEJr6ZgVWFGOu" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<h2 id="http-live-streaming-hls-and-performance">HTTP Live Streaming (HLS) and performance</h2>
+<p>One of the most popular protocols for video streaming is <a href="https://developer.apple.com/streaming/examples/">HTTP Live Streaming</a>, or HLS, and that&rsquo;s what I&rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](<a href="https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8%5D(https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8)">https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8)</a>. According to the HLS protocol, when a video is streamed, the first request sent must be a manifest. A manifest is sometimes called a playlist, and it is a list of all the chunks or parts that make up the video. Then, each chunk is downloaded.</p>
+<p>To assess the performance of a video stream, we still want the response time of the manifest, the chunks, and the whole video. However, there are many more metrics that are important in video streaming which aren&rsquo;t captured by just the response time. For example, how do you determine whether a video was played smoothly or if it stopped to buffer? A video that keeps pausing might just drive a user away, and it&rsquo;s difficult to tell whether that is happening just from the response time.</p>
+<h2 id="how-to-load-test-video-streaming-with-jmeter">How to load test video streaming with JMeter</h2>
+<h3 id="downloading-and-installing-the-ubik-video-streaming-plugin">Downloading and installing the Ubik Video Streaming plugin</h3>
+<p>Luckily, there&rsquo;s a plugin for that, created by a company called Ubik Ingénierie. The <a href="https://ubikloadpack.com/">Ubik Load Pack</a> is a set of enterprise-grade plugins for JMeter. One of those plugins is a <a href="https://ubikloadpack.com/video-streaming-performance.php">Video Streaming Plugin</a>, and it happens to be a really easy way to get started with video streaming. This is a paid plugin, but you can <a href="https://ubikloadpack.com/video-streaming-performance.php#formulaire">sign up for a free 11-day trial</a>.</p>
+<p>Once you do that, you&rsquo;ll get an email from Ubik with a link to download the bundle. Go to lib/ext and then copy this .jar file into the same directory on your JMeter installation. Start up JMeter, and it&rsquo;ll ask you for the license file. Browse to the license file in the bundle you downloaded. JMeter will restart.</p>
+<h3 id="using-the-jmeter-plugin-in-your-load-testing-script">Using the JMeter plugin in your load testing script</h3>
+<p>Now let&rsquo;s start creating the Test Plan. Create a Thread group, and then right click on the thread group, go to Add &gt; Sampler and then select the &ldquo;ULP Video Streaming sampler&rdquo;.</p>
+<p>Click on the sampler and then paste in the URL to the HLS file that you&rsquo;d like to test. This should end in a .m3u8. This plugin supports several protocols for video streaming, but we can just leave it at auto and it&rsquo;ll automatically detect which one it is.</p>
+<p>In Play Options, you can choose whether to play the entire video or just a part of it, or even whether you want to include the video subtitles in your test.</p>
+<p>This Network Options panel is fantastic because it allows you to limit your network speed. Slow networks, like mobile networks, really affect user experience, so it&rsquo;s really important to take this into account when running load tests. You might even use a parameter here and do something like throttle to 3G speeds for 80% of your traffic, and leave it on Auto 20% of the time. But I&rsquo;ll just leave this blank for now.</p>
+<p>Next, let&rsquo;s add a View Results Tree listener. Then, let&rsquo;s run the script once, just to see if it works.</p>
+<p>As you can see, we can see the manifest retrieved first, and then all the chunks. We didn&rsquo;t get any errors, so let&rsquo;s run this as a load test. We can disable this listener because it just consumes extra resources on our load generator.</p>
+<h3 id="ramping-up-your-load-test-on-flood">Ramping up your load test on Flood</h3>
+<p>To ramp this up into a load test, we&rsquo;ll have to go into Thread Group and change these settings. Ideally, we want to be able to change these values from the Flood UI later so we don&rsquo;t have to go into the script whenever we change them, so I&rsquo;ll type in these Flood-specific properties. I&rsquo;ll leave a link in the description about these properties. I&rsquo;ll also set it to run Forever so that we can change the duration and the video will just keep playing to fill that duration.</p>
+<p>To capture some of Ubik&rsquo;s cool metrics, let&rsquo;s add a Simple Data Writer listener here and write the results to a CSV file. On Flood, all flood results are stored on /data/flood/results, so we&rsquo;ll add an output.csv file in that directory that we can download after the test.</p>
+<p>So that&rsquo;s our script! Now we&rsquo;ll have to include the plugin and related files so that Flood can access them as well.</p>
+<p>Let&rsquo;s go back to the bundle we downloaded and go to the bin folder to look for <a href="http://user.properties/">user.properties</a>. Let&rsquo;s open that up, and we&rsquo;ll change the license path to <code>/data/flood/files</code>, which is the directory that Flood saves files we upload to. To preserve this directory structure, we&rsquo;ll compress just the lib and bin folders.</p>
+<p>On Flood, we&rsquo;ll start a new stream here and upload three things: the jmx script, the license, and the compressed archive of the lib and bin folders from the bundle.</p>
+<p>Then we&rsquo;ll go through the rest of the process here, setting the test parameters. Time to launch the test!</p>
+<h3 id="analyzing-video-streaming-load-test-results">Analyzing video streaming load test results</h3>
+<p>Flood shows you results of your load test while it&rsquo;s running as well as after the test. You can see metrics like concurrency, network throughput, transaction rate, and response time for the test. You can also see these metrics for each individual transaction, including the video or sampler as a whole, the manifest, and the chunks.</p>
+<p>To see the CSV that our script generated, we can download the Archived Results from a flood.</p>
+<p>In JMeter, click on Tools &gt; Generate Report and fill in the fields, selecting the output.csv from the flood&rsquo;s Archived Results, JMeter&rsquo;s <a href="http://user.properties">user.properties</a> file, and then an output directory for the report.</p>
+<p>Ubik&rsquo;s plugin creates a few custom graphs in the HTML report:</p>
+<ul>
+<li>Buffer fill in Millis</li>
+<li>Lag ratio in percentage</li>
+<li>Lag ratio without buffer fill in percentage</li>
+<li>Lag time in Millis</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Using Ubik&rsquo;s Video Streaming plugin is an easy and thorough way to load test video streaming with JMeter, and I highly recommend it. I used an HLS video to demonstrate it, but this plugin supports several protocols:</p>
+<ul>
+<li>HLS</li>
+<li>Mpeg DASH</li>
+<li>Smooth</li>
+<li>Adobe HDS</li>
+</ul>
+<p>For more information, read Ubik&rsquo;s tutorial on how to use their plugin with Flood <a href="https://www.flood.io/blog/running-a-video-streaming-performance-test-using-flood-io-and-ubikloadpack">here</a>.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#http-live-streaming-hls-and-performance">HTTP Live Streaming (HLS) and performance</a></li>
+    <li><a href="#how-to-load-test-video-streaming-with-jmeter">How to load test video streaming with JMeter</a>
+      <ul>
+        <li><a href="#downloading-and-installing-the-ubik-video-streaming-plugin">Downloading and installing the Ubik Video Streaming plugin</a></li>
+        <li><a href="#using-the-jmeter-plugin-in-your-load-testing-script">Using the JMeter plugin in your load testing script</a></li>
+        <li><a href="#ramping-up-your-load-test-on-flood">Ramping up your load test on Flood</a></li>
+        <li><a href="#analyzing-video-streaming-load-test-results">Analyzing video streaming load test results</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&text=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&is_video=false&description=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&title=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&name=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f&description=Originally%20posted%20here.%0aIn%20this%20video%2c%20I%20answer%20the%20question%3a%20%26ldquo%3bHow%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f%26rdquo%3b%20%20%20Or%20listen%20to%20the%20audio%20version%20here%3a%0a%20HTTP%20Live%20Streaming%20%28HLS%29%20and%20performance%20One%20of%20the%20most%20popular%20protocols%20for%20video%20streaming%20is%20HTTP%20Live%20Streaming%2c%20or%20HLS%2c%20and%20that%26rsquo%3bs%20what%20I%26rsquo%3bm%20going%20to%20show%20you%20today.%20An%20HLS%20video%20ends%20with%20the%20%5bfile%20extension%20.m3u8%e2%80%8d%5d%28https%3a%2f%2fdevstreaming-cdn.apple.com%2fvideos%2fstreaming%2fexamples%2fbipbop_4x3%2fbipbop_4x3_variant.m3u8%5d%28https%3a%2f%2fdevstreaming-cdn.apple.com%2fvideos%2fstreaming%2fexamples%2fbipbop_4x3%2fbipbop_4x3_variant.m3u8%29.%20According%20to%20the%20HLS%20protocol%2c%20when%20a%20video%20is%20streamed%2c%20the%20first%20request%20sent%20must%20be%20a%20manifest.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200722-aaf18%2f&t=Ask%20a%20Flooder%2018%3a%20How%20do%20I%20load%20test%20video%20streaming%20with%20JMeter%3f">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

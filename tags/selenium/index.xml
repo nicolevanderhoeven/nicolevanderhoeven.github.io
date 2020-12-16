@@ -15,7 +15,19 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
       <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
-  Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+  Y la versión audio:
+ Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+    </item>
+    
+    <item>
+      <title>Pros and Cons of API load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200818-pros-and-cons/</link>
+      <pubDate>Tue, 18 Aug 2020 21:22:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200818-pros-and-cons/</guid>
+      <description>Originally posted here.
+‍API load testing is one of the most popular ways to run a load test because of the number of open source and commercial load testing tools available on the market that support it. Creating a script to hit your application&amp;rsquo;s API endpoints is the traditional approach to load testing, but it&amp;rsquo;s not the only one.
+Here are some things to consider when deciding whether or not API load testing is right for your application.</description>
     </item>
     
   </channel>

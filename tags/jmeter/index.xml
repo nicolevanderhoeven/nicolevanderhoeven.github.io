@@ -15,7 +15,8 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
       <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
-  Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+  Y la versión audio:
+ Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
     </item>
     
     <item>
@@ -36,6 +37,29 @@ I also wanted to see how to recreate a specific load profile that I commonly use
       <guid>https://nicolevanderhoeven.github.io/blog/20201126-week-of-testing-3/</guid>
       <description>I&amp;rsquo;ve had my fun playing around with k6 Cloud, the SaaS component. For Day 3, I thought it was time to jump into the heart of k6: k6 the open source load testing tool.
 First impressions: logging was a little sparser than I expect, coming from having used load testing tools that just do this for me automatically. I think one of the first things I&amp;rsquo;ll do with k6 is to create my own little &amp;ldquo;load testing starting script&amp;rdquo; that I&amp;rsquo;ll always use, with all of the appropriate logging already set up.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 18: How do I load test video streaming with JMeter?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</link>
+      <pubDate>Wed, 22 Jul 2020 22:49:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</guid>
+      <description>Originally posted here.
+In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;   Or listen to the audio version here:
+ HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 13: How do you do mobile load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</link>
+      <pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</guid>
+      <description>Originally posted here.
+How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
+  Or listen to the audio version here:
+ Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
     </item>
     
     <item>

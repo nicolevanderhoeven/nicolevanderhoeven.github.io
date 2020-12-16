@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Ask a Flooder 20: How can fear affect application performance? | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Ask a Flooder 20: How can fear affect application performance?" />
+<meta property="og:description" content="Originally posted here.
+In this video, I talk about the power of fear, and how it can end up affecting performance test results. ‍   Or listen to the audio version here:
+ Hi everyone, I&rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.
+The Dutch &ldquo;coronalijn&rdquo; I currently live in Maastricht, in the Netherlands." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200806-aaf20/" />
+<meta property="article:published_time" content="2020-08-06T22:43:28+01:00" />
+<meta property="article:modified_time" content="2020-08-06T22:43:28+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ask a Flooder 20: How can fear affect application performance?"/>
+<meta name="twitter:description" content="Originally posted here.
+In this video, I talk about the power of fear, and how it can end up affecting performance test results. ‍   Or listen to the audio version here:
+ Hi everyone, I&rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.
+The Dutch &ldquo;coronalijn&rdquo; I currently live in Maastricht, in the Netherlands."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200722-aaf18/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200813-dutch-coronavirus-hotline/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&text=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&is_video=false&description=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&name=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f&description=Originally%20posted%20here.%0aIn%20this%20video%2c%20I%20talk%20about%20the%20power%20of%20fear%2c%20and%20how%20it%20can%20end%20up%20affecting%20performance%20test%20results.%20%e2%80%8d%20%20%20Or%20listen%20to%20the%20audio%20version%20here%3a%0a%20Hi%20everyone%2c%20I%26rsquo%3bm%20Nicole%20van%20der%20Hoeven%2c%20back%20with%20another%20Ask%20a%20Flooder%2c%20and%20today%20I%20want%20to%20talk%20about%20the%20effect%20of%20fear%20on%20your%20performance%20outcomes.%0aThe%20Dutch%20%26ldquo%3bcoronalijn%26rdquo%3b%20I%20currently%20live%20in%20Maastricht%2c%20in%20the%20Netherlands.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&t=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-dutch-coronalijn">The Dutch &ldquo;coronalijn&rdquo;</a></li>
+    <li><a href="#what-does-that-have-to-do-with-performance">What does that have to do with performance?</a></li>
+    <li><a href="#how-do-we-account-for-fear-in-our-performance-testing">How do we account for fear in our performance testing?</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Ask a Flooder 20: How can fear affect application performance?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-08-06 22:43:28 &#43;0100 &#43;0100" itemprop="datePublished">2020-Aug-06</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/psychology" rel="tag">psychology</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/ask-a-flooder-20-how-can-fear-affect-application-performance-video">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/ask-a-flooder-20-how-can-fear-affect-application-performance-video">here</a>.</em></p>
+<p>In this video, I talk about the power of fear, and how it can end up affecting performance test results.
+‍
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/oeEFCrTYULE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>Or listen to the audio version here:</p>
+
+
+<iframe src="https://open.spotify.com/embed-podcast/episode/2cOfQrrUwyIKWbztgNdoXR" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<p>Hi everyone, I&rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.</p>
+<h2 id="the-dutch-coronalijn">The Dutch &ldquo;coronalijn&rdquo;</h2>
+<p>I currently live in Maastricht, in the Netherlands. At the beginning of this global pandemic, the only people getting tested actively for COVID-19 were either people who presented with serious symptoms of the disease, or health care professionals who were continually exposed to the disease and therefore at a higher risk of contracting it.</p>
+<p>Last month, on June 1st, the Dutch government made testing available to everybody. They set up a telephone hotline that any Dutch resident could call to set an appointment to get tested for a COVID-19 test. A task force was dispatched to make sure that they could test up to 30.000 people per day. Yet on the first day of testing, only 1.146 people were tested. So what happened?</p>
+<p>Well, it turned out that the bottleneck of the entire process wasn&rsquo;t getting enough tests, registering the tests, or even processing the test results. The bottleneck actually occurred way before that, when people called up the hotline to get an appointment.</p>
+<p>323.000 people called on the first day that the hotline opened. And not even all of them had called to make an appointment. Some of them were just calling for general information on the coronavirus despite the fact that the government made it clear that that&rsquo;s not what the line was for, and that there were other lines dedicated to information. There were reports on Twitter of people waiting up to 6 hours on the line just to talk to someone who would make an appointment for them. There were calls that got dropped. People said that sometimes it happened in the middle of a call. Even telephone operators that   the appointment system was down or slow and unusable for a lot of it.</p>
+<p>As a result, only 5,500 people actually had appointments booked on a day where there were 323,000 that called. That&rsquo;s 1.70%.</p>
+<h2 id="what-does-that-have-to-do-with-performance">What does that have to do with performance?</h2>
+<p>As performance engineers, we like to believe that everything we do is reasoned. We design tests based on quantitative data. We look at historical trends and metrics to help us decide how to build a workload model. But the truth is that that&rsquo;s often not enough.</p>
+<p>If anything, this pandemic has shown us just how wrong our guesses can be, whether or not they&rsquo;re  informed by facts, especially when it has to do with human behavior. We&rsquo;ve seen violent fights erupt over toilet paper. We&rsquo;ve seen peaks and troughs on the stock market that didn&rsquo;t have anything to do with the underlying companies. We&rsquo;ve seen arson on 5G cell towers. Because human beings are irrational, and it&rsquo;s really hard to capture that irrationality in our model for how users are going to behave.</p>
+<p>We may never be able to accurate predict how irrationality is going to affect the load on our application in production. But that doesn&rsquo;t mean that we shouldn&rsquo;t try. There are still things that we can do to mitigate the risk. I think that any application that is public-facing should be assessed for exposure to the risk of fear or other human psychological factors.</p>
+<h2 id="how-do-we-account-for-fear-in-our-performance-testing">How do we account for fear in our performance testing?</h2>
+<p>I actually wrote a whole blog post on this particular situation (the Dutch corona line), and how it might have been possible to predict (maybe not with 100% accuracy but with reasonable accuracy) how many people would have called the hotline.</p>
+<p>For example, we can look at statistics like the of the Netherlands or how many people normally get flu-like symptoms or at least report them at this time of the year. These are statistics that are readily available from the Department of Health, and we could have used them to inform our decisions on the workload model for such an application. We may not have gotten it exactly, but we would have at least bin in the same ballpark.</p>
+<p>If we have a good enough idea about the workload that our application would have to handle when it&rsquo;s influenced by fear, we can start running load tests around that. Another good open-ended kind of test to run, especially for applications that are particularly susceptible to fear, is the stress test. In a stress test, you push your application to its limits and you find out what they are. You could, for instance, start with your peak work load, and then add a certain number of users every 30 minutes and see how much your application can actually handle. You can do the same with soak tests, where you&rsquo;re exposing your application to the same amount of load for an extended period of time. Both of those kind of exploratory tests help you define the limits of your application and how it would respond if fear plays a role in the workload model in production.</p>
+<p>If we overlook this critical human element in our test design, then we leave ourselves, and our applications, vulnerable to performance degradation and, perhaps, outages.</p>
+<p>Till next time, happy flooding!</p>
+<p><em>Read <a href="blog/20200813-dutch-coronavirus-hotline/">this blog post</a> for more about the coronavirus hotline.</em></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-dutch-coronalijn">The Dutch &ldquo;coronalijn&rdquo;</a></li>
+    <li><a href="#what-does-that-have-to-do-with-performance">What does that have to do with performance?</a></li>
+    <li><a href="#how-do-we-account-for-fear-in-our-performance-testing">How do we account for fear in our performance testing?</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&text=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&is_video=false&description=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&title=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&name=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f&description=Originally%20posted%20here.%0aIn%20this%20video%2c%20I%20talk%20about%20the%20power%20of%20fear%2c%20and%20how%20it%20can%20end%20up%20affecting%20performance%20test%20results.%20%e2%80%8d%20%20%20Or%20listen%20to%20the%20audio%20version%20here%3a%0a%20Hi%20everyone%2c%20I%26rsquo%3bm%20Nicole%20van%20der%20Hoeven%2c%20back%20with%20another%20Ask%20a%20Flooder%2c%20and%20today%20I%20want%20to%20talk%20about%20the%20effect%20of%20fear%20on%20your%20performance%20outcomes.%0aThe%20Dutch%20%26ldquo%3bcoronalijn%26rdquo%3b%20I%20currently%20live%20in%20Maastricht%2c%20in%20the%20Netherlands.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200806-aaf20%2f&t=Ask%20a%20Flooder%2020%3a%20How%20can%20fear%20affect%20application%20performance%3f">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

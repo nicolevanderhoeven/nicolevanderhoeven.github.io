@@ -15,7 +15,8 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
       <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
-  Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+  Y la versión audio:
+ Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
     </item>
     
     <item>
@@ -24,7 +25,8 @@
       <pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid>
-      <description>I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended this very excellent video by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.</description>
+      <description>Listen to the audio version of this blog post here:
+ I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended this very excellent video by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.</description>
     </item>
     
     <item>
@@ -120,6 +122,51 @@ In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User C
 People often start load testing by creating a script in their favorite load testing tool, but good load testing starts before that. Planning a load test may seem like a tedious exercise, but it is essential to ensuring the success of your testing.
 A test plan should answer why, what, who, when, and how the testing will be carried out.
 A good test plan, particularly for load testing, includes the following components:</description>
+    </item>
+    
+    <item>
+      <title>Pros and Cons of API load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200818-pros-and-cons/</link>
+      <pubDate>Tue, 18 Aug 2020 21:22:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200818-pros-and-cons/</guid>
+      <description>Originally posted here.
+‍API load testing is one of the most popular ways to run a load test because of the number of open source and commercial load testing tools available on the market that support it. Creating a script to hit your application&amp;rsquo;s API endpoints is the traditional approach to load testing, but it&amp;rsquo;s not the only one.
+Here are some things to consider when deciding whether or not API load testing is right for your application.</description>
+    </item>
+    
+    <item>
+      <title>Performance testing the Dutch coronavirus hotline</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200813-dutch-coronavirus-hotline/</link>
+      <pubDate>Thu, 13 Aug 2020 22:18:04 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200813-dutch-coronavirus-hotline/</guid>
+      <description>Read the original Dutch version here. This English version was first posted here.
+On June 1st, 2020, the National Institute of Health and Environment (RIVM) announced that everyone with certain symptoms could call the hotline 0800-1202 to arrange a free COVID-19 test. The promise: call today, get tested tomorrow, and receive the results the day after that. The reality, though, did not live up to expectations.
+The opening day of the hotline was chaotic, and many Dutch people reported connection problems due to a system overload.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 20: How can fear affect application performance?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</link>
+      <pubDate>Thu, 06 Aug 2020 22:43:28 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</guid>
+      <description>Originally posted here.
+In this video, I talk about the power of fear, and how it can end up affecting performance test results. ‍   Or listen to the audio version here:
+ Hi everyone, I&amp;rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.
+The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in the Netherlands.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 18: How do I load test video streaming with JMeter?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</link>
+      <pubDate>Wed, 22 Jul 2020 22:49:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</guid>
+      <description>Originally posted here.
+In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;   Or listen to the audio version here:
+ HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest.</description>
     </item>
     
     <item>
@@ -226,6 +273,29 @@ Guides: Using Element with Flood‍
       <description>Originally posted here.
 We&amp;rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&amp;rsquo;re doing to keep self-isolation from being too isolating— and maybe it&amp;rsquo;ll help your team too!
 Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out.</description>
+    </item>
+    
+    <item>
+      <title>On-premise load testing advantages and disadvantages</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200430-on-premise-load-testing/</link>
+      <pubDate>Thu, 30 Apr 2020 23:06:59 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200430-on-premise-load-testing/</guid>
+      <description>Originally posted here.
+Where you run your load test can affect the results that you get as well as your project&amp;rsquo;s bottom line. In general, there are two infrastructure options to consider for load testing your apps: on-premise and cloud. Which type of environment is best for load testing both web or mobile apps?
+Differences between on-premise and cloud load testing What is on-premise load testing? On-premise load testing is running your performance or load testing scripts on load generators you physically control.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 13: How do you do mobile load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</link>
+      <pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</guid>
+      <description>Originally posted here.
+How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
+  Or listen to the audio version here:
+ Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
     </item>
     
     <item>

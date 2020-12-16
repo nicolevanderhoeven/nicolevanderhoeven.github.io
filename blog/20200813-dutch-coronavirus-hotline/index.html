@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Performance testing the Dutch coronavirus hotline | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Performance testing the Dutch coronavirus hotline" />
+<meta property="og:description" content="Read the original Dutch version here. This English version was first posted here.
+On June 1st, 2020, the National Institute of Health and Environment (RIVM) announced that everyone with certain symptoms could call the hotline 0800-1202 to arrange a free COVID-19 test. The promise: call today, get tested tomorrow, and receive the results the day after that. The reality, though, did not live up to expectations.
+The opening day of the hotline was chaotic, and many Dutch people reported connection problems due to a system overload." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200813-dutch-coronavirus-hotline/" />
+<meta property="article:published_time" content="2020-08-13T22:18:04+01:00" />
+<meta property="article:modified_time" content="2020-08-13T22:18:04+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Performance testing the Dutch coronavirus hotline"/>
+<meta name="twitter:description" content="Read the original Dutch version here. This English version was first posted here.
+On June 1st, 2020, the National Institute of Health and Environment (RIVM) announced that everyone with certain symptoms could call the hotline 0800-1202 to arrange a free COVID-19 test. The promise: call today, get tested tomorrow, and receive the results the day after that. The reality, though, did not live up to expectations.
+The opening day of the hotline was chaotic, and many Dutch people reported connection problems due to a system overload."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200806-aaf20/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200818-pros-and-cons/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&text=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&is_video=false&description=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Performance%20testing%20the%20Dutch%20coronavirus%20hotline&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&name=Performance%20testing%20the%20Dutch%20coronavirus%20hotline&description=Read%20the%20original%20Dutch%20version%20here.%20This%20English%20version%20was%20first%20posted%20here.%0aOn%20June%201st%2c%202020%2c%20the%20National%20Institute%20of%20Health%20and%20Environment%20%28RIVM%29%20announced%20that%20everyone%20with%20certain%20symptoms%20could%20call%20the%20hotline%200800-1202%20to%20arrange%20a%20free%20COVID-19%20test.%20The%20promise%3a%20call%20today%2c%20get%20tested%20tomorrow%2c%20and%20receive%20the%20results%20the%20day%20after%20that.%20The%20reality%2c%20though%2c%20did%20not%20live%20up%20to%20expectations.%0aThe%20opening%20day%20of%20the%20hotline%20was%20chaotic%2c%20and%20many%20Dutch%20people%20reported%20connection%20problems%20due%20to%20a%20system%20overload.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&t=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-situation">The situation</a></li>
+    <li><a href="#the-effect-of-fear-on-performance">The effect of fear on performance</a></li>
+    <li><a href="#improvements-to-the-corona-hotline">Improvements to the corona hotline</a>
+      <ul>
+        <li><a href="#better-estimation">Better estimation</a></li>
+        <li><a href="#injecting-load">Injecting load</a></li>
+        <li><a href="#using-different-test-scenarios">Using different test scenarios</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-automation-to-lessen-fomo-risk">Using automation to lessen FOMO risk</a>
+      <ul>
+        <li><a href="#interactive-voice-response">Interactive Voice Response</a></li>
+        <li><a href="#building-a-web-app">Building a web app</a></li>
+      </ul>
+    </li>
+    <li><a href="#testing-the-system-end-to-end">Testing the system end-to-end</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Performance testing the Dutch coronavirus hotline
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-08-13 22:18:04 &#43;0100 &#43;0100" itemprop="datePublished">2020-Aug-13</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/psychology" rel="tag">psychology</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/performance-testing-the-story-of-the-dutch-coronavirus-hotline">
+
+<p><em>Read the original Dutch version <a href="/blog/20200704-performanceverbeteringen-voor-de-coronalijn/">here</a>.</em>
+<em>This English version was first posted <a href="https://www.flood.io/blog/performance-testing-the-story-of-the-dutch-coronavirus-hotline">here</a>.</em></p>
+<p>On June 1st, 2020, the National Institute of Health and Environment (RIVM) announced that everyone with certain symptoms could call the hotline 0800-1202 to arrange a free COVID-19 test. The promise: call today, get tested tomorrow, and receive the results the day after that. The reality, though, did not live up to expectations.</p>
+<p>The opening day of the hotline was chaotic, and many Dutch people reported connection problems due to a system overload. Yet this could have been prevented with a better understanding of how human psychology can affect application performance.</p>
+<h2 id="the-situation">The situation</h2>
+<p><a href="https://nos.nl/collectie/13824/artikel/2335758-ggd-en-klaar-voor-massaal-testen-tijd-van-limiterende-factoren-voorbij">According to Dr. Ann Vossen</a>, chairperson of the task force charged with scaling up mass testing in the Netherlands, the country was ready to process 30,000 tests per day. This number corresponds to <a href="https://nos.nl/artikel/2335790-drukte-op-nieuw-telefoonnummer-voor-coronatests-0800-1202.html">the national capacity</a> of all the municipal health clinics (GGDs) in the Netherlands. Despite this claim, though, <a href="https://www.ad.nl/binnenland/liefst-323-000-telefoontjes-naar-nieuw-nummer-voor-coronatest-systemen-overbelast~a16a9a50">only 1,146 people were actually tested</a> on the first day of testing (the day after the opening of the hotline). Perhaps more importantly, only 5,748 appointments were set on June 1st. The situation was no doubt exacerbated by the overwhelming 323,000 people who called the hotline on its first day, prompting even the telephone operators to admit that <a href="https://www.volkskrant.nl/nieuws-achtergrond/coronatestnummer-kampt-met-kinderziektes-maar-ggd-s-kunnen-de-drukte-goed-aan~b2f332d2/">they&rsquo;d had troubles</a> logging into the appointment system.</p>
+<p><img src="/blog/assets/20200704-01.jpg" alt="">
+<em>Bron: From <a href="https://twitter.com/GGDGHORNL/status/1267351996379643906">@ggdghornl</a>, Twitter</em></p>
+<p>[&ldquo;We see that there are many calls going to 0800-1202. You can call for an appointment until 8pm tonight. Please try your call later to avoid long wait times.&quot;]</p>
+<p>On Twitter, users shared horror stories: one claimed to have <a href="https://twitter.com/Ed_van_Iterson/status/1267429180347691011">waited on the line for 6 hours</a>, only to be told that the system was down and no appointments could be made; another complained about <a href="https://twitter.com/maticus_spazz/status/1267374692941418496">getting disconnected</a> after getting in touch with an operator. Yet another <a href="https://twitter.com/leovanlinden/status/1267408142813605888">posted a video</a> of calling the hotline and a recorded message saying &ldquo;Al onze medewekers zijn op dit moment in gesprek. We zullen u zo snel mogelijk te woord staan. [All of our operators are currently on other calls. We will answer you as soon as possible].&rdquo;</p>
+<p>The second day was somewhat better: <a href="https://www.volkskrant.nl/nieuws-achtergrond/coronatestnummer-kampt-met-kinderziektes-maar-ggd-s-kunnen-de-drukte-goed-aan~b2f332d2/">there were 11,000 appointments made</a>, partly because of the lower amount of phone calls and partly because of some fixes of technical problems. In the first week, the number of appointments increased to 50,000 (about 7,142 per day), which was still significantly lower than expected.</p>
+<p>There are some lessons that we can learn from this case study.</p>
+<p><img src="/blog/assets/20200704-02.jpeg" alt="">
+<em>Source: Coronavirus test procedure from <a href="https://ggdhm.nl/thema-s/item/infectieziekten/testbeleid">GGD Hollands Midden</a></em></p>
+<p><em>English translation:</em></p>
+<blockquote>
+<p>Do you have these (mild) symptoms?:</p>
+<ul>
+<li>cough</li>
+<li>blocked or runny nose</li>
+<li>fever</li>
+<li>loss of smell or taste</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Step 1: Make an appointment</p>
+<ul>
+<li>Call the national number 0800-1202</li>
+<li>Have your BSN with you when you call</li>
+<li>Make an appointment to get tested at one of our locations</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Step 2: Test</p>
+<ul>
+<li>Go to the selected location at the scheduled time</li>
+<li>You will be tested at the test location</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Step 3: Results and eventual start of source and contact research</p>
+<ul>
+<li>You will be called with your results within 48 hours</li>
+<li>If you are infected with the coronavirus, the GGD will call you for source and contact research
+*If you show more serious symptoms, or if you fall within a high-risk group, report to your doctor or to the emergency help line.</li>
+</ul>
+</blockquote>
+<h2 id="the-effect-of-fear-on-performance">The effect of fear on performance</h2>
+<p>This coronavirus has already shown us a side of humanity that we&rsquo;d perhaps rather not see: <a href="https://www.bbc.com/news/world-australia-51731422">fights over toilet paper</a>, <a href="https://snacks.robinhood.com/newsletters/rMxwcb7y7lMZoI5NY6qf7/">chaos on the stock market</a> due to panic, and <a href="https://www.volkskrant.nl/nieuws-achtergrond/nctv-waarschuwt-voor-extremistische-protestacties-door-5g-tegenstanders-die-vrezen-voor-coronavirus~bf1400b8/">sabotage of 5G cell towers</a> based on a belief that they caused COVID-19. As much as we&rsquo;d like to believe it, we&rsquo;re not always the most rational beings. We all have the tendency to behave unpredictably, especially when we&rsquo;re afraid.</p>
+<p>It&rsquo;s no wonder that the coronavirus testing line was so welcome. The fact that there were 323,000 callers on the first day is even more remarkable when we remember that majority of Dutch residents had been in self-isolation for months at that point, which lowered their chances of contracting the virus. In theory, the fear that drove these callers might have been somewhat irrational, but not unpredictable.</p>
+<p><img src="/blog/assets/20200704-03.jpeg" alt=""></p>
+<p>In English, we call this FOMO (Fear of Missing Out). We&rsquo;ve already clearly seen <a href="https://www.flood.io/blog/fomo-and-performance-testing-why-robinhood-went-down">how FOMO can drive users</a> en masse to an application, with effects on its performance. In this case, people were afraid that coronavirus test shortages would mean there weren&rsquo;t enough tests to go around, and they wanted to be first in line to get tested.</p>
+<p>Another problem was that <a href="https://www.trouw.nl/binnenland/de-balans-na-een-week-testen-het-plan-was-mooier-dan-de-praktijk~b86399b7/">one in four callers</a> just wanted general information about COVID-19, despite government pleas to keep the hotline free for coronavirus test appointments only. It didn&rsquo;t help that the hotline opened on a Dutch national holiday, White Monday, and more people were home than usual for a Monday. The high number of unrelated calls was unexpected, but nevertheless factored into system overload.</p>
+<p>What could we have done to improve this system?</p>
+<h2 id="improvements-to-the-corona-hotline">Improvements to the corona hotline</h2>
+<h3 id="better-estimation">Better estimation</h3>
+<p>As difficult as it is to predict FOMO&rsquo;s effects, we can still try. We can make educated guesses based on related statistics.</p>
+<p>Just one month before the coronavirus test hotline was opened, <a href="https://www.zwollenu.nl/500-000-tot-700-000-nederlanders-besmet-met-coronavirus/">Jaap van Dissel</a>, the head of RIVM, estimated that there were up to 700,000 Dutch residents infected by the coronavirus. Why, then, was it such a surprise that more than 300,000 of them had called? Furthermore, the RIVM had encouraged people with a broad list of symptoms (such as colds, coughs, or fever) to call, and it&rsquo;s reasonable to assume that some people with conditions other than COVID-19 might also have called.</p>
+<p>Even if we assume that 20% of the 700,000 people with the novel coronavirus did not have symptoms (<a href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200306-sitrep-46-covid-19.pdf?sfvrsn=96b04adf_4">according to WHO research</a>), we still arrive at a predicted 140,000 calls, which is still 25 times what was the coronavirus testing system was able to process on the first day.</p>
+<p>If we have an educated estimate, we can start testing.</p>
+<p>‍<img src="/blog/assets/20200704-04.jpg" alt=""></p>
+<h3 id="injecting-load">Injecting load</h3>
+<p>When a resident calls the hotline, the call is routed to one of several operators working from home. This is often done with a telephony server that forwards calls based on some type of round-robin system. We can execute load tests on this server to determine how many phone calls a server can process and route successfully, with minimal delay and without message queueing.</p>
+<p>Then, the operator enters personal information from the caller into the appointment system, including their government identification number (BSN) and address. We can surmise that the system checks the identity to verify the validity of the BSN, and then sends some details to a database. The closest municipal clinic to the caller can then use the data to process and schedule an appointment. We can also inject load at this stage by simulating the calls that the appointment system creates with an API load testing tool like JMeter or Gatling.</p>
+<h3 id="using-different-test-scenarios">Using different test scenarios</h3>
+<p>With such a public announcement of the hotline&rsquo;s opening, a <strong>spike test</strong> before release could have yielded some useful information. In a spike test, we simulate a sharp increase in users over a short period of time. For example, we could have simulated an increase in users from 0 to 700,000 on the telephony system over 10 minutes to see how the application would have handled that.</p>
+<p><strong>Soak tests</strong> could also have been useful in this case. The hotline&rsquo;s opening hours were from 8 am to 8 pm, so it was open for 12 hours in total. With soak tests, we can generate load on an application for an extended amount of time. Soak tests can reveal memory leaks or other bottlenecks in the processing of data that might occur after hours.</p>
+<p>These are ways we could have tested the system as it is, but are there improvements that we could have made in the system to make it more resilient to reduce the FOMO factor?</p>
+<h2 id="using-automation-to-lessen-fomo-risk">Using automation to lessen FOMO risk</h2>
+<p>The system had some manual parts of the process that may have exacerbated load issues. Here&rsquo;s how this system could have been automated to reduce bottlenecks.</p>
+<h3 id="interactive-voice-response">Interactive Voice Response</h3>
+<p>Telephony servers commonly use Interactive Voice Response (IVR), an automated menu system for voice calls that uses either voice recognition or keypress tones to navigate a user through a series of choices. We&rsquo;re all familiar with it: &ldquo;<em>For Dutch, press 1. For English, press 2&hellip;</em>&rdquo; Such a system might have helped reduce the overall load by quickly filtering out callers in the 25% who weren&rsquo;t interested in creating an appointment. &ldquo;<em>If you&rsquo;d like to book an appointment for a coronavirus test, press 1. Otherwise, please call the information hotline at&hellip;.</em>&rdquo;</p>
+<p>Here&rsquo;s what an IVR system could look like:</p>
+<p><img src="/blog/assets/20200704-05.jpg" alt="">
+<em>From: <a href="http://vanguardnetworks.com.sg/IVR.html">Vanguard Networks</a></em>
+‍
+Load testing IVR systems can be difficult, and it usually requires the use of highly specialized commercial tools. However, introducing a new tool may also increase the time required for load testing.</p>
+<h3 id="building-a-web-app">Building a web app</h3>
+<p>Another approach would be to implement a web app to verify identity and capture personal information quickly. In the Netherlands, we already have <a href="https://www.digid.nl/wat-is-digid/">DigiD</a>, an identity verification system that is heavily used for governmental services. <a href="https://mijn.overheid.nl/">Mijn Overheid</a>, which is a central government portal accessible to every Dutch resident, already interfaces with DigiD as the sole method of logging in. Reusing these existing services could have saved a lot of the work on a web app— not to mention reducing the bottlenecks inherent in a more manual process like a telephone hotline.</p>
+<p>‍<img src="/blog/assets/20200704-06.jpg" alt="">
+<em>Source: <a href="https://mijn.overheid.nl/">Mijn Overheid</a></em>
+‍</p>
+<h2 id="testing-the-system-end-to-end">Testing the system end-to-end</h2>
+<p>We&rsquo;ve identified a few ways to load test various components of the coronavirus hotline, both in its current incarnation as well as in hypothetical improved versions. Isolating each component and running load tests at that level can help us resolve performance issues inherent in the component. However, there are still bottlenecks that are only revealed when the integrations between components is tested as well. That&rsquo;s where end-to-end testing comes in.</p>
+<p>For the coronavirus hotline, end-to-end testing means being able to run load tests on the entire process and seeing how data flows from one to the other: the call forwarding from the telephony server, the identity verification system, the appointment system, the database of personal information, the servers of every municipal clinic, and the email/text notifications with appointment details. As modern applications grow more complex, it can be tempting not to run end-to-end tests, but we do so at great risk of functional or nonfunctional issues.</p>
+<p>An area of end-to-end testing that is often overlooked is the human factor, which can also be a bottleneck. Had hotline operators been trained to ask early on in the call whether the caller wanted to make an appointment, to filter out unrelated calls? Can the coronavirus testing and test result processing, heavily involving manual work from medical professionals, match the stated requirements (test within 24 hours, result within 48 hours) even when the digital components are performant? Some people waited for an hour in the cities of <a href="https://www.ed.nl/eindhoven/in-de-file-voor-een-stukje-zekerheid-meteen-drukte-bij-teststraat-voor-corona-in-eindhoven~a27eec83/">Eindhoven</a> and <a href="https://www.pzc.nl/zeeuws-nieuws/drukte-bij-teststraat-in-goes-na-openstellen-nummer-voor-coronatest~aa8a6cb2/">Goes</a> due to traffic congestion from cars near the test centers, leading to delays in the testing schedule.</p>
+<p>While it can be difficult to load test these logistical systems with automated tools, they may have significant effects on the overall performance of an application and should be considered.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Often, performance issues can lead to a tangible loss in profits or a more intangible loss in reputation. In this case study, poor performance had a direct impact on people&rsquo;s health. Potentially sick people were unable to make appointments to get tested, and later treated. Delayed tests could have led to an increased infection rate as people waited for a confirmed diagnosis. Hotline operators also admitted that slowness in the system led to them sometimes <a href="https://wnl.tv/2020/06/08/chaos-bij-de-coronalijn-personeel-slaat-alarm/">giving out test results</a> against instructions to wait for trained medical professionals to do so.</p>
+<p>‍<img src="/blog/assets/20200704-07.jpg" alt=""></p>
+<p>Human psychological factors can make a system more complex to load test. <a href="https://www.trouw.nl/binnenland/de-balans-na-een-week-testen-het-plan-was-mooier-dan-de-praktijk~b86399b7/">According to Andrea Evers</a> (LUCM), a health psychological professor, &ldquo;<em>Door de uitbraak van corona zijn mensen in een langdurige stresssituatie beland. Onzekerheid, onvoorspelbaarheid en oncontroleerbaarheid maken dat ze de behoefte hebben om zaken juist wel te controleren of voorspelbaar te maken</em> [The coronavirus outbreak has put people in a situation of chronic stress. The uncertainty, unpredictability, and helplessness of the situation cause a need to make things controllable or predictable].&rdquo;</p>
+<p>As performance testers, we can use statistics and a systematic attitude combined with knowledge of human factors in applications to try to predict the unpredictable.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-situation">The situation</a></li>
+    <li><a href="#the-effect-of-fear-on-performance">The effect of fear on performance</a></li>
+    <li><a href="#improvements-to-the-corona-hotline">Improvements to the corona hotline</a>
+      <ul>
+        <li><a href="#better-estimation">Better estimation</a></li>
+        <li><a href="#injecting-load">Injecting load</a></li>
+        <li><a href="#using-different-test-scenarios">Using different test scenarios</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-automation-to-lessen-fomo-risk">Using automation to lessen FOMO risk</a>
+      <ul>
+        <li><a href="#interactive-voice-response">Interactive Voice Response</a></li>
+        <li><a href="#building-a-web-app">Building a web app</a></li>
+      </ul>
+    </li>
+    <li><a href="#testing-the-system-end-to-end">Testing the system end-to-end</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&text=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&is_video=false&description=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Performance%20testing%20the%20Dutch%20coronavirus%20hotline&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&title=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&name=Performance%20testing%20the%20Dutch%20coronavirus%20hotline&description=Read%20the%20original%20Dutch%20version%20here.%20This%20English%20version%20was%20first%20posted%20here.%0aOn%20June%201st%2c%202020%2c%20the%20National%20Institute%20of%20Health%20and%20Environment%20%28RIVM%29%20announced%20that%20everyone%20with%20certain%20symptoms%20could%20call%20the%20hotline%200800-1202%20to%20arrange%20a%20free%20COVID-19%20test.%20The%20promise%3a%20call%20today%2c%20get%20tested%20tomorrow%2c%20and%20receive%20the%20results%20the%20day%20after%20that.%20The%20reality%2c%20though%2c%20did%20not%20live%20up%20to%20expectations.%0aThe%20opening%20day%20of%20the%20hotline%20was%20chaotic%2c%20and%20many%20Dutch%20people%20reported%20connection%20problems%20due%20to%20a%20system%20overload.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200813-dutch-coronavirus-hotline%2f&t=Performance%20testing%20the%20Dutch%20coronavirus%20hotline">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

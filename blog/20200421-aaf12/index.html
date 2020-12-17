@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing? | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?" />
+<meta property="og:description" content="When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &ldquo;it depends&rdquo;.
+  Or catch the audio version here:
+ Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &ldquo;Puppeteer vs. Selenium: which one is better for load testing?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200421-aaf12/" />
+<meta property="article:published_time" content="2020-04-21T17:36:28+01:00" />
+<meta property="article:modified_time" content="2020-04-21T17:36:28+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?"/>
+<meta name="twitter:description" content="When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &ldquo;it depends&rdquo;.
+  Or catch the audio version here:
+ Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &ldquo;Puppeteer vs. Selenium: which one is better for load testing?"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200414-aaf11/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&text=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&is_video=false&description=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&name=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f&description=When%20it%20comes%20to%20software%20testing%2c%20the%20debate%20of%20Puppeteer%20vs%20Selenium%20is%20a%20hot%20one.%20Nicole%20tackles%20it%20here%20to%20determine%20which%20one%20is%20better%20for%20load%20testing%20in%20particular.%20Spoiler%3a%20The%20answer%20is%20still%20%26ldquo%3bit%20depends%26rdquo%3b.%0a%20%20Or%20catch%20the%20audio%20version%20here%3a%0a%20Hi%20everyone%2c%20Nicole%20here%20again%2c%20back%20for%20another%20Ask%20a%20Flooder%2c%20and%20today%2c%20the%20question%20is%3a%20%26ldquo%3bPuppeteer%20vs.%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&t=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#difference-between-selenium-and-puppeteer">Difference between Selenium and Puppeteer</a>
+      <ul>
+        <li><a href="#pros-and-cons-of-selenium">Pros and cons of Selenium</a></li>
+        <li><a href="#pros-and-cons-of-puppeteer">Pros and cons of Puppeteer</a></li>
+      </ul>
+    </li>
+    <li><a href="#should-you-choose-selenium-or-puppeteer-for-load-testing">Should you choose Selenium or Puppeteer for load testing?</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-04-21 17:36:28 &#43;0100 &#43;0100" itemprop="datePublished">2020-Apr-21</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/puppeteer" rel="tag">puppeteer</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/selenium" rel="tag">selenium</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &ldquo;it depends&rdquo;.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/K61W7ivhsuE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Or catch the audio version here:</p>
+
+
+<iframe src="https://open.spotify.com/embed-podcast/episode/76u25lI7sFx5SwgbsFLU5Z" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<p>Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &ldquo;Puppeteer vs. Selenium: which one is better for load testing?&rdquo;</p>
+<p>We&rsquo;re actually getting this quite a bit now as Puppeteer grows in popularity, but first, let&rsquo;s discuss the similarities. They&rsquo;re tools that you can use to drive browsers. The work by identifying and interacting with elements on a website in the same way that a user would. They are also both open-source, and both can be used for load testing. This is a great strategy because instead of writing tests for an automation suite and then tests for load testing, you can just write the one test suite and re-use it, so it saves a lot of resources in the end. To answer this question, I&rsquo;m going to focus on load testing because that&rsquo;s what my experience is in.</p>
+<h2 id="difference-between-selenium-and-puppeteer">Difference between Selenium and Puppeteer</h2>
+<h3 id="pros-and-cons-of-selenium">Pros and cons of Selenium</h3>
+<p>Now for the difference. Selenium supports more browsers than does Puppeteer. It supports Chrome, Firefox, IE, Safari, and Opera, so there are a lot more options to choose from depending on your application.</p>
+<p>Selenium is also what I would call automation-first. It was built with automation in mind, which means it&rsquo;s very good at that. It&rsquo;s very robust, and if you have a complicated test scenario, Selenium is an excellent choice.</p>
+<p>It&rsquo;s also been around for much longer than Puppeteer, which is important because that means it&rsquo;s had more time to build up a community. There are way more resources and tutorials for Selenium than for Puppeteer.</p>
+<p>It&rsquo;s also, unfortunately, very resource-intensive. That&rsquo;s not something that you would typically care too much about from a test automation perspective, but when you&rsquo;re running thousands of users on the cloud, it IS important to keep in mind that Selenium, just because of how it&rsquo;s built and its complexity, can only run about five users per node. We&rsquo;ve found that out at Flood, after baselining specifically an AWS m5.xlarge instance. So you can look at the specs of that and compare it with the machines that you&rsquo;re wanting to run Selenium on, to see how that would equate for you.</p>
+<h3 id="pros-and-cons-of-puppeteer">Pros and cons of Puppeteer</h3>
+<p>Puppeteer is a NodeJS library developed by Google, which means it plays very well with Chrome. There are a whole lot of things that you have access to with Puppeteer, and if you&rsquo;re using it with Chrome, pretty much anything in Chrome, including rendering times, you can see and access with a Puppeteer script. So that&rsquo;s a huge advantage.</p>
+<p>Unfortunately, that also means it supports fewer browsers. Obviously, it supports Chrome very well, and they recently came out with support for Firefox, although they do have plans to incorporate support for more browsers in the future.</p>
+<p>One of Puppeteer&rsquo;s advantages is that we at Flood actually created a tool on top of Puppeteer. It&rsquo;s also open-source. It&rsquo;s called Flood Element, and Element is built to be performance-first because obviously, that&rsquo;s what we had in mind when we were building it. It takes everything that&rsquo;s good about Puppeteer and makes it really easy to set parameters that you normally would expect to need for load testing, like users and ramp-up.</p>
+<p>This also means that it&rsquo;s way less resource-intensive. I said that with Selenium, you can run up to five users on an AWS m5.xlarge instance, and for the same instance type, you can run, from our experiments, anywhere from 30-50 Element scripts/users. That is a huge saving when you&rsquo;re running a really large-scale test.</p>
+<h2 id="should-you-choose-selenium-or-puppeteer-for-load-testing">Should you choose Selenium or Puppeteer for load testing?</h2>
+<p>I would say that if you already have a large Selenium automation suite, if you have a complex test scenario, or if you aren&rsquo;t running that many users for your load test, then Selenium is a great choice. If you ARE running thousands of users, though, and resource efficiency, and therefore cost efficiency, is really important to you, then choose Element.</p>
+<p>My advice is always to try both. If you have the time, do a proof of concept with both of them. That way, your whole team can better understand what the pros and cons are for each one and decide which one is best going forward. Or maybe you don&rsquo;t even decide on one. At Flood, we support both of them at the same price, so it depends on what you prefer.</p>
+<p>Until next time, happy flooding!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#difference-between-selenium-and-puppeteer">Difference between Selenium and Puppeteer</a>
+      <ul>
+        <li><a href="#pros-and-cons-of-selenium">Pros and cons of Selenium</a></li>
+        <li><a href="#pros-and-cons-of-puppeteer">Pros and cons of Puppeteer</a></li>
+      </ul>
+    </li>
+    <li><a href="#should-you-choose-selenium-or-puppeteer-for-load-testing">Should you choose Selenium or Puppeteer for load testing?</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&text=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&is_video=false&description=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&title=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&name=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f&description=When%20it%20comes%20to%20software%20testing%2c%20the%20debate%20of%20Puppeteer%20vs%20Selenium%20is%20a%20hot%20one.%20Nicole%20tackles%20it%20here%20to%20determine%20which%20one%20is%20better%20for%20load%20testing%20in%20particular.%20Spoiler%3a%20The%20answer%20is%20still%20%26ldquo%3bit%20depends%26rdquo%3b.%0a%20%20Or%20catch%20the%20audio%20version%20here%3a%0a%20Hi%20everyone%2c%20Nicole%20here%20again%2c%20back%20for%20another%20Ask%20a%20Flooder%2c%20and%20today%2c%20the%20question%20is%3a%20%26ldquo%3bPuppeteer%20vs.%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200421-aaf12%2f&t=Ask%20a%20Flooder%2012%3a%20Puppeteer%20vs%20Selenium%3a%20which%20one%20is%20better%20for%20load%20testing%3f">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

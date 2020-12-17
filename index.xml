@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 16 Dec 2020 18:18:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Dec 2020 15:29:57 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week of Testing Wrap-up: My thoughts on k6 as a load testing tool</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</link>
+      <pubDate>Thu, 17 Dec 2020 15:29:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</guid>
+      <description>I decided to make a final wrap-up video for my &amp;ldquo;Week of Testing&amp;rdquo; with k6&amp;hellip; ok, so it&amp;rsquo;s actually three weeks later now, but I wanted to explore k6 a little bit more before I gave my opinion on it.
+  Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
+    </item>
+    
     <item>
       <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
@@ -197,7 +207,8 @@ In this video, I answer the question: &amp;ldquo;How do I load test video stream
       <pubDate>Wed, 22 Jul 2020 21:30:43 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</guid>
-      <description>On this episode of Joe Colantonio’s TestGuild performance podcast, I talked about how human factors are often not taken into consideration when designing load tests, which is a mistake that can have serious consequences.
+      <description>On this episode of the TestGuild performance podcast, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.
+  Here&amp;rsquo;s the plain audio version:
  </description>
     </item>
     
@@ -318,6 +329,29 @@ Differences between on-premise and cloud load testing What is on-premise load te
 How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
   Or listen to the audio version here:
  Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
+    </item>
+    
+    <item>
+      <title>Browser-based load testing in 2020</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</link>
+      <pubDate>Thu, 23 Apr 2020 16:48:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</guid>
+      <description>Originally posted here.
+We first announced our open-source browser-based load testing tool based on Puppeteer, Flood Element, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:
+Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
+Kevin Dunne: A new approach to load testing with browser level users</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</link>
+      <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
+      <description>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+  Or catch the audio version here:
+ Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
     </item>
     
     <item>

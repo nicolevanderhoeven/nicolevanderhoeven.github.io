@@ -217,6 +217,29 @@ How do you load test a native mobile app? I discuss the general approach to mobi
     </item>
     
     <item>
+      <title>Browser-based load testing in 2020</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</link>
+      <pubDate>Thu, 23 Apr 2020 16:48:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</guid>
+      <description>Originally posted here.
+We first announced our open-source browser-based load testing tool based on Puppeteer, Flood Element, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:
+Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
+Kevin Dunne: A new approach to load testing with browser level users</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</link>
+      <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
+      <description>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+  Or catch the audio version here:
+ Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+    </item>
+    
+    <item>
       <title>Mitad de allá y mitad de aquí: reflexiones de una políglota multinacional</title>
       <link>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</link>
       <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>

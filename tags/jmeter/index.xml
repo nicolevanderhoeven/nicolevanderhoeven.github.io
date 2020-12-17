@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 16 Dec 2020 18:18:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Dec 2020 15:29:57 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week of Testing Wrap-up: My thoughts on k6 as a load testing tool</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</link>
+      <pubDate>Thu, 17 Dec 2020 15:29:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</guid>
+      <description>I decided to make a final wrap-up video for my &amp;ldquo;Week of Testing&amp;rdquo; with k6&amp;hellip; ok, so it&amp;rsquo;s actually three weeks later now, but I wanted to explore k6 a little bit more before I gave my opinion on it.
+  Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
+    </item>
+    
     <item>
       <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
@@ -60,6 +70,18 @@ In this video, I answer the question: &amp;ldquo;How do I load test video stream
 How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
   Or listen to the audio version here:
  Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
+    </item>
+    
+    <item>
+      <title>Browser-based load testing in 2020</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</link>
+      <pubDate>Thu, 23 Apr 2020 16:48:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</guid>
+      <description>Originally posted here.
+We first announced our open-source browser-based load testing tool based on Puppeteer, Flood Element, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:
+Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
+Kevin Dunne: A new approach to load testing with browser level users</description>
     </item>
     
     <item>

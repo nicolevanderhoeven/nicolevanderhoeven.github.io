@@ -3,6 +3,96 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nicolevanderhoeven.github.io/map/</loc>
+    <lastmod>2020-12-21T20:18:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2020-12-21T20:18:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/productivity/</loc>
+    <lastmod>2020-12-21T20:18:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/culture/</loc>
+    <lastmod>2020-12-21T20:15:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/flood-io/</loc>
+    <lastmod>2020-12-21T20:03:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/flood-element/</loc>
+    <lastmod>2020-12-21T19:57:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/jmeter/</loc>
+    <lastmod>2020-12-21T19:54:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/k6-cloud/</loc>
+    <lastmod>2020-12-21T19:41:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/k6/</loc>
+    <lastmod>2020-12-21T19:41:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/continuous-load-testing/</loc>
+    <lastmod>2020-12-21T19:36:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/analyzing-load-testing-results/</loc>
+    <lastmod>2020-12-21T19:36:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/executing-load-tests/</loc>
+    <lastmod>2020-12-21T19:35:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/writing-load-testing-scripts/</loc>
+    <lastmod>2020-12-21T19:34:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/planning-for-load-testing/</loc>
+    <lastmod>2020-12-21T19:34:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/protocol-based-load-testing/</loc>
+    <lastmod>2020-12-21T19:33:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/browser-based-load-testing/</loc>
+    <lastmod>2020-12-21T19:32:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/load-testing/</loc>
+    <lastmod>2020-12-21T19:31:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/map/topics/</loc>
+    <lastmod>2020-12-21T19:30:35+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
     <lastmod>2020-12-17T15:29:57+01:00</lastmod>
   </url>
@@ -19,11 +109,6 @@
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
-    <lastmod>2020-12-17T15:29:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
     <lastmod>2020-12-17T15:29:57+01:00</lastmod>
   </url>
   
@@ -228,6 +313,11 @@
   </url>
   
   <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/ask-a-flooder/</loc>
+    <lastmod>2020-08-06T22:43:28+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</loc>
     <lastmod>2020-08-06T22:43:28+01:00</lastmod>
   </url>
@@ -338,8 +428,68 @@
   </url>
   
   <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/browser/</loc>
+    <lastmod>2020-04-21T17:36:28+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</loc>
     <lastmod>2020-04-14T19:47:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</loc>
+    <lastmod>2020-04-07T19:03:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</loc>
+    <lastmod>2020-04-06T20:26:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</loc>
+    <lastmod>2020-03-31T20:35:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/ruby/</loc>
+    <lastmod>2020-03-31T20:35:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</loc>
+    <lastmod>2020-03-26T20:41:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200324-aaf07/</loc>
+    <lastmod>2020-03-24T20:31:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</loc>
+    <lastmod>2020-03-19T20:50:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</loc>
+    <lastmod>2020-03-17T20:58:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200311-aaf04/</loc>
+    <lastmod>2020-03-11T21:02:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/</loc>
+    <lastmod>2020-03-09T20:29:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20200306-load-testing-lessons/</loc>
+    <lastmod>2020-03-06T21:59:02+01:00</lastmod>
   </url>
   
   <url>

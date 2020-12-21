@@ -15,7 +15,8 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</guid>
       <description>I decided to make a final wrap-up video for my &amp;ldquo;Week of Testing&amp;rdquo; with k6&amp;hellip; ok, so it&amp;rsquo;s actually three weeks later now, but I wanted to explore k6 a little bit more before I gave my opinion on it.
-  Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
+  And here&amp;rsquo;s the audio version:
+ Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
     </item>
     
     <item>
@@ -218,7 +219,8 @@ How do you load test a native mobile app? I discuss the general approach to mobi
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+      <description>Originally posted here.
+When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
   Or catch the audio version here:
  Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
     </item>
@@ -229,9 +231,105 @@ How do you load test a native mobile app? I discuss the general approach to mobi
       <pubDate>Tue, 14 Apr 2020 19:47:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
-      <description>In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
-  Audio version here:
- Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times.</description>
+      <description>Originally posted here.
+In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Audio version here:</description>
+    </item>
+    
+    <item>
+      <title>Introducing Flood Agent: standalone infrastructure for load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</link>
+      <pubDate>Tue, 07 Apr 2020 19:03:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</guid>
+      <description>Originally posted here.
+Working from home during this pandemic and wondering how to start load tests from the office? Today, we&amp;rsquo;re officially introducing Flood Agent, a way to turn your own physical or virtual machines into load generators that you can control from anywhere with an internet connection.
+TL;DR:  Installing Flood Agent on a machine lets you start load tests on it remotely from Flood—even if it&amp;rsquo;s within a corporate VPN.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 10: What is the difference between load testing and stress testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</link>
+      <pubDate>Mon, 06 Apr 2020 20:26:24 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</guid>
+      <description>Originally posted here.
+What&amp;rsquo;s the difference between load testing and stress testing? When should you choose to run a load test on your application, and when is a stress test more appropriate? Well, it&amp;rsquo;s all in the intention.
+‍   Hi everyone, Nicole here again, back with another Ask a Flooder, and this time the question is:
+What is the difference between load testing and stress testing? Okay, again, this is a matter of semantics, but I think the difference is in the intention.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</link>
+      <pubDate>Thu, 26 Mar 2020 20:41:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</guid>
+      <description>Originally posted here.
+What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?
+   ‍
+Transcript:
+Hi everyone! Nicole here again for another Ask a Flooder, except this time it&amp;rsquo;s not really a question&amp;ndash; it&amp;rsquo;s just something I want to talk about.
+Source: The Flood Twitter account</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 07: What is the difference between performance testing and load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200324-aaf07/</link>
+      <pubDate>Tue, 24 Mar 2020 20:31:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200324-aaf07/</guid>
+      <description>Originally posted here.
+In a two-for-one Ask a Flooder, I answer two questions: What is the difference between performance testing and load testing and in which situations is performance testing a better option than load testing?
+  Transcript:
+Hi again, it&amp;rsquo;s Nicole back for another Ask a Flooder. And this time, the question from one of our customers is:
+What is the difference between performance testing and load testing?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 06: How to record traffic from a mobile app with JMeter</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</link>
+      <pubDate>Thu, 19 Mar 2020 20:50:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</guid>
+      <description>Originally posted here.
+How do you record the traffic from your native mobile app using Apache JMeter? In this video, I explain step-by-step how to begin load testing a native mobile app.
+‍   You might want to be doing this because you&amp;rsquo;re load testing a mobile app but either you don&amp;rsquo;t have access to your developers right now so they can&amp;rsquo;t help you with how the requests are made or what the requests are, or maybe you just want to verify what you&amp;rsquo;ve already been told.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 05: How do I get started with Flood Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</link>
+      <pubDate>Tue, 17 Mar 2020 20:58:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</guid>
+      <description>Originally posted here.
+On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.
+‍   TRANSCRIPT:
+If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to element.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 04: Why would your load testing tool report higher response times than you expect?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200311-aaf04/</link>
+      <pubDate>Wed, 11 Mar 2020 21:02:48 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200311-aaf04/</guid>
+      <description>Originally posted here.
+In this Ask a Flooder, I tackle a question we get all the time from users regarding results, particularly for cloud load testing. Sometimes you might notice that response times that are reported in by your load testing tool do not match up with the response time you see from your own browser. What causes this, and how can we fix it?
+  Transcript:
+It&amp;rsquo;s always confusing when your load testing tool reports higher average response times than what you can see while you&amp;rsquo;re manually accessing your application on your browser.</description>
     </item>
     
   </channel>

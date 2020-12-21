@@ -67,9 +67,22 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+      <description>Originally posted here.
+When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
   Or catch the audio version here:
  Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 05: How do I get started with Flood Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</link>
+      <pubDate>Tue, 17 Mar 2020 20:58:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</guid>
+      <description>Originally posted here.
+On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.
+‍   TRANSCRIPT:
+If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to element.</description>
     </item>
     
   </channel>

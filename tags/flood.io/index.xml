@@ -193,7 +193,8 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+      <description>Originally posted here.
+When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
   Or catch the audio version here:
  Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
     </item>
@@ -204,9 +205,43 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 14 Apr 2020 19:47:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
-      <description>In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
-  Audio version here:
- Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times.</description>
+      <description>Originally posted here.
+In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Audio version here:</description>
+    </item>
+    
+    <item>
+      <title>Introducing Flood Agent: standalone infrastructure for load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</link>
+      <pubDate>Tue, 07 Apr 2020 19:03:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</guid>
+      <description>Originally posted here.
+Working from home during this pandemic and wondering how to start load tests from the office? Today, we&amp;rsquo;re officially introducing Flood Agent, a way to turn your own physical or virtual machines into load generators that you can control from anywhere with an internet connection.
+TL;DR:  Installing Flood Agent on a machine lets you start load tests on it remotely from Flood—even if it&amp;rsquo;s within a corporate VPN.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 10: What is the difference between load testing and stress testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</link>
+      <pubDate>Mon, 06 Apr 2020 20:26:24 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</guid>
+      <description>Originally posted here.
+What&amp;rsquo;s the difference between load testing and stress testing? When should you choose to run a load test on your application, and when is a stress test more appropriate? Well, it&amp;rsquo;s all in the intention.
+‍   Hi everyone, Nicole here again, back with another Ask a Flooder, and this time the question is:
+What is the difference between load testing and stress testing? Okay, again, this is a matter of semantics, but I think the difference is in the intention.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
     </item>
     
   </channel>

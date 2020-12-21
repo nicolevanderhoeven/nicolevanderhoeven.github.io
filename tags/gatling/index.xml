@@ -31,5 +31,16 @@ Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
 Kevin Dunne: A new approach to load testing with browser level users</description>
     </item>
     
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+    </item>
+    
   </channel>
 </rss>

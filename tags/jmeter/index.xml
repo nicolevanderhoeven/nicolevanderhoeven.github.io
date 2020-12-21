@@ -15,7 +15,8 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</guid>
       <description>I decided to make a final wrap-up video for my &amp;ldquo;Week of Testing&amp;rdquo; with k6&amp;hellip; ok, so it&amp;rsquo;s actually three weeks later now, but I wanted to explore k6 a little bit more before I gave my opinion on it.
-  Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
+  And here&amp;rsquo;s the audio version:
+ Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
     </item>
     
     <item>
@@ -90,9 +91,42 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 14 Apr 2020 19:47:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
-      <description>In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
-  Audio version here:
- Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times.</description>
+      <description>Originally posted here.
+In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Audio version here:</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 06: How to record traffic from a mobile app with JMeter</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</link>
+      <pubDate>Thu, 19 Mar 2020 20:50:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</guid>
+      <description>Originally posted here.
+How do you record the traffic from your native mobile app using Apache JMeter? In this video, I explain step-by-step how to begin load testing a native mobile app.
+‍   You might want to be doing this because you&amp;rsquo;re load testing a mobile app but either you don&amp;rsquo;t have access to your developers right now so they can&amp;rsquo;t help you with how the requests are made or what the requests are, or maybe you just want to verify what you&amp;rsquo;ve already been told.</description>
+    </item>
+    
+    <item>
+      <title>Load Testing Lessons from the Iowa Caucus</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200306-load-testing-lessons/</link>
+      <pubDate>Fri, 06 Mar 2020 21:59:02 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200306-load-testing-lessons/</guid>
+      <description>Originally posted here and here.
+TL;DR? Here are the highlights in this article:
+Shadow, Inc. created a mobile app for the Iowa Caucus in February 2020, and the app failed, causing reported results to be delayed. The app reported different vote totals due to a system integration bug where the output was in a different format than what it needed to be. Here are the steps to load testing a mobile app:</description>
     </item>
     
   </channel>

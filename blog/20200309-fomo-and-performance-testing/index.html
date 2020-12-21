@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> FOMO and performance testing: Why Robinhood went down | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="FOMO and performance testing: Why Robinhood went down" />
+<meta property="og:description" content="Originally posted here.
+Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?
+The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/" />
+<meta property="article:published_time" content="2020-03-09T20:29:40+01:00" />
+<meta property="article:modified_time" content="2020-03-09T20:29:40+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FOMO and performance testing: Why Robinhood went down"/>
+<meta name="twitter:description" content="Originally posted here.
+Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?
+The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200306-load-testing-lessons/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200311-aaf04/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&text=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&is_video=false&description=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&name=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down&description=Originally%20posted%20here.%0aAngry%20customers%20flocked%20to%20the%20internet%20when%20the%20Robinhood%20investment%20brokerage%20app%20went%20down%20last%20Monday%20and%20part%20of%20Tuesday%2c%20leaving%20them%20unable%20to%20trade%20stocks%20on%20a%20day%20where%20Wall%20Street%20reported%20historic%20gains.%20Could%20this%20have%20been%20prevented%3f%0aThe%20answer%20is%20yes.%20Applications%20should%20always%20be%20assessed%20for%20risk%20and%20tested%20accordingly.%20Risk-based%20load%20testing%20helps%20unearth%20problems%20that%20would%20otherwise%20only%20surface%20in%20production.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&t=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-robinhood">What is Robinhood?</a></li>
+    <li><a href="#what-caused-the-robinhood-app-to-fail">What caused the Robinhood app to fail?</a></li>
+    <li><a href="#what-is-fomo">What is FOMO?</a></li>
+    <li><a href="#how-does-fomo-affect-application-performance">How does FOMO affect application performance?</a></li>
+    <li><a href="#does-your-application-require-fomo-load-testing">Does your application require FOMO load testing?</a></li>
+    <li><a href="#planning-for-fomo">Planning for FOMO</a>
+      <ul>
+        <li><a href="#what-type-of-app-is-it">What type of app is it?</a></li>
+        <li><a href="#workload-modeling">Workload modeling</a>
+          <ul>
+            <li><a href="#business-processes-to-test">Business processes to test</a></li>
+            <li><a href="#number-of-virtual-users-at-peak-load">Number of virtual users at peak load</a></li>
+          </ul>
+        </li>
+        <li><a href="#test-scenarios">Test scenarios</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripting-for-fomo">Scripting for FOMO</a>
+      <ul>
+        <li><a href="#tool-selection">Tool selection</a></li>
+      </ul>
+    </li>
+    <li><a href="#running-a-fomo-test">Running a FOMO test</a></li>
+    <li><a href="#results-and-reruns">Results and reruns</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        FOMO and performance testing: Why Robinhood went down
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-03-09 20:29:40 &#43;0100 CET" itemprop="datePublished">2020-Mar-09</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/browsers" rel="tag">browsers</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood-element" rel="tag">flood element</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/fomo-and-performance-testing-why-robinhood-went-down">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/fomo-and-performance-testing-why-robinhood-went-down">here</a>.</em></p>
+<p>Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?</p>
+<p>The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production. Testing applications end-to-end as a system instead of just as a collection of isolated components allows us to build software that is more resilient. The problem is that this type of testing can be difficult to carry out. In this article, I&rsquo;ll go through the entire process.</p>
+<h2 id="what-is-robinhood">What is Robinhood?</h2>
+<p>Robinhood is an app I&rsquo;ve personally had my eye on since it opened a waiting list about five years ago for Australians wanting to see the American company come to our shores. It <a href="https://australianfintech.com.au/local-start-stake-beats-us-giant-robinhood-bring-australians-free-share-trading/">doesn&rsquo;t look like it&rsquo;s happening</a> now, but if that waiting list still exists, I&rsquo;m on it.</p>
+<p>Robinhood is a brokerage app that takes inspiration from the legend it was named after to &ldquo;give to the poor,&rdquo; bring zero-commission trading to its customers. Instead of earning from commissions, Robinhood makes its money from <a href="https://www.investopedia.com/articles/active-trading/020515/how-robinhood-makes-money.asp">a variety of other methods</a>, including premium platform fees, interest on customers' uninvested capital, and payments received in exchange for coursing customers' orders through third-party market-makers. It&rsquo;s an enticing premise, and one that the company has used in conjunction with mobile apps to appeal to millennials and technophiles.</p>
+<p><img src="/blog/assets/20200309-01.jpg" alt=""></p>
+<p><em>Source: From <a href="https://robinhood.com/us/en/">Robinhood&rsquo;s homepage</a></em>
+‍</p>
+<h2 id="what-caused-the-robinhood-app-to-fail">What caused the Robinhood app to fail?</h2>
+<p>Unfortunately, its wild success with the tech-savvy crowd also meant that when it went down last Monday morning in the US, its customers took to the internet in droves to draw attention to the failure. In a <a href="https://blog.robinhood.com/news/2020/3/3/an-update-from-robinhoods-founders">blog post from Robinhood</a>, the company&rsquo;s co-founders, Baiju Bhatt and Vladimir Tenev, admitted that the outage was due to &ldquo;stress on [their] infrastructure— which struggled with unprecedented load.&rdquo;</p>
+<blockquote>
+<p>The outages you have experienced over the last two days are not acceptable and we want to share an update on the current situation. Our team has spent the last two days evaluating and addressing this issue. We worked as quickly as possible to restore service, but it took us a while. Too long. - <a href="https://blog.robinhood.com/news/2020/3/3/an-update-from-robinhoods-founders">Baiju Bhatt and Bladimir Tenev</a></p>
+</blockquote>
+<p>Bhatt and Tenev went on to explain that the load on their servers had caused a &ldquo;thundering herd&rdquo; effect. This effect describes a situation in which a backend server receives a large number of concurrent requests and, instead of different threads processing these requests simultaneously, all threads attempt to process the same request.</p>
+<p>If you&rsquo;ve ever played four-player Overcooked, it&rsquo;s like having everyone sprint to a fire extinguisher to try to put out a fire from overcooked pasta, but instead, the constant button mashing means you just pass the extinguisher around and yell at each other while the fire rages on. Before you know it, the entire kitchen is on fire.</p>
+<p><img src="/blog/assets/20200309-02.jpeg" alt=""></p>
+<p><em>Source: From <a href="https://twitter.com/csac0425/status/963053160259510277">Twitter user @csac0425</a></em></p>
+<p>So the technical cause of the outage was an infrastructure problem.</p>
+<p>But I think the REAL cause was FOMO.</p>
+<h2 id="what-is-fomo">What is FOMO?</h2>
+<p>FOMO is the Fear Of Missing Out, and it&rsquo;s a phenomenon that&rsquo;s been particularly exacerbated by social media. Instead of only hearing news from people you interact with in the physical world, it just takes a few seconds to open up Twitter on your smartphone and see what thousands of people are talking about. Twitter will even helpfully tell you what&rsquo;s &ldquo;trending&rdquo; in your country, and other social networks also employ algorithms to determine what messages to show you.</p>
+<h2 id="how-does-fomo-affect-application-performance">How does FOMO affect application performance?</h2>
+<p>We can see FOMO in how people have reacted to the coronavirus COVID-19. Despite pleas to leave masks for medical professionals at real risk, people have bought out the stock for these masks despite living in countries with little to no sign of the coronavirus. In Sydney, Australia, residents are stockpiling toilet paper (of all things) in large quantities, clearing out shelves from supermarkets, and <a href="https://www.bbc.com/news/world-australia-51731422">getting into knife fights over toilet paper</a> due to their panic at the thought of doing without.</p>
+<p><img src="/blog/assets/20200309-03.jpg" alt=""></p>
+<p><em>This photo of an empty toilet paper aisle was taken by our Principal Engineer, <a href="https://github.com/lachie">Lachie Cox</a>, in a supermarket in Sydney last week.</em>
+‍
+FOMO of this magnitude ultimately also manifests itself in the stock market. The Dow Jones Industrial Average, which represents the performance of the top 30 largest companies in the US, dropped by 3,500 points last week amidst fears that the coronavirus would stall production in countries most affected by COVID-19, leading to lower returns across the board.</p>
+<p>Then, an abrupt about-face. The Dow went from recording its <a href="https://nypost.com/2020/03/09/dow-loses-over-2000-points-worst-single-day-drop-ever-as-oil-prices-crash/">biggest <em>ever</em> loss in a single day on Thursday</a> to posting a record gain of 1,200 points on Monday.</p>
+<p>Guess who gets to adjust to all this volatility.</p>
+<p>Robinhood&rsquo;s founders reported that the &ldquo;highly volatile and historic market conditions; record volume; and record sign-ups&rdquo; contributed to the infrastructure issues they faced. We can only imagine just how many users they saw on their systems during this period.</p>
+<p>FOMO creates mass hysteria and panic, both of which cause customers to behave irrationally and likely very differently than previously recorded. So how do you create a workload model that accounts for this volatility? How do you tailor your load tests for FOMO? I&rsquo;ll run you through the process, using Robinhood as an example.</p>
+<h2 id="does-your-application-require-fomo-load-testing">Does your application require FOMO load testing?</h2>
+<p>All testing should be risk-based. Start with why: why should you test an application component? Why does your application require this kind of testing or that one?</p>
+<p>In Robinhood&rsquo;s case, there were a few indicators that pointed to the necessity of FOMO testing:</p>
+<ul>
+<li>
+<p><strong>A customer base made up of a younger, tech-savvy generation</strong>. ‍This demographic is very likely to take to social media with complaints, making negative publicity a real risk.</p>
+</li>
+<li>
+<p><strong>Complexity</strong>. ‍Robinhood&rsquo;s systems must receive customers' orders, forward and place those orders to market makers, and display real-time market data. Robinhood customers can also purchase options on stocks as well as cryptocurrency, further increasing the complexity.</p>
+</li>
+<li>
+<p><strong>Financial component</strong>. ‍Anything that involves taking people&rsquo;s money should have a high priority for any testing.</p>
+</li>
+</ul>
+<blockquote>
+<p>When it comes to your money, we know how important it is for you to have answers. - <a href="https://blog.robinhood.com/news/2020/3/3/an-update-from-robinhoods-founders">Baiju Bhatt and Bladimir Tenev</a>, co-founders of Robinhood</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>Record-breaking growth</strong>. ‍Robinhood had 1 million users in 2016, 6 million in 2018, and 10 million last December, <a href="https://www.cnbc.com/2019/12/04/start-up-robinhood-tops-10-million-accounts-even-as-industry-follows-in-free-trading-footsteps.html">according to CNBC</a>. Exponential growth brings some major growing pains.</p>
+</li>
+<li>
+<p><strong>Industry history of expensive failures</strong>. ‍<a href="https://qz.com/1812086/robinhood-brokerage-app-suffers-second-day-of-outages/">Quartz points out</a> that software or infrastructure failures have cost the financial industry millions in recent years.</p>
+</li>
+<li>
+<p><strong>Recent legal action</strong>. The regulatory body FINRA <a href="https://www.cnn.com/2019/12/19/investing/robinhood-trading-app-fine-finra/index.html">fined Robinhood</a> US$1.25 million just last December for placing orders for customers without looking for the lowest price. While this isn&rsquo;t a huge fine for a company that was <a href="https://www.bloomberg.com/news/articles/2019-07-22/robinhood-is-worth-7-6-billion-after-new-funding-round">valued at US$7.6 billion last July</a>, any legal action should make a company tread more carefully.</p>
+</li>
+</ul>
+<p>These are solid reasons to warrant load testing Robinhood&rsquo;s systems beyond just &ldquo;expected&rdquo; load.</p>
+<h2 id="planning-for-fomo">Planning for FOMO</h2>
+<p>Once you&rsquo;ve determined that your application is susceptible to FOMO, the next thing to do is plan how to structure your load tests to include its effect in your test runs.</p>
+<h3 id="what-type-of-app-is-it">What type of app is it?</h3>
+<p>Robinhood consists of three apps: two for mobile (iOS and Android) and one for the web. It is currently only available to US residents, which means that getting mobile apps downloaded is problematic as it would entail changing countries in the app stores to get access. Since I live in the Netherlands and I don&rsquo;t want to do that, I&rsquo;ll focus on the web app specifically when scripting the load test, and I&rsquo;ll assume that the same underlying application servers service both web and mobile apps.</p>
+<h3 id="workload-modeling">Workload modeling</h3>
+<h4 id="business-processes-to-test">Business processes to test</h4>
+<p>Given that the app went down on a day where markets were <em>up</em>, we can assume that most of the people on Robinhood&rsquo;s apps were doing one of two things:</p>
+<ul>
+<li>
+<p>Signing up</p>
+</li>
+<li>
+<p>Buying shares</p>
+</li>
+</ul>
+<p>We should ideally test both, but let&rsquo;s focus on signups here because it&rsquo;s easier to test without access to the actual app (which requires a US social security number).</p>
+<h4 id="number-of-virtual-users-at-peak-load">Number of virtual users at peak load</h4>
+<p>Let&rsquo;s try to come up with a number of users that we can use as Robinhood&rsquo;s peak hourly load. This task would be easier if Robinhood shared their analytics, but we can still make some educated guesses with what <em>has</em> been made public.</p>
+<p><img src="/blog/assets/20200309-04.png" alt=""></p>
+<p><em>Source: Image from <a href="https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined">Apptopia</a></em></p>
+<p><a href="https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined">According to Apptopia</a>, Robinhood&rsquo;s highest number of mobile installations was in 2018, when it saw 2 million downloads of its mobile app in a quarter. This period coincides with when Robinhood released cryptocurrency trading support, which looks like increased signups—in the third quarter of 2019, this figure was about 1.5 million. 2 million quarterly downloads translates to about 666,666 downloads per month. Let&rsquo;s call that 700,000 and take this number of mobile downloads as a starting figure.</p>
+<p>The stock market is only open on the weekdays, so we can divide 700,000 signups a month by 20 days, and we get 35,000 signups a day. The markets are also only open for about 7 hours a day, but the load probably isn&rsquo;t evenly spread out across the 7 hours— I would expect that people would have more time during lunch to sign up for Robinhood. So let&rsquo;s say that the majority of those signups would happen within three hours (from 11 am to 2 pm, for example). By dividing 35,000 signups per day by 3 hours, we get about 11,667 users per hour. Let&rsquo;s round that up to 12,000.</p>
+<p>How do we translate this to the number of virtual users we need to run? Let&rsquo;s think about how long each user stays on the app. The signup process does require approval, so that&rsquo;s a hard stop— new users won&rsquo;t be able to sign up and then start trading immediately afterwards. <a href="https://robinhood.com/us/en/support/articles/360001213123/open-my-account/">This approval could take up to a day</a>, or up to seven days if documents are required.</p>
+<p>Looking at the application form itself, we can see it is relatively standard and requires only information that most people are likely to have handy (social security number and contact details). I timed how long it took me to go through the part of it I could access, and I estimated that 10 minutes would be sufficient time to go through all the tabs.</p>
+<p><img src="/blog/assets/20200309-05.jpg" alt=""></p>
+<p><em>Source: <a href="https://signup.robinhood.com/?">Robinhood</a></em></p>
+<p>We want to spread out users evenly across the hour— that is, we don&rsquo;t want 12,000 users to sign up and leave, all within 10 minutes. We want equal portions of those users to be signing up throughout the entire hour. Dividing 12,000 by 6 (the number of 10-minute intervals in an hour), we get 2,000. 2,000 is the number of threads we need active at any one point of time. Each of those threads signs up one user for 10 minutes, then signs up 5 more users until the hour is up.</p>
+<p>So we have our figure: we need 2,000 <em>virtual</em> users per hour to simulate 12,000 signups in an hour.</p>
+<h3 id="test-scenarios">Test scenarios</h3>
+<p>In addition to running the standard battery of load tests, testing for FOMO requires exploring the upper limits of the application. Assuming the peak load testing goes well, we can use the 2,000 virtual users per hour figure from our peak load calculations as a starting point for these more destructive tests. To this end, here are some test scenarios I&rsquo;d consider running if I were testing the Robinhood app:</p>
+<ul>
+<li>
+<p><strong>Soak testing</strong>. ‍Soak testing means running typically a little less than the peak load profile, but over a longer amount of time. In Robinhood&rsquo;s case, perhaps we could run 1,000 virtual users for 8 hours. We would expect that the response times reported during this test would be the same; otherwise, there is likely a performance bottleneck, such as a memory leak.</p>
+</li>
+<li>
+<p><strong>Stress testing</strong>. ‍Stress testing means increasing the number of users on an application at regular increments until the application crashes. We can start with 2,000 virtual users per hour, and then add 500 users every 30 minutes to see how the application handles it. This test helps determine how much room there is for growth.</p>
+</li>
+</ul>
+<p><img src="/blog/assets/20200309-06.jpg" alt=""></p>
+<p><em>Source: Stepped load profile for stress testing, generated in JMeter</em>
+‍</p>
+<ul>
+<li><strong>Resilience testing</strong>. ‍Resilience testing involves running the peak load test and then simulating an outage by turning off key components to see how the application behaves. If two servers share the load, for instance, we could turn one off and check to make sure that the user sessions on the terminated node are moved over onto the remaining node. This test shows whether the application recovers gracefully from an unforeseen event.</li>
+</ul>
+<p>All these tests help us prepare for the unexpected, and they might have identified the &ldquo;thundering herd&rdquo; problem that contributed to Robinhood&rsquo;s outage.</p>
+<h2 id="scripting-for-fomo">Scripting for FOMO</h2>
+<h3 id="tool-selection">Tool selection</h3>
+<p>To test mobile as well as web apps, I would typically use a protocol-level load testing tool like JMeter to simulate the load. However, <a href="https://thenewstack.io/how-id-load-test-the-iowa-caucus-app/">I&rsquo;ve already done that</a>. I also noticed that Robinhood makes use of some dynamic parameters, such as a csrf token:</p>
+<p>‍<img src="/blog/assets/20200309-07.jpg" alt=""></p>
+<p><em>Source: Chrome Developer Tools on <a href="https://signup.robinhood.com/?">Robinhood</a></em>
+‍
+We can usually find the value of this token in the response of the previous page. It is a security feature to allow Robinhood to verify that the same users make all requests in the same session. Tokens can be scripted around in a tool like JMeter, but it can be time-consuming. So for this article, I decided to show another tool that makes this problem go away. I used <a href="https://element.flood.io/">Flood Element</a>, which is an open-source tool we created based on Puppeteer. One of its advantages is that it runs on the browser level. Instead of diving into HTTP requests and tokens, I just told Element which buttons to click.</p>
+<p>I wanted a script that would do the following things:</p>
+<ol>
+<li>
+<p>Navigate to Robinhood&rsquo;s home page.</p>
+</li>
+<li>
+<p>Click on &ldquo;Sign Up&rdquo;.</p>
+</li>
+<li>
+<p>Click on the &ldquo;Get Your Free Stock&rdquo; button.</p>
+</li>
+<li>
+<p>Fill out the signup form.</p>
+</li>
+</ol>
+<p>Note that I stopped short of actually submitting the form because I don&rsquo;t want to create dummy accounts on Robinhood&rsquo;s database— I just want to show how this flow can be scripted with Element.</p>
+<p>To help me identify the elements on the page that I wanted the script to interact with, I used Chrome&rsquo;s built-in Developer Tools. Specifically, I used the Inspect Element button (in orange below) to click on a field and find where it was in the code.</p>
+<p>‍<img src="/blog/assets/20200309-08.jpg" alt=""></p>
+<p>For instance, to find out how to identify the email field, I right-clicked on the code on the right, hovered over Copy, and then clicked Copy selector.</p>
+<p>‍<img src="/blog/assets/20200309-09.png" alt=""></p>
+<p>This gave me the value <code>#signup_email_field</code>, which I then used in the script like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//Type Email address
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">type</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">id</span>(<span style="color:#e6db74">&#39;signup_email_field&#39;</span>),<span style="color:#e6db74">&#39;nicole@flood.io&#39;</span>)
+</code></pre></div><p>Here&rsquo;s the script that I ended up with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">Until</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">MouseButtons</span>, <span style="color:#a6e22e">Device</span>, <span style="color:#a6e22e">Driver</span>, <span style="color:#a6e22e">ENV</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">assert</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;assert&#39;</span>
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">loopCount</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,
+    <span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">actionDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+    <span style="color:#a6e22e">stepDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+    <span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">userAgent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;flood-element-test&#39;</span>,
+}
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> () =&gt; {
+    <span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;01_Home&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+    	<span style="color:#75715e">//Navigate to Robinhood homepage
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">visit</span>(<span style="color:#e6db74">&#39;&lt;https://robinhood.com&gt;&#39;</span>)
+
+		<span style="color:#75715e">//Validate text
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">validation</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">visibleText</span>(<span style="color:#e6db74">&#39;It’s Time to Do Money&#39;</span>)
+        <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#a6e22e">Until</span>.<span style="color:#a6e22e">elementIsVisible</span>(<span style="color:#a6e22e">validation</span>))
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+	})
+
+	<span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;02_Signup&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+    	<span style="color:#75715e">//Click &#34;Sign Up&#34;
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">signupBtn</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//a[@href=&#34;&lt;https://signup.robinhood.com&gt;&#34;]&#39;</span>))
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">signupBtn</span>.<span style="color:#a6e22e">click</span>()
+
+		<span style="color:#75715e">//Validate text
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">validation</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">visibleText</span>(<span style="color:#e6db74">&#39;Free Stock Waiting For You&#39;</span>)
+        <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#a6e22e">Until</span>.<span style="color:#a6e22e">elementIsVisible</span>(<span style="color:#a6e22e">validation</span>))
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+	})
+
+	<span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;03_GetFreeStock&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+		<span style="color:#75715e">//Click Get Your Free Stock
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">freestockBtn</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//a[@href=&#34;&lt;https://signup.robinhood.com/?&#34;&gt;]&#39;</span>))
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">freestockBtn</span>.<span style="color:#a6e22e">click</span>()
+
+		<span style="color:#75715e">//Validate text
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">validation</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">visibleText</span>(<span style="color:#e6db74">&#39;Make Your Money Move&#39;</span>)
+        <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#a6e22e">Until</span>.<span style="color:#a6e22e">elementIsVisible</span>(<span style="color:#a6e22e">validation</span>))
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+	})
+
+	<span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;04_FillForm&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+		<span style="color:#75715e">//Type First name
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">type</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//input[@name=&#34;first_name&#34;]&#39;</span>),<span style="color:#e6db74">&#39;Nicole&#39;</span>)
+
+		<span style="color:#75715e">//Type Last name
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">type</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//input[@name=&#34;last_name&#34;]&#39;</span>),<span style="color:#e6db74">&#39;van der Hoeven&#39;</span>)
+
+		<span style="color:#75715e">//Type Email address
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">type</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">id</span>(<span style="color:#e6db74">&#39;signup_email_field&#39;</span>),<span style="color:#e6db74">&#39;nicole@flood.io&#39;</span>)
+
+		<span style="color:#75715e">//Type password
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">type</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//input[@name=&#34;password&#34;]&#39;</span>),<span style="color:#e6db74">&#39;demo123456&#39;</span>)
+
+
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+	})
+}
+</code></pre></div><p>In every step, I also added a <code>takeScreenshot()</code> , which is one of my very favorite features of Element. It&rsquo;s so useful to be able to save these screenshots and use them to determine exactly what&rsquo;s happening in the script. Here&rsquo;s what it looks like running my Element script locally. The automated browser is on the left, and my terminal (iTerm) is on the right, running Element.</p>
+<p>‍<img src="/blog/assets/20200309-10.jpg" alt=""></p>
+<h2 id="running-a-fomo-test">Running a FOMO test</h2>
+<p>Now we&rsquo;ve got a script that runs locally. How do we run it at scale? Additionally, Robinhood won&rsquo;t allow users outside the US to sign up. How do we make sure that our virtual users are allowed to sign up?</p>
+<p>The answer is a load testing platform like <a href="https://flood.io/">Flood</a>.</p>
+<p>With Flood, running our script is a matter of uploading the script and selecting some options.</p>
+<p><img src="/blog/assets/20200309-11.png" alt=""></p>
+<p><em>The Flood test design interface</em>
+‍
+Flood also lets us choose which regions to generate load from. Below I&rsquo;ve got it set up to run for an hour from four different US cities, with each one starting 500 users. This configuration gives us our 2,000 virtual user figure.</p>
+<p>‍<img src="/blog/assets/20200309-12.png" alt=""></p>
+<p>If this peak load test goes well, we could then go on to run the other test scenarios that we described earlier. Each one puts pressure on application servers in different ways, identifying performance bottlenecks.</p>
+<h2 id="results-and-reruns">Results and reruns</h2>
+<p>Since Robinhood is a live application, I didn&rsquo;t run the test— it&rsquo;s never a good idea to load test a domain you don&rsquo;t own when you&rsquo;re talking about thousands of users. However, <a href="https://api.flood.io/pfQuAGz3">here&rsquo;s a shareable link</a> to another small Element test I ran previously.</p>
+<p>Real-time dashboards like that one on Flood allow you to get a quick look into how the load test is running and to make any changes if necessary. When testing for FOMO, I think they&rsquo;re invaluable. For example, during a stress test where users are added at regular intervals, a real-time dashboard would help you identify increases in response time as a result of the increased number of users. It would also let you monitor the test and stop it when necessary.</p>
+<p>From the link above, click on the right arrow on the lone transaction.</p>
+<p><img src="/blog/assets/20200309-13.jpg" alt=""></p>
+<p>That will take you to the Transaction Detail page. Remember those screenshots from Element? If you have any in your script, you&rsquo;ll see them here, arranged according to time.</p>
+<p><img src="/blog/assets/20200309-14.png" alt=""></p>
+<p>This lets you troubleshoot issues during FOMO testing and react quickly.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Even with sound load testing strategies in place, it&rsquo;s challenging to plan for the massive spike in traffic that FOMO can bring, yet it&rsquo;s necessary to do so. FOMO, as a phenomenon, is only going to increase in magnitude as social networks make it easier to spread fear, uncertainty, and doubt as well as information.</p>
+<p>We may not be able to determine precisely what will break, or when, but what we can do is put systems into place to plan for it. We can assess an application&rsquo;s susceptibility to FOMO and plan for end-to-end performance engineering of the system as a whole. We can start with the assumption that applications will fail and then determine the most likely candidates for that failure. We can routinely expose systems to traffic and circumstances that are extraordinary, and in doing so, we can improve our preparedness for something like FOMO.</p>
+<p>FOMO is irrational and unpredictable— but that doesn&rsquo;t mean it needs to be unexpected.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-robinhood">What is Robinhood?</a></li>
+    <li><a href="#what-caused-the-robinhood-app-to-fail">What caused the Robinhood app to fail?</a></li>
+    <li><a href="#what-is-fomo">What is FOMO?</a></li>
+    <li><a href="#how-does-fomo-affect-application-performance">How does FOMO affect application performance?</a></li>
+    <li><a href="#does-your-application-require-fomo-load-testing">Does your application require FOMO load testing?</a></li>
+    <li><a href="#planning-for-fomo">Planning for FOMO</a>
+      <ul>
+        <li><a href="#what-type-of-app-is-it">What type of app is it?</a></li>
+        <li><a href="#workload-modeling">Workload modeling</a>
+          <ul>
+            <li><a href="#business-processes-to-test">Business processes to test</a></li>
+            <li><a href="#number-of-virtual-users-at-peak-load">Number of virtual users at peak load</a></li>
+          </ul>
+        </li>
+        <li><a href="#test-scenarios">Test scenarios</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripting-for-fomo">Scripting for FOMO</a>
+      <ul>
+        <li><a href="#tool-selection">Tool selection</a></li>
+      </ul>
+    </li>
+    <li><a href="#running-a-fomo-test">Running a FOMO test</a></li>
+    <li><a href="#results-and-reruns">Results and reruns</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&text=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&is_video=false&description=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&title=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&name=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down&description=Originally%20posted%20here.%0aAngry%20customers%20flocked%20to%20the%20internet%20when%20the%20Robinhood%20investment%20brokerage%20app%20went%20down%20last%20Monday%20and%20part%20of%20Tuesday%2c%20leaving%20them%20unable%20to%20trade%20stocks%20on%20a%20day%20where%20Wall%20Street%20reported%20historic%20gains.%20Could%20this%20have%20been%20prevented%3f%0aThe%20answer%20is%20yes.%20Applications%20should%20always%20be%20assessed%20for%20risk%20and%20tested%20accordingly.%20Risk-based%20load%20testing%20helps%20unearth%20problems%20that%20would%20otherwise%20only%20surface%20in%20production.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200309-fomo-and-performance-testing%2f&t=FOMO%20and%20performance%20testing%3a%20Why%20Robinhood%20went%20down">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

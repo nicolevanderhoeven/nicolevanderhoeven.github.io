@@ -234,9 +234,79 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+      <description>Originally posted here.
+When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
   Or catch the audio version here:
  Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+    </item>
+    
+    <item>
+      <title>Introducing Flood Agent: standalone infrastructure for load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</link>
+      <pubDate>Tue, 07 Apr 2020 19:03:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200407-introducing-flood-agent/</guid>
+      <description>Originally posted here.
+Working from home during this pandemic and wondering how to start load tests from the office? Today, we&amp;rsquo;re officially introducing Flood Agent, a way to turn your own physical or virtual machines into load generators that you can control from anywhere with an internet connection.
+TL;DR:  Installing Flood Agent on a machine lets you start load tests on it remotely from Flood—even if it&amp;rsquo;s within a corporate VPN.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</link>
+      <pubDate>Thu, 26 Mar 2020 20:41:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</guid>
+      <description>Originally posted here.
+What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?
+   ‍
+Transcript:
+Hi everyone! Nicole here again for another Ask a Flooder, except this time it&amp;rsquo;s not really a question&amp;ndash; it&amp;rsquo;s just something I want to talk about.
+Source: The Flood Twitter account</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 06: How to record traffic from a mobile app with JMeter</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</link>
+      <pubDate>Thu, 19 Mar 2020 20:50:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</guid>
+      <description>Originally posted here.
+How do you record the traffic from your native mobile app using Apache JMeter? In this video, I explain step-by-step how to begin load testing a native mobile app.
+‍   You might want to be doing this because you&amp;rsquo;re load testing a mobile app but either you don&amp;rsquo;t have access to your developers right now so they can&amp;rsquo;t help you with how the requests are made or what the requests are, or maybe you just want to verify what you&amp;rsquo;ve already been told.</description>
+    </item>
+    
+    <item>
+      <title>FOMO and performance testing: Why Robinhood went down</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/</link>
+      <pubDate>Mon, 09 Mar 2020 20:29:40 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/</guid>
+      <description>Originally posted here.
+Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?
+The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production.</description>
+    </item>
+    
+    <item>
+      <title>Load Testing Lessons from the Iowa Caucus</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200306-load-testing-lessons/</link>
+      <pubDate>Fri, 06 Mar 2020 21:59:02 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200306-load-testing-lessons/</guid>
+      <description>Originally posted here and here.
+TL;DR? Here are the highlights in this article:
+Shadow, Inc. created a mobile app for the Iowa Caucus in February 2020, and the app failed, causing reported results to be delayed. The app reported different vote totals due to a system integration bug where the output was in a different format than what it needed to be. Here are the steps to load testing a mobile app:</description>
     </item>
     
     <item>

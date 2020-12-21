@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput? | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput?" />
+<meta property="og:description" content="Originally posted here.
+What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?
+   ‍
+Transcript:
+Hi everyone! Nicole here again for another Ask a Flooder, except this time it&rsquo;s not really a question&ndash; it&rsquo;s just something I want to talk about.
+Source: The Flood Twitter account" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200326-aaf08/" />
+<meta property="article:published_time" content="2020-03-26T20:41:22+01:00" />
+<meta property="article:modified_time" content="2020-03-26T20:41:22+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput?"/>
+<meta name="twitter:description" content="Originally posted here.
+What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?
+   ‍
+Transcript:
+Hi everyone! Nicole here again for another Ask a Flooder, except this time it&rsquo;s not really a question&ndash; it&rsquo;s just something I want to talk about.
+Source: The Flood Twitter account"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20200324-aaf07/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200331-aaf09/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&text=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&is_video=false&description=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&name=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f&description=Originally%20posted%20here.%0aWhat%20is%20the%20meaning%20of%20concurrent%20users%20in%20performance%20testing%3f%20You%20might%20have%20seen%20concurrent%20users%20in%20JMeter%20or%20other%20tools%2c%20but%20what%20does%20it%20mean%20and%20how%20can%20you%20use%20the%20term%20properly%3f%0a%20%20%20%e2%80%8d%0aTranscript%3a%0aHi%20everyone%21%20Nicole%20here%20again%20for%20another%20Ask%20a%20Flooder%2c%20except%20this%20time%20it%26rsquo%3bs%20not%20really%20a%20question%26ndash%3b%20it%26rsquo%3bs%20just%20something%20I%20want%20to%20talk%20about.%0aSource%3a%20The%20Flood%20Twitter%20account">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&t=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#concurrent-users-in-performance-testing---limitations">&ldquo;Concurrent users&rdquo; in performance testing - limitations</a>
+      <ul>
+        <li><a href="#what-type-of-user-is-it">What type of user is it?</a></li>
+        <li><a href="#what-is-the-user-doing">What is the user doing?</a></li>
+        <li><a href="#how-long-is-the-user-doing-it">How long is the user doing it?</a></li>
+        <li><a href="#when-does-the-user-do-it">When does the user do it?</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-03-26 20:41:22 &#43;0100 CET" itemprop="datePublished">2020-Mar-26</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ask-a-flooder" rel="tag">ask a flooder</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/ask-a-flooder-08-why-is-concurrent-users-an-ambiguous-measure-of-throughput-video">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/ask-a-flooder-08-why-is-concurrent-users-an-ambiguous-measure-of-throughput-video">here</a>.</em></p>
+<p>What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/uJE2hm50TIw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+‍</p>
+<p>Transcript:</p>
+<p>Hi everyone! Nicole here again for another Ask a Flooder, except this time it&rsquo;s not really a question&ndash; it&rsquo;s just something I want to talk about.</p>
+<p><img src="/blog/assets/20200326-01.png" alt=""></p>
+<p><em>Source: The <a href="https://twitter.com/flood_io/status/1224284942932332544">Flood Twitter account</a></em></p>
+<p>So I&rsquo;m going to put the tweet up here, but last month I actually tweeted about something that somebody else posted. Netflix actually reported some of their viewership figures, and one thing that they reported was that 76 million households watched their new show, The Witcher, which is a large amount of people. So I posted something about why concurrent users is actually an ambiguous way to measure throughput, and I want to expound a little bit more on that.</p>
+<h2 id="concurrent-users-in-performance-testing---limitations">&ldquo;Concurrent users&rdquo; in performance testing - limitations</h2>
+<p>In load testing, the number of concurrent users is a pretty standard measure of throughput, and generally, it means the number of users that are accessing an application at any one point in time. And even on Flood, we use it because it&rsquo;s a really good rule of thumb. When we want to get a feel for how big a test is, load testers generally ask, &ldquo;How many users?&rdquo; However, we should be aware, as load testers, that that doesn&rsquo;t always give us the full picture.</p>
+<h3 id="what-type-of-user-is-it">What type of user is it?</h3>
+<p>For instance, the type of user that it is can really change the traffic. Sometimes mobile browsers will optimize requests so that they send fewer because they realize that mobile networks are slower.</p>
+<h3 id="what-is-the-user-doing">What is the user doing?</h3>
+<p>Secondly, what is the user doing? Are they browsing on different tabs all the time? Or are they just refreshing the content on the same tab? Because if they&rsquo;re just using the same page and fetching it over and over again, then caching could come into play, so that would create a different load on the system.</p>
+<h3 id="how-long-is-the-user-doing-it">How long is the user doing it?</h3>
+<p>And thirdly, how long is the user doing it? Are we talking about a sustained load for an hour, or is it a shorter time period, like a spike test of five minutes where all the users just ram a system? There are things like the number of requests per second that you need to take into account, which is affected by the think time and the delays that you set in your script. Perhaps your script has a user that just sends a request, then waits for a minute, and then sends another request. That&rsquo;s very different from a user just sending one request after another as fast as possible.</p>
+<h3 id="when-does-the-user-do-it">When does the user do it?</h3>
+<p>Lastly, it&rsquo;s also important to take into account the seasonality of the request. When does the user do it? If you have a timesheeting application, for instance, then it might only get traffic on Fridays and a little bit on Monday, so you need to specify, when you report these numbers, whether it&rsquo;s for the peak time period on Friday - you know, around 3 pm or something - or you&rsquo;re reporting on figures from a Wednesday when there really wouldn&rsquo;t be that many people accessing it.</p>
+<p>In the case of Netflix, what they counted as a view was only a two-minute watch time. So if you&rsquo;re one of those people who went into The Witcher and didn&rsquo;t watch past two minutes, that still counted as a view. So the 76 million users is still not completely accurate, because not all of those people would have watched the entire thing.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Concurrent users is a good way in order to get a quick feel of the throughput that a test outputs, but it really needs to be examined in context along with things like requests per second and the network throughput (kbps) in order to get a really good understanding of how much load a test is generating.</p>
+<p>Till next time, happy flooding!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#concurrent-users-in-performance-testing---limitations">&ldquo;Concurrent users&rdquo; in performance testing - limitations</a>
+      <ul>
+        <li><a href="#what-type-of-user-is-it">What type of user is it?</a></li>
+        <li><a href="#what-is-the-user-doing">What is the user doing?</a></li>
+        <li><a href="#how-long-is-the-user-doing-it">How long is the user doing it?</a></li>
+        <li><a href="#when-does-the-user-do-it">When does the user do it?</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&text=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&is_video=false&description=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&title=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&name=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f&description=Originally%20posted%20here.%0aWhat%20is%20the%20meaning%20of%20concurrent%20users%20in%20performance%20testing%3f%20You%20might%20have%20seen%20concurrent%20users%20in%20JMeter%20or%20other%20tools%2c%20but%20what%20does%20it%20mean%20and%20how%20can%20you%20use%20the%20term%20properly%3f%0a%20%20%20%e2%80%8d%0aTranscript%3a%0aHi%20everyone%21%20Nicole%20here%20again%20for%20another%20Ask%20a%20Flooder%2c%20except%20this%20time%20it%26rsquo%3bs%20not%20really%20a%20question%26ndash%3b%20it%26rsquo%3bs%20just%20something%20I%20want%20to%20talk%20about.%0aSource%3a%20The%20Flood%20Twitter%20account">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200326-aaf08%2f&t=Ask%20a%20Flooder%2008%3a%20Why%20is%20concurrent%20users%20an%20ambiguous%20measure%20of%20throughput%3f">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

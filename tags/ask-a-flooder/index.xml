@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ask a flooder on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/ask-a-flooder/</link>
+    <description>Recent content in ask a flooder on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Thu, 06 Aug 2020 22:43:28 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/ask-a-flooder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ask a Flooder 20: How can fear affect application performance?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</link>
+      <pubDate>Thu, 06 Aug 2020 22:43:28 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</guid>
+      <description>Originally posted here.
+In this video, I talk about the power of fear, and how it can end up affecting performance test results. ‍   Or listen to the audio version here:
+ Hi everyone, I&amp;rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.
+The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in the Netherlands.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 18: How do I load test video streaming with JMeter?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</link>
+      <pubDate>Wed, 22 Jul 2020 22:49:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</guid>
+      <description>Originally posted here.
+In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;   Or listen to the audio version here:
+ HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 17: How do I use unique test data on Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</link>
+      <pubDate>Thu, 18 Jun 2020 21:58:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
+      <description>Originally posted on Tricentis Flood.
+In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
+  Or listen to the audio version instead:
+ Transcript: Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 16: How do I use test data with Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</link>
+      <pubDate>Tue, 09 Jun 2020 22:18:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</guid>
+      <description>Originally posted on Tricentis Flood.
+In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&amp;rsquo;ll find a copy of the Element script I used below.
+‍   And, if you prefer, here&amp;rsquo;s the audio version:
+ Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 15: How do I install Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</link>
+      <pubDate>Tue, 12 May 2020 22:45:18 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</guid>
+      <description>Originally posted here.
+In this Flood Element tutorial, I demonstrate the steps required to install Flood Element, including dependencies it requires. Flood Element is an open-source browser-based load testing tool created by Tricentis Flood.
+Learn more about Flood Element
+Installation instructions for NodeJS
+Installation instructions for Yarn
+Installation instructions for Element
+Video: Getting Started with Element
+Guides: Using Element with Flood‍
+  Audio version here:
+ Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 13: How do you do mobile load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</link>
+      <pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</guid>
+      <description>Originally posted here.
+How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
+  Or listen to the audio version here:
+ Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</link>
+      <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
+      <description>Originally posted here.
+When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
+  Or catch the audio version here:
+ Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 11: What are the best JMeter plugins?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</link>
+      <pubDate>Tue, 14 Apr 2020 19:47:53 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
+      <description>Originally posted here.
+In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
+  Audio version here:</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 10: What is the difference between load testing and stress testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</link>
+      <pubDate>Mon, 06 Apr 2020 20:26:24 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</guid>
+      <description>Originally posted here.
+What&amp;rsquo;s the difference between load testing and stress testing? When should you choose to run a load test on your application, and when is a stress test more appropriate? Well, it&amp;rsquo;s all in the intention.
+‍   Hi everyone, Nicole here again, back with another Ask a Flooder, and this time the question is:
+What is the difference between load testing and stress testing? Okay, again, this is a matter of semantics, but I think the difference is in the intention.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 08: Why is concurrent users an ambiguous measure of throughput?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</link>
+      <pubDate>Thu, 26 Mar 2020 20:41:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</guid>
+      <description>Originally posted here.
+What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?
+   ‍
+Transcript:
+Hi everyone! Nicole here again for another Ask a Flooder, except this time it&amp;rsquo;s not really a question&amp;ndash; it&amp;rsquo;s just something I want to talk about.
+Source: The Flood Twitter account</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 07: What is the difference between performance testing and load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200324-aaf07/</link>
+      <pubDate>Tue, 24 Mar 2020 20:31:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200324-aaf07/</guid>
+      <description>Originally posted here.
+In a two-for-one Ask a Flooder, I answer two questions: What is the difference between performance testing and load testing and in which situations is performance testing a better option than load testing?
+  Transcript:
+Hi again, it&amp;rsquo;s Nicole back for another Ask a Flooder. And this time, the question from one of our customers is:
+What is the difference between performance testing and load testing?</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 06: How to record traffic from a mobile app with JMeter</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</link>
+      <pubDate>Thu, 19 Mar 2020 20:50:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</guid>
+      <description>Originally posted here.
+How do you record the traffic from your native mobile app using Apache JMeter? In this video, I explain step-by-step how to begin load testing a native mobile app.
+‍   You might want to be doing this because you&amp;rsquo;re load testing a mobile app but either you don&amp;rsquo;t have access to your developers right now so they can&amp;rsquo;t help you with how the requests are made or what the requests are, or maybe you just want to verify what you&amp;rsquo;ve already been told.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 05: How do I get started with Flood Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</link>
+      <pubDate>Tue, 17 Mar 2020 20:58:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</guid>
+      <description>Originally posted here.
+On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.
+‍   TRANSCRIPT:
+If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to element.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 04: Why would your load testing tool report higher response times than you expect?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200311-aaf04/</link>
+      <pubDate>Wed, 11 Mar 2020 21:02:48 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200311-aaf04/</guid>
+      <description>Originally posted here.
+In this Ask a Flooder, I tackle a question we get all the time from users regarding results, particularly for cloud load testing. Sometimes you might notice that response times that are reported in by your load testing tool do not match up with the response time you see from your own browser. What causes this, and how can we fix it?
+  Transcript:
+It&amp;rsquo;s always confusing when your load testing tool reports higher average response times than what you can see while you&amp;rsquo;re manually accessing your application on your browser.</description>
+    </item>
+    
+  </channel>
+</rss>

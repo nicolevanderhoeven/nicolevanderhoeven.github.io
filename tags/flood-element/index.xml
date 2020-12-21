@@ -72,5 +72,39 @@ Guides: Using Element with Flood‍
  Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
     </item>
     
+    <item>
+      <title>Ask a Flooder 09: What are the best tools for load testing?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</link>
+      <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
+      <description>Originally posted here.
+One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
+Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+    </item>
+    
+    <item>
+      <title>Ask a Flooder 05: How do I get started with Flood Element?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</link>
+      <pubDate>Tue, 17 Mar 2020 20:58:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</guid>
+      <description>Originally posted here.
+On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.
+‍   TRANSCRIPT:
+If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to element.</description>
+    </item>
+    
+    <item>
+      <title>FOMO and performance testing: Why Robinhood went down</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/</link>
+      <pubDate>Mon, 09 Mar 2020 20:29:40 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/</guid>
+      <description>Originally posted here.
+Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?
+The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production.</description>
+    </item>
+    
   </channel>
 </rss>

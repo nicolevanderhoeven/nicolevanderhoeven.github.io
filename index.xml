@@ -9,6 +9,19 @@
     <copyright>Nicole van der Hoeven</copyright>
     <lastBuildDate>Mon, 21 Dec 2020 20:18:27 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Speaking Engagements</title>
+      <link>https://nicolevanderhoeven.github.io/speaking/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/speaking/</guid>
+      <description>Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some videos I&amp;rsquo;ve made on various topics.
+2020 31/10 JMeter Scripting Day: Cuándo JMeter no alcanza: pruebas de carga simulando navegadores (Spanish)
+24/09 Testing Talks Online (panel): Lifting the lid on performance testing: Best practices from innovative companies (English)
+22/07 Test Guild Performance Podcast: Performance Testing FOMO (English)
+19/06 Perf Bytes en Español Podcast: Entrevista (Spanish)</description>
+    </item>
+    
+    <item>
       <title>Productivity</title>
       <link>https://nicolevanderhoeven.github.io/map/productivity/</link>
       <pubDate>Mon, 21 Dec 2020 20:18:27 +0100</pubDate>
@@ -671,6 +684,18 @@ The answer is yes. Applications should always be assessed for risk and tested ac
       <description>Originally posted here and here.
 TL;DR? Here are the highlights in this article:
 Shadow, Inc. created a mobile app for the Iowa Caucus in February 2020, and the app failed, causing reported results to be delayed. The app reported different vote totals due to a system integration bug where the output was in a different format than what it needed to be. Here are the steps to load testing a mobile app:</description>
+    </item>
+    
+    <item>
+      <title>TestCon Moscow 2019: Dismantling Cognitive Biases</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</link>
+      <pubDate>Wed, 03 Apr 2019 23:14:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</guid>
+      <description>Originally posted here.
+Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.
+In this year’s TestCon conference, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.
+In the talk, I discuss:</description>
     </item>
     
     <item>

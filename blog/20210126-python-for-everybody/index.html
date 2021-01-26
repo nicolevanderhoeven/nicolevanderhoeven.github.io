@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Python for Everybody Specialization | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping oithers do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Python for Everybody Specialization" />
+<meta property="og:description" content="I&rsquo;m starting off the new year by learning something new. I am a big fan of non-traditional education, and Coursera is a platform I&rsquo;ve used a few times before. You may not get courses that qualify as university credit, but I&rsquo;ve found it to be a useful resource for learning. I might be biased (my university degree is in Economics, which I&rsquo;ve never used), but in some ways, I actually prefer a MOOC (that&rsquo;s a Massively Open Online Course) to a typical formal university course for a few reasons:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210126-python-for-everybody/" />
+<meta property="article:published_time" content="2021-01-26T23:01:18+01:00" />
+<meta property="article:modified_time" content="2021-01-26T23:01:18+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python for Everybody Specialization"/>
+<meta name="twitter:description" content="I&rsquo;m starting off the new year by learning something new. I am a big fan of non-traditional education, and Coursera is a platform I&rsquo;ve used a few times before. You may not get courses that qualify as university credit, but I&rsquo;ve found it to be a useful resource for learning. I might be biased (my university degree is in Economics, which I&rsquo;ve never used), but in some ways, I actually prefer a MOOC (that&rsquo;s a Massively Open Online Course) to a typical formal university course for a few reasons:"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/speaking/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&text=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&is_video=false&description=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Python%20for%20Everybody%20Specialization&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&name=Python%20for%20Everybody%20Specialization&description=I%26rsquo%3bm%20starting%20off%20the%20new%20year%20by%20learning%20something%20new.%20I%20am%20a%20big%20fan%20of%20non-traditional%20education%2c%20and%20Coursera%20is%20a%20platform%20I%26rsquo%3bve%20used%20a%20few%20times%20before.%20You%20may%20not%20get%20courses%20that%20qualify%20as%20university%20credit%2c%20but%20I%26rsquo%3bve%20found%20it%20to%20be%20a%20useful%20resource%20for%20learning.%20I%20might%20be%20biased%20%28my%20university%20degree%20is%20in%20Economics%2c%20which%20I%26rsquo%3bve%20never%20used%29%2c%20but%20in%20some%20ways%2c%20I%20actually%20prefer%20a%20MOOC%20%28that%26rsquo%3bs%20a%20Massively%20Open%20Online%20Course%29%20to%20a%20typical%20formal%20university%20course%20for%20a%20few%20reasons%3a">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&t=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Python for Everybody Specialization
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-01-26 23:01:18 &#43;0100 CET" itemprop="datePublished">2021-Jan-26</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/python" rel="tag">python</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/certifications" rel="tag">certifications</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>I&rsquo;m starting off the new year by learning something new. I am a big fan of non-traditional education, and <a href="https://coursera.org">Coursera</a> is a platform I&rsquo;ve used a few times before. You may not get courses that qualify as university credit, but I&rsquo;ve found it to be a useful resource for learning. I might be biased (my university degree is in Economics, which I&rsquo;ve never used), but in some ways, I actually prefer a MOOC (that&rsquo;s a Massively Open Online Course) to a typical formal university course for a few reasons:</p>
+<ul>
+<li>
+<p>MOOCs are entirely online, which means it&rsquo;s more accessible - I don&rsquo;t need to physically be in the US to take a course at Harvard</p>
+</li>
+<li>
+<p>MOOCs are usually self-paced - perfect for someone working full-time like me</p>
+</li>
+<li>
+<p>MOOCs are free or cheap - no huge student loans here; MOOCs are democratizing education and making it available to more people</p>
+</li>
+<li>
+<p>Good online education tends to be more practical. There is none of the intellectual posturing that I&rsquo;ve seen in physical classrooms; there are no random classes you need to take to get a fancy piece of paper. I love being able to choose a topic and learn ONLY that&ndash; and get right down to business in the first lesson.</p>
+</li>
+<li>
+<p>Formal education is often centered around getting students jobs, not helping workers do their jobs well. I already have a job, and I want to learn real, usable skills, not &ldquo;marketable&rdquo; ones.</p>
+</li>
+</ul>
+<p>My main complaint with MOOCs was that they tend to be short (in comparison to a formal course), but Coursera has addressed that somewhat with their specializations. A specialization is a series of courses, but it&rsquo;s more than just disparate courses that are strung together; it&rsquo;s a thoughtfully designed curriculum that builds up on knowledge from previous courses. Last year, I began learning Python.</p>
+<p>Why Python? Others might have different reasons, but here were mine:</p>
+<ul>
+<li>
+<p>Python is one of the best languages to learn for data analysis (the other being R). I&rsquo;ve always been interested in data visualization, and as a load tester, I&rsquo;m frequently exposed to large quantities of data that I somehow need to make sense of.</p>
+</li>
+<li>
+<p>Python is pretty good at retrieving data from websites, and I wanted to explore how good it is to use in load testing. I&rsquo;m always eager to learn different ways to test, and I&rsquo;ve wanted to try <a href="https://locust.io/">Locust</a> for a while.</p>
+</li>
+<li>
+<p>Python is increasing in popularity, and I wanted to see why.</p>
+</li>
+</ul>
+<p>So I decided to take the <a href="https://www.coursera.org/learn/python">Python for Everybody Specialization</a> from the University of Michigan (via Coursera) to get an introduction to this cool language. The specialization consists of five modules, each of which I had to take separately:</p>
+<ul>
+<li>
+<p>Programming for Everybody (Getting Started with Python)</p>
+</li>
+<li>
+<p>Python Data Structure</p>
+</li>
+<li>
+<p>Using Python to Access Web Data</p>
+</li>
+<li>
+<p>Using Databases with Python</p>
+</li>
+<li>
+<p>Capstone: Retrieving, Processing, and Visualizing Data with Python</p>
+</li>
+</ul>
+<p>The specialization was really fun, and the teacher, Charles Severance, is fantastic. I&rsquo;d taken courses from him before, so I knew what to expect. He didn&rsquo;t disappoint. He has a way of explaining daunting technical concepts in a way that&rsquo;s easy to digest for beginners.</p>
+<p>You can <a href="https://coursera.org/share/11534b2c1b88aa2ab1f0098ebbe32e18">check out my certificate here</a>. I&rsquo;m pretty happy with my progress. I&rsquo;m by no means a Python expert now, but I&rsquo;m definitely eager to keep learning how to do more things with this new knowledge.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&text=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&is_video=false&description=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Python%20for%20Everybody%20Specialization&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&title=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&name=Python%20for%20Everybody%20Specialization&description=I%26rsquo%3bm%20starting%20off%20the%20new%20year%20by%20learning%20something%20new.%20I%20am%20a%20big%20fan%20of%20non-traditional%20education%2c%20and%20Coursera%20is%20a%20platform%20I%26rsquo%3bve%20used%20a%20few%20times%20before.%20You%20may%20not%20get%20courses%20that%20qualify%20as%20university%20credit%2c%20but%20I%26rsquo%3bve%20found%20it%20to%20be%20a%20useful%20resource%20for%20learning.%20I%20might%20be%20biased%20%28my%20university%20degree%20is%20in%20Economics%2c%20which%20I%26rsquo%3bve%20never%20used%29%2c%20but%20in%20some%20ways%2c%20I%20actually%20prefer%20a%20MOOC%20%28that%26rsquo%3bs%20a%20Massively%20Open%20Online%20Course%29%20to%20a%20typical%20formal%20university%20course%20for%20a%20few%20reasons%3a">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210126-python-for-everybody%2f&t=Python%20for%20Everybody%20Specialization">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

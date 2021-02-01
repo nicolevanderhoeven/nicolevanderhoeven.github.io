@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Comparing k6 and JMeter for load testing | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Comparing k6 and JMeter for load testing" />
+<meta property="og:description" content="Originally posted on k6.io.
+  Introduction When I joined the k6 team in late November, the foremost question on my mind was &ldquo;How does this compare to JMeter?&rdquo; You see, I come from a performance testing consulting background, and in the last few years, JMeter has been far and away my tool of choice.
+So what am I doing on the k6 site, talking about how much I love JMeter?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210129-k6-vs-jmeter/" />
+<meta property="article:published_time" content="2021-01-29T23:01:18+01:00" />
+<meta property="article:modified_time" content="2021-01-29T23:01:18+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Comparing k6 and JMeter for load testing"/>
+<meta name="twitter:description" content="Originally posted on k6.io.
+  Introduction When I joined the k6 team in late November, the foremost question on my mind was &ldquo;How does this compare to JMeter?&rdquo; You see, I come from a performance testing consulting background, and in the last few years, JMeter has been far and away my tool of choice.
+So what am I doing on the k6 site, talking about how much I love JMeter?"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210126-python-for-everybody/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&text=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&is_video=false&description=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Comparing%20k6%20and%20JMeter%20for%20load%20testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&name=Comparing%20k6%20and%20JMeter%20for%20load%20testing&description=Originally%20posted%20on%20k6.io.%0a%20%20Introduction%20When%20I%20joined%20the%20k6%20team%20in%20late%20November%2c%20the%20foremost%20question%20on%20my%20mind%20was%20%26ldquo%3bHow%20does%20this%20compare%20to%20JMeter%3f%26rdquo%3b%20You%20see%2c%20I%20come%20from%20a%20performance%20testing%20consulting%20background%2c%20and%20in%20the%20last%20few%20years%2c%20JMeter%20has%20been%20far%20and%20away%20my%20tool%20of%20choice.%0aSo%20what%20am%20I%20doing%20on%20the%20k6%20site%2c%20talking%20about%20how%20much%20I%20love%20JMeter%3f">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&t=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-jmeter">What is JMeter?</a></li>
+    <li><a href="#what-is-k6">What is k6?</a></li>
+    <li><a href="#which-is-better">Which is better?</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#when-you-want-to-get-started-quickly">When you want to get started quickly</a>
+      <ul>
+        <li><a href="#jmeter-has-a-gui">JMeter has a GUI</a></li>
+        <li><a href="#jmeter-supports-many-protocols-and-features-out-of-the-box">JMeter supports many protocols and features out of the box</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-a-mature-community-with-tons-of-documentation">When you want a mature community with tons of documentation</a></li>
+    <li><a href="#when-you-need-a-cost-effective-way-to-do-distributed-load-testing">When you need a cost-effective way to do distributed load testing</a></li>
+    <li><a href="#when-you-want-canned-reports-built-into-your-load-testing-tool">When you want canned reports built into your load testing tool</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#when-you-want-to-get-started-quickly-1">When you want to get started quickly</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#scripting">Scripting</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-to-maximize-performance-and-efficiency">When you want to maximize performance and efficiency</a>
+      <ul>
+        <li><a href="#test-your-test-tools">Test your test tools!</a></li>
+        <li><a href="#k6-builds-on-gos-stellar-performance">k6 builds on Go&rsquo;s stellar performance</a></li>
+        <li><a href="#performance-benefits-in-practice">Performance benefits in practice</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-to-do-goal-oriented-testing">When you want to do goal-oriented testing</a></li>
+    <li><a href="#when-youre-part-of-a-team-of-scripters">When you&rsquo;re part of a team of scripters</a>
+      <ul>
+        <li><a href="#it-strikes-a-middle-ground-that-developers-and-testers-can-compromise-on">It strikes a middle ground that developers and testers can compromise on</a></li>
+        <li><a href="#its-easier-to-collaborate-on-scripts">It&rsquo;s easier to collaborate on scripts</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-something-easy-to-maintain">When you want something easy to maintain</a>
+      <ul>
+        <li><a href="#versioning-for-load-testing">Versioning for load testing</a></li>
+        <li><a href="#its-easier-to-link-test-code-with-application-code">It&rsquo;s easier to link test code with application code</a></li>
+        <li><a href="#test-as-code-gives-you-control">Test as code gives you control</a></li>
+        <li><a href="#no-external-dependencies">No external dependencies</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#both-tools-do-well-at">Both tools do well at:</a></li>
+    <li><a href="#neither-tool-supports">Neither tool supports:</a></li>
+    <li><a href="#jmeter-is-best-for">JMeter is best for:</a></li>
+    <li><a href="#k6-is-best-for">k6 is best for:</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Comparing k6 and JMeter for load testing
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-01-29 23:01:18 &#43;0100 CET" itemprop="datePublished">2021-Jan-29</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/jmeter" rel="tag">jmeter</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://k6.io/blog/k6-vs-jmeter">
+
+<p><em>Originally posted on <a href="https://k6.io/blog/k6-vs-jmeter">k6.io</a>.</em></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/noZppBruOSY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="introduction">Introduction</h1>
+<p>When I <a href="https://www.youtube.com/watch?v=zcYeboT5FYE&amp;list=PLJdv3RhAQXNHsC8OOV3ZjwZvC9tRoAYF2">joined the k6 team in late November</a>, the foremost question on my mind was &ldquo;How does this compare to JMeter?&rdquo; You see, I come from a performance testing consulting background, and in the last few years, JMeter has been far and away my tool of choice.</p>
+<p>So what am I doing on the k6 site, talking about how much I love JMeter? Well, firstly, it turns out that the k6 team is pretty open and transparent, especially about potential improvements in k6. Secondly, I want to share my reasons for wanting to explore k6 as a load testing tool&ndash; the same reasons that ultimately convinced me to join the team that builds it.</p>
+<h2 id="what-is-jmeter">What is JMeter?</h2>
+<p><a href="https://jmeter.apache.org/">JMeter</a> is an open source load testing tool built entirely in Java by the <a href="https://www.apache.org/">Apache Foundation</a>. It was first released in 1998, and it made waves because of its audacity in taking on more popular but proprietary load testing tools. JMeter took what other companies were charging a lot of money for and published it online for everyone to use&ndash; for free. Although scripts can also be extended using code, majority of the scripting in JMeter is done using the UI. At the time of this writing, the latest version of JMeter is 5.4.</p>
+<h2 id="what-is-k6">What is k6?</h2>
+<p>k6 is an <a href="https://github.com/loadimpact/k6">open source</a> load testing tool released by <a href="https://loadimpact.com">LoadImpact</a> in 2017. LoadImpact had previously consisted of the SaaS platform (now <a href="https://k6.io/cloud">k6 Cloud</a>) and professional services. k6 is written in Go, but scripts are written in Javascript. Taking the opposite tack to JMeter, k6&rsquo;s main selling point is its code-based scripting and heavy prioritization of the developer experience. The latest version of k6 is 0.30.</p>
+<h2 id="which-is-better">Which is better?</h2>
+<p>This article isn&rsquo;t about which tool is <em>better</em>, because as much as we might prefer a clear-cut answer, there&rsquo;s no &ldquo;best tool&rdquo;. Everything depends on the situation your team is in: what, how, why, and when you&rsquo;re testing.</p>
+<p>The question that I want to answer here is: <em>What situations does each tool excel in?</em></p>
+<!-- raw HTML omitted -->
+<h1 id="when-does-jmeter-excel">When does JMeter excel?</h1>
+<h2 id="when-you-want-to-get-started-quickly">When you want to get started quickly</h2>
+<h3 id="jmeter-has-a-gui">JMeter has a GUI</h3>
+<p>Many testing teams make decisions on load testing tools based on this fact alone. Sometimes, if you&rsquo;re in a situation where people haven&rsquo;t done load testing before and need to learn a new tool, a GUI-driven tool like JMeter is simply the most frictionless option. A tool with a GUI will be less daunting for many testers that are used to the mostly no-code UIs of the likes of Postman or SOAPUI.</p>
+<p><img src="assets/01-jmetergui.png" alt="JMeter&rsquo;s starting screen: a fresh new test plan"></p>
+<p>I&rsquo;ve always thought of JMeter as user-friendly, but a developer friend recently pointed out that the Test Plan screen that greets you when you first start JMeter doesn&rsquo;t provide any indication of how to create an HTTP sampler. None of the icons add elements to the test plan. It takes a bit of exploring to realize that right clicking on the test plan, or going to Edit &gt; Add, will show the &ldquo;Add&rdquo; menu that you need. He has a point there: UI is subjective to a certain degree. However, I&rsquo;d argue that it&rsquo;s definitely easier for non-developers to explore a UI than a bit of code.</p>
+<p>k6 doesn&rsquo;t have a GUI packaged within the tool, but the <a href="https://k6.io/docs/test-authoring/test-builder">k6 Test Builder</a> is available for free. It&rsquo;s a way to create tests with a GUI interface, and despite its inclusion in k6 cloud, it doesn&rsquo;t require any subscription to use. However, it isn&rsquo;t as fully-featured as JMeter.</p>
+<h3 id="jmeter-supports-many-protocols-and-features-out-of-the-box">JMeter supports many protocols and features out of the box</h3>
+<p>Here&rsquo;s <a href="https://jmeter.apache.org/index.html">the official list</a> of the protocols that JMeter supports:</p>
+<ul>
+<li>Web - HTTP, HTTPS (Java, NodeJS, PHP, ASP.NET, …)</li>
+<li>SOAP / REST Webservices</li>
+<li>FTP</li>
+<li>Database via JDBC</li>
+<li>LDAP</li>
+<li>Message-oriented middleware (MOM) via JMS</li>
+<li>Mail - SMTP(S), POP3(S) and IMAP(S)</li>
+<li>Native commands or shell scripts</li>
+<li>TCP</li>
+<li>Java Objects</li>
+</ul>
+<p>In contrast, k6 supports the following protocols:</p>
+<ul>
+<li>Web - HTTP/1.1, <a href="https://k6.io/docs/using-k6/protocols/http-2">HTTP/2</a> (Java, NodeJS, PHP, ASP.NET, …)</li>
+<li><a href="https://k6.io/docs/using-k6/protocols/websockets">WebSockets</a></li>
+<li><a href="https://k6.io/docs/using-k6/protocols/grpc">gRPC</a></li>
+<li>SOAP / REST Webservices</li>
+</ul>
+<p>The protocols above are those that are natively supported. However, both tools allow the development of third-party plugins, adding support for more protocols. The number of <a href="https://github.com/topics/xk6">k6 community extensions</a>, through <a href="https://k6.io/blog/extending-k6-with-xk6">xk6</a>, is growing, but <a href="https://jmeter-plugins.org/">JMeter plugins</a> still outnumber them. In many cases, the protocols your application uses may make the decision for you of which tool to use.</p>
+<p>JMeter also has most of the features you&rsquo;ll need for a basic load test, and you don&rsquo;t have to code any of it up yourself. Its parent-child element structure means that you can modify a specific element, like an HTTP request, or modify all HTTP requests, with equal ease. Adding think time to all requests is as easy as adding a Uniform Random Timer to your thread group, and all requests within that group will inherit it.
+With code-based load testing tools, it can be a bit more difficult to find out what&rsquo;s possible without a UI. Some of the gap, however, can be bridged by an IDE with good autocompletion.</p>
+<h2 id="when-you-want-a-mature-community-with-tons-of-documentation">When you want a mature community with tons of documentation</h2>
+<p>JMeter&rsquo;s old, and sometimes that&rsquo;s a good thing. It&rsquo;s been around since 1998, so at this point, it&rsquo;s had 22 years to improve and to build a following. JMeter has a presence on nearly every community networking site, and no matter how specific your use case for JMeter is, the chances are that it&rsquo;s been done before. Searching &ldquo;how to load test X with JMeter&rdquo; is bound to yield thousands of hits and some videos showing you exactly how to do it.</p>
+<p>JMeter&rsquo;s <a href="https://jmeter.apache.org/usermanual/component_reference.html">Component Reference</a> is proof of JMeter&rsquo;s extensive and thorough documentation. Every element, function, and property is discussed in more detail than most people could ever want, and that&rsquo;s just the &ldquo;official&rdquo; documentation that&rsquo;s on the Apache site. There are thousands of JMeter books, tutorials, and courses by its passionate users.</p>
+<p>The <a href="https://github.com/apache/jmeter">JMeter GitHub repository</a> has 17,290 commits as of December 2020 - evidence of a community of developers that have committed some time and experience to JMeter over the last two decades.</p>
+<p>In comparison, the k6 community is growing, but still small. There is an official and <a href="https://community.k6.io/">central community forum</a> that allows users to share their experiences with k6, which is something missing from the JMeter community. The <a href="https://github.com/loadimpact/k6">k6 repository</a> does have more stars, but significantly fewer commits at 3,795. Much of the disparity, of course, is because k6 is very new - the open-source tool k6 was only released in 2017.</p>
+<h2 id="when-you-need-a-cost-effective-way-to-do-distributed-load-testing">When you need a cost-effective way to do distributed load testing</h2>
+<p>One of JMeter&rsquo;s absolute best features is that it gives you a framework for running distributed load tests with it. This is pretty special for a free and open-source tool.</p>
+<p>Distributed testing means ramping up the amount of load you&rsquo;re generating with your load tests, usually by increasing the number of virtual users and running multiple instances of your script on other load generators. JMeter accomplishes this by designating a controller node and letting you set up worker nodes. Each worker node needs to have a copy of <code>jmeter-server</code>, a utility included with every JMeter installation (in <code>jmeter/bin</code>).</p>
+<p><img src="assets/02-jmeterdistributed.svg" alt="JMeter comes with a native distributed testing mode"></p>
+<p>Source: <a href="https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html">Apache JMeter</a></p>
+<p>These worker nodes then run copies of your test plan and exert load against your application server. You can use on-premise or cloud machines as your worker nodes. A distributed execution like this takes a bit to set up, but it does work surprisingly well.</p>
+<p>k6 doesn&rsquo;t have a <em>native</em> distributed load testing mode. You <em>can</em> containerize it yourself and deploy it via Kubernetes, for instance, but it does require a more involved setup. The team is also working on the <a href="https://github.com/k6io/operator">k6 Operator</a>, which makes setup significantly easier, but it is experimental and comes with drawbacks such as not supporting threshold synchronization between instances. For now, the easiest way to scale up on k6 is by using the paid service k6 Cloud, which reduces setup time and complexity significantly.</p>
+<p>It&rsquo;s important to note that JMeter can be quite resource-hungry, and thus is more likely to require multiple load generators to generate load than k6. Depending on the resources of the load generator, JMeter can run about a thousand virtual users on average, and scaling up your test beyond that point will require a distributed execution setup. A single instance of k6, on the other hand, can run tens of thousands of virtual users given the same resources. More on that later.</p>
+<h2 id="when-you-want-canned-reports-built-into-your-load-testing-tool">When you want canned reports built into your load testing tool</h2>
+<p>JMeter&rsquo;s many listeners allow you to decide exactly what format you want to view results in. Debugging? Use the View Results Tree. Wanting metrics for your load test? Use the Summary or Aggregate Report.</p>
+<p><img src="assets/03-jmeterlistener.png" alt="Adding listeners like View Results Tree in JMeter lets you visualize results in different ways"></p>
+<p>In addition, JMeter can generate HTML reports based on your load tests. They&rsquo;re currently quite limited, but functional, and they have several default graphs to help you analyze your load test. They are not interactive, but they are pretty easy to generate and a good starting point for putting together a report template for your tests.</p>
+<p><img src="assets/04-jmeterhtmlreport.png" alt="JMeter&rsquo;s built-in HTML dashboard is limited but functional"></p>
+<p>k6 does not have built-in reporting. Its modular nature lends itself better to integrating with <a href="https://k6.io/docs/results-visualization">many other data analytics tools</a>, including Grafana, Datadog, New Relic, Amazon CloudWatch, and k6 Cloud&ndash; all of which are better analysis tools and can provide more insights than what JMeter&rsquo;s reports can provide, but they do require you to set up another tool to analyze your tests. If you&rsquo;re running low on time and can make do with its reports, JMeter does really well at providing that extra value out of the box.</p>
+<h1 id="when-does-k6-excel">When does k6 excel?</h1>
+<h2 id="when-you-want-to-get-started-quickly-1">When you want to get started quickly</h2>
+<p>Yup, I put this one in both the JMeter and k6 sections. JMeter and k6 can each be easy to get started with, but for very different reasons.</p>
+<h3 id="installation">Installation</h3>
+<p>k6 installs extremely quickly - on my first installation of it on macOS, it took <a href="https://www.youtube.com/watch?v=y5tteMKZUqk&amp;t=99">7 seconds</a> via <code>brew install k6</code>. It doesn&rsquo;t require nodeJS or any other dependencies, either.</p>
+<p>JMeter itself is fairly easy to install, but before you install JMeter, you need to install Java. Especially if you&rsquo;re using Windows, it&rsquo;s a bit of a rite of passage for a new JMeter user to run into issues adding the environment variables needed for Java to function.</p>
+<p>It can also be confusing to determine which version of Java is the right one. There&rsquo;s JDK, JRE, and recently Oracle has added to the confusion by announcing that some versions of Java (but not all) are going to require a license.</p>
+<p><img src="assets/05-javalicense.png" alt="Oracle&rsquo;s changing Java licensing can cause confusion for JMeter users"></p>
+<p>Source: <a href="https://java.com/en/download/">Oracle Java</a></p>
+<p>While JMeter is still free via OpenJDK, I&rsquo;ve spoken to a few testers who mistakenly thought they&rsquo;d have to pay for JMeter. It&rsquo;s a little disconcerting to see Oracle flexing its muscles here, especially if you&rsquo;ve built a whole performance testing suite on Java through JMeter.</p>
+<h3 id="plugins">Plugins</h3>
+<p>k6 <a href="https://k6.io/blog/extending-k6-with-xk6">supports plugins</a>, but they&rsquo;re not necessary. For most use cases, k6&rsquo;s built-in functionality should be more than sufficient. This is in sharp contrast to JMeter, where everything is a plugin &hellip; even the <a href="https://jmeter-plugins.org/wiki/PluginsManager/">Plugin Manager</a>!</p>
+<p>Most JMeter users would argue that there is a standard set of plugins that you should download before you even begin to use it. A new JMeter user might not necessarily know where to find these and may have a less-than-satisfying experience out of the box.</p>
+<p>Here are a few things you <em>won&rsquo;t</em> have if you stick to a vanilla, no-plugin JMeter installation:</p>
+<ul>
+<li>Thread groups: No custom load profile, stages, rendezvous</li>
+<li>Controllers: No parallel controller to execute requests in parallel</li>
+<li>Samplers: No HTTP/2 support</li>
+<li>Test Data: No randomization of lines within a CSV file (sequential only)</li>
+<li>Timers: No throughput shaping timer for setting throughput in stages</li>
+</ul>
+<p>These functions are all available within k6 from the get-go.</p>
+<h3 id="scripting">Scripting</h3>
+<p>k6 scripts are written in javascript, making them simple to write and run. All you need is one installer (on Microsoft Windows) or a single command on your terminal and any text editor. For JMeter, you&rsquo;ll need to install a few things locally before you can get started: Java, JMeter itself, and the standard set of plugins you&rsquo;ll need. This can be confusing for new users. Who hasn&rsquo;t struggled with environment variables at some point when learning to use JMeter, especially on Windows?</p>
+<p>It also takes time to learn any new UI, whereas javascript is near-ubiquitous and it&rsquo;s a good language to learn when you&rsquo;re load testing web sites anyway.</p>
+<h2 id="when-you-want-to-maximize-performance-and-efficiency">When you want to maximize performance and efficiency</h2>
+<h3 id="test-your-test-tools">Test your test tools!</h3>
+<p>Why does all this matter?</p>
+<p>When we&rsquo;re talking about simulating many virtual users, slow performance = high cost. There is a cost to the number of load generators you use, whether it&rsquo;s the cost to acquire and maintain them (on-prem) or the cost of a cloud service.</p>
+<p>It makes sense to consider the performance limitations of your load testing tool before you use it to improve your own application&rsquo;s performance.</p>
+<h3 id="k6-builds-on-gos-stellar-performance">k6 builds on Go&rsquo;s stellar performance</h3>
+<p>k6 is written in Go, and Go is built with performance in mind. &ldquo;Go is a compiled language and does not need to be interpreted, unlike Java or Python. There is no added layer of complexity.&rdquo; It also has no external dependencies, which is a good thing. Fewer moving parts for a performance tester means fewer potential sources of a bottleneck.</p>
+<p>The simplest and most common way for a load testing tool to run a virtual user is to assign one virtual user to one kernel or OS thread. However, the 1 Thread: 1 Virtual User paradigm has a serious flaw: when a virtual user is waiting for a response or executing a programmed <code>sleep()</code>, the thread is also blocked, and cannot process other work.</p>
+<p>In k6, each virtual user is run on a goroutine, not a thread. What difference does that make? Well, goroutines can be controlled by something called the Go Scheduler, which acts like a traffic cop. It reuses idle threads and intelligently assigns work, by allowing &ldquo;work stealing&rdquo; and work hand-offs between threads. Does this sound familiar? This is the same principle that load balancers are built on: An external monitor that oversees the flow of work improves general performance. Go itself is intrinsically load-balanced in a way that many programming languages aren&rsquo;t, which makes it the perfect foundation for a load testing tool.</p>
+<p>Being able to leverage Go&rsquo;s innate performance optimizations also translates into significantly less memory utilization. One thread running k6 doesn&rsquo;t go above 100 kb, whereas a JVM thread like JMeter uses, for instance, <a href="https://www.baeldung.com/jvm-configure-stack-sizes">uses the default of 1MB</a>. That&rsquo;s 1000% more than k6! Of course, Java allows a user to tweak an app&rsquo;s memory utilization, so the difference is usually not quite as stark, but it&rsquo;s still interesting to note that Go has a much lower starting point.</p>
+<blockquote>
+<p>&hellip; creating [a] new thread in Java is not memory efficient. As every thread consumes approx 1MB of the memory heap size and eventually if you start spinning thousands of threads, they will put tremendous pressure on the heap and will cause shut down due to out of memory. Also, if you want to communicate between two or more threads, it’s very difficult. - <a href="https://medium.com/@kevalpatel2106/why-should-you-learn-go-f607681fad65">Keval Patel</a></p>
+</blockquote>
+<h3 id="performance-benefits-in-practice">Performance benefits in practice</h3>
+<p><strong>Fewer load generators needed</strong></p>
+<p>k6&rsquo;s comparatively better performance means it needs fewer load generators to execute a given amount of load. Rafaela Azevedo made a comparison of the memory used by k6 and JMeter, and <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">here are her results</a>:</p>
+<p>JMeter took up 760 MB of memory.</p>
+<p><img src="assets/06-jmeterbenchmark.png" alt="In an independent test by Rafaela Azevedo, JMeter took up 760 MB of memory"></p>
+<p>Source: <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">Rafaela Azevedo</a></p>
+<p>Meanwhile, k6 took up 256 MB of memory.</p>
+<p><img src="assets/07-k6benchmark.png" alt="In an independent test by Rafaela Azevedo, k6 took up 256 MB of memory compared to JMeter&rsquo;s 760 MB for the same test"></p>
+<p>Source: <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">Rafaela Azevedo</a></p>
+<p>Rafaela&rsquo;s findings are further affirmed by our own benchmarks.</p>
+<p><img src="assets/08-internalbenchmarks.png" alt="A comparison of maximum throughput and memory for the most popular open-source load testing tools"></p>
+<p>Source: Ragnar Lönn, in our <a href="https://k6.io/blog/comparing-best-open-source-load-testing-tools">Load Testing Tool Comparison</a></p>
+<p>k6&rsquo;s lower memory footprint is the reason it can run more virtual users and generate more load than average. Whether you&rsquo;re using load generators that are on-premise or in a cloud, you&rsquo;ll pay less for provisioning costs when using k6. This cost saving makes k6 a great tool for budget-conscious teams.</p>
+<blockquote>
+<p>The common misconception of many load testers is that distributed execution (ability to launch a load test on multiple machines) is required to generate large load. This is not the case with k6. - <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">Rafaela Azevedo</a></p>
+</blockquote>
+<p>k6 is different from many other load testing tools in the way it handles hardware resources. A single k6 process will efficiently use all CPU cores on a load generator machine. A single instance of k6 is often enough to generate load of 30.000-40.000 simultaneous users (VUs). This amount of VUs can generate upwards of 300,000 requests per second (RPS).</p>
+<blockquote>
+<p>Unless you need more than 100,000-300,000 requests per second (6-12M requests per minute), a single instance of k6 will likely be sufficient for your needs. - <a href="https://k6.io/docs/testing-guides/running-large-tests">k6 documentation</a></p>
+</blockquote>
+<p><strong>No out of memory errors</strong></p>
+<p>k6 is also good for when you&rsquo;re short on time. Using JMeter means getting familiar with how to performance tune Java and how to fix the <a href="https://www.eginnovations.com/blog/top-10-java-performance-problems/">most common Java performance problems</a>, because there are several. The one that I&rsquo;ve personally run into the most while using JMeter is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.OutOfMemoryError: 
+Java heap space. 
+</code></pre></div><p>You&rsquo;re not really a JMeter load tester until you&rsquo;ve seen this error. :)</p>
+<p>The cause for this error is usually that there was an insufficient amount of Heap memory allocated to JMeter. Yup&ndash; in addition to monitoring your load generator&rsquo;s memory usage, you&rsquo;ll also need to monitor the JVM&rsquo;s memory usage. You can set the amount of heap memory allocated to JMeter by modifying the JMeter binary itself and changing this line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#960050;background-color:#1e0010">#</span> This is the base heap size <span style="color:#f92672">--</span> you may increase or decrease it to fit your
+<span style="color:#960050;background-color:#1e0010">#</span> system<span style="color:#960050;background-color:#1e0010">&#39;</span>s memory availability<span style="color:#f92672">:</span>
+<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;${HEAP:=&#34;</span><span style="color:#f92672">-</span>Xms1g <span style="color:#f92672">-</span>Xmx1g <span style="color:#f92672">-</span>XX<span style="color:#f92672">:</span>MaxMetaspaceSize<span style="color:#f92672">=</span>256m<span style="color:#e6db74">&#34;}&#34;</span>
+</code></pre></div><p>Even JMeter official documentation suggests that you increase the Java Heap size beyond 1GB before you even run your first load test.</p>
+<blockquote>
+<p>Increase the Java Heap size. By default JMeter runs with a heap of 1 GB, this might not be enough for your test and depends on your test plan and number of threads you want to run - <a href="https://jmeter.apache.org/usermanual/get-started.html">Apache JMeter</a></p>
+</blockquote>
+<p><strong>No GUI means no resource overhead during load tests</strong></p>
+<p>GUIs typically add significantly more overhead to an application, which is one of the reasons why k6 doesn&rsquo;t have one.</p>
+<p>When you&rsquo;re running a load test, the best practice is to run it from the command line anyway&ndash; because otherwise, it interferes with your results. Code-based load testing tools are performant from the beginning.</p>
+<p>JMeter is peppered with warnings about the GUI&rsquo;s effect on performance. Here&rsquo;s one from the &ldquo;JMeter documentation:</p>
+<blockquote>
+<p>Don&rsquo;t run load test using GUI mode ! - <a href="https://jmeter.apache.org/usermanual/get-started.html">Apache JMeter</a></p>
+</blockquote>
+<p>And here&rsquo;s a message that occurs upon startup of JMeter:</p>
+<p><img src="assets/09-jmeterguimodewarning.png" alt="JMeter&rsquo;s startup screen warns users not to use the GUI mode for load testing"></p>
+<p>Not having a GUI means there&rsquo;s one less gotcha. Any load testing scripts you create in k6 are ready for prime-time execution whenever you&rsquo;re ready.</p>
+<h2 id="when-you-want-to-do-goal-oriented-testing">When you want to do goal-oriented testing</h2>
+<p>The most important question a load tester can ask when starting a new load testing project is &ldquo;Why&rdquo;?
+Test plans should be made to directly address a team&rsquo;s reasons for wanting to do load testing, and that should be reflected in the non-functional requirements. Non-functional requirements, in turn, should then give some guidance as to the bounds of acceptable performance. A common example for these bounds, or thresholds, is an average response time of less than 3 seconds for all transactions during the test.
+k6 does this natively with <a href="https://k6.io/docs/using-k6/thresholds">global thresholds</a> worked into the script, and you can also create your own metric to use in a threshold:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/http&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Rate</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/metrics&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">myFailRate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Rate</span>(<span style="color:#e6db74">&#39;failed requests&#39;</span>);
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">thresholds</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;failed requests&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;rate&lt;0.1&#39;</span>], <span style="color:#75715e">// threshold on a custom metric
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">http_req_duration</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;p(95)&lt;500&#39;</span>], <span style="color:#75715e">// threshold on a standard metric
+</span><span style="color:#75715e"></span>  },
+};
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> () {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;https://test-api.k6.io/public/crocodiles/1/&#39;</span>);
+  <span style="color:#a6e22e">myFailRate</span>.<span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">!==</span> <span style="color:#ae81ff">200</span>);
+}
+
+</code></pre></div><p>Source: <a href="https://k6.io/docs/using-k6/thresholds">k6 documentation</a></p>
+<p>JMeter doesn&rsquo;t natively support thresholds at the test-level. There are a few ways that I&rsquo;ve been able to work around this:</p>
+<ul>
+<li>
+<p><strong>Duration Assertion</strong>: You can add a Duration Assertion to any sampler in JMeter, which allows you set an acceptable response time for that request in milliseconds, beyond which the request (and the transaction that encompasses it) would be marked as failed. However, this is still just at the individual request level, and even putting the duration assertion element at the Test Plan level only applies the same threshold to each child request. It doesn&rsquo;t constitute pass/fail criteria for the test as a whole.</p>
+</li>
+<li>
+<p><strong>Timers</strong>: For criteria related to throughput, you can use the Constant Throughput Timer or the Throughput Shaping Timer (plugin). This approach controls how many requests per second are spent. In my experience, it&rsquo;s worth testing how these timers behave when using nested transaction controllers - it may take some rearranging to get right.</p>
+</li>
+<li>
+<p><strong>Performance Plugin</strong>: When integrating JMeter with Jenkins, you can use the Performance Plugin to set error thresholds and mark test runs (&ldquo;builds&rdquo;) as unstable or failed within Jenkins.</p>
+</li>
+<li>
+<p><strong>Custom Code</strong>: You can use the JSR223 Sampler to write a bit of Groovy or BeanShell code that collects and parses response metrics.</p>
+</li>
+</ul>
+<p>The problem is that even though these options make setting thresholds possible in JMeter, they&rsquo;re still workarounds that don&rsquo;t come with JMeter out of the box or don&rsquo;t adequately address the creation of different types of thresholds (error, response time, throughput, CPU, memory). What I end up doing, more often than not, is exporting the raw data from JMeter and doing the analysis myself using another tool.</p>
+<h2 id="when-youre-part-of-a-team-of-scripters">When you&rsquo;re part of a team of scripters</h2>
+<p>k6 shines in situations where more than one person could be doing the scripting.</p>
+<h3 id="it-strikes-a-middle-ground-that-developers-and-testers-can-compromise-on">It strikes a middle ground that developers and testers can compromise on</h3>
+<p>Software quality should not be the sole responsibility of testers; quality should be baked into every activity when building software. One of the challenges in implementing this concept, however, is that there has traditionally been a segmentation in tools and languages used by team members with different functions. Developers use one tool; testers use another. It&rsquo;s difficult to encourage developers to test and testers to code in this environment, and many testing tools only further encourage this divide. A developer can&rsquo;t use a tool like JMeter for anything but testing, so the incentive to invest the effort in learning it is lower.</p>
+<p>k6 bridges the gap by bringing testing concepts and features to an environment and language that developers are already spending their time in. Javascript is useful for more than just writing load testing scripts, and k6 works well with any IDE or text editor. A frictionless developer experience is central to the k6 philosophy.</p>
+<h3 id="its-easier-to-collaborate-on-scripts">It&rsquo;s easier to collaborate on scripts</h3>
+<p>Once you&rsquo;ve convinced both devs and testers to contribute to load testing scripts, how do you keep track of changes? How do you manage scripts that multiple people are working on at the same time?
+With tests as code, the easiest way is to just use versioning tools like Git, the way you probably are already using for your application code. Again, no new framework or processes to learn here.
+k6&rsquo;s conciseness and portability really proves to be an advantage in collaboration situations. To illustrate this, let&rsquo;s consider a simple test script that contains a few things:</p>
+<ul>
+<li>A GET request to <a href="https://test.k6.io">our test site</a>, <code>https://test.k6.io</code></li>
+<li>A transaction that calls this request <code>01_Home</code></li>
+<li>A check to fail non-HTTP 200 responses or responses that don&rsquo;t have the text <code>Collection of simple web-pages suitable for load testing</code></li>
+<li>Variable think time</li>
+<li>We&rsquo;ll just run that as a single user, for a single iteration. Here&rsquo;s what that script looks like in k6:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/http&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sleep</span>, <span style="color:#a6e22e">check</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6&#39;</span>;
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;https://test.k6.io&#39;</span>, {<span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;01_Home&#39;</span> }});
+    <span style="color:#a6e22e">check</span>(<span style="color:#a6e22e">res</span>, {
+      <span style="color:#e6db74">&#39;is status 200&#39;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">r</span>) =&gt; <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">200</span>,
+      <span style="color:#e6db74">&#39;text verification&#39;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">r</span>) =&gt; <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;Collection of simple web-pages suitable for load testing&#34;</span>)
+    });
+    <span style="color:#a6e22e">sleep</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>);
+}
+</code></pre></div><p>You can track JMeter scripts on Git, too. Here&rsquo;s what the same script looks like in JMeter:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;jmeterTestPlan</span> <span style="color:#a6e22e">version=</span><span style="color:#e6db74">&#34;1.2&#34;</span> <span style="color:#a6e22e">properties=</span><span style="color:#e6db74">&#34;5.0&#34;</span> <span style="color:#a6e22e">jmeter=</span><span style="color:#e6db74">&#34;5.3&#34;</span><span style="color:#f92672">&gt;</span>
+  <span style="color:#f92672">&lt;hashTree&gt;</span>
+    <span style="color:#f92672">&lt;TestPlan</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;TestPlanGui&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;TestPlan&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;Test Plan&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TestPlan.comments&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+      <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TestPlan.functional_mode&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+      <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TestPlan.tearDown_on_shutdown&#34;</span><span style="color:#f92672">&gt;</span>true<span style="color:#f92672">&lt;/boolProp&gt;</span>
+      <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TestPlan.serialize_threadgroups&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+      <span style="color:#f92672">&lt;elementProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TestPlan.user_defined_variables&#34;</span> <span style="color:#a6e22e">elementType=</span><span style="color:#e6db74">&#34;Arguments&#34;</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;ArgumentsPanel&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;Arguments&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;User Defined Variables&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;collectionProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Arguments.arguments&#34;</span><span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;/elementProp&gt;</span>
+      <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TestPlan.user_define_classpath&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+    <span style="color:#f92672">&lt;/TestPlan&gt;</span>
+    <span style="color:#f92672">&lt;hashTree&gt;</span>
+      <span style="color:#f92672">&lt;ThreadGroup</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;ThreadGroupGui&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;ThreadGroup&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;Thread Group&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.on_sample_error&#34;</span><span style="color:#f92672">&gt;</span>continue<span style="color:#f92672">&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;elementProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.main_controller&#34;</span> <span style="color:#a6e22e">elementType=</span><span style="color:#e6db74">&#34;LoopController&#34;</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;LoopControlPanel&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;LoopController&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;Loop Controller&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;LoopController.continue_forever&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+          <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;LoopController.loops&#34;</span><span style="color:#f92672">&gt;</span>1<span style="color:#f92672">&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;/elementProp&gt;</span>
+        <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.num_threads&#34;</span><span style="color:#f92672">&gt;</span>1<span style="color:#f92672">&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.ramp_time&#34;</span><span style="color:#f92672">&gt;</span>1<span style="color:#f92672">&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.scheduler&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+        <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.duration&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.delay&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ThreadGroup.same_user_on_next_iteration&#34;</span><span style="color:#f92672">&gt;</span>true<span style="color:#f92672">&lt;/boolProp&gt;</span>
+      <span style="color:#f92672">&lt;/ThreadGroup&gt;</span>
+      <span style="color:#f92672">&lt;hashTree&gt;</span>
+        <span style="color:#f92672">&lt;TransactionController</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;TransactionControllerGui&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;TransactionController&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;01_Home&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TransactionController.includeTimers&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+          <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;TransactionController.parent&#34;</span><span style="color:#f92672">&gt;</span>true<span style="color:#f92672">&lt;/boolProp&gt;</span>
+        <span style="color:#f92672">&lt;/TransactionController&gt;</span>
+        <span style="color:#f92672">&lt;hashTree&gt;</span>
+          <span style="color:#f92672">&lt;HTTPSamplerProxy</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;HttpTestSampleGui&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;HTTPSamplerProxy&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;HTTP Request&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;elementProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPsampler.Arguments&#34;</span> <span style="color:#a6e22e">elementType=</span><span style="color:#e6db74">&#34;Arguments&#34;</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;HTTPArgumentsPanel&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;Arguments&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;User Defined Variables&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+              <span style="color:#f92672">&lt;collectionProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Arguments.arguments&#34;</span><span style="color:#f92672">/&gt;</span>
+            <span style="color:#f92672">&lt;/elementProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.domain&#34;</span><span style="color:#f92672">&gt;</span>test.k6.io<span style="color:#f92672">&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.port&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.protocol&#34;</span><span style="color:#f92672">&gt;</span>https<span style="color:#f92672">&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.contentEncoding&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.path&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.method&#34;</span><span style="color:#f92672">&gt;</span>GET<span style="color:#f92672">&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.follow_redirects&#34;</span><span style="color:#f92672">&gt;</span>true<span style="color:#f92672">&lt;/boolProp&gt;</span>
+            <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.auto_redirects&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+            <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.use_keepalive&#34;</span><span style="color:#f92672">&gt;</span>true<span style="color:#f92672">&lt;/boolProp&gt;</span>
+            <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.DO_MULTIPART_POST&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.embedded_url_re&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.connect_timeout&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+            <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;HTTPSampler.response_timeout&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+          <span style="color:#f92672">&lt;/HTTPSamplerProxy&gt;</span>
+          <span style="color:#f92672">&lt;hashTree&gt;</span>
+            <span style="color:#f92672">&lt;ResponseAssertion</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;AssertionGui&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;ResponseAssertion&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;Response Assertion&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+              <span style="color:#f92672">&lt;collectionProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Asserion.test_strings&#34;</span><span style="color:#f92672">&gt;</span>
+                <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;-745788246&#34;</span><span style="color:#f92672">&gt;</span>Collection of simple web-pages suitable for load testing<span style="color:#f92672">&lt;/stringProp&gt;</span>
+              <span style="color:#f92672">&lt;/collectionProp&gt;</span>
+              <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Assertion.custom_message&#34;</span><span style="color:#f92672">&gt;&lt;/stringProp&gt;</span>
+              <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Assertion.test_field&#34;</span><span style="color:#f92672">&gt;</span>Assertion.response_data<span style="color:#f92672">&lt;/stringProp&gt;</span>
+              <span style="color:#f92672">&lt;boolProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Assertion.assume_success&#34;</span><span style="color:#f92672">&gt;</span>false<span style="color:#f92672">&lt;/boolProp&gt;</span>
+              <span style="color:#f92672">&lt;intProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Assertion.test_type&#34;</span><span style="color:#f92672">&gt;</span>16<span style="color:#f92672">&lt;/intProp&gt;</span>
+            <span style="color:#f92672">&lt;/ResponseAssertion&gt;</span>
+            <span style="color:#f92672">&lt;hashTree/&gt;</span>
+          <span style="color:#f92672">&lt;/hashTree&gt;</span>
+        <span style="color:#f92672">&lt;/hashTree&gt;</span>
+        <span style="color:#f92672">&lt;UniformRandomTimer</span> <span style="color:#a6e22e">guiclass=</span><span style="color:#e6db74">&#34;UniformRandomTimerGui&#34;</span> <span style="color:#a6e22e">testclass=</span><span style="color:#e6db74">&#34;UniformRandomTimer&#34;</span> <span style="color:#a6e22e">testname=</span><span style="color:#e6db74">&#34;Uniform Random Timer&#34;</span> <span style="color:#a6e22e">enabled=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ConstantTimer.delay&#34;</span><span style="color:#f92672">&gt;</span>1000<span style="color:#f92672">&lt;/stringProp&gt;</span>
+          <span style="color:#f92672">&lt;stringProp</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;RandomTimer.range&#34;</span><span style="color:#f92672">&gt;</span>4000<span style="color:#f92672">&lt;/stringProp&gt;</span>
+        <span style="color:#f92672">&lt;/UniformRandomTimer&gt;</span>
+        <span style="color:#f92672">&lt;hashTree/&gt;</span>
+      <span style="color:#f92672">&lt;/hashTree&gt;</span>
+    <span style="color:#f92672">&lt;/hashTree&gt;</span>
+  <span style="color:#f92672">&lt;/hashTree&gt;</span>
+<span style="color:#f92672">&lt;/jmeterTestPlan&gt;</span>
+
+</code></pre></div><p>Which one is easier to understand? If you had to modify the script to add a request, which format would you choose to do it in?</p>
+<p>Scripting in XML makes merge conflicts more likely and breaking changes in automation pipelines way more difficult to pinpoint.</p>
+<p>I&rsquo;ve collaborated with others on JMeter scripts in the past, and we always opened up scripts in the GUI. It&rsquo;s way easier to spot changes there - but that also created some new issues.</p>
+<h2 id="when-you-want-something-easy-to-maintain">When you want something easy to maintain</h2>
+<h3 id="versioning-for-load-testing">Versioning for load testing</h3>
+<p>When ramping up load tests to more than one load generator, keeping track of the versions of necessary components ensures that one load generator&rsquo;s traffic is the same as another&rsquo;s. The value of reducing variables in scientific experiments holds true for load testing.</p>
+<p>With k6, you just need to worry about the version of k6 and the script. No other dependencies are required. If you&rsquo;re using plugins, you&rsquo;d need to track those too, but as mentioned previously, plugins in k6 aren&rsquo;t as necessary as they are in some other tools &ndash; and k6 is available as a Docker image to reduce those issues.</p>
+<p>With something like JMeter, there are more levels to consider. There&rsquo;s the version of JMeter itself, Java, versions of plugins, and then the script. Every new layer introduces more changes for incompatibilities. In previous projets I&rsquo;ve worked on, someone would inevitably try out a new plugin and forget to discuss it with the team, and anyone who tried to open that script in their copy of JMeter would see this error:</p>
+<p><img src="assets/10-jmeterpluginerror.png" alt="This is the error that JMeter throws when you attempt to open a test plan that includes a plugin you don&rsquo;t have installed locally"></p>
+<p>The error means there&rsquo;s a plugin that the script uses that JMeter doesn&rsquo;t recognize, but depending on the plugin, it&rsquo;s not always this easy to pinpoint which one (it was the <code>Ultimate Thread Group</code> in this case).
+You don&rsquo;t want that happening in the middle of your load test because you forgot to add a plugin to some of your load generators!</p>
+<h3 id="its-easier-to-link-test-code-with-application-code">It&rsquo;s easier to link test code with application code</h3>
+<p>If your application code is in Javascript, k6 is a shoo-in as a load testing tool. You could build tests that are tightly integrated with application code by importing objects and having your tests interacting with them directly. This approach would reduce a lot of time spent in refactoring test scripts when objects are changed.</p>
+<p>If you&rsquo;re already using VS Code, k6 even has a <a href="https://marketplace.visualstudio.com/items?itemName=k6.k6">VS Code plugin</a>.</p>
+<h3 id="test-as-code-gives-you-control">Test as code gives you control</h3>
+<p>Having your scripts be pure code reduces ambiguities in that you&rsquo;re not limited by poor UI design or bugs in third-party plugins. k6 scripts are Typescript-typed, so most IDEs support autocompletion while you&rsquo;re scripting - the code equivalent of helpful tooltips, except way more universal.
+k6 scripts give you the freedom to import and use JS libraries, so you can build on code others have already written. While k6 is not NodeJS, there are even <a href="https://k6.io/docs/using-k6/modules#bundling-node-modules">some NodeJS packages</a> that you can bundle for use with your scripts.</p>
+<h3 id="no-external-dependencies">No external dependencies</h3>
+<p>k6 doesn&rsquo;t require NodeJS or anything else to run, which also reduces the likelihood of bugs that might affect your scripts. For example, since JMeter runs on Java, it is also dependent on Java. When Java receives a new version, that often requires a JMeter update as well. JMeter versions understandably lag a bit behind Java versions as developers refactor code, but this gap can lead to potential security issues in a previous version of Java that may remain unpatched in the meantime.</p>
+<p>With k6, development can proceed independently of any third-party component, so major issues can be addressed more easily.</p>
+<h1 id="comparison-table-jmeter-vs-k6">Comparison table: JMeter vs k6</h1>
+<table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>JMeter</strong></th>
+<th><strong>k6</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Written in</strong></td>
+<td>Java</td>
+<td>Go</td>
+</tr>
+<tr>
+<td><strong>Scripting language</strong></td>
+<td>Limited: some Java (Groovy, Beanshell, etc)</td>
+<td>Javascript</td>
+</tr>
+<tr>
+<td><strong>Protocols</strong></td>
+<td>Supports most protocols via plugins (native support for HTTP/1.1, SOAP, FTP, JDBC, LDAP, MOM via JMS, SMTP, POP3, IMAP, shell scripts, TCP, Java objects)</td>
+<td>Supports fewer, modern protocols natively (HTTP/1.1, HTTP/2, WebSockets, gRPC)</td>
+</tr>
+<tr>
+<td><strong>External dependencies</strong></td>
+<td>Java</td>
+<td>none</td>
+</tr>
+<tr>
+<td><strong>Resource utilization</strong></td>
+<td><a href="https://k6.io/blog/static/b4075246f21af514c7a1554d1406b337/d5e13/RPSvMemory.png">Poor</a>; One load generator can simulate a few thousand virtual users</td>
+<td><a href="https://k6.io/blog/static/b4075246f21af514c7a1554d1406b337/d5e13/RPSvMemory.png">Very good</a>; One load generator can simulate tens of thousands of virtual users</td>
+</tr>
+<tr>
+<td><strong>Memory management</strong></td>
+<td>JVM heap memory must be set</td>
+<td>Uses load generator memory natively</td>
+</tr>
+<tr>
+<td><strong>Threading model</strong></td>
+<td>1 Thread: 1 Virtual User; Slower performance, higher resource cost</td>
+<td>1 Goroutine: 1 Virtual User; Faster performance, lower resource cost</td>
+</tr>
+<tr>
+<td><strong>Ease of scripting</strong></td>
+<td>GUI-driven, with code blocks</td>
+<td>code-driven; VSCode plugin</td>
+</tr>
+<tr>
+<td><strong>Test-level thresholds</strong></td>
+<td>No, individual request only</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Script format</strong></td>
+<td>XML</td>
+<td>javascript</td>
+</tr>
+<tr>
+<td><strong>Collaboration</strong></td>
+<td>Difficult to work on simultaneously; tester-friendly; need the GUI app to edit</td>
+<td>Developer-friendly, easy to version; Javascript format promotes collaboration</td>
+</tr>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td>Verbose scripts; XML format is difficult to read</td>
+<td>More concise scripts; JavaScript is easy to read</td>
+</tr>
+<tr>
+<td><strong>Community</strong></td>
+<td>Since 1998; Many third-party tutorials; Extensive documentation; No central community</td>
+<td>Since 2017; Extensive documentation; Fewer third-party tutorials; <a href="https://community.k6.io/">Official community</a></td>
+</tr>
+<tr>
+<td><strong>Plugin support</strong></td>
+<td>Requires plugins for many features, but there are lots of plugins available</td>
+<td>Most features are natively supported, but plugin support is new and availability is sparse</td>
+</tr>
+<tr>
+<td><strong>Native distributed load generation</strong></td>
+<td>Yes</td>
+<td>No (Premium only)</td>
+</tr>
+<tr>
+<td><strong>Pre-generated reports</strong></td>
+<td>Default and custom HTML reports; logging via listeners</td>
+<td>No built-in pre-generated reports; integration with analytics tools with third-party dashboards</td>
+</tr>
+<tr>
+<td><strong>Website</strong></td>
+<td><a href="https://jmeter.apache.org/">jmeter.apache.org</a></td>
+<td><a href="https://k6.io">k6.io</a></td>
+</tr>
+<tr>
+<td><strong>Source Code</strong></td>
+<td><a href="https://github.com/apache/jmeter">Link</a></td>
+<td><a href="https://github.com/loadimpact/k6">Link</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="conclusion">Conclusion</h1>
+<p>The best advice, when attempting to choose a load testing tool, is to do a proof of concept with the most promising candidates. Some features or bugs may prove more or less important when used in an actual testing cycle. However, don&rsquo;t put too much weight on comparisons of the load test <em>results</em> from two different tools - each tool records metrics differently, and it&rsquo;s more meaningful to compare results against previous runs with the same tool. When switching tools, reestablish a baseline in the new tool each time.</p>
+<p>Here&rsquo;s a summary that might help you decide between JMeter and k6.</p>
+<h2 id="both-tools-do-well-at">Both tools do well at:</h2>
+<ul>
+<li>Generating protocol-level load on an application server by scripting complex user flows</li>
+<li>Realistic scripting with the use of dynamic think time, test data generation and reuse, and customizable workload models</li>
+<li>Documentation of features and consistency of releases</li>
+</ul>
+<h2 id="neither-tool-supports">Neither tool supports:</h2>
+<ul>
+<li>Generating browser-level load and interacting with DOM elements, especially for SPA</li>
+<li>Detailed results analysis (JMeter has pre-generated HTML reports and listeners, but they are far from ideal). Users should expect to integrate results with databases and data visualization software.</li>
+</ul>
+<h2 id="jmeter-is-best-for">JMeter is best for:</h2>
+<ul>
+<li>traditional testing teams</li>
+<li>those looking for a GUI-driven testing tool with tons of third-party tutorials and extensive protocol support</li>
+<li>previous users of commercial tools like LoadRunner and NeoLoad</li>
+</ul>
+<h2 id="k6-is-best-for">k6 is best for:</h2>
+<ul>
+<li>collaborative, cross-functional engineering teams where testing spans acrosss multiple roles</li>
+<li>those looking for a simple and lightweight, yet fully-featured load testing tool</li>
+<li>teams looking to integrate testing into existing development workflows and CI/CD pipelines</li>
+</ul>
+<p>Load testing scripting tools are by no means the most important consideration for the success of load testing. Knowing <em>why</em> you&rsquo;re testing, what the requirements are, and understanding and communicating results are all arguably more important. The right tool will enable you to address those concerns while providing as little friction as possible. There&rsquo;s no unequivocal &ldquo;best&rdquo; tool; there&rsquo;s only the right tool for <em>your</em> project and context.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-jmeter">What is JMeter?</a></li>
+    <li><a href="#what-is-k6">What is k6?</a></li>
+    <li><a href="#which-is-better">Which is better?</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#when-you-want-to-get-started-quickly">When you want to get started quickly</a>
+      <ul>
+        <li><a href="#jmeter-has-a-gui">JMeter has a GUI</a></li>
+        <li><a href="#jmeter-supports-many-protocols-and-features-out-of-the-box">JMeter supports many protocols and features out of the box</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-a-mature-community-with-tons-of-documentation">When you want a mature community with tons of documentation</a></li>
+    <li><a href="#when-you-need-a-cost-effective-way-to-do-distributed-load-testing">When you need a cost-effective way to do distributed load testing</a></li>
+    <li><a href="#when-you-want-canned-reports-built-into-your-load-testing-tool">When you want canned reports built into your load testing tool</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#when-you-want-to-get-started-quickly-1">When you want to get started quickly</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#scripting">Scripting</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-to-maximize-performance-and-efficiency">When you want to maximize performance and efficiency</a>
+      <ul>
+        <li><a href="#test-your-test-tools">Test your test tools!</a></li>
+        <li><a href="#k6-builds-on-gos-stellar-performance">k6 builds on Go&rsquo;s stellar performance</a></li>
+        <li><a href="#performance-benefits-in-practice">Performance benefits in practice</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-to-do-goal-oriented-testing">When you want to do goal-oriented testing</a></li>
+    <li><a href="#when-youre-part-of-a-team-of-scripters">When you&rsquo;re part of a team of scripters</a>
+      <ul>
+        <li><a href="#it-strikes-a-middle-ground-that-developers-and-testers-can-compromise-on">It strikes a middle ground that developers and testers can compromise on</a></li>
+        <li><a href="#its-easier-to-collaborate-on-scripts">It&rsquo;s easier to collaborate on scripts</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-you-want-something-easy-to-maintain">When you want something easy to maintain</a>
+      <ul>
+        <li><a href="#versioning-for-load-testing">Versioning for load testing</a></li>
+        <li><a href="#its-easier-to-link-test-code-with-application-code">It&rsquo;s easier to link test code with application code</a></li>
+        <li><a href="#test-as-code-gives-you-control">Test as code gives you control</a></li>
+        <li><a href="#no-external-dependencies">No external dependencies</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#both-tools-do-well-at">Both tools do well at:</a></li>
+    <li><a href="#neither-tool-supports">Neither tool supports:</a></li>
+    <li><a href="#jmeter-is-best-for">JMeter is best for:</a></li>
+    <li><a href="#k6-is-best-for">k6 is best for:</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&text=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&is_video=false&description=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Comparing%20k6%20and%20JMeter%20for%20load%20testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&title=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&name=Comparing%20k6%20and%20JMeter%20for%20load%20testing&description=Originally%20posted%20on%20k6.io.%0a%20%20Introduction%20When%20I%20joined%20the%20k6%20team%20in%20late%20November%2c%20the%20foremost%20question%20on%20my%20mind%20was%20%26ldquo%3bHow%20does%20this%20compare%20to%20JMeter%3f%26rdquo%3b%20You%20see%2c%20I%20come%20from%20a%20performance%20testing%20consulting%20background%2c%20and%20in%20the%20last%20few%20years%2c%20JMeter%20has%20been%20far%20and%20away%20my%20tool%20of%20choice.%0aSo%20what%20am%20I%20doing%20on%20the%20k6%20site%2c%20talking%20about%20how%20much%20I%20love%20JMeter%3f">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210129-k6-vs-jmeter%2f&t=Comparing%20k6%20and%20JMeter%20for%20load%20testing">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

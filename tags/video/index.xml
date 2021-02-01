@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 17 Dec 2020 15:29:57 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jan 2021 23:01:18 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparing k6 and JMeter for load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210129-k6-vs-jmeter/</link>
+      <pubDate>Fri, 29 Jan 2021 23:01:18 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210129-k6-vs-jmeter/</guid>
+      <description>Originally posted on k6.io.
+  Introduction When I joined the k6 team in late November, the foremost question on my mind was &amp;ldquo;How does this compare to JMeter?&amp;rdquo; You see, I come from a performance testing consulting background, and in the last few years, JMeter has been far and away my tool of choice.
+So what am I doing on the k6 site, talking about how much I love JMeter?</description>
+    </item>
+    
     <item>
       <title>Week of Testing Wrap-up: My thoughts on k6 as a load testing tool</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</link>

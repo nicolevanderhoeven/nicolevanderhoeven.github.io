@@ -316,12 +316,11 @@ So what am I doing on the k6 site, talking about how much I love JMeter?"/>
 <h2 id="which-is-better">Which is better?</h2>
 <p>This article isn&rsquo;t about which tool is <em>better</em>, because as much as we might prefer a clear-cut answer, there&rsquo;s no &ldquo;best tool&rdquo;. Everything depends on the situation your team is in: what, how, why, and when you&rsquo;re testing.</p>
 <p>The question that I want to answer here is: <em>What situations does each tool excel in?</em></p>
-<!-- raw HTML omitted -->
 <h1 id="when-does-jmeter-excel">When does JMeter excel?</h1>
 <h2 id="when-you-want-to-get-started-quickly">When you want to get started quickly</h2>
 <h3 id="jmeter-has-a-gui">JMeter has a GUI</h3>
 <p>Many testing teams make decisions on load testing tools based on this fact alone. Sometimes, if you&rsquo;re in a situation where people haven&rsquo;t done load testing before and need to learn a new tool, a GUI-driven tool like JMeter is simply the most frictionless option. A tool with a GUI will be less daunting for many testers that are used to the mostly no-code UIs of the likes of Postman or SOAPUI.</p>
-<p><img src="assets/01-jmetergui.png" alt="JMeter&rsquo;s starting screen: a fresh new test plan"></p>
+<p><img src="/blog/assets/01-jmetergui.png" alt="JMeter&rsquo;s starting screen: a fresh new test plan"></p>
 <p>I&rsquo;ve always thought of JMeter as user-friendly, but a developer friend recently pointed out that the Test Plan screen that greets you when you first start JMeter doesn&rsquo;t provide any indication of how to create an HTTP sampler. None of the icons add elements to the test plan. It takes a bit of exploring to realize that right clicking on the test plan, or going to Edit &gt; Add, will show the &ldquo;Add&rdquo; menu that you need. He has a point there: UI is subjective to a certain degree. However, I&rsquo;d argue that it&rsquo;s definitely easier for non-developers to explore a UI than a bit of code.</p>
 <p>k6 doesn&rsquo;t have a GUI packaged within the tool, but the <a href="https://k6.io/docs/test-authoring/test-builder">k6 Test Builder</a> is available for free. It&rsquo;s a way to create tests with a GUI interface, and despite its inclusion in k6 cloud, it doesn&rsquo;t require any subscription to use. However, it isn&rsquo;t as fully-featured as JMeter.</p>
 <h3 id="jmeter-supports-many-protocols-and-features-out-of-the-box">JMeter supports many protocols and features out of the box</h3>
@@ -356,16 +355,16 @@ With code-based load testing tools, it can be a bit more difficult to find out w
 <h2 id="when-you-need-a-cost-effective-way-to-do-distributed-load-testing">When you need a cost-effective way to do distributed load testing</h2>
 <p>One of JMeter&rsquo;s absolute best features is that it gives you a framework for running distributed load tests with it. This is pretty special for a free and open-source tool.</p>
 <p>Distributed testing means ramping up the amount of load you&rsquo;re generating with your load tests, usually by increasing the number of virtual users and running multiple instances of your script on other load generators. JMeter accomplishes this by designating a controller node and letting you set up worker nodes. Each worker node needs to have a copy of <code>jmeter-server</code>, a utility included with every JMeter installation (in <code>jmeter/bin</code>).</p>
-<p><img src="assets/02-jmeterdistributed.svg" alt="JMeter comes with a native distributed testing mode"></p>
+<p><img src="/blog/assets/02-jmeterdistributed.svg" alt="JMeter comes with a native distributed testing mode"></p>
 <p>Source: <a href="https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html">Apache JMeter</a></p>
 <p>These worker nodes then run copies of your test plan and exert load against your application server. You can use on-premise or cloud machines as your worker nodes. A distributed execution like this takes a bit to set up, but it does work surprisingly well.</p>
 <p>k6 doesn&rsquo;t have a <em>native</em> distributed load testing mode. You <em>can</em> containerize it yourself and deploy it via Kubernetes, for instance, but it does require a more involved setup. The team is also working on the <a href="https://github.com/k6io/operator">k6 Operator</a>, which makes setup significantly easier, but it is experimental and comes with drawbacks such as not supporting threshold synchronization between instances. For now, the easiest way to scale up on k6 is by using the paid service k6 Cloud, which reduces setup time and complexity significantly.</p>
 <p>It&rsquo;s important to note that JMeter can be quite resource-hungry, and thus is more likely to require multiple load generators to generate load than k6. Depending on the resources of the load generator, JMeter can run about a thousand virtual users on average, and scaling up your test beyond that point will require a distributed execution setup. A single instance of k6, on the other hand, can run tens of thousands of virtual users given the same resources. More on that later.</p>
 <h2 id="when-you-want-canned-reports-built-into-your-load-testing-tool">When you want canned reports built into your load testing tool</h2>
 <p>JMeter&rsquo;s many listeners allow you to decide exactly what format you want to view results in. Debugging? Use the View Results Tree. Wanting metrics for your load test? Use the Summary or Aggregate Report.</p>
-<p><img src="assets/03-jmeterlistener.png" alt="Adding listeners like View Results Tree in JMeter lets you visualize results in different ways"></p>
+<p><img src="/blog/assets/03-jmeterlistener.png" alt="Adding listeners like View Results Tree in JMeter lets you visualize results in different ways"></p>
 <p>In addition, JMeter can generate HTML reports based on your load tests. They&rsquo;re currently quite limited, but functional, and they have several default graphs to help you analyze your load test. They are not interactive, but they are pretty easy to generate and a good starting point for putting together a report template for your tests.</p>
-<p><img src="assets/04-jmeterhtmlreport.png" alt="JMeter&rsquo;s built-in HTML dashboard is limited but functional"></p>
+<p><img src="/blog/assets/04-jmeterhtmlreport.png" alt="JMeter&rsquo;s built-in HTML dashboard is limited but functional"></p>
 <p>k6 does not have built-in reporting. Its modular nature lends itself better to integrating with <a href="https://k6.io/docs/results-visualization">many other data analytics tools</a>, including Grafana, Datadog, New Relic, Amazon CloudWatch, and k6 Cloud&ndash; all of which are better analysis tools and can provide more insights than what JMeter&rsquo;s reports can provide, but they do require you to set up another tool to analyze your tests. If you&rsquo;re running low on time and can make do with its reports, JMeter does really well at providing that extra value out of the box.</p>
 <h1 id="when-does-k6-excel">When does k6 excel?</h1>
 <h2 id="when-you-want-to-get-started-quickly-1">When you want to get started quickly</h2>
@@ -374,7 +373,7 @@ With code-based load testing tools, it can be a bit more difficult to find out w
 <p>k6 installs extremely quickly - on my first installation of it on macOS, it took <a href="https://www.youtube.com/watch?v=y5tteMKZUqk&amp;t=99">7 seconds</a> via <code>brew install k6</code>. It doesn&rsquo;t require nodeJS or any other dependencies, either.</p>
 <p>JMeter itself is fairly easy to install, but before you install JMeter, you need to install Java. Especially if you&rsquo;re using Windows, it&rsquo;s a bit of a rite of passage for a new JMeter user to run into issues adding the environment variables needed for Java to function.</p>
 <p>It can also be confusing to determine which version of Java is the right one. There&rsquo;s JDK, JRE, and recently Oracle has added to the confusion by announcing that some versions of Java (but not all) are going to require a license.</p>
-<p><img src="assets/05-javalicense.png" alt="Oracle&rsquo;s changing Java licensing can cause confusion for JMeter users"></p>
+<p><img src="/blog/assets/05-javalicense.png" alt="Oracle&rsquo;s changing Java licensing can cause confusion for JMeter users"></p>
 <p>Source: <a href="https://java.com/en/download/">Oracle Java</a></p>
 <p>While JMeter is still free via OpenJDK, I&rsquo;ve spoken to a few testers who mistakenly thought they&rsquo;d have to pay for JMeter. It&rsquo;s a little disconcerting to see Oracle flexing its muscles here, especially if you&rsquo;ve built a whole performance testing suite on Java through JMeter.</p>
 <h3 id="plugins">Plugins</h3>
@@ -409,13 +408,13 @@ With code-based load testing tools, it can be a bit more difficult to find out w
 <p><strong>Fewer load generators needed</strong></p>
 <p>k6&rsquo;s comparatively better performance means it needs fewer load generators to execute a given amount of load. Rafaela Azevedo made a comparison of the memory used by k6 and JMeter, and <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">here are her results</a>:</p>
 <p>JMeter took up 760 MB of memory.</p>
-<p><img src="assets/06-jmeterbenchmark.png" alt="In an independent test by Rafaela Azevedo, JMeter took up 760 MB of memory"></p>
+<p><img src="/blog/assets/06-jmeterbenchmark.png" alt="In an independent test by Rafaela Azevedo, JMeter took up 760 MB of memory"></p>
 <p>Source: <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">Rafaela Azevedo</a></p>
 <p>Meanwhile, k6 took up 256 MB of memory.</p>
-<p><img src="assets/07-k6benchmark.png" alt="In an independent test by Rafaela Azevedo, k6 took up 256 MB of memory compared to JMeter&rsquo;s 760 MB for the same test"></p>
+<p><img src="/blog/assets/07-k6benchmark.png" alt="In an independent test by Rafaela Azevedo, k6 took up 256 MB of memory compared to JMeter&rsquo;s 760 MB for the same test"></p>
 <p>Source: <a href="https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/">Rafaela Azevedo</a></p>
 <p>Rafaela&rsquo;s findings are further affirmed by our own benchmarks.</p>
-<p><img src="assets/08-internalbenchmarks.png" alt="A comparison of maximum throughput and memory for the most popular open-source load testing tools"></p>
+<p><img src="/blog/assets/08-internalbenchmarks.png" alt="A comparison of maximum throughput and memory for the most popular open-source load testing tools"></p>
 <p>Source: Ragnar Lönn, in our <a href="https://k6.io/blog/comparing-best-open-source-load-testing-tools">Load Testing Tool Comparison</a></p>
 <p>k6&rsquo;s lower memory footprint is the reason it can run more virtual users and generate more load than average. Whether you&rsquo;re using load generators that are on-premise or in a cloud, you&rsquo;ll pay less for provisioning costs when using k6. This cost saving makes k6 a great tool for budget-conscious teams.</p>
 <blockquote>
@@ -446,7 +445,7 @@ Java heap space.
 <p>Don&rsquo;t run load test using GUI mode ! - <a href="https://jmeter.apache.org/usermanual/get-started.html">Apache JMeter</a></p>
 </blockquote>
 <p>And here&rsquo;s a message that occurs upon startup of JMeter:</p>
-<p><img src="assets/09-jmeterguimodewarning.png" alt="JMeter&rsquo;s startup screen warns users not to use the GUI mode for load testing"></p>
+<p><img src="/blog/assets/09-jmeterguimodewarning.png" alt="JMeter&rsquo;s startup screen warns users not to use the GUI mode for load testing"></p>
 <p>Not having a GUI means there&rsquo;s one less gotcha. Any load testing scripts you create in k6 are ready for prime-time execution whenever you&rsquo;re ready.</p>
 <h2 id="when-you-want-to-do-goal-oriented-testing">When you want to do goal-oriented testing</h2>
 <p>The most important question a load tester can ask when starting a new load testing project is &ldquo;Why&rdquo;?
@@ -596,7 +595,7 @@ k6&rsquo;s conciseness and portability really proves to be an advantage in colla
 <p>When ramping up load tests to more than one load generator, keeping track of the versions of necessary components ensures that one load generator&rsquo;s traffic is the same as another&rsquo;s. The value of reducing variables in scientific experiments holds true for load testing.</p>
 <p>With k6, you just need to worry about the version of k6 and the script. No other dependencies are required. If you&rsquo;re using plugins, you&rsquo;d need to track those too, but as mentioned previously, plugins in k6 aren&rsquo;t as necessary as they are in some other tools &ndash; and k6 is available as a Docker image to reduce those issues.</p>
 <p>With something like JMeter, there are more levels to consider. There&rsquo;s the version of JMeter itself, Java, versions of plugins, and then the script. Every new layer introduces more changes for incompatibilities. In previous projets I&rsquo;ve worked on, someone would inevitably try out a new plugin and forget to discuss it with the team, and anyone who tried to open that script in their copy of JMeter would see this error:</p>
-<p><img src="assets/10-jmeterpluginerror.png" alt="This is the error that JMeter throws when you attempt to open a test plan that includes a plugin you don&rsquo;t have installed locally"></p>
+<p><img src="/blog/assets/10-jmeterpluginerror.png" alt="This is the error that JMeter throws when you attempt to open a test plan that includes a plugin you don&rsquo;t have installed locally"></p>
 <p>The error means there&rsquo;s a plugin that the script uses that JMeter doesn&rsquo;t recognize, but depending on the plugin, it&rsquo;s not always this easy to pinpoint which one (it was the <code>Ultimate Thread Group</code> in this case).
 You don&rsquo;t want that happening in the middle of your load test because you forgot to add a plugin to some of your load generators!</p>
 <h3 id="its-easier-to-link-test-code-with-application-code">It&rsquo;s easier to link test code with application code</h3>

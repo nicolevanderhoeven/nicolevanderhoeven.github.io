@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Readwise to Obsidian | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Readwise to Obsidian" />
+<meta property="og:description" content="I&rsquo;m about 9 months into heavily using Roam Research as my primary note-taking, task management, capture-everything system, and for the most part, that&rsquo;s gone very well. Obsidian is another excellent personal knowledge management (PKM) system, though, and I&rsquo;ve been curious about it for almost as long as I&rsquo;ve been using Roam. I&rsquo;ve had it installed for a while, but I never really seriously attempted to make the switch. Until now. I&rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&rsquo;s something I can switch to." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/" />
+<meta property="article:published_time" content="2021-02-06T09:55:36+01:00" />
+<meta property="article:modified_time" content="2021-02-06T09:55:36+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Readwise to Obsidian"/>
+<meta name="twitter:description" content="I&rsquo;m about 9 months into heavily using Roam Research as my primary note-taking, task management, capture-everything system, and for the most part, that&rsquo;s gone very well. Obsidian is another excellent personal knowledge management (PKM) system, though, and I&rsquo;ve been curious about it for almost as long as I&rsquo;ve been using Roam. I&rsquo;ve had it installed for a while, but I never really seriously attempted to make the switch. Until now. I&rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&rsquo;s something I can switch to."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210129-k6-vs-jmeter/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&text=Readwise%20to%20Obsidian">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&is_video=false&description=Readwise%20to%20Obsidian">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Readwise%20to%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&name=Readwise%20to%20Obsidian&description=I%26rsquo%3bm%20about%209%20months%20into%20heavily%20using%20Roam%20Research%20as%20my%20primary%20note-taking%2c%20task%20management%2c%20capture-everything%20system%2c%20and%20for%20the%20most%20part%2c%20that%26rsquo%3bs%20gone%20very%20well.%20Obsidian%20is%20another%20excellent%20personal%20knowledge%20management%20%28PKM%29%20system%2c%20though%2c%20and%20I%26rsquo%3bve%20been%20curious%20about%20it%20for%20almost%20as%20long%20as%20I%26rsquo%3bve%20been%20using%20Roam.%20I%26rsquo%3bve%20had%20it%20installed%20for%20a%20while%2c%20but%20I%20never%20really%20seriously%20attempted%20to%20make%20the%20switch.%20Until%20now.%20I%26rsquo%3bve%20decided%20to%20use%20Obsidian%20as%20my%20primary%20PKM%20and%20zettelkasten%20for%20the%20next%20month%2c%20to%20see%20if%20it%26rsquo%3bs%20something%20I%20can%20switch%20to.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&t=Readwise%20to%20Obsidian">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#readwise2directory">readwise2directory</a></li>
+    <li><a href="#scheduling-the-script">Scheduling the script</a>
+      <ul>
+        <li><a href="#give-cron-full-system-access">Give cron full system access</a></li>
+        <li><a href="#open-crontab">Open crontab</a></li>
+        <li><a href="#set-a-schedule">Set a schedule</a>
+          <ul>
+            <li><a href="#python-issues">Python issues</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Readwise to Obsidian
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-02-06 09:55:36 &#43;0100 CET" itemprop="datePublished">2021-Feb-06</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/taking-notes" rel="tag">taking notes</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/zettelkasten" rel="tag">zettelkasten</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/roam-research" rel="tag">roam research</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/python" rel="tag">python</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>I&rsquo;m about 9 months into heavily using <a href="https://roamresearch.com">Roam Research</a> as my primary note-taking, task management, capture-everything system, and for the most part, that&rsquo;s gone very well. <a href="https://obsidian.md">Obsidian</a> is another excellent personal knowledge management (PKM) system, though, and I&rsquo;ve been curious about it for almost as long as I&rsquo;ve been using Roam. I&rsquo;ve had it installed for a while, but I never really <em>seriously</em> attempted to make the switch. Until now. I&rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&rsquo;s something I can switch to.</p>
+<p>Why I&rsquo;m considering switching from Roam to Obsidian is another post, probably one I&rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.</p>
+<p><a href="https://readwise.io">Readwise</a> is an app that&rsquo;s all about importing notes and highlights you&rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&rsquo;ve got hooked up to it:</p>
+<ul>
+<li>Instapaper (for highlights and notes on online articles)</li>
+<li>Amazon Kindle (for highlights on ebooks)</li>
+<li>Twitter (for interesting tweets)</li>
+<li>Web highlighter (for straight highlights off any webpage)</li>
+<li>Airr (for quotes and notes from audio podcasts)</li>
+</ul>
+<p>Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&rsquo;s what that looks like when it gets pulled into my Daily Note:</p>
+<p><img src="/blog/assets/20210206-01-readwiseimportsinroam.png" alt="Tweet, podcast, and book notes pulled into Roam Research via Readwise"></p>
+<p>Readwise also pulls metadata into Roam, depending on the source. Here&rsquo;s what the page for the book &ldquo;Ready Player Two&rdquo; looks like in Roam:</p>
+<p><img src="/blog/assets/20210206-02-readyplayertwo.png" alt="Ready Player Two book notes in Roam, imported via Readwise"></p>
+<p>Readwise integration is an <em>essential</em> feature for me in any PKM, because I can take notes wherever I&rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&rsquo;s absolutely something I need to have in my Obsidian workflow.</p>
+<p>That&rsquo;s where things get tricky, because Readwise doesn&rsquo;t <em>have</em> an Obsidian integration.</p>
+<p><img src="/blog/assets/20210206-03-readwise-export-options.png" alt="Readwise doesn&rsquo;t automatically export to Obsidian"></p>
+<p>Source: <a href="https://readwise.io/export">Readwise Exports</a></p>
+<p>The closest thing is the Markdown export, but that&rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.</p>
+<h2 id="readwise2directory">readwise2directory</h2>
+<p>I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found <a href="https://github.com/nicrivard/readwise2directory">this Python project on GitHub</a> by <a href="https://github.com/nicrivard">nicrivard</a>, who had already done that! Why rebuild the wheel? His solution already did what I needed:</p>
+<ul>
+<li>It connects to Readwise via your Readwise access token</li>
+<li>Checks for new highlights or updated ones</li>
+<li>Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)</li>
+</ul>
+<p>It even pulls in highlight tags from Readwise, if you&rsquo;ve created any (which I haven&rsquo;t).</p>
+<p>I <a href="https://github.com/nicolevanderhoeven/readwise2directory">forked the project here</a> to add just a few minor touches:</p>
+<ul>
+<li>Changed date format of imported notes</li>
+<li>Added a section to output the import date to a comment block (an <a href="https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295">Obsidian Insider build feature</a>) rather than YAML frontmatter, so that the date would actually be linked and backlinked.</li>
+<li>Customized tags and filename for my use</li>
+<li>Sort imports into folders within my Obsidian vault depending on source (<code>Article/</code>, <code>Tweet/</code>, and so on).</li>
+</ul>
+<p>This works out pretty well. Here&rsquo;s an example of an import from the podcast app <a href="https://airr.io">Airr</a> into Obsidian, in Edit mode.</p>
+<p><img src="/blog/assets/20210206-04-airrtoobsidian.png" alt="readwise2directory import from Airr into Obsidian"></p>
+<p>It&rsquo;s placed within my <code>Podcast</code> folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:</p>
+<p><img src="/blog/assets/20210206-05-airrinobsidian_preview.png" alt="Preview mode of imported Airr quote in Obsidian"></p>
+<p>So that works out well, except for one thing: firing off the script that does all this is still manual.</p>
+<h2 id="scheduling-the-script">Scheduling the script</h2>
+<p>Luckily, it&rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&rsquo;m on macOS, so I used a built-in utility called <code>cron</code>.</p>
+<h3 id="give-cron-full-system-access">Give cron full system access</h3>
+<p>Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &gt; Security &amp; Privacy &gt; Privacy &gt; Full Disk Access on my laptop and add <code>/usr/bin/cron</code> to the &ldquo;allowed&rdquo; list.</p>
+<h3 id="open-crontab">Open crontab</h3>
+<p>Then, from my terminal, I ran the command <code>env EDITOR=nano crontab -e</code> to open up the list of cronjobs I had currently.</p>
+<h3 id="set-a-schedule">Set a schedule</h3>
+<p>I added a line to crontab for the schedule I wanted to create. This line has to be in the format</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">* * * * * command
+</code></pre></div><p>where the five asterisks correspond to:</p>
+<ul>
+<li>minute</li>
+<li>hour</li>
+<li>day of the month</li>
+<li>month</li>
+<li>day of the week</li>
+</ul>
+<p>In my case, I wanted it to run every hour, so here&rsquo;s what my schedule looks like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+<span style="color:#ae81ff">0</span> * * * * cd /Users/nic/git/readwise2directory/ <span style="color:#f92672">&amp;&amp;</span> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &gt;&gt; /Users/nic/git/readwise2directory/readwiseGET.log
+
+</code></pre></div><h4 id="python-issues">Python issues</h4>
+<p>I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a <code>which python3</code> to find the path to the version I wanted to use and added that path to the command. I also had to <code>cd</code> to the project directory, for some reason.</p>
+<p>While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.</p>
+<p>Once I added the schedule as in the example above, though, it worked a treat!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This solution did require some setup at the beginning, but doesn&rsquo;t need any maintenance once it&rsquo;s going. I&rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&rsquo;ll all be waiting for me in my Obsidian vault whenever I&rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#readwise2directory">readwise2directory</a></li>
+    <li><a href="#scheduling-the-script">Scheduling the script</a>
+      <ul>
+        <li><a href="#give-cron-full-system-access">Give cron full system access</a></li>
+        <li><a href="#open-crontab">Open crontab</a></li>
+        <li><a href="#set-a-schedule">Set a schedule</a>
+          <ul>
+            <li><a href="#python-issues">Python issues</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&text=Readwise%20to%20Obsidian">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&is_video=false&description=Readwise%20to%20Obsidian">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Readwise%20to%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&title=Readwise%20to%20Obsidian">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&name=Readwise%20to%20Obsidian&description=I%26rsquo%3bm%20about%209%20months%20into%20heavily%20using%20Roam%20Research%20as%20my%20primary%20note-taking%2c%20task%20management%2c%20capture-everything%20system%2c%20and%20for%20the%20most%20part%2c%20that%26rsquo%3bs%20gone%20very%20well.%20Obsidian%20is%20another%20excellent%20personal%20knowledge%20management%20%28PKM%29%20system%2c%20though%2c%20and%20I%26rsquo%3bve%20been%20curious%20about%20it%20for%20almost%20as%20long%20as%20I%26rsquo%3bve%20been%20using%20Roam.%20I%26rsquo%3bve%20had%20it%20installed%20for%20a%20while%2c%20but%20I%20never%20really%20seriously%20attempted%20to%20make%20the%20switch.%20Until%20now.%20I%26rsquo%3bve%20decided%20to%20use%20Obsidian%20as%20my%20primary%20PKM%20and%20zettelkasten%20for%20the%20next%20month%2c%20to%20see%20if%20it%26rsquo%3bs%20something%20I%20can%20switch%20to.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210206-readwise-to-obsidian%2f&t=Readwise%20to%20Obsidian">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

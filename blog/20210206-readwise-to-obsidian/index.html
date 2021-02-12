@@ -259,11 +259,11 @@
     <div class="content" itemprop="articleBody">
       
 
-<meta property=“og:image” content="/blog/assets/20210206-06-readwise-to-obsidian.png" />
+<meta property=“og:image” content="/assets/20210206-06-readwise-to-obsidian.png" />
 <meta property=”og:image:width” content=”1200″ />
 <meta property=”og:image:height” content=”628″ />
 
-<p><img src="/blog/assets/20210206-06-readwise-to-obsidian.png" alt="Readwise to Obsidian workflow"></p>
+<p><img src="/assets/20210206-06-readwise-to-obsidian.png" alt="Readwise to Obsidian workflow"></p>
 <p>I&rsquo;m about 9 months into heavily using <a href="https://roamresearch.com">Roam Research</a> as my primary note-taking, task management, capture-everything system, and for the most part, that&rsquo;s gone very well. <a href="https://obsidian.md">Obsidian</a> is another excellent personal knowledge management (PKM) system, though, and I&rsquo;ve been curious about it for almost as long as I&rsquo;ve been using Roam. I&rsquo;ve had it installed for a while, but I never really <em>seriously</em> attempted to make the switch. Until now. I&rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&rsquo;s something I can switch to.</p>
 <p>Why I&rsquo;m considering switching from Roam to Obsidian is another post, probably one I&rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.</p>
 <p><a href="https://readwise.io">Readwise</a> is an app that&rsquo;s all about importing notes and highlights you&rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&rsquo;ve got hooked up to it:</p>
@@ -275,12 +275,12 @@
 <li>Airr (for quotes and notes from audio podcasts)</li>
 </ul>
 <p>Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&rsquo;s what that looks like when it gets pulled into my Daily Note:</p>
-<p><img src="/blog/assets/20210206-01-readwiseimportsinroam.png" alt="Tweet, podcast, and book notes pulled into Roam Research via Readwise"></p>
+<p><img src="/assets/20210206-01-readwiseimportsinroam.png" alt="Tweet, podcast, and book notes pulled into Roam Research via Readwise"></p>
 <p>Readwise also pulls metadata into Roam, depending on the source. Here&rsquo;s what the page for the book &ldquo;Ready Player Two&rdquo; looks like in Roam:</p>
-<p><img src="/blog/assets/20210206-02-readyplayertwo.png" alt="Ready Player Two book notes in Roam, imported via Readwise"></p>
+<p><img src="/assets/20210206-02-readyplayertwo.png" alt="Ready Player Two book notes in Roam, imported via Readwise"></p>
 <p>Readwise integration is an <em>essential</em> feature for me in any PKM, because I can take notes wherever I&rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&rsquo;s absolutely something I need to have in my Obsidian workflow.</p>
 <p>That&rsquo;s where things get tricky, because Readwise doesn&rsquo;t <em>have</em> an Obsidian integration.</p>
-<p><img src="/blog/assets/20210206-03-readwise-export-options.png" alt="Readwise doesn&rsquo;t automatically export to Obsidian"></p>
+<p><img src="/assets/20210206-03-readwise-export-options.png" alt="Readwise doesn&rsquo;t automatically export to Obsidian"></p>
 <p>Source: <a href="https://readwise.io/export">Readwise Exports</a></p>
 <p>The closest thing is the Markdown export, but that&rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.</p>
 <h2 id="readwise2directory">readwise2directory</h2>
@@ -299,9 +299,9 @@
 <li>Sort imports into folders within my Obsidian vault depending on source (<code>Article/</code>, <code>Tweet/</code>, and so on).</li>
 </ul>
 <p>This works out pretty well. Here&rsquo;s an example of an import from the podcast app <a href="https://airr.io">Airr</a> into Obsidian, in Edit mode.</p>
-<p><img src="/blog/assets/20210206-04-airrtoobsidian.png" alt="readwise2directory import from Airr into Obsidian"></p>
+<p><img src="/assets/20210206-04-airrtoobsidian.png" alt="readwise2directory import from Airr into Obsidian"></p>
 <p>It&rsquo;s placed within my <code>Podcast</code> folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:</p>
-<p><img src="/blog/assets/20210206-05-airrinobsidian_preview.png" alt="Preview mode of imported Airr quote in Obsidian"></p>
+<p><img src="/assets/20210206-05-airrinobsidian_preview.png" alt="Preview mode of imported Airr quote in Obsidian"></p>
 <p>So that works out well, except for one thing: firing off the script that does all this is still manual.</p>
 <h2 id="scheduling-the-script">Scheduling the script</h2>
 <p>Luckily, it&rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&rsquo;m on macOS, so I used a built-in utility called <code>cron</code>.</p>

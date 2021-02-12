@@ -310,7 +310,7 @@ A good test plan, particularly for load testing, includes the following componen
 <li>Applications included in testing</li>
 </ul>
 <p>As with most things in the planning phase, scope is something that can change during the test when unexpected circumstances arise or when priorities change. But it&rsquo;s still a good practice to define the scope at the beginning, and update it as it changes.</p>
-<p><img src="/blog/assets/how-to-write-a-load-test-plan01.jpg" alt=""></p>
+<p><img src="/assets/how-to-write-a-load-test-plan01.jpg" alt=""></p>
 <p>It&rsquo;s important, however, to <em>prune with intention</em>. By keeping our objectives in mind, we can keep our work in line with our intentions.</p>
 <h2 id="entry-criteria">Entry criteria</h2>
 <p>Occasionally, you may be asked to load test an application that isn&rsquo;t ready to be load tested. This happens more often than you think. While it&rsquo;s true that Performance Testing is something that should be baked into all software development from the beginning, this doesn&rsquo;t hold true for Load Testing. Load testing is only one activity that falls underneath the broader umbrella of performance testing.</p>
@@ -330,7 +330,7 @@ A good test plan, particularly for load testing, includes the following componen
 <li>DevOps engineers who can help us provision and monitor servers</li>
 </ul>
 <p>and many more!</p>
-<p>‍<img src="/blog/assets/how-to-write-a-load-test-plan02.jpg" alt=""></p>
+<p>‍<img src="/assets/how-to-write-a-load-test-plan02.jpg" alt=""></p>
 <h3 id="test-data-do-you-have-dummy-data-for-your-virtual-users-to-interact-with">Test Data: Do you have dummy data for your virtual users to interact with?</h3>
 <p>Once you have as close a copy of the production environment as possible, keep in mind that it’s still a clean copy, which may not be realistic. If there are databases in production, how much data do they contain? The application server may respond differently when your test database is empty compared to when it must contend with gigabytes of data in the production database.</p>
 <p>Using production data for testing purposes can be dangerous, not to mention illegal, in certain circumstances. To avoid this, you can scrub sensitive data or generate your own, either by injecting records into a database or by writing an automation script to create data on the front-end. If you write a script, you may be able to reuse parts of it later for your load test.</p>
@@ -338,7 +338,7 @@ A good test plan, particularly for load testing, includes the following componen
 <p>A workload model is a schema describing the load profile for a given test scenario, and it involves determining what (the key transactions), how much (the load distribution among the transactions) and when (timing of the load) to test.</p>
 <p>Workload modeling can be the most difficult part of the testing process because it involves finding out how load test scripting can best mimic what is actually happening in production. It can also be the most critical.</p>
 <p>Here&rsquo;s my account of working on a project in horse racing, where workload modeling was of particular importance: <a href="https://www.flood.io/blog/workload-modeling-preparing-for-large-events-like-the-melbourne-cup">Workload Modeling - Preparing for Large Events like the Melbourne Cup</a>.</p>
-<p>‍<img src="/blog/assets/how-to-write-a-load-test-plan03.jpg" alt="">
+<p>‍<img src="/assets/how-to-write-a-load-test-plan03.jpg" alt="">
 <em>When you&rsquo;re selling bets for the Melbourne Cup, every second matters.</em></p>
 <h2 id="server-monitoring">Server monitoring</h2>
 <p>Executing a load test without monitoring server health is like flying blind. You’ll know when you land safely and you’ll know when you crash, but even if you do crash, you won’t know why—or how you can avoid it next time. Monitoring server health is the black box that will tell you what went wrong.</p>
@@ -355,7 +355,7 @@ A good test plan, particularly for load testing, includes the following componen
 <h2 id="test-doubles">Test doubles</h2>
 <p>Part of the strategic planning around load testing is deciding which components need to be tested in conjunction with your stated requirements. Applications can sometimes be complex enough that load testing end-to-end is not feasible due to the number of teams involved or the cost of duplicating application infrastructure.</p>
 <p>Keeping it as simple as possible will lead to fewer dependencies, so it&rsquo;s worth considering creating test doubles to isolate relevant components. Test doubles include stubs, mocks, and full virtual services.</p>
-<p>‍<img src="/blog/assets/how-to-write-a-load-test-plan04.jpg" alt=""></p>
+<p>‍<img src="/assets/how-to-write-a-load-test-plan04.jpg" alt=""></p>
 <p>A test double is that part that replaces a complicated component that is not within scope. It’s a “dumber” version that responds to requests enough to allow you to go on with your load testing without actually requiring that component.</p>
 <p>Test doubles allow us to abstract out other components we don&rsquo;t want to test so that we can concentrate on the one that we do. The point of a test double is to remove the variables and noise introduced by other parts of the application so that we can focus on testing how one component responds.</p>
 <p>If you are willing to put the time into creating a test double, you can drastically reduce the amount of resources you need to set up an environment and isolate components. Reducing variables in your test allows you to more quickly determine where performance bottlenecks lie.</p>

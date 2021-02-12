@@ -278,7 +278,7 @@ Here are some things to consider when deciding whether or not API load testing i
 <h3 id="api-load-testing-does-not-simulate-real-users-interacting-with-elements-of-your-webpage">API load testing does not simulate real users interacting with elements of your webpage.</h3>
 <p>‌In contrast to a customer opening up a browser and filling out forms on your site, an API load testing script will consist only of the underlying requests to the server that are made by clicking on those on-screen elements. Exactly how the customer triggers those requests, and what buttons they’ve pressed, is irrelevant. It’s all about the raw requests.‌</p>
 <p>The format of these requests will be dictated by the type of API your application uses, and it may take some technical knowledge or expertise to be able to formulate requests correctly. However, a RESTful API is one of the most common types, and it is considered to be relatively simple to use.</p>
-<p><img src="/blog/assets/20200818-01.png" alt="">
+<p><img src="/assets/20200818-01.png" alt="">
 <em>HTTPS requests for amazon.com. This is what an API load testing script would need to replicate.</em></p>
 <h3 id="it-doesnt-give-you-an-idea-of-how-user-friendly-your-application-is">It doesn’t give you an idea of how user-friendly your application is.</h3>
 <p>‌API load testing tools don’t give you feedback on how long your pictures took to render on your users’ browsers or whether that “SUBMIT” button is in an obvious spot.</p>
@@ -288,7 +288,7 @@ Here are some things to consider when deciding whether or not API load testing i
 <p>‌It isn’t what you’re looking for if your application is a single-page web app that relies heavily on JavaScript or AJAX to dynamically populate and update the page. Your load testing tool will download the scripts, but not execute them.‌</p>
 <p>‌This includes scripts like those required to trigger Google Analytics, which prompts many an engineer to question the results of an API load test due to the inability to see the traffic come in on Google Analytics. API load testing won’t help you with that. Running browser-level load tests using tools like <a href="https://element.flood.io">Flood Element</a> or <a href="https://selenium.dev">Selenium</a> may be more useful.</p>
 <p>If you&rsquo;ve decided that API load testing is not the best way to load test your application, you can look at browser-based load testing as an alternative.</p>
-<p><img src="/blog/assets/20200818-02.jpg" alt=""></p>
+<p><img src="/assets/20200818-02.jpg" alt=""></p>
 <p><em>Executing a browser-based load testing script using Flood Element.</em>
 ‌</p>
 <h2 id="advantages-of-api-load-testing">‌Advantages of API load testing</h2>
@@ -297,7 +297,7 @@ Here are some things to consider when deciding whether or not API load testing i
 <p>‌API load testing allows you to tailor your load testing by applying load only on particular servers. This is particularly useful in more complicated applications that involve several components and would require substantial effort to reproduce in a test environment. Using APIs, you can test only the functions you want to test.</p>
 <h3 id="it-is-well-supported-">It is well-supported. ‌</h3>
 <p>API load testing has been around for decades. There are lots of robust tools you can choose from, both commercial and open-source, and many of these tools have large communities and extensive documentation around how to script the most common cases. It’s a far cry from the browser-level testing space, which is relatively new and sparsely populated by comparison.</p>
-<p>‍<img src="/blog/assets/20200818-03.png" alt="">
+<p>‍<img src="/assets/20200818-03.png" alt="">
 <em>The <a href="https://jmeter.apache.org/usermanual/index.html">JMeter site</a> contains a wealth of information, including a User&rsquo;s Manual</em>
 ‍</p>
 <h3 id="its-not-as-resource-intensive-as-browser-level-testing">It’s not as resource-intensive as browser-level testing.</h3>

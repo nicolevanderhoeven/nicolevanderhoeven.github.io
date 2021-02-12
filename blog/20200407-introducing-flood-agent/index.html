@@ -275,10 +275,10 @@ TL;DR:  Installing Flood Agent on a machine lets you start load tests on it remo
 </ul>
 <h2 id="boldly-going-where-no-one-has-gone-before">Boldly going where no one has gone before</h2>
 <p>Load testing within your company&rsquo;s VPN and trying to coordinate it from home is like being on a maintenance pod trying to contact your starship, but a Mazarite ship is broadcasting a jamming signal, so comms are down. That Mazarite ship is your company&rsquo;s firewall, and it can make testing difficult.</p>
-<p>‍<img src="/blog/assets/20200407-01.jpg" alt=""></p>
+<p>‍<img src="/assets/20200407-01.jpg" alt=""></p>
 <p>The easiest way around this is to provision load generators in the cloud. However, because your application servers are still behind a firewall, you&rsquo;d need to convince IT security to <a href="https://guides.flood.io/test-execution/infrastructure/static-ip-addresses#hosted-grids">whitelist the IP addresses</a> of the load generators. Depending on how tight security policies are, this may not be an option even in this new world of remote working.</p>
 <p>Flood Agent is a way to start load tests on Flood from the load generators you already have. It&rsquo;s a cross-platform agent that you can install on your regular load generators, allowing you to control them on Flood.</p>
-<p>‍‍<img src="/blog/assets/20200407-02.png" alt=""></p>
+<p>‍‍<img src="/assets/20200407-02.png" alt=""></p>
 <p>Flood Agent is kind of like the <a href="https://en.wikipedia.org/wiki/Borg#Borg_Collective">Borg Collective</a>. Each machine that you install Flood Agent on is assimilated into the Borg. A hive mind (you, on the Flood site) controls all Borgs, coordinating test execution with robotic efficiency.</p>
 <p><img src="https://media.giphy.com/media/J6P7vFEQ6PcgE/giphy.gif" alt=""></p>
 <p>Check out this video to follow along as I walk you through the process of setting up Flood Agent, or you can keep reading for the text version.</p>
@@ -297,27 +297,27 @@ TL;DR:  Installing Flood Agent on a machine lets you start load tests on it remo
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./flood-agent configure
 </code></pre></div><h3 id="linking-your-flood-account">Linking your Flood account</h3>
 <p>The command above yields a prompt for a token like this:</p>
-<p><img src="/blog/assets/20200407-03.jpg" alt=""></p>
+<p><img src="/assets/20200407-03.jpg" alt=""></p>
 <p>This token allows Flood to run load tests on the load generator that you&rsquo;ve installed Flood Agent in. To get the token, go to the <a href="https://app.flood.io/account/api">API Access page</a> on your Flood account (<a href="https://app.flood.io/sign-up">you already have one, don&rsquo;t you?</a>) and click REVEAL token.</p>
-<p><img src="/blog/assets/20200407-04.jpg" alt=""></p>
+<p><img src="/assets/20200407-04.jpg" alt=""></p>
 <p>You should see a string of characters like this:</p>
-<p><img src="/blog/assets/20200407-05.jpg" alt="">‍</p>
+<p><img src="/assets/20200407-05.jpg" alt="">‍</p>
 <p>Copy your token (anything after the = sign) and paste it into the Flood Agent terminal window.</p>
 <h3 id="choosing-load-testing-tools">Choosing load testing tools</h3>
 <p>Next, you can choose which tools you&rsquo;d like to set up and which version of those tools Flood Agent uses to run your tests.</p>
-<p>‍<img src="/blog/assets/20200407-06.jpg" alt=""></p>
+<p>‍<img src="/assets/20200407-06.jpg" alt=""></p>
 <p>Starting with JMeter, Flood Agent asks you which of the tools you&rsquo;d like to configure. You can choose to set up your tools at the beginning so that you don&rsquo;t have to set them up again, or you can go back to this configuration wizard at any point to add another tool. Either way, you need to provide the tools that you select in one of two ways: via a Docker image supplied by Flood, or via a <a href="https://guides.flood.io/infrastructure/standalone-infrastructure/getting-started-local-jmeter-and-gatling">local installation</a> that you already have.</p>
 <p>For this example, I chose to configure JMeter and to use a local installation. Local installations give you the most flexibility because you can use the version of the tool that you prefer, along with any special plugins. However, if you already have Docker installed or don&rsquo;t want to manually install JMeter separately, you can also use our Docker image for JMeter.</p>
 <p>Selecting a local installation prompts you to provide the location of that directory:</p>
-<p>‍<img src="/blog/assets/20200407-07.jpg" alt=""></p>
+<p>‍<img src="/assets/20200407-07.jpg" alt=""></p>
 <p>For JMeter, this looks something like <code>/Users/nvanderhoeven/jmeter/apache-jmeter-5.1.1.</code></p>
 <p>After you enter this file path, Flood Agent checks to make sure the directory is valid. You can also set the configuration for other tools in this dialog.</p>
-<p><img src="/blog/assets/20200407-08.jpg" alt=""></p>
+<p><img src="/assets/20200407-08.jpg" alt=""></p>
 <p>After you finish the configuration, the wizard writes to a config.yaml file in your Flood Agent directory. You can also edit this configuration file directly in the future if you prefer.</p>
 <h2 id="verifying-flood-agent-configuration">Verifying Flood Agent configuration</h2>
 <p>To run a final check on whether Flood Agent has been installed correctly, type <code>./flood-agent check</code>. You should see a summary of the configuration options you selected as well as some connectivity and validity checks, like this:</p>
 <p>‍
-<img src="/blog/assets/20200407-09.jpg" alt=""></p>
+<img src="/assets/20200407-09.jpg" alt=""></p>
 <p>These green check marks mean you&rsquo;re good to go! If you&rsquo;re running Flood Agent from within a corporate network, though, you may see some errors here.</p>
 <h2 id="troubleshooting-network-connectivity-within-a-corporate-network">Troubleshooting network connectivity within a corporate network</h2>
 <p>If your company already has a web proxy, check out <a href="https://guides.flood.io/infrastructure/standalone-infrastructure/deployment/integrating-with-a-web-proxy">our guide on running floods through this proxy</a>.</p>
@@ -336,17 +336,17 @@ TL;DR:  Installing Flood Agent on a machine lets you start load tests on it remo
 <p>A grid, in Flood terminology, is a group of machines to be used for load generation. To make your machine a grid, run this command:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./flood-agent --grid askaflooder
 </code></pre></div><p>where <code>askaflooder</code> is the name of your grid.</p>
-<p>‍<img src="/blog/assets/20200407-10.jpg" alt=""></p>
+<p>‍<img src="/assets/20200407-10.jpg" alt=""></p>
 <p>Once you see those [agent] ready and awaiting next job messages, you&rsquo;re ready to run your test!</p>
 <h2 id="running-a-load-test-on-your-own-infrastructure">Running a load test on your own infrastructure</h2>
 <p>Log into your account on Flood, if you aren&rsquo;t already, and <a href="https://guides.flood.io/overview-of-flood/scripting-your-load-test#creating-a-stream">create a new stream</a> like you normally would, uploading your load testing script and data files. When <a href="https://guides.flood.io/overview-of-flood/launching-your-test">launching your test</a>, though, select the option for Hosted infrastructure and then choose the grid with Flood Agent running on it.</p>
-<p>‍<img src="/blog/assets/20200407-11.jpg" alt=""></p>
+<p>‍<img src="/assets/20200407-11.jpg" alt=""></p>
 <p>Go ahead and launch your test. Congratulations, you&rsquo;re now set up to run a load test on your on-premise load generators!</p>
 <h2 id="giving-it-a-go">Giving it a go</h2>
 <p>Flood Agent is a free download, so you&rsquo;ll only need to pay when you run load tests on Flood. However, we also have a free tier— perfect for a proof-of-concept while you&rsquo;re working from home.</p>
 <p>If you have any questions about Flood Agent, check out <a href="https://guides.flood.io/infrastructure/standalone-infrastructure/flood-agent">our documentation</a> or <a href="mailto:support@flood.io">email us</a>. We&rsquo;d be happy to get you started!</p>
 <p><a href="https://github.com/flood-io/flood-agent/releases">Download Flood Agent for free here</a>.</p>
-<p>‍<img src="/blog/assets/20200407-12.gif" alt=""></p>
+<p>‍<img src="/assets/20200407-12.gif" alt=""></p>
 
     </div>
   </article>

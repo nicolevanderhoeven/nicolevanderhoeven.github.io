@@ -316,7 +316,7 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
 <h2 id="browser-based-load-testing-in-2020">Browser-based load testing in 2020</h2>
 <p>Browser-level load testing is still pretty new, and there aren&rsquo;t too many providers offering it right now. Luckily, we just so happen to have access to a database of load tests run on Flood since 2013. Here&rsquo;s a bar chart visualizing data we&rsquo;ve collected about the load testing tools flooders have used (we support Selenium, JMeter, Gatling, and Element).</p>
 <h3 id="load-tests-executed-on-flood-over-time-grouped-by-load-testing-tool">Load tests executed on Flood over time, grouped by load testing tool</h3>
-<p><img src="/blog/assets/20200423-01.png" alt=""></p>
+<p><img src="/assets/20200423-01.png" alt=""></p>
 <h3 id="browser-level-load-testing-is-increasing-in-popularity">Browser-level load testing is increasing in popularity</h3>
 <h4 id="in-2020-almost-35-of-the-load-tests-run-on-flood-are-browser-based-load-tests">In 2020, almost 35% of the load tests run on Flood are browser-based load tests.</h4>
 <p>While the total number of load tests run across all tools increased across the board, the percentage of tests that utilized Selenium and Element, as compared to JMeter and Gatling, has also increased from 2018. Both Selenium and Element are browser-based load testing tools.</p>
@@ -328,7 +328,7 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
 <h2 id="how-browser-based-load-testing-works">How browser-based load testing works</h2>
 <p>Traditional load testing is done on the protocol level by sending messages directly to the web server. These messages are sent without simulating the application interface, and the responses that are received from the server are not visualized, either. &ldquo;Users&rdquo; in protocol-level load testing scripts are actually threads, with each one sending a list of messages at predefined intervals, and we refer to these users as Protocol-Level Users (PLU). JMeter and Gatling use PLU to generate load.</p>
 <p>The screenshot below shows what one request for a single action might look like in a JMeter test plan.</p>
-<p><img src="/blog/assets/20200423-02.jpg" alt="">
+<p><img src="/assets/20200423-02.jpg" alt="">
 <em>Example of an HTTP request with parameters on JMeter</em></p>
 <p>In browser-based load testing, real browser instances are opened on load generators, and the load testing tool plays the part of a real user in navigating the web application using the GUI. We refer to the virtual users in browser-based load testing as Browser-Level Users (BLU).</p>
 <p>Here&rsquo;s an example of the same action in the JMeter example above, but this time in an Element test script:</p>
@@ -347,7 +347,7 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
 <p>Protocol-level tools require in-depth knowledge about how an application works, what format it expects requests to be in, and how it responds. On the browser-level, you don&rsquo;t need to know any of that. When scripting a login process, for instance, you just need to tell the script to type a username and password in the right fields and then click Log In. The script doesn&rsquo;t need to know that the form submits an encrypted request using the Auth0 API (something you&rsquo;d need to know for a protocol-level script).</p>
 <p>In some cases, you might be able to get away with using something like our <a href="https://flood.io/blog/record-load-tests-in-flood-element-using-qtest-explorer">qTest Explorer plugin</a> to record a business process, generating a script without any scripting at all. Even when you have to write or modify the script, though, it&rsquo;s a lot less intimidating than most protocol-level scripts.</p>
 <p>They&rsquo;re also easier to troubleshoot. In addition to opening a real browser instance on your computer when you run a script locally, Element can also display this information on the console (shown here on iTerm):</p>
-<p>‍<img src="/blog/assets/20200423-03.jpg" alt="">
+<p>‍<img src="/assets/20200423-03.jpg" alt="">
 <em>Screenshots upon execution on Element using iTerm</em></p>
 <p>‍This allows you to understand what&rsquo;s going on in the script and in the application, letting you detect bottlenecks faster.</p>
 <h4 id="reduced-test-complexity">Reduced test complexity</h4>
@@ -369,13 +369,13 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
 <h2 id="best-tools-and-applications-for-browser-based-load-testing">Best tools and applications for browser-based load testing</h2>
 <p>While other commercial tools exist for this, we&rsquo;re partial to open source tools at Flood.</p>
 <h3 id="selenium">Selenium</h3>
-<p><img src="/blog/assets/20200423-04.jpg" alt=""></p>
+<p><img src="/assets/20200423-04.jpg" alt=""></p>
 <p>Selenium load testing is appealing because Selenium is already well-known for test automation and functional testing, and a lot of companies already have full test suites in Selenium. The possibility of reusing those resources and just running them at scale as load tests is, by far, the most compelling reason to use Selenium.</p>
 <h3 id="puppeteer">Puppeteer</h3>
-<p><img src="/blog/assets/20200423-05.jpg" alt=""></p>
+<p><img src="/assets/20200423-05.jpg" alt=""></p>
 <p>Google&rsquo;s just getting started with Puppeteer, and the amount of metrics it exposes is exciting: it seems like anything in Chrome Developer Tools can be accessed by Puppeteer. Imagine running a load test on ONE tool that gives you statistics about back-end performance (response times, the effect of bandwidth restrictions, resources returning errors) AND front-end performance (client-side script console logs, render times, time to first paint, etc). It&rsquo;s hard to imagine a future where this ISN&rsquo;T a valuable tool in the performance arsenal.</p>
 <p>Under Puppeteer, of course, is <a href="https://element.flood.io/">Element</a>— our load-flavored version of Puppeteer.</p>
-<p><img src="/blog/assets/20200423-06.png" alt=""></p>
+<p><img src="/assets/20200423-06.png" alt=""></p>
 <h2 id="is-protocol-based-load-testing-dead">Is protocol-based load testing dead?</h2>
 <p>No. Testing on the protocol-level may have its drawbacks, but it&rsquo;s popular for a reason. If you&rsquo;re testing mobile apps or API endpoints, protocol-level testing tools allow you to focus on hitting what you want to test and only what you want to test. Sometimes you don&rsquo;t want to test the whole stack. It really depends on your test scenarios.</p>
 <p>Plus, protocol-level tools tend to be really resource efficient. We&rsquo;ve been able to easily run about 1000 users per Flood node with JMeter and Gatling, easily outstripping browser-level tools. It makes sense, since JMeter and Gatling don&rsquo;t need to start browser instances to generate load.</p>

@@ -300,7 +300,7 @@ Differences between on-premise and cloud load testing What is on-premise load te
 <h3 id="pros-and-cons-of-on-premise-load-testing">Pros and cons of on-premise load testing</h3>
 <p>On-premise load testing is no better or worse than cloud load testing; it just depends on what you need. There&rsquo;s a meme that the cloud is just a fancy term for someone else&rsquo;s computer— but <a href="https://www.zdnet.com/article/stop-saying-the-cloud-is-just-someone-elses-computer-because-its-not/">that&rsquo;s an oversimplification</a> that glosses over nuances that might make a difference to your bottom line.</p>
 <p>Here are some questions to ask yourself when deciding between load testing on the cloud or on-premise.</p>
-<p>‍<img src="/blog/assets/20200430-01.jpg" alt=""></p>
+<p>‍<img src="/assets/20200430-01.jpg" alt=""></p>
 <p><em>Test infrastructure can make or break your load tests.</em></p>
 <h3 id="cloud-vs-on-premise-load-testing-how-do-you-decide">Cloud vs. on-premise load testing: how do you decide?</h3>
 <h4 id="why-are-you-running-a-load-test">Why are you running a load test?</h4>
@@ -315,7 +315,7 @@ Differences between on-premise and cloud load testing What is on-premise load te
 <p>The number of virtual users you intend to test your application against correlates to the number of load generators you require. In general, the more machines you need, the more expensive it becomes (for both cloud and on-premise load testing), but if you only need a handful of users, perhaps you can find a machine or two on-premise that could do the trick.</p>
 <h3 id="advantages-of-on-premise-load-testing">Advantages of on-premise load testing</h3>
 <p>‍
-<img src="/blog/assets/20200430-02.jpg" alt=""></p>
+<img src="/assets/20200430-02.jpg" alt=""></p>
 <h4 id="increased-control">Increased control</h4>
 <p>Since you own the machines you&rsquo;re testing on, you can set your environment up with your exact specifications in mind. You&rsquo;ll be able to make hardware upgrades or update versions of operating systems and load testing tools whenever you want, without needing to liaise with a third-party provider. This option can come in handy if you routinely use non-standard configurations or legacy software. If you&rsquo;re also doing other types of non-functional testing, like security testing, it may be easier to change the configuration on on-premise machines.</p>
 <h4 id="greater-data-security">Greater data security</h4>
@@ -326,7 +326,7 @@ Differences between on-premise and cloud load testing What is on-premise load te
 <p>Controlling your own load generators means controlling the network they run on. If your corporate network is generally stable, and your test scenarios don&rsquo;t involve testing from different geographical locations, reported response times (and user experience) more closely reflect server processing time rather than latency and travel time.</p>
 <h3 id="disadvantages-of-on-premise-load-testing">Disadvantages of on-premise load testing</h3>
 <p>‍
-<img src="/blog/assets/20200430-03.jpg" alt=""></p>
+<img src="/assets/20200430-03.jpg" alt=""></p>
 <h4 id="higher-cost-in-some-situations">Higher cost in some situations</h4>
 <p>Maintaining your own load generators comes with a higher up-front cost, which may be a showstopper for smaller projects or companies. The more concurrent users you require for your load test, the more machines you need, the more licenses you need for your testing tool (unless it&rsquo;s open source), and the longer it takes to recover your investment.</p>
 <h4 id="geographical-limitations">Geographical limitations</h4>
@@ -341,7 +341,7 @@ Differences between on-premise and cloud load testing What is on-premise load te
 <p>Treat load testing like a scientific experiment. Before you begin changing variables to improve performance, spend some time figuring out your test configuration so that it&rsquo;s repeatable. Pay attention to things like workloads, business processes, the number of users you&rsquo;re running per load generator, test environment configuration values, script pacing and think time set in your testing tool, and test script transactions. Make sure that the resource utilization on your machines remains healthy during a test; otherwise, you&rsquo;re load testing the load generators themselves rather than your application servers.</p>
 <p>Then, run a few tests against your application servers without making any changes. This way, you create a &ldquo;control group&rdquo; or control test against which to compare future tests.</p>
 <p>This process is called <em>baselining</em> your application performance.</p>
-<p>‍<img src="/blog/assets/20200430-04.jpg" alt="">
+<p>‍<img src="/assets/20200430-04.jpg" alt="">
 <em>Flood&rsquo;s Project View lets you track an application&rsquo;s performance over time and compare recent tests to a baseline</em>
 ‍</p>
 <h3 id="consider-using-containers-or-virtual-machine-images">Consider using containers or virtual machine images</h3>
@@ -350,7 +350,7 @@ Differences between on-premise and cloud load testing What is on-premise load te
 <p>You can use <a href="https://www.docker.com/resources/what-container">containers such as Docker</a> to create a standalone package of everything you need for your  test. Alternatively, if you&rsquo;re using virtual machines, you can also create a full system image that you can use for every virtual machine.</p>
 <p>The difference between the two is that a container lets you be more granular about what is included in the package that you then deploy to all your load generators. Virtual machines include hardware components that you can set, whereas containers are software-only, decreasing package sizes.</p>
 <p>Using containers or images allows you to keep your load generators as identical as possible (in terms of hardware and software) so that you can assume similar results from each one.</p>
-<p>‍‍<img src="/blog/assets/20200430-05.jpg" alt="">
+<p>‍‍<img src="/assets/20200430-05.jpg" alt="">
 ‍</p>
 <h3 id="dont-neglect-monitoring">Don&rsquo;t neglect monitoring</h3>
 <p>It&rsquo;s easy to forget that your application servers aren&rsquo;t the only ones that need monitoring. Your load generators need monitoring as well, so that they don&rsquo;t end up being the bottleneck in your tests. Here&rsquo;s  <a href="https://flood.io/blog/load-testing-tutorial-server-monitoring">a starter list of server metrics</a> that you should consider monitoring.</p>

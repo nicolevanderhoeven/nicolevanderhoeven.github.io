@@ -283,7 +283,7 @@ The answer is yes. Applications should always be assessed for risk and tested ac
 <h2 id="what-is-robinhood">What is Robinhood?</h2>
 <p>Robinhood is an app I&rsquo;ve personally had my eye on since it opened a waiting list about five years ago for Australians wanting to see the American company come to our shores. It <a href="https://australianfintech.com.au/local-start-stake-beats-us-giant-robinhood-bring-australians-free-share-trading/">doesn&rsquo;t look like it&rsquo;s happening</a> now, but if that waiting list still exists, I&rsquo;m on it.</p>
 <p>Robinhood is a brokerage app that takes inspiration from the legend it was named after to &ldquo;give to the poor,&rdquo; bring zero-commission trading to its customers. Instead of earning from commissions, Robinhood makes its money from <a href="https://www.investopedia.com/articles/active-trading/020515/how-robinhood-makes-money.asp">a variety of other methods</a>, including premium platform fees, interest on customers' uninvested capital, and payments received in exchange for coursing customers' orders through third-party market-makers. It&rsquo;s an enticing premise, and one that the company has used in conjunction with mobile apps to appeal to millennials and technophiles.</p>
-<p><img src="/blog/assets/20200309-01.jpg" alt=""></p>
+<p><img src="/assets/20200309-01.jpg" alt=""></p>
 <p><em>Source: From <a href="https://robinhood.com/us/en/">Robinhood&rsquo;s homepage</a></em>
 ‍</p>
 <h2 id="what-caused-the-robinhood-app-to-fail">What caused the Robinhood app to fail?</h2>
@@ -293,7 +293,7 @@ The answer is yes. Applications should always be assessed for risk and tested ac
 </blockquote>
 <p>Bhatt and Tenev went on to explain that the load on their servers had caused a &ldquo;thundering herd&rdquo; effect. This effect describes a situation in which a backend server receives a large number of concurrent requests and, instead of different threads processing these requests simultaneously, all threads attempt to process the same request.</p>
 <p>If you&rsquo;ve ever played four-player Overcooked, it&rsquo;s like having everyone sprint to a fire extinguisher to try to put out a fire from overcooked pasta, but instead, the constant button mashing means you just pass the extinguisher around and yell at each other while the fire rages on. Before you know it, the entire kitchen is on fire.</p>
-<p><img src="/blog/assets/20200309-02.jpeg" alt=""></p>
+<p><img src="/assets/20200309-02.jpeg" alt=""></p>
 <p><em>Source: From <a href="https://twitter.com/csac0425/status/963053160259510277">Twitter user @csac0425</a></em></p>
 <p>So the technical cause of the outage was an infrastructure problem.</p>
 <p>But I think the REAL cause was FOMO.</p>
@@ -301,7 +301,7 @@ The answer is yes. Applications should always be assessed for risk and tested ac
 <p>FOMO is the Fear Of Missing Out, and it&rsquo;s a phenomenon that&rsquo;s been particularly exacerbated by social media. Instead of only hearing news from people you interact with in the physical world, it just takes a few seconds to open up Twitter on your smartphone and see what thousands of people are talking about. Twitter will even helpfully tell you what&rsquo;s &ldquo;trending&rdquo; in your country, and other social networks also employ algorithms to determine what messages to show you.</p>
 <h2 id="how-does-fomo-affect-application-performance">How does FOMO affect application performance?</h2>
 <p>We can see FOMO in how people have reacted to the coronavirus COVID-19. Despite pleas to leave masks for medical professionals at real risk, people have bought out the stock for these masks despite living in countries with little to no sign of the coronavirus. In Sydney, Australia, residents are stockpiling toilet paper (of all things) in large quantities, clearing out shelves from supermarkets, and <a href="https://www.bbc.com/news/world-australia-51731422">getting into knife fights over toilet paper</a> due to their panic at the thought of doing without.</p>
-<p><img src="/blog/assets/20200309-03.jpg" alt=""></p>
+<p><img src="/assets/20200309-03.jpg" alt=""></p>
 <p><em>This photo of an empty toilet paper aisle was taken by our Principal Engineer, <a href="https://github.com/lachie">Lachie Cox</a>, in a supermarket in Sydney last week.</em>
 ‍
 FOMO of this magnitude ultimately also manifests itself in the stock market. The Dow Jones Industrial Average, which represents the performance of the top 30 largest companies in the US, dropped by 3,500 points last week amidst fears that the coronavirus would stall production in countries most affected by COVID-19, leading to lower returns across the board.</p>
@@ -356,13 +356,13 @@ FOMO of this magnitude ultimately also manifests itself in the stock market. The
 <p>We should ideally test both, but let&rsquo;s focus on signups here because it&rsquo;s easier to test without access to the actual app (which requires a US social security number).</p>
 <h4 id="number-of-virtual-users-at-peak-load">Number of virtual users at peak load</h4>
 <p>Let&rsquo;s try to come up with a number of users that we can use as Robinhood&rsquo;s peak hourly load. This task would be easier if Robinhood shared their analytics, but we can still make some educated guesses with what <em>has</em> been made public.</p>
-<p><img src="/blog/assets/20200309-04.png" alt=""></p>
+<p><img src="/assets/20200309-04.png" alt=""></p>
 <p><em>Source: Image from <a href="https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined">Apptopia</a></em></p>
 <p><a href="https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined">According to Apptopia</a>, Robinhood&rsquo;s highest number of mobile installations was in 2018, when it saw 2 million downloads of its mobile app in a quarter. This period coincides with when Robinhood released cryptocurrency trading support, which looks like increased signups—in the third quarter of 2019, this figure was about 1.5 million. 2 million quarterly downloads translates to about 666,666 downloads per month. Let&rsquo;s call that 700,000 and take this number of mobile downloads as a starting figure.</p>
 <p>The stock market is only open on the weekdays, so we can divide 700,000 signups a month by 20 days, and we get 35,000 signups a day. The markets are also only open for about 7 hours a day, but the load probably isn&rsquo;t evenly spread out across the 7 hours— I would expect that people would have more time during lunch to sign up for Robinhood. So let&rsquo;s say that the majority of those signups would happen within three hours (from 11 am to 2 pm, for example). By dividing 35,000 signups per day by 3 hours, we get about 11,667 users per hour. Let&rsquo;s round that up to 12,000.</p>
 <p>How do we translate this to the number of virtual users we need to run? Let&rsquo;s think about how long each user stays on the app. The signup process does require approval, so that&rsquo;s a hard stop— new users won&rsquo;t be able to sign up and then start trading immediately afterwards. <a href="https://robinhood.com/us/en/support/articles/360001213123/open-my-account/">This approval could take up to a day</a>, or up to seven days if documents are required.</p>
 <p>Looking at the application form itself, we can see it is relatively standard and requires only information that most people are likely to have handy (social security number and contact details). I timed how long it took me to go through the part of it I could access, and I estimated that 10 minutes would be sufficient time to go through all the tabs.</p>
-<p><img src="/blog/assets/20200309-05.jpg" alt=""></p>
+<p><img src="/assets/20200309-05.jpg" alt=""></p>
 <p><em>Source: <a href="https://signup.robinhood.com/?">Robinhood</a></em></p>
 <p>We want to spread out users evenly across the hour— that is, we don&rsquo;t want 12,000 users to sign up and leave, all within 10 minutes. We want equal portions of those users to be signing up throughout the entire hour. Dividing 12,000 by 6 (the number of 10-minute intervals in an hour), we get 2,000. 2,000 is the number of threads we need active at any one point of time. Each of those threads signs up one user for 10 minutes, then signs up 5 more users until the hour is up.</p>
 <p>So we have our figure: we need 2,000 <em>virtual</em> users per hour to simulate 12,000 signups in an hour.</p>
@@ -376,7 +376,7 @@ FOMO of this magnitude ultimately also manifests itself in the stock market. The
 <p><strong>Stress testing</strong>. ‍Stress testing means increasing the number of users on an application at regular increments until the application crashes. We can start with 2,000 virtual users per hour, and then add 500 users every 30 minutes to see how the application handles it. This test helps determine how much room there is for growth.</p>
 </li>
 </ul>
-<p><img src="/blog/assets/20200309-06.jpg" alt=""></p>
+<p><img src="/assets/20200309-06.jpg" alt=""></p>
 <p><em>Source: Stepped load profile for stress testing, generated in JMeter</em>
 ‍</p>
 <ul>
@@ -386,7 +386,7 @@ FOMO of this magnitude ultimately also manifests itself in the stock market. The
 <h2 id="scripting-for-fomo">Scripting for FOMO</h2>
 <h3 id="tool-selection">Tool selection</h3>
 <p>To test mobile as well as web apps, I would typically use a protocol-level load testing tool like JMeter to simulate the load. However, <a href="https://thenewstack.io/how-id-load-test-the-iowa-caucus-app/">I&rsquo;ve already done that</a>. I also noticed that Robinhood makes use of some dynamic parameters, such as a csrf token:</p>
-<p>‍<img src="/blog/assets/20200309-07.jpg" alt=""></p>
+<p>‍<img src="/assets/20200309-07.jpg" alt=""></p>
 <p><em>Source: Chrome Developer Tools on <a href="https://signup.robinhood.com/?">Robinhood</a></em>
 ‍
 We can usually find the value of this token in the response of the previous page. It is a security feature to allow Robinhood to verify that the same users make all requests in the same session. Tokens can be scripted around in a tool like JMeter, but it can be time-consuming. So for this article, I decided to show another tool that makes this problem go away. I used <a href="https://element.flood.io/">Flood Element</a>, which is an open-source tool we created based on Puppeteer. One of its advantages is that it runs on the browser level. Instead of diving into HTTP requests and tokens, I just told Element which buttons to click.</p>
@@ -407,9 +407,9 @@ We can usually find the value of this token in the response of the previous page
 </ol>
 <p>Note that I stopped short of actually submitting the form because I don&rsquo;t want to create dummy accounts on Robinhood&rsquo;s database— I just want to show how this flow can be scripted with Element.</p>
 <p>To help me identify the elements on the page that I wanted the script to interact with, I used Chrome&rsquo;s built-in Developer Tools. Specifically, I used the Inspect Element button (in orange below) to click on a field and find where it was in the code.</p>
-<p>‍<img src="/blog/assets/20200309-08.jpg" alt=""></p>
+<p>‍<img src="/assets/20200309-08.jpg" alt=""></p>
 <p>For instance, to find out how to identify the email field, I right-clicked on the code on the right, hovered over Copy, and then clicked Copy selector.</p>
-<p>‍<img src="/blog/assets/20200309-09.png" alt=""></p>
+<p>‍<img src="/assets/20200309-09.png" alt=""></p>
 <p>This gave me the value <code>#signup_email_field</code>, which I then used in the script like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//Type Email address
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">type</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">id</span>(<span style="color:#e6db74">&#39;signup_email_field&#39;</span>),<span style="color:#e6db74">&#39;nicole@flood.io&#39;</span>)
@@ -476,24 +476,24 @@ We can usually find the value of this token in the response of the previous page
 	})
 }
 </code></pre></div><p>In every step, I also added a <code>takeScreenshot()</code> , which is one of my very favorite features of Element. It&rsquo;s so useful to be able to save these screenshots and use them to determine exactly what&rsquo;s happening in the script. Here&rsquo;s what it looks like running my Element script locally. The automated browser is on the left, and my terminal (iTerm) is on the right, running Element.</p>
-<p>‍<img src="/blog/assets/20200309-10.jpg" alt=""></p>
+<p>‍<img src="/assets/20200309-10.jpg" alt=""></p>
 <h2 id="running-a-fomo-test">Running a FOMO test</h2>
 <p>Now we&rsquo;ve got a script that runs locally. How do we run it at scale? Additionally, Robinhood won&rsquo;t allow users outside the US to sign up. How do we make sure that our virtual users are allowed to sign up?</p>
 <p>The answer is a load testing platform like <a href="https://flood.io/">Flood</a>.</p>
 <p>With Flood, running our script is a matter of uploading the script and selecting some options.</p>
-<p><img src="/blog/assets/20200309-11.png" alt=""></p>
+<p><img src="/assets/20200309-11.png" alt=""></p>
 <p><em>The Flood test design interface</em>
 ‍
 Flood also lets us choose which regions to generate load from. Below I&rsquo;ve got it set up to run for an hour from four different US cities, with each one starting 500 users. This configuration gives us our 2,000 virtual user figure.</p>
-<p>‍<img src="/blog/assets/20200309-12.png" alt=""></p>
+<p>‍<img src="/assets/20200309-12.png" alt=""></p>
 <p>If this peak load test goes well, we could then go on to run the other test scenarios that we described earlier. Each one puts pressure on application servers in different ways, identifying performance bottlenecks.</p>
 <h2 id="results-and-reruns">Results and reruns</h2>
 <p>Since Robinhood is a live application, I didn&rsquo;t run the test— it&rsquo;s never a good idea to load test a domain you don&rsquo;t own when you&rsquo;re talking about thousands of users. However, <a href="https://api.flood.io/pfQuAGz3">here&rsquo;s a shareable link</a> to another small Element test I ran previously.</p>
 <p>Real-time dashboards like that one on Flood allow you to get a quick look into how the load test is running and to make any changes if necessary. When testing for FOMO, I think they&rsquo;re invaluable. For example, during a stress test where users are added at regular intervals, a real-time dashboard would help you identify increases in response time as a result of the increased number of users. It would also let you monitor the test and stop it when necessary.</p>
 <p>From the link above, click on the right arrow on the lone transaction.</p>
-<p><img src="/blog/assets/20200309-13.jpg" alt=""></p>
+<p><img src="/assets/20200309-13.jpg" alt=""></p>
 <p>That will take you to the Transaction Detail page. Remember those screenshots from Element? If you have any in your script, you&rsquo;ll see them here, arranged according to time.</p>
-<p><img src="/blog/assets/20200309-14.png" alt=""></p>
+<p><img src="/assets/20200309-14.png" alt=""></p>
 <p>This lets you troubleshoot issues during FOMO testing and react quickly.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Even with sound load testing strategies in place, it&rsquo;s challenging to plan for the massive spike in traffic that FOMO can bring, yet it&rsquo;s necessary to do so. FOMO, as a phenomenon, is only going to increase in magnitude as social networks make it easier to spread fear, uncertainty, and doubt as well as information.</p>

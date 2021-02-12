@@ -278,7 +278,7 @@ Conclusion: While the Iowa Reported App failure was not due entirely to load tes
 </ol>
 <hr>
 <p>A company called Shadow, Inc. made headlines earlier this week when they developed an app to count and report votes during the Iowa Democratic Caucus in the US. This app, called IowaReporterApp, ended up failing on several fronts, resulting in a <a href="https://www.nytimes.com/2020/02/06/upshot/iowa-caucuses-errors-results.html">days-long delay</a> in publishing the total votes, during which manual methods had to be employed.</p>
-<p><img src="/blog/assets/20200306-01.jpg" alt=""></p>
+<p><img src="/assets/20200306-01.jpg" alt=""></p>
 <p><em>Source: <a href="https://twitter.com/ShadowIncHQ/status/1224773796307050497">@ShadowIncHQ on Twitter</a></em></p>
 <p>This delay led to significant criticism from the software testing industry as well as from the general public. Some developers raised questions about the <a href="https://www.vice.com/en_us/article/3a8ajj/an-off-the-shelf-skeleton-project-experts-analyze-the-app-that-broke-iowa">code quality of the app</a>. The app <a href="https://twitter.com/iowademocrats/status/1225170253778444291">inaccurately reported voting totals</a> that differed from the Democratic Party&rsquo;s own manual reports, suggesting an issue with functional testing, particularly system integration testing. Shadow&rsquo;s <a href="https://thehill.com/policy/cybersecurity/481409-dhs-chief-says-offer-to-vet-iowa-caucus-app-was-declined">refusal to accept the Department of Homeland Security&rsquo;s help with security testing</a> also raised eyebrows. What was perhaps the most damning, though, was the question of <a href="https://twitter.com/zeynep/status/1224545350364672001">whether such an app was necessary in the first place</a>, when cheaper and more effective solutions existed.</p>
 <p>What I&rsquo;m most interested in, however, are the load issues that the app faced. Let&rsquo;s rewind a little to before the caucus. How would I have load tested an app like the IowaReporterApp?</p>
@@ -323,7 +323,7 @@ Conclusion: While the Iowa Reported App failure was not due entirely to load tes
 <p>I decided to test this as a gradual ramp-up of users within 10 minutes.</p>
 <h2 id="scripting-for-mobile">Scripting for mobile</h2>
 <p>Okay, time to write the script. Since I didn&rsquo;t have the luxury of being able to ask the developers for the format of the login request, I did the next best thing and tried to find out myself by recording the app traffic in action.</p>
-<p><img src="/blog/assets/20200306-02.png" alt=""></p>
+<p><img src="/assets/20200306-02.png" alt=""></p>
 <h3 id="recording-mobile-traffic-on-a-laptop-with-jmeter">Recording mobile traffic on a laptop with JMeter</h3>
 <p>Here&rsquo;s how I was able to see the request from the mobile app:</p>
 <ul>
@@ -344,9 +344,9 @@ Conclusion: While the Iowa Reported App failure was not due entirely to load tes
 </li>
 </ul>
 <p>Here&rsquo;s the traffic as seen on JMeter&rsquo;s View Results Tree listener afterward:</p>
-<p><img src="/blog/assets/20200306-03.png" alt=""></p>
+<p><img src="/assets/20200306-03.png" alt=""></p>
 <p>And here&rsquo;s the recorded request within the recording controller:</p>
-<p><img src="/blog/assets/20200306-04.png" alt=""></p>
+<p><img src="/assets/20200306-04.png" alt=""></p>
 <h3 id="analyzing-the-request">Analyzing the request</h3>
 <p>It looks like at least the initial login request is a GET to an Auth0 service, with several parameters being passed in the body. It also has some authorization headers.</p>
 <p>The parameter values also look like they might be dynamic, meaning they change from session to session. At this point, I would typically change some of these from being hardcoded values into dynamic ones so that the application receives a request in the right format, and I could look through <a href="https://auth0.com/docs/api/authentication">Auth0&rsquo;s API documentation</a> to find out how the authentication message should be formulated.</p>

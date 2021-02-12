@@ -162,5 +162,16 @@ In this part, we’ll go over some questions that are commonly asked in technica
 Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this? While recorders have gone a long way towards making scripting easier, modern security measures like the implementation of viewstates have also made scripting more complicated to record.</description>
     </item>
     
+    <item>
+      <title>Should I Upgrade to JMeter 4.0? 5 Reasons to Upgrade</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/</link>
+      <pubDate>Fri, 23 Feb 2018 23:43:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/</guid>
+      <description>Originally posted here.
+Apache has just launched JMeter 4.0, a big step up from their previous release, 3.3, which was only released in September last year. Apache seems to be stepping up the frequency of it’s releases, and we’re not complaining. JMeter is an amazing open source load testing tool and the most popular one used at Tricentis Flood by far.
+The big question is: Should you upgrade? Are the new features worth the leap?</description>
+    </item>
+    
   </channel>
 </rss>

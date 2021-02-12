@@ -255,5 +255,26 @@ In the recent RubyConf 2020 held in Melbourne, Australia, Nancy Cai from AirTask
 AirTasker is a platform allowing the outsourcing of everyday tasks. When discussing the reasons that AirTasker decided they wanted to carry out performance and load testing, Nancy told a fascinating story about an overly successful marketing campaign—a good problem to have, but a problem nonetheless.</description>
     </item>
     
+    <item>
+      <title>Tips and Tricks for Using Flood Element</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/</link>
+      <pubDate>Fri, 23 Nov 2018 23:07:24 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/</guid>
+      <description>Originally posted here.
+In case you missed it, there’s a new performance test tool on the block, and it’s called Flood Element. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.
+Using Browser Level Users is a newer approach to load testing that overcomes a lot of the common challenges we hear about traditional methods of testing:</description>
+    </item>
+    
+    <item>
+      <title>Prepare for Viral Videos With Flood Element</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/</link>
+      <pubDate>Thu, 08 Nov 2018 23:24:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/</guid>
+      <description>Originally posted here.
+One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&amp;ndash; in fact, one of our favourite clients here at Flood recently used Gatling to simulate 6 million concurrent users streaming video from their application.</description>
+    </item>
+    
   </channel>
 </rss>

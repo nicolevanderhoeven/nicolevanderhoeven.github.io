@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Prepare for Viral Videos With Flood Element | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Prepare for Viral Videos With Flood Element" />
+<meta property="og:description" content="Originally posted here.
+One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&ndash; in fact, one of our favourite clients here at Flood recently used Gatling to simulate 6 million concurrent users streaming video from their application." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/" />
+<meta property="article:published_time" content="2018-11-08T23:24:31+01:00" />
+<meta property="article:modified_time" content="2018-11-08T23:24:31+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Prepare for Viral Videos With Flood Element"/>
+<meta name="twitter:description" content="Originally posted here.
+One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&ndash; in fact, one of our favourite clients here at Flood recently used Gatling to simulate 6 million concurrent users streaming video from their application."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&text=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&is_video=false&description=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&name=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element&description=Originally%20posted%20here.%0aOne%20of%20the%20more%20interesting%20things%20to%20load%20test%20is%20video.%20You%20see%2c%20traditional%20load%20test%20tools%20are%20protocol-based%2c%20which%20means%20that%20their%20approach%20to%20load%20testing%20video%20is%20to%20capture%20and%20simulate%20the%20traffic%20that%20the%20browser%20generates%20under%20the%20covers%2c%20sending%20the%20same%20requests%20to%20the%20application.%20This%20approach%20can%20still%20be%20successful%26ndash%3b%20in%20fact%2c%20one%20of%20our%20favourite%20clients%20here%20at%20Flood%20recently%20used%20Gatling%20to%20simulate%206%20million%20concurrent%20users%20streaming%20video%20from%20their%20application.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&t=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-challenge">The Challenge</a></li>
+    <li><a href="#a-solution-flood-element">A Solution: Flood Element</a></li>
+    <li><a href="#simulating-real-user-views">Simulating Real User Views</a>
+      <ul>
+        <li><a href="#step-1-navigate-to-the-video-page">Step 1. Navigate to the video page</a></li>
+        <li><a href="#step-2-click-the-play-button">Step 2. Click the Play button</a></li>
+        <li><a href="#step-3-take-periodic-screenshots">Step 3. Take periodic screenshots</a></li>
+        <li><a href="#step-4-run-it-on-flood">Step 4. Run it on Flood!</a></li>
+      </ul>
+    </li>
+    <li><a href="#some-considerations-for-load-testing-video-with-flood-element">Some Considerations for Load Testing Video with Flood Element</a>
+      <ul>
+        <li><a href="#taking-screenshots-and-using-logs-are-necessary-for-debugging">Taking screenshots and using logs are necessary for debugging.</a></li>
+        <li><a href="#videos-may-behave-differently-in-headless-mode">Videos may behave differently in headless mode.</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Prepare for Viral Videos With Flood Element
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2018-11-08 23:24:31 &#43;0100 CET" itemprop="datePublished">2018-Nov-08</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/element" rel="tag">element</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/prepare-for-viral-videos-with-flood-element">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/prepare-for-viral-videos-with-flood-element">here</a>.</em></p>
+<p>One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&ndash; in fact, one of our favourite clients here at Flood recently <a href="https://blog.hotstar.com/millons-scale-simulations-1602befe1ce5">used Gatling to simulate 6 million concurrent users</a> streaming video from their application. However, for some use cases, testing at the protocol level can’t simulate everything that happens in a real world use case.</p>
+<h2 id="the-challenge">The Challenge</h2>
+<p>If you’re a video creator, the ultimate goal is often a simple goal: creating a viral video. Unfortunately, preparing for and simulating this all-important use case is typically impossible with protocol based tools. The same feature that makes them so efficient &ndash; not using a browser to send the requests &ndash; is the same thing that prevents them from being used to simulate the needed browser level events. You see, things like view counts on a video are normally tracked by scripts running on the page. Traditional tools download these scripts along with other page resources, but the scripts themselves are not executed. Enter Flood Element.</p>
+<h2 id="a-solution-flood-element">A Solution: Flood Element</h2>
+<p>Flood Element represents a new way of looking at load testing. It is a browser-based tool, which means that it actually drives an instance of the browser to test an application. Rather than telling it what requests to send to simulate a user like you would do with a protocol-based tool, you tell Element which buttons to click or which elements on a page to interact with just as a real user would. Essentially Element IS a user, using your application the way it was meant to be used. This means that it also executes any scripts that would run on the browser side. It’s so realistic that you could even use Element to make your YouTube video viral* by scripting up users to view your content… hypothetically speaking.</p>
+<h2 id="simulating-real-user-views">Simulating Real User Views</h2>
+<p>Testing video with Flood Element is actually pretty easy, especially if you are familiar with open source testing tools like Selenium. If you haven’t yet begun using Element, go through the installation guide <a href="https://element.flood.io/">here</a>. You can download the full script used for this tutorial <a href="https://github.com/flood-io/element/blob/master/examples/youtube.ts">here</a>. In this example, we’re going to be using a YouTube video of the opening credits the classical cartoon Top Cat (the indisputable leader of the gang) from Warner Bros.</p>
+<h3 id="step-1-navigate-to-the-video-page">Step 1. Navigate to the video page</h3>
+<p>Let’s start with a basic script:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Until</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">loopCount</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,
+    <span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">actionDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+    <span style="color:#a6e22e">stepDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+    <span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">userAgent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;flood-element-test&#39;</span>,
+}
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> () =&gt; {
+	<span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;01_Home&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">visit</span>(<span style="color:#e6db74">&#39;https://www.youtube.com/watch?v=6fvhLlrBrPQI&#39;</span>)
+		
+		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+	})
+}
+</code></pre></div><p>This is the bones of a basic script in Flood Element. It consists of a single step that involves doing two things: visiting the starting URL, which in this case is the direct link to the YouTube video, and then taking a screenshot once loading the page. Taking screenshots is particularly useful when testing video because screenshots give you a way to check that your script is doing what you want it to do. It’s good to take periodic screenshots as well, to measure progress.</p>
+<p>To help you validate that the script runs well locally before scaling to hundreds or thousands of users, you can use our Element CLI. If you save the above code as youtube.ts, open up your terminal in that directory and then type:</p>
+<p><code>element run youtube.ts</code></p>
+<p>Assuming you’ve got Element set up correctly, you should see something like this: (Note that screenshots are only available when using iTerm as your shell. They are also saved as files under <code>.../tmp/element-results/youtube</code> .)
+‍
+<img src="/assets/20181108-01.png" alt="Screenshots shown while running Element in iTerm"></p>
+<p>Oops! It looks like our script does navigate to the page, but it doesn’t play the video. We’ll need to click on that play button. Let’s add that to our script.</p>
+<h3 id="step-2-click-the-play-button">Step 2. Click the Play button</h3>
+<p>We’ll need to add some lines to click the play button after visiting the page but before we take the screenshot, so that we can verify later whether or not the play button was clicked.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;02_ClickPlay&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+	<span style="color:#75715e">//Click on Play button
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">playBtn</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//button[@aria-label=&#34;Play&#34;]&#39;</span>))
+	<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">playBtn</span>.<span style="color:#a6e22e">click</span>()
+	
+<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+	})
+</code></pre></div><p>In this example I used Xpath, but you do have the option to select based on partial text, CSS selector, etc. A tool I like to use to get these is Chrome Developer Tools’ Elements tab, which allows you to get the selectors for a particular element.</p>
+<h3 id="step-3-take-periodic-screenshots">Step 3. Take periodic screenshots</h3>
+<p>To make sure that the video is really playing, we’ll need to take a screenshot a few seconds after the initial screenshot in order to visually confirm that the video has progressed. Even better, we can get Element to take screenshots at regular intervals. So let’s add a third step:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;03_Play&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+        <span style="color:#75715e">//Take a screenshot every 5 seconds until video finishes
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">‍</span>
+        <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+            <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+            <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#ae81ff">5</span>)
+        }
+    })
+</code></pre></div><p>To use <code>i</code>, we&rsquo;ll also need to declare it earlier in the script:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Until</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+<span style="color:#960050;background-color:#1e0010">‍</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</code></pre></div><p>In this step, <code>i</code> will correspond to every 5 seconds of playtime for the video, so we&rsquo;ll need to make sure that the limit of <code>i</code> that we set is sufficient time for the entire video to play. Every 5 seconds, Element will take a screenshot, which will help us verify that the video is progressing after the test.</p>
+<p>Click <a href="https://github.com/flood-io/element/blob/master/examples/youtube.ts">here</a> to download the script before moving on to the next step, unless you’ve been following along at home.</p>
+<h3 id="step-4-run-it-on-flood">Step 4. Run it on Flood!</h3>
+<p>The final step is to upload it to Flood and run the test. Click <a href="https://guides.flood.io/scripting-and-tools/flood-element/getting-started-with-element">here</a> to see a step-by-step guide for how to do just that. You can choose how many users you’d like to run on Flood and across how many nodes. New users will be given 5 node hours which will allow them to run a test with up to 250 users for 1 hour.  Each node will have a different IP address, so plan for that accordingly if your application takes that into account.</p>
+<p>One of the things I love about running it this way is that if you click on the arrow to the right of the sole transaction, you can see screenshots taken along the way to prove that the video is being played:</p>
+<p><img src="/assets/20181108-02.jpg" alt="Screenshots during test execution in Flood"></p>
+<h2 id="some-considerations-for-load-testing-video-with-flood-element">Some Considerations for Load Testing Video with Flood Element</h2>
+<h3 id="taking-screenshots-and-using-logs-are-necessary-for-debugging">Taking screenshots and using logs are necessary for debugging.</h3>
+<p>Because the page elements while a video is streaming are static, we’re not going to be able to use those as clues as to where we are in our scenario. To compensate, it’s a good idea to take screenshots and use console.log() to determine progress, especially while debugging. Be careful not to go overboard on these when actually running the load test though, as they will consume system resources.</p>
+<h3 id="videos-may-behave-differently-in-headless-mode">Videos may behave differently in headless mode.</h3>
+<p>While writing this tutorial, I realised that YouTube auto-plays videos when on non-headless mode (aka, when opening a video link manually on a browser or with the <code>--no-headless</code> flag in Element). When it’s executed in headless mode via Flood Element, it requires a click on the play button to begin. Again, use screenshots to aid you in spotting these differences.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Element’s browser-level scripting capabilities allow it to simulate users that interact with pages just like human users would. Element and Flood are a powerhouse combo, providing the flexibility to test with thousands of users across the world within a few minutes.</p>
+<p>Element seeks to reduce the gap between a scripted user and a real user &ndash; and it’s so realistic that it’s hard to tell the difference.  We encourage you to take advantage of our free trial offer and run some real world load tests today!</p>
+<p><em>*We don’t advise or condone the use of Element to artificially inflate views on YouTube in any way which may violate its <a href="https://www.youtube.com/static?template=terms">Terms of Service</a>. The purpose of this article is to showcase Element and how realistically it recreates real users.</em></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-challenge">The Challenge</a></li>
+    <li><a href="#a-solution-flood-element">A Solution: Flood Element</a></li>
+    <li><a href="#simulating-real-user-views">Simulating Real User Views</a>
+      <ul>
+        <li><a href="#step-1-navigate-to-the-video-page">Step 1. Navigate to the video page</a></li>
+        <li><a href="#step-2-click-the-play-button">Step 2. Click the Play button</a></li>
+        <li><a href="#step-3-take-periodic-screenshots">Step 3. Take periodic screenshots</a></li>
+        <li><a href="#step-4-run-it-on-flood">Step 4. Run it on Flood!</a></li>
+      </ul>
+    </li>
+    <li><a href="#some-considerations-for-load-testing-video-with-flood-element">Some Considerations for Load Testing Video with Flood Element</a>
+      <ul>
+        <li><a href="#taking-screenshots-and-using-logs-are-necessary-for-debugging">Taking screenshots and using logs are necessary for debugging.</a></li>
+        <li><a href="#videos-may-behave-differently-in-headless-mode">Videos may behave differently in headless mode.</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&text=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&is_video=false&description=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&title=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&name=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element&description=Originally%20posted%20here.%0aOne%20of%20the%20more%20interesting%20things%20to%20load%20test%20is%20video.%20You%20see%2c%20traditional%20load%20test%20tools%20are%20protocol-based%2c%20which%20means%20that%20their%20approach%20to%20load%20testing%20video%20is%20to%20capture%20and%20simulate%20the%20traffic%20that%20the%20browser%20generates%20under%20the%20covers%2c%20sending%20the%20same%20requests%20to%20the%20application.%20This%20approach%20can%20still%20be%20successful%26ndash%3b%20in%20fact%2c%20one%20of%20our%20favourite%20clients%20here%20at%20Flood%20recently%20used%20Gatling%20to%20simulate%206%20million%20concurrent%20users%20streaming%20video%20from%20their%20application.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181108-prepare-for-viral-videos-with-flood-element%2f&t=Prepare%20for%20Viral%20Videos%20With%20Flood%20Element">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

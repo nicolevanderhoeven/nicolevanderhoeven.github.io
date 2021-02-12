@@ -529,5 +529,16 @@ Using JMeter, you record a key business process. Upon playing it back, however, 
 Preparation is Key for the Perfect Interview Performance testing interviews can be a nerve wracking experience. We all understand it’s necessary, but we dread it anyway. Each company has its own style of interview, so you may need to prepare differently for each opportunity. This interview series will cover some general sample questions and scenarios as well as my answers to them to help you nail that performance testing interview!</description>
     </item>
     
+    <item>
+      <title>Should I Upgrade to JMeter 4.0? 5 Reasons to Upgrade</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/</link>
+      <pubDate>Fri, 23 Feb 2018 23:43:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/</guid>
+      <description>Originally posted here.
+Apache has just launched JMeter 4.0, a big step up from their previous release, 3.3, which was only released in September last year. Apache seems to be stepping up the frequency of it’s releases, and we’re not complaining. JMeter is an amazing open source load testing tool and the most popular one used at Tricentis Flood by far.
+The big question is: Should you upgrade? Are the new features worth the leap?</description>
+    </item>
+    
   </channel>
 </rss>

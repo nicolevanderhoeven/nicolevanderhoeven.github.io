@@ -601,6 +601,27 @@ Preparation is Key for the Perfect Interview Performance testing interviews can 
     </item>
     
     <item>
+      <title>Tips and Tricks for Using Flood Element</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/</link>
+      <pubDate>Fri, 23 Nov 2018 23:07:24 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/</guid>
+      <description>Originally posted here.
+In case you missed it, there’s a new performance test tool on the block, and it’s called Flood Element. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.
+Using Browser Level Users is a newer approach to load testing that overcomes a lot of the common challenges we hear about traditional methods of testing:</description>
+    </item>
+    
+    <item>
+      <title>Prepare for Viral Videos With Flood Element</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/</link>
+      <pubDate>Thu, 08 Nov 2018 23:24:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/</guid>
+      <description>Originally posted here.
+One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&amp;ndash; in fact, one of our favourite clients here at Flood recently used Gatling to simulate 6 million concurrent users streaming video from their application.</description>
+    </item>
+    
+    <item>
       <title>Mitad de allá y mitad de aquí: reflexiones de una políglota multinacional</title>
       <link>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</link>
       <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>
@@ -608,6 +629,16 @@ Preparation is Key for the Perfect Interview Performance testing interviews can 
       <guid>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</guid>
       <description>Originally posted on Medium.
 Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me miran e inmediatamente hablan en inglés. Siempre están sorprendidos cuando respondo en Tagalog. «¿Pero por qué tienes la piel clara?» me preguntan, como si fuera algo que se puede comprar en una tienda. A través de mi piel no pueden ver mi lugar de nacimiento y juventud en las Filipinas, o cuánto echo de menos la voz del vendedor de taho cuando caminas por las calles: «Tahoooooooo!</description>
+    </item>
+    
+    <item>
+      <title>Manufactured Chaos: How Netflix Does Performance Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20180328-manufactured-chaos/</link>
+      <pubDate>Wed, 28 Mar 2018 23:35:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20180328-manufactured-chaos/</guid>
+      <description>Originally posted here.
+It’s always ideal to run performance tests against an environment that’s production-like. That way, you can ensure that your tests aren&amp;rsquo;t being influenced by factors that are not present in production - such as sub-optimal specifications, or the configurations of a test server. So, what does a good performance tester do? They compare their machine specifications and request production-sized boxes to run their tests against. But is that really enough?</description>
     </item>
     
     <item>
@@ -621,6 +652,17 @@ Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me mi
 AirBNB Plus is a new tier of service that AirBNB have introduced for homes and hosts that go beyond the Superhost standard.
 Here’s what an AirBNB Plus listing means:
   The home has been verified by an AirBNB representative in person to have passed a 100-point checklist of quality.</description>
+    </item>
+    
+    <item>
+      <title>Should I Upgrade to JMeter 4.0? 5 Reasons to Upgrade</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/</link>
+      <pubDate>Fri, 23 Feb 2018 23:43:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/</guid>
+      <description>Originally posted here.
+Apache has just launched JMeter 4.0, a big step up from their previous release, 3.3, which was only released in September last year. Apache seems to be stepping up the frequency of it’s releases, and we’re not complaining. JMeter is an amazing open source load testing tool and the most popular one used at Tricentis Flood by far.
+The big question is: Should you upgrade? Are the new features worth the leap?</description>
     </item>
     
   </channel>

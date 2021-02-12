@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Tips and Tricks for Using Flood Element | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Tips and Tricks for Using Flood Element" />
+<meta property="og:description" content="Originally posted here.
+In case you missed it, there’s a new performance test tool on the block, and it’s called Flood Element. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.
+Using Browser Level Users is a newer approach to load testing that overcomes a lot of the common challenges we hear about traditional methods of testing:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/" />
+<meta property="article:published_time" content="2018-11-23T23:07:24+01:00" />
+<meta property="article:modified_time" content="2018-11-23T23:07:24+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tips and Tricks for Using Flood Element"/>
+<meta name="twitter:description" content="Originally posted here.
+In case you missed it, there’s a new performance test tool on the block, and it’s called Flood Element. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.
+Using Browser Level Users is a newer approach to load testing that overcomes a lot of the common challenges we hear about traditional methods of testing:"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20181220-performance-testing-interview-questions-part-1-general/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&text=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&is_video=false&description=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Tips%20and%20Tricks%20for%20Using%20Flood%20Element&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&name=Tips%20and%20Tricks%20for%20Using%20Flood%20Element&description=Originally%20posted%20here.%0aIn%20case%20you%20missed%20it%2c%20there%e2%80%99s%20a%20new%20performance%20test%20tool%20on%20the%20block%2c%20and%20it%e2%80%99s%20called%20Flood%20Element.%20It%e2%80%99s%20a%20scalable%20browser-based%20tool%20that%20allows%20you%20to%20write%20scripts%20in%20javascript%20that%20interact%20with%20web%20pages%20like%20a%20real%20user.%0aUsing%20Browser%20Level%20Users%20is%20a%20newer%20approach%20to%20load%20testing%20that%20overcomes%20a%20lot%20of%20the%20common%20challenges%20we%20hear%20about%20traditional%20methods%20of%20testing%3a">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&t=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#initialising-your-script">Initialising your script</a></li>
+    <li><a href="#choosing-the-right-text-editor">Choosing the right text editor</a></li>
+    <li><a href="#taking-screenshots">Taking screenshots</a></li>
+    <li><a href="#viewing-screenshots">Viewing Screenshots</a>
+      <ul>
+        <li><a href="#locally-run-tests">Locally Run Tests</a></li>
+        <li><a href="#tests-run-in-flood">Tests Run in Flood</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-logs">Using Logs</a>
+      <ul>
+        <li><a href="#locally-run-tests-1">Locally Run Tests</a></li>
+        <li><a href="#tests-run-in-flood-1">Tests Run in Flood</a></li>
+      </ul>
+    </li>
+    <li><a href="#fun-with-flags">Fun with Flags</a>
+      <ul>
+        <li><a href="#headless-flag">Headless Flag</a></li>
+        <li><a href="#watch-flag">Watch Flag</a></li>
+        <li><a href="#dev-tools-flag">Dev Tools Flag</a></li>
+        <li><a href="#more-flags">More Flags</a></li>
+      </ul>
+    </li>
+    <li><a href="#try-element">Try Element</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Tips and Tricks for Using Flood Element
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2018-11-23 23:07:24 &#43;0100 CET" itemprop="datePublished">2018-Nov-23</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/element" rel="tag">element</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/tips-and-tricks-for-using-flood-element">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/tips-and-tricks-for-using-flood-element">here</a>.</em></p>
+<p>In case you missed it, there’s a new performance test tool on the block, and it’s called <a href="https://element.flood.io/">Flood Element</a>. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.</p>
+<p>Using Browser Level Users is a <a href="https://flood.io/blog/why-you-should-load-test-with-browsers/">newer approach to load testing</a> that overcomes a lot of the common challenges we hear about traditional methods of testing:</p>
+<ol>
+<li>Easier scripting that is akin to common functional tools like Selenium and easier to learn</li>
+<li>More realistic results that are based on true browser performance rather than API responses</li>
+<li>Ability to test against all components of your web app, including things like Javascript that is rendered via the browser</li>
+</ol>
+<p>Given the above benefits, it’s a no brainer to check out Flood Element for your web load testing, especially if you have struggled with the existing tools on the market like JMeter or HP LoadRunner.</p>
+<p>Pairing Element with <a href="https://flood.io/">Flood</a> turns it into a pretty powerful load test tool. We have a <a href="https://help.flood.io/getting-started-with-load-testing/step-by-step-guide-flood-element">great guide here</a> that you can follow if you’d like to get started with it. As you can imagine, I’ve been using and testing Element for several months now and I thought I’d share some tips I’ve learned along the way.</p>
+<h2 id="initialising-your-script">Initialising your script</h2>
+<p>You can always start from scratch, but the quickest way to get started is to type</p>
+<p><code>element init myfirstelementtest</code></p>
+<p>from your terminal, filling in the project name you’d prefer.</p>
+<p>You’ll then be asked to type in the title of your test as well as the URL you’d like to script against. After a minute, you’ll see that a new directory has been created:</p>
+<p><img src="/assets/20181123-01.png" alt="New directory in Flood Element"></p>
+<p>Element will automatically create a file called <code>test.ts</code>. This file will contain the skeleton of a script, along with some sample code to help you find a button and then click on it. But before you open it, let’s move on to…</p>
+<h2 id="choosing-the-right-text-editor">Choosing the right text editor</h2>
+<p>Scripting in Element is already pretty simple, but I’ve found two things that really help while scripting are syntax highlighting and code completion. Syntax highlighting will greatly improve your experience when first learning a new test tool like Element, and code completion will make your scripting lightning fast as you become more experienced in the process.  My text editor of choice is <a href="https://code.visualstudio.com/">Visual Studio Code</a>, which has both of those features. It’s slick and clean, and it does the job.</p>
+<p>Syntax highlighting is when the text editor intelligently changes the font colour of your code according to its role in the programming language you’re using. Here’s a screenshot of the test.ts file we generated earlier in VS Code to show you what I mean:</p>
+<p><img src="/assets/20181123-02.png" alt="Generated sample Flood Element script"></p>
+<p>This makes it easier to make sense of the code at a glance: comments are in green, values and labels are in orange, etc.</p>
+<p>Code completion is when you start to type something, and VS Code helpfully opens a context menu with suggestions for methods you can use.</p>
+<p><img src="/assets/20181123-03.gif" alt="Auto-completion in VSCode"></p>
+<p>I love this because it means I don’t have to remember the exact name of the method. It also suggests names of variables you’ve already defined and highlights code that doesn’t make sense.  This will help to make your tests more maintainable and readable for others, which is a great benefit as you look to scale your testing out in the future.</p>
+<p><img src="/assets/20181123-04.gif" alt="Suggestions in VSCode"></p>
+<h2 id="taking-screenshots">Taking screenshots</h2>
+<p>One of the most powerful features of Element is its ability to take screenshots. I find it immensely useful when debugging because sometimes it’s just easier to see what’s going on visually.  With protocol based tools, debugging can often be a much more involved and technical process.</p>
+<p>There are two ways to take screenshots in Element:</p>
+<ol>
+<li>Add a setting to automatically take a screenshot when an error is encountered. You can do this by setting screenshotOnFailure to true in TestSettings:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {
+<span style="color:#a6e22e">device</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Device</span>.<span style="color:#a6e22e">iPadLandscape</span>,
+<span style="color:#a6e22e">userAgent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;flood-chrome-test&#39;</span>,
+<span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+}
+</code></pre></div><ol start="2">
+<li>Explicitly take a screenshot at a particular point in the script. You can do this by adding</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+</code></pre></div><p>to your code.</p>
+<h2 id="viewing-screenshots">Viewing Screenshots</h2>
+<p>Once you’ve taken screenshots within your tests, you will likely want to view them and know that they will be stored for future safekeeping.  Whether you are running your test locally on have uploaded it to Flood to run with increased concurrency, Flood Element has you covered.</p>
+<h3 id="locally-run-tests">Locally Run Tests</h3>
+<p>Screenshots will be saved as jpg files in a timestamped folder corresponding to your run. It should look something like: <code>...myfirstelementtest/tmp/element-results/test/2018-11-20T135700.595Z/flood/screenshots/</code> and the screenshots will be uniquely named so that new screenshots, even for the same step, don’t overwrite older ones.</p>
+<p>However, I rarely have to look up the screenshots in that folder because I prefer to see them in iTerm2 for macOS. iTerm is an alternative to the terminal that works particularly well with Element. When you take a screenshot, iTerm actually shows it in-line:</p>
+<p><img src="/assets/20181123-05.png" alt="Screenshots shown inline with iTerm">
+‍</p>
+<h3 id="tests-run-in-flood">Tests Run in Flood</h3>
+<p>Running an Element script on Flood is ideal when you need larger concurrency. Rather than accessing your screenshot locally, Flood will centralize the images into your account so the images remain even after the cloud load injectors are destroyed.  You can get to the screenshot files by downloading Archived Results:</p>
+<p><img src="/assets/20181123-06.png" alt="Archived Results in Flood"></p>
+<p>Or you can also choose to click on a step on the dashboard to see a film strip of your test:</p>
+<p><img src="/assets/20181123-07.png" alt="Seeing screenshots during a test with Flood"></p>
+<h2 id="using-logs">Using Logs</h2>
+<p>You may need to check out the logs for more technical debugging, especially when the screenshots don’t tell the whole story.  Whether you are running your test locally on have uploaded it to Flood to run with increased concurrency, Flood Element has you covered.</p>
+<h3 id="locally-run-tests-1">Locally Run Tests</h3>
+<p>You can print to the console by typing, for example:</p>
+<p><code>console.log('orderValues = ' + orderValues)</code></p>
+<p>This will print the value of the variable orderValues at that point in the script. You would see this in your terminal if you’re running Element locally.</p>
+<h3 id="tests-run-in-flood-1">Tests Run in Flood</h3>
+<p>If you’re running the script on Flood, you can either download the log (in the same Archived Results zipped file as mentioned earlier) or you can click on the Logs tab:</p>
+<p><img src="/assets/20181123-08.png" alt="Test logs on Flood">
+‍</p>
+<h2 id="fun-with-flags">Fun with Flags</h2>
+<p>Element comes with a few flags that give you more control over how the script is run locally. Here are a few of my favourites!</p>
+<h3 id="headless-flag">Headless Flag</h3>
+<p>When in doubt, run Element in non-headless mode to see the script actually opening the web app on Chrome and interacting with the page. This is only possible locally, but there’s nothing like actually seeing for yourself what’s happening in real time instead of relying on screenshots and logs after the fact. To enable this mode, add the flag when running your test:</p>
+<p><code>element run myfirstelementtest.ts --no-headless</code></p>
+<h3 id="watch-flag">Watch Flag</h3>
+<p>Element will automatically close the browser window when it encounters an error or finishes the iteration. Adding <code>--watch</code> will leave the browser window open and then will monitor the script. As soon as the script is saved, it will automatically run it in the same window from the beginning.  Simply add this flag like the above example:</p>
+<p><code>element run myfirstelement.ts --watch</code></p>
+<h3 id="dev-tools-flag">Dev Tools Flag</h3>
+<p>This opens a browser instance and runs the script with the Chrome Dev Tools open, allowing you to find locators for the next action you want to script.  Simply add this flag like the first example:</p>
+<p><code>--dev-tools</code></p>
+<h3 id="more-flags">More Flags</h3>
+<p>For more flags, use:</p>
+<p><code>element run --help</code></p>
+<h2 id="try-element">Try Element</h2>
+<p>You’ve just gotten a crash course on Flood Element. You’re all set! If you haven’t already, download Element <a href="https://element.flood.io/">here</a> to start writing functional test scripts and reusing them as load test scripts on Flood. If you don’t have a Flood account, you can easily sign up for a free trial here.</p>
+<p>We’re extremely proud to have been able to contribute to the open-source community and can’t wait to have you try this new addition to the Flood line!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#initialising-your-script">Initialising your script</a></li>
+    <li><a href="#choosing-the-right-text-editor">Choosing the right text editor</a></li>
+    <li><a href="#taking-screenshots">Taking screenshots</a></li>
+    <li><a href="#viewing-screenshots">Viewing Screenshots</a>
+      <ul>
+        <li><a href="#locally-run-tests">Locally Run Tests</a></li>
+        <li><a href="#tests-run-in-flood">Tests Run in Flood</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-logs">Using Logs</a>
+      <ul>
+        <li><a href="#locally-run-tests-1">Locally Run Tests</a></li>
+        <li><a href="#tests-run-in-flood-1">Tests Run in Flood</a></li>
+      </ul>
+    </li>
+    <li><a href="#fun-with-flags">Fun with Flags</a>
+      <ul>
+        <li><a href="#headless-flag">Headless Flag</a></li>
+        <li><a href="#watch-flag">Watch Flag</a></li>
+        <li><a href="#dev-tools-flag">Dev Tools Flag</a></li>
+        <li><a href="#more-flags">More Flags</a></li>
+      </ul>
+    </li>
+    <li><a href="#try-element">Try Element</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&text=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&is_video=false&description=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Tips%20and%20Tricks%20for%20Using%20Flood%20Element&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&title=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&name=Tips%20and%20Tricks%20for%20Using%20Flood%20Element&description=Originally%20posted%20here.%0aIn%20case%20you%20missed%20it%2c%20there%e2%80%99s%20a%20new%20performance%20test%20tool%20on%20the%20block%2c%20and%20it%e2%80%99s%20called%20Flood%20Element.%20It%e2%80%99s%20a%20scalable%20browser-based%20tool%20that%20allows%20you%20to%20write%20scripts%20in%20javascript%20that%20interact%20with%20web%20pages%20like%20a%20real%20user.%0aUsing%20Browser%20Level%20Users%20is%20a%20newer%20approach%20to%20load%20testing%20that%20overcomes%20a%20lot%20of%20the%20common%20challenges%20we%20hear%20about%20traditional%20methods%20of%20testing%3a">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181123-tips-and-tricks-for-using-flood-element%2f&t=Tips%20and%20Tricks%20for%20Using%20Flood%20Element">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

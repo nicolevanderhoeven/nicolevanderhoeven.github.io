@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Start with Why: How to Write Requirements for API Load Testing | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Start with Why: How to Write Requirements for API Load Testing" />
+<meta property="og:description" content="Originally published here.
+Every good test begins with requirements.
+You may think, “But I’m a tester! I’m not a business analyst!”, and I hear you. But as testers, especially on smaller teams or shorter projects, it’s still part of our job to make sure we know what our clients want. Otherwise, how do we know whether we’ve succeeded or failed?
+At Flood, I often speak to project teams who ask for help interpreting reports." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20190610-start-with-why/" />
+<meta property="article:published_time" content="2019-06-19T21:49:17+01:00" />
+<meta property="article:modified_time" content="2019-06-19T21:49:17+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Start with Why: How to Write Requirements for API Load Testing"/>
+<meta name="twitter:description" content="Originally published here.
+Every good test begins with requirements.
+You may think, “But I’m a tester! I’m not a business analyst!”, and I hear you. But as testers, especially on smaller teams or shorter projects, it’s still part of our job to make sure we know what our clients want. Otherwise, how do we know whether we’ve succeeded or failed?
+At Flood, I often speak to project teams who ask for help interpreting reports."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20190712-workload-modeling/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&text=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&is_video=false&description=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&name=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing&description=Originally%20published%20here.%0aEvery%20good%20test%20begins%20with%20requirements.%0aYou%20may%20think%2c%20%e2%80%9cBut%20I%e2%80%99m%20a%20tester%21%20I%e2%80%99m%20not%20a%20business%20analyst%21%e2%80%9d%2c%20and%20I%20hear%20you.%20But%20as%20testers%2c%20especially%20on%20smaller%20teams%20or%20shorter%20projects%2c%20it%e2%80%99s%20still%20part%20of%20our%20job%20to%20make%20sure%20we%20know%20what%20our%20clients%20want.%20Otherwise%2c%20how%20do%20we%20know%20whether%20we%e2%80%99ve%20succeeded%20or%20failed%3f%0aAt%20Flood%2c%20I%20often%20speak%20to%20project%20teams%20who%20ask%20for%20help%20interpreting%20reports.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&t=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#which-performance-testing-metrics-are-important-why-are-we-testing-anyway">Which performance testing metrics are important? Why are we testing, anyway?</a>
+      <ul>
+        <li><a href="#scalability">Scalability</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#elasticity">Elasticity</a></li>
+        <li><a href="#availability">Availability</a></li>
+        <li><a href="#reliability">Reliability</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-should-my-applications-response-time-be">What should my application’s response time be?</a></li>
+    <li><a href="#what-is-a-good-api-load-testing-requirement">What is a good API load testing requirement?</a>
+      <ul>
+        <li><a href="#specific">Specific</a></li>
+        <li><a href="#measurable">Measurable</a></li>
+        <li><a href="#agreed-upon">Agreed Upon</a></li>
+        <li><a href="#realistic">Realistic</a></li>
+        <li><a href="#timely">Timely</a></li>
+      </ul>
+    </li>
+    <li><a href="#go-forth-and-write-great-load-testing-requirements">Go forth and write great load testing requirements</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Start with Why: How to Write Requirements for API Load Testing
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2019-06-19 21:49:17 &#43;0100 &#43;0100" itemprop="datePublished">2019-Jun-19</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/requirements" rel="tag">requirements</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/start-with-why-how-to-write-requirements-for-api-load-testing">
+
+<p><em>Originally published <a href="https://www.flood.io/blog/start-with-why-how-to-write-requirements-for-api-load-testing">here</a>.</em></p>
+<p>Every good test begins with requirements.</p>
+<p>You may think, “But I’m a tester! I’m not a business analyst!”, and I hear you. But as testers, especially on smaller teams or shorter projects, it’s still part of our job to make sure we know what our clients want. Otherwise, how do we know whether we’ve succeeded or failed?</p>
+<p>At Flood, I often speak to project teams who ask for help interpreting reports. Most of those times, the problem is not that they don’t understand the metrics or what they measure. The problem is that they didn’t set pass or fail criteria in the first place, and so they don&rsquo;t have anything to judge the results against. This is always a big warning sign.</p>
+<h2 id="which-performance-testing-metrics-are-important-why-are-we-testing-anyway">Which performance testing metrics are important? Why are we testing, anyway?</h2>
+<p>Requirements inform every step of the load testing process. Why are we doing load testing? What exactly do we want to test? How will we know when a test has passed or failed? How will we know if application performance is good enough to go into production? What does “good enough” mean?</p>
+<p><a href="https://flood.io/blog/author/tim-koopmans/">Tim Koopmans</a>, co-founder of Flood, coined the acronym SPEAR to describe the different aspects of a performance that should be considered in load testing. This is a great starting point when thinking about what we want our nonfunctional requirements to cover.</p>
+<h3 id="scalability">Scalability</h3>
+<p>Scalability is the application’s ability to cope with increasing demands by increasing the amount of server resources. This could mean scaling <em>up</em> (increasing the resources of the dedicated server) or scaling <em>out</em> (adding more nodes to shoulder the load). What happens when more users than expected sign up in response to a promotion on your site?</p>
+<h3 id="performance">Performance</h3>
+<p>The most common performance metric is page response time, but there are other considerations to be made here, such as throughput (requests per minute) and the number of concurrent sessions that need to be supported. Things like the total size of the resources on the page, whether or not a CDN is being used, and what to cache are also worth discussing.</p>
+<h3 id="elasticity">Elasticity</h3>
+<p>Elasticity is a relatively newer aspect to performance testing brought about by advances in the cloud that allow application infrastructure to adapt to changes in load. Unlike scalability, elasticity emphasises scaling down as much as it does scaling up. Testing that virtual machines scale up when load increases is important, but testing that virtual machines also scale down when load decreases can also help save on unnecessary costs.</p>
+<h3 id="availability">Availability</h3>
+<p>To test for high availability, ask yourself what would happen when (not if) your application’s server fails. Is there another server that the load balancer will seamlessly send traffic towards? Does the throughput fluctuate wildly? If users are connected to one server that fails, is your application smart enough to make new connections to another server? Or will it simply serve up an error page that users won’t know what to do with? Disaster recovery is best tested when there’s no disaster imminent.</p>
+<h3 id="reliability">Reliability</h3>
+<p>Reliability encompasses a lot of scenarios, but they all have to do with whether or not your application returns expected responses. Does your error rate increase when you increase the duration of your load test? Are you adding verification steps to your load testing scripts to check whether or not the HTTP 200 response that the application returned is not actually an error page?</p>
+<h2 id="what-should-my-applications-response-time-be">What should my application’s response time be?</h2>
+<p>Our clients frequently ask us what the industry standard is for response times, wanting to make sure their applications measure up. The answer, however, is more complicated than a single number.</p>
+<p>Industry standards for response time are only useful when applications are very similar. Constantly changing technologies used in web development as well as innate differences in business processes, however, make it very difficult to extrapolate a single number that will apply to all, or even most, applications in a certain industry.</p>
+<p>The home page of one e-commerce app, for instance, might be several seconds slower than that of their main competitor. However, that doesn’t take into account the fact that their app loads a video showcasing new products. Does that mean that the development team should remove the video in order to fall in line with their competition?</p>
+<p>Well, maybe. But not necessarily. It’s a business decision that needs to be made after perhaps using focus groups to determine the impact of the video, forecasting changes in conversion rate due to it, and comparing its projected value to the effects of being slower than the competition. A/B experiments could be used to test these assumptions and gather quantifiable data to support the team decision.</p>
+<p>These factors are often not considered in the search for one number to rule them all, which is why a fixation on that number can be detrimental. Instead, I encourage project teams to brainstorm and come up with their own numbers for all metrics that would be more appropriate for their application. Gathering comparative metrics from a competitor may be part of this process.</p>
+<h2 id="what-is-a-good-api-load-testing-requirement">What is a good API load testing requirement?</h2>
+<p>A good requirement, just like any good goal, is SMART:</p>
+<h3 id="specific">Specific</h3>
+<p>Vagueness in a requirement leads to vagueness in results interpretation.</p>
+<p><em>Instead of</em>: “The performance of the web application…”</p>
+<p><em>Try</em>: “The average response time of the Login transaction&hellip;”</p>
+<h3 id="measurable">Measurable</h3>
+<p>Make sure there is a quantifiable way to know whether requirements have been achieved.</p>
+<p><em>Instead of</em>: “Decrease user frustration.”</p>
+<p><em>Try</em>: “The error rate must be below 3% at peak load.”</p>
+<h3 id="agreed-upon">Agreed Upon</h3>
+<p>Have the appropriate stakeholders been involved?</p>
+<p><em>Instead of</em>: “The system must be able to generate emails as soon as users register.”</p>
+<p><em>Try</em>: “The system must be able to generate a maximum of 100 emails an hour, after which emails are queued.”</p>
+<p>A good example for this is a project I was involved in that aimed to increase the speed with which emails were generated. Unfortunately, the particular email being sent included a big change that many customers were expected to contact the support team about. The problem was that nobody had thought to include Support in the conversation. Once they heard about the expected end result, the support team quickly raised their concern that they would not be able to handle the expected volume of emails unless the emails were staggered. This could have been avoided if they had been brought into discussions from the very beginning, in the requirements gathering phase.</p>
+<h3 id="realistic">Realistic</h3>
+<p>Can we meet this requirement given the resources available?</p>
+<p><em>Instead of</em>: “All requests must be returned within 5 ms.”</p>
+<p><em>Try</em>: “90% of the Catalog page requests should be returned within 3 seconds.”</p>
+<h3 id="timely">Timely</h3>
+<p>Especially for nonfunctional testing, consider adding a timeframe to requirements.</p>
+<p><em>Instead of</em>: “The digital code is sent by SMS upon successful client log in at peak load.”</p>
+<p><em>Try</em>: “The digital code will be sent by SMS no later than 5 minutes after successful client log in at peak load.”</p>
+<h2 id="go-forth-and-write-great-load-testing-requirements">Go forth and write great load testing requirements</h2>
+<p>Requirements represent a great opportunity to think things through and make sure everyone on the project team is on the same page about the goals for your load testing. Too often projects skip this phase, only to realise much later that the tests that were executed didn’t address a key stakeholder’s concerns.</p>
+<p>In load testing, as in many things: when in doubt about what to do, start with why.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#which-performance-testing-metrics-are-important-why-are-we-testing-anyway">Which performance testing metrics are important? Why are we testing, anyway?</a>
+      <ul>
+        <li><a href="#scalability">Scalability</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#elasticity">Elasticity</a></li>
+        <li><a href="#availability">Availability</a></li>
+        <li><a href="#reliability">Reliability</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-should-my-applications-response-time-be">What should my application’s response time be?</a></li>
+    <li><a href="#what-is-a-good-api-load-testing-requirement">What is a good API load testing requirement?</a>
+      <ul>
+        <li><a href="#specific">Specific</a></li>
+        <li><a href="#measurable">Measurable</a></li>
+        <li><a href="#agreed-upon">Agreed Upon</a></li>
+        <li><a href="#realistic">Realistic</a></li>
+        <li><a href="#timely">Timely</a></li>
+      </ul>
+    </li>
+    <li><a href="#go-forth-and-write-great-load-testing-requirements">Go forth and write great load testing requirements</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&text=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&is_video=false&description=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&title=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&name=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing&description=Originally%20published%20here.%0aEvery%20good%20test%20begins%20with%20requirements.%0aYou%20may%20think%2c%20%e2%80%9cBut%20I%e2%80%99m%20a%20tester%21%20I%e2%80%99m%20not%20a%20business%20analyst%21%e2%80%9d%2c%20and%20I%20hear%20you.%20But%20as%20testers%2c%20especially%20on%20smaller%20teams%20or%20shorter%20projects%2c%20it%e2%80%99s%20still%20part%20of%20our%20job%20to%20make%20sure%20we%20know%20what%20our%20clients%20want.%20Otherwise%2c%20how%20do%20we%20know%20whether%20we%e2%80%99ve%20succeeded%20or%20failed%3f%0aAt%20Flood%2c%20I%20often%20speak%20to%20project%20teams%20who%20ask%20for%20help%20interpreting%20reports.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20190610-start-with-why%2f&t=Start%20with%20Why%3a%20How%20to%20Write%20Requirements%20for%20API%20Load%20Testing">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

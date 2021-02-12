@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Mobile Load Testing on the Cloud | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Mobile Load Testing on the Cloud" />
+<meta property="og:description" content="Originally posted here.
+What is mobile load testing? What is the difference between load testing web apps and mobile apps? In general, your goal is the same: to improve app performance by systematically exposing your app to the load you expect, whether it&rsquo;s on the web or on a mobile device. However, while the purpose may be the same, there a few extra things to consider when it comes to mobile app performance, and it&rsquo;s easy to make some key mistakes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200221-mobile-load-testing-on-the-cloud/" />
+<meta property="article:published_time" content="2020-02-21T18:44:58+01:00" />
+<meta property="article:modified_time" content="2020-02-21T18:44:58+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mobile Load Testing on the Cloud"/>
+<meta name="twitter:description" content="Originally posted here.
+What is mobile load testing? What is the difference between load testing web apps and mobile apps? In general, your goal is the same: to improve app performance by systematically exposing your app to the load you expect, whether it&rsquo;s on the web or on a mobile device. However, while the purpose may be the same, there a few extra things to consider when it comes to mobile app performance, and it&rsquo;s easy to make some key mistakes."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20190926-load-testing-tutorial-server-monitoring/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20200224-airtasker/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&text=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&is_video=false&description=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Mobile%20Load%20Testing%20on%20the%20Cloud&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&name=Mobile%20Load%20Testing%20on%20the%20Cloud&description=Originally%20posted%20here.%0aWhat%20is%20mobile%20load%20testing%3f%20What%20is%20the%20difference%20between%20load%20testing%20web%20apps%20and%20mobile%20apps%3f%20In%20general%2c%20your%20goal%20is%20the%20same%3a%20to%20improve%20app%20performance%20by%20systematically%20exposing%20your%20app%20to%20the%20load%20you%20expect%2c%20whether%20it%26rsquo%3bs%20on%20the%20web%20or%20on%20a%20mobile%20device.%20However%2c%20while%20the%20purpose%20may%20be%20the%20same%2c%20there%20a%20few%20extra%20things%20to%20consider%20when%20it%20comes%20to%20mobile%20app%20performance%2c%20and%20it%26rsquo%3bs%20easy%20to%20make%20some%20key%20mistakes.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&t=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-mobile-load-testing">What is mobile load testing?</a></li>
+    <li><a href="#challenges-in-mobile-load-testing">Challenges in mobile load testing</a>
+      <ul>
+        <li><a href="#device-fragmentation">Device fragmentation</a></li>
+        <li><a href="#logistics">Logistics</a></li>
+        <li><a href="#cost">Cost</a></li>
+      </ul>
+    </li>
+    <li><a href="#better-strategies-for-mobile-load-testing">Better strategies for mobile load testing</a>
+      <ul>
+        <li><a href="#front-end-performance">Front-end performance</a></li>
+        <li><a href="#back-end-performance">Back-end performance</a></li>
+        <li><a href="#load-testing-for-back-end-performance">Load testing for back-end performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#api-load-testing">API load testing</a>
+      <ul>
+        <li><a href="#tools-for-mobile-load-testing">Tools for mobile load testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-record-network-traffic-from-a-native-app-with-apache-jmeter">How to record network traffic from a native app with Apache JMeter</a>
+      <ul>
+        <li><a href="#1-download-and-install-the-app">1. Download and install the app.</a></li>
+        <li><a href="#2-set-up-an-https-test-script-recorder-on-jmeter">2. Set up an HTTP(S) Test Script Recorder on JMeter</a></li>
+        <li><a href="#3-set-up-your-mobile-to-use-a-proxy">3. Set up your mobile to use a proxy.</a></li>
+        <li><a href="#4-start-recording-traffic">4. Start recording traffic.</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripting-and-troubleshooting-your-mobile-load-testing-script">Scripting and troubleshooting your mobile load testing script</a>
+      <ul>
+        <li><a href="#add-assertions">Add assertions</a></li>
+        <li><a href="#replace-hardcoded-values-with-dynamic-values">Replace hardcoded values with dynamic values</a></li>
+        <li><a href="#add-think-time">Add think time</a></li>
+        <li><a href="#debug-your-test-script">Debug your test script</a></li>
+        <li><a href="#set-test-parameters">Set test parameters</a>
+          <ul>
+            <li><a href="#number-of-concurrent-users-or-threads">Number of concurrent users or threads</a></li>
+            <li><a href="#ramp-up">Ramp-up</a></li>
+            <li><a href="#duration">Duration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#running-a-shakeout-test-against-your-mobile-application">Running a shakeout test against your mobile application</a></li>
+    <li><a href="#baselining-your-mobile-application-performance">Baselining your mobile application performance</a>
+      <ul>
+        <li><a href="#user-density">User Density</a></li>
+      </ul>
+    </li>
+    <li><a href="#scaling-up-your-load-test-on-the-cloud">Scaling up your load test on the cloud</a>
+      <ul>
+        <li><a href="#1-upload-your-tool-of-choice-and-script-to-every-machine-and-kick-off-each-test-separately">1. Upload your tool of choice and script to every machine and kick off each test separately.</a></li>
+        <li><a href="#2-use-your-tools-distributed-testing-mode">2. Use your tool’s distributed testing mode.</a></li>
+        <li><a href="#3-use-a-load-testing-platform">3. Use a load testing platform.</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-happens-next">What happens next?</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Mobile Load Testing on the Cloud
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-02-21 18:44:58 &#43;0100 CET" itemprop="datePublished">2020-Feb-21</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/mobile" rel="tag">mobile</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/mobile-load-testing-on-the-cloud">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/mobile-load-testing-on-the-cloud">here</a>.</em></p>
+<h2 id="what-is-mobile-load-testing">What is mobile load testing?</h2>
+<p>What is the difference between load testing web apps and mobile apps? In general, your goal is the same: to improve app performance by systematically exposing your app to the load you expect, whether it&rsquo;s on the web or on a mobile device. However, while the purpose may be the same, there a few extra things to consider when it comes to mobile app performance, and it&rsquo;s easy to make some key mistakes. In this article, I&rsquo;ll give you a little bit of the theory behind mobile load testing and then show you practical steps to script and execute a load test.</p>
+<h2 id="challenges-in-mobile-load-testing">Challenges in mobile load testing</h2>
+<p>If you have a web app that is mobile first, and your users typically access your site through a browser on their mobile devices as well as on their laptops, you have more choices for optimizing mobile performance. You can use browser-based load testing tools as well as protocol-level load testing tools to generate load.</p>
+<p>If you have a native mobile app that you&rsquo;d like to load test, though, browser-based load testing tools are a little more complicated. One of the most common approaches to mobile load testing is to use some type of device farm. A device farm is a collection of mobile devices and a way to orchestrate and control them so that they access an application simultaneously. Here&rsquo;s why they&rsquo;re not the best choice for load testing.</p>
+<p><img src="/assets/20200221-01.jpg" alt="Fragmentation can make mobile load testing difficult"></p>
+<h3 id="device-fragmentation">Device fragmentation</h3>
+<p>One of the biggest challenges is mobile device fragmentation. Not only are there a lot of mobile devices, but there are also many operating systems and versions. Even narrowing the pool to Android and ios leaves us with a large selection. A common mistake in mobile load testing is trying to account for these hundreds of combinations.</p>
+<h3 id="logistics">Logistics</h3>
+<p>Another challenge is the logistics of controlling physical devices with different operating systems, which is not trivial. Unless you have a thousand friends that you can rope into doing this at the same time, you&rsquo;ll need to pay for some sort of service that can orchestrate this for you.</p>
+<h3 id="cost">Cost</h3>
+<p>There&rsquo;s also the fact that this process is resource-intensive. Even if your device farm consists of emulators on virtual machines rather than physical mobile devices, that still uses up a lot of CPU and memory, and you&rsquo;d need to spin up dozens or hundreds of machines.</p>
+<p>Luckily, this type of mobile load testing is not the only option available to us.</p>
+<h2 id="better-strategies-for-mobile-load-testing">Better strategies for mobile load testing</h2>
+<p>A better option for back-end performance testing or load testing your mobile application is by using API load testing, which works on the protocol level. To understand this, let&rsquo;s talk about what aspects of software we are analyzing when we test for &ldquo;performance.&rdquo;</p>
+<p>We can generally break up performance testing into two types: front-end and back-end. Both types have the goal of making the app respond faster to end-users, but they do so by optimizing different parts of the application.</p>
+<h3 id="front-end-performance">Front-end performance</h3>
+<p>Front-end performance is primarily concerned with the UI of the app. A front-end performance tester optimizes page resources (like CSS, images, JS) to render faster on the page. Since a mobile app runs on a user&rsquo;s smartphone or another mobile device, its front-end performance would also be affected by things we can&rsquo;t control, such as the operating system and version of the mobile or its physical configuration (CPU and memory). A front-end issue for a particular mobile device type might not necessarily affect performance on another. Device farms can be good at measuring front-end performance.</p>
+<h3 id="back-end-performance">Back-end performance</h3>
+<p>In contrast, back-end performance focuses on the underlying mobile application servers. A back-end performance tester optimizes the things behind the interface, and it is affected by things like the size of the responses that a server sends to a user, server configuration, application infrastructure, and how downstream servers talk to each other. These factors may be invisible to a typical end-user. A performance bottleneck in the back-end is likely to affect all users of an app to some degree.</p>
+<h3 id="load-testing-for-back-end-performance">Load testing for back-end performance</h3>
+<p>Load testing is about determining how your mobile application behaves in response to traffic, so it targets the back-end components of the application, not the front-end.</p>
+<p>Both front-end and back-end performance are necessary to get a holistic view of mobile performance. Still, <strong>if you want to load test your mobile app, you need to generate traffic on your application <em>server</em>, and not necessarily to drive the app on real devices</strong>. Understanding this opens up options for mobile load testing.</p>
+<p><img src="/assets/20200221-02.jpg" alt="A data center can be out of most testing teams' reach"></p>
+<h2 id="api-load-testing">API load testing</h2>
+<p>Most native mobile apps work by using a RESTful API to send instructions to the application server. Luckily for us, there&rsquo;s no magic in sending these types of requests from a smartphone— we can simulate this easily by using an API load testing tool to send these requests on a non-mobile device too.</p>
+<p>Here are some advantages of using API load testing tools to test your mobile app instead of using a device farm:</p>
+<ul>
+<li><strong>It&rsquo;s easier to set up and maintain</strong>: API load testing can be easier because you don&rsquo;t have to account for changes in the user interface as long as the underlying API calls are the same.</li>
+<li><strong>It&rsquo;s cost-effective</strong>: You can run about 1,000 users for an API test on a single machine (we used AWS m5.xlarge machines to arrive at this estimate). This translates into fewer resources that you&rsquo;ll need to pay for whether you&rsquo;re running a thousand users or [a million](whether you&rsquo;re running a thousand users or a million), and, ultimately, a lower cost.</li>
+<li><strong>It lets you narrow your load testing scope</strong>: If you have a particular endpoint that has historically shown performance issues, you can use API load testing to target just that one endpoint. On a device farm, you would have to create a test automation script that might click a button and send dozens of requests, only one of which you actually wanted to test.</li>
+</ul>
+<h3 id="tools-for-mobile-load-testing">Tools for mobile load testing</h3>
+<p>You can use many tools for API load testing, but you can&rsquo;t go wrong with robust open-source tools like JMeter and Gatling. Both tools are well-used tools in the performance industry, and they also have large user bases and ample documentation for helping anyone get started. In this article, I&rsquo;ll continue with JMeter specifically.</p>
+<p>How do you get started with writing your script? Ideally, your developers should be able to point you to the API documentation for your app or be able to describe the format of the request themselves. But what if you wanted to get started on your own?</p>
+<h2 id="how-to-record-network-traffic-from-a-native-app-with-apache-jmeter">How to record network traffic from a native app with Apache JMeter</h2>
+<p>Recently I wrote <a href="https://thenewstack.io/how-id-load-test-the-iowa-caucus-app/">an article on The New Stack</a> about how I would have load tested the IowaReporterApp, which was responsible for delays in reported vote totals for the 2020 Iowa Democratic Caucuses. To show how to load test that app, I created an actual load testing script for that article, without any input from the app developers. I chose to script using Apache JMeter, a popular open source API load testing tool, but Gatling (also open source) is another good option.</p>
+<p>Here are the steps I took on my Android mobile, a Samsung Galaxy Note 10+. The same principles should apply to iOS devices and other Android devices.</p>
+<h3 id="1-download-and-install-the-app">1. Download and install the app.</h3>
+<p>Even if the app isn&rsquo;t on the Google Play store, you can install an app using the .apk file. You may have to enable Developer Mode on your phone, which is not the same as jailbreaking. All this does is bypass the security feature that would otherwise not allow you to install apps that don&rsquo;t come from the Play store.</p>
+<p>To enable Developer Mode, go to Settings &gt; About phone &gt; Software information. Then, scroll down to the field Build number and tap it seven times. You should see a confirmation message that Developer mode is on.</p>
+<p>Now download the .apk, click on it, and follow the prompts to install it.</p>
+<h3 id="2-set-up-an-https-test-script-recorder-on-jmeter">2. Set up an HTTP(S) Test Script Recorder on JMeter</h3>
+<p>You&rsquo;ll need to have JMeter set up already for this step.</p>
+<p>Connect your laptop to a wi-fi network.</p>
+<p>From a new test plan on JMeter, right-click on Test Plan and then click on Add &gt; Non-Test Elements &gt; HTTP(S) Test Script Recorder. Click on it and take note of the port it uses in Global Settings.</p>
+<p><img src="/assets/20200221-03.png" alt="Checking the port in the JMeter HTTPS Test Script Recorder"></p>
+<p>Next, right-click on the test recorder element you just created and click Add &gt; Listener &gt; View Results Tree. This element shows details of requests and responses when we run tests.</p>
+<p>Then, right-click on Test Plan again and click Add &gt; Threads &gt; Thread Group.</p>
+<p>Finally, right-click on Thread Group and click Add &gt; Logic Controller &gt; Recording Controller.</p>
+<p>Your test plan should look something like this:</p>
+<p><img src="/assets/20200221-04.png" alt="JMeter Test Plan containing a Recording Controller and an HTTPS Test Script Reocrder"></p>
+<h3 id="3-set-up-your-mobile-to-use-a-proxy">3. Set up your mobile to use a proxy.</h3>
+<p>On your mobile, connect to the same wireless network that your laptop is connected to.</p>
+<p>Go back to your laptop and find out its local IP address. On a Mac, you can see this by clicking on the Apple logo &gt; System Preferences &gt; Network &gt; Advanced &gt; TCP/IP. The IPv4 Address is what you&rsquo;re looking for, and it might look something like 192.168.86.125.</p>
+<p><img src="/assets/20200221-05.png" alt="Getting your local IP address on a Mac"></p>
+<p>On your mobile, go to Settings &gt; Connections &gt; Wi-Fi. Under Current network, click on the settings wheel next to your wireless network. Click on Advanced.</p>
+<p>Enter your computer&rsquo;s local IP address in the Proxy host name field.</p>
+<p>In the Proxy port field, enter 8888, or the port that was displayed in the HTTP(S) Test Script Recorder on JMeter.</p>
+<p>Click Save.</p>
+<h3 id="4-start-recording-traffic">4. Start recording traffic.</h3>
+<p>On JMeter, click on the HTTP(s) Test Script Recorder element and click Start.</p>
+<p>On your mobile, open the app and log in or perform the action that you&rsquo;d like to record.</p>
+<p>As you use the app, you should be able to see the requests coming in on JMeter in the View Results Tree:</p>
+<p><img src="/assets/20200221-06.png" alt="View Results Tree listener view of traffic coming from the proxy"></p>
+<p>If you click on the Recording Controller, you&rsquo;ll also see the exact format of the requests that the app made:</p>
+<p><img src="/assets/20200221-07.png" alt="Seeing parameters sent with a recorded request in JMeter"></p>
+<h2 id="scripting-and-troubleshooting-your-mobile-load-testing-script">Scripting and troubleshooting your mobile load testing script</h2>
+<p>What you now have is a recording of the mobile traffic you need to simulate. If you stop here and try to run it, you may find that it fails. That&rsquo;s because you haven&rsquo;t done any scripting yet.</p>
+<p>Here are a few things you&rsquo;ll need to do to turn a recording into a script.</p>
+<h3 id="add-assertions">Add assertions</h3>
+<p>An assertion is a way to verify that the request is returning the response that you expect. JMeter only marks a request as failed when it returns an HTTP 4xx or HTTP 5xx response code. However, there are times when the HTTP response code returned is an HTTP 200 OK, but the page that was returned was still not the one you expected. Without assertions, JMeter would mark this request as passed, yielding false positives.</p>
+<p>For instance, if you&rsquo;re sending a login request, then a good assertion for the response to that request might be text like &ldquo;Welcome, Nicole&rdquo; or &ldquo;Logged in.&rdquo; To see the data that should be returned, you can either run through the action manually in your browser and use Developer Tools to inspect the response or click on the response tab in the View Results Tree listener in JMeter from your recording.</p>
+<p>Assertions also allow you to pinpoint more accurately where in your script the error is.</p>
+<h3 id="replace-hardcoded-values-with-dynamic-values">Replace hardcoded values with dynamic values</h3>
+<p>The last screenshot above shows the parameters that the mobile application sends to the server to log in. If you examine the parameter values, you&rsquo;ll notice that several of them are long strings. The script fails when you just send the same request again because some of these are dynamic. This means that parts of the request need to change before your device is allowed to access the application. You might need to add a timestamp, the right answer to a challenge, a session or client ID, or codes returned in previous requests. These dynamic values help the server determine whether the login request is a valid login attempt.</p>
+<p>This is where help from a developer would come in handy because he or she can tell you how each parameter value needs to be formed.</p>
+<h3 id="add-think-time">Add think time</h3>
+<p>Think time is a delay between requests that simulates the pauses that a real user takes to read text on the page or otherwise interact with your application. Most performance testing tools do this. In JMeter, they are called timers, and there are several to choose from.</p>
+<p>I like the Uniform Random Timer because it allows you to set a constant value for the delay as well as an additional random delay on top of it. I recommend having a variable delay because setting a completely constant delay makes the test too regular and causes unnaturally high load at the interval you set. Real users don&rsquo;t coordinate with each other, so stagger your requests by using a variable component to your think time.</p>
+<h3 id="debug-your-test-script">Debug your test script</h3>
+<p>Before you think about scaling up, run your test a few times with one user on your local machine. If you don&rsquo;t get any errors, try other configurations such as running two sequential users and running two threads at the same time. This way, you can test any correlations you&rsquo;ve had to make for those dynamic values.</p>
+<p>It may be tempting to skip this step, but it&rsquo;s necessary before scaling up your load test.</p>
+<h3 id="set-test-parameters">Set test parameters</h3>
+<p>Test parameters are settings like the number of threads, ramp-up, and duration, which allow you to shape the pattern of the load you want to generate according to your test scenarios and test cases.</p>
+<h4 id="number-of-concurrent-users-or-threads">Number of concurrent users or threads</h4>
+<p>This is the most obvious way to increase load. The more instances of your script running, the more requests are executed.</p>
+<p>You can change this in JMeter by clicking on your Thread Group and changing the “Number of Threads (users)” field:</p>
+<p>‍<img src="/assets/20200221-08.png" alt="Changing the number of threads in JMeter"></p>
+<h4 id="ramp-up">Ramp-up</h4>
+<p>In production, load on servers very rarely goes from 0 to 1000 in one second. Even for cases with a very definitive start time (such as an item going on sale at a particular time), the load generally increases gradually. You can simulate this gradual increase by adding ramp-up times in your script. A ramp-up is the amount of time during which new users are added at staggered intervals.</p>
+<p>Here’s an example of what that might look like:</p>
+<p><img src="/assets/20200221-09.png" alt="Changing the ramp-up of a test in JMeter"></p>
+<h4 id="duration">Duration</h4>
+<p>Duration is how long the whole test lasts.</p>
+<p>The simplest way to set these values in JMeter is to use the basic Thread Group. You’ll need to change the fields highlighted below:</p>
+<p><img src="/assets/20200221-10.png" alt="Changing test parameters in JMeter"></p>
+<p>To use the duration, you’ll have to select “Forever” next to Loop Count and “Scheduler” and type in the number of seconds in the Duration field. Otherwise, you can also run the script according to the number of loops, or iterations, that you want to run. However, since response times vary, using the Loop Count as a proxy for duration yields different results from test to test.</p>
+<h2 id="running-a-shakeout-test-against-your-mobile-application">Running a shakeout test against your mobile application</h2>
+<p>When you&rsquo;re ready to run on your load generators, resist the urge to jump straight to the peak load you want. This is a great way to incur unnecessary costs. Instead, run a small test with dozens of users. Running locally is for debugging issues in the script. The purpose of running a shakeout test is to spot errors elsewhere, such as in your test environment and your test data.</p>
+<h2 id="baselining-your-mobile-application-performance">Baselining your mobile application performance</h2>
+<p>Finding a baseline is one of the primary goals you’ll have as you start executing load tests. To be able to assess how changes in the environment or code affect application performance, you’ll need a stable point of comparison. To accurately measure the effect of a variable (like a code change), it’s best to keep as much of the other circumstances surrounding the test as fixed as possible. The baseline is your <strong>unchanging</strong> test scenario that you can use as a point of comparison to assess future performance.</p>
+<p>The application you&rsquo;re scripting against, your tool of choice, and your script all affect your performance baseline, so do some experimenting to find out the setup that works best for your situation. This setup includes characteristics like:</p>
+<ul>
+<li>the number of concurrent users</li>
+<li>test duration</li>
+<li>think time, pacing, and all other waits and delays</li>
+<li>the script (including how requests are broken up into transactions)</li>
+<li>user density</li>
+</ul>
+<h3 id="user-density">User Density</h3>
+<p>User density is the number of threads that you can run on a node or a load generator. Figuring out user density it essential because all load generators, even virtual ones, have finite resources. Each load generator also has a finite amount of load that it can generate, based on its CPU and memory utilization, among other things. Trying to generate too many users on a single node may result in the node itself being the bottleneck for your test.</p>
+<p>To accurately assess your application’s performance, your load generators need to remain healthy during the test.</p>
+<p>It can be helpful to have a number to start with. At Flood, we’ve found that we can reliably run 1000 users using JMeter or Gatling with one of our AWS <a href="https://aws.amazon.com/es/ec2/instance-types/">m5.xlarge machines</a>. For reference, an m5.xlarge machine has 4 VCPUs and 16 GB RAM.</p>
+<p>If your machine is similarly specced, run a test on a single node with 1000 users. While the test runs, watch the CPU and memory utilization. If the test finishes without either of those consistently hitting over 80%, you’ll know that the node can handle that number of users.</p>
+<p>Let me reiterate, though, that you should use the 1000 users figure as a starting point only. You can then figure out your number through trial and error. Increase the number of users past 1000 and watch the resource utilization again. If that still looks good, add some more users and rerun. When you get to a test where the resource utilization hovers above 80%, stop and fall back to the previous number of users. You’ll now have your number.</p>
+<p>Another thing you might want to play with is the think time and pacing in your script. These waits tend to have a significant impact on resource utilization, so you can expect to be able to run more users per node if you increase your delays.</p>
+<p>If you’re using JMeter, always run your tests in non-GUI mode. GUI mode is great for debugging, but is unnecessarily resource-intensive for real load tests. While you’re at it, disable any listeners you may have that you don’t need to capture results.</p>
+<p>Figuring out the appropriate user density now prevents you from getting inaccurate test results. Running as many users as you can without overloading the load generators is also cost-effective, as you’ll be making sure that you provision only as many nodes as you need.</p>
+<h2 id="scaling-up-your-load-test-on-the-cloud">Scaling up your load test on the cloud</h2>
+<p>It’s relatively simple to run a load test on one machine, but if you want to run on two or more machines, things quickly get unwieldy. Here are some options for achieving this.</p>
+<h3 id="1-upload-your-tool-of-choice-and-script-to-every-machine-and-kick-off-each-test-separately">1. Upload your tool of choice and script to every machine and kick off each test separately.</h3>
+<p>Instead of running one large load test, think of this method as running several smaller ones at (about) the same time. This is relatively easy to set up, but the main disadvantage is that it’s tedious. You may also need licenses for your tools if you&rsquo;re not using an open source one. You’ll want to ensure that each load generator is as similar as possible to the others in terms of operating system, tool version, and script version. Since each node kicks off a separate test, you’re not going to be able to see a real-time combined view of all the load tests, and after execution, you’ll need to retrieve results files individually and combine them.</p>
+<h3 id="2-use-your-tools-distributed-testing-mode">2. Use your tool’s distributed testing mode.</h3>
+<p>JMeter has a feature that allows you to scale. This involves setting up agents on each load generator and using scripts to coordinate execution and results collection. This method requires a little bit more know-how and time to set up, but it’s a little more cohesive than the first method. Here are links on how to set this up: Remote Testing with JMeter</p>
+<h3 id="3-use-a-load-testing-platform">3. Use a load testing platform.</h3>
+<p>I&rsquo;m admittedly biased, but if I were to go back to doing performance testing consulting work, I would choose Flood to run my tests. A platform like Flood that is built for distributed load testing is an excellent choice because it takes away all the setup considerations. This is the easiest option, especially for teams that are new to load testing or are perhaps less technical, because all the setup is done through a UI. Scaling out in this case just means uploading your script, choosing the number of nodes you want to run and in which region, and all the work is done for you in the background.</p>
+<p>While you can run on-premises, I would consider running your test cloud-based infrastructure for greater flexibility and ease of scaling unless you already have a data center.</p>
+<p><img src="/assets/20200221-11.jpg" alt="Running a load test on the cloud is the easiest way to get started with mobile load testing"></p>
+<h2 id="what-happens-next">What happens next?</h2>
+<p>Running your test is just the beginning of mobile performance testing— there&rsquo;s still metrics collection, results analysis, and resolving performance bottlenecks that you uncover. After all, it&rsquo;s what you do with the test results that counts. Remember that performance and load testing, whether for web-based applications or mobile ones, are iterative. The real value comes from building the app performance testing principles discussed here into your release cycles, so that load testing becomes a habit rather than just a one-off exercise.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-mobile-load-testing">What is mobile load testing?</a></li>
+    <li><a href="#challenges-in-mobile-load-testing">Challenges in mobile load testing</a>
+      <ul>
+        <li><a href="#device-fragmentation">Device fragmentation</a></li>
+        <li><a href="#logistics">Logistics</a></li>
+        <li><a href="#cost">Cost</a></li>
+      </ul>
+    </li>
+    <li><a href="#better-strategies-for-mobile-load-testing">Better strategies for mobile load testing</a>
+      <ul>
+        <li><a href="#front-end-performance">Front-end performance</a></li>
+        <li><a href="#back-end-performance">Back-end performance</a></li>
+        <li><a href="#load-testing-for-back-end-performance">Load testing for back-end performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#api-load-testing">API load testing</a>
+      <ul>
+        <li><a href="#tools-for-mobile-load-testing">Tools for mobile load testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-record-network-traffic-from-a-native-app-with-apache-jmeter">How to record network traffic from a native app with Apache JMeter</a>
+      <ul>
+        <li><a href="#1-download-and-install-the-app">1. Download and install the app.</a></li>
+        <li><a href="#2-set-up-an-https-test-script-recorder-on-jmeter">2. Set up an HTTP(S) Test Script Recorder on JMeter</a></li>
+        <li><a href="#3-set-up-your-mobile-to-use-a-proxy">3. Set up your mobile to use a proxy.</a></li>
+        <li><a href="#4-start-recording-traffic">4. Start recording traffic.</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripting-and-troubleshooting-your-mobile-load-testing-script">Scripting and troubleshooting your mobile load testing script</a>
+      <ul>
+        <li><a href="#add-assertions">Add assertions</a></li>
+        <li><a href="#replace-hardcoded-values-with-dynamic-values">Replace hardcoded values with dynamic values</a></li>
+        <li><a href="#add-think-time">Add think time</a></li>
+        <li><a href="#debug-your-test-script">Debug your test script</a></li>
+        <li><a href="#set-test-parameters">Set test parameters</a>
+          <ul>
+            <li><a href="#number-of-concurrent-users-or-threads">Number of concurrent users or threads</a></li>
+            <li><a href="#ramp-up">Ramp-up</a></li>
+            <li><a href="#duration">Duration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#running-a-shakeout-test-against-your-mobile-application">Running a shakeout test against your mobile application</a></li>
+    <li><a href="#baselining-your-mobile-application-performance">Baselining your mobile application performance</a>
+      <ul>
+        <li><a href="#user-density">User Density</a></li>
+      </ul>
+    </li>
+    <li><a href="#scaling-up-your-load-test-on-the-cloud">Scaling up your load test on the cloud</a>
+      <ul>
+        <li><a href="#1-upload-your-tool-of-choice-and-script-to-every-machine-and-kick-off-each-test-separately">1. Upload your tool of choice and script to every machine and kick off each test separately.</a></li>
+        <li><a href="#2-use-your-tools-distributed-testing-mode">2. Use your tool’s distributed testing mode.</a></li>
+        <li><a href="#3-use-a-load-testing-platform">3. Use a load testing platform.</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-happens-next">What happens next?</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&text=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&is_video=false&description=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Mobile%20Load%20Testing%20on%20the%20Cloud&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&title=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&name=Mobile%20Load%20Testing%20on%20the%20Cloud&description=Originally%20posted%20here.%0aWhat%20is%20mobile%20load%20testing%3f%20What%20is%20the%20difference%20between%20load%20testing%20web%20apps%20and%20mobile%20apps%3f%20In%20general%2c%20your%20goal%20is%20the%20same%3a%20to%20improve%20app%20performance%20by%20systematically%20exposing%20your%20app%20to%20the%20load%20you%20expect%2c%20whether%20it%26rsquo%3bs%20on%20the%20web%20or%20on%20a%20mobile%20device.%20However%2c%20while%20the%20purpose%20may%20be%20the%20same%2c%20there%20a%20few%20extra%20things%20to%20consider%20when%20it%20comes%20to%20mobile%20app%20performance%2c%20and%20it%26rsquo%3bs%20easy%20to%20make%20some%20key%20mistakes.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200221-mobile-load-testing-on-the-cloud%2f&t=Mobile%20Load%20Testing%20on%20the%20Cloud">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

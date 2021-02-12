@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>requirements on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/requirements/</link>
+    <description>Recent content in requirements on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Wed, 19 Jun 2019 21:49:17 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/requirements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Start with Why: How to Write Requirements for API Load Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20190610-start-with-why/</link>
+      <pubDate>Wed, 19 Jun 2019 21:49:17 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20190610-start-with-why/</guid>
+      <description>Originally published here.
+Every good test begins with requirements.
+You may think, “But I’m a tester! I’m not a business analyst!”, and I hear you. But as testers, especially on smaller teams or shorter projects, it’s still part of our job to make sure we know what our clients want. Otherwise, how do we know whether we’ve succeeded or failed?
+At Flood, I often speak to project teams who ask for help interpreting reports.</description>
+    </item>
+    
+  </channel>
+</rss>

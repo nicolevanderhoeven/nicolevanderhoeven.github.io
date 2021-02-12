@@ -19,5 +19,16 @@ One of our most commonly-asked questions is: &amp;ldquo;What are the best tools 
 Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
     </item>
     
+    <item>
+      <title>How AirTasker uses Ruby JMeter and Flood for their load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200224-airtasker/</link>
+      <pubDate>Mon, 24 Feb 2020 18:23:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200224-airtasker/</guid>
+      <description>Originally posted here.
+In the recent RubyConf 2020 held in Melbourne, Australia, Nancy Cai from AirTasker talked about how they built a performance testing framework using Ruby JMeter and Flood. Luckily, we had some pleasantly surprised Flooders in attendance to take notes during this fantastic talk!
+AirTasker is a platform allowing the outsourcing of everyday tasks. When discussing the reasons that AirTasker decided they wanted to carry out performance and load testing, Nancy told a fascinating story about an overly successful marketing campaign—a good problem to have, but a problem nonetheless.</description>
+    </item>
+    
   </channel>
 </rss>

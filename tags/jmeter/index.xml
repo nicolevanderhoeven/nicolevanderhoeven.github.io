@@ -140,5 +140,27 @@ TL;DR? Here are the highlights in this article:
 Shadow, Inc. created a mobile app for the Iowa Caucus in February 2020, and the app failed, causing reported results to be delayed. The app reported different vote totals due to a system integration bug where the output was in a different format than what it needed to be. Here are the steps to load testing a mobile app:</description>
     </item>
     
+    <item>
+      <title>How AirTasker uses Ruby JMeter and Flood for their load testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20200224-airtasker/</link>
+      <pubDate>Mon, 24 Feb 2020 18:23:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20200224-airtasker/</guid>
+      <description>Originally posted here.
+In the recent RubyConf 2020 held in Melbourne, Australia, Nancy Cai from AirTasker talked about how they built a performance testing framework using Ruby JMeter and Flood. Luckily, we had some pleasantly surprised Flooders in attendance to take notes during this fantastic talk!
+AirTasker is a platform allowing the outsourcing of everyday tasks. When discussing the reasons that AirTasker decided they wanted to carry out performance and load testing, Nancy told a fascinating story about an overly successful marketing campaign—a good problem to have, but a problem nonetheless.</description>
+    </item>
+    
+    <item>
+      <title>Performance Testing Interview Questions, Part 2: JMeter</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20181220-performance-testing-interview-questions-part-2/</link>
+      <pubDate>Thu, 20 Dec 2018 14:47:18 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20181220-performance-testing-interview-questions-part-2/</guid>
+      <description>Originally posted here.
+In this part, we’ll go over some questions that are commonly asked in technical interviews about the use of the most popular open-source load testing tool, Apache JMeter.
+Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this? While recorders have gone a long way towards making scripting easier, modern security measures like the implementation of viewstates have also made scripting more complicated to record.</description>
+    </item>
+    
   </channel>
 </rss>

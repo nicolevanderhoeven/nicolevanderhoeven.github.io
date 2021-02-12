@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Performance Testing Interview Questions, Part 2: JMeter | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Performance Testing Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Performance Testing Interview Questions, Part 2: JMeter" />
+<meta property="og:description" content="Originally posted here.
+In this part, we’ll go over some questions that are commonly asked in technical interviews about the use of the most popular open-source load testing tool, Apache JMeter.
+Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this? While recorders have gone a long way towards making scripting easier, modern security measures like the implementation of viewstates have also made scripting more complicated to record." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20181220-performance-testing-interview-questions-part-2/" />
+<meta property="article:published_time" content="2018-12-20T14:47:18+01:00" />
+<meta property="article:modified_time" content="2018-12-20T14:47:18+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Performance Testing Interview Questions, Part 2: JMeter"/>
+<meta name="twitter:description" content="Originally posted here.
+In this part, we’ll go over some questions that are commonly asked in technical interviews about the use of the most popular open-source load testing tool, Apache JMeter.
+Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this? While recorders have gone a long way towards making scripting easier, modern security measures like the implementation of viewstates have also made scripting more complicated to record."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20181220-performance-testing-interview-questions-part-1-general/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20181220-performance-testing-interview-questions-part-3/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&text=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&is_video=false&description=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&name=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter&description=Originally%20posted%20here.%0aIn%20this%20part%2c%20we%e2%80%99ll%20go%20over%20some%20questions%20that%20are%20commonly%20asked%20in%20technical%20interviews%20about%20the%20use%20of%20the%20most%20popular%20open-source%20load%20testing%20tool%2c%20Apache%20JMeter.%0aUsing%20JMeter%2c%20you%20record%20a%20key%20business%20process.%20Upon%20playing%20it%20back%2c%20however%2c%20you%20notice%20an%20error%20on%20the%20first%20page.%20What%20could%20have%20gone%20wrong%20and%20how%20would%20you%20fix%20this%3f%20While%20recorders%20have%20gone%20a%20long%20way%20towards%20making%20scripting%20easier%2c%20modern%20security%20measures%20like%20the%20implementation%20of%20viewstates%20have%20also%20made%20scripting%20more%20complicated%20to%20record.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&t=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#using-jmeter-you-record-a-key-business-process-upon-playing-it-back-however-you-notice-an-error-on-the-first-page-what-could-have-gone-wrong-and-how-would-you-fix-this">Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this?</a></li>
+        <li><a href="#after-running-a-load-test-the-results-show-that-300-transactions-were-executed-with-a-passed-status-and-returning-responses-of-http-200-however-the-dba-tells-you-that-there-were-no-records-written-to-the-database-as-a-result-of-the-transactions-how-would-you-troubleshoot-this">After running a load test, the results show that 300 transactions were executed with a PASSED status and returning responses of HTTP 200. However, the DBA tells you that there were no records written to the database as a result of the transactions. How would you troubleshoot this?</a></li>
+        <li><a href="#how-do-you-use-a-data-file-to-read-user-account-details-from-a-csv-in-jmeter">How do you use a data file to read user account details from a CSV in JMeter?</a></li>
+        <li><a href="#how-would-you-go-about-testing-a-website-that-uses-http2-on-jmeter">How would you go about testing a website that uses HTTP/2 on JMeter?</a></li>
+        <li><a href="#what-can-you-do-to-synchronise-the-execution-of-multiple-jmeter-instances-on-different-load-generators">What can you do to synchronise the execution of multiple JMeter instances on different load generators?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Performance Testing Interview Questions, Part 2: JMeter
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2018-12-20 14:47:18 &#43;0100 CET" itemprop="datePublished">2018-Dec-20</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/jmeter" rel="tag">jmeter</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<link rel="canonical" href="https://www.flood.io/blog/performance-testing-interview-questions-part-2-jmeter-interview-questions">
+
+<p><em>Originally posted <a href="https://www.flood.io/blog/performance-testing-interview-questions-part-2-jmeter-interview-questions">here</a>.</em></p>
+<p>In this part, we’ll go over some questions that are commonly asked in technical interviews about the use of the most popular open-source load testing tool, <a href="http://jmeter.apache.org/">Apache JMeter</a>.</p>
+<h3 id="using-jmeter-you-record-a-key-business-process-upon-playing-it-back-however-you-notice-an-error-on-the-first-page-what-could-have-gone-wrong-and-how-would-you-fix-this">Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this?</h3>
+<p>While recorders have gone a long way towards making scripting easier, modern security measures like the implementation of viewstates have also made scripting more complicated to record. Some more complicated applications will pass dynamic values in responses that it expects to see in the succeeding request, otherwise the request is blocked. This is great for security, but it also means that you will need to manually extract these values in your script.</p>
+<p>In JMeter, you would do this by adding a response extractor to your sample that will extract the dynamic string according to rules you set, and then save the string to a parameter. This parameter must then be used in the next request that you send.</p>
+<p>While running your test plan, you get the error: <code>java.lang.OutOfMemoryError: Java heap space</code>. How do you fix it?
+The easy fix is to edit <code>jmeter.bat</code> and increase the heap memory (search for <code>HEAP</code>) and increase heap space allocated like this:
+<code>HEAP=&quot;-Xms512m -Xmx2048m&quot;</code></p>
+<p>The part in bold increases the heap space to 2 GB.</p>
+<p>However, it’s also worthwhile looking at your test plan and removing any obvious memory hogs. One of the things we see a lot is enabled listeners that aren’t even being used. Listeners are great while debugging, but should be disabled when running a load test. Writing too many lines to the log is another culprit here that should also be commented out when running important tests. And of course, you should always run JMeter in non-GUI mode during load tests!</p>
+<h3 id="after-running-a-load-test-the-results-show-that-300-transactions-were-executed-with-a-passed-status-and-returning-responses-of-http-200-however-the-dba-tells-you-that-there-were-no-records-written-to-the-database-as-a-result-of-the-transactions-how-would-you-troubleshoot-this">After running a load test, the results show that 300 transactions were executed with a PASSED status and returning responses of HTTP 200. However, the DBA tells you that there were no records written to the database as a result of the transactions. How would you troubleshoot this?</h3>
+<p>I see this happening with clients all the time, so I think this makes a great technical interview question. This is also why I said earlier that you shouldn’t count on a test tool to tell you a test has passed. It’s possible for a transaction to have the status PASSED and return an HTTP 200 but still be hiding an error.</p>
+<p>This is mainly due to poor scripting that does not include validations that check whether the script has gotten to the right page. For example, you could use a Response Assertion as a child of your home page sample with the words “Welcome, Nicole” to determine whether the user Nicole has logged in successfully.</p>
+<p>This is a critical step, because without it, it’s possible for a server to return a nice error page, or an incorrect one, such as the home page, with an HTTP 200.</p>
+<h3 id="how-do-you-use-a-data-file-to-read-user-account-details-from-a-csv-in-jmeter">How do you use a data file to read user account details from a CSV in JMeter?</h3>
+<p>JMeter has a <a href="https://jmeter.apache.org/usermanual/component_reference.html#CSV_Data_Set_Config">CSV Data Set Config Element</a> built specifically for this purpose. You can simply add one to your test plan, browse to the CSV file that you’d like to use, and select the options for how to share that data among the threads in your JMeter script.</p>
+<h3 id="how-would-you-go-about-testing-a-website-that-uses-http2-on-jmeter">How would you go about testing a website that uses HTTP/2 on JMeter?</h3>
+<p>There is a JMeter plugin called HTTP/2 Sampler that accomplishes just this. My colleague Jason just wrote <a href="https://flood.io/blog/jmeter-tutorial-http2-test/">a blog post</a> on this very topic, but basically the plugin adds new HTTP/2 versions to the standard HTTP request and request defaults samplers as well as the Simple Data Writer and View Results Tree listener. These elements will need to be used in order to test an application using HTTP/2.</p>
+<h3 id="what-can-you-do-to-synchronise-the-execution-of-multiple-jmeter-instances-on-different-load-generators">What can you do to synchronise the execution of multiple JMeter instances on different load generators?</h3>
+<p>Apache JMeter has released <a href="https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.pdf">this handy PDF file</a> to describe the steps necessary to run JMeter in distributed mode. This involves installing Java and JMeter on all machines and setting them up in a master and slave configuration so that one machine controls the rest. On the master, you’ll need to add remote hosts to the jmeter.properties file. When everything is set up, you should be able to open up JMeter on the master and do a a remote start of your current test plan on any or all slaves that you choose.</p>
+<p>The problem with this setup is the clunkiness of working with different machines and essentially having to set them up the same way. After the test, there’s the daunting task of logging back onto each machine, gathering the data, and transferring them back into a central repository. Then you’re faced with consolidating the data from each injector in order to see a picture of the whole test. You can see that this set up quickly goes from time-consuming to a nightmare, especially when potentially thousands of different machines are involved.</p>
+<p>If only there were <a href="https://flood.io/">an easier way</a>&hellip;</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#using-jmeter-you-record-a-key-business-process-upon-playing-it-back-however-you-notice-an-error-on-the-first-page-what-could-have-gone-wrong-and-how-would-you-fix-this">Using JMeter, you record a key business process. Upon playing it back, however, you notice an error on the first page. What could have gone wrong and how would you fix this?</a></li>
+        <li><a href="#after-running-a-load-test-the-results-show-that-300-transactions-were-executed-with-a-passed-status-and-returning-responses-of-http-200-however-the-dba-tells-you-that-there-were-no-records-written-to-the-database-as-a-result-of-the-transactions-how-would-you-troubleshoot-this">After running a load test, the results show that 300 transactions were executed with a PASSED status and returning responses of HTTP 200. However, the DBA tells you that there were no records written to the database as a result of the transactions. How would you troubleshoot this?</a></li>
+        <li><a href="#how-do-you-use-a-data-file-to-read-user-account-details-from-a-csv-in-jmeter">How do you use a data file to read user account details from a CSV in JMeter?</a></li>
+        <li><a href="#how-would-you-go-about-testing-a-website-that-uses-http2-on-jmeter">How would you go about testing a website that uses HTTP/2 on JMeter?</a></li>
+        <li><a href="#what-can-you-do-to-synchronise-the-execution-of-multiple-jmeter-instances-on-different-load-generators">What can you do to synchronise the execution of multiple JMeter instances on different load generators?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&text=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&is_video=false&description=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&title=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&name=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter&description=Originally%20posted%20here.%0aIn%20this%20part%2c%20we%e2%80%99ll%20go%20over%20some%20questions%20that%20are%20commonly%20asked%20in%20technical%20interviews%20about%20the%20use%20of%20the%20most%20popular%20open-source%20load%20testing%20tool%2c%20Apache%20JMeter.%0aUsing%20JMeter%2c%20you%20record%20a%20key%20business%20process.%20Upon%20playing%20it%20back%2c%20however%2c%20you%20notice%20an%20error%20on%20the%20first%20page.%20What%20could%20have%20gone%20wrong%20and%20how%20would%20you%20fix%20this%3f%20While%20recorders%20have%20gone%20a%20long%20way%20towards%20making%20scripting%20easier%2c%20modern%20security%20measures%20like%20the%20implementation%20of%20viewstates%20have%20also%20made%20scripting%20more%20complicated%20to%20record.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20181220-performance-testing-interview-questions-part-2%2f&t=Performance%20Testing%20Interview%20Questions%2c%20Part%202%3a%20JMeter">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

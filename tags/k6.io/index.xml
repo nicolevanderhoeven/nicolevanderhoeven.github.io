@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 29 Jan 2021 23:01:18 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Feb 2021 21:46:35 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 503 Podcast</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</link>
+      <pubDate>Thu, 11 Feb 2021 21:46:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</guid>
+      <description>This must be the month for trying new things, because I jumped into livestreaming with the first ever k6 Office Hours just a week ago, and this week I&amp;rsquo;m jumping into podcasting with Simme Aronsson, who&amp;rsquo;s also doing the Office Hours with me. There&amp;rsquo;s definitely safety (at least psychological safety) in numbers, because doing it with someone else makes me feel a little more brave.
+While the podcast is presented by k6, that&amp;rsquo;s really just a fancy term for saying that we&amp;rsquo;re both employed by k6 and we&amp;rsquo;re recording and producing the podcast on company time.</description>
+    </item>
+    
+    <item>
+      <title>The first ever k6 Office Hours</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210205-k6-office-hours/</link>
+      <pubDate>Fri, 05 Feb 2021 21:47:16 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210205-k6-office-hours/</guid>
+      <description>The k6 virtual office is open!
+The first time I heard about office hours was from Notion. Recently, Obsidian went in on this trend as well. The concept involves opening your virtual doors regularly to your community, to answer questions and share best practices.
+A big part of being a Developer Advocate is talking to people, and even conferences these days are mostly pre-recorded. I kind of miss being able to interact with people.</description>
+    </item>
+    
     <item>
       <title>Comparing k6 and JMeter for load testing</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210129-k6-vs-jmeter/</link>

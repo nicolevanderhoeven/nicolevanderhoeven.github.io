@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How We Build Flood | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I publicly learn cool things I have no business learning, then help people do the same. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How We Build Flood" />
+<meta property="og:description" content="Written for Flood.io
+Introduction 19 years after the Agile Manifesto was published, there aren&rsquo;t many development teams left that aren&rsquo;t using some variation of the Agile methodology to create software, and for good reason. Its emphasis on continuous, iterative, and cross-functional delivery enables teams to ship meaningful, high-quality code more often, adapting to modern timeframes.
+For a while, the Flood team operated under Scrum, but we soon began to see some issues with our implementation of the methodology." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20201022-how-we-build-flood/" />
+<meta property="article:published_time" content="2020-10-27T14:17:54+01:00" />
+<meta property="article:modified_time" content="2020-10-27T14:17:54+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How We Build Flood"/>
+<meta name="twitter:description" content="Written for Flood.io
+Introduction 19 years after the Agile Manifesto was published, there aren&rsquo;t many development teams left that aren&rsquo;t using some variation of the Agile methodology to create software, and for good reason. Its emphasis on continuous, iterative, and cross-functional delivery enables teams to ship meaningful, high-quality code more often, adapting to modern timeframes.
+For a while, the Flood team operated under Scrum, but we soon began to see some issues with our implementation of the methodology."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&text=How%20We%20Build%20Flood">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&is_video=false&description=How%20We%20Build%20Flood">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20We%20Build%20Flood&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&name=How%20We%20Build%20Flood&description=Written%20for%20Flood.io%0aIntroduction%2019%20years%20after%20the%20Agile%20Manifesto%20was%20published%2c%20there%20aren%26rsquo%3bt%20many%20development%20teams%20left%20that%20aren%26rsquo%3bt%20using%20some%20variation%20of%20the%20Agile%20methodology%20to%20create%20software%2c%20and%20for%20good%20reason.%20Its%20emphasis%20on%20continuous%2c%20iterative%2c%20and%20cross-functional%20delivery%20enables%20teams%20to%20ship%20meaningful%2c%20high-quality%20code%20more%20often%2c%20adapting%20to%20modern%20timeframes.%0aFor%20a%20while%2c%20the%20Flood%20team%20operated%20under%20Scrum%2c%20but%20we%20soon%20began%20to%20see%20some%20issues%20with%20our%20implementation%20of%20the%20methodology.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&t=How%20We%20Build%20Flood">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-is-shape-up">What is Shape Up?</a></li>
+    <li><a href="#shaping">Shaping</a>
+      <ul>
+        <li><a href="#1-set-boundaries">1. Set boundaries</a></li>
+        <li><a href="#2-create-a-prototype-or-proof-of-concept">2. Create a prototype or proof of concept</a></li>
+        <li><a href="#3-reduce-scope-address-risks-and-rabbit-holes">3. Reduce scope, address risks and rabbit holes</a></li>
+      </ul>
+    </li>
+    <li><a href="#pitching">Pitching</a></li>
+    <li><a href="#betting">Betting</a></li>
+    <li><a href="#building">Building</a></li>
+    <li><a href="#weaknesses-of-shape-up">Weaknesses of Shape Up</a>
+      <ul>
+        <li><a href="#no-structure-around-non-production-cycles">No structure around non-production cycles</a></li>
+        <li><a href="#reliance-on-a-separate-management-staff-may-not-be-great-for-smaller-teams">Reliance on a separate management staff may not be great for smaller teams</a></li>
+        <li><a href="#the-principle-of-uninterrupted-work-during-the-building-stage-is-unrealistic">The principle of uninterrupted work during the building stage is unrealistic.</a></li>
+      </ul>
+    </li>
+    <li><a href="#our-success-with-shape-up">Our success with Shape Up</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How We Build Flood
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-10-27 14:17:54 &#43;0100 CET" itemprop="datePublished">2020-Oct-27</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p><em>Written for <a href="https://flood.io">Flood.io</a></em></p>
+<h2 id="introduction">Introduction</h2>
+<p>19 years after the Agile Manifesto was published, there aren&rsquo;t many development teams left that aren&rsquo;t using some variation of the Agile methodology to create software, and for good reason. Its emphasis on continuous, iterative, and cross-functional delivery enables teams to ship meaningful, high-quality code more often, adapting to modern timeframes.</p>
+<p>For a while, the Flood team operated under Scrum, but we soon began to see some issues with our implementation of the methodology.</p>
+<ul>
+<li>The tight, two-week sprints and endless backlog began to feel repetitive and futile. It sometimes felt like we were stuck in the cycle of maintenance, unable to truly innovate.</li>
+<li>Scrum&rsquo;s strict processes sometimes felt unnecessary in our small, casual team of less than 10 people.</li>
+<li>Features weren&rsquo;t being shipped as quickly as we wanted.</li>
+</ul>
+<p>So we went back to the drawing board, and thought about times when felt the most productive. Some of us mentioned GIG, the annual Tricentis-wide three-day hackathon where the Flood team would split up into three or four groups to work on something new (read more about Flood&rsquo;s participation in this year&rsquo;s GIG <a href="https://www.flood.io/blog/innovation-in-isolation">here</a>). What made it different from Scrum&rsquo;s sprints? We decided to try to recapture that hackathon excitement in our daily work.</p>
+<p>This led us to a methodology called Shape Up.</p>
+<h2 id="what-is-shape-up">What is Shape Up?</h2>
+<p>Shape Up is a methodology for creating and maintaining software within a cross-functional team. Shape Up treats a piece of work as a raw idea that needs to be shaped, pitched, bet on, and then built by the development team. It was created by <a href="https://basecamp.com">Basecamp</a>, and you can learn more about it in their excellent book <a href="https://basecamp.com/shapeup/0.3-chapter-01">here</a>.</p>
+<p>We consider Shape Up to be a type of Agile methodology, although this hasn&rsquo;t been officially confirmed.</p>
+<p>A Shape Up project has four stages:</p>
+<ol>
+<li>Shaping</li>
+<li>Pitching</li>
+<li>Betting</li>
+<li>Building</li>
+</ol>
+<p><img src="/assets/20201022-01.png" alt="Tim&rsquo;s decision to try Shape Up"></p>
+<h2 id="shaping">Shaping</h2>
+<p>Shaping work involves taking something from a raw idea and turning it into an actionable project that is ready to be pitched. In general, a small group of managers or senior staff shape work for the rest of the team. However, this was our first major deviation from canonical Shape Up. While our co-founder, Tim Koopmans, did the initial round of shaping for our first Shape Up project, the rest of the team quickly took the reins after that. In our small team, everyone is considered a &ldquo;senior staff&rdquo; member, so everyone is welcome to shape and pitch work they find interesting.</p>
+<p>Shaping work involves going through the following steps:</p>
+<h3 id="1-set-boundaries">1. Set boundaries</h3>
+<p>First, the project is bounded and limited to something that fits the time period.  Scope is determined based on the appetite.</p>
+<blockquote>
+<p>An appetite is completely different from an estimate. Estimates start with a design and end with a number. Appetites start with a number and end with a design. We use the appetite as a creative constraint on the design process. - <a href="https://basecamp.com/shapeup/1.2-chapter-03">Basecamp</a></p>
+</blockquote>
+<h3 id="2-create-a-prototype-or-proof-of-concept">2. Create a prototype or proof of concept</h3>
+<p>Next, a rudimentary design is created that briefly describes how the new feature would work. This could be a very rough mock-up of UI or just handwritten text to represent menus. &ldquo;Rough&rdquo; is key here: the design should be far from polished, because some work may not even proceed past the shaping phase.</p>
+<p>Here&rsquo;s an example of a mock-up that our Principal Engineer, Lachie Cox, used to illustrate an idea during the shaping phase.</p>
+<p><img src="/assets/20201022-02.jpeg" alt="Lachie&rsquo;s mock-up of an idea"></p>
+<h3 id="3-reduce-scope-address-risks-and-rabbit-holes">3. Reduce scope, address risks and rabbit holes</h3>
+<p>The last part of shaping a piece of work is making it as simple as possible by descoping anything unnecessary and addressing any foreseeable risks that might come up.</p>
+<p>In the traditional Shape Up methodology described by Basecamp, shaping is done by a separate, managerial team that works in parallel with the development team. This didn&rsquo;t really fit with our smaller, mostly flat team, so we changed it. At Flood, anyone can shape.</p>
+<p>We keep a running list in Notion of work in different stages of the process. Anyone can create an idea or pick up an idea proposed by someone else, and put work into shaping it. Here&rsquo;s what that looks like:</p>
+<p><img src="/assets/20201022-03.png" alt="Our Shape Up page in Notion"></p>
+<h2 id="pitching">Pitching</h2>
+<p>The pitch is a proposal including concise and high-level statement of the problem, solution, design, and implementation of a piece of shaped work. After pitches are made, management staff goes to the betting table.</p>
+<p>Again, we removed the restriction of pitching to management staff and opened it up to anyone on the team who feels strongly enough about a piece of work to put a pitch together.</p>
+<p>A pitch includes the following components:</p>
+<ol>
+<li><strong>Problem</strong> - The raw idea or use case</li>
+<li><strong>Appetite</strong> — How much time we want to spend and how that constrains the solution</li>
+<li><strong>Solution</strong> — The core elements we came up with, presented in a form that’s easy for people to immediately understand</li>
+<li><strong>Rabbit holes</strong> — Details about the solution worth calling out to avoid problems</li>
+<li><strong>No-gos</strong> — Anything specifically excluded from the concept: functionality or use cases we intentionally aren’t covering to fit the appetite or make the problem tractable</li>
+</ol>
+<p>The actual pitching can be done asynchronously by posting it somewhere for people to review in their own time, but it can also be done in a meeting. We prefer to go through all the pitches in a Zoom call with the Flood core team. Here&rsquo;s Lachie pitching a project:</p>
+<p><img src="/assets/20201022-04.png" alt="Lachie&rsquo;s Shape Up pitch"></p>
+<p>The pitching call is a great way to get the team together to see what we could be working on in the future. It&rsquo;s usually an exciting time, because it&rsquo;s often the first time we get a glimpse of some cool ideas that could be coming Flood&rsquo;s way.</p>
+<h2 id="betting">Betting</h2>
+<p>After the pitching call, we usually have a day or two to further discuss the pitches, raise objections, think of anything else that might not have been addressed. Then, we have a betting call.</p>
+<p>In the betting phase, we go to the &ldquo;betting table&rdquo; to discuss which bets, or projects, we want to place for the next cycle. We ask each other questions like:</p>
+<ul>
+<li>&ldquo;Does the problem matter?&rdquo;</li>
+<li>&ldquo;Is the appetite right? - Do we want to bet six weeks on this?&rdquo;</li>
+<li>&ldquo;Is the solution attractive?&rdquo;</li>
+<li>&ldquo;Is this the right time?&rdquo;</li>
+<li>&ldquo;Are the right people available?&rdquo;</li>
+</ul>
+<p>At the end of the call, we decide, as a team, which combination of the pitches we want to move forward with.</p>
+<h2 id="building">Building</h2>
+<p>Once the bets are placed, we wait until the current Shape Up finishes and then begin the new cycle. A kick-off meeting between the members of the selected team for each piece of work is usually held, where details of the pitch are rehashed or expanded upon.</p>
+<p>Once the cycle has started, teams are given space to do uninterrupted work. Uninterrupted work means that members of the team are not assigned new work that is unrelated to the Shape Up project. This courtesy lets them put their full concentration towards building the project, doing <a href="https://www.goodreads.com/book/show/25744928-deep-work">Deep Work</a> to maintain momentum and productivity.</p>
+<blockquote>
+<p>Once bets are committed to and teams are chosen, we honor it. We don&rsquo;t pull team members away on other tasks. We don&rsquo;t let them get distracted. We leave them alone and get them to fully engage in the shaped work. - Jason Fried, <a href="https://basecamp.com/shapeup/0.3-chapter-01">Basecamp</a>.</p>
+</blockquote>
+<p>Initially, teams may have a sort of radio silence as each team member determines where to start first and collects their thoughts on the shaped pitch. Allow up to three days.</p>
+<p>Teams work to deliver a scope including front-end and back-end functionality that can be demoed at the end of the first week. A scope is a piece of demo-able work that might not have all the functionality of the finished product, but does have both back-end and front-end elements integrated, albeit small slices of each.</p>
+<blockquote>
+<p>Instead they should aim to make something tangible and demoable early—in the first week or so. That requires integrating vertically on one small piece of the project instead of chipping away at the horizontal layers. - Jason Fried, <a href="https://basecamp.com/shapeup/3.2-chapter-11">Basecamp</a></p>
+</blockquote>
+<p>Building work in integrated &ldquo;slices&rdquo; like this increases the likelihood of any showstopping issues coming up earlier during the cycle, rather than towards the end. As more and more of the work is known, teams make a &ldquo;scope map&rdquo; of all scopes that will need to be realized before the work can be considered built.</p>
+<p>Basecamp talks about the use of &ldquo;hill charts&rdquo; to show progress, but so far we have tended to just discuss project updates during one of our regular team meetings. Hill charts are interesting, though, and we might consider trying them out in the future.</p>
+<p>Testing and QA need to happen <em>within</em> the cycle, but documentation and marketing do not.</p>
+<h2 id="weaknesses-of-shape-up">Weaknesses of Shape Up</h2>
+<h3 id="no-structure-around-non-production-cycles">No structure around non-production cycles</h3>
+<p>Shape Up emphasizes being in production mode, where work is actually built, but being constantly in a state of production is not realistic. In fact, Shape Up acknowledges this by introducing several non-production modes such as R&amp;D mode, bug smashes, or the cool-down. The existence of these modes calls Shape Up&rsquo;s long-term sustainability into question and opens up the possibility of staying longer in non-production modes than in the production mode.</p>
+<p>Since there is no structure to when production cycles should be interspersed with non-production cycles, it can be difficult to maintain the balance between getting stuff built and fixing bugs. We&rsquo;ve experienced both extremes: sometimes we move a little too fast on the building and let defects slip through, and sometimes we get too caught up in fixing defects and fall off the Shape Up cycle wagon.</p>
+<h3 id="reliance-on-a-separate-management-staff-may-not-be-great-for-smaller-teams">Reliance on a separate management staff may not be great for smaller teams</h3>
+<p>Despite the fact that Shape Up emphasizes the development team&rsquo;s freedom to implement solutions, all work is canonically still shaped, pitched, and bet upon by management. It&rsquo;s too easy for managers to shape work to the extent that development teams no longer have meaningful decisions to make, and the work becomes a matter of filling in the blanks.</p>
+<p>We&rsquo;ve addressed this issue by opening up all phases to anyone on the Flood team.</p>
+<h3 id="the-principle-of-uninterrupted-work-during-the-building-stage-is-unrealistic">The principle of uninterrupted work during the building stage is unrealistic.</h3>
+<p>While the team is in the Building stage, they are meant to be allowed to work solely on the project. While deep work is essential for productivity, it&rsquo;s difficult to imagine having all the teams unreachable for the length of the cycle, which in Shape Up is longer than normal at six weeks.</p>
+<p>A possible solution would be to have staggered cycles that still leave some people around to react to issues that come up while freeing up others to go into production mode.</p>
+<p>Shape Up cycles include testing, but not documentation and marketing activities that are also essential.</p>
+<p>In smaller teams, Shape Up does not include non-developer members. This could be addressed by making documentation/marketing an essential component of a cycle and by allowing non-development projects to be pitched.</p>
+<p>Shape Up doesn&rsquo;t explicitly include time for reflection or retrospection, although presumably this could be done in the cool-down period.</p>
+<h2 id="our-success-with-shape-up">Our success with Shape Up</h2>
+<p>We&rsquo;ve been using the Shape Up methodology for a year, since September 2019. So far, our experience has been generally positive. It addresses all of the issues we had with Scrum:</p>
+<blockquote>
+<p>The tight, two-week sprints and endless backlog began to feel repetitive and futile. It sometimes felt like we were stuck in the cycle of maintenance, unable to truly innovate.</p>
+</blockquote>
+<p>Shape Up lets us come up with some cool ideas that we&rsquo;re actually excited to work on, which is far from having a laundry list of bugs to fix. It&rsquo;s also inspired some innovation and blue-sky thinking in the team, which is empowering.</p>
+<p>The six-week cycle was also less stressful for us because it gave us a chance to work on a meaningful chunk of work that was polished enough, and tested enough, to be proud of.</p>
+<p>Here are some things about Shape Up that our Engineering Manager, Andy Stanford-Bluntish, highlights as improvements from the old way we did things:</p>
+<p><img src="/assets/20201022-05.png" alt="Andy&rsquo;s thoughts on Shape Up"></p>
+<blockquote>
+<p>Scrum&rsquo;s strict processes sometimes felt unnecessary in our small, casual team of less than 10 people.</p>
+</blockquote>
+<p>Shape Up is way more flexible as a methodology, and we&rsquo;ve been able to shape it (ha) into something that works for us. We&rsquo;re all highly competent and experienced, so we appreciate that Shape Up discourages micromanaging while promoting discussion.</p>
+<blockquote>
+<p>Features weren&rsquo;t being shipped as quickly as we wanted.</p>
+</blockquote>
+<p>Since we started using Shape Up, we&rsquo;ve released the following projects to production:</p>
+<ul>
+<li><a href="https://www.flood.io/blog/new-year-new-pricing">A significant revamp of our pricing model</a> that involved rewriting a lot of logic and UI components</li>
+<li><a href="https://www.flood.io/blog/introducing-advanced-account-management">Advanced Account Management</a>, which introduces multiple levels of permissions for teams sharing a Flood account</li>
+<li><a href="https://www.flood.io/blog/free-load-testing">Free load testing</a> and support for governmental organizations, including <a href="https://www.flood.io/blog/how-new-jersey-prepared-for-a-flood-of-covid-19-loan-and-grant-applications">the state of New Jersey</a></li>
+<li>Optimizing our infrastructure so that we could contribute spare computing capacity to <a href="https://www.flood.io/blog/turning-idle-into-busy-to-help-fight-covid-19">coronavirus research via BOINC</a></li>
+<li><a href="https://www.flood.io/blog/introducing-flood-agent-standalone-infrastructure-for-load-testing">Flood Agent</a>, a new way to run floods on your own infrastructure (including on-premise deployments)</li>
+<li>Integration with <a href="https://www.flood.io/blog/load-testing-on-the-google-cloud-platform">Google Cloud Platform</a> as one of the cloud providers you can run floods on</li>
+<li><a href="https://www.flood.io/blog/flood-is-now-soc2-compliant">SOC2 Type I Compliance</a> to make our commitment to security official</li>
+<li><a href="https://flood.io/">A new marketing site</a>, developed in-house</li>
+<li><a href="https://www.flood.io/blog/release-preview-for-flood-insights">Release preview for Flood Insights</a>, an all-new analytics engine with customizable dashboards</li>
+<li>A much-improved <a href="https://element.flood.io/docs/start/changelog">version of Element</a></li>
+</ul>
+<p>Pretty good for a small team.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>While we don&rsquo;t think that any methodology is universally the best one for every team, we&rsquo;re enjoying the advantages of Shape Up for the Flood team. We&rsquo;ll continue to tweak elements of it to help us build a better Flood for all of you.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-is-shape-up">What is Shape Up?</a></li>
+    <li><a href="#shaping">Shaping</a>
+      <ul>
+        <li><a href="#1-set-boundaries">1. Set boundaries</a></li>
+        <li><a href="#2-create-a-prototype-or-proof-of-concept">2. Create a prototype or proof of concept</a></li>
+        <li><a href="#3-reduce-scope-address-risks-and-rabbit-holes">3. Reduce scope, address risks and rabbit holes</a></li>
+      </ul>
+    </li>
+    <li><a href="#pitching">Pitching</a></li>
+    <li><a href="#betting">Betting</a></li>
+    <li><a href="#building">Building</a></li>
+    <li><a href="#weaknesses-of-shape-up">Weaknesses of Shape Up</a>
+      <ul>
+        <li><a href="#no-structure-around-non-production-cycles">No structure around non-production cycles</a></li>
+        <li><a href="#reliance-on-a-separate-management-staff-may-not-be-great-for-smaller-teams">Reliance on a separate management staff may not be great for smaller teams</a></li>
+        <li><a href="#the-principle-of-uninterrupted-work-during-the-building-stage-is-unrealistic">The principle of uninterrupted work during the building stage is unrealistic.</a></li>
+      </ul>
+    </li>
+    <li><a href="#our-success-with-shape-up">Our success with Shape Up</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&text=How%20We%20Build%20Flood">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&is_video=false&description=How%20We%20Build%20Flood">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20We%20Build%20Flood&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&title=How%20We%20Build%20Flood">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&name=How%20We%20Build%20Flood&description=Written%20for%20Flood.io%0aIntroduction%2019%20years%20after%20the%20Agile%20Manifesto%20was%20published%2c%20there%20aren%26rsquo%3bt%20many%20development%20teams%20left%20that%20aren%26rsquo%3bt%20using%20some%20variation%20of%20the%20Agile%20methodology%20to%20create%20software%2c%20and%20for%20good%20reason.%20Its%20emphasis%20on%20continuous%2c%20iterative%2c%20and%20cross-functional%20delivery%20enables%20teams%20to%20ship%20meaningful%2c%20high-quality%20code%20more%20often%2c%20adapting%20to%20modern%20timeframes.%0aFor%20a%20while%2c%20the%20Flood%20team%20operated%20under%20Scrum%2c%20but%20we%20soon%20began%20to%20see%20some%20issues%20with%20our%20implementation%20of%20the%20methodology.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20201022-how-we-build-flood%2f&t=How%20We%20Build%20Flood">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

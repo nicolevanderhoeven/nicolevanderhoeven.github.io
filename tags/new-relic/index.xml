@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>new relic on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/new-relic/</link>
+    <description>Recent content in new relic on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 19 Feb 2021 23:24:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/new-relic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Office Hours 02: Observability with New Relic</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</link>
+      <pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</guid>
+      <description>For this week&amp;rsquo;s Office Hours, Simme and I invited Gary Spencer from New Relic to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

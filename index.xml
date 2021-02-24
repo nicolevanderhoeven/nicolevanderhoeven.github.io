@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 11 Feb 2021 21:46:35 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 23:24:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Office Hours 02: Observability with New Relic</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</link>
+      <pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</guid>
+      <description>For this week&amp;rsquo;s Office Hours, Simme and I invited Gary Spencer from New Relic to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.
+  </description>
+    </item>
+    
     <item>
       <title>The 503 Podcast</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</link>

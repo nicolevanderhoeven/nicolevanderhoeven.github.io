@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Presentation Slides as Code | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I firmly believe that quality software can change the world. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I publicly learn cool things I have no business learning, then help people do the same. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Presentation Slides as Code" />
+<meta property="og:description" content="%% Last Updated: - [[2021-03-02]] %% I was working on a presentation for later this month when Marie Drake told me about slides.com. It&rsquo;s basically a Powerpoint replacement (which, let&rsquo;s be honest, needs replacing) in that it lets you create slides and it lets you present from it. It even goes beyond Powerpoint in that it also saves your slides publicly for people to view later.
+Before she&rsquo;d mentioned slides.com, I had been planning on creating a presentation on Obsidian, my note-taking tool of choice." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210302-presentation-slides-as-code/" />
+<meta property="article:published_time" content="2021-03-02T19:07:31+01:00" />
+<meta property="article:modified_time" content="2021-03-02T19:07:31+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Presentation Slides as Code"/>
+<meta name="twitter:description" content="%% Last Updated: - [[2021-03-02]] %% I was working on a presentation for later this month when Marie Drake told me about slides.com. It&rsquo;s basically a Powerpoint replacement (which, let&rsquo;s be honest, needs replacing) in that it lets you create slides and it lets you present from it. It even goes beyond Powerpoint in that it also saves your slides publicly for people to view later.
+Before she&rsquo;d mentioned slides.com, I had been planning on creating a presentation on Obsidian, my note-taking tool of choice."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&text=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&is_video=false&description=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Presentation%20Slides%20as%20Code&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&name=Presentation%20Slides%20as%20Code&description=%25%25%20Last%20Updated%3a%20-%20%5b%5b2021-03-02%5d%5d%20%25%25%20I%20was%20working%20on%20a%20presentation%20for%20later%20this%20month%20when%20Marie%20Drake%20told%20me%20about%20slides.com.%20It%26rsquo%3bs%20basically%20a%20Powerpoint%20replacement%20%28which%2c%20let%26rsquo%3bs%20be%20honest%2c%20needs%20replacing%29%20in%20that%20it%20lets%20you%20create%20slides%20and%20it%20lets%20you%20present%20from%20it.%20It%20even%20goes%20beyond%20Powerpoint%20in%20that%20it%20also%20saves%20your%20slides%20publicly%20for%20people%20to%20view%20later.%0aBefore%20she%26rsquo%3bd%20mentioned%20slides.com%2c%20I%20had%20been%20planning%20on%20creating%20a%20presentation%20on%20Obsidian%2c%20my%20note-taking%20tool%20of%20choice.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&t=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-end-result">The end result</a></li>
+    <li><a href="#the-setup">The setup</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#create-a-new-hugo-site">Create a new Hugo site</a></li>
+        <li><a href="#add-the-reveal-hugo-theme">Add the reveal-hugo theme</a></li>
+        <li><a href="#configure-reveal-hugo-theme">Configure reveal-hugo theme</a></li>
+        <li><a href="#create-your-slides">Create your slides</a></li>
+        <li><a href="#generate-your-site">Generate your site</a></li>
+        <li><a href="#push-your-site-to-a-remote-github-repo">Push your site to a remote GitHub repo</a></li>
+        <li><a href="#set-up-github-pages">Set up GitHub Pages</a></li>
+        <li><a href="#optional-using-a-custom-domain">(Optional) Using a custom domain</a></li>
+        <li><a href="#check-out-your-new-site">Check out your new site!</a></li>
+        <li><a href="#other-issues-i-faced">Other issues I faced</a>
+          <ul>
+            <li><a href="#use-worktrees-not-subtrees-or-submodules">Use worktrees, not subtrees or submodules</a></li>
+            <li><a href="#github-pages-with-a-private-repo">GitHub Pages with a private repo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#presentation-as-code">Presentation as code</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Presentation Slides as Code
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-03-02 19:07:31 &#43;0100 CET" itemprop="datePublished">2021-Mar-02</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/markdown" rel="tag">Markdown</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/devrel" rel="tag">DevRel</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/hugo" rel="tag">hugo</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>%%
+Last Updated:
+- [[2021-03-02]]
+%%
+I was working on a presentation for later this month when <a href="https://mariedrake.com">Marie Drake</a> told me about <a href="https://slides.com">slides.com</a>. It&rsquo;s basically a Powerpoint replacement (which, let&rsquo;s be honest, needs replacing) in that it lets you create slides <em>and</em> it lets you present from it. It even goes beyond Powerpoint in that it also saves your slides publicly for people to view later.</p>
+<p>Before she&rsquo;d mentioned slides.com, I had been planning on creating a presentation on <a href="https://obsidian.md">Obsidian</a>, my note-taking tool of choice. The advantage of this approach is that presentations in Obsidian are just Markdown files with <code>---</code> between lines of text to delineate slides.</p>
+<p>The problem with using Obsidian on its own is that it&rsquo;s severely lacking in features, and it&rsquo;s also not shareable. You can, of course, publish the Markdown file, but people won&rsquo;t be able to view them in slide format. After playing with slides.com, however, I also discovered it had its own weaknesses. It is completely UI-driven, so there&rsquo;s no way to create slides just from a Markdown file. It&rsquo;s also hosted by them, so there are limitations imposed, depending on which pricing tier you pay for.</p>
+<p>So I got to Googling. And I think I found a pretty good setup for my needs.</p>
+<h2 id="the-end-result">The end result</h2>
+<ul>
+<li>I write the presentation in Obsidian, in Markdown. <a href="https://gist.github.com/nicolevanderhoeven/752017196efc1ee861c6d3baa5dfca31">Here&rsquo;s</a> what that looks like in a sample presentation where I&rsquo;m trying out a bunch of features.</li>
+<li>I use <a href="https://gohugo.io">Hugo</a> to generate a static website and convert the Markdown files into javascript and html, using <a href="https://github.com/hakimel/reveal.js">reveal.js</a> and the <a href="https://github.com/dzello/reveal-hugo">reveal-hugo</a> theme.</li>
+<li>I push the static website to a remote repository on <a href="https://github.com">GitHub</a>. <a href="https://pages.github.com/">GitHub Pages</a> serves that site (for free!) on my custom subdomain.</li>
+</ul>
+<p>Check out the final product here:
+<a href="https://slides.nicolevanderhoeven.com/sample">https://slides.nicolevanderhoeven.com/sample</a></p>
+<p><img src="/assets/20210302-reveal-hugo-sample.png" alt="A screenshot of the title presentation slide"></p>
+<h2 id="the-setup">The setup</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>An Obsidian vault (or you can actually just use any text editor)</li>
+<li>Git installed and set up with credentials</li>
+<li>A GitHub account</li>
+<li>Hugo installation (<code>brew install hugo</code>)</li>
+</ul>
+<h3 id="create-a-new-hugo-site">Create a new Hugo site</h3>
+<p>Open up a terminal window and <code>cd</code> to a folder in your Obsidian vault. Then, create a new Hugo-generated site:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site slides
+</code></pre></div><p>Replace <code>slides</code> with the name of your new site.</p>
+<p>You should have a new directory, <code>slides</code>, in your Obsidian vault.</p>
+<h3 id="add-the-reveal-hugo-theme">Add the reveal-hugo theme</h3>
+<p><code>cd</code> into <code>slides</code> and clone the reveal-hugo repo. The documentation suggests using a submodule:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+</code></pre></div><p>Personally, I just cloned it because I know I&rsquo;m probably going to be messing around with it substantially:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+</code></pre></div><p>You should have a <code>/themes/reveal-hugo</code> folder that contains the theme.</p>
+<h3 id="configure-reveal-hugo-theme">Configure reveal-hugo theme</h3>
+<p>Set up your new Hugo site to use the reveal-hugo theme by adding the following to <code>/config.toml</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">theme = &#34;reveal-hugo&#34;</span>
+
+[<span style="color:#ae81ff">markup.goldmark.renderer]</span>
+<span style="color:#ae81ff">unsafe = true</span>
+
+[<span style="color:#ae81ff">outputFormats.Reveal]</span>
+<span style="color:#ae81ff">baseName = &#34;index&#34;</span>
+<span style="color:#ae81ff">mediaType = &#34;text/html&#34;</span>
+<span style="color:#ae81ff">isHTML = true</span>
+</code></pre></div><p>The <code>Reveal</code> part is what lets you output text in slide format.</p>
+<h3 id="create-your-slides">Create your slides</h3>
+<p>Go to <code>/content</code> and create a file there, called <code>_index.md</code>. The filename is important, as is its location (I learned that the hard way). This file is going to be the first page people see, so it should probably be a list of your presentation slides. For now, put in something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">+++
+title = &#34;My presentations&#34;
+outputs = [&#34;Reveal&#34;]
++++
+
+Here are my presentation slides!
+
+[<span style="color:#f92672">sample presentation</span>](<span style="color:#a6e22e">/sample</span>)
+
+</code></pre></div><p>Then, create a new folder for your presentation, such as <code>sample</code>. In <code>/content/sample</code>, create a file called <code>_index.md</code>. Again , the filename is also important here (guess how I learned that).</p>
+<p>This index file is going to be where you actually create your slides. Here&rsquo;s the context of my <code>/content/sample/_index.md</code>:</p>
+<!-- raw HTML omitted -->
+<p>Each slide is separated by <code>---</code>, just like in Obsidian, which apparently uses the same converter that reveal-hugo does, [reveal.js]https://github.com/hakimel/reveal.js). Note that if you want to try out having an image as a background to one of the slides, you&rsquo;ll need to add that to your <code>/sample</code> folder and change the filename in the slide in this part:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">slide background-image<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg&#34;</span>
+</code></pre></div><h3 id="generate-your-site">Generate your site</h3>
+<p>Now it&rsquo;s time to generate your site! Wait - didn&rsquo;t we already do that? Sort of that. That was creating the framework for the site, but now you need to get Hugo to convert those Markdown files you&rsquo;ve just created into something publishable. So cd to the root directory <code>slides</code> and run this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
+</code></pre></div><p>That command should generate a <code>slides/public</code> folder, where all the publishable code will go.</p>
+<p>At this point, you can also check your work by starting a local server with <code>hugo server</code> and navigating to <code>http://localhost:1313</code>.</p>
+<h3 id="push-your-site-to-a-remote-github-repo">Push your site to a remote GitHub repo</h3>
+<p><code>cd</code> into your public folder. This is important, as I initially started the repo in <code>slides</code> and it took me ages to realize that GitHub Pages requires an <code>index.html</code> in the root directory to function.</p>
+<p>Initialize a Git repo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+</code></pre></div><p>Stage and commit your changes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add .
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit -m <span style="color:#e6db74">&#39;Initial commit&#39;</span>
+</code></pre></div><p>Create a repository on your GitHub account called <code>username.github.io</code> where <code>username</code> is your GitHub username. (If you already have a repo called that, you can alternatively push the contents of <code>public</code> to a branch called <code>gh-pages</code>). The repo name matters.</p>
+<p>Push your changes to your repo.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push -u origin master
+</code></pre></div><p>You should now have a repository on GitHub called <code>username.github.io</code>, containing everything in <code>public</code>.</p>
+<h3 id="set-up-github-pages">Set up GitHub Pages</h3>
+<p>On GitHub, go to the repository settings and scroll down to the GitHub Pages section. Select the right branch (<code>master</code> in most cases) and click Save.</p>
+<h3 id="optional-using-a-custom-domain">(Optional) Using a custom domain</h3>
+<p>If you want to use a custom domain, enter it in the repository settings from the previous step.</p>
+<p>Then, go to your domain registrar and add a CNAME record pointing <code>www</code> to <code>username.github.io</code>. <a href="https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages">Here&rsquo;s more information on that</a> from GitHub.</p>
+<p>It can take a few hours for DNS records to propagate, so after you set this up, take a break before you convince yourself you&rsquo;ve set something up wrong. ;)</p>
+<h3 id="check-out-your-new-site">Check out your new site!</h3>
+<p>When you navigate to your new site, you should first see the contents of <code>slides/content/_index.md</code>, which has a link to your sample presentation. Clicking on that should <em>reveal</em> (ha) the slides one by one. You can navigate through them with the arrow keys, and you can also see speaker notes (if you put any in, which I did on the third slide if you copied my sample slides).</p>
+<h3 id="other-issues-i-faced">Other issues I faced</h3>
+<p>I ran into a few issues during this setup because:</p>
+<ul>
+<li>I was already tracking changes in my Obsidian vault with Git</li>
+<li>I already had a repo called <code>nicolevanderhoeven.github.io</code>, and I needed to create a branch called <code>gh-pages</code> to still use GitHub Pages.</li>
+<li>My Obsidian repo on GitHub is a private one, but I wanted the slides to be public.</li>
+</ul>
+<p>If you have a similar setup, maybe the following instructions will help.</p>
+<h4 id="use-worktrees-not-subtrees-or-submodules">Use worktrees, not subtrees or submodules</h4>
+<p>After attempts to make this setup work with submodules and subtrees, both of which were way too complicated for what I needed, I settled on using worktrees.</p>
+<p>Add <code>public</code> to <code>.gitignore</code>. From <code>slides</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;public/&#34;</span> &gt;&gt; .gitignore
+</code></pre></div><p>Create a worktree for <code>public</code>, to be tracked on the branch <code>gh-pages</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git worktree add public gh-pages
+</code></pre></div><p>After you generate the static code via <code>hugo</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd public
+git add .
+git commit -m <span style="color:#e6db74">&#39;Commit message&#39;</span>
+git push origin gh-pages
+
+</code></pre></div><p>Your <code>gh-pages</code> branch should contain only the files in <code>public</code>.</p>
+<h4 id="github-pages-with-a-private-repo">GitHub Pages with a private repo</h4>
+<p>GitHub Pages is free, but if you want to be able to use it with a private repo, <a href="https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages">you can&rsquo;t</a>. Sorry!</p>
+<p>You can look into using GitHub Actions to copy <code>public</code> from your private repo to a public one, or you could just <a href="https://github.com/pricing">spend the $4/month</a> to remove the restriction. I opted to pay, because I love GitHub anyway.</p>
+<h2 id="presentation-as-code">Presentation as code</h2>
+<p>That&rsquo;s it! I ran into a few snags while I was attempting to implement this, so I thought I&rsquo;d document it here in case it helps anyone else. Despite the setbacks, I think it&rsquo;s worth it&ndash; I can now whip up presentations in Markdown within Obsidian and have that published to a site I control for people to look through at their own leisure. This should speed up my presentation creation process considerably.</p>
+<p>Theoretically.</p>
+<p>If only I could stop procrastinating on creating this presentation by setting up a framework for creating presentations&hellip;</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-end-result">The end result</a></li>
+    <li><a href="#the-setup">The setup</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#create-a-new-hugo-site">Create a new Hugo site</a></li>
+        <li><a href="#add-the-reveal-hugo-theme">Add the reveal-hugo theme</a></li>
+        <li><a href="#configure-reveal-hugo-theme">Configure reveal-hugo theme</a></li>
+        <li><a href="#create-your-slides">Create your slides</a></li>
+        <li><a href="#generate-your-site">Generate your site</a></li>
+        <li><a href="#push-your-site-to-a-remote-github-repo">Push your site to a remote GitHub repo</a></li>
+        <li><a href="#set-up-github-pages">Set up GitHub Pages</a></li>
+        <li><a href="#optional-using-a-custom-domain">(Optional) Using a custom domain</a></li>
+        <li><a href="#check-out-your-new-site">Check out your new site!</a></li>
+        <li><a href="#other-issues-i-faced">Other issues I faced</a>
+          <ul>
+            <li><a href="#use-worktrees-not-subtrees-or-submodules">Use worktrees, not subtrees or submodules</a></li>
+            <li><a href="#github-pages-with-a-private-repo">GitHub Pages with a private repo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#presentation-as-code">Presentation as code</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&text=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&is_video=false&description=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Presentation%20Slides%20as%20Code&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&title=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&name=Presentation%20Slides%20as%20Code&description=%25%25%20Last%20Updated%3a%20-%20%5b%5b2021-03-02%5d%5d%20%25%25%20I%20was%20working%20on%20a%20presentation%20for%20later%20this%20month%20when%20Marie%20Drake%20told%20me%20about%20slides.com.%20It%26rsquo%3bs%20basically%20a%20Powerpoint%20replacement%20%28which%2c%20let%26rsquo%3bs%20be%20honest%2c%20needs%20replacing%29%20in%20that%20it%20lets%20you%20create%20slides%20and%20it%20lets%20you%20present%20from%20it.%20It%20even%20goes%20beyond%20Powerpoint%20in%20that%20it%20also%20saves%20your%20slides%20publicly%20for%20people%20to%20view%20later.%0aBefore%20she%26rsquo%3bd%20mentioned%20slides.com%2c%20I%20had%20been%20planning%20on%20creating%20a%20presentation%20on%20Obsidian%2c%20my%20note-taking%20tool%20of%20choice.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210302-presentation-slides-as-code%2f&t=Presentation%20Slides%20as%20Code">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

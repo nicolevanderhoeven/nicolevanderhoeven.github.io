@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 19 Feb 2021 23:24:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Office Hours 05: Observability with Daniel González Lopes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210312-k6-office-hours05/</link>
+      <pubDate>Fri, 12 Mar 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210312-k6-office-hours05/</guid>
+      <description>Our first repeat guest, Daniel González Lopes, also from k6, joined us today to talk about how to use observability in conjunction with load testing. We talked about the differences between metrics, logs, and traces, and how to implemented distributed tracing.
+  </description>
+    </item>
+    
     <item>
       <title>k6 Office Hours 02: Observability with New Relic</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</link>

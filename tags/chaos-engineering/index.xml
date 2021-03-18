@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 28 Mar 2018 23:35:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/chaos-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Feb 2021 21:40:25 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/chaos-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Office Hours 03: Chaos Engineering with Daniel González Lopes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210226-k6-office-hours03/</link>
+      <pubDate>Fri, 26 Feb 2021 21:40:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210226-k6-office-hours03/</guid>
+      <description>In this week&amp;rsquo;s Office Hours, Simme and I invited Daniel González Lopes, a DevOps engineer from k6, to join us to talk about chaos engineering and what it has to do with load testing. Simme also demonstrated how to use k6 to run simple chaos experiments.
+  </description>
+    </item>
+    
     <item>
       <title>Manufactured Chaos: How Netflix Does Performance Testing</title>
       <link>https://nicolevanderhoeven.github.io/blog/20180328-manufactured-chaos/</link>

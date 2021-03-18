@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 16 Dec 2020 18:18:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 21:46:56 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Office Hours 04: Using Cypress with Marie Drake</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</link>
+      <pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</guid>
+      <description>Marie Drake joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called Cypress and how it can compliment a back-end performance testing strategy.
+  </description>
+    </item>
+    
     <item>
       <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
       <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>

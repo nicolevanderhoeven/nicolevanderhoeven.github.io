@@ -20,6 +20,45 @@ I had fun discussing the advantages of the load test as code approach and why k6
     </item>
     
     <item>
+      <title>Lucky Dippers 103: Sleeping in the Isle of Skye | Portree, Scotland</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210312-lde103/</link>
+      <pubDate>Fri, 12 Mar 2021 21:57:56 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210312-lde103/</guid>
+      <description>This is a travel video from January 2020, when my husband Rob and I did a roadtrip in Scotland with our good friends, Nikki and Basti Filler. This is towards the tail end of that trip, and it involved some of the best scenery I&amp;rsquo;ve ever seen. Scotland is a gorgeous country that we thoroughly enjoyed exploring, despite its awful weather. As a bonus, this was also our first trip with our new niece, Cassie.</description>
+    </item>
+    
+    <item>
+      <title>k6 Office Hours 05: Observability with Daniel González Lopes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210312-k6-office-hours05/</link>
+      <pubDate>Fri, 12 Mar 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210312-k6-office-hours05/</guid>
+      <description>Our first repeat guest, Daniel González Lopes, also from k6, joined us today to talk about how to use observability in conjunction with load testing. We talked about the differences between metrics, logs, and traces, and how to implemented distributed tracing.
+  </description>
+    </item>
+    
+    <item>
+      <title>k6 Office Hours 04: Using Cypress with Marie Drake</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</link>
+      <pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</guid>
+      <description>Marie Drake joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called Cypress and how it can compliment a back-end performance testing strategy.
+  </description>
+    </item>
+    
+    <item>
+      <title>k6 Office Hours 03: Chaos Engineering with Daniel González Lopes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210226-k6-office-hours03/</link>
+      <pubDate>Fri, 26 Feb 2021 21:40:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210226-k6-office-hours03/</guid>
+      <description>In this week&amp;rsquo;s Office Hours, Simme and I invited Daniel González Lopes, a DevOps engineer from k6, to join us to talk about chaos engineering and what it has to do with load testing. Simme also demonstrated how to use k6 to run simple chaos experiments.
+  </description>
+    </item>
+    
+    <item>
       <title>k6 Office Hours 02: Observability with New Relic</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</link>
       <pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate>

@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 02 Mar 2021 19:07:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2021 20:36:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load Tests as Code: An introduction to k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</link>
+      <pubDate>Thu, 18 Mar 2021 20:36:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</guid>
+      <description>Today, I attended the Cambridge University Press QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.
+  And here are the slides I used!
+I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.</description>
+    </item>
+    
     <item>
       <title>Presentation Slides as Code</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210302-presentation-slides-as-code/</link>
@@ -86,9 +97,9 @@ So what am I doing on the k6 site, talking about how much I love JMeter?</descri
       <guid>https://nicolevanderhoeven.github.io/speaking/</guid>
       <description>Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some videos I&amp;rsquo;ve made on various topics.
 Upcoming 23/03 Ministry of Testing meetup (Philippines): Performance testing with Cypress, Lighthouse, and k6. (English)
+27/05 New Relic FutureStack: Schrödinger&amp;rsquo;s Pokemon: Observability for Chaotic Load Testing. (English)
 07/07 Women Tech Global: The Convergence of Code and Speech. (English)
-2020 31/10 JMeter Scripting Day: Cuándo JMeter no alcanza: pruebas de carga simulando navegadores (Spanish)
-24/09 Testing Talks Online (panel): Lifting the lid on performance testing: Best practices from innovative companies (English)</description>
+2021 18/03 Cambridge University Press QA Week 2021: Load tests as code: An introduction to k6 (English)</description>
     </item>
     
     <item>

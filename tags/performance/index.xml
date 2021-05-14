@@ -7,7 +7,97 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 18 Mar 2021 20:36:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 May 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyzing load testing results in k6 Cloud</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210511-k6-analysis/</link>
+      <pubDate>Tue, 11 May 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210511-k6-analysis/</guid>
+      <description>Have you ever run a load test but been unable to decipher what it all means? In this video, I break it all down using k6 Cloud.
+  </description>
+    </item>
+    
+    <item>
+      <title>Performance testing tool feature requests (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210507-koh-robin-mark/</link>
+      <pubDate>Fri, 07 May 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210507-koh-robin-mark/</guid>
+      <description>We managed to get two other folks from k6 to join our Office Hours: our CEO, Robin Gustafsson, and our Head of Customer Success, Mark Meier. We took advantage of the opportunity to discuss wishlist features for k6 and bug Robin about how likely each feature was to see the light of day!
+  </description>
+    </item>
+    
+    <item>
+      <title>Using the k6 Cloud interface</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210504-k6-cloud-interface/</link>
+      <pubDate>Tue, 04 May 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210504-k6-cloud-interface/</guid>
+      <description>I&amp;rsquo;ve gotten the feedback that people would like to see more videos of the basics of using k6 and k6 Cloud, so here&amp;rsquo;s a video on getting situated with the k6 Cloud interface and navigation.
+  </description>
+    </item>
+    
+    <item>
+      <title>How to get started with chaos engineering (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</link>
+      <pubDate>Fri, 30 Apr 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</guid>
+      <description>Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with xk6-chaos and k6, and observability with New Relic.
+  </description>
+    </item>
+    
+    <item>
+      <title>Shift-left testing and creating a culture of quality with Simon Prior (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210423-koh-simonprior/</link>
+      <pubDate>Fri, 23 Apr 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210423-koh-simonprior/</guid>
+      <description>Simon Prior from the Testing Peers podcast joined us on k6 Office Hours to talk to us about how he&amp;rsquo;s managed to foster a culture of quality at his job with EasyJet.
+  </description>
+    </item>
+    
+    <item>
+      <title>The future of load testing with k6, with k6 CEO Robin Gustafsson (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210416-koh-robin/</link>
+      <pubDate>Fri, 16 Apr 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210416-koh-robin/</guid>
+      <description>This week, Simme and I convinced k6 CEO, Robin Gustafsson, to come onto k6 Office Hours to talk about the origins of k6 (spoiler: it began with a company called Gatorhole), things we&amp;rsquo;re working on right now, and what he sees as the future of the company.
+  </description>
+    </item>
+    
+    <item>
+      <title>Testing Kubernetes and infrastructure as code with Sid Palas (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</link>
+      <pubDate>Fri, 09 Apr 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</guid>
+      <description>For this week&amp;rsquo;s k6 Office Hours, Simme and I had Sid Palas from DevOps Directive come on board to talk about what Kubernetes is, how it relates to Infrastructure as Code, and why either of those should matter to testers.
+  </description>
+    </item>
+    
+    <item>
+      <title>Using CircleCI and environment variables with k6 (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210326-koh-circleci/</link>
+      <pubDate>Fri, 26 Mar 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210326-koh-circleci/</guid>
+      <description>Simme and I decided to take this week to answer questions on k6 Office Hours, and we ended up talking about CircleCI, environment variables, and how to use them with k6.
+  </description>
+    </item>
+    
+    <item>
+      <title>Performance testing vs. load testing with Señor Performo and Pepe Cano (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210319-koh-sr-perf/</link>
+      <pubDate>Fri, 19 Mar 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210319-koh-sr-perf/</guid>
+      <description>What&amp;rsquo;s the difference between performance testing vs. load testing? This week, Simme and I were joined by Señor Performo, aka Leandro Melendez, and Pepe Cano, the Head of Marketing at k6, to talk about this common question.
+  </description>
+    </item>
+    
     <item>
       <title>Load Tests as Code: An introduction to k6</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</link>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>circleci on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/circleci/</link>
+    <description>Recent content in circleci on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 26 Mar 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/circleci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using CircleCI and environment variables with k6 (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210326-koh-circleci/</link>
+      <pubDate>Fri, 26 Mar 2021 21:53:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210326-koh-circleci/</guid>
+      <description>Simme and I decided to take this week to answer questions on k6 Office Hours, and we ended up talking about CircleCI, environment variables, and how to use them with k6.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How I Use Obsidian at Work | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I publicly learn cool things I have no business learning, then help people do the same. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How I Use Obsidian at Work" />
+<meta property="og:description" content="Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&rsquo;s not much said about its use outside of the academe.
+I&rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&rsquo;s released to real users." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/" />
+<meta property="article:published_time" content="2021-05-18T22:33:18+02:00" />
+<meta property="article:modified_time" content="2021-05-18T22:33:18+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I Use Obsidian at Work"/>
+<meta name="twitter:description" content="Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&rsquo;s not much said about its use outside of the academe.
+I&rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&rsquo;s released to real users."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&text=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&is_video=false&description=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Use%20Obsidian%20at%20Work&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&name=How%20I%20Use%20Obsidian%20at%20Work&description=Note-taking%20and%20personal%20knowledge%20management%20get%20talked%20about%20in%20academic%20circles%2c%20by%20both%20students%20and%20teachers.%20But%20there%26rsquo%3bs%20not%20much%20said%20about%20its%20use%20outside%20of%20the%20academe.%0aI%26rsquo%3bll%20admit%2c%20due%20to%20my%20job%20description%2c%20I%20may%20be%20in%20a%20better%20position%20than%20most%20to%20take%20advantage%20of%20note-taking%20in%20a%20professional%20context.%20My%20background%20is%20in%20software%20performance%20testing.%20My%20job%20for%20several%20years%20has%20been%20to%20make%20sure%20that%20applications%20are%20prepared%20to%20withstand%20traffic%20from%20many%20users%20accessing%20it%2c%20usually%20by%20writing%20code%20to%20simulate%20that%20traffic%20before%20it%26rsquo%3bs%20released%20to%20real%20users.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&t=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-setup">My setup</a></li>
+    <li><a href="#processing-information">Processing information</a>
+      <ul>
+        <li><a href="#consume-and-collect">Consume and collect</a></li>
+        <li><a href="#process-iteratively">Process iteratively</a></li>
+        <li><a href="#situate-and-solidify">Situate and solidify</a></li>
+        <li><a href="#publish">Publish</a>
+          <ul>
+            <li><a href="#obsidian-publish-paid">Obsidian Publish (paid)</a></li>
+            <li><a href="#open-folder-as-vault">Open folder as vault</a></li>
+            <li><a href="#obsidian-uris">Obsidian URIs</a></li>
+            <li><a href="#embedding-published-work">Embedding published work</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#meetings">Meetings</a></li>
+    <li><a href="#presentations">Presentations</a>
+      <ul>
+        <li><a href="#the-easier-way">The easier way</a></li>
+        <li><a href="#the-harder-way">The harder way</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-management">Task management</a>
+      <ul>
+        <li><a href="#kanban">Kanban</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#daily-note">Daily Note</a></li>
+      </ul>
+    </li>
+    <li><a href="#dataview">Dataview</a></li>
+    <li><a href="#collaboration">Collaboration</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How I Use Obsidian at Work
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-05-18 22:33:18 &#43;0200 CEST" itemprop="datePublished">2021-May-18</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/zettelkasten" rel="tag">zettelkasten</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6" rel="tag">k6</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&rsquo;s not much said about its use outside of the academe.</p>
+<p><img src="/assets/graphview-transparent.png" alt="Obsidian for work"></p>
+<p>I&rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&rsquo;s released to real users. Currently, though, I&rsquo;m a Developer Advocate at <a href="https://k6.io">k6.io</a>, which means a significant part of my job now is sharing with people what I&rsquo;ve learned.</p>
+<p>I consider myself a knowledge worker: a significant part of my job depends on how quickly I learn new technologies <em>and</em> how clearly I can impart what I&rsquo;ve learned to others. I&rsquo;d argue, though, that most people who work in a field as fast-moving as tech are knowledge workers too. It&rsquo;s naive to think we won&rsquo;t one day forget some skills we&rsquo;ve learned, even if we were using them daily at one point. Yet nobody talks about note-taking.</p>
+<p>Recently, my note-taking and personal knowledge management tool of choice has been <a href="https://obsidian.md">Obsidian.md</a>. I have no affiliation with the Obsidian team, and in fact I&rsquo;m an investor of <a href="https://roamresearch.com">a competing product</a>. Here are some ways I use Obsidian at work that might help you understand why Obsidian is my daily driver.</p>
+<h2 id="my-setup">My setup</h2>
+<p>I have multiple Obsidian vaults, and each of them is a version-controlled <a href="https://git-scm.com/">Git</a> repository, hosted on <a href="https://github.com">GitHub</a>. I keep my main Obsidian vault in a <a href="https://dropbox.com">Dropbox</a> for extra version control and as a backup. Just for overkill, I also use <a href="https://obsidian.md/sync">Obsidian Sync</a> as another backup and as the easiest way to get access to my Obsidian vault on my iPad Pro and my Android mobile.</p>
+<p>I use <a href="https://obsidian.md/publish">Obsidian Publish</a> to make some of my notes <a href="https://notes.nicolevanderhoeven.com">publicly available</a> on a custom domain directly from my vault, as an experiment in learning in public that&rsquo;s gone pretty well so far.</p>
+<p>This setup isn&rsquo;t free. All up, I&rsquo;m giving Obsidian about US $16 a month. However, I want to point out that Obsidian itself is free for personal use, and if mobile access, cloud sync, and publishing your notes online aren&rsquo;t important to you, you can really go a long way with using it for free.</p>
+<h2 id="processing-information">Processing information</h2>
+<p>Remaining relevant in tech pretty much requires that you learn a lot, learn quickly, and enjoy the hell out of it. Luckily, Obsidian is pretty great at this.</p>
+<h3 id="consume-and-collect">Consume and collect</h3>
+<p>I consume a lot of content, and in different formats: articles, books, videos, presentations, podcasts are all great sources of free education. I initially capture my notes on them in different ways, but they all lead back to using <a href="https://readwise.io/">Readwise</a>, which I use as a collector and sorter of all these notes. Then, I import data from Readwise to Obsidian using a process I describe in more detail <a href="https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/">here</a>.</p>
+<p>For now, suffice it to say that all these notes and highlights end up in Obsidian for processing. <a href="https://notes.nicolevanderhoeven.com/Presentation/In+the+kitchen+-+a+sprinkle+of+fire+and+chaos">Here&rsquo;s an example of my notes during a presentation</a> (called <em>In the kitchen - a sprinkle of fire and chaos</em> by <a href="https://www.anammedina.com/">Ana Medina</a>, about chaos engineering).</p>
+<p>When trying to learn something, many people stop at this phase. They&rsquo;ve read the thing, they&rsquo;ve highlighted passages from the thing, and now they think they&rsquo;ve learned the thing. That hasn&rsquo;t been my experience, because I forget many things I consume shallowly.</p>
+<h3 id="process-iteratively">Process iteratively</h3>
+<p>Then, I process notes iteratively, first restating things into my own words and then creating my own notes about concepts I&rsquo;ve learned. Each time I do that, I try to identify key concepts and create backlinks for them, which in Obsidian just means typing <code>[[Chaos engineering]]</code>, with a topic between double brackets. If I click on that new link, it creates  a page for it. Over time, I end up with a page <a href="https://notes.nicolevanderhoeven.com/Chaos+Engineering">like this one on Chaos Engineering</a> that is a consolidation of what I&rsquo;ve learned.</p>
+<p>Interestingly, if I go to the Chaos Engineering page, I can also see all the instances I&rsquo;ve linked to it from other notes:</p>
+<p><img src="/assets/linked-mentions.png" alt="Linked mentions in Obsidian"></p>
+<p>What if I didn&rsquo;t have the foresight to link to Chaos Engineering from an article I read? Obsidian also tracks <em>unlinked</em> mentions as well. I can see all the times I&rsquo;ve used the words &ldquo;chaos engineering&rdquo; in other notes, even if I haven&rsquo;t created formal links using <code>[[Chaos engineering]]</code>.</p>
+<p>Over time, things I&rsquo;m interested in start to emerge this way, and topics grow deeper and more detailed, with branches of pages spinning off from it.</p>
+<h3 id="situate-and-solidify">Situate and solidify</h3>
+<p>Then, I try to think about where this new piece of knowledge fits into the hierarchy of things I&rsquo;m interested in. This is less about trying to classify the world and more about putting it somewhere on <em>my personal</em> map of interests so that I&rsquo;m more likely to use that knowledge later. For me, chaos engineering fit into my page on <a href="https://notes.nicolevanderhoeven.com/Nonfunctional+testing">Nonfunctional testing</a>. Doing so helps me pit it against other things I&rsquo;ve classified as forms of nonfunctional testing and think critically about whether it belongs there, or whether other things I already know contradict it in some way. Sometimes I&rsquo;ll make notes about my reasoning for classification, such as <a href="https://notes.nicolevanderhoeven.com/Chaos+engineering+is+a+testing+discipline">this note on why I think chaos engineering is a testing discipline</a>.</p>
+<p>None of this is set in stone. I&rsquo;m always changing notes around as I learn more things that change my mind. For example, I&rsquo;m considering merging my nonfunctional testing and functional testing pages after a conversation where someone questioned whether it wasn&rsquo;t a misnomer to call application performance &ldquo;nonfunctional&rdquo;. The point is to create a living, breathing second brain that helps me make connections between concepts and remember what I&rsquo;ve learned.</p>
+<p>Obsidian&rsquo;s built-in graph view illustrates this point nicely:</p>
+<p><img src="/assets/graph_view-20210518.png" alt="Built-in graph view"></p>
+<p>This is my main Obsidian vault as of the time of this writing - all 5443 notes of it. The graph view plots every note and the connections between notes, so I&rsquo;ve ended up with a slick visual representation of what I&rsquo;ve been thinking and writing about. The graph view is actually <em>functional</em>, too&ndash; I can assign colors to nodes based on the directory they&rsquo;re in, their tags, words they can contain, and a lot of other criteria. Because each node is sized according to how many links lead to it, this view makes it easy to see clusters in things I&rsquo;ve thought or written about.</p>
+<h3 id="publish">Publish</h3>
+<p>One of the advantages of Obsidian over something like Notion or Roam Research is how easy it is to publish notes from it.</p>
+<h4 id="obsidian-publish-paid">Obsidian Publish (paid)</h4>
+<p>There&rsquo;s the paid Publish service, which I&rsquo;ve subscribed to for US $8 a month. After <a href="https://notes.nicolevanderhoeven.com/Using+a+custom+domain+with+Obsidian+Publish">setting it up to publish on my own domain</a> rather than the default at <code>publish.obsidian.md</code>, going from a note to a published post is as easy as clicking the Publish icon, selecting the notes to add, delete, or modify, and then selecting Publish.</p>
+<p><img src="/assets/publish-dialog.png" alt="Dialog for Obsidian Publish"></p>
+<h4 id="open-folder-as-vault">Open folder as vault</h4>
+<p>If you don&rsquo;t want to pay for Publish, Obsidian still saves all files locally in Markdown (<code>.md</code>) format. This is the same format that many static site generators take for content. This site that you&rsquo;re reading this on is generated using <a href="https://gohugo.io/">Hugo</a>, so everything written here is kept as a Markdown file before it&rsquo;s turned into HTML. Since an &ldquo;Obsidian vault&rdquo; is just a folder with Markdown files, I can just open the directory containing the files for my site and write blog posts in Obsidian with no noticeable difference.</p>
+<p>At work, we happen to store our main <a href="https://k6.io/docs/">product documentation</a> as Markdown files in a <a href="https://github.com/k6io/docs">GitHub repo</a>, which make it perfect for opening in Obsidian as well. I prefer to write documentation in Obsidian over VSCode for a few reasons:</p>
+<ul>
+<li>I can install plugins, like <a href="https://github.com/tgrosinger/advanced-tables-obsidian">Advanced Tables</a> to make Markdown tables easier to deal with, create templates to standardize the format of notes you make often, see an outline of what you&rsquo;re writing based on Markdown headings.</li>
+</ul>
+<p><img src="/assets/outlines-obsidian.png" alt="See an outline of your current note">
+<em>Outline core plugin for Obsidian</em></p>
+<ul>
+<li>When I want to link to another page, it&rsquo;s easier to just hit CMD + O to search through existing notes instead of finding it on GitHub.</li>
+<li>I can choose an Obsidian theme that matches the theme of the published site. <a href="https://github.com/ishgunacar/gitsidian">This &ldquo;Gitsidian&rdquo; theme</a> has an Edit view in dark mode (my preference) but a rendered Preview mode that looks more like GitHub&rsquo;s Markdown format, so I can see what it will actually look like for users.</li>
+</ul>
+<p><img src="https://github.com/ishgunacar/gitsidian/raw/master/showcase.png" alt="Gitsidian theme preview for Obsidian"></p>
+<p>When I&rsquo;m done, I can still jump to my terminal and push my change to GitHub as normal.</p>
+<h4 id="obsidian-uris">Obsidian URIs</h4>
+<p>Another cool feature is the fact that every note in Obsidian has what&rsquo;s called an Obsidian URI - it&rsquo;s a link that opens up a note within a specified vault. The URI looks like this:</p>
+<p><code>obsidian://open?vault=docs&amp;file=src%2Fdata%2Fmarkdown%2Fdocs%2F03%20cloud%2F02%20Analyzing%20Results%2F02%20Performance%20Insights</code></p>
+<p>Adding it and publishing that to internal documentation means I can switch easily from browsing on GitHub to modifying the same page in Obsidian on my local machine, which is a great little bonus.</p>
+<h4 id="embedding-published-work">Embedding published work</h4>
+<p>After publishing, I use iframes in Obsidian to update my notes with the final result. Here&rsquo;s a video on YouTube about chaos engineering that my colleague <a href="https://simme.dev">Simme</a> and I planned out collaboratively on Obsidian, embedded into Obsidian:</p>
+<p><img src="/assets/embedded-youtube-iframe.png" alt="Embedding a video in an iframe"></p>
+<p>The video plays in Obsidian with all the same controls. The Obsidian desktop app is an Electron app, so it behaves just like a normal browser for playing back the video. To embed the video, I just used the Share &gt; Embed code on YouTube and pasted it straight into Obsidian:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;315&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;YouTube video player&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allow</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;</span> <span style="color:#a6e22e">allowfullscreen</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
+</code></pre></div><h2 id="meetings">Meetings</h2>
+<p>I take meeting notes to help me focus on the meeting, and I create templates for recurring meetings. Templates let you define the format of a note. Once created, you can insert templates into notes with a keyboard shortcut (I set mine to <code>CMD + ;</code>). Here&rsquo;s an example of what that looks like, with the template on the left and the inserted template on the right:</p>
+<p><img src="/assets/obsidian-meeting-templates.png" alt="Template (left) and inserted template in a new note (right) in Obsidian">
+<em>Template (left) and inserted template in a new note (right) in Obsidian</em></p>
+<p>You may notice that the frontmatter includes <code>{{date}}</code> in the template, which gets automatically converted to today&rsquo;s date when the template is used.</p>
+<p>If anyone asks for a copy of my meeting notes, that&rsquo;s no problem&ndash; any note can be exported to Obsidian by clicking on Options &gt; Export to PDF.</p>
+<p><img src="/assets/obsidian-pdf-export.png" alt="Options for exporting a note to a PDF in Obsidian">
+<em>Options for exporting a note to a PDF in Obsidian</em></p>
+<p>I don&rsquo;t want to actually publish any real meeting notes, so here&rsquo;s what my note on the chaos engineering process looks like <a href="https://nicolevanderhoeven.com/assets/The%20process%20of%20chaos%20engineering.pdf">as a PDF</a>, straight from Obsidian. And here&rsquo;s what it looks like <a href="https://notes.nicolevanderhoeven.com/The+process+of+chaos+engineering">as a note</a>.</p>
+<h2 id="presentations">Presentations</h2>
+<h3 id="the-easier-way">The easier way</h3>
+<p>Obsidian has a presentation mode! It&rsquo;s basic, but it&rsquo;s functional. You can create a presentation really easily by adding <code>---</code> between paragraphs of text to delineate slides, right within a note. Here&rsquo;s what that looks like:</p>
+<p><img src="/assets/obsidian-slides-markdown.png" alt="Creating a presentation from Markdown notes"></p>
+<p>Then you can click Options &gt; Start presentation, and you get something like this:</p>
+<p><img src="/assets/obsidian-slides.png" alt="An Obsidian presentation"></p>
+<p>A little plain, but given the minimal amount of effort to &ldquo;convert&rdquo; a note into a presentation, it&rsquo;s pretty awesome.</p>
+<h3 id="the-harder-way">The harder way</h3>
+<p>Sometimes the basic slides just don&rsquo;t cut it, and it can be handy to be able to publish the slides in presentation format (since publishing them straight from Obsidian Publish would only publish the Markdown version). For those cases, I&rsquo;ve figured out a way to do just that while still keeping my slides as Markdown files in my vault. <a href="https://nicolevanderhoeven.com/blog/20210302-presentation-slides-as-code/">Here&rsquo;s a whole post on how to do that</a>. This is definitely more complicated, but at the end of it, you get a nice page <a href="https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/#/">like this</a> to send to attendees after a presentation. (<em>Tip: Hit <code>s</code> to see the speaker notes while on those slides.</em>)</p>
+<p><img src="/assets/20210302-reveal-hugo-sample.png" alt="A sample custom slide using revealJS with Obsidian"></p>
+<h2 id="task-management">Task management</h2>
+<p>I use a few community plugins to keep track of things I want to.</p>
+<h3 id="kanban">Kanban</h3>
+<p>The <a href="https://github.com/mgmeyers/obsidian-kanban">Kanban plugin</a> turns Markdown task lists into full-on Kanban boards.</p>
+<p><img src="/assets/obsidian-kanban.png" alt="Kanban plugin in action"></p>
+<p>On the left is the markdown note, and the on the right is the rendered Kanban board. You can customize the titles of the lists that are there, and you can add due dates to each task.</p>
+<h3 id="calendar">Calendar</h3>
+<p>The <a href="https://github.com/liamcain/obsidian-calendar-plugin">Calendar plugin</a> is <a href="https://www.youtube.com/watch?v=fo6BKY2xR2w">Obsidian&rsquo;s most popular plugin</a>, and with good reason.</p>
+<p>It lets me add a calendar on the sidebar:</p>
+<p><img src="/assets/obsidian-calendar.png" alt="Obsidian calendar"></p>
+<p>I have the weekly notes option enabled, so clicking on the <code>W</code> column in the calendar takes me to a note that is automatically created for that week. I use it to keep track of weekly goals and to do a review at the end of the week.</p>
+<p>Clicking on a date in the calendar takes me to the&hellip;</p>
+<h3 id="daily-note">Daily Note</h3>
+<p>The Daily Notes core plugin comes with Obsidian, but you have to enable it. Once enabled, clicking on a day in the calendar creates/takes you to that day&rsquo;s corresponding note. I use daily notes like a log or workbench for that day, with timestamped headings to help me remember later on what I did at what time. It&rsquo;s a loose way to do time management as well.</p>
+<h2 id="dataview">Dataview</h2>
+<p>The <a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview plugin</a> is my favorite recent discovery, and it&rsquo;s changing the way I do frontmatter. This plugin brings something akin to SQL (albeit not as powerful) to Obsidian. It lets you query your notes based on some file-related metadata <strong>as well as parameters you set in your frontmatter</strong>.</p>
+<p>For example, this query:</p>
+<pre><code class="language-dataview" data-lang="dataview">table file.ctime as Date
+from &quot;Meeting&quot;
+where file.ctime &gt;= date(today) -dur(1 month)
+</code></pre><p>when rendered (i.e., viewed in Preview mode in Obsidian), returns a list of all my notes under the subfolder <code>Meeting</code> in the last month:</p>
+<p><img src="/assets/obsidian-dataview-meetings.png" alt="Obsidian Dataview results as a table"></p>
+<p>This is huge! I&rsquo;m still updating my notes with the appropriate frontmatter to make more use of this feature, but here are some use cases I can think of that would be handy at work:</p>
+<ul>
+<li>Find all customers with tag <code>annual</code> that I haven&rsquo;t spoken to in the last year.</li>
+<li>Find a load testing tool with feature <code>Slack_integration = true</code>.</li>
+<li>Find that woman I met at the Automation Test Guild conference by searching for <code>job = tester</code> and <code>tag = AutomationTestGuild</code>.</li>
+<li>Return all notes tagged <code>#plugin_ideas</code>.</li>
+</ul>
+<p>And that&rsquo;s just the beginning!</p>
+<h2 id="collaboration">Collaboration</h2>
+<p>Obsidian itself does not (yet) have collaboration features. This is a bummer, but given how quickly they&rsquo;ve delivered on features that the community has clamored for (block references and mobile apps come immediately to mind), I&rsquo;m hopeful that they&rsquo;ll eventually improve in this area.</p>
+<p>In the meantime, I&rsquo;ve still found ways to work on the same vault with other people.</p>
+<p>Remember how any folder of .md files can be opened as an Obsidian vault? Well, I&rsquo;m technically collaborating with other people on that repo for work documentation, even if most people don&rsquo;t use Obsidian. All I had to do was add the <code>.obsidian</code> directory to the <code>.gitignore</code> file, and now, nobody really even needs to know I&rsquo;m using Obsidian to view/edit the documentation. They just see me pushing to the repository as if I had used a text editor like VSCode.</p>
+<p>I&rsquo;ve also had the experience of collaborating with someone who also used Obsidian. Since we were working closely together on the same document, we opted to put our shared vault on Dropbox. Dropbox&rsquo;s main advantage over the Git solution is that Dropbox let us edit notes and see each other&rsquo;s edits in real time. If you&rsquo;re looking for an experience similar to Google Docs, this way got the closest to that. We did run into some quirks: if the Dropbox vault is also a Git repository, be aware that checking out a different branch will also change the contents of the directory for the other person.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Note-taking and personal management aren&rsquo;t just for students and teachers; I think they&rsquo;re particularly useful in tech, where knowledge work is highly prized. I&rsquo;m talking about Obsidian because that&rsquo;s my current tool of choice, but I think the tool you use is less important than the systems you put in place to help yourself learn and create.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-setup">My setup</a></li>
+    <li><a href="#processing-information">Processing information</a>
+      <ul>
+        <li><a href="#consume-and-collect">Consume and collect</a></li>
+        <li><a href="#process-iteratively">Process iteratively</a></li>
+        <li><a href="#situate-and-solidify">Situate and solidify</a></li>
+        <li><a href="#publish">Publish</a>
+          <ul>
+            <li><a href="#obsidian-publish-paid">Obsidian Publish (paid)</a></li>
+            <li><a href="#open-folder-as-vault">Open folder as vault</a></li>
+            <li><a href="#obsidian-uris">Obsidian URIs</a></li>
+            <li><a href="#embedding-published-work">Embedding published work</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#meetings">Meetings</a></li>
+    <li><a href="#presentations">Presentations</a>
+      <ul>
+        <li><a href="#the-easier-way">The easier way</a></li>
+        <li><a href="#the-harder-way">The harder way</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-management">Task management</a>
+      <ul>
+        <li><a href="#kanban">Kanban</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#daily-note">Daily Note</a></li>
+      </ul>
+    </li>
+    <li><a href="#dataview">Dataview</a></li>
+    <li><a href="#collaboration">Collaboration</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&text=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&is_video=false&description=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Use%20Obsidian%20at%20Work&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&title=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&name=How%20I%20Use%20Obsidian%20at%20Work&description=Note-taking%20and%20personal%20knowledge%20management%20get%20talked%20about%20in%20academic%20circles%2c%20by%20both%20students%20and%20teachers.%20But%20there%26rsquo%3bs%20not%20much%20said%20about%20its%20use%20outside%20of%20the%20academe.%0aI%26rsquo%3bll%20admit%2c%20due%20to%20my%20job%20description%2c%20I%20may%20be%20in%20a%20better%20position%20than%20most%20to%20take%20advantage%20of%20note-taking%20in%20a%20professional%20context.%20My%20background%20is%20in%20software%20performance%20testing.%20My%20job%20for%20several%20years%20has%20been%20to%20make%20sure%20that%20applications%20are%20prepared%20to%20withstand%20traffic%20from%20many%20users%20accessing%20it%2c%20usually%20by%20writing%20code%20to%20simulate%20that%20traffic%20before%20it%26rsquo%3bs%20released%20to%20real%20users.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210518-how-i-use-obsidian-at-work%2f&t=How%20I%20Use%20Obsidian%20at%20Work">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

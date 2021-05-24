@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> End-to-End Guide for Load Testing | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester, and I&#39;m passionate about helping others do the same. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot, and polymath. I publicly learn cool things I have no business learning, then help people do the same. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="End-to-End Guide for Load Testing" />
+<meta property="og:description" content="Originally published on the Abstracta blog
+If you have a public-facing web application, the odds are you should probably be thinking about load testing. Any tester can (and should) add load testing to their repertoire.
+Functional tests are often carried out with a single user&rsquo;s experience of your application in mind, but what happens when hundreds or thousands of users are on your site at the same time? Load testing helps prepare an application for this eventuality by simulating that situation before the application goes live." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210524-end-to-end-guide-for-load-testing/" />
+<meta property="article:published_time" content="2021-05-24T10:48:55+02:00" />
+<meta property="article:modified_time" content="2021-05-24T10:48:55+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="End-to-End Guide for Load Testing"/>
+<meta name="twitter:description" content="Originally published on the Abstracta blog
+If you have a public-facing web application, the odds are you should probably be thinking about load testing. Any tester can (and should) add load testing to their repertoire.
+Functional tests are often carried out with a single user&rsquo;s experience of your application in mind, but what happens when hundreds or thousands of users are on your site at the same time? Load testing helps prepare an application for this eventuality by simulating that situation before the application goes live."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&text=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&is_video=false&description=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=End-to-End%20Guide%20for%20Load%20Testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&name=End-to-End%20Guide%20for%20Load%20Testing&description=Originally%20published%20on%20the%20Abstracta%20blog%0aIf%20you%20have%20a%20public-facing%20web%20application%2c%20the%20odds%20are%20you%20should%20probably%20be%20thinking%20about%20load%20testing.%20Any%20tester%20can%20%28and%20should%29%20add%20load%20testing%20to%20their%20repertoire.%0aFunctional%20tests%20are%20often%20carried%20out%20with%20a%20single%20user%26rsquo%3bs%20experience%20of%20your%20application%20in%20mind%2c%20but%20what%20happens%20when%20hundreds%20or%20thousands%20of%20users%20are%20on%20your%20site%20at%20the%20same%20time%3f%20Load%20testing%20helps%20prepare%20an%20application%20for%20this%20eventuality%20by%20simulating%20that%20situation%20before%20the%20application%20goes%20live.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&t=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#planning-for-load-testing">Planning for load testing</a>
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+      </ul>
+    </li>
+    <li><a href="#writing-load-testing-scripts">Writing load testing scripts</a>
+      <ul>
+        <li><a href="#tool-selection">Tool selection</a>
+          <ul>
+            <li><a href="#resources-and-costs">Resources and costs</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#scaling-up-load-testing">Scaling up load testing</a></li>
+          </ul>
+        </li>
+        <li><a href="#installation-and-setup">Installation and setup</a></li>
+        <li><a href="#a-basic-k6-test-script">A basic k6 test script</a></li>
+        <li><a href="#making-a-test-script-realistic">Making a test script realistic</a>
+          <ul>
+            <li><a href="#add-static-resources">Add static resources</a></li>
+            <li><a href="#set-cache-and-cookie-behavior">Set cache and cookie behavior</a></li>
+            <li><a href="#add-think-time">Add think time</a></li>
+            <li><a href="#using-different-user-paths">Using different user paths</a></li>
+            <li><a href="#adding-test-data">Adding test data</a></li>
+            <li><a href="#setting-test-parameters">Setting test parameters</a></li>
+            <li><a href="#setting-failure-criteria">Setting failure criteria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#executing-load-tests">Executing load tests</a>
+      <ul>
+        <li><a href="#running-the-test">Running the test</a></li>
+        <li><a href="#realism-in-test-execution">Realism in test execution</a></li>
+      </ul>
+    </li>
+    <li><a href="#analyzing-load-testing-results-and-reporting">Analyzing load testing results and reporting</a></li>
+    <li><a href="#whats-next">What&rsquo;s next</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        End-to-End Guide for Load Testing
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-05-24 10:48:55 &#43;0200 CEST" itemprop="datePublished">2021-May-24</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p><em>Originally published on the <a href="https://abstracta.us/blog/performance-testing/load-testing-guide/">Abstracta blog</a></em></p>
+
+
+<link rel="canonical" href="https://abstracta.us/blog/performance-testing/load-testing-guide/">
+
+<p>If you have a public-facing web application, the odds are you should probably be thinking about load testing.  Any tester can (and should) add load testing to their repertoire.</p>
+<p>Functional tests are often carried out with a single user&rsquo;s experience of your application in mind, but what happens when hundreds or thousands of users are on your site at the same time? Load testing helps prepare an application for this eventuality by simulating that situation before the application goes live. That way, you have time to fix any issues you find, and there are no nasty surprises in production.</p>
+<p>In this guide, I&rsquo;m going to walk you through the basics of the load testing process, which fits in closely with traditional functional testing phases as well:</p>
+<ul>
+<li>Planning: <em>Why are we testing? What are we testing?</em></li>
+<li>Writing test scripts: <em>How are we testing?</em></li>
+<li>Execution: <em>Running test scripts against the application.</em></li>
+<li>Analysis and reporting: <em>What happened, and what do we need to fix?</em></li>
+</ul>
+<h2 id="planning-for-load-testing">Planning for load testing</h2>
+<p>During the planning phase, the team gets together and determines what load testing will involve, including the objectives, scope, resources needed, and test scenarios. The deliverable for this phase is a test plan, but that can be as formal or informal as the team requires.</p>
+<p>Planning for any testing is a team activity, and you&rsquo;ll want to get input from all the stakeholders &ndash; that&rsquo;s anyone who is involved in or might be affected by the testing. The first thing you need to clarify is the reason for load testing.</p>
+<h3 id="requirements">Requirements</h3>
+<p><em>Why are we doing load testing?</em> seems like a very simple question, but you may be surprised by the varying answers from your stakeholders. Their reasons may require different test scenarios, so it&rsquo;s a good idea to agree on the collective objectives of this load testing cycle so that expectations are set accordingly. A requirement is a concise statement of how an application should behave in a given situation.</p>
+<p>Phrasing objectives as nonfunctional requirements (NFRs) is a good way to formalize them. An NFR defines the desired state of the application and can includes performance thresholds that the team decides on. For example: <em>Logging in as a registered user must take no more than 3 seconds (90th percentile response time)</em> is a requirement based on response time. Good requirements are SMART (Specific, Measurable, Agreed Upon, Realistic, and Timely).</p>
+<p>Here are some other things that should be decided on during this phase:</p>
+<p><strong>Scope</strong>. <em>What are we testing?</em> Deciding on a shared objective for load testing lets you narrow down what areas of the application need to be targeted. Make sure everyone is clear on what <em>won&rsquo;t</em> be tested.</p>
+<p><img src="/assets/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg" alt="Post-its on a board for planning"></p>
+<p><em>Photo by <a href="https://unsplash.com/@epicantus?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daria Nepriakhina</a> on <a href="https://unsplash.com/s/photos/post-it?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+<p><strong>Entry Criteria</strong>. What do you need to begin? This is the time to start thinking about resources that are required for testing, including the number of people who need to be involved, the time it takes to carry out the testing, and environment requirements (including test data). You don&rsquo;t always need a separate testing environment to do load testing, but if you do, that should be discussed up front so that the DevOps team knows you can&rsquo;t begin without an environment.</p>
+<p><strong>Workload Modeling</strong>. A workload model is a set of characteristics that describe the load you&rsquo;re attempting to simulate. If you want your load testing to simulate registered users accessing your site, what does that entail? This might require you to look through your site analytics to determine which pages are visited most often and which application features are most commonly used, or arrive at an estimate if analytics are not available. Are most users visiting from their laptops at lunch on work days, or do they use your site from mobile devices after work? Are most of them located in the US or in Europe? You&rsquo;ll want your scripts to match real load as much as possible, so take note of key characteristics that might have an effect on the traffic your application experiences.</p>
+<p><strong>Server monitoring</strong>. Which application components will be involved? You want to have a plan in place to have monitoring, alerts, and logs set up on every server that will be tested by your scripts. If your load testing tool shows performance degradation, you want to be able to have information to look through on the relevant servers to troubleshoot that issue. Keep in mind that any sort of monitoring adds some resource overhead, so decide as a team what information you absolutely need to track.</p>
+<p><strong>Test Scenarios</strong>. Which situations do you want to recreate? A test scenario objectively describes the situation to be simulated. Do you want to recreate the load profile of a typical day, or one from a very high-traffic period, such as during a sale? Do you want to recreate a production outage? You can use analytics data to come up with parameters for your each test scenario such as duration, number of concurrent users or requests, ramp up period (how quickly the application went from 0 users to your highest number of users), or how &ldquo;spiky&rdquo; the load needs to be (how the number of requests per second fluctuates throughout the test).</p>
+<p>Everything discussed in this phase should be written in some sort of a load testing plan, which could be a formal, multi-page document, an epic with many user stories, or a bunch of Trello cards. Use the tools your team already uses. The format isn&rsquo;t important; formalizing the outcome of the discussions is what counts. The test plan makes sure everyone has the same intent with regard to the testing.</p>
+<h2 id="writing-load-testing-scripts">Writing load testing scripts</h2>
+<p>Now it&rsquo;s time to start writing scripts! You&rsquo;ve already front-loaded a lot of the important decisions to the planning phase, so all that&rsquo;s left to do in this step is to implement the plan in the form of load testing scripts.</p>
+<h3 id="tool-selection">Tool selection</h3>
+<p><img src="/assets/tools_on_market.png" alt="Different load testing tools on the market"></p>
+<p>There are many load testing tools available on the market, and the reality is that you don&rsquo;t always get to be the one to choose what you use. Often, companies have already made agreements with tool vendors for licenses before you begin your load testing, and it would be financially infeasible to switch to another tool. However, if you&rsquo;re lucky enough that you can choose the load testing tool, here are a few considerations for assessing different tools:</p>
+<h4 id="resources-and-costs">Resources and costs</h4>
+<ul>
+<li>How much does it cost? Does the pricing model allow for scaling usage up and down as necessary?</li>
+<li>Should you <a href="https://k6.io/what-to-consider-when-building-or-buying-a-load-testing-solution/">build or buy</a> an end-to-end load testing solution?</li>
+<li>What technical skills or experience with tools does your team have? Who will be doing the testing?</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li>Does the load testing tool support the protocols and technologies used by the application?</li>
+<li>How easy would it be for the team to learn this tool and/or scripting language?</li>
+<li>Does the tool make it easy for multiple people to collaborate on the same script?</li>
+<li>Does it integrate with other tools in the testing stack (for test management, test result analysis, server monitoring, team communication)?</li>
+<li>Could you add this tool to your CI/CD pipeline?</li>
+<li>Does the tool have an easy way of setting thresholds or SLOs for performance?</li>
+<li>Are the test results displayed in usable reports, or does the tool integrate with existing data visualization tools you are using?</li>
+</ul>
+<h4 id="support">Support</h4>
+<ul>
+<li>If something goes wrong, does customer support cost extra?</li>
+<li>Is there ample documentation available online for getting started without help?</li>
+<li>Is there a community of users of the tool whose experiences you could learn from?</li>
+</ul>
+<h4 id="scaling-up-load-testing">Scaling up load testing</h4>
+<ul>
+<li>How many virtual users or requests per second can a single load generator simulate using the tool?</li>
+<li>How many load generators would you need if you used this tool?</li>
+<li>Can the tool handle the amount of test data required by your tests?</li>
+<li>Can you execute tests from different geographical locations, depending on your the location of your users?</li>
+<li>Does the tool allow you to generate load from the cloud?</li>
+</ul>
+<p>These questions are not exhaustive, but you can use them as a starting point for your comparisons of load testing tools.</p>
+<p>For this guide, I&rsquo;m going to outline a basic script in <a href="https://k6.io">k6</a> for a few reasons:</p>
+<ul>
+<li>It&rsquo;s open-source, so anyone reading this can download the tool and the script and try it out for themselves;</li>
+<li>It&rsquo;s written in JavaScript, which makes it easy to learn for front-end developers or testers who have used tools like Cypress, Puppeteer, or Playwright.</li>
+<li>It&rsquo;s capable of generating <a href="https://k6.io/docs/testing-guides/running-large-tests/">tens of thousands of users</a> on a single machine, so it&rsquo;s cost-effective even with load ramped up.</li>
+</ul>
+<p>However, the principles I discuss will be applicable to other tools. I highly recommend you conduct your own proof of concepts with several tools to come up with a tool that fits your particular situation, test scenarios, and company.</p>
+<h3 id="installation-and-setup">Installation and setup</h3>
+<p>If you&rsquo;re on a Mac, the easiest way to install k6 is to use Brew. Run <code>brew install k6</code> from your terminal, and you&rsquo;ll be ready to go in a few seconds.</p>
+<p>If you&rsquo;re on a different operating system, <a href="https://k6.io/docs/getting-started/installation/">check here for installation instructions</a> that apply to you.</p>
+<h3 id="a-basic-k6-test-script">A basic k6 test script</h3>
+<p>A barebones k6 test script looks like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/http&#39;</span>;
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> () {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;https://test.k6.io&#39;</span>);
+}
+</code></pre></div><p>This script sends an HTTP GET request for the URL <code>https://test.k6.io</code>, which is a simple test site. If you copy that code to your favorite text editor and save it as <code>test.js</code>, you can then run it with the command <code>k6 run test.js</code>.</p>
+<p>You&rsquo;ll get something like this in response:</p>
+<p><img src="/assets/k6-supersimple-run.png" alt="A sample run of a simple local test in k6">
+<em>A sample run of a simple local test in k6</em></p>
+<p>The output above means that you&rsquo;ve executed 1 iteration of your script with 1 virtual user from your local machine. The test run consisted of 1 HTTP request, which had a response time of 128.2 ms (<code>http_req_duration</code>).</p>
+<p>It might be tempting to start scaling up the test at this point, increasing the number of virtual users and the duration of the script. But there&rsquo;s one problem with the script as it is: it&rsquo;s not realistic.</p>
+<h3 id="making-a-test-script-realistic">Making a test script realistic</h3>
+<p>The purpose of a load testing script is to simulate a real user who accesses your site. In most cases, that involves more than the simple GET request from the script above. Load testing scripts don&rsquo;t have to mimic a real user <em>exactly</em>, but they do have to be close enough so as to apply the same amount, shape, and distribution of the load on your application server. If your load testing scripts aren&rsquo;t realistic enough, you may get false positives during testing and discover too late that there is a performance issue in an application component that your scripts didn&rsquo;t test.</p>
+<p>Here are some ways to make your scripts more realistic:</p>
+<h4 id="add-static-resources">Add static resources</h4>
+<p>If a page has static resources like images and scripts that are retrieved by a browser automatically, make sure your script retrieves those too, as they will have an impact on the response times you get. Consider excluding static resources fetched from third-party providers unless you&rsquo;ve gotten their permission to run a load test on their servers.</p>
+<h4 id="set-cache-and-cookie-behavior">Set cache and cookie behavior</h4>
+<p>Review your load testing tool&rsquo;s default cache and cookie management settings and change them, if necessary, to match the scenario you want to test. First-time visitors to a site won&rsquo;t have resources cached locally, but repeat visitors may be retrieving resources from the cache.</p>
+<h4 id="add-think-time">Add think time</h4>
+<p>Real users don&rsquo;t usually fetch the same URL over and over again without stopping. They navigate to your site, then spend some time reading the contents of the homepage before they interact with the page again. Think time is the amount of time that a user spends “thinking”— that is, the delay between requests. Adding a think time that varies between 1 and 5 seconds, for example, prevents the application server from getting artificially bombarded by requests in a way that wouldn&rsquo;t occur in production.</p>
+<h4 id="using-different-user-paths">Using different user paths</h4>
+<p>A user path is the flow of how a user interacts with the application. What pages do they visit? What information do they type in? So far, you&rsquo;re only testing one request, but perhaps your users may be performing other actions. The workload model that you put together in the Planning phase will come into play here. Other actions like logging in or paying for items in a cart exercise different parts of an application than browsing does, so the load testing script should reflect the most common user flows through your system. In k6, this is done by adding scenarios, but other tools may call them thread groups or execution groups.</p>
+<h4 id="adding-test-data">Adding test data</h4>
+<p>In the same way that users don&rsquo;t (typically) search for the same keyword over and over again and don&rsquo;t all log into the same test account, a script shouldn&rsquo;t use the same data repeatedly. This behavior could cause responses to be cached, leading to misleadingly quick response times, or increased error rates, in the case of multiple virtual users attempting to log into the same account. To prevent that, modify your script to take data from a CSV file instead, letting you add some natural variation.</p>
+<h4 id="setting-test-parameters">Setting test parameters</h4>
+<p>Test parameters are the main characteristics of the test and include the number of users, ramp up, duration, and ramp down. They control the shape of the user load, which you can see when you plot the number of virtual users over time during the test:</p>
+<p><img src="/assets/k6-vusonly.png" alt="The number of virtual users over time during a load test, as graphed in k6">
+<em>The number of virtual users over time during a load test, as graphed in k6</em></p>
+<p>Ramp up is a period of time during which virtual users are gradually added, usually at the start of the test, and ramp down is when they are gradually stopped. For most applications, ramps are more realistic than all users clicking a link at exactly the same time.</p>
+<h4 id="setting-failure-criteria">Setting failure criteria</h4>
+<p>Part of simulating real users is determining what constitutes failures in user experience. You can incorporate failure criteria into scripts by adding response verifications, checks, and thresholds (such as those for response time or error rate). Building these into the script is a good practice to get into, because it defines the limits of acceptable performance from the beginning.</p>
+<p>The suggestions in this section are for general use, but there are many situations where taking the opposite approach would be more realistic. Spend some time thinking about what is &ldquo;realistic&rdquo; for your application and test scenario.</p>
+<p>For your reference, <a href="https://gist.github.com/nicolevanderhoeven/fb74cd9769c8abf95eeb8765a49398cb">here&rsquo;s a k6 script</a> that started from the basic script I showed earlier, but has been modified to be more realistic. That link includes a CSV file with login credentials.</p>
+<h2 id="executing-load-tests">Executing load tests</h2>
+<p>In the course of writing the test script, you probably would have already executed small verification tests, called shakeout tests. It&rsquo;s a good idea to start with these shakeout tests on a new environment to make sure that both your test artifacts (your script and any other data files) and the environment are ready for full testing.</p>
+<h3 id="running-the-test">Running the test</h3>
+<p>If you&rsquo;ve been following along with the k6 script so far, all you need to do to run a load test is to execute the following command:</p>
+<p><code>k6 run test.js</code></p>
+<p>This command will run the k6 script according to the test parameters set within it. The test will be executed locally. This is best used for shakeout tests, or if you prefer to run your load test on your own infrastructure.</p>
+<h3 id="realism-in-test-execution">Realism in test execution</h3>
+<p>One way can make executing load tests realistic is by matching the location of load generators to the physical location of your users. When you run a load test on machines in your data center, in the same network as your application servers, you will likely see response times that are significantly faster than your users would see. These false positives can look good on the report, but they don&rsquo;t help you measure real user experience.</p>
+<p>Running on the cloud is an easy way to make tests more realistic, especially if most of your end users are external to your organization.</p>
+<p>If you&rsquo;re following along with the k6 script, you can <a href="https://app.k6.io/account/register">sign up for an account</a> with k6 Cloud (the first 50 tests are free). Since k6 itself is open source, you can also run it on your own cloud infrastructure, but using k6 Cloud is the most convenient way to get started.</p>
+<p>Once you have an account, <a href="https://app.k6.io/account/api-token">copy your API token from here</a>. Then, run this command in your terminal to give your local k6 installation permission to run on your account:</p>
+<p><code>k6 login cloud --token &lt;YOUR_K6_CLOUD_API_TOKEN&gt;</code></p>
+<p>Once you are successfully authenticated, you can continue to run tests locally using <code>k6 run</code>, but you now have the option of running on the cloud as well:</p>
+<p><code>k6 cloud test.js</code></p>
+<p>k6 will then begin to execute your load test, and you&rsquo;ll see a screen like this:</p>
+<p><img src="/assets/k6-cloud-run-output.png" alt="Running a k6 test on the cloud"></p>
+<p>Note that the <code>execution</code> mode is now <code>cloud</code>, to remind you where you&rsquo;re running the test.</p>
+<p>By default, your test will run on the k6 AWS account, in the Ashburn region. However, you can override this and specify other regions, including percentages of your virtual user to run on each, using <a href="https://k6.io/docs/cloud/creating-and-running-a-test/cloud-tests-from-the-cli#cloud-execution-options">cloud execution options</a>.</p>
+<h2 id="analyzing-load-testing-results-and-reporting">Analyzing load testing results and reporting</h2>
+<p>Although I&rsquo;m listing analysis as a different step in the process from execution, the two often (and should) overlap. The output from k6 in the screenshot above contains a link to the dashboard on k6 Cloud, so that you can see the results of the test in real time, as the test is running. Monitoring the test in real time lets you immediately spot issues as they arise, and, if necessary, stop the test to fix them. If the test is being executed by multiple load generators, having a consolidated dashboard is helpful in giving you an overview of the entire test.</p>
+<p>![An example of the results after a load test in k6 Cloud](/assets/Finished k6 run.png)
+<em>An example of the results after a load test in k6 Cloud</em></p>
+<p>This is also a good time to monitor the health of the application servers and the load generator servers, which you set up monitoring tools for during the planning phase.</p>
+<p>A load test is only useful when it&rsquo;s providing information about the application. If errors occur in large quantities, or if the response time makes it clear that a certain component has failed to handle the load, don&rsquo;t be afraid to stop the test. Your objective is to get the information you need to suggest performance improvements and solutions for any bottlenecks you find.</p>
+<p>Often, you&rsquo;ll run into issues you can&rsquo;t solve or even identify during a test. That&rsquo;s why it&rsquo;s useful to explore the data that you have after a test. k6 lets you create shareable links to dashboards so that you can involve relevant engineering teams who may be able to help you understand what happened and why. <a href="https://app.k6.io/runs/public/f6ad87cec7a24a8c82e46c816e67c4b3">Here&rsquo;s an example of what that dashboard looks like</a>.</p>
+<p>Some projects require formal documentation of test execution by way of a Test Summary Report, but in more agile teams, it may be enough to share the test results dashboard and some supplementary information about what type of tests were run and what problems were encountered.</p>
+<p>The most important part of load testing isn&rsquo;t the execution itself; it&rsquo;s what you do with the results. Communicating results clearly to stakeholders will make it more likely that performance issues are fixed.</p>
+<h2 id="whats-next">What&rsquo;s next</h2>
+<p>The phases I&rsquo;ve outlined here are a good guide for anyone starting with load testing, but I always recommend that you take what works for your situation and leave the rest. In reality, the phases overlap with each other considerably, especially in more modern engineering cycles.</p>
+<p>Another activity I&rsquo;ve not covered here, but one that I recommend, is adding load testing to your CI/CD pipeline. This continuous testing approach involves <a href="https://k6.io/docs/testing-guides/automated-performance-testing/">automating load testing</a> so that it occurs in regularly, in parallel with other development and testing activities. Continuous testing is a great way to get more value out of load testing, and it ensures that performance is front-of-mind for everyone on the application team.</p>
+<p>Happy testing!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#planning-for-load-testing">Planning for load testing</a>
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+      </ul>
+    </li>
+    <li><a href="#writing-load-testing-scripts">Writing load testing scripts</a>
+      <ul>
+        <li><a href="#tool-selection">Tool selection</a>
+          <ul>
+            <li><a href="#resources-and-costs">Resources and costs</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#scaling-up-load-testing">Scaling up load testing</a></li>
+          </ul>
+        </li>
+        <li><a href="#installation-and-setup">Installation and setup</a></li>
+        <li><a href="#a-basic-k6-test-script">A basic k6 test script</a></li>
+        <li><a href="#making-a-test-script-realistic">Making a test script realistic</a>
+          <ul>
+            <li><a href="#add-static-resources">Add static resources</a></li>
+            <li><a href="#set-cache-and-cookie-behavior">Set cache and cookie behavior</a></li>
+            <li><a href="#add-think-time">Add think time</a></li>
+            <li><a href="#using-different-user-paths">Using different user paths</a></li>
+            <li><a href="#adding-test-data">Adding test data</a></li>
+            <li><a href="#setting-test-parameters">Setting test parameters</a></li>
+            <li><a href="#setting-failure-criteria">Setting failure criteria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#executing-load-tests">Executing load tests</a>
+      <ul>
+        <li><a href="#running-the-test">Running the test</a></li>
+        <li><a href="#realism-in-test-execution">Realism in test execution</a></li>
+      </ul>
+    </li>
+    <li><a href="#analyzing-load-testing-results-and-reporting">Analyzing load testing results and reporting</a></li>
+    <li><a href="#whats-next">What&rsquo;s next</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&text=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&is_video=false&description=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=End-to-End%20Guide%20for%20Load%20Testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&title=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&name=End-to-End%20Guide%20for%20Load%20Testing&description=Originally%20published%20on%20the%20Abstracta%20blog%0aIf%20you%20have%20a%20public-facing%20web%20application%2c%20the%20odds%20are%20you%20should%20probably%20be%20thinking%20about%20load%20testing.%20Any%20tester%20can%20%28and%20should%29%20add%20load%20testing%20to%20their%20repertoire.%0aFunctional%20tests%20are%20often%20carried%20out%20with%20a%20single%20user%26rsquo%3bs%20experience%20of%20your%20application%20in%20mind%2c%20but%20what%20happens%20when%20hundreds%20or%20thousands%20of%20users%20are%20on%20your%20site%20at%20the%20same%20time%3f%20Load%20testing%20helps%20prepare%20an%20application%20for%20this%20eventuality%20by%20simulating%20that%20situation%20before%20the%20application%20goes%20live.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210524-end-to-end-guide-for-load-testing%2f&t=End-to-End%20Guide%20for%20Load%20Testing">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

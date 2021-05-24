@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 18 May 2021 22:33:18 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 May 2021 10:48:55 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>End-to-End Guide for Load Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210524-end-to-end-guide-for-load-testing/</link>
+      <pubDate>Mon, 24 May 2021 10:48:55 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210524-end-to-end-guide-for-load-testing/</guid>
+      <description>Originally published on the Abstracta blog
+If you have a public-facing web application, the odds are you should probably be thinking about load testing. Any tester can (and should) add load testing to their repertoire.
+Functional tests are often carried out with a single user&amp;rsquo;s experience of your application in mind, but what happens when hundreds or thousands of users are on your site at the same time? Load testing helps prepare an application for this eventuality by simulating that situation before the application goes live.</description>
+    </item>
+    
     <item>
       <title>How I Use Obsidian at Work</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/</link>

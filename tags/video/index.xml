@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 14 May 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 May 2021 23:24:48 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Application Performance Monitoring using Netdata and k6, with Odysseas Lamtzidis (k6 Office Hours)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210528-koh-odysseas/</link>
+      <pubDate>Fri, 28 May 2021 23:24:48 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210528-koh-odysseas/</guid>
+      <description>This week, we had Odysseas Lamtzidis on the show to talk about Netdata, which is an application performance monitoring tool that prides itself on having the easiest setup ever. Odysseas admitted that it might not have all the bells and whistles of other monitoring platforms, it Just Works. I see this as being very interesting especially for testers like me, who just want to have something set up but might not want to be bothered by the implementation.</description>
+    </item>
+    
     <item>
       <title>Learning how to use k6 live with Nočnica Fee from New Relic (k6 Office Hours)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</link>

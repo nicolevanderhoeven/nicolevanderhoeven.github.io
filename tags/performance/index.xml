@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 31 May 2021 11:28:18 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 20:23:17 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Load Testing? - A real-world explanation</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210601-what-is-load-testing/</link>
+      <pubDate>Tue, 01 Jun 2021 20:23:17 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210601-what-is-load-testing/</guid>
+      <description>I&amp;rsquo;ve made about 60 videos on load testing and application performance to date, but I realized that I&amp;rsquo;ve never made one defining load testing, which seemed like a glaring mistake. So, here&amp;rsquo;s my attempt!
+  Rough transcript below - though I went off script a few times:
+Load testing is a key part of making sure that an application performs well and reliably. But what IS load testing, anyway? In this video, I break it down for you in simple terms.</description>
+    </item>
+    
     <item>
       <title>Interview on Performance Time Podcast</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</link>

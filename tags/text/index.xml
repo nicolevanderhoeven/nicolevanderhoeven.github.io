@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 24 May 2021 10:48:55 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 23:27:59 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Downloading files uploaded to Roam Research for use with Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</link>
+      <pubDate>Tue, 01 Jun 2021 23:27:59 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</guid>
+      <description>If you&amp;rsquo;ve recently transitioned from Roam Research to Obsidian, you might run into a few issues, even after you&amp;rsquo;ve run the &amp;ldquo;Markdown format importer&amp;rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to Google Firebase.
+Roam assets are linked to in the Markdown files like this:
+![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media&amp;amp;token=1e03b680-5472-33dc-9b06-a127301af37f) Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&amp;rsquo;ll still render correctly.</description>
+    </item>
+    
     <item>
       <title>End-to-End Guide for Load Testing</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210524-end-to-end-guide-for-load-testing/</link>

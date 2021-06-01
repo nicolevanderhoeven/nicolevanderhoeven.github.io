@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 28 May 2021 23:24:48 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 11:28:18 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interview on Performance Time Podcast</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</link>
+      <pubDate>Tue, 01 Jun 2021 11:28:18 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</guid>
+      <description>I first heard of Stephen Townshend because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, Stijn Schephers. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!
+ We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.</description>
+    </item>
+    
     <item>
       <title>Application Performance Monitoring using Netdata and k6, with Odysseas Lamtzidis (k6 Office Hours)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210528-koh-odysseas/</link>
@@ -278,8 +288,8 @@ So what am I doing on the k6 site, talking about how much I love JMeter?</descri
       <description>Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some videos I&amp;rsquo;ve made on various topics.
 Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available here.
 I&amp;rsquo;m particularly interested in speaking opportunities in Spanish, Dutch, Tagalog, or Esperanto.
-Upcoming 27/05 New Relic FutureStack: Schrödinger&amp;rsquo;s Pokemon: Observability for Chaotic Load Testing. (English)
-09/06 Women Tech Global: The Convergence of Code and Speech.</description>
+Upcoming 09/06 Women Tech Global: The Convergence of Code and Speech. (English)
+2021 31/05 Performance Time Podcast: An Interview with Nicole van der Hoeven (English)</description>
     </item>
     
     <item>

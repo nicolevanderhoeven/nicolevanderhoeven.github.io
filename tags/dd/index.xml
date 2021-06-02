@@ -14,9 +14,84 @@
       <pubDate>Mon, 14 Dec 2020 20:13:13 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201214-roam-for-dnd/</guid>
-      <description>In case you thought this site was all about performance and load testing, surprise! It&amp;rsquo;s not.
-If you&amp;rsquo;ve talked to me personally for longer than ten minutes in the last year, there&amp;rsquo;s a pretty good chance I&amp;rsquo;ve mentioned Roam Research, or the note-taking and learning methodology called Zettelkasten. Sorrynotsorry. I&amp;rsquo;ve been obsessed since I discovered it.
-To say Roam Research is a note-taking device is like saying Bitcoin is currency: yes, it IS that, but also so much more.</description>
+      <description>&lt;p&gt;In case you thought this site was all about performance and load testing, surprise! It&amp;rsquo;s not.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve talked to me personally for longer than ten minutes in the last year, there&amp;rsquo;s a pretty good chance I&amp;rsquo;ve mentioned &lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt;, or the note-taking and learning methodology called &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt;. Sorrynotsorry. I&amp;rsquo;ve been obsessed since I discovered it.&lt;/p&gt;
+&lt;p&gt;To say Roam Research is a note-taking device is like saying Bitcoin is currency: yes, it IS that, but also so much more. To me, it&amp;rsquo;s my second brain. It&amp;rsquo;s a record of what I know and what I want to know, and sometimes even things I don&amp;rsquo;t know yet. The real reason that Roam and the Zettelkasten idea resonated with me so much is that I can use it a lot for my work. But I&amp;rsquo;ve discovered another use case that Roam is perfect for: Dungeons &amp;amp; Dragons.&lt;/p&gt;
+&lt;p&gt;This became longer than I thought it would be, so I&amp;rsquo;ll just talk about how I handle Session Notes in particular.&lt;/p&gt;
+&lt;h2 id=&#34;starting-a-new-session&#34;&gt;Starting a new session&lt;/h2&gt;
+&lt;p&gt;Everything starts with sitting down to play D&amp;amp;D. I write a log of events and information that comes out while I&amp;rsquo;m playing. Here&amp;rsquo;s what a new session log looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I preface pages in this campaign with &lt;code&gt;D&amp;amp;D/&lt;/code&gt; to make it a separate &lt;a href=&#34;https://forum.roamresearch.com/t/namespaces-how-do-they-work/276&#34;&gt;namespace&lt;/a&gt;. A namespace is like a folder, and I use it mainly because I have two D&amp;amp;D campaigns, both of which would have the page &lt;code&gt;Campaign&lt;/code&gt;, &lt;code&gt;Characters&lt;/code&gt;, &lt;code&gt;Locations&lt;/code&gt;, etc, even though the two campaigns are on different worlds. To keep them separate, and to keep from getting mixed up (&lt;em&gt;Was Gloomtoes an NPC in this campaign or that one?&lt;/em&gt;) I use different namespaces for each campaign.&lt;/p&gt;
+&lt;p&gt;I add the real-world date in the page name, and then an in-game date reference. The in-game date reference is useful for keeping track of time since I might go a couple weeks (okay, maybe &lt;em&gt;one&lt;/em&gt; week; let&amp;rsquo;s not get too crazy) without playing this campaign, but no time in the in-game world has elapsed. Then, I end the page name with a descriptive title, which I always end up changing after the session. Sometimes I&amp;rsquo;ll title a page &lt;code&gt;Exploring Castle Never&lt;/code&gt;, but then we end up getting carried away in another part of the city instead. That&amp;rsquo;s okay - when I change a page name, Roam then updates all references to that page that I&amp;rsquo;ve made from other pages.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t type all this out manually - I use a &lt;a href=&#34;https://textexpander.com/&#34;&gt;TextExpander&lt;/a&gt; template so that to start a new session, all I have to do is create a page in Roam, type &lt;code&gt;;s.dnd&lt;/code&gt; and that is automatically replaced with prompts for a few fields.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Date&lt;/code&gt;: This is the real-world date of when I played this particular session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Tags&lt;/code&gt;: When I first create session notes, this is prepopulated with &lt;code&gt;#TVZ&lt;/code&gt;, which stands for &lt;em&gt;To Verzettelen&lt;/em&gt;. It&amp;rsquo;s just my personal way of marking a note as one that needs to be processed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Location&lt;/code&gt;: Here I note down the in-game places that my character visited this session. Usually I&amp;rsquo;ll just put city names, but I sometimes also split locations up into districts within a city or rooms within a dungeon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Characters&lt;/code&gt;: I&amp;rsquo;ve found it helpful to keep track of which characters (players and NPCs) I&amp;rsquo;ve come across in this session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Session Summary&lt;/code&gt;: This is a section I leave blank when the session is initially created.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;filling-in-the-session-log&#34;&gt;Filling in the session log&lt;/h2&gt;
+&lt;p&gt;The rest of the page, after &lt;code&gt;Session Summary&lt;/code&gt;, is where I&amp;rsquo;ll spend most of the time writing. I just write whatever comes to mind and whatever I have time to write, in bullet form. I don&amp;rsquo;t worry about formatting or grammar or linking to other pages. I just type all my thoughts out in plain text.&lt;/p&gt;
+&lt;h3 id=&#34;hp&#34;&gt;HP&lt;/h3&gt;
+&lt;p&gt;I like to play healers, which means I care a lot about how everyone in the party is doing so that I can figure out who best needs healing. &lt;code&gt;{{[[table]]}}&lt;/code&gt; in Roam lets me create a custom table, and I have a &lt;code&gt;;hp&lt;/code&gt; snippet in TextExpander that recreates this table, with all the names of the people currently in my party, so that I just worry about filling in the values. Sometimes I still get it wrong, or miss a bit of damage that the DM calls out, but it&amp;rsquo;s enough to give me an idea of who needs heals.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-04.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I also write down initiative orders, the defenses/vulnerabilities/immunities of monsters we face, descriptions of NPCs we meet, suspicions or questions I might have&amp;hellip; basically anything and everything that comes to mind. Session time is pretty much a brain dump, with no formatting.&lt;/p&gt;
+&lt;h3 id=&#34;equipment&#34;&gt;Equipment&lt;/h3&gt;
+&lt;p&gt;If I acquire a new item during a session, I&amp;rsquo;ll tag that line with &lt;code&gt;#[[D&amp;amp;D/Carrying]]&lt;/code&gt;. This lets me stay on the Session Notes page while still maintaining an up-to-date record of what I&amp;rsquo;m carrying.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A tag in Roam is the same as a page, so when I click on that link, it takes me to the &lt;code&gt;D&amp;amp;D/Carrying&lt;/code&gt; page, which conveniently also shows me all the references to that page from other pages.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Roam shows me not just the page, but the exact block where I made the reference to &lt;code&gt;D&amp;amp;D/Carrying&lt;/code&gt;, so it&amp;rsquo;s easy to see at a glance what I have and where I got it.&lt;/p&gt;
+&lt;h3 id=&#34;next-actions-and-waiting-for&#34;&gt;Next Actions and Waiting For&lt;/h3&gt;
+&lt;p&gt;I use David Allen&amp;rsquo;s &lt;a href=&#34;https://gettingthingsdone.com/&#34;&gt;GTD&lt;/a&gt; methodology in D&amp;amp;D too. When I want to remember to do something later, I tag it with &lt;code&gt;#[[D&amp;amp;D/Agenda]]&lt;/code&gt; and &lt;code&gt;#[[Next Actions]]&lt;/code&gt; or &lt;code&gt;#[[Waiting For]]&lt;/code&gt;. This presents me with the same opportunities as &lt;code&gt;D&amp;amp;D/Carrying&lt;/code&gt;, where I can see references to those pages later as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-07.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;processing-the-session&#34;&gt;Processing the session&lt;/h2&gt;
+&lt;p&gt;Sometime after the session, I&amp;rsquo;ll go and fill in the metadata from my template, including the session summary, which is just a paragraph or two describing what happened in the session at a high level. This is mainly to jog my memory in the next session, when I&amp;rsquo;ve already forgotten what we did in the previous one.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like, all filled in:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;adding-links-and-fleshing-out-pages&#34;&gt;Adding links and fleshing out pages&lt;/h3&gt;
+&lt;p&gt;I then go back through the notes themselves and add turn any people, places, or interesting objects that I mention into links. In Roam, that&amp;rsquo;s a matter of highlighting them and hitting &lt;code&gt;[[&lt;/code&gt;. Then, I click on the page I&amp;rsquo;ve just created and try to add information that I&amp;rsquo;ve learned. This isn&amp;rsquo;t strictly necessary, since all mentions of that page will show up as a linked reference, but it&amp;rsquo;s an opportunity to consolidate my information on that subject and see how it fits into what else I&amp;rsquo;ve written there.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a page for an NPC:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-09.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Having these links means that when an NPC says &amp;ldquo;I&amp;rsquo;m from Leilon&amp;rdquo;, I can type &lt;code&gt;Leilon&lt;/code&gt; into Roam:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-08.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;hellip; and say, &amp;ldquo;Oh, Leilon. I heard you had a dragon problem there recently. Did your family get out okay?&amp;rdquo; Boom! Instant advantage on a Diplomacy check.&lt;/p&gt;
+&lt;p&gt;Sometimes we&amp;rsquo;re in a dungeon with many rooms, and this is the point where I draw a quick map on my iPad Pro and Apple Pencil using &lt;a href=&#34;https://www.gingerlabs.com/&#34;&gt;Notability&lt;/a&gt;, and then I upload it right from my iPad to Roam.&lt;/p&gt;
+&lt;p&gt;This map is in my page for Castle Never:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The little blue &amp;ldquo;8&amp;rdquo; on the upper left of the map is versions. Information rarely comes all at once in D&amp;amp;D; it usually comes in trickles. As I learned more about the castle, I revised the map and added a new version to it, so that I can still see previous versions and what I thought the map was like when we first explored it.&lt;/p&gt;
+&lt;p&gt;At this stage, I also add any tags I forgot to add during the session.&lt;/p&gt;
+&lt;h3 id=&#34;reviewing-quests-and-questions&#34;&gt;Reviewing quests and questions&lt;/h3&gt;
+&lt;p&gt;After I go through the session notes, I go to the page called &lt;code&gt;D&amp;amp;D/Quests and Questions&lt;/code&gt;, where I keep a running list of all the open quest hooks and any unanswered questions I might have.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Not everything on this page is meant to be resolved, but I find it comforting to track everything anyway, in case I happen to find myself in a city with nothing in particular to do. I mark these with a checkbox (&lt;code&gt;{{[[TODO]]}})&lt;/code&gt; in Roam) and tick the box when one is resolved. Roam lets me filter out the resolved quests so I only see things that are outstanding.&lt;/p&gt;
+&lt;p&gt;This is where I get the most value out of taking notes. It&amp;rsquo;s at this point where I&amp;rsquo;ll add our progress towards quests, make connections between two seemingly disconnected quests, and situate what I&amp;rsquo;ve just learned in the session within the broader context of the world and the campaign. I also review and update items on the Next Actions and Waiting For.&lt;/p&gt;
+&lt;p&gt;This is the part that takes the longest, but it&amp;rsquo;s also what most prepares me for when I get to the table again next week.&lt;/p&gt;
+&lt;h2 id=&#34;tying-it-all-together&#34;&gt;Tying it all together&lt;/h2&gt;
+&lt;p&gt;I use a &lt;code&gt;D&amp;amp;D/Campaign&lt;/code&gt; page as my landing page for this campaign. It includes &lt;code&gt;D&amp;amp;D/Quests and Questions&lt;/code&gt; as well as a list of all sessions to date, so that I always know what happened and when.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;why-do-i-take-notes-for-a-game&#34;&gt;Why do I take notes for a game?&lt;/h2&gt;
+&lt;p&gt;You might be wondering why I go to so much trouble. Why do I take complicated notes about something I do &amp;ldquo;just&amp;rdquo; for fun?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Taking notes helps me offload this all safely from my brain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I take my fun as seriously as I take my work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
   </channel>

@@ -14,10 +14,108 @@
       <pubDate>Thu, 23 Apr 2020 16:48:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</guid>
-      <description>Originally posted here.
-We first announced our open-source browser-based load testing tool based on Puppeteer, Flood Element, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:
-Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
-Kevin Dunne: A new approach to load testing with browser level users</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/browser-based-load-testing-in-2020&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/browser-based-load-testing-in-2020&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We &lt;a href=&#34;https://flood.io/blog/level-up-your-load-testing-with-browser-level-users&#34;&gt;first announced&lt;/a&gt; our open-source browser-based load testing tool based on Puppeteer, &lt;a href=&#34;https://element.flood.io/&#34;&gt;Flood Element&lt;/a&gt;, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:&lt;/p&gt;
+&lt;p&gt;Tim Koopmans: &lt;a href=&#34;https://flood.io/blog/load-testing-for-devops-with-browser-level-users-blu&#34;&gt;Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kevin Dunne: &lt;a href=&#34;https://flood.io/blog/a-new-approach-to-load-testing-with-browser-level-users&#34;&gt;A new approach to load testing with browser level users&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;me: &lt;a href=&#34;https://flood.io/blog/prepare-for-viral-videos-with-flood-element&#34;&gt;Prepare for viral videos with Flood Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lachie Cox: &lt;a href=&#34;https://flood.io/blog/why-you-should-load-test-with-browsers&#34;&gt;Why should you load test with real browsers?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;our friend Eduardo Riol, as translated by Antonio Jimenez: &lt;a href=&#34;https://flood.io/blog/selenium-vs-puppeteer-for-test-automation-is-a-new-leader-emerging&#34;&gt;Puppeteer vs. Selenium for test automation: is a new leader emerging?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clearly, we&amp;rsquo;re huge fans of load testing a web application with real browsers. But does the wider software testing industry share that sentiment?&lt;/p&gt;
+&lt;h2 id=&#34;browser-based-load-testing-in-2020&#34;&gt;Browser-based load testing in 2020&lt;/h2&gt;
+&lt;p&gt;Browser-level load testing is still pretty new, and there aren&amp;rsquo;t too many providers offering it right now. Luckily, we just so happen to have access to a database of load tests run on Flood since 2013. Here&amp;rsquo;s a bar chart visualizing data we&amp;rsquo;ve collected about the load testing tools flooders have used (we support Selenium, JMeter, Gatling, and Element).&lt;/p&gt;
+&lt;h3 id=&#34;load-tests-executed-on-flood-over-time-grouped-by-load-testing-tool&#34;&gt;Load tests executed on Flood over time, grouped by load testing tool&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;browser-level-load-testing-is-increasing-in-popularity&#34;&gt;Browser-level load testing is increasing in popularity&lt;/h3&gt;
+&lt;h4 id=&#34;in-2020-almost-35-of-the-load-tests-run-on-flood-are-browser-based-load-tests&#34;&gt;In 2020, almost 35% of the load tests run on Flood are browser-based load tests.&lt;/h4&gt;
+&lt;p&gt;While the total number of load tests run across all tools increased across the board, the percentage of tests that utilized Selenium and Element, as compared to JMeter and Gatling, has also increased from 2018. Both Selenium and Element are browser-based load testing tools.&lt;/p&gt;
+&lt;p&gt;By contrast, JMeter, a protocol-level load testing tool which previously enjoyed a 70% share of the traffic on Flood, now accounts for only a bit over 50% of usage. JMeter&amp;rsquo;s share of the protocol-level pie is higher than Gatling&amp;rsquo;s, but the percentage of usage for both tools appears to be contracting when compared to that of browser-based tools.&lt;/p&gt;
+&lt;h3 id=&#34;element-use-is-increasing-faster-than-selenium-use&#34;&gt;Element use is increasing faster than Selenium use&lt;/h3&gt;
+&lt;p&gt;Despite the fact that Selenium has been around longer, &lt;strong&gt;25% of all floods today are run using Element&lt;/strong&gt;. This is a significant increase in just two years, and one that bodes well for the future. While we&amp;rsquo;re still fans of Selenium and still support it, one reason we see for the dominance of Element in today&amp;rsquo;s market is resource efficiency.&lt;/p&gt;
+&lt;p&gt;In our baseline tests, we&amp;rsquo;ve seen that Element can run from 20-50 users per Flood node (an &lt;a href=&#34;https://aws.amazon.com/blogs/aws/m5-the-next-generation-of-general-purpose-ec2-instances/&#34;&gt;AWS m5.xlarge instance&lt;/a&gt;), whereas Selenium can only run up to 5. This leads to some significant cost savings, as running the same number of users with Element requires fewer load generators than with Selenium.&lt;/p&gt;
+&lt;p&gt;Another reason might be the fact that Element uses Puppeteer in the background. Puppeteer, developed by Google, understandably shines when driving Google Chrome (and recently, Firefox). Puppeteer load testing is growing in popularity due to the wealth of metrics it has access to.&lt;/p&gt;
+&lt;h2 id=&#34;how-browser-based-load-testing-works&#34;&gt;How browser-based load testing works&lt;/h2&gt;
+&lt;p&gt;Traditional load testing is done on the protocol level by sending messages directly to the web server. These messages are sent without simulating the application interface, and the responses that are received from the server are not visualized, either. &amp;ldquo;Users&amp;rdquo; in protocol-level load testing scripts are actually threads, with each one sending a list of messages at predefined intervals, and we refer to these users as Protocol-Level Users (PLU). JMeter and Gatling use PLU to generate load.&lt;/p&gt;
+&lt;p&gt;The screenshot below shows what one request for a single action might look like in a JMeter test plan.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-02.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Example of an HTTP request with parameters on JMeter&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In browser-based load testing, real browser instances are opened on load generators, and the load testing tool plays the part of a real user in navigating the web application using the GUI. We refer to the virtual users in browser-based load testing as Browser-Level Users (BLU).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of the same action in the JMeter example above, but this time in an Element test script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Step 1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+    &lt;span style=&#34;color:#75715e&#34;&gt;//Click Start button
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;startButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findElement&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.btn-default&amp;#39;&lt;/span&gt;)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;startButton&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;()
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This version simply describes the button to be found and clicked, whereas the protocol-level version needs to be more precise in what exactly is passed to the server.&lt;/p&gt;
+&lt;p&gt;Both types of load testing tools can apply the same load on an application (as long as it supports both methods— see the next section). The main difference is in how the load is generated.&lt;/p&gt;
+&lt;p&gt;A protocol-level script will contain instructions on which messages to send, which protocols to use, which headers to include, and other information that a typical end-user would not see.&lt;/p&gt;
+&lt;p&gt;A browser-level script will contain instructions on how to &lt;em&gt;interact&lt;/em&gt; with the application: which buttons to click, what to type in text fields, which links to follow, and other on-screen elements that an end-user would be familiar with. This leads us to one of the big advantages of browser-based load testing.&lt;/p&gt;
+&lt;h2 id=&#34;pros-and-cons-of-browser-based-load-testing&#34;&gt;Pros and cons of browser-based load testing&lt;/h2&gt;
+&lt;h3 id=&#34;pros&#34;&gt;Pros&lt;/h3&gt;
+&lt;h4 id=&#34;simple-scripting-or-no-scripting-at-all&#34;&gt;Simple scripting— or no scripting at all&lt;/h4&gt;
+&lt;p&gt;Protocol-level tools require in-depth knowledge about how an application works, what format it expects requests to be in, and how it responds. On the browser-level, you don&amp;rsquo;t need to know any of that. When scripting a login process, for instance, you just need to tell the script to type a username and password in the right fields and then click Log In. The script doesn&amp;rsquo;t need to know that the form submits an encrypted request using the Auth0 API (something you&amp;rsquo;d need to know for a protocol-level script).&lt;/p&gt;
+&lt;p&gt;In some cases, you might be able to get away with using something like our &lt;a href=&#34;https://flood.io/blog/record-load-tests-in-flood-element-using-qtest-explorer&#34;&gt;qTest Explorer plugin&lt;/a&gt; to record a business process, generating a script without any scripting at all. Even when you have to write or modify the script, though, it&amp;rsquo;s a lot less intimidating than most protocol-level scripts.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re also easier to troubleshoot. In addition to opening a real browser instance on your computer when you run a script locally, Element can also display this information on the console (shown here on iTerm):&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-03.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Screenshots upon execution on Element using iTerm&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;‍This allows you to understand what&amp;rsquo;s going on in the script and in the application, letting you detect bottlenecks faster.&lt;/p&gt;
+&lt;h4 id=&#34;reduced-test-complexity&#34;&gt;Reduced test complexity&lt;/h4&gt;
+&lt;p&gt;The streamlined requirements for scripting lead to a straightforward test. There&amp;rsquo;s no chance of getting request parameters or values wrong.&lt;/p&gt;
+&lt;h4 id=&#34;ability-to-test-entire-stack-from-the-user-perspective&#34;&gt;Ability to test entire stack from the user perspective&lt;/h4&gt;
+&lt;p&gt;Unlike testing APIs, you don&amp;rsquo;t need to decide which server you want to hit or make sure you have the appropriate requests to hit all the servers. A browser-level test script interacts with page elements like a real user would, so all underlying application servers are tested. Pair this with &lt;a href=&#34;https://guides.flood.io/infrastructure/demand-infrastructure/advantages-of-testing-in-the-cloud&#34;&gt;cloud-based infrastructure on Flood&lt;/a&gt;, and you&amp;rsquo;ve got a compact package for testing your application.&lt;/p&gt;
+&lt;h4 id=&#34;capable-of-testing-any-user-behavior&#34;&gt;Capable of testing any user behavior&lt;/h4&gt;
+&lt;p&gt;Protocol-level load test tools struggle with some types of applications, such as single-page apps (SPAs), where a lot of the processing is done on the client side. Browser-level load testing tools shine here, because scripted interactions for these apps are no different for SPAs than other web apps.&lt;/p&gt;
+&lt;h4 id=&#34;record-network-and-user-interaction-times-for-front-end-optimization&#34;&gt;Record network and user interaction times for front-end optimization&lt;/h4&gt;
+&lt;p&gt;Browser-level tools show you response times from the user&amp;rsquo;s perspective: how long after a user clicks the log in button does the user see his or her account balance? This metric is a practical one that may differ wildly from the traditional response times that a protocol-level tool reports. Measuring real user experience is a great value add for your test.&lt;/p&gt;
+&lt;h4 id=&#34;easier-to-maintain&#34;&gt;Easier to maintain&lt;/h4&gt;
+&lt;p&gt;Lower script complexity means that a browser-based test script is more resilient to changes in the codebase. A change in the underlying requests sent will not require a change in the test script, making it perfect for regression testing.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also easier to pass on to other members of the team due to high readability. Here&amp;rsquo;s an example of how to select a value from a dropdown menu in Element:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;selectByValue&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;#challenger_age&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;34&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s easy to see that the script is looking for an element with the ID &amp;ldquo;challenger_age&amp;rdquo; and selecting the value &amp;ldquo;34&amp;rdquo;. This step could correspond to dozens of requests that need to be scripted if testing on the protocol level, which makes those scripts harder to understand without a proper handover.&lt;/p&gt;
+&lt;h3 id=&#34;cons&#34;&gt;Cons&lt;/h3&gt;
+&lt;p&gt;Browser-based load testing tools have a higher CPU and memory footprint than protocol-based tools. Test scripts in JMeter and Gatling send messages to and record responses from a server without really needing to parse responses. By contrast, browser-based tools parse the server response in order to access the Domain Object Model (DOM) elements on the page.&lt;/p&gt;
+&lt;p&gt;Using real browsers might be closer to the real user experience, but it also takes its toll on node resources. It is possible to run in headless mode, where browsers are started &amp;ldquo;invisibly&amp;rdquo; without actually graphically rendering them. However, even then, a browser-level tool can run fewer concurrent users on a node than a protocol-level tool.&lt;/p&gt;
+&lt;h2 id=&#34;best-tools-and-applications-for-browser-based-load-testing&#34;&gt;Best tools and applications for browser-based load testing&lt;/h2&gt;
+&lt;p&gt;While other commercial tools exist for this, we&amp;rsquo;re partial to open source tools at Flood.&lt;/p&gt;
+&lt;h3 id=&#34;selenium&#34;&gt;Selenium&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Selenium load testing is appealing because Selenium is already well-known for test automation and functional testing, and a lot of companies already have full test suites in Selenium. The possibility of reusing those resources and just running them at scale as load tests is, by far, the most compelling reason to use Selenium.&lt;/p&gt;
+&lt;h3 id=&#34;puppeteer&#34;&gt;Puppeteer&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-05.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Google&amp;rsquo;s just getting started with Puppeteer, and the amount of metrics it exposes is exciting: it seems like anything in Chrome Developer Tools can be accessed by Puppeteer. Imagine running a load test on ONE tool that gives you statistics about back-end performance (response times, the effect of bandwidth restrictions, resources returning errors) AND front-end performance (client-side script console logs, render times, time to first paint, etc). It&amp;rsquo;s hard to imagine a future where this ISN&amp;rsquo;T a valuable tool in the performance arsenal.&lt;/p&gt;
+&lt;p&gt;Under Puppeteer, of course, is &lt;a href=&#34;https://element.flood.io/&#34;&gt;Element&lt;/a&gt;— our load-flavored version of Puppeteer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-protocol-based-load-testing-dead&#34;&gt;Is protocol-based load testing dead?&lt;/h2&gt;
+&lt;p&gt;No. Testing on the protocol-level may have its drawbacks, but it&amp;rsquo;s popular for a reason. If you&amp;rsquo;re testing mobile apps or API endpoints, protocol-level testing tools allow you to focus on hitting what you want to test and only what you want to test. Sometimes you don&amp;rsquo;t want to test the whole stack. It really depends on your test scenarios.&lt;/p&gt;
+&lt;p&gt;Plus, protocol-level tools tend to be really resource efficient. We&amp;rsquo;ve been able to easily run about 1000 users per Flood node with JMeter and Gatling, easily outstripping browser-level tools. It makes sense, since JMeter and Gatling don&amp;rsquo;t need to start browser instances to generate load.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s significantly cheaper to generate very high loads with protocol-level tools. This efficiency makes protocol-level tools a good choice for high concurrency load testing and especially stress testing.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-we-doing-to-support-blu&#34;&gt;What are we doing to support BLU?&lt;/h2&gt;
+&lt;p&gt;Clearly, our usage metrics show that browser-based load testing is on the rise, and we&amp;rsquo;re planning to ramp up our offerings in this area while also maintaining support for protocol-level tools. Here&amp;rsquo;s what you can look forward to from us:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New releases
+&lt;ul&gt;
+&lt;li&gt;We just released &lt;a href=&#34;https://element.flood.io/docs/1.0/install&#34;&gt;version 1.2.3 of Element&lt;/a&gt; a few weeks ago, which addresses some bugs and improve stability for certain actions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dedicated Element team
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;ve put together a team of developers who will be focusing on improving Element exclusively. Despite Element being an open source tool, we&amp;rsquo;re putting our own resources behind it to improve it faster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Partnering with consulting services
+&lt;ul&gt;
+&lt;li&gt;It can be difficult to get started on a new tool, and Element is no exception. While we provide a load testing platform to run Element scripts, some companies want help to create the scripts in the first place. To this end, we&amp;rsquo;ve partnered with expert consultants who have already been using Element with great success: &lt;a href=&#34;https://foulkconsulting.com/&#34;&gt;Foulk Consulting&lt;/a&gt; and &lt;a href=&#34;https://www.planittesting.com/&#34;&gt;Planit Testing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;When choosing a performance testing tool, it&amp;rsquo;s important to consider the advantages and disadvantages of protocol-level and browser-level testing tools. We think both types of tools deserve to be in a solid performance and load testing strategy. They can also be used in tandem in a hybrid load testing approach, improving overall application performance and scalability.&lt;/p&gt;
+&lt;p&gt;In 2018, we predicted that testing web-based applications with real browsers would increase in popularity, so we&amp;rsquo;re thrilled to see our theory validated in 2020. Browser-based load testing is increasing in usage, and our open source tool, Element, is leading the charge. It&amp;rsquo;s exciting to be at the forefront of this revolution, and we intend to increase support for load testing with real browsers even more this year.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,9 +124,94 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Fri, 23 Nov 2018 23:07:24 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20181123-tips-and-tricks-for-using-flood-element/</guid>
-      <description>Originally posted here.
-In case you missed it, there’s a new performance test tool on the block, and it’s called Flood Element. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.
-Using Browser Level Users is a newer approach to load testing that overcomes a lot of the common challenges we hear about traditional methods of testing:</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/tips-and-tricks-for-using-flood-element&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/tips-and-tricks-for-using-flood-element&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In case you missed it, there’s a new performance test tool on the block, and it’s called &lt;a href=&#34;https://element.flood.io/&#34;&gt;Flood Element&lt;/a&gt;. It’s a scalable browser-based tool that allows you to write scripts in javascript that interact with web pages like a real user.&lt;/p&gt;
+&lt;p&gt;Using Browser Level Users is a &lt;a href=&#34;https://flood.io/blog/why-you-should-load-test-with-browsers/&#34;&gt;newer approach to load testing&lt;/a&gt; that overcomes a lot of the common challenges we hear about traditional methods of testing:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Easier scripting that is akin to common functional tools like Selenium and easier to learn&lt;/li&gt;
+&lt;li&gt;More realistic results that are based on true browser performance rather than API responses&lt;/li&gt;
+&lt;li&gt;Ability to test against all components of your web app, including things like Javascript that is rendered via the browser&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Given the above benefits, it’s a no brainer to check out Flood Element for your web load testing, especially if you have struggled with the existing tools on the market like JMeter or HP LoadRunner.&lt;/p&gt;
+&lt;p&gt;Pairing Element with &lt;a href=&#34;https://flood.io/&#34;&gt;Flood&lt;/a&gt; turns it into a pretty powerful load test tool. We have a &lt;a href=&#34;https://help.flood.io/getting-started-with-load-testing/step-by-step-guide-flood-element&#34;&gt;great guide here&lt;/a&gt; that you can follow if you’d like to get started with it. As you can imagine, I’ve been using and testing Element for several months now and I thought I’d share some tips I’ve learned along the way.&lt;/p&gt;
+&lt;h2 id=&#34;initialising-your-script&#34;&gt;Initialising your script&lt;/h2&gt;
+&lt;p&gt;You can always start from scratch, but the quickest way to get started is to type&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element init myfirstelementtest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;from your terminal, filling in the project name you’d prefer.&lt;/p&gt;
+&lt;p&gt;You’ll then be asked to type in the title of your test as well as the URL you’d like to script against. After a minute, you’ll see that a new directory has been created:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-01.png&#34; alt=&#34;New directory in Flood Element&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Element will automatically create a file called &lt;code&gt;test.ts&lt;/code&gt;. This file will contain the skeleton of a script, along with some sample code to help you find a button and then click on it. But before you open it, let’s move on to…&lt;/p&gt;
+&lt;h2 id=&#34;choosing-the-right-text-editor&#34;&gt;Choosing the right text editor&lt;/h2&gt;
+&lt;p&gt;Scripting in Element is already pretty simple, but I’ve found two things that really help while scripting are syntax highlighting and code completion. Syntax highlighting will greatly improve your experience when first learning a new test tool like Element, and code completion will make your scripting lightning fast as you become more experienced in the process.  My text editor of choice is &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Studio Code&lt;/a&gt;, which has both of those features. It’s slick and clean, and it does the job.&lt;/p&gt;
+&lt;p&gt;Syntax highlighting is when the text editor intelligently changes the font colour of your code according to its role in the programming language you’re using. Here’s a screenshot of the test.ts file we generated earlier in VS Code to show you what I mean:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-02.png&#34; alt=&#34;Generated sample Flood Element script&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This makes it easier to make sense of the code at a glance: comments are in green, values and labels are in orange, etc.&lt;/p&gt;
+&lt;p&gt;Code completion is when you start to type something, and VS Code helpfully opens a context menu with suggestions for methods you can use.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-03.gif&#34; alt=&#34;Auto-completion in VSCode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I love this because it means I don’t have to remember the exact name of the method. It also suggests names of variables you’ve already defined and highlights code that doesn’t make sense.  This will help to make your tests more maintainable and readable for others, which is a great benefit as you look to scale your testing out in the future.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-04.gif&#34; alt=&#34;Suggestions in VSCode&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;taking-screenshots&#34;&gt;Taking screenshots&lt;/h2&gt;
+&lt;p&gt;One of the most powerful features of Element is its ability to take screenshots. I find it immensely useful when debugging because sometimes it’s just easier to see what’s going on visually.  With protocol based tools, debugging can often be a much more involved and technical process.&lt;/p&gt;
+&lt;p&gt;There are two ways to take screenshots in Element:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a setting to automatically take a screenshot when an error is encountered. You can do this by setting screenshotOnFailure to true in TestSettings:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;span style=&#34;color:#a6e22e&#34;&gt;device&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Device&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;iPadLandscape&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;userAgent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;flood-chrome-test&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;clearCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;disableCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;screenshotOnFailure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Explicitly take a screenshot at a particular point in the script. You can do this by adding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to your code.&lt;/p&gt;
+&lt;h2 id=&#34;viewing-screenshots&#34;&gt;Viewing Screenshots&lt;/h2&gt;
+&lt;p&gt;Once you’ve taken screenshots within your tests, you will likely want to view them and know that they will be stored for future safekeeping.  Whether you are running your test locally on have uploaded it to Flood to run with increased concurrency, Flood Element has you covered.&lt;/p&gt;
+&lt;h3 id=&#34;locally-run-tests&#34;&gt;Locally Run Tests&lt;/h3&gt;
+&lt;p&gt;Screenshots will be saved as jpg files in a timestamped folder corresponding to your run. It should look something like: &lt;code&gt;...myfirstelementtest/tmp/element-results/test/2018-11-20T135700.595Z/flood/screenshots/&lt;/code&gt; and the screenshots will be uniquely named so that new screenshots, even for the same step, don’t overwrite older ones.&lt;/p&gt;
+&lt;p&gt;However, I rarely have to look up the screenshots in that folder because I prefer to see them in iTerm2 for macOS. iTerm is an alternative to the terminal that works particularly well with Element. When you take a screenshot, iTerm actually shows it in-line:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-05.png&#34; alt=&#34;Screenshots shown inline with iTerm&#34;&gt;
+‍&lt;/p&gt;
+&lt;h3 id=&#34;tests-run-in-flood&#34;&gt;Tests Run in Flood&lt;/h3&gt;
+&lt;p&gt;Running an Element script on Flood is ideal when you need larger concurrency. Rather than accessing your screenshot locally, Flood will centralize the images into your account so the images remain even after the cloud load injectors are destroyed.  You can get to the screenshot files by downloading Archived Results:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-06.png&#34; alt=&#34;Archived Results in Flood&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Or you can also choose to click on a step on the dashboard to see a film strip of your test:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-07.png&#34; alt=&#34;Seeing screenshots during a test with Flood&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-logs&#34;&gt;Using Logs&lt;/h2&gt;
+&lt;p&gt;You may need to check out the logs for more technical debugging, especially when the screenshots don’t tell the whole story.  Whether you are running your test locally on have uploaded it to Flood to run with increased concurrency, Flood Element has you covered.&lt;/p&gt;
+&lt;h3 id=&#34;locally-run-tests-1&#34;&gt;Locally Run Tests&lt;/h3&gt;
+&lt;p&gt;You can print to the console by typing, for example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;console.log(&#39;orderValues = &#39; + orderValues)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will print the value of the variable orderValues at that point in the script. You would see this in your terminal if you’re running Element locally.&lt;/p&gt;
+&lt;h3 id=&#34;tests-run-in-flood-1&#34;&gt;Tests Run in Flood&lt;/h3&gt;
+&lt;p&gt;If you’re running the script on Flood, you can either download the log (in the same Archived Results zipped file as mentioned earlier) or you can click on the Logs tab:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181123-08.png&#34; alt=&#34;Test logs on Flood&#34;&gt;
+‍&lt;/p&gt;
+&lt;h2 id=&#34;fun-with-flags&#34;&gt;Fun with Flags&lt;/h2&gt;
+&lt;p&gt;Element comes with a few flags that give you more control over how the script is run locally. Here are a few of my favourites!&lt;/p&gt;
+&lt;h3 id=&#34;headless-flag&#34;&gt;Headless Flag&lt;/h3&gt;
+&lt;p&gt;When in doubt, run Element in non-headless mode to see the script actually opening the web app on Chrome and interacting with the page. This is only possible locally, but there’s nothing like actually seeing for yourself what’s happening in real time instead of relying on screenshots and logs after the fact. To enable this mode, add the flag when running your test:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element run myfirstelementtest.ts --no-headless&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;watch-flag&#34;&gt;Watch Flag&lt;/h3&gt;
+&lt;p&gt;Element will automatically close the browser window when it encounters an error or finishes the iteration. Adding &lt;code&gt;--watch&lt;/code&gt; will leave the browser window open and then will monitor the script. As soon as the script is saved, it will automatically run it in the same window from the beginning.  Simply add this flag like the above example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element run myfirstelement.ts --watch&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dev-tools-flag&#34;&gt;Dev Tools Flag&lt;/h3&gt;
+&lt;p&gt;This opens a browser instance and runs the script with the Chrome Dev Tools open, allowing you to find locators for the next action you want to script.  Simply add this flag like the first example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--dev-tools&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;more-flags&#34;&gt;More Flags&lt;/h3&gt;
+&lt;p&gt;For more flags, use:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element run --help&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;try-element&#34;&gt;Try Element&lt;/h2&gt;
+&lt;p&gt;You’ve just gotten a crash course on Flood Element. You’re all set! If you haven’t already, download Element &lt;a href=&#34;https://element.flood.io/&#34;&gt;here&lt;/a&gt; to start writing functional test scripts and reusing them as load test scripts on Flood. If you don’t have a Flood account, you can easily sign up for a free trial here.&lt;/p&gt;
+&lt;p&gt;We’re extremely proud to have been able to contribute to the open-source community and can’t wait to have you try this new addition to the Flood line!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -37,8 +220,84 @@ Using Browser Level Users is a newer approach to load testing that overcomes a l
       <pubDate>Thu, 08 Nov 2018 23:24:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/</guid>
-      <description>Originally posted here.
-One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&amp;ndash; in fact, one of our favourite clients here at Flood recently used Gatling to simulate 6 million concurrent users streaming video from their application.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/prepare-for-viral-videos-with-flood-element&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/prepare-for-viral-videos-with-flood-element&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&amp;ndash; in fact, one of our favourite clients here at Flood recently &lt;a href=&#34;https://blog.hotstar.com/millons-scale-simulations-1602befe1ce5&#34;&gt;used Gatling to simulate 6 million concurrent users&lt;/a&gt; streaming video from their application. However, for some use cases, testing at the protocol level can’t simulate everything that happens in a real world use case.&lt;/p&gt;
+&lt;h2 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h2&gt;
+&lt;p&gt;If you’re a video creator, the ultimate goal is often a simple goal: creating a viral video. Unfortunately, preparing for and simulating this all-important use case is typically impossible with protocol based tools. The same feature that makes them so efficient &amp;ndash; not using a browser to send the requests &amp;ndash; is the same thing that prevents them from being used to simulate the needed browser level events. You see, things like view counts on a video are normally tracked by scripts running on the page. Traditional tools download these scripts along with other page resources, but the scripts themselves are not executed. Enter Flood Element.&lt;/p&gt;
+&lt;h2 id=&#34;a-solution-flood-element&#34;&gt;A Solution: Flood Element&lt;/h2&gt;
+&lt;p&gt;Flood Element represents a new way of looking at load testing. It is a browser-based tool, which means that it actually drives an instance of the browser to test an application. Rather than telling it what requests to send to simulate a user like you would do with a protocol-based tool, you tell Element which buttons to click or which elements on a page to interact with just as a real user would. Essentially Element IS a user, using your application the way it was meant to be used. This means that it also executes any scripts that would run on the browser side. It’s so realistic that you could even use Element to make your YouTube video viral* by scripting up users to view your content… hypothetically speaking.&lt;/p&gt;
+&lt;h2 id=&#34;simulating-real-user-views&#34;&gt;Simulating Real User Views&lt;/h2&gt;
+&lt;p&gt;Testing video with Flood Element is actually pretty easy, especially if you are familiar with open source testing tools like Selenium. If you haven’t yet begun using Element, go through the installation guide &lt;a href=&#34;https://element.flood.io/&#34;&gt;here&lt;/a&gt;. You can download the full script used for this tutorial &lt;a href=&#34;https://github.com/flood-io/element/blob/master/examples/youtube.ts&#34;&gt;here&lt;/a&gt;. In this example, we’re going to be using a YouTube video of the opening credits the classical cartoon Top Cat (the indisputable leader of the gang) from Warner Bros.&lt;/p&gt;
+&lt;h3 id=&#34;step-1-navigate-to-the-video-page&#34;&gt;Step 1. Navigate to the video page&lt;/h3&gt;
+&lt;p&gt;Let’s start with a basic script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;@flood/element&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;loopCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;clearCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;disableCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;actionDelay&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;stepDelay&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;screenshotOnFailure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;userAgent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;flood-element-test&amp;#39;&lt;/span&gt;,
+}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; () =&amp;gt; {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;01_Home&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;visit&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://www.youtube.com/watch?v=6fvhLlrBrPQI&amp;#39;&lt;/span&gt;)
+		
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+	})
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is the bones of a basic script in Flood Element. It consists of a single step that involves doing two things: visiting the starting URL, which in this case is the direct link to the YouTube video, and then taking a screenshot once loading the page. Taking screenshots is particularly useful when testing video because screenshots give you a way to check that your script is doing what you want it to do. It’s good to take periodic screenshots as well, to measure progress.&lt;/p&gt;
+&lt;p&gt;To help you validate that the script runs well locally before scaling to hundreds or thousands of users, you can use our Element CLI. If you save the above code as youtube.ts, open up your terminal in that directory and then type:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element run youtube.ts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Assuming you’ve got Element set up correctly, you should see something like this: (Note that screenshots are only available when using iTerm as your shell. They are also saved as files under &lt;code&gt;.../tmp/element-results/youtube&lt;/code&gt; .)
+‍
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181108-01.png&#34; alt=&#34;Screenshots shown while running Element in iTerm&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Oops! It looks like our script does navigate to the page, but it doesn’t play the video. We’ll need to click on that play button. Let’s add that to our script.&lt;/p&gt;
+&lt;h3 id=&#34;step-2-click-the-play-button&#34;&gt;Step 2. Click the Play button&lt;/h3&gt;
+&lt;p&gt;We’ll need to add some lines to click the play button after visiting the page but before we take the screenshot, so that we can verify later whether or not the play button was clicked.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;02_ClickPlay&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+	&lt;span style=&#34;color:#75715e&#34;&gt;//Click on Play button
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;playBtn&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findElement&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;xpath&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;//button[@aria-label=&amp;#34;Play&amp;#34;]&amp;#39;&lt;/span&gt;))
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;playBtn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;()
+	
+&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+	})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example I used Xpath, but you do have the option to select based on partial text, CSS selector, etc. A tool I like to use to get these is Chrome Developer Tools’ Elements tab, which allows you to get the selectors for a particular element.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-take-periodic-screenshots&#34;&gt;Step 3. Take periodic screenshots&lt;/h3&gt;
+&lt;p&gt;To make sure that the video is really playing, we’ll need to take a screenshot a few seconds after the initial screenshot in order to visually confirm that the video has progressed. Even better, we can get Element to take screenshots at regular intervals. So let’s add a third step:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;03_Play&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+        &lt;span style=&#34;color:#75715e&#34;&gt;//Take a screenshot every 5 seconds until video finishes
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‍&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;wait&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+        }
+    })
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To use &lt;code&gt;i&lt;/code&gt;, we&amp;rsquo;ll also need to declare it earlier in the script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;@flood/element&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‍&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this step, &lt;code&gt;i&lt;/code&gt; will correspond to every 5 seconds of playtime for the video, so we&amp;rsquo;ll need to make sure that the limit of &lt;code&gt;i&lt;/code&gt; that we set is sufficient time for the entire video to play. Every 5 seconds, Element will take a screenshot, which will help us verify that the video is progressing after the test.&lt;/p&gt;
+&lt;p&gt;Click &lt;a href=&#34;https://github.com/flood-io/element/blob/master/examples/youtube.ts&#34;&gt;here&lt;/a&gt; to download the script before moving on to the next step, unless you’ve been following along at home.&lt;/p&gt;
+&lt;h3 id=&#34;step-4-run-it-on-flood&#34;&gt;Step 4. Run it on Flood!&lt;/h3&gt;
+&lt;p&gt;The final step is to upload it to Flood and run the test. Click &lt;a href=&#34;https://guides.flood.io/scripting-and-tools/flood-element/getting-started-with-element&#34;&gt;here&lt;/a&gt; to see a step-by-step guide for how to do just that. You can choose how many users you’d like to run on Flood and across how many nodes. New users will be given 5 node hours which will allow them to run a test with up to 250 users for 1 hour.  Each node will have a different IP address, so plan for that accordingly if your application takes that into account.&lt;/p&gt;
+&lt;p&gt;One of the things I love about running it this way is that if you click on the arrow to the right of the sole transaction, you can see screenshots taken along the way to prove that the video is being played:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20181108-02.jpg&#34; alt=&#34;Screenshots during test execution in Flood&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;some-considerations-for-load-testing-video-with-flood-element&#34;&gt;Some Considerations for Load Testing Video with Flood Element&lt;/h2&gt;
+&lt;h3 id=&#34;taking-screenshots-and-using-logs-are-necessary-for-debugging&#34;&gt;Taking screenshots and using logs are necessary for debugging.&lt;/h3&gt;
+&lt;p&gt;Because the page elements while a video is streaming are static, we’re not going to be able to use those as clues as to where we are in our scenario. To compensate, it’s a good idea to take screenshots and use console.log() to determine progress, especially while debugging. Be careful not to go overboard on these when actually running the load test though, as they will consume system resources.&lt;/p&gt;
+&lt;h3 id=&#34;videos-may-behave-differently-in-headless-mode&#34;&gt;Videos may behave differently in headless mode.&lt;/h3&gt;
+&lt;p&gt;While writing this tutorial, I realised that YouTube auto-plays videos when on non-headless mode (aka, when opening a video link manually on a browser or with the &lt;code&gt;--no-headless&lt;/code&gt; flag in Element). When it’s executed in headless mode via Flood Element, it requires a click on the play button to begin. Again, use screenshots to aid you in spotting these differences.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Element’s browser-level scripting capabilities allow it to simulate users that interact with pages just like human users would. Element and Flood are a powerhouse combo, providing the flexibility to test with thousands of users across the world within a few minutes.&lt;/p&gt;
+&lt;p&gt;Element seeks to reduce the gap between a scripted user and a real user &amp;ndash; and it’s so realistic that it’s hard to tell the difference.  We encourage you to take advantage of our free trial offer and run some real world load tests today!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;*We don’t advise or condone the use of Element to artificially inflate views on YouTube in any way which may violate its &lt;a href=&#34;https://www.youtube.com/static?template=terms&#34;&gt;Terms of Service&lt;/a&gt;. The purpose of this article is to showcase Element and how realistically it recreates real users.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

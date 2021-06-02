@@ -14,7 +14,13 @@
       <pubDate>Fri, 28 May 2021 23:24:48 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210528-koh-odysseas/</guid>
-      <description>This week, we had Odysseas Lamtzidis on the show to talk about Netdata, which is an application performance monitoring tool that prides itself on having the easiest setup ever. Odysseas admitted that it might not have all the bells and whistles of other monitoring platforms, it Just Works. I see this as being very interesting especially for testers like me, who just want to have something set up but might not want to be bothered by the implementation.</description>
+      <description>&lt;p&gt;This week, we had &lt;a href=&#34;https://twitter.com/odysseas_lam&#34;&gt;Odysseas Lamtzidis&lt;/a&gt; on the show to talk about &lt;a href=&#34;https://netdata.cloud&#34;&gt;Netdata&lt;/a&gt;, which is an application performance monitoring tool that prides itself on having the easiest setup ever. Odysseas admitted that it might not have all the bells and whistles of other monitoring platforms, it Just Works. I see this as being very interesting especially for testers like me, who just want to have something set up but might not want to be bothered by the implementation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Y2dVJssTemI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -23,9 +29,148 @@
       <pubDate>Mon, 24 May 2021 10:48:55 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210524-end-to-end-guide-for-load-testing/</guid>
-      <description>Originally published on the Abstracta blog.
-If you have a public-facing web application, the odds are you should probably be thinking about load testing. Any tester can (and should) add load testing to their repertoire.
-Functional tests are often carried out with a single user&amp;rsquo;s experience of your application in mind, but what happens when hundreds or thousands of users are on your site at the same time? Load testing helps prepare an application for this eventuality by simulating that situation before the application goes live.</description>
+      <description>&lt;p&gt;&lt;em&gt;Originally published on the &lt;a href=&#34;https://abstracta.us/blog/performance-testing/load-testing-guide/&#34;&gt;Abstracta blog&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://abstracta.us/blog/performance-testing/load-testing-guide/&#34;&gt;
+
+&lt;p&gt;If you have a public-facing web application, the odds are you should probably be thinking about load testing.  Any tester can (and should) add load testing to their repertoire.&lt;/p&gt;
+&lt;p&gt;Functional tests are often carried out with a single user&amp;rsquo;s experience of your application in mind, but what happens when hundreds or thousands of users are on your site at the same time? Load testing helps prepare an application for this eventuality by simulating that situation before the application goes live. That way, you have time to fix any issues you find, and there are no nasty surprises in production.&lt;/p&gt;
+&lt;p&gt;In this guide, I&amp;rsquo;m going to walk you through the basics of the load testing process, which fits in closely with traditional functional testing phases as well:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Planning: &lt;em&gt;Why are we testing? What are we testing?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Writing test scripts: &lt;em&gt;How are we testing?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Execution: &lt;em&gt;Running test scripts against the application.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Analysis and reporting: &lt;em&gt;What happened, and what do we need to fix?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;planning-for-load-testing&#34;&gt;Planning for load testing&lt;/h2&gt;
+&lt;p&gt;During the planning phase, the team gets together and determines what load testing will involve, including the objectives, scope, resources needed, and test scenarios. The deliverable for this phase is a test plan, but that can be as formal or informal as the team requires.&lt;/p&gt;
+&lt;p&gt;Planning for any testing is a team activity, and you&amp;rsquo;ll want to get input from all the stakeholders &amp;ndash; that&amp;rsquo;s anyone who is involved in or might be affected by the testing. The first thing you need to clarify is the reason for load testing.&lt;/p&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Why are we doing load testing?&lt;/em&gt; seems like a very simple question, but you may be surprised by the varying answers from your stakeholders. Their reasons may require different test scenarios, so it&amp;rsquo;s a good idea to agree on the collective objectives of this load testing cycle so that expectations are set accordingly. A requirement is a concise statement of how an application should behave in a given situation.&lt;/p&gt;
+&lt;p&gt;Phrasing objectives as nonfunctional requirements (NFRs) is a good way to formalize them. An NFR defines the desired state of the application and can includes performance thresholds that the team decides on. For example: &lt;em&gt;Logging in as a registered user must take no more than 3 seconds (90th percentile response time)&lt;/em&gt; is a requirement based on response time. Good requirements are SMART (Specific, Measurable, Agreed Upon, Realistic, and Timely).&lt;/p&gt;
+&lt;p&gt;Here are some other things that should be decided on during this phase:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scope&lt;/strong&gt;. &lt;em&gt;What are we testing?&lt;/em&gt; Deciding on a shared objective for load testing lets you narrow down what areas of the application need to be targeted. Make sure everyone is clear on what &lt;em&gt;won&amp;rsquo;t&lt;/em&gt; be tested.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg&#34; alt=&#34;Post-its on a board for planning&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Photo by &lt;a href=&#34;https://unsplash.com/@epicantus?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Daria Nepriakhina&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/post-it?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entry Criteria&lt;/strong&gt;. What do you need to begin? This is the time to start thinking about resources that are required for testing, including the number of people who need to be involved, the time it takes to carry out the testing, and environment requirements (including test data). You don&amp;rsquo;t always need a separate testing environment to do load testing, but if you do, that should be discussed up front so that the DevOps team knows you can&amp;rsquo;t begin without an environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Workload Modeling&lt;/strong&gt;. A workload model is a set of characteristics that describe the load you&amp;rsquo;re attempting to simulate. If you want your load testing to simulate registered users accessing your site, what does that entail? This might require you to look through your site analytics to determine which pages are visited most often and which application features are most commonly used, or arrive at an estimate if analytics are not available. Are most users visiting from their laptops at lunch on work days, or do they use your site from mobile devices after work? Are most of them located in the US or in Europe? You&amp;rsquo;ll want your scripts to match real load as much as possible, so take note of key characteristics that might have an effect on the traffic your application experiences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Server monitoring&lt;/strong&gt;. Which application components will be involved? You want to have a plan in place to have monitoring, alerts, and logs set up on every server that will be tested by your scripts. If your load testing tool shows performance degradation, you want to be able to have information to look through on the relevant servers to troubleshoot that issue. Keep in mind that any sort of monitoring adds some resource overhead, so decide as a team what information you absolutely need to track.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Test Scenarios&lt;/strong&gt;. Which situations do you want to recreate? A test scenario objectively describes the situation to be simulated. Do you want to recreate the load profile of a typical day, or one from a very high-traffic period, such as during a sale? Do you want to recreate a production outage? You can use analytics data to come up with parameters for your each test scenario such as duration, number of concurrent users or requests, ramp up period (how quickly the application went from 0 users to your highest number of users), or how &amp;ldquo;spiky&amp;rdquo; the load needs to be (how the number of requests per second fluctuates throughout the test).&lt;/p&gt;
+&lt;p&gt;Everything discussed in this phase should be written in some sort of a load testing plan, which could be a formal, multi-page document, an epic with many user stories, or a bunch of Trello cards. Use the tools your team already uses. The format isn&amp;rsquo;t important; formalizing the outcome of the discussions is what counts. The test plan makes sure everyone has the same intent with regard to the testing.&lt;/p&gt;
+&lt;h2 id=&#34;writing-load-testing-scripts&#34;&gt;Writing load testing scripts&lt;/h2&gt;
+&lt;p&gt;Now it&amp;rsquo;s time to start writing scripts! You&amp;rsquo;ve already front-loaded a lot of the important decisions to the planning phase, so all that&amp;rsquo;s left to do in this step is to implement the plan in the form of load testing scripts.&lt;/p&gt;
+&lt;h3 id=&#34;tool-selection&#34;&gt;Tool selection&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/tools_on_market.png&#34; alt=&#34;Different load testing tools on the market&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are many load testing tools available on the market, and the reality is that you don&amp;rsquo;t always get to be the one to choose what you use. Often, companies have already made agreements with tool vendors for licenses before you begin your load testing, and it would be financially infeasible to switch to another tool. However, if you&amp;rsquo;re lucky enough that you can choose the load testing tool, here are a few considerations for assessing different tools:&lt;/p&gt;
+&lt;h4 id=&#34;resources-and-costs&#34;&gt;Resources and costs&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How much does it cost? Does the pricing model allow for scaling usage up and down as necessary?&lt;/li&gt;
+&lt;li&gt;Should you &lt;a href=&#34;https://k6.io/what-to-consider-when-building-or-buying-a-load-testing-solution/&#34;&gt;build or buy&lt;/a&gt; an end-to-end load testing solution?&lt;/li&gt;
+&lt;li&gt;What technical skills or experience with tools does your team have? Who will be doing the testing?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;features&#34;&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Does the load testing tool support the protocols and technologies used by the application?&lt;/li&gt;
+&lt;li&gt;How easy would it be for the team to learn this tool and/or scripting language?&lt;/li&gt;
+&lt;li&gt;Does the tool make it easy for multiple people to collaborate on the same script?&lt;/li&gt;
+&lt;li&gt;Does it integrate with other tools in the testing stack (for test management, test result analysis, server monitoring, team communication)?&lt;/li&gt;
+&lt;li&gt;Could you add this tool to your CI/CD pipeline?&lt;/li&gt;
+&lt;li&gt;Does the tool have an easy way of setting thresholds or SLOs for performance?&lt;/li&gt;
+&lt;li&gt;Are the test results displayed in usable reports, or does the tool integrate with existing data visualization tools you are using?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;support&#34;&gt;Support&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;If something goes wrong, does customer support cost extra?&lt;/li&gt;
+&lt;li&gt;Is there ample documentation available online for getting started without help?&lt;/li&gt;
+&lt;li&gt;Is there a community of users of the tool whose experiences you could learn from?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;scaling-up-load-testing&#34;&gt;Scaling up load testing&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How many virtual users or requests per second can a single load generator simulate using the tool?&lt;/li&gt;
+&lt;li&gt;How many load generators would you need if you used this tool?&lt;/li&gt;
+&lt;li&gt;Can the tool handle the amount of test data required by your tests?&lt;/li&gt;
+&lt;li&gt;Can you execute tests from different geographical locations, depending on your the location of your users?&lt;/li&gt;
+&lt;li&gt;Does the tool allow you to generate load from the cloud?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These questions are not exhaustive, but you can use them as a starting point for your comparisons of load testing tools.&lt;/p&gt;
+&lt;p&gt;For this guide, I&amp;rsquo;m going to outline a basic script in &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt; for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It&amp;rsquo;s open-source, so anyone reading this can download the tool and the script and try it out for themselves;&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s written in JavaScript, which makes it easy to learn for front-end developers or testers who have used tools like Cypress, Puppeteer, or Playwright.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s capable of generating &lt;a href=&#34;https://k6.io/docs/testing-guides/running-large-tests/&#34;&gt;tens of thousands of users&lt;/a&gt; on a single machine, so it&amp;rsquo;s cost-effective even with load ramped up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, the principles I discuss will be applicable to other tools. I highly recommend you conduct your own proof of concepts with several tools to come up with a tool that fits your particular situation, test scenarios, and company.&lt;/p&gt;
+&lt;h3 id=&#34;installation-and-setup&#34;&gt;Installation and setup&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re on a Mac, the easiest way to install k6 is to use Brew. Run &lt;code&gt;brew install k6&lt;/code&gt; from your terminal, and you&amp;rsquo;ll be ready to go in a few seconds.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on a different operating system, &lt;a href=&#34;https://k6.io/docs/getting-started/installation/&#34;&gt;check here for installation instructions&lt;/a&gt; that apply to you.&lt;/p&gt;
+&lt;h3 id=&#34;a-basic-k6-test-script&#34;&gt;A basic k6 test script&lt;/h3&gt;
+&lt;p&gt;A barebones k6 test script looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://test.k6.io&amp;#39;&lt;/span&gt;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This script sends an HTTP GET request for the URL &lt;code&gt;https://test.k6.io&lt;/code&gt;, which is a simple test site. If you copy that code to your favorite text editor and save it as &lt;code&gt;test.js&lt;/code&gt;, you can then run it with the command &lt;code&gt;k6 run test.js&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll get something like this in response:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/k6-supersimple-run.png&#34; alt=&#34;A sample run of a simple local test in k6&#34;&gt;
+&lt;em&gt;A sample run of a simple local test in k6&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The output above means that you&amp;rsquo;ve executed 1 iteration of your script with 1 virtual user from your local machine. The test run consisted of 1 HTTP request, which had a response time of 128.2 ms (&lt;code&gt;http_req_duration&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;It might be tempting to start scaling up the test at this point, increasing the number of virtual users and the duration of the script. But there&amp;rsquo;s one problem with the script as it is: it&amp;rsquo;s not realistic.&lt;/p&gt;
+&lt;h3 id=&#34;making-a-test-script-realistic&#34;&gt;Making a test script realistic&lt;/h3&gt;
+&lt;p&gt;The purpose of a load testing script is to simulate a real user who accesses your site. In most cases, that involves more than the simple GET request from the script above. Load testing scripts don&amp;rsquo;t have to mimic a real user &lt;em&gt;exactly&lt;/em&gt;, but they do have to be close enough so as to apply the same amount, shape, and distribution of the load on your application server. If your load testing scripts aren&amp;rsquo;t realistic enough, you may get false positives during testing and discover too late that there is a performance issue in an application component that your scripts didn&amp;rsquo;t test.&lt;/p&gt;
+&lt;p&gt;Here are some ways to make your scripts more realistic:&lt;/p&gt;
+&lt;h4 id=&#34;add-static-resources&#34;&gt;Add static resources&lt;/h4&gt;
+&lt;p&gt;If a page has static resources like images and scripts that are retrieved by a browser automatically, make sure your script retrieves those too, as they will have an impact on the response times you get. Consider excluding static resources fetched from third-party providers unless you&amp;rsquo;ve gotten their permission to run a load test on their servers.&lt;/p&gt;
+&lt;h4 id=&#34;set-cache-and-cookie-behavior&#34;&gt;Set cache and cookie behavior&lt;/h4&gt;
+&lt;p&gt;Review your load testing tool&amp;rsquo;s default cache and cookie management settings and change them, if necessary, to match the scenario you want to test. First-time visitors to a site won&amp;rsquo;t have resources cached locally, but repeat visitors may be retrieving resources from the cache.&lt;/p&gt;
+&lt;h4 id=&#34;add-think-time&#34;&gt;Add think time&lt;/h4&gt;
+&lt;p&gt;Real users don&amp;rsquo;t usually fetch the same URL over and over again without stopping. They navigate to your site, then spend some time reading the contents of the homepage before they interact with the page again. Think time is the amount of time that a user spends “thinking”— that is, the delay between requests. Adding a think time that varies between 1 and 5 seconds, for example, prevents the application server from getting artificially bombarded by requests in a way that wouldn&amp;rsquo;t occur in production.&lt;/p&gt;
+&lt;h4 id=&#34;using-different-user-paths&#34;&gt;Using different user paths&lt;/h4&gt;
+&lt;p&gt;A user path is the flow of how a user interacts with the application. What pages do they visit? What information do they type in? So far, you&amp;rsquo;re only testing one request, but perhaps your users may be performing other actions. The workload model that you put together in the Planning phase will come into play here. Other actions like logging in or paying for items in a cart exercise different parts of an application than browsing does, so the load testing script should reflect the most common user flows through your system. In k6, this is done by adding scenarios, but other tools may call them thread groups or execution groups.&lt;/p&gt;
+&lt;h4 id=&#34;adding-test-data&#34;&gt;Adding test data&lt;/h4&gt;
+&lt;p&gt;In the same way that users don&amp;rsquo;t (typically) search for the same keyword over and over again and don&amp;rsquo;t all log into the same test account, a script shouldn&amp;rsquo;t use the same data repeatedly. This behavior could cause responses to be cached, leading to misleadingly quick response times, or increased error rates, in the case of multiple virtual users attempting to log into the same account. To prevent that, modify your script to take data from a CSV file instead, letting you add some natural variation.&lt;/p&gt;
+&lt;h4 id=&#34;setting-test-parameters&#34;&gt;Setting test parameters&lt;/h4&gt;
+&lt;p&gt;Test parameters are the main characteristics of the test and include the number of users, ramp up, duration, and ramp down. They control the shape of the user load, which you can see when you plot the number of virtual users over time during the test:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/k6-vusonly.png&#34; alt=&#34;The number of virtual users over time during a load test, as graphed in k6&#34;&gt;
+&lt;em&gt;The number of virtual users over time during a load test, as graphed in k6&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Ramp up is a period of time during which virtual users are gradually added, usually at the start of the test, and ramp down is when they are gradually stopped. For most applications, ramps are more realistic than all users clicking a link at exactly the same time.&lt;/p&gt;
+&lt;h4 id=&#34;setting-failure-criteria&#34;&gt;Setting failure criteria&lt;/h4&gt;
+&lt;p&gt;Part of simulating real users is determining what constitutes failures in user experience. You can incorporate failure criteria into scripts by adding response verifications, checks, and thresholds (such as those for response time or error rate). Building these into the script is a good practice to get into, because it defines the limits of acceptable performance from the beginning.&lt;/p&gt;
+&lt;p&gt;The suggestions in this section are for general use, but there are many situations where taking the opposite approach would be more realistic. Spend some time thinking about what is &amp;ldquo;realistic&amp;rdquo; for your application and test scenario.&lt;/p&gt;
+&lt;p&gt;For your reference, &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/fb74cd9769c8abf95eeb8765a49398cb&#34;&gt;here&amp;rsquo;s a k6 script&lt;/a&gt; that started from the basic script I showed earlier, but has been modified to be more realistic. That link includes a CSV file with login credentials.&lt;/p&gt;
+&lt;h2 id=&#34;executing-load-tests&#34;&gt;Executing load tests&lt;/h2&gt;
+&lt;p&gt;In the course of writing the test script, you probably would have already executed small verification tests, called shakeout tests. It&amp;rsquo;s a good idea to start with these shakeout tests on a new environment to make sure that both your test artifacts (your script and any other data files) and the environment are ready for full testing.&lt;/p&gt;
+&lt;h3 id=&#34;running-the-test&#34;&gt;Running the test&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;ve been following along with the k6 script so far, all you need to do to run a load test is to execute the following command:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;k6 run test.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This command will run the k6 script according to the test parameters set within it. The test will be executed locally. This is best used for shakeout tests, or if you prefer to run your load test on your own infrastructure.&lt;/p&gt;
+&lt;h3 id=&#34;realism-in-test-execution&#34;&gt;Realism in test execution&lt;/h3&gt;
+&lt;p&gt;One way can make executing load tests realistic is by matching the location of load generators to the physical location of your users. When you run a load test on machines in your data center, in the same network as your application servers, you will likely see response times that are significantly faster than your users would see. These false positives can look good on the report, but they don&amp;rsquo;t help you measure real user experience.&lt;/p&gt;
+&lt;p&gt;Running on the cloud is an easy way to make tests more realistic, especially if most of your end users are external to your organization.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re following along with the k6 script, you can &lt;a href=&#34;https://app.k6.io/account/register&#34;&gt;sign up for an account&lt;/a&gt; with k6 Cloud (the first 50 tests are free). Since k6 itself is open source, you can also run it on your own cloud infrastructure, but using k6 Cloud is the most convenient way to get started.&lt;/p&gt;
+&lt;p&gt;Once you have an account, &lt;a href=&#34;https://app.k6.io/account/api-token&#34;&gt;copy your API token from here&lt;/a&gt;. Then, run this command in your terminal to give your local k6 installation permission to run on your account:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;k6 login cloud --token &amp;lt;YOUR_K6_CLOUD_API_TOKEN&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once you are successfully authenticated, you can continue to run tests locally using &lt;code&gt;k6 run&lt;/code&gt;, but you now have the option of running on the cloud as well:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;k6 cloud test.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;k6 will then begin to execute your load test, and you&amp;rsquo;ll see a screen like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/k6-cloud-run-output.png&#34; alt=&#34;Running a k6 test on the cloud&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code&gt;execution&lt;/code&gt; mode is now &lt;code&gt;cloud&lt;/code&gt;, to remind you where you&amp;rsquo;re running the test.&lt;/p&gt;
+&lt;p&gt;By default, your test will run on the k6 AWS account, in the Ashburn region. However, you can override this and specify other regions, including percentages of your virtual user to run on each, using &lt;a href=&#34;https://k6.io/docs/cloud/creating-and-running-a-test/cloud-tests-from-the-cli#cloud-execution-options&#34;&gt;cloud execution options&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;analyzing-load-testing-results-and-reporting&#34;&gt;Analyzing load testing results and reporting&lt;/h2&gt;
+&lt;p&gt;Although I&amp;rsquo;m listing analysis as a different step in the process from execution, the two often (and should) overlap. The output from k6 in the screenshot above contains a link to the dashboard on k6 Cloud, so that you can see the results of the test in real time, as the test is running. Monitoring the test in real time lets you immediately spot issues as they arise, and, if necessary, stop the test to fix them. If the test is being executed by multiple load generators, having a consolidated dashboard is helpful in giving you an overview of the entire test.&lt;/p&gt;
+&lt;p&gt;![An example of the results after a load test in k6 Cloud](/assets/Finished k6 run.png)
+&lt;em&gt;An example of the results after a load test in k6 Cloud&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is also a good time to monitor the health of the application servers and the load generator servers, which you set up monitoring tools for during the planning phase.&lt;/p&gt;
+&lt;p&gt;A load test is only useful when it&amp;rsquo;s providing information about the application. If errors occur in large quantities, or if the response time makes it clear that a certain component has failed to handle the load, don&amp;rsquo;t be afraid to stop the test. Your objective is to get the information you need to suggest performance improvements and solutions for any bottlenecks you find.&lt;/p&gt;
+&lt;p&gt;Often, you&amp;rsquo;ll run into issues you can&amp;rsquo;t solve or even identify during a test. That&amp;rsquo;s why it&amp;rsquo;s useful to explore the data that you have after a test. k6 lets you create shareable links to dashboards so that you can involve relevant engineering teams who may be able to help you understand what happened and why. &lt;a href=&#34;https://app.k6.io/runs/public/f6ad87cec7a24a8c82e46c816e67c4b3&#34;&gt;Here&amp;rsquo;s an example of what that dashboard looks like&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some projects require formal documentation of test execution by way of a Test Summary Report, but in more agile teams, it may be enough to share the test results dashboard and some supplementary information about what type of tests were run and what problems were encountered.&lt;/p&gt;
+&lt;p&gt;The most important part of load testing isn&amp;rsquo;t the execution itself; it&amp;rsquo;s what you do with the results. Communicating results clearly to stakeholders will make it more likely that performance issues are fixed.&lt;/p&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next&lt;/h2&gt;
+&lt;p&gt;The phases I&amp;rsquo;ve outlined here are a good guide for anyone starting with load testing, but I always recommend that you take what works for your situation and leave the rest. In reality, the phases overlap with each other considerably, especially in more modern engineering cycles.&lt;/p&gt;
+&lt;p&gt;Another activity I&amp;rsquo;ve not covered here, but one that I recommend, is adding load testing to your CI/CD pipeline. This continuous testing approach involves &lt;a href=&#34;https://k6.io/docs/testing-guides/automated-performance-testing/&#34;&gt;automating load testing&lt;/a&gt; so that it occurs in regularly, in parallel with other development and testing activities. Continuous testing is a great way to get more value out of load testing, and it ensures that performance is front-of-mind for everyone on the application team.&lt;/p&gt;
+&lt;p&gt;Happy testing!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -34,9 +179,14 @@ Functional tests are often carried out with a single user&amp;rsquo;s experience
       <pubDate>Fri, 14 May 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</guid>
-      <description>We were happy to welcome Nočnica Fee from New Relic to k6 Office Hours. She very bravely volunteered to learn how to use k6&amp;ndash; live! Talk about pressure. But she handled it like a champ!
-We also talked about why observability is both particularly important and particularly difficult in serverless architecture. There will definitely be a part two at some point!
-  </description>
+      <description>&lt;p&gt;We were happy to welcome &lt;a href=&#34;https://www.twitch.tv/serverlessmom&#34;&gt;Nočnica Fee&lt;/a&gt; from &lt;a href=&#34;https://www.twitch.tv/new_relic&#34;&gt;New Relic&lt;/a&gt; to k6 Office Hours. She very bravely volunteered to learn how to use k6&amp;ndash; live! Talk about pressure. But she handled it like a champ!&lt;/p&gt;
+&lt;p&gt;We also talked about why observability is both particularly important and particularly difficult in serverless architecture. There will definitely be a part two at some point!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6oMmRiXzvFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -45,8 +195,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Tue, 11 May 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210511-k6-analysis/</guid>
-      <description>Have you ever run a load test but been unable to decipher what it all means? In this video, I break it all down using k6 Cloud.
-  </description>
+      <description>&lt;p&gt;Have you ever run a load test but been unable to decipher what it all means? In this video, I break it all down using k6 Cloud.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Eia2l3bY5jU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -55,8 +210,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 07 May 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210507-koh-robin-mark/</guid>
-      <description>We managed to get two other folks from k6 to join our Office Hours: our CEO, Robin Gustafsson, and our Head of Customer Success, Mark Meier. We took advantage of the opportunity to discuss wishlist features for k6 and bug Robin about how likely each feature was to see the light of day!
-  </description>
+      <description>&lt;p&gt;We managed to get two other folks from k6 to join our Office Hours: our CEO, Robin Gustafsson, and our Head of Customer Success, Mark Meier. We took advantage of the opportunity to discuss wishlist features for k6 and bug Robin about how likely each feature was to see the light of day!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/d8WaMOmwI3Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -65,8 +225,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Tue, 04 May 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210504-k6-cloud-interface/</guid>
-      <description>I&amp;rsquo;ve gotten the feedback that people would like to see more videos of the basics of using k6 and k6 Cloud, so here&amp;rsquo;s a video on getting situated with the k6 Cloud interface and navigation.
-  </description>
+      <description>&lt;p&gt;I&amp;rsquo;ve gotten the feedback that people would like to see more videos of the basics of using k6 and k6 Cloud, so here&amp;rsquo;s a video on getting situated with the k6 Cloud interface and navigation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gwO7k5RTE54&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -75,8 +240,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 30 Apr 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</guid>
-      <description>Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with xk6-chaos and k6, and observability with New Relic.
-  </description>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with &lt;a href=&#34;https://github.com/simskij/xk6-chaos&#34;&gt;xk6-chaos&lt;/a&gt; and k6, and observability with &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -85,8 +255,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 23 Apr 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210423-koh-simonprior/</guid>
-      <description>Simon Prior from the Testing Peers podcast joined us on k6 Office Hours to talk to us about how he&amp;rsquo;s managed to foster a culture of quality at his job with EasyJet.
-  </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/siprior&#34;&gt;Simon Prior&lt;/a&gt; from the &lt;a href=&#34;https://testingpeers.com/&#34;&gt;Testing Peers podcast&lt;/a&gt; joined us on k6 Office Hours to talk to us about how he&amp;rsquo;s managed to foster a culture of quality at his job with EasyJet.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/w4pqfr5cu_4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -95,8 +270,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 16 Apr 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210416-koh-robin/</guid>
-      <description>This week, Simme and I convinced k6 CEO, Robin Gustafsson, to come onto k6 Office Hours to talk about the origins of k6 (spoiler: it began with a company called Gatorhole), things we&amp;rsquo;re working on right now, and what he sees as the future of the company.
-  </description>
+      <description>&lt;p&gt;This week, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I convinced k6 CEO, Robin Gustafsson, to come onto k6 Office Hours to talk about the origins of k6 (spoiler: it began with a company called Gatorhole), things we&amp;rsquo;re working on right now, and what he sees as the future of the company.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pX6AALeD5SA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -105,8 +285,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 09 Apr 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</guid>
-      <description>For this week&amp;rsquo;s k6 Office Hours, Simme and I had Sid Palas from DevOps Directive come on board to talk about what Kubernetes is, how it relates to Infrastructure as Code, and why either of those should matter to testers.
-  </description>
+      <description>&lt;p&gt;For this week&amp;rsquo;s k6 Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I had &lt;a href=&#34;https://twitter.com/sidpalas&#34;&gt;Sid Palas&lt;/a&gt; from &lt;a href=&#34;https://www.youtube.com/channel/UC4MdpjzjPuop_qWNAvR23JA&#34;&gt;DevOps Directive&lt;/a&gt; come on board to talk about what Kubernetes is, how it relates to Infrastructure as Code, and why either of those should matter to testers.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bYdDRZqRSHA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -115,8 +300,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 26 Mar 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210326-koh-circleci/</guid>
-      <description>Simme and I decided to take this week to answer questions on k6 Office Hours, and we ended up talking about CircleCI, environment variables, and how to use them with k6.
-  </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I decided to take this week to answer questions on k6 Office Hours, and we ended up talking about &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;, environment variables, and how to use them with k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3FyV1j3TRBk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -125,8 +315,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 19 Mar 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210319-koh-sr-perf/</guid>
-      <description>What&amp;rsquo;s the difference between performance testing vs. load testing? This week, Simme and I were joined by Señor Performo, aka Leandro Melendez, and Pepe Cano, the Head of Marketing at k6, to talk about this common question.
-  </description>
+      <description>&lt;p&gt;What&amp;rsquo;s the difference between performance testing vs. load testing? This week, Simme and I were joined by &lt;a href=&#34;https://www.srperf.com/&#34;&gt;Señor Performo&lt;/a&gt;, aka Leandro Melendez, and Pepe Cano, the Head of Marketing at k6, to talk about this common question.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZR8zgIs3he4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -135,9 +330,15 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Thu, 18 Mar 2021 20:36:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</guid>
-      <description>Today, I attended the Cambridge University Press QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.
-  And here are the slides I used!
-I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.</description>
+      <description>&lt;p&gt;Today, I attended the &lt;a href=&#34;https://www.cambridge.org/&#34;&gt;Cambridge University Press&lt;/a&gt; QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kz3Mt97L9CY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/&#34;&gt;here are the slides&lt;/a&gt; I used!&lt;/p&gt;
+&lt;p&gt;I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -146,8 +347,14 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Tue, 16 Mar 2021 21:29:33 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210316-testing-our-performance-test-tools/</guid>
-      <description>On this episode of the TestGuild performance podcast, I had a chat with Joe Colantonio about languages, board games, nontraditional backgrounds in tech, and why we should all test our performance test tools.
- </description>
+      <description>&lt;p&gt;On this episode of the &lt;a href=&#34;https://testguild.com/&#34;&gt;TestGuild performance podcast&lt;/a&gt;, I had a chat with Joe Colantonio about languages, board games, nontraditional backgrounds in tech, and why we should all test our performance test tools.&lt;/p&gt;
+
+
+
+&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/18351014/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
+
+
+</description>
     </item>
     
     <item>
@@ -156,8 +363,13 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Fri, 12 Mar 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210312-k6-office-hours05/</guid>
-      <description>Our first repeat guest, Daniel González Lopes, also from k6, joined us today to talk about how to use observability in conjunction with load testing. We talked about the differences between metrics, logs, and traces, and how to implemented distributed tracing.
-  </description>
+      <description>&lt;p&gt;Our first repeat guest, Daniel González Lopes, also from &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, joined us today to talk about how to use observability in conjunction with load testing. We talked about the differences between metrics, logs, and traces, and how to implemented distributed tracing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ADkd18AdaEA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -166,8 +378,13 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</guid>
-      <description>Marie Drake joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called Cypress and how it can compliment a back-end performance testing strategy.
-  </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; and how it can compliment a back-end performance testing strategy.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ve7Rg0MUZ0g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -176,8 +393,13 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Fri, 26 Feb 2021 21:40:25 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210226-k6-office-hours03/</guid>
-      <description>In this week&amp;rsquo;s Office Hours, Simme and I invited Daniel González Lopes, a DevOps engineer from k6, to join us to talk about chaos engineering and what it has to do with load testing. Simme also demonstrated how to use k6 to run simple chaos experiments.
-  </description>
+      <description>&lt;p&gt;In this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I invited Daniel González Lopes, a DevOps engineer from &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, to join us to talk about chaos engineering and what it has to do with load testing. Simme also demonstrated how to use k6 to run simple chaos experiments.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WrDV8iIdCy8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -186,8 +408,13 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</guid>
-      <description>For this week&amp;rsquo;s Office Hours, Simme and I invited Gary Spencer from New Relic to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.
-  </description>
+      <description>&lt;p&gt;For this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I invited &lt;a href=&#34;https://twitter.com/gspncr&#34;&gt;Gary Spencer&lt;/a&gt; from &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt; to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TbRVFTXGUPU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -196,8 +423,15 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Thu, 11 Feb 2021 21:46:35 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</guid>
-      <description>This must be the month for trying new things, because I jumped into livestreaming with the first ever k6 Office Hours just a week ago, and this week I&amp;rsquo;m jumping into podcasting with Simme Aronsson, who&amp;rsquo;s also doing the Office Hours with me. There&amp;rsquo;s definitely safety (at least psychological safety) in numbers, because doing it with someone else makes me feel a little more brave.
-While the podcast is presented by k6, that&amp;rsquo;s really just a fancy term for saying that we&amp;rsquo;re both employed by k6 and we&amp;rsquo;re recording and producing the podcast on company time.</description>
+      <description>&lt;p&gt;This must be the month for trying new things, because I jumped into livestreaming with the first ever &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210205-k6-office-hours&#34;&gt;k6 Office Hours&lt;/a&gt; just a week ago, and this week I&amp;rsquo;m jumping into podcasting with &lt;a href=&#34;https://simme.dev&#34;&gt;Simme Aronsson&lt;/a&gt;, who&amp;rsquo;s also doing the Office Hours with me. There&amp;rsquo;s definitely safety (at least psychological safety) in numbers, because doing it with someone else makes me feel a little more brave.&lt;/p&gt;
+&lt;p&gt;While the podcast is presented by &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, that&amp;rsquo;s really just a fancy term for saying that we&amp;rsquo;re both employed by k6 and we&amp;rsquo;re recording and producing the podcast on company time. Unlike the Office Hours, which is heavily k6-focused, the podcast will be about software performance and reliability in general. Simme and I happen to have different and complementary skillsets (he comes from a developer background, and I come from a testing background, and I think that makes for an interesting combination of perspectives.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the first episode! It should also be available on your audio podcasting tool of choice.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JEpLfLWP4YY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -206,9 +440,16 @@ While the podcast is presented by k6, that&amp;rsquo;s really just a fancy term 
       <pubDate>Fri, 05 Feb 2021 21:47:16 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210205-k6-office-hours/</guid>
-      <description>The k6 virtual office is open!
-The first time I heard about office hours was from Notion. Recently, Obsidian went in on this trend as well. The concept involves opening your virtual doors regularly to your community, to answer questions and share best practices.
-A big part of being a Developer Advocate is talking to people, and even conferences these days are mostly pre-recorded. I kind of miss being able to interact with people.</description>
+      <description>&lt;p&gt;The k6 virtual office is open!&lt;/p&gt;
+&lt;p&gt;The first time I heard about office hours was from &lt;a href=&#34;https://www.notion.so/&#34;&gt;Notion&lt;/a&gt;. Recently, &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; went in on this trend as well. The concept involves opening your virtual doors regularly to your community, to answer questions and share best practices.&lt;/p&gt;
+&lt;p&gt;A big part of being a Developer Advocate is talking &lt;em&gt;to&lt;/em&gt; people, and even conferences these days are mostly pre-recorded. I kind of miss being able to interact &lt;em&gt;with&lt;/em&gt; people. I miss the immediacy of &lt;em&gt;live&lt;/em&gt;. So I talked &lt;a href=&#34;https://simme.dev&#34;&gt;Simme Aronsson&lt;/a&gt; into doing a k6 Office Hours with me.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re both new to livestreaming, so there&amp;rsquo;s a lot that we&amp;rsquo;ve learned and will be improving in future videos, but here&amp;rsquo;s our first attempt!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bZsWn5ckzVM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -217,9 +458,447 @@ A big part of being a Developer Advocate is talking to people, and even conferen
       <pubDate>Fri, 29 Jan 2021 23:01:18 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210129-k6-vs-jmeter/</guid>
-      <description>Originally posted on k6.io.
-  Introduction When I joined the k6 team in late November, the foremost question on my mind was &amp;ldquo;How does this compare to JMeter?&amp;rdquo; You see, I come from a performance testing consulting background, and in the last few years, JMeter has been far and away my tool of choice.
-So what am I doing on the k6 site, talking about how much I love JMeter?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://k6.io/blog/k6-vs-jmeter&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href=&#34;https://k6.io/blog/k6-vs-jmeter&#34;&gt;k6.io&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/noZppBruOSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;When I &lt;a href=&#34;https://www.youtube.com/watch?v=zcYeboT5FYE&amp;amp;list=PLJdv3RhAQXNHsC8OOV3ZjwZvC9tRoAYF2&#34;&gt;joined the k6 team in late November&lt;/a&gt;, the foremost question on my mind was &amp;ldquo;How does this compare to JMeter?&amp;rdquo; You see, I come from a performance testing consulting background, and in the last few years, JMeter has been far and away my tool of choice.&lt;/p&gt;
+&lt;p&gt;So what am I doing on the k6 site, talking about how much I love JMeter? Well, firstly, it turns out that the k6 team is pretty open and transparent, especially about potential improvements in k6. Secondly, I want to share my reasons for wanting to explore k6 as a load testing tool&amp;ndash; the same reasons that ultimately convinced me to join the team that builds it.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-jmeter&#34;&gt;What is JMeter?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://jmeter.apache.org/&#34;&gt;JMeter&lt;/a&gt; is an open source load testing tool built entirely in Java by the &lt;a href=&#34;https://www.apache.org/&#34;&gt;Apache Foundation&lt;/a&gt;. It was first released in 1998, and it made waves because of its audacity in taking on more popular but proprietary load testing tools. JMeter took what other companies were charging a lot of money for and published it online for everyone to use&amp;ndash; for free. Although scripts can also be extended using code, majority of the scripting in JMeter is done using the UI. At the time of this writing, the latest version of JMeter is 5.4.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-k6&#34;&gt;What is k6?&lt;/h2&gt;
+&lt;p&gt;k6 is an &lt;a href=&#34;https://github.com/loadimpact/k6&#34;&gt;open source&lt;/a&gt; load testing tool released by &lt;a href=&#34;https://loadimpact.com&#34;&gt;LoadImpact&lt;/a&gt; in 2017. LoadImpact had previously consisted of the SaaS platform (now &lt;a href=&#34;https://k6.io/cloud&#34;&gt;k6 Cloud&lt;/a&gt;) and professional services. k6 is written in Go, but scripts are written in Javascript. Taking the opposite tack to JMeter, k6&amp;rsquo;s main selling point is its code-based scripting and heavy prioritization of the developer experience. The latest version of k6 is 0.30.&lt;/p&gt;
+&lt;h2 id=&#34;which-is-better&#34;&gt;Which is better?&lt;/h2&gt;
+&lt;p&gt;This article isn&amp;rsquo;t about which tool is &lt;em&gt;better&lt;/em&gt;, because as much as we might prefer a clear-cut answer, there&amp;rsquo;s no &amp;ldquo;best tool&amp;rdquo;. Everything depends on the situation your team is in: what, how, why, and when you&amp;rsquo;re testing.&lt;/p&gt;
+&lt;p&gt;The question that I want to answer here is: &lt;em&gt;What situations does each tool excel in?&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;when-does-jmeter-excel&#34;&gt;When does JMeter excel?&lt;/h1&gt;
+&lt;h2 id=&#34;when-you-want-to-get-started-quickly&#34;&gt;When you want to get started quickly&lt;/h2&gt;
+&lt;h3 id=&#34;jmeter-has-a-gui&#34;&gt;JMeter has a GUI&lt;/h3&gt;
+&lt;p&gt;Many testing teams make decisions on load testing tools based on this fact alone. Sometimes, if you&amp;rsquo;re in a situation where people haven&amp;rsquo;t done load testing before and need to learn a new tool, a GUI-driven tool like JMeter is simply the most frictionless option. A tool with a GUI will be less daunting for many testers that are used to the mostly no-code UIs of the likes of Postman or SOAPUI.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/01-jmetergui.png&#34; alt=&#34;JMeter&amp;rsquo;s starting screen: a fresh new test plan&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve always thought of JMeter as user-friendly, but a developer friend recently pointed out that the Test Plan screen that greets you when you first start JMeter doesn&amp;rsquo;t provide any indication of how to create an HTTP sampler. None of the icons add elements to the test plan. It takes a bit of exploring to realize that right clicking on the test plan, or going to Edit &amp;gt; Add, will show the &amp;ldquo;Add&amp;rdquo; menu that you need. He has a point there: UI is subjective to a certain degree. However, I&amp;rsquo;d argue that it&amp;rsquo;s definitely easier for non-developers to explore a UI than a bit of code.&lt;/p&gt;
+&lt;p&gt;k6 doesn&amp;rsquo;t have a GUI packaged within the tool, but the &lt;a href=&#34;https://k6.io/docs/test-authoring/test-builder&#34;&gt;k6 Test Builder&lt;/a&gt; is available for free. It&amp;rsquo;s a way to create tests with a GUI interface, and despite its inclusion in k6 cloud, it doesn&amp;rsquo;t require any subscription to use. However, it isn&amp;rsquo;t as fully-featured as JMeter.&lt;/p&gt;
+&lt;h3 id=&#34;jmeter-supports-many-protocols-and-features-out-of-the-box&#34;&gt;JMeter supports many protocols and features out of the box&lt;/h3&gt;
+&lt;p&gt;Here&amp;rsquo;s &lt;a href=&#34;https://jmeter.apache.org/index.html&#34;&gt;the official list&lt;/a&gt; of the protocols that JMeter supports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web - HTTP, HTTPS (Java, NodeJS, PHP, ASP.NET, …)&lt;/li&gt;
+&lt;li&gt;SOAP / REST Webservices&lt;/li&gt;
+&lt;li&gt;FTP&lt;/li&gt;
+&lt;li&gt;Database via JDBC&lt;/li&gt;
+&lt;li&gt;LDAP&lt;/li&gt;
+&lt;li&gt;Message-oriented middleware (MOM) via JMS&lt;/li&gt;
+&lt;li&gt;Mail - SMTP(S), POP3(S) and IMAP(S)&lt;/li&gt;
+&lt;li&gt;Native commands or shell scripts&lt;/li&gt;
+&lt;li&gt;TCP&lt;/li&gt;
+&lt;li&gt;Java Objects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In contrast, k6 supports the following protocols:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web - HTTP/1.1, &lt;a href=&#34;https://k6.io/docs/using-k6/protocols/http-2&#34;&gt;HTTP/2&lt;/a&gt; (Java, NodeJS, PHP, ASP.NET, …)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/using-k6/protocols/websockets&#34;&gt;WebSockets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/using-k6/protocols/grpc&#34;&gt;gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SOAP / REST Webservices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The protocols above are those that are natively supported. However, both tools allow the development of third-party plugins, adding support for more protocols. The number of &lt;a href=&#34;https://github.com/topics/xk6&#34;&gt;k6 community extensions&lt;/a&gt;, through &lt;a href=&#34;https://k6.io/blog/extending-k6-with-xk6&#34;&gt;xk6&lt;/a&gt;, is growing, but &lt;a href=&#34;https://jmeter-plugins.org/&#34;&gt;JMeter plugins&lt;/a&gt; still outnumber them. In many cases, the protocols your application uses may make the decision for you of which tool to use.&lt;/p&gt;
+&lt;p&gt;JMeter also has most of the features you&amp;rsquo;ll need for a basic load test, and you don&amp;rsquo;t have to code any of it up yourself. Its parent-child element structure means that you can modify a specific element, like an HTTP request, or modify all HTTP requests, with equal ease. Adding think time to all requests is as easy as adding a Uniform Random Timer to your thread group, and all requests within that group will inherit it.
+With code-based load testing tools, it can be a bit more difficult to find out what&amp;rsquo;s possible without a UI. Some of the gap, however, can be bridged by an IDE with good autocompletion.&lt;/p&gt;
+&lt;h2 id=&#34;when-you-want-a-mature-community-with-tons-of-documentation&#34;&gt;When you want a mature community with tons of documentation&lt;/h2&gt;
+&lt;p&gt;JMeter&amp;rsquo;s old, and sometimes that&amp;rsquo;s a good thing. It&amp;rsquo;s been around since 1998, so at this point, it&amp;rsquo;s had 22 years to improve and to build a following. JMeter has a presence on nearly every community networking site, and no matter how specific your use case for JMeter is, the chances are that it&amp;rsquo;s been done before. Searching &amp;ldquo;how to load test X with JMeter&amp;rdquo; is bound to yield thousands of hits and some videos showing you exactly how to do it.&lt;/p&gt;
+&lt;p&gt;JMeter&amp;rsquo;s &lt;a href=&#34;https://jmeter.apache.org/usermanual/component_reference.html&#34;&gt;Component Reference&lt;/a&gt; is proof of JMeter&amp;rsquo;s extensive and thorough documentation. Every element, function, and property is discussed in more detail than most people could ever want, and that&amp;rsquo;s just the &amp;ldquo;official&amp;rdquo; documentation that&amp;rsquo;s on the Apache site. There are thousands of JMeter books, tutorials, and courses by its passionate users.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/apache/jmeter&#34;&gt;JMeter GitHub repository&lt;/a&gt; has 17,290 commits as of December 2020 - evidence of a community of developers that have committed some time and experience to JMeter over the last two decades.&lt;/p&gt;
+&lt;p&gt;In comparison, the k6 community is growing, but still small. There is an official and &lt;a href=&#34;https://community.k6.io/&#34;&gt;central community forum&lt;/a&gt; that allows users to share their experiences with k6, which is something missing from the JMeter community. The &lt;a href=&#34;https://github.com/loadimpact/k6&#34;&gt;k6 repository&lt;/a&gt; does have more stars, but significantly fewer commits at 3,795. Much of the disparity, of course, is because k6 is very new - the open-source tool k6 was only released in 2017.&lt;/p&gt;
+&lt;h2 id=&#34;when-you-need-a-cost-effective-way-to-do-distributed-load-testing&#34;&gt;When you need a cost-effective way to do distributed load testing&lt;/h2&gt;
+&lt;p&gt;One of JMeter&amp;rsquo;s absolute best features is that it gives you a framework for running distributed load tests with it. This is pretty special for a free and open-source tool.&lt;/p&gt;
+&lt;p&gt;Distributed testing means ramping up the amount of load you&amp;rsquo;re generating with your load tests, usually by increasing the number of virtual users and running multiple instances of your script on other load generators. JMeter accomplishes this by designating a controller node and letting you set up worker nodes. Each worker node needs to have a copy of &lt;code&gt;jmeter-server&lt;/code&gt;, a utility included with every JMeter installation (in &lt;code&gt;jmeter/bin&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/02-jmeterdistributed.svg&#34; alt=&#34;JMeter comes with a native distributed testing mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html&#34;&gt;Apache JMeter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;These worker nodes then run copies of your test plan and exert load against your application server. You can use on-premise or cloud machines as your worker nodes. A distributed execution like this takes a bit to set up, but it does work surprisingly well.&lt;/p&gt;
+&lt;p&gt;k6 doesn&amp;rsquo;t have a &lt;em&gt;native&lt;/em&gt; distributed load testing mode. You &lt;em&gt;can&lt;/em&gt; containerize it yourself and deploy it via Kubernetes, for instance, but it does require a more involved setup. The team is also working on the &lt;a href=&#34;https://github.com/k6io/operator&#34;&gt;k6 Operator&lt;/a&gt;, which makes setup significantly easier, but it is experimental and comes with drawbacks such as not supporting threshold synchronization between instances. For now, the easiest way to scale up on k6 is by using the paid service k6 Cloud, which reduces setup time and complexity significantly.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important to note that JMeter can be quite resource-hungry, and thus is more likely to require multiple load generators to generate load than k6. Depending on the resources of the load generator, JMeter can run about a thousand virtual users on average, and scaling up your test beyond that point will require a distributed execution setup. A single instance of k6, on the other hand, can run tens of thousands of virtual users given the same resources. More on that later.&lt;/p&gt;
+&lt;h2 id=&#34;when-you-want-canned-reports-built-into-your-load-testing-tool&#34;&gt;When you want canned reports built into your load testing tool&lt;/h2&gt;
+&lt;p&gt;JMeter&amp;rsquo;s many listeners allow you to decide exactly what format you want to view results in. Debugging? Use the View Results Tree. Wanting metrics for your load test? Use the Summary or Aggregate Report.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/03-jmeterlistener.png&#34; alt=&#34;Adding listeners like View Results Tree in JMeter lets you visualize results in different ways&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In addition, JMeter can generate HTML reports based on your load tests. They&amp;rsquo;re currently quite limited, but functional, and they have several default graphs to help you analyze your load test. They are not interactive, but they are pretty easy to generate and a good starting point for putting together a report template for your tests.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/04-jmeterhtmlreport.png&#34; alt=&#34;JMeter&amp;rsquo;s built-in HTML dashboard is limited but functional&#34;&gt;&lt;/p&gt;
+&lt;p&gt;k6 does not have built-in reporting. Its modular nature lends itself better to integrating with &lt;a href=&#34;https://k6.io/docs/results-visualization&#34;&gt;many other data analytics tools&lt;/a&gt;, including Grafana, Datadog, New Relic, Amazon CloudWatch, and k6 Cloud&amp;ndash; all of which are better analysis tools and can provide more insights than what JMeter&amp;rsquo;s reports can provide, but they do require you to set up another tool to analyze your tests. If you&amp;rsquo;re running low on time and can make do with its reports, JMeter does really well at providing that extra value out of the box.&lt;/p&gt;
+&lt;h1 id=&#34;when-does-k6-excel&#34;&gt;When does k6 excel?&lt;/h1&gt;
+&lt;h2 id=&#34;when-you-want-to-get-started-quickly-1&#34;&gt;When you want to get started quickly&lt;/h2&gt;
+&lt;p&gt;Yup, I put this one in both the JMeter and k6 sections. JMeter and k6 can each be easy to get started with, but for very different reasons.&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;p&gt;k6 installs extremely quickly - on my first installation of it on macOS, it took &lt;a href=&#34;https://www.youtube.com/watch?v=y5tteMKZUqk&amp;amp;t=99&#34;&gt;7 seconds&lt;/a&gt; via &lt;code&gt;brew install k6&lt;/code&gt;. It doesn&amp;rsquo;t require nodeJS or any other dependencies, either.&lt;/p&gt;
+&lt;p&gt;JMeter itself is fairly easy to install, but before you install JMeter, you need to install Java. Especially if you&amp;rsquo;re using Windows, it&amp;rsquo;s a bit of a rite of passage for a new JMeter user to run into issues adding the environment variables needed for Java to function.&lt;/p&gt;
+&lt;p&gt;It can also be confusing to determine which version of Java is the right one. There&amp;rsquo;s JDK, JRE, and recently Oracle has added to the confusion by announcing that some versions of Java (but not all) are going to require a license.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/05-javalicense.png&#34; alt=&#34;Oracle&amp;rsquo;s changing Java licensing can cause confusion for JMeter users&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://java.com/en/download/&#34;&gt;Oracle Java&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;While JMeter is still free via OpenJDK, I&amp;rsquo;ve spoken to a few testers who mistakenly thought they&amp;rsquo;d have to pay for JMeter. It&amp;rsquo;s a little disconcerting to see Oracle flexing its muscles here, especially if you&amp;rsquo;ve built a whole performance testing suite on Java through JMeter.&lt;/p&gt;
+&lt;h3 id=&#34;plugins&#34;&gt;Plugins&lt;/h3&gt;
+&lt;p&gt;k6 &lt;a href=&#34;https://k6.io/blog/extending-k6-with-xk6&#34;&gt;supports plugins&lt;/a&gt;, but they&amp;rsquo;re not necessary. For most use cases, k6&amp;rsquo;s built-in functionality should be more than sufficient. This is in sharp contrast to JMeter, where everything is a plugin &amp;hellip; even the &lt;a href=&#34;https://jmeter-plugins.org/wiki/PluginsManager/&#34;&gt;Plugin Manager&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Most JMeter users would argue that there is a standard set of plugins that you should download before you even begin to use it. A new JMeter user might not necessarily know where to find these and may have a less-than-satisfying experience out of the box.&lt;/p&gt;
+&lt;p&gt;Here are a few things you &lt;em&gt;won&amp;rsquo;t&lt;/em&gt; have if you stick to a vanilla, no-plugin JMeter installation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Thread groups: No custom load profile, stages, rendezvous&lt;/li&gt;
+&lt;li&gt;Controllers: No parallel controller to execute requests in parallel&lt;/li&gt;
+&lt;li&gt;Samplers: No HTTP/2 support&lt;/li&gt;
+&lt;li&gt;Test Data: No randomization of lines within a CSV file (sequential only)&lt;/li&gt;
+&lt;li&gt;Timers: No throughput shaping timer for setting throughput in stages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These functions are all available within k6 from the get-go.&lt;/p&gt;
+&lt;h3 id=&#34;scripting&#34;&gt;Scripting&lt;/h3&gt;
+&lt;p&gt;k6 scripts are written in javascript, making them simple to write and run. All you need is one installer (on Microsoft Windows) or a single command on your terminal and any text editor. For JMeter, you&amp;rsquo;ll need to install a few things locally before you can get started: Java, JMeter itself, and the standard set of plugins you&amp;rsquo;ll need. This can be confusing for new users. Who hasn&amp;rsquo;t struggled with environment variables at some point when learning to use JMeter, especially on Windows?&lt;/p&gt;
+&lt;p&gt;It also takes time to learn any new UI, whereas javascript is near-ubiquitous and it&amp;rsquo;s a good language to learn when you&amp;rsquo;re load testing web sites anyway.&lt;/p&gt;
+&lt;h2 id=&#34;when-you-want-to-maximize-performance-and-efficiency&#34;&gt;When you want to maximize performance and efficiency&lt;/h2&gt;
+&lt;h3 id=&#34;test-your-test-tools&#34;&gt;Test your test tools!&lt;/h3&gt;
+&lt;p&gt;Why does all this matter?&lt;/p&gt;
+&lt;p&gt;When we&amp;rsquo;re talking about simulating many virtual users, slow performance = high cost. There is a cost to the number of load generators you use, whether it&amp;rsquo;s the cost to acquire and maintain them (on-prem) or the cost of a cloud service.&lt;/p&gt;
+&lt;p&gt;It makes sense to consider the performance limitations of your load testing tool before you use it to improve your own application&amp;rsquo;s performance.&lt;/p&gt;
+&lt;h3 id=&#34;k6-builds-on-gos-stellar-performance&#34;&gt;k6 builds on Go&amp;rsquo;s stellar performance&lt;/h3&gt;
+&lt;p&gt;k6 is written in Go, and Go is built with performance in mind. &amp;ldquo;Go is a compiled language and does not need to be interpreted, unlike Java or Python. There is no added layer of complexity.&amp;rdquo; It also has no external dependencies, which is a good thing. Fewer moving parts for a performance tester means fewer potential sources of a bottleneck.&lt;/p&gt;
+&lt;p&gt;The simplest and most common way for a load testing tool to run a virtual user is to assign one virtual user to one kernel or OS thread. However, the 1 Thread: 1 Virtual User paradigm has a serious flaw: when a virtual user is waiting for a response or executing a programmed &lt;code&gt;sleep()&lt;/code&gt;, the thread is also blocked, and cannot process other work.&lt;/p&gt;
+&lt;p&gt;In k6, each virtual user is run on a goroutine, not a thread. What difference does that make? Well, goroutines can be controlled by something called the Go Scheduler, which acts like a traffic cop. It reuses idle threads and intelligently assigns work, by allowing &amp;ldquo;work stealing&amp;rdquo; and work hand-offs between threads. Does this sound familiar? This is the same principle that load balancers are built on: An external monitor that oversees the flow of work improves general performance. Go itself is intrinsically load-balanced in a way that many programming languages aren&amp;rsquo;t, which makes it the perfect foundation for a load testing tool.&lt;/p&gt;
+&lt;p&gt;Being able to leverage Go&amp;rsquo;s innate performance optimizations also translates into significantly less memory utilization. One thread running k6 doesn&amp;rsquo;t go above 100 kb, whereas a JVM thread like JMeter uses, for instance, &lt;a href=&#34;https://www.baeldung.com/jvm-configure-stack-sizes&#34;&gt;uses the default of 1MB&lt;/a&gt;. That&amp;rsquo;s 1000% more than k6! Of course, Java allows a user to tweak an app&amp;rsquo;s memory utilization, so the difference is usually not quite as stark, but it&amp;rsquo;s still interesting to note that Go has a much lower starting point.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip; creating [a] new thread in Java is not memory efficient. As every thread consumes approx 1MB of the memory heap size and eventually if you start spinning thousands of threads, they will put tremendous pressure on the heap and will cause shut down due to out of memory. Also, if you want to communicate between two or more threads, it’s very difficult. - &lt;a href=&#34;https://medium.com/@kevalpatel2106/why-should-you-learn-go-f607681fad65&#34;&gt;Keval Patel&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;performance-benefits-in-practice&#34;&gt;Performance benefits in practice&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Fewer load generators needed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;k6&amp;rsquo;s comparatively better performance means it needs fewer load generators to execute a given amount of load. Rafaela Azevedo made a comparison of the memory used by k6 and JMeter, and &lt;a href=&#34;https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/&#34;&gt;here are her results&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;JMeter took up 760 MB of memory.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/06-jmeterbenchmark.png&#34; alt=&#34;In an independent test by Rafaela Azevedo, JMeter took up 760 MB of memory&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/&#34;&gt;Rafaela Azevedo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Meanwhile, k6 took up 256 MB of memory.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/07-k6benchmark.png&#34; alt=&#34;In an independent test by Rafaela Azevedo, k6 took up 256 MB of memory compared to JMeter&amp;rsquo;s 760 MB for the same test&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/&#34;&gt;Rafaela Azevedo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rafaela&amp;rsquo;s findings are further affirmed by our own benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/08-internalbenchmarks.png&#34; alt=&#34;A comparison of maximum throughput and memory for the most popular open-source load testing tools&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: Ragnar Lönn, in our &lt;a href=&#34;https://k6.io/blog/comparing-best-open-source-load-testing-tools&#34;&gt;Load Testing Tool Comparison&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;k6&amp;rsquo;s lower memory footprint is the reason it can run more virtual users and generate more load than average. Whether you&amp;rsquo;re using load generators that are on-premise or in a cloud, you&amp;rsquo;ll pay less for provisioning costs when using k6. This cost saving makes k6 a great tool for budget-conscious teams.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The common misconception of many load testers is that distributed execution (ability to launch a load test on multiple machines) is required to generate large load. This is not the case with k6. - &lt;a href=&#34;https://azevedorafaela.com/2020/07/06/load-tests-jmeter-vs-k6/&#34;&gt;Rafaela Azevedo&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;k6 is different from many other load testing tools in the way it handles hardware resources. A single k6 process will efficiently use all CPU cores on a load generator machine. A single instance of k6 is often enough to generate load of 30.000-40.000 simultaneous users (VUs). This amount of VUs can generate upwards of 300,000 requests per second (RPS).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unless you need more than 100,000-300,000 requests per second (6-12M requests per minute), a single instance of k6 will likely be sufficient for your needs. - &lt;a href=&#34;https://k6.io/docs/testing-guides/running-large-tests&#34;&gt;k6 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;No out of memory errors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;k6 is also good for when you&amp;rsquo;re short on time. Using JMeter means getting familiar with how to performance tune Java and how to fix the &lt;a href=&#34;https://www.eginnovations.com/blog/top-10-java-performance-problems/&#34;&gt;most common Java performance problems&lt;/a&gt;, because there are several. The one that I&amp;rsquo;ve personally run into the most while using JMeter is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.OutOfMemoryError: 
+Java heap space. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;re not really a JMeter load tester until you&amp;rsquo;ve seen this error. :)&lt;/p&gt;
+&lt;p&gt;The cause for this error is usually that there was an insufficient amount of Heap memory allocated to JMeter. Yup&amp;ndash; in addition to monitoring your load generator&amp;rsquo;s memory usage, you&amp;rsquo;ll also need to monitor the JVM&amp;rsquo;s memory usage. You can set the amount of heap memory allocated to JMeter by modifying the JMeter binary itself and changing this line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; This is the base heap size &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; you may increase or decrease it to fit your
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; system&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;s memory availability&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;${HEAP:=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;Xms1g &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;Xmx1g &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;XX&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;MaxMetaspaceSize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;256m&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;}&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Even JMeter official documentation suggests that you increase the Java Heap size beyond 1GB before you even run your first load test.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Increase the Java Heap size. By default JMeter runs with a heap of 1 GB, this might not be enough for your test and depends on your test plan and number of threads you want to run - &lt;a href=&#34;https://jmeter.apache.org/usermanual/get-started.html&#34;&gt;Apache JMeter&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;No GUI means no resource overhead during load tests&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GUIs typically add significantly more overhead to an application, which is one of the reasons why k6 doesn&amp;rsquo;t have one.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re running a load test, the best practice is to run it from the command line anyway&amp;ndash; because otherwise, it interferes with your results. Code-based load testing tools are performant from the beginning.&lt;/p&gt;
+&lt;p&gt;JMeter is peppered with warnings about the GUI&amp;rsquo;s effect on performance. Here&amp;rsquo;s one from the &amp;ldquo;JMeter documentation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t run load test using GUI mode ! - &lt;a href=&#34;https://jmeter.apache.org/usermanual/get-started.html&#34;&gt;Apache JMeter&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And here&amp;rsquo;s a message that occurs upon startup of JMeter:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/09-jmeterguimodewarning.png&#34; alt=&#34;JMeter&amp;rsquo;s startup screen warns users not to use the GUI mode for load testing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Not having a GUI means there&amp;rsquo;s one less gotcha. Any load testing scripts you create in k6 are ready for prime-time execution whenever you&amp;rsquo;re ready.&lt;/p&gt;
+&lt;h2 id=&#34;when-you-want-to-do-goal-oriented-testing&#34;&gt;When you want to do goal-oriented testing&lt;/h2&gt;
+&lt;p&gt;The most important question a load tester can ask when starting a new load testing project is &amp;ldquo;Why&amp;rdquo;?
+Test plans should be made to directly address a team&amp;rsquo;s reasons for wanting to do load testing, and that should be reflected in the non-functional requirements. Non-functional requirements, in turn, should then give some guidance as to the bounds of acceptable performance. A common example for these bounds, or thresholds, is an average response time of less than 3 seconds for all transactions during the test.
+k6 does this natively with &lt;a href=&#34;https://k6.io/docs/using-k6/thresholds&#34;&gt;global thresholds&lt;/a&gt; worked into the script, and you can also create your own metric to use in a threshold:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;Rate&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/metrics&amp;#39;&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;myFailRate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Rate&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;failed requests&amp;#39;&lt;/span&gt;);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;thresholds&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;failed requests&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;rate&amp;lt;0.1&amp;#39;&lt;/span&gt;], &lt;span style=&#34;color:#75715e&#34;&gt;// threshold on a custom metric
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;http_req_duration&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;p(95)&amp;lt;500&amp;#39;&lt;/span&gt;], &lt;span style=&#34;color:#75715e&#34;&gt;// threshold on a standard metric
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  },
+};
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://test-api.k6.io/public/crocodiles/1/&amp;#39;&lt;/span&gt;);
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;myFailRate&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Source: &lt;a href=&#34;https://k6.io/docs/using-k6/thresholds&#34;&gt;k6 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;JMeter doesn&amp;rsquo;t natively support thresholds at the test-level. There are a few ways that I&amp;rsquo;ve been able to work around this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Duration Assertion&lt;/strong&gt;: You can add a Duration Assertion to any sampler in JMeter, which allows you set an acceptable response time for that request in milliseconds, beyond which the request (and the transaction that encompasses it) would be marked as failed. However, this is still just at the individual request level, and even putting the duration assertion element at the Test Plan level only applies the same threshold to each child request. It doesn&amp;rsquo;t constitute pass/fail criteria for the test as a whole.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Timers&lt;/strong&gt;: For criteria related to throughput, you can use the Constant Throughput Timer or the Throughput Shaping Timer (plugin). This approach controls how many requests per second are spent. In my experience, it&amp;rsquo;s worth testing how these timers behave when using nested transaction controllers - it may take some rearranging to get right.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Performance Plugin&lt;/strong&gt;: When integrating JMeter with Jenkins, you can use the Performance Plugin to set error thresholds and mark test runs (&amp;ldquo;builds&amp;rdquo;) as unstable or failed within Jenkins.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Custom Code&lt;/strong&gt;: You can use the JSR223 Sampler to write a bit of Groovy or BeanShell code that collects and parses response metrics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The problem is that even though these options make setting thresholds possible in JMeter, they&amp;rsquo;re still workarounds that don&amp;rsquo;t come with JMeter out of the box or don&amp;rsquo;t adequately address the creation of different types of thresholds (error, response time, throughput, CPU, memory). What I end up doing, more often than not, is exporting the raw data from JMeter and doing the analysis myself using another tool.&lt;/p&gt;
+&lt;h2 id=&#34;when-youre-part-of-a-team-of-scripters&#34;&gt;When you&amp;rsquo;re part of a team of scripters&lt;/h2&gt;
+&lt;p&gt;k6 shines in situations where more than one person could be doing the scripting.&lt;/p&gt;
+&lt;h3 id=&#34;it-strikes-a-middle-ground-that-developers-and-testers-can-compromise-on&#34;&gt;It strikes a middle ground that developers and testers can compromise on&lt;/h3&gt;
+&lt;p&gt;Software quality should not be the sole responsibility of testers; quality should be baked into every activity when building software. One of the challenges in implementing this concept, however, is that there has traditionally been a segmentation in tools and languages used by team members with different functions. Developers use one tool; testers use another. It&amp;rsquo;s difficult to encourage developers to test and testers to code in this environment, and many testing tools only further encourage this divide. A developer can&amp;rsquo;t use a tool like JMeter for anything but testing, so the incentive to invest the effort in learning it is lower.&lt;/p&gt;
+&lt;p&gt;k6 bridges the gap by bringing testing concepts and features to an environment and language that developers are already spending their time in. Javascript is useful for more than just writing load testing scripts, and k6 works well with any IDE or text editor. A frictionless developer experience is central to the k6 philosophy.&lt;/p&gt;
+&lt;h3 id=&#34;its-easier-to-collaborate-on-scripts&#34;&gt;It&amp;rsquo;s easier to collaborate on scripts&lt;/h3&gt;
+&lt;p&gt;Once you&amp;rsquo;ve convinced both devs and testers to contribute to load testing scripts, how do you keep track of changes? How do you manage scripts that multiple people are working on at the same time?
+With tests as code, the easiest way is to just use versioning tools like Git, the way you probably are already using for your application code. Again, no new framework or processes to learn here.
+k6&amp;rsquo;s conciseness and portability really proves to be an advantage in collaboration situations. To illustrate this, let&amp;rsquo;s consider a simple test script that contains a few things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A GET request to &lt;a href=&#34;https://test.k6.io&#34;&gt;our test site&lt;/a&gt;, &lt;code&gt;https://test.k6.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A transaction that calls this request &lt;code&gt;01_Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A check to fail non-HTTP 200 responses or responses that don&amp;rsquo;t have the text &lt;code&gt;Collection of simple web-pages suitable for load testing&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Variable think time&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ll just run that as a single user, for a single iteration. Here&amp;rsquo;s what that script looks like in k6:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://test.k6.io&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;tags&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;01_Home&amp;#39;&lt;/span&gt; }});
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;, {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;is status 200&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text verification&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Collection of simple web-pages suitable for load testing&amp;#34;&lt;/span&gt;)
+    });
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;random&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can track JMeter scripts on Git, too. Here&amp;rsquo;s what the same script looks like in JMeter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;jmeterTestPlan&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;version=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1.2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;properties=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5.0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jmeter=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5.3&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;TestPlan&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlanGui&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Test Plan&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan.comments&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan.functional_mode&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan.tearDown_on_shutdown&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;true&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan.serialize_threadgroups&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;elementProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan.user_defined_variables&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;elementType=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arguments&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ArgumentsPanel&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arguments&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;User Defined Variables&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;collectionProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arguments.arguments&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/elementProp&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TestPlan.user_define_classpath&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/TestPlan&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;ThreadGroup&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroupGui&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Thread Group&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.on_sample_error&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;continue&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;elementProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.main_controller&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;elementType=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LoopController&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LoopControlPanel&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LoopController&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Loop Controller&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LoopController.continue_forever&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LoopController.loops&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/elementProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.num_threads&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.ramp_time&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.scheduler&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.duration&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.delay&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ThreadGroup.same_user_on_next_iteration&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;true&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/ThreadGroup&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;TransactionController&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TransactionControllerGui&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TransactionController&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01_Home&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TransactionController.includeTimers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TransactionController.parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;true&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/TransactionController&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;HTTPSamplerProxy&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HttpTestSampleGui&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSamplerProxy&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTP Request&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;elementProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPsampler.Arguments&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;elementType=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arguments&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPArgumentsPanel&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arguments&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;User Defined Variables&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;collectionProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arguments.arguments&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/elementProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.domain&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;test.k6.io&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.port&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.protocol&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;https&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.contentEncoding&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.path&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.method&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;GET&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.follow_redirects&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;true&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.auto_redirects&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.use_keepalive&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;true&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.DO_MULTIPART_POST&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.embedded_url_re&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.connect_timeout&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTPSampler.response_timeout&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/HTTPSamplerProxy&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;ResponseAssertion&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AssertionGui&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ResponseAssertion&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Response Assertion&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;collectionProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Asserion.test_strings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-745788246&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;Collection of simple web-pages suitable for load testing&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/collectionProp&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Assertion.custom_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Assertion.test_field&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;Assertion.response_data&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;boolProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Assertion.assume_success&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;false&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/boolProp&amp;gt;&lt;/span&gt;
+              &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;intProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Assertion.test_type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;16&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/intProp&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/ResponseAssertion&amp;gt;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree/&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/hashTree&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/hashTree&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;UniformRandomTimer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;guiclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UniformRandomTimerGui&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testclass=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UniformRandomTimer&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testname=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Uniform Random Timer&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ConstantTimer.delay&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;1000&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;stringProp&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RandomTimer.range&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;4000&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/stringProp&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/UniformRandomTimer&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;hashTree/&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/hashTree&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/hashTree&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/hashTree&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/jmeterTestPlan&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Which one is easier to understand? If you had to modify the script to add a request, which format would you choose to do it in?&lt;/p&gt;
+&lt;p&gt;Scripting in XML makes merge conflicts more likely and breaking changes in automation pipelines way more difficult to pinpoint.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve collaborated with others on JMeter scripts in the past, and we always opened up scripts in the GUI. It&amp;rsquo;s way easier to spot changes there - but that also created some new issues.&lt;/p&gt;
+&lt;h2 id=&#34;when-you-want-something-easy-to-maintain&#34;&gt;When you want something easy to maintain&lt;/h2&gt;
+&lt;h3 id=&#34;versioning-for-load-testing&#34;&gt;Versioning for load testing&lt;/h3&gt;
+&lt;p&gt;When ramping up load tests to more than one load generator, keeping track of the versions of necessary components ensures that one load generator&amp;rsquo;s traffic is the same as another&amp;rsquo;s. The value of reducing variables in scientific experiments holds true for load testing.&lt;/p&gt;
+&lt;p&gt;With k6, you just need to worry about the version of k6 and the script. No other dependencies are required. If you&amp;rsquo;re using plugins, you&amp;rsquo;d need to track those too, but as mentioned previously, plugins in k6 aren&amp;rsquo;t as necessary as they are in some other tools &amp;ndash; and k6 is available as a Docker image to reduce those issues.&lt;/p&gt;
+&lt;p&gt;With something like JMeter, there are more levels to consider. There&amp;rsquo;s the version of JMeter itself, Java, versions of plugins, and then the script. Every new layer introduces more changes for incompatibilities. In previous projets I&amp;rsquo;ve worked on, someone would inevitably try out a new plugin and forget to discuss it with the team, and anyone who tried to open that script in their copy of JMeter would see this error:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/10-jmeterpluginerror.png&#34; alt=&#34;This is the error that JMeter throws when you attempt to open a test plan that includes a plugin you don&amp;rsquo;t have installed locally&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The error means there&amp;rsquo;s a plugin that the script uses that JMeter doesn&amp;rsquo;t recognize, but depending on the plugin, it&amp;rsquo;s not always this easy to pinpoint which one (it was the &lt;code&gt;Ultimate Thread Group&lt;/code&gt; in this case).
+You don&amp;rsquo;t want that happening in the middle of your load test because you forgot to add a plugin to some of your load generators!&lt;/p&gt;
+&lt;h3 id=&#34;its-easier-to-link-test-code-with-application-code&#34;&gt;It&amp;rsquo;s easier to link test code with application code&lt;/h3&gt;
+&lt;p&gt;If your application code is in Javascript, k6 is a shoo-in as a load testing tool. You could build tests that are tightly integrated with application code by importing objects and having your tests interacting with them directly. This approach would reduce a lot of time spent in refactoring test scripts when objects are changed.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re already using VS Code, k6 even has a &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=k6.k6&#34;&gt;VS Code plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;test-as-code-gives-you-control&#34;&gt;Test as code gives you control&lt;/h3&gt;
+&lt;p&gt;Having your scripts be pure code reduces ambiguities in that you&amp;rsquo;re not limited by poor UI design or bugs in third-party plugins. k6 scripts are Typescript-typed, so most IDEs support autocompletion while you&amp;rsquo;re scripting - the code equivalent of helpful tooltips, except way more universal.
+k6 scripts give you the freedom to import and use JS libraries, so you can build on code others have already written. While k6 is not NodeJS, there are even &lt;a href=&#34;https://k6.io/docs/using-k6/modules#bundling-node-modules&#34;&gt;some NodeJS packages&lt;/a&gt; that you can bundle for use with your scripts.&lt;/p&gt;
+&lt;h3 id=&#34;no-external-dependencies&#34;&gt;No external dependencies&lt;/h3&gt;
+&lt;p&gt;k6 doesn&amp;rsquo;t require NodeJS or anything else to run, which also reduces the likelihood of bugs that might affect your scripts. For example, since JMeter runs on Java, it is also dependent on Java. When Java receives a new version, that often requires a JMeter update as well. JMeter versions understandably lag a bit behind Java versions as developers refactor code, but this gap can lead to potential security issues in a previous version of Java that may remain unpatched in the meantime.&lt;/p&gt;
+&lt;p&gt;With k6, development can proceed independently of any third-party component, so major issues can be addressed more easily.&lt;/p&gt;
+&lt;h1 id=&#34;comparison-table-jmeter-vs-k6&#34;&gt;Comparison table: JMeter vs k6&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Feature&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;JMeter&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;k6&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Written in&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Java&lt;/td&gt;
+&lt;td&gt;Go&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Scripting language&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Limited: some Java (Groovy, Beanshell, etc)&lt;/td&gt;
+&lt;td&gt;Javascript&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Protocols&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supports most protocols via plugins (native support for HTTP/1.1, SOAP, FTP, JDBC, LDAP, MOM via JMS, SMTP, POP3, IMAP, shell scripts, TCP, Java objects)&lt;/td&gt;
+&lt;td&gt;Supports fewer, modern protocols natively (HTTP/1.1, HTTP/2, WebSockets, gRPC)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;External dependencies&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Java&lt;/td&gt;
+&lt;td&gt;none&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Resource utilization&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://k6.io/blog/static/b4075246f21af514c7a1554d1406b337/d5e13/RPSvMemory.png&#34;&gt;Poor&lt;/a&gt;; One load generator can simulate a few thousand virtual users&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://k6.io/blog/static/b4075246f21af514c7a1554d1406b337/d5e13/RPSvMemory.png&#34;&gt;Very good&lt;/a&gt;; One load generator can simulate tens of thousands of virtual users&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Memory management&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;JVM heap memory must be set&lt;/td&gt;
+&lt;td&gt;Uses load generator memory natively&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Threading model&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1 Thread: 1 Virtual User; Slower performance, higher resource cost&lt;/td&gt;
+&lt;td&gt;1 Goroutine: 1 Virtual User; Faster performance, lower resource cost&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Ease of scripting&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;GUI-driven, with code blocks&lt;/td&gt;
+&lt;td&gt;code-driven; VSCode plugin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Test-level thresholds&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No, individual request only&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Script format&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;XML&lt;/td&gt;
+&lt;td&gt;javascript&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Collaboration&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Difficult to work on simultaneously; tester-friendly; need the GUI app to edit&lt;/td&gt;
+&lt;td&gt;Developer-friendly, easy to version; Javascript format promotes collaboration&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Maintenance&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Verbose scripts; XML format is difficult to read&lt;/td&gt;
+&lt;td&gt;More concise scripts; JavaScript is easy to read&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Community&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Since 1998; Many third-party tutorials; Extensive documentation; No central community&lt;/td&gt;
+&lt;td&gt;Since 2017; Extensive documentation; Fewer third-party tutorials; &lt;a href=&#34;https://community.k6.io/&#34;&gt;Official community&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Plugin support&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Requires plugins for many features, but there are lots of plugins available&lt;/td&gt;
+&lt;td&gt;Most features are natively supported, but plugin support is new and availability is sparse&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Native distributed load generation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;No (Premium only)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Pre-generated reports&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Default and custom HTML reports; logging via listeners&lt;/td&gt;
+&lt;td&gt;No built-in pre-generated reports; integration with analytics tools with third-party dashboards&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Website&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://jmeter.apache.org/&#34;&gt;jmeter.apache.org&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/apache/jmeter&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/loadimpact/k6&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The best advice, when attempting to choose a load testing tool, is to do a proof of concept with the most promising candidates. Some features or bugs may prove more or less important when used in an actual testing cycle. However, don&amp;rsquo;t put too much weight on comparisons of the load test &lt;em&gt;results&lt;/em&gt; from two different tools - each tool records metrics differently, and it&amp;rsquo;s more meaningful to compare results against previous runs with the same tool. When switching tools, reestablish a baseline in the new tool each time.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a summary that might help you decide between JMeter and k6.&lt;/p&gt;
+&lt;h2 id=&#34;both-tools-do-well-at&#34;&gt;Both tools do well at:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Generating protocol-level load on an application server by scripting complex user flows&lt;/li&gt;
+&lt;li&gt;Realistic scripting with the use of dynamic think time, test data generation and reuse, and customizable workload models&lt;/li&gt;
+&lt;li&gt;Documentation of features and consistency of releases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;neither-tool-supports&#34;&gt;Neither tool supports:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Generating browser-level load and interacting with DOM elements, especially for SPA&lt;/li&gt;
+&lt;li&gt;Detailed results analysis (JMeter has pre-generated HTML reports and listeners, but they are far from ideal). Users should expect to integrate results with databases and data visualization software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jmeter-is-best-for&#34;&gt;JMeter is best for:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;traditional testing teams&lt;/li&gt;
+&lt;li&gt;those looking for a GUI-driven testing tool with tons of third-party tutorials and extensive protocol support&lt;/li&gt;
+&lt;li&gt;previous users of commercial tools like LoadRunner and NeoLoad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;k6-is-best-for&#34;&gt;k6 is best for:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;collaborative, cross-functional engineering teams where testing spans acrosss multiple roles&lt;/li&gt;
+&lt;li&gt;those looking for a simple and lightweight, yet fully-featured load testing tool&lt;/li&gt;
+&lt;li&gt;teams looking to integrate testing into existing development workflows and CI/CD pipelines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Load testing scripting tools are by no means the most important consideration for the success of load testing. Knowing &lt;em&gt;why&lt;/em&gt; you&amp;rsquo;re testing, what the requirements are, and understanding and communicating results are all arguably more important. The right tool will enable you to address those concerns while providing as little friction as possible. There&amp;rsquo;s no unequivocal &amp;ldquo;best&amp;rdquo; tool; there&amp;rsquo;s only the right tool for &lt;em&gt;your&lt;/em&gt; project and context.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -228,9 +907,19 @@ So what am I doing on the k6 site, talking about how much I love JMeter?</descri
       <pubDate>Thu, 17 Dec 2020 15:29:57 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201217-week-of-testing-07/</guid>
-      <description>I decided to make a final wrap-up video for my &amp;ldquo;Week of Testing&amp;rdquo; with k6&amp;hellip; ok, so it&amp;rsquo;s actually three weeks later now, but I wanted to explore k6 a little bit more before I gave my opinion on it.
-  And here&amp;rsquo;s the audio version:
- Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.</description>
+      <description>&lt;p&gt;I decided to make a final wrap-up video for my &amp;ldquo;Week of Testing&amp;rdquo; with k6&amp;hellip; ok, so it&amp;rsquo;s actually three weeks later now, but I wanted to explore k6 a little bit more before I gave my opinion on it.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zVjLBp543E4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And here&amp;rsquo;s the audio version:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/0YgYqrPpEzEMSZIloeiQtC&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thank you, k6, for being awesome enough to agree to this video series before knowing what I&amp;rsquo;d say. Gotta love a company that welcomes transparency and feedback.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -239,8 +928,31 @@ So what am I doing on the k6 site, talking about how much I love JMeter?</descri
       <pubDate>Sat, 28 Nov 2020 20:03:04 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201128-week-of-testing-5/</guid>
-      <description>Yesterday I mentioned that I&amp;rsquo;d used the constant-vus executor to recreate the stepped load profile. Well, the thing about learning publicly is that it also means making mistakes publicly!
-I was kindly informed by a few of my new colleagues that constant-vus was not the most optimal way to recreate the stepped load profile. Simme wrote up a little function so I wouldn&amp;rsquo;t have to repeat myself so much, and Pepe Cano and Pawel Suwala (the CTO of k6 himself) both told me nicely that using stages would have been the better solution.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/quoOYnweKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Yesterday I mentioned that I&amp;rsquo;d used the &lt;code&gt;constant-vus&lt;/code&gt; executor to recreate the stepped load profile. Well, the thing about learning publicly is that it also means making mistakes publicly!&lt;/p&gt;
+&lt;p&gt;I was kindly informed by a few of my new colleagues that &lt;code&gt;constant-vus&lt;/code&gt; was not the most optimal way to recreate the stepped load profile. &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; wrote up a little function so I wouldn&amp;rsquo;t have to repeat myself so much, and &lt;a href=&#34;https://twitter.com/ppcano_&#34;&gt;Pepe Cano&lt;/a&gt; and Pawel Suwala (the CTO of k6 himself) both told me nicely that using &lt;a href=&#34;https://k6.io/docs/getting-started/running-k6#stages-ramping-up-down-vus&#34;&gt;stages&lt;/a&gt; would have been the better solution.&lt;/p&gt;
+&lt;p&gt;So, let&amp;rsquo;s chalk that up to a TIL (Today I Learned) and record that snippet here for prosperity (found in the k6 documentation linked above):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;stages&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [
+    { &lt;span style=&#34;color:#a6e22e&#34;&gt;duration&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;30s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; },
+    { &lt;span style=&#34;color:#a6e22e&#34;&gt;duration&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1m30s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; },
+    { &lt;span style=&#34;color:#a6e22e&#34;&gt;duration&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;20s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; },
+  ],
+};
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://httpbin.org/&amp;#39;&lt;/span&gt;);
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;, { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;status was 200&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt; });
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -249,8 +961,16 @@ I was kindly informed by a few of my new colleagues that constant-vus was not th
       <pubDate>Fri, 27 Nov 2020 19:54:06 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201127-week-of-testing-4/</guid>
-      <description>k6 has a cool feature where even if you start a load test locally via the CLI, you can still stream the results to k6 Cloud. It&amp;rsquo;s an interesting compromise between debugging a test locally (and therefore not paying for cloud infrastructure) and sharing results for load tests run on the cloud. It worked seamlessly, too.
-I also wanted to see how to recreate a specific load profile that I commonly use - the stepped load profile.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jDmMmc75RRM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;k6 has a cool feature where even if you start a load test locally via the CLI, you can still stream the results to k6 Cloud. It&amp;rsquo;s an interesting compromise between debugging a test locally (and therefore not paying for cloud infrastructure) and sharing results for load tests run on the cloud. It worked seamlessly, too.&lt;/p&gt;
+&lt;p&gt;I also wanted to see how to recreate a specific load profile that I commonly use - the stepped load profile. In JMeter, I typically do this with a plugin - the jp@gc Ultimate Thread Group is my thread group of choice. So, I created it in JMeter (I love that it shows a little image of it as well, while you&amp;rsquo;re building it) and then attempted to recreate it in k6.&lt;/p&gt;
+&lt;p&gt;I definitely had to look at the k6 documentation for this. I used the &lt;code&gt;constant-vus&lt;/code&gt; executor for this, but k6 has &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios#executors&#34;&gt;several other executors&lt;/a&gt; to choose from, and it worked as well as I had hoped.&lt;/p&gt;
+&lt;p&gt;So far, my experience with k6 has been positive. Things are well-documented, and they just work out of the box. No plugins necessary.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -259,8 +979,19 @@ I also wanted to see how to recreate a specific load profile that I commonly use
       <pubDate>Thu, 26 Nov 2020 19:31:33 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201126-week-of-testing-3/</guid>
-      <description>I&amp;rsquo;ve had my fun playing around with k6 Cloud, the SaaS component. For Day 3, I thought it was time to jump into the heart of k6: k6 the open source load testing tool.
-First impressions: logging was a little sparser than I expect, coming from having used load testing tools that just do this for me automatically. I think one of the first things I&amp;rsquo;ll do with k6 is to create my own little &amp;ldquo;load testing starting script&amp;rdquo; that I&amp;rsquo;ll always use, with all of the appropriate logging already set up.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y5tteMKZUqk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had my fun playing around with k6 Cloud, the SaaS component. For Day 3, I thought it was time to jump into the heart of k6: k6 the &lt;a href=&#34;https://github.com/loadimpact/k6&#34;&gt;open source load testing tool&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First impressions: logging was a little sparser than I expect, coming from having used load testing tools that just do this for me automatically. I think one of the first things I&amp;rsquo;ll do with k6 is to create my own little &amp;ldquo;load testing starting script&amp;rdquo; that I&amp;rsquo;ll always use, with all of the appropriate logging already set up.&lt;/p&gt;
+&lt;p&gt;Otherwise, I was really impressed with how quickly it installed. If you scrub over to the timestamp &lt;a href=&#34;https://www.youtube.com/watch?v=y5tteMKZUqk&amp;amp;ab_channel=k6&amp;amp;ts=106&#34;&gt;1:46&lt;/a&gt; in the video, you&amp;rsquo;ll hear that I was actually expecting to have to speed up the installation process while editing to save time, but the installation actually finished before I could say that I was going to do so. By my count that was 7 seconds between hitting enter in my terminal and the download finishing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7 seconds&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t help but compare that to &lt;a href=&#34;https://jmeter.apache.org/&#34;&gt;JMeter&lt;/a&gt;. JMeter is honestly probably my go-to load testing right now&amp;ndash; it&amp;rsquo;s not good for absolutely everything, but it&amp;rsquo;s the tool that I reach for when I &amp;ldquo;just want to test this one thing&amp;rdquo;. I&amp;rsquo;ve used it for years, and it&amp;rsquo;s the tool that I know the most. But one of the issues with JMeter is that there&amp;rsquo;s so much to do before it&amp;rsquo;s actually usable.&lt;/p&gt;
+&lt;p&gt;Before you even open JMeter, you need to install Java, and when I first started in load testing, I spent a long time wrestling with getting setting the Java environment variable in Windows before my computer would even recognize that Java was installed. Then you need to install JMeter&amp;ndash; but any JMeter tester will tell you that there are some plugins that you just can&amp;rsquo;t do without, and that really you should always install. That&amp;rsquo;s why there are so many &amp;ldquo;best plugins in JMeter&amp;rdquo; lists (&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20200414-aaf11&#34;&gt;here&amp;rsquo;s my top 3&lt;/a&gt;)&amp;hellip; because most of them are necessary, but you wouldn&amp;rsquo;t know that if you&amp;rsquo;re new to JMeter.&lt;/p&gt;
+&lt;p&gt;The fact that k6 starts up in 7 seconds is&amp;hellip; shockingly good.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -269,9 +1000,16 @@ First impressions: logging was a little sparser than I expect, coming from havin
       <pubDate>Wed, 25 Nov 2020 19:21:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</guid>
-      <description>Day 2 of my Week of Testing!
-Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.
-Today I learned that on k6, you can actually set one test to be a baseline.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dcahi7-9pRs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Day 2 of my Week of Testing!&lt;/p&gt;
+&lt;p&gt;Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.&lt;/p&gt;
+&lt;p&gt;Today I learned that on k6, you can actually set one test to be a baseline. There&amp;rsquo;s so much I want to say on this topic - that&amp;rsquo;s probably a whole blog post there - but for now, suffice it to say that having a baseline test to compare succeeding tests to is a key to a successful round of load testing. I was happy to see that k6 thinks so too, because that functionality is built into the UI by default.&lt;/p&gt;
+&lt;p&gt;I also think that being able to schedule a test regularly is fantastic for practicing Continuous Testing. Of course, teams already using CI/CD pipelines would probably get the most benefit out of running load tests using the command line rather than through the UI, but it&amp;rsquo;s nice to know that scheduling is an option in the UI as well.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -280,8 +1018,14 @@ Today I learned that on k6, you can actually set one test to be a baseline.</des
       <pubDate>Tue, 24 Nov 2020 19:13:03 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201124-week-of-testing-1/</guid>
-      <description>On my first real day of testing with k6.io, I wanted to jump right in and figure out how to run a load test on k6 Cloud. k6 has documentation on this, but I didn&amp;rsquo;t use it for this test, since the point of a week of testing is to record how easy the product is to use.
-My verdict: I&amp;rsquo;m pleasantly surprised with how easily everything went.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6qXJUS6yMDc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On my first real day of testing with &lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;, I wanted to jump right in and figure out how to run a load test on k6 Cloud. k6 has documentation on this, but I didn&amp;rsquo;t use it for this test, since the point of a week of testing is to record how easy the product is to use.&lt;/p&gt;
+&lt;p&gt;My verdict: I&amp;rsquo;m pleasantly surprised with how easily everything went. Is it just me, or was that AWS startup time exceptionally fast? I&amp;rsquo;m used to AWS taking at least a couple of minutes to provision a machine, but this seemed to start up almost instantaneously.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -290,7 +1034,26 @@ My verdict: I&amp;rsquo;m pleasantly surprised with how easily everything went.<
       <pubDate>Mon, 23 Nov 2020 20:45:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201123-week-of-testing-intro/</guid>
-      <description>Today was my first day at k6.io! I&amp;rsquo;m happy to announce that I&amp;rsquo;ve joined as their newest Developer Advocate for Performance Testing. k6 is a company I&amp;rsquo;ve had my eye on for a while, even (or maybe especially) when I was working for a competitor, Tricentis Flood. I always admired k6&amp;rsquo;s stance on open source, their involvement with the developer community, and the slick web app that brings load testing into the hands of many developers and testers.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zcYeboT5FYE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Today was my first day at &lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;! I&amp;rsquo;m happy to announce that I&amp;rsquo;ve joined as their newest Developer Advocate for Performance Testing. k6 is a company I&amp;rsquo;ve had my eye on for a while, even (or maybe especially) when I was working for a competitor, &lt;a href=&#34;https://flood.io&#34;&gt;Tricentis Flood&lt;/a&gt;. I always admired k6&amp;rsquo;s stance on open source, their involvement with the developer community, and the slick web app that brings load testing into the hands of many developers and testers.&lt;/p&gt;
+&lt;p&gt;As a load tester, I try to be tool-agnostic. I have to admit, though, that I do have a strong bias towards opensource tools. I joined Flood because of their focus on tools I already loved like &lt;a href=&#34;http://jmeter.apache.org/download_jmeter.cgi&#34;&gt;JMeter&lt;/a&gt;, &lt;a href=&#34;https://gatling.io/&#34;&gt;Gatling&lt;/a&gt;, and &lt;a href=&#34;https://element.flood.io&#34;&gt;Element&lt;/a&gt; (based on Puppeteer). (And Selenium, but it&amp;rsquo;s a stretch to say I love Selenium.) But these are tools I&amp;rsquo;ve used for years, most of them from even before I joined Flood. What kind of load tester would I be if I could only really talk about scripting in a handful of tools?&lt;/p&gt;
+&lt;p&gt;So I thought it was time for a change, and k6 was the first and only company on my list for a couple reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/loadimpact/k6&#34;&gt;The free and open source tool k6&lt;/a&gt;, which recently crossed over to 10,000 stars on Github, is often touted as the developer&amp;rsquo;s load testing tool of choice.&lt;/li&gt;
+&lt;li&gt;k6&amp;rsquo;s &lt;a href=&#34;https://k6.io/cloud&#34;&gt;cloud offering&lt;/a&gt; integrates seamlessly with the OSS tool, and it adds some killer features like performance insights that add real value to teams wanting to scale their load tests.&lt;/li&gt;
+&lt;li&gt;The k6 team is incredibly responsive to the needs of their community. Unlike most companies, where only marketing, sales, and customer support people talk to customers, k6 developers are active on GitHub, social media, and other blog sites. Everyone is passionate about what they&amp;rsquo;re building.&lt;/li&gt;
+&lt;li&gt;Roles in testing are changing, and the lines between tester and developer are blurring. Developers who don&amp;rsquo;t test are going to become just as obsolete as testers who don&amp;rsquo;t develop. I see k6&amp;rsquo;s popularity among the developer crowd as a good opportunity for me to sharpen my coding skills.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So I had to see for myself whether k6 was actually as good as it seemed.&lt;/p&gt;
+&lt;p&gt;Luckily, it turns out that k6 has a tradition of a &amp;ldquo;Week of Testing&amp;rdquo;, where every new member of the k6 team, regardless of role, spends their first week putting the product through its paces. Every part of the whole k6 solution (Cloud and OSS tool) is fair game, and the goal of the Week of Testing is to present feedback to the team at the end of it, while the new member&amp;rsquo;s eyes are fresh. When they told me about it, they said &amp;ldquo;We want to see you learn the tool on your own to see what parts are difficult to figure out.&amp;rdquo; To which I responded, &amp;ldquo;Challenge accepted!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I decided to not only give a presentation at the end, but also to video the process for posterity&amp;rsquo;s sake&amp;hellip; and, let&amp;rsquo;s face it, to impress my new managers and coworkers with my dazzling work ethic.&lt;/p&gt;
+&lt;p&gt;Step 1: Get the company&amp;rsquo;s name right.&lt;/p&gt;
+&lt;p&gt;In the first video, I share the differences between k6 vs. k6 Cloud vs. Load Impact!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -14,9 +14,39 @@
       <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
-      <description>Originally posted here.
-One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
-Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-09-what-are-the-best-tools-for-load-testing-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-09-what-are-the-best-tools-for-load-testing-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side. This isn&amp;rsquo;t technically true: if you know what the requests are, you can build those requests manually on a protocol-level tool (like JMeter or Gatling). However, this takes more work compared to browser-level tools that just do this natively.&lt;/em&gt;
+‍
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/I5Wo6x2OoZU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Transcript:&lt;/p&gt;
+&lt;p&gt;Hi everyone, Nicole back again with another Ask a Flooder, and this time I&amp;rsquo;m tackling one of the questions we get asked A LOT, which is:&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-best-tools-for-load-testing&#34;&gt;What are the best tools for load testing?&lt;/h2&gt;
+&lt;h3 id=&#34;why-open-source-load-testing-tools-are-awesome&#34;&gt;Why open-source load testing tools are awesome&lt;/h3&gt;
+&lt;p&gt;Now, I want to preface this by saying that we really love open-source tools here at Flood, because 1) they&amp;rsquo;re really pretty full-fledged these days. You don&amp;rsquo;t have to make any compromises on features, and, in fact, some of these open-source tools have more features than some newer load testing tools just because they&amp;rsquo;ve been out longer. And secondly, they have large communities. Because they&amp;rsquo;re open-source, lots of people are using it, and lots of people are developing for it. So there are lots of plugins normally, and they support any kind of protocol that you can think of. And lastly, cost. It&amp;rsquo;s hard not to mention cost because it can be a really important factor depending on the budget of your project. And if you&amp;rsquo;re starting out as a load tester, I think that it might even be the best way to start with load testing, because you can take that knowledge with you and apply it to other projects and other companies regardless of the budget that they have.&lt;/p&gt;
+&lt;h3 id=&#34;questions-to-ask-yourself-in-choosing-a-load-testing-tool&#34;&gt;Questions to ask yourself in choosing a load testing tool&lt;/h3&gt;
+&lt;h4 id=&#34;why-are-you-doing-load-testing&#34;&gt;Why are you doing load testing?&lt;/h4&gt;
+&lt;p&gt;I always advocate starting with WHY. Why are you actually load testing? Is there a particular production defect that you noticed that you&amp;rsquo;re trying to solve? Is there already a problem, or are you just preparing to launch? These are things that are going to inform the type of tool that you use because you might want to make sure that that tool supports the protocols that you need.&lt;/p&gt;
+&lt;h4 id=&#34;what-are-you-load-testing&#34;&gt;What are you load testing?&lt;/h4&gt;
+&lt;p&gt;Secondly, what type of app are you testing? Because if you have a single-page app, where your end-user is interacting with the page and client-side scripts are running to make requests to servers, then that&amp;rsquo;s something that most traditional load testing tools aren&amp;rsquo;t going to be able to do.&lt;/p&gt;
+&lt;p&gt;There are two general types of load testing tools: there&amp;rsquo;s browser-based, and there&amp;rsquo;s protocol-based. I&amp;rsquo;ll leave a link in the description talking about the differences between the two, but in general, if you want to go for browser-level testing, I would suggest Selenium and Element. Now, they&amp;rsquo;re both very good options. Selenium is probably the more robust in terms of automation of the two, but Element is better one in terms of efficiency because it was built with performance in mind. So Selenium&amp;rsquo;s automation-first and Element is really performance-first.&lt;/p&gt;
+&lt;p&gt;Now, for protocol-level tools, you can&amp;rsquo;t go wrong with either JMeter or Gatling.&lt;/p&gt;
+&lt;h4 id=&#34;what-experience-does-your-team-have-with-scripting&#34;&gt;What experience does your team have with scripting?&lt;/h4&gt;
+&lt;p&gt;Thirdly, what&amp;rsquo;s the level of technical expertise that your team has? I think it&amp;rsquo;s important to be realistic about what your team can do, given the amount of time that they have. So if you have a team that has never done load testing and has never done any scripting before, then I would suggest using our Test Builder or something similar. On Flood, we have a Test Builder that is really just an easy interface that actually runs JMeter under the hood, but it just kind of simplifies JMeter and boils it down to what are the URLs that you want to test. That is a really easy way to get started, and it&amp;rsquo;s also a great [way to run a] proof of concept. If you have some automation testers on your team that are trying to do the load testing, well, maybe you should stick to tools that they already use. So it might be easier for them to get up and running with either Selenium or Element rather than learning a new tool. And if you have developers on your team, you might consider Ruby JMeter rather than the vanilla JMeter because Ruby JMeter is a lot easier to deal with&amp;mdash; because you don&amp;rsquo;t have to deal with the XML files of a JMeter file (a normal JMX script). You can just plan out your load tests in Ruby. Or, Gatling is also a really good option because it allows you to write scripts in Scala. Scala is really really powerful, and you can create an entire framework with Gatling, which is also something to keep in mind.&lt;/p&gt;
+&lt;h4 id=&#34;how-many-virtual-users-do-you-want-to-run-in-your-load-tests&#34;&gt;How many virtual users do you want to run in your load tests?&lt;/h4&gt;
+&lt;p&gt;And lastly, how many users do you want to simulate? Now protocol-level tools are going to really shine here because Element and Selenium both require a higher usage of resources on your load generators just because of the complexities involved in starting a browser instance, whereas protocol-level tools are just super efficient at sending these requests. So I would suggest that if you&amp;rsquo;re talking about thousands of users, I would use the protocol-level tools unless there&amp;rsquo;s a really good reason why that&amp;rsquo;s not going to give you the results that you&amp;rsquo;re looking for. Between JMeter and Gatling&amp;ndash; well, they&amp;rsquo;re both excellent tools, but Gatling has been shown to particularly be good for really high levels of usage. But JMeter is also a good alternative, and you can run thousands of users of JMeter without any problem.&lt;/p&gt;
+&lt;h2 id=&#34;just-get-started&#34;&gt;Just get started!&lt;/h2&gt;
+&lt;p&gt;As always, I&amp;rsquo;d suggest just getting started. Pick whatever tool sounds like it might be the best for you, do a proof of concept on that one, and you can always try the other ones as well. On Flood, we don&amp;rsquo;t restrict you to just using one tool, so you can use one; you can use all four; you can run them at the same time if you want. It all depends on what you need for your testing.&lt;/p&gt;
+&lt;p&gt;Till next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,9 +55,66 @@ Note: In this video, I say that traditional load testing tools can&amp;rsquo;t s
       <pubDate>Mon, 24 Feb 2020 18:23:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200224-airtasker/</guid>
-      <description>Originally posted here.
-In the recent RubyConf 2020 held in Melbourne, Australia, Nancy Cai from AirTasker talked about how they built a performance testing framework using Ruby JMeter and Flood. Luckily, we had some pleasantly surprised Flooders in attendance to take notes during this fantastic talk!
-AirTasker is a platform allowing the outsourcing of everyday tasks. When discussing the reasons that AirTasker decided they wanted to carry out performance and load testing, Nancy told a fascinating story about an overly successful marketing campaign—a good problem to have, but a problem nonetheless.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/how-airtasker-uses-ruby-jmeter-and-flood-for-their-load-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/how-airtasker-uses-ruby-jmeter-and-flood-for-their-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the recent RubyConf 2020 held in Melbourne, Australia, Nancy Cai from AirTasker talked about how they built a performance testing framework using Ruby JMeter and Flood. Luckily, we had some pleasantly surprised Flooders in attendance to take notes during this fantastic talk!&lt;/p&gt;
+&lt;p&gt;AirTasker is a platform allowing the outsourcing of everyday tasks. When discussing the reasons that AirTasker decided they wanted to carry out performance and load testing, Nancy told a fascinating story about an overly successful marketing campaign—a good problem to have, but a problem nonetheless. The Sydney Cats and Dogs Home, an animal shelter, teamed up with AirTasker to pay one lucky person $500 to spend the day playing with the resident animals. The prospect of this dream job created an enormous surge in AirTasker&amp;rsquo;s traffic that caused alarm bells to go off on the underlying application servers, resulting in an end-user experience that was less than desired.&lt;/p&gt;
+&lt;p&gt;Nancy included this hilarious slide about some common feelings regarding application performance.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200224-01.png&#34; alt=&#34;A common feeling when application performance is brought up&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;steps-for-running-a-performance-test-the-airtasker-way&#34;&gt;Steps for running a performance test, the AirTasker way&lt;/h2&gt;
+&lt;p&gt;To avoid repeating that mistake, Nancy and her team set out to run performance testing by using the following simple steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Determine performance criteria.&lt;/li&gt;
+&lt;li&gt;Configure the test environment to be as production-like as possible.&lt;/li&gt;
+&lt;li&gt;Plan and design based on user behavior, including preparing test data.&lt;/li&gt;
+&lt;li&gt;Implement test design and set up the framework (which in AirTasker&amp;rsquo;s case involved Ruby JMeter as the performance testing tool and Flood as a load testing solution).&lt;/li&gt;
+&lt;li&gt;Run test.&lt;/li&gt;
+&lt;li&gt;Analyze and fine-tune results.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;setting-up-a-load-testing-tool-and-framework&#34;&gt;Setting up a load testing tool and framework&lt;/h2&gt;
+&lt;p&gt;When it came to selecting the right tools for the job, AirTasker wanted tools that met the following criteria:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ability to simulate production-like traffic easily&lt;/li&gt;
+&lt;li&gt;Widespread use in the industry&lt;/li&gt;
+&lt;li&gt;Ease of creation and maintenance of tests for everyone&lt;/li&gt;
+&lt;li&gt;Historical results aggregation&lt;/li&gt;
+&lt;li&gt;Visualization of performance metrics&lt;/li&gt;
+&lt;li&gt;Integration with CI and monitoring tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nancy&amp;rsquo;s team compared several load testing tools and found they enjoyed using the Apache JMeter tool, which is a popular open source load testing software. However, they quickly ran into an &amp;ldquo;out of memory&amp;rdquo; error after attempting to run about 400-800 concurrent users on a single machine. She and her team decided to use a distributed load testing platform to run the load they required to scale up more effectively.&lt;/p&gt;
+&lt;p&gt;Enter Flood.&lt;/p&gt;
+&lt;h2 id=&#34;why-airtasker-chose-flood&#34;&gt;Why AirTasker chose Flood&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200224-02.png&#34; alt=&#34;JMeter, Flood, and the Ruby JMeter gem combination is a winner&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We also chose Flood.io [&amp;hellip;] because it comes in with a really good open-source gem called Ruby JMeter. It is a Ruby-based DSL for building JMeter test plans. - Nancy Cai, AirTasker&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Nancy and her team enjoyed the benefits of being able to write load tests natively in Ruby and then using Flood&amp;rsquo;s Ruby JMeter gem, which is a Domain-Specific Language (DSL). Flood allowed them to turn their Ruby scripts into .jmx files, which is the native XML format that JMeter uses.&lt;/p&gt;
+&lt;p&gt;When they were ready to scale up, AirTasker ran the same JMeter script in Flood.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200224-03.png&#34; alt=&#34;Sample of a report on Flood from a JMeter test&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The real-time Flood dashboard allowed them to see that there was a problem on one of the API endpoints, called &amp;ldquo;Get pet reviews.&amp;rdquo; Further investigations revealed a performance issue due to a long-running query against a database server in the code, which AirTasker&amp;rsquo;s developers could fix.&lt;/p&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
+&lt;p&gt;Nancy gives some great advice for anyone running a performance test, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;asking the right questions as a load tester&lt;/li&gt;
+&lt;li&gt;running baseline tests&lt;/li&gt;
+&lt;li&gt;being aware of the difference between your test and production environments&lt;/li&gt;
+&lt;li&gt;keeping in mind the caching and autoscaling mechanisms that may drastically change the results&lt;/li&gt;
+&lt;li&gt;the differences between stress testing and other types of performance testing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We were so thrilled to hear Nancy&amp;rsquo;s story on how Flood helped AirTasker run their performance tests. Catch the entirety of Nancy&amp;rsquo;s talk below, and check out the resource links at the end of the post to follow Nancy&amp;rsquo;s story.‍&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Q09wJm4P8Xw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/flood-io/ruby-jmeter&#34;&gt;Flood&amp;rsquo;s Ruby JMeter gem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/nancy-cai/performance-test-ruby-jmeter&#34;&gt;Nancy&amp;rsquo;s GitHub repo&lt;/a&gt; where you can find a copy of her test scripts&lt;/p&gt;
+&lt;p&gt;Follow Nancy on &lt;a href=&#34;https://twitter.com/nancycai8&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow Nancy on &lt;a href=&#34;https://github.com/nancy-cai&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

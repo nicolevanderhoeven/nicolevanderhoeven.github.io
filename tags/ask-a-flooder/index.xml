@@ -14,10 +14,41 @@
       <pubDate>Thu, 06 Aug 2020 22:43:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</guid>
-      <description>Originally posted here.
-In this video, I talk about the power of fear, and how it can end up affecting performance test results. ‍   Or listen to the audio version here:
- Hi everyone, I&amp;rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.
-The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in the Netherlands.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-20-how-can-fear-affect-application-performance-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-20-how-can-fear-affect-application-performance-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I talk about the power of fear, and how it can end up affecting performance test results.
+‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oeEFCrTYULE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Or listen to the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2cOfQrrUwyIKWbztgNdoXR&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, I&amp;rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.&lt;/p&gt;
+&lt;h2 id=&#34;the-dutch-coronalijn&#34;&gt;The Dutch &amp;ldquo;coronalijn&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;I currently live in Maastricht, in the Netherlands. At the beginning of this global pandemic, the only people getting tested actively for COVID-19 were either people who presented with serious symptoms of the disease, or health care professionals who were continually exposed to the disease and therefore at a higher risk of contracting it.&lt;/p&gt;
+&lt;p&gt;Last month, on June 1st, the Dutch government made testing available to everybody. They set up a telephone hotline that any Dutch resident could call to set an appointment to get tested for a COVID-19 test. A task force was dispatched to make sure that they could test up to 30.000 people per day. Yet on the first day of testing, only 1.146 people were tested. So what happened?&lt;/p&gt;
+&lt;p&gt;Well, it turned out that the bottleneck of the entire process wasn&amp;rsquo;t getting enough tests, registering the tests, or even processing the test results. The bottleneck actually occurred way before that, when people called up the hotline to get an appointment.&lt;/p&gt;
+&lt;p&gt;323.000 people called on the first day that the hotline opened. And not even all of them had called to make an appointment. Some of them were just calling for general information on the coronavirus despite the fact that the government made it clear that that&amp;rsquo;s not what the line was for, and that there were other lines dedicated to information. There were reports on Twitter of people waiting up to 6 hours on the line just to talk to someone who would make an appointment for them. There were calls that got dropped. People said that sometimes it happened in the middle of a call. Even telephone operators that   the appointment system was down or slow and unusable for a lot of it.&lt;/p&gt;
+&lt;p&gt;As a result, only 5,500 people actually had appointments booked on a day where there were 323,000 that called. That&amp;rsquo;s 1.70%.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-that-have-to-do-with-performance&#34;&gt;What does that have to do with performance?&lt;/h2&gt;
+&lt;p&gt;As performance engineers, we like to believe that everything we do is reasoned. We design tests based on quantitative data. We look at historical trends and metrics to help us decide how to build a workload model. But the truth is that that&amp;rsquo;s often not enough.&lt;/p&gt;
+&lt;p&gt;If anything, this pandemic has shown us just how wrong our guesses can be, whether or not they&amp;rsquo;re  informed by facts, especially when it has to do with human behavior. We&amp;rsquo;ve seen violent fights erupt over toilet paper. We&amp;rsquo;ve seen peaks and troughs on the stock market that didn&amp;rsquo;t have anything to do with the underlying companies. We&amp;rsquo;ve seen arson on 5G cell towers. Because human beings are irrational, and it&amp;rsquo;s really hard to capture that irrationality in our model for how users are going to behave.&lt;/p&gt;
+&lt;p&gt;We may never be able to accurate predict how irrationality is going to affect the load on our application in production. But that doesn&amp;rsquo;t mean that we shouldn&amp;rsquo;t try. There are still things that we can do to mitigate the risk. I think that any application that is public-facing should be assessed for exposure to the risk of fear or other human psychological factors.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-we-account-for-fear-in-our-performance-testing&#34;&gt;How do we account for fear in our performance testing?&lt;/h2&gt;
+&lt;p&gt;I actually wrote a whole blog post on this particular situation (the Dutch corona line), and how it might have been possible to predict (maybe not with 100% accuracy but with reasonable accuracy) how many people would have called the hotline.&lt;/p&gt;
+&lt;p&gt;For example, we can look at statistics like the of the Netherlands or how many people normally get flu-like symptoms or at least report them at this time of the year. These are statistics that are readily available from the Department of Health, and we could have used them to inform our decisions on the workload model for such an application. We may not have gotten it exactly, but we would have at least bin in the same ballpark.&lt;/p&gt;
+&lt;p&gt;If we have a good enough idea about the workload that our application would have to handle when it&amp;rsquo;s influenced by fear, we can start running load tests around that. Another good open-ended kind of test to run, especially for applications that are particularly susceptible to fear, is the stress test. In a stress test, you push your application to its limits and you find out what they are. You could, for instance, start with your peak work load, and then add a certain number of users every 30 minutes and see how much your application can actually handle. You can do the same with soak tests, where you&amp;rsquo;re exposing your application to the same amount of load for an extended period of time. Both of those kind of exploratory tests help you define the limits of your application and how it would respond if fear plays a role in the workload model in production.&lt;/p&gt;
+&lt;p&gt;If we overlook this critical human element in our test design, then we leave ourselves, and our applications, vulnerable to performance degradation and, perhaps, outages.&lt;/p&gt;
+&lt;p&gt;Till next time, happy flooding!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Read &lt;a href=&#34;blog/20200813-dutch-coronavirus-hotline/&#34;&gt;this blog post&lt;/a&gt; for more about the coronavirus hotline.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,9 +57,64 @@ The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in th
       <pubDate>Wed, 22 Jul 2020 22:49:15 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</guid>
-      <description>Originally posted here.
-In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;   Or listen to the audio version here:
- HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-18-how-do-i-load-test-video-streaming-with-jmeter-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-18-how-do-i-load-test-video-streaming-with-jmeter-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Q00briuogto&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Or listen to the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/69F5lmOeFfEJr6ZgVWFGOu&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;http-live-streaming-hls-and-performance&#34;&gt;HTTP Live Streaming (HLS) and performance&lt;/h2&gt;
+&lt;p&gt;One of the most popular protocols for video streaming is &lt;a href=&#34;https://developer.apple.com/streaming/examples/&#34;&gt;HTTP Live Streaming&lt;/a&gt;, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](&lt;a href=&#34;https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8%5D(https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8)&#34;&gt;https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8)&lt;/a&gt;. According to the HLS protocol, when a video is streamed, the first request sent must be a manifest. A manifest is sometimes called a playlist, and it is a list of all the chunks or parts that make up the video. Then, each chunk is downloaded.&lt;/p&gt;
+&lt;p&gt;To assess the performance of a video stream, we still want the response time of the manifest, the chunks, and the whole video. However, there are many more metrics that are important in video streaming which aren&amp;rsquo;t captured by just the response time. For example, how do you determine whether a video was played smoothly or if it stopped to buffer? A video that keeps pausing might just drive a user away, and it&amp;rsquo;s difficult to tell whether that is happening just from the response time.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-load-test-video-streaming-with-jmeter&#34;&gt;How to load test video streaming with JMeter&lt;/h2&gt;
+&lt;h3 id=&#34;downloading-and-installing-the-ubik-video-streaming-plugin&#34;&gt;Downloading and installing the Ubik Video Streaming plugin&lt;/h3&gt;
+&lt;p&gt;Luckily, there&amp;rsquo;s a plugin for that, created by a company called Ubik Ingénierie. The &lt;a href=&#34;https://ubikloadpack.com/&#34;&gt;Ubik Load Pack&lt;/a&gt; is a set of enterprise-grade plugins for JMeter. One of those plugins is a &lt;a href=&#34;https://ubikloadpack.com/video-streaming-performance.php&#34;&gt;Video Streaming Plugin&lt;/a&gt;, and it happens to be a really easy way to get started with video streaming. This is a paid plugin, but you can &lt;a href=&#34;https://ubikloadpack.com/video-streaming-performance.php#formulaire&#34;&gt;sign up for a free 11-day trial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you do that, you&amp;rsquo;ll get an email from Ubik with a link to download the bundle. Go to lib/ext and then copy this .jar file into the same directory on your JMeter installation. Start up JMeter, and it&amp;rsquo;ll ask you for the license file. Browse to the license file in the bundle you downloaded. JMeter will restart.&lt;/p&gt;
+&lt;h3 id=&#34;using-the-jmeter-plugin-in-your-load-testing-script&#34;&gt;Using the JMeter plugin in your load testing script&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s start creating the Test Plan. Create a Thread group, and then right click on the thread group, go to Add &amp;gt; Sampler and then select the &amp;ldquo;ULP Video Streaming sampler&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Click on the sampler and then paste in the URL to the HLS file that you&amp;rsquo;d like to test. This should end in a .m3u8. This plugin supports several protocols for video streaming, but we can just leave it at auto and it&amp;rsquo;ll automatically detect which one it is.&lt;/p&gt;
+&lt;p&gt;In Play Options, you can choose whether to play the entire video or just a part of it, or even whether you want to include the video subtitles in your test.&lt;/p&gt;
+&lt;p&gt;This Network Options panel is fantastic because it allows you to limit your network speed. Slow networks, like mobile networks, really affect user experience, so it&amp;rsquo;s really important to take this into account when running load tests. You might even use a parameter here and do something like throttle to 3G speeds for 80% of your traffic, and leave it on Auto 20% of the time. But I&amp;rsquo;ll just leave this blank for now.&lt;/p&gt;
+&lt;p&gt;Next, let&amp;rsquo;s add a View Results Tree listener. Then, let&amp;rsquo;s run the script once, just to see if it works.&lt;/p&gt;
+&lt;p&gt;As you can see, we can see the manifest retrieved first, and then all the chunks. We didn&amp;rsquo;t get any errors, so let&amp;rsquo;s run this as a load test. We can disable this listener because it just consumes extra resources on our load generator.&lt;/p&gt;
+&lt;h3 id=&#34;ramping-up-your-load-test-on-flood&#34;&gt;Ramping up your load test on Flood&lt;/h3&gt;
+&lt;p&gt;To ramp this up into a load test, we&amp;rsquo;ll have to go into Thread Group and change these settings. Ideally, we want to be able to change these values from the Flood UI later so we don&amp;rsquo;t have to go into the script whenever we change them, so I&amp;rsquo;ll type in these Flood-specific properties. I&amp;rsquo;ll leave a link in the description about these properties. I&amp;rsquo;ll also set it to run Forever so that we can change the duration and the video will just keep playing to fill that duration.&lt;/p&gt;
+&lt;p&gt;To capture some of Ubik&amp;rsquo;s cool metrics, let&amp;rsquo;s add a Simple Data Writer listener here and write the results to a CSV file. On Flood, all flood results are stored on /data/flood/results, so we&amp;rsquo;ll add an output.csv file in that directory that we can download after the test.&lt;/p&gt;
+&lt;p&gt;So that&amp;rsquo;s our script! Now we&amp;rsquo;ll have to include the plugin and related files so that Flood can access them as well.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s go back to the bundle we downloaded and go to the bin folder to look for &lt;a href=&#34;http://user.properties/&#34;&gt;user.properties&lt;/a&gt;. Let&amp;rsquo;s open that up, and we&amp;rsquo;ll change the license path to &lt;code&gt;/data/flood/files&lt;/code&gt;, which is the directory that Flood saves files we upload to. To preserve this directory structure, we&amp;rsquo;ll compress just the lib and bin folders.&lt;/p&gt;
+&lt;p&gt;On Flood, we&amp;rsquo;ll start a new stream here and upload three things: the jmx script, the license, and the compressed archive of the lib and bin folders from the bundle.&lt;/p&gt;
+&lt;p&gt;Then we&amp;rsquo;ll go through the rest of the process here, setting the test parameters. Time to launch the test!&lt;/p&gt;
+&lt;h3 id=&#34;analyzing-video-streaming-load-test-results&#34;&gt;Analyzing video streaming load test results&lt;/h3&gt;
+&lt;p&gt;Flood shows you results of your load test while it&amp;rsquo;s running as well as after the test. You can see metrics like concurrency, network throughput, transaction rate, and response time for the test. You can also see these metrics for each individual transaction, including the video or sampler as a whole, the manifest, and the chunks.&lt;/p&gt;
+&lt;p&gt;To see the CSV that our script generated, we can download the Archived Results from a flood.&lt;/p&gt;
+&lt;p&gt;In JMeter, click on Tools &amp;gt; Generate Report and fill in the fields, selecting the output.csv from the flood&amp;rsquo;s Archived Results, JMeter&amp;rsquo;s &lt;a href=&#34;http://user.properties&#34;&gt;user.properties&lt;/a&gt; file, and then an output directory for the report.&lt;/p&gt;
+&lt;p&gt;Ubik&amp;rsquo;s plugin creates a few custom graphs in the HTML report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Buffer fill in Millis&lt;/li&gt;
+&lt;li&gt;Lag ratio in percentage&lt;/li&gt;
+&lt;li&gt;Lag ratio without buffer fill in percentage&lt;/li&gt;
+&lt;li&gt;Lag time in Millis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using Ubik&amp;rsquo;s Video Streaming plugin is an easy and thorough way to load test video streaming with JMeter, and I highly recommend it. I used an HLS video to demonstrate it, but this plugin supports several protocols:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HLS&lt;/li&gt;
+&lt;li&gt;Mpeg DASH&lt;/li&gt;
+&lt;li&gt;Smooth&lt;/li&gt;
+&lt;li&gt;Adobe HDS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, read Ubik&amp;rsquo;s tutorial on how to use their plugin with Flood &lt;a href=&#34;https://www.flood.io/blog/running-a-video-streaming-performance-test-using-flood-io-and-ubikloadpack&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -37,10 +123,53 @@ In this video, I answer the question: &amp;ldquo;How do I load test video stream
       <pubDate>Thu, 18 Jun 2020 21:58:49 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200618-aaf17/</guid>
-      <description>Originally posted on Tricentis Flood.
-In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.
-  Or listen to the audio version instead:
- Transcript: Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-17-how-do-i-use-unique-test-data-on-element&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-17-how-do-i-use-unique-test-data-on-element&#34;&gt;Tricentis Flood&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I talk about how to ensure that Flood Element uses unique test data, using the example of a customer wanting to script unique logins for his application.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/qVpX7MX3jxE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or listen to the audio version instead:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/7k5TXtoHnswJwBbKHXgJR7&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;transcript&#34;&gt;Transcript:&lt;/h2&gt;
+&lt;p&gt;Hi everyone, Nicole van der Hoeven here again back with another Ask a Flooder, and this week&amp;rsquo;s question is a follow-up question from last week. That user had previously asked about test data in Flood Element. This week he&amp;rsquo;s asking: &amp;ldquo;How do I ensure that Flood Element uses unique test data?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So this user is actually trying to script a login for an application. He has a list of usernames and corresponding passwords that he wants to use. He&amp;rsquo;s already set both of these up in a CSV file, and he&amp;rsquo;s also set up the Element script in the same way that I outline in my previous video. However, this user is seeing errors in the test due to the application not allowing a given user account to be used simultaneously in two or more devices. The problem is that the way that he&amp;rsquo;s set it up is that he has Element running on multiple nodes, and each node has the chance to pick the same user account.&lt;/p&gt;
+&lt;p&gt;So how do you make sure that it&amp;rsquo;s a unique 1:1 ratio for an instance of Element and a user account in the CSV file? If you haven&amp;rsquo;t already watched the previous week&amp;rsquo;s video, you should pause this, watch that, and then come back here, so it makes a little more sense because the script that I&amp;rsquo;m using is building on what we already did in the previous week.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s talk about the differences between this script and the previous week&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;First, I&amp;rsquo;m declaring a global variable here called &lt;code&gt;globalBrowserID&lt;/code&gt;. The idea is to create a unique and globally identifiable string that I can attach to every account in the CSV file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;globalBrowserID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ENV&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;FLOOD_GRID_INDEX&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;_&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ENV&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;FLOOD_GRID_NODE_SEQUENCE_ID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;_&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ENV&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;BROWSER_ID&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toString&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The global browser ID consists of three parts:- The first is a grid index, which is a number assigned to every grid, and it&amp;rsquo;s also globally unique. So if there are three grids being used in the test, then the grid indexes would be 0, 1, and 2.- The second one is a grid node sequence ID, and this is unique within the grid. The node sequence ID is a number that is assigned to every node in a single grid.- The last one is a browser ID. The browser ID is a number assigned to an instance of Element running on a single node.&lt;/p&gt;
+&lt;p&gt;These are all zero-based, so the very first instance of Element running on the very first node and on the very first grid in the entire test would be &lt;code&gt;0_0_0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re going to have to modify our CSV file to make use of this browser ID. So whereas the user previously had username and password, I&amp;rsquo;ve added an ID column. From then, these will have to be sequential. So &lt;code&gt;0_0_0&lt;/code&gt;, &lt;code&gt;0_0_1...&lt;/code&gt; And &lt;code&gt;0_0_1&lt;/code&gt; would be the second instance of Element running still on the first node, on the first grid. And you can make as many of these as you need.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;id,username,password
+0_0_0,user1,password1
+0_0_1,user2,password2
+0_0_2,user3,password3
+1_0_0,user4,password4
+1_0_1,user5,password5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ve also modified the interface &lt;code&gt;UserData&lt;/code&gt; to describe the fields in the CSV file. So there&amp;rsquo;s &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;username&lt;/code&gt;, and &lt;code&gt;password&lt;/code&gt;, and I&amp;rsquo;ve defined them all as strings.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fromCSV&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;UserData&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;users_multiplegrids.csv&amp;#39;&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;line&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;browserID&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;line&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;globalBrowserID&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;circular&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This line is telling Element to take this data file with this filename and filter it based on the line, the index, and the browserID such that &lt;code&gt;id&lt;/code&gt; is equal to the browser ID. So what happens here is that Element will take the global browser ID, which let&amp;rsquo;s say is &lt;code&gt;0_0_0&lt;/code&gt; for the very first one. It&amp;rsquo;ll then take that &lt;code&gt;0_0_0&lt;/code&gt; and look at the CSV file for anything in the ID field that has the value &lt;code&gt;0_0_0&lt;/code&gt;. And then it will continue to use the rest of that line.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also made the CSV file circular just because that&amp;rsquo;s always a good practice to get into.&lt;/p&gt;
+&lt;p&gt;And as always, I think it&amp;rsquo;s a great idea to debug this, especially when you&amp;rsquo;re dealing with multiple grids and multiple nodes on that grid.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Print to console&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Browser&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;UserData&lt;/span&gt;) =&amp;gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;global browser ID: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;globalBrowserID&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;| user: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; | password: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;)    
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ve also added the username and password here, just in case we need to verify the state that that user is in.&lt;/p&gt;
+&lt;p&gt;So let&amp;rsquo;s run the test. Since we&amp;rsquo;re just running this locally, we&amp;rsquo;ll see that the first value indeed is &lt;code&gt;0_0_0&lt;/code&gt;, and the user we&amp;rsquo;re selecting is &lt;code&gt;user1&lt;/code&gt; and &lt;code&gt;password1&lt;/code&gt;, which lines up with the username and password values corresponding to &lt;code&gt;0_0_0&lt;/code&gt; in the CSV file.&lt;/p&gt;
+&lt;p&gt;I hope that helped, and until next time, happy flooding!&lt;/p&gt;
+&lt;p&gt;Download the &lt;a href=&#34;https://github.com/flood-io/load-testing-playground/blob/master/element/test-data/example.ts&#34;&gt;full script&lt;/a&gt; and the &lt;a href=&#34;https://github.com/flood-io/load-testing-playground/blob/master/element/test-data/users.csv&#34;&gt;data file&lt;/a&gt; to follow along.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -49,10 +178,82 @@ In this video, I talk about how to ensure that Flood Element uses unique test da
       <pubDate>Tue, 09 Jun 2020 22:18:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200609-aaf16/</guid>
-      <description>Originally posted on Tricentis Flood.
-In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&amp;rsquo;ll find a copy of the Element script I used below.
-‍   And, if you prefer, here&amp;rsquo;s the audio version:
- Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-16-how-do-i-use-test-data-with-element-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-16-how-do-i-use-test-data-with-element-video&#34;&gt;Tricentis Flood&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is &lt;a href=&#34;https://element.flood.io/&#34;&gt;Flood Element&lt;/a&gt;, but you can apply these principles to any tool. You&amp;rsquo;ll find a copy of the Element script I used below.&lt;/p&gt;
+&lt;p&gt;‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EGhVm-R12qI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;And, if you prefer, here&amp;rsquo;s the audio version:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/4OW5slSCmAuBc9NPa1NKtk&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;transcript&#34;&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s talk about why you might want to use test data. In load testing, it&amp;rsquo;s important to make your scripts behave as similarly to real users as possible so that the load that you generate is production-like. The problem is that if you send the same data over and over again to the server, that server is probably going to cache that response. The response being cached means that the server will return the response way faster than it normally would if it had been a unique request. So we can use test data, instead of static data hardcoded in your scripts, to make sure that this doesn&amp;rsquo;t happen.&lt;/p&gt;
+&lt;p&gt;Using test data can also help us test different responses. For example, let&amp;rsquo;s say we&amp;rsquo;re testing a loan application system, where a user inputs the application ID, the server looks it up, and returns the status of that loan application. Now, loan applications might be in different stages of the process. For instance, some might be saved but not submitted, or maybe they&amp;rsquo;ve been submitted but failed the identity verification check.&lt;/p&gt;
+&lt;p&gt;If we used the same application ID every time, then the server would always return the same status and the same details. Instead, let&amp;rsquo;s create a CSV file that we can use as test data. It might look something like this.‍&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;applicationId
+A100001
+B100002
+C100003
+D100004
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can have &lt;code&gt;applicationId&lt;/code&gt; as the single header here, and we can populate this with a list of different application IDs in different stages of the process. That way, when we run the script, the server will have to respond authentically to every request without it being cached.&lt;/p&gt;
+&lt;p&gt;Now to create our script. This is an empty Element script. To start with, make sure you&amp;rsquo;re importing &lt;code&gt;TestData&lt;/code&gt; here in the first line of your script.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Browser&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;@flood/element&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first thing we&amp;rsquo;re going to need to do is to create an interface for the CSV file. Let&amp;rsquo;s call it &lt;code&gt;AppData&lt;/code&gt;. Within this interface, we&amp;rsquo;ll need to define all the fields that we intend to use in our data file and what type of values we can expect to be in those fields. Looking at our CSV here, we&amp;rsquo;ve just got the application ID, so I&amp;rsquo;m just going to copy that, and it&amp;rsquo;s a mixture of characters and numbers, so I&amp;rsquo;m going to put that in as a string.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;applicationId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string&lt;/span&gt;    
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now we need to tell Element how to find this test data. We&amp;rsquo;ll say that it&amp;rsquo;s from the CSV, using the interface we&amp;rsquo;ve just created. Now we&amp;rsquo;ll tell Element the filename. In this situation, the CSV file that I&amp;rsquo;m using is actually in the same directory, so I don&amp;rsquo;t need to specify a path here, but if you&amp;rsquo;re putting it somewhere else, then you&amp;rsquo;ll need to specify the folder and the path to it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fromCSV&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;applicationids.csv&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now let&amp;rsquo;s use the data in a step. In real life, you might want to use an application ID to type it into a text field, but for demonstration purposes, I&amp;rsquo;m just going to show you how to output it to the console log. Printing to the console is also a good way to debug your tests, especially if you&amp;rsquo;re dealing with test data.&lt;/p&gt;
+&lt;p&gt;We need to let Element know that we want to use AppData. So now, let&amp;rsquo;s output this to the console. Since we&amp;rsquo;re just debugging, let&amp;rsquo;s output the application ID. To actually get the value from the data file, we&amp;rsquo;ll use this syntax:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Print to console&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Browser&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt;) =&amp;gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;application ID: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;applicationId&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;) 
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;‍By default, Element reads the data files sequentially. The problem with that is we only have a handful of application IDs. So if we wanted to run this one script 100 times, we&amp;rsquo;re going to run out of data. What we can do here is add &lt;code&gt;circular&lt;/code&gt;. That way, when the script reaches the very last value of the file, the next value it selects will be the first one, and it never runs out of test data.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fromCSV&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;applicationids.csv&amp;#39;&lt;/span&gt;)    
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;circular&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Another thing you might be wondering is how to make it so that Element chooses a random value every time. To do that, we&amp;rsquo;ll also have to add &lt;code&gt;shuffle&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fromCSV&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;applicationids.csv&amp;#39;&lt;/span&gt;)    
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;circular&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;‍Now let&amp;rsquo;s try to run the test.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;element run test-data.ts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, it&amp;rsquo;s been finished. The application ID that was selected was indeed a random one because the first one would have started with A. So, it actually chose the last one randomly.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s it for test data with Element. Now, this user actually had a follow-up question, which was about unique test data. I&amp;rsquo;m going to answer that in the next video. Until next time, happy Flooding!&lt;/p&gt;
+&lt;h2 id=&#34;sample-script&#34;&gt;Sample script&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Browser&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;@flood/element&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;assert&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;assert&amp;#39;&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;loopCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Test Data&amp;#39;&lt;/span&gt;,    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;screenshotOnFailure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;disableCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;clearCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;clearCookies&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+}
+
+&lt;span style=&#34;color:#75715e&#34;&gt;/*** Test Data * Version: 1.0 */&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; () =&amp;gt; {    
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt; {        
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;applicationId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string&lt;/span&gt;    }    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;TestData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fromCSV&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;applicationids.csv&amp;#39;&lt;/span&gt;)    
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;circular&lt;/span&gt;()    
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;shuffle&lt;/span&gt;()    
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Print to console&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Browser&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;AppData&lt;/span&gt;) =&amp;gt; {        
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;application ID: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;applicationId&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;)    
+  })
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -61,16 +262,43 @@ In this video, I discuss how to make your load testing scripts more realistic by
       <pubDate>Tue, 12 May 2020 22:45:18 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200512-aaf15/</guid>
-      <description>Originally posted here.
-In this Flood Element tutorial, I demonstrate the steps required to install Flood Element, including dependencies it requires. Flood Element is an open-source browser-based load testing tool created by Tricentis Flood.
-Learn more about Flood Element
-Installation instructions for NodeJS
-Installation instructions for Yarn
-Installation instructions for Element
-Video: Getting Started with Element
-Guides: Using Element with Flood‍
-  Audio version here:
- Transcript Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-15-how-do-i-install-element-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-15-how-do-i-install-element-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this Flood Element tutorial, I demonstrate the steps required to install Flood Element, including dependencies it requires. Flood Element is an open-source browser-based load testing tool created by Tricentis Flood.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bit.ly/2YM1mnV&#34;&gt;Learn more about Flood Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nodejs.org/en/download/current/&#34;&gt;Installation instructions for NodeJS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://classic.yarnpkg.com/en/docs/install/&#34;&gt;Installation instructions for Yarn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bit.ly/2yuYrWl&#34;&gt;Installation instructions for Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=oWtnStKrh98&#34;&gt;Video: Getting Started with Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bit.ly/2YJIQg5&#34;&gt;Guides: Using Element with Flood‍&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/N7VLqqueqJE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/6EZ97ImNGUiDAGcEyGGNYM&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;transcript&#34;&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;Hi everyone, Nicole van der Hoeven here again, back with another Ask a Flooder, and today&amp;rsquo;s question is: &amp;ldquo;How do I install Element?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Now, I already made a previous video on how to get started with Element, but I didn&amp;rsquo;t actually go into the details of how to install it, so that&amp;rsquo;s what I&amp;rsquo;m going to do in this video today. There are actually a few parts to installing Element, and all of these instructions are going to be on &lt;a href=&#34;http://element.flood.io/&#34;&gt;element.flood.io&lt;/a&gt;. If you go onto the site and click on Install, you&amp;rsquo;ll see all of the instructions depending on which operating system you&amp;rsquo;re on.&lt;/p&gt;
+&lt;p&gt;First, you need to install NodeJS. This is sort of like how, if you&amp;rsquo;re familiar with JMeter, you have to install Java before installing JMeter. NodeJS is what Element runs on. Secondly, you&amp;rsquo;ll need a package manager. You can use NPM or Yarn, but in this video, I&amp;rsquo;m going to take you through how to do it with Yarn. And thirdly, there&amp;rsquo;s installing Element itself.&lt;/p&gt;
+&lt;p&gt;First, download NodeJS. I&amp;rsquo;m going to leave links in the description to all of the sites that I visit so that you can go through all of the instructions later. On the Node site, download whichever installer suits your operating system. Go through the installation steps, and afterwards, check to make sure that NodeJS is properly installed on your machine. You can do that by going into the terminal and typing:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;node -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Just make sure that the version that&amp;rsquo;s shown here is the same version that you&amp;rsquo;ve downloaded.&lt;/p&gt;
+&lt;p&gt;Secondly, install the latest version of Yarn. On the Yarn site, you&amp;rsquo;re going to have to choose your operating system and the version. We recommend using the latest stable version. And then go through the instructions for your operating system. After you&amp;rsquo;ve done that, check your Yarn installation by typing:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yarn --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And the last step is installing Element. On the Element site, you can find the exact code that you need to type into your terminal. It&amp;rsquo;s:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yarn global add @flood/element-cli 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So you can just copy that into your terminal. As of the time of this recording, the latest version of Element is 1.2.3. Looks like that&amp;rsquo;s installed. To check the version of Element, type:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;element --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So that&amp;rsquo;s how to install Element. We&amp;rsquo;ve gotten a lot of questions recently about Element in particular, so I&amp;rsquo;m going to answering them in future videos. Hope this helped, and until next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -79,10 +307,34 @@ Guides: Using Element with Flood‍
       <pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</guid>
-      <description>Originally posted here.
-How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.
-  Or listen to the audio version here:
- Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-13-how-do-you-do-mobile-load-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-13-how-do-you-do-mobile-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y_rRu0cDey4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or listen to the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2fevtJd7pPIAUDkMpdnzkV&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, Nicole here again, back with another Ask a Flooder, and today&amp;rsquo;s question is:&lt;/p&gt;
+&lt;h2 id=&#34;how-do-you-do-mobile-load-testing&#34;&gt;How do you do mobile load testing?&lt;/h2&gt;
+&lt;p&gt;Now, this question came from a customer who was under the misconception that in order to do mobile load testing, they would need to use what we call a device farm. A device farm is a collection of different kinds of mobile phones. You would ideally have the most popular makes of mobile phones (the hardware models) and the operating systems and system versions. You can imagine that this can very easily get a little out of hand to coordinate because of fragmentation. There are just so many devices out on the market, and then there&amp;rsquo;s the question of how you actually generate the load from that.&lt;/p&gt;
+&lt;p&gt;You would somehow need some sort of test automation script that was running and then coordinate os that they all run at the same time, and you would use that as a load test. As you can imagine, whether you use real devices or simulators, this kind of thing would get complicated and expensive very quickly. But the good news is that it&amp;rsquo;s unnecessary if it&amp;rsquo;s load testing that you want to do. Now I say that because, for functional testing or compatibility testing, you ARE going to want to test your application on a variety of different browsers. But with load testing, you&amp;rsquo;re really more concerned about the back end part of the equation. You want to generate load on your application servers. In reality, most mobile apps work by sending API requests to that server, usually by some sort of restful API. Luckily, API load testing has been around for a while, so we do have some industry-tested ways to run this.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-best-tools-for-api-load-testing&#34;&gt;What are the best tools for API load testing?&lt;/h2&gt;
+&lt;p&gt;Essentially, you&amp;rsquo;re going to want to test protocol-level tools. That means that you don&amp;rsquo;t want to be using browser-level tools in which you&amp;rsquo;re using scripts to drive a full browser. All you really need is something that sends requests on the protocol-level. That&amp;rsquo;s great because it&amp;rsquo;s actually way more efficient.&lt;/p&gt;
+&lt;p&gt;You have two really good open-source options for this, JMeter and Gatling. I&amp;rsquo;ve already gone a little bit into the differences between these two in my previous video on how you choose a tool for load testing, which I will leave a link to.&lt;/p&gt;
+&lt;p&gt;And here are some other resources that will help you get started with mobile load testing. I also have another video about how to record network traffic from a native mobile app on JMeter, which sounds a little complicated, but I promise it&amp;rsquo;s not. In that video, I go over the steps with you, and I&amp;rsquo;m actually doing it in real-time with you as well. I show you the screen recording from my mobile and from JMeter on my laptop, so you can always pause and watch it at your own pace.&lt;/p&gt;
+&lt;p&gt;The second thing is that I already wrote a blog post, which is sort of a guide for mobile load testing, which goes into the steps into way more detail than I can here.&lt;/p&gt;
+&lt;p&gt;And lastly, I have written blog posts about two real-life examples of mobile load testing. The first one was the Iowa Caucus Reporter app. I ran through it from the workload modeling to the scripting and then the actual execution. More recently, I also wrote about the Robinhood app. Be sure to check out the links in the description to find out more.&lt;/p&gt;
+&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -91,10 +343,40 @@ How do you load test a native mobile app? I discuss the general approach to mobi
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>Originally posted here.
-When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
-  Or catch the audio version here:
- Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/K61W7ivhsuE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or catch the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/76u25lI7sFx5SwgbsFLU5Z&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re actually getting this quite a bit now as Puppeteer grows in popularity, but first, let&amp;rsquo;s discuss the similarities. They&amp;rsquo;re tools that you can use to drive browsers. The work by identifying and interacting with elements on a website in the same way that a user would. They are also both open-source, and both can be used for load testing. This is a great strategy because instead of writing tests for an automation suite and then tests for load testing, you can just write the one test suite and re-use it, so it saves a lot of resources in the end. To answer this question, I&amp;rsquo;m going to focus on load testing because that&amp;rsquo;s what my experience is in.&lt;/p&gt;
+&lt;h2 id=&#34;difference-between-selenium-and-puppeteer&#34;&gt;Difference between Selenium and Puppeteer&lt;/h2&gt;
+&lt;h3 id=&#34;pros-and-cons-of-selenium&#34;&gt;Pros and cons of Selenium&lt;/h3&gt;
+&lt;p&gt;Now for the difference. Selenium supports more browsers than does Puppeteer. It supports Chrome, Firefox, IE, Safari, and Opera, so there are a lot more options to choose from depending on your application.&lt;/p&gt;
+&lt;p&gt;Selenium is also what I would call automation-first. It was built with automation in mind, which means it&amp;rsquo;s very good at that. It&amp;rsquo;s very robust, and if you have a complicated test scenario, Selenium is an excellent choice.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also been around for much longer than Puppeteer, which is important because that means it&amp;rsquo;s had more time to build up a community. There are way more resources and tutorials for Selenium than for Puppeteer.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also, unfortunately, very resource-intensive. That&amp;rsquo;s not something that you would typically care too much about from a test automation perspective, but when you&amp;rsquo;re running thousands of users on the cloud, it IS important to keep in mind that Selenium, just because of how it&amp;rsquo;s built and its complexity, can only run about five users per node. We&amp;rsquo;ve found that out at Flood, after baselining specifically an AWS m5.xlarge instance. So you can look at the specs of that and compare it with the machines that you&amp;rsquo;re wanting to run Selenium on, to see how that would equate for you.&lt;/p&gt;
+&lt;h3 id=&#34;pros-and-cons-of-puppeteer&#34;&gt;Pros and cons of Puppeteer&lt;/h3&gt;
+&lt;p&gt;Puppeteer is a NodeJS library developed by Google, which means it plays very well with Chrome. There are a whole lot of things that you have access to with Puppeteer, and if you&amp;rsquo;re using it with Chrome, pretty much anything in Chrome, including rendering times, you can see and access with a Puppeteer script. So that&amp;rsquo;s a huge advantage.&lt;/p&gt;
+&lt;p&gt;Unfortunately, that also means it supports fewer browsers. Obviously, it supports Chrome very well, and they recently came out with support for Firefox, although they do have plans to incorporate support for more browsers in the future.&lt;/p&gt;
+&lt;p&gt;One of Puppeteer&amp;rsquo;s advantages is that we at Flood actually created a tool on top of Puppeteer. It&amp;rsquo;s also open-source. It&amp;rsquo;s called Flood Element, and Element is built to be performance-first because obviously, that&amp;rsquo;s what we had in mind when we were building it. It takes everything that&amp;rsquo;s good about Puppeteer and makes it really easy to set parameters that you normally would expect to need for load testing, like users and ramp-up.&lt;/p&gt;
+&lt;p&gt;This also means that it&amp;rsquo;s way less resource-intensive. I said that with Selenium, you can run up to five users on an AWS m5.xlarge instance, and for the same instance type, you can run, from our experiments, anywhere from 30-50 Element scripts/users. That is a huge saving when you&amp;rsquo;re running a really large-scale test.&lt;/p&gt;
+&lt;h2 id=&#34;should-you-choose-selenium-or-puppeteer-for-load-testing&#34;&gt;Should you choose Selenium or Puppeteer for load testing?&lt;/h2&gt;
+&lt;p&gt;I would say that if you already have a large Selenium automation suite, if you have a complex test scenario, or if you aren&amp;rsquo;t running that many users for your load test, then Selenium is a great choice. If you ARE running thousands of users, though, and resource efficiency, and therefore cost efficiency, is really important to you, then choose Element.&lt;/p&gt;
+&lt;p&gt;My advice is always to try both. If you have the time, do a proof of concept with both of them. That way, your whole team can better understand what the pros and cons are for each one and decide which one is best going forward. Or maybe you don&amp;rsquo;t even decide on one. At Flood, we support both of them at the same price, so it depends on what you prefer.&lt;/p&gt;
+&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -103,9 +385,44 @@ When it comes to software testing, the debate of Puppeteer vs Selenium is a hot 
       <pubDate>Tue, 14 Apr 2020 19:47:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200414-aaf11/</guid>
-      <description>Originally posted here.
-In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.
-  Audio version here:</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-11-what-are-the-best-jmeter-plugins&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-11-what-are-the-best-jmeter-plugins&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I talk about how to install the JMeter Plugin Manager as well as other plugins, what the best JMeter plugins are, and why you need them. JMeter is an open-source load testing tool that is already robust, but there are some fantastic plugins that have been developed for it that you might want to use in your next load test.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/eYyLoH-FQrk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/36GUgvf17bRwmJxg8CNkvy&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, Nicole here, back again for another Ask a Flooder, and I hope everybody is staying alert, not anxious, during these crazy times. In today&amp;rsquo;s Ask a Flooder, our customer asks: &amp;ldquo;What are the best JMeter plugins?&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-jmeter-plugin&#34;&gt;What is a JMeter plugin?&lt;/h2&gt;
+&lt;p&gt;So first, I want to talk about what a JMeter plugin is and how you can actually install one. Apache JMeter is a really great, robust load testing that is one of my personal favorites. There are still some things that could be done better or could be extended, and the great thing about being an open-source tool is that anybody, pretty much, can just jump in and develop these plugins for JMeter to extend functionality, so that it supports more protocols or to customize load profiles in a way that is easier. We already have &lt;a href=&#34;https://flood.io/blog/jmeter-plugins-the-top-10-plugins-and-how-they-help&#34;&gt;a blog post on this&lt;/a&gt;, and I will leave a link to that article as well in the description because it goes into a lot more detail. However, I still want to give you my personal top 3 JMeter plugins.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-you-install-a-jmeter-plugin&#34;&gt;How do you install a JMeter plugin?&lt;/h2&gt;
+&lt;p&gt;You can install a plugin for JMeter in two ways.&lt;/p&gt;
+&lt;p&gt;One is to download it from &lt;a href=&#34;https://jmeter-plugins.org/&#34;&gt;JMeter Plugins&lt;/a&gt;, which I will give you a link to, and then you paste that into either the lib — it&amp;rsquo;s usually in the lib folder, but it could be in the ext (extensions) folder. Each plugin is going to differ as to what you need to copy into what folder, but that&amp;rsquo;s why I prefer the second method, which is the &lt;a href=&#34;https://jmeter-plugins.org/wiki/PluginsManager/&#34;&gt;Plugin Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Plugin Manager is a plugin itself, so you will initially need to do that copy and pasting of the jar file. Once you have the JMeter Plugin Manager installed, downloading and installing a plugin is as simple as choosing which ones you want and then clicking install. JMeter restarts, and that&amp;rsquo;s pretty much it. So I do recommend that the Plugin Manager be the first plugin that you install. But that&amp;rsquo;s still not my top 3 favorite - that&amp;rsquo;s just an optional step.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-top-3-jmeter-plugins&#34;&gt;What are the top 3 JMeter plugins?&lt;/h2&gt;
+&lt;h3 id=&#34;custom-thread-groups&#34;&gt;Custom Thread Groups&lt;/h3&gt;
+&lt;p&gt;Now for the actual plugins. My #1 favorite is the Custom Thread Groups. See, with JMeter, you get the standard default thread group, and all that does is it asks you how many users you want to run, how many loops, the duration, and the ramp-up. That&amp;rsquo;s it. So that&amp;rsquo;s good for a lot of uses, but it doesn&amp;rsquo;t really help you in cases where maybe you want to plan a spike test, and you want to make sure that all the users have fully ramped up and gotten to a certain point, and then all hit the server at once. Or maybe you want to do a step load. Previously I&amp;rsquo;ve discussed stress testing and how a step load can be useful for that. In that case, the Thread Group doesn&amp;rsquo;t quite cut it because it only ramps up a user, and then it continues at the same level of load for the duration of the test.&lt;/p&gt;
+&lt;p&gt;So, if you want any sort of variation in the middle (increasing users or decreasing), then you&amp;rsquo;re going to want something else.The Custom Thread Groups plugin has a lot of different types of thread groups. My favorite is the Ultimate One because you can probably do almost anything on that one. It also has the Stepping, Concurrency, Arrivals, and Free-Form Arrivals, so you have quite a few options.&lt;/p&gt;
+&lt;h3 id=&#34;throughput-shaping-timer&#34;&gt;Throughput Shaping Timer&lt;/h3&gt;
+&lt;p&gt;Plugin #2 is the Throughput Shaping Timer. I love it because not a lot of load testing tools, even the proprietary ones, actually have this. This is really handy when you have a project where you&amp;rsquo;re given a requirement that isn&amp;rsquo;t in terms of the number of users; it&amp;rsquo;s in terms of hits per second, or requests per second, or something to do with the actual throughput of the test.&lt;/p&gt;
+&lt;p&gt;The problem with that is that the throughput tends to change, so you can&amp;rsquo;t actually take as a given that it&amp;rsquo;ll remain constant for the duration of the test. Things like response time or latency are going to affect that throughput. For instance, when you have one user or one thread that&amp;rsquo;s running, and it sends a request and receives the response back in one second, you can&amp;rsquo;t necessarily say that that&amp;rsquo;s going to be the same when there are a thousand threads doing the same thing. The server&amp;rsquo;s under more load, so maybe it&amp;rsquo;ll take five seconds instead of one second— but that&amp;rsquo;s already changed your throughput. Before, one thread was doing one request per second, and now it&amp;rsquo;s doing one request every five seconds.&lt;/p&gt;
+&lt;p&gt;So it can get a little complicated, and the Throughput Shaping Timer is one of my favorites because it promises to solve all that. The Throughput Shaping Timer dynamically changes the think time, so at the beginning of a test, for instance, when there are no response time issues and requests are being returned really quickly, it might increase the think time so that it slows down your load test. So you&amp;rsquo;re not going over that throughput that you wanted to maintain. And then later on in the test, when all the users are ramped up, then it&amp;rsquo;ll decrease the think time that it uses. So it&amp;rsquo;s great because you just have this consistent throughput throughout your test. It&amp;rsquo;s a really intelligent way to test.&lt;/p&gt;
+&lt;p&gt;I do want to say, though, that you do also want to play around with this a bit and make sure you understand how this works. One page could have several requests in it, and you&amp;rsquo;ll want to take that into consideration when you&amp;rsquo;re choosing what to set in that timer.&lt;/p&gt;
+&lt;h3 id=&#34;http2-request-sampler&#34;&gt;HTTP/2 Request Sampler&lt;/h3&gt;
+&lt;p&gt;My #3 is the HTTP/2 Sampler. If you don&amp;rsquo;t know what HTTP/2 is, it&amp;rsquo;s an upgraded or next-generation protocol to the normal HTTP that we already use. The HTTP/2 protocol is supposed to be faster and more efficient, so more and more web apps are switching to it because of that.&lt;/p&gt;
+&lt;p&gt;The problem is that JMeter&amp;rsquo;s HTTP request sampler is only really for HTTP sites, so the HTTP/2 sampler is an upgraded version of the HTTP sampler. It&amp;rsquo;s really easy to use. The experience is pretty much going to be the same for you, but in the background, it uses the faster HTTP/2 protocol rather than the slower one.&lt;/p&gt;
+&lt;p&gt;My colleague, Jason Rizio, actually &lt;a href=&#34;https://flood.io/blog/jmeter-tutorial-http2-test&#34;&gt;wrote a whole blog post about this&lt;/a&gt;, so if you want to learn more, I will put a link in the description.&lt;/p&gt;
+&lt;p&gt;I hope that answered your question, and until next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -114,10 +431,31 @@ In this video, I talk about how to install the JMeter Plugin Manager as well as 
       <pubDate>Mon, 06 Apr 2020 20:26:24 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200406-aaf10/</guid>
-      <description>Originally posted here.
-What&amp;rsquo;s the difference between load testing and stress testing? When should you choose to run a load test on your application, and when is a stress test more appropriate? Well, it&amp;rsquo;s all in the intention.
-‍   Hi everyone, Nicole here again, back with another Ask a Flooder, and this time the question is:
-What is the difference between load testing and stress testing? Okay, again, this is a matter of semantics, but I think the difference is in the intention.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-10-what-is-the-difference-between-load-testing-and-stress-testing-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-10-what-is-the-difference-between-load-testing-and-stress-testing-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the difference between load testing and stress testing? When should you choose to run a load test on your application, and when is a stress test more appropriate? Well, it&amp;rsquo;s all in the intention.&lt;/p&gt;
+&lt;p&gt;‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/igP2q__zMcc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Hi everyone, Nicole here again, back with another Ask a Flooder, and this time the question is:&lt;/p&gt;
+&lt;h2 id=&#34;what-is-the-difference-between-load-testing-and-stress-testing&#34;&gt;What is the difference between load testing and stress testing?&lt;/h2&gt;
+&lt;p&gt;Okay, again, this is a matter of semantics, but I think the difference is in the intention. Load testing and stress testing are both types of back-end performance testing, and I did also make a video on it that I&amp;rsquo;ll link in the description down below.&lt;/p&gt;
+&lt;h3 id=&#34;load-testing-is-about-seeing-how-your-server-reacts-to-finite-load&#34;&gt;Load testing is about seeing how your server reacts to finite load&lt;/h3&gt;
+&lt;p&gt;Now, with load testing, you usually have to start with a specific idea of the load profile that you want to test. You get to this number by looking through your Google Analytics or other analytics on your site to see what load you need to test at, and then the intention is to see how your server responds to that load. So the load is fixed: you know WHAT you want to test, and you just want to see how the server reacts to it. So it&amp;rsquo;s more finite in scope. In general, it&amp;rsquo;s also more about how your server reacts to normal or expected load, whether that&amp;rsquo;s now or in the future.&lt;/p&gt;
+&lt;h3 id=&#34;stress-testing-explores-your-applications-upper-limits&#34;&gt;Stress testing explores your application&amp;rsquo;s upper limits&lt;/h3&gt;
+&lt;p&gt;Stress testing, on the other hand, is a little bit more open-ended and a little bit more destructive. So instead of starting with how much load you want to put on [your server], in stress testing, what you generally do is you increase the load. You usually use a step load profile: so you start a certain number of users, you wait maybe 30 minutes, and then you increase it again. And you end up with this staircase kind of load profile. What you&amp;rsquo;re doing there is you just let it increase until your server fails because the intention of stress testing is to get your server to fail. And, once it fails, does it fail gracefully? Does it show an error message? These are really things that test the upper limits of your server, and that&amp;rsquo;s what stress testing really is.&lt;/p&gt;
+&lt;h3 id=&#34;they-can-be-interchangeable&#34;&gt;They can be interchangeable&lt;/h3&gt;
+&lt;p&gt;At Flood, we tend to use the word &amp;ldquo;load&amp;rdquo; testing to refer to both kinds of testing because both of them entail applying load on your application server. It&amp;rsquo;s not really that important to distinguish between one or another; what&amp;rsquo;s [important] is that your team uses the same definition so that when YOU say &amp;ldquo;load testing,&amp;rdquo; they know what you mean.&lt;/p&gt;
+&lt;p&gt;Until the next time, happy flooding!&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20200324-aaf07&#34;&gt;Video on performance testing vs load testing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Real-life stress testing in action: &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing&#34;&gt;Robinhood app failure&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -126,9 +464,39 @@ What is the difference between load testing and stress testing? Okay, again, thi
       <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
-      <description>Originally posted here.
-One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
-Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-09-what-are-the-best-tools-for-load-testing-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-09-what-are-the-best-tools-for-load-testing-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side. This isn&amp;rsquo;t technically true: if you know what the requests are, you can build those requests manually on a protocol-level tool (like JMeter or Gatling). However, this takes more work compared to browser-level tools that just do this natively.&lt;/em&gt;
+‍
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/I5Wo6x2OoZU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Transcript:&lt;/p&gt;
+&lt;p&gt;Hi everyone, Nicole back again with another Ask a Flooder, and this time I&amp;rsquo;m tackling one of the questions we get asked A LOT, which is:&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-best-tools-for-load-testing&#34;&gt;What are the best tools for load testing?&lt;/h2&gt;
+&lt;h3 id=&#34;why-open-source-load-testing-tools-are-awesome&#34;&gt;Why open-source load testing tools are awesome&lt;/h3&gt;
+&lt;p&gt;Now, I want to preface this by saying that we really love open-source tools here at Flood, because 1) they&amp;rsquo;re really pretty full-fledged these days. You don&amp;rsquo;t have to make any compromises on features, and, in fact, some of these open-source tools have more features than some newer load testing tools just because they&amp;rsquo;ve been out longer. And secondly, they have large communities. Because they&amp;rsquo;re open-source, lots of people are using it, and lots of people are developing for it. So there are lots of plugins normally, and they support any kind of protocol that you can think of. And lastly, cost. It&amp;rsquo;s hard not to mention cost because it can be a really important factor depending on the budget of your project. And if you&amp;rsquo;re starting out as a load tester, I think that it might even be the best way to start with load testing, because you can take that knowledge with you and apply it to other projects and other companies regardless of the budget that they have.&lt;/p&gt;
+&lt;h3 id=&#34;questions-to-ask-yourself-in-choosing-a-load-testing-tool&#34;&gt;Questions to ask yourself in choosing a load testing tool&lt;/h3&gt;
+&lt;h4 id=&#34;why-are-you-doing-load-testing&#34;&gt;Why are you doing load testing?&lt;/h4&gt;
+&lt;p&gt;I always advocate starting with WHY. Why are you actually load testing? Is there a particular production defect that you noticed that you&amp;rsquo;re trying to solve? Is there already a problem, or are you just preparing to launch? These are things that are going to inform the type of tool that you use because you might want to make sure that that tool supports the protocols that you need.&lt;/p&gt;
+&lt;h4 id=&#34;what-are-you-load-testing&#34;&gt;What are you load testing?&lt;/h4&gt;
+&lt;p&gt;Secondly, what type of app are you testing? Because if you have a single-page app, where your end-user is interacting with the page and client-side scripts are running to make requests to servers, then that&amp;rsquo;s something that most traditional load testing tools aren&amp;rsquo;t going to be able to do.&lt;/p&gt;
+&lt;p&gt;There are two general types of load testing tools: there&amp;rsquo;s browser-based, and there&amp;rsquo;s protocol-based. I&amp;rsquo;ll leave a link in the description talking about the differences between the two, but in general, if you want to go for browser-level testing, I would suggest Selenium and Element. Now, they&amp;rsquo;re both very good options. Selenium is probably the more robust in terms of automation of the two, but Element is better one in terms of efficiency because it was built with performance in mind. So Selenium&amp;rsquo;s automation-first and Element is really performance-first.&lt;/p&gt;
+&lt;p&gt;Now, for protocol-level tools, you can&amp;rsquo;t go wrong with either JMeter or Gatling.&lt;/p&gt;
+&lt;h4 id=&#34;what-experience-does-your-team-have-with-scripting&#34;&gt;What experience does your team have with scripting?&lt;/h4&gt;
+&lt;p&gt;Thirdly, what&amp;rsquo;s the level of technical expertise that your team has? I think it&amp;rsquo;s important to be realistic about what your team can do, given the amount of time that they have. So if you have a team that has never done load testing and has never done any scripting before, then I would suggest using our Test Builder or something similar. On Flood, we have a Test Builder that is really just an easy interface that actually runs JMeter under the hood, but it just kind of simplifies JMeter and boils it down to what are the URLs that you want to test. That is a really easy way to get started, and it&amp;rsquo;s also a great [way to run a] proof of concept. If you have some automation testers on your team that are trying to do the load testing, well, maybe you should stick to tools that they already use. So it might be easier for them to get up and running with either Selenium or Element rather than learning a new tool. And if you have developers on your team, you might consider Ruby JMeter rather than the vanilla JMeter because Ruby JMeter is a lot easier to deal with&amp;mdash; because you don&amp;rsquo;t have to deal with the XML files of a JMeter file (a normal JMX script). You can just plan out your load tests in Ruby. Or, Gatling is also a really good option because it allows you to write scripts in Scala. Scala is really really powerful, and you can create an entire framework with Gatling, which is also something to keep in mind.&lt;/p&gt;
+&lt;h4 id=&#34;how-many-virtual-users-do-you-want-to-run-in-your-load-tests&#34;&gt;How many virtual users do you want to run in your load tests?&lt;/h4&gt;
+&lt;p&gt;And lastly, how many users do you want to simulate? Now protocol-level tools are going to really shine here because Element and Selenium both require a higher usage of resources on your load generators just because of the complexities involved in starting a browser instance, whereas protocol-level tools are just super efficient at sending these requests. So I would suggest that if you&amp;rsquo;re talking about thousands of users, I would use the protocol-level tools unless there&amp;rsquo;s a really good reason why that&amp;rsquo;s not going to give you the results that you&amp;rsquo;re looking for. Between JMeter and Gatling&amp;ndash; well, they&amp;rsquo;re both excellent tools, but Gatling has been shown to particularly be good for really high levels of usage. But JMeter is also a good alternative, and you can run thousands of users of JMeter without any problem.&lt;/p&gt;
+&lt;h2 id=&#34;just-get-started&#34;&gt;Just get started!&lt;/h2&gt;
+&lt;p&gt;As always, I&amp;rsquo;d suggest just getting started. Pick whatever tool sounds like it might be the best for you, do a proof of concept on that one, and you can always try the other ones as well. On Flood, we don&amp;rsquo;t restrict you to just using one tool, so you can use one; you can use all four; you can run them at the same time if you want. It all depends on what you need for your testing.&lt;/p&gt;
+&lt;p&gt;Till next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -137,12 +505,38 @@ Note: In this video, I say that traditional load testing tools can&amp;rsquo;t s
       <pubDate>Thu, 26 Mar 2020 20:41:22 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200326-aaf08/</guid>
-      <description>Originally posted here.
-What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?
-   ‍
-Transcript:
-Hi everyone! Nicole here again for another Ask a Flooder, except this time it&amp;rsquo;s not really a question&amp;ndash; it&amp;rsquo;s just something I want to talk about.
-Source: The Flood Twitter account</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-08-why-is-concurrent-users-an-ambiguous-measure-of-throughput-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-08-why-is-concurrent-users-an-ambiguous-measure-of-throughput-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What is the meaning of concurrent users in performance testing? You might have seen concurrent users in JMeter or other tools, but what does it mean and how can you use the term properly?&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uJE2hm50TIw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+‍&lt;/p&gt;
+&lt;p&gt;Transcript:&lt;/p&gt;
+&lt;p&gt;Hi everyone! Nicole here again for another Ask a Flooder, except this time it&amp;rsquo;s not really a question&amp;ndash; it&amp;rsquo;s just something I want to talk about.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200326-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: The &lt;a href=&#34;https://twitter.com/flood_io/status/1224284942932332544&#34;&gt;Flood Twitter account&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So I&amp;rsquo;m going to put the tweet up here, but last month I actually tweeted about something that somebody else posted. Netflix actually reported some of their viewership figures, and one thing that they reported was that 76 million households watched their new show, The Witcher, which is a large amount of people. So I posted something about why concurrent users is actually an ambiguous way to measure throughput, and I want to expound a little bit more on that.&lt;/p&gt;
+&lt;h2 id=&#34;concurrent-users-in-performance-testing---limitations&#34;&gt;&amp;ldquo;Concurrent users&amp;rdquo; in performance testing - limitations&lt;/h2&gt;
+&lt;p&gt;In load testing, the number of concurrent users is a pretty standard measure of throughput, and generally, it means the number of users that are accessing an application at any one point in time. And even on Flood, we use it because it&amp;rsquo;s a really good rule of thumb. When we want to get a feel for how big a test is, load testers generally ask, &amp;ldquo;How many users?&amp;rdquo; However, we should be aware, as load testers, that that doesn&amp;rsquo;t always give us the full picture.&lt;/p&gt;
+&lt;h3 id=&#34;what-type-of-user-is-it&#34;&gt;What type of user is it?&lt;/h3&gt;
+&lt;p&gt;For instance, the type of user that it is can really change the traffic. Sometimes mobile browsers will optimize requests so that they send fewer because they realize that mobile networks are slower.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-user-doing&#34;&gt;What is the user doing?&lt;/h3&gt;
+&lt;p&gt;Secondly, what is the user doing? Are they browsing on different tabs all the time? Or are they just refreshing the content on the same tab? Because if they&amp;rsquo;re just using the same page and fetching it over and over again, then caching could come into play, so that would create a different load on the system.&lt;/p&gt;
+&lt;h3 id=&#34;how-long-is-the-user-doing-it&#34;&gt;How long is the user doing it?&lt;/h3&gt;
+&lt;p&gt;And thirdly, how long is the user doing it? Are we talking about a sustained load for an hour, or is it a shorter time period, like a spike test of five minutes where all the users just ram a system? There are things like the number of requests per second that you need to take into account, which is affected by the think time and the delays that you set in your script. Perhaps your script has a user that just sends a request, then waits for a minute, and then sends another request. That&amp;rsquo;s very different from a user just sending one request after another as fast as possible.&lt;/p&gt;
+&lt;h3 id=&#34;when-does-the-user-do-it&#34;&gt;When does the user do it?&lt;/h3&gt;
+&lt;p&gt;Lastly, it&amp;rsquo;s also important to take into account the seasonality of the request. When does the user do it? If you have a timesheeting application, for instance, then it might only get traffic on Fridays and a little bit on Monday, so you need to specify, when you report these numbers, whether it&amp;rsquo;s for the peak time period on Friday - you know, around 3 pm or something - or you&amp;rsquo;re reporting on figures from a Wednesday when there really wouldn&amp;rsquo;t be that many people accessing it.&lt;/p&gt;
+&lt;p&gt;In the case of Netflix, what they counted as a view was only a two-minute watch time. So if you&amp;rsquo;re one of those people who went into The Witcher and didn&amp;rsquo;t watch past two minutes, that still counted as a view. So the 76 million users is still not completely accurate, because not all of those people would have watched the entire thing.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Concurrent users is a good way in order to get a quick feel of the throughput that a test outputs, but it really needs to be examined in context along with things like requests per second and the network throughput (kbps) in order to get a really good understanding of how much load a test is generating.&lt;/p&gt;
+&lt;p&gt;Till next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -151,11 +545,31 @@ Source: The Flood Twitter account</description>
       <pubDate>Tue, 24 Mar 2020 20:31:06 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200324-aaf07/</guid>
-      <description>Originally posted here.
-In a two-for-one Ask a Flooder, I answer two questions: What is the difference between performance testing and load testing and in which situations is performance testing a better option than load testing?
-  Transcript:
-Hi again, it&amp;rsquo;s Nicole back for another Ask a Flooder. And this time, the question from one of our customers is:
-What is the difference between performance testing and load testing?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-07-what-is-the-difference-between-performance-testing-and-load-testing-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-07-what-is-the-difference-between-performance-testing-and-load-testing-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In a two-for-one Ask a Flooder, I answer two questions: What is the difference between performance testing and load testing and in which situations is performance testing a better option than load testing?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8CueAkDY5yE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Transcript:&lt;/p&gt;
+&lt;p&gt;Hi again, it&amp;rsquo;s Nicole back for another Ask a Flooder. And this time, the question from one of our customers is:&lt;/p&gt;
+&lt;h2 id=&#34;what-is-the-difference-between-performance-testing-and-load-testing&#34;&gt;What is the difference between performance testing and load testing?&lt;/h2&gt;
+&lt;p&gt;Now, this is really a matter of semantics, and it kind of depends on whom you ask, but in general, performance is how quickly an application responds. So when you&amp;rsquo;re doing performance testing, you&amp;rsquo;re doing one of two things: there&amp;rsquo;s front-end performance, and then there&amp;rsquo;s back-end performance.&lt;/p&gt;
+&lt;p&gt;In front-end performance, you&amp;rsquo;re looking at things like how quickly does the application render for the customer on the client-side. It&amp;rsquo;s how fast something renders on the screen, so it&amp;rsquo;s how page resources can be rearranged or optimized so that the experience is a lot faster for the end customer. So the focus is on the client-side on the end user&amp;rsquo;s actual device.&lt;/p&gt;
+&lt;p&gt;On the back-end performance side, you&amp;rsquo;re looking at the server. How quickly does the server send a response to a request that&amp;rsquo;s sent by the browser?&lt;/p&gt;
+&lt;p&gt;So those are really two different things because back-end performance really looks at everything outside - everything beyond - the device of the customer. Both kinds of performance testing are important. A solid, holistic performance testing strategy will incorporate both front-end and back-end performance.&lt;/p&gt;
+&lt;p&gt;There are different types of back-end performance testing. You might have heard of load testing, stress testing, volume testing. At Flood, we kind of refer to all of those under the bracket of load testing. They do have some semantic differences between them, but in general, we talk about load testing to refer to simulating traffic against an application server to see how that server responds.&lt;/p&gt;
+&lt;p&gt;Now the type of the testing that you want to do will also affect the kind of performance testing tool that you choose. For instance, a tool like Flood Element can do both front-end and back-end testing, but a tool like JMeter is only going to be useful for the back-end performance testing. So you need to choose your test according to the testing type that you&amp;rsquo;d like to carry out.&lt;/p&gt;
+&lt;p&gt;This customer also had a follow-up question:&lt;/p&gt;
+&lt;h2 id=&#34;in-which-situations-is-performance-testing-a-better-option-than-load-testing&#34;&gt;In which situations is performance testing a better option than load testing?&lt;/h2&gt;
+&lt;p&gt;And one answer to this is when front-end performance is required. So if what you&amp;rsquo;re after is trying to speed up how quickly your application renders on a mobile device, for instance, you might be better off looking at tools like GTMetrix or WebPageTest in order to measure and improve that side of it.&lt;/p&gt;
+&lt;p&gt;I really want to stress here that neither front-end performance nor back-end performance is better than the other. If you&amp;rsquo;re asking me which type of testing you should do, my answer would be both. Till next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -164,9 +578,37 @@ What is the difference between performance testing and load testing?</descriptio
       <pubDate>Thu, 19 Mar 2020 20:50:44 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200319-aaf06/</guid>
-      <description>Originally posted here.
-How do you record the traffic from your native mobile app using Apache JMeter? In this video, I explain step-by-step how to begin load testing a native mobile app.
-‍   You might want to be doing this because you&amp;rsquo;re load testing a mobile app but either you don&amp;rsquo;t have access to your developers right now so they can&amp;rsquo;t help you with how the requests are made or what the requests are, or maybe you just want to verify what you&amp;rsquo;ve already been told.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-06-how-to-record-traffic-from-a-mobile-app-with-jmeter-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-06-how-to-record-traffic-from-a-mobile-app-with-jmeter-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How do you record the traffic from your native mobile app using Apache JMeter? In this video, I explain step-by-step how to begin load testing a native mobile app.&lt;/p&gt;
+&lt;p&gt;‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VVUyYF1VPlo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;You might want to be doing this because you&amp;rsquo;re load testing a mobile app but either you don&amp;rsquo;t have access to your developers right now so they can&amp;rsquo;t help you with how the requests are made or what the requests are, or maybe you just want to verify what you&amp;rsquo;ve already been told. Either way, I&amp;rsquo;m going to show you how using my Android device (it&amp;rsquo;s a Samsung Galaxy Note 10+) and a Macbook Pro 13&amp;quot;. However, the same principles should apply to other mobile devices and laptops.&lt;/p&gt;
+&lt;h2 id=&#34;step-1-download-and-install-the-mobile-app&#34;&gt;Step 1: Download and install the mobile app&lt;/h2&gt;
+&lt;p&gt;The first thing you&amp;rsquo;ll want to do is download and install the app. Now, if the app has already been released, then that&amp;rsquo;s no problem. You just go to the Google Play Store and download it. However, if it hasn&amp;rsquo;t been released yet and you&amp;rsquo;ve been given an APK file for the app, then you&amp;rsquo;ll have to tweak your settings a little bit in order to get your phone to allow you to download it.&lt;/p&gt;
+&lt;p&gt;And I&amp;rsquo;m going to do this right with you. So go into Settings: pull down the little notification screen and hit the little gear icon, and you&amp;rsquo;ll see a bunch of settings there. Scroll down all the way to the bottom until you see About phone. Click that and then click Software Information. You&amp;rsquo;ll see the Build number halfway through the screen here&amp;ndash; and I know this is weird, but click on it seven times. You have to draw your pattern if you have one set up, but you&amp;rsquo;ll see here that it says Developer Mode has been enabled. That&amp;rsquo;s all you need to do; from now on you can install any APK, but be careful, because if you don&amp;rsquo;t trust the source, you know, they could do some damage to your phone.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-set-up-the-https-test-script-recorder-on-jmeter&#34;&gt;Step 2: Set up the HTTP(S) Test Script Recorder on JMeter&lt;/h2&gt;
+&lt;p&gt;The second step is setting up an HTTP recorder on JMeter. So let&amp;rsquo;s head over to our laptop. Make sure you&amp;rsquo;re connected to a wifi network. Now, this is a completely new JMeter test plan here. So just right-click on Test Plan and then hover over Add, and then you&amp;rsquo;re going to go down to Non-Test Elements. Select the HTTP(S) Test Script Recorder. You&amp;rsquo;ll see here that the port it uses is 8888. We&amp;rsquo;ll need that for later. Now right-click on the Test Script Recorder, hit Add, and then Listener. We&amp;rsquo;ll add a View Results Tree to be able to capture the results that we need later. Now we&amp;rsquo;ll click on the Test Plan - right-click - and then we&amp;rsquo;re going to Add a Thread Group. Now let&amp;rsquo;s right-click on the Thread Group and go to Add &amp;gt; Logic Controller &amp;gt; Recording Controller. This is where the requests that we&amp;rsquo;re going to send are going to be recorded, and we&amp;rsquo;ll see both the requests and the responses in View Results Tree.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-set-up-your-mobile-to-use-the-https-test-script-recorder-as-a-proxy&#34;&gt;Step 3: Set up your mobile to use the HTTP(S) Test Script Recorder as a proxy&lt;/h2&gt;
+&lt;p&gt;Now, the third step is to set up your mobile to use a proxy. So, back on the mobile, go back to Settings and hit Connections. And then click on Wifi. Now verify that the wifi network that you&amp;rsquo;re connected to on your mobile is the same one as the wifi network that you&amp;rsquo;re connected to on your laptop. If it&amp;rsquo;s the same, click the gear icon. And then hit Advanced all the way at the bottom. Now the Proxy settings are on the second option here so hit the down menu here and then hit Manual. Now, for the Proxy host name we&amp;rsquo;ll have to go back to the computer to see what our local IP address is.&lt;/p&gt;
+&lt;p&gt;So, in order to do that, you just have to go to System Preferences. I&amp;rsquo;m doing it from the Apple menu here and from System Preferences, click on Network. And once you&amp;rsquo;ve selected the wifi network, hit Advanced, and then TCP/IP. So what you&amp;rsquo;re looking for will be this IPv4 Address. Now you&amp;rsquo;re going to type that into the Host name field on your mobile. So let me just type that in.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll note that this is actually a local IP address. It&amp;rsquo;s not your public IP address. Now for our proxy port, we&amp;rsquo;ll go and look at the laptop to see the Test Script Recorder Settings and it was 8888, so that&amp;rsquo;s what we&amp;rsquo;re going to put in here. All right. And then click on Save.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-start-recording&#34;&gt;Step 4: Start recording&lt;/h2&gt;
+&lt;p&gt;Step 4 is recording the traffic. Now, go back to your laptop on JMeter and click on the Test Script Recorder. Now we&amp;rsquo;re going to click on Start. It&amp;rsquo;ll come up with this popup box here and you can just click OK since we already trust the source. You&amp;rsquo;ll see this little popup here to confirm that we are recording traffic. Now let&amp;rsquo;s see if we&amp;rsquo;ve actually configured it correctly.&lt;/p&gt;
+&lt;p&gt;On our mobiles, let&amp;rsquo;s go back and open the app that you want to use. So I&amp;rsquo;m going to be using the IowaReporterApp. I just did an article on this on The New Stack (link in the description below) about how I would load test the Iowa Caucus Reporter App. So that&amp;rsquo;s what I&amp;rsquo;m going to be using for this tutorial as well. So I&amp;rsquo;m going to open that (&amp;ldquo;getting ready to caucus&amp;rdquo;) and I don&amp;rsquo;t have a valid precinct ID so I&amp;rsquo;m just going to put flood.io and I&amp;rsquo;m going to click Login. So it&amp;rsquo;s telling me that the connection isn&amp;rsquo;t private. I don&amp;rsquo;t actually expect this to work, because the app has been taken down and I don&amp;rsquo;t have valid login credentials, but I&amp;rsquo;m still just going to go forward. So, Proceed. You might have to do this as well if your certificates haven&amp;rsquo;t been set up correctly.&lt;/p&gt;
+&lt;p&gt;Okay, so now we&amp;rsquo;ve gotten this error here and it says, &amp;ldquo;Oops, something went wrong&amp;rdquo;. So it&amp;rsquo;s handy to know what it looks like on your mobile so that you can go into JMeter and see if that&amp;rsquo;s what you see as well.&lt;/p&gt;
+&lt;p&gt;So on JMeter let&amp;rsquo;s go to the View Results Tree and it looks like Google Play tried to do a few things beforehand but what we&amp;rsquo;re really looking for is this IDP caucus thing. So, these are the requests that my phone made and these are the responses. So this is where we got the certificate error because it says &amp;ldquo;certificate unknown&amp;rdquo;. Now this is the actual request we sent for login. You can see the request here - the full request - and also the full response. Now, just to check we&amp;rsquo;ll make sure we got the same response in the body here on JMeter that we saw on our mobile phones.&lt;/p&gt;
+&lt;p&gt;And here it is; it says &amp;ldquo;Oops!, something went wrong&amp;rdquo;. You can of course just search for this. So we&amp;rsquo;ll stop the recording now because we&amp;rsquo;ve confirmed that we&amp;rsquo;ve gotten what we wanted. So in the recording controller, we can see the requests that were recorded from our mobile app and the first one looks like it was one to Google so that&amp;rsquo;s not one we want. If we were doing this again, we could actually go into the Test Script Recorder, go into this Requests Filtering tab, and we could just filter out or exclude the domains that we don&amp;rsquo;t want to test, like Google. But this looks like the request that we were actually looking for. You&amp;rsquo;ll see the full request here with all the parameters and the values.&lt;/p&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
+&lt;p&gt;And that&amp;rsquo;s how you record traffic from a native mobile app on JMeter. From here, you can then play around with the request. Like we saw, there were a lot of dynamic values that were recorded in the request. We would probably want to correlate those and make sure that we&amp;rsquo;re doing those correctly. But this is a really great starting point for testing a mobile app.&lt;/p&gt;
+&lt;p&gt;Till the next Ask a Flooder, happy Flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -175,10 +617,28 @@ How do you record the traffic from your native mobile app using Apache JMeter? I
       <pubDate>Tue, 17 Mar 2020 20:58:12 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</guid>
-      <description>Originally posted here.
-On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.
-‍   TRANSCRIPT:
-If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to element.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-05-how-do-i-get-started-with-flood-element-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-05-how-do-i-get-started-with-flood-element-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.&lt;/p&gt;
+&lt;p&gt;‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oWtnStKrh98&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;TRANSCRIPT:&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to &lt;a href=&#34;http://element.flood.io&#34;&gt;element.flood.io&lt;/a&gt; and clicking on Install on the upper left corner. You can follow those instructions to get started, and you can also click on the links on the left side if you get stuck.&lt;/p&gt;
+&lt;p&gt;Once Element is installed, open up the directory and look at the examples folder. There you&amp;rsquo;ll find a lot of sample scripts that we&amp;rsquo;ve already made up for you. The easiest way to get started is to just modify some of these slightly so that you&amp;rsquo;re testing your site. For example, you could just change the URL and step names to make it appropriate for what you&amp;rsquo;re testing.&lt;/p&gt;
+&lt;p&gt;Then, you can run it locally using the command element run the name of your test script, like test.ts,  and then I also like to include the no-headless flag.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element run test.ts --no-headless&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The no-headless flag is going to run a real browser, a Chromium browser, on your machine, so that you can see what the script is actually doing. This is a great way to debug and troubleshoot.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;re ready to run your load test on the cloud, you can simply drag and drop your Element script into the Flood stream editor and then start your load test as usual.&lt;/p&gt;
+&lt;p&gt;Check out the links in the description below for more information about Element, how to get started, and how to run an Element script on Flood.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://element.flood.io/&#34;&gt;More about Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/scripting-and-tools/flood-element/getting-started-with-element&#34;&gt;Getting started with Element&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -187,10 +647,26 @@ If you&amp;rsquo;re sold on browser-based load testing and want to get started o
       <pubDate>Wed, 11 Mar 2020 21:02:48 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200311-aaf04/</guid>
-      <description>Originally posted here.
-In this Ask a Flooder, I tackle a question we get all the time from users regarding results, particularly for cloud load testing. Sometimes you might notice that response times that are reported in by your load testing tool do not match up with the response time you see from your own browser. What causes this, and how can we fix it?
-  Transcript:
-It&amp;rsquo;s always confusing when your load testing tool reports higher average response times than what you can see while you&amp;rsquo;re manually accessing your application on your browser.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/why-would-your-load-testing-tool-report-higher-response-times-than-you-expect-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/why-would-your-load-testing-tool-report-higher-response-times-than-you-expect-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this Ask a Flooder, I tackle a question we get all the time from users regarding results, particularly for cloud load testing. Sometimes you might notice that response times that are reported in by your load testing tool do not match up with the response time you see from your own browser. What causes this, and how can we fix it?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/goKK2aACZZY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Transcript:&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s always confusing when your load testing tool reports higher average response times than what you can see while you&amp;rsquo;re manually accessing your application on your browser. There are many things that might cause this, but one of the most common causes for it is that you&amp;rsquo;re overloading your node generators.&lt;/p&gt;
+&lt;p&gt;As a general rule of thumb, you&amp;rsquo;ll want to keep your CPU utilization at 80% or less throughout the duration of the test. It is normal for it to spike in the beginning, but it should ideally come to a more stable spot below 80%. If your node&amp;rsquo;s CPU utilization is going over 80% for most of the test, then what that means is that your node is struggling to get those requests out, which may lead to some inaccurate results.&lt;/p&gt;
+&lt;p&gt;You can confirm whether or not this is the cause of your high response times by checking the logs and checking the resource utilization on your nodes.If you&amp;rsquo;re running on Flood, you can do this while the flood is running by going over to Grids, selecting the grid, and then scrolling down on the panel on the right to see the CPU and memory as well as the network throughput.&lt;/p&gt;
+&lt;p&gt;There are a couple of things you can do to fix this. The first one is to increase any sort of delays or think times in your script — and, if you don&amp;rsquo;t already have any, you should add some. Think times make the script a lot more realistic and a lot closer to what real users would do. If these values are too low, then your load testing tool is just going to run the script as fast as possible, consuming more resources than necessary.&lt;/p&gt;
+&lt;p&gt;The second thing you can do is reduce the number of users you&amp;rsquo;re running per node. This will free up more resources per node and make it a lot easier to scale up your load tests more effectively.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Check out &lt;a href=&#34;https://guides.flood.io/results-analysis/troubleshooting-results-analysis/reported-response-times-higher-than-observed&#34;&gt;this article&lt;/a&gt; for more detailed information on resource over-utilization and other possible reasons for differences between response times in a test and on a browser.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

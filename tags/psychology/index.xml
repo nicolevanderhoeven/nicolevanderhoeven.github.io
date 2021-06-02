@@ -14,9 +14,103 @@
       <pubDate>Thu, 13 Aug 2020 22:18:04 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200813-dutch-coronavirus-hotline/</guid>
-      <description>Read the original Dutch version here. This English version was first posted here.
-On June 1st, 2020, the National Institute of Health and Environment (RIVM) announced that everyone with certain symptoms could call the hotline 0800-1202 to arrange a free COVID-19 test. The promise: call today, get tested tomorrow, and receive the results the day after that. The reality, though, did not live up to expectations.
-The opening day of the hotline was chaotic, and many Dutch people reported connection problems due to a system overload.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/performance-testing-the-story-of-the-dutch-coronavirus-hotline&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Read the original Dutch version &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20200704-performanceverbeteringen-voor-de-coronalijn/&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;
+&lt;em&gt;This English version was first posted &lt;a href=&#34;https://www.flood.io/blog/performance-testing-the-story-of-the-dutch-coronavirus-hotline&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On June 1st, 2020, the National Institute of Health and Environment (RIVM) announced that everyone with certain symptoms could call the hotline 0800-1202 to arrange a free COVID-19 test. The promise: call today, get tested tomorrow, and receive the results the day after that. The reality, though, did not live up to expectations.&lt;/p&gt;
+&lt;p&gt;The opening day of the hotline was chaotic, and many Dutch people reported connection problems due to a system overload. Yet this could have been prevented with a better understanding of how human psychology can affect application performance.&lt;/p&gt;
+&lt;h2 id=&#34;the-situation&#34;&gt;The situation&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://nos.nl/collectie/13824/artikel/2335758-ggd-en-klaar-voor-massaal-testen-tijd-van-limiterende-factoren-voorbij&#34;&gt;According to Dr. Ann Vossen&lt;/a&gt;, chairperson of the task force charged with scaling up mass testing in the Netherlands, the country was ready to process 30,000 tests per day. This number corresponds to &lt;a href=&#34;https://nos.nl/artikel/2335790-drukte-op-nieuw-telefoonnummer-voor-coronatests-0800-1202.html&#34;&gt;the national capacity&lt;/a&gt; of all the municipal health clinics (GGDs) in the Netherlands. Despite this claim, though, &lt;a href=&#34;https://www.ad.nl/binnenland/liefst-323-000-telefoontjes-naar-nieuw-nummer-voor-coronatest-systemen-overbelast~a16a9a50&#34;&gt;only 1,146 people were actually tested&lt;/a&gt; on the first day of testing (the day after the opening of the hotline). Perhaps more importantly, only 5,748 appointments were set on June 1st. The situation was no doubt exacerbated by the overwhelming 323,000 people who called the hotline on its first day, prompting even the telephone operators to admit that &lt;a href=&#34;https://www.volkskrant.nl/nieuws-achtergrond/coronatestnummer-kampt-met-kinderziektes-maar-ggd-s-kunnen-de-drukte-goed-aan~b2f332d2/&#34;&gt;they&amp;rsquo;d had troubles&lt;/a&gt; logging into the appointment system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-01.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Bron: From &lt;a href=&#34;https://twitter.com/GGDGHORNL/status/1267351996379643906&#34;&gt;@ggdghornl&lt;/a&gt;, Twitter&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;[&amp;ldquo;We see that there are many calls going to 0800-1202. You can call for an appointment until 8pm tonight. Please try your call later to avoid long wait times.&amp;quot;]&lt;/p&gt;
+&lt;p&gt;On Twitter, users shared horror stories: one claimed to have &lt;a href=&#34;https://twitter.com/Ed_van_Iterson/status/1267429180347691011&#34;&gt;waited on the line for 6 hours&lt;/a&gt;, only to be told that the system was down and no appointments could be made; another complained about &lt;a href=&#34;https://twitter.com/maticus_spazz/status/1267374692941418496&#34;&gt;getting disconnected&lt;/a&gt; after getting in touch with an operator. Yet another &lt;a href=&#34;https://twitter.com/leovanlinden/status/1267408142813605888&#34;&gt;posted a video&lt;/a&gt; of calling the hotline and a recorded message saying &amp;ldquo;Al onze medewekers zijn op dit moment in gesprek. We zullen u zo snel mogelijk te woord staan. [All of our operators are currently on other calls. We will answer you as soon as possible].&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The second day was somewhat better: &lt;a href=&#34;https://www.volkskrant.nl/nieuws-achtergrond/coronatestnummer-kampt-met-kinderziektes-maar-ggd-s-kunnen-de-drukte-goed-aan~b2f332d2/&#34;&gt;there were 11,000 appointments made&lt;/a&gt;, partly because of the lower amount of phone calls and partly because of some fixes of technical problems. In the first week, the number of appointments increased to 50,000 (about 7,142 per day), which was still significantly lower than expected.&lt;/p&gt;
+&lt;p&gt;There are some lessons that we can learn from this case study.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-02.jpeg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: Coronavirus test procedure from &lt;a href=&#34;https://ggdhm.nl/thema-s/item/infectieziekten/testbeleid&#34;&gt;GGD Hollands Midden&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;English translation:&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you have these (mild) symptoms?:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cough&lt;/li&gt;
+&lt;li&gt;blocked or runny nose&lt;/li&gt;
+&lt;li&gt;fever&lt;/li&gt;
+&lt;li&gt;loss of smell or taste&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Step 1: Make an appointment&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Call the national number 0800-1202&lt;/li&gt;
+&lt;li&gt;Have your BSN with you when you call&lt;/li&gt;
+&lt;li&gt;Make an appointment to get tested at one of our locations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Step 2: Test&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the selected location at the scheduled time&lt;/li&gt;
+&lt;li&gt;You will be tested at the test location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Step 3: Results and eventual start of source and contact research&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You will be called with your results within 48 hours&lt;/li&gt;
+&lt;li&gt;If you are infected with the coronavirus, the GGD will call you for source and contact research
+*If you show more serious symptoms, or if you fall within a high-risk group, report to your doctor or to the emergency help line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;the-effect-of-fear-on-performance&#34;&gt;The effect of fear on performance&lt;/h2&gt;
+&lt;p&gt;This coronavirus has already shown us a side of humanity that we&amp;rsquo;d perhaps rather not see: &lt;a href=&#34;https://www.bbc.com/news/world-australia-51731422&#34;&gt;fights over toilet paper&lt;/a&gt;, &lt;a href=&#34;https://snacks.robinhood.com/newsletters/rMxwcb7y7lMZoI5NY6qf7/&#34;&gt;chaos on the stock market&lt;/a&gt; due to panic, and &lt;a href=&#34;https://www.volkskrant.nl/nieuws-achtergrond/nctv-waarschuwt-voor-extremistische-protestacties-door-5g-tegenstanders-die-vrezen-voor-coronavirus~bf1400b8/&#34;&gt;sabotage of 5G cell towers&lt;/a&gt; based on a belief that they caused COVID-19. As much as we&amp;rsquo;d like to believe it, we&amp;rsquo;re not always the most rational beings. We all have the tendency to behave unpredictably, especially when we&amp;rsquo;re afraid.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s no wonder that the coronavirus testing line was so welcome. The fact that there were 323,000 callers on the first day is even more remarkable when we remember that majority of Dutch residents had been in self-isolation for months at that point, which lowered their chances of contracting the virus. In theory, the fear that drove these callers might have been somewhat irrational, but not unpredictable.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-03.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In English, we call this FOMO (Fear of Missing Out). We&amp;rsquo;ve already clearly seen &lt;a href=&#34;https://www.flood.io/blog/fomo-and-performance-testing-why-robinhood-went-down&#34;&gt;how FOMO can drive users&lt;/a&gt; en masse to an application, with effects on its performance. In this case, people were afraid that coronavirus test shortages would mean there weren&amp;rsquo;t enough tests to go around, and they wanted to be first in line to get tested.&lt;/p&gt;
+&lt;p&gt;Another problem was that &lt;a href=&#34;https://www.trouw.nl/binnenland/de-balans-na-een-week-testen-het-plan-was-mooier-dan-de-praktijk~b86399b7/&#34;&gt;one in four callers&lt;/a&gt; just wanted general information about COVID-19, despite government pleas to keep the hotline free for coronavirus test appointments only. It didn&amp;rsquo;t help that the hotline opened on a Dutch national holiday, White Monday, and more people were home than usual for a Monday. The high number of unrelated calls was unexpected, but nevertheless factored into system overload.&lt;/p&gt;
+&lt;p&gt;What could we have done to improve this system?&lt;/p&gt;
+&lt;h2 id=&#34;improvements-to-the-corona-hotline&#34;&gt;Improvements to the corona hotline&lt;/h2&gt;
+&lt;h3 id=&#34;better-estimation&#34;&gt;Better estimation&lt;/h3&gt;
+&lt;p&gt;As difficult as it is to predict FOMO&amp;rsquo;s effects, we can still try. We can make educated guesses based on related statistics.&lt;/p&gt;
+&lt;p&gt;Just one month before the coronavirus test hotline was opened, &lt;a href=&#34;https://www.zwollenu.nl/500-000-tot-700-000-nederlanders-besmet-met-coronavirus/&#34;&gt;Jaap van Dissel&lt;/a&gt;, the head of RIVM, estimated that there were up to 700,000 Dutch residents infected by the coronavirus. Why, then, was it such a surprise that more than 300,000 of them had called? Furthermore, the RIVM had encouraged people with a broad list of symptoms (such as colds, coughs, or fever) to call, and it&amp;rsquo;s reasonable to assume that some people with conditions other than COVID-19 might also have called.&lt;/p&gt;
+&lt;p&gt;Even if we assume that 20% of the 700,000 people with the novel coronavirus did not have symptoms (&lt;a href=&#34;https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200306-sitrep-46-covid-19.pdf?sfvrsn=96b04adf_4&#34;&gt;according to WHO research&lt;/a&gt;), we still arrive at a predicted 140,000 calls, which is still 25 times what was the coronavirus testing system was able to process on the first day.&lt;/p&gt;
+&lt;p&gt;If we have an educated estimate, we can start testing.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;injecting-load&#34;&gt;Injecting load&lt;/h3&gt;
+&lt;p&gt;When a resident calls the hotline, the call is routed to one of several operators working from home. This is often done with a telephony server that forwards calls based on some type of round-robin system. We can execute load tests on this server to determine how many phone calls a server can process and route successfully, with minimal delay and without message queueing.&lt;/p&gt;
+&lt;p&gt;Then, the operator enters personal information from the caller into the appointment system, including their government identification number (BSN) and address. We can surmise that the system checks the identity to verify the validity of the BSN, and then sends some details to a database. The closest municipal clinic to the caller can then use the data to process and schedule an appointment. We can also inject load at this stage by simulating the calls that the appointment system creates with an API load testing tool like JMeter or Gatling.&lt;/p&gt;
+&lt;h3 id=&#34;using-different-test-scenarios&#34;&gt;Using different test scenarios&lt;/h3&gt;
+&lt;p&gt;With such a public announcement of the hotline&amp;rsquo;s opening, a &lt;strong&gt;spike test&lt;/strong&gt; before release could have yielded some useful information. In a spike test, we simulate a sharp increase in users over a short period of time. For example, we could have simulated an increase in users from 0 to 700,000 on the telephony system over 10 minutes to see how the application would have handled that.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Soak tests&lt;/strong&gt; could also have been useful in this case. The hotline&amp;rsquo;s opening hours were from 8 am to 8 pm, so it was open for 12 hours in total. With soak tests, we can generate load on an application for an extended amount of time. Soak tests can reveal memory leaks or other bottlenecks in the processing of data that might occur after hours.&lt;/p&gt;
+&lt;p&gt;These are ways we could have tested the system as it is, but are there improvements that we could have made in the system to make it more resilient to reduce the FOMO factor?&lt;/p&gt;
+&lt;h2 id=&#34;using-automation-to-lessen-fomo-risk&#34;&gt;Using automation to lessen FOMO risk&lt;/h2&gt;
+&lt;p&gt;The system had some manual parts of the process that may have exacerbated load issues. Here&amp;rsquo;s how this system could have been automated to reduce bottlenecks.&lt;/p&gt;
+&lt;h3 id=&#34;interactive-voice-response&#34;&gt;Interactive Voice Response&lt;/h3&gt;
+&lt;p&gt;Telephony servers commonly use Interactive Voice Response (IVR), an automated menu system for voice calls that uses either voice recognition or keypress tones to navigate a user through a series of choices. We&amp;rsquo;re all familiar with it: &amp;ldquo;&lt;em&gt;For Dutch, press 1. For English, press 2&amp;hellip;&lt;/em&gt;&amp;rdquo; Such a system might have helped reduce the overall load by quickly filtering out callers in the 25% who weren&amp;rsquo;t interested in creating an appointment. &amp;ldquo;&lt;em&gt;If you&amp;rsquo;d like to book an appointment for a coronavirus test, press 1. Otherwise, please call the information hotline at&amp;hellip;.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what an IVR system could look like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-05.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;From: &lt;a href=&#34;http://vanguardnetworks.com.sg/IVR.html&#34;&gt;Vanguard Networks&lt;/a&gt;&lt;/em&gt;
+‍
+Load testing IVR systems can be difficult, and it usually requires the use of highly specialized commercial tools. However, introducing a new tool may also increase the time required for load testing.&lt;/p&gt;
+&lt;h3 id=&#34;building-a-web-app&#34;&gt;Building a web app&lt;/h3&gt;
+&lt;p&gt;Another approach would be to implement a web app to verify identity and capture personal information quickly. In the Netherlands, we already have &lt;a href=&#34;https://www.digid.nl/wat-is-digid/&#34;&gt;DigiD&lt;/a&gt;, an identity verification system that is heavily used for governmental services. &lt;a href=&#34;https://mijn.overheid.nl/&#34;&gt;Mijn Overheid&lt;/a&gt;, which is a central government portal accessible to every Dutch resident, already interfaces with DigiD as the sole method of logging in. Reusing these existing services could have saved a lot of the work on a web app— not to mention reducing the bottlenecks inherent in a more manual process like a telephone hotline.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-06.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://mijn.overheid.nl/&#34;&gt;Mijn Overheid&lt;/a&gt;&lt;/em&gt;
+‍&lt;/p&gt;
+&lt;h2 id=&#34;testing-the-system-end-to-end&#34;&gt;Testing the system end-to-end&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve identified a few ways to load test various components of the coronavirus hotline, both in its current incarnation as well as in hypothetical improved versions. Isolating each component and running load tests at that level can help us resolve performance issues inherent in the component. However, there are still bottlenecks that are only revealed when the integrations between components is tested as well. That&amp;rsquo;s where end-to-end testing comes in.&lt;/p&gt;
+&lt;p&gt;For the coronavirus hotline, end-to-end testing means being able to run load tests on the entire process and seeing how data flows from one to the other: the call forwarding from the telephony server, the identity verification system, the appointment system, the database of personal information, the servers of every municipal clinic, and the email/text notifications with appointment details. As modern applications grow more complex, it can be tempting not to run end-to-end tests, but we do so at great risk of functional or nonfunctional issues.&lt;/p&gt;
+&lt;p&gt;An area of end-to-end testing that is often overlooked is the human factor, which can also be a bottleneck. Had hotline operators been trained to ask early on in the call whether the caller wanted to make an appointment, to filter out unrelated calls? Can the coronavirus testing and test result processing, heavily involving manual work from medical professionals, match the stated requirements (test within 24 hours, result within 48 hours) even when the digital components are performant? Some people waited for an hour in the cities of &lt;a href=&#34;https://www.ed.nl/eindhoven/in-de-file-voor-een-stukje-zekerheid-meteen-drukte-bij-teststraat-voor-corona-in-eindhoven~a27eec83/&#34;&gt;Eindhoven&lt;/a&gt; and &lt;a href=&#34;https://www.pzc.nl/zeeuws-nieuws/drukte-bij-teststraat-in-goes-na-openstellen-nummer-voor-coronatest~aa8a6cb2/&#34;&gt;Goes&lt;/a&gt; due to traffic congestion from cars near the test centers, leading to delays in the testing schedule.&lt;/p&gt;
+&lt;p&gt;While it can be difficult to load test these logistical systems with automated tools, they may have significant effects on the overall performance of an application and should be considered.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Often, performance issues can lead to a tangible loss in profits or a more intangible loss in reputation. In this case study, poor performance had a direct impact on people&amp;rsquo;s health. Potentially sick people were unable to make appointments to get tested, and later treated. Delayed tests could have led to an increased infection rate as people waited for a confirmed diagnosis. Hotline operators also admitted that slowness in the system led to them sometimes &lt;a href=&#34;https://wnl.tv/2020/06/08/chaos-bij-de-coronalijn-personeel-slaat-alarm/&#34;&gt;giving out test results&lt;/a&gt; against instructions to wait for trained medical professionals to do so.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200704-07.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Human psychological factors can make a system more complex to load test. &lt;a href=&#34;https://www.trouw.nl/binnenland/de-balans-na-een-week-testen-het-plan-was-mooier-dan-de-praktijk~b86399b7/&#34;&gt;According to Andrea Evers&lt;/a&gt; (LUCM), a health psychological professor, &amp;ldquo;&lt;em&gt;Door de uitbraak van corona zijn mensen in een langdurige stresssituatie beland. Onzekerheid, onvoorspelbaarheid en oncontroleerbaarheid maken dat ze de behoefte hebben om zaken juist wel te controleren of voorspelbaar te maken&lt;/em&gt; [The coronavirus outbreak has put people in a situation of chronic stress. The uncertainty, unpredictability, and helplessness of the situation cause a need to make things controllable or predictable].&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;As performance testers, we can use statistics and a systematic attitude combined with knowledge of human factors in applications to try to predict the unpredictable.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,10 +119,41 @@ The opening day of the hotline was chaotic, and many Dutch people reported conne
       <pubDate>Thu, 06 Aug 2020 22:43:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200806-aaf20/</guid>
-      <description>Originally posted here.
-In this video, I talk about the power of fear, and how it can end up affecting performance test results. ‍   Or listen to the audio version here:
- Hi everyone, I&amp;rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.
-The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in the Netherlands.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-20-how-can-fear-affect-application-performance-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-20-how-can-fear-affect-application-performance-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I talk about the power of fear, and how it can end up affecting performance test results.
+‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oeEFCrTYULE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Or listen to the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2cOfQrrUwyIKWbztgNdoXR&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, I&amp;rsquo;m Nicole van der Hoeven, back with another Ask a Flooder, and today I want to talk about the effect of fear on your performance outcomes.&lt;/p&gt;
+&lt;h2 id=&#34;the-dutch-coronalijn&#34;&gt;The Dutch &amp;ldquo;coronalijn&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;I currently live in Maastricht, in the Netherlands. At the beginning of this global pandemic, the only people getting tested actively for COVID-19 were either people who presented with serious symptoms of the disease, or health care professionals who were continually exposed to the disease and therefore at a higher risk of contracting it.&lt;/p&gt;
+&lt;p&gt;Last month, on June 1st, the Dutch government made testing available to everybody. They set up a telephone hotline that any Dutch resident could call to set an appointment to get tested for a COVID-19 test. A task force was dispatched to make sure that they could test up to 30.000 people per day. Yet on the first day of testing, only 1.146 people were tested. So what happened?&lt;/p&gt;
+&lt;p&gt;Well, it turned out that the bottleneck of the entire process wasn&amp;rsquo;t getting enough tests, registering the tests, or even processing the test results. The bottleneck actually occurred way before that, when people called up the hotline to get an appointment.&lt;/p&gt;
+&lt;p&gt;323.000 people called on the first day that the hotline opened. And not even all of them had called to make an appointment. Some of them were just calling for general information on the coronavirus despite the fact that the government made it clear that that&amp;rsquo;s not what the line was for, and that there were other lines dedicated to information. There were reports on Twitter of people waiting up to 6 hours on the line just to talk to someone who would make an appointment for them. There were calls that got dropped. People said that sometimes it happened in the middle of a call. Even telephone operators that   the appointment system was down or slow and unusable for a lot of it.&lt;/p&gt;
+&lt;p&gt;As a result, only 5,500 people actually had appointments booked on a day where there were 323,000 that called. That&amp;rsquo;s 1.70%.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-that-have-to-do-with-performance&#34;&gt;What does that have to do with performance?&lt;/h2&gt;
+&lt;p&gt;As performance engineers, we like to believe that everything we do is reasoned. We design tests based on quantitative data. We look at historical trends and metrics to help us decide how to build a workload model. But the truth is that that&amp;rsquo;s often not enough.&lt;/p&gt;
+&lt;p&gt;If anything, this pandemic has shown us just how wrong our guesses can be, whether or not they&amp;rsquo;re  informed by facts, especially when it has to do with human behavior. We&amp;rsquo;ve seen violent fights erupt over toilet paper. We&amp;rsquo;ve seen peaks and troughs on the stock market that didn&amp;rsquo;t have anything to do with the underlying companies. We&amp;rsquo;ve seen arson on 5G cell towers. Because human beings are irrational, and it&amp;rsquo;s really hard to capture that irrationality in our model for how users are going to behave.&lt;/p&gt;
+&lt;p&gt;We may never be able to accurate predict how irrationality is going to affect the load on our application in production. But that doesn&amp;rsquo;t mean that we shouldn&amp;rsquo;t try. There are still things that we can do to mitigate the risk. I think that any application that is public-facing should be assessed for exposure to the risk of fear or other human psychological factors.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-we-account-for-fear-in-our-performance-testing&#34;&gt;How do we account for fear in our performance testing?&lt;/h2&gt;
+&lt;p&gt;I actually wrote a whole blog post on this particular situation (the Dutch corona line), and how it might have been possible to predict (maybe not with 100% accuracy but with reasonable accuracy) how many people would have called the hotline.&lt;/p&gt;
+&lt;p&gt;For example, we can look at statistics like the of the Netherlands or how many people normally get flu-like symptoms or at least report them at this time of the year. These are statistics that are readily available from the Department of Health, and we could have used them to inform our decisions on the workload model for such an application. We may not have gotten it exactly, but we would have at least bin in the same ballpark.&lt;/p&gt;
+&lt;p&gt;If we have a good enough idea about the workload that our application would have to handle when it&amp;rsquo;s influenced by fear, we can start running load tests around that. Another good open-ended kind of test to run, especially for applications that are particularly susceptible to fear, is the stress test. In a stress test, you push your application to its limits and you find out what they are. You could, for instance, start with your peak work load, and then add a certain number of users every 30 minutes and see how much your application can actually handle. You can do the same with soak tests, where you&amp;rsquo;re exposing your application to the same amount of load for an extended period of time. Both of those kind of exploratory tests help you define the limits of your application and how it would respond if fear plays a role in the workload model in production.&lt;/p&gt;
+&lt;p&gt;If we overlook this critical human element in our test design, then we leave ourselves, and our applications, vulnerable to performance degradation and, perhaps, outages.&lt;/p&gt;
+&lt;p&gt;Till next time, happy flooding!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Read &lt;a href=&#34;blog/20200813-dutch-coronavirus-hotline/&#34;&gt;this blog post&lt;/a&gt; for more about the coronavirus hotline.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -37,9 +162,18 @@ The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in th
       <pubDate>Wed, 22 Jul 2020 21:30:43 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</guid>
-      <description>On this episode of the TestGuild performance podcast, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.
-  Here&amp;rsquo;s the plain audio version:
- </description>
+      <description>&lt;p&gt;On this episode of the &lt;a href=&#34;https://testguild.com/&#34;&gt;TestGuild performance podcast&lt;/a&gt;, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/M5l9Ba0ykpw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the plain audio version:&lt;/p&gt;
+
+
+&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/15312620/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
     </item>
     
     <item>
@@ -48,10 +182,39 @@ The Dutch &amp;ldquo;coronalijn&amp;rdquo; I currently live in Maastricht, in th
       <pubDate>Wed, 03 Apr 2019 23:14:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</guid>
-      <description>Originally posted here.
-Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.
-In this year’s TestCon conference, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.
-In the talk, I discuss:</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://testconf.ru/2019/en/nicole-van-der-hoeven/index.html&#34;&gt;this year’s TestCon conference&lt;/a&gt;, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.&lt;/p&gt;
+&lt;p&gt;In the talk, I discuss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;two types of thinking: fast thinking and slow thinking (from Daniel Kahneman&amp;rsquo;s book &lt;a href=&#34;https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to influence the sentence duration that judges give perpetrators&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what cognitive biases are and how they can affect performance testing results&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a real-life production incident that occurred on Flood and how our team&amp;rsquo;s cognitive biases got in the way of its resolution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what to do to avoid cognitive biases when testing software&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the video of my full talk:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GPD8F0e7eX8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Download the presentation &lt;a href=&#34;https://nicolevanderhoeven.github.io/assets/20190403-01.pdf&#34;&gt;in PDF format&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

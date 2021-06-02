@@ -14,9 +14,77 @@
       <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
-  Y la versión audio:
- Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Y la versión audio:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
+&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
+&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
+&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
+&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
+&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
+&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
+&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
+&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
+&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
+&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
+&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
+&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
+&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
+&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
+&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
+&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
+&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
+&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
+&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
+&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
+&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
+&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
+&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
+&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
+&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
+&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
+&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,9 +93,54 @@
       <pubDate>Tue, 18 Aug 2020 21:22:49 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200818-pros-and-cons/</guid>
-      <description>Originally posted here.
-‍API load testing is one of the most popular ways to run a load test because of the number of open source and commercial load testing tools available on the market that support it. Creating a script to hit your application&amp;rsquo;s API endpoints is the traditional approach to load testing, but it&amp;rsquo;s not the only one.
-Here are some things to consider when deciding whether or not API load testing is right for your application.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/pros-and-cons-of-api-load-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/pros-and-cons-of-api-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;‍API load testing is one of the most popular ways to run a load test because of the number of open source and commercial load testing tools available on the market that support it. Creating a script to hit your application&amp;rsquo;s API endpoints is the traditional approach to load testing, but it&amp;rsquo;s not the only one.&lt;/p&gt;
+&lt;p&gt;Here are some things to consider when deciding whether or not API load testing is right for your application.&lt;/p&gt;
+&lt;h2 id=&#34;disadvantages-of-api-load-testing&#34;&gt;Disadvantages of API load testing&lt;/h2&gt;
+&lt;h3 id=&#34;api-load-testing-does-not-simulate-real-users-interacting-with-elements-of-your-webpage&#34;&gt;API load testing does not simulate real users interacting with elements of your webpage.&lt;/h3&gt;
+&lt;p&gt;‌In contrast to a customer opening up a browser and filling out forms on your site, an API load testing script will consist only of the underlying requests to the server that are made by clicking on those on-screen elements. Exactly how the customer triggers those requests, and what buttons they’ve pressed, is irrelevant. It’s all about the raw requests.‌&lt;/p&gt;
+&lt;p&gt;The format of these requests will be dictated by the type of API your application uses, and it may take some technical knowledge or expertise to be able to formulate requests correctly. However, a RESTful API is one of the most common types, and it is considered to be relatively simple to use.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200818-01.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;HTTPS requests for amazon.com. This is what an API load testing script would need to replicate.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;it-doesnt-give-you-an-idea-of-how-user-friendly-your-application-is&#34;&gt;It doesn’t give you an idea of how user-friendly your application is.&lt;/h3&gt;
+&lt;p&gt;‌API load testing tools don’t give you feedback on how long your pictures took to render on your users’ browsers or whether that “SUBMIT” button is in an obvious spot.&lt;/p&gt;
+&lt;h3 id=&#34;it-doesnt-measure-front-end-performance-or-how-quickly-pages-render-in-different-browsers&#34;&gt;‌It doesn’t measure front-end performance or how quickly pages render in different browsers.&lt;/h3&gt;
+&lt;p&gt;‌While all the resources that the server returns can be downloaded by your tool of choice, there is no browser on which to run them.&lt;/p&gt;
+&lt;h3 id=&#34;api-load-testing-doesnt-run-client-side-scripts&#34;&gt;‌API load testing doesn’t run client-side scripts.&lt;/h3&gt;
+&lt;p&gt;‌It isn’t what you’re looking for if your application is a single-page web app that relies heavily on JavaScript or AJAX to dynamically populate and update the page. Your load testing tool will download the scripts, but not execute them.‌&lt;/p&gt;
+&lt;p&gt;‌This includes scripts like those required to trigger Google Analytics, which prompts many an engineer to question the results of an API load test due to the inability to see the traffic come in on Google Analytics. API load testing won’t help you with that. Running browser-level load tests using tools like &lt;a href=&#34;https://element.flood.io&#34;&gt;Flood Element&lt;/a&gt; or &lt;a href=&#34;https://selenium.dev&#34;&gt;Selenium&lt;/a&gt; may be more useful.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve decided that API load testing is not the best way to load test your application, you can look at browser-based load testing as an alternative.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200818-02.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Executing a browser-based load testing script using Flood Element.&lt;/em&gt;
+‌&lt;/p&gt;
+&lt;h2 id=&#34;advantages-of-api-load-testing&#34;&gt;‌Advantages of API load testing&lt;/h2&gt;
+&lt;p&gt;Now that we’ve talked about what API load testing isn’t good at, let’s talk about what it IS good at.&lt;/p&gt;
+&lt;p&gt;‌### It allows you to load test specific servers rather than the whole stack.&lt;/p&gt;
+&lt;p&gt;‌API load testing allows you to tailor your load testing by applying load only on particular servers. This is particularly useful in more complicated applications that involve several components and would require substantial effort to reproduce in a test environment. Using APIs, you can test only the functions you want to test.&lt;/p&gt;
+&lt;h3 id=&#34;it-is-well-supported-&#34;&gt;It is well-supported. ‌&lt;/h3&gt;
+&lt;p&gt;API load testing has been around for decades. There are lots of robust tools you can choose from, both commercial and open-source, and many of these tools have large communities and extensive documentation around how to script the most common cases. It’s a far cry from the browser-level testing space, which is relatively new and sparsely populated by comparison.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200818-03.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;The &lt;a href=&#34;https://jmeter.apache.org/usermanual/index.html&#34;&gt;JMeter site&lt;/a&gt; contains a wealth of information, including a User&amp;rsquo;s Manual&lt;/em&gt;
+‍&lt;/p&gt;
+&lt;h3 id=&#34;its-not-as-resource-intensive-as-browser-level-testing&#34;&gt;It’s not as resource-intensive as browser-level testing.&lt;/h3&gt;
+&lt;p&gt;You can simulate more users with API load testing than with browser-level load testing. Since most interactions on the browser-level get translated to requests anyway, generating load this way is incredibly efficient, allowing you to hit your server with requests while bypassing the UI layer and the resource overhead that that entails.&lt;/p&gt;
+&lt;p&gt;For example, at &lt;a href=&#34;https://flood.io&#34;&gt;Flood&lt;/a&gt; we’ve baselined some of the tools that we support to see how many users we can run on an AWS m5.xlarge instance:&lt;/p&gt;
+&lt;p&gt;Selenium: 5 users
+Flood Element: 20-40 users
+JMeter: 1000 users
+Gatling: 1000 users&lt;/p&gt;
+&lt;p&gt;‌You’ll see that the browser-level test tools, Selenium and Flood Element, can run significantly fewer users on the same sized node as can the protocol-level tools, JMeter and Gatling. This isn’t due to an inefficiency in the tools but rather to the fact that browser-level tools inherently need more CPU and memory to start separate instances of browsers per user and render pages graphically. You can run more users per node (or machine) by carrying out API load testing with protocol-level tools.&lt;/p&gt;
+&lt;h3 id=&#34;its-cheaper&#34;&gt;It’s cheaper.&lt;/h3&gt;
+&lt;p&gt;‌The efficiency in resource utilization translates directly into cost savings because every node that you don’t need to execute your tests on is one fewer node that you’ll have to pay to provision (whether on premises or in the cloud).&lt;/p&gt;
+&lt;p&gt;‌For this reason, API load testing is one of the most cost-efficient ways you can get started with load testing, allowing you to scale up your load relatively cheaply while getting immediate results.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-get-started-with-api-load-testing&#34;&gt;How to get started with API load testing&lt;/h2&gt;
+&lt;p&gt;API load testing isn&amp;rsquo;t for every application, but depending on your test scenario, it may be the easiest way to test application performance.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to non-functional testing or API load testing in particular and would like some step-by-step tutorials on how to get started, check out my free ebook, &lt;a href=&#34;https://guides.flood.io/ebooks/api-load-testing&#34;&gt;API Load Testing: A Beginner&amp;rsquo;s Guide&lt;/a&gt;. It takes you through the basics of API load testing, including planning your first load test, selecting an open source tool, scripting, executing a test on the cloud, analyzing results, and even integrating it into your CI/CD pipelines.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -36,10 +149,108 @@ Here are some things to consider when deciding whether or not API load testing i
       <pubDate>Thu, 23 Apr 2020 16:48:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</guid>
-      <description>Originally posted here.
-We first announced our open-source browser-based load testing tool based on Puppeteer, Flood Element, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:
-Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
-Kevin Dunne: A new approach to load testing with browser level users</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/browser-based-load-testing-in-2020&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/browser-based-load-testing-in-2020&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We &lt;a href=&#34;https://flood.io/blog/level-up-your-load-testing-with-browser-level-users&#34;&gt;first announced&lt;/a&gt; our open-source browser-based load testing tool based on Puppeteer, &lt;a href=&#34;https://element.flood.io/&#34;&gt;Flood Element&lt;/a&gt;, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:&lt;/p&gt;
+&lt;p&gt;Tim Koopmans: &lt;a href=&#34;https://flood.io/blog/load-testing-for-devops-with-browser-level-users-blu&#34;&gt;Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kevin Dunne: &lt;a href=&#34;https://flood.io/blog/a-new-approach-to-load-testing-with-browser-level-users&#34;&gt;A new approach to load testing with browser level users&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;me: &lt;a href=&#34;https://flood.io/blog/prepare-for-viral-videos-with-flood-element&#34;&gt;Prepare for viral videos with Flood Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lachie Cox: &lt;a href=&#34;https://flood.io/blog/why-you-should-load-test-with-browsers&#34;&gt;Why should you load test with real browsers?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;our friend Eduardo Riol, as translated by Antonio Jimenez: &lt;a href=&#34;https://flood.io/blog/selenium-vs-puppeteer-for-test-automation-is-a-new-leader-emerging&#34;&gt;Puppeteer vs. Selenium for test automation: is a new leader emerging?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clearly, we&amp;rsquo;re huge fans of load testing a web application with real browsers. But does the wider software testing industry share that sentiment?&lt;/p&gt;
+&lt;h2 id=&#34;browser-based-load-testing-in-2020&#34;&gt;Browser-based load testing in 2020&lt;/h2&gt;
+&lt;p&gt;Browser-level load testing is still pretty new, and there aren&amp;rsquo;t too many providers offering it right now. Luckily, we just so happen to have access to a database of load tests run on Flood since 2013. Here&amp;rsquo;s a bar chart visualizing data we&amp;rsquo;ve collected about the load testing tools flooders have used (we support Selenium, JMeter, Gatling, and Element).&lt;/p&gt;
+&lt;h3 id=&#34;load-tests-executed-on-flood-over-time-grouped-by-load-testing-tool&#34;&gt;Load tests executed on Flood over time, grouped by load testing tool&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;browser-level-load-testing-is-increasing-in-popularity&#34;&gt;Browser-level load testing is increasing in popularity&lt;/h3&gt;
+&lt;h4 id=&#34;in-2020-almost-35-of-the-load-tests-run-on-flood-are-browser-based-load-tests&#34;&gt;In 2020, almost 35% of the load tests run on Flood are browser-based load tests.&lt;/h4&gt;
+&lt;p&gt;While the total number of load tests run across all tools increased across the board, the percentage of tests that utilized Selenium and Element, as compared to JMeter and Gatling, has also increased from 2018. Both Selenium and Element are browser-based load testing tools.&lt;/p&gt;
+&lt;p&gt;By contrast, JMeter, a protocol-level load testing tool which previously enjoyed a 70% share of the traffic on Flood, now accounts for only a bit over 50% of usage. JMeter&amp;rsquo;s share of the protocol-level pie is higher than Gatling&amp;rsquo;s, but the percentage of usage for both tools appears to be contracting when compared to that of browser-based tools.&lt;/p&gt;
+&lt;h3 id=&#34;element-use-is-increasing-faster-than-selenium-use&#34;&gt;Element use is increasing faster than Selenium use&lt;/h3&gt;
+&lt;p&gt;Despite the fact that Selenium has been around longer, &lt;strong&gt;25% of all floods today are run using Element&lt;/strong&gt;. This is a significant increase in just two years, and one that bodes well for the future. While we&amp;rsquo;re still fans of Selenium and still support it, one reason we see for the dominance of Element in today&amp;rsquo;s market is resource efficiency.&lt;/p&gt;
+&lt;p&gt;In our baseline tests, we&amp;rsquo;ve seen that Element can run from 20-50 users per Flood node (an &lt;a href=&#34;https://aws.amazon.com/blogs/aws/m5-the-next-generation-of-general-purpose-ec2-instances/&#34;&gt;AWS m5.xlarge instance&lt;/a&gt;), whereas Selenium can only run up to 5. This leads to some significant cost savings, as running the same number of users with Element requires fewer load generators than with Selenium.&lt;/p&gt;
+&lt;p&gt;Another reason might be the fact that Element uses Puppeteer in the background. Puppeteer, developed by Google, understandably shines when driving Google Chrome (and recently, Firefox). Puppeteer load testing is growing in popularity due to the wealth of metrics it has access to.&lt;/p&gt;
+&lt;h2 id=&#34;how-browser-based-load-testing-works&#34;&gt;How browser-based load testing works&lt;/h2&gt;
+&lt;p&gt;Traditional load testing is done on the protocol level by sending messages directly to the web server. These messages are sent without simulating the application interface, and the responses that are received from the server are not visualized, either. &amp;ldquo;Users&amp;rdquo; in protocol-level load testing scripts are actually threads, with each one sending a list of messages at predefined intervals, and we refer to these users as Protocol-Level Users (PLU). JMeter and Gatling use PLU to generate load.&lt;/p&gt;
+&lt;p&gt;The screenshot below shows what one request for a single action might look like in a JMeter test plan.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-02.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Example of an HTTP request with parameters on JMeter&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In browser-based load testing, real browser instances are opened on load generators, and the load testing tool plays the part of a real user in navigating the web application using the GUI. We refer to the virtual users in browser-based load testing as Browser-Level Users (BLU).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of the same action in the JMeter example above, but this time in an Element test script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Step 1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+    &lt;span style=&#34;color:#75715e&#34;&gt;//Click Start button
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;startButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findElement&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.btn-default&amp;#39;&lt;/span&gt;)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;startButton&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;()
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This version simply describes the button to be found and clicked, whereas the protocol-level version needs to be more precise in what exactly is passed to the server.&lt;/p&gt;
+&lt;p&gt;Both types of load testing tools can apply the same load on an application (as long as it supports both methods— see the next section). The main difference is in how the load is generated.&lt;/p&gt;
+&lt;p&gt;A protocol-level script will contain instructions on which messages to send, which protocols to use, which headers to include, and other information that a typical end-user would not see.&lt;/p&gt;
+&lt;p&gt;A browser-level script will contain instructions on how to &lt;em&gt;interact&lt;/em&gt; with the application: which buttons to click, what to type in text fields, which links to follow, and other on-screen elements that an end-user would be familiar with. This leads us to one of the big advantages of browser-based load testing.&lt;/p&gt;
+&lt;h2 id=&#34;pros-and-cons-of-browser-based-load-testing&#34;&gt;Pros and cons of browser-based load testing&lt;/h2&gt;
+&lt;h3 id=&#34;pros&#34;&gt;Pros&lt;/h3&gt;
+&lt;h4 id=&#34;simple-scripting-or-no-scripting-at-all&#34;&gt;Simple scripting— or no scripting at all&lt;/h4&gt;
+&lt;p&gt;Protocol-level tools require in-depth knowledge about how an application works, what format it expects requests to be in, and how it responds. On the browser-level, you don&amp;rsquo;t need to know any of that. When scripting a login process, for instance, you just need to tell the script to type a username and password in the right fields and then click Log In. The script doesn&amp;rsquo;t need to know that the form submits an encrypted request using the Auth0 API (something you&amp;rsquo;d need to know for a protocol-level script).&lt;/p&gt;
+&lt;p&gt;In some cases, you might be able to get away with using something like our &lt;a href=&#34;https://flood.io/blog/record-load-tests-in-flood-element-using-qtest-explorer&#34;&gt;qTest Explorer plugin&lt;/a&gt; to record a business process, generating a script without any scripting at all. Even when you have to write or modify the script, though, it&amp;rsquo;s a lot less intimidating than most protocol-level scripts.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re also easier to troubleshoot. In addition to opening a real browser instance on your computer when you run a script locally, Element can also display this information on the console (shown here on iTerm):&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-03.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Screenshots upon execution on Element using iTerm&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;‍This allows you to understand what&amp;rsquo;s going on in the script and in the application, letting you detect bottlenecks faster.&lt;/p&gt;
+&lt;h4 id=&#34;reduced-test-complexity&#34;&gt;Reduced test complexity&lt;/h4&gt;
+&lt;p&gt;The streamlined requirements for scripting lead to a straightforward test. There&amp;rsquo;s no chance of getting request parameters or values wrong.&lt;/p&gt;
+&lt;h4 id=&#34;ability-to-test-entire-stack-from-the-user-perspective&#34;&gt;Ability to test entire stack from the user perspective&lt;/h4&gt;
+&lt;p&gt;Unlike testing APIs, you don&amp;rsquo;t need to decide which server you want to hit or make sure you have the appropriate requests to hit all the servers. A browser-level test script interacts with page elements like a real user would, so all underlying application servers are tested. Pair this with &lt;a href=&#34;https://guides.flood.io/infrastructure/demand-infrastructure/advantages-of-testing-in-the-cloud&#34;&gt;cloud-based infrastructure on Flood&lt;/a&gt;, and you&amp;rsquo;ve got a compact package for testing your application.&lt;/p&gt;
+&lt;h4 id=&#34;capable-of-testing-any-user-behavior&#34;&gt;Capable of testing any user behavior&lt;/h4&gt;
+&lt;p&gt;Protocol-level load test tools struggle with some types of applications, such as single-page apps (SPAs), where a lot of the processing is done on the client side. Browser-level load testing tools shine here, because scripted interactions for these apps are no different for SPAs than other web apps.&lt;/p&gt;
+&lt;h4 id=&#34;record-network-and-user-interaction-times-for-front-end-optimization&#34;&gt;Record network and user interaction times for front-end optimization&lt;/h4&gt;
+&lt;p&gt;Browser-level tools show you response times from the user&amp;rsquo;s perspective: how long after a user clicks the log in button does the user see his or her account balance? This metric is a practical one that may differ wildly from the traditional response times that a protocol-level tool reports. Measuring real user experience is a great value add for your test.&lt;/p&gt;
+&lt;h4 id=&#34;easier-to-maintain&#34;&gt;Easier to maintain&lt;/h4&gt;
+&lt;p&gt;Lower script complexity means that a browser-based test script is more resilient to changes in the codebase. A change in the underlying requests sent will not require a change in the test script, making it perfect for regression testing.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also easier to pass on to other members of the team due to high readability. Here&amp;rsquo;s an example of how to select a value from a dropdown menu in Element:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;selectByValue&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;#challenger_age&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;34&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s easy to see that the script is looking for an element with the ID &amp;ldquo;challenger_age&amp;rdquo; and selecting the value &amp;ldquo;34&amp;rdquo;. This step could correspond to dozens of requests that need to be scripted if testing on the protocol level, which makes those scripts harder to understand without a proper handover.&lt;/p&gt;
+&lt;h3 id=&#34;cons&#34;&gt;Cons&lt;/h3&gt;
+&lt;p&gt;Browser-based load testing tools have a higher CPU and memory footprint than protocol-based tools. Test scripts in JMeter and Gatling send messages to and record responses from a server without really needing to parse responses. By contrast, browser-based tools parse the server response in order to access the Domain Object Model (DOM) elements on the page.&lt;/p&gt;
+&lt;p&gt;Using real browsers might be closer to the real user experience, but it also takes its toll on node resources. It is possible to run in headless mode, where browsers are started &amp;ldquo;invisibly&amp;rdquo; without actually graphically rendering them. However, even then, a browser-level tool can run fewer concurrent users on a node than a protocol-level tool.&lt;/p&gt;
+&lt;h2 id=&#34;best-tools-and-applications-for-browser-based-load-testing&#34;&gt;Best tools and applications for browser-based load testing&lt;/h2&gt;
+&lt;p&gt;While other commercial tools exist for this, we&amp;rsquo;re partial to open source tools at Flood.&lt;/p&gt;
+&lt;h3 id=&#34;selenium&#34;&gt;Selenium&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Selenium load testing is appealing because Selenium is already well-known for test automation and functional testing, and a lot of companies already have full test suites in Selenium. The possibility of reusing those resources and just running them at scale as load tests is, by far, the most compelling reason to use Selenium.&lt;/p&gt;
+&lt;h3 id=&#34;puppeteer&#34;&gt;Puppeteer&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-05.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Google&amp;rsquo;s just getting started with Puppeteer, and the amount of metrics it exposes is exciting: it seems like anything in Chrome Developer Tools can be accessed by Puppeteer. Imagine running a load test on ONE tool that gives you statistics about back-end performance (response times, the effect of bandwidth restrictions, resources returning errors) AND front-end performance (client-side script console logs, render times, time to first paint, etc). It&amp;rsquo;s hard to imagine a future where this ISN&amp;rsquo;T a valuable tool in the performance arsenal.&lt;/p&gt;
+&lt;p&gt;Under Puppeteer, of course, is &lt;a href=&#34;https://element.flood.io/&#34;&gt;Element&lt;/a&gt;— our load-flavored version of Puppeteer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-protocol-based-load-testing-dead&#34;&gt;Is protocol-based load testing dead?&lt;/h2&gt;
+&lt;p&gt;No. Testing on the protocol-level may have its drawbacks, but it&amp;rsquo;s popular for a reason. If you&amp;rsquo;re testing mobile apps or API endpoints, protocol-level testing tools allow you to focus on hitting what you want to test and only what you want to test. Sometimes you don&amp;rsquo;t want to test the whole stack. It really depends on your test scenarios.&lt;/p&gt;
+&lt;p&gt;Plus, protocol-level tools tend to be really resource efficient. We&amp;rsquo;ve been able to easily run about 1000 users per Flood node with JMeter and Gatling, easily outstripping browser-level tools. It makes sense, since JMeter and Gatling don&amp;rsquo;t need to start browser instances to generate load.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s significantly cheaper to generate very high loads with protocol-level tools. This efficiency makes protocol-level tools a good choice for high concurrency load testing and especially stress testing.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-we-doing-to-support-blu&#34;&gt;What are we doing to support BLU?&lt;/h2&gt;
+&lt;p&gt;Clearly, our usage metrics show that browser-based load testing is on the rise, and we&amp;rsquo;re planning to ramp up our offerings in this area while also maintaining support for protocol-level tools. Here&amp;rsquo;s what you can look forward to from us:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New releases
+&lt;ul&gt;
+&lt;li&gt;We just released &lt;a href=&#34;https://element.flood.io/docs/1.0/install&#34;&gt;version 1.2.3 of Element&lt;/a&gt; a few weeks ago, which addresses some bugs and improve stability for certain actions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dedicated Element team
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;ve put together a team of developers who will be focusing on improving Element exclusively. Despite Element being an open source tool, we&amp;rsquo;re putting our own resources behind it to improve it faster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Partnering with consulting services
+&lt;ul&gt;
+&lt;li&gt;It can be difficult to get started on a new tool, and Element is no exception. While we provide a load testing platform to run Element scripts, some companies want help to create the scripts in the first place. To this end, we&amp;rsquo;ve partnered with expert consultants who have already been using Element with great success: &lt;a href=&#34;https://foulkconsulting.com/&#34;&gt;Foulk Consulting&lt;/a&gt; and &lt;a href=&#34;https://www.planittesting.com/&#34;&gt;Planit Testing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;When choosing a performance testing tool, it&amp;rsquo;s important to consider the advantages and disadvantages of protocol-level and browser-level testing tools. We think both types of tools deserve to be in a solid performance and load testing strategy. They can also be used in tandem in a hybrid load testing approach, improving overall application performance and scalability.&lt;/p&gt;
+&lt;p&gt;In 2018, we predicted that testing web-based applications with real browsers would increase in popularity, so we&amp;rsquo;re thrilled to see our theory validated in 2020. Browser-based load testing is increasing in usage, and our open source tool, Element, is leading the charge. It&amp;rsquo;s exciting to be at the forefront of this revolution, and we intend to increase support for load testing with real browsers even more this year.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -48,10 +259,40 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>Originally posted here.
-When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
-  Or catch the audio version here:
- Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/K61W7ivhsuE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or catch the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/76u25lI7sFx5SwgbsFLU5Z&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re actually getting this quite a bit now as Puppeteer grows in popularity, but first, let&amp;rsquo;s discuss the similarities. They&amp;rsquo;re tools that you can use to drive browsers. The work by identifying and interacting with elements on a website in the same way that a user would. They are also both open-source, and both can be used for load testing. This is a great strategy because instead of writing tests for an automation suite and then tests for load testing, you can just write the one test suite and re-use it, so it saves a lot of resources in the end. To answer this question, I&amp;rsquo;m going to focus on load testing because that&amp;rsquo;s what my experience is in.&lt;/p&gt;
+&lt;h2 id=&#34;difference-between-selenium-and-puppeteer&#34;&gt;Difference between Selenium and Puppeteer&lt;/h2&gt;
+&lt;h3 id=&#34;pros-and-cons-of-selenium&#34;&gt;Pros and cons of Selenium&lt;/h3&gt;
+&lt;p&gt;Now for the difference. Selenium supports more browsers than does Puppeteer. It supports Chrome, Firefox, IE, Safari, and Opera, so there are a lot more options to choose from depending on your application.&lt;/p&gt;
+&lt;p&gt;Selenium is also what I would call automation-first. It was built with automation in mind, which means it&amp;rsquo;s very good at that. It&amp;rsquo;s very robust, and if you have a complicated test scenario, Selenium is an excellent choice.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also been around for much longer than Puppeteer, which is important because that means it&amp;rsquo;s had more time to build up a community. There are way more resources and tutorials for Selenium than for Puppeteer.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also, unfortunately, very resource-intensive. That&amp;rsquo;s not something that you would typically care too much about from a test automation perspective, but when you&amp;rsquo;re running thousands of users on the cloud, it IS important to keep in mind that Selenium, just because of how it&amp;rsquo;s built and its complexity, can only run about five users per node. We&amp;rsquo;ve found that out at Flood, after baselining specifically an AWS m5.xlarge instance. So you can look at the specs of that and compare it with the machines that you&amp;rsquo;re wanting to run Selenium on, to see how that would equate for you.&lt;/p&gt;
+&lt;h3 id=&#34;pros-and-cons-of-puppeteer&#34;&gt;Pros and cons of Puppeteer&lt;/h3&gt;
+&lt;p&gt;Puppeteer is a NodeJS library developed by Google, which means it plays very well with Chrome. There are a whole lot of things that you have access to with Puppeteer, and if you&amp;rsquo;re using it with Chrome, pretty much anything in Chrome, including rendering times, you can see and access with a Puppeteer script. So that&amp;rsquo;s a huge advantage.&lt;/p&gt;
+&lt;p&gt;Unfortunately, that also means it supports fewer browsers. Obviously, it supports Chrome very well, and they recently came out with support for Firefox, although they do have plans to incorporate support for more browsers in the future.&lt;/p&gt;
+&lt;p&gt;One of Puppeteer&amp;rsquo;s advantages is that we at Flood actually created a tool on top of Puppeteer. It&amp;rsquo;s also open-source. It&amp;rsquo;s called Flood Element, and Element is built to be performance-first because obviously, that&amp;rsquo;s what we had in mind when we were building it. It takes everything that&amp;rsquo;s good about Puppeteer and makes it really easy to set parameters that you normally would expect to need for load testing, like users and ramp-up.&lt;/p&gt;
+&lt;p&gt;This also means that it&amp;rsquo;s way less resource-intensive. I said that with Selenium, you can run up to five users on an AWS m5.xlarge instance, and for the same instance type, you can run, from our experiments, anywhere from 30-50 Element scripts/users. That is a huge saving when you&amp;rsquo;re running a really large-scale test.&lt;/p&gt;
+&lt;h2 id=&#34;should-you-choose-selenium-or-puppeteer-for-load-testing&#34;&gt;Should you choose Selenium or Puppeteer for load testing?&lt;/h2&gt;
+&lt;p&gt;I would say that if you already have a large Selenium automation suite, if you have a complex test scenario, or if you aren&amp;rsquo;t running that many users for your load test, then Selenium is a great choice. If you ARE running thousands of users, though, and resource efficiency, and therefore cost efficiency, is really important to you, then choose Element.&lt;/p&gt;
+&lt;p&gt;My advice is always to try both. If you have the time, do a proof of concept with both of them. That way, your whole team can better understand what the pros and cons are for each one and decide which one is best going forward. Or maybe you don&amp;rsquo;t even decide on one. At Flood, we support both of them at the same price, so it depends on what you prefer.&lt;/p&gt;
+&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -60,9 +301,39 @@ When it comes to software testing, the debate of Puppeteer vs Selenium is a hot 
       <pubDate>Tue, 31 Mar 2020 20:35:36 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200331-aaf09/</guid>
-      <description>Originally posted here.
-One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.
-Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-09-what-are-the-best-tools-for-load-testing-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-09-what-are-the-best-tools-for-load-testing-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One of our most commonly-asked questions is: &amp;ldquo;What are the best tools for load testing?&amp;rdquo; The answer will depend on a few things: your reason for load testing, the application you want to test, what kind of load testing you want to carry out, your team&amp;rsquo;s experience with scripting, and how many virtual users you want to run.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: In this video, I say that traditional load testing tools can&amp;rsquo;t simulate requests that are triggered by interactions on the client-side. This isn&amp;rsquo;t technically true: if you know what the requests are, you can build those requests manually on a protocol-level tool (like JMeter or Gatling). However, this takes more work compared to browser-level tools that just do this natively.&lt;/em&gt;
+‍
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/I5Wo6x2OoZU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Transcript:&lt;/p&gt;
+&lt;p&gt;Hi everyone, Nicole back again with another Ask a Flooder, and this time I&amp;rsquo;m tackling one of the questions we get asked A LOT, which is:&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-best-tools-for-load-testing&#34;&gt;What are the best tools for load testing?&lt;/h2&gt;
+&lt;h3 id=&#34;why-open-source-load-testing-tools-are-awesome&#34;&gt;Why open-source load testing tools are awesome&lt;/h3&gt;
+&lt;p&gt;Now, I want to preface this by saying that we really love open-source tools here at Flood, because 1) they&amp;rsquo;re really pretty full-fledged these days. You don&amp;rsquo;t have to make any compromises on features, and, in fact, some of these open-source tools have more features than some newer load testing tools just because they&amp;rsquo;ve been out longer. And secondly, they have large communities. Because they&amp;rsquo;re open-source, lots of people are using it, and lots of people are developing for it. So there are lots of plugins normally, and they support any kind of protocol that you can think of. And lastly, cost. It&amp;rsquo;s hard not to mention cost because it can be a really important factor depending on the budget of your project. And if you&amp;rsquo;re starting out as a load tester, I think that it might even be the best way to start with load testing, because you can take that knowledge with you and apply it to other projects and other companies regardless of the budget that they have.&lt;/p&gt;
+&lt;h3 id=&#34;questions-to-ask-yourself-in-choosing-a-load-testing-tool&#34;&gt;Questions to ask yourself in choosing a load testing tool&lt;/h3&gt;
+&lt;h4 id=&#34;why-are-you-doing-load-testing&#34;&gt;Why are you doing load testing?&lt;/h4&gt;
+&lt;p&gt;I always advocate starting with WHY. Why are you actually load testing? Is there a particular production defect that you noticed that you&amp;rsquo;re trying to solve? Is there already a problem, or are you just preparing to launch? These are things that are going to inform the type of tool that you use because you might want to make sure that that tool supports the protocols that you need.&lt;/p&gt;
+&lt;h4 id=&#34;what-are-you-load-testing&#34;&gt;What are you load testing?&lt;/h4&gt;
+&lt;p&gt;Secondly, what type of app are you testing? Because if you have a single-page app, where your end-user is interacting with the page and client-side scripts are running to make requests to servers, then that&amp;rsquo;s something that most traditional load testing tools aren&amp;rsquo;t going to be able to do.&lt;/p&gt;
+&lt;p&gt;There are two general types of load testing tools: there&amp;rsquo;s browser-based, and there&amp;rsquo;s protocol-based. I&amp;rsquo;ll leave a link in the description talking about the differences between the two, but in general, if you want to go for browser-level testing, I would suggest Selenium and Element. Now, they&amp;rsquo;re both very good options. Selenium is probably the more robust in terms of automation of the two, but Element is better one in terms of efficiency because it was built with performance in mind. So Selenium&amp;rsquo;s automation-first and Element is really performance-first.&lt;/p&gt;
+&lt;p&gt;Now, for protocol-level tools, you can&amp;rsquo;t go wrong with either JMeter or Gatling.&lt;/p&gt;
+&lt;h4 id=&#34;what-experience-does-your-team-have-with-scripting&#34;&gt;What experience does your team have with scripting?&lt;/h4&gt;
+&lt;p&gt;Thirdly, what&amp;rsquo;s the level of technical expertise that your team has? I think it&amp;rsquo;s important to be realistic about what your team can do, given the amount of time that they have. So if you have a team that has never done load testing and has never done any scripting before, then I would suggest using our Test Builder or something similar. On Flood, we have a Test Builder that is really just an easy interface that actually runs JMeter under the hood, but it just kind of simplifies JMeter and boils it down to what are the URLs that you want to test. That is a really easy way to get started, and it&amp;rsquo;s also a great [way to run a] proof of concept. If you have some automation testers on your team that are trying to do the load testing, well, maybe you should stick to tools that they already use. So it might be easier for them to get up and running with either Selenium or Element rather than learning a new tool. And if you have developers on your team, you might consider Ruby JMeter rather than the vanilla JMeter because Ruby JMeter is a lot easier to deal with&amp;mdash; because you don&amp;rsquo;t have to deal with the XML files of a JMeter file (a normal JMX script). You can just plan out your load tests in Ruby. Or, Gatling is also a really good option because it allows you to write scripts in Scala. Scala is really really powerful, and you can create an entire framework with Gatling, which is also something to keep in mind.&lt;/p&gt;
+&lt;h4 id=&#34;how-many-virtual-users-do-you-want-to-run-in-your-load-tests&#34;&gt;How many virtual users do you want to run in your load tests?&lt;/h4&gt;
+&lt;p&gt;And lastly, how many users do you want to simulate? Now protocol-level tools are going to really shine here because Element and Selenium both require a higher usage of resources on your load generators just because of the complexities involved in starting a browser instance, whereas protocol-level tools are just super efficient at sending these requests. So I would suggest that if you&amp;rsquo;re talking about thousands of users, I would use the protocol-level tools unless there&amp;rsquo;s a really good reason why that&amp;rsquo;s not going to give you the results that you&amp;rsquo;re looking for. Between JMeter and Gatling&amp;ndash; well, they&amp;rsquo;re both excellent tools, but Gatling has been shown to particularly be good for really high levels of usage. But JMeter is also a good alternative, and you can run thousands of users of JMeter without any problem.&lt;/p&gt;
+&lt;h2 id=&#34;just-get-started&#34;&gt;Just get started!&lt;/h2&gt;
+&lt;p&gt;As always, I&amp;rsquo;d suggest just getting started. Pick whatever tool sounds like it might be the best for you, do a proof of concept on that one, and you can always try the other ones as well. On Flood, we don&amp;rsquo;t restrict you to just using one tool, so you can use one; you can use all four; you can run them at the same time if you want. It all depends on what you need for your testing.&lt;/p&gt;
+&lt;p&gt;Till next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

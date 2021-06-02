@@ -14,8 +14,13 @@
       <pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</guid>
-      <description>I first heard of Stephen Townshend because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, Stijn Schephers. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!
- We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.</description>
+      <description>&lt;p&gt;I first heard of &lt;a href=&#34;https://twitter.com/perftestnz&#34;&gt;Stephen Townshend&lt;/a&gt; because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, &lt;a href=&#34;https://www.linkedin.com/in/stijnschepers/&#34;&gt;Stijn Schephers&lt;/a&gt;. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed/episode/3pp3ZFFB8DyfUEtLRuLxGe&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -24,8 +29,13 @@
       <pubDate>Fri, 30 Apr 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</guid>
-      <description>Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with xk6-chaos and k6, and observability with New Relic.
-  </description>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with &lt;a href=&#34;https://github.com/simskij/xk6-chaos&#34;&gt;xk6-chaos&lt;/a&gt; and k6, and observability with &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -34,8 +44,13 @@
       <pubDate>Fri, 26 Feb 2021 21:40:25 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210226-k6-office-hours03/</guid>
-      <description>In this week&amp;rsquo;s Office Hours, Simme and I invited Daniel González Lopes, a DevOps engineer from k6, to join us to talk about chaos engineering and what it has to do with load testing. Simme also demonstrated how to use k6 to run simple chaos experiments.
-  </description>
+      <description>&lt;p&gt;In this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I invited Daniel González Lopes, a DevOps engineer from &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, to join us to talk about chaos engineering and what it has to do with load testing. Simme also demonstrated how to use k6 to run simple chaos experiments.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WrDV8iIdCy8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -44,8 +59,34 @@
       <pubDate>Wed, 28 Mar 2018 23:35:52 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20180328-manufactured-chaos/</guid>
-      <description>Originally posted here.
-It’s always ideal to run performance tests against an environment that’s production-like. That way, you can ensure that your tests aren&amp;rsquo;t being influenced by factors that are not present in production - such as sub-optimal specifications, or the configurations of a test server. So, what does a good performance tester do? They compare their machine specifications and request production-sized boxes to run their tests against. But is that really enough?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/manufactured-chaos-how-netflix-does-performance-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/manufactured-chaos-how-netflix-does-performance-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It’s always ideal to run performance tests against an environment that’s production-like. That way, you can ensure that your tests aren&amp;rsquo;t being influenced by factors that are not present in production - such as sub-optimal specifications, or the configurations of a test server. So, what does a good performance tester do? They compare their machine specifications and request production-sized boxes to run their tests against. But is that really enough?&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the reality: despite our planning, we still sometimes see things in production that we don’t see, and can’t reproduce, in the test environment. It&amp;rsquo;s hard to predict every possible failure. Even if you do recognize the danger, it’s still difficult to recreate the perfect storm of circumstances that could potentially lead to its occurrence. The more complex your network architecture is, the more likely it is that these failures will occur. As a result, there’s something of a “don’t breathe or it might break” feeling that comes with deploying to production. So how do you test your application to get the maximum degree of confidence in its performance?&lt;/p&gt;
+&lt;p&gt;If you’re Netflix, your answer would be to &lt;strong&gt;lean into the chaos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Chaos theory, in a nutshell, tells us that what looks random actually contains patterns that, while unpredictable, are recognizable and thus manageable. Far from representing disorder, chaos is our word for events that may be infinitely complex and interconnected in ways that aren’t immediately apparent. Chaos engineering takes this principle and applies it to software. Developers can code to reduce the occurrence of chaos as much as possible, but they can also code to make sure applications can withstand chaos if it does occur. As testers, one way we can test the latter is to manufacture chaos.&lt;/p&gt;
+&lt;p&gt;Netflix’s testing strategy puts a lot of emphasis on manufacturing chaos because their business model involves streaming gigabits of data to customers on demand, from anywhere in the world, at a consistently fast enough speed that people aren’t annoyed by buffering in the middle of a rousing speech by the Mother of Dragons. In 2015, Netflix accounted for 36% of traffic in &lt;a href=&#34;http://fortune.com/2015/10/08/netflix-bandwith/&#34;&gt;North America&lt;/a&gt;. Netflix customers stream 125 million hours of video &lt;a href=&#34;https://www.wired.com/2016/03/netflixs-grand-maybe-crazy-plan-conquer-world/&#34;&gt;every day&lt;/a&gt;. Netflix used to serve the content from their own private data centers but moved to the cloud in 2008 after a database corruption disrupted their business for three days. Today, Netflix is 100% in the cloud, which provides tangible benefits such as architecture that can scale on demand thanks to their use of Amazon Web Services (AWS) - incidentally, the same CDN that we use here at Flood IO. However, even the cloud isn’t invulnerable to chaos. Enter the Simian Army.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20180328-01.png&#34; alt=&#34;The Simian Army at Netflix&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Conjuring up the humorous image of a squadron of monkeys wreaking havoc in a data center, the Simian Army is a series of tools developed by Netflix that code chaos into their tests - on purpose. At Netflix, every build has to pass not just the standard suite of functional and nonfunctional tests, but also the chaotic-but-programmable tests of the Simian Army, all of which Netflix have made available as open-source tools on Github. Each monkey is a real-world manufactured-chaos test that the application under test must pass in order to be deployed into production with a high degree of confidence in its stability and continued performance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chaos Monkey&lt;/strong&gt; selects a node or container within a node at random and terminates it unexpectedly, forcing Netflix engineers to adapt their code to deal with this behavior by quickly rerouting requests to backup nodes and containers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Janitor Monkey&lt;/strong&gt; detects unused resources (instances, volumes) in the cloud and terminates them. Ideally, all resources no longer used should be shut down, but in practice this doesn’t always happen. People forget to delete things they’re not using anymore. Applications are changed to use new volumes, and old ones are forgotten. While it’s a good idea to make sure everyone is aware of the need to clean up after themselves, Janitor Monkey assumes that things will fall through the cracks and automatically comes to the rescue. Janitor Monkey also sends a notification to the owner of the resource with enough time to mark the resource as an exception before deletion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conformity Monkey&lt;/strong&gt; scans instances and determines whether they conform to a set of rules specified by the organization. If an instance is not configured the right way, Conformity Monkey sends the owner a notification. It can detect things like an instance being created without the appropriate security groups or tags.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Security Monkey&lt;/strong&gt; monitors your entire public or private cloud to look for policy changes or incorrectly configured instances that could lead to serious security breaches. It even provides a UI so that you can see a history of changes to important policies and whom they were made by.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Simian Army&lt;/strong&gt; is a marked departure from traditional software testing techniques, which are very much procedural and based on predetermined flows. The assumption is that people behave logically, are all experts in their field, forget nothing, and always follow best practices. But is this actually realistic?&lt;/p&gt;
+&lt;p&gt;Netflix’s approach to testing is innovative in that they don’t assume that everyone involved knows exactly what they’re doing, from the developers to the infrastructure engineers to the testers. Neither do they assume that it is always possible to know the exact cause of failures in production. Sometimes bad stuff just hits the fan and nobody sees it coming. The very nature of our work in technology requires constant change, and it can be difficult to keep up with all the ways in which applications are becoming increasingly more integrated with each other. This will only become more apparent as the Internet of Things becomes more popular.&lt;/p&gt;
+&lt;p&gt;At &lt;a href=&#34;https://flood.io/&#34;&gt;Flood&lt;/a&gt;, we often see our customers targeting production environments, and there are some strong arguments for doing this. Testing later in the lifecycle means we can start to tackle production-sized problems around availability, scalability and reliability that would have otherwise been difficult to reproduce. Let’s face it. We all sometimes see monkeys in our data centers. Maybe it’s time we started planning for it.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://media.netflix.com/en/company-blog/completing-the-netflix-cloud-migration.&#34;&gt;Completing the Netflix cloud migration&lt;/a&gt;
+&lt;a href=&#34;http://fractalfoundation.org/resources/what-is-chaos-theory/&#34;&gt;What is chaos theory?&lt;/a&gt;
+&lt;a href=&#34;http://principlesofchaos.org/&#34;&gt;Principles of chaos engineering&lt;/a&gt;
+&lt;a href=&#34;https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116&#34;&gt;The Netflix Simian Army&lt;/a&gt;
+&lt;a href=&#34;https://medium.com/becloudy/chaos-engineering-surviving-the-failures-in-distributed-systems-5688c6905dbb&#34;&gt;Chaos engineering - surviving the failures in distributed systems&lt;/a&gt;
+&lt;a href=&#34;https://www.linkedin.com/pulse/chaos-engineering-series-part-i-deep-dive-sathiya-shunmugasundaram/&#34;&gt;Chaos engineering series - Part 1: chaos engineering deep dive&lt;/a&gt;
+&lt;a href=&#34;https://github.com/Netflix/SimianArmy/wiki&#34;&gt;What is Simian Army?&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -14,8 +14,13 @@
       <pubDate>Fri, 26 Mar 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210326-koh-circleci/</guid>
-      <description>Simme and I decided to take this week to answer questions on k6 Office Hours, and we ended up talking about CircleCI, environment variables, and how to use them with k6.
-  </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I decided to take this week to answer questions on k6 Office Hours, and we ended up talking about &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;, environment variables, and how to use them with k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3FyV1j3TRBk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -24,9 +29,16 @@
       <pubDate>Wed, 25 Nov 2020 19:21:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</guid>
-      <description>Day 2 of my Week of Testing!
-Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.
-Today I learned that on k6, you can actually set one test to be a baseline.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dcahi7-9pRs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Day 2 of my Week of Testing!&lt;/p&gt;
+&lt;p&gt;Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.&lt;/p&gt;
+&lt;p&gt;Today I learned that on k6, you can actually set one test to be a baseline. There&amp;rsquo;s so much I want to say on this topic - that&amp;rsquo;s probably a whole blog post there - but for now, suffice it to say that having a baseline test to compare succeeding tests to is a key to a successful round of load testing. I was happy to see that k6 thinks so too, because that functionality is built into the UI by default.&lt;/p&gt;
+&lt;p&gt;I also think that being able to schedule a test regularly is fantastic for practicing Continuous Testing. Of course, teams already using CI/CD pipelines would probably get the most benefit out of running load tests using the command line rather than through the UI, but it&amp;rsquo;s nice to know that scheduling is an option in the UI as well.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

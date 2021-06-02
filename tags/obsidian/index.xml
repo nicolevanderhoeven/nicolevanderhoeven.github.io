@@ -14,9 +14,33 @@
       <pubDate>Wed, 02 Jun 2021 00:27:59 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</guid>
-      <description>If you&amp;rsquo;ve recently transitioned from Roam Research to Obsidian, you might run into a few issues, even after you&amp;rsquo;ve run the &amp;ldquo;Markdown format importer&amp;rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to Google Firebase.
-Roam assets are linked to in the Markdown files like this:
-![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media&amp;amp;token=1e03b680-5472-33dc-9b06-a127301af37f) Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&amp;rsquo;ll still render correctly.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;ve recently transitioned from &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; to &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, you might run into a few issues, even after you&amp;rsquo;ve run the &amp;ldquo;Markdown format importer&amp;rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to &lt;a href=&#34;https://firebase.google.com/&#34;&gt;Google Firebase&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Roam assets are linked to in the Markdown files like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt;token=1e03b680-5472-33dc-9b06-a127301af37f)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&amp;rsquo;ll still render correctly. However, I still think it&amp;rsquo;s worth downloading the files for three reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you don&amp;rsquo;t intend to use Roam anymore and cancel your subscription, they will likely delete those assets at some point, leaving you with a lot of broken links in Obsidian.&lt;/li&gt;
+&lt;li&gt;Part of Obsidian&amp;rsquo;s appeal is that you own your assets. Not so if they&amp;rsquo;re on someone else&amp;rsquo;s server.&lt;/li&gt;
+&lt;li&gt;You can&amp;rsquo;t access Firebase files without an internet connection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, instead, you want to download the contents of that link and replace it in your notes with something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![](assets/newfile.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That way, you&amp;rsquo;ll have full control over all your assets, and you won&amp;rsquo;t be dependent on those assets being stored on Firebase by Roam.&lt;/p&gt;
+&lt;p&gt;To fix this, I wrote a Python script that will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go through every file and every folder within a specified root vault directory&lt;/li&gt;
+&lt;li&gt;Look for links to Google Firebase&lt;/li&gt;
+&lt;li&gt;Download all assets from Firebase to a local folder (&lt;code&gt;/assets&lt;/code&gt; by default), using the timestamp and index number as a filename&lt;/li&gt;
+&lt;li&gt;Replace the Firebase links in your vault with links to the newly downloaded files, accounting for PDFs, whose links are formatted differently in Roam as &lt;code&gt;{{ pdf: ... }}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before you run this script, I highly recommend backing up your vault or trying this out on a dummy vault.&lt;/p&gt;
+
+
+&lt;script src=&#34;https://gist.github.com/nicolevanderhoeven/b25c97a8a68ea97e7bdf5ee674fdaec4.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;After downloading and saving the script, run &lt;code&gt;python3 downloadfirebase.py&lt;/code&gt; on your terminal.&lt;/p&gt;
+&lt;p&gt;This worked really well for me, and I can breathe a little more easily now that my vault is self-contained.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,8 +49,13 @@ Roam assets are linked to in the Markdown files like this:
       <pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</guid>
-      <description>I first heard of Stephen Townshend because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, Stijn Schephers. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!
- We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.</description>
+      <description>&lt;p&gt;I first heard of &lt;a href=&#34;https://twitter.com/perftestnz&#34;&gt;Stephen Townshend&lt;/a&gt; because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, &lt;a href=&#34;https://www.linkedin.com/in/stijnschepers/&#34;&gt;Stijn Schephers&lt;/a&gt;. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed/episode/3pp3ZFFB8DyfUEtLRuLxGe&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -35,8 +64,118 @@ Roam assets are linked to in the Markdown files like this:
       <pubDate>Tue, 18 May 2021 22:33:18 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/</guid>
-      <description>Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&amp;rsquo;s not much said about its use outside of the academe.
-I&amp;rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&amp;rsquo;s released to real users.</description>
+      <description>&lt;p&gt;Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&amp;rsquo;s not much said about its use outside of the academe.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/graphview-transparent.png&#34; alt=&#34;Obsidian for work&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&amp;rsquo;s released to real users. Currently, though, I&amp;rsquo;m a Developer Advocate at &lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;, which means a significant part of my job now is sharing with people what I&amp;rsquo;ve learned.&lt;/p&gt;
+&lt;p&gt;I consider myself a knowledge worker: a significant part of my job depends on how quickly I learn new technologies &lt;em&gt;and&lt;/em&gt; how clearly I can impart what I&amp;rsquo;ve learned to others. I&amp;rsquo;d argue, though, that most people who work in a field as fast-moving as tech are knowledge workers too. It&amp;rsquo;s naive to think we won&amp;rsquo;t one day forget some skills we&amp;rsquo;ve learned, even if we were using them daily at one point. Yet nobody talks about note-taking.&lt;/p&gt;
+&lt;p&gt;Recently, my note-taking and personal knowledge management tool of choice has been &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian.md&lt;/a&gt;. I have no affiliation with the Obsidian team, and in fact I&amp;rsquo;m an investor of &lt;a href=&#34;https://roamresearch.com&#34;&gt;a competing product&lt;/a&gt;. Here are some ways I use Obsidian at work that might help you understand why Obsidian is my daily driver.&lt;/p&gt;
+&lt;h2 id=&#34;my-setup&#34;&gt;My setup&lt;/h2&gt;
+&lt;p&gt;I have multiple Obsidian vaults, and each of them is a version-controlled &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; repository, hosted on &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;. I keep my main Obsidian vault in a &lt;a href=&#34;https://dropbox.com&#34;&gt;Dropbox&lt;/a&gt; for extra version control and as a backup. Just for overkill, I also use &lt;a href=&#34;https://obsidian.md/sync&#34;&gt;Obsidian Sync&lt;/a&gt; as another backup and as the easiest way to get access to my Obsidian vault on my iPad Pro and my Android mobile.&lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://obsidian.md/publish&#34;&gt;Obsidian Publish&lt;/a&gt; to make some of my notes &lt;a href=&#34;https://notes.nicolevanderhoeven.com&#34;&gt;publicly available&lt;/a&gt; on a custom domain directly from my vault, as an experiment in learning in public that&amp;rsquo;s gone pretty well so far.&lt;/p&gt;
+&lt;p&gt;This setup isn&amp;rsquo;t free. All up, I&amp;rsquo;m giving Obsidian about US $16 a month. However, I want to point out that Obsidian itself is free for personal use, and if mobile access, cloud sync, and publishing your notes online aren&amp;rsquo;t important to you, you can really go a long way with using it for free.&lt;/p&gt;
+&lt;h2 id=&#34;processing-information&#34;&gt;Processing information&lt;/h2&gt;
+&lt;p&gt;Remaining relevant in tech pretty much requires that you learn a lot, learn quickly, and enjoy the hell out of it. Luckily, Obsidian is pretty great at this.&lt;/p&gt;
+&lt;h3 id=&#34;consume-and-collect&#34;&gt;Consume and collect&lt;/h3&gt;
+&lt;p&gt;I consume a lot of content, and in different formats: articles, books, videos, presentations, podcasts are all great sources of free education. I initially capture my notes on them in different ways, but they all lead back to using &lt;a href=&#34;https://readwise.io/&#34;&gt;Readwise&lt;/a&gt;, which I use as a collector and sorter of all these notes. Then, I import data from Readwise to Obsidian using a process I describe in more detail &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For now, suffice it to say that all these notes and highlights end up in Obsidian for processing. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Presentation/In+the+kitchen+-+a+sprinkle+of+fire+and+chaos&#34;&gt;Here&amp;rsquo;s an example of my notes during a presentation&lt;/a&gt; (called &lt;em&gt;In the kitchen - a sprinkle of fire and chaos&lt;/em&gt; by &lt;a href=&#34;https://www.anammedina.com/&#34;&gt;Ana Medina&lt;/a&gt;, about chaos engineering).&lt;/p&gt;
+&lt;p&gt;When trying to learn something, many people stop at this phase. They&amp;rsquo;ve read the thing, they&amp;rsquo;ve highlighted passages from the thing, and now they think they&amp;rsquo;ve learned the thing. That hasn&amp;rsquo;t been my experience, because I forget many things I consume shallowly.&lt;/p&gt;
+&lt;h3 id=&#34;process-iteratively&#34;&gt;Process iteratively&lt;/h3&gt;
+&lt;p&gt;Then, I process notes iteratively, first restating things into my own words and then creating my own notes about concepts I&amp;rsquo;ve learned. Each time I do that, I try to identify key concepts and create backlinks for them, which in Obsidian just means typing &lt;code&gt;[[Chaos engineering]]&lt;/code&gt;, with a topic between double brackets. If I click on that new link, it creates  a page for it. Over time, I end up with a page &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Chaos+Engineering&#34;&gt;like this one on Chaos Engineering&lt;/a&gt; that is a consolidation of what I&amp;rsquo;ve learned.&lt;/p&gt;
+&lt;p&gt;Interestingly, if I go to the Chaos Engineering page, I can also see all the instances I&amp;rsquo;ve linked to it from other notes:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/linked-mentions.png&#34; alt=&#34;Linked mentions in Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What if I didn&amp;rsquo;t have the foresight to link to Chaos Engineering from an article I read? Obsidian also tracks &lt;em&gt;unlinked&lt;/em&gt; mentions as well. I can see all the times I&amp;rsquo;ve used the words &amp;ldquo;chaos engineering&amp;rdquo; in other notes, even if I haven&amp;rsquo;t created formal links using &lt;code&gt;[[Chaos engineering]]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Over time, things I&amp;rsquo;m interested in start to emerge this way, and topics grow deeper and more detailed, with branches of pages spinning off from it.&lt;/p&gt;
+&lt;h3 id=&#34;situate-and-solidify&#34;&gt;Situate and solidify&lt;/h3&gt;
+&lt;p&gt;Then, I try to think about where this new piece of knowledge fits into the hierarchy of things I&amp;rsquo;m interested in. This is less about trying to classify the world and more about putting it somewhere on &lt;em&gt;my personal&lt;/em&gt; map of interests so that I&amp;rsquo;m more likely to use that knowledge later. For me, chaos engineering fit into my page on &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Nonfunctional+testing&#34;&gt;Nonfunctional testing&lt;/a&gt;. Doing so helps me pit it against other things I&amp;rsquo;ve classified as forms of nonfunctional testing and think critically about whether it belongs there, or whether other things I already know contradict it in some way. Sometimes I&amp;rsquo;ll make notes about my reasoning for classification, such as &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Chaos+engineering+is+a+testing+discipline&#34;&gt;this note on why I think chaos engineering is a testing discipline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;None of this is set in stone. I&amp;rsquo;m always changing notes around as I learn more things that change my mind. For example, I&amp;rsquo;m considering merging my nonfunctional testing and functional testing pages after a conversation where someone questioned whether it wasn&amp;rsquo;t a misnomer to call application performance &amp;ldquo;nonfunctional&amp;rdquo;. The point is to create a living, breathing second brain that helps me make connections between concepts and remember what I&amp;rsquo;ve learned.&lt;/p&gt;
+&lt;p&gt;Obsidian&amp;rsquo;s built-in graph view illustrates this point nicely:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/graph_view-20210518.png&#34; alt=&#34;Built-in graph view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is my main Obsidian vault as of the time of this writing - all 5443 notes of it. The graph view plots every note and the connections between notes, so I&amp;rsquo;ve ended up with a slick visual representation of what I&amp;rsquo;ve been thinking and writing about. The graph view is actually &lt;em&gt;functional&lt;/em&gt;, too&amp;ndash; I can assign colors to nodes based on the directory they&amp;rsquo;re in, their tags, words they can contain, and a lot of other criteria. Because each node is sized according to how many links lead to it, this view makes it easy to see clusters in things I&amp;rsquo;ve thought or written about.&lt;/p&gt;
+&lt;h3 id=&#34;publish&#34;&gt;Publish&lt;/h3&gt;
+&lt;p&gt;One of the advantages of Obsidian over something like Notion or Roam Research is how easy it is to publish notes from it.&lt;/p&gt;
+&lt;h4 id=&#34;obsidian-publish-paid&#34;&gt;Obsidian Publish (paid)&lt;/h4&gt;
+&lt;p&gt;There&amp;rsquo;s the paid Publish service, which I&amp;rsquo;ve subscribed to for US $8 a month. After &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Using+a+custom+domain+with+Obsidian+Publish&#34;&gt;setting it up to publish on my own domain&lt;/a&gt; rather than the default at &lt;code&gt;publish.obsidian.md&lt;/code&gt;, going from a note to a published post is as easy as clicking the Publish icon, selecting the notes to add, delete, or modify, and then selecting Publish.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/publish-dialog.png&#34; alt=&#34;Dialog for Obsidian Publish&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;open-folder-as-vault&#34;&gt;Open folder as vault&lt;/h4&gt;
+&lt;p&gt;If you don&amp;rsquo;t want to pay for Publish, Obsidian still saves all files locally in Markdown (&lt;code&gt;.md&lt;/code&gt;) format. This is the same format that many static site generators take for content. This site that you&amp;rsquo;re reading this on is generated using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, so everything written here is kept as a Markdown file before it&amp;rsquo;s turned into HTML. Since an &amp;ldquo;Obsidian vault&amp;rdquo; is just a folder with Markdown files, I can just open the directory containing the files for my site and write blog posts in Obsidian with no noticeable difference.&lt;/p&gt;
+&lt;p&gt;At work, we happen to store our main &lt;a href=&#34;https://k6.io/docs/&#34;&gt;product documentation&lt;/a&gt; as Markdown files in a &lt;a href=&#34;https://github.com/k6io/docs&#34;&gt;GitHub repo&lt;/a&gt;, which make it perfect for opening in Obsidian as well. I prefer to write documentation in Obsidian over VSCode for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I can install plugins, like &lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;Advanced Tables&lt;/a&gt; to make Markdown tables easier to deal with, create templates to standardize the format of notes you make often, see an outline of what you&amp;rsquo;re writing based on Markdown headings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/outlines-obsidian.png&#34; alt=&#34;See an outline of your current note&#34;&gt;
+&lt;em&gt;Outline core plugin for Obsidian&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When I want to link to another page, it&amp;rsquo;s easier to just hit CMD + O to search through existing notes instead of finding it on GitHub.&lt;/li&gt;
+&lt;li&gt;I can choose an Obsidian theme that matches the theme of the published site. &lt;a href=&#34;https://github.com/ishgunacar/gitsidian&#34;&gt;This &amp;ldquo;Gitsidian&amp;rdquo; theme&lt;/a&gt; has an Edit view in dark mode (my preference) but a rendered Preview mode that looks more like GitHub&amp;rsquo;s Markdown format, so I can see what it will actually look like for users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/ishgunacar/gitsidian/raw/master/showcase.png&#34; alt=&#34;Gitsidian theme preview for Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m done, I can still jump to my terminal and push my change to GitHub as normal.&lt;/p&gt;
+&lt;h4 id=&#34;obsidian-uris&#34;&gt;Obsidian URIs&lt;/h4&gt;
+&lt;p&gt;Another cool feature is the fact that every note in Obsidian has what&amp;rsquo;s called an Obsidian URI - it&amp;rsquo;s a link that opens up a note within a specified vault. The URI looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;obsidian://open?vault=docs&amp;amp;file=src%2Fdata%2Fmarkdown%2Fdocs%2F03%20cloud%2F02%20Analyzing%20Results%2F02%20Performance%20Insights&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Adding it and publishing that to internal documentation means I can switch easily from browsing on GitHub to modifying the same page in Obsidian on my local machine, which is a great little bonus.&lt;/p&gt;
+&lt;h4 id=&#34;embedding-published-work&#34;&gt;Embedding published work&lt;/h4&gt;
+&lt;p&gt;After publishing, I use iframes in Obsidian to update my notes with the final result. Here&amp;rsquo;s a video on YouTube about chaos engineering that my colleague &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I planned out collaboratively on Obsidian, embedded into Obsidian:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/embedded-youtube-iframe.png&#34; alt=&#34;Embedding a video in an iframe&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The video plays in Obsidian with all the same controls. The Obsidian desktop app is an Electron app, so it behaves just like a normal browser for playing back the video. To embed the video, I just used the Share &amp;gt; Embed code on YouTube and pasted it straight into Obsidian:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;560&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;315&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.youtube.com/embed/gVwJZPo30rk&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;YouTube video player&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;frameborder&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;allow&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;allowfullscreen&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;meetings&#34;&gt;Meetings&lt;/h2&gt;
+&lt;p&gt;I take meeting notes to help me focus on the meeting, and I create templates for recurring meetings. Templates let you define the format of a note. Once created, you can insert templates into notes with a keyboard shortcut (I set mine to &lt;code&gt;CMD + ;&lt;/code&gt;). Here&amp;rsquo;s an example of what that looks like, with the template on the left and the inserted template on the right:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-meeting-templates.png&#34; alt=&#34;Template (left) and inserted template in a new note (right) in Obsidian&#34;&gt;
+&lt;em&gt;Template (left) and inserted template in a new note (right) in Obsidian&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You may notice that the frontmatter includes &lt;code&gt;{{date}}&lt;/code&gt; in the template, which gets automatically converted to today&amp;rsquo;s date when the template is used.&lt;/p&gt;
+&lt;p&gt;If anyone asks for a copy of my meeting notes, that&amp;rsquo;s no problem&amp;ndash; any note can be exported to Obsidian by clicking on Options &amp;gt; Export to PDF.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-pdf-export.png&#34; alt=&#34;Options for exporting a note to a PDF in Obsidian&#34;&gt;
+&lt;em&gt;Options for exporting a note to a PDF in Obsidian&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t want to actually publish any real meeting notes, so here&amp;rsquo;s what my note on the chaos engineering process looks like &lt;a href=&#34;https://nicolevanderhoeven.com/assets/The%20process%20of%20chaos%20engineering.pdf&#34;&gt;as a PDF&lt;/a&gt;, straight from Obsidian. And here&amp;rsquo;s what it looks like &lt;a href=&#34;https://notes.nicolevanderhoeven.com/The+process+of+chaos+engineering&#34;&gt;as a note&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+&lt;h3 id=&#34;the-easier-way&#34;&gt;The easier way&lt;/h3&gt;
+&lt;p&gt;Obsidian has a presentation mode! It&amp;rsquo;s basic, but it&amp;rsquo;s functional. You can create a presentation really easily by adding &lt;code&gt;---&lt;/code&gt; between paragraphs of text to delineate slides, right within a note. Here&amp;rsquo;s what that looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-slides-markdown.png&#34; alt=&#34;Creating a presentation from Markdown notes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then you can click Options &amp;gt; Start presentation, and you get something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-slides.png&#34; alt=&#34;An Obsidian presentation&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A little plain, but given the minimal amount of effort to &amp;ldquo;convert&amp;rdquo; a note into a presentation, it&amp;rsquo;s pretty awesome.&lt;/p&gt;
+&lt;h3 id=&#34;the-harder-way&#34;&gt;The harder way&lt;/h3&gt;
+&lt;p&gt;Sometimes the basic slides just don&amp;rsquo;t cut it, and it can be handy to be able to publish the slides in presentation format (since publishing them straight from Obsidian Publish would only publish the Markdown version). For those cases, I&amp;rsquo;ve figured out a way to do just that while still keeping my slides as Markdown files in my vault. &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210302-presentation-slides-as-code/&#34;&gt;Here&amp;rsquo;s a whole post on how to do that&lt;/a&gt;. This is definitely more complicated, but at the end of it, you get a nice page &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/#/&#34;&gt;like this&lt;/a&gt; to send to attendees after a presentation. (&lt;em&gt;Tip: Hit &lt;code&gt;s&lt;/code&gt; to see the speaker notes while on those slides.&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210302-reveal-hugo-sample.png&#34; alt=&#34;A sample custom slide using revealJS with Obsidian&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;task-management&#34;&gt;Task management&lt;/h2&gt;
+&lt;p&gt;I use a few community plugins to keep track of things I want to.&lt;/p&gt;
+&lt;h3 id=&#34;kanban&#34;&gt;Kanban&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/mgmeyers/obsidian-kanban&#34;&gt;Kanban plugin&lt;/a&gt; turns Markdown task lists into full-on Kanban boards.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-kanban.png&#34; alt=&#34;Kanban plugin in action&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On the left is the markdown note, and the on the right is the rendered Kanban board. You can customize the titles of the lists that are there, and you can add due dates to each task.&lt;/p&gt;
+&lt;h3 id=&#34;calendar&#34;&gt;Calendar&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/liamcain/obsidian-calendar-plugin&#34;&gt;Calendar plugin&lt;/a&gt; is &lt;a href=&#34;https://www.youtube.com/watch?v=fo6BKY2xR2w&#34;&gt;Obsidian&amp;rsquo;s most popular plugin&lt;/a&gt;, and with good reason.&lt;/p&gt;
+&lt;p&gt;It lets me add a calendar on the sidebar:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-calendar.png&#34; alt=&#34;Obsidian calendar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have the weekly notes option enabled, so clicking on the &lt;code&gt;W&lt;/code&gt; column in the calendar takes me to a note that is automatically created for that week. I use it to keep track of weekly goals and to do a review at the end of the week.&lt;/p&gt;
+&lt;p&gt;Clicking on a date in the calendar takes me to the&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;daily-note&#34;&gt;Daily Note&lt;/h3&gt;
+&lt;p&gt;The Daily Notes core plugin comes with Obsidian, but you have to enable it. Once enabled, clicking on a day in the calendar creates/takes you to that day&amp;rsquo;s corresponding note. I use daily notes like a log or workbench for that day, with timestamped headings to help me remember later on what I did at what time. It&amp;rsquo;s a loose way to do time management as well.&lt;/p&gt;
+&lt;h2 id=&#34;dataview&#34;&gt;Dataview&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview plugin&lt;/a&gt; is my favorite recent discovery, and it&amp;rsquo;s changing the way I do frontmatter. This plugin brings something akin to SQL (albeit not as powerful) to Obsidian. It lets you query your notes based on some file-related metadata &lt;strong&gt;as well as parameters you set in your frontmatter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, this query:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-dataview&#34; data-lang=&#34;dataview&#34;&gt;table file.ctime as Date
+from &amp;quot;Meeting&amp;quot;
+where file.ctime &amp;gt;= date(today) -dur(1 month)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;when rendered (i.e., viewed in Preview mode in Obsidian), returns a list of all my notes under the subfolder &lt;code&gt;Meeting&lt;/code&gt; in the last month:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-dataview-meetings.png&#34; alt=&#34;Obsidian Dataview results as a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is huge! I&amp;rsquo;m still updating my notes with the appropriate frontmatter to make more use of this feature, but here are some use cases I can think of that would be handy at work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find all customers with tag &lt;code&gt;annual&lt;/code&gt; that I haven&amp;rsquo;t spoken to in the last year.&lt;/li&gt;
+&lt;li&gt;Find a load testing tool with feature &lt;code&gt;Slack_integration = true&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Find that woman I met at the Automation Test Guild conference by searching for &lt;code&gt;job = tester&lt;/code&gt; and &lt;code&gt;tag = AutomationTestGuild&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Return all notes tagged &lt;code&gt;#plugin_ideas&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And that&amp;rsquo;s just the beginning!&lt;/p&gt;
+&lt;h2 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h2&gt;
+&lt;p&gt;Obsidian itself does not (yet) have collaboration features. This is a bummer, but given how quickly they&amp;rsquo;ve delivered on features that the community has clamored for (block references and mobile apps come immediately to mind), I&amp;rsquo;m hopeful that they&amp;rsquo;ll eventually improve in this area.&lt;/p&gt;
+&lt;p&gt;In the meantime, I&amp;rsquo;ve still found ways to work on the same vault with other people.&lt;/p&gt;
+&lt;p&gt;Remember how any folder of .md files can be opened as an Obsidian vault? Well, I&amp;rsquo;m technically collaborating with other people on that repo for work documentation, even if most people don&amp;rsquo;t use Obsidian. All I had to do was add the &lt;code&gt;.obsidian&lt;/code&gt; directory to the &lt;code&gt;.gitignore&lt;/code&gt; file, and now, nobody really even needs to know I&amp;rsquo;m using Obsidian to view/edit the documentation. They just see me pushing to the repository as if I had used a text editor like VSCode.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also had the experience of collaborating with someone who also used Obsidian. Since we were working closely together on the same document, we opted to put our shared vault on Dropbox. Dropbox&amp;rsquo;s main advantage over the Git solution is that Dropbox let us edit notes and see each other&amp;rsquo;s edits in real time. If you&amp;rsquo;re looking for an experience similar to Google Docs, this way got the closest to that. We did run into some quirks: if the Dropbox vault is also a Git repository, be aware that checking out a different branch will also change the contents of the directory for the other person.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Note-taking and personal management aren&amp;rsquo;t just for students and teachers; I think they&amp;rsquo;re particularly useful in tech, where knowledge work is highly prized. I&amp;rsquo;m talking about Obsidian because that&amp;rsquo;s my current tool of choice, but I think the tool you use is less important than the systems you put in place to help yourself learn and create.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -45,8 +184,119 @@ I&amp;rsquo;ll admit, due to my job description, I may be in a better position t
       <pubDate>Tue, 02 Mar 2021 19:07:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210302-presentation-slides-as-code/</guid>
-      <description>I was working on a presentation for later this month when Marie Drake told me about slides.com. It&amp;rsquo;s basically a Powerpoint replacement (which, let&amp;rsquo;s be honest, needs replacing) in that it lets you create slides and it lets you present from it. It even goes beyond Powerpoint in that it also saves your slides publicly for people to view later.
-Before she&amp;rsquo;d mentioned slides.com, I had been planning on creating a presentation on Obsidian, my note-taking tool of choice.</description>
+      <description>&lt;p&gt;I was working on a presentation for later this month when &lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; told me about &lt;a href=&#34;https://slides.com&#34;&gt;slides.com&lt;/a&gt;. It&amp;rsquo;s basically a Powerpoint replacement (which, let&amp;rsquo;s be honest, needs replacing) in that it lets you create slides &lt;em&gt;and&lt;/em&gt; it lets you present from it. It even goes beyond Powerpoint in that it also saves your slides publicly for people to view later.&lt;/p&gt;
+&lt;p&gt;Before she&amp;rsquo;d mentioned slides.com, I had been planning on creating a presentation on &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, my note-taking tool of choice. The advantage of this approach is that presentations in Obsidian are just Markdown files with &lt;code&gt;---&lt;/code&gt; between lines of text to delineate slides.&lt;/p&gt;
+&lt;p&gt;The problem with using Obsidian on its own is that it&amp;rsquo;s severely lacking in features, and it&amp;rsquo;s also not shareable. You can, of course, publish the Markdown file, but people won&amp;rsquo;t be able to view them in slide format. After playing with slides.com, however, I also discovered it had its own weaknesses. It is completely UI-driven, so there&amp;rsquo;s no way to create slides just from a Markdown file. It&amp;rsquo;s also hosted by them, so there are limitations imposed, depending on which pricing tier you pay for.&lt;/p&gt;
+&lt;p&gt;So I got to Googling. And I think I found a pretty good setup for my needs.&lt;/p&gt;
+&lt;h2 id=&#34;the-end-result&#34;&gt;The end result&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I write the presentation in Obsidian, in Markdown. &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/752017196efc1ee861c6d3baa5dfca31&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; what that looks like in a sample presentation where I&amp;rsquo;m trying out a bunch of features.&lt;/li&gt;
+&lt;li&gt;I use &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; to generate a static website and convert the Markdown files into javascript and html, using &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt; and the &lt;a href=&#34;https://github.com/dzello/reveal-hugo&#34;&gt;reveal-hugo&lt;/a&gt; theme.&lt;/li&gt;
+&lt;li&gt;I push the static website to a remote repository on &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;. &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; serves that site (for free!) on my custom subdomain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out the final product here:
+&lt;a href=&#34;https://slides.nicolevanderhoeven.com/sample&#34;&gt;https://slides.nicolevanderhoeven.com/sample&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210302-reveal-hugo-sample.png&#34; alt=&#34;A screenshot of the title presentation slide&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The setup&lt;/h2&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;An Obsidian vault (or you can actually just use any text editor)&lt;/li&gt;
+&lt;li&gt;Git installed and set up with credentials&lt;/li&gt;
+&lt;li&gt;A GitHub account&lt;/li&gt;
+&lt;li&gt;Hugo installation (&lt;code&gt;brew install hugo&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;create-a-new-hugo-site&#34;&gt;Create a new Hugo site&lt;/h3&gt;
+&lt;p&gt;Open up a terminal window and &lt;code&gt;cd&lt;/code&gt; to a folder in your Obsidian vault. Then, create a new Hugo-generated site:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site slides
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;slides&lt;/code&gt; with the name of your new site.&lt;/p&gt;
+&lt;p&gt;You should have a new directory, &lt;code&gt;slides&lt;/code&gt;, in your Obsidian vault.&lt;/p&gt;
+&lt;h3 id=&#34;add-the-reveal-hugo-theme&#34;&gt;Add the reveal-hugo theme&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;cd&lt;/code&gt; into &lt;code&gt;slides&lt;/code&gt; and clone the reveal-hugo repo. The documentation suggests using a submodule:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Personally, I just cloned it because I know I&amp;rsquo;m probably going to be messing around with it substantially:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should have a &lt;code&gt;/themes/reveal-hugo&lt;/code&gt; folder that contains the theme.&lt;/p&gt;
+&lt;h3 id=&#34;configure-reveal-hugo-theme&#34;&gt;Configure reveal-hugo theme&lt;/h3&gt;
+&lt;p&gt;Set up your new Hugo site to use the reveal-hugo theme by adding the following to &lt;code&gt;/config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;theme = &amp;#34;reveal-hugo&amp;#34;&lt;/span&gt;
+
+[&lt;span style=&#34;color:#ae81ff&#34;&gt;markup.goldmark.renderer]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;unsafe = true&lt;/span&gt;
+
+[&lt;span style=&#34;color:#ae81ff&#34;&gt;outputFormats.Reveal]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;baseName = &amp;#34;index&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;mediaType = &amp;#34;text/html&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;isHTML = true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;Reveal&lt;/code&gt; part is what lets you output text in slide format.&lt;/p&gt;
+&lt;h3 id=&#34;create-your-slides&#34;&gt;Create your slides&lt;/h3&gt;
+&lt;p&gt;Go to &lt;code&gt;/content&lt;/code&gt; and create a file there, called &lt;code&gt;_index.md&lt;/code&gt;. The filename is important, as is its location (I learned that the hard way). This file is going to be the first page people see, so it should probably be a list of your presentation slides. For now, put in something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;+++
+title = &amp;#34;My presentations&amp;#34;
+outputs = [&amp;#34;Reveal&amp;#34;]
++++
+
+Here are my presentation slides!
+
+[&lt;span style=&#34;color:#f92672&#34;&gt;sample presentation&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/sample&lt;/span&gt;)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, create a new folder for your presentation, such as &lt;code&gt;sample&lt;/code&gt;. In &lt;code&gt;/content/sample&lt;/code&gt;, create a file called &lt;code&gt;_index.md&lt;/code&gt;. Again , the filename is also important here (guess how I learned that).&lt;/p&gt;
+&lt;p&gt;This index file is going to be where you actually create your slides. Here&amp;rsquo;s the context of my &lt;code&gt;/content/sample/_index.md&lt;/code&gt;:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Each slide is separated by &lt;code&gt;---&lt;/code&gt;, just like in Obsidian, which apparently uses the same converter that reveal-hugo does, &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;. Note that if you want to try out having an image as a background to one of the slides, you&amp;rsquo;ll need to add that to your &lt;code&gt;/sample&lt;/code&gt; folder and change the filename in the slide in this part:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;slide background-image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;generate-your-site&#34;&gt;Generate your site&lt;/h3&gt;
+&lt;p&gt;Now it&amp;rsquo;s time to generate your site! Wait - didn&amp;rsquo;t we already do that? Sort of that. That was creating the framework for the site, but now you need to get Hugo to convert those Markdown files you&amp;rsquo;ve just created into something publishable. So cd to the root directory &lt;code&gt;slides&lt;/code&gt; and run this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That command should generate a &lt;code&gt;slides/public&lt;/code&gt; folder, where all the publishable code will go.&lt;/p&gt;
+&lt;p&gt;At this point, you can also check your work by starting a local server with &lt;code&gt;hugo server&lt;/code&gt; and navigating to &lt;code&gt;http://localhost:1313&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;push-your-site-to-a-remote-github-repo&#34;&gt;Push your site to a remote GitHub repo&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;cd&lt;/code&gt; into your public folder. This is important, as I initially started the repo in &lt;code&gt;slides&lt;/code&gt; and it took me ages to realize that GitHub Pages requires an &lt;code&gt;index.html&lt;/code&gt; in the root directory to function.&lt;/p&gt;
+&lt;p&gt;Initialize a Git repo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Stage and commit your changes:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Initial commit&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a repository on your GitHub account called &lt;code&gt;username.github.io&lt;/code&gt; where &lt;code&gt;username&lt;/code&gt; is your GitHub username. (If you already have a repo called that, you can alternatively push the contents of &lt;code&gt;public&lt;/code&gt; to a branch called &lt;code&gt;gh-pages&lt;/code&gt;). The repo name matters.&lt;/p&gt;
+&lt;p&gt;Push your changes to your repo.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should now have a repository on GitHub called &lt;code&gt;username.github.io&lt;/code&gt;, containing everything in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;set-up-github-pages&#34;&gt;Set up GitHub Pages&lt;/h3&gt;
+&lt;p&gt;On GitHub, go to the repository settings and scroll down to the GitHub Pages section. Select the right branch (&lt;code&gt;master&lt;/code&gt; in most cases) and click Save.&lt;/p&gt;
+&lt;h3 id=&#34;optional-using-a-custom-domain&#34;&gt;(Optional) Using a custom domain&lt;/h3&gt;
+&lt;p&gt;If you want to use a custom domain, enter it in the repository settings from the previous step.&lt;/p&gt;
+&lt;p&gt;Then, go to your domain registrar and add a CNAME record pointing &lt;code&gt;www&lt;/code&gt; to &lt;code&gt;username.github.io&lt;/code&gt;. &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages&#34;&gt;Here&amp;rsquo;s more information on that&lt;/a&gt; from GitHub.&lt;/p&gt;
+&lt;p&gt;It can take a few hours for DNS records to propagate, so after you set this up, take a break before you convince yourself you&amp;rsquo;ve set something up wrong. ;)&lt;/p&gt;
+&lt;h3 id=&#34;check-out-your-new-site&#34;&gt;Check out your new site!&lt;/h3&gt;
+&lt;p&gt;When you navigate to your new site, you should first see the contents of &lt;code&gt;slides/content/_index.md&lt;/code&gt;, which has a link to your sample presentation. Clicking on that should &lt;em&gt;reveal&lt;/em&gt; (ha) the slides one by one. You can navigate through them with the arrow keys, and you can also see speaker notes (if you put any in, which I did on the third slide if you copied my sample slides).&lt;/p&gt;
+&lt;h3 id=&#34;other-issues-i-faced&#34;&gt;Other issues I faced&lt;/h3&gt;
+&lt;p&gt;I ran into a few issues during this setup because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was already tracking changes in my Obsidian vault with Git&lt;/li&gt;
+&lt;li&gt;I already had a repo called &lt;code&gt;nicolevanderhoeven.github.io&lt;/code&gt;, and I needed to create a branch called &lt;code&gt;gh-pages&lt;/code&gt; to still use GitHub Pages.&lt;/li&gt;
+&lt;li&gt;My Obsidian repo on GitHub is a private one, but I wanted the slides to be public.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have a similar setup, maybe the following instructions will help.&lt;/p&gt;
+&lt;h4 id=&#34;use-worktrees-not-subtrees-or-submodules&#34;&gt;Use worktrees, not subtrees or submodules&lt;/h4&gt;
+&lt;p&gt;After attempts to make this setup work with submodules and subtrees, both of which were way too complicated for what I needed, I settled on using worktrees.&lt;/p&gt;
+&lt;p&gt;Add &lt;code&gt;public&lt;/code&gt; to &lt;code&gt;.gitignore&lt;/code&gt;. From &lt;code&gt;slides&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;public/&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a worktree for &lt;code&gt;public&lt;/code&gt;, to be tracked on the branch &lt;code&gt;gh-pages&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git worktree add public gh-pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you generate the static code via &lt;code&gt;hugo&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd public
+git add .
+git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Commit message&amp;#39;&lt;/span&gt;
+git push origin gh-pages
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your &lt;code&gt;gh-pages&lt;/code&gt; branch should contain only the files in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;github-pages-with-a-private-repo&#34;&gt;GitHub Pages with a private repo&lt;/h4&gt;
+&lt;p&gt;GitHub Pages is free, but if you want to be able to use it with a private repo, &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages&#34;&gt;you can&amp;rsquo;t&lt;/a&gt;. Sorry!&lt;/p&gt;
+&lt;p&gt;You can look into using GitHub Actions to copy &lt;code&gt;public&lt;/code&gt; from your private repo to a public one, or you could just &lt;a href=&#34;https://github.com/pricing&#34;&gt;spend the $4/month&lt;/a&gt; to remove the restriction. I opted to pay, because I love GitHub anyway.&lt;/p&gt;
+&lt;h2 id=&#34;presentation-as-code&#34;&gt;Presentation as code&lt;/h2&gt;
+&lt;p&gt;That&amp;rsquo;s it! I ran into a few snags while I was attempting to implement this, so I thought I&amp;rsquo;d document it here in case it helps anyone else. Despite the setbacks, I think it&amp;rsquo;s worth it&amp;ndash; I can now whip up presentations in Markdown within Obsidian and have that published to a site I control for people to look through at their own leisure. This should speed up my presentation creation process considerably.&lt;/p&gt;
+&lt;p&gt;Theoretically.&lt;/p&gt;
+&lt;p&gt;If only I could stop procrastinating on creating this presentation by setting up a framework for creating presentations&amp;hellip;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -55,7 +305,80 @@ Before she&amp;rsquo;d mentioned slides.com, I had been planning on creating a p
       <pubDate>Sat, 06 Feb 2021 09:55:36 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</guid>
-      <description>I&amp;rsquo;m about 9 months into heavily using Roam Research as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. Obsidian is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really seriously attempted to make the switch. Until now.</description>
+      <description>
+
+&lt;meta property=“og:image” content=&#34;/assets/20210206-06-readwise-to-obsidian.png&#34; /&gt;
+&lt;meta property=”og:image:width” content=”1200″ /&gt;
+&lt;meta property=”og:image:height” content=”628″ /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m about 9 months into heavily using &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em&gt;seriously&lt;/em&gt; attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p&gt;
+&lt;p&gt;Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt; is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instapaper (for highlights and notes on online articles)&lt;/li&gt;
+&lt;li&gt;Amazon Kindle (for highlights on ebooks)&lt;/li&gt;
+&lt;li&gt;Twitter (for interesting tweets)&lt;/li&gt;
+&lt;li&gt;Web highlighter (for straight highlights off any webpage)&lt;/li&gt;
+&lt;li&gt;Airr (for quotes and notes from audio podcasts)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&amp;rsquo;s what that looks like when it gets pulled into my Daily Note:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-01-readwiseimportsinroam.png&#34; alt=&#34;Tweet, podcast, and book notes pulled into Roam Research via Readwise&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Readwise also pulls metadata into Roam, depending on the source. Here&amp;rsquo;s what the page for the book &amp;ldquo;Ready Player Two&amp;rdquo; looks like in Roam:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png&#34; alt=&#34;Ready Player Two book notes in Roam, imported via Readwise&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Readwise integration is an &lt;em&gt;essential&lt;/em&gt; feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em&gt;have&lt;/em&gt; an Obsidian integration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png&#34; alt=&#34;Readwise doesn&amp;rsquo;t automatically export to Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://readwise.io/export&#34;&gt;Readwise Exports&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p&gt;
+&lt;h2 id=&#34;readwise2directory&#34;&gt;readwise2directory&lt;/h2&gt;
+&lt;p&gt;I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found &lt;a href=&#34;https://github.com/nicrivard/readwise2directory&#34;&gt;this Python project on GitHub&lt;/a&gt; by &lt;a href=&#34;https://github.com/nicrivard&#34;&gt;nicrivard&lt;/a&gt;, who had already done that! Why rebuild the wheel? His solution already did what I needed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It connects to Readwise via your Readwise access token&lt;/li&gt;
+&lt;li&gt;Checks for new highlights or updated ones&lt;/li&gt;
+&lt;li&gt;Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It even pulls in highlight tags from Readwise, if you&amp;rsquo;ve created any (which I haven&amp;rsquo;t).&lt;/p&gt;
+&lt;p&gt;I &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;forked the project here&lt;/a&gt; to add just a few minor touches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed date format of imported notes&lt;/li&gt;
+&lt;li&gt;Added a section to output the import date to a comment block (an &lt;a href=&#34;https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295&#34;&gt;Obsidian Insider build feature&lt;/a&gt;) rather than YAML frontmatter, so that the date would actually be linked and backlinked.&lt;/li&gt;
+&lt;li&gt;Customized tags and filename for my use&lt;/li&gt;
+&lt;li&gt;Sort imports into folders within my Obsidian vault depending on source (&lt;code&gt;Article/&lt;/code&gt;, &lt;code&gt;Tweet/&lt;/code&gt;, and so on).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This works out pretty well. Here&amp;rsquo;s an example of an import from the podcast app &lt;a href=&#34;https://airr.io&#34;&gt;Airr&lt;/a&gt; into Obsidian, in Edit mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-04-airrtoobsidian.png&#34; alt=&#34;readwise2directory import from Airr into Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s placed within my &lt;code&gt;Podcast&lt;/code&gt; folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-05-airrinobsidian_preview.png&#34; alt=&#34;Preview mode of imported Airr quote in Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So that works out well, except for one thing: firing off the script that does all this is still manual.&lt;/p&gt;
+&lt;h2 id=&#34;scheduling-the-script&#34;&gt;Scheduling the script&lt;/h2&gt;
+&lt;p&gt;Luckily, it&amp;rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&amp;rsquo;m on macOS, so I used a built-in utility called &lt;code&gt;cron&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
+&lt;p&gt;Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on my laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
+&lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
+&lt;p&gt;Then, from my terminal, I ran the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up the list of cronjobs I had currently.&lt;/p&gt;
+&lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
+&lt;p&gt;I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;* * * * * command
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minute&lt;/li&gt;
+&lt;li&gt;hour&lt;/li&gt;
+&lt;li&gt;day of the month&lt;/li&gt;
+&lt;li&gt;month&lt;/li&gt;
+&lt;li&gt;day of the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; * * * * cd /Users/nic/git/readwise2directory/ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;python-issues&#34;&gt;Python issues&lt;/h4&gt;
+&lt;p&gt;I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code&gt;which python3&lt;/code&gt; to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code&gt;cd&lt;/code&gt; to the project directory, for some reason.&lt;/p&gt;
+&lt;p&gt;While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p&gt;
+&lt;p&gt;Once I added the schedule as in the example above, though, it worked a treat!&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This solution did require some setup at the beginning, but doesn&amp;rsquo;t need any maintenance once it&amp;rsquo;s going. I&amp;rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&amp;rsquo;ll all be waiting for me in my Obsidian vault whenever I&amp;rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

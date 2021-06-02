@@ -14,9 +14,15 @@
       <pubDate>Thu, 18 Mar 2021 20:36:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</guid>
-      <description>Today, I attended the Cambridge University Press QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.
-  And here are the slides I used!
-I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.</description>
+      <description>&lt;p&gt;Today, I attended the &lt;a href=&#34;https://www.cambridge.org/&#34;&gt;Cambridge University Press&lt;/a&gt; QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kz3Mt97L9CY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/&#34;&gt;here are the slides&lt;/a&gt; I used!&lt;/p&gt;
+&lt;p&gt;I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,9 +31,77 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
-  Y la versión audio:
- Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Y la versión audio:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
+&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
+&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
+&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
+&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
+&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
+&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
+&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
+&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
+&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
+&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
+&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
+&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
+&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
+&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
+&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
+&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
+&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
+&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
+&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
+&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
+&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
+&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
+&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
+&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
+&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
+&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
+&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -36,10 +110,135 @@ I had fun discussing the advantages of the load test as code approach and why k6
       <pubDate>Wed, 07 Oct 2020 14:15:45 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</guid>
-      <description>Originally posted here.
-Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.
-In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.
-  Background required for load testing Load testing can be quite technical.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/how-to-become-a-load-tester&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.flood.io/blog/how-to-become-a-load-tester&#34;&gt;Originally posted here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.&lt;/p&gt;
+&lt;p&gt;In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_R2dmEmtO48&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;background-required-for-load-testing&#34;&gt;Background required for load testing&lt;/h2&gt;
+&lt;p&gt;Load testing can be quite technical. It involves not just the ability to use different programming languages to create load testing scripts but also familiarity with software engineering practices, DevOps, application infrastructure, site reliability, and networking. A good load tester needs to be able to understand the basics of how an application works and how different components interact with each other. It&amp;rsquo;s common for a load tester to work on applications employing a variety of technologies, so staying up to date with recent technological trends and switching seamlessly from one language to another, or from one platform to another, is of utmost importantance. This technical side of load testing might make you think that a load tester needs to have formal studies in computer science and several years of experience in software testing. The reality is that there are many load testers who stumbled into the field from wildly unexpected backgrounds. So you might think load testing looks like this:&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester01.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Photo by &lt;a href=&#34;https://unsplash.com/@wocintechchat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Christina @ wocintechchat.com&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/meeting?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;And sometimes it does. But it more often looks something like this:&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester02.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Photo by &lt;a href=&#34;https://unsplash.com/@youxventures?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;You X Ventures&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/meeting?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You see, load testing is an interdisciplinary field. So much of the job involves talking to people. Sometimes the requirements for a project are not clear, and someone needs to talk to the both the business and the developers to make sure that nonfunctional requirements are clarified. A load tester is a detective, tracing a request as it goes from one application component to another, coordinating with different application teams. A load tester is a scientist, using the scientific method to design experiments that yield the results. A load tester is a statistician, making sense of a jumble of data and seeking correlations between variables. A load tester is a public speaker. Even when the actual load testing has been completed and the report has been sent, a load tester makes sure all stakeholders understand the report so that the results can be used to make meaningful changes to improve application performance. All these tasks require a mishmash of skills and competencies that can be difficult to find in just the field of computer science.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take our backgrounds as anecdotal examples.&lt;/p&gt;
+&lt;p&gt;Tim grew up and currently lives in a small country town in Australia, and he joined the military straight after school. He later developed a love of automating things, which led him first to use tools like perl to scrape websites and try to win bids with early versions of ebay, and then later to starting a performance engineering consulting career and co-founding Flood itself.&lt;/p&gt;
+&lt;p&gt;I, Nicole, grew up in Metro Manila in the Philippines (which has 14,000 more people per km2 than Mumbai does). I learned English as a foreign language in school, and I have a university degree in Economics. When I discovered load testing, I had a job in a completely different field– I was working for an airline and making sure engine components were properly maintained and repaired. My love for gadgets and technology took me down an 8-year rabbit hole involving doing performance consulting for clients across a variety of industries in Australia and the Netherlands. At Flood, I help customers around the world improve their application performance.&lt;/p&gt;
+&lt;p&gt;As you can see, Tim and I came from very different backgrounds and different parts of the world. Neither of us knew what load testing even was when we started working. Neither of us got formal instruction in load testing. But somehow, we still both ended up becoming load testers at Flood.&lt;/p&gt;
+&lt;h2 id=&#34;reasons-to-become-a-load-tester&#34;&gt;Reasons to become a load tester&lt;/h2&gt;
+&lt;p&gt;So why become a load tester? Here are some practical reasons.&lt;/p&gt;
+&lt;h3 id=&#34;load-testing-is-cool&#34;&gt;Load testing is cool&lt;/h3&gt;
+&lt;p&gt;A little-known fact about load testing is that it can be really satisfying to be involved in big-name projects that end up going live.&lt;/p&gt;
+&lt;p&gt;You may have heard of Flood. But even if you haven’t, we’re sure you&amp;rsquo;re familiar with the results of load testing done on Flood. In the last few years, we have been helping Hotstar, one of the largest streaming services in the world, load test their systems in preparation for the Indian Premier League.&lt;/p&gt;
+&lt;p&gt;Hotstar uses an open-source tool that we support, Gatling, to create scripts to simulate users tuning in to watch cricket games. Then, they use Flood to create a “Game Day” simulation. They scale up those load tests and run 5 million users on thousands of machines in the cloud. We help them coordinate execution, spot problems quickly with real-time results from all those machines while the test is still running, and identify bottlenecks so that they don’t occur in production, when India’s playing.&lt;/p&gt;
+&lt;p&gt;As a load tester, you&amp;rsquo;ll definitely be working with brands you recognize and love.&lt;/p&gt;
+&lt;h3 id=&#34;load-testing-can-pay-well&#34;&gt;Load testing can pay well&lt;/h3&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester03.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://www.payscale.com/research/IN/Job=Software_Tester/Salary&#34;&gt;Payscale&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester04.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://www.payscale.com/research/IN/Job=Performance_Engineer/Salary&#34;&gt;Payscale&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I said this would be a practical list, right?&lt;/p&gt;
+&lt;p&gt;Here are 261,768 practical reasons. The average performance engineer’s salary is 71% more than that of an average software tester in India, according to Payscale.com. We all know that money isn’t everything, but this is a clear signal from the market about the importance of performance-related skills. Adding load testing to your CV as a tester makes you more attractive to employers. It’s a great way to differentiate yourself in an over-saturated market.&lt;/p&gt;
+&lt;h3 id=&#34;load-testing-can-literally-take-you-places&#34;&gt;Load testing can literally take you places&lt;/h3&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester05.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://twitter.com/shamim_j&#34;&gt;Shamim&lt;/a&gt; from &lt;a href=&#34;https://www.flood.io/blog/inside-the-career-of-a-digital-nomad-is-a-life-on-the-road-right-for-you&#34;&gt;Flood&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Then there are the side benefits of being in load testing. The photos above are real ones from the Flood team. That’s me on the upper left, exploring a castle in Belgrade, Serbia, and that’s Tim in the bottom right, taking a photo in San Francisco, USA.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.flood.io/blog/inside-the-career-of-a-digital-nomad-is-a-life-on-the-road-right-for-you&#34;&gt;We’re a fully distributed team on Flood&lt;/a&gt;, which means we can work from anywhere. Flood is a web app, so you don’t need to install anything– I’ve been known to start load tests from my iPad in a café. Load testing on the cloud frees you from being tied to running tests from the office. You can start load generators when you need them and shut them down when you don’t– all from a web browser. It’s a job that can come with a great work/life balance, if you find the right company.&lt;/p&gt;
+&lt;p&gt;Load testing can also be a great way to move to another country. It’s what’s allowed me to move to other countries– twice. In Australia, the average performance engineer’s salary is AU$108,053, or over 5.6 million rupee.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester06.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://www.payscale.com/research/AU/Job=Performance_Engineer/Salary&#34;&gt;Payscale&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So it’s clear that there are some pretty good reasons for you to become a load tester. I&amp;rsquo;m going to walk you through the practical steps to become a load tester. You may not be an expert by the end of this, but I hope I can convince you that you can get started in load testing whether your background looks like Tim’s or mine.&lt;/p&gt;
+&lt;h3 id=&#34;load-testing-adds-real-value&#34;&gt;Load testing adds real value&lt;/h3&gt;
+&lt;p&gt;And the trite, but absolutely true reason: Everyone fails.&lt;/p&gt;
+&lt;p&gt;As a load tester, you are a gatekeeper of quality. What you do directly affects revenue and customer experience.&lt;/p&gt;
+&lt;p&gt;Performance is an aspect of software that is often overlooked, but it’s only becoming more important in a world where everything is going online. People are being born who have never known what it’s like not to have the internet, and consumers in general expect applications to be responsive and stable. Would-be customers who can’t get an e-commerce site to load within 3 seconds may switch to a competitor’s site, and we all know there are many of them. Performance-related outages can be seriously damaging to a company’s reputation, and social networking amplifies customer dissatisfaction by effectively giving everyone a megaphone to complain into.&lt;/p&gt;
+&lt;p&gt;Software functionality is still important. However, if an online store goes live with no critical functional defects, but it fails when the 100th person logs into it, or it takes 10 seconds to load the homepage, can you really say that it was ready for production?&lt;/p&gt;
+&lt;p&gt;Load testing is a crucial part of ensuring software quality, and quality is the responsibility of everyone on a team, even if the word “performance” isn’t in your job title.&lt;/p&gt;
+&lt;h2 id=&#34;the-essential-ingredients-of-a-load-test&#34;&gt;The essential ingredients of a load test&lt;/h2&gt;
+&lt;p&gt;Load testing is like cooking a meal. This is one of Tim&amp;rsquo;s favorite dishes, aloo matar.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester07.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://www.cubesnjuliennes.com/aloo-matar-recipe/&#34;&gt;Cubes n Juliennes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can approach cooking as a science. There are recipes with a list of ingredients, a precise measurement of how much you need for each, and a procedure for creating the dish.&lt;/p&gt;
+&lt;p&gt;But you can also look at cooking as an art. Cooking the same dish over and over again will give you an experience in working with those ingredients that a novice cook won’t have. There’s room in cooking for adding one ingredient, changing the quantity of another, or just trying something new.&lt;/p&gt;
+&lt;p&gt;A master chef knows how to use both the science and the art to create something delicious. But you don’t HAVE to be at that level in order to cook.&lt;/p&gt;
+&lt;p&gt;Anyone can cook. If you know how to follow a basic recipe, you may not create a masterpiece, but if you’re like me and you haven’t had lunch yet, you’ll still end up with something you’ll eat.&lt;/p&gt;
+&lt;p&gt;So here’s the recipe for load testing.&lt;/p&gt;
+&lt;p&gt;I prefer kadai paneer myself, but aloo matar requires, among other things, peas. And so does load testing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;P is Preparation&lt;/strong&gt;. To prepare for a load test, you need to get your ingredients ready. You need to decide what it is you want to test, why you’re testing it, and how. You write load testing scripts that will simulate real users as closely as possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;E is Execution&lt;/strong&gt;. This is when you do the actual cooking. You run your load tests and scale them up according to your requirements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A is Analysis&lt;/strong&gt;. You figure out whether the dish you created is edible. You determine how your application servers responded during the load test, and decide if that’s acceptable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Preparation – Execution – Analysis.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;preparing-for-a-load-test&#34;&gt;Preparing for a load test&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“As far as the World Cup is concerned, it is a process. We don’t want to jump to the 50th floor straight away. We must start on the ground floor.” - Sachin Tendulkar, via &lt;a href=&#34;https://www.espncricinfo.com/story/_/id/22538610/world-cup-final-dream-tendulkar&#34;&gt;ESPN&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Load testing doesn’t start with writing a script. Load testing starts with building a foundation for later tests.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester08.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://www.insidesport.co/cricket-sachin-tendulkar-comes-to-aid-of-ailing-ashraf-who-once-fixed-his-bats/&#34;&gt;Inside Sport&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Part of that foundation is asking WHY. Why do you want to do a load test? Has there been a performance-related issue before? Are you trying to determine whether an application is ready to go live, or is it already live, and you just want to improve its performance? What type of application do you want to test?&lt;/p&gt;
+&lt;p&gt;WHOM are you cooking for? I think you’d cook differently for yourself than you would for Sachin Tendulkar. What do your end users typically do on your site? Where do they come from?&lt;/p&gt;
+&lt;p&gt;These are questions that need to be answered before you think about scripting. Here are some resource for planning your load tests:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.flood.io/blog/start-with-why-how-to-write-requirements-for-api-load-testing&#34;&gt;Start with Why: How to write requirements for API load testing&lt;/a&gt;
+&lt;a href=&#34;https://www.flood.io/blog/how-to-write-a-test-plan-for-load-testing&#34;&gt;How to write a test plan for load testing&lt;/a&gt;
+&lt;a href=&#34;https://guides.flood.io/ebooks/api-load-testing/scripting-an-api-load-test&#34;&gt;Selecting a tool for load testing&lt;/a&gt;
+Generating a load testing script without coding: &lt;a href=&#34;https://guides.flood.io/overview-of-flood/scripting-your-load-test&#34;&gt;Getting Started with Test Builder&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;execution-of-a-load-test&#34;&gt;Execution of a load test&lt;/h2&gt;
+&lt;p&gt;So now we’re ready to start cooking. This is the Execution phase. You’ll need a machine to use as a load generator. Depending on the number of users you want to run with, you may need more than one machine. You might be tempted to run a load test on your laptop, or on a bunch of machines you have lying around, but that introduces new variables that may affect the results.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester09.jpeg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://unsplash.com/@suicide_chewbacca?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Ashwini Chaudhary&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/indian-food?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Like any good cook, you’ll also need to make sure you have all your ingredients handy. In load testing, that means making sure your scripts and test data files are ready to be executed on every load generator.&lt;/p&gt;
+&lt;p&gt;Both of these problems – provisioning a load generator and transferring files over to them – are solved pretty easily by running on the cloud using something like Flood.&lt;/p&gt;
+&lt;p&gt;Designing and executing your load test&lt;/p&gt;
+&lt;p&gt;Where should you run your load tests? A look at demand, hosted, and on-premise infrastructure&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-results&#34;&gt;Analysis of Results&lt;/h2&gt;
+&lt;p&gt;The last part is Analysis.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester10.jpeg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://www.finedininglovers.com/recipes/brunch/potato-pakoras-yogurt-sauce&#34;&gt;Fine Dining Lovers&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is a pretty crucial moment, because this is when you figure out whether what you cooked was delicious or not. Unfortunately, in load testing, it’s not always easy to tell how your test went. It’s like this photo of pakora (onion is my favorite kind). It’s kind of hard to say what expression that is in their faces. Is it disgust? Or is the pakora so yummy that they just can’t wait to eat more?&lt;/p&gt;
+&lt;p&gt;Load testing typically generates a LOT of data. You’d have to go copy every single file from every load generator you used. But can you imagine the hundreds of load generators that Hotstar used? Of course they didn’t manually copy those files. Instead, they used Flood.&lt;/p&gt;
+&lt;p&gt;On Flood, we show real-time graphs as you’re running the test so that you can tell immediately whether transactions are failing or whether a server has stopped responding.&lt;/p&gt;
+&lt;p&gt;After the test, you can also compare this data to previous tests to spot trends, or even create your own dashboards using an analytics engine.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/results-analysis/metrics-during-test&#34;&gt;Real-time metrics during your load test&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/results-analysis/archived-results&#34;&gt;Downloading results and logs after the test&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-that-it&#34;&gt;Is that it?&lt;/h2&gt;
+&lt;p&gt;You’ve prepared for a load test, you’ve executed a load test, and you’ve analysed the results from the load test. Congratulations, you’re a load tester! By following this recipe, you’re already doing better than many people, and you’re certainly doing a lot better than those who do not run any load tests at all.&lt;/p&gt;
+&lt;p&gt;The cool thing about load testing, though, is that this is just the beginning. There’s always room for improvement.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester11.jpeg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: &lt;a href=&#34;https://popupcity.net/observations/dabbawalla-hot-lunch-delivery-by-mumbais-fastest/&#34;&gt;Pop Up City&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Dabbawallas are people who deliver hot lunches, and while the concept is not new, the implementation in India is particularly interesting.&lt;/p&gt;
+&lt;p&gt;For these dabbawallas, having the meals prepared is not the end of the job. Once the food is ready, it needs to be packed into lunchboxes, picked up, separated according to destination, put on trains, and delivered. Later, the empty lunchboxes are picked up, and the system works in reverse.&lt;/p&gt;
+&lt;p&gt;It turns out that this is actually a pretty sophisticated system. In fact, it’s been estimated that only one tiffin every two months is not delivered. That’s equivalent to a &lt;a href=&#34;https://www.bbc.com/future/article/20170114-the-125-year-old-network-that-keeps-mumbai-going&#34;&gt;Six-Sigma quality rating of 99.9999999%&lt;/a&gt; (that’s nine nines) or more.&lt;/p&gt;
+&lt;p&gt;Dabbawallas didn’t get that rating just by delivering quickly. They did it by being consistent and reliable. They did it by having a process.&lt;/p&gt;
+&lt;p&gt;Once you see the benefits of running a load test, you may also start to understand that the real value of load testing is not in a test that you run once whenever you think of it. Imagine having the benefits of a load test tied to your development process, so that it is automated.&lt;/p&gt;
+&lt;p&gt;As an advanced topic, &lt;a href=&#34;https://www.flood.io/blog/load-testing-in-devops-pipelines-with-azure-and-flood&#34;&gt;adding your load testing&lt;/a&gt; to your team&amp;rsquo;s Continuous Integration/Continuous Development pipelines such as sets up a repeatable process that reaps benefits far into the future, not just whenever official load testing activities are carried out.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/continuous-integration/what-is-continuous-integration&#34;&gt;Continuous Integration with Flood&lt;/a&gt;: Integrating Travis CI, Circle CI, and Jenkins&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So that’s the recipe for becoming a load tester.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Preparation – Execution – Analysis.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;Preparation&lt;/strong&gt;, you determine why you’re testing and what tool best fits your needs. We showed you how to use Element, but there are many open source tools out there. Don’t get overwhelmed by scripting– a lot of times it can just mean replacing a URL with the one YOU want to test.&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;Execution&lt;/strong&gt;, you run a baseline test that will serve as a point of comparison for future testing, choose the number of users and the number of regions you want, and then you run your test. Running on the cloud is the easiest (and usually cheapest) way to get started.&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;Analysis&lt;/strong&gt;, you view the results in real-time, compare historical performance to see trends, and share reports to stakeholders so that your team can make changes to your application.&lt;/p&gt;
+&lt;p&gt;We also talked about the bonus topic of &lt;strong&gt;CI/CD&lt;/strong&gt; and how you can incorporate load testing into your pipeline to get a continuous feedback during your development cycle.&lt;/p&gt;
+&lt;p&gt;Tim and I started in very different places and had different experiences before we discovered load testing. But eventually, we ended up on the same path, and that’s what we’ve outlined for you here. We hope that this convinces you that load testing doesn’t have to be complicated.&lt;/p&gt;
+&lt;p&gt;You absolutely don’t need to be an expert to run a load test. Even if you don’t think you’ll get all these steps right, a load test that is less than ideal is still better than no load testing at all.&lt;/p&gt;
+&lt;p&gt;In the end, anyone can be a load tester with the right attitude and the right tools.&lt;/p&gt;
+&lt;h2 id=&#34;learning-about-load-testing&#34;&gt;Learning about load testing&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites&#34;&gt;High Performance Websites&lt;/a&gt; book by Steve Souders&lt;/p&gt;
+&lt;p&gt;Ministry of Testing/PerfBytes &lt;a href=&#34;https://www.ministryoftesting.com/dojo/lessons/a-quick-start-guide-to-learning-performance-testing&#34;&gt;list of resources&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.perfbytes.com/&#34;&gt;PerfBytes podcast&lt;/a&gt; (EN and ES)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guildconferences.com/conference/perfguild-2020/&#34;&gt;PerfGuild conferences&lt;/a&gt; by Joe Colantonio&lt;/p&gt;
+&lt;p&gt;Señor Performo’s YouTube Channel: &lt;a href=&#34;https://www.youtube.com/channel/UCO-RlGccAUQnMqTaBkvUJhQ&#34;&gt;Señor Performo ENG&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scott Moore’s &lt;a href=&#34;https://www.youtube.com/watch?v=9H2GSGvGwqQ&amp;amp;list=PLXRCdih3vTUEFz1TVyP7RRqEEk__CYGoB&#34;&gt;Performance Tour&lt;/a&gt; on YouTube&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -48,9 +247,18 @@ In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User C
       <pubDate>Thu, 24 Sep 2020 23:38:56 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200924-testing-talks-online/</guid>
-      <description>I joined other performance and testing engineers in this online panel at Testing Talks Online about load testing best practices.
-  From the Testing Talks Online site:
- Performance testing is an essential part of the quality assurance function. However, across the industry the great majority of companies still struggle to master and execute a successful performance testing strategy that produces measurable results. In this panel discussion, Cameron Bradley will host some of the best performance engineers in the world.</description>
+      <description>&lt;p&gt;I joined other performance and testing engineers in this online panel at Testing Talks Online about load testing best practices.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pHQ4FwdwGGk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From the &lt;a href=&#34;https://www.testingtalks.com.au/presentations/lifting-the-lid-on-performance-testing-best-practices-from-leading-companies&#34;&gt;Testing Talks Online site&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Performance testing is an essential part of the quality assurance function. However, across the industry the great majority of companies still struggle to master and execute a successful performance testing strategy that produces measurable results.
+In this panel discussion, Cameron Bradley will host some of the best performance engineers in the world. The panel will discuss how we as quality assurance experts and performance engineers can better understand performance testing, the value of performance testing and how world leaders are approaching and succeeding with performance testing as part of the delivery life cycle.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>
@@ -59,9 +267,15 @@ In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User C
       <pubDate>Tue, 02 Jun 2020 22:21:11 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</guid>
-      <description>At PerfGuild 2020, I spoke about hybrid load testing and how to mix two different approaches to load testing: protocol-based and browser-based.
-Here’s the unlisted video from that presentation:
-  </description>
+      <description>&lt;p&gt;At &lt;a href=&#34;https://guildconferences.com/speaker/nicole-hoeven/&#34;&gt;PerfGuild 2020&lt;/a&gt;, I spoke about hybrid load testing and how to mix two different approaches to load testing: protocol-based and browser-based.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200602-01.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here’s the unlisted video from that presentation:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KwlU6unOD9E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -70,10 +284,39 @@ Here’s the unlisted video from that presentation:
       <pubDate>Wed, 03 Apr 2019 23:14:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</guid>
-      <description>Originally posted here.
-Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.
-In this year’s TestCon conference, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.
-In the talk, I discuss:</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://testconf.ru/2019/en/nicole-van-der-hoeven/index.html&#34;&gt;this year’s TestCon conference&lt;/a&gt;, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.&lt;/p&gt;
+&lt;p&gt;In the talk, I discuss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;two types of thinking: fast thinking and slow thinking (from Daniel Kahneman&amp;rsquo;s book &lt;a href=&#34;https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to influence the sentence duration that judges give perpetrators&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what cognitive biases are and how they can affect performance testing results&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a real-life production incident that occurred on Flood and how our team&amp;rsquo;s cognitive biases got in the way of its resolution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what to do to avoid cognitive biases when testing software&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the video of my full talk:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GPD8F0e7eX8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Download the presentation &lt;a href=&#34;https://nicolevanderhoeven.github.io/assets/20190403-01.pdf&#34;&gt;in PDF format&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

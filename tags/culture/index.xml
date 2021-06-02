@@ -14,9 +14,106 @@
       <pubDate>Tue, 05 May 2020 22:59:57 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200505-innovation-in-isolation/</guid>
-      <description>Originally posted here.
-We&amp;rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&amp;rsquo;re doing to keep self-isolation from being too isolating— and maybe it&amp;rsquo;ll help your team too!
-Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/innovation-in-isolation&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/innovation-in-isolation&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve always been a fully distributed team at Flood, but the current world crisis has still changed the way we work. Here are some of the things we&amp;rsquo;re doing to keep self-isolation from being &lt;em&gt;too&lt;/em&gt; isolating— and maybe it&amp;rsquo;ll help your team too!&lt;/p&gt;
+&lt;p&gt;Within the Flood team, flooders-in-training (aka children) have made more surprise appearances in team meetings. Work has been punctuated with grocery runs to buy essentials before they run out. Some of us who were out of our home countries when all this happened have had to arrange emergency travel before international borders shut. It would be foolish to deny the impact on team morale as the entire world goes through this collective trauma, eyes glued to numbers that increase by the minute.&lt;/p&gt;
+&lt;p&gt;Not exactly the most productive work environment.&lt;/p&gt;
+&lt;p&gt;Yet there&amp;rsquo;s still work to be done (something we&amp;rsquo;re grateful for), and there are still many features we&amp;rsquo;d love to bring to Flood. So how do we keep everyone motivated to release and maintain software?&lt;/p&gt;
+&lt;h2 id=&#34;encouraging-banter&#34;&gt;Encouraging banter&lt;/h2&gt;
+&lt;p&gt;Work shouldn&amp;rsquo;t be all about work. Understanding everyone&amp;rsquo;s personal circumstances is vital to a team&amp;rsquo;s ability to work together professionally. We use Slack as our primary communication tool throughout the day, and we already had quite a few non-work channels on there (#anything, #hobbies, #gaming, #drones, and #travel to name a few). Now we have one for COVID-related chatter as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this channel, we share news from our parts of the world, post photos of things that are sold out in our local supermarkets, talk about new hobbies we&amp;rsquo;ve taken up to stay sane, and discuss the struggles of co-working with spouses and children who are now also working or studying from home.&lt;/p&gt;
+&lt;p&gt;Having a dedicated channel gives people license to open up about what&amp;rsquo;s going on in their personal lives, and it helps the team understand where everyone&amp;rsquo;s headspace is at. We also use #eng-covid-19 for memes. A lot of memes. It&amp;rsquo;s easier to work through a tough situation if you can laugh about it together.&lt;/p&gt;
+&lt;h2 id=&#34;over-communicating&#34;&gt;Over-communicating&lt;/h2&gt;
+&lt;p&gt;Our co-founder and Product Manager, Ivan Vanderbyl, recently &lt;a href=&#34;https://enterprisersproject.com/article/2020/4/9-collaboration-tool-tips-remote-teams&#34;&gt;wrote a great article&lt;/a&gt; with some tips for keeping communication lines open. This is particularly important during this crisis, where schedules and priorities can change quickly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Emojis - We use emojis as a non-verbal cue to convey tone, approval, agreement, and disagreement. We add emojis to messages we send and also use them as reactions on Slack to messages from other people. Even when you don&amp;rsquo;t have an answer or when a response is not required, emojis signal acknowledgment so that nobody feels like they&amp;rsquo;re shouting into the void. Over time, we&amp;rsquo;ve developed emojis that are specific to Flood culture, such as the avocado:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-02.jpeg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Source: Our &lt;a href=&#34;https://twitter.com/flood_io/status/1230166412066512896&#34;&gt;Twitter account&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;‍We even have a fruit-based vocabulary of emojis that we can use in our Slack status messages to convey our general mood. Being in Carrot Mode, for instance, means that you&amp;rsquo;re trying to focus and would appreciate not being direct messaged or @ mentioned.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;‍When working remotely, and especially when in self-isolation, everyone has their own cadence for working. It&amp;rsquo;s on each person to communicate that schedule so that others can respect it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Text chat - We&amp;rsquo;re used to working asynchronously due to time zones, so text-based discussions are necessary. We try to over-communicate and &amp;ldquo;think out loud&amp;rdquo; before making decisions just in case we have to suddenly stop working due to illness or other pandemic-related reasons. Even something as simple as leaving a link to a document that we&amp;rsquo;re working on means that someone else will be able to find it if we&amp;rsquo;re unavailable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voice chat - We tend to use voice chat for quick discussions or updates about work-related things. It&amp;rsquo;s also great for those of us in Europe who are suffering from slower internet connection speeds at certain times of the day due to everyone being home and streaming Netflix.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Video calls - Video calls are for team retros, 1:1 calls with managers, and personal or sensitive conversations where body language is crucial. It&amp;rsquo;s also great for recreating that &amp;ldquo;hanging out at a pub&amp;rdquo; vibe. Speaking of which&amp;hellip; welcome to the Flood pub!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-04.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Flood Pub is open on Friday afternoons. It&amp;rsquo;s where we all hang out together with a beverage of our choice and talk about things that are entirely not work-related. We hop on a Zoom call together, Tim (our General Manager) fires up the &amp;ldquo;jukebox&amp;rdquo; (Spotify playlist), and we end the week by getting some facetime with each other—just as we would do (and have done) if we were together in person.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-05.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;‍Meeting in this low-pressure context lets us talk about things we wouldn&amp;rsquo;t mention otherwise. It&amp;rsquo;s also a fun way to check in with each other after another week at work (and in quarantine).&lt;/p&gt;
+&lt;h2 id=&#34;doing-stuff&#34;&gt;Doing stuff&lt;/h2&gt;
+&lt;p&gt;While communicating openly is productive, getting stuff done as a team boosts spirits.  Here&amp;rsquo;s what we&amp;rsquo;ve done recently to kick our output into high gear.&lt;/p&gt;
+&lt;h3 id=&#34;boinc&#34;&gt;BOINC&lt;/h3&gt;
+&lt;p&gt;Like most of you, we&amp;rsquo;ve been cooped up in our houses, watching events unfold and feeling helpless as things happen that are beyond our control. BOINC gives us a chance to do something to contribute that IS in our control.&lt;/p&gt;
+&lt;p&gt;BOINC is a platform by the University of California Berkeley that lets you volunteer your spare computer (or mobile device!) processing power to science. From the official site, Boinc &amp;ldquo;downloads scientific jobs to your computers and runs them invisibly in the background.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;In our case, we wanted to help sequence proteins like the novel coronavirus using Rosetta@Home. BOINC is a perfect fit for Flood because we are in the unique position of starting up and managing thousands of virtual machines 24/7. Our Ops team has been hard at work automating the donation of our computing power to the Rosetta@Home project when these machines aren&amp;rsquo;t being used.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-06.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re proud to say our contribution is INcreasing over time as our engineers find new ways to streamline the process. We&amp;rsquo;re already in the &lt;a href=&#34;https://www.boincstats.com/stats/-1/user/detail/87605321733/overview&#34;&gt;top 5% of BOINC users in the world&lt;/a&gt; by contribution.&lt;/p&gt;
+&lt;h3 id=&#34;gig-great-ideas-gathering&#34;&gt;GIG: Great Ideas Gathering&lt;/h3&gt;
+&lt;p&gt;Every year, the mothership (Tricentis) runs a three-day hackathon called GIG. Two weeks ago was the first-ever GIG where most participants, not just the Flood team, were working remotely.&lt;/p&gt;
+&lt;p&gt;The theory behind hackathons is that the daily grind can be exhausting after a while, and it can sometimes be beneficial to introduce a short burst of work to revitalize the team. Hackathons provide a framework for small groups to pitch, execute, and report on a single idea without committing too much time to it. Everyone gets a chance to step away from regular duties and work furiously together on something they might not have otherwise gotten to work on.&lt;/p&gt;
+&lt;p&gt;A hackathon where the team members are separated by distance and timezone is certainly another beast, but here are some lessons we learned about remote hackathons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Come up with a good idea&lt;/strong&gt;: This is easier said than done, but a good hackathon idea is a creative solution that delivers a lot of value. Here are the ideas we came up with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Floody - Use AI to improve onboarding by walking new users through the steps for running a flood (live on Flood now!)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flood Bot - Add smarter checks to detect patterns in load tests and help flooders understand their results (prototype)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flood Gate - Use AWS Fargate to reduce costs in provisioning, scaling, and managing virtual servers by about 30% (proof of concept)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When thinking up ideas for GIG, we didn&amp;rsquo;t commit to releasing them publicly. Even a project idea that doesn&amp;rsquo;t end up making it into the finished product is an occasional worthwhile detour for team productivity and morale.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Limit scope&lt;/strong&gt;: GIG is a sprint, not a marathon. While my team (comprised of Jason Rizio and me) was planning out what we wanted to do, we quickly realized that there was a lot more that we wanted to do, but it just wasn&amp;rsquo;t feasible within the strict timeframe. In the end, we decided to go for an incremental piece of work that we could push to production before the deadline instead of completing just one step towards something abstract and unreleasable.The other Flood teams also needed to whittle down the scope to a smaller, completable chunk: a working prototype.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Clarify assignments&lt;/strong&gt;: With members on different timezones, it was essential to have an initial meeting to plan out everything that needed to be done and by when. In this situation particularly, we found it useful to split apart the project into independent chunks, to minimize the need to collaborate in real-time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Touch base regularly&lt;/strong&gt;: When working independently, team members can quickly diverge off the main path. To avoid that, we met up at least daily by hopping on an audio call on Zoom to spend a few minutes updating each other on the work we&amp;rsquo;d done. Doing this gives others a chance to help out when one member encounters roadblocks.For anything that didn&amp;rsquo;t need to be real-time, we worked asynchronously on chat. Here&amp;rsquo;s a screenshot of the number of messages and files exchanged to our dedicated GIG Slack channel during the event:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-07.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;‍Yup, 1,535 messages and 60 files in 3 days. That&amp;rsquo;s collaboration!&lt;/p&gt;
+&lt;p&gt;We generally prefer public rather than private channels, and we certainly stuck to that throughout GIG. When you&amp;rsquo;re working with more than one person, it&amp;rsquo;s counterproductive to have private conversations that can&amp;rsquo;t be referenced by other people.&lt;/p&gt;
+&lt;p&gt;We also learned that it&amp;rsquo;s useful to keep tabs on what the other teams are doing. After the event started, my team realized that another team was changing a page on the Flood app that we intended to use. Luckily, both teams were able to work around it.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also only fair to let other teams chime in on important decisions within the project that might affect future work— like the name for your mascot.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200505-08.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Leave time for the video&lt;/strong&gt;: It&amp;rsquo;s not just about doing the work; it&amp;rsquo;s about communicating what you&amp;rsquo;ve done in a way that others can appreciate. Here&amp;rsquo;s a video that my team (composed of Jason Rizio and me) put together for Floody and our improvements to the onboarding process:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OeIPWovOua4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Celebrate&lt;/strong&gt;: After the work is done, don&amp;rsquo;t forget to pat each other on the back for the hard work! For us, this meant &lt;a href=&#34;https://twitter.com/c_a_dunlop/status/1246111919762591746&#34;&gt;a round of tacos&lt;/a&gt; for everyone and a trip to the Flood pub. (Why do we have so many food-based rewards?)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;its-not-easy&#34;&gt;It&amp;rsquo;s not easy&lt;/h2&gt;
+&lt;p&gt;Keeping a team unified and working efficiently towards a common goal is always tricky, and working remotely, especially during a world crisis, doesn&amp;rsquo;t change that. Distributed team members need to put in more effort to consciously over-communicate, make room for each other&amp;rsquo;s unique circumstances, and do little projects that foster creativity when we&amp;rsquo;re all feeling a little lackluster. Incorporating these tips can create a culture of healthy productivity within a remote team.&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,8 +122,19 @@ Within the Flood team, flooders-in-training (aka children) have made more surpri
       <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</guid>
-      <description>Originally posted on Medium.
-Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me miran e inmediatamente hablan en inglés. Siempre están sorprendidos cuando respondo en Tagalog. «¿Pero por qué tienes la piel clara?» me preguntan, como si fuera algo que se puede comprar en una tienda. A través de mi piel no pueden ver mi lugar de nacimiento y juventud en las Filipinas, o cuánto echo de menos la voz del vendedor de taho cuando caminas por las calles: «Tahoooooooo!</description>
+      <description>&lt;p&gt;Originally posted on &lt;a href=&#34;https://medium.com/@n_vanderhoeven/mitad-de-all%C3%A1-y-mitad-de-aqu%C3%AD-reflexiones-de-una-pol%C3%ADglota-multinacional-1d192f488738&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me miran e inmediatamente hablan en inglés. Siempre están sorprendidos cuando respondo en Tagalog. «¿Pero por qué tienes la piel clara?» me preguntan, como si fuera algo que se puede comprar en una tienda. A través de mi piel no pueden ver mi lugar de nacimiento y juventud en las Filipinas, o cuánto echo de menos la voz del vendedor de taho cuando caminas por las calles: «Tahoooooooo!»&lt;/p&gt;
+&lt;p&gt;Los chinos me miran siempre como si fuera una de ellos. Pero después de hablar unos segundos en chino conmigo retroceden con una sonrisa. «Disculpa, es que pensábamos que eras china.» No les importa que tengo sangre china. Lo que les importa es que mi chino es horrible.&lt;/p&gt;
+&lt;p&gt;En EE.UU piensan que soy americana por mi acento en inglés por teléfono, pero cuando me ven, dicen «¡Que bueno tu inglés! ¿Qué eres?» Una mujer? Una ingeniera de software? No — un secreto a voces: &lt;em&gt;No eres una de nosotros&lt;/em&gt;. Eso después del hecho de que todos mis estudios han sido en inglés, y que es mi mejor lengua.&lt;/p&gt;
+&lt;p&gt;En una entrevista de trabajo en Australia, me preguntó el entrevistador de todas las maneras posibles de dónde vengo, y, frustrado con mis respuestas sobre mis trabajos previos en Australia, se alegró mucho al descubrir que mis padres eran filipinos. «¡Todavía no tenemos un filipino aquí!» me dijo. Después, la oferta, y mi vergüenza de conseguir un trabajo por no ser australiana. Yo con una carrera casi completamente hecha en el país.&lt;/p&gt;
+&lt;p&gt;Un holandés me dijo que hay tanta tolerancia en los países bajos. Todas las personas pueden convertirse en holandeses independientemente de sus orígenes. Pero justo cuando explico cómo es posible tener tres ciudadanías, empieza a sacudir la cabeza. «Pero eso no es justo. ¡Tu tienes que elegir! O no serás una verdadera holandesa.» Eso después de un día hablando en holandés.&lt;/p&gt;
+&lt;p&gt;Puedes hacerme otras preguntas, las que van a hacerte sentir más seguro de quién soy, o más capaz de etiquetarme. Y ofrezco mis respuestas, una mezcla y combinación de países. Pero lo que quiero hacer es contar mi vida, porque no puedo contestar en una sola palabra: Soy originalmente filipina. Mis padres son filipinos. Estudiaba en inglés en una escuela internacional, y más tarde en EE.UU. Me mudé a Australia y me casé allí con mi marido australiano. Vivimos allí juntos por más de una década. Nos mudamos a los Países Bajos, donde vivimos ahora. Y todo eso con una colección de idiomas, algunos de esos países, y otros, como el español, de otros.&lt;/p&gt;
+&lt;p&gt;Tengo mucha pasión cuando hablo otros idiomas. Y el aprendizaje de un idioma no es posible sin el conocimiento y la comprensión de la cultura que acompaña cada idioma. ¿En qué idioma pienso? Eso depende — de la situación, de la persona con la que estoy hablando, de mi humor, del tema, de si estoy cansada. Pero pienso en todos. Y, cuando pienso en estos idiomas, también actúo de manera correspondiente a las perspectivas inherentes a ellos. Y me cambian. Soy fundamentalmente diferente por haber aprendido este particular conjunto de idiomas.&lt;/p&gt;
+&lt;p&gt;Me vas a preguntar a qué país pertenezco en mi corazón?&lt;/p&gt;
+&lt;p&gt;Elegir un país o una cultura sería como cortarme el brazo. ¿Cómo sería posible para mí vivir sin reconocer la importancia de la familia como una filipina, sin cambiar al inglés para discutir noticias del mundo informático, sin sentir orgullo a la vista de la bandera australiana, sin relacionarme con personas con una mente abierta como una holandesa?&lt;/p&gt;
+&lt;p&gt;Digo que pertenezco a todos. No voy a elegir. Muchos de los problemas del mundo hoy en día ocurren porque queremos que otros elijan: entre sus países o sus religiones, sus familias o sus sexualidades, sus principios o sus presidentes. La verdad es que no hay una opción sino ser lo que ya son: producto de todos.&lt;/p&gt;
+&lt;p&gt;¿Y no somos todos así?&lt;/p&gt;
+</description>
     </item>
     
   </channel>

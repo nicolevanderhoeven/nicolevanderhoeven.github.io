@@ -14,10 +14,40 @@
       <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>Originally posted here.
-When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.
-  Or catch the audio version here:
- Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/K61W7ivhsuE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or catch the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/76u25lI7sFx5SwgbsFLU5Z&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re actually getting this quite a bit now as Puppeteer grows in popularity, but first, let&amp;rsquo;s discuss the similarities. They&amp;rsquo;re tools that you can use to drive browsers. The work by identifying and interacting with elements on a website in the same way that a user would. They are also both open-source, and both can be used for load testing. This is a great strategy because instead of writing tests for an automation suite and then tests for load testing, you can just write the one test suite and re-use it, so it saves a lot of resources in the end. To answer this question, I&amp;rsquo;m going to focus on load testing because that&amp;rsquo;s what my experience is in.&lt;/p&gt;
+&lt;h2 id=&#34;difference-between-selenium-and-puppeteer&#34;&gt;Difference between Selenium and Puppeteer&lt;/h2&gt;
+&lt;h3 id=&#34;pros-and-cons-of-selenium&#34;&gt;Pros and cons of Selenium&lt;/h3&gt;
+&lt;p&gt;Now for the difference. Selenium supports more browsers than does Puppeteer. It supports Chrome, Firefox, IE, Safari, and Opera, so there are a lot more options to choose from depending on your application.&lt;/p&gt;
+&lt;p&gt;Selenium is also what I would call automation-first. It was built with automation in mind, which means it&amp;rsquo;s very good at that. It&amp;rsquo;s very robust, and if you have a complicated test scenario, Selenium is an excellent choice.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also been around for much longer than Puppeteer, which is important because that means it&amp;rsquo;s had more time to build up a community. There are way more resources and tutorials for Selenium than for Puppeteer.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also, unfortunately, very resource-intensive. That&amp;rsquo;s not something that you would typically care too much about from a test automation perspective, but when you&amp;rsquo;re running thousands of users on the cloud, it IS important to keep in mind that Selenium, just because of how it&amp;rsquo;s built and its complexity, can only run about five users per node. We&amp;rsquo;ve found that out at Flood, after baselining specifically an AWS m5.xlarge instance. So you can look at the specs of that and compare it with the machines that you&amp;rsquo;re wanting to run Selenium on, to see how that would equate for you.&lt;/p&gt;
+&lt;h3 id=&#34;pros-and-cons-of-puppeteer&#34;&gt;Pros and cons of Puppeteer&lt;/h3&gt;
+&lt;p&gt;Puppeteer is a NodeJS library developed by Google, which means it plays very well with Chrome. There are a whole lot of things that you have access to with Puppeteer, and if you&amp;rsquo;re using it with Chrome, pretty much anything in Chrome, including rendering times, you can see and access with a Puppeteer script. So that&amp;rsquo;s a huge advantage.&lt;/p&gt;
+&lt;p&gt;Unfortunately, that also means it supports fewer browsers. Obviously, it supports Chrome very well, and they recently came out with support for Firefox, although they do have plans to incorporate support for more browsers in the future.&lt;/p&gt;
+&lt;p&gt;One of Puppeteer&amp;rsquo;s advantages is that we at Flood actually created a tool on top of Puppeteer. It&amp;rsquo;s also open-source. It&amp;rsquo;s called Flood Element, and Element is built to be performance-first because obviously, that&amp;rsquo;s what we had in mind when we were building it. It takes everything that&amp;rsquo;s good about Puppeteer and makes it really easy to set parameters that you normally would expect to need for load testing, like users and ramp-up.&lt;/p&gt;
+&lt;p&gt;This also means that it&amp;rsquo;s way less resource-intensive. I said that with Selenium, you can run up to five users on an AWS m5.xlarge instance, and for the same instance type, you can run, from our experiments, anywhere from 30-50 Element scripts/users. That is a huge saving when you&amp;rsquo;re running a really large-scale test.&lt;/p&gt;
+&lt;h2 id=&#34;should-you-choose-selenium-or-puppeteer-for-load-testing&#34;&gt;Should you choose Selenium or Puppeteer for load testing?&lt;/h2&gt;
+&lt;p&gt;I would say that if you already have a large Selenium automation suite, if you have a complex test scenario, or if you aren&amp;rsquo;t running that many users for your load test, then Selenium is a great choice. If you ARE running thousands of users, though, and resource efficiency, and therefore cost efficiency, is really important to you, then choose Element.&lt;/p&gt;
+&lt;p&gt;My advice is always to try both. If you have the time, do a proof of concept with both of them. That way, your whole team can better understand what the pros and cons are for each one and decide which one is best going forward. Or maybe you don&amp;rsquo;t even decide on one. At Flood, we support both of them at the same price, so it depends on what you prefer.&lt;/p&gt;
+&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

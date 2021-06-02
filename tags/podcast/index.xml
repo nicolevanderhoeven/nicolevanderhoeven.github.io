@@ -14,8 +14,13 @@
       <pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</guid>
-      <description>I first heard of Stephen Townshend because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, Stijn Schephers. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!
- We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.</description>
+      <description>&lt;p&gt;I first heard of &lt;a href=&#34;https://twitter.com/perftestnz&#34;&gt;Stephen Townshend&lt;/a&gt; because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, &lt;a href=&#34;https://www.linkedin.com/in/stijnschepers/&#34;&gt;Stijn Schephers&lt;/a&gt;. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed/episode/3pp3ZFFB8DyfUEtLRuLxGe&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -24,8 +29,14 @@
       <pubDate>Tue, 16 Mar 2021 21:29:33 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210316-testing-our-performance-test-tools/</guid>
-      <description>On this episode of the TestGuild performance podcast, I had a chat with Joe Colantonio about languages, board games, nontraditional backgrounds in tech, and why we should all test our performance test tools.
- </description>
+      <description>&lt;p&gt;On this episode of the &lt;a href=&#34;https://testguild.com/&#34;&gt;TestGuild performance podcast&lt;/a&gt;, I had a chat with Joe Colantonio about languages, board games, nontraditional backgrounds in tech, and why we should all test our performance test tools.&lt;/p&gt;
+
+
+
+&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/18351014/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
+
+
+</description>
     </item>
     
     <item>
@@ -34,9 +45,18 @@
       <pubDate>Wed, 22 Jul 2020 21:30:43 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</guid>
-      <description>On this episode of the TestGuild performance podcast, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.
-  Here&amp;rsquo;s the plain audio version:
- </description>
+      <description>&lt;p&gt;On this episode of the &lt;a href=&#34;https://testguild.com/&#34;&gt;TestGuild performance podcast&lt;/a&gt;, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/M5l9Ba0ykpw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the plain audio version:&lt;/p&gt;
+
+
+&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/15312620/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
     </item>
     
     <item>
@@ -45,8 +65,12 @@
       <pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</guid>
-      <description>Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.
-Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker. </description>
+      <description>&lt;p&gt;Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.&lt;/p&gt;
+
+
+&lt;a class=&#34;spreaker-player&#34; href=&#34;https://www.spreaker.com/user/perfbytes/perfbytesesp-s02e04-entrevistanicole&#34; data-resource=&#34;episode_id=31696383&#34; data-theme=&#34;light&#34; data-autoplay=&#34;false&#34; data-playlist=&#34;false&#34; data-cover=&#34;https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/2aed331516599f75dd433a42006da511.jpg&#34; data-width=&#34;100%&#34; data-height=&#34;400px&#34;&gt;Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker.&lt;/a&gt;&lt;script async src=&#34;https://widget.spreaker.com/widgets.js&#34;&gt;&lt;/script&gt;
+
+</description>
     </item>
     
   </channel>

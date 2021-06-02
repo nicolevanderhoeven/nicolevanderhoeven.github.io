@@ -14,10 +14,33 @@
       <pubDate>Thu, 28 May 2020 22:25:06 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200528-load-testing-on-google-cloud-platform/</guid>
-      <description>Originally posted here.
-We&amp;rsquo;re excited to welcome another cloud provider to the Flood lineup, giving you even more options for running your load tests. You can now use Flood to run load tests on the Google Cloud Platform (GCP).
-Many of you have requested an integration with Google Cloud, citing many of its strengths:
- Full integrations with open-source tools like Influx and Redis World-class security High-performance global network  Seamless access to other apps in the Google ecosystem, such as Search and Maps</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/load-testing-on-the-google-cloud-platform&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/load-testing-on-the-google-cloud-platform&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re excited to welcome another cloud provider to the Flood lineup,  giving you even more options for running your load tests. You can now  use Flood to run load tests on the &lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform (GCP)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Many of you have requested an integration with Google Cloud, citing many of its strengths:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full &lt;a href=&#34;https://cloud.google.com/blog/products/open-source/bringing-the-best-of-open-source-to-google-cloud-customers&#34;&gt;integrations with open-source tools&lt;/a&gt; like Influx and Redis&lt;/li&gt;
+&lt;li&gt;World-class &lt;a href=&#34;https://cloud.google.com/security&#34;&gt;security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;High-performance &lt;a href=&#34;https://cloud.google.com/infrastructure&#34;&gt;global network&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Seamless access to other apps in the Google ecosystem, such as Search and Maps&lt;/p&gt;
+&lt;p&gt;We think that adding support for GCP instances opens up a lot of  opportunities for flooders wanting to take advantage of these benefits.&lt;/p&gt;
+&lt;h2 id=&#34;using-flood-with-google-cloud&#34;&gt;Using Flood with Google Cloud&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ll notice a new Google Cloud section in &lt;a href=&#34;https://app.flood.io/account/integrations&#34;&gt;the Integrations page&lt;/a&gt; while you&amp;rsquo;re logged into Flood:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200528-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll need to add your GCP service account key to allow Flood to access your  account on your behalf. Once you&amp;rsquo;ve done this, you&amp;rsquo;ll be able to start  grids and floods right from the Flood interface you&amp;rsquo;re already using.&lt;/p&gt;
+&lt;p&gt;For more details on how to set up Flood to use your GCP account, check out &lt;a href=&#34;https://guides.flood.io/infrastructure/host-your-own-infrastructure/using-your-own-google-cloud-account&#34;&gt;our documentation&lt;/a&gt; or follow along with the video below:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oYTo0jwRfMo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Anyone with a Flood subscription, including a free one, can use Google Cloud instances at no extra cost from Flood; however, GCP usage  may incur separate costs.&lt;/p&gt;
+&lt;p&gt;GCP is the third cloud provider that we support at Flood, after &lt;a href=&#34;https://guides.flood.io/infrastructure/host-your-own-infrastructure/using-your-own-aws-account&#34;&gt;Amazon Web Services&lt;/a&gt; and &lt;a href=&#34;https://guides.flood.io/infrastructure/host-your-own-infrastructure/using-your-own-azure-account&#34;&gt;Microsoft Azure&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

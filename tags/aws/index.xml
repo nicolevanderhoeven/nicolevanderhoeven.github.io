@@ -14,9 +14,16 @@
       <pubDate>Wed, 25 Nov 2020 19:21:53 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201125-week-of-testing-2/</guid>
-      <description>Day 2 of my Week of Testing!
-Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.
-Today I learned that on k6, you can actually set one test to be a baseline.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dcahi7-9pRs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Day 2 of my Week of Testing!&lt;/p&gt;
+&lt;p&gt;Yesterday I ran my first load test on k6, and actually set up the thresholds wrong. I still maintain that there are some UI improvements that could still be made in that area, and that feedback was well-received. Apparently I&amp;rsquo;m not the only one who has made the same mistake.&lt;/p&gt;
+&lt;p&gt;Today I learned that on k6, you can actually set one test to be a baseline. There&amp;rsquo;s so much I want to say on this topic - that&amp;rsquo;s probably a whole blog post there - but for now, suffice it to say that having a baseline test to compare succeeding tests to is a key to a successful round of load testing. I was happy to see that k6 thinks so too, because that functionality is built into the UI by default.&lt;/p&gt;
+&lt;p&gt;I also think that being able to schedule a test regularly is fantastic for practicing Continuous Testing. Of course, teams already using CI/CD pipelines would probably get the most benefit out of running load tests using the command line rather than through the UI, but it&amp;rsquo;s nice to know that scheduling is an option in the UI as well.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,8 +32,14 @@ Today I learned that on k6, you can actually set one test to be a baseline.</des
       <pubDate>Tue, 24 Nov 2020 19:13:03 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201124-week-of-testing-1/</guid>
-      <description>On my first real day of testing with k6.io, I wanted to jump right in and figure out how to run a load test on k6 Cloud. k6 has documentation on this, but I didn&amp;rsquo;t use it for this test, since the point of a week of testing is to record how easy the product is to use.
-My verdict: I&amp;rsquo;m pleasantly surprised with how easily everything went.</description>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6qXJUS6yMDc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On my first real day of testing with &lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;, I wanted to jump right in and figure out how to run a load test on k6 Cloud. k6 has documentation on this, but I didn&amp;rsquo;t use it for this test, since the point of a week of testing is to record how easy the product is to use.&lt;/p&gt;
+&lt;p&gt;My verdict: I&amp;rsquo;m pleasantly surprised with how easily everything went. Is it just me, or was that AWS startup time exceptionally fast? I&amp;rsquo;m used to AWS taking at least a couple of minutes to provision a machine, but this seemed to start up almost instantaneously.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

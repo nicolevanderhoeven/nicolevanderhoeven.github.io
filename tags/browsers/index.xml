@@ -14,8 +14,13 @@
       <pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</guid>
-      <description>Marie Drake joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called Cypress and how it can compliment a back-end performance testing strategy.
-  </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; and how it can compliment a back-end performance testing strategy.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ve7Rg0MUZ0g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -24,9 +29,77 @@
       <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por JMeter en Español el 31 de Oktubre, 2020.
-  Y la versión audio:
- Introducción Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.</description>
+      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Y la versión audio:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
+&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
+&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
+&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
+&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
+&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
+&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
+&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
+&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
+&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
+&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
+&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
+&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
+&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
+&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
+&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
+&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
+&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
+&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
+&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
+&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
+&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
+&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
+&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
+&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
+&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
+&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
+&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -35,10 +108,108 @@
       <pubDate>Thu, 23 Apr 2020 16:48:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/</guid>
-      <description>Originally posted here.
-We first announced our open-source browser-based load testing tool based on Puppeteer, Flood Element, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:
-Tim Koopmans: Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)
-Kevin Dunne: A new approach to load testing with browser level users</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/browser-based-load-testing-in-2020&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/browser-based-load-testing-in-2020&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We &lt;a href=&#34;https://flood.io/blog/level-up-your-load-testing-with-browser-level-users&#34;&gt;first announced&lt;/a&gt; our open-source browser-based load testing tool based on Puppeteer, &lt;a href=&#34;https://element.flood.io/&#34;&gt;Flood Element&lt;/a&gt;, in February 2018. Despite our decision to make it an entirely separate tool from Flood, we&amp;rsquo;ve enjoyed using it so much as a team that several of us have written about it:&lt;/p&gt;
+&lt;p&gt;Tim Koopmans: &lt;a href=&#34;https://flood.io/blog/load-testing-for-devops-with-browser-level-users-blu&#34;&gt;Load testing for DevOps&amp;hellip; with Browser Level Users (BLU)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kevin Dunne: &lt;a href=&#34;https://flood.io/blog/a-new-approach-to-load-testing-with-browser-level-users&#34;&gt;A new approach to load testing with browser level users&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;me: &lt;a href=&#34;https://flood.io/blog/prepare-for-viral-videos-with-flood-element&#34;&gt;Prepare for viral videos with Flood Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lachie Cox: &lt;a href=&#34;https://flood.io/blog/why-you-should-load-test-with-browsers&#34;&gt;Why should you load test with real browsers?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;our friend Eduardo Riol, as translated by Antonio Jimenez: &lt;a href=&#34;https://flood.io/blog/selenium-vs-puppeteer-for-test-automation-is-a-new-leader-emerging&#34;&gt;Puppeteer vs. Selenium for test automation: is a new leader emerging?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clearly, we&amp;rsquo;re huge fans of load testing a web application with real browsers. But does the wider software testing industry share that sentiment?&lt;/p&gt;
+&lt;h2 id=&#34;browser-based-load-testing-in-2020&#34;&gt;Browser-based load testing in 2020&lt;/h2&gt;
+&lt;p&gt;Browser-level load testing is still pretty new, and there aren&amp;rsquo;t too many providers offering it right now. Luckily, we just so happen to have access to a database of load tests run on Flood since 2013. Here&amp;rsquo;s a bar chart visualizing data we&amp;rsquo;ve collected about the load testing tools flooders have used (we support Selenium, JMeter, Gatling, and Element).&lt;/p&gt;
+&lt;h3 id=&#34;load-tests-executed-on-flood-over-time-grouped-by-load-testing-tool&#34;&gt;Load tests executed on Flood over time, grouped by load testing tool&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;browser-level-load-testing-is-increasing-in-popularity&#34;&gt;Browser-level load testing is increasing in popularity&lt;/h3&gt;
+&lt;h4 id=&#34;in-2020-almost-35-of-the-load-tests-run-on-flood-are-browser-based-load-tests&#34;&gt;In 2020, almost 35% of the load tests run on Flood are browser-based load tests.&lt;/h4&gt;
+&lt;p&gt;While the total number of load tests run across all tools increased across the board, the percentage of tests that utilized Selenium and Element, as compared to JMeter and Gatling, has also increased from 2018. Both Selenium and Element are browser-based load testing tools.&lt;/p&gt;
+&lt;p&gt;By contrast, JMeter, a protocol-level load testing tool which previously enjoyed a 70% share of the traffic on Flood, now accounts for only a bit over 50% of usage. JMeter&amp;rsquo;s share of the protocol-level pie is higher than Gatling&amp;rsquo;s, but the percentage of usage for both tools appears to be contracting when compared to that of browser-based tools.&lt;/p&gt;
+&lt;h3 id=&#34;element-use-is-increasing-faster-than-selenium-use&#34;&gt;Element use is increasing faster than Selenium use&lt;/h3&gt;
+&lt;p&gt;Despite the fact that Selenium has been around longer, &lt;strong&gt;25% of all floods today are run using Element&lt;/strong&gt;. This is a significant increase in just two years, and one that bodes well for the future. While we&amp;rsquo;re still fans of Selenium and still support it, one reason we see for the dominance of Element in today&amp;rsquo;s market is resource efficiency.&lt;/p&gt;
+&lt;p&gt;In our baseline tests, we&amp;rsquo;ve seen that Element can run from 20-50 users per Flood node (an &lt;a href=&#34;https://aws.amazon.com/blogs/aws/m5-the-next-generation-of-general-purpose-ec2-instances/&#34;&gt;AWS m5.xlarge instance&lt;/a&gt;), whereas Selenium can only run up to 5. This leads to some significant cost savings, as running the same number of users with Element requires fewer load generators than with Selenium.&lt;/p&gt;
+&lt;p&gt;Another reason might be the fact that Element uses Puppeteer in the background. Puppeteer, developed by Google, understandably shines when driving Google Chrome (and recently, Firefox). Puppeteer load testing is growing in popularity due to the wealth of metrics it has access to.&lt;/p&gt;
+&lt;h2 id=&#34;how-browser-based-load-testing-works&#34;&gt;How browser-based load testing works&lt;/h2&gt;
+&lt;p&gt;Traditional load testing is done on the protocol level by sending messages directly to the web server. These messages are sent without simulating the application interface, and the responses that are received from the server are not visualized, either. &amp;ldquo;Users&amp;rdquo; in protocol-level load testing scripts are actually threads, with each one sending a list of messages at predefined intervals, and we refer to these users as Protocol-Level Users (PLU). JMeter and Gatling use PLU to generate load.&lt;/p&gt;
+&lt;p&gt;The screenshot below shows what one request for a single action might look like in a JMeter test plan.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-02.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Example of an HTTP request with parameters on JMeter&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In browser-based load testing, real browser instances are opened on load generators, and the load testing tool plays the part of a real user in navigating the web application using the GUI. We refer to the virtual users in browser-based load testing as Browser-Level Users (BLU).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of the same action in the JMeter example above, but this time in an Element test script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Step 1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+    &lt;span style=&#34;color:#75715e&#34;&gt;//Click Start button
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;startButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findElement&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.btn-default&amp;#39;&lt;/span&gt;)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;startButton&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;()
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This version simply describes the button to be found and clicked, whereas the protocol-level version needs to be more precise in what exactly is passed to the server.&lt;/p&gt;
+&lt;p&gt;Both types of load testing tools can apply the same load on an application (as long as it supports both methods— see the next section). The main difference is in how the load is generated.&lt;/p&gt;
+&lt;p&gt;A protocol-level script will contain instructions on which messages to send, which protocols to use, which headers to include, and other information that a typical end-user would not see.&lt;/p&gt;
+&lt;p&gt;A browser-level script will contain instructions on how to &lt;em&gt;interact&lt;/em&gt; with the application: which buttons to click, what to type in text fields, which links to follow, and other on-screen elements that an end-user would be familiar with. This leads us to one of the big advantages of browser-based load testing.&lt;/p&gt;
+&lt;h2 id=&#34;pros-and-cons-of-browser-based-load-testing&#34;&gt;Pros and cons of browser-based load testing&lt;/h2&gt;
+&lt;h3 id=&#34;pros&#34;&gt;Pros&lt;/h3&gt;
+&lt;h4 id=&#34;simple-scripting-or-no-scripting-at-all&#34;&gt;Simple scripting— or no scripting at all&lt;/h4&gt;
+&lt;p&gt;Protocol-level tools require in-depth knowledge about how an application works, what format it expects requests to be in, and how it responds. On the browser-level, you don&amp;rsquo;t need to know any of that. When scripting a login process, for instance, you just need to tell the script to type a username and password in the right fields and then click Log In. The script doesn&amp;rsquo;t need to know that the form submits an encrypted request using the Auth0 API (something you&amp;rsquo;d need to know for a protocol-level script).&lt;/p&gt;
+&lt;p&gt;In some cases, you might be able to get away with using something like our &lt;a href=&#34;https://flood.io/blog/record-load-tests-in-flood-element-using-qtest-explorer&#34;&gt;qTest Explorer plugin&lt;/a&gt; to record a business process, generating a script without any scripting at all. Even when you have to write or modify the script, though, it&amp;rsquo;s a lot less intimidating than most protocol-level scripts.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re also easier to troubleshoot. In addition to opening a real browser instance on your computer when you run a script locally, Element can also display this information on the console (shown here on iTerm):&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-03.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Screenshots upon execution on Element using iTerm&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;‍This allows you to understand what&amp;rsquo;s going on in the script and in the application, letting you detect bottlenecks faster.&lt;/p&gt;
+&lt;h4 id=&#34;reduced-test-complexity&#34;&gt;Reduced test complexity&lt;/h4&gt;
+&lt;p&gt;The streamlined requirements for scripting lead to a straightforward test. There&amp;rsquo;s no chance of getting request parameters or values wrong.&lt;/p&gt;
+&lt;h4 id=&#34;ability-to-test-entire-stack-from-the-user-perspective&#34;&gt;Ability to test entire stack from the user perspective&lt;/h4&gt;
+&lt;p&gt;Unlike testing APIs, you don&amp;rsquo;t need to decide which server you want to hit or make sure you have the appropriate requests to hit all the servers. A browser-level test script interacts with page elements like a real user would, so all underlying application servers are tested. Pair this with &lt;a href=&#34;https://guides.flood.io/infrastructure/demand-infrastructure/advantages-of-testing-in-the-cloud&#34;&gt;cloud-based infrastructure on Flood&lt;/a&gt;, and you&amp;rsquo;ve got a compact package for testing your application.&lt;/p&gt;
+&lt;h4 id=&#34;capable-of-testing-any-user-behavior&#34;&gt;Capable of testing any user behavior&lt;/h4&gt;
+&lt;p&gt;Protocol-level load test tools struggle with some types of applications, such as single-page apps (SPAs), where a lot of the processing is done on the client side. Browser-level load testing tools shine here, because scripted interactions for these apps are no different for SPAs than other web apps.&lt;/p&gt;
+&lt;h4 id=&#34;record-network-and-user-interaction-times-for-front-end-optimization&#34;&gt;Record network and user interaction times for front-end optimization&lt;/h4&gt;
+&lt;p&gt;Browser-level tools show you response times from the user&amp;rsquo;s perspective: how long after a user clicks the log in button does the user see his or her account balance? This metric is a practical one that may differ wildly from the traditional response times that a protocol-level tool reports. Measuring real user experience is a great value add for your test.&lt;/p&gt;
+&lt;h4 id=&#34;easier-to-maintain&#34;&gt;Easier to maintain&lt;/h4&gt;
+&lt;p&gt;Lower script complexity means that a browser-based test script is more resilient to changes in the codebase. A change in the underlying requests sent will not require a change in the test script, making it perfect for regression testing.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also easier to pass on to other members of the team due to high readability. Here&amp;rsquo;s an example of how to select a value from a dropdown menu in Element:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;selectByValue&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;#challenger_age&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;34&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s easy to see that the script is looking for an element with the ID &amp;ldquo;challenger_age&amp;rdquo; and selecting the value &amp;ldquo;34&amp;rdquo;. This step could correspond to dozens of requests that need to be scripted if testing on the protocol level, which makes those scripts harder to understand without a proper handover.&lt;/p&gt;
+&lt;h3 id=&#34;cons&#34;&gt;Cons&lt;/h3&gt;
+&lt;p&gt;Browser-based load testing tools have a higher CPU and memory footprint than protocol-based tools. Test scripts in JMeter and Gatling send messages to and record responses from a server without really needing to parse responses. By contrast, browser-based tools parse the server response in order to access the Domain Object Model (DOM) elements on the page.&lt;/p&gt;
+&lt;p&gt;Using real browsers might be closer to the real user experience, but it also takes its toll on node resources. It is possible to run in headless mode, where browsers are started &amp;ldquo;invisibly&amp;rdquo; without actually graphically rendering them. However, even then, a browser-level tool can run fewer concurrent users on a node than a protocol-level tool.&lt;/p&gt;
+&lt;h2 id=&#34;best-tools-and-applications-for-browser-based-load-testing&#34;&gt;Best tools and applications for browser-based load testing&lt;/h2&gt;
+&lt;p&gt;While other commercial tools exist for this, we&amp;rsquo;re partial to open source tools at Flood.&lt;/p&gt;
+&lt;h3 id=&#34;selenium&#34;&gt;Selenium&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Selenium load testing is appealing because Selenium is already well-known for test automation and functional testing, and a lot of companies already have full test suites in Selenium. The possibility of reusing those resources and just running them at scale as load tests is, by far, the most compelling reason to use Selenium.&lt;/p&gt;
+&lt;h3 id=&#34;puppeteer&#34;&gt;Puppeteer&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-05.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Google&amp;rsquo;s just getting started with Puppeteer, and the amount of metrics it exposes is exciting: it seems like anything in Chrome Developer Tools can be accessed by Puppeteer. Imagine running a load test on ONE tool that gives you statistics about back-end performance (response times, the effect of bandwidth restrictions, resources returning errors) AND front-end performance (client-side script console logs, render times, time to first paint, etc). It&amp;rsquo;s hard to imagine a future where this ISN&amp;rsquo;T a valuable tool in the performance arsenal.&lt;/p&gt;
+&lt;p&gt;Under Puppeteer, of course, is &lt;a href=&#34;https://element.flood.io/&#34;&gt;Element&lt;/a&gt;— our load-flavored version of Puppeteer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200423-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-protocol-based-load-testing-dead&#34;&gt;Is protocol-based load testing dead?&lt;/h2&gt;
+&lt;p&gt;No. Testing on the protocol-level may have its drawbacks, but it&amp;rsquo;s popular for a reason. If you&amp;rsquo;re testing mobile apps or API endpoints, protocol-level testing tools allow you to focus on hitting what you want to test and only what you want to test. Sometimes you don&amp;rsquo;t want to test the whole stack. It really depends on your test scenarios.&lt;/p&gt;
+&lt;p&gt;Plus, protocol-level tools tend to be really resource efficient. We&amp;rsquo;ve been able to easily run about 1000 users per Flood node with JMeter and Gatling, easily outstripping browser-level tools. It makes sense, since JMeter and Gatling don&amp;rsquo;t need to start browser instances to generate load.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s significantly cheaper to generate very high loads with protocol-level tools. This efficiency makes protocol-level tools a good choice for high concurrency load testing and especially stress testing.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-we-doing-to-support-blu&#34;&gt;What are we doing to support BLU?&lt;/h2&gt;
+&lt;p&gt;Clearly, our usage metrics show that browser-based load testing is on the rise, and we&amp;rsquo;re planning to ramp up our offerings in this area while also maintaining support for protocol-level tools. Here&amp;rsquo;s what you can look forward to from us:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New releases
+&lt;ul&gt;
+&lt;li&gt;We just released &lt;a href=&#34;https://element.flood.io/docs/1.0/install&#34;&gt;version 1.2.3 of Element&lt;/a&gt; a few weeks ago, which addresses some bugs and improve stability for certain actions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dedicated Element team
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;ve put together a team of developers who will be focusing on improving Element exclusively. Despite Element being an open source tool, we&amp;rsquo;re putting our own resources behind it to improve it faster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Partnering with consulting services
+&lt;ul&gt;
+&lt;li&gt;It can be difficult to get started on a new tool, and Element is no exception. While we provide a load testing platform to run Element scripts, some companies want help to create the scripts in the first place. To this end, we&amp;rsquo;ve partnered with expert consultants who have already been using Element with great success: &lt;a href=&#34;https://foulkconsulting.com/&#34;&gt;Foulk Consulting&lt;/a&gt; and &lt;a href=&#34;https://www.planittesting.com/&#34;&gt;Planit Testing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;When choosing a performance testing tool, it&amp;rsquo;s important to consider the advantages and disadvantages of protocol-level and browser-level testing tools. We think both types of tools deserve to be in a solid performance and load testing strategy. They can also be used in tandem in a hybrid load testing approach, improving overall application performance and scalability.&lt;/p&gt;
+&lt;p&gt;In 2018, we predicted that testing web-based applications with real browsers would increase in popularity, so we&amp;rsquo;re thrilled to see our theory validated in 2020. Browser-based load testing is increasing in usage, and our open source tool, Element, is leading the charge. It&amp;rsquo;s exciting to be at the forefront of this revolution, and we intend to increase support for load testing with real browsers even more this year.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -47,10 +218,28 @@ Kevin Dunne: A new approach to load testing with browser level users</descriptio
       <pubDate>Tue, 17 Mar 2020 20:58:12 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200317-aaf05/</guid>
-      <description>Originally posted here.
-On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.
-‍   TRANSCRIPT:
-If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to element.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-05-how-do-i-get-started-with-flood-element-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-05-how-do-i-get-started-with-flood-element-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On this Ask a Flooder, I talk about getting started with Flood Element. Element is an open-source tool that is a good Selenium alternative for browser-based load testing. It runs Puppeteer under the hood to drive real browsers at scale and can be paired with Flood for cloud load testing.&lt;/p&gt;
+&lt;p&gt;‍
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oWtnStKrh98&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;TRANSCRIPT:&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re sold on browser-based load testing and want to get started on Element, I think the easiest way to do that is by going to &lt;a href=&#34;http://element.flood.io&#34;&gt;element.flood.io&lt;/a&gt; and clicking on Install on the upper left corner. You can follow those instructions to get started, and you can also click on the links on the left side if you get stuck.&lt;/p&gt;
+&lt;p&gt;Once Element is installed, open up the directory and look at the examples folder. There you&amp;rsquo;ll find a lot of sample scripts that we&amp;rsquo;ve already made up for you. The easiest way to get started is to just modify some of these slightly so that you&amp;rsquo;re testing your site. For example, you could just change the URL and step names to make it appropriate for what you&amp;rsquo;re testing.&lt;/p&gt;
+&lt;p&gt;Then, you can run it locally using the command element run the name of your test script, like test.ts,  and then I also like to include the no-headless flag.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;element run test.ts --no-headless&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The no-headless flag is going to run a real browser, a Chromium browser, on your machine, so that you can see what the script is actually doing. This is a great way to debug and troubleshoot.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;re ready to run your load test on the cloud, you can simply drag and drop your Element script into the Flood stream editor and then start your load test as usual.&lt;/p&gt;
+&lt;p&gt;Check out the links in the description below for more information about Element, how to get started, and how to run an Element script on Flood.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://element.flood.io/&#34;&gt;More about Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/scripting-and-tools/flood-element/getting-started-with-element&#34;&gt;Getting started with Element&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -59,9 +248,233 @@ If you&amp;rsquo;re sold on browser-based load testing and want to get started o
       <pubDate>Mon, 09 Mar 2020 20:29:40 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200309-fomo-and-performance-testing/</guid>
-      <description>Originally posted here.
-Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?
-The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/fomo-and-performance-testing-why-robinhood-went-down&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/fomo-and-performance-testing-why-robinhood-went-down&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Angry customers flocked to the internet when the Robinhood investment brokerage app went down last Monday and part of Tuesday, leaving them unable to trade stocks on a day where Wall Street reported historic gains. Could this have been prevented?&lt;/p&gt;
+&lt;p&gt;The answer is yes. Applications should always be assessed for risk and tested accordingly. Risk-based load testing helps unearth problems that would otherwise only surface in production. Testing applications end-to-end as a system instead of just as a collection of isolated components allows us to build software that is more resilient. The problem is that this type of testing can be difficult to carry out. In this article, I&amp;rsquo;ll go through the entire process.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-robinhood&#34;&gt;What is Robinhood?&lt;/h2&gt;
+&lt;p&gt;Robinhood is an app I&amp;rsquo;ve personally had my eye on since it opened a waiting list about five years ago for Australians wanting to see the American company come to our shores. It &lt;a href=&#34;https://australianfintech.com.au/local-start-stake-beats-us-giant-robinhood-bring-australians-free-share-trading/&#34;&gt;doesn&amp;rsquo;t look like it&amp;rsquo;s happening&lt;/a&gt; now, but if that waiting list still exists, I&amp;rsquo;m on it.&lt;/p&gt;
+&lt;p&gt;Robinhood is a brokerage app that takes inspiration from the legend it was named after to &amp;ldquo;give to the poor,&amp;rdquo; bring zero-commission trading to its customers. Instead of earning from commissions, Robinhood makes its money from &lt;a href=&#34;https://www.investopedia.com/articles/active-trading/020515/how-robinhood-makes-money.asp&#34;&gt;a variety of other methods&lt;/a&gt;, including premium platform fees, interest on customers&#39; uninvested capital, and payments received in exchange for coursing customers&#39; orders through third-party market-makers. It&amp;rsquo;s an enticing premise, and one that the company has used in conjunction with mobile apps to appeal to millennials and technophiles.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: From &lt;a href=&#34;https://robinhood.com/us/en/&#34;&gt;Robinhood&amp;rsquo;s homepage&lt;/a&gt;&lt;/em&gt;
+‍&lt;/p&gt;
+&lt;h2 id=&#34;what-caused-the-robinhood-app-to-fail&#34;&gt;What caused the Robinhood app to fail?&lt;/h2&gt;
+&lt;p&gt;Unfortunately, its wild success with the tech-savvy crowd also meant that when it went down last Monday morning in the US, its customers took to the internet in droves to draw attention to the failure. In a &lt;a href=&#34;https://blog.robinhood.com/news/2020/3/3/an-update-from-robinhoods-founders&#34;&gt;blog post from Robinhood&lt;/a&gt;, the company&amp;rsquo;s co-founders, Baiju Bhatt and Vladimir Tenev, admitted that the outage was due to &amp;ldquo;stress on [their] infrastructure— which struggled with unprecedented load.&amp;rdquo;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The outages you have experienced over the last two days are not acceptable and we want to share an update on the current situation. Our team has spent the last two days evaluating and addressing this issue. We worked as quickly as possible to restore service, but it took us a while. Too long. - &lt;a href=&#34;https://blog.robinhood.com/news/2020/3/3/an-update-from-robinhoods-founders&#34;&gt;Baiju Bhatt and Bladimir Tenev&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Bhatt and Tenev went on to explain that the load on their servers had caused a &amp;ldquo;thundering herd&amp;rdquo; effect. This effect describes a situation in which a backend server receives a large number of concurrent requests and, instead of different threads processing these requests simultaneously, all threads attempt to process the same request.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve ever played four-player Overcooked, it&amp;rsquo;s like having everyone sprint to a fire extinguisher to try to put out a fire from overcooked pasta, but instead, the constant button mashing means you just pass the extinguisher around and yell at each other while the fire rages on. Before you know it, the entire kitchen is on fire.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-02.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: From &lt;a href=&#34;https://twitter.com/csac0425/status/963053160259510277&#34;&gt;Twitter user @csac0425&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So the technical cause of the outage was an infrastructure problem.&lt;/p&gt;
+&lt;p&gt;But I think the REAL cause was FOMO.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-fomo&#34;&gt;What is FOMO?&lt;/h2&gt;
+&lt;p&gt;FOMO is the Fear Of Missing Out, and it&amp;rsquo;s a phenomenon that&amp;rsquo;s been particularly exacerbated by social media. Instead of only hearing news from people you interact with in the physical world, it just takes a few seconds to open up Twitter on your smartphone and see what thousands of people are talking about. Twitter will even helpfully tell you what&amp;rsquo;s &amp;ldquo;trending&amp;rdquo; in your country, and other social networks also employ algorithms to determine what messages to show you.&lt;/p&gt;
+&lt;h2 id=&#34;how-does-fomo-affect-application-performance&#34;&gt;How does FOMO affect application performance?&lt;/h2&gt;
+&lt;p&gt;We can see FOMO in how people have reacted to the coronavirus COVID-19. Despite pleas to leave masks for medical professionals at real risk, people have bought out the stock for these masks despite living in countries with little to no sign of the coronavirus. In Sydney, Australia, residents are stockpiling toilet paper (of all things) in large quantities, clearing out shelves from supermarkets, and &lt;a href=&#34;https://www.bbc.com/news/world-australia-51731422&#34;&gt;getting into knife fights over toilet paper&lt;/a&gt; due to their panic at the thought of doing without.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-03.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This photo of an empty toilet paper aisle was taken by our Principal Engineer, &lt;a href=&#34;https://github.com/lachie&#34;&gt;Lachie Cox&lt;/a&gt;, in a supermarket in Sydney last week.&lt;/em&gt;
+‍
+FOMO of this magnitude ultimately also manifests itself in the stock market. The Dow Jones Industrial Average, which represents the performance of the top 30 largest companies in the US, dropped by 3,500 points last week amidst fears that the coronavirus would stall production in countries most affected by COVID-19, leading to lower returns across the board.&lt;/p&gt;
+&lt;p&gt;Then, an abrupt about-face. The Dow went from recording its &lt;a href=&#34;https://nypost.com/2020/03/09/dow-loses-over-2000-points-worst-single-day-drop-ever-as-oil-prices-crash/&#34;&gt;biggest &lt;em&gt;ever&lt;/em&gt; loss in a single day on Thursday&lt;/a&gt; to posting a record gain of 1,200 points on Monday.&lt;/p&gt;
+&lt;p&gt;Guess who gets to adjust to all this volatility.&lt;/p&gt;
+&lt;p&gt;Robinhood&amp;rsquo;s founders reported that the &amp;ldquo;highly volatile and historic market conditions; record volume; and record sign-ups&amp;rdquo; contributed to the infrastructure issues they faced. We can only imagine just how many users they saw on their systems during this period.&lt;/p&gt;
+&lt;p&gt;FOMO creates mass hysteria and panic, both of which cause customers to behave irrationally and likely very differently than previously recorded. So how do you create a workload model that accounts for this volatility? How do you tailor your load tests for FOMO? I&amp;rsquo;ll run you through the process, using Robinhood as an example.&lt;/p&gt;
+&lt;h2 id=&#34;does-your-application-require-fomo-load-testing&#34;&gt;Does your application require FOMO load testing?&lt;/h2&gt;
+&lt;p&gt;All testing should be risk-based. Start with why: why should you test an application component? Why does your application require this kind of testing or that one?&lt;/p&gt;
+&lt;p&gt;In Robinhood&amp;rsquo;s case, there were a few indicators that pointed to the necessity of FOMO testing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A customer base made up of a younger, tech-savvy generation&lt;/strong&gt;. ‍This demographic is very likely to take to social media with complaints, making negative publicity a real risk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Complexity&lt;/strong&gt;. ‍Robinhood&amp;rsquo;s systems must receive customers&#39; orders, forward and place those orders to market makers, and display real-time market data. Robinhood customers can also purchase options on stocks as well as cryptocurrency, further increasing the complexity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Financial component&lt;/strong&gt;. ‍Anything that involves taking people&amp;rsquo;s money should have a high priority for any testing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When it comes to your money, we know how important it is for you to have answers. - &lt;a href=&#34;https://blog.robinhood.com/news/2020/3/3/an-update-from-robinhoods-founders&#34;&gt;Baiju Bhatt and Bladimir Tenev&lt;/a&gt;, co-founders of Robinhood&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Record-breaking growth&lt;/strong&gt;. ‍Robinhood had 1 million users in 2016, 6 million in 2018, and 10 million last December, &lt;a href=&#34;https://www.cnbc.com/2019/12/04/start-up-robinhood-tops-10-million-accounts-even-as-industry-follows-in-free-trading-footsteps.html&#34;&gt;according to CNBC&lt;/a&gt;. Exponential growth brings some major growing pains.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Industry history of expensive failures&lt;/strong&gt;. ‍&lt;a href=&#34;https://qz.com/1812086/robinhood-brokerage-app-suffers-second-day-of-outages/&#34;&gt;Quartz points out&lt;/a&gt; that software or infrastructure failures have cost the financial industry millions in recent years.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Recent legal action&lt;/strong&gt;. The regulatory body FINRA &lt;a href=&#34;https://www.cnn.com/2019/12/19/investing/robinhood-trading-app-fine-finra/index.html&#34;&gt;fined Robinhood&lt;/a&gt; US$1.25 million just last December for placing orders for customers without looking for the lowest price. While this isn&amp;rsquo;t a huge fine for a company that was &lt;a href=&#34;https://www.bloomberg.com/news/articles/2019-07-22/robinhood-is-worth-7-6-billion-after-new-funding-round&#34;&gt;valued at US$7.6 billion last July&lt;/a&gt;, any legal action should make a company tread more carefully.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are solid reasons to warrant load testing Robinhood&amp;rsquo;s systems beyond just &amp;ldquo;expected&amp;rdquo; load.&lt;/p&gt;
+&lt;h2 id=&#34;planning-for-fomo&#34;&gt;Planning for FOMO&lt;/h2&gt;
+&lt;p&gt;Once you&amp;rsquo;ve determined that your application is susceptible to FOMO, the next thing to do is plan how to structure your load tests to include its effect in your test runs.&lt;/p&gt;
+&lt;h3 id=&#34;what-type-of-app-is-it&#34;&gt;What type of app is it?&lt;/h3&gt;
+&lt;p&gt;Robinhood consists of three apps: two for mobile (iOS and Android) and one for the web. It is currently only available to US residents, which means that getting mobile apps downloaded is problematic as it would entail changing countries in the app stores to get access. Since I live in the Netherlands and I don&amp;rsquo;t want to do that, I&amp;rsquo;ll focus on the web app specifically when scripting the load test, and I&amp;rsquo;ll assume that the same underlying application servers service both web and mobile apps.&lt;/p&gt;
+&lt;h3 id=&#34;workload-modeling&#34;&gt;Workload modeling&lt;/h3&gt;
+&lt;h4 id=&#34;business-processes-to-test&#34;&gt;Business processes to test&lt;/h4&gt;
+&lt;p&gt;Given that the app went down on a day where markets were &lt;em&gt;up&lt;/em&gt;, we can assume that most of the people on Robinhood&amp;rsquo;s apps were doing one of two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Signing up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Buying shares&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We should ideally test both, but let&amp;rsquo;s focus on signups here because it&amp;rsquo;s easier to test without access to the actual app (which requires a US social security number).&lt;/p&gt;
+&lt;h4 id=&#34;number-of-virtual-users-at-peak-load&#34;&gt;Number of virtual users at peak load&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s try to come up with a number of users that we can use as Robinhood&amp;rsquo;s peak hourly load. This task would be easier if Robinhood shared their analytics, but we can still make some educated guesses with what &lt;em&gt;has&lt;/em&gt; been made public.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-04.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: Image from &lt;a href=&#34;https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined&#34;&gt;Apptopia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined&#34;&gt;According to Apptopia&lt;/a&gt;, Robinhood&amp;rsquo;s highest number of mobile installations was in 2018, when it saw 2 million downloads of its mobile app in a quarter. This period coincides with when Robinhood released cryptocurrency trading support, which looks like increased signups—in the third quarter of 2019, this figure was about 1.5 million. 2 million quarterly downloads translates to about 666,666 downloads per month. Let&amp;rsquo;s call that 700,000 and take this number of mobile downloads as a starting figure.&lt;/p&gt;
+&lt;p&gt;The stock market is only open on the weekdays, so we can divide 700,000 signups a month by 20 days, and we get 35,000 signups a day. The markets are also only open for about 7 hours a day, but the load probably isn&amp;rsquo;t evenly spread out across the 7 hours— I would expect that people would have more time during lunch to sign up for Robinhood. So let&amp;rsquo;s say that the majority of those signups would happen within three hours (from 11 am to 2 pm, for example). By dividing 35,000 signups per day by 3 hours, we get about 11,667 users per hour. Let&amp;rsquo;s round that up to 12,000.&lt;/p&gt;
+&lt;p&gt;How do we translate this to the number of virtual users we need to run? Let&amp;rsquo;s think about how long each user stays on the app. The signup process does require approval, so that&amp;rsquo;s a hard stop— new users won&amp;rsquo;t be able to sign up and then start trading immediately afterwards. &lt;a href=&#34;https://robinhood.com/us/en/support/articles/360001213123/open-my-account/&#34;&gt;This approval could take up to a day&lt;/a&gt;, or up to seven days if documents are required.&lt;/p&gt;
+&lt;p&gt;Looking at the application form itself, we can see it is relatively standard and requires only information that most people are likely to have handy (social security number and contact details). I timed how long it took me to go through the part of it I could access, and I estimated that 10 minutes would be sufficient time to go through all the tabs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-05.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&#34;https://signup.robinhood.com/?&#34;&gt;Robinhood&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We want to spread out users evenly across the hour— that is, we don&amp;rsquo;t want 12,000 users to sign up and leave, all within 10 minutes. We want equal portions of those users to be signing up throughout the entire hour. Dividing 12,000 by 6 (the number of 10-minute intervals in an hour), we get 2,000. 2,000 is the number of threads we need active at any one point of time. Each of those threads signs up one user for 10 minutes, then signs up 5 more users until the hour is up.&lt;/p&gt;
+&lt;p&gt;So we have our figure: we need 2,000 &lt;em&gt;virtual&lt;/em&gt; users per hour to simulate 12,000 signups in an hour.&lt;/p&gt;
+&lt;h3 id=&#34;test-scenarios&#34;&gt;Test scenarios&lt;/h3&gt;
+&lt;p&gt;In addition to running the standard battery of load tests, testing for FOMO requires exploring the upper limits of the application. Assuming the peak load testing goes well, we can use the 2,000 virtual users per hour figure from our peak load calculations as a starting point for these more destructive tests. To this end, here are some test scenarios I&amp;rsquo;d consider running if I were testing the Robinhood app:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Soak testing&lt;/strong&gt;. ‍Soak testing means running typically a little less than the peak load profile, but over a longer amount of time. In Robinhood&amp;rsquo;s case, perhaps we could run 1,000 virtual users for 8 hours. We would expect that the response times reported during this test would be the same; otherwise, there is likely a performance bottleneck, such as a memory leak.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stress testing&lt;/strong&gt;. ‍Stress testing means increasing the number of users on an application at regular increments until the application crashes. We can start with 2,000 virtual users per hour, and then add 500 users every 30 minutes to see how the application handles it. This test helps determine how much room there is for growth.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-06.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: Stepped load profile for stress testing, generated in JMeter&lt;/em&gt;
+‍&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resilience testing&lt;/strong&gt;. ‍Resilience testing involves running the peak load test and then simulating an outage by turning off key components to see how the application behaves. If two servers share the load, for instance, we could turn one off and check to make sure that the user sessions on the terminated node are moved over onto the remaining node. This test shows whether the application recovers gracefully from an unforeseen event.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All these tests help us prepare for the unexpected, and they might have identified the &amp;ldquo;thundering herd&amp;rdquo; problem that contributed to Robinhood&amp;rsquo;s outage.&lt;/p&gt;
+&lt;h2 id=&#34;scripting-for-fomo&#34;&gt;Scripting for FOMO&lt;/h2&gt;
+&lt;h3 id=&#34;tool-selection&#34;&gt;Tool selection&lt;/h3&gt;
+&lt;p&gt;To test mobile as well as web apps, I would typically use a protocol-level load testing tool like JMeter to simulate the load. However, &lt;a href=&#34;https://thenewstack.io/how-id-load-test-the-iowa-caucus-app/&#34;&gt;I&amp;rsquo;ve already done that&lt;/a&gt;. I also noticed that Robinhood makes use of some dynamic parameters, such as a csrf token:&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-07.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: Chrome Developer Tools on &lt;a href=&#34;https://signup.robinhood.com/?&#34;&gt;Robinhood&lt;/a&gt;&lt;/em&gt;
+‍
+We can usually find the value of this token in the response of the previous page. It is a security feature to allow Robinhood to verify that the same users make all requests in the same session. Tokens can be scripted around in a tool like JMeter, but it can be time-consuming. So for this article, I decided to show another tool that makes this problem go away. I used &lt;a href=&#34;https://element.flood.io/&#34;&gt;Flood Element&lt;/a&gt;, which is an open-source tool we created based on Puppeteer. One of its advantages is that it runs on the browser level. Instead of diving into HTTP requests and tokens, I just told Element which buttons to click.&lt;/p&gt;
+&lt;p&gt;I wanted a script that would do the following things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to Robinhood&amp;rsquo;s home page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on &amp;ldquo;Sign Up&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on the &amp;ldquo;Get Your Free Stock&amp;rdquo; button.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fill out the signup form.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that I stopped short of actually submitting the form because I don&amp;rsquo;t want to create dummy accounts on Robinhood&amp;rsquo;s database— I just want to show how this flow can be scripted with Element.&lt;/p&gt;
+&lt;p&gt;To help me identify the elements on the page that I wanted the script to interact with, I used Chrome&amp;rsquo;s built-in Developer Tools. Specifically, I used the Inspect Element button (in orange below) to click on a field and find where it was in the code.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-08.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For instance, to find out how to identify the email field, I right-clicked on the code on the right, hovered over Copy, and then clicked Copy selector.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-09.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This gave me the value &lt;code&gt;#signup_email_field&lt;/code&gt;, which I then used in the script like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Type Email address
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;signup_email_field&amp;#39;&lt;/span&gt;),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;nicole@flood.io&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here&amp;rsquo;s the script that I ended up with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;MouseButtons&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Device&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Driver&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENV&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;@flood/element&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;assert&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;assert&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestSettings&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;loopCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;clearCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;disableCache&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;actionDelay&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;stepDelay&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;screenshotOnFailure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;userAgent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;flood-element-test&amp;#39;&lt;/span&gt;,
+}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; () =&amp;gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;01_Home&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+    	&lt;span style=&#34;color:#75715e&#34;&gt;//Navigate to Robinhood homepage
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;visit&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;https://robinhood.com&amp;gt;&amp;#39;&lt;/span&gt;)
+
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Validate text
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;validation&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;visibleText&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;It’s Time to Do Money&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;wait&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;elementIsVisible&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;validation&lt;/span&gt;))
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+	})
+
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;02_Signup&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+    	&lt;span style=&#34;color:#75715e&#34;&gt;//Click &amp;#34;Sign Up&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;signupBtn&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findElement&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;xpath&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;//a[@href=&amp;#34;&amp;lt;https://signup.robinhood.com&amp;gt;&amp;#34;]&amp;#39;&lt;/span&gt;))
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;signupBtn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;()
+
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Validate text
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;validation&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;visibleText&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Free Stock Waiting For You&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;wait&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;elementIsVisible&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;validation&lt;/span&gt;))
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+	})
+
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;03_GetFreeStock&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Click Get Your Free Stock
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;freestockBtn&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findElement&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;xpath&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;//a[@href=&amp;#34;&amp;lt;https://signup.robinhood.com/?&amp;#34;&amp;gt;]&amp;#39;&lt;/span&gt;))
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;freestockBtn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;()
+
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Validate text
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;validation&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;visibleText&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Make Your Money Move&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;wait&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Until&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;elementIsVisible&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;validation&lt;/span&gt;))
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+	})
+
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;step&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;04_FillForm&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; =&amp;gt; {
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Type First name
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;xpath&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;//input[@name=&amp;#34;first_name&amp;#34;]&amp;#39;&lt;/span&gt;),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Nicole&amp;#39;&lt;/span&gt;)
+
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Type Last name
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;xpath&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;//input[@name=&amp;#34;last_name&amp;#34;]&amp;#39;&lt;/span&gt;),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;van der Hoeven&amp;#39;&lt;/span&gt;)
+
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Type Email address
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;signup_email_field&amp;#39;&lt;/span&gt;),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;nicole@flood.io&amp;#39;&lt;/span&gt;)
+
+		&lt;span style=&#34;color:#75715e&#34;&gt;//Type password
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;By&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;xpath&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;//input[@name=&amp;#34;password&amp;#34;]&amp;#39;&lt;/span&gt;),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;demo123456&amp;#39;&lt;/span&gt;)
+
+
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;takeScreenshot&lt;/span&gt;()
+	})
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In every step, I also added a &lt;code&gt;takeScreenshot()&lt;/code&gt; , which is one of my very favorite features of Element. It&amp;rsquo;s so useful to be able to save these screenshots and use them to determine exactly what&amp;rsquo;s happening in the script. Here&amp;rsquo;s what it looks like running my Element script locally. The automated browser is on the left, and my terminal (iTerm) is on the right, running Element.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-10.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;running-a-fomo-test&#34;&gt;Running a FOMO test&lt;/h2&gt;
+&lt;p&gt;Now we&amp;rsquo;ve got a script that runs locally. How do we run it at scale? Additionally, Robinhood won&amp;rsquo;t allow users outside the US to sign up. How do we make sure that our virtual users are allowed to sign up?&lt;/p&gt;
+&lt;p&gt;The answer is a load testing platform like &lt;a href=&#34;https://flood.io/&#34;&gt;Flood&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With Flood, running our script is a matter of uploading the script and selecting some options.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Flood test design interface&lt;/em&gt;
+‍
+Flood also lets us choose which regions to generate load from. Below I&amp;rsquo;ve got it set up to run for an hour from four different US cities, with each one starting 500 users. This configuration gives us our 2,000 virtual user figure.&lt;/p&gt;
+&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-12.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If this peak load test goes well, we could then go on to run the other test scenarios that we described earlier. Each one puts pressure on application servers in different ways, identifying performance bottlenecks.&lt;/p&gt;
+&lt;h2 id=&#34;results-and-reruns&#34;&gt;Results and reruns&lt;/h2&gt;
+&lt;p&gt;Since Robinhood is a live application, I didn&amp;rsquo;t run the test— it&amp;rsquo;s never a good idea to load test a domain you don&amp;rsquo;t own when you&amp;rsquo;re talking about thousands of users. However, &lt;a href=&#34;https://api.flood.io/pfQuAGz3&#34;&gt;here&amp;rsquo;s a shareable link&lt;/a&gt; to another small Element test I ran previously.&lt;/p&gt;
+&lt;p&gt;Real-time dashboards like that one on Flood allow you to get a quick look into how the load test is running and to make any changes if necessary. When testing for FOMO, I think they&amp;rsquo;re invaluable. For example, during a stress test where users are added at regular intervals, a real-time dashboard would help you identify increases in response time as a result of the increased number of users. It would also let you monitor the test and stop it when necessary.&lt;/p&gt;
+&lt;p&gt;From the link above, click on the right arrow on the lone transaction.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-13.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That will take you to the Transaction Detail page. Remember those screenshots from Element? If you have any in your script, you&amp;rsquo;ll see them here, arranged according to time.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200309-14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This lets you troubleshoot issues during FOMO testing and react quickly.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Even with sound load testing strategies in place, it&amp;rsquo;s challenging to plan for the massive spike in traffic that FOMO can bring, yet it&amp;rsquo;s necessary to do so. FOMO, as a phenomenon, is only going to increase in magnitude as social networks make it easier to spread fear, uncertainty, and doubt as well as information.&lt;/p&gt;
+&lt;p&gt;We may not be able to determine precisely what will break, or when, but what we can do is put systems into place to plan for it. We can assess an application&amp;rsquo;s susceptibility to FOMO and plan for end-to-end performance engineering of the system as a whole. We can start with the assumption that applications will fail and then determine the most likely candidates for that failure. We can routinely expose systems to traffic and circumstances that are extraordinary, and in doing so, we can improve our preparedness for something like FOMO.&lt;/p&gt;
+&lt;p&gt;FOMO is irrational and unpredictable— but that doesn&amp;rsquo;t mean it needs to be unexpected.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

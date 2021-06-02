@@ -14,7 +14,62 @@
       <pubDate>Tue, 26 Jan 2021 23:01:18 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210126-python-for-everybody/</guid>
-      <description>I&amp;rsquo;m starting off the new year by learning something new. I am a big fan of non-traditional education, and Coursera is a platform I&amp;rsquo;ve used a few times before. You may not get courses that qualify as university credit, but I&amp;rsquo;ve found it to be a useful resource for learning. I might be biased (my university degree is in Economics, which I&amp;rsquo;ve never used), but in some ways, I actually prefer a MOOC (that&amp;rsquo;s a Massively Open Online Course) to a typical formal university course for a few reasons:</description>
+      <description>
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/4KQ7OfVztCvpnOBfWcB1p1&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I&amp;rsquo;m starting off the new year by learning something new. I am a big fan of non-traditional education, and &lt;a href=&#34;https://coursera.org&#34;&gt;Coursera&lt;/a&gt; is a platform I&amp;rsquo;ve used a few times before. You may not get courses that qualify as university credit, but I&amp;rsquo;ve found it to be a useful resource for learning. I might be biased (my university degree is in Economics, which I&amp;rsquo;ve never used), but in some ways, I actually prefer a MOOC (that&amp;rsquo;s a Massively Open Online Course) to a typical formal university course for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MOOCs are entirely online, which means it&amp;rsquo;s more accessible - I don&amp;rsquo;t need to physically be in the US to take a course at Harvard&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MOOCs are usually self-paced - perfect for someone working full-time like me&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MOOCs are free or cheap - no huge student loans here; MOOCs are democratizing education and making it available to more people&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Good online education tends to be more practical. There is none of the intellectual posturing that I&amp;rsquo;ve seen in physical classrooms; there are no random classes you need to take to get a fancy piece of paper. I love being able to choose a topic and learn ONLY that&amp;ndash; and get right down to business in the first lesson.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Formal education is often centered around getting students jobs, not helping workers do their jobs well. I already have a job, and I want to learn real, usable skills, not &amp;ldquo;marketable&amp;rdquo; ones.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My main complaint with MOOCs was that they tend to be short (in comparison to a formal course), but Coursera has addressed that somewhat with their specializations. A specialization is a series of courses, but it&amp;rsquo;s more than just disparate courses that are strung together; it&amp;rsquo;s a thoughtfully designed curriculum that builds up on knowledge from previous courses. Last year, I began learning Python.&lt;/p&gt;
+&lt;p&gt;Why Python? Others might have different reasons, but here were mine:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Python is one of the best languages to learn for data analysis (the other being R). I&amp;rsquo;ve always been interested in data visualization, and as a load tester, I&amp;rsquo;m frequently exposed to large quantities of data that I somehow need to make sense of.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python is pretty good at retrieving data from websites, and I wanted to explore how good it is to use in load testing. I&amp;rsquo;m always eager to learn different ways to test, and I&amp;rsquo;ve wanted to try &lt;a href=&#34;https://locust.io/&#34;&gt;Locust&lt;/a&gt; for a while.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python is increasing in popularity, and I wanted to see why.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So I decided to take the &lt;a href=&#34;https://www.coursera.org/learn/python&#34;&gt;Python for Everybody Specialization&lt;/a&gt; from the University of Michigan (via Coursera) to get an introduction to this cool language. The specialization consists of five modules, each of which I had to take separately:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Programming for Everybody (Getting Started with Python)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python Data Structure&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using Python to Access Web Data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using Databases with Python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Capstone: Retrieving, Processing, and Visualizing Data with Python&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The specialization was really fun, and the teacher, Charles Severance, is fantastic. I&amp;rsquo;d taken courses from him before, so I knew what to expect. He didn&amp;rsquo;t disappoint. He has a way of explaining daunting technical concepts in a way that&amp;rsquo;s easy to digest for beginners.&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&#34;https://coursera.org/share/11534b2c1b88aa2ab1f0098ebbe32e18&#34;&gt;check out my certificate here&lt;/a&gt;. I&amp;rsquo;m pretty happy with my progress. I&amp;rsquo;m by no means a Python expert now, but I&amp;rsquo;m definitely eager to keep learning how to do more things with this new knowledge.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

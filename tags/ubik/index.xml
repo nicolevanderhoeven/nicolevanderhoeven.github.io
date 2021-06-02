@@ -14,9 +14,64 @@
       <pubDate>Wed, 22 Jul 2020 22:49:15 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20200722-aaf18/</guid>
-      <description>Originally posted here.
-In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;   Or listen to the audio version here:
- HTTP Live Streaming (HLS) and performance One of the most popular protocols for video streaming is HTTP Live Streaming, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8). According to the HLS protocol, when a video is streamed, the first request sent must be a manifest.</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-18-how-do-i-load-test-video-streaming-with-jmeter-video&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-18-how-do-i-load-test-video-streaming-with-jmeter-video&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this video, I answer the question: &amp;ldquo;How do I load test video streaming with JMeter?&amp;rdquo;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Q00briuogto&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Or listen to the audio version here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/69F5lmOeFfEJr6ZgVWFGOu&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;http-live-streaming-hls-and-performance&#34;&gt;HTTP Live Streaming (HLS) and performance&lt;/h2&gt;
+&lt;p&gt;One of the most popular protocols for video streaming is &lt;a href=&#34;https://developer.apple.com/streaming/examples/&#34;&gt;HTTP Live Streaming&lt;/a&gt;, or HLS, and that&amp;rsquo;s what I&amp;rsquo;m going to show you today. An HLS video ends with the [file extension .m3u8‍](&lt;a href=&#34;https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8%5D(https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8)&#34;&gt;https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8](https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8)&lt;/a&gt;. According to the HLS protocol, when a video is streamed, the first request sent must be a manifest. A manifest is sometimes called a playlist, and it is a list of all the chunks or parts that make up the video. Then, each chunk is downloaded.&lt;/p&gt;
+&lt;p&gt;To assess the performance of a video stream, we still want the response time of the manifest, the chunks, and the whole video. However, there are many more metrics that are important in video streaming which aren&amp;rsquo;t captured by just the response time. For example, how do you determine whether a video was played smoothly or if it stopped to buffer? A video that keeps pausing might just drive a user away, and it&amp;rsquo;s difficult to tell whether that is happening just from the response time.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-load-test-video-streaming-with-jmeter&#34;&gt;How to load test video streaming with JMeter&lt;/h2&gt;
+&lt;h3 id=&#34;downloading-and-installing-the-ubik-video-streaming-plugin&#34;&gt;Downloading and installing the Ubik Video Streaming plugin&lt;/h3&gt;
+&lt;p&gt;Luckily, there&amp;rsquo;s a plugin for that, created by a company called Ubik Ingénierie. The &lt;a href=&#34;https://ubikloadpack.com/&#34;&gt;Ubik Load Pack&lt;/a&gt; is a set of enterprise-grade plugins for JMeter. One of those plugins is a &lt;a href=&#34;https://ubikloadpack.com/video-streaming-performance.php&#34;&gt;Video Streaming Plugin&lt;/a&gt;, and it happens to be a really easy way to get started with video streaming. This is a paid plugin, but you can &lt;a href=&#34;https://ubikloadpack.com/video-streaming-performance.php#formulaire&#34;&gt;sign up for a free 11-day trial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you do that, you&amp;rsquo;ll get an email from Ubik with a link to download the bundle. Go to lib/ext and then copy this .jar file into the same directory on your JMeter installation. Start up JMeter, and it&amp;rsquo;ll ask you for the license file. Browse to the license file in the bundle you downloaded. JMeter will restart.&lt;/p&gt;
+&lt;h3 id=&#34;using-the-jmeter-plugin-in-your-load-testing-script&#34;&gt;Using the JMeter plugin in your load testing script&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s start creating the Test Plan. Create a Thread group, and then right click on the thread group, go to Add &amp;gt; Sampler and then select the &amp;ldquo;ULP Video Streaming sampler&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Click on the sampler and then paste in the URL to the HLS file that you&amp;rsquo;d like to test. This should end in a .m3u8. This plugin supports several protocols for video streaming, but we can just leave it at auto and it&amp;rsquo;ll automatically detect which one it is.&lt;/p&gt;
+&lt;p&gt;In Play Options, you can choose whether to play the entire video or just a part of it, or even whether you want to include the video subtitles in your test.&lt;/p&gt;
+&lt;p&gt;This Network Options panel is fantastic because it allows you to limit your network speed. Slow networks, like mobile networks, really affect user experience, so it&amp;rsquo;s really important to take this into account when running load tests. You might even use a parameter here and do something like throttle to 3G speeds for 80% of your traffic, and leave it on Auto 20% of the time. But I&amp;rsquo;ll just leave this blank for now.&lt;/p&gt;
+&lt;p&gt;Next, let&amp;rsquo;s add a View Results Tree listener. Then, let&amp;rsquo;s run the script once, just to see if it works.&lt;/p&gt;
+&lt;p&gt;As you can see, we can see the manifest retrieved first, and then all the chunks. We didn&amp;rsquo;t get any errors, so let&amp;rsquo;s run this as a load test. We can disable this listener because it just consumes extra resources on our load generator.&lt;/p&gt;
+&lt;h3 id=&#34;ramping-up-your-load-test-on-flood&#34;&gt;Ramping up your load test on Flood&lt;/h3&gt;
+&lt;p&gt;To ramp this up into a load test, we&amp;rsquo;ll have to go into Thread Group and change these settings. Ideally, we want to be able to change these values from the Flood UI later so we don&amp;rsquo;t have to go into the script whenever we change them, so I&amp;rsquo;ll type in these Flood-specific properties. I&amp;rsquo;ll leave a link in the description about these properties. I&amp;rsquo;ll also set it to run Forever so that we can change the duration and the video will just keep playing to fill that duration.&lt;/p&gt;
+&lt;p&gt;To capture some of Ubik&amp;rsquo;s cool metrics, let&amp;rsquo;s add a Simple Data Writer listener here and write the results to a CSV file. On Flood, all flood results are stored on /data/flood/results, so we&amp;rsquo;ll add an output.csv file in that directory that we can download after the test.&lt;/p&gt;
+&lt;p&gt;So that&amp;rsquo;s our script! Now we&amp;rsquo;ll have to include the plugin and related files so that Flood can access them as well.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s go back to the bundle we downloaded and go to the bin folder to look for &lt;a href=&#34;http://user.properties/&#34;&gt;user.properties&lt;/a&gt;. Let&amp;rsquo;s open that up, and we&amp;rsquo;ll change the license path to &lt;code&gt;/data/flood/files&lt;/code&gt;, which is the directory that Flood saves files we upload to. To preserve this directory structure, we&amp;rsquo;ll compress just the lib and bin folders.&lt;/p&gt;
+&lt;p&gt;On Flood, we&amp;rsquo;ll start a new stream here and upload three things: the jmx script, the license, and the compressed archive of the lib and bin folders from the bundle.&lt;/p&gt;
+&lt;p&gt;Then we&amp;rsquo;ll go through the rest of the process here, setting the test parameters. Time to launch the test!&lt;/p&gt;
+&lt;h3 id=&#34;analyzing-video-streaming-load-test-results&#34;&gt;Analyzing video streaming load test results&lt;/h3&gt;
+&lt;p&gt;Flood shows you results of your load test while it&amp;rsquo;s running as well as after the test. You can see metrics like concurrency, network throughput, transaction rate, and response time for the test. You can also see these metrics for each individual transaction, including the video or sampler as a whole, the manifest, and the chunks.&lt;/p&gt;
+&lt;p&gt;To see the CSV that our script generated, we can download the Archived Results from a flood.&lt;/p&gt;
+&lt;p&gt;In JMeter, click on Tools &amp;gt; Generate Report and fill in the fields, selecting the output.csv from the flood&amp;rsquo;s Archived Results, JMeter&amp;rsquo;s &lt;a href=&#34;http://user.properties&#34;&gt;user.properties&lt;/a&gt; file, and then an output directory for the report.&lt;/p&gt;
+&lt;p&gt;Ubik&amp;rsquo;s plugin creates a few custom graphs in the HTML report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Buffer fill in Millis&lt;/li&gt;
+&lt;li&gt;Lag ratio in percentage&lt;/li&gt;
+&lt;li&gt;Lag ratio without buffer fill in percentage&lt;/li&gt;
+&lt;li&gt;Lag time in Millis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using Ubik&amp;rsquo;s Video Streaming plugin is an easy and thorough way to load test video streaming with JMeter, and I highly recommend it. I used an HLS video to demonstrate it, but this plugin supports several protocols:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HLS&lt;/li&gt;
+&lt;li&gt;Mpeg DASH&lt;/li&gt;
+&lt;li&gt;Smooth&lt;/li&gt;
+&lt;li&gt;Adobe HDS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, read Ubik&amp;rsquo;s tutorial on how to use their plugin with Flood &lt;a href=&#34;https://www.flood.io/blog/running-a-video-streaming-performance-test-using-flood-io-and-ubikloadpack&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

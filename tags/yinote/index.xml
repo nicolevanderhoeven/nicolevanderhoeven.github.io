@@ -14,8 +14,62 @@
       <pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid>
-      <description>Listen to the audio version of this blog post here:
- I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended this very excellent video by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.</description>
+      <description>&lt;p&gt;Listen to the audio version of this blog post here:&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href=&#34;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy&#34;&gt;this very excellent video&lt;/a&gt; by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p&gt;
+&lt;p&gt;Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;install-yinote-chrome-extension&#34;&gt;Install YiNote Chrome extension&lt;/h2&gt;
+&lt;p&gt;I use a free app called &lt;a href=&#34;https://yinote.co/&#34;&gt;YiNote&lt;/a&gt; to take video notes in particular.  I use &lt;a href=&#34;https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf&#34;&gt;their Chrome extension&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;take-notes&#34;&gt;Take Notes&lt;/h2&gt;
+&lt;p&gt;I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like while taking notes:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;export-yinote-notes&#34;&gt;Export YiNote notes&lt;/h2&gt;
+&lt;p&gt;After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p&gt;
+&lt;p&gt;I click the Export as Markdown button.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That lets me save a &lt;code&gt;.md&lt;/code&gt; file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p&gt;
+&lt;h2 id=&#34;run-reformatter-script&#34;&gt;Run reformatter script&lt;/h2&gt;
+&lt;p&gt;This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/#installation&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- # &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:19&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
+
+The scheduler is what makes sure the Goroutines run concurrently.
+
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:29&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p&gt;
+&lt;p&gt;So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p&gt;
+
+
+&lt;script src=&#34;https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The script results in an output file that is better formatted for Roam.&lt;/p&gt;
+&lt;h2 id=&#34;import-resulting-file-to-roam&#34;&gt;Import resulting file to Roam&lt;/h2&gt;
+&lt;p&gt;On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

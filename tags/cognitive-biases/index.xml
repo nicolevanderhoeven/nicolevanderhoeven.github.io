@@ -14,10 +14,39 @@
       <pubDate>Wed, 03 Apr 2019 23:14:31 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</guid>
-      <description>Originally posted here.
-Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.
-In this year’s TestCon conference, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.
-In the talk, I discuss:</description>
+      <description>
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://testconf.ru/2019/en/nicole-van-der-hoeven/index.html&#34;&gt;this year’s TestCon conference&lt;/a&gt;, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.&lt;/p&gt;
+&lt;p&gt;In the talk, I discuss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;two types of thinking: fast thinking and slow thinking (from Daniel Kahneman&amp;rsquo;s book &lt;a href=&#34;https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to influence the sentence duration that judges give perpetrators&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what cognitive biases are and how they can affect performance testing results&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a real-life production incident that occurred on Flood and how our team&amp;rsquo;s cognitive biases got in the way of its resolution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what to do to avoid cognitive biases when testing software&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the video of my full talk:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GPD8F0e7eX8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Download the presentation &lt;a href=&#34;https://nicolevanderhoeven.github.io/assets/20190403-01.pdf&#34;&gt;in PDF format&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

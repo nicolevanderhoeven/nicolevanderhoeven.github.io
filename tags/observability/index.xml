@@ -14,7 +14,13 @@
       <pubDate>Fri, 28 May 2021 23:24:48 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210528-koh-odysseas/</guid>
-      <description>This week, we had Odysseas Lamtzidis on the show to talk about Netdata, which is an application performance monitoring tool that prides itself on having the easiest setup ever. Odysseas admitted that it might not have all the bells and whistles of other monitoring platforms, it Just Works. I see this as being very interesting especially for testers like me, who just want to have something set up but might not want to be bothered by the implementation.</description>
+      <description>&lt;p&gt;This week, we had &lt;a href=&#34;https://twitter.com/odysseas_lam&#34;&gt;Odysseas Lamtzidis&lt;/a&gt; on the show to talk about &lt;a href=&#34;https://netdata.cloud&#34;&gt;Netdata&lt;/a&gt;, which is an application performance monitoring tool that prides itself on having the easiest setup ever. Odysseas admitted that it might not have all the bells and whistles of other monitoring platforms, it Just Works. I see this as being very interesting especially for testers like me, who just want to have something set up but might not want to be bothered by the implementation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Y2dVJssTemI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -23,9 +29,14 @@
       <pubDate>Fri, 14 May 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</guid>
-      <description>We were happy to welcome Nočnica Fee from New Relic to k6 Office Hours. She very bravely volunteered to learn how to use k6&amp;ndash; live! Talk about pressure. But she handled it like a champ!
-We also talked about why observability is both particularly important and particularly difficult in serverless architecture. There will definitely be a part two at some point!
-  </description>
+      <description>&lt;p&gt;We were happy to welcome &lt;a href=&#34;https://www.twitch.tv/serverlessmom&#34;&gt;Nočnica Fee&lt;/a&gt; from &lt;a href=&#34;https://www.twitch.tv/new_relic&#34;&gt;New Relic&lt;/a&gt; to k6 Office Hours. She very bravely volunteered to learn how to use k6&amp;ndash; live! Talk about pressure. But she handled it like a champ!&lt;/p&gt;
+&lt;p&gt;We also talked about why observability is both particularly important and particularly difficult in serverless architecture. There will definitely be a part two at some point!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6oMmRiXzvFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -34,8 +45,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 30 Apr 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</guid>
-      <description>Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with xk6-chaos and k6, and observability with New Relic.
-  </description>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with &lt;a href=&#34;https://github.com/simskij/xk6-chaos&#34;&gt;xk6-chaos&lt;/a&gt; and k6, and observability with &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -44,8 +60,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 12 Mar 2021 21:53:09 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210312-k6-office-hours05/</guid>
-      <description>Our first repeat guest, Daniel González Lopes, also from k6, joined us today to talk about how to use observability in conjunction with load testing. We talked about the differences between metrics, logs, and traces, and how to implemented distributed tracing.
-  </description>
+      <description>&lt;p&gt;Our first repeat guest, Daniel González Lopes, also from &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, joined us today to talk about how to use observability in conjunction with load testing. We talked about the differences between metrics, logs, and traces, and how to implemented distributed tracing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ADkd18AdaEA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -54,8 +75,13 @@ We also talked about why observability is both particularly important and partic
       <pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</guid>
-      <description>For this week&amp;rsquo;s Office Hours, Simme and I invited Gary Spencer from New Relic to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.
-  </description>
+      <description>&lt;p&gt;For this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I invited &lt;a href=&#34;https://twitter.com/gspncr&#34;&gt;Gary Spencer&lt;/a&gt; from &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt; to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TbRVFTXGUPU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
   </channel>

@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 01 Jun 2021 23:27:59 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Jun 2021 00:27:59 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Downloading files uploaded to Roam Research for use with Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</link>
-      <pubDate>Tue, 01 Jun 2021 23:27:59 +0200</pubDate>
+      <pubDate>Wed, 02 Jun 2021 00:27:59 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</guid>
       <description>If you&amp;rsquo;ve recently transitioned from Roam Research to Obsidian, you might run into a few issues, even after you&amp;rsquo;ve run the &amp;ldquo;Markdown format importer&amp;rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to Google Firebase.

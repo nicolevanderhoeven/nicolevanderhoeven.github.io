@@ -7,13 +7,76 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 09 Jun 2021 22:23:19 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jun 2021 22:38:52 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>accessibility</title>
+      <link>https://nicolevanderhoeven.github.io/tags/accessibility/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/accessibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diversity</title>
+      <link>https://nicolevanderhoeven.github.io/tags/diversity/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/diversity/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Wed, 09 Jun 2021 22:23:19 +0200</pubDate>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inclusion</title>
+      <link>https://nicolevanderhoeven.github.io/tags/inclusion/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/inclusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k6 Office Hours</title>
+      <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k6.io</title>
+      <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
+      <pubDate>Fri, 11 Jun 2021 22:38:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
       <description></description>
     </item>
     
@@ -27,47 +90,11 @@
     </item>
     
     <item>
-      <title>video</title>
-      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Wed, 09 Jun 2021 22:23:19 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>go</title>
       <link>https://nicolevanderhoeven.github.io/tags/go/</link>
       <pubDate>Sat, 05 Jun 2021 22:28:29 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k6 Office Hours</title>
-      <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Sat, 05 Jun 2021 22:28:29 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k6.io</title>
-      <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Sat, 05 Jun 2021 22:28:29 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>performance</title>
-      <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
-      <pubDate>Sat, 05 Jun 2021 22:28:29 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
       <description></description>
     </item>
     
@@ -140,15 +167,6 @@
       <pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diversity</title>
-      <link>https://nicolevanderhoeven.github.io/tags/diversity/</link>
-      <pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/diversity/</guid>
       <description></description>
     </item>
     
@@ -293,15 +311,6 @@
       <pubDate>Fri, 12 Mar 2021 21:57:56 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/travel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>accessibility</title>
-      <link>https://nicolevanderhoeven.github.io/tags/accessibility/</link>
-      <pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/accessibility/</guid>
       <description></description>
     </item>
     
@@ -599,15 +608,6 @@
       <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/identity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>inclusion</title>
-      <link>https://nicolevanderhoeven.github.io/tags/inclusion/</link>
-      <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/inclusion/</guid>
       <description></description>
     </item>
     

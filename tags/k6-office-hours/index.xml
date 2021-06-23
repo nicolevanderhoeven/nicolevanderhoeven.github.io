@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 11 Jun 2021 22:38:52 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jun 2021 22:26:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 is part of Grafana Labs! AMA with CEO Robin Gustafsson (k6 Office Hours #17)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210618-koh-with-robin-grafana/</link>
+      <pubDate>Fri, 18 Jun 2021 22:26:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210618-koh-with-robin-grafana/</guid>
+      <description>&lt;p&gt;On this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I were joined by &lt;a href=&#34;https://www.linkedin.com/in/robinegustafsson/&#34;&gt;Robin Gustafsson&lt;/a&gt;, the CEO of k6, to make a big announcement: k6 has been acquired by Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RrDo2wMeV80&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The folks at Grafana Labs have been fans of k6 for a while, and we&amp;rsquo;ve been fans (and users) of their work since almost the beginning of k6. While a surprise to many, Grafana and k6 together is a combination that makes sense.&lt;/p&gt;
+&lt;p&gt;Read &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;Grafana&amp;rsquo;s press release here&lt;/a&gt; to hear more about this milestone.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Accessibility and open source support program with Floor Drees (k6 Office Hours #16)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210611-koh-with-floor/</link>

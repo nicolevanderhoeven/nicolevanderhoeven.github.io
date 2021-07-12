@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Load testing and Azure DevOps with José Luis Latorre Millas (k6 Office Hours #20) | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Load testing and Azure DevOps with José Luis Latorre Millas (k6 Office Hours #20)" />
+<meta property="og:description" content="José Luis Latorre Millas, Developer Community Lead and Software Architect at Swiss Life AG, joined Simme and me on k6 Office Hours to talk about how he personally uses k6 with Azure DevOps to add load testing to his team&rsquo;s CI/CD pipeline.
+I got to know José from the k6 Community Slack workspace when he mentioned that he would be presenting on k6 in a few meetups. I went to his livestream with CrossDvlUp (Spanish) and enjoyed his approach, so I knew I wanted to have him on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210709-koh-jose/" />
+<meta property="article:published_time" content="2021-07-09T21:08:36+02:00" />
+<meta property="article:modified_time" content="2021-07-09T21:08:36+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Load testing and Azure DevOps with José Luis Latorre Millas (k6 Office Hours #20)"/>
+<meta name="twitter:description" content="José Luis Latorre Millas, Developer Community Lead and Software Architect at Swiss Life AG, joined Simme and me on k6 Office Hours to talk about how he personally uses k6 with Azure DevOps to add load testing to his team&rsquo;s CI/CD pipeline.
+I got to know José from the k6 Community Slack workspace when he mentioned that he would be presenting on k6 in a few meetups. I went to his livestream with CrossDvlUp (Spanish) and enjoyed his approach, so I knew I wanted to have him on."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210702-koh-raj-robin/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&text=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&is_video=false&description=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&name=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29&description=Jos%c3%a9%20Luis%20Latorre%20Millas%2c%20Developer%20Community%20Lead%20and%20Software%20Architect%20at%20Swiss%20Life%20AG%2c%20joined%20Simme%20and%20me%20on%20k6%20Office%20Hours%20to%20talk%20about%20how%20he%20personally%20uses%20k6%20with%20Azure%20DevOps%20to%20add%20load%20testing%20to%20his%20team%26rsquo%3bs%20CI%2fCD%20pipeline.%0aI%20got%20to%20know%20Jos%c3%a9%20from%20the%20k6%20Community%20Slack%20workspace%20when%20he%20mentioned%20that%20he%20would%20be%20presenting%20on%20k6%20in%20a%20few%20meetups.%20I%20went%20to%20his%20livestream%20with%20CrossDvlUp%20%28Spanish%29%20and%20enjoyed%20his%20approach%2c%20so%20I%20knew%20I%20wanted%20to%20have%20him%20on.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&t=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Load testing and Azure DevOps with José Luis Latorre Millas (k6 Office Hours #20)
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-07-09 21:08:36 &#43;0200 CEST" itemprop="datePublished">2021-Jul-09</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6-office-hours" rel="tag">k6 office hours</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/azure-devops" rel="tag">azure devops</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/continuous-testing" rel="tag">continuous testing</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>José Luis Latorre Millas, Developer Community Lead and Software Architect at Swiss Life AG, joined <a href="https://simme.dev">Simme</a> and me on k6 Office Hours to talk about how he personally uses k6 with Azure DevOps to add load testing to his team&rsquo;s CI/CD pipeline.</p>
+<p>I got to know José from the k6 Community Slack workspace when he mentioned that he would be presenting on k6 in a few meetups. I went to <a href="https://www.youtube.com/watch?v=HITJg03AQFo&amp;t=112s">his livestream with CrossDvlUp</a> (Spanish) and enjoyed his approach, so I knew I wanted to have him on. It&rsquo;s always great to have real users of k6 (both of the OSS and the commercial Cloud option) talk about how they personally use k6 and even what they found lacking in the tool.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vC2pKgVFxt8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>José&rsquo;s multi-scenario template repo: <a href="https://github.com/SwissLife-OSS/K6-MultiScenario-template">https://github.com/SwissLife-OSS/K6-MultiScenario-template</a></p>
+<p>Register to watch José&rsquo;s talk at Azure Summit 2021, later this year: <a href="https://azuresummit.live/speaker/jose-luis-latorre-millas/">https://azuresummit.live/speaker/jose-luis-latorre-millas/</a></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&text=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&is_video=false&description=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&title=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&name=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29&description=Jos%c3%a9%20Luis%20Latorre%20Millas%2c%20Developer%20Community%20Lead%20and%20Software%20Architect%20at%20Swiss%20Life%20AG%2c%20joined%20Simme%20and%20me%20on%20k6%20Office%20Hours%20to%20talk%20about%20how%20he%20personally%20uses%20k6%20with%20Azure%20DevOps%20to%20add%20load%20testing%20to%20his%20team%26rsquo%3bs%20CI%2fCD%20pipeline.%0aI%20got%20to%20know%20Jos%c3%a9%20from%20the%20k6%20Community%20Slack%20workspace%20when%20he%20mentioned%20that%20he%20would%20be%20presenting%20on%20k6%20in%20a%20few%20meetups.%20I%20went%20to%20his%20livestream%20with%20CrossDvlUp%20%28Spanish%29%20and%20enjoyed%20his%20approach%2c%20so%20I%20knew%20I%20wanted%20to%20have%20him%20on.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210709-koh-jose%2f&t=Load%20testing%20and%20Azure%20DevOps%20with%20Jos%c3%a9%20Luis%20Latorre%20Millas%20%28k6%20Office%20Hours%20%2320%29">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

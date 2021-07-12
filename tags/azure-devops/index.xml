@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azure devops on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/azure-devops/</link>
+    <description>Recent content in azure devops on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 09 Jul 2021 21:08:36 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/azure-devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load testing and Azure DevOps with José Luis Latorre Millas (k6 Office Hours #20)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210709-koh-jose/</link>
+      <pubDate>Fri, 09 Jul 2021 21:08:36 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210709-koh-jose/</guid>
+      <description>&lt;p&gt;José Luis Latorre Millas, Developer Community Lead and Software Architect at Swiss Life AG, joined &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and me on k6 Office Hours to talk about how he personally uses k6 with Azure DevOps to add load testing to his team&amp;rsquo;s CI/CD pipeline.&lt;/p&gt;
+&lt;p&gt;I got to know José from the k6 Community Slack workspace when he mentioned that he would be presenting on k6 in a few meetups. I went to &lt;a href=&#34;https://www.youtube.com/watch?v=HITJg03AQFo&amp;amp;t=112s&#34;&gt;his livestream with CrossDvlUp&lt;/a&gt; (Spanish) and enjoyed his approach, so I knew I wanted to have him on. It&amp;rsquo;s always great to have real users of k6 (both of the OSS and the commercial Cloud option) talk about how they personally use k6 and even what they found lacking in the tool.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vC2pKgVFxt8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;José&amp;rsquo;s multi-scenario template repo: &lt;a href=&#34;https://github.com/SwissLife-OSS/K6-MultiScenario-template&#34;&gt;https://github.com/SwissLife-OSS/K6-MultiScenario-template&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Register to watch José&amp;rsquo;s talk at Azure Summit 2021, later this year: &lt;a href=&#34;https://azuresummit.live/speaker/jose-luis-latorre-millas/&#34;&gt;https://azuresummit.live/speaker/jose-luis-latorre-millas/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

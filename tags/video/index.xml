@@ -7,7 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 09 Jul 2021 21:08:36 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jul 2021 18:23:33 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A tester&#39;s overview of Grafana Labs open-source projects</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210719-grafana-labs-overview/</link>
+      <pubDate>Mon, 19 Jul 2021 18:23:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210719-grafana-labs-overview/</guid>
+      <description>&lt;p&gt;Since the acquisition of k6 by Grafana Labs, the entire k6 team has been absorbed into the new, larger team that we&amp;rsquo;re suddenly a part of. Grafana Labs maintains a lot of projects, so I was very quickly overwhelmed with things to learn about all of them. Here&amp;rsquo;s my attempt to make sense of the Grafana Labs landscape, and perhaps it can help some of you as well:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_DB-lNZW7LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Shopping at Bicester Village and welcome my niece to her new home | London, England (Lucky Dippers)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210716-bicester-village/</link>
+      <pubDate>Fri, 16 Jul 2021 18:38:17 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210716-bicester-village/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a fun little vlog that I&amp;rsquo;ve been meaning to make of the last trip my husband Rob and I took before the pandemic. In January 2020, we went to see my cousin and her daughter (my &amp;ldquo;niece&amp;rdquo;, whom I grew up with) in London. My niece, Steffi, had just arrived in London for some studies abroad (she normally lives in the Philippines), so Rob and I popped over to meet up with her and help her settle in.&lt;/p&gt;
+&lt;p&gt;Poor thing&amp;ndash; not a month after Steffi got to London, news of the pandemic began to spread. Rob and I had intended to visit her again, but of course that didn&amp;rsquo;t happen.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fQf7niizW_Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to run distributed load tests with k6 Operator (k6 Office Hours #21)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210716-koh-k6-operator/</link>
+      <pubDate>Fri, 16 Jul 2021 18:17:13 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210716-koh-k6-operator/</guid>
+      <description>&lt;p&gt;In this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I talked about the &lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 Operator&lt;/a&gt;, which is a open-source project that Simme created for distributed load testing with k6.&lt;/p&gt;
+&lt;p&gt;k6 Cloud already offers a no-hassle distributed load testing experience, but for those who prefer to use their own infrastructure, k6 Operator allows the setup of a k6 test as a custom resource object that can be deployed along with a Kubernetes cluster.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KPyI8rM3LvE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to add performance testing to CI/CD pipelines using k6 and GitHub Actions</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210712-github-actions/</link>
+      <pubDate>Mon, 12 Jul 2021 22:26:20 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210712-github-actions/</guid>
+      <description>&lt;p&gt;Continuous testing means verifying and improving software quality at all stages, including development. It can sound like something only large companies do, but it&amp;rsquo;s an approach I use even for this personal blog that you&amp;rsquo;re reading this on.&lt;/p&gt;
+&lt;p&gt;Every new blog post or change I make to this site automatically triggers the execution of a small test. This test, when run over time, lets me see whether changes I&amp;rsquo;ve made have been detrimental to site performance. Here&amp;rsquo;s a video on my setup:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GzR2Z25-Yqo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Load testing and Azure DevOps with José Luis Latorre Millas (k6 Office Hours #20)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210709-koh-jose/</link>
@@ -38,6 +101,27 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/sfWIB-myito&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>What you need to know about Grafana Labs&#39;s acquisition of k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210630-gl-acquisition/</link>
+      <pubDate>Wed, 30 Jun 2021 18:29:24 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210630-gl-acquisition/</guid>
+      <description>&lt;p&gt;Recently, during Grafanaconline 2021, &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;Grafana Labs CEO Raj Dutt announced&lt;/a&gt; the acquisition of k6&amp;ndash; the company I work for. What does this mean? Here&amp;rsquo;s a video I made to explain it all:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/t1agJsLwrGE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I have also discussed the acquisition twice on k6 Office Hours:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RrDo2wMeV80&#34;&gt;once with our CEO, Robin Gustafsson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and another time with &lt;a href=&#34;https://www.youtube.com/watch?v=sfWIB-myito&#34;&gt;both Robin and Raj, Grafana Labs CEO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TL;DW: We unanimously agree it&amp;rsquo;s a positive thing. I myself am cautiously optimistic about the future of both k6 and Grafana Labs.&lt;/p&gt;
 </description>
     </item>
     

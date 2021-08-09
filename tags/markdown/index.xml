@@ -7,7 +7,134 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 02 Mar 2021 19:07:31 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 17:46:51 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I use Obsidian for D&amp;D - Player&#39;s Edition</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</link>
+      <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve previously written about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210518-how-i-use-obsidian-at-work/&#34;&gt;how I use Obsidian for work&lt;/a&gt;, and I&amp;rsquo;ve also talked about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20201214-roam-for-dnd/&#34;&gt;how I use Roam Research for D&amp;amp;D&lt;/a&gt;. Shortly after the latter post, however, I moved to Obsidian. That was six months ago, so I thought it was time for an update.&lt;/p&gt;
+&lt;h2 id=&#34;before-the-game&#34;&gt;Before the game&lt;/h2&gt;
+&lt;h3 id=&#34;world&#34;&gt;World&lt;/h3&gt;
+&lt;p&gt;My World page is the main jumping-off point for all my notes for a specific campaign, and each campaign gets one. It contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The main locations in the world&lt;/li&gt;
+&lt;li&gt;The player characters, and links to their individual pages with information about what my character knows or thinks of them&lt;/li&gt;
+&lt;li&gt;A link to Open Loops (Quests and Questions and Agenda, as discussed below)&lt;/li&gt;
+&lt;li&gt;The list of all the sessions I&amp;rsquo;ve played for the campaign&lt;/li&gt;
+&lt;li&gt;Campaign-specific house rules that the DM has introduced&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/world-page.png&#34; alt=&#34;The World page for my Forgotten Realms campaign&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;quests-and-questions&#34;&gt;Quests and Questions&lt;/h3&gt;
+&lt;p&gt;I like to play high-intelligence characters, so I like to keep track of unanswered questions and other adventure hooks my DM has dropped that the party hasn&amp;rsquo;t quite gotten around to resolving yet. Some of them are critical quest or story arcs, and others are random tidbits of information that NPCs have mentioned. I organize them by location, and then by quest, so that it&amp;rsquo;s easy to follow a thread depending on where the party is or how much downtime we have. Here&amp;rsquo;s an example of that page:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/quests-and-questions.png&#34; alt=&#34;Quests and Questions page&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
+&lt;p&gt;While the Quests and Questions page records unfinished business that my character is actively thinking about but may not quite know how to explore yet, my Agenda page is where I write down specific tasks. I loosely follow the &lt;a href=&#34;https://gettingthingsdone.com/&#34;&gt;Getting Things Done&lt;/a&gt; methodology and divide this page into Next Actions and Waiting For. I group tasks by person and/or by location.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Agenda-sample.png&#34; alt=&#34;Agenda page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I use the Obsidian &lt;a href=&#34;https://github.com/DahaWong/obsidian-completed-area&#34;&gt;Completed Area plugin&lt;/a&gt; so that hitting a CTRL + ENTER on a task automatically checks it and then moves that task to a separate Completed section at the bottom of the note. This helps me keep the agenda clean and relevant.&lt;/p&gt;
+&lt;h2 id=&#34;during-a-game&#34;&gt;During a game&lt;/h2&gt;
+&lt;h3 id=&#34;workspace&#34;&gt;Workspace&lt;/h3&gt;
+&lt;p&gt;One of the best parts about Obsidian is that it allows me to save and load custom workspaces. This is useful because I use Obsidian for work as well as play, so I can set up the two workspaces differently. I also DM one campaign and play in another, and I have a workspace for each of them because I need different information available to me. The workspace features lets me customize my dashboard. Here&amp;rsquo;s what my workspace looks like for the 4e game that I play in:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Forgotten-Realms-workspace-in-Obsidian.png&#34; alt=&#34;My Forgotten Realms campaign workspace in Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;At the beginning of a game, I&amp;rsquo;ll create a new session page in the last pane, enter into it, and then stay in the workspace for the rest of the game. I have my character&amp;rsquo;s stats sheet handy (which I need to do manually since I haven&amp;rsquo;t found a D&amp;amp;D Beyond-like service for 4e) and all the powers and abilities I need to refer to.&lt;/p&gt;
+&lt;h3 id=&#34;session-template&#34;&gt;Session template&lt;/h3&gt;
+&lt;p&gt;I love Obsidian templates! I use templates for things like inserting an HP tracker with all my party&amp;rsquo;s names, their max HP, healing surges (4e); a defense table to keep track of a creature&amp;rsquo;s defenses (again, 4e); and campaign-specific session log formats.&lt;/p&gt;
+&lt;p&gt;At the beginning of the game, I&amp;rsquo;ll create a new page in the Session List, click into it, and insert a session log template (I have this hotkeyed to CMD+&lt;code&gt;;&lt;/code&gt;). Here&amp;rsquo;s what a fresh one looks like, in Edit mode:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/session-template-fresh.png&#34; alt=&#34;My session template, newly inserted&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I add metadata to every session so that I can query it later using the excellent &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Obsidian Dataview plugin&lt;/a&gt;, though I do this more often for the campaign I DM rather than the one I play in.&lt;/p&gt;
+&lt;p&gt;We usually do a recap at the beginning of the game, so I jump into the &lt;code&gt;Recap of the last session&lt;/code&gt; section and embed the summary from the previous session using &lt;code&gt; ![](/assets/86_20210717 Day 16 Hunting the Ice Phase Spider#^summary)&lt;/code&gt;, which pulls in the section marked with &lt;code&gt;^summary&lt;/code&gt; from the last session. That embeds just that portion of the last session in the current session, like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Recap.png&#34; alt=&#34;Session recap using block embed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This helps me get back up to speed quickly instead of doing the usual &amp;ldquo;Where were we again?&amp;rdquo; that takes up time.&lt;/p&gt;
+&lt;h3 id=&#34;hp-table&#34;&gt;HP table&lt;/h3&gt;
+&lt;p&gt;My character is a multiclassed healer, so it&amp;rsquo;s important for me to know who needs heals or other buffs. I keep track of this separately, and it helps out my DM as well because it&amp;rsquo;s easy to miss something in the excitement of a battle. I do include the HP table in my workspace, in Preview mode, but here&amp;rsquo;s what it looks like in Edit mode:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/HP-table.png&#34; alt=&#34;A table of the party&amp;rsquo;s HP, surges, and conditions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tables in Markdown can be a pain, but the &lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;Advanced Tables plugin&lt;/a&gt; goes a long way towards making this easier by adding some nice features like tabbing to the next cell, adding commands for inserting and deleting a column or row, and just automatically formatting a table so that it&amp;rsquo;s not a jumble of lines. I also heavily use this plugin for my characters stats and skills, both of which I keep in tables.&lt;/p&gt;
+&lt;h3 id=&#34;keeping-track-of-fights&#34;&gt;Keeping track of fights&lt;/h3&gt;
+&lt;p&gt;When a fight breaks out, I insert an intiative template, which is just a list of all the characters in the party:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;Initiative!
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Ka&amp;#39;ira
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Maestro
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Xio
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Eraithe
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Keren
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This makes it easier to add the initiative value rolled, as well as that of any other baddies we&amp;rsquo;re fighting. I use the &lt;a href=&#34;https://github.com/vslinko/obsidian-outliner&#34;&gt;Outliner plugin&lt;/a&gt; to be able to easily move people on the list up or down as needed without having to copy or paste. I have the shortcuts set to CMD+SHIFT+UP and CMD+SHIFT+DOWN so I don&amp;rsquo;t even need to use my mouse.&lt;/p&gt;
+&lt;p&gt;I also have a template for Defenses. D&amp;amp;D 4th Edition has four different kinds of defenses, and since my character&amp;rsquo;s powers target a few of them, I keep track of the defenses of each monster. Here&amp;rsquo;s what that template looks like, in Edit mode:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| Defense               | Value |
+| --------------------- | ----- |
+| [[Reflex Defense]]    |       |
+| [[Fortitude Defense]] |       |
+| [[Will Defense]]      |       |
+| [[Armor Class]]       |       |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;ll notice that I also link to the pages I have for each defense type, in case I need to remind myself which stat a defense is comprised of.&lt;/p&gt;
+&lt;h3 id=&#34;character-powers&#34;&gt;Character powers&lt;/h3&gt;
+&lt;p&gt;Like many, I have migrated from playing games on a literal tabletop to doing it virtually. These days, I play 100% online, using a bunch of different tools. For the most part, though, I still prefer to roll actual dice. There&amp;rsquo;s just something satisfying about the feel of a die in my hand. Since I switched to Obsidian, though, I have looked into virtual dice. On the off chance I don&amp;rsquo;t have any dice (ha) or all my dice have betrayed me (much more likely), I use the &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller plugin&lt;/a&gt;. It turns&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`dice: 1d20+7`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;into a random die roll. Here it is when incorporated into my character&amp;rsquo;s list of powers:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/powers-sample.png&#34; alt=&#34;My character&amp;rsquo;s powers page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes, when I&amp;rsquo;m feeling superstitious about my dice, I&amp;rsquo;ll switch to using this dice roller &amp;ldquo;just to be safe&amp;rdquo;. It has other cool features too, which I&amp;rsquo;ll cover more in detail in the Dungeon Master&amp;rsquo;s edition of this article.&lt;/p&gt;
+&lt;h3 id=&#34;search-linked-unlinked-mentions&#34;&gt;Search, linked, unlinked mentions&lt;/h3&gt;
+&lt;p&gt;Frequently, something comes up in a game that I&amp;rsquo;m &lt;em&gt;sure&lt;/em&gt; we&amp;rsquo;ve heard of before, but I can&amp;rsquo;t quite remember where or when. Actually, sometimes something comes up that I&amp;rsquo;m quite sure we&amp;rsquo;ve &lt;em&gt;never&lt;/em&gt; heard of before, but it turns out we have. Luckily, Obsidian is quick to tell me that using the linked/unlinked mentions and the search features.&lt;/p&gt;
+&lt;p&gt;Here are the mentions in my note for the word &amp;ldquo;Netheril&amp;rdquo;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Netheril-mentions.png&#34; alt=&#34;Linked mentioned for the word Netheril&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Unlinked mentions show up too, in case the word came up somewhere and I didn&amp;rsquo;t think to specifically create a page on it.&lt;/p&gt;
+&lt;p&gt;On monster pages, mentions remind me when we fought them last, and any tips for fighting them. It can be handy when one of the other players has forgotten something that happened to them, too. If I want to remember how Ka&amp;rsquo;ira got her festering wound, I can type it into the Obsidian search bar:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/festering-wound.png&#34; alt=&#34;A search in Obsidian for &amp;ldquo;festering wound&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;and be able to confidently say that Ka&amp;rsquo;ira got her last festering wound on session 68, in the Blue Crystal Fortress that we now know to be the Twisted Fane, while fighting aberrations.&lt;/p&gt;
+&lt;h2 id=&#34;after-a-game&#34;&gt;After a game&lt;/h2&gt;
+&lt;p&gt;I think I might use Obsidian even more between games than during the game, because after the game is when I process everything my character learned.&lt;/p&gt;
+&lt;h3 id=&#34;session-summary&#34;&gt;Session summary&lt;/h3&gt;
+&lt;p&gt;Immediately after the game is when I create a short session summary. I like to do this when the session is still fresh in my mind. Then, I add &lt;code&gt;^summary&lt;/code&gt; at the end of the paragraph to identify it and to be able to pull it into the next session&amp;rsquo;s recap. Block references and block embeds are some of my most frequently used Obsidian features.&lt;/p&gt;
+&lt;h3 id=&#34;creating-new-pages&#34;&gt;Creating new pages&lt;/h3&gt;
+&lt;p&gt;I then create new pages for any people, places, magical items, or events that we encountered. I like to use a standard frontmatter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+type: 
+location: [Neverwinter]
+world: &amp;quot;Forgotten Realms&amp;quot;
+campaign: &amp;quot;Order of the Wandering Mind&amp;quot;
+date: 2021-06-23
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s an example of the page for an NPC:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/npc-sample.png&#34; alt=&#34;An NPC page in my campaign&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If my DM has given us character art, I include it in the page.&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s an example of a page for a location:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/twisted-fane-location-example.png&#34; alt=&#34;Location page: Twisted Fane&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For this page, I used a plugin called &lt;a href=&#34;https://github.com/valentine195/obsidian-leaflet-plugin&#34;&gt;Obsidian Leaflet&lt;/a&gt;, which lets me add maps to my notes! In this case, my DM gave us this map of the structure as a guide, but during combats we didn&amp;rsquo;t use a map. To keep myself oriented between games, I added red pawprint pins where we had spotted or fought monsters, green thumbtacks to mark where we&amp;rsquo;d ended sessions, and green markers where we had spotted allies. I also like to add links to monsters or sessions on the pins/markers so that I can jump to those pages quickly if I need to.&lt;/p&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
+&lt;p&gt;To keep historical events straight in my head, especially since we tend to discover them out of sequence, I use the &lt;a href=&#34;https://github.com/Darakah/obsidian-timelines&#34;&gt;Obsidian Timelines plugin&lt;/a&gt;, which lets me create pages like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-timeline-for-dnd.png&#34; alt=&#34;Obsidian Timeline in my game&#34;&gt;&lt;/p&gt;
+&lt;p&gt;by using this code in the timeline page:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```timeline
+fr
+\```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(without the backtick) and this for every event that I want to include:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
+date: [2021-06-23]
+tags: [timeline, fr]
+---
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; 
+	  &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ob-timelines&amp;#39;&lt;/span&gt; 
+	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-date&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt; 
+	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Xionerys is born&amp;#39;&lt;/span&gt; 
+	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;orange&amp;#39;&lt;/span&gt; 
+          &lt;span style=&#34;color:#a6e22e&#34;&gt;data-img &lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;assets/xionerys.jpg&amp;#39;&lt;/span&gt; 
+	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;range&amp;#39;&lt;/span&gt; 
+	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-end&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt;&amp;gt; 
+	Xionerys is born in Calimshan.
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Using this method, I&amp;rsquo;ve been able to call out discrepancies in what two different NPCs told us and figure out that one was lying&amp;ndash; or at least misinformed.&lt;/p&gt;
+&lt;h3 id=&#34;replace-all&#34;&gt;Replace all&lt;/h3&gt;
+&lt;p&gt;When I inevitably get a fantasy name wrong, having pages as flat .md files is great because I can do a find and replace on ALL mentions of a certain NPC name/place I&amp;rsquo;ve misspelled (those fantasy names!). I do this with my usual code/text editor, VSCode, just because I usually already have it up, but you can do it using terminal commands. If it&amp;rsquo;s just the name of a page, updating the spelling in Obsidian changes it everywhere else it&amp;rsquo;s linked to as well, which is useful.&lt;/p&gt;
+&lt;h3 id=&#34;updating-open-loops&#34;&gt;Updating open loops&lt;/h3&gt;
+&lt;p&gt;To finish processing the last session, I update Open Loops: I add new points or update existing points in Quests and Questions, and then add tasks to Agenda that I want to do in the next session. I find that it&amp;rsquo;s best to do it after a game because it&amp;rsquo;s a week, sometimes more, between games and there&amp;rsquo;s a high likelihood I&amp;rsquo;ll have forgotten what I want to do by then!&lt;/p&gt;
+&lt;h3 id=&#34;publish&#34;&gt;Publish&lt;/h3&gt;
+&lt;p&gt;I also publish my D&amp;amp;D notes, just for transparency. My DM has joked that he looks in there sometimes when he&amp;rsquo;s forgotten something. Even if he doesn&amp;rsquo;t, I enjoy having my notes so easily accessible. I often navigate there myself when I have a spare moment, remembering old sessions and thinking about some loose threads. If you&amp;rsquo;re interested, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/ForgottenRealms/World&#34;&gt;here they are&lt;/a&gt;! Just be warned that the plugins won&amp;rsquo;t work in the web version, so sometimes you&amp;rsquo;ll come across bits of code that didn&amp;rsquo;t render. I also migrated these notes from Roam Research, and haven&amp;rsquo;t gone back and updated all the older notes.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Since I&amp;rsquo;ve switched to Obsidian, it&amp;rsquo;s been an indispensable part of my workflow for D&amp;amp;D. Without it, I&amp;rsquo;d be just another murder hobo with no notes. And no DM wants that!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Presentation Slides as Code</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210302-presentation-slides-as-code/</link>

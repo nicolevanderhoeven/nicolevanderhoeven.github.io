@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux" />
+<meta property="og:description" content="Almost exactly six months ago, I wrote a blog post detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.
+That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have an official Obsidian community plugin, and I disabled my trusty old python script for good." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/" />
+<meta property="article:published_time" content="2021-08-10T19:50:40+02:00" />
+<meta property="article:modified_time" content="2021-08-10T19:50:40+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux"/>
+<meta name="twitter:description" content="Almost exactly six months ago, I wrote a blog post detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.
+That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have an official Obsidian community plugin, and I disabled my trusty old python script for good."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&text=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&is_video=false&description=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&name=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux&description=Almost%20exactly%20six%20months%20ago%2c%20I%20wrote%20a%20blog%20post%20detailing%20my%20workflow%20for%20processing%20content.%20Specifically%2c%20I%20wrote%20about%20how%20I%20used%20a%20python%20script%20to%20take%20my%20highlights%20from%20Instapaper%2c%20Kindle%2c%20Twitter%2c%20and%20Airr%20and%20automatically%20put%20them%20into%20Obsidian.%0aThat%20method%20worked%2c%20and%20you%20can%20read%20the%20original%20article%20in%20the%20link%20above.%20However%2c%20today%2c%20Readwise%20announced%20that%20they%20now%20have%20an%20official%20Obsidian%20community%20plugin%2c%20and%20I%20disabled%20my%20trusty%20old%20python%20script%20for%20good.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&t=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-the-obsidian-plugin">Install the Obsidian plugin.</a></li>
+    <li><a href="#connect-your-readwise-account-to-the-obsidian-plugin">Connect your Readwise account to the Obsidian plugin</a></li>
+    <li><a href="#modifying-configuration-settings">Modifying configuration settings</a>
+      <ul>
+        <li><a href="#group-files-in-category-folders">Group Files in Category Folders</a></li>
+        <li><a href="#use-custom-formatting">Use Custom Formatting</a>
+          <ul>
+            <li><a href="#page-metadata">Page metadata</a></li>
+            <li><a href="#highlight">Highlight</a></li>
+            <li><a href="#yaml-front-matter">YAML front matter</a></li>
+            <li><a href="#sync-notification">Sync notification</a></li>
+          </ul>
+        </li>
+        <li><a href="#select-items-to-be-exported">Select Items to be Exported</a></li>
+      </ul>
+    </li>
+    <li><a href="#initiate-sync-from-obsidian">Initiate Sync from Obsidian</a></li>
+    <li><a href="#verifying-results">Verifying results</a></li>
+    <li><a href="#set-up-automatic-sync">Set up automatic sync</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-08-10 19:50:40 &#43;0200 CEST" itemprop="datePublished">2021-Aug-10</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/zettelkasten" rel="tag">zettelkasten</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/taking-notes" rel="tag">taking notes</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/readwise" rel="tag">readwise</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+
+<meta property=“og:image” content="/assets/readwise-official-plugin.png" />
+<meta property=”og:image:width” content=”1200″ />
+<meta property=”og:image:height” content=”628″ />
+
+<p><img src="/assets/readwise-official-plugin.png" alt="Readwise to Obsidian workflow"></p>
+<p>Almost exactly six months ago, I <a href="https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/">wrote a blog post</a> detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.</p>
+<p>That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have <a href="https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work">an official Obsidian community plugin</a>, and I disabled my trusty old python script for good.</p>
+<p>You see, although my old script worked, there were quirks&ndash; not the least of which was that making changes to it meant programming in Python. I&rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&rsquo;m thrilled to have something significantly better from Readwise itself! Here&rsquo;s how to get started.</p>
+<h2 id="install-the-obsidian-plugin">Install the Obsidian plugin.</h2>
+<p>In your Obsidian vault, go to Settings &gt; Community plugins. You&rsquo;ll need to turn Safe mode off for community plugins if you haven&rsquo;t already.</p>
+<p>Then, click Browse and search for Readwise Official.</p>
+<p><img src="/assets/readwise-official.png" alt="Screenshot of the Readwise Official plugin within Obsidian"></p>
+<p>Install it, and then enable it.</p>
+<h2 id="connect-your-readwise-account-to-the-obsidian-plugin">Connect your Readwise account to the Obsidian plugin</h2>
+<p>Head back to the Settings menu and scroll down to the &ldquo;Plugin Options&rdquo; section, and then click Readwise Official.</p>
+<p><img src="/assets/readwise-official-connect.png" alt="Screenshot of the initial screen of the Readwise Official plugin"></p>
+<p>Click connect as highlighted in orange above, and a browser window will open, showing the <a href="https://readwise.io/export/obsidian/preferences">Obsidian Export</a> options. You&rsquo;ll need to sign into your Readwise account if you haven&rsquo;t already.</p>
+<p><img src="/assets/obsidian-export.png" alt="Obsidian export page"></p>
+<p>At this point, your Readwise account will have been connected to the Readwise Official plugin, but you won&rsquo;t have triggered any syncs yet. If you don&rsquo;t want to change any of the configuration settings, you can then skip ahead to triggering the sync on Obsidian, but let&rsquo;s run through the options anyway.</p>
+<h2 id="modifying-configuration-settings">Modifying configuration settings</h2>
+<p>On the Obsidian Exports page, you&rsquo;ll be presented with a few options.</p>
+<h3 id="group-files-in-category-folders">Group Files in Category Folders</h3>
+<p>By default, this will be enabled. When enabled, Readwise will put your highlights in different folders depending on its source. For example, Kindle highlights will appear in the folder <code>Books</code>. Disabling this option means all new notes will be created in the directory specified in the Obsidian plugin settings, which we&rsquo;ll cover later. I left this enabled in case I read a book that has the same name as a blog post about the book, for example.</p>
+<h3 id="use-custom-formatting">Use Custom Formatting</h3>
+<p>Custom formatting is disabled by default, and lets you choose how the final note looks. Here are the things you can change in this section</p>
+<ul>
+<li>Page title</li>
+<li>Page metadata</li>
+<li>Highlights header</li>
+<li>Highlight</li>
+<li>YAML front matter</li>
+<li>Sync notification</li>
+</ul>
+<p>I did make some changes in this section just to tweak how I want information to be displayed.</p>
+<h4 id="page-metadata">Page metadata</h4>
+<p>I don&rsquo;t see the need for Page metadata since this is what I use YAML front matter for, so I removed the matadata section and the document tags (I never use those either). So my Page metadata section looks like this:</p>
+<pre><code>{% if image_url -%}
+![rw-book-cover]({{image_url}})
+
+{% endif -%}
+{% if url -%}
+URL: {{url}}
+{% endif -%}
+</code></pre><h4 id="highlight">Highlight</h4>
+<p>By default, highlights are entered in bullet-point form. That&rsquo;s fine when <em>I&rsquo;m</em> taking notes, but when I&rsquo;m highlighting someone else&rsquo;s words, I like to be very careful to use blockquotes. I frequently do block searches in Obsidian, and I do NOT want to accidentally pass off a quote as something I said.</p>
+<p>To this end, I added a <code>&gt;</code> before each highlight and two newlines (carriage returns) at the end to delineate each highlight. That way, I can quote just one highlight at a time.</p>
+<pre><code>&gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
+    - Note: {{ highlight_note }}{% endif %}
+
+
+</code></pre><p>As you can see above, I also removed highlight tags, which I never use.</p>
+<h4 id="yaml-front-matter">YAML front matter</h4>
+<p>Metadata has to be quite specific, so I added parameters I already use for other notes in this section. The <code>TVZ</code> is a tag I use that means &ldquo;To Verzettelen&rdquo;, meaning pages that I need to process further.</p>
+<pre><code>Title: {{full_title}}
+Author: {{author}}
+Tags: TVZ, readwise, {{category}}
+date: {{date}}
+</code></pre><h4 id="sync-notification">Sync notification</h4>
+<p>As someone who has worked on a syncing plugin for Readwise to Obsidian, I know that things go wrong sometimes. Enabling this outputs a synchronization log to a note, which has come in handy MANY times in the past. <em>Has that book been synced, or did something go wrong?</em> So I copied what the Readwise team suggested:</p>
+<pre><code>- [[{{date|date('Y-m-d')}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
+{% for book in books %}    - {{ book.num_highlights_added}} highlights from {{ book.title }}
+{%endfor %}
+</code></pre><h3 id="select-items-to-be-exported">Select Items to be Exported</h3>
+<p>In this section, you can choose which books/podcasts/other content in Readwise you want to export. It is disabled by default. If you haven&rsquo;t synced Readwise to Obsidian before, and you just want to pull in everything, leave it disabled.</p>
+<p>In my case, I have already synchronized everything using the plugin I mentioned, and didn&rsquo;t want to create another few hundred duplicate notes in my vault. So I enabled it and selected a few more recent books.</p>
+<p>A weird thing about this Export settings page is that there is no saving&ndash; it just automatically saves it. Just a note, because I was scrolling up and down that page looking for an indication that it had been saved before I realized it is done automatically.</p>
+<h2 id="initiate-sync-from-obsidian">Initiate Sync from Obsidian</h2>
+<p>Head back to Obsidian and to the Readwise Official plugin options page. You should see a &ldquo;Initiate Sync&rdquo; button where the &ldquo;Connect&rdquo; one was before.</p>
+<p><img src="/assets/readwise-official-initiate.png" alt="Screenshot of Initiate Sync button"></p>
+<p>That&rsquo;s a good sign - that means your Readwise account has been connected, and your configuration settings from the previous step will be fetched.</p>
+<p>Before you click the button, note that the <em>Customize base folder</em> option is set to <code>Readwise</code>. This is the directory that all your Readwise notes will be created. So if you enabled <em>Group Files in Category Folders</em> earlier, your Kindle highlights will be saved in <code>Readwise/Books/booktitle.md</code>. You can change the base folder if you prefer, but I just kept the default.</p>
+<p>Time to click the button!</p>
+<p><img src="/assets/readwise-synced.png" alt="Screenshot of synced status from Readwise plugin"></p>
+<p>You&rsquo;ll see a few messages popping up on the upper right corner of your screen, and you&rsquo;ll also see a <em>Synced!</em> message appear next to the button you just clicked.</p>
+<h2 id="verifying-results">Verifying results</h2>
+<p>In your Obsidian vault, search for one of the items you synced. Here&rsquo;s what my note for Pat Flynn&rsquo;s <em>Superfans</em> looks like:</p>
+<p><img src="/assets/readwise-obsidian-kindle.png" alt="An example of Kindle highlights imported to Obsidian"></p>
+<p>Great! It looks exactly how I want it to look.</p>
+<h2 id="set-up-automatic-sync">Set up automatic sync</h2>
+<p>If you leave it there, the plugin will only sync when you tell it to, so you&rsquo;d need to go into the plugin options each time. That&rsquo;s not particularly useful for me, because I want it to just happen.</p>
+<p>If you feel similarly, head back into Plugin Options one more time and select your desired frequency in the <em>Configure resync frequency</em> dropdown menu. I chose 1 hour, the minimum. I also enabled the automatic sync when Obsidian opens.</p>
+<p><img src="/assets/readwise-official-auto-sync.png" alt="Screenshot of auto sync options for Readwise Official plugin"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I love this new plugin! It was very much needed, because existing options for accomplishing the same thing were flawed in some way, mainly because they were community-driven&ndash; meaning the people who created these workarounds (myself included) were &ldquo;just&rdquo; users who had other jobs. I&rsquo;m grateful that the Readwise team has acknowledged the popularity of Obsidian and taken on the maintenance burden. I&rsquo;ve experimented with the plugin quite a bit and haven&rsquo;t found any major issues so far. It is a seamless way to get the best of the content I&rsquo;ve consumed from various sources into one single source of truth: Obsidian. I highly recommend it to anyone looking to streamline content processing and creation processes.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-the-obsidian-plugin">Install the Obsidian plugin.</a></li>
+    <li><a href="#connect-your-readwise-account-to-the-obsidian-plugin">Connect your Readwise account to the Obsidian plugin</a></li>
+    <li><a href="#modifying-configuration-settings">Modifying configuration settings</a>
+      <ul>
+        <li><a href="#group-files-in-category-folders">Group Files in Category Folders</a></li>
+        <li><a href="#use-custom-formatting">Use Custom Formatting</a>
+          <ul>
+            <li><a href="#page-metadata">Page metadata</a></li>
+            <li><a href="#highlight">Highlight</a></li>
+            <li><a href="#yaml-front-matter">YAML front matter</a></li>
+            <li><a href="#sync-notification">Sync notification</a></li>
+          </ul>
+        </li>
+        <li><a href="#select-items-to-be-exported">Select Items to be Exported</a></li>
+      </ul>
+    </li>
+    <li><a href="#initiate-sync-from-obsidian">Initiate Sync from Obsidian</a></li>
+    <li><a href="#verifying-results">Verifying results</a></li>
+    <li><a href="#set-up-automatic-sync">Set up automatic sync</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&text=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&is_video=false&description=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&title=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&name=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux&description=Almost%20exactly%20six%20months%20ago%2c%20I%20wrote%20a%20blog%20post%20detailing%20my%20workflow%20for%20processing%20content.%20Specifically%2c%20I%20wrote%20about%20how%20I%20used%20a%20python%20script%20to%20take%20my%20highlights%20from%20Instapaper%2c%20Kindle%2c%20Twitter%2c%20and%20Airr%20and%20automatically%20put%20them%20into%20Obsidian.%0aThat%20method%20worked%2c%20and%20you%20can%20read%20the%20original%20article%20in%20the%20link%20above.%20However%2c%20today%2c%20Readwise%20announced%20that%20they%20now%20have%20an%20official%20Obsidian%20community%20plugin%2c%20and%20I%20disabled%20my%20trusty%20old%20python%20script%20for%20good.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210810-readwise-to-obsidian-redux%2f&t=The%20easiest%20way%20to%20sync%20Kindle%20highlights%20to%20Obsidian%3a%20Readwise%20to%20Obsidian%20Redux">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

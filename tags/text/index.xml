@@ -23,7 +23,13 @@
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-plugin.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Almost exactly six months ago, I &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/&#34;&gt;wrote a blog post&lt;/a&gt; detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.&lt;/p&gt;
 &lt;p&gt;That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;an official Obsidian community plugin&lt;/a&gt;, and I disabled my trusty old python script for good.&lt;/p&gt;
-&lt;p&gt;You see, although my old script worked, there were quirks&amp;ndash; not the least of which was that making changes to it meant programming in Python. I&amp;rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&amp;rsquo;m thrilled to have something significantly better from Readwise itself! Here&amp;rsquo;s how to get started.&lt;/p&gt;
+&lt;p&gt;You see, although my old script worked, there were quirks&amp;ndash; not the least of which was that making changes to it meant programming in Python. I&amp;rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&amp;rsquo;m thrilled to have something significantly better from Readwise itself! Here&amp;rsquo;s a video from the Readwise team, or read on for instructions on how to get started.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DOYwwdDC9LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;em&gt;From &lt;a href=&#34;https://www.youtube.com/watch?v=DOYwwdDC9LQ&#34;&gt;Readwise on YouTube&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;install-the-obsidian-plugin&#34;&gt;Install the Obsidian plugin.&lt;/h2&gt;
 &lt;p&gt;In your Obsidian vault, go to Settings &amp;gt; Community plugins. You&amp;rsquo;ll need to turn Safe mode off for community plugins if you haven&amp;rsquo;t already.&lt;/p&gt;
 &lt;p&gt;Then, click Browse and search for Readwise Official.&lt;/p&gt;

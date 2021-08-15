@@ -7,7 +7,73 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 11 Aug 2021 18:55:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Aug 2021 15:50:46 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubedim: Microservices testing using k6 for reliability, with Kelvin Zhang (k6 Office Hours #24)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210813-kubedim-microservices-testing/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210813-kubedim-microservices-testing/</guid>
+      <description>&lt;p&gt;Today, my colleague &lt;a href=&#34;https://www.gonzalezlopes.com/&#34;&gt;Daniel González Lopes&lt;/a&gt; joined me as a co-host on k6 Office Hours, and we interviewed &lt;a href=&#34;https://twitter.com/kelvzhan&#34;&gt;Kelvin Zhang&lt;/a&gt; about his thesis at Imperial College London, using k6 to test microservices-based architectures. He created something called Kubedim, an application that intelligently applies non-uniform brownout theory to intentionally dim application requests for the purpose of improving overall availability.&lt;/p&gt;
+&lt;p&gt;This was a dense Office Hours to digest, but Kelvin really impressed us with his experiments and findings! It&amp;rsquo;s definitely an awesome use case for k6 and just a great one to watch for any site reliability engineer.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O1Evg9_EEmU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Meet the Grafana Labs team: Nicole Van Der Hoeven, Developer Advocate at k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210813-grafana-profile-nicole-van-der-hoeven/</link>
+      <pubDate>Fri, 13 Aug 2021 15:29:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210813-grafana-profile-nicole-van-der-hoeven/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://grafana.com/blog/2021/08/13/meet-the-grafana-labs-team-nicole-van-der-hoeven-a-developer-advocate-who-does-performance-testing-at-k6/&#34;&gt;Originally posted here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://grafana.com/blog/2021/08/13/meet-the-grafana-labs-team-nicole-van-der-hoeven-a-developer-advocate-who-does-performance-testing-at-k6/&#34;&gt;
+
+As Grafana Labs continues to grow, we’d like you to get to know the team members who are working on the cool stuff you’re using. Check out the latest of our Friday team profiles.&lt;/p&gt;
+&lt;h2 id=&#34;meet-nicole&#34;&gt;Meet Nicole!&lt;/h2&gt;
+&lt;p&gt;Name: Nicole van der Hoeven&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/profilepic-1MB.png&#34; alt=&#34;photo of Nicole&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;current-locationtime-zone&#34;&gt;Current location/time zone&lt;/h3&gt;
+&lt;p&gt;I currently live in Maastricht, in the Netherlands. I moved here with my husband four years ago from Melbourne, Australia.&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-do-at-grafana-labs&#34;&gt;What do you do at Grafana Labs?&lt;/h3&gt;
+&lt;p&gt;I’m a Developer Advocate at &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, but I’m not actually a developer — I’m a performance tester! I guess there’s no such thing as a Performance Tester Advocate? My job is part engineering, part content creation: I write load testing scripts and code, but I also write blog posts, produce videos, and give presentations. I found out I was joining Grafana Labs a few months ago &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;when k6 was acquired&lt;/a&gt;, but I was happy to join the team! I’ve met some fun and motivated people at Grafana Labs that I’m eager to collaborate with.&lt;/p&gt;
+&lt;h3 id=&#34;what-open-source-projects-do-you-contribute-to&#34;&gt;What open source projects do you contribute to?&lt;/h3&gt;
+&lt;p&gt;I’m a budding developer and still learning the ins and outs of social coding, but some things I’ve contributed to recently are &lt;a href=&#34;https://github.com/nicolevanderhoeven/xk6-chaos&#34;&gt;a chaos engineering extension for k6&lt;/a&gt; (created by my colleague, the talented &lt;a href=&#34;https://simme.dev&#34;&gt;Simon Aronsson&lt;/a&gt;), an application called &lt;a href=&#34;https://github.com/nicolevanderhoeven/pokeapi&#34;&gt;Poké API&lt;/a&gt; that I’ve added chaos experiments to, and &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;a Python script&lt;/a&gt; for pushing my Kindle highlights to my note-taking app of choice, &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-are-your-github-and-twitter-handles&#34;&gt;What are your GitHub and Twitter handles?&lt;/h3&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nicolevanderhoeven&#34;&gt;nicolevanderhoeven&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/n_vanderhoeven&#34;&gt;n_vanderhoeven&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-like-to-do-in-your-free-time&#34;&gt;What do you like to do in your free time?&lt;/h3&gt;
+&lt;p&gt;I play Dungeons &amp;amp; Dragons eight hours a week, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Fork+My+Brain&#34;&gt;take a ridiculous amount of notes on everything&lt;/a&gt;, and vlog about &lt;a href=&#34;https://www.youtube.com/c/luckydippers&#34;&gt;my (pre-COVID) travels&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/battlemap.jpg&#34; alt=&#34;Battle map on a TV lying on a table, from a Dungeons &amp; Dragons game&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A battle map in one of my Dungeons &amp;amp; Dragons games.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-your-favorite-new-gadget-or-tech-toy&#34;&gt;What’s your favorite new gadget or tech toy?&lt;/h3&gt;
+&lt;p&gt;My new Rødecaster Pro, an audio mixer that has quickly become an essential part of my audio and video production process. It takes up a huge amount of precious real estate on my desk, but it is absolutely worth it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/desksetup.jpg&#34; alt=&#34;Bird&amp;rsquo;s eye view of Nicole&amp;rsquo;s current desk&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;My current desk setup, including the Rødecaster Pro peeking out from underneath the laptop in the upper right.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-the-best-part-of-your-job&#34;&gt;What’s the best part of your job?&lt;/h3&gt;
+&lt;p&gt;I got into Developer Relations and advocacy in general because I realized that, as a performance testing consultant, I was being asked the same questions and solving the same problems. So I started to share my experience online, and I’ve found that significantly more efficient. Why explain something repeatedly to one person at a time, on the spot, when you could post a more considered explanation online and potentially help an unlimited amount of people? A large part of my job is simplifying technical concepts and making it accessible to beginners, and I love being able to help others by creating the content I looked for when I was a beginner, too.&lt;/p&gt;
+&lt;p&gt;Here’s one of my YouTube videos:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_DB-lNZW7LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;whats-the-last-thing-you-binge-watched&#34;&gt;What’s the last thing you binge-watched?&lt;/h3&gt;
+&lt;p&gt;I have binge-watched the entire two campaigns of &lt;a href=&#34;https://www.youtube.com/c/criticalrole&#34;&gt;Critical Role&lt;/a&gt;, a livestream of a Dungeons &amp;amp; Dragons game with a bunch of voice actors, which is over 1000 hours of watch time. Totally worth it!&lt;/p&gt;
+&lt;h3 id=&#34;what-superpowers-do-you-have&#34;&gt;What superpowers do you have?&lt;/h3&gt;
+&lt;p&gt;I speak several languages: Tagalog (my native language), English, Dutch, Spanish, Esperanto, German, and French — in that order and to varying degrees. I am learning and have learned more, but don’t yet feel confident enough to claim to “speak” them! I choose travel destinations based on how interested I am in learning the local language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/esperanto-superpower.jpg&#34; alt=&#34;Nicole wearing a shirt that says &amp;ldquo;I speak Esperanto. What&amp;rsquo;s your superpower?&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-your-zoom-virtual-background-and-why&#34;&gt;What’s your Zoom virtual background and why?&lt;/h3&gt;
+&lt;p&gt;I don’t use virtual backgrounds. The thing I like most about video is that it’s the most honest form of expression: writing, podcasting, and photography can all be edited far more easily. I like that my home office gives clues about who I am and what I like, and I would never want to hide that — mess and all!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Monitoring your k6 load test: how to install Grafana and Prometheus on a Kubernetes cluster</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</link>
@@ -392,6 +458,126 @@ Contributing Today - &lt;a href=&#34;https://www.contributing.today/past-session
 &lt;p&gt;The phases I&amp;rsquo;ve outlined here are a good guide for anyone starting with load testing, but I always recommend that you take what works for your situation and leave the rest. In reality, the phases overlap with each other considerably, especially in more modern engineering cycles.&lt;/p&gt;
 &lt;p&gt;Another activity I&amp;rsquo;ve not covered here, but one that I recommend, is adding load testing to your CI/CD pipeline. This continuous testing approach involves &lt;a href=&#34;https://k6.io/docs/testing-guides/automated-performance-testing/&#34;&gt;automating load testing&lt;/a&gt; so that it occurs in regularly, in parallel with other development and testing activities. Continuous testing is a great way to get more value out of load testing, and it ensures that performance is front-of-mind for everyone on the application team.&lt;/p&gt;
 &lt;p&gt;Happy testing!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How I Use Obsidian at Work</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/</link>
+      <pubDate>Tue, 18 May 2021 22:33:18 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/</guid>
+      <description>&lt;p&gt;Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&amp;rsquo;s not much said about its use outside of the academe.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/graphview-transparent.png&#34; alt=&#34;Obsidian for work&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&amp;rsquo;s released to real users. Currently, though, I&amp;rsquo;m a Developer Advocate at &lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;, which means a significant part of my job now is sharing with people what I&amp;rsquo;ve learned.&lt;/p&gt;
+&lt;p&gt;I consider myself a knowledge worker: a significant part of my job depends on how quickly I learn new technologies &lt;em&gt;and&lt;/em&gt; how clearly I can impart what I&amp;rsquo;ve learned to others. I&amp;rsquo;d argue, though, that most people who work in a field as fast-moving as tech are knowledge workers too. It&amp;rsquo;s naive to think we won&amp;rsquo;t one day forget some skills we&amp;rsquo;ve learned, even if we were using them daily at one point. Yet nobody talks about note-taking.&lt;/p&gt;
+&lt;p&gt;Recently, my note-taking and personal knowledge management tool of choice has been &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian.md&lt;/a&gt;. I have no affiliation with the Obsidian team, and in fact I&amp;rsquo;m an investor of &lt;a href=&#34;https://roamresearch.com&#34;&gt;a competing product&lt;/a&gt;. Here are some ways I use Obsidian at work that might help you understand why Obsidian is my daily driver.&lt;/p&gt;
+&lt;h2 id=&#34;my-setup&#34;&gt;My setup&lt;/h2&gt;
+&lt;p&gt;I have multiple Obsidian vaults, and each of them is a version-controlled &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; repository, hosted on &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;. I keep my main Obsidian vault in a &lt;a href=&#34;https://dropbox.com&#34;&gt;Dropbox&lt;/a&gt; for extra version control and as a backup. Just for overkill, I also use &lt;a href=&#34;https://obsidian.md/sync&#34;&gt;Obsidian Sync&lt;/a&gt; as another backup and as the easiest way to get access to my Obsidian vault on my iPad Pro and my Android mobile.&lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://obsidian.md/publish&#34;&gt;Obsidian Publish&lt;/a&gt; to make some of my notes &lt;a href=&#34;https://notes.nicolevanderhoeven.com&#34;&gt;publicly available&lt;/a&gt; on a custom domain directly from my vault, as an experiment in learning in public that&amp;rsquo;s gone pretty well so far.&lt;/p&gt;
+&lt;p&gt;This setup isn&amp;rsquo;t free. All up, I&amp;rsquo;m giving Obsidian about US $16 a month. However, I want to point out that Obsidian itself is free for personal use, and if mobile access, cloud sync, and publishing your notes online aren&amp;rsquo;t important to you, you can really go a long way with using it for free.&lt;/p&gt;
+&lt;h2 id=&#34;processing-information&#34;&gt;Processing information&lt;/h2&gt;
+&lt;p&gt;Remaining relevant in tech pretty much requires that you learn a lot, learn quickly, and enjoy the hell out of it. Luckily, Obsidian is pretty great at this.&lt;/p&gt;
+&lt;h3 id=&#34;consume-and-collect&#34;&gt;Consume and collect&lt;/h3&gt;
+&lt;p&gt;I consume a lot of content, and in different formats: articles, books, videos, presentations, podcasts are all great sources of free education. I initially capture my notes on them in different ways, but they all lead back to using &lt;a href=&#34;https://readwise.io/&#34;&gt;Readwise&lt;/a&gt;, which I use as a collector and sorter of all these notes. Then, I import data from Readwise to Obsidian using a process I describe in more detail &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For now, suffice it to say that all these notes and highlights end up in Obsidian for processing. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Presentation/In+the+kitchen+-+a+sprinkle+of+fire+and+chaos&#34;&gt;Here&amp;rsquo;s an example of my notes during a presentation&lt;/a&gt; (called &lt;em&gt;In the kitchen - a sprinkle of fire and chaos&lt;/em&gt; by &lt;a href=&#34;https://www.anammedina.com/&#34;&gt;Ana Medina&lt;/a&gt;, about chaos engineering).&lt;/p&gt;
+&lt;p&gt;When trying to learn something, many people stop at this phase. They&amp;rsquo;ve read the thing, they&amp;rsquo;ve highlighted passages from the thing, and now they think they&amp;rsquo;ve learned the thing. That hasn&amp;rsquo;t been my experience, because I forget many things I consume shallowly.&lt;/p&gt;
+&lt;h3 id=&#34;process-iteratively&#34;&gt;Process iteratively&lt;/h3&gt;
+&lt;p&gt;Then, I process notes iteratively, first restating things into my own words and then creating my own notes about concepts I&amp;rsquo;ve learned. Each time I do that, I try to identify key concepts and create backlinks for them, which in Obsidian just means typing &lt;code&gt;[[Chaos engineering]]&lt;/code&gt;, with a topic between double brackets. If I click on that new link, it creates  a page for it. Over time, I end up with a page &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Chaos+Engineering&#34;&gt;like this one on Chaos Engineering&lt;/a&gt; that is a consolidation of what I&amp;rsquo;ve learned.&lt;/p&gt;
+&lt;p&gt;Interestingly, if I go to the Chaos Engineering page, I can also see all the instances I&amp;rsquo;ve linked to it from other notes:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/linked-mentions.png&#34; alt=&#34;Linked mentions in Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What if I didn&amp;rsquo;t have the foresight to link to Chaos Engineering from an article I read? Obsidian also tracks &lt;em&gt;unlinked&lt;/em&gt; mentions as well. I can see all the times I&amp;rsquo;ve used the words &amp;ldquo;chaos engineering&amp;rdquo; in other notes, even if I haven&amp;rsquo;t created formal links using &lt;code&gt;[[Chaos engineering]]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Over time, things I&amp;rsquo;m interested in start to emerge this way, and topics grow deeper and more detailed, with branches of pages spinning off from it.&lt;/p&gt;
+&lt;h3 id=&#34;situate-and-solidify&#34;&gt;Situate and solidify&lt;/h3&gt;
+&lt;p&gt;Then, I try to think about where this new piece of knowledge fits into the hierarchy of things I&amp;rsquo;m interested in. This is less about trying to classify the world and more about putting it somewhere on &lt;em&gt;my personal&lt;/em&gt; map of interests so that I&amp;rsquo;m more likely to use that knowledge later. For me, chaos engineering fit into my page on &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Nonfunctional+testing&#34;&gt;Nonfunctional testing&lt;/a&gt;. Doing so helps me pit it against other things I&amp;rsquo;ve classified as forms of nonfunctional testing and think critically about whether it belongs there, or whether other things I already know contradict it in some way. Sometimes I&amp;rsquo;ll make notes about my reasoning for classification, such as &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Chaos+engineering+is+a+testing+discipline&#34;&gt;this note on why I think chaos engineering is a testing discipline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;None of this is set in stone. I&amp;rsquo;m always changing notes around as I learn more things that change my mind. For example, I&amp;rsquo;m considering merging my nonfunctional testing and functional testing pages after a conversation where someone questioned whether it wasn&amp;rsquo;t a misnomer to call application performance &amp;ldquo;nonfunctional&amp;rdquo;. The point is to create a living, breathing second brain that helps me make connections between concepts and remember what I&amp;rsquo;ve learned.&lt;/p&gt;
+&lt;p&gt;Obsidian&amp;rsquo;s built-in graph view illustrates this point nicely:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/graph_view-20210518.png&#34; alt=&#34;Built-in graph view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is my main Obsidian vault as of the time of this writing - all 5443 notes of it. The graph view plots every note and the connections between notes, so I&amp;rsquo;ve ended up with a slick visual representation of what I&amp;rsquo;ve been thinking and writing about. The graph view is actually &lt;em&gt;functional&lt;/em&gt;, too&amp;ndash; I can assign colors to nodes based on the directory they&amp;rsquo;re in, their tags, words they can contain, and a lot of other criteria. Because each node is sized according to how many links lead to it, this view makes it easy to see clusters in things I&amp;rsquo;ve thought or written about.&lt;/p&gt;
+&lt;h3 id=&#34;publish&#34;&gt;Publish&lt;/h3&gt;
+&lt;p&gt;One of the advantages of Obsidian over something like Notion or Roam Research is how easy it is to publish notes from it.&lt;/p&gt;
+&lt;h4 id=&#34;obsidian-publish-paid&#34;&gt;Obsidian Publish (paid)&lt;/h4&gt;
+&lt;p&gt;There&amp;rsquo;s the paid Publish service, which I&amp;rsquo;ve subscribed to for US $8 a month. After &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Using+a+custom+domain+with+Obsidian+Publish&#34;&gt;setting it up to publish on my own domain&lt;/a&gt; rather than the default at &lt;code&gt;publish.obsidian.md&lt;/code&gt;, going from a note to a published post is as easy as clicking the Publish icon, selecting the notes to add, delete, or modify, and then selecting Publish.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/publish-dialog.png&#34; alt=&#34;Dialog for Obsidian Publish&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;open-folder-as-vault&#34;&gt;Open folder as vault&lt;/h4&gt;
+&lt;p&gt;If you don&amp;rsquo;t want to pay for Publish, Obsidian still saves all files locally in Markdown (&lt;code&gt;.md&lt;/code&gt;) format. This is the same format that many static site generators take for content. This site that you&amp;rsquo;re reading this on is generated using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, so everything written here is kept as a Markdown file before it&amp;rsquo;s turned into HTML. Since an &amp;ldquo;Obsidian vault&amp;rdquo; is just a folder with Markdown files, I can just open the directory containing the files for my site and write blog posts in Obsidian with no noticeable difference.&lt;/p&gt;
+&lt;p&gt;At work, we happen to store our main &lt;a href=&#34;https://k6.io/docs/&#34;&gt;product documentation&lt;/a&gt; as Markdown files in a &lt;a href=&#34;https://github.com/k6io/docs&#34;&gt;GitHub repo&lt;/a&gt;, which make it perfect for opening in Obsidian as well. I prefer to write documentation in Obsidian over VSCode for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I can install plugins, like &lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;Advanced Tables&lt;/a&gt; to make Markdown tables easier to deal with, create templates to standardize the format of notes you make often, see an outline of what you&amp;rsquo;re writing based on Markdown headings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/outlines-obsidian.png&#34; alt=&#34;See an outline of your current note&#34;&gt;
+&lt;em&gt;Outline core plugin for Obsidian&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When I want to link to another page, it&amp;rsquo;s easier to just hit CMD + O to search through existing notes instead of finding it on GitHub.&lt;/li&gt;
+&lt;li&gt;I can choose an Obsidian theme that matches the theme of the published site. &lt;a href=&#34;https://github.com/ishgunacar/gitsidian&#34;&gt;This &amp;ldquo;Gitsidian&amp;rdquo; theme&lt;/a&gt; has an Edit view in dark mode (my preference) but a rendered Preview mode that looks more like GitHub&amp;rsquo;s Markdown format, so I can see what it will actually look like for users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/ishgunacar/gitsidian/raw/master/showcase.png&#34; alt=&#34;Gitsidian theme preview for Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m done, I can still jump to my terminal and push my change to GitHub as normal.&lt;/p&gt;
+&lt;h4 id=&#34;obsidian-uris&#34;&gt;Obsidian URIs&lt;/h4&gt;
+&lt;p&gt;Another cool feature is the fact that every note in Obsidian has what&amp;rsquo;s called an Obsidian URI - it&amp;rsquo;s a link that opens up a note within a specified vault. The URI looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;obsidian://open?vault=docs&amp;amp;file=src%2Fdata%2Fmarkdown%2Fdocs%2F03%20cloud%2F02%20Analyzing%20Results%2F02%20Performance%20Insights&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Adding it and publishing that to internal documentation means I can switch easily from browsing on GitHub to modifying the same page in Obsidian on my local machine, which is a great little bonus.&lt;/p&gt;
+&lt;h4 id=&#34;embedding-published-work&#34;&gt;Embedding published work&lt;/h4&gt;
+&lt;p&gt;After publishing, I use iframes in Obsidian to update my notes with the final result. Here&amp;rsquo;s a video on YouTube about chaos engineering that my colleague &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I planned out collaboratively on Obsidian, embedded into Obsidian:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/embedded-youtube-iframe.png&#34; alt=&#34;Embedding a video in an iframe&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The video plays in Obsidian with all the same controls. The Obsidian desktop app is an Electron app, so it behaves just like a normal browser for playing back the video. To embed the video, I just used the Share &amp;gt; Embed code on YouTube and pasted it straight into Obsidian:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;560&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;315&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.youtube.com/embed/gVwJZPo30rk&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;YouTube video player&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;frameborder&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;allow&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;allowfullscreen&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;meetings&#34;&gt;Meetings&lt;/h2&gt;
+&lt;p&gt;I take meeting notes to help me focus on the meeting, and I create templates for recurring meetings. Templates let you define the format of a note. Once created, you can insert templates into notes with a keyboard shortcut (I set mine to &lt;code&gt;CMD + ;&lt;/code&gt;). Here&amp;rsquo;s an example of what that looks like, with the template on the left and the inserted template on the right:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-meeting-templates.png&#34; alt=&#34;Template (left) and inserted template in a new note (right) in Obsidian&#34;&gt;
+&lt;em&gt;Template (left) and inserted template in a new note (right) in Obsidian&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You may notice that the frontmatter includes &lt;code&gt;{{date}}&lt;/code&gt; in the template, which gets automatically converted to today&amp;rsquo;s date when the template is used.&lt;/p&gt;
+&lt;p&gt;If anyone asks for a copy of my meeting notes, that&amp;rsquo;s no problem&amp;ndash; any note can be exported to Obsidian by clicking on Options &amp;gt; Export to PDF.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-pdf-export.png&#34; alt=&#34;Options for exporting a note to a PDF in Obsidian&#34;&gt;
+&lt;em&gt;Options for exporting a note to a PDF in Obsidian&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t want to actually publish any real meeting notes, so here&amp;rsquo;s what my note on the chaos engineering process looks like &lt;a href=&#34;https://nicolevanderhoeven.com/assets/The%20process%20of%20chaos%20engineering.pdf&#34;&gt;as a PDF&lt;/a&gt;, straight from Obsidian. And here&amp;rsquo;s what it looks like &lt;a href=&#34;https://notes.nicolevanderhoeven.com/The+process+of+chaos+engineering&#34;&gt;as a note&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+&lt;h3 id=&#34;the-easier-way&#34;&gt;The easier way&lt;/h3&gt;
+&lt;p&gt;Obsidian has a presentation mode! It&amp;rsquo;s basic, but it&amp;rsquo;s functional. You can create a presentation really easily by adding &lt;code&gt;---&lt;/code&gt; between paragraphs of text to delineate slides, right within a note. Here&amp;rsquo;s what that looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-slides-markdown.png&#34; alt=&#34;Creating a presentation from Markdown notes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then you can click Options &amp;gt; Start presentation, and you get something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-slides.png&#34; alt=&#34;An Obsidian presentation&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A little plain, but given the minimal amount of effort to &amp;ldquo;convert&amp;rdquo; a note into a presentation, it&amp;rsquo;s pretty awesome.&lt;/p&gt;
+&lt;h3 id=&#34;the-harder-way&#34;&gt;The harder way&lt;/h3&gt;
+&lt;p&gt;Sometimes the basic slides just don&amp;rsquo;t cut it, and it can be handy to be able to publish the slides in presentation format (since publishing them straight from Obsidian Publish would only publish the Markdown version). For those cases, I&amp;rsquo;ve figured out a way to do just that while still keeping my slides as Markdown files in my vault. &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210302-presentation-slides-as-code/&#34;&gt;Here&amp;rsquo;s a whole post on how to do that&lt;/a&gt;. This is definitely more complicated, but at the end of it, you get a nice page &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/#/&#34;&gt;like this&lt;/a&gt; to send to attendees after a presentation. (&lt;em&gt;Tip: Hit &lt;code&gt;s&lt;/code&gt; to see the speaker notes while on those slides.&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210302-reveal-hugo-sample.png&#34; alt=&#34;A sample custom slide using revealJS with Obsidian&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;task-management&#34;&gt;Task management&lt;/h2&gt;
+&lt;p&gt;I use a few community plugins to keep track of things I want to.&lt;/p&gt;
+&lt;h3 id=&#34;kanban&#34;&gt;Kanban&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/mgmeyers/obsidian-kanban&#34;&gt;Kanban plugin&lt;/a&gt; turns Markdown task lists into full-on Kanban boards.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-kanban.png&#34; alt=&#34;Kanban plugin in action&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On the left is the markdown note, and the on the right is the rendered Kanban board. You can customize the titles of the lists that are there, and you can add due dates to each task.&lt;/p&gt;
+&lt;h3 id=&#34;calendar&#34;&gt;Calendar&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/liamcain/obsidian-calendar-plugin&#34;&gt;Calendar plugin&lt;/a&gt; is &lt;a href=&#34;https://www.youtube.com/watch?v=fo6BKY2xR2w&#34;&gt;Obsidian&amp;rsquo;s most popular plugin&lt;/a&gt;, and with good reason.&lt;/p&gt;
+&lt;p&gt;It lets me add a calendar on the sidebar:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-calendar.png&#34; alt=&#34;Obsidian calendar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have the weekly notes option enabled, so clicking on the &lt;code&gt;W&lt;/code&gt; column in the calendar takes me to a note that is automatically created for that week. I use it to keep track of weekly goals and to do a review at the end of the week.&lt;/p&gt;
+&lt;p&gt;Clicking on a date in the calendar takes me to the&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;daily-note&#34;&gt;Daily Note&lt;/h3&gt;
+&lt;p&gt;The Daily Notes core plugin comes with Obsidian, but you have to enable it. Once enabled, clicking on a day in the calendar creates/takes you to that day&amp;rsquo;s corresponding note. I use daily notes like a log or workbench for that day, with timestamped headings to help me remember later on what I did at what time. It&amp;rsquo;s a loose way to do time management as well.&lt;/p&gt;
+&lt;h2 id=&#34;dataview&#34;&gt;Dataview&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview plugin&lt;/a&gt; is my favorite recent discovery, and it&amp;rsquo;s changing the way I do frontmatter. This plugin brings something akin to SQL (albeit not as powerful) to Obsidian. It lets you query your notes based on some file-related metadata &lt;strong&gt;as well as parameters you set in your frontmatter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, this query:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-dataview&#34; data-lang=&#34;dataview&#34;&gt;table file.ctime as Date
+from &amp;quot;Meeting&amp;quot;
+where file.ctime &amp;gt;= date(today) -dur(1 month)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;when rendered (i.e., viewed in Preview mode in Obsidian), returns a list of all my notes under the subfolder &lt;code&gt;Meeting&lt;/code&gt; in the last month:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-dataview-meetings.png&#34; alt=&#34;Obsidian Dataview results as a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is huge! I&amp;rsquo;m still updating my notes with the appropriate frontmatter to make more use of this feature, but here are some use cases I can think of that would be handy at work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find all customers with tag &lt;code&gt;annual&lt;/code&gt; that I haven&amp;rsquo;t spoken to in the last year.&lt;/li&gt;
+&lt;li&gt;Find a load testing tool with feature &lt;code&gt;Slack_integration = true&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Find that woman I met at the Automation Test Guild conference by searching for &lt;code&gt;job = tester&lt;/code&gt; and &lt;code&gt;tag = AutomationTestGuild&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Return all notes tagged &lt;code&gt;#plugin_ideas&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And that&amp;rsquo;s just the beginning!&lt;/p&gt;
+&lt;h2 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h2&gt;
+&lt;p&gt;Obsidian itself does not (yet) have collaboration features. This is a bummer, but given how quickly they&amp;rsquo;ve delivered on features that the community has clamored for (block references and mobile apps come immediately to mind), I&amp;rsquo;m hopeful that they&amp;rsquo;ll eventually improve in this area.&lt;/p&gt;
+&lt;p&gt;In the meantime, I&amp;rsquo;ve still found ways to work on the same vault with other people.&lt;/p&gt;
+&lt;p&gt;Remember how any folder of .md files can be opened as an Obsidian vault? Well, I&amp;rsquo;m technically collaborating with other people on that repo for work documentation, even if most people don&amp;rsquo;t use Obsidian. All I had to do was add the &lt;code&gt;.obsidian&lt;/code&gt; directory to the &lt;code&gt;.gitignore&lt;/code&gt; file, and now, nobody really even needs to know I&amp;rsquo;m using Obsidian to view/edit the documentation. They just see me pushing to the repository as if I had used a text editor like VSCode.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also had the experience of collaborating with someone who also used Obsidian. Since we were working closely together on the same document, we opted to put our shared vault on Dropbox. Dropbox&amp;rsquo;s main advantage over the Git solution is that Dropbox let us edit notes and see each other&amp;rsquo;s edits in real time. If you&amp;rsquo;re looking for an experience similar to Google Docs, this way got the closest to that. We did run into some quirks: if the Dropbox vault is also a Git repository, be aware that checking out a different branch will also change the contents of the directory for the other person.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Note-taking and personal management aren&amp;rsquo;t just for students and teachers; I think they&amp;rsquo;re particularly useful in tech, where knowledge work is highly prized. I&amp;rsquo;m talking about Obsidian because that&amp;rsquo;s my current tool of choice, but I think the tool you use is less important than the systems you put in place to help yourself learn and create.&lt;/p&gt;
 </description>
     </item>
     

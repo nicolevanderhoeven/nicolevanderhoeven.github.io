@@ -7,7 +7,88 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 11 Aug 2021 18:55:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Aug 2021 15:50:46 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubedim: Microservices testing using k6 for reliability, with Kelvin Zhang (k6 Office Hours #24)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210813-kubedim-microservices-testing/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210813-kubedim-microservices-testing/</guid>
+      <description>&lt;p&gt;Today, my colleague &lt;a href=&#34;https://www.gonzalezlopes.com/&#34;&gt;Daniel González Lopes&lt;/a&gt; joined me as a co-host on k6 Office Hours, and we interviewed &lt;a href=&#34;https://twitter.com/kelvzhan&#34;&gt;Kelvin Zhang&lt;/a&gt; about his thesis at Imperial College London, using k6 to test microservices-based architectures. He created something called Kubedim, an application that intelligently applies non-uniform brownout theory to intentionally dim application requests for the purpose of improving overall availability.&lt;/p&gt;
+&lt;p&gt;This was a dense Office Hours to digest, but Kelvin really impressed us with his experiments and findings! It&amp;rsquo;s definitely an awesome use case for k6 and just a great one to watch for any site reliability engineer.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O1Evg9_EEmU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Meet the Grafana Labs team: Nicole Van Der Hoeven, Developer Advocate at k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210813-grafana-profile-nicole-van-der-hoeven/</link>
+      <pubDate>Fri, 13 Aug 2021 15:29:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210813-grafana-profile-nicole-van-der-hoeven/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://grafana.com/blog/2021/08/13/meet-the-grafana-labs-team-nicole-van-der-hoeven-a-developer-advocate-who-does-performance-testing-at-k6/&#34;&gt;Originally posted here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://grafana.com/blog/2021/08/13/meet-the-grafana-labs-team-nicole-van-der-hoeven-a-developer-advocate-who-does-performance-testing-at-k6/&#34;&gt;
+
+As Grafana Labs continues to grow, we’d like you to get to know the team members who are working on the cool stuff you’re using. Check out the latest of our Friday team profiles.&lt;/p&gt;
+&lt;h2 id=&#34;meet-nicole&#34;&gt;Meet Nicole!&lt;/h2&gt;
+&lt;p&gt;Name: Nicole van der Hoeven&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/profilepic-1MB.png&#34; alt=&#34;photo of Nicole&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;current-locationtime-zone&#34;&gt;Current location/time zone&lt;/h3&gt;
+&lt;p&gt;I currently live in Maastricht, in the Netherlands. I moved here with my husband four years ago from Melbourne, Australia.&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-do-at-grafana-labs&#34;&gt;What do you do at Grafana Labs?&lt;/h3&gt;
+&lt;p&gt;I’m a Developer Advocate at &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, but I’m not actually a developer — I’m a performance tester! I guess there’s no such thing as a Performance Tester Advocate? My job is part engineering, part content creation: I write load testing scripts and code, but I also write blog posts, produce videos, and give presentations. I found out I was joining Grafana Labs a few months ago &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;when k6 was acquired&lt;/a&gt;, but I was happy to join the team! I’ve met some fun and motivated people at Grafana Labs that I’m eager to collaborate with.&lt;/p&gt;
+&lt;h3 id=&#34;what-open-source-projects-do-you-contribute-to&#34;&gt;What open source projects do you contribute to?&lt;/h3&gt;
+&lt;p&gt;I’m a budding developer and still learning the ins and outs of social coding, but some things I’ve contributed to recently are &lt;a href=&#34;https://github.com/nicolevanderhoeven/xk6-chaos&#34;&gt;a chaos engineering extension for k6&lt;/a&gt; (created by my colleague, the talented &lt;a href=&#34;https://simme.dev&#34;&gt;Simon Aronsson&lt;/a&gt;), an application called &lt;a href=&#34;https://github.com/nicolevanderhoeven/pokeapi&#34;&gt;Poké API&lt;/a&gt; that I’ve added chaos experiments to, and &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;a Python script&lt;/a&gt; for pushing my Kindle highlights to my note-taking app of choice, &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-are-your-github-and-twitter-handles&#34;&gt;What are your GitHub and Twitter handles?&lt;/h3&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nicolevanderhoeven&#34;&gt;nicolevanderhoeven&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/n_vanderhoeven&#34;&gt;n_vanderhoeven&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-like-to-do-in-your-free-time&#34;&gt;What do you like to do in your free time?&lt;/h3&gt;
+&lt;p&gt;I play Dungeons &amp;amp; Dragons eight hours a week, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Fork+My+Brain&#34;&gt;take a ridiculous amount of notes on everything&lt;/a&gt;, and vlog about &lt;a href=&#34;https://www.youtube.com/c/luckydippers&#34;&gt;my (pre-COVID) travels&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/battlemap.jpg&#34; alt=&#34;Battle map on a TV lying on a table, from a Dungeons &amp; Dragons game&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A battle map in one of my Dungeons &amp;amp; Dragons games.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-your-favorite-new-gadget-or-tech-toy&#34;&gt;What’s your favorite new gadget or tech toy?&lt;/h3&gt;
+&lt;p&gt;My new Rødecaster Pro, an audio mixer that has quickly become an essential part of my audio and video production process. It takes up a huge amount of precious real estate on my desk, but it is absolutely worth it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/desksetup.jpg&#34; alt=&#34;Bird&amp;rsquo;s eye view of Nicole&amp;rsquo;s current desk&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;My current desk setup, including the Rødecaster Pro peeking out from underneath the laptop in the upper right.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-the-best-part-of-your-job&#34;&gt;What’s the best part of your job?&lt;/h3&gt;
+&lt;p&gt;I got into Developer Relations and advocacy in general because I realized that, as a performance testing consultant, I was being asked the same questions and solving the same problems. So I started to share my experience online, and I’ve found that significantly more efficient. Why explain something repeatedly to one person at a time, on the spot, when you could post a more considered explanation online and potentially help an unlimited amount of people? A large part of my job is simplifying technical concepts and making it accessible to beginners, and I love being able to help others by creating the content I looked for when I was a beginner, too.&lt;/p&gt;
+&lt;p&gt;Here’s one of my YouTube videos:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_DB-lNZW7LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;whats-the-last-thing-you-binge-watched&#34;&gt;What’s the last thing you binge-watched?&lt;/h3&gt;
+&lt;p&gt;I have binge-watched the entire two campaigns of &lt;a href=&#34;https://www.youtube.com/c/criticalrole&#34;&gt;Critical Role&lt;/a&gt;, a livestream of a Dungeons &amp;amp; Dragons game with a bunch of voice actors, which is over 1000 hours of watch time. Totally worth it!&lt;/p&gt;
+&lt;h3 id=&#34;what-superpowers-do-you-have&#34;&gt;What superpowers do you have?&lt;/h3&gt;
+&lt;p&gt;I speak several languages: Tagalog (my native language), English, Dutch, Spanish, Esperanto, German, and French — in that order and to varying degrees. I am learning and have learned more, but don’t yet feel confident enough to claim to “speak” them! I choose travel destinations based on how interested I am in learning the local language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/esperanto-superpower.jpg&#34; alt=&#34;Nicole wearing a shirt that says &amp;ldquo;I speak Esperanto. What&amp;rsquo;s your superpower?&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-your-zoom-virtual-background-and-why&#34;&gt;What’s your Zoom virtual background and why?&lt;/h3&gt;
+&lt;p&gt;I don’t use virtual backgrounds. The thing I like most about video is that it’s the most honest form of expression: writing, podcasting, and photography can all be edited far more easily. I like that my home office gives clues about who I am and what I like, and I would never want to hide that — mess and all!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Grotten Sint Pietersberg Maastricht (LuckyDippers)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210812-ld109-grotten-sint-pietersberg/</link>
+      <pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210812-ld109-grotten-sint-pietersberg/</guid>
+      <description>&lt;p&gt;Another travel vlog from safer times: in September 2018, my husband and I took a friend out to Grotten Sint Pietersberg, a fortress and cave system in Maastricht, the Netherlands. They had been used in the times before that area was not yet part of the city of Maastricht; they were in a small village called Sint Pietersberg that had gotten caught between several invading foreign armies and the people of Maastricht. We enjoyed the day out!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/l7BHMbr-ltM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Monitoring your k6 load test: how to install Grafana and Prometheus on a Kubernetes cluster</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</link>

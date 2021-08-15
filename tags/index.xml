@@ -7,40 +7,148 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 11 Aug 2021 18:55:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>digitalocean</title>
-      <link>https://nicolevanderhoeven.github.io/tags/digitalocean/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/digitalocean/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 13 Aug 2021 15:50:46 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>grafana</title>
-      <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
+      <title>k6 Office Hours</title>
+      <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
+      <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k6.io</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubedim</title>
+      <link>https://nicolevanderhoeven.github.io/tags/kubedim/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/kubedim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservices</title>
+      <link>https://nicolevanderhoeven.github.io/tags/microservices/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>remote</title>
+      <link>https://nicolevanderhoeven.github.io/tags/remote/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/remote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>site reliability</title>
+      <link>https://nicolevanderhoeven.github.io/tags/site-reliability/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/site-reliability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
+      <pubDate>Fri, 13 Aug 2021 15:50:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana</title>
+      <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
+      <pubDate>Fri, 13 Aug 2021 15:29:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://nicolevanderhoeven.github.io/tags/text/</link>
+      <pubDate>Fri, 13 Aug 2021 15:29:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>español</title>
+      <link>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</link>
+      <pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>luckydippers</title>
+      <link>https://nicolevanderhoeven.github.io/tags/luckydippers/</link>
+      <pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/luckydippers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nederlands</title>
+      <link>https://nicolevanderhoeven.github.io/tags/nederlands/</link>
+      <pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/nederlands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travel</title>
+      <link>https://nicolevanderhoeven.github.io/tags/travel/</link>
+      <pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>digitalocean</title>
+      <link>https://nicolevanderhoeven.github.io/tags/digitalocean/</link>
+      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/digitalocean/</guid>
       <description></description>
     </item>
     
@@ -63,29 +171,11 @@
     </item>
     
     <item>
-      <title>performance</title>
-      <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>prometheus</title>
       <link>https://nicolevanderhoeven.github.io/tags/prometheus/</link>
       <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/prometheus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>video</title>
-      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
       <description></description>
     </item>
     
@@ -113,15 +203,6 @@
       <pubDate>Tue, 10 Aug 2021 19:50:40 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/taking-notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>https://nicolevanderhoeven.github.io/tags/text/</link>
-      <pubDate>Tue, 10 Aug 2021 19:50:40 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/text/</guid>
       <description></description>
     </item>
     
@@ -203,69 +284,6 @@
       <pubDate>Sat, 07 Aug 2021 22:15:13 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/puppeteer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k6</title>
-      <link>https://nicolevanderhoeven.github.io/tags/k6/</link>
-      <pubDate>Fri, 06 Aug 2021 18:09:05 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/k6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k6 Office Hours</title>
-      <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Fri, 06 Aug 2021 18:09:05 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>remote</title>
-      <link>https://nicolevanderhoeven.github.io/tags/remote/</link>
-      <pubDate>Fri, 06 Aug 2021 18:09:05 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/remote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>español</title>
-      <link>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</link>
-      <pubDate>Fri, 06 Aug 2021 13:01:44 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>luckydippers</title>
-      <link>https://nicolevanderhoeven.github.io/tags/luckydippers/</link>
-      <pubDate>Fri, 06 Aug 2021 13:01:44 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/luckydippers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nederlands</title>
-      <link>https://nicolevanderhoeven.github.io/tags/nederlands/</link>
-      <pubDate>Fri, 06 Aug 2021 13:01:44 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/nederlands/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>travel</title>
-      <link>https://nicolevanderhoeven.github.io/tags/travel/</link>
-      <pubDate>Fri, 06 Aug 2021 13:01:44 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/travel/</guid>
       <description></description>
     </item>
     

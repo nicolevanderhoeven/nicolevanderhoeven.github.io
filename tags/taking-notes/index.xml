@@ -7,7 +7,98 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 10 Aug 2021 19:50:40 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/taking-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 18:21:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/taking-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to import Shortform highlights to Obsidian via Readwise</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</link>
+      <pubDate>Sun, 15 Aug 2021 18:21:16 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</guid>
+      <description>
+
+&lt;meta property=“og:image” content=&#34;/assets/20210816-shortform-to-readwise-title.png.png&#34; /&gt;
+&lt;meta property=”og:image:width” content=”1200″ /&gt;
+&lt;meta property=”og:image:height” content=”628″ /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-to-readwise-title.png&#34; alt=&#34;Shortform to Readwise hero photo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve always been dubious of those book summary apps. You know the ones&amp;ndash; they tend to have obnoxious ads that promise to help you &amp;ldquo;read 5 books a day&amp;rdquo; or learn the world&amp;rsquo;s secrets in 15 minutes. Having tried a few of them, I&amp;rsquo;ve been disappointed with the quality of their summaries (or lack thereof). They attempt to distill the message of a 300+ page book into a handful of bullet points, which I&amp;rsquo;ve found neither accurate nor useful. Recently, though, I found myself happily subscribing to one, and here&amp;rsquo;s why.&lt;/p&gt;
+&lt;h2 id=&#34;whats-shortform-and-why-is-it-awesome&#34;&gt;What&amp;rsquo;s Shortform and why is it awesome?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://shortform.com&#34;&gt;Shortform&lt;/a&gt; really took me aback because it isn&amp;rsquo;t just a book summary. I should mention here that I&amp;rsquo;m not affiliated with Shortform and gain nothing by recommending them. I&amp;rsquo;m just a happy subscriber.&lt;/p&gt;
+&lt;p&gt;When I read their guide for the book &lt;em&gt;Why We Sleep&lt;/em&gt;, I was pleasantly surprised to find that Shortform not only summarized it succinctly, but they also added intelligent counterarguments to the author&amp;rsquo;s points. In some cases, when the author made a false claim, there were Shortform notes that linked to studies that showed &lt;em&gt;why&lt;/em&gt; the claim was false. In other cases, Shortform mentioned related concepts proposed in other books that strengthened the author&amp;rsquo;s viewpoint. I found myself looking up their guides of books I&amp;rsquo;d already read, just because I was curious to see if I had missed anything. And I had!&lt;/p&gt;
+&lt;p&gt;In short, Shortform is the only book summary reader I&amp;rsquo;ve found that goes beyond summarizing and actually &lt;em&gt;adds value&lt;/em&gt; to the reading experience, &lt;em&gt;even if you&amp;rsquo;ve read the book.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;They also have a one-page summary of the book AND a summary per chapter, so information is presented at different levels of detail. In my time with it, my most frequent workflow with it has involved reading the one-page summary of a book, buying it if it was interestering enough, reading the book, and then going back to Shortform to go read the chapter summaries. And both the one-page and detailed chapter summaries, including Shortform notes, can be highlighted!&lt;/p&gt;
+&lt;p&gt;Naturally I wanted to take it further than that. I already &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux&#34;&gt;sync my Kindle highlights to Obsidian&lt;/a&gt; automatically and incrementally process them in Obsidian, so I wrote a script to have my Shortform highlights going to &lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt; as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-01.png&#34; alt=&#34;Shortform highlights in my Obsidian vault&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;My Shortform highlights for the book Mindset, in my Obsidian vault.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The screenshot above shows the final result: highlights I made in the Shortform web or mobile app that have been synced to a page in my Obsidian vault. Here&amp;rsquo;s how I did that.&lt;/p&gt;
+&lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;a href=&#34;https://shortform.com&#34;&gt;Shortform&lt;/a&gt; account.&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt; account.&lt;/li&gt;
+&lt;li&gt;A tool that Readwise can export to, such as &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;, &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt;, or &lt;a href=&#34;https://evernote.com&#34;&gt;Evernote&lt;/a&gt;. You can also use their CSV and Markdown exports.&lt;/li&gt;
+&lt;li&gt;A local installation of Python 3, which you can &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;download here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Obsidian is my Personal Knowledge Management tool of choice, and I use the &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;Readwise Official community plugin&lt;/a&gt; to get Readwise to send highlights to Obsidian. However, using Obsidian is not necessary as my script connects only Shortform to Readwise.&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The setup&lt;/h2&gt;
+&lt;p&gt;Clone &lt;a href=&#34;https://github.com/nicolevanderhoeven/shortform-to-readwise&#34;&gt;my Shortform-to-Readwise repository on GitHub&lt;/a&gt; or download it to your computer.&lt;/p&gt;
+&lt;h3 id=&#34;enter-your-tokens&#34;&gt;Enter your tokens&lt;/h3&gt;
+&lt;p&gt;The file &lt;code&gt;variables.py&lt;/code&gt; requires two tokens: one from your Shortform account and another from your Readwise account:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Your authorization token for Shortform&lt;/span&gt;
+authToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Your Readwise API token&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Retrieve this token from https://readwise.io/access_token&lt;/span&gt;
+readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;getting-your-shortform-token&#34;&gt;Getting your Shortform token&lt;/h4&gt;
+&lt;p&gt;This is a little hacky, because Shortform doesn&amp;rsquo;t expose an API token in their web app. So you&amp;rsquo;ll need to log in to your Shortform account and open up DevTools in your browser. In Chrome, go to Options &amp;gt; More Tools &amp;gt; Developer Tools (or, on Mac, hit CMD+OPTION+I). Click on the Network panel.&lt;/p&gt;
+&lt;p&gt;You should now see Shortform on one side, and DevTools on another in the same browser window.&lt;/p&gt;
+&lt;p&gt;Then, go to &lt;a href=&#34;https://www.shortform.com/app/highlights&#34;&gt;your Highlights page&lt;/a&gt;. Doing so will populate the Network panel with a bunch of requests that look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-02.png&#34; alt=&#34;DevTools open in Chrome, showing requests from Shortform&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;DevTools open in Chrome, showing requests from Shortform.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Click on the request with the name &lt;code&gt;?sort=date&lt;/code&gt;, highlighted above. That&amp;rsquo;ll open another side panel that will show Headers. Scroll down to the section marked &amp;ldquo;Request Headers&amp;rdquo;, and look for where it says &lt;code&gt;Authorization: Basic &lt;/code&gt; followed by a bunch of characters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-03.png&#34; alt=&#34;Authorization headers for Shortform, in DevTools&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Authorization headers for Shortform, in DevTools.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve removed my personal authorization token from the screenshot above, but it&amp;rsquo;s a long series of characters that comes after &lt;code&gt;Authorization: Basic &lt;/code&gt;. Go ahead and right click on it and click Copy Value. Paste it into &lt;code&gt;variables.py&lt;/code&gt; as the value for &lt;code&gt;authToken&lt;/code&gt;, and then _remove &lt;code&gt;Basic &lt;/code&gt; (including the space after it) so that you&amp;rsquo;re saving only everything that comes afterwards.&lt;/p&gt;
+&lt;h4 id=&#34;getting-your-readwise-token&#34;&gt;Getting your Readwise token&lt;/h4&gt;
+&lt;p&gt;Thankfully, this one&amp;rsquo;s a little easier. Go to &lt;a href=&#34;https://readwise.io/access_token&#34;&gt;this page on Readwise&lt;/a&gt; after logging in. Click &amp;ldquo;Get Token&amp;rdquo;, click &amp;ldquo;Copy to clipboard&amp;rdquo;, and then paste it into &lt;code&gt;variables.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Save &lt;code&gt;variables.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Note: Don&amp;rsquo;t share either of these tokens with anyone else, as they will then be able to access your Shortform or Readwise accounts.&lt;/p&gt;
+&lt;h3 id=&#34;run-the-script&#34;&gt;Run the script&lt;/h3&gt;
+&lt;p&gt;Open up your terminal, and &lt;code&gt;cd&lt;/code&gt; into the &lt;code&gt;/shortform-to-readwise&lt;/code&gt; repository. Then, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;python3 getHighlights.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to &lt;a href=&#34;https://readwise.io/books&#34;&gt;your Readwise library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-04.png&#34; alt=&#34;Shortform exports showing up in your Readwise library&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shortform exports showing up in your Readwise library.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You should see books that have the &lt;code&gt;Shortform-&lt;/code&gt; prefix. If you do, then you&amp;rsquo;re done! If you&amp;rsquo;ve got your Readwise account set up to push your highlights elsewhere (such as Obsidian), then you&amp;rsquo;re all set!&lt;/p&gt;
+&lt;p&gt;In case you&amp;rsquo;re wondering why I added the &lt;code&gt;Shortform-&lt;/code&gt; prefix, it&amp;rsquo;s because I often read the Shortform guide, and then read the book itself. Rather than end up in a sticky situation where the Shortform guide highlights might override the actual book highlights, I titled it differently so that I get two pages for the two sets of highlights.&lt;/p&gt;
+&lt;h2 id=&#34;what-about-running-the-script-regularly&#34;&gt;What about running the script regularly?&lt;/h2&gt;
+&lt;p&gt;The whole point of this, at least for me, was to set it up so that I&amp;rsquo;ve got highlights going to Obsidian &lt;em&gt;automatically&lt;/em&gt;, without needing my intervention. What I did was to use &lt;code&gt;crontab&lt;/code&gt; on macOS to run the script every 30 minutes, but you can set up your own schedule.&lt;/p&gt;
+&lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
+&lt;p&gt;Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on your laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
+&lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
+&lt;p&gt;Then, from your terminal, run the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up a list of cronjobs. If you don&amp;rsquo;t have any other jobs, this will be blank.&lt;/p&gt;
+&lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
+&lt;p&gt;Add a line to crontab for the schedule you want to create. This line has to be in the format&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;* * * * * command
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minute&lt;/li&gt;
+&lt;li&gt;hour&lt;/li&gt;
+&lt;li&gt;day of the month&lt;/li&gt;
+&lt;li&gt;month&lt;/li&gt;
+&lt;li&gt;day of the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;
+*/30 * * * * python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
+&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
+&lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
+&lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</link>

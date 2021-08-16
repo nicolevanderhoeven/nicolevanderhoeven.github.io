@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>readwise on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/readwise/</link>
-    <description>Recent content in readwise on Nicole van der Hoeven</description>
+    <title>shortform on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/shortform/</link>
+    <description>Recent content in shortform on Nicole van der Hoeven</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sun, 15 Aug 2021 18:21:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 18:21:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/shortform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to import Shortform highlights to Obsidian via Readwise</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</link>
@@ -96,107 +96,6 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
 &lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</link>
-      <pubDate>Tue, 10 Aug 2021 19:50:40 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</guid>
-      <description>
-
-&lt;meta property=“og:image” content=&#34;/assets/readwise-official-plugin.png&#34; /&gt;
-&lt;meta property=”og:image:width” content=”1200″ /&gt;
-&lt;meta property=”og:image:height” content=”628″ /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-plugin.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Almost exactly six months ago, I &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/&#34;&gt;wrote a blog post&lt;/a&gt; detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.&lt;/p&gt;
-&lt;p&gt;That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;an official Obsidian community plugin&lt;/a&gt;, and I disabled my trusty old python script for good.&lt;/p&gt;
-&lt;p&gt;You see, although my old script worked, there were quirks&amp;ndash; not the least of which was that making changes to it meant programming in Python. I&amp;rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&amp;rsquo;m thrilled to have something significantly better from Readwise itself! Here&amp;rsquo;s a video from the Readwise team, or read on for instructions on how to get started.&lt;/p&gt;
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DOYwwdDC9LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;em&gt;From &lt;a href=&#34;https://www.youtube.com/watch?v=DOYwwdDC9LQ&#34;&gt;Readwise on YouTube&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;install-the-obsidian-plugin&#34;&gt;Install the Obsidian plugin.&lt;/h2&gt;
-&lt;p&gt;In your Obsidian vault, go to Settings &amp;gt; Community plugins. You&amp;rsquo;ll need to turn Safe mode off for community plugins if you haven&amp;rsquo;t already.&lt;/p&gt;
-&lt;p&gt;Then, click Browse and search for Readwise Official.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official.png&#34; alt=&#34;Screenshot of the Readwise Official plugin within Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Install it, and then enable it.&lt;/p&gt;
-&lt;h2 id=&#34;connect-your-readwise-account-to-the-obsidian-plugin&#34;&gt;Connect your Readwise account to the Obsidian plugin&lt;/h2&gt;
-&lt;p&gt;Head back to the Settings menu and scroll down to the &amp;ldquo;Plugin Options&amp;rdquo; section, and then click Readwise Official.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-connect.png&#34; alt=&#34;Screenshot of the initial screen of the Readwise Official plugin&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Click connect as highlighted in orange above, and a browser window will open, showing the &lt;a href=&#34;https://readwise.io/export/obsidian/preferences&#34;&gt;Obsidian Export&lt;/a&gt; options. You&amp;rsquo;ll need to sign into your Readwise account if you haven&amp;rsquo;t already.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-export.png&#34; alt=&#34;Obsidian export page&#34;&gt;&lt;/p&gt;
-&lt;p&gt;At this point, your Readwise account will have been connected to the Readwise Official plugin, but you won&amp;rsquo;t have triggered any syncs yet. If you don&amp;rsquo;t want to change any of the configuration settings, you can then skip ahead to triggering the sync on Obsidian, but let&amp;rsquo;s run through the options anyway.&lt;/p&gt;
-&lt;h2 id=&#34;modifying-configuration-settings&#34;&gt;Modifying configuration settings&lt;/h2&gt;
-&lt;p&gt;On the Obsidian Exports page, you&amp;rsquo;ll be presented with a few options.&lt;/p&gt;
-&lt;h3 id=&#34;group-files-in-category-folders&#34;&gt;Group Files in Category Folders&lt;/h3&gt;
-&lt;p&gt;By default, this will be enabled. When enabled, Readwise will put your highlights in different folders depending on its source. For example, Kindle highlights will appear in the folder &lt;code&gt;Books&lt;/code&gt;. Disabling this option means all new notes will be created in the directory specified in the Obsidian plugin settings, which we&amp;rsquo;ll cover later. I left this enabled in case I read a book that has the same name as a blog post about the book, for example.&lt;/p&gt;
-&lt;h3 id=&#34;use-custom-formatting&#34;&gt;Use Custom Formatting&lt;/h3&gt;
-&lt;p&gt;Custom formatting is disabled by default, and lets you choose how the final note looks. Here are the things you can change in this section&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Page title&lt;/li&gt;
-&lt;li&gt;Page metadata&lt;/li&gt;
-&lt;li&gt;Highlights header&lt;/li&gt;
-&lt;li&gt;Highlight&lt;/li&gt;
-&lt;li&gt;YAML front matter&lt;/li&gt;
-&lt;li&gt;Sync notification&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I did make some changes in this section just to tweak how I want information to be displayed.&lt;/p&gt;
-&lt;h4 id=&#34;page-metadata&#34;&gt;Page metadata&lt;/h4&gt;
-&lt;p&gt;I don&amp;rsquo;t see the need for Page metadata since this is what I use YAML front matter for, so I removed the matadata section and the document tags (I never use those either). So my Page metadata section looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{% if image_url -%}
-![rw-book-cover]({{image_url}})
-
-{% endif -%}
-{% if url -%}
-URL: {{url}}
-{% endif -%}
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;highlight&#34;&gt;Highlight&lt;/h4&gt;
-&lt;p&gt;By default, highlights are entered in bullet-point form. That&amp;rsquo;s fine when &lt;em&gt;I&amp;rsquo;m&lt;/em&gt; taking notes, but when I&amp;rsquo;m highlighting someone else&amp;rsquo;s words, I like to be very careful to use blockquotes. I frequently do block searches in Obsidian, and I do NOT want to accidentally pass off a quote as something I said.&lt;/p&gt;
-&lt;p&gt;To this end, I added a &lt;code&gt;&amp;gt;&lt;/code&gt; before each highlight and two newlines (carriage returns) at the end to delineate each highlight. That way, I can quote just one highlight at a time.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
-    - Note: {{ highlight_note }}{% endif %}
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see above, I also removed highlight tags, which I never use.&lt;/p&gt;
-&lt;h4 id=&#34;yaml-front-matter&#34;&gt;YAML front matter&lt;/h4&gt;
-&lt;p&gt;Metadata has to be quite specific, so I added parameters I already use for other notes in this section. The &lt;code&gt;TVZ&lt;/code&gt; is a tag I use that means &amp;ldquo;To Verzettelen&amp;rdquo;, meaning pages that I need to process further.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Title: {{full_title}}
-Author: {{author}}
-Tags: TVZ, readwise, {{category}}
-date: {{date}}
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;sync-notification&#34;&gt;Sync notification&lt;/h4&gt;
-&lt;p&gt;As someone who has worked on a syncing plugin for Readwise to Obsidian, I know that things go wrong sometimes. Enabling this outputs a synchronization log to a note, which has come in handy MANY times in the past. &lt;em&gt;Has that book been synced, or did something go wrong?&lt;/em&gt; So I copied what the Readwise team suggested:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- [[{{date|date(&#39;Y-m-d&#39;)}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
-{% for book in books %}    - {{ book.num_highlights_added}} highlights from {{ book.title }}
-{%endfor %}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;select-items-to-be-exported&#34;&gt;Select Items to be Exported&lt;/h3&gt;
-&lt;p&gt;In this section, you can choose which books/podcasts/other content in Readwise you want to export. It is disabled by default. If you haven&amp;rsquo;t synced Readwise to Obsidian before, and you just want to pull in everything, leave it disabled.&lt;/p&gt;
-&lt;p&gt;In my case, I have already synchronized everything using the plugin I mentioned, and didn&amp;rsquo;t want to create another few hundred duplicate notes in my vault. So I enabled it and selected a few more recent books.&lt;/p&gt;
-&lt;p&gt;A weird thing about this Export settings page is that there is no saving&amp;ndash; it just automatically saves it. Just a note, because I was scrolling up and down that page looking for an indication that it had been saved before I realized it is done automatically.&lt;/p&gt;
-&lt;h2 id=&#34;initiate-sync-from-obsidian&#34;&gt;Initiate Sync from Obsidian&lt;/h2&gt;
-&lt;p&gt;Head back to Obsidian and to the Readwise Official plugin options page. You should see a &amp;ldquo;Initiate Sync&amp;rdquo; button where the &amp;ldquo;Connect&amp;rdquo; one was before.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-initiate.png&#34; alt=&#34;Screenshot of Initiate Sync button&#34;&gt;&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s a good sign - that means your Readwise account has been connected, and your configuration settings from the previous step will be fetched.&lt;/p&gt;
-&lt;p&gt;Before you click the button, note that the &lt;em&gt;Customize base folder&lt;/em&gt; option is set to &lt;code&gt;Readwise&lt;/code&gt;. This is the directory that all your Readwise notes will be created. So if you enabled &lt;em&gt;Group Files in Category Folders&lt;/em&gt; earlier, your Kindle highlights will be saved in &lt;code&gt;Readwise/Books/booktitle.md&lt;/code&gt;. You can change the base folder if you prefer, but I just kept the default.&lt;/p&gt;
-&lt;p&gt;Time to click the button!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-synced.png&#34; alt=&#34;Screenshot of synced status from Readwise plugin&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You&amp;rsquo;ll see a few messages popping up on the upper right corner of your screen, and you&amp;rsquo;ll also see a &lt;em&gt;Synced!&lt;/em&gt; message appear next to the button you just clicked.&lt;/p&gt;
-&lt;h2 id=&#34;verifying-results&#34;&gt;Verifying results&lt;/h2&gt;
-&lt;p&gt;In your Obsidian vault, search for one of the items you synced. Here&amp;rsquo;s what my note for Pat Flynn&amp;rsquo;s &lt;em&gt;Superfans&lt;/em&gt; looks like:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-obsidian-kindle.png&#34; alt=&#34;An example of Kindle highlights imported to Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Great! It looks exactly how I want it to look.&lt;/p&gt;
-&lt;h2 id=&#34;set-up-automatic-sync&#34;&gt;Set up automatic sync&lt;/h2&gt;
-&lt;p&gt;If you leave it there, the plugin will only sync when you tell it to, so you&amp;rsquo;d need to go into the plugin options each time. That&amp;rsquo;s not particularly useful for me, because I want it to just happen.&lt;/p&gt;
-&lt;p&gt;If you feel similarly, head back into Plugin Options one more time and select your desired frequency in the &lt;em&gt;Configure resync frequency&lt;/em&gt; dropdown menu. I chose 1 hour, the minimum. I also enabled the automatic sync when Obsidian opens.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-auto-sync.png&#34; alt=&#34;Screenshot of auto sync options for Readwise Official plugin&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;I love this new plugin! It was very much needed, because existing options for accomplishing the same thing were flawed in some way, mainly because they were community-driven&amp;ndash; meaning the people who created these workarounds (myself included) were &amp;ldquo;just&amp;rdquo; users who had other jobs. I&amp;rsquo;m grateful that the Readwise team has acknowledged the popularity of Obsidian and taken on the maintenance burden. I&amp;rsquo;ve experimented with the plugin quite a bit and haven&amp;rsquo;t found any major issues so far. It is a seamless way to get the best of the content I&amp;rsquo;ve consumed from various sources into one single source of truth: Obsidian. I highly recommend it to anyone looking to streamline content processing and creation processes.&lt;/p&gt;
 </description>
     </item>
     

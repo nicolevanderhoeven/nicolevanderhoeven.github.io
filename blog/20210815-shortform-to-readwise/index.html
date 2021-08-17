@@ -219,6 +219,7 @@
     <li><a href="#what-about-running-the-script-regularly">What about running the script regularly?</a>
       <ul>
         <li><a href="#give-cron-full-system-access">Give cron full system access</a></li>
+        <li><a href="#find-the-path-for-your-python3-installation">Find the path for your python3 installation</a></li>
         <li><a href="#open-crontab">Open crontab</a></li>
         <li><a href="#set-a-schedule">Set a schedule</a></li>
       </ul>
@@ -340,6 +341,10 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <p>The whole point of this, at least for me, was to set it up so that I&rsquo;ve got highlights going to Obsidian <em>automatically</em>, without needing my intervention. What I did was to use <code>crontab</code> on macOS to run the script every 30 minutes, but you can set up your own schedule.</p>
 <h3 id="give-cron-full-system-access">Give cron full system access</h3>
 <p>Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &gt; Security &amp; Privacy &gt; Privacy &gt; Full Disk Access on your laptop and add <code>/usr/bin/cron</code> to the &ldquo;allowed&rdquo; list.</p>
+<h3 id="find-the-path-for-your-python3-installation">Find the path for your python3 installation</h3>
+<p>In your terminal, run:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">which python3
+</code></pre></div><p>This will give you a path. For me, it was <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Copy this.</p>
 <h3 id="open-crontab">Open crontab</h3>
 <p>Then, from your terminal, run the command <code>env EDITOR=nano crontab -e</code> to open up a list of cronjobs. If you don&rsquo;t have any other jobs, this will be blank.</p>
 <h3 id="set-a-schedule">Set a schedule</h3>
@@ -353,11 +358,11 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <li>month</li>
 <li>day of the week</li>
 </ul>
-<p>In my case, I wanted it to run every hour, so here&rsquo;s what my schedule looks like:</p>
+<p>In my case, I wanted it to run every 30 minutes, so here&rsquo;s what my schedule looks like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
-*/30 * * * * python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
+*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
 
-</code></pre></div><p>Make sure you change <code>/Users/nic/python/</code> to the path where you put the repository. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.</p>
+</code></pre></div><p>Make sure you change <code>/Users/nic/python/</code> to the path where you put the repository and your python3 path instead of <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.</p>
 <h2 id="thats-it">That&rsquo;s it!</h2>
 <p>I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&rsquo;s why I love services like Shortform and Readwise&ndash; they let me get what I&rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.</p>
 <p>Both are paid services (which I paid for out of my own money), but I really think they&rsquo;re worth it.</p>
@@ -414,6 +419,7 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
     <li><a href="#what-about-running-the-script-regularly">What about running the script regularly?</a>
       <ul>
         <li><a href="#give-cron-full-system-access">Give cron full system access</a></li>
+        <li><a href="#find-the-path-for-your-python3-installation">Find the path for your python3 installation</a></li>
         <li><a href="#open-crontab">Open crontab</a></li>
         <li><a href="#set-a-schedule">Set a schedule</a></li>
       </ul>

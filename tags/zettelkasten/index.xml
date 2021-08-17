@@ -75,6 +75,10 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;p&gt;The whole point of this, at least for me, was to set it up so that I&amp;rsquo;ve got highlights going to Obsidian &lt;em&gt;automatically&lt;/em&gt;, without needing my intervention. What I did was to use &lt;code&gt;crontab&lt;/code&gt; on macOS to run the script every 30 minutes, but you can set up your own schedule.&lt;/p&gt;
 &lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
 &lt;p&gt;Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on your laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
+&lt;h3 id=&#34;find-the-path-for-your-python3-installation&#34;&gt;Find the path for your python3 installation&lt;/h3&gt;
+&lt;p&gt;In your terminal, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;which python3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will give you a path. For me, it was &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Copy this.&lt;/p&gt;
 &lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
 &lt;p&gt;Then, from your terminal, run the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up a list of cronjobs. If you don&amp;rsquo;t have any other jobs, this will be blank.&lt;/p&gt;
 &lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
@@ -88,11 +92,11 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;li&gt;month&lt;/li&gt;
 &lt;li&gt;day of the week&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
+&lt;p&gt;In my case, I wanted it to run every 30 minutes, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;
-*/30 * * * * python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
+*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository and your python3 path instead of &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
 &lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;

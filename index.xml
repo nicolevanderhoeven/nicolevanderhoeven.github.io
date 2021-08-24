@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 16 Aug 2021 21:40:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 14:38:11 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to debug k6 load testing scripts with Tom Miseur (k6 Office Hours #25)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210820-koh25-k6_load_testing_scripts/</link>
+      <pubDate>Fri, 20 Aug 2021 14:38:11 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210820-koh25-k6_load_testing_scripts/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/tommiseur/&#34;&gt;Tom Miseur&lt;/a&gt; joined k6 at about the same time I did late last year, and we immediately hit it off because we both come from a performance testing consulting background AND we both had worked for different competing testing tool vendors before moving to k6. I was excited to have him on k6 Office Hours to talk about a topic we both had a lot to say about: how to debug load testing scripts, and specifically k6 scripts. We got a chance to do a bit of a show-and-tell of tools that we use that we use, and they are all independent of k6.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wireshark.org&#34;&gt;Wireshark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.charlesproxy.com&#34;&gt;Charles Proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mitmproxy.org&#34;&gt;mitmproxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.telerik.com/fiddler&#34;&gt;Fiddler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proxyman.io&#34;&gt;Proxyman&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also got to demo &lt;a href=&#34;https://github.com/benc-uk/k6-reporter&#34;&gt;a cool HTML reporting dashboard&lt;/a&gt; that Ben Coleman, a k6 user, created. While it&amp;rsquo;s not baked into the tool itself, it&amp;rsquo;s fairly straightforward to add it, requiring only two snippets of code that can be pasted onto any script.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Zln_TWOuoho&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to import Shortform highlights to Obsidian via Readwise</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</link>
@@ -93,9 +116,7 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;li&gt;day of the week&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In my case, I wanted it to run every 30 minutes, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;
-*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository and your python3 path instead of &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;

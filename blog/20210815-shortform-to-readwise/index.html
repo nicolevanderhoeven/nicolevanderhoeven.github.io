@@ -118,6 +118,12 @@
         
         
         <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20210820-koh25-k6_load_testing_scripts/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
@@ -359,9 +365,7 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <li>day of the week</li>
 </ul>
 <p>In my case, I wanted it to run every 30 minutes, so here&rsquo;s what my schedule looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
-*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
 </code></pre></div><p>Make sure you change <code>/Users/nic/python/</code> to the path where you put the repository and your python3 path instead of <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.</p>
 <h2 id="thats-it">That&rsquo;s it!</h2>
 <p>I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&rsquo;s why I love services like Shortform and Readwise&ndash; they let me get what I&rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.</p>

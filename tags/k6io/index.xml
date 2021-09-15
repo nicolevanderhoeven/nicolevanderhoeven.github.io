@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>k6,io on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/k6io/</link>
+    <description>Recent content in k6,io on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Wed, 15 Sep 2021 18:22:31 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schrödinger&#39;s Pokémon: k6 and Grafana edition</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link>
+      <pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid>
+      <description>&lt;p&gt;Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;chaos engineering with k6 and New Relic&lt;/a&gt;. A few months ago, k6 got acquired by &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana Labs&lt;/a&gt;, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2QHs_HEX7r0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I presented this talk at &lt;a href=&#34;https://www.youtube.com/watch?v=jSgH3I8_ldk&#34;&gt;TestCon Europe 2021&lt;/a&gt; today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit&#34;&gt;Slides are here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

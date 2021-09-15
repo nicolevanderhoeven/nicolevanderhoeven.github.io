@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Schrödinger&#39;s Pokémon: k6 and Grafana edition | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Schrödinger&#39;s Pokémon: k6 and Grafana edition" />
+<meta property="og:description" content="Earlier this year, I gave a presentation at New Relic&rsquo;s FutureStack conference about chaos engineering with k6 and New Relic. A few months ago, k6 got acquired by Grafana Labs, and so I wanted to redo it, but with the Grafana stack this time.
+Here&rsquo;s the result, and I think I like this iteration even better:
+  I presented this talk at TestCon Europe 2021 today, although the audio sync issues were not great, so I recommend you watch the video above instead." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/" />
+<meta property="article:published_time" content="2021-09-15T18:22:31+02:00" />
+<meta property="article:modified_time" content="2021-09-15T18:22:31+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Schrödinger&#39;s Pokémon: k6 and Grafana edition"/>
+<meta name="twitter:description" content="Earlier this year, I gave a presentation at New Relic&rsquo;s FutureStack conference about chaos engineering with k6 and New Relic. A few months ago, k6 got acquired by Grafana Labs, and so I wanted to redo it, but with the Grafana stack this time.
+Here&rsquo;s the result, and I think I like this iteration even better:
+  I presented this talk at TestCon Europe 2021 today, although the audio sync issues were not great, so I recommend you watch the video above instead."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210910-koh27-how-gitlab-uses-k6-for-load-testing/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&text=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&is_video=false&description=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&name=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition&description=Earlier%20this%20year%2c%20I%20gave%20a%20presentation%20at%20New%20Relic%26rsquo%3bs%20FutureStack%20conference%20about%20chaos%20engineering%20with%20k6%20and%20New%20Relic.%20A%20few%20months%20ago%2c%20k6%20got%20acquired%20by%20Grafana%20Labs%2c%20and%20so%20I%20wanted%20to%20redo%20it%2c%20but%20with%20the%20Grafana%20stack%20this%20time.%0aHere%26rsquo%3bs%20the%20result%2c%20and%20I%20think%20I%20like%20this%20iteration%20even%20better%3a%0a%20%20I%20presented%20this%20talk%20at%20TestCon%20Europe%202021%20today%2c%20although%20the%20audio%20sync%20issues%20were%20not%20great%2c%20so%20I%20recommend%20you%20watch%20the%20video%20above%20instead.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&t=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Schrödinger&#39;s Pokémon: k6 and Grafana edition
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-09-15 18:22:31 &#43;0200 CEST" itemprop="datePublished">2021-Sep-15</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/presentation" rel="tag">presentation</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/chaos-engineering" rel="tag">chaos engineering</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6io" rel="tag">k6,io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/prometheus" rel="tag">prometheus</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Earlier this year, I gave a presentation at New Relic&rsquo;s FutureStack conference about <a href="https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/">chaos engineering with k6 and New Relic</a>. A few months ago, k6 got acquired by <a href="https://grafana.com">Grafana Labs</a>, and so I wanted to redo it, but with the Grafana stack this time.</p>
+<p>Here&rsquo;s the result, and I think I like this iteration even better:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2QHs_HEX7r0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I presented this talk at <a href="https://www.youtube.com/watch?v=jSgH3I8_ldk">TestCon Europe 2021</a> today, although the audio sync issues were not great, so I recommend you watch the video above instead.</p>
+<p><a href="https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit">Slides are here.</a></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&text=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&is_video=false&description=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&title=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&name=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition&description=Earlier%20this%20year%2c%20I%20gave%20a%20presentation%20at%20New%20Relic%26rsquo%3bs%20FutureStack%20conference%20about%20chaos%20engineering%20with%20k6%20and%20New%20Relic.%20A%20few%20months%20ago%2c%20k6%20got%20acquired%20by%20Grafana%20Labs%2c%20and%20so%20I%20wanted%20to%20redo%20it%2c%20but%20with%20the%20Grafana%20stack%20this%20time.%0aHere%26rsquo%3bs%20the%20result%2c%20and%20I%20think%20I%20like%20this%20iteration%20even%20better%3a%0a%20%20I%20presented%20this%20talk%20at%20TestCon%20Europe%202021%20today%2c%20although%20the%20audio%20sync%20issues%20were%20not%20great%2c%20so%20I%20recommend%20you%20watch%20the%20video%20above%20instead.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210908-schrodingers-pokemon-k6-and-grafana%2f&t=Schr%c3%b6dinger%27s%20Pok%c3%a9mon%3a%20k6%20and%20Grafana%20edition">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

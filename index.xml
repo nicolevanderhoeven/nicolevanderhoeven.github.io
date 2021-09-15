@@ -7,7 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Aug 2021 09:34:13 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 18:22:31 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schrödinger&#39;s Pokémon: k6 and Grafana edition</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link>
+      <pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid>
+      <description>&lt;p&gt;Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;chaos engineering with k6 and New Relic&lt;/a&gt;. A few months ago, k6 got acquired by &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana Labs&lt;/a&gt;, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2QHs_HEX7r0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I presented this talk at &lt;a href=&#34;https://www.youtube.com/watch?v=jSgH3I8_ldk&#34;&gt;TestCon Europe 2021&lt;/a&gt; today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit&#34;&gt;Slides are here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Gitlab uses k6 for load testing, with Grant Young (k6 Office Hours #27)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210910-koh27-how-gitlab-uses-k6-for-load-testing/</link>
+      <pubDate>Fri, 10 Sep 2021 18:13:26 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210910-koh27-how-gitlab-uses-k6-for-load-testing/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/grantyoung86/&#34;&gt;Grant Young&lt;/a&gt;, Software Engineer in Test at GitLab, joined &lt;a href=&#34;https://grafana.com/k6&#34;&gt;k6 OSS&lt;/a&gt; maintainer &lt;a href=&#34;https://twitter.com/MStoykov&#34;&gt;Mihail Stoykov&lt;/a&gt; and me to talk about how GitLab uses k6. Apparently, they began using k6 internally some time ago, and because they like to eat their own dogfood and use GitLab to test GitLab, they also incorporated k6 into GitLab so that their users could reap the benefits, too.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YTGkq0m1bYk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/user/project/merge_requests/load_performance_testing.html&#34;&gt;Here&amp;rsquo;s the GitLab documentation&lt;/a&gt; about how to do load testing in GitLab, and &lt;a href=&#34;https://k6.io/blog/integrating-load-testing-with-gitlab/&#34;&gt;here&amp;rsquo;s a k6 blog post&lt;/a&gt; on how to set it up!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to do continuous performance testing, with Lee Barnes (k6 Office Hours #26)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210827-koh26-continuous-performance-testing-with-k6/</link>
@@ -2392,9 +2426,9 @@ k6 scripts give you the freedom to import and use JS libraries, so you can build
 &lt;p&gt;Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available &lt;a href=&#34;https://slides.nicolevanderhoeven.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m particularly interested in speaking opportunities in Spanish, Dutch, Tagalog, or Esperanto.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;16/09   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;Grafana Labs webinars&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Intro to load testing with Grafana and k6&lt;/em&gt;. (English)&lt;/p&gt;
-&lt;p&gt;08/09   &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2021&lt;/a&gt;&lt;/strong&gt;: &lt;a href=&#34;https://testcon.lt/Nicole-van-der-Hoeven/&#34;&gt;&lt;em&gt;Schrödinger&amp;rsquo;s Pokémon: Observability for chaotic load testing&lt;/em&gt;&lt;/a&gt;. (English)&lt;/p&gt;
+&lt;p&gt;16/09   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;Grafana Labs webinars&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing&#34;&gt;Intro to load testing with Grafana and k6&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;h2 id=&#34;2021&#34;&gt;2021&lt;/h2&gt;
+&lt;p&gt;08/09   &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/Nicole-van-der-Hoeven/&#34;&gt;TestCon Europe 2021&lt;/a&gt;&lt;/strong&gt;: &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210908-schrodingers-pokemon-k6-and-grafana/&#34;&gt;&lt;em&gt;Schrödinger&amp;rsquo;s Pokémon: chaotic load testing with k6 and Grafana&lt;/em&gt;&lt;/a&gt;. (English)&lt;/p&gt;
 &lt;p&gt;07/08   &lt;strong&gt;Performance Engineers club on Clubhouse&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210807-clubhouse-realistic-load-tests/&#34;&gt;Realistic load testing&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;09/06   &lt;strong&gt;&lt;a href=&#34;https://www.womentech.net/speaker/Nicole/van%20der%20Hoeven/50129&#34;&gt;Women Tech Global&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210609-convergence-of-code-and-speech/&#34;&gt;The Convergence of Code and Speech&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;31/05   &lt;strong&gt;&lt;a href=&#34;https://open.spotify.com/show/7wOCHzZBCzOi071QuDPodI&#34;&gt;Performance Time Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210531-performance-time/&#34;&gt;An Interview with Nicole van der Hoeven&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;

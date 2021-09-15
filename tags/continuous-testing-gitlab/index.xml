@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>continuous testing, gitlab on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/continuous-testing-gitlab/</link>
+    <description>Recent content in continuous testing, gitlab on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 10 Sep 2021 18:13:26 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/continuous-testing-gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Gitlab uses k6 for load testing, with Grant Young (k6 Office Hours #27)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210910-koh27-how-gitlab-uses-k6-for-load-testing/</link>
+      <pubDate>Fri, 10 Sep 2021 18:13:26 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210910-koh27-how-gitlab-uses-k6-for-load-testing/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/grantyoung86/&#34;&gt;Grant Young&lt;/a&gt;, Software Engineer in Test at GitLab, joined &lt;a href=&#34;https://grafana.com/k6&#34;&gt;k6 OSS&lt;/a&gt; maintainer &lt;a href=&#34;https://twitter.com/MStoykov&#34;&gt;Mihail Stoykov&lt;/a&gt; and me to talk about how GitLab uses k6. Apparently, they began using k6 internally some time ago, and because they like to eat their own dogfood and use GitLab to test GitLab, they also incorporated k6 into GitLab so that their users could reap the benefits, too.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YTGkq0m1bYk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/user/project/merge_requests/load_performance_testing.html&#34;&gt;Here&amp;rsquo;s the GitLab documentation&lt;/a&gt; about how to do load testing in GitLab, and &lt;a href=&#34;https://k6.io/blog/integrating-load-testing-with-gitlab/&#34;&gt;here&amp;rsquo;s a k6 blog post&lt;/a&gt; on how to set it up!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

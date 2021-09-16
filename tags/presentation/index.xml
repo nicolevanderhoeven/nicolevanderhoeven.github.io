@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 15 Sep 2021 18:22:31 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 22:11:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Load Testing With k6 and Grafana (webinar)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</link>
+      <pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</guid>
+      <description>&lt;p&gt;Tonight I did a webinar with Grafana Labs&amp;ndash; the first k6-related webinar since the acquisition. I was more than a little nervous to give it, because I knew I was introducing k6 to a lot of new users, but also to Grafana for the first time. I think it went pretty well! I was still quite relieved when it was over, however. :)&lt;/p&gt;
+&lt;p&gt;In the webinar, I talk about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why it&amp;rsquo;s still a good idea to do load testing in pre-production&lt;/li&gt;
+&lt;li&gt;what k6 is&lt;/li&gt;
+&lt;li&gt;why k6 and Grafana together make sense&lt;/li&gt;
+&lt;li&gt;and how to integrate k6 and Grafana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&amp;rsquo;s quite a bit of demo in it, and I also had the k6 CEO, Robin Gustafsson, join me for Q&amp;amp;A as a nice treat.&lt;/p&gt;
+&lt;p&gt;Check out the full webinar &lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;here&lt;/a&gt;&amp;ndash; it&amp;rsquo;s already up on the Grafana site. You can also go through my slides &lt;a href=&#34;https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing&#34;&gt;here&lt;/a&gt;, if you&amp;rsquo;d like.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Schrödinger&#39;s Pokémon: k6 and Grafana edition</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link>

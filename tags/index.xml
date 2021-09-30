@@ -7,13 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 16 Sep 2021 22:11:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 16:29:54 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>D&amp;D</title>
+      <link>https://nicolevanderhoeven.github.io/tags/dd/</link>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/dd/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taking notes</title>
+      <link>https://nicolevanderhoeven.github.io/tags/taking-notes/</link>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/taking-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://nicolevanderhoeven.github.io/tags/text/</link>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zettelkasten</title>
+      <link>https://nicolevanderhoeven.github.io/tags/zettelkasten/</link>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/zettelkasten/</guid>
       <description></description>
     </item>
     
@@ -90,11 +135,20 @@
     </item>
     
     <item>
-      <title>continuous testing, gitlab</title>
-      <link>https://nicolevanderhoeven.github.io/tags/continuous-testing-gitlab/</link>
+      <title>continuous testing</title>
+      <link>https://nicolevanderhoeven.github.io/tags/continuous-testing/</link>
       <pubDate>Fri, 10 Sep 2021 18:13:26 +0200</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/tags/continuous-testing-gitlab/</guid>
+      <guid>https://nicolevanderhoeven.github.io/tags/continuous-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitlab</title>
+      <link>https://nicolevanderhoeven.github.io/tags/gitlab/</link>
+      <pubDate>Fri, 10 Sep 2021 18:13:26 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/gitlab/</guid>
       <description></description>
     </item>
     
@@ -108,29 +162,11 @@
     </item>
     
     <item>
-      <title>continuous testing, observability</title>
-      <link>https://nicolevanderhoeven.github.io/tags/continuous-testing-observability/</link>
-      <pubDate>Fri, 27 Aug 2021 09:34:13 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/continuous-testing-observability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>books</title>
       <link>https://nicolevanderhoeven.github.io/tags/books/</link>
       <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
-      <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
       <description></description>
     </item>
     
@@ -149,33 +185,6 @@
       <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/shortform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>taking notes</title>
-      <link>https://nicolevanderhoeven.github.io/tags/taking-notes/</link>
-      <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/taking-notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>https://nicolevanderhoeven.github.io/tags/text/</link>
-      <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/text/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>zettelkasten</title>
-      <link>https://nicolevanderhoeven.github.io/tags/zettelkasten/</link>
-      <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/zettelkasten/</guid>
       <description></description>
     </item>
     
@@ -270,15 +279,6 @@
     </item>
     
     <item>
-      <title>D&amp;D</title>
-      <link>https://nicolevanderhoeven.github.io/tags/dd/</link>
-      <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/dd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Markdown</title>
       <link>https://nicolevanderhoeven.github.io/tags/markdown/</link>
       <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
@@ -356,15 +356,6 @@
       <pubDate>Fri, 16 Jul 2021 18:38:17 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/vlog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>continuous testing</title>
-      <link>https://nicolevanderhoeven.github.io/tags/continuous-testing/</link>
-      <pubDate>Mon, 12 Jul 2021 22:26:20 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/continuous-testing/</guid>
       <description></description>
     </item>
     

@@ -7,7 +7,338 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 16 Aug 2021 21:40:16 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 16:29:54 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Use Obsidian for D&amp;D: The Non-Lazy Dungeon Master&#39;s Edition</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition/</link>
+      <pubDate>Thu, 30 Sep 2021 16:29:54 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition/</guid>
+      <description>&lt;p&gt;Last month, I wrote about how I use &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; for &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210809-dnd-obsidian-player/&#34;&gt;D&amp;amp;D as a player&lt;/a&gt; in a 4e campaign (I play a half-elf hybrid wizard/cleric). This is about my second weekly game, in which I am the Dungeon Master for a 5e campaign. I&amp;rsquo;m a relatively new DM (I&amp;rsquo;ve got &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/World&#34;&gt;39 games&lt;/a&gt; under my belt at the time this writing, and Obsidian is at the center of my workflow for improving my DMing skills, getting inspiration, preparing for a game, running the game, and making sure my players are having fun.&lt;/p&gt;
+&lt;p&gt;In many ways, my setup is the Non-Lazy DM&amp;rsquo;s approach to preparing for D&amp;amp;D games: high-effort, high-touch, and high-return. But I only do it because I enjoy it!&lt;/p&gt;
+&lt;h2 id=&#34;plugins-i-use&#34;&gt;Plugins I use&lt;/h2&gt;
+&lt;p&gt;This is going to be a long article, so if you&amp;rsquo;re just after the plugins I use, here they are up front!&lt;/p&gt;
+&lt;p&gt;I go into detail for some, but not all of these, in the article below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jeremy Valentine&amp;rsquo;s stuff
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/valentine195/obsidian-5e-statblocks&#34;&gt;5e statblocks plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/valentine195/obsidian-initiative-tracker&#34;&gt;Initiative tracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Obsidian Dice Roller&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/valentine195/obsidian-admonition&#34;&gt;Obsidian Admonition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/valentine195/obsidian-leaflet-plugin&#34;&gt;Obsidian Leaflet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;Advanced Tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Darakah/obsidian-gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vslinko/obsidian-outliner&#34;&gt;Outliner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Darakah/obsidian-timelines&#34;&gt;Obsidian Timelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;outside-the-game&#34;&gt;Outside the game&lt;/h2&gt;
+&lt;p&gt;Although I use Obsidian &lt;em&gt;while&lt;/em&gt; playing D&amp;amp;D, I use it most for D&amp;amp;D between games: fleshing out the world, getting inspiration for new adventures, or preparing for specific sessions.&lt;/p&gt;
+&lt;h3 id=&#34;world-building&#34;&gt;World-building&lt;/h3&gt;
+&lt;p&gt;Many DMs run published campaigns, but I&amp;rsquo;m not one of them. I don&amp;rsquo;t think there&amp;rsquo;s anything wrong with running published campaigns; I just personally enjoy world-building and being able to tailor the environment to what I know my specific players will like. However, I still do read campaign books, for D&amp;amp;D as well as for other systems, for inspiration. I am also a voracious fantasy reader, and consider everything fair game for &amp;ldquo;stealing&amp;rdquo; for my games.&lt;/p&gt;
+&lt;p&gt;One thing I&amp;rsquo;ve begun experimenting with is processing my fiction reads the way I do my nonfiction reads. What better place to look for inspiration about creating a fantasy world than other fantasy worlds? How could I use a &lt;em&gt;Bene Gesserit&lt;/em&gt;-like faction in my campaign?&lt;/p&gt;
+&lt;p&gt;I recently reread the first &lt;em&gt;Dune&lt;/em&gt; book in preparation for the movie coming out later this year, but while I was reading it, I remembered how much I love the world it&amp;rsquo;s set in. I read books on Kindle, either on my actual physical Kindle ereader or on the Kindle app on my mobile, and I took highlights while I was reading &lt;em&gt;Dune&lt;/em&gt;. You can see my full highlights &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Readwise/Books/Dune&#34;&gt;here&lt;/a&gt;, synced &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;via Readwise&lt;/a&gt;. I highlight turns of phrases I like, character descriptions that sounded cool, or passages that are particularly revealing of the type of world the story of Dune is set in. Below is an example of a quote I highlighted:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Schools were started to train human talents.” “Bene Gesserit schools?” She nodded. “We have two chief survivors of those ancient schools: the Bene Gesserit and the Spacing Guild. The Guild, so we think, emphasizes almost pure mathematics. Bene Gesserit performs another function.” “Politics,” he said. (&lt;a href=&#34;https://readwise.io/to_kindle?action=open&amp;amp;asin=B001F0WXY0&amp;amp;location=248&#34;&gt;Location 248&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It really resonated with me as a good characterization of two important factions in the Dune universe.&lt;/p&gt;
+&lt;p&gt;Then, just as I do with nonfiction books, I create a separate note about the book itself, attempting to summarize the parts of it that might be interesting or useful to me in the future. Below is a screenshot of my page on the first book of Dune. I identify &amp;ldquo;Key truths&amp;rdquo; about the world, because I also like to use that terminology when creating secrets or themes for a fantasy world or city I&amp;rsquo;ve created.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dune-processed.png&#34; alt=&#34;My notes on the book Dune&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Book/Dune&#34;&gt;Here are my full notes on Dune&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then, I also think about tropes or patterns of character, plot, or setting present in the book. I&amp;rsquo;ve started collecting these in a a page called &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Forms&#34;&gt;Forms&lt;/a&gt; in my vault. I think it&amp;rsquo;s useful to spot things that occur again and again in fantasy fiction, whether they&amp;rsquo;re overused or not. If they&amp;rsquo;re tropes that I&amp;rsquo;d rather not repeat, having a &amp;ldquo;formula&amp;rdquo; of the trope helps me either avoid it or consciously subvert it in my games. Sometimes, I just take a form wholesale and incorporate it as is.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Form/Nuns+who+think+and+fight&#34;&gt;Here&amp;rsquo;s an example of a page&lt;/a&gt; I created that was inspired by the Bene Gesserit&amp;ndash; a short note about &amp;ldquo;Nuns who think and fight&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t been doing it for very long, but it&amp;rsquo;s already come in useful when thinking of major events and players in my world.&lt;/p&gt;
+&lt;h3 id=&#34;adventure-creation&#34;&gt;Adventure creation&lt;/h3&gt;
+&lt;p&gt;Adventures are smaller-scale and higher-resolution than campaigns or worlds, so I often need more specific notes than forms.&lt;/p&gt;
+&lt;p&gt;I read and highlight adventure blog posts and articles using &lt;a href=&#34;https://blog.readwise.io/readwise-reading-app/&#34;&gt;Readwise&amp;rsquo;s recently announced Reader app&lt;/a&gt;, and then they, along with tweets, books, and PDFs, get sent to Readwise and then Obsidian using the &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;Official Readwise plugin for Obsidian&lt;/a&gt;. I&amp;rsquo;ve &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;written about this process in depth&lt;/a&gt;, but here&amp;rsquo;s what that looks like for Mike Shea&amp;rsquo;s &lt;em&gt;Return of the Lazy Dungeon Master&lt;/em&gt; - &lt;a href=&#34;https://amzn.to/2X93rvX&#34;&gt;affiliate link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/return_of_the_lazy_dm.png&#34; alt=&#34;My notes on Return of the Lazy Dungeon Master&#34;&gt;&lt;/p&gt;
+&lt;p&gt;An advantage of using Reader (which is currently in a private beta, so I&amp;rsquo;m not allowed to share screenshots of it) is that I can even highlight text locked behind a paywall. For example, I have a D&amp;amp;D Beyond subscription and I&amp;rsquo;ve bought all the books available on their store, but most reading apps don&amp;rsquo;t know that, so it&amp;rsquo;s been hard to find one that will let me highlight text from one of the WotC sourcebooks. Not so with Reader. Here&amp;rsquo;s what my highlights from the first chapter of &lt;em&gt;Volo&amp;rsquo;s Guide to Monsters&lt;/em&gt; looks like in my Obsidian vault after it&amp;rsquo;s synced from Reader:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/volos_guide-chapter1.png&#34; alt=&#34;My highlights from Volo&amp;rsquo;s Guide to Monsters&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Readwise is great because I can highlight something on my Kindle and worry about processing it later in Obsidian. I process incoming Obsidian notes daily from 9-10pm&amp;ndash; that doesn&amp;rsquo;t mean I get through them all, just that I have a scheduled time to go through highlights and notes every day.&lt;/p&gt;
+&lt;p&gt;For D&amp;amp;D-specific notes, that also involves summarizing what I&amp;rsquo;ve learned into the notes I already have on how to be a dungeon master:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dm_session_prep.png&#34; alt=&#34;My notes on session prep as a DM&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The referencing feature on Obsidian lets me confidently paraphrase without stealing. All I need to do is put a &lt;code&gt;[^lazydm]&lt;/code&gt; where I want the superscript to be within the text, and then at the end of the note, I put something like:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[^lazydm]: Shea, M. (2018). _Return of the lazy dungeon master_. [[Return of the Lazy Dungeon Master|My highlights]].&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;That gets parsed as a footnote by Obsidian and lets me properly credit authors.&lt;/p&gt;
+&lt;p&gt;When I find good tools that help me flesh out adventures, I try to update &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/DM+Tools+and+Inspiration&#34;&gt;my page on DM tools and inspiration&lt;/a&gt;, so they&amp;rsquo;re all in one place.&lt;/p&gt;
+&lt;p&gt;While creating adventures, I like to use &lt;a href=&#34;https://github.com/valentine195/obsidian-admonition&#34;&gt;Obsidian Admonition&lt;/a&gt; to call out specific parts of the text for me as I&amp;rsquo;m running the adventure, like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-admonition-example.png&#34; alt=&#34;Sample of how I use Obsidian Admonition&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;random-tables&#34;&gt;Random tables&lt;/h4&gt;
+&lt;p&gt;I definitely have overarching plans about the wider plot in the world at large, but I also like to be surprised. Throwing random elements into games is one of the ways that I can keep myself on my toes and remind myself that I&amp;rsquo;m not the only one making the story.&lt;/p&gt;
+&lt;p&gt;There are many random tables in both official and unofficial D&amp;amp;D sourcebooks, but I only use those as starting points. For me, creating random tables that are tailored to my characters and to the things they care about is where it&amp;rsquo;s at!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve experimented with &lt;a href=&#34;https://nicolevanderhoeven.com/dndgen/characters.html&#34;&gt;creating my own random generators&lt;/a&gt; for various things, as well as using existing ones like &lt;a href=&#34;https://donjon.bin.sh/&#34;&gt;Donjon&lt;/a&gt;, but it&amp;rsquo;s an Obsidian plugin, Jeremy Valentine&amp;rsquo;s &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller&lt;/a&gt;, that I have settled on.&lt;/p&gt;
+&lt;p&gt;The name &amp;ldquo;Dice Roller&amp;rdquo; makes you think it&amp;rsquo;s only for rolling dice, but it&amp;rsquo;s much more than that. Its REAL value, in my opinion, is in how it lets me create tables for ANYTHING, and then randomly pull one row out of it. Here&amp;rsquo;s how it works.&lt;/p&gt;
+&lt;p&gt;First, you create a table. I had a session where my players discovered a place I called &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/Shipwreck+Beach&#34;&gt;Shipwreck Beach&lt;/a&gt;, and had a lot of fun going through several of the ships that were there. Here&amp;rsquo;s a table of &amp;ldquo;encounters&amp;rdquo; I put together for that session.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;### Ship encounters
+
+| Roll | Encounter                                                             |
+| ---- | --------------------------------------------------------------------- |
+| 1    | Carnivorous Ship, ToB II p. 56                                        |
+| 2    | Map Mimic: https://www.dndbeyond.com/monsters/1624929-map-mimic       |
+| 3    | Random curse: p.249 of GM&#39;s Book of Random Encounters - d100          |
+| 4    | Clockwork weaving spider (1, ToB p. 66)                               |
+| 5    | 1d6 Cobbleswarm (2, ToB p. 68)                                        |
+| 6    | a feral little girl wearing a periapt of proof against poison         |
+| 7    | A large gold coin bearing the crest of the Kryn Dynasty and the queen |
+| 8    | Book about the Arms of the Betrayer Gods                              |
+^ship
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note the &lt;code&gt;^ship&lt;/code&gt; identifier at the bottom there&amp;ndash; it can be called whatever you want, but you&amp;rsquo;ll use that identifier when rolling on that table. I also included the &lt;code&gt;Roll&lt;/code&gt; column, in case I decided on the spot to let players roll instead of doing it myself.&lt;/p&gt;
+&lt;p&gt;Next, in another note (or the same one, if you want), include this line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Shipwreck encounter: `dice: [[Shipwreck Beach#^ship]]`
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When you flip to Preview mode, you&amp;rsquo;ll see this in the place of the line above:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shipwreck_encounter-example.png&#34; alt=&#34;Random Shipwreck encounter using Obsidian Dice Roller&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it!! This has made a HUGE impact on my games, because it&amp;rsquo;s so easy to create or modify tables. I use random encounter tables sparingly &lt;em&gt;during&lt;/em&gt; the game, but often use it &lt;em&gt;before&lt;/em&gt; a game, to introduce something fresh that I hadn&amp;rsquo;t thought of.&lt;/p&gt;
+&lt;h3 id=&#34;session-prep&#34;&gt;Session prep&lt;/h3&gt;
+&lt;p&gt;As you might have guessed, I mostly use Sly Flourish&amp;rsquo;s Lazy DM steps for encounter creation, saved as an Obsidian template:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+type: session
+world: Exandria
+campaign: &amp;quot;The Slayers Five&amp;quot;
+date: {{date}}
+game_date: 836-03-
+location: Rumblecusp
+characters: [Boris, Lira, Ora, Jamedi, Flint]
+tags: [TVZ]
+---
+
+## [[Session Summary]]:
+
+ ^summary
+
+---
+
+## Housekeeping
+
+
+
+## Recap
+
+![[^summary]]
+
+## Strong start
+
+&amp;gt; 
+
+## Scenes
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+	
+## Secrets and Clues
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
+## [[Loot]]
+
+- [ ] 
+
+---
+
+## Log
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Before each session, I&amp;rsquo;ll go through each of these sections.&lt;/p&gt;
+&lt;p&gt;I add &lt;em&gt;metadata&lt;/em&gt; to every session for use with the &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview&lt;/a&gt; plugin later, in case I want to do a search for all sessions that involved a particular NPC or that took place in a certain location, for example.&lt;/p&gt;
+&lt;p&gt;I fill out the &lt;em&gt;Session Summary&lt;/em&gt; section &lt;em&gt;after&lt;/em&gt; the game, but I put it at the top so I can immediately see what happened in the session in case I need to refresh my memory on it in the future. I also identify this section with a &lt;code&gt;^summary&lt;/code&gt; so that I can embed it in the next session, as a recap - more on that below.&lt;/p&gt;
+&lt;p&gt;In the &lt;em&gt;Housekeeping&lt;/em&gt; section, I write down things I want to mention before we dive into the narrative of the session. Usually, these topics are scheduling- or rules-related. For example, if my players have just levelled up and I see that one of them has chosen a feat, I might make a note of it here to make sure that they know what it means. My players are pretty new, so I think it&amp;rsquo;s better to err on the side of more communication rather than less.&lt;/p&gt;
+&lt;p&gt;In the &lt;em&gt;Recap&lt;/em&gt; section, I call the sumary from the previous session and embed it into the current session using something like &lt;code&gt;![[38_8360310-8360311 Seduction at the Moonlight Chateau#^summary]]&lt;/code&gt;. When in preview mode, Obsidian shows just that section labelled with &lt;code&gt;^summary&lt;/code&gt; from the previous game. I like to start the game by either reading out the summary myself, or asking one of the players to recount what they remember. That way we&amp;rsquo;re all on the same page when we begin.&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;Strong start&lt;/em&gt;, I write a paragraph or two of prepared text that I use to kick off the story. This is usually the only text I&amp;rsquo;ll read out word for word during the game.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Scenes&lt;/em&gt; are a list of events that I THINK will happen. My players frequently surprise me, which I welcome, so I also list these with checkboxes so that I can keep track of where the story deviated from the plan.&lt;/p&gt;
+&lt;p&gt;Sly Flourish does recommend a separate section for Fantastic Locations, but I tend to prepare these as separate pages. For example, here are my notes on a possible location, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/The+Charred+Circus&#34;&gt;The Charred Circus&lt;/a&gt;. I don&amp;rsquo;t include them within the session note itself, but I do make sure I have a few that characters could go to. Then, I link to all of them from the note I have for the city they&amp;rsquo;re in, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/Port+Damali#Geography+and+Map&#34;&gt;like this one for Port Damali&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Secrets and Clues&lt;/em&gt; is where I put a list of 10 things that players MIGHT find out somehow. This is where I look when a player rolls a natural 20 on a Perception check. The idea is to describe &lt;em&gt;what&lt;/em&gt; the secrets are, but not get too caught up in trying to plan &lt;em&gt;when&lt;/em&gt; or &lt;em&gt;how&lt;/em&gt; the players will find out those secrets. I try to include things that might be interesting for the players, as well as a few potential adventure hooks. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/38_8360310-8360311+Seduction+at+the+Moonlight+Chateau#Secrets+and+Clues&#34;&gt;Here&amp;rsquo;s a list that I made for a previous game&lt;/a&gt;. I have never used all 10 up in one game, but I like having more than I need.&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;Loot&lt;/em&gt;, I put in any items I know the party will likely get to. If they&amp;rsquo;re in a boss fight, I usually save in this section all the things I&amp;rsquo;ve decided beforehand they&amp;rsquo;ll get. If I don&amp;rsquo;t have something specific like that in mind, I sometimes randomize a bunch of non-magical trinkets. The &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/Loot&#34;&gt;Loot page&lt;/a&gt; contains items I&amp;rsquo;ve picked out for specific characters.&lt;/p&gt;
+&lt;h3 id=&#34;post-session-processing&#34;&gt;Post-session processing&lt;/h3&gt;
+&lt;p&gt;If your players are anything like mine, you&amp;rsquo;ll often find yourself with a bunch of unused material and a lot of stuff you still had to improvise on the spot, despite adequate preparation. That&amp;rsquo;s okay! I actually enjoy when my players do something unexpected. I encourage and reward creative play&amp;hellip; but it does mean that I have to do a bit of a debrief after each session.&lt;/p&gt;
+&lt;p&gt;I try not to prepare things that may really be &amp;ldquo;wasted&amp;rdquo;. Things like locations, NPCs, or general plot hooks can usually be recycled. After games, I spend some time tying off loose ends, noting down decisions the party made and the reasoning behind those decisions, and tweaking connections between NPCs or places based on how the party reacted.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fleshing out bits of the world, with each city or NPC getting a page&lt;/li&gt;
+&lt;li&gt;Tagging cities and NPCs with Location or NPC, and then within the city, doing a query for NPC and &lt;code&gt;city name&lt;/code&gt; to get everyone living in that city.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I use metadata for every page in my campaign so that I can use the excellent &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview/&#34;&gt;Dataview plugin&lt;/a&gt; later to find whatever I want. You already saw my session template, but here&amp;rsquo;s an NPC template that I use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;NPC&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;faction&lt;/span&gt;: []
+&lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt;: []
+&lt;span style=&#34;color:#f92672&#34;&gt;world&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Exandria&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;campaign&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;The Slayers Five&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: [{{&lt;span style=&#34;color:#ae81ff&#34;&gt;date}}]&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;race&lt;/span&gt;: []
+&lt;span style=&#34;color:#f92672&#34;&gt;gender&lt;/span&gt;: []
+&lt;span style=&#34;color:#f92672&#34;&gt;class&lt;/span&gt;: []
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I insert this template for every single NPC in my world, whether my players get to it or not. Because I use it so often, I&amp;rsquo;ve set up a hotkey for inserting templates in the Obsidian settings:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-inserting_template.png&#34; alt=&#34;Setting a hotkey for template insertion&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That way, all I have to do is hit &lt;code&gt;CMD + ;&lt;/code&gt; and select the right template from the list, and the text above is inserted at the beginning of the note as frontmatter, with all the fields I need to fill out. The date is also automatically generated.&lt;/p&gt;
+&lt;p&gt;Using the Dataview plugin, I can then embed queries on location pages so that I can see NPCs in that place at a glance. For example, here&amp;rsquo;s the snippet I put under the &lt;code&gt;People&lt;/code&gt; section in my Port Damali page:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;```&lt;/span&gt;dataview
+&lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; shop &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; Shop, faction &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; Faction, description &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; Description &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Exandria&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;contains&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;NPC&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;contains&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;location&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Port Damali&amp;#34;&lt;/span&gt;)
+SORT file.name &lt;span style=&#34;color:#66d9ef&#34;&gt;ASC&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(If you try this, remove the backticks &lt;code&gt;\&lt;/code&gt; in the snippet above&amp;ndash; those are just to show you the syntax for a dataview query.)&lt;/p&gt;
+&lt;p&gt;That query, when rendered in Preview mode in Obsidian, looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-dataview-port_damali.png&#34; alt=&#34;Rendered Dataview query in Obsidian Preview mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Having the metadata for every NPC, monster, item, and place in my world is essential for creating queries like this. I&amp;rsquo;ve also found it useful to maintain a model of the metadata I use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- `type`
+	- `NPC`
+	- `PC`
+	- `shop`
+	- `place`
+	- `item`
+	- `session` for D&amp;amp;D play sessions
+	- `quest`
+	- `race`
+	- `faction`
+	- `family`
+	- `monster`
+	- `condition`
+	- `deity`
+	- `other` for anything else
+- `characters` (for sessions): characters involved in this session
+- `deceased`
+	- `true`
+	- `false`
+- `family`
+- `faction`
+- `race`
+- `gender`
+- `class`
+- `description`
+- `date`
+- `game_date`
+- `world`
+	- `Exandria`
+	- `Forgotten Realms`
+	- `Exandya`
+- `campaign`
+	- `Order of the Wandering Mind`
+	- `The Slayers Five`
+	- `Die vergessene Schwester`
+	- `Temporary White Circle`
+- `shop` (for proprietors)
+- `shop_type` (for shops)
+	- `general` : general goods store
+	- `alchemy`: potions
+	- `magical items`: sells magical items
+	- `services`: magical spells, messaging, brothel
+	- `tavern`: food and drink
+	- `inn`: lodging
+	- `herbalism`
+	- `smithy`
+- `location`: city of residence
+- `origin`: city of origin
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;during-the-game&#34;&gt;During the game&lt;/h2&gt;
+&lt;p&gt;I keep a &amp;ldquo;World&amp;rdquo; page for each of my D&amp;amp;D campaigns, including a list of sessions:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/campaign-page.png&#34; alt=&#34;Campaign Page with list of sessions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;During the game, I use the session page that I mentioned above, and start filling in the &lt;em&gt;Log&lt;/em&gt; section. I tend to take way fewer notes as a DM than as a player, just because I&amp;rsquo;m busy doing other things, but I do always write down things that the players do that I might need to remember later.&lt;/p&gt;
+&lt;p&gt;One thing that comes up frequently in my games is the need to improvise encounters, NPCs, or locations. I&amp;rsquo;ve had great success in creating a &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/Random+Rolls&#34;&gt;Random Rolls&lt;/a&gt; page that collates many of these random tables in one note. If you click on that link, you unfortunately won&amp;rsquo;t be able to see the results rendered, because the Dice Roller plugin isn&amp;rsquo;t available for Obsidian Publish, but maybe you&amp;rsquo;ll get an idea of things I&amp;rsquo;m rolling on. Most of the tables referred to are from &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/Random+Tables&#34;&gt;this Random Tables note&lt;/a&gt;, but every now and then I&amp;rsquo;ll include tables in location notes instead.&lt;/p&gt;
+&lt;p&gt;I always have this Random Rolls page up as part of my DM workspace, in case I need to quickly improvise something. Here&amp;rsquo;s what the NPC section looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/npc_dice_roller-example.png&#34; alt=&#34;Random rolls on the NPC random tables&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I can use any or all of those things that I want, or use them as inspiration for something else I make up on the spot. Either way, it means I&amp;rsquo;ll never be completely at a loss for the name of an NPC. ;)&lt;/p&gt;
+&lt;h3 id=&#34;initiative-tracker&#34;&gt;Initiative Tracker&lt;/h3&gt;
+&lt;p&gt;I use D&amp;amp;D Beyond for character sheets, but I use &lt;a href=&#34;https://github.com/valentine195/obsidian-initiative-tracker&#34;&gt;Jeremy Valentine&amp;rsquo;s initiative tracker&lt;/a&gt; to handle combat because there are a few critical features that D&amp;amp;D Beyond&amp;rsquo;s Encounter Tracker doesn&amp;rsquo;t yet support:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Status conditions&lt;/li&gt;
+&lt;li&gt;(Easy to tweak) homebrew monsters&lt;/li&gt;
+&lt;li&gt;Hiding monsters&#39; names from the players&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Initiative Tracker plugin supports all of these. When activated, it appears as a side panel in Obsidian:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/initiative_tracker_plugin.png&#34; alt=&#34;Jeremy Valentine&amp;rsquo;s initiative tracker for Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I can easily see everyone&amp;rsquo;s HP and AC at a glance, and also apply special status conditions when necessary. My players don&amp;rsquo;t have to know whose turn it is&amp;ndash; they just have to know when their turn is. I warn them verbally when they&amp;rsquo;re &amp;ldquo;on deck&amp;rdquo;, and they haven&amp;rsquo;t had an issue with that.&lt;/p&gt;
+&lt;p&gt;D&amp;amp;D Beyond does allow you to create homebrew monsters, but the only real benefit to doing so is to be able to use it in their Combat Tracker, so I&amp;rsquo;ve been using another plugin by Jeremy Valentine, the author of this one, to create monster statblocks&lt;/p&gt;
+&lt;h3 id=&#34;statblocks&#34;&gt;Statblocks&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/valentine195/obsidian-5e-statblocks&#34;&gt;The 5e statblocks plugin&lt;/a&gt; lets me easily create homebrew creatures just by using this format:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\```statblock
+name: string
+size: string
+type: string
+subtype: string
+alignment: string
+ac: number
+hp: number
+hit_dice: string
+speed: string
+stats: [number, number, number, number, number, number]
+fage_stats: [number, number, number, number, number, number, number, number, number]
+saves:
+    - &amp;lt;ability-score&amp;gt;: number
+skillsaves:
+    - &amp;lt;skill-name&amp;gt;: number
+damage_vulnerabilities: string
+damage_resistances: string
+damage_immunities: string
+condition_immunities: string
+senses: string
+languages: string
+cr: number
+spells:
+    - &amp;lt;description&amp;gt;
+    - &amp;lt;spell level&amp;gt;: &amp;lt;spell-list&amp;gt;
+traits:
+    - [&amp;lt;trait-name&amp;gt;, &amp;lt;trait-description&amp;gt;]
+    - ...
+actions:
+    - [&amp;lt;trait-name&amp;gt;, &amp;lt;trait-description&amp;gt;]
+    - ...
+legendary_actions:
+    - [&amp;lt;legendary_actions-name&amp;gt;, &amp;lt;legendary_actions-description&amp;gt;]
+    - ...
+reactions:
+    - [&amp;lt;reaction-name&amp;gt;, &amp;lt;reaction-description&amp;gt;]
+    - ...
+\```
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;(Again, remove the backticks &lt;code&gt;\&lt;/code&gt; at the starting and ending lines of the snippet above if you copy and paste this into your vault.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I usually start with a &amp;ldquo;real&amp;rdquo; monster from official or unofficial sourcebooks, then tweak it from there. For example, here&amp;rsquo;s a sample one that I tweaked from &lt;a href=&#34;https://koboldpress.com/tome-of-beasts/&#34;&gt;Tome of Beasts&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-statblocks-example.png&#34; alt=&#34;Sample of 5e statblock plugin in action&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The best part about this plugin is that it integrates with the Initiative Tracker. When you create a statblock and save it, that monster then becomes available for use within the Initiative Tracker, as you can see from the screenshot above.&lt;/p&gt;
+&lt;h2 id=&#34;publishing&#34;&gt;Publishing&lt;/h2&gt;
+&lt;p&gt;I subscribe to &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/World&#34;&gt;Obsidian Publish&lt;/a&gt;, partly to give back to the fine Obsidian developers who&amp;rsquo;ve made a tool I use daily and partly because I&amp;rsquo;ve found that it&amp;rsquo;s reduced friction in publishing. I use it primarily for non-D&amp;amp;D-related things, but D&amp;amp;D is part of my life, so it&amp;rsquo;s there as well. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Exandria/World&#34;&gt;You can find my notes on the D&amp;amp;D campaign I DM here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some of the plugins that I use unfortunately don&amp;rsquo;t render correctly when Published, but the developers are working on that.&lt;/p&gt;
+&lt;p&gt;I publish my campaign notes mainly because I love seeing other DM&amp;rsquo;s thought processes and systems, so I thought I&amp;rsquo;d return the favour by sharing mine as well. In case you were wondering, my players don&amp;rsquo;t know I publish these notes&amp;ndash; or, at least, I hope they don&amp;rsquo;t!&lt;/p&gt;
+&lt;h2 id=&#34;player-facing-campaign-vault&#34;&gt;Player-facing campaign vault&lt;/h2&gt;
+&lt;p&gt;I used to drop handouts into a WhatsApp group with my players, but it became increasingly unwieldy to look for something. We switched to Slack, but that had the same problem of needing to scroll back through lots of photos before finding the right one. Photos aren&amp;rsquo;t very searchable in those apps.&lt;/p&gt;
+&lt;p&gt;A few months ago, I switched to Obsidian for handouts. I created a separate vault for the campaign and shared it with my players via Dropbox. I did have to talk them through the setup, but it&amp;rsquo;s worked out very well for us as a free alternative.&lt;/p&gt;
+&lt;p&gt;In the vault, I put things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pictures and other handouts&lt;/li&gt;
+&lt;li&gt;Session videos and summaries&lt;/li&gt;
+&lt;li&gt;Links for everything we use as a group&lt;/li&gt;
+&lt;li&gt;House rules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;session-page&#34;&gt;Session page&lt;/h3&gt;
+&lt;p&gt;I create a page for every session we have, which has a section for the video recording of that session (unlisted and just for us, sorry), a player-friendly summary, and a log. The log is where I dump photos I give them during the session. Here&amp;rsquo;s what that looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-player-vault-session.png&#34; alt=&#34;Session page for my player-facing vault&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t put any other notes in the log; that&amp;rsquo;s the players&#39; jobs (if they want to).&lt;/p&gt;
+&lt;p&gt;I like to have a &amp;ldquo;Story Thus Far&amp;rdquo; page that embeds the video and summary sections of all the sessions, so any of us can read through it to remember what&amp;rsquo;s happened. It&amp;rsquo;s fun to see how far we&amp;rsquo;ve come as a group.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-player_vault-story-thus-far.png&#34; alt=&#34;Story Thus Far page in my player-facing vault&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;about-our-game&#34;&gt;About our game&lt;/h3&gt;
+&lt;p&gt;The About our game page has a list of links to all the tools we use, our schedule, and a few things about the campaign and the world.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-player_vault-about_our_game.png&#34; alt=&#34;About our game page in my player-facing vault&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rules&#34;&gt;Rules&lt;/h3&gt;
+&lt;p&gt;I keep a house rules page that shows all the extra rules I&amp;rsquo;ve put into the game. I mostly play with all the WoTC-produced sourcebooks, but I&amp;rsquo;ve added some extra rules about things that my players are interested in, such as strongholds (for which I use &lt;a href=&#34;https://shop.mcdmproductions.com/collections/strongholds-followers-books&#34;&gt;Matt Colville&amp;rsquo;s Strongholds &amp;amp; Followers book&lt;/a&gt;) and smith&amp;rsquo;s tools.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-player_vault-rules.png&#34; alt=&#34;Rules page in my player-facing vault&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I also have some other pages on rules that come up often, such as Ship statblocks (since the campaign is set on a coast) and suggested downtime activities.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I call my approach to game preparation the Non-Lazy DM&amp;rsquo;s approach as a tongue-in-cheek nod to &lt;a href=&#34;https://slyflourish.com&#34;&gt;Mike Shea&amp;rsquo;s&lt;/a&gt; content, but there&amp;rsquo;s truth to the moniker, too. My setup is extremely detail-oriented, time-consuming, and &lt;em&gt;fun&lt;/em&gt;&amp;hellip; at least for me! And that&amp;rsquo;s the key: I wouldn&amp;rsquo;t be doing any of this if I didn&amp;rsquo;t find it truly enjoyable to world-build to this level of detail.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re a non-lazy DM too, thanks for sticking around! I hope this has given you some ideas for how you could use Obsidian to run your games and stimulate your imagination, too.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to import Shortform highlights to Obsidian via Readwise</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</link>

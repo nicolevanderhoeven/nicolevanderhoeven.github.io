@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How I Use Obsidian for D&amp;D: The Non-Lazy Dungeon Master&#39;s Edition | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How I Use Obsidian for D&amp;D: The Non-Lazy Dungeon Master&#39;s Edition" />
+<meta property="og:description" content="Last month, I wrote about how I use Obsidian for D&amp;D as a player in a 4e campaign (I play a half-elf hybrid wizard/cleric). This is about my second weekly game, in which I am the Dungeon Master for a 5e campaign. I&rsquo;m a relatively new DM (I&rsquo;ve got 39 games under my belt at the time this writing, and Obsidian is at the center of my workflow for improving my DMing skills, getting inspiration, preparing for a game, running the game, and making sure my players are having fun." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition/" />
+<meta property="article:published_time" content="2021-09-30T16:29:54+02:00" />
+<meta property="article:modified_time" content="2021-09-30T16:29:54+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I Use Obsidian for D&amp;D: The Non-Lazy Dungeon Master&#39;s Edition"/>
+<meta name="twitter:description" content="Last month, I wrote about how I use Obsidian for D&amp;D as a player in a 4e campaign (I play a half-elf hybrid wizard/cleric). This is about my second weekly game, in which I am the Dungeon Master for a 5e campaign. I&rsquo;m a relatively new DM (I&rsquo;ve got 39 games under my belt at the time this writing, and Obsidian is at the center of my workflow for improving my DMing skills, getting inspiration, preparing for a game, running the game, and making sure my players are having fun."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&text=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&is_video=false&description=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&name=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition&description=Last%20month%2c%20I%20wrote%20about%20how%20I%20use%20Obsidian%20for%20D%26amp%3bD%20as%20a%20player%20in%20a%204e%20campaign%20%28I%20play%20a%20half-elf%20hybrid%20wizard%2fcleric%29.%20This%20is%20about%20my%20second%20weekly%20game%2c%20in%20which%20I%20am%20the%20Dungeon%20Master%20for%20a%205e%20campaign.%20I%26rsquo%3bm%20a%20relatively%20new%20DM%20%28I%26rsquo%3bve%20got%2039%20games%20under%20my%20belt%20at%20the%20time%20this%20writing%2c%20and%20Obsidian%20is%20at%20the%20center%20of%20my%20workflow%20for%20improving%20my%20DMing%20skills%2c%20getting%20inspiration%2c%20preparing%20for%20a%20game%2c%20running%20the%20game%2c%20and%20making%20sure%20my%20players%20are%20having%20fun.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&t=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#plugins-i-use">Plugins I use</a></li>
+    <li><a href="#outside-the-game">Outside the game</a>
+      <ul>
+        <li><a href="#world-building">World-building</a></li>
+        <li><a href="#adventure-creation">Adventure creation</a>
+          <ul>
+            <li><a href="#random-tables">Random tables</a></li>
+          </ul>
+        </li>
+        <li><a href="#session-prep">Session prep</a></li>
+        <li><a href="#post-session-processing">Post-session processing</a></li>
+      </ul>
+    </li>
+    <li><a href="#during-the-game">During the game</a>
+      <ul>
+        <li><a href="#initiative-tracker">Initiative Tracker</a></li>
+        <li><a href="#statblocks">Statblocks</a></li>
+      </ul>
+    </li>
+    <li><a href="#publishing">Publishing</a></li>
+    <li><a href="#player-facing-campaign-vault">Player-facing campaign vault</a>
+      <ul>
+        <li><a href="#session-page">Session page</a></li>
+        <li><a href="#about-our-game">About our game</a></li>
+        <li><a href="#rules">Rules</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How I Use Obsidian for D&amp;D: The Non-Lazy Dungeon Master&#39;s Edition
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-09-30 16:29:54 &#43;0200 CEST" itemprop="datePublished">2021-Sep-30</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/dd" rel="tag">D&amp;D</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/taking-notes" rel="tag">taking notes</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/zettelkasten" rel="tag">zettelkasten</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Last month, I wrote about how I use <a href="https://obsidian.md">Obsidian</a> for <a href="https://nicolevanderhoeven.com/blog/20210809-dnd-obsidian-player/">D&amp;D as a player</a> in a 4e campaign (I play a half-elf hybrid wizard/cleric). This is about my second weekly game, in which I am the Dungeon Master for a 5e campaign. I&rsquo;m a relatively new DM (I&rsquo;ve got <a href="https://notes.nicolevanderhoeven.com/Exandria/World">39 games</a> under my belt at the time this writing, and Obsidian is at the center of my workflow for improving my DMing skills, getting inspiration, preparing for a game, running the game, and making sure my players are having fun.</p>
+<p>In many ways, my setup is the Non-Lazy DM&rsquo;s approach to preparing for D&amp;D games: high-effort, high-touch, and high-return. But I only do it because I enjoy it!</p>
+<h2 id="plugins-i-use">Plugins I use</h2>
+<p>This is going to be a long article, so if you&rsquo;re just after the plugins I use, here they are up front!</p>
+<p>I go into detail for some, but not all of these, in the article below.</p>
+<ul>
+<li>Jeremy Valentine&rsquo;s stuff
+<ul>
+<li><a href="https://github.com/valentine195/obsidian-5e-statblocks">5e statblocks plugin</a></li>
+<li><a href="https://github.com/valentine195/obsidian-initiative-tracker">Initiative tracker</a></li>
+<li><a href="https://github.com/valentine195/obsidian-dice-roller">Obsidian Dice Roller</a></li>
+<li><a href="https://github.com/valentine195/obsidian-admonition">Obsidian Admonition</a></li>
+<li><a href="https://github.com/valentine195/obsidian-leaflet-plugin">Obsidian Leaflet</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/tgrosinger/advanced-tables-obsidian">Advanced Tables</a></li>
+<li><a href="https://github.com/Darakah/obsidian-gallery">Gallery</a></li>
+<li><a href="https://github.com/vslinko/obsidian-outliner">Outliner</a></li>
+<li><a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview</a></li>
+<li><a href="https://github.com/Darakah/obsidian-timelines">Obsidian Timelines</a></li>
+</ul>
+<h2 id="outside-the-game">Outside the game</h2>
+<p>Although I use Obsidian <em>while</em> playing D&amp;D, I use it most for D&amp;D between games: fleshing out the world, getting inspiration for new adventures, or preparing for specific sessions.</p>
+<h3 id="world-building">World-building</h3>
+<p>Many DMs run published campaigns, but I&rsquo;m not one of them. I don&rsquo;t think there&rsquo;s anything wrong with running published campaigns; I just personally enjoy world-building and being able to tailor the environment to what I know my specific players will like. However, I still do read campaign books, for D&amp;D as well as for other systems, for inspiration. I am also a voracious fantasy reader, and consider everything fair game for &ldquo;stealing&rdquo; for my games.</p>
+<p>One thing I&rsquo;ve begun experimenting with is processing my fiction reads the way I do my nonfiction reads. What better place to look for inspiration about creating a fantasy world than other fantasy worlds? How could I use a <em>Bene Gesserit</em>-like faction in my campaign?</p>
+<p>I recently reread the first <em>Dune</em> book in preparation for the movie coming out later this year, but while I was reading it, I remembered how much I love the world it&rsquo;s set in. I read books on Kindle, either on my actual physical Kindle ereader or on the Kindle app on my mobile, and I took highlights while I was reading <em>Dune</em>. You can see my full highlights <a href="https://notes.nicolevanderhoeven.com/Readwise/Books/Dune">here</a>, synced <a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/">via Readwise</a>. I highlight turns of phrases I like, character descriptions that sounded cool, or passages that are particularly revealing of the type of world the story of Dune is set in. Below is an example of a quote I highlighted:</p>
+<blockquote>
+<p>Schools were started to train human talents.” “Bene Gesserit schools?” She nodded. “We have two chief survivors of those ancient schools: the Bene Gesserit and the Spacing Guild. The Guild, so we think, emphasizes almost pure mathematics. Bene Gesserit performs another function.” “Politics,” he said. (<a href="https://readwise.io/to_kindle?action=open&amp;asin=B001F0WXY0&amp;location=248">Location 248</a>)</p>
+</blockquote>
+<p>It really resonated with me as a good characterization of two important factions in the Dune universe.</p>
+<p>Then, just as I do with nonfiction books, I create a separate note about the book itself, attempting to summarize the parts of it that might be interesting or useful to me in the future. Below is a screenshot of my page on the first book of Dune. I identify &ldquo;Key truths&rdquo; about the world, because I also like to use that terminology when creating secrets or themes for a fantasy world or city I&rsquo;ve created.</p>
+<p><img src="/assets/dune-processed.png" alt="My notes on the book Dune"></p>
+<p><a href="https://notes.nicolevanderhoeven.com/Book/Dune">Here are my full notes on Dune</a>.</p>
+<p>Then, I also think about tropes or patterns of character, plot, or setting present in the book. I&rsquo;ve started collecting these in a a page called <a href="https://notes.nicolevanderhoeven.com/Forms">Forms</a> in my vault. I think it&rsquo;s useful to spot things that occur again and again in fantasy fiction, whether they&rsquo;re overused or not. If they&rsquo;re tropes that I&rsquo;d rather not repeat, having a &ldquo;formula&rdquo; of the trope helps me either avoid it or consciously subvert it in my games. Sometimes, I just take a form wholesale and incorporate it as is.</p>
+<p><a href="https://notes.nicolevanderhoeven.com/Form/Nuns+who+think+and+fight">Here&rsquo;s an example of a page</a> I created that was inspired by the Bene Gesserit&ndash; a short note about &ldquo;Nuns who think and fight&rdquo;.</p>
+<p>I haven&rsquo;t been doing it for very long, but it&rsquo;s already come in useful when thinking of major events and players in my world.</p>
+<h3 id="adventure-creation">Adventure creation</h3>
+<p>Adventures are smaller-scale and higher-resolution than campaigns or worlds, so I often need more specific notes than forms.</p>
+<p>I read and highlight adventure blog posts and articles using <a href="https://blog.readwise.io/readwise-reading-app/">Readwise&rsquo;s recently announced Reader app</a>, and then they, along with tweets, books, and PDFs, get sent to Readwise and then Obsidian using the <a href="https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work">Official Readwise plugin for Obsidian</a>. I&rsquo;ve <a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/">written about this process in depth</a>, but here&rsquo;s what that looks like for Mike Shea&rsquo;s <em>Return of the Lazy Dungeon Master</em> - <a href="https://amzn.to/2X93rvX">affiliate link</a>.</p>
+<p><img src="/assets/return_of_the_lazy_dm.png" alt="My notes on Return of the Lazy Dungeon Master"></p>
+<p>An advantage of using Reader (which is currently in a private beta, so I&rsquo;m not allowed to share screenshots of it) is that I can even highlight text locked behind a paywall. For example, I have a D&amp;D Beyond subscription and I&rsquo;ve bought all the books available on their store, but most reading apps don&rsquo;t know that, so it&rsquo;s been hard to find one that will let me highlight text from one of the WotC sourcebooks. Not so with Reader. Here&rsquo;s what my highlights from the first chapter of <em>Volo&rsquo;s Guide to Monsters</em> looks like in my Obsidian vault after it&rsquo;s synced from Reader:</p>
+<p><img src="/assets/volos_guide-chapter1.png" alt="My highlights from Volo&rsquo;s Guide to Monsters"></p>
+<p>Readwise is great because I can highlight something on my Kindle and worry about processing it later in Obsidian. I process incoming Obsidian notes daily from 9-10pm&ndash; that doesn&rsquo;t mean I get through them all, just that I have a scheduled time to go through highlights and notes every day.</p>
+<p>For D&amp;D-specific notes, that also involves summarizing what I&rsquo;ve learned into the notes I already have on how to be a dungeon master:</p>
+<p><img src="/assets/dm_session_prep.png" alt="My notes on session prep as a DM"></p>
+<p>The referencing feature on Obsidian lets me confidently paraphrase without stealing. All I need to do is put a <code>[^lazydm]</code> where I want the superscript to be within the text, and then at the end of the note, I put something like:</p>
+<p><code>[^lazydm]: Shea, M. (2018). _Return of the lazy dungeon master_. [[Return of the Lazy Dungeon Master|My highlights]].</code></p>
+<p>That gets parsed as a footnote by Obsidian and lets me properly credit authors.</p>
+<p>When I find good tools that help me flesh out adventures, I try to update <a href="https://notes.nicolevanderhoeven.com/Exandria/DM+Tools+and+Inspiration">my page on DM tools and inspiration</a>, so they&rsquo;re all in one place.</p>
+<p>While creating adventures, I like to use <a href="https://github.com/valentine195/obsidian-admonition">Obsidian Admonition</a> to call out specific parts of the text for me as I&rsquo;m running the adventure, like this:</p>
+<p><img src="/assets/obsidian-admonition-example.png" alt="Sample of how I use Obsidian Admonition"></p>
+<h4 id="random-tables">Random tables</h4>
+<p>I definitely have overarching plans about the wider plot in the world at large, but I also like to be surprised. Throwing random elements into games is one of the ways that I can keep myself on my toes and remind myself that I&rsquo;m not the only one making the story.</p>
+<p>There are many random tables in both official and unofficial D&amp;D sourcebooks, but I only use those as starting points. For me, creating random tables that are tailored to my characters and to the things they care about is where it&rsquo;s at!</p>
+<p>I&rsquo;ve experimented with <a href="https://nicolevanderhoeven.com/dndgen/characters.html">creating my own random generators</a> for various things, as well as using existing ones like <a href="https://donjon.bin.sh/">Donjon</a>, but it&rsquo;s an Obsidian plugin, Jeremy Valentine&rsquo;s <a href="https://github.com/valentine195/obsidian-dice-roller">Dice Roller</a>, that I have settled on.</p>
+<p>The name &ldquo;Dice Roller&rdquo; makes you think it&rsquo;s only for rolling dice, but it&rsquo;s much more than that. Its REAL value, in my opinion, is in how it lets me create tables for ANYTHING, and then randomly pull one row out of it. Here&rsquo;s how it works.</p>
+<p>First, you create a table. I had a session where my players discovered a place I called <a href="https://notes.nicolevanderhoeven.com/Exandria/Shipwreck+Beach">Shipwreck Beach</a>, and had a lot of fun going through several of the ships that were there. Here&rsquo;s a table of &ldquo;encounters&rdquo; I put together for that session.</p>
+<pre><code>### Ship encounters
+
+| Roll | Encounter                                                             |
+| ---- | --------------------------------------------------------------------- |
+| 1    | Carnivorous Ship, ToB II p. 56                                        |
+| 2    | Map Mimic: https://www.dndbeyond.com/monsters/1624929-map-mimic       |
+| 3    | Random curse: p.249 of GM's Book of Random Encounters - d100          |
+| 4    | Clockwork weaving spider (1, ToB p. 66)                               |
+| 5    | 1d6 Cobbleswarm (2, ToB p. 68)                                        |
+| 6    | a feral little girl wearing a periapt of proof against poison         |
+| 7    | A large gold coin bearing the crest of the Kryn Dynasty and the queen |
+| 8    | Book about the Arms of the Betrayer Gods                              |
+^ship
+</code></pre><p>Note the <code>^ship</code> identifier at the bottom there&ndash; it can be called whatever you want, but you&rsquo;ll use that identifier when rolling on that table. I also included the <code>Roll</code> column, in case I decided on the spot to let players roll instead of doing it myself.</p>
+<p>Next, in another note (or the same one, if you want), include this line:</p>
+<pre><code>Shipwreck encounter: `dice: [[Shipwreck Beach#^ship]]`
+</code></pre><p>When you flip to Preview mode, you&rsquo;ll see this in the place of the line above:</p>
+<p><img src="/assets/shipwreck_encounter-example.png" alt="Random Shipwreck encounter using Obsidian Dice Roller"></p>
+<p>That&rsquo;s it!! This has made a HUGE impact on my games, because it&rsquo;s so easy to create or modify tables. I use random encounter tables sparingly <em>during</em> the game, but often use it <em>before</em> a game, to introduce something fresh that I hadn&rsquo;t thought of.</p>
+<h3 id="session-prep">Session prep</h3>
+<p>As you might have guessed, I mostly use Sly Flourish&rsquo;s Lazy DM steps for encounter creation, saved as an Obsidian template:</p>
+<pre><code>---
+type: session
+world: Exandria
+campaign: &quot;The Slayers Five&quot;
+date: {{date}}
+game_date: 836-03-
+location: Rumblecusp
+characters: [Boris, Lira, Ora, Jamedi, Flint]
+tags: [TVZ]
+---
+
+## [[Session Summary]]:
+
+ ^summary
+
+---
+
+## Housekeeping
+
+
+
+## Recap
+
+![[^summary]]
+
+## Strong start
+
+&gt; 
+
+## Scenes
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+	
+## Secrets and Clues
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
+## [[Loot]]
+
+- [ ] 
+
+---
+
+## Log
+
+
+</code></pre><p>Before each session, I&rsquo;ll go through each of these sections.</p>
+<p>I add <em>metadata</em> to every session for use with the <a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview</a> plugin later, in case I want to do a search for all sessions that involved a particular NPC or that took place in a certain location, for example.</p>
+<p>I fill out the <em>Session Summary</em> section <em>after</em> the game, but I put it at the top so I can immediately see what happened in the session in case I need to refresh my memory on it in the future. I also identify this section with a <code>^summary</code> so that I can embed it in the next session, as a recap - more on that below.</p>
+<p>In the <em>Housekeeping</em> section, I write down things I want to mention before we dive into the narrative of the session. Usually, these topics are scheduling- or rules-related. For example, if my players have just levelled up and I see that one of them has chosen a feat, I might make a note of it here to make sure that they know what it means. My players are pretty new, so I think it&rsquo;s better to err on the side of more communication rather than less.</p>
+<p>In the <em>Recap</em> section, I call the sumary from the previous session and embed it into the current session using something like <code>![[38_8360310-8360311 Seduction at the Moonlight Chateau#^summary]]</code>. When in preview mode, Obsidian shows just that section labelled with <code>^summary</code> from the previous game. I like to start the game by either reading out the summary myself, or asking one of the players to recount what they remember. That way we&rsquo;re all on the same page when we begin.</p>
+<p>In <em>Strong start</em>, I write a paragraph or two of prepared text that I use to kick off the story. This is usually the only text I&rsquo;ll read out word for word during the game.</p>
+<p><em>Scenes</em> are a list of events that I THINK will happen. My players frequently surprise me, which I welcome, so I also list these with checkboxes so that I can keep track of where the story deviated from the plan.</p>
+<p>Sly Flourish does recommend a separate section for Fantastic Locations, but I tend to prepare these as separate pages. For example, here are my notes on a possible location, <a href="https://notes.nicolevanderhoeven.com/Exandria/The+Charred+Circus">The Charred Circus</a>. I don&rsquo;t include them within the session note itself, but I do make sure I have a few that characters could go to. Then, I link to all of them from the note I have for the city they&rsquo;re in, <a href="https://notes.nicolevanderhoeven.com/Exandria/Port+Damali#Geography+and+Map">like this one for Port Damali</a>.</p>
+<p><em>Secrets and Clues</em> is where I put a list of 10 things that players MIGHT find out somehow. This is where I look when a player rolls a natural 20 on a Perception check. The idea is to describe <em>what</em> the secrets are, but not get too caught up in trying to plan <em>when</em> or <em>how</em> the players will find out those secrets. I try to include things that might be interesting for the players, as well as a few potential adventure hooks. <a href="https://notes.nicolevanderhoeven.com/Exandria/38_8360310-8360311+Seduction+at+the+Moonlight+Chateau#Secrets+and+Clues">Here&rsquo;s a list that I made for a previous game</a>. I have never used all 10 up in one game, but I like having more than I need.</p>
+<p>In <em>Loot</em>, I put in any items I know the party will likely get to. If they&rsquo;re in a boss fight, I usually save in this section all the things I&rsquo;ve decided beforehand they&rsquo;ll get. If I don&rsquo;t have something specific like that in mind, I sometimes randomize a bunch of non-magical trinkets. The <a href="https://notes.nicolevanderhoeven.com/Exandria/Loot">Loot page</a> contains items I&rsquo;ve picked out for specific characters.</p>
+<h3 id="post-session-processing">Post-session processing</h3>
+<p>If your players are anything like mine, you&rsquo;ll often find yourself with a bunch of unused material and a lot of stuff you still had to improvise on the spot, despite adequate preparation. That&rsquo;s okay! I actually enjoy when my players do something unexpected. I encourage and reward creative play&hellip; but it does mean that I have to do a bit of a debrief after each session.</p>
+<p>I try not to prepare things that may really be &ldquo;wasted&rdquo;. Things like locations, NPCs, or general plot hooks can usually be recycled. After games, I spend some time tying off loose ends, noting down decisions the party made and the reasoning behind those decisions, and tweaking connections between NPCs or places based on how the party reacted.</p>
+<ul>
+<li>Fleshing out bits of the world, with each city or NPC getting a page</li>
+<li>Tagging cities and NPCs with Location or NPC, and then within the city, doing a query for NPC and <code>city name</code> to get everyone living in that city.</li>
+</ul>
+<p>I use metadata for every page in my campaign so that I can use the excellent <a href="https://github.com/blacksmithgu/obsidian-dataview/">Dataview plugin</a> later to find whatever I want. You already saw my session template, but here&rsquo;s an NPC template that I use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">type</span>: <span style="color:#ae81ff">NPC</span>
+<span style="color:#f92672">faction</span>: []
+<span style="color:#f92672">location</span>: []
+<span style="color:#f92672">world</span>: <span style="color:#ae81ff">Exandria</span>
+<span style="color:#f92672">campaign</span>: <span style="color:#e6db74">&#34;The Slayers Five&#34;</span>
+<span style="color:#f92672">date</span>: [{{<span style="color:#ae81ff">date}}]</span>
+<span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#f92672">race</span>: []
+<span style="color:#f92672">gender</span>: []
+<span style="color:#f92672">class</span>: []
+---
+</code></pre></div><p>I insert this template for every single NPC in my world, whether my players get to it or not. Because I use it so often, I&rsquo;ve set up a hotkey for inserting templates in the Obsidian settings:</p>
+<p><img src="/assets/obsidian-inserting_template.png" alt="Setting a hotkey for template insertion"></p>
+<p>That way, all I have to do is hit <code>CMD + ;</code> and select the right template from the list, and the text above is inserted at the beginning of the note as frontmatter, with all the fields I need to fill out. The date is also automatically generated.</p>
+<p>Using the Dataview plugin, I can then embed queries on location pages so that I can see NPCs in that place at a glance. For example, here&rsquo;s the snippet I put under the <code>People</code> section in my Port Damali page:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">```</span>dataview
+<span style="color:#66d9ef">table</span> shop <span style="color:#66d9ef">as</span> Shop, faction <span style="color:#66d9ef">as</span> Faction, description <span style="color:#66d9ef">as</span> Description <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#34;Exandria&#34;</span>
+<span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">contains</span>(<span style="color:#66d9ef">type</span>, <span style="color:#e6db74">&#34;NPC&#34;</span>) <span style="color:#66d9ef">and</span> <span style="color:#66d9ef">contains</span>(<span style="color:#66d9ef">location</span>,<span style="color:#e6db74">&#34;Port Damali&#34;</span>)
+SORT file.name <span style="color:#66d9ef">ASC</span>
+<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">```</span>
+</code></pre></div><p>(If you try this, remove the backticks <code>\</code> in the snippet above&ndash; those are just to show you the syntax for a dataview query.)</p>
+<p>That query, when rendered in Preview mode in Obsidian, looks like this:</p>
+<p><img src="/assets/obsidian-dataview-port_damali.png" alt="Rendered Dataview query in Obsidian Preview mode"></p>
+<p>Having the metadata for every NPC, monster, item, and place in my world is essential for creating queries like this. I&rsquo;ve also found it useful to maintain a model of the metadata I use:</p>
+<pre><code>- `type`
+	- `NPC`
+	- `PC`
+	- `shop`
+	- `place`
+	- `item`
+	- `session` for D&amp;D play sessions
+	- `quest`
+	- `race`
+	- `faction`
+	- `family`
+	- `monster`
+	- `condition`
+	- `deity`
+	- `other` for anything else
+- `characters` (for sessions): characters involved in this session
+- `deceased`
+	- `true`
+	- `false`
+- `family`
+- `faction`
+- `race`
+- `gender`
+- `class`
+- `description`
+- `date`
+- `game_date`
+- `world`
+	- `Exandria`
+	- `Forgotten Realms`
+	- `Exandya`
+- `campaign`
+	- `Order of the Wandering Mind`
+	- `The Slayers Five`
+	- `Die vergessene Schwester`
+	- `Temporary White Circle`
+- `shop` (for proprietors)
+- `shop_type` (for shops)
+	- `general` : general goods store
+	- `alchemy`: potions
+	- `magical items`: sells magical items
+	- `services`: magical spells, messaging, brothel
+	- `tavern`: food and drink
+	- `inn`: lodging
+	- `herbalism`
+	- `smithy`
+- `location`: city of residence
+- `origin`: city of origin
+</code></pre><h2 id="during-the-game">During the game</h2>
+<p>I keep a &ldquo;World&rdquo; page for each of my D&amp;D campaigns, including a list of sessions:</p>
+<p><img src="/assets/campaign-page.png" alt="Campaign Page with list of sessions"></p>
+<p>During the game, I use the session page that I mentioned above, and start filling in the <em>Log</em> section. I tend to take way fewer notes as a DM than as a player, just because I&rsquo;m busy doing other things, but I do always write down things that the players do that I might need to remember later.</p>
+<p>One thing that comes up frequently in my games is the need to improvise encounters, NPCs, or locations. I&rsquo;ve had great success in creating a <a href="https://notes.nicolevanderhoeven.com/Exandria/Random+Rolls">Random Rolls</a> page that collates many of these random tables in one note. If you click on that link, you unfortunately won&rsquo;t be able to see the results rendered, because the Dice Roller plugin isn&rsquo;t available for Obsidian Publish, but maybe you&rsquo;ll get an idea of things I&rsquo;m rolling on. Most of the tables referred to are from <a href="https://notes.nicolevanderhoeven.com/Exandria/Random+Tables">this Random Tables note</a>, but every now and then I&rsquo;ll include tables in location notes instead.</p>
+<p>I always have this Random Rolls page up as part of my DM workspace, in case I need to quickly improvise something. Here&rsquo;s what the NPC section looks like:</p>
+<p><img src="/assets/npc_dice_roller-example.png" alt="Random rolls on the NPC random tables"></p>
+<p>I can use any or all of those things that I want, or use them as inspiration for something else I make up on the spot. Either way, it means I&rsquo;ll never be completely at a loss for the name of an NPC. ;)</p>
+<h3 id="initiative-tracker">Initiative Tracker</h3>
+<p>I use D&amp;D Beyond for character sheets, but I use <a href="https://github.com/valentine195/obsidian-initiative-tracker">Jeremy Valentine&rsquo;s initiative tracker</a> to handle combat because there are a few critical features that D&amp;D Beyond&rsquo;s Encounter Tracker doesn&rsquo;t yet support:</p>
+<ul>
+<li>Status conditions</li>
+<li>(Easy to tweak) homebrew monsters</li>
+<li>Hiding monsters' names from the players</li>
+</ul>
+<p>The Initiative Tracker plugin supports all of these. When activated, it appears as a side panel in Obsidian:</p>
+<p><img src="/assets/initiative_tracker_plugin.png" alt="Jeremy Valentine&rsquo;s initiative tracker for Obsidian"></p>
+<p>I can easily see everyone&rsquo;s HP and AC at a glance, and also apply special status conditions when necessary. My players don&rsquo;t have to know whose turn it is&ndash; they just have to know when their turn is. I warn them verbally when they&rsquo;re &ldquo;on deck&rdquo;, and they haven&rsquo;t had an issue with that.</p>
+<p>D&amp;D Beyond does allow you to create homebrew monsters, but the only real benefit to doing so is to be able to use it in their Combat Tracker, so I&rsquo;ve been using another plugin by Jeremy Valentine, the author of this one, to create monster statblocks</p>
+<h3 id="statblocks">Statblocks</h3>
+<p><a href="https://github.com/valentine195/obsidian-5e-statblocks">The 5e statblocks plugin</a> lets me easily create homebrew creatures just by using this format:</p>
+<pre><code>\```statblock
+name: string
+size: string
+type: string
+subtype: string
+alignment: string
+ac: number
+hp: number
+hit_dice: string
+speed: string
+stats: [number, number, number, number, number, number]
+fage_stats: [number, number, number, number, number, number, number, number, number]
+saves:
+    - &lt;ability-score&gt;: number
+skillsaves:
+    - &lt;skill-name&gt;: number
+damage_vulnerabilities: string
+damage_resistances: string
+damage_immunities: string
+condition_immunities: string
+senses: string
+languages: string
+cr: number
+spells:
+    - &lt;description&gt;
+    - &lt;spell level&gt;: &lt;spell-list&gt;
+traits:
+    - [&lt;trait-name&gt;, &lt;trait-description&gt;]
+    - ...
+actions:
+    - [&lt;trait-name&gt;, &lt;trait-description&gt;]
+    - ...
+legendary_actions:
+    - [&lt;legendary_actions-name&gt;, &lt;legendary_actions-description&gt;]
+    - ...
+reactions:
+    - [&lt;reaction-name&gt;, &lt;reaction-description&gt;]
+    - ...
+\```
+</code></pre><p><em>(Again, remove the backticks <code>\</code> at the starting and ending lines of the snippet above if you copy and paste this into your vault.)</em></p>
+<p>I usually start with a &ldquo;real&rdquo; monster from official or unofficial sourcebooks, then tweak it from there. For example, here&rsquo;s a sample one that I tweaked from <a href="https://koboldpress.com/tome-of-beasts/">Tome of Beasts</a>:</p>
+<p><img src="/assets/obsidian-statblocks-example.png" alt="Sample of 5e statblock plugin in action"></p>
+<p>The best part about this plugin is that it integrates with the Initiative Tracker. When you create a statblock and save it, that monster then becomes available for use within the Initiative Tracker, as you can see from the screenshot above.</p>
+<h2 id="publishing">Publishing</h2>
+<p>I subscribe to <a href="https://notes.nicolevanderhoeven.com/Exandria/World">Obsidian Publish</a>, partly to give back to the fine Obsidian developers who&rsquo;ve made a tool I use daily and partly because I&rsquo;ve found that it&rsquo;s reduced friction in publishing. I use it primarily for non-D&amp;D-related things, but D&amp;D is part of my life, so it&rsquo;s there as well. <a href="https://notes.nicolevanderhoeven.com/Exandria/World">You can find my notes on the D&amp;D campaign I DM here</a>.</p>
+<p>Some of the plugins that I use unfortunately don&rsquo;t render correctly when Published, but the developers are working on that.</p>
+<p>I publish my campaign notes mainly because I love seeing other DM&rsquo;s thought processes and systems, so I thought I&rsquo;d return the favour by sharing mine as well. In case you were wondering, my players don&rsquo;t know I publish these notes&ndash; or, at least, I hope they don&rsquo;t!</p>
+<h2 id="player-facing-campaign-vault">Player-facing campaign vault</h2>
+<p>I used to drop handouts into a WhatsApp group with my players, but it became increasingly unwieldy to look for something. We switched to Slack, but that had the same problem of needing to scroll back through lots of photos before finding the right one. Photos aren&rsquo;t very searchable in those apps.</p>
+<p>A few months ago, I switched to Obsidian for handouts. I created a separate vault for the campaign and shared it with my players via Dropbox. I did have to talk them through the setup, but it&rsquo;s worked out very well for us as a free alternative.</p>
+<p>In the vault, I put things like:</p>
+<ul>
+<li>Pictures and other handouts</li>
+<li>Session videos and summaries</li>
+<li>Links for everything we use as a group</li>
+<li>House rules</li>
+</ul>
+<h3 id="session-page">Session page</h3>
+<p>I create a page for every session we have, which has a section for the video recording of that session (unlisted and just for us, sorry), a player-friendly summary, and a log. The log is where I dump photos I give them during the session. Here&rsquo;s what that looks like:</p>
+<p><img src="/assets/obsidian-player-vault-session.png" alt="Session page for my player-facing vault"></p>
+<p>I don&rsquo;t put any other notes in the log; that&rsquo;s the players' jobs (if they want to).</p>
+<p>I like to have a &ldquo;Story Thus Far&rdquo; page that embeds the video and summary sections of all the sessions, so any of us can read through it to remember what&rsquo;s happened. It&rsquo;s fun to see how far we&rsquo;ve come as a group.</p>
+<p><img src="/assets/obsidian-player_vault-story-thus-far.png" alt="Story Thus Far page in my player-facing vault"></p>
+<h3 id="about-our-game">About our game</h3>
+<p>The About our game page has a list of links to all the tools we use, our schedule, and a few things about the campaign and the world.</p>
+<p><img src="/assets/obsidian-player_vault-about_our_game.png" alt="About our game page in my player-facing vault"></p>
+<h3 id="rules">Rules</h3>
+<p>I keep a house rules page that shows all the extra rules I&rsquo;ve put into the game. I mostly play with all the WoTC-produced sourcebooks, but I&rsquo;ve added some extra rules about things that my players are interested in, such as strongholds (for which I use <a href="https://shop.mcdmproductions.com/collections/strongholds-followers-books">Matt Colville&rsquo;s Strongholds &amp; Followers book</a>) and smith&rsquo;s tools.</p>
+<p><img src="/assets/obsidian-player_vault-rules.png" alt="Rules page in my player-facing vault"></p>
+<p>I also have some other pages on rules that come up often, such as Ship statblocks (since the campaign is set on a coast) and suggested downtime activities.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I call my approach to game preparation the Non-Lazy DM&rsquo;s approach as a tongue-in-cheek nod to <a href="https://slyflourish.com">Mike Shea&rsquo;s</a> content, but there&rsquo;s truth to the moniker, too. My setup is extremely detail-oriented, time-consuming, and <em>fun</em>&hellip; at least for me! And that&rsquo;s the key: I wouldn&rsquo;t be doing any of this if I didn&rsquo;t find it truly enjoyable to world-build to this level of detail.</p>
+<p>If you&rsquo;re a non-lazy DM too, thanks for sticking around! I hope this has given you some ideas for how you could use Obsidian to run your games and stimulate your imagination, too.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#plugins-i-use">Plugins I use</a></li>
+    <li><a href="#outside-the-game">Outside the game</a>
+      <ul>
+        <li><a href="#world-building">World-building</a></li>
+        <li><a href="#adventure-creation">Adventure creation</a>
+          <ul>
+            <li><a href="#random-tables">Random tables</a></li>
+          </ul>
+        </li>
+        <li><a href="#session-prep">Session prep</a></li>
+        <li><a href="#post-session-processing">Post-session processing</a></li>
+      </ul>
+    </li>
+    <li><a href="#during-the-game">During the game</a>
+      <ul>
+        <li><a href="#initiative-tracker">Initiative Tracker</a></li>
+        <li><a href="#statblocks">Statblocks</a></li>
+      </ul>
+    </li>
+    <li><a href="#publishing">Publishing</a></li>
+    <li><a href="#player-facing-campaign-vault">Player-facing campaign vault</a>
+      <ul>
+        <li><a href="#session-page">Session page</a></li>
+        <li><a href="#about-our-game">About our game</a></li>
+        <li><a href="#rules">Rules</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&text=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&is_video=false&description=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&title=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&name=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition&description=Last%20month%2c%20I%20wrote%20about%20how%20I%20use%20Obsidian%20for%20D%26amp%3bD%20as%20a%20player%20in%20a%204e%20campaign%20%28I%20play%20a%20half-elf%20hybrid%20wizard%2fcleric%29.%20This%20is%20about%20my%20second%20weekly%20game%2c%20in%20which%20I%20am%20the%20Dungeon%20Master%20for%20a%205e%20campaign.%20I%26rsquo%3bm%20a%20relatively%20new%20DM%20%28I%26rsquo%3bve%20got%2039%20games%20under%20my%20belt%20at%20the%20time%20this%20writing%2c%20and%20Obsidian%20is%20at%20the%20center%20of%20my%20workflow%20for%20improving%20my%20DMing%20skills%2c%20getting%20inspiration%2c%20preparing%20for%20a%20game%2c%20running%20the%20game%2c%20and%20making%20sure%20my%20players%20are%20having%20fun.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20210930-how-i-use-obsidian-for-dnd-dungeon-masters-edition%2f&t=How%20I%20Use%20Obsidian%20for%20D%26D%3a%20The%20Non-Lazy%20Dungeon%20Master%27s%20Edition">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

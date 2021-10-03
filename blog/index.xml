@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 30 Sep 2021 16:29:54 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Oct 2021 13:58:03 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use k6 Cloud - a k6 load testing tutorial with Bill Rainaud (k6 Office Hours #29)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211001-koh29-bill/</link>
+      <pubDate>Fri, 01 Oct 2021 13:58:03 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211001-koh29-bill/</guid>
+      <description>&lt;p&gt;Bill Rainaud is an inside account executive at k6, which means he talks to users and potential users of k6 every day. In this Office Hours, he explains how to get started with load testing using k6 Cloud, which is a SaaS platform for running and scaling up load tests on the cloud. We also answered a few frequently asked questions about k6&amp;rsquo;s capabilities and how to do correlation in k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/eCv1XshEpDI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Non-Lazy DMs use Obsidian for D&amp;D</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210930-non-lazy-dms-use-obsidian-for-dnd/</link>
@@ -344,6 +359,22 @@ reactions:
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;I call my approach to game preparation the Non-Lazy DM&amp;rsquo;s approach as a tongue-in-cheek nod to &lt;a href=&#34;https://slyflourish.com&#34;&gt;Mike Shea&amp;rsquo;s&lt;/a&gt; content, but there&amp;rsquo;s truth to the moniker, too. My setup is extremely detail-oriented, time-consuming, and &lt;em&gt;fun&lt;/em&gt;&amp;hellip; at least for me! And that&amp;rsquo;s the key: I wouldn&amp;rsquo;t be doing any of this if I didn&amp;rsquo;t find it truly enjoyable to world-build to this level of detail.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re a non-lazy DM too, thanks for sticking around! I hope this has given you some ideas for how you could use Obsidian to run your games and stimulate your imagination, too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to load test a GraphQL API built with Hasura using k6 (k6 Office Hours #28)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210917-koh-load-testing-graphql-with-hasura-and-k6/</link>
+      <pubDate>Fri, 17 Sep 2021 13:58:42 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210917-koh-load-testing-graphql-with-hasura-and-k6/</guid>
+      <description>&lt;p&gt;My co-host &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I had invited Adron Hall from &lt;a href=&#34;https://hasura.io&#34;&gt;Hasura&lt;/a&gt; to come talk to us about how to load test a GraphQL API, but he was unable to come due to unforeseen circumstances. Luckily, Tom Miseur, who is part of the Professional Services branch of k6, was able to step in on very little notice!&lt;/p&gt;
+&lt;p&gt;Tom has done a load testing engagement using k6 that involved Hasura, so he was able to tell us what it is and how it can be tested with k6. It turned out really well, thankfully!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sAPHPvmfdPQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

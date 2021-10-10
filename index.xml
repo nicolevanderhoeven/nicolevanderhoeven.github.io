@@ -7,7 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 01 Oct 2021 13:58:03 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Oct 2021 22:05:22 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLOs in performance testing, with Leandro Melendez aka Señor Performo (k6 Office Hours #30)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211008-koh30-slos-in-performance-with-leandro-melendez/</link>
+      <pubDate>Fri, 08 Oct 2021 22:05:22 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211008-koh30-slos-in-performance-with-leandro-melendez/</guid>
+      <description>&lt;p&gt;In this Office Hours, I invited my colleague Tom Miseur and friend Leandro Melendez, aka Señor Performo, to talk all about different criteria in performance testing, including non-functional requirements, SLAs, SLOs, SLIs, thresholds, and checks. Criteria at different levels is how we determine whether testing, including performance testing, has been successful, so it&amp;rsquo;s important to understand what they are and incorporate them into testing scripts and processes.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GyueCZi5qBI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Testing in Public: How to plan a load test (practical example) - Wyrmwood Gaming</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211006-testing-in-public-planning-a-load-test/</link>
+      <pubDate>Wed, 06 Oct 2021 11:21:41 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211006-testing-in-public-planning-a-load-test/</guid>
+      <description>&lt;p&gt;When you&amp;rsquo;re learning a new skill, there&amp;rsquo;s only so much that studying can do. The problem is that there&amp;rsquo;s still a big gulf between studying something and doing it yourself. The solution is having a mentor to bridge the gap&amp;ndash; someone who will let you shadow them while they&amp;rsquo;re executing tests.&lt;/p&gt;
+&lt;p&gt;I made this video thinking about the me from over a decade ago who would have wanted to get the chance to look over a more experienced tester&amp;rsquo;s shoulder. In this video, I talk about how considerations for planning load testing, using a hypothetical use case for a real company: &lt;a href=&#34;https://wyrmwoodgaming.com&#34;&gt;Wyrmwood Gaming&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EFqBWqo3IzY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Testing With k6 &#43; Grafana: Better Together (Grafana virtual meetup EMEA)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</link>
+      <pubDate>Tue, 05 Oct 2021 21:49:13 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</guid>
+      <description>&lt;p&gt;In this first EMEA session of the Grafana Labs virtual meetups, I talked about how to use k6 and Grafana together to get the full performance picture for a software application. Observability, using tools like Prometheus and Grafana, lets us see what&amp;rsquo;s going on inside the application, and load testing, using k6, helps us get those insights earlier on in software cycles, such as during pre-production.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MUd5xuuxt0A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to use k6 Cloud - a k6 load testing tutorial with Bill Rainaud (k6 Office Hours #29)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20211001-koh29-bill/</link>
@@ -2817,13 +2863,15 @@ k6 scripts give you the freedom to import and use JS libraries, so you can build
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/speaking/</guid>
-      <description>&lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://nicolevanderhoeven.com/tags/video/&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
+      <description>&lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;p&gt;Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available &lt;a href=&#34;https://slides.nicolevanderhoeven.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m particularly interested in speaking opportunities in Spanish, Dutch, Tagalog, or Esperanto.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;09/10   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCxNSTq2kmupdR6LD400FpvA/videos&#34;&gt;Obsidian Community Talks&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TTRPGs in Obsidian&lt;/em&gt;. (English)&lt;/p&gt;
-&lt;p&gt;05/10   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafana-meetup-emea-october-2021/&#34;&gt;Grafana Virtual Meetup&lt;/a&gt;&lt;/strong&gt;, &lt;em&gt;Testing with k6 + Grafana: Better together&lt;/em&gt;. (English)&lt;/p&gt;
+&lt;p&gt;09/11   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/observabilitycon/2021/keynote/&#34;&gt;ObservabilityCON 2021&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Keynote: Observability is your journey&lt;/em&gt; and &lt;em&gt;Intro to using k6 load testing with the Grafana observability stack&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;2021&#34;&gt;2021&lt;/h2&gt;
+&lt;p&gt;09/10   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCxNSTq2kmupdR6LD400FpvA/videos&#34;&gt;Obsidian Community Talks&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TTRPGs in Obsidian&lt;/em&gt;. (English)&lt;/p&gt;
+&lt;p&gt;07/10   &lt;strong&gt;Womxn at Grafana (internal talk)&lt;/strong&gt;: &lt;em&gt;Womxn in R&amp;amp;D&lt;/em&gt;. (English)&lt;/p&gt;
+&lt;p&gt;05/10   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafana-meetup-emea-october-2021/&#34;&gt;Grafana Virtual Meetup&lt;/a&gt;&lt;/strong&gt;, &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;Testing with k6 + Grafana: Better together&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;16/09   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;Grafana Labs webinars&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210916-intro-to-load-testing-with-k6-and-grafana/&#34;&gt;Intro to load testing with Grafana and k6&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;08/09   &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/Nicole-van-der-Hoeven/&#34;&gt;TestCon Europe 2021&lt;/a&gt;&lt;/strong&gt;: &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210908-schrodingers-pokemon-k6-and-grafana/&#34;&gt;&lt;em&gt;Schrödinger&amp;rsquo;s Pokémon: chaotic load testing with k6 and Grafana&lt;/em&gt;&lt;/a&gt;. (English)&lt;/p&gt;
 &lt;p&gt;07/08   &lt;strong&gt;Performance Engineers club on Clubhouse&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210807-clubhouse-realistic-load-tests/&#34;&gt;Realistic load testing&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;

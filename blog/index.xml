@@ -7,7 +7,99 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 08 Oct 2021 22:05:22 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Oct 2021 01:52:48 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load testing with k6 for beginners, with İnanç Gümüş and Viktor Mihajlović (k6 Office Hours #31)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211015-koh31-load-testing-with-k6-for-beginners/</link>
+      <pubDate>Fri, 15 Oct 2021 01:52:48 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211015-koh31-load-testing-with-k6-for-beginners/</guid>
+      <description>&lt;p&gt;Did you know that every new person to k6 does a Week of Testing? It&amp;rsquo;s a k6 tradition for new hires to spend their first week seeing firsthand what the experience of a new user of k6 is like. How quickly do they find the documentation? What issues do they get stuck on? Then, at the end of the week, the new employees do a presentation for the rest of the team to show their first impressions and findings.&lt;/p&gt;
+&lt;p&gt;In today&amp;rsquo;s Office Hours, &lt;a href=&#34;https://twitter.com/inancgumus&#34;&gt;İnanç Gümüş&lt;/a&gt;, one of the newest k6 team members, shares his presentation and his experience as a k6 beginner. Another colleague, Viktor Mihajlović, a Technical Customer Success Engineer, also shares some of the most commonly asked questions he&amp;rsquo;s heard on the job.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MeN3H1Ml8OU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Conf42 podcast: in the k6 Universe</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211014-conf42-in-the-k6-universe/</link>
+      <pubDate>Thu, 14 Oct 2021 01:27:45 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211014-conf42-in-the-k6-universe/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mikopawlikowski&#34;&gt;Miko Pawlikowski&lt;/a&gt; interviewed &lt;a href=&#34;https://simme.dev&#34;&gt;Simme Aronsson&lt;/a&gt; and I for the &lt;a href=&#34;https://www.conf42.com/podcast&#34;&gt;Conf42 podcast&lt;/a&gt;, and we talked about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why I love to learn human languages, and what Esperanto sounds like&lt;/li&gt;
+&lt;li&gt;the Grafana acquisition of k6&lt;/li&gt;
+&lt;li&gt;what performance testing is, anyway&lt;/li&gt;
+&lt;li&gt;whether everyone needs to do performance testing, and my personal setup for this blog&lt;/li&gt;
+&lt;li&gt;chaos engineering and Schrödinger&amp;rsquo;s Pokémon&lt;/li&gt;
+&lt;li&gt;an overview of the Grafana Labs projects landscape&lt;/li&gt;
+&lt;li&gt;what k6 is, and how we would get started for free (k6 OSS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3Ja3RVi53YM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to make load testing scripts realistic</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211014-realistic-load-testing/</link>
+      <pubDate>Wed, 13 Oct 2021 15:17:45 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211014-realistic-load-testing/</guid>
+      <description>&lt;p&gt;A good load testing script exercises the functions and components as specified in the requirements gathering phase while simulating real users as closely as possible. Here are a few ways to make scripts more realistic.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Xz6drbGuUdI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Timestamps so you can skip around!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&#34;&gt;0:00&lt;/a&gt; Intro&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=82s&#34;&gt;1:22&lt;/a&gt; Static resources&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=151s&#34;&gt;2:31&lt;/a&gt; Cache and cookies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=182s&#34;&gt;3:02&lt;/a&gt; Dynamic think time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=307s&#34;&gt;5:07&lt;/a&gt; Concurrent requests&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=345s&#34;&gt;5:45&lt;/a&gt; Load profile&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=379s&#34;&gt;6:19&lt;/a&gt; Test data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=421s&#34;&gt;7:01&lt;/a&gt; Different user paths&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=475s&#34;&gt;7:55&lt;/a&gt; Other forms of testing&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Basics of load testing with k6 and Grafana in 20 minutes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link>
+      <pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid>
+      <description>&lt;p&gt;This was a video I pre-recorded in preparation for &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;the first Grafana EMEA virtual meetup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gvounvDSDGg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p&gt;
+&lt;p&gt;Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p&gt;
+&lt;p&gt;Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p&gt;
+&lt;p&gt;In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how to run a simple script in k6 OSS&lt;/li&gt;
+&lt;li&gt;how to make sense of the results of a load test&lt;/li&gt;
+&lt;li&gt;test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li&gt;
+&lt;li&gt;two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>SLOs in performance testing, with Leandro Melendez aka Señor Performo (k6 Office Hours #30)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20211008-koh30-slos-in-performance-with-leandro-melendez/</link>
@@ -955,6 +1047,11 @@ tags: [timeline, fr]
 
 
 &lt;iframe src=&#34;https://open.spotify.com/embed/episode/5MJaz2PAhYfy5FShrIaXUK&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-hBVZqNJ4_A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 </description>
     </item>

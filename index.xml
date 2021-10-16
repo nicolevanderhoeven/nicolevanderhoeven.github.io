@@ -7,7 +7,99 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 08 Oct 2021 22:05:22 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Oct 2021 01:52:48 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load testing with k6 for beginners, with İnanç Gümüş and Viktor Mihajlović (k6 Office Hours #31)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211015-koh31-load-testing-with-k6-for-beginners/</link>
+      <pubDate>Fri, 15 Oct 2021 01:52:48 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211015-koh31-load-testing-with-k6-for-beginners/</guid>
+      <description>&lt;p&gt;Did you know that every new person to k6 does a Week of Testing? It&amp;rsquo;s a k6 tradition for new hires to spend their first week seeing firsthand what the experience of a new user of k6 is like. How quickly do they find the documentation? What issues do they get stuck on? Then, at the end of the week, the new employees do a presentation for the rest of the team to show their first impressions and findings.&lt;/p&gt;
+&lt;p&gt;In today&amp;rsquo;s Office Hours, &lt;a href=&#34;https://twitter.com/inancgumus&#34;&gt;İnanç Gümüş&lt;/a&gt;, one of the newest k6 team members, shares his presentation and his experience as a k6 beginner. Another colleague, Viktor Mihajlović, a Technical Customer Success Engineer, also shares some of the most commonly asked questions he&amp;rsquo;s heard on the job.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MeN3H1Ml8OU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Conf42 podcast: in the k6 Universe</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211014-conf42-in-the-k6-universe/</link>
+      <pubDate>Thu, 14 Oct 2021 01:27:45 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211014-conf42-in-the-k6-universe/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mikopawlikowski&#34;&gt;Miko Pawlikowski&lt;/a&gt; interviewed &lt;a href=&#34;https://simme.dev&#34;&gt;Simme Aronsson&lt;/a&gt; and I for the &lt;a href=&#34;https://www.conf42.com/podcast&#34;&gt;Conf42 podcast&lt;/a&gt;, and we talked about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why I love to learn human languages, and what Esperanto sounds like&lt;/li&gt;
+&lt;li&gt;the Grafana acquisition of k6&lt;/li&gt;
+&lt;li&gt;what performance testing is, anyway&lt;/li&gt;
+&lt;li&gt;whether everyone needs to do performance testing, and my personal setup for this blog&lt;/li&gt;
+&lt;li&gt;chaos engineering and Schrödinger&amp;rsquo;s Pokémon&lt;/li&gt;
+&lt;li&gt;an overview of the Grafana Labs projects landscape&lt;/li&gt;
+&lt;li&gt;what k6 is, and how we would get started for free (k6 OSS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3Ja3RVi53YM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to make load testing scripts realistic</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211014-realistic-load-testing/</link>
+      <pubDate>Wed, 13 Oct 2021 15:17:45 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211014-realistic-load-testing/</guid>
+      <description>&lt;p&gt;A good load testing script exercises the functions and components as specified in the requirements gathering phase while simulating real users as closely as possible. Here are a few ways to make scripts more realistic.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Xz6drbGuUdI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Timestamps so you can skip around!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&#34;&gt;0:00&lt;/a&gt; Intro&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=82s&#34;&gt;1:22&lt;/a&gt; Static resources&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=151s&#34;&gt;2:31&lt;/a&gt; Cache and cookies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=182s&#34;&gt;3:02&lt;/a&gt; Dynamic think time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=307s&#34;&gt;5:07&lt;/a&gt; Concurrent requests&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=345s&#34;&gt;5:45&lt;/a&gt; Load profile&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=379s&#34;&gt;6:19&lt;/a&gt; Test data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=421s&#34;&gt;7:01&lt;/a&gt; Different user paths&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xz6drbGuUdI&amp;amp;t=475s&#34;&gt;7:55&lt;/a&gt; Other forms of testing&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Basics of load testing with k6 and Grafana in 20 minutes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link>
+      <pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid>
+      <description>&lt;p&gt;This was a video I pre-recorded in preparation for &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;the first Grafana EMEA virtual meetup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gvounvDSDGg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p&gt;
+&lt;p&gt;Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p&gt;
+&lt;p&gt;Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p&gt;
+&lt;p&gt;In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how to run a simple script in k6 OSS&lt;/li&gt;
+&lt;li&gt;how to make sense of the results of a load test&lt;/li&gt;
+&lt;li&gt;test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li&gt;
+&lt;li&gt;two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>SLOs in performance testing, with Leandro Melendez aka Señor Performo (k6 Office Hours #30)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20211008-koh30-slos-in-performance-with-leandro-melendez/</link>
@@ -955,6 +1047,11 @@ tags: [timeline, fr]
 
 
 &lt;iframe src=&#34;https://open.spotify.com/embed/episode/5MJaz2PAhYfy5FShrIaXUK&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-hBVZqNJ4_A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 </description>
     </item>
@@ -2869,27 +2966,102 @@ k6 scripts give you the freedom to import and use JS libraries, so you can build
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
 &lt;p&gt;09/11   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/observabilitycon/2021/keynote/&#34;&gt;ObservabilityCON 2021&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Keynote: Observability is your journey&lt;/em&gt; and &lt;em&gt;Intro to using k6 load testing with the Grafana observability stack&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;2021&#34;&gt;2021&lt;/h2&gt;
+&lt;p&gt;14/10   &lt;strong&gt;&lt;a href=&#34;https://www.conf42.com/podcast&#34;&gt;Conf42 podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211014-conf42-in-the-k6-universe/&#34;&gt;In the universe of k6&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3Ja3RVi53YM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;09/10   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCxNSTq2kmupdR6LD400FpvA/videos&#34;&gt;Obsidian Community Talks&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TTRPGs in Obsidian&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;07/10   &lt;strong&gt;Womxn at Grafana (internal talk)&lt;/strong&gt;: &lt;em&gt;Womxn in R&amp;amp;D&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;05/10   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafana-meetup-emea-october-2021/&#34;&gt;Grafana Virtual Meetup&lt;/a&gt;&lt;/strong&gt;, &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;Testing with k6 + Grafana: Better together&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gvounvDSDGg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;16/09   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;Grafana Labs webinars&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210916-intro-to-load-testing-with-k6-and-grafana/&#34;&gt;Intro to load testing with Grafana and k6&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;08/09   &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/Nicole-van-der-Hoeven/&#34;&gt;TestCon Europe 2021&lt;/a&gt;&lt;/strong&gt;: &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210908-schrodingers-pokemon-k6-and-grafana/&#34;&gt;&lt;em&gt;Schrödinger&amp;rsquo;s Pokémon: chaotic load testing with k6 and Grafana&lt;/em&gt;&lt;/a&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2QHs_HEX7r0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;07/08   &lt;strong&gt;Performance Engineers club on Clubhouse&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210807-clubhouse-realistic-load-tests/&#34;&gt;Realistic load testing&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-hBVZqNJ4_A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;09/06   &lt;strong&gt;&lt;a href=&#34;https://www.womentech.net/speaker/Nicole/van%20der%20Hoeven/50129&#34;&gt;Women Tech Global&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210609-convergence-of-code-and-speech/&#34;&gt;The Convergence of Code and Speech&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sbZ3A8GrDk0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;31/05   &lt;strong&gt;&lt;a href=&#34;https://open.spotify.com/show/7wOCHzZBCzOi071QuDPodI&#34;&gt;Performance Time Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210531-performance-time/&#34;&gt;An Interview with Nicole van der Hoeven&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+
+&lt;iframe src=&#34;https://open.spotify.com/embed/episode/3pp3ZFFB8DyfUEtLRuLxGe&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
+
 &lt;p&gt;27/05   &lt;strong&gt;&lt;a href=&#34;https://newrelic.com/futurestack/speakers/nicole-van-der-hoeven&#34;&gt;New Relic FutureStack&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;Schrödinger&amp;rsquo;s Pokemon: Observability for Chaotic Load Testing&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/356yC-DOSmo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;23/03   &lt;strong&gt;&lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing Philippines meetup&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Performance testing with Cypress, Lighthouse, and k6&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;18/03   &lt;strong&gt;Cambridge University Press QA Week 2021&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210318-load-tests-as-code/&#34;&gt;Load tests as code: An introduction to k6&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kz3Mt97L9CY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;16/03   &lt;strong&gt;&lt;a href=&#34;https://testguild.com/&#34;&gt;Test Guild Performance Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210316-testing-our-performance-test-tools/&#34;&gt;Testing our Performance Test Tools&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+
+
+&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/18351014/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
+
+
 &lt;h2 id=&#34;2020&#34;&gt;2020&lt;/h2&gt;
 &lt;p&gt;31/10   &lt;strong&gt;JMeter Scripting Day&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20201216-cuando-jmeter-no-alcanza/&#34;&gt;Cuándo JMeter no alcanza: pruebas de carga simulando navegadores&lt;/a&gt;&lt;/em&gt;. (Spanish)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;24/09   &lt;strong&gt;Testing Talks Online (panel)&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20200924-testing-talks-online/&#34;&gt;Lifting the lid on performance testing: Best practices from innovative companies&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pHQ4FwdwGGk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;22/07   &lt;strong&gt;&lt;a href=&#34;https://testguild.com/&#34;&gt;Test Guild Performance Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20200722-performance-testing-fomo/&#34;&gt;Performance Testing FOMO&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/M5l9Ba0ykpw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;19/06   &lt;strong&gt;Perf Bytes en Español Podcast&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20200622-entrevista-con-senor-performo/&#34;&gt;Entrevista&lt;/a&gt;&lt;/em&gt;. (Spanish)&lt;/p&gt;
+
+
+&lt;a class=&#34;spreaker-player&#34; href=&#34;https://www.spreaker.com/user/perfbytes/perfbytesesp-s02e04-entrevistanicole&#34; data-resource=&#34;episode_id=31696383&#34; data-theme=&#34;light&#34; data-autoplay=&#34;false&#34; data-playlist=&#34;false&#34; data-cover=&#34;https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/2aed331516599f75dd433a42006da511.jpg&#34; data-width=&#34;100%&#34; data-height=&#34;400px&#34;&gt;Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker.&lt;/a&gt;&lt;script async src=&#34;https://widget.spreaker.com/widgets.js&#34;&gt;&lt;/script&gt;
+
 &lt;p&gt;19/06   &lt;strong&gt;Tricentis User Conference 2020&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20201007-how-to-become-a-load-tester/&#34;&gt;How to become a load tester&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_R2dmEmtO48&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;01/06   &lt;strong&gt;PerfGuild 2020&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20200602-hybrid-load-testing/&#34;&gt;Hybrid load testing: The best of testing using protocols and real browsers&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;h2 id=&#34;2019&#34;&gt;2019&lt;/h2&gt;
 &lt;p&gt;03/04  &lt;strong&gt;TestCon Moscow 2019&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20190403-testcon-moscow-2019/&#34;&gt;Dismantling Cognitive Biases in Performance Testing&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GPD8F0e7eX8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

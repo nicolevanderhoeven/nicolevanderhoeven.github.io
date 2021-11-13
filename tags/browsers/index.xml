@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 05 Mar 2021 21:46:56 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 00:28:02 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browser testing and API load testing in the same script with k6 (k6 Office Hours #35)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211112-koh35-browser-testing-and-api-load-testing-with-k6/</link>
+      <pubDate>Fri, 12 Nov 2021 00:28:02 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211112-koh35-browser-testing-and-api-load-testing-with-k6/</guid>
+      <description>&lt;p&gt;Earlier this week, at &lt;a href=&#34;https://grafana.com/go/observabilitycon/2021/k6-load-testing/&#34;&gt;ObservabilityCON 2021&lt;/a&gt;, we announced something new: k6 now supports browser-based testing with xk6-browser. Here&amp;rsquo;s a few of us from the k6 team talking about the announcement!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Y4qDAaJgxV0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources-mentioned&#34;&gt;Resources mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/go/observabilitycon/2021/k6-load-testing/&#34;&gt;Catch the announcement here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/blog/extending-k6-with-xk6/&#34;&gt;Learn more about the xk6 extension system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-browser&#34;&gt;Try the xk6-browser extension&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>k6 Office Hours 04: Using Cypress with Marie Drake</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</link>

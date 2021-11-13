@@ -7,7 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 30 Sep 2021 16:29:54 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 00:38:11 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I use Obsidian to run and play D&amp;D online</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211113-how-i-use-obsidian-to-run-and-play-dnd-online/</link>
+      <pubDate>Sat, 13 Nov 2021 00:38:11 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211113-how-i-use-obsidian-to-run-and-play-dnd-online/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve previously talked about how &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210930-non-lazy-dms-use-obsidian-for-dnd/&#34;&gt;non-lazy DMs use Obsidian for D&amp;amp;D&lt;/a&gt;, and a few weeks ago, I participated in a &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211009-ttrpg-obsidian-showcase&#34;&gt;TTRPG Obsidian Showcase&lt;/a&gt; with a few other Obsidian DMs and players. Here&amp;rsquo;s my part of that presentation:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3pt6_srUZ7U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources-mentioned&#34;&gt;Resources mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This talk was part of the TTRPG Obsidian Showcase (video): &lt;a href=&#34;https://www.youtube.com/watch?v=Ovqu_1aW3Sw&#34;&gt;https://www.youtube.com/watch?v=Ovqu_1aW3Sw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Non-lazy DMs use Obsidian for D&amp;amp;D (blog post): &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210930-non-lazy-dms-use-obsidian-for-dnd/&#34;&gt;https://nicolevanderhoeven.com/blog/20210930-non-lazy-dms-use-obsidian-for-dnd/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How I Use Obsidian for D&amp;amp;D - Player&amp;rsquo;s Edition (blog post): &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210809-dnd-obsidian-player/&#34;&gt;https://nicolevanderhoeven.com/blog/20210809-dnd-obsidian-player/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dice Roller: &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;https://github.com/valentine195/obsidian-dice-roller&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Initiative Tracker: &lt;a href=&#34;https://github.com/valentine195/obsidian-initiative-tracker&#34;&gt;https://github.com/valentine195/obsidian-initiative-tracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fantasy Calendar: &lt;a href=&#34;https://github.com/valentine195/obsidian-fantasy-calendar&#34;&gt;https://github.com/valentine195/obsidian-fantasy-calendar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gallery: &lt;a href=&#34;https://github.com/Darakah/obsidian-gallery&#34;&gt;https://github.com/Darakah/obsidian-gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dataview: &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;https://github.com/blacksmithgu/obsidian-dataview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Leaflet: &lt;a href=&#34;https://github.com/valentine195/obsidian-leaflet-plugin&#34;&gt;https://github.com/valentine195/obsidian-leaflet-plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Admonition: &lt;a href=&#34;https://github.com/valentine195/obsidian-admonition&#34;&gt;https://github.com/valentine195/obsidian-admonition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advanced Tables: &lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;https://github.com/tgrosinger/advanced-tables-obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;5e statblocks: &lt;a href=&#34;https://github.com/valentine195/obsidian-5e-statblocks&#34;&gt;https://github.com/valentine195/obsidian-5e-statblocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How I use Obsidian for work as a software developer advocate (video): &lt;a href=&#34;https://youtube.com/watch?v=D7e1ud_Dk24&#34;&gt;https://youtube.com/watch?v=D7e1ud_Dk24&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TTRPG Obsidian Showcase</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211009-ttrpg-obsidian-showcase/</link>
+      <pubDate>Sat, 09 Oct 2021 00:43:25 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211009-ttrpg-obsidian-showcase/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a presentation I participated in about a bunch of nerds who like both &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; and D&amp;amp;D. My part begins around &lt;a href=&#34;https://www.youtube.com/watch?v=Ovqu_1aW3Sw&amp;amp;t=2720&#34;&gt;0:45:20&lt;/a&gt;, but I thought the other speakers&#39; parts were really fascinating as well!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Ovqu_1aW3Sw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Non-Lazy DMs use Obsidian for D&amp;D</title>
       <link>https://nicolevanderhoeven.github.io/blog/20210930-non-lazy-dms-use-obsidian-for-dnd/</link>

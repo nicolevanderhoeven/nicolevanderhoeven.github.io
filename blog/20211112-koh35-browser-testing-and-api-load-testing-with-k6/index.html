@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Browser testing and API load testing in the same script with k6 (k6 Office Hours #35) | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Browser testing and API load testing in the same script with k6 (k6 Office Hours #35)" />
+<meta property="og:description" content="Earlier this week, at ObservabilityCON 2021, we announced something new: k6 now supports browser-based testing with xk6-browser. Here&rsquo;s a few of us from the k6 team talking about the announcement!
+  Resources mentioned  Catch the announcement here Learn more about the xk6 extension system Try the xk6-browser extension  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20211112-koh35-browser-testing-and-api-load-testing-with-k6/" />
+<meta property="article:published_time" content="2021-11-12T00:28:02+00:00" />
+<meta property="article:modified_time" content="2021-11-12T00:28:02+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Browser testing and API load testing in the same script with k6 (k6 Office Hours #35)"/>
+<meta name="twitter:description" content="Earlier this week, at ObservabilityCON 2021, we announced something new: k6 now supports browser-based testing with xk6-browser. Here&rsquo;s a few of us from the k6 team talking about the announcement!
+  Resources mentioned  Catch the announcement here Learn more about the xk6 extension system Try the xk6-browser extension  "/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20211105-koh34-k6-load-testing-on-kubernetes-using-k6-operator/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20211113-how-i-use-obsidian-to-run-and-play-dnd-online/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&text=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&is_video=false&description=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&name=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29&description=Earlier%20this%20week%2c%20at%20ObservabilityCON%202021%2c%20we%20announced%20something%20new%3a%20k6%20now%20supports%20browser-based%20testing%20with%20xk6-browser.%20Here%26rsquo%3bs%20a%20few%20of%20us%20from%20the%20k6%20team%20talking%20about%20the%20announcement%21%0a%20%20Resources%20mentioned%20%20Catch%20the%20announcement%20here%20Learn%20more%20about%20the%20xk6%20extension%20system%20Try%20the%20xk6-browser%20extension%20%20">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&t=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources-mentioned">Resources mentioned</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Browser testing and API load testing in the same script with k6 (k6 Office Hours #35)
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-11-12 00:28:02 &#43;0000 UTC" itemprop="datePublished">2021-Nov-12</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/browsers" rel="tag">browsers</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/playwright" rel="tag">playwright</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Earlier this week, at <a href="https://grafana.com/go/observabilitycon/2021/k6-load-testing/">ObservabilityCON 2021</a>, we announced something new: k6 now supports browser-based testing with xk6-browser. Here&rsquo;s a few of us from the k6 team talking about the announcement!</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Y4qDAaJgxV0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="resources-mentioned">Resources mentioned</h2>
+<ul>
+<li><a href="https://grafana.com/go/observabilitycon/2021/k6-load-testing/">Catch the announcement here</a></li>
+<li><a href="https://k6.io/blog/extending-k6-with-xk6/">Learn more about the xk6 extension system</a></li>
+<li><a href="https://github.com/grafana/xk6-browser">Try the xk6-browser extension</a></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources-mentioned">Resources mentioned</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&text=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&is_video=false&description=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&title=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&name=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29&description=Earlier%20this%20week%2c%20at%20ObservabilityCON%202021%2c%20we%20announced%20something%20new%3a%20k6%20now%20supports%20browser-based%20testing%20with%20xk6-browser.%20Here%26rsquo%3bs%20a%20few%20of%20us%20from%20the%20k6%20team%20talking%20about%20the%20announcement%21%0a%20%20Resources%20mentioned%20%20Catch%20the%20announcement%20here%20Learn%20more%20about%20the%20xk6%20extension%20system%20Try%20the%20xk6-browser%20extension%20%20">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211112-koh35-browser-testing-and-api-load-testing-with-k6%2f&t=Browser%20testing%20and%20API%20load%20testing%20in%20the%20same%20script%20with%20k6%20%28k6%20Office%20Hours%20%2335%29">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

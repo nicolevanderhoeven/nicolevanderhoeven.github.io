@@ -1182,6 +1182,12 @@ where file.ctime &amp;gt;= date(today) -dur(1 month)
 &lt;p&gt;I&amp;rsquo;ve also had the experience of collaborating with someone who also used Obsidian. Since we were working closely together on the same document, we opted to put our shared vault on Dropbox. Dropbox&amp;rsquo;s main advantage over the Git solution is that Dropbox let us edit notes and see each other&amp;rsquo;s edits in real time. If you&amp;rsquo;re looking for an experience similar to Google Docs, this way got the closest to that. We did run into some quirks: if the Dropbox vault is also a Git repository, be aware that checking out a different branch will also change the contents of the directory for the other person.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Note-taking and personal management aren&amp;rsquo;t just for students and teachers; I think they&amp;rsquo;re particularly useful in tech, where knowledge work is highly prized. I&amp;rsquo;m talking about Obsidian because that&amp;rsquo;s my current tool of choice, but I think the tool you use is less important than the systems you put in place to help yourself learn and create.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d prefer the video version, here&amp;rsquo;s a video I made showing this process:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D7e1ud_Dk24&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

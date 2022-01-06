@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Load Tester Reacts to Pokemon Go Scales for 166m Users | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Load Tester Reacts to Pokemon Go Scales for 166m Users" />
+<meta property="og:description" content="Transcript NICOLE: Last year, Pokemon GO, a mobile app developed by Niantic Labs, made $1.23 billion in revenue with 166 million players from all over the world. This level of success is unprecedented, especially for an app that was encouraging people to go outside at a time when many governments were encouraging them to stay inside. In tech, though, success comes at a cost. Here&rsquo;s what Niantic has to do under the hood to keep this massively popular game running." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users/" />
+<meta property="article:published_time" content="2021-12-09T16:13:59+01:00" />
+<meta property="article:modified_time" content="2021-12-09T16:13:59+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Load Tester Reacts to Pokemon Go Scales for 166m Users"/>
+<meta name="twitter:description" content="Transcript NICOLE: Last year, Pokemon GO, a mobile app developed by Niantic Labs, made $1.23 billion in revenue with 166 million players from all over the world. This level of success is unprecedented, especially for an app that was encouraging people to go outside at a time when many governments were encouraging them to stay inside. In tech, though, success comes at a cost. Here&rsquo;s what Niantic has to do under the hood to keep this massively popular game running."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20211203-koh36-whats-new-with-k6-cloud/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20211217-koh37-daniel-knittl-frank/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&text=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&is_video=false&description=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&name=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users&description=Transcript%20NICOLE%3a%20Last%20year%2c%20Pokemon%20GO%2c%20a%20mobile%20app%20developed%20by%20Niantic%20Labs%2c%20made%20%241.23%20billion%20in%20revenue%20with%20166%20million%20players%20from%20all%20over%20the%20world.%20This%20level%20of%20success%20is%20unprecedented%2c%20especially%20for%20an%20app%20that%20was%20encouraging%20people%20to%20go%20outside%20at%20a%20time%20when%20many%20governments%20were%20encouraging%20them%20to%20stay%20inside.%20In%20tech%2c%20though%2c%20success%20comes%20at%20a%20cost.%20Here%26rsquo%3bs%20what%20Niantic%20has%20to%20do%20under%20the%20hood%20to%20keep%20this%20massively%20popular%20game%20running.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&t=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transcript">Transcript</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Load Tester Reacts to Pokemon Go Scales for 166m Users
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-12-09 16:13:59 &#43;0100 CET" itemprop="datePublished">2021-Dec-09</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/pokemon" rel="tag">pokemon</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/MtsEFebioWI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="transcript">Transcript</h2>
+<p>NICOLE: Last year, Pokemon GO, a mobile app developed by Niantic Labs, made $1.23 billion in revenue with 166 million players from all over the world. This level of success is unprecedented, especially for an app that was encouraging people to go outside at a time when many governments were encouraging them to stay inside. In tech, though, success comes at a cost. Here&rsquo;s what Niantic has to do under the hood to keep this massively popular game running.</p>
+<p>Hey everyone, I&rsquo;m Nicole van der Hoeven. I&rsquo;ve been helping companies
+through their load testing for over 10 years, and I like to talk about tech travel and taking notes. I&rsquo;m also a Pokemon GO player. I&rsquo;ve been playing it since
+the day it was released in July 2016.</p>
+<p>In this video, I&rsquo;m going to be reacting to a conversation between Priyanka Vergadia from Google and James Prompanya from Niantic Labs. Thank you to Joe Colantonio&rsquo;s TestGuild News Show last month, for bringing it to my attention.</p>
+<p>Let&rsquo;s get started.</p>
+<p>PRIYANKA: Yep.
+NICOLE: Okay. Everybody knows that you should be doing a curve ball to catch Pokemon the fastest way.</p>
+<p>PRIYANKA: I am catching some Pokemons. Did you know that it was
+built on Google Cloud? Well, let&rsquo;s talk&ndash;</p>
+<p>NICOLE: GCP, okay.</p>
+<p>PRIYANKA: At Niantic Labs to take a behind the scenes look at Pokemon Go&rsquo;s architecture, and how it scales for large number of players. Hi James, welcome to the show.</p>
+<p>JAMES: Pokemon Go is not your typical mobile game.</p>
+<p>NICOLE: I love that he&rsquo;s got Pokemon paraphernalia everywhere.</p>
+<p>JAMES: Catching these little creatures around you called Pokemon that are
+appearing in a real world. Encourage you to go outside, explore and discover things using augmented reality. A big part of that, which wasn&rsquo;t in&ndash;</p>
+<p>NICOLE: See this is one of the things that make me really impressed with their implementation. They have majority of their users using mobile networks. That&rsquo;s a really hard thing to account for, especially when you&rsquo;re talking about a global audience that is playing in different parts of the world. So it&rsquo;s really important that everything is front-loaded, and that they&rsquo;re minimizing the amount of traffic, the amount of resources that each player has to download on their mobile network.</p>
+<p>JAMES: Wasn&rsquo;t included in the game when it first came out, was this big community aspect of it. We really liked this part of the game. So we made it a major part by hosting regular live events, such as Community Days, Raid Hours,Team GO Rocket Takeovers, all culminates in this big summer event that we call GO Fest.</p>
+<p>PRIYANKA: So it&rsquo;s&ndash;</p>
+<p>NICOLE: So this is a really brave move as well because they have events that are timed. So they happen at the same time for people in that time zone. And earlier on in Pokemon Go&rsquo;s history, I did experience some slowness and some congestion in the mobile networks. But I mean, that&rsquo;s a really difficult thing for them to plan for. I&rsquo;m interested to see how they solve that.</p>
+<p>PRIYANKA: How does Pokemon Go back and actually scale to handle these peaks in traffic?</p>
+<p>JAMES: So we use Google Cloud. (chuckles) We have lots of services that need scaling such as the Google Kubernetes Engine and Spanner. Our front-end service is hosted on GKE, and it&rsquo;s pretty easy to scale the nodes there. Google Cloud provides us with all the tools we need to manage the Kubernetes cluster.</p>
+<p>NICOLE: So it&rsquo;s really cool to hear him talking about their stacks. So they&rsquo;re using GCP, Google Cloud Platform. They&rsquo;re on Kubernetes, so they&rsquo;re using GKE, the Google Kubernetes Engine. And they use Google Cloud Spanner, which is a very highly available relational database.</p>
+<p>JAMES: To give an idea of scale, we have about 5,000 spanner nodes handling the traffic and thousands of Kubernetes nodes running just for the Pokemon&ndash;</p>
+<p>NICOLE: That is so interesting. 5,000 Spanner nodes. That&rsquo;s just for the data. That makes sense because Niantic&rsquo;s main reason for creating this game, or the way that they&rsquo;re making money, I guess, is by getting the data from users about walking paths and &hellip;Basically, geo location or spatial data. So it&rsquo;s super important for them to be able to store the data that they&rsquo;re getting from their application usage.</p>
+<p>JAMES: We also have the various microservices that host other parts of the&ndash;</p>
+<p>NICOLE: So another thing that they&rsquo;re doing to keep it scalable is
+by using microservices. See the traditional way is to use a monolith, so one large application with many sub-components. The problem with that though, is you can&rsquo;t independently scale those components, you&rsquo;d have to scale the entire application. And when that application is already really big and complex, that&rsquo;s really inefficient because you&rsquo;re scaling everything, even services that you
+may not need to scale. So it&rsquo;s really smart that they&rsquo;ve chosen for a microservices based architecture, so that each of those components can be scaled separately of each other.</p>
+<p>JAMES: And if you compare ourselves to maybe World of Warcraft, you&rsquo;ll see that other massively multiplayer online games, they split players into multiple realms, but for us, all of our players, they reside on a single realm. It was important for us that players can always interact with each other and share the same game, the experience, no matter where or when they&rsquo;re playing.</p>
+<p>PRIYANKA: Yeah&ndash;</p>
+<p>NICOLE: Okay. So I happen to have also played WoW, World of Warcraft. My main &lsquo;toon was a disciplined priest. So when you sign up to WoW, you have to choose a realm, that&rsquo;s basically a server or group of servers so that they don&rsquo;t have to shoulder the entire load from all users. So that was WoW&rsquo;s way to reduce the load. And he&rsquo;s making the point that Pokemon Go can&rsquo;t really do that to a certain extent. It&rsquo;s not entirely correct to say that they don&rsquo;t have
+that sort of splintering, because they do still splinter based on the time zone. You&rsquo;re only seeing people in that location in your time zone.</p>
+<p>Even events, they sometimes say 10:00 AM in your local time. So you&rsquo;re not necessarily playing at the same time that people in Australia are playing. So there is some splintering, but it is less than what there would be for a game like WoW.</p>
+<p>JAMES: When we&rsquo;re looking at different providers, we saw that Spanner
+has consistent indexing that allows us to do more complex database schemas with these primary and secondary keys. Data Store was also non-relational with atomic and durable transactions. So we needed a relational database with full consistency, and made the choice to go to Spanner, which gave us these global ACID transactions.</p>
+<p>NICOLE: So he&rsquo;s talking about consistency, global consistency, being a big deal and a big factor for why they chose to go and use Google Cloud Spanner instead of Google Data Store. And the reason is that normally, when you have a bunch of different instances of database, it doesn&rsquo;t matter so much that those requests are processed in exactly the order that they came in. Because usually those
+requests are being made by different people, and they&rsquo;re trying to change different accounts. But with Pokemon Go, there&rsquo;s the added complexity of wanting to keep the integrity of the chronological order. So if I go and attack a gym before you do, my, the process, the request that I created by attacking the gym, should be processed before yours is because it matters who gets to the gym first. So that&rsquo;s an interesting twist.</p>
+<p>PRIYANKA: Now let&rsquo;s say I&rsquo;m a player and I&rsquo;m playing the game right now. I open my app to catch a Pokemon. What is happening behind the scenes? How does the request flow work?</p>
+<p>JAMES: When the user catches a Pokemon, we receive that request through the Google Cloud Load Balancer. All of the static media is also stored on Google Cloud storage buckets. And it&rsquo;s downloaded to the phone when you first start the app. We also have caching enabled at the load balancers. So it&rsquo;s&ndash;</p>
+<p>NICOLE: Already, they&rsquo;ve mentioned they have a load balancer, so that that&rsquo;s like a traffic controller that&rsquo;s sitting above the servers and saying, &ldquo;Okay, this request goes to this server.&rdquo; And then maybe when that server is processing too many requests, that load balancer should be able to say, &ldquo;All right, now let&rsquo;s
+divert some of the traffic to another server that maybe isn&rsquo;t as heavily utilized.&rdquo;</p>
+<p>He also mentioned that they employ caching. This is what I was saying earlier that because you want to minimize the amount of traffic and the bytes that are flowing on the network, you want to employ caching for maybe things that
+aren&rsquo;t going to change so more static assets. Maybe you might want to change the Pokemon that&rsquo;s in a gym, but the location of that gym is something that should and can be cached. He&rsquo;s right now talking about caching on the server side, on
+the application side, and not on the mobile phone. But I wonder if they&rsquo;re going to talk about that later as well.</p>
+<p>JAMES: It&rsquo;s all cached and served through Google Cloud CDN. So when the Poke&ndash;</p>
+<p>NICOLE: So he also mentions using a CDN, so a Content Delivery Network, which is really good because that means that if I&rsquo;m in the Netherlands and I make a request to their servers, my request isn&rsquo;t then going to be sent to a server in the US, because it&rsquo;s going to be sent to one of the servers in my country or nearby. That means that the latency between my request being sent, and that request getting to the server, and retrieving that resource and back, is going to be a lot lower. So it&rsquo;s &hellip; This is a way to improve performance.</p>
+<p>JAMES: The player catches the Pokemon, the GCLB sends the request to our GKE cluster. And we have a front-end service that sits behind Nginx reverse proxy. The request goes from the user&rsquo;s phone through the reverse proxy, to one of these player, front-end services. We also have this thing called a Spatial Query Backend. It&rsquo;s a cache by location.</p>
+<p>So that is where we store the information that determines where a Pokemon is shown on the map, what gyms and Poke stops are around you, what time zone you&rsquo;re in, or any other feature that is location-based.</p>
+<p>PRIYANKA: Now, what happens when I hunt a Pokemon down and catch it?</p>
+<p>JAMES: When you catch a Pokemon, it sends the request to the front end, to the Spanner database, where your player entity is stored and it store it there. For catching Pokemon, that actually doesn&rsquo;t go to the Spatial Query Backend. If you were, instead, if you were battling in a gym or adding lures to the Poke stop, that information is stored on the Spatial Query Backend, and&ndash;</p>
+<p>NICOLE: Okay. So it sounds like the Spatial Query Backend is only storing data about the world, the Pokemon Go world that everybody can see. So people don&rsquo;t need to know whether another person has caught a particular Pokemon. They just need to know whether there&rsquo;s a lure on a Poke stop, or whether the gym is Team Mystic and things like that that everybody else can see. So there&rsquo;s this segmentation of some data that is specific to the user, and other data that all users need to see.</p>
+<p>JAMES: We also use Pub/Sub to send the message to a Pub/Sub topic, which is then used for analytics pipeline.</p>
+<p>NICOLE: He talks about a Pub/Sub model, which means that their architecture is event driven. So the traditional way that this is handled is by polling. So normally when an service is waiting for something to happen, it goes, and it sends a message and it checks. Basically like, &ldquo;Hey, are we there yet? Are we there yet? Are we there yet?&rdquo;</p>
+<p>And then when it finally gets a response that &ldquo;Yes, we are,&rdquo; then it can do something with that data. Instead what they&rsquo;re doing as a Pub/Sub. So instead it waits for events. There is no constant polling, again, reducing the amount of traffic that&rsquo;s going back and forth. And it just specifies criteria for what it is actually waiting for. And when that happens, after the services that require that event are subscribed, then that event is published to all of them. And then they can then do whatever they want with that event.</p>
+<p>PRIYANKA: So, how do you ensure that when two people who are in the same geographic regions, see the same Pokemon data, and keep that relatively in sync, especially during the events?</p>
+<p>JAMES: So it&rsquo;s actually pretty interesting. Everything in our servers are deterministic. So even if players are on different machines, they&rsquo;re sensitive to
+different front-end services, if they&rsquo;re in the same physical location, all the inputs would be the same and the same Pokemon would get returned to both users. There&rsquo;s a lot of caching involved and as well as precise timing, especially when the settings are changed and they need to be in sync across all the servers.</p>
+<p>So it&rsquo;s very tricky, but it was very important for us that all the players feel like they&rsquo;re part of this one shared world.</p>
+<p>NICOLE: I&rsquo;m not entirely sure what he means when he says that it&rsquo;s deterministic.I&rsquo;m going to guess, and I have no relationship with Google or with Niantic, but I&rsquo;m thinking that what he means is that when you&rsquo;re catching a Pokemon, there is no request that&rsquo;s being sent to the servers to say, &ldquo;Hey, did I catch this?&rdquo; Instead, there&rsquo;s probably some sort of algorithm. This Psyduck is caught 80% of the time and appears 2% of the time. So 2% of the Pokemons that you&rsquo;re gonna see appear in this area, are going to be Psyducks. And that&rsquo;s also reducing the load going back and forth, right? Because it&rsquo;s just the equation or the algorithm that determines whether you catch a Pokemon or not.</p>
+<p>JAMES: This game data is of interest to our data science team. They use this for marketing purposes, for verifications. For example, we might want to say that this player, or players caught x millions amount of Pokemon during our Saturday Community Day events. So, it&rsquo;s important that we have that information in an easily accessible manner.</p>
+<p>NICOLE: So there&rsquo;s a lot of data here that they track. So I&rsquo;ve got my distance walked, Pokemon caught, I&rsquo;m at 18,878. Poke stops visited, total XP, start date. And then there are these medals as well. So, they look at things like, how far have you walked in total? So all of these things are data points that they store for every single user. No wonder they have such a focus on databases, right?</p>
+<p>PRIYANKA: As the events grow, like you mentioned, in some of these events, the traffic grows to millions of users per second. You also said&ndash;</p>
+<p>NICOLE: Per second!</p>
+<p>PRIYANKA: &hellip;of data is generated. How does the system scale when it comes to data pipeline?</p>
+<p>JAMES: Yeah. So when there&rsquo;s increase of transactions, there is increase of load
+throughout the system with a lot of our data pipelines for things like BigQuery, one of that&ndash;</p>
+<p>NICOLE: I&rsquo;m not actually sure she was saying millions of users per second, but that&rsquo;s a little bit ambiguous. Maybe she meant millions of requests per second. And the way that they&rsquo;re trying to do that is they&rsquo;re reducing the size of those requests. If she means there are millions of concurrent users at any given time, that doesn&rsquo;t necessarily mean that those users are all doing something at the exact same time. So I would have wanted to see exactly how many requests, to hear
+how many requests per second they&rsquo;re needing to deal with, or how many bytes per second are being sent over the wire. That would&rsquo;ve been cool.</p>
+<p>JAMES: &hellip;Just works. Google Cloud will handle the increase in traffic without any intervention.</p>
+<p>PRIYANKA: With that much traffic, obviously health of the system is critical as well. How do you monitor the health of the system during these massive events?</p>
+<p>JAMES: So we use multiple monitoring systems, including Prometheus, Grafana, and Google Cloud monitoring. On a personal level, I actually prefer it to Google Cloud monitoring because it&rsquo;s very simple to use&ndash;</p>
+<p>NICOLE: Whoo whoo! And they&rsquo;re using Prometheus and Grafana &hellip; Oh, this is entirely unexpected, but I&rsquo;m actually wearing a Grafana shirt. So it&rsquo;s really cool that they&rsquo;re using Prometheus and it really, it makes sense, because they&rsquo;re on a Kubernetes cluster and Prometheus and Kubernetes just go really well together. By the way, I work for Grafana, for context.</p>
+<p>PRIYANKA: What are some of the expansions and improvements you&rsquo;re looking to do in the future?</p>
+<p>JAMES: On the Google Cloud side of things, we are looking into things such as Agones and Google Game servers, and using that to see how we can make our game even better.</p>
+<p>PRIYANKA: We wish you and the Niantic team best of luck for these enhancements. And this has obviously been super insightful for us, James. Thanks for joining me today and sharing your architecture with us.</p>
+<p>JAMES: Yeah, thanks for having me. This was fun.</p>
+<p>NICOLE: That was really good. So there were a few things that were mentioned there for how they&rsquo;re scaling Pokemon Go, that I wrote down here.</p>
+<p>One, they use an event driven architecture and also a microservices based architecture, both of which are way more performant than the traditional methods.And the microservices based architecture will also let them scale up independently as demand increases as well. And they&rsquo;re also using Cloud Spanner instead of Google Data Store, prioritizing global consistency, as well as high availability.</p>
+<p>They front-load a lot of the static assets that are used by the application. And they&rsquo;re being downloaded when the app is initially downloaded or installed onto users&rsquo; mobile phones. That way they don&rsquo;t have to keep serving the same data if it&rsquo;s going to be used consistently. And when something changes, like a different lot of Pokemon, they release these patches that let you download a lot of those images so that when you catch those Pokemons, then you already have all that information on your phone. And on a related note, they&rsquo;re employing a lot of caching. They talked about caching on the mobile app side, and on their server side.</p>
+<p>Events are also staggered. So splintered realms sort of, because they&rsquo;re happening
+on different time zones, depending on where you live. And not completely simultaneously, regardless of the time in the part of the world where you&rsquo;re from.</p>
+<p>They&rsquo;re also using things like Prometheus, Grafana and Google Cloud Monitoring. They didn&rsquo;t mention how they&rsquo;re actually using multi-tenant versions of Prometheus like, maybe, I don&rsquo;t know if they&rsquo;re using Cortex or something like that, but that&rsquo;s something that they should look into.</p>
+<p>And they also mentioned potentially increasing the number of Google Game Servers.</p>
+<p>I really appreciated that behind the scenes look. I wish more companies would do this, especially for apps that I personally love and use. One thing that I&rsquo;m really curious about though, is the testing side of it. Because testing an application of this scale and complexity, is another thing entirely from observability. And I would have wanted to know how they&rsquo;re doing their performance and load testing. And whether they&rsquo;re doing things like chaos engineering maybe, or reliability testing to improve the availability and reliability of their application.</p>
+<p>If you&rsquo;re still watching this, then chances are high that you like Pokemon and load testing as much as I do, which is a bit of an odd combination. And in that case, check out this video, on how I run chaos experiments using k6, Prometheus and Grafana. Thank you for joining me as I watched this awesome video.</p>
+<p>And as they say in the Netherlands, (Dutch) Until next time! Bye!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transcript">Transcript</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&text=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&is_video=false&description=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&title=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&name=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users&description=Transcript%20NICOLE%3a%20Last%20year%2c%20Pokemon%20GO%2c%20a%20mobile%20app%20developed%20by%20Niantic%20Labs%2c%20made%20%241.23%20billion%20in%20revenue%20with%20166%20million%20players%20from%20all%20over%20the%20world.%20This%20level%20of%20success%20is%20unprecedented%2c%20especially%20for%20an%20app%20that%20was%20encouraging%20people%20to%20go%20outside%20at%20a%20time%20when%20many%20governments%20were%20encouraging%20them%20to%20stay%20inside.%20In%20tech%2c%20though%2c%20success%20comes%20at%20a%20cost.%20Here%26rsquo%3bs%20what%20Niantic%20has%20to%20do%20under%20the%20hood%20to%20keep%20this%20massively%20popular%20game%20running.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211209-load-tester-reacts-to-pokemon-go-scales-for-166m-users%2f&t=Load%20Tester%20Reacts%20to%20Pokemon%20Go%20Scales%20for%20166m%20Users">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sat, 13 Nov 2021 00:38:11 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 17:01:06 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Content Calendar in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211125-creating-a-content-calendar-in-obsidian/</link>
+      <pubDate>Thu, 25 Nov 2021 17:01:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211125-creating-a-content-calendar-in-obsidian/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iU60ItemuDo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Despite the fact that I&amp;rsquo;ve long given up using &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt; as my main note-taking tool, I&amp;rsquo;ve still continued to use it as a content calendar. &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; just hadn&amp;rsquo;t caught up with it in terms of functionality&amp;hellip; until now.&lt;/p&gt;
+&lt;p&gt;In this video, I show my current Obsidian workflow for creating and maintaining a content calendar.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How I Use Obsidian for Work as a Software Developer Advocate</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211117-how-i-use-obsidian-for-work-as-a-software-developer-advocate/</link>
+      <pubDate>Wed, 17 Nov 2021 16:48:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211117-how-i-use-obsidian-for-work-as-a-software-developer-advocate/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D7e1ud_Dk24&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I&amp;rsquo;ve previously written about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210518-how-i-use-obsidian-at-work/&#34;&gt;how I use Obsidian at work&lt;/a&gt;, but this video shows exactly how I do it, and all the plugins I use to make Obsidian as useful at work as it is for play.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How I use Obsidian to run and play D&amp;D online</title>
       <link>https://nicolevanderhoeven.github.io/blog/20211113-how-i-use-obsidian-to-run-and-play-dnd-online/</link>
@@ -887,6 +918,12 @@ where file.ctime &amp;gt;= date(today) -dur(1 month)
 &lt;p&gt;I&amp;rsquo;ve also had the experience of collaborating with someone who also used Obsidian. Since we were working closely together on the same document, we opted to put our shared vault on Dropbox. Dropbox&amp;rsquo;s main advantage over the Git solution is that Dropbox let us edit notes and see each other&amp;rsquo;s edits in real time. If you&amp;rsquo;re looking for an experience similar to Google Docs, this way got the closest to that. We did run into some quirks: if the Dropbox vault is also a Git repository, be aware that checking out a different branch will also change the contents of the directory for the other person.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Note-taking and personal management aren&amp;rsquo;t just for students and teachers; I think they&amp;rsquo;re particularly useful in tech, where knowledge work is highly prized. I&amp;rsquo;m talking about Obsidian because that&amp;rsquo;s my current tool of choice, but I think the tool you use is less important than the systems you put in place to help yourself learn and create.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d prefer the video version, here&amp;rsquo;s a video I made showing this process:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D7e1ud_Dk24&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

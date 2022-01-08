@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 17:20:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 17:00:44 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Take Notes, Not Tools</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</link>
+      <pubDate>Sat, 08 Jan 2022 17:00:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</guid>
+      <description>&lt;h2 id=&#34;take-notes-not-tools&#34;&gt;Take notes, not tools&lt;/h2&gt;
+&lt;p&gt;When I first got into testing, I thought that testing was about learning different tools and frameworks.&lt;/p&gt;
+&lt;p&gt;I learned how to use Neoload, then LoadRunner, then JMeter, and then SeleniumSilkPerformerVisualStudioGatlingPuppeteerPlaywrightk6 in short succession. I took courses on JavaScript, on C, on Java. I ticked off tools like a grocery list.&lt;/p&gt;
+&lt;p&gt;It didn&amp;rsquo;t take me long to realize that I still wasn&amp;rsquo;t a good tester.&lt;/p&gt;
+&lt;h2 id=&#34;taking-notes-not-tools-is-what-makes-a-good-tester&#34;&gt;Taking notes, not tools, is what makes a good tester.&lt;/h2&gt;
+&lt;p&gt;When you think about it, a lot of things a tester does revolves around taking good notes.&lt;/p&gt;
+&lt;p&gt;Requirements are just notes on what the business wants to achieve. Test scenarios are notes on situations that the team wants to simulate. Test cases are notes on how a user would use an application. Defects are notes on issues.&lt;/p&gt;
+&lt;p&gt;The quality of a tester&amp;rsquo;s notes dictates the quality of their work.&lt;/p&gt;
+&lt;h3 id=&#34;listen-to-people-not-tool-tutorials&#34;&gt;&lt;strong&gt;Listen to people, not tool tutorials&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Take notes on what users do.&lt;/strong&gt; Talk to the business. Pore through Google Analytics logs. Piece together a story of the kind of people who use your application, and how they use it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take notes on problem areas.&lt;/strong&gt; Talk to customer support about the most common questions they get&amp;ndash; they know more about pain points than anyone else in the company. Talk to the ops engineers who were on call during the last production incident. These problems are what you&amp;rsquo;ll need to test later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take notes on what you&amp;rsquo;ve learned.&lt;/strong&gt; If you don&amp;rsquo;t like learning, you&amp;rsquo;re in the wrong field. Document everything, even things you think you&amp;rsquo;ll never forget, because one day, you WILL forget.&lt;/p&gt;
+&lt;p&gt;Taking notes, not tools, is the foundation every testing career is built on.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Top 10 Last Minute Tech Gifts (2021)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20211220-top-10-last-minute-tech-gifts/</link>

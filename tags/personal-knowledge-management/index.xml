@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sat, 08 Jan 2022 17:00:44 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 19:20:49 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Ways to Use Obsidian as a Software Engineer</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</link>
+      <pubDate>Sun, 09 Jan 2022 19:20:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</guid>
+      <description>&lt;p&gt;Yesterday, I wrote about why I think taking notes is the surprising foundation of a tester&amp;rsquo;s career.&lt;/p&gt;
+&lt;p&gt;But it&amp;rsquo;s not just testers. Every software engineer is a knowledge worker, and that means we get paid for what we know. Using a Personal Knowledge Management (PKM) system such as &lt;a href=&#34;http://Obsidian.md&#34;&gt;Obsidian.md&lt;/a&gt; helps us keep up with the constant barrage of new ideas in tech.&lt;/p&gt;
+&lt;p&gt;Here are 5 things I use Obsidian for.&lt;/p&gt;
+&lt;h2 id=&#34;1-my-very-own-stack-overflow&#34;&gt;#1: My very own Stack Overflow&lt;/h2&gt;
+&lt;p&gt;If you code, you&amp;rsquo;ve used Stack Overflow.&lt;/p&gt;
+&lt;p&gt;What if you had your &lt;strong&gt;own&lt;/strong&gt; Stack Overflow, one that contained cheat sheets of every language you&amp;rsquo;ve ever tried to hack something up in, including only commands relevant to your job? This is exactly &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Python&#34;&gt;what I&amp;rsquo;ve done for Python&lt;/a&gt; recently, and it&amp;rsquo;s helping me solidify my knowledge.&lt;/p&gt;
+&lt;h2 id=&#34;2-tools-database&#34;&gt;#2: Tools database&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s a tool for everything.&lt;/p&gt;
+&lt;p&gt;To keep them straight, I have a page for every load testing tool I try, with tutorials for how to get started, an assessment of its features, and observations I had while attempting to learn it. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/k6+(tool)&#34;&gt;Here&amp;rsquo;s what I have for the load testing tool k6&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bonus: I also use &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;the Dataview plugin&lt;/a&gt; to query tools that fit my criteria.&lt;/p&gt;
+&lt;h2 id=&#34;3-an-agile-workspace&#34;&gt;#3: An Agile workspace&lt;/h2&gt;
+&lt;p&gt;If Agile is good enough for my professional work, it&amp;rsquo;s good enough for my personal work.&lt;/p&gt;
+&lt;p&gt;I use the &lt;a href=&#34;https://github.com/mgmeyers/obsidian-kanban&#34;&gt;Kanban plugin&lt;/a&gt; to keep track of projects, create weekly and monthly review/retro templates, and work iteratively using &lt;a href=&#34;https://github.com/bjsi/incremental-writing&#34;&gt;the Incremental Writing plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;4-a-public-learning-log&#34;&gt;#4: A public learning log&lt;/h2&gt;
+&lt;p&gt;Learning in public is the fastest way to improve.&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m trying to figure something out, I document my attempts. With Obsidian Publish, I can quickly push this log out to my domain and share them with colleagues to get a quick review so that they can easily follow my train of thought and tell me where I went wrong.&lt;/p&gt;
+&lt;h2 id=&#34;5-a-digital-garden-of-software-ideas&#34;&gt;#5: A digital garden of software ideas&lt;/h2&gt;
+&lt;p&gt;Build libraries, not feeds.&lt;/p&gt;
+&lt;p&gt;I use Obsidian to save things I read/watch/listen to but also to save space for ideas I&amp;rsquo;ve learned to germinate. I publish notes before they&amp;rsquo;re fully fleshed out, with the goal of growing everything over time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com&#34;&gt;Today, I have 4,567 notes&lt;/a&gt;, all about things that matter to me.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Every engineer should have a PKM system.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Take Notes, Not Tools</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</link>

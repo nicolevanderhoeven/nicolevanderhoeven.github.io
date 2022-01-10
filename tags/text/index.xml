@@ -7,7 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sun, 09 Jan 2022 19:20:49 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 23:07:06 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian for the Uninitiated</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</link>
+      <pubDate>Mon, 10 Jan 2022 23:07:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</guid>
+      <description>&lt;h1 id=&#34;obsidian-for-the-uninitiated&#34;&gt;Obsidian for the Uninitiated&lt;/h1&gt;
+&lt;p&gt;You&amp;rsquo;ve installed Obsidian and created a new vault. Now what?&lt;/p&gt;
+&lt;p&gt;Unfortunately, it can be more than a little daunting to get started with. It doesn&amp;rsquo;t help that there are terms like &lt;em&gt;Zettelkasten&lt;/em&gt; and &lt;em&gt;Maps of Content&lt;/em&gt; and &lt;em&gt;fleeting notes&lt;/em&gt; and &lt;em&gt;digital garden&lt;/em&gt; that are all just trying to structure what we all learned to do in primary school.&lt;/p&gt;
+&lt;h2 id=&#34;start-by-logging-what-youre-doing&#34;&gt;Start by logging what you&amp;rsquo;re doing.&lt;/h2&gt;
+&lt;p&gt;Having a rigid structure does wonders for curtailing creativity and plain fun. Instead, I recommend starting small.&lt;/p&gt;
+&lt;p&gt;Here are some small steps to take after installing Obsidian:&lt;/p&gt;
+&lt;h3 id=&#34;step-1-enable-the-daily-notes-plugin&#34;&gt;&lt;strong&gt;Step 1: Enable the Daily Notes plugin&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The most game-changing feature of Obsidian is plugins.&lt;/p&gt;
+&lt;p&gt;Go into Settings &amp;gt; Core Plugins, and enable the &lt;em&gt;Daily notes&lt;/em&gt; plugin.&lt;/p&gt;
+&lt;p&gt;Then, exit out of the dialog boxes and hit CMD P (Mac) or CTRL P (Windows) to bring up the command pane. Search for and select &lt;em&gt;Daily notes: Open today&amp;rsquo;s daily note&lt;/em&gt;. That creates a new note in your vault with today&amp;rsquo;s date.&lt;/p&gt;
+&lt;p&gt;From now on, do this every day and log things you do during the day: things to do, appointments to keep, videos you watched.&lt;/p&gt;
+&lt;h3 id=&#34;step-2-the-next-time-you-consume-content-take-notes&#34;&gt;&lt;strong&gt;Step 2: The next time you consume content, take notes.&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Now, the next time you read or watch something interesting, type its title into Obsidian with brackets:&lt;code&gt;[[Cool video I watched]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s now a link. CMD+click on that link, or click the glasses icon on the top right to switch to Preview mode, and then click on the link. You should now have a new note. Write about what you thought of the video.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-start-identifying-and-fleshing-out-ideas&#34;&gt;&lt;strong&gt;Step 3: Start identifying and fleshing out ideas.&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Keep going with these steps and every now and then, start to identify cool ideas you come across. Create new notes from them just like you did in Step 2. Don&amp;rsquo;t worry about getting it all; just do it when and until you feel like it.&lt;/p&gt;
+&lt;p&gt;These three simple steps, over time, will be the foundations of your own Personal Knowlege Management system with Obsidian.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>5 Ways to Use Obsidian as a Software Engineer</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</link>

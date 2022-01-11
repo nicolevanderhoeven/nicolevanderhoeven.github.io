@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 10 Jan 2022 23:07:06 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jan 2022 16:30:49 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Tester&#39;s Toolbox Is Flawed</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</link>
+      <pubDate>Tue, 11 Jan 2022 16:30:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</guid>
+      <description>&lt;p&gt;Every tester has a toolbox.&lt;/p&gt;
+&lt;p&gt;In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?&lt;/p&gt;
+&lt;p&gt;That kind of thinking could be dangerous.&lt;/p&gt;
+&lt;h2 id=&#34;the-right-tool-for-every-job-fails-for-multiple-jobs&#34;&gt;&amp;ldquo;The right tool for every job&amp;rdquo; fails for multiple jobs.&lt;/h2&gt;
+&lt;p&gt;You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing. &lt;em&gt;This is the modern tester&amp;rsquo;s dilemma&lt;/em&gt;: we spend more time working with our tools than with the application under test.&lt;/p&gt;
+&lt;p&gt;In the real world, including a new tool in your testing stack means a new framework, usually a new programming language, and sometimes even new colleagues with experience in those tools. And what about continuous testing? All those tools have to talk to each other at some point.&lt;/p&gt;
+&lt;p&gt;More tools = more time, effort, and money.&lt;/p&gt;
+&lt;h3 id=&#34;when-choosing-tools-prioritize-multitools&#34;&gt;&lt;strong&gt;When choosing tools, prioritize multitools.&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A multitool can be used for different purposes and prioritizes flexibility.&lt;/p&gt;
+&lt;p&gt;Here are a few ways to spot a multitool:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#1: It is a polymath.&lt;/strong&gt; A multitool is good at many things and is limited in use case only by the imagination of those that use it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#2: It uses what you know.&lt;/strong&gt; A multitool is built on languages and frameworks you and your team already know, reducing ramp-up time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#3 It plays well with others.&lt;/strong&gt; A multitool doesn&amp;rsquo;t force you to use it to the exclusion of everything else. It integrates well with best-in-class tools.&lt;/p&gt;
+&lt;p&gt;When you optimize for individual jobs, you&amp;rsquo;re missing the big picture. You&amp;rsquo;re ultimately left holding the ends of multiple tools and creating a kraken of a test suite with all these tools cobbled together.&lt;/p&gt;
+&lt;p&gt;Instead, prioritize multitools.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Obsidian for the Uninitiated</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</link>

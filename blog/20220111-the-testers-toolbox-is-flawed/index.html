@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> The Tester&#39;s Toolbox Is Flawed | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="The Tester&#39;s Toolbox Is Flawed" />
+<meta property="og:description" content="Every tester has a toolbox.
+In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?
+That kind of thinking could be dangerous.
+&ldquo;The right tool for every job&rdquo; fails for multiple jobs. You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/" />
+<meta property="article:published_time" content="2022-01-11T16:30:49+01:00" />
+<meta property="article:modified_time" content="2022-01-11T16:30:49+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Tester&#39;s Toolbox Is Flawed"/>
+<meta name="twitter:description" content="Every tester has a toolbox.
+In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?
+That kind of thinking could be dangerous.
+&ldquo;The right tool for every job&rdquo; fails for multiple jobs. You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&text=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&is_video=false&description=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=The%20Tester%27s%20Toolbox%20Is%20Flawed&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&name=The%20Tester%27s%20Toolbox%20Is%20Flawed&description=Every%20tester%20has%20a%20toolbox.%0aIn%20the%20toolbox%20rests%20a%20variety%20of%20tools%20for%20every%20conceivable%20purpose.%20Part%20of%20our%20job%2c%20as%20testers%2c%20is%20to%20choose%20the%20right%20one%20for%20the%20job.%20Sounds%20reasonable%2c%20right%3f%0aThat%20kind%20of%20thinking%20could%20be%20dangerous.%0a%26ldquo%3bThe%20right%20tool%20for%20every%20job%26rdquo%3b%20fails%20for%20multiple%20jobs.%20You%20end%20up%20with%20multiple%20tools.%20One%20for%20accessibility%20testing.%20Another%20for%20API%20testing.%20Another%20for%20browser%20testing.%20Another%20for%20load%20testing.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&t=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-right-tool-for-every-job-fails-for-multiple-jobs">&ldquo;The right tool for every job&rdquo; fails for multiple jobs.</a>
+      <ul>
+        <li><a href="#when-choosing-tools-prioritize-multitools"><strong>When choosing tools, prioritize multitools.</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        The Tester&#39;s Toolbox Is Flawed
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-01-11 16:30:49 &#43;0100 CET" itemprop="datePublished">2022-Jan-11</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/personal-knowledge-management" rel="tag">personal knowledge management</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/testing" rel="tag">testing</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">English</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Every tester has a toolbox.</p>
+<p>In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?</p>
+<p>That kind of thinking could be dangerous.</p>
+<h2 id="the-right-tool-for-every-job-fails-for-multiple-jobs">&ldquo;The right tool for every job&rdquo; fails for multiple jobs.</h2>
+<p>You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing. <em>This is the modern tester&rsquo;s dilemma</em>: we spend more time working with our tools than with the application under test.</p>
+<p>In the real world, including a new tool in your testing stack means a new framework, usually a new programming language, and sometimes even new colleagues with experience in those tools. And what about continuous testing? All those tools have to talk to each other at some point.</p>
+<p>More tools = more time, effort, and money.</p>
+<h3 id="when-choosing-tools-prioritize-multitools"><strong>When choosing tools, prioritize multitools.</strong></h3>
+<p>A multitool can be used for different purposes and prioritizes flexibility.</p>
+<p>Here are a few ways to spot a multitool:</p>
+<p><strong>#1: It is a polymath.</strong> A multitool is good at many things and is limited in use case only by the imagination of those that use it.</p>
+<p><strong>#2: It uses what you know.</strong> A multitool is built on languages and frameworks you and your team already know, reducing ramp-up time.</p>
+<p><strong>#3 It plays well with others.</strong> A multitool doesn&rsquo;t force you to use it to the exclusion of everything else. It integrates well with best-in-class tools.</p>
+<p>When you optimize for individual jobs, you&rsquo;re missing the big picture. You&rsquo;re ultimately left holding the ends of multiple tools and creating a kraken of a test suite with all these tools cobbled together.</p>
+<p>Instead, prioritize multitools.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-right-tool-for-every-job-fails-for-multiple-jobs">&ldquo;The right tool for every job&rdquo; fails for multiple jobs.</a>
+      <ul>
+        <li><a href="#when-choosing-tools-prioritize-multitools"><strong>When choosing tools, prioritize multitools.</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&text=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&is_video=false&description=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=The%20Tester%27s%20Toolbox%20Is%20Flawed&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&title=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&name=The%20Tester%27s%20Toolbox%20Is%20Flawed&description=Every%20tester%20has%20a%20toolbox.%0aIn%20the%20toolbox%20rests%20a%20variety%20of%20tools%20for%20every%20conceivable%20purpose.%20Part%20of%20our%20job%2c%20as%20testers%2c%20is%20to%20choose%20the%20right%20one%20for%20the%20job.%20Sounds%20reasonable%2c%20right%3f%0aThat%20kind%20of%20thinking%20could%20be%20dangerous.%0a%26ldquo%3bThe%20right%20tool%20for%20every%20job%26rdquo%3b%20fails%20for%20multiple%20jobs.%20You%20end%20up%20with%20multiple%20tools.%20One%20for%20accessibility%20testing.%20Another%20for%20API%20testing.%20Another%20for%20browser%20testing.%20Another%20for%20load%20testing.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220111-the-testers-toolbox-is-flawed%2f&t=The%20Tester%27s%20Toolbox%20Is%20Flawed">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

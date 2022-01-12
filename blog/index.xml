@@ -7,7 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 11 Jan 2022 16:30:49 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 16:58:39 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Goals in Obsidian for 2022</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</link>
+      <pubDate>Wed, 12 Jan 2022 16:58:39 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</guid>
+      <description>&lt;p&gt;How do you set goals in Obsidian?&lt;/p&gt;
+&lt;p&gt;New Year&amp;rsquo;s Resolutions are infamously left undone. So what should you do instead? OKRs.&lt;/p&gt;
+&lt;p&gt;Setting OKRs (Objective Key Results) instead of resolutions increases your chances of succeeding. Tracking your progress throughout the year also make sure you&amp;rsquo;re getting things done. In this video, I talk about what OKRs are and how I&amp;rsquo;ve set them up in Obsidian for the year ahead.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/T2Aeaq4sk7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>What Tabletop Games Teach Us About Application Perfomance</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220112-what-tabletop-games-teach-us-about-application-perfomance/</link>
+      <pubDate>Wed, 12 Jan 2022 16:30:29 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220112-what-tabletop-games-teach-us-about-application-perfomance/</guid>
+      <description>&lt;p&gt;Tabletop games and application performance have more in common than you might think.&lt;/p&gt;
+&lt;p&gt;See, it&amp;rsquo;s all about optimization. Both involve juggling several variables: some that you can control, and some that you can&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what I&amp;rsquo;ve learned about application performance from playing tabletop games.&lt;/p&gt;
+&lt;h2 id=&#34;1-get-more-workers&#34;&gt;#1: Get more workers&lt;/h2&gt;
+&lt;p&gt;In worker placement games, you should always spend your first worker to train more workers.&lt;/p&gt;
+&lt;p&gt;Similarly, one of the most basic ways to increase concurrency is multithreading: using more than one thread at a time. (See: Golang) This applies to testing tools as much as to systems. The 1 Thread: 1 Virtual User paradigm is flawed.&lt;/p&gt;
+&lt;h2 id=&#34;2-spend-time-on-getting-your-engine-going&#34;&gt;#2: Spend time on getting your engine going&lt;/h2&gt;
+&lt;p&gt;Get your big combos in place before you tap to attack.&lt;/p&gt;
+&lt;p&gt;Things like setting up automation frameworks or CI/CD pipelines DO set you back in the beginning, but they are worth their mana cost in the long run.&lt;/p&gt;
+&lt;h2 id=&#34;3draft-with-others-in-mind&#34;&gt;#3: Draft with others in mind&lt;/h2&gt;
+&lt;p&gt;The trick to drafting is knowing what you&amp;rsquo;re leaving for others as much as what you&amp;rsquo;re taking for yourself.&lt;/p&gt;
+&lt;p&gt;The short game is getting your team to do the testing. The long game is getting everyone in the company involved in testing.&lt;/p&gt;
+&lt;h2 id=&#34;4-hope-for-a-nat-20-plan-for-a-nat-1&#34;&gt;#4: Hope for a nat 20, plan for a nat 1&lt;/h2&gt;
+&lt;p&gt;Sometimes proficiency, expertise, and a luckstone just aren&amp;rsquo;t enough.&lt;/p&gt;
+&lt;p&gt;Instead of wondering &lt;em&gt;whether&lt;/em&gt; an app will fail, take for granted that it will, and start planning for it. Keep that Action Surge in your back pocket.&lt;/p&gt;
+&lt;h2 id=&#34;5-sometimes-you-just-have-to-trade-for-sheep&#34;&gt;#5: Sometimes, you just have to trade for sheep&lt;/h2&gt;
+&lt;p&gt;The 2:1 port is valuable, but not always the best option.&lt;/p&gt;
+&lt;p&gt;Learn what you can, but accept that you can&amp;rsquo;t learn it all. Reach out to others with compatible skillsets and ask the &amp;ldquo;stupid&amp;rdquo; questions that nobody else wants to ask.&lt;/p&gt;
+&lt;h2 id=&#34;testing-is-a-team-sport-and-everyone-gets-a-chance-to-play&#34;&gt;Testing is a team sport, and everyone gets a chance to play.&lt;/h2&gt;
+&lt;p&gt;Happy gaming!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>The Tester&#39;s Toolbox Is Flawed</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</link>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>visual on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/visual/</link>
+    <description>Recent content in visual on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 14 Jan 2022 16:30:34 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/visual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Six Performance Testing Hats</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220114-six-performance-testing-hats/</link>
+      <pubDate>Fri, 14 Jan 2022 16:30:34 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220114-six-performance-testing-hats/</guid>
+      <description>&lt;p&gt;I was reading &lt;a href=&#34;https://amzn.to/3tvLYM9&#34;&gt;Six Thinking Hats&lt;/a&gt; by Edward de Bono when I realized that the premise could be applied to performance testing:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/six-performance-testing-hats.png&#34; alt=&#34;The Six Performance Testing Hats&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each hat represents a different way of thinking, which can be useful when working through issues. Sometimes, wearing only one hat can cause us to fixate on incorrect assumptions, and &amp;ldquo;putting on another hat&amp;rdquo; can help shake things up and get to actually fixing what went wrong.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

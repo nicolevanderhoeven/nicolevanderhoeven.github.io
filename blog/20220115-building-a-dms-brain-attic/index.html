@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Building a DM&#39;s Brain Attic | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Building a DM&#39;s Brain Attic" />
+<meta property="og:description" content="Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;D and other RPGs, is made up of 37,884 items (287 GB).
+Here&rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇
+Mike from @SlyFlourish wrote an article applying Sherlock Holmes&rsquo;s brain attic for lazy dungeon masters, and he called it the &ldquo;[DM Brain Attic](https://slyflourish.com/brain_attic.html&quot;. The idea is to collect interesting techniques or ideas and file them away for later." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/" />
+<meta property="article:published_time" content="2022-01-15T16:45:22+01:00" />
+<meta property="article:modified_time" content="2022-01-15T16:45:22+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building a DM&#39;s Brain Attic"/>
+<meta name="twitter:description" content="Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;D and other RPGs, is made up of 37,884 items (287 GB).
+Here&rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇
+Mike from @SlyFlourish wrote an article applying Sherlock Holmes&rsquo;s brain attic for lazy dungeon masters, and he called it the &ldquo;[DM Brain Attic](https://slyflourish.com/brain_attic.html&quot;. The idea is to collect interesting techniques or ideas and file them away for later."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220114-six-performance-testing-hats/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&text=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&is_video=false&description=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Building%20a%20DM%27s%20Brain%20Attic&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&name=Building%20a%20DM%27s%20Brain%20Attic&description=Anyone%20other%20DMs%20have%20this%20problem%3f%20My%20TRPGs%20folder%2c%20containing%20paid%20third-party%20assets%20for%20D%26amp%3bD%20and%20other%20RPGs%2c%20is%20made%20up%20of%2037%2c884%20items%20%28287%20GB%29.%0aHere%26rsquo%3bs%20how%20I%20make%20sure%20I%20actually%20get%20value%20out%20of%20this%20embarrassment%20of%20riches%3a%20%f0%9f%91%87%0aMike%20from%20%40SlyFlourish%20wrote%20an%20article%20applying%20Sherlock%20Holmes%26rsquo%3bs%20brain%20attic%20for%20lazy%20dungeon%20masters%2c%20and%20he%20called%20it%20the%20%26ldquo%3b%5bDM%20Brain%20Attic%5d%28https%3a%2f%2fslyflourish.com%2fbrain_attic.html%26quot%3b.%20The%20idea%20is%20to%20collect%20interesting%20techniques%20or%20ideas%20and%20file%20them%20away%20for%20later.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&t=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Building a DM&#39;s Brain Attic
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-01-15 16:45:22 &#43;0100 CET" itemprop="datePublished">2022-Jan-15</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/personal-knowledge-management" rel="tag">personal knowledge management</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/dd" rel="tag">D&amp;D</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">English</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;D and other RPGs, is made up of 37,884 items (287 GB).</p>
+<p>Here&rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇</p>
+<p><img src="/assets/trpgs.png" alt="Screenshot of my TRPGs folder with all my third-party items"></p>
+<p>Mike from <a href="https://twitter.com/SlyFlourish">@SlyFlourish</a> wrote an article applying Sherlock Holmes&rsquo;s brain attic for lazy dungeon masters, and he called it the &ldquo;[DM Brain Attic](<a href="https://slyflourish.com/brain_attic.html%22">https://slyflourish.com/brain_attic.html&quot;</a>. The idea is to collect interesting techniques or ideas and file them away for later.</p>
+<p>Sounds like a good idea, but for most of us, this attic is theoretical. We read books, we watch videos, and we read blog posts on monsters and settings and plots, and we trust that they&rsquo;ll all be saved somewhere in our heads.</p>
+<p>That&rsquo;s not how it works. Our minds are good at making connections, not remembering CRs from monster statblocks. So how do we make this DM Brain Attic less theoretical and more practical?</p>
+<ol>
+<li>Read and take notes. If you haven&rsquo;t read everything you&rsquo;ve bought, you&rsquo;re buying too much. Read what you&rsquo;ve got and write down the parts that are actually relevant to you and your game. Here&rsquo;s what mine looks like for the first Arcadia (@helloMCDM) issue.</li>
+</ol>
+<p><img src="/assets/arcadia.png" alt="Screenshot of my notes on Arcadia issue 1"></p>
+<ol start="2">
+<li>Combine like with like. This is the hard part, because it involves creating a central place for monsters, items, spells, etc. <a href="https://github.com/nicolevanderhoeven/xios-guide-to-monsters">This</a> is my attempt to do this for monsters. It creates one page per monster that includes its source. Here&rsquo;s a monster example.</li>
+</ol>
+<p><img src="/assets/zombie.png" alt="Screenshot of a monster page"></p>
+<p>Here&rsquo;s an example for items that includes SRD items and Vault of Magic Items (by <a href="https://twitter.com/KoboldPress">@KoboldPress</a>). Each one links to a page for the item with full details.</p>
+<p><img src="/assets/vault-of-magic.png" alt="Screenshot of my page of items"></p>
+<ol start="3">
+<li>Resurface via search: You may have noticed the metadata in the previous page. The metadata gives me criteria to search monsters by. Here&rsquo;s how I can query my monster database using the <a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview plugin</a> for <a href="https://obsidian.md">Obsidian</a>.</li>
+</ol>
+<p><img src="/assets/dataview-query.png" alt="Screenshot of a monster query using Dataview"></p>
+<p>And here&rsquo;s the result of that query, returning monsters that fit my criteria and, importantly, which of my PDFs they come from.</p>
+<p><img src="/assets/dataview-result.png" alt="Screenshot of the results from the Dataview query shown earlier"></p>
+<ol start="4">
+<li>Resurface via random table generators. Another way that I resurface content is by using random table generators using the <a href="https://github.com/valentine195/obsidian-dice-roller">Dice Roller plugin</a> for Obsidian by Jeremy Valentine. Here&rsquo;s my NPC page, compiled from multiple sources.</li>
+</ol>
+<p><img src="/assets/npc-rolls.png" alt="My NPC creation page with randomized traits"></p>
+<p>Each die icon can be clicked to generate a new &ldquo;roll&rdquo;. Here&rsquo;s a gif for how that works, using stuff from Sly Flourish&rsquo;s Uncovered Secrets, accessible to <a href="https://www.patreon.com/slyflourish">his Patreons</a>. Each click &ldquo;rolls&rdquo; on a table I&rsquo;ve defined in a separate note.</p>
+<p><img src="/assets/uncoveredsecrets_02.gif" alt="Gif of how my random tables created from Sly Flourish&rsquo;s Uncovered Secrets"></p>
+<p>Is building a DM Brain Attic a lot of work? Yes.</p>
+<p>But how likely is it that I&rsquo;d use my 287 GB of third-party stuff while preparing for my game if I didn&rsquo;t have this system? Not very.</p>
+<p>At least this way, I&rsquo;m using what I&rsquo;ve actually bought and putting good content into a very real DM&rsquo;s Brain Attic that I can actually scrounge around for good ideas in, before or during a game.</p>
+<p>If you&rsquo;d like to know more, check out this video I made about how I use Obsidian to run and play D&amp;D online:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3pt6_srUZ7U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&text=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&is_video=false&description=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Building%20a%20DM%27s%20Brain%20Attic&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&title=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&name=Building%20a%20DM%27s%20Brain%20Attic&description=Anyone%20other%20DMs%20have%20this%20problem%3f%20My%20TRPGs%20folder%2c%20containing%20paid%20third-party%20assets%20for%20D%26amp%3bD%20and%20other%20RPGs%2c%20is%20made%20up%20of%2037%2c884%20items%20%28287%20GB%29.%0aHere%26rsquo%3bs%20how%20I%20make%20sure%20I%20actually%20get%20value%20out%20of%20this%20embarrassment%20of%20riches%3a%20%f0%9f%91%87%0aMike%20from%20%40SlyFlourish%20wrote%20an%20article%20applying%20Sherlock%20Holmes%26rsquo%3bs%20brain%20attic%20for%20lazy%20dungeon%20masters%2c%20and%20he%20called%20it%20the%20%26ldquo%3b%5bDM%20Brain%20Attic%5d%28https%3a%2f%2fslyflourish.com%2fbrain_attic.html%26quot%3b.%20The%20idea%20is%20to%20collect%20interesting%20techniques%20or%20ideas%20and%20file%20them%20away%20for%20later.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220115-building-a-dms-brain-attic%2f&t=Building%20a%20DM%27s%20Brain%20Attic">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

@@ -7,7 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 14 Jan 2022 16:30:34 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 16:45:22 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a DM&#39;s Brain Attic</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</link>
+      <pubDate>Sat, 15 Jan 2022 16:45:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</guid>
+      <description>&lt;p&gt;Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;amp;D and other RPGs, is made up of 37,884 items (287 GB).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/trpgs.png&#34; alt=&#34;Screenshot of my TRPGs folder with all my third-party items&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mike from &lt;a href=&#34;https://twitter.com/SlyFlourish&#34;&gt;@SlyFlourish&lt;/a&gt; wrote an article applying Sherlock Holmes&amp;rsquo;s brain attic for lazy dungeon masters, and he called it the &amp;ldquo;[DM Brain Attic](&lt;a href=&#34;https://slyflourish.com/brain_attic.html%22&#34;&gt;https://slyflourish.com/brain_attic.html&amp;quot;&lt;/a&gt;. The idea is to collect interesting techniques or ideas and file them away for later.&lt;/p&gt;
+&lt;p&gt;Sounds like a good idea, but for most of us, this attic is theoretical. We read books, we watch videos, and we read blog posts on monsters and settings and plots, and we trust that they&amp;rsquo;ll all be saved somewhere in our heads.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s not how it works. Our minds are good at making connections, not remembering CRs from monster statblocks. So how do we make this DM Brain Attic less theoretical and more practical?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read and take notes. If you haven&amp;rsquo;t read everything you&amp;rsquo;ve bought, you&amp;rsquo;re buying too much. Read what you&amp;rsquo;ve got and write down the parts that are actually relevant to you and your game. Here&amp;rsquo;s what mine looks like for the first Arcadia (@helloMCDM) issue.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/arcadia.png&#34; alt=&#34;Screenshot of my notes on Arcadia issue 1&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Combine like with like. This is the hard part, because it involves creating a central place for monsters, items, spells, etc. &lt;a href=&#34;https://github.com/nicolevanderhoeven/xios-guide-to-monsters&#34;&gt;This&lt;/a&gt; is my attempt to do this for monsters. It creates one page per monster that includes its source. Here&amp;rsquo;s a monster example.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/zombie.png&#34; alt=&#34;Screenshot of a monster page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example for items that includes SRD items and Vault of Magic Items (by &lt;a href=&#34;https://twitter.com/KoboldPress&#34;&gt;@KoboldPress&lt;/a&gt;). Each one links to a page for the item with full details.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/vault-of-magic.png&#34; alt=&#34;Screenshot of my page of items&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Resurface via search: You may have noticed the metadata in the previous page. The metadata gives me criteria to search monsters by. Here&amp;rsquo;s how I can query my monster database using the &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview plugin&lt;/a&gt; for &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dataview-query.png&#34; alt=&#34;Screenshot of a monster query using Dataview&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s the result of that query, returning monsters that fit my criteria and, importantly, which of my PDFs they come from.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dataview-result.png&#34; alt=&#34;Screenshot of the results from the Dataview query shown earlier&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Resurface via random table generators. Another way that I resurface content is by using random table generators using the &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller plugin&lt;/a&gt; for Obsidian by Jeremy Valentine. Here&amp;rsquo;s my NPC page, compiled from multiple sources.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/npc-rolls.png&#34; alt=&#34;My NPC creation page with randomized traits&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each die icon can be clicked to generate a new &amp;ldquo;roll&amp;rdquo;. Here&amp;rsquo;s a gif for how that works, using stuff from Sly Flourish&amp;rsquo;s Uncovered Secrets, accessible to &lt;a href=&#34;https://www.patreon.com/slyflourish&#34;&gt;his Patreons&lt;/a&gt;. Each click &amp;ldquo;rolls&amp;rdquo; on a table I&amp;rsquo;ve defined in a separate note.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/uncoveredsecrets_02.gif&#34; alt=&#34;Gif of how my random tables created from Sly Flourish&amp;rsquo;s Uncovered Secrets&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Is building a DM Brain Attic a lot of work? Yes.&lt;/p&gt;
+&lt;p&gt;But how likely is it that I&amp;rsquo;d use my 287 GB of third-party stuff while preparing for my game if I didn&amp;rsquo;t have this system? Not very.&lt;/p&gt;
+&lt;p&gt;At least this way, I&amp;rsquo;m using what I&amp;rsquo;ve actually bought and putting good content into a very real DM&amp;rsquo;s Brain Attic that I can actually scrounge around for good ideas in, before or during a game.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d like to know more, check out this video I made about how I use Obsidian to run and play D&amp;amp;D online:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3pt6_srUZ7U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Six Performance Testing Hats</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220114-six-performance-testing-hats/</link>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>locust on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/locust/</link>
+    <description>Recent content in locust on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Mon, 17 Jan 2022 16:30:07 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/locust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing tool cheat sheet for load testers who don&#39;t just care about numbers</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/</link>
+      <pubDate>Mon, 17 Jan 2022 16:30:07 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s not enough to decide &lt;em&gt;how much&lt;/em&gt; load you want to generate. You also have to know &lt;em&gt;how&lt;/em&gt; you&amp;rsquo;re generating it.&lt;/p&gt;
+&lt;p&gt;Your approach affects what part of your application is tested, the results returned, and the budget you&amp;rsquo;ll need to run your test.&lt;/p&gt;
+&lt;p&gt;Here are three main categories of load testing tools:&lt;/p&gt;
+&lt;h2 id=&#34;protocol-based-load-testing-tools&#34;&gt;Protocol-based load testing tools:&lt;/h2&gt;
+&lt;p&gt;These tools simulate the underlying messages sent back and forth between an application and a client.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Choose a protocol-based tool if&lt;/em&gt;: you want to generate massive load, you want to load test before components are integrated, you want to test APIs, or you are budget-conscious.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Best in class tools&lt;/em&gt;: Gatling, JMeter, k6, Locust, Neoload&lt;/p&gt;
+&lt;h2 id=&#34;browser-based-load-testing-tools&#34;&gt;Browser-based load testing tools:&lt;/h2&gt;
+&lt;p&gt;These tools automate real user interactions with an interface.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Choose a browser-based tool if:&lt;/em&gt; you want to measure end-to-end performance, you want to reuse your browser automation scripts, you want front-end performance metrics, or you have a higher budget.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Best in class tools:&lt;/em&gt; Cypress, Flood Element, k6, Playwright, Puppeteer&lt;/p&gt;
+&lt;h2 id=&#34;hybrid-load-testing-tools&#34;&gt;Hybrid load testing tools:&lt;/h2&gt;
+&lt;p&gt;This approach is a mixture of the previous two. You can do this in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a protocol tool to generate the majority of the load, and a browser tool for a handful of virtual users &lt;em&gt;(best functionality, highest effort/cost)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Use a browser-based tool for all load &lt;em&gt;(expensive, simplest)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Find a tool that can do both &lt;em&gt;(ideal solution, few options)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;whatever-you-choose-compare-like-with-like&#34;&gt;Whatever you choose, compare like with like.&lt;/h2&gt;
+&lt;p&gt;Happy testing!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sat, 15 Jan 2022 16:45:22 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jan 2022 16:30:07 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing tool cheat sheet for load testers who don&#39;t just care about numbers</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/</link>
+      <pubDate>Mon, 17 Jan 2022 16:30:07 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s not enough to decide &lt;em&gt;how much&lt;/em&gt; load you want to generate. You also have to know &lt;em&gt;how&lt;/em&gt; you&amp;rsquo;re generating it.&lt;/p&gt;
+&lt;p&gt;Your approach affects what part of your application is tested, the results returned, and the budget you&amp;rsquo;ll need to run your test.&lt;/p&gt;
+&lt;p&gt;Here are three main categories of load testing tools:&lt;/p&gt;
+&lt;h2 id=&#34;protocol-based-load-testing-tools&#34;&gt;Protocol-based load testing tools:&lt;/h2&gt;
+&lt;p&gt;These tools simulate the underlying messages sent back and forth between an application and a client.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Choose a protocol-based tool if&lt;/em&gt;: you want to generate massive load, you want to load test before components are integrated, you want to test APIs, or you are budget-conscious.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Best in class tools&lt;/em&gt;: Gatling, JMeter, k6, Locust, Neoload&lt;/p&gt;
+&lt;h2 id=&#34;browser-based-load-testing-tools&#34;&gt;Browser-based load testing tools:&lt;/h2&gt;
+&lt;p&gt;These tools automate real user interactions with an interface.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Choose a browser-based tool if:&lt;/em&gt; you want to measure end-to-end performance, you want to reuse your browser automation scripts, you want front-end performance metrics, or you have a higher budget.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Best in class tools:&lt;/em&gt; Cypress, Flood Element, k6, Playwright, Puppeteer&lt;/p&gt;
+&lt;h2 id=&#34;hybrid-load-testing-tools&#34;&gt;Hybrid load testing tools:&lt;/h2&gt;
+&lt;p&gt;This approach is a mixture of the previous two. You can do this in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a protocol tool to generate the majority of the load, and a browser tool for a handful of virtual users &lt;em&gt;(best functionality, highest effort/cost)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Use a browser-based tool for all load &lt;em&gt;(expensive, simplest)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Find a tool that can do both &lt;em&gt;(ideal solution, few options)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;whatever-you-choose-compare-like-with-like&#34;&gt;Whatever you choose, compare like with like.&lt;/h2&gt;
+&lt;p&gt;Happy testing!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to use Dataview and Templater to run JavaScript in Obsidian for automating task management</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</link>
+      <pubDate>Sun, 16 Jan 2022 16:30:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</guid>
+      <description>&lt;p&gt;TIL how to run JavaScript in @obsdmd. A friend of mine had an interesting use case: He had a long reading list from his studies, and wanted to use Obsidian to decide what he could read given a certain amount of time.&lt;/p&gt;
+&lt;p&gt;TL;DR: &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the script&lt;/a&gt;.
+And here&amp;rsquo;s the end result:
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-demo.gif&#34; alt=&#34;Gif of the full setup working&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Requires: Obsidian. The Dataview and Templater plugins. Also requires a separate markdown page for every chapter or bite-sized section of the book or course, with the metadata &lt;code&gt;time_required&lt;/code&gt; in the YAML frontmatter.&lt;/p&gt;
+&lt;p&gt;Why Dataview? Dataview can parse that frontmatter, grab the value for &lt;code&gt;time_required&lt;/code&gt;, and return a list of pages and links. There is a Dataview Query Language, but dataviewjs is more extensible.&lt;/p&gt;
+&lt;p&gt;Why Templater? I initially wanted to write a script within a dataviewjs block, but:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dataview results are only rendered in Preview mode (which I don&amp;rsquo;t spend much time in)&lt;/li&gt;
+&lt;li&gt;I hate testing JavaScript within Obsidian.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead, I created a folder &lt;code&gt;scripts&lt;/code&gt; within my vault and selected it as the &amp;ldquo;user scripts folder&amp;rdquo; in Templater settings. Then, I created a script, &lt;code&gt;returnStudyOptions.js&lt;/code&gt;. &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the gist for that&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In a new note, I typed &lt;code&gt;&amp;lt;% tp.user.returnStudyOptions(tp, 60) %&amp;gt;&lt;/code&gt;. This line calls the script I created and also passes 60 minutes as the time available.&lt;/p&gt;
+&lt;p&gt;I selected &amp;ldquo;Templater: Replace templates in the active file&amp;rdquo; from the Command Pane, which runs the script and replaces the line with the script&amp;rsquo;s returned value, which looks something like this:
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-result.png&#34; alt=&#34;Screenshot of the notes returned by the script&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I also assigned a hotkey to for replacing the template, for ease of use. That&amp;rsquo;s it! I thought this was a fun way to learn how to use JavaScript in Obsidian. Thanks to &lt;a href=&#34;https://twitter.com/ealameda&#34;&gt;@ealameda&lt;/a&gt; for the use case!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Building a DM&#39;s Brain Attic</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</link>

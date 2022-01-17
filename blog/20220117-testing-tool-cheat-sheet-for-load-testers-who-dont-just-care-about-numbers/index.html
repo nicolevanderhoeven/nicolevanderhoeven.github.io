@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Testing tool cheat sheet for load testers who don&#39;t just care about numbers | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Testing tool cheat sheet for load testers who don&#39;t just care about numbers" />
+<meta property="og:description" content="It&rsquo;s not enough to decide how much load you want to generate. You also have to know how you&rsquo;re generating it.
+Your approach affects what part of your application is tested, the results returned, and the budget you&rsquo;ll need to run your test.
+Here are three main categories of load testing tools:
+Protocol-based load testing tools: These tools simulate the underlying messages sent back and forth between an application and a client." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/" />
+<meta property="article:published_time" content="2022-01-17T16:30:07+01:00" />
+<meta property="article:modified_time" content="2022-01-17T16:30:07+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Testing tool cheat sheet for load testers who don&#39;t just care about numbers"/>
+<meta name="twitter:description" content="It&rsquo;s not enough to decide how much load you want to generate. You also have to know how you&rsquo;re generating it.
+Your approach affects what part of your application is tested, the results returned, and the budget you&rsquo;ll need to run your test.
+Here are three main categories of load testing tools:
+Protocol-based load testing tools: These tools simulate the underlying messages sent back and forth between an application and a client."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&text=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&is_video=false&description=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&name=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers&description=It%26rsquo%3bs%20not%20enough%20to%20decide%20how%20much%20load%20you%20want%20to%20generate.%20You%20also%20have%20to%20know%20how%20you%26rsquo%3bre%20generating%20it.%0aYour%20approach%20affects%20what%20part%20of%20your%20application%20is%20tested%2c%20the%20results%20returned%2c%20and%20the%20budget%20you%26rsquo%3bll%20need%20to%20run%20your%20test.%0aHere%20are%20three%20main%20categories%20of%20load%20testing%20tools%3a%0aProtocol-based%20load%20testing%20tools%3a%20These%20tools%20simulate%20the%20underlying%20messages%20sent%20back%20and%20forth%20between%20an%20application%20and%20a%20client.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&t=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#protocol-based-load-testing-tools">Protocol-based load testing tools:</a></li>
+    <li><a href="#browser-based-load-testing-tools">Browser-based load testing tools:</a></li>
+    <li><a href="#hybrid-load-testing-tools">Hybrid load testing tools:</a></li>
+    <li><a href="#whatever-you-choose-compare-like-with-like">Whatever you choose, compare like with like.</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Testing tool cheat sheet for load testers who don&#39;t just care about numbers
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-01-17 16:30:07 &#43;0100 CET" itemprop="datePublished">2022-Jan-17</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/gatling" rel="tag">gatling</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/jmeter" rel="tag">jmeter</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/flood.io" rel="tag">flood.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/locust" rel="tag">locust</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/playwright" rel="tag">playwright</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/puppeteer" rel="tag">puppeteer</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>It&rsquo;s not enough to decide <em>how much</em> load you want to generate. You also have to know <em>how</em> you&rsquo;re generating it.</p>
+<p>Your approach affects what part of your application is tested, the results returned, and the budget you&rsquo;ll need to run your test.</p>
+<p>Here are three main categories of load testing tools:</p>
+<h2 id="protocol-based-load-testing-tools">Protocol-based load testing tools:</h2>
+<p>These tools simulate the underlying messages sent back and forth between an application and a client.</p>
+<p><em>Choose a protocol-based tool if</em>: you want to generate massive load, you want to load test before components are integrated, you want to test APIs, or you are budget-conscious.</p>
+<p><em>Best in class tools</em>: Gatling, JMeter, k6, Locust, Neoload</p>
+<h2 id="browser-based-load-testing-tools">Browser-based load testing tools:</h2>
+<p>These tools automate real user interactions with an interface.</p>
+<p><em>Choose a browser-based tool if:</em> you want to measure end-to-end performance, you want to reuse your browser automation scripts, you want front-end performance metrics, or you have a higher budget.</p>
+<p><em>Best in class tools:</em> Cypress, Flood Element, k6, Playwright, Puppeteer</p>
+<h2 id="hybrid-load-testing-tools">Hybrid load testing tools:</h2>
+<p>This approach is a mixture of the previous two. You can do this in a few ways:</p>
+<ul>
+<li>Use a protocol tool to generate the majority of the load, and a browser tool for a handful of virtual users <em>(best functionality, highest effort/cost)</em></li>
+<li>Use a browser-based tool for all load <em>(expensive, simplest)</em></li>
+<li>Find a tool that can do both <em>(ideal solution, few options)</em></li>
+</ul>
+<h2 id="whatever-you-choose-compare-like-with-like">Whatever you choose, compare like with like.</h2>
+<p>Happy testing!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#protocol-based-load-testing-tools">Protocol-based load testing tools:</a></li>
+    <li><a href="#browser-based-load-testing-tools">Browser-based load testing tools:</a></li>
+    <li><a href="#hybrid-load-testing-tools">Hybrid load testing tools:</a></li>
+    <li><a href="#whatever-you-choose-compare-like-with-like">Whatever you choose, compare like with like.</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&text=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&is_video=false&description=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&title=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&name=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers&description=It%26rsquo%3bs%20not%20enough%20to%20decide%20how%20much%20load%20you%20want%20to%20generate.%20You%20also%20have%20to%20know%20how%20you%26rsquo%3bre%20generating%20it.%0aYour%20approach%20affects%20what%20part%20of%20your%20application%20is%20tested%2c%20the%20results%20returned%2c%20and%20the%20budget%20you%26rsquo%3bll%20need%20to%20run%20your%20test.%0aHere%20are%20three%20main%20categories%20of%20load%20testing%20tools%3a%0aProtocol-based%20load%20testing%20tools%3a%20These%20tools%20simulate%20the%20underlying%20messages%20sent%20back%20and%20forth%20between%20an%20application%20and%20a%20client.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers%2f&t=Testing%20tool%20cheat%20sheet%20for%20load%20testers%20who%20don%27t%20just%20care%20about%20numbers">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

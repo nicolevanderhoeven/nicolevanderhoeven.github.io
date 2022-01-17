@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/code/</link>
+    <description>Recent content in code on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Sun, 16 Jan 2022 16:30:22 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use Dataview and Templater to run JavaScript in Obsidian for automating task management</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</link>
+      <pubDate>Sun, 16 Jan 2022 16:30:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</guid>
+      <description>&lt;p&gt;TIL how to run JavaScript in @obsdmd. A friend of mine had an interesting use case: He had a long reading list from his studies, and wanted to use Obsidian to decide what he could read given a certain amount of time.&lt;/p&gt;
+&lt;p&gt;TL;DR: &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the script&lt;/a&gt;.
+And here&amp;rsquo;s the end result:
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-demo.gif&#34; alt=&#34;Gif of the full setup working&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Requires: Obsidian. The Dataview and Templater plugins. Also requires a separate markdown page for every chapter or bite-sized section of the book or course, with the metadata &lt;code&gt;time_required&lt;/code&gt; in the YAML frontmatter.&lt;/p&gt;
+&lt;p&gt;Why Dataview? Dataview can parse that frontmatter, grab the value for &lt;code&gt;time_required&lt;/code&gt;, and return a list of pages and links. There is a Dataview Query Language, but dataviewjs is more extensible.&lt;/p&gt;
+&lt;p&gt;Why Templater? I initially wanted to write a script within a dataviewjs block, but:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dataview results are only rendered in Preview mode (which I don&amp;rsquo;t spend much time in)&lt;/li&gt;
+&lt;li&gt;I hate testing JavaScript within Obsidian.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead, I created a folder &lt;code&gt;scripts&lt;/code&gt; within my vault and selected it as the &amp;ldquo;user scripts folder&amp;rdquo; in Templater settings. Then, I created a script, &lt;code&gt;returnStudyOptions.js&lt;/code&gt;. &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the gist for that&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In a new note, I typed &lt;code&gt;&amp;lt;% tp.user.returnStudyOptions(tp, 60) %&amp;gt;&lt;/code&gt;. This line calls the script I created and also passes 60 minutes as the time available.&lt;/p&gt;
+&lt;p&gt;I selected &amp;ldquo;Templater: Replace templates in the active file&amp;rdquo; from the Command Pane, which runs the script and replaces the line with the script&amp;rsquo;s returned value, which looks something like this:
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-result.png&#34; alt=&#34;Screenshot of the notes returned by the script&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I also assigned a hotkey to for replacing the template, for ease of use. That&amp;rsquo;s it! I thought this was a fun way to learn how to use JavaScript in Obsidian. Thanks to &lt;a href=&#34;https://twitter.com/ealameda&#34;&gt;@ealameda&lt;/a&gt; for the use case!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

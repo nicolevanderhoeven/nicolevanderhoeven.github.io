@@ -162,7 +162,16 @@
   
   </section>
   <section id="subscribe">
-    <form style="padding:3px;text-align:center;" action="https://tinyletter.com/nicolevdh" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/nicolevdh', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Get updates:</label>&nbsp;<input type="text" style="width:50%" name="email" id="tlemail" />&nbsp;<input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe"/></p></form>
+    <div id="revue-embed">
+      <form action="https://www.getrevue.co/profile/n_vanderhoeven/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+      <div class="revue-form-group">
+        <label for="member_email">Get updates: </label>
+        <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+        <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+      </div>
+      <div class="revue-form-footer"><i>(By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>).</i></div>
+      </form>
+    </div>
   </section>
   <section id="videos">
     <span class="h1"><a href="https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw">Last Video</a></span>

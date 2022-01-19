@@ -7,7 +7,93 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 17 Jan 2022 16:30:07 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 17:10:11 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Overview of Software Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220119-an-overview-of-software-testing/</link>
+      <pubDate>Wed, 19 Jan 2022 17:10:11 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220119-an-overview-of-software-testing/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/huiptd8Y2I0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;transcript&#34;&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;NICOLE: What is the difference between good software and bad software? Is it features or user interface or marketing? In my totally biased opinion, what actually makes a difference is how well the software was tested. But software testing encompasses a lot of different areas and it doesn&amp;rsquo;t even always have to be someone with a word tester in their job title that does the testing. So whether you&amp;rsquo;re looking to get started in the industry, or just trying to cross skill, here&amp;rsquo;s an overview of the main types of software testing.&lt;/p&gt;
+&lt;p&gt;Is it just me, or does your desk get that clutter too after a week of work?&lt;/p&gt;
+&lt;p&gt;Anyway, software testing is the process of validating whether an application works as intended, but there&amp;rsquo;s a lot of vagueness in that statement. One of the broadest ways to categorize testing types though, is whether it&amp;rsquo;s functional or operational.&lt;/p&gt;
+&lt;p&gt;Functional testing is more about application features. Is there a form to capture user email addresses? Is there a button next to it that submits those addresses? Once the button is clicked, where do the user details go? Do they go to the database? Are they stored correctly? Those are the sort of ways in which functional testers think. Operational testing traditionally called non-functional testing, is a way of verifying software quality and aspects that extend beyond the features of the application.&lt;/p&gt;
+&lt;p&gt;Operational testing sometimes involves concerns that are more subjective or qualitative. So it can be a little bit more difficult to test, because those things only arise in certain conditions. Am saying, operational testing here, instead of non-functional testing, because I was talking to Paul Bruce who made an excellent video just on this topic. He talks about why the term nonfunctional requirement is really a bit of a misnomer.&lt;/p&gt;
+&lt;p&gt;PAUL: It relegates all these other things, security, performance, installation, deployment, accessibility. It relegates them to a nice to have, so it should be functional versus operational.&lt;/p&gt;
+&lt;p&gt;NICOLE: So I&amp;rsquo;m using his term operational testing instead.&lt;/p&gt;
+&lt;p&gt;Here are the different forms of operational or non-functional testing.&lt;/p&gt;
+&lt;p&gt;First there&amp;rsquo;s accessibility testing. It is involved with verifying that end users can consume or navigate content. Usually through assistive devices like screen readers. While most forms of testing begin with a statistically normal user in mind, accessibility testing seeks out outliers in terms of location, linguistic background and disability.&lt;/p&gt;
+&lt;p&gt;Usability testing is designing with user experience in mind, specifically concerning the placement of on-screen elements and the intuitiveness of the process flow of an application.&lt;/p&gt;
+&lt;p&gt;Localization testing is a way of making sure that applications are usable in the local context, in the sense of being colloquially appropriate for users in different countries and from different cultures.&lt;/p&gt;
+&lt;p&gt;Security testing verifies that a system has no flaws that could be exploited, to gain access to confidential information or features that would not otherwise be accessed by expected means.&lt;/p&gt;
+&lt;p&gt;So that was me talking from my home in the Netherlands, but this week I am in Portugal. The remote working life, am I right?&lt;/p&gt;
+&lt;p&gt;But anyway, performance testing is my favorite topic and my favorite type of testing because that&amp;rsquo;s the one that I&amp;rsquo;ve had the most experience with. Performance testing is more qualitative. So it&amp;rsquo;s more about how well the application works. And there are two main types of performance testing and that&amp;rsquo;s front-end performance, and back-end performance testing.&lt;/p&gt;
+&lt;p&gt;Front-end performance testing seeks to verify the user experience at the interface level. So that&amp;rsquo;s everything that the end user sees on their local machine.&lt;/p&gt;
+&lt;p&gt;There are different approaches to front-end performance testing, and the first of them is performance profiling. Performance profiling involves running your application through a series of automated checks. And there are a lot of sites for this, where you just put in your URL, if it&amp;rsquo;s a web app, and you get a score in the end. That tells you how performance your application is, the most popular example for this and also the easiest to get started with, is DevTools because that&amp;rsquo;s already in Chrome and Firefox based browsers. But you can also go to sites like Webpagetest, or GTMetrix, YSlow, which is a plugin, or you can use Google Lighthouse, which is now included with Chrome Dev Tools.&lt;/p&gt;
+&lt;p&gt;The next approach to front-end performance testing is called RUM or Real User Monitoring. So the difference is that with performance profiling, that&amp;rsquo;s often done manually, and as a one-off thing, like maybe at the beginning of a test or during, but Real User Monitoring is not usually done within testing environments. As the name suggests, these tools measure the experience of real users. So they have to be run in production. Examples of tools in this space are; New Relic&amp;rsquo;s RUM, Elastic has a RUM as well, there&amp;rsquo;s Catchpoint, SpeedCurve Uptrends and many more.&lt;/p&gt;
+&lt;p&gt;And the third approach to measuring front-end performance is by using some sort of browser-based automation tool. So typically this has been something like Selenium, but that&amp;rsquo;s falling out of favor in terms of more modern solutions like Playwright, Puppeteer, Cypress and so on.&lt;/p&gt;
+&lt;p&gt;So front-end performance is about everything that the user sees on their end, but back-end performance testing is about everything that they don&amp;rsquo;t see. It&amp;rsquo;s about the network. It&amp;rsquo;s about latency, the application servers, the way the infrastructure is set up and all of those things that are a little bit more difficult to look into, but can also have severe bottlenecks. Back-end performance testing seeks to verify aspects of an application such as scalability, elasticity, availability, reliability and responsiveness.&lt;/p&gt;
+&lt;p&gt;Scalability is the application&amp;rsquo;s ability to respond to changes in demand. This could mean scaling up, which means increasing the resources available to a server, but it could also mean scaling out, meaning increasing the number of servers that are available to handle the application load.&lt;/p&gt;
+&lt;p&gt;Elasticity is a related topic to scalability, except where scalability is all about scaling up or out. Elasticity also emphasize a scaling down or in, and that&amp;rsquo;s because having these services or servers available on the Cloud that are dynamically adjusting can also be quite expensive. So elasticity makes sure that the infrastructure that&amp;rsquo;s available or the resources available are always appropriate for the size of the demand. So when demand increases, elasticity also checks whether the application decreases it servers or resources in response to that.&lt;/p&gt;
+&lt;p&gt;Availability is how long the application stays up, despite changing circumstances in production. So this is typically measured by uptime. Availability can also be tested using disaster recovery procedures, and you&amp;rsquo;re not just testing the application itself, but also the processes around it. So are there enough people that are on call so that they would be able to come in and troubleshoot when there&amp;rsquo;s a production incident? All of those things are included in application availability.&lt;/p&gt;
+&lt;p&gt;Reliability checks to see how your application behaves in response to unexpected errors. Reliability basically takes it as a given that your application is going to fail somehow, sometime, maybe you don&amp;rsquo;t know exactly when that will be or how it will fail, but it&amp;rsquo;s going to happen. So a big part of reliability and site reliability engineering is trying to expose your application to those failures beforehand so that you can build confidence about how it will behave when those things actually happen in production.&lt;/p&gt;
+&lt;p&gt;And the last aspect to back-end performance testing is responsiveness. And this is usually equated with load testing. Load testing is more of a technique for testing though. And really load tests can be used to test not just responsiveness, but also reliability or availability or scalability, basically any of the &amp;ldquo;ilities&amp;rdquo; in this part of back-end performance testing.&lt;/p&gt;
+&lt;p&gt;Protocol-based load testing verifies the backend performance of an application, not by simulating real users accessing the application, but by simulating the underlying requests that go back and forth between the client or the user and the application servers. One of the benefits of protocol-based load testing is that it takes up fewer resources on the side of the load generator, and therefore is less expensive to run. Some popular protocol-based load testing tools are k6, JMeter, Gatling LoadRunner, NeoLoad, and Silk Performer.&lt;/p&gt;
+&lt;p&gt;Browser-based load testing verifies the application by simulating real users accessing it. So it also has the benefit of including these front-end performance metrics. Browser-based testing can also be called browser-driven or UI-based testing. Some popular tools for browser-based load testing are Playwright, Puppeteer, Flood Element and as of a few weeks ago, k6.&lt;/p&gt;
+&lt;p&gt;Then there&amp;rsquo;s hybrid load testing, which takes the best of protocol and browser-based load testing tools by combining them in one test. Now this can present some challenges, especially if you&amp;rsquo;re using different tools for the browser-based script, than you&amp;rsquo;re using for the protocol-based script. The ideal is to use your protocol based load testing tool, to simulate majority of the load to cut down on costs for the execution and scaling out of your load test. And then you run a handful of users using your browser based load testing tool. So you still get some metrics for front-end performance while that load is being applied by the protocol based tool.&lt;/p&gt;
+&lt;p&gt;Testing software can be really daunting because there are many aspects of an application that you can test. But that&amp;rsquo;s because there&amp;rsquo;s also many aspects of an application that can fail. And that&amp;rsquo;s why all roads lead to testing and why the success of an app hinges on how well it&amp;rsquo;s been tested.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d like to zero in, on load testing in particular, check out this video that I made on what load testing is. Thanks for watching. And like they say, here in Portugal, Obrigada!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Use Executors in k6: Adapting Load Test Workload Models to Production</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production/</link>
+      <pubDate>Tue, 18 Jan 2022 22:45:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production/</guid>
+      <description>&lt;p&gt;Executors in k6 are like traffic cops.&lt;/p&gt;
+&lt;p&gt;They define the shape and volume of traffic that your k6 load testing script follows during test execution. Executors can also drastically affect your results if you don&amp;rsquo;t get them right.&lt;/p&gt;
+&lt;p&gt;Here are all the executor options in k6 and when you should use each one:&lt;/p&gt;
+&lt;h2 id=&#34;k6-executors&#34;&gt;k6 executors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;shared-iterations&lt;/em&gt;&lt;/strong&gt;: Fix the number of total iterations for the entire test. Use when you want to create precisely X rows of test data during a prep run.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;per-vu-iterations&lt;/em&gt;&lt;/strong&gt;: Fix the number of iterations each virtual user (VU) does. Use when you want each VU to use exactly X rows of test data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;constant-vus&lt;/em&gt;&lt;/strong&gt;: Fix the number of VUs and duration, but allow the number of iterations to vary. Use for straightforward tests or shakeout tests.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ramping-vus&lt;/em&gt;&lt;/strong&gt;: Set stages, each with a number of VUs and a duration, and let the number of iterations vary. Use for easiest comparison with other load testing tools and for custom load profiles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;constant-arrival-rate&lt;/em&gt;&lt;/strong&gt;: Fix the number of requests per second (rps) and duration, and allow the number of VUs and iterations to vary. Use when you have a simple load profile with a request throughput requirement (rps).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ramping-arrival rate&lt;/em&gt;&lt;/strong&gt;: Like &lt;strong&gt;&lt;em&gt;constant-arrival-rate&lt;/em&gt;&lt;/strong&gt;, but with stages. For each stage, fix the number of rps and duration. Use for spike tests, multiphase load profiles with distinct requirements, and Game Day simulations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;externally-controlled&lt;/em&gt;&lt;/strong&gt;: Fix max VUs and time, and allow everything else to be changed at runtime. Use for disaster recovery, breakpoint, or stress tests where you want ultimate flexibility in adapting your test to real-time results.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;still-unsure&#34;&gt;Still unsure?&lt;/h2&gt;
+&lt;p&gt;Use &lt;strong&gt;&lt;em&gt;ramping-vus&lt;/em&gt;&lt;/strong&gt;. It&amp;rsquo;s probably what you&amp;rsquo;re used to from other tools.&lt;/p&gt;
+&lt;p&gt;Ready to move up? Use &lt;strong&gt;&lt;em&gt;ramping-arrival-rate&lt;/em&gt;&lt;/strong&gt;. Rps is a better (but still not perfect) measure of throughput for comparison than just the number of VUs.&lt;/p&gt;
+&lt;h2 id=&#34;when-in-doubt-look-at-production&#34;&gt;When in doubt, look at production.&lt;/h2&gt;
+&lt;p&gt;Making sure your test looks and acts like real traffic yields the best results!&lt;/p&gt;
+&lt;p&gt;For more details, check out &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/#executors&#34;&gt;the k6 documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Testing tool cheat sheet for load testers who don&#39;t just care about numbers</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/</link>

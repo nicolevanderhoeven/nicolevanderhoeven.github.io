@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> An Overview of Software Testing | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="An Overview of Software Testing" />
+<meta property="og:description" content="Transcript NICOLE: What is the difference between good software and bad software? Is it features or user interface or marketing? In my totally biased opinion, what actually makes a difference is how well the software was tested. But software testing encompasses a lot of different areas and it doesn&rsquo;t even always have to be someone with a word tester in their job title that does the testing. So whether you&rsquo;re looking to get started in the industry, or just trying to cross skill, here&rsquo;s an overview of the main types of software testing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220119-an-overview-of-software-testing/" />
+<meta property="article:published_time" content="2022-01-19T17:10:11+01:00" />
+<meta property="article:modified_time" content="2022-01-19T17:10:11+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="An Overview of Software Testing"/>
+<meta name="twitter:description" content="Transcript NICOLE: What is the difference between good software and bad software? Is it features or user interface or marketing? In my totally biased opinion, what actually makes a difference is how well the software was tested. But software testing encompasses a lot of different areas and it doesn&rsquo;t even always have to be someone with a word tester in their job title that does the testing. So whether you&rsquo;re looking to get started in the industry, or just trying to cross skill, here&rsquo;s an overview of the main types of software testing."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&text=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&is_video=false&description=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=An%20Overview%20of%20Software%20Testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&name=An%20Overview%20of%20Software%20Testing&description=Transcript%20NICOLE%3a%20What%20is%20the%20difference%20between%20good%20software%20and%20bad%20software%3f%20Is%20it%20features%20or%20user%20interface%20or%20marketing%3f%20In%20my%20totally%20biased%20opinion%2c%20what%20actually%20makes%20a%20difference%20is%20how%20well%20the%20software%20was%20tested.%20But%20software%20testing%20encompasses%20a%20lot%20of%20different%20areas%20and%20it%20doesn%26rsquo%3bt%20even%20always%20have%20to%20be%20someone%20with%20a%20word%20tester%20in%20their%20job%20title%20that%20does%20the%20testing.%20So%20whether%20you%26rsquo%3bre%20looking%20to%20get%20started%20in%20the%20industry%2c%20or%20just%20trying%20to%20cross%20skill%2c%20here%26rsquo%3bs%20an%20overview%20of%20the%20main%20types%20of%20software%20testing.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&t=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transcript">Transcript</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        An Overview of Software Testing
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-01-19 17:10:11 &#43;0100 CET" itemprop="datePublished">2022-Jan-19</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/testing" rel="tag">testing</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/huiptd8Y2I0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="transcript">Transcript</h2>
+<p>NICOLE: What is the difference between good software and bad software? Is it features or user interface or marketing? In my totally biased opinion, what actually makes a difference is how well the software was tested. But software testing encompasses a lot of different areas and it doesn&rsquo;t even always have to be someone with a word tester in their job title that does the testing. So whether you&rsquo;re looking to get started in the industry, or just trying to cross skill, here&rsquo;s an overview of the main types of software testing.</p>
+<p>Is it just me, or does your desk get that clutter too after a week of work?</p>
+<p>Anyway, software testing is the process of validating whether an application works as intended, but there&rsquo;s a lot of vagueness in that statement. One of the broadest ways to categorize testing types though, is whether it&rsquo;s functional or operational.</p>
+<p>Functional testing is more about application features. Is there a form to capture user email addresses? Is there a button next to it that submits those addresses? Once the button is clicked, where do the user details go? Do they go to the database? Are they stored correctly? Those are the sort of ways in which functional testers think. Operational testing traditionally called non-functional testing, is a way of verifying software quality and aspects that extend beyond the features of the application.</p>
+<p>Operational testing sometimes involves concerns that are more subjective or qualitative. So it can be a little bit more difficult to test, because those things only arise in certain conditions. Am saying, operational testing here, instead of non-functional testing, because I was talking to Paul Bruce who made an excellent video just on this topic. He talks about why the term nonfunctional requirement is really a bit of a misnomer.</p>
+<p>PAUL: It relegates all these other things, security, performance, installation, deployment, accessibility. It relegates them to a nice to have, so it should be functional versus operational.</p>
+<p>NICOLE: So I&rsquo;m using his term operational testing instead.</p>
+<p>Here are the different forms of operational or non-functional testing.</p>
+<p>First there&rsquo;s accessibility testing. It is involved with verifying that end users can consume or navigate content. Usually through assistive devices like screen readers. While most forms of testing begin with a statistically normal user in mind, accessibility testing seeks out outliers in terms of location, linguistic background and disability.</p>
+<p>Usability testing is designing with user experience in mind, specifically concerning the placement of on-screen elements and the intuitiveness of the process flow of an application.</p>
+<p>Localization testing is a way of making sure that applications are usable in the local context, in the sense of being colloquially appropriate for users in different countries and from different cultures.</p>
+<p>Security testing verifies that a system has no flaws that could be exploited, to gain access to confidential information or features that would not otherwise be accessed by expected means.</p>
+<p>So that was me talking from my home in the Netherlands, but this week I am in Portugal. The remote working life, am I right?</p>
+<p>But anyway, performance testing is my favorite topic and my favorite type of testing because that&rsquo;s the one that I&rsquo;ve had the most experience with. Performance testing is more qualitative. So it&rsquo;s more about how well the application works. And there are two main types of performance testing and that&rsquo;s front-end performance, and back-end performance testing.</p>
+<p>Front-end performance testing seeks to verify the user experience at the interface level. So that&rsquo;s everything that the end user sees on their local machine.</p>
+<p>There are different approaches to front-end performance testing, and the first of them is performance profiling. Performance profiling involves running your application through a series of automated checks. And there are a lot of sites for this, where you just put in your URL, if it&rsquo;s a web app, and you get a score in the end. That tells you how performance your application is, the most popular example for this and also the easiest to get started with, is DevTools because that&rsquo;s already in Chrome and Firefox based browsers. But you can also go to sites like Webpagetest, or GTMetrix, YSlow, which is a plugin, or you can use Google Lighthouse, which is now included with Chrome Dev Tools.</p>
+<p>The next approach to front-end performance testing is called RUM or Real User Monitoring. So the difference is that with performance profiling, that&rsquo;s often done manually, and as a one-off thing, like maybe at the beginning of a test or during, but Real User Monitoring is not usually done within testing environments. As the name suggests, these tools measure the experience of real users. So they have to be run in production. Examples of tools in this space are; New Relic&rsquo;s RUM, Elastic has a RUM as well, there&rsquo;s Catchpoint, SpeedCurve Uptrends and many more.</p>
+<p>And the third approach to measuring front-end performance is by using some sort of browser-based automation tool. So typically this has been something like Selenium, but that&rsquo;s falling out of favor in terms of more modern solutions like Playwright, Puppeteer, Cypress and so on.</p>
+<p>So front-end performance is about everything that the user sees on their end, but back-end performance testing is about everything that they don&rsquo;t see. It&rsquo;s about the network. It&rsquo;s about latency, the application servers, the way the infrastructure is set up and all of those things that are a little bit more difficult to look into, but can also have severe bottlenecks. Back-end performance testing seeks to verify aspects of an application such as scalability, elasticity, availability, reliability and responsiveness.</p>
+<p>Scalability is the application&rsquo;s ability to respond to changes in demand. This could mean scaling up, which means increasing the resources available to a server, but it could also mean scaling out, meaning increasing the number of servers that are available to handle the application load.</p>
+<p>Elasticity is a related topic to scalability, except where scalability is all about scaling up or out. Elasticity also emphasize a scaling down or in, and that&rsquo;s because having these services or servers available on the Cloud that are dynamically adjusting can also be quite expensive. So elasticity makes sure that the infrastructure that&rsquo;s available or the resources available are always appropriate for the size of the demand. So when demand increases, elasticity also checks whether the application decreases it servers or resources in response to that.</p>
+<p>Availability is how long the application stays up, despite changing circumstances in production. So this is typically measured by uptime. Availability can also be tested using disaster recovery procedures, and you&rsquo;re not just testing the application itself, but also the processes around it. So are there enough people that are on call so that they would be able to come in and troubleshoot when there&rsquo;s a production incident? All of those things are included in application availability.</p>
+<p>Reliability checks to see how your application behaves in response to unexpected errors. Reliability basically takes it as a given that your application is going to fail somehow, sometime, maybe you don&rsquo;t know exactly when that will be or how it will fail, but it&rsquo;s going to happen. So a big part of reliability and site reliability engineering is trying to expose your application to those failures beforehand so that you can build confidence about how it will behave when those things actually happen in production.</p>
+<p>And the last aspect to back-end performance testing is responsiveness. And this is usually equated with load testing. Load testing is more of a technique for testing though. And really load tests can be used to test not just responsiveness, but also reliability or availability or scalability, basically any of the &ldquo;ilities&rdquo; in this part of back-end performance testing.</p>
+<p>Protocol-based load testing verifies the backend performance of an application, not by simulating real users accessing the application, but by simulating the underlying requests that go back and forth between the client or the user and the application servers. One of the benefits of protocol-based load testing is that it takes up fewer resources on the side of the load generator, and therefore is less expensive to run. Some popular protocol-based load testing tools are k6, JMeter, Gatling LoadRunner, NeoLoad, and Silk Performer.</p>
+<p>Browser-based load testing verifies the application by simulating real users accessing it. So it also has the benefit of including these front-end performance metrics. Browser-based testing can also be called browser-driven or UI-based testing. Some popular tools for browser-based load testing are Playwright, Puppeteer, Flood Element and as of a few weeks ago, k6.</p>
+<p>Then there&rsquo;s hybrid load testing, which takes the best of protocol and browser-based load testing tools by combining them in one test. Now this can present some challenges, especially if you&rsquo;re using different tools for the browser-based script, than you&rsquo;re using for the protocol-based script. The ideal is to use your protocol based load testing tool, to simulate majority of the load to cut down on costs for the execution and scaling out of your load test. And then you run a handful of users using your browser based load testing tool. So you still get some metrics for front-end performance while that load is being applied by the protocol based tool.</p>
+<p>Testing software can be really daunting because there are many aspects of an application that you can test. But that&rsquo;s because there&rsquo;s also many aspects of an application that can fail. And that&rsquo;s why all roads lead to testing and why the success of an app hinges on how well it&rsquo;s been tested.</p>
+<p>If you&rsquo;d like to zero in, on load testing in particular, check out this video that I made on what load testing is. Thanks for watching. And like they say, here in Portugal, Obrigada!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transcript">Transcript</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&text=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&is_video=false&description=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=An%20Overview%20of%20Software%20Testing&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&title=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&name=An%20Overview%20of%20Software%20Testing&description=Transcript%20NICOLE%3a%20What%20is%20the%20difference%20between%20good%20software%20and%20bad%20software%3f%20Is%20it%20features%20or%20user%20interface%20or%20marketing%3f%20In%20my%20totally%20biased%20opinion%2c%20what%20actually%20makes%20a%20difference%20is%20how%20well%20the%20software%20was%20tested.%20But%20software%20testing%20encompasses%20a%20lot%20of%20different%20areas%20and%20it%20doesn%26rsquo%3bt%20even%20always%20have%20to%20be%20someone%20with%20a%20word%20tester%20in%20their%20job%20title%20that%20does%20the%20testing.%20So%20whether%20you%26rsquo%3bre%20looking%20to%20get%20started%20in%20the%20industry%2c%20or%20just%20trying%20to%20cross%20skill%2c%20here%26rsquo%3bs%20an%20overview%20of%20the%20main%20types%20of%20software%20testing.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220119-an-overview-of-software-testing%2f&t=An%20Overview%20of%20Software%20Testing">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

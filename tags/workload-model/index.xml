@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workload model on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/workload-model/</link>
+    <description>Recent content in workload model on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Tue, 18 Jan 2022 22:45:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/workload-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Executors in k6: Adapting Load Test Workload Models to Production</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production/</link>
+      <pubDate>Tue, 18 Jan 2022 22:45:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production/</guid>
+      <description>&lt;p&gt;Executors in k6 are like traffic cops.&lt;/p&gt;
+&lt;p&gt;They define the shape and volume of traffic that your k6 load testing script follows during test execution. Executors can also drastically affect your results if you don&amp;rsquo;t get them right.&lt;/p&gt;
+&lt;p&gt;Here are all the executor options in k6 and when you should use each one:&lt;/p&gt;
+&lt;h2 id=&#34;k6-executors&#34;&gt;k6 executors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;shared-iterations&lt;/em&gt;&lt;/strong&gt;: Fix the number of total iterations for the entire test. Use when you want to create precisely X rows of test data during a prep run.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;per-vu-iterations&lt;/em&gt;&lt;/strong&gt;: Fix the number of iterations each virtual user (VU) does. Use when you want each VU to use exactly X rows of test data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;constant-vus&lt;/em&gt;&lt;/strong&gt;: Fix the number of VUs and duration, but allow the number of iterations to vary. Use for straightforward tests or shakeout tests.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ramping-vus&lt;/em&gt;&lt;/strong&gt;: Set stages, each with a number of VUs and a duration, and let the number of iterations vary. Use for easiest comparison with other load testing tools and for custom load profiles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;constant-arrival-rate&lt;/em&gt;&lt;/strong&gt;: Fix the number of requests per second (rps) and duration, and allow the number of VUs and iterations to vary. Use when you have a simple load profile with a request throughput requirement (rps).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ramping-arrival rate&lt;/em&gt;&lt;/strong&gt;: Like &lt;strong&gt;&lt;em&gt;constant-arrival-rate&lt;/em&gt;&lt;/strong&gt;, but with stages. For each stage, fix the number of rps and duration. Use for spike tests, multiphase load profiles with distinct requirements, and Game Day simulations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;externally-controlled&lt;/em&gt;&lt;/strong&gt;: Fix max VUs and time, and allow everything else to be changed at runtime. Use for disaster recovery, breakpoint, or stress tests where you want ultimate flexibility in adapting your test to real-time results.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;still-unsure&#34;&gt;Still unsure?&lt;/h2&gt;
+&lt;p&gt;Use &lt;strong&gt;&lt;em&gt;ramping-vus&lt;/em&gt;&lt;/strong&gt;. It&amp;rsquo;s probably what you&amp;rsquo;re used to from other tools.&lt;/p&gt;
+&lt;p&gt;Ready to move up? Use &lt;strong&gt;&lt;em&gt;ramping-arrival-rate&lt;/em&gt;&lt;/strong&gt;. Rps is a better (but still not perfect) measure of throughput for comparison than just the number of VUs.&lt;/p&gt;
+&lt;h2 id=&#34;when-in-doubt-look-at-production&#34;&gt;When in doubt, look at production.&lt;/h2&gt;
+&lt;p&gt;Making sure your test looks and acts like real traffic yields the best results!&lt;/p&gt;
+&lt;p&gt;For more details, check out &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/#executors&#34;&gt;the k6 documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How to Use Executors in k6: Adapting Load Test Workload Models to Production | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How to Use Executors in k6: Adapting Load Test Workload Models to Production" />
+<meta property="og:description" content="Executors in k6 are like traffic cops.
+They define the shape and volume of traffic that your k6 load testing script follows during test execution. Executors can also drastically affect your results if you don&rsquo;t get them right.
+Here are all the executor options in k6 and when you should use each one:
+k6 executors   shared-iterations: Fix the number of total iterations for the entire test. Use when you want to create precisely X rows of test data during a prep run." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production/" />
+<meta property="article:published_time" content="2022-01-18T22:45:52+01:00" />
+<meta property="article:modified_time" content="2022-01-18T22:45:52+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Use Executors in k6: Adapting Load Test Workload Models to Production"/>
+<meta name="twitter:description" content="Executors in k6 are like traffic cops.
+They define the shape and volume of traffic that your k6 load testing script follows during test execution. Executors can also drastically affect your results if you don&rsquo;t get them right.
+Here are all the executor options in k6 and when you should use each one:
+k6 executors   shared-iterations: Fix the number of total iterations for the entire test. Use when you want to create precisely X rows of test data during a prep run."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220117-testing-tool-cheat-sheet-for-load-testers-who-dont-just-care-about-numbers/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20220119-an-overview-of-software-testing/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&text=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&is_video=false&description=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&name=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production&description=Executors%20in%20k6%20are%20like%20traffic%20cops.%0aThey%20define%20the%20shape%20and%20volume%20of%20traffic%20that%20your%20k6%20load%20testing%20script%20follows%20during%20test%20execution.%20Executors%20can%20also%20drastically%20affect%20your%20results%20if%20you%20don%26rsquo%3bt%20get%20them%20right.%0aHere%20are%20all%20the%20executor%20options%20in%20k6%20and%20when%20you%20should%20use%20each%20one%3a%0ak6%20executors%20%20%20shared-iterations%3a%20Fix%20the%20number%20of%20total%20iterations%20for%20the%20entire%20test.%20Use%20when%20you%20want%20to%20create%20precisely%20X%20rows%20of%20test%20data%20during%20a%20prep%20run.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&t=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#k6-executors">k6 executors</a></li>
+    <li><a href="#still-unsure">Still unsure?</a></li>
+    <li><a href="#when-in-doubt-look-at-production">When in doubt, look at production.</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How to Use Executors in k6: Adapting Load Test Workload Models to Production
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-01-18 22:45:52 &#43;0100 CET" itemprop="datePublished">2022-Jan-18</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/workload-model" rel="tag">workload model</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Executors in k6 are like traffic cops.</p>
+<p>They define the shape and volume of traffic that your k6 load testing script follows during test execution. Executors can also drastically affect your results if you don&rsquo;t get them right.</p>
+<p>Here are all the executor options in k6 and when you should use each one:</p>
+<h2 id="k6-executors">k6 executors</h2>
+<ul>
+<li>
+<p><strong><em>shared-iterations</em></strong>: Fix the number of total iterations for the entire test. Use when you want to create precisely X rows of test data during a prep run.</p>
+</li>
+<li>
+<p><strong><em>per-vu-iterations</em></strong>: Fix the number of iterations each virtual user (VU) does. Use when you want each VU to use exactly X rows of test data.</p>
+</li>
+<li>
+<p><strong><em>constant-vus</em></strong>: Fix the number of VUs and duration, but allow the number of iterations to vary. Use for straightforward tests or shakeout tests.</p>
+</li>
+<li>
+<p><strong><em>ramping-vus</em></strong>: Set stages, each with a number of VUs and a duration, and let the number of iterations vary. Use for easiest comparison with other load testing tools and for custom load profiles.</p>
+</li>
+<li>
+<p><strong><em>constant-arrival-rate</em></strong>: Fix the number of requests per second (rps) and duration, and allow the number of VUs and iterations to vary. Use when you have a simple load profile with a request throughput requirement (rps).</p>
+</li>
+<li>
+<p><strong><em>ramping-arrival rate</em></strong>: Like <strong><em>constant-arrival-rate</em></strong>, but with stages. For each stage, fix the number of rps and duration. Use for spike tests, multiphase load profiles with distinct requirements, and Game Day simulations.</p>
+</li>
+<li>
+<p><strong><em>externally-controlled</em></strong>: Fix max VUs and time, and allow everything else to be changed at runtime. Use for disaster recovery, breakpoint, or stress tests where you want ultimate flexibility in adapting your test to real-time results.</p>
+</li>
+</ul>
+<h2 id="still-unsure">Still unsure?</h2>
+<p>Use <strong><em>ramping-vus</em></strong>. It&rsquo;s probably what you&rsquo;re used to from other tools.</p>
+<p>Ready to move up? Use <strong><em>ramping-arrival-rate</em></strong>. Rps is a better (but still not perfect) measure of throughput for comparison than just the number of VUs.</p>
+<h2 id="when-in-doubt-look-at-production">When in doubt, look at production.</h2>
+<p>Making sure your test looks and acts like real traffic yields the best results!</p>
+<p>For more details, check out <a href="https://k6.io/docs/using-k6/scenarios/#executors">the k6 documentation</a></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#k6-executors">k6 executors</a></li>
+    <li><a href="#still-unsure">Still unsure?</a></li>
+    <li><a href="#when-in-doubt-look-at-production">When in doubt, look at production.</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&text=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&is_video=false&description=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&title=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&name=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production&description=Executors%20in%20k6%20are%20like%20traffic%20cops.%0aThey%20define%20the%20shape%20and%20volume%20of%20traffic%20that%20your%20k6%20load%20testing%20script%20follows%20during%20test%20execution.%20Executors%20can%20also%20drastically%20affect%20your%20results%20if%20you%20don%26rsquo%3bt%20get%20them%20right.%0aHere%20are%20all%20the%20executor%20options%20in%20k6%20and%20when%20you%20should%20use%20each%20one%3a%0ak6%20executors%20%20%20shared-iterations%3a%20Fix%20the%20number%20of%20total%20iterations%20for%20the%20entire%20test.%20Use%20when%20you%20want%20to%20create%20precisely%20X%20rows%20of%20test%20data%20during%20a%20prep%20run.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220118-how-to-use-executors-in-k6-adapting-load-test-workload-models-to-production%2f&t=How%20to%20Use%20Executors%20in%20k6%3a%20Adapting%20Load%20Test%20Workload%20Models%20to%20Production">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

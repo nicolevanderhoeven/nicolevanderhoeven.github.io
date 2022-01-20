@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 19 Jan 2022 17:10:11 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jan 2022 20:36:59 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Look at Estonia | Getting to Tallinn (Lucky Dippers)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</link>
+      <pubDate>Thu, 20 Jan 2022 20:36:59 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</guid>
+      <description>&lt;p&gt;In December 2018, my husband and I met up with some friends and went from Valkenburg and Maastricht in the Netherlands to Riga, Latvia; and then to Tallinn, Estonia. Three countries in one day!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xMh_yLOAIKI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>An Overview of Software Testing</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220119-an-overview-of-software-testing/</link>
@@ -24,7 +39,7 @@
 &lt;p&gt;Is it just me, or does your desk get that clutter too after a week of work?&lt;/p&gt;
 &lt;p&gt;Anyway, software testing is the process of validating whether an application works as intended, but there&amp;rsquo;s a lot of vagueness in that statement. One of the broadest ways to categorize testing types though, is whether it&amp;rsquo;s functional or operational.&lt;/p&gt;
 &lt;p&gt;Functional testing is more about application features. Is there a form to capture user email addresses? Is there a button next to it that submits those addresses? Once the button is clicked, where do the user details go? Do they go to the database? Are they stored correctly? Those are the sort of ways in which functional testers think. Operational testing traditionally called non-functional testing, is a way of verifying software quality and aspects that extend beyond the features of the application.&lt;/p&gt;
-&lt;p&gt;Operational testing sometimes involves concerns that are more subjective or qualitative. So it can be a little bit more difficult to test, because those things only arise in certain conditions. Am saying, operational testing here, instead of non-functional testing, because I was talking to Paul Bruce who made an excellent video just on this topic. He talks about why the term nonfunctional requirement is really a bit of a misnomer.&lt;/p&gt;
+&lt;p&gt;Operational testing sometimes involves concerns that are more subjective or qualitative. So it can be a little bit more difficult to test, because those things only arise in certain conditions. I&amp;rsquo;m saying operational testing here, instead of non-functional testing, because I was talking to Paul Bruce who made an excellent video just on this topic. He talks about why the term nonfunctional requirement is really a bit of a misnomer.&lt;/p&gt;
 &lt;p&gt;PAUL: It relegates all these other things, security, performance, installation, deployment, accessibility. It relegates them to a nice to have, so it should be functional versus operational.&lt;/p&gt;
 &lt;p&gt;NICOLE: So I&amp;rsquo;m using his term operational testing instead.&lt;/p&gt;
 &lt;p&gt;Here are the different forms of operational or non-functional testing.&lt;/p&gt;

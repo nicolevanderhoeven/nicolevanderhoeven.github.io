@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 20 Jan 2022 20:36:59 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jan 2022 18:23:47 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/</link>
+      <pubDate>Fri, 21 Jan 2022 18:23:47 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/</guid>
+      <description>&lt;p&gt;Today, my former colleague &lt;a href=&#34;https://simme.dev&#34;&gt;Simon Aronsson&lt;/a&gt; brought his &lt;em&gt;new&lt;/em&gt; colleague, &lt;a href=&#34;https://twitter.com/mmanciop&#34;&gt;Michele Mancioppi&lt;/a&gt;, to k6 Office Hours to talk about observability, and how they do it at &lt;a href=&#34;https://canonical.com&#34;&gt;Canonical&lt;/a&gt;. It turned into a great conversation about trends in observability from the last decade, and how it relates to performance and reliability testing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SD5Y4QejEu4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>First Look at Estonia | Getting to Tallinn (Lucky Dippers)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</link>

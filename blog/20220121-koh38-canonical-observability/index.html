@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> First Look at Estonia | Getting to Tallinn (Lucky Dippers) | Nicole van der Hoeven</title>
+  <title> Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="First Look at Estonia | Getting to Tallinn (Lucky Dippers)" />
-<meta property="og:description" content="In December 2018, my husband and I met up with some friends and went from Valkenburg and Maastricht in the Netherlands to Riga, Latvia; and then to Tallinn, Estonia. Three countries in one day!
+  <meta property="og:title" content="Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38)" />
+<meta property="og:description" content="Today, my former colleague Simon Aronsson brought his new colleague, Michele Mancioppi, to k6 Office Hours to talk about observability, and how they do it at Canonical. It turned into a great conversation about trends in observability from the last decade, and how it relates to performance and reliability testing.
   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/" />
-<meta property="article:published_time" content="2022-01-20T20:36:59+01:00" />
-<meta property="article:modified_time" content="2022-01-20T20:36:59+01:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/" />
+<meta property="article:published_time" content="2022-01-21T18:23:47+01:00" />
+<meta property="article:modified_time" content="2022-01-21T18:23:47+01:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="First Look at Estonia | Getting to Tallinn (Lucky Dippers)"/>
-<meta name="twitter:description" content="In December 2018, my husband and I met up with some friends and went from Valkenburg and Maastricht in the Netherlands to Riga, Latvia; and then to Tallinn, Estonia. Three countries in one day!
+<meta name="twitter:title" content="Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38)"/>
+<meta name="twitter:description" content="Today, my former colleague Simon Aronsson brought his new colleague, Michele Mancioppi, to k6 Office Hours to talk about observability, and how they do it at Canonical. It turned into a great conversation about trends in observability from the last decade, and how it relates to performance and reliability testing.
   "/>
 
   
@@ -113,17 +113,11 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220119-an-overview-of-software-testing/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -151,57 +145,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&text=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&text=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&is_video=false&description=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&is_video=false&description=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f">
+    <a class="icon" href="mailto:?subject=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&name=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29&description=In%20December%202018%2c%20my%20husband%20and%20I%20met%20up%20with%20some%20friends%20and%20went%20from%20Valkenburg%20and%20Maastricht%20in%20the%20Netherlands%20to%20Riga%2c%20Latvia%3b%20and%20then%20to%20Tallinn%2c%20Estonia.%20Three%20countries%20in%20one%20day%21%0a%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&name=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29&description=Today%2c%20my%20former%20colleague%20Simon%20Aronsson%20brought%20his%20new%20colleague%2c%20Michele%20Mancioppi%2c%20to%20k6%20Office%20Hours%20to%20talk%20about%20observability%2c%20and%20how%20they%20do%20it%20at%20Canonical.%20It%20turned%20into%20a%20great%20conversation%20about%20trends%20in%20observability%20from%20the%20last%20decade%2c%20and%20how%20it%20relates%20to%20performance%20and%20reliability%20testing.%0a%20%20">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&t=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&t=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -218,13 +212,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        First Look at Estonia | Getting to Tallinn (Lucky Dippers)
+        Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2022-01-20 20:36:59 &#43;0100 CET" itemprop="datePublished">2022-Jan-20</time>
+          <time datetime="2022-01-21 18:23:47 &#43;0100 CET" itemprop="datePublished">2022-Jan-21</time>
           
         </div>
         
@@ -233,22 +227,19 @@
             <i class="fas fa-tag"></i>
             
             
-            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
             
              ,  
             <a class="tag-link" href="/tags/english" rel="tag">english</a>
             
              ,  
-            <a class="tag-link" href="/tags/espa%C3%B1ol" rel="tag">español</a>
-            
-             ,  
-            <a class="tag-link" href="/tags/nederlands" rel="tag">nederlands</a>
-            
-             ,  
-            <a class="tag-link" href="/tags/travel" rel="tag">travel</a>
-            
-             ,  
-            <a class="tag-link" href="/tags/luckydippers" rel="tag">luckydippers</a>
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
             
              ,  
             <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
@@ -260,10 +251,10 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>In December 2018, my husband and I met up with some friends and went from Valkenburg and Maastricht in the Netherlands to Riga, Latvia; and then to Tallinn, Estonia. Three countries in one day!</p>
+      <p>Today, my former colleague <a href="https://simme.dev">Simon Aronsson</a> brought his <em>new</em> colleague, <a href="https://twitter.com/mmanciop">Michele Mancioppi</a>, to k6 Office Hours to talk about observability, and how they do it at <a href="https://canonical.com">Canonical</a>. It turned into a great conversation about trends in observability from the last decade, and how it relates to performance and reliability testing.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/xMh_yLOAIKI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/SD5Y4QejEu4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -313,57 +304,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&text=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&text=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&is_video=false&description=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&is_video=false&description=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f">
+    <a class="icon" href="mailto:?subject=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&title=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&title=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&name=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29&description=In%20December%202018%2c%20my%20husband%20and%20I%20met%20up%20with%20some%20friends%20and%20went%20from%20Valkenburg%20and%20Maastricht%20in%20the%20Netherlands%20to%20Riga%2c%20Latvia%3b%20and%20then%20to%20Tallinn%2c%20Estonia.%20Three%20countries%20in%20one%20day%21%0a%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&name=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29&description=Today%2c%20my%20former%20colleague%20Simon%20Aronsson%20brought%20his%20new%20colleague%2c%20Michele%20Mancioppi%2c%20to%20k6%20Office%20Hours%20to%20talk%20about%20observability%2c%20and%20how%20they%20do%20it%20at%20Canonical.%20It%20turned%20into%20a%20great%20conversation%20about%20trends%20in%20observability%20from%20the%20last%20decade%2c%20and%20how%20it%20relates%20to%20performance%20and%20reliability%20testing.%0a%20%20">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220120-first-look-at-estonia%2f&t=First%20Look%20at%20Estonia%20%7c%20Getting%20to%20Tallinn%20%28Lucky%20Dippers%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220121-koh38-canonical-observability%2f&t=Canonical%20Observability%20with%20Simon%20Aronsson%20and%20Michele%20Mancioppi%20%28k6%20Office%20Hours%20%2338%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

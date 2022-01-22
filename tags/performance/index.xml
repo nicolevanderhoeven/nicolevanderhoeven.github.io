@@ -7,7 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 21 Jan 2022 18:23:47 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 16:42:49 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Do What Kind of Testing When: Testing Types by Scope</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220122-how-to-do-what-kind-of-testing-when/</link>
+      <pubDate>Sat, 22 Jan 2022 16:42:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220122-how-to-do-what-kind-of-testing-when/</guid>
+      <description>&lt;p&gt;Correctly identifying &lt;em&gt;when&lt;/em&gt; you test could be just as important as &lt;em&gt;what&lt;/em&gt;. Below are types of testing according to scope.&lt;/p&gt;
+&lt;h3 id=&#34;static-testing&#34;&gt;Static testing&lt;/h3&gt;
+&lt;p&gt;Static testing occurs when requirements are written. Question requirements and spell out what each one means.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; Setting up a system to track and link requirements to test cases, negotiating business needs with technical feasibility, clarifying scope.&lt;/p&gt;
+&lt;h3 id=&#34;unit-testing&#34;&gt;Unit testing&lt;/h3&gt;
+&lt;p&gt;Unit testing occurs when coding begins. Practice Test-Driven Development by translating requirements into tests before writing the code.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; Treating test code like application code, getting developer buy-in, communicating technical implementation, performance, pair programming.&lt;/p&gt;
+&lt;h3 id=&#34;system-testing&#34;&gt;System testing&lt;/h3&gt;
+&lt;p&gt;System testing occurs when a build is released. Employ black-box testing: step back from the code and assess the feature as a whole for consistency.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; Adherence to common design standards, equivalence partitioning, boundary value analysis, fighting scope creep, usability, creating test data.&lt;/p&gt;
+&lt;h3 id=&#34;system-integration-testing-sit&#34;&gt;System integration testing (SIT)&lt;/h3&gt;
+&lt;p&gt;SIT occurs when integrating multiple components. Use white-box or grey-box testing to target the interactions and traffic between components.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; API testing, stubbing and mocking, identifying request paths throughout the system, performance benchmarking, observability and analysis.&lt;/p&gt;
+&lt;h3 id=&#34;business-acceptance-testing-bat&#34;&gt;Business acceptance testing (BAT)&lt;/h3&gt;
+&lt;p&gt;BAT occurs when the code is assessed against overall business goals. Seek out SMEs who can help you verify expected outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; Adherence to business requirements and regulations, process testing, simplifying request flows, identifying potential customer pain points.&lt;/p&gt;
+&lt;h3 id=&#34;user-acceptance-testing-uat&#34;&gt;User acceptance testing (UAT)&lt;/h3&gt;
+&lt;p&gt;User acceptance testing occurs before code is released to production. Map test cases to requirements and test real-world scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; Testing for superuser workflows, data cleansing, verifying real user behavior from historical logs, exploratory testing, end-to-end performance.&lt;/p&gt;
+&lt;h3 id=&#34;regression-testing&#34;&gt;Regression Testing&lt;/h3&gt;
+&lt;p&gt;Regression testing occurs between builds. Supplement a robust automation test suite with nuanced manual test cases that address known problem areas.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Concerns:&lt;/em&gt; Setting up a CI/CD pipeline, deciding what to automate, consolidating test and development tools, tracking failures over time.&lt;/p&gt;
+&lt;h3 id=&#34;question-everything&#34;&gt;Question everything&lt;/h3&gt;
+&lt;p&gt;Remember: &lt;strong&gt;testing is an attitude.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/</link>

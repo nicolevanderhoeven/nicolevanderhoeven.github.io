@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>career on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/career/</link>
+    <description>Recent content in career on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Tue, 25 Jan 2022 23:59:03 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why All Roads Lead to Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220125-all-roads-lead-to-testing/</link>
+      <pubDate>Tue, 25 Jan 2022 23:59:03 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220125-all-roads-lead-to-testing/</guid>
+      <description>&lt;h1 id=&#34;why-all-roads-lead-to-testing&#34;&gt;Why all roads lead to testing&lt;/h1&gt;
+&lt;p&gt;Testing is a skill every software engineer should develop.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy to dismiss testing as a responsibility only some carry, but it&amp;rsquo;s best thought of as a hat that &lt;em&gt;anyone&lt;/em&gt; can put on. How well you learn to wear this hat affects your career whether or not you&amp;rsquo;re a tester. Here&amp;rsquo;s why.&lt;/p&gt;
+&lt;h2 id=&#34;ideas-are-cheap&#34;&gt;Ideas are cheap.&lt;/h2&gt;
+&lt;p&gt;In tech, having an idea isn&amp;rsquo;t what sells&amp;ndash; the success is in the execution.&lt;/p&gt;
+&lt;p&gt;iPhones didn&amp;rsquo;t become popular because it was the first mobile with a touchscreen. The Nintendo Switch isn&amp;rsquo;t ubiquitous because of its revolutionary hardware. Behind every successful product is a lot of testing.&lt;/p&gt;
+&lt;h2 id=&#34;testing-isnt-just-for-testers&#34;&gt;Testing isn&amp;rsquo;t just for testers.&lt;/h2&gt;
+&lt;p&gt;Every good software engineer does testing.&lt;/p&gt;
+&lt;p&gt;Debugging is a form of testing. Questioning requirements is a form of testing. Testers don&amp;rsquo;t (and shouldn&amp;rsquo;t) have a monopoly on testing. The reality is that everyone is doing it, often without calling it &amp;ldquo;testing&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;testing-is-about-people-more-than-it-is-about-machines&#34;&gt;Testing is about people more than it is about machines.&lt;/h2&gt;
+&lt;p&gt;The fundamental goal of any app is to address a human need.&lt;/p&gt;
+&lt;p&gt;Testing is finding new ways to represent and understand this need at all stages of development. Testing is a people problem, not a technical problem.&lt;/p&gt;
+&lt;h2 id=&#34;humans-are-irrational&#34;&gt;Humans are irrational.&lt;/h2&gt;
+&lt;p&gt;The biggest challenge in building apps is human irrationality.&lt;/p&gt;
+&lt;p&gt;We don&amp;rsquo;t always &lt;em&gt;want&lt;/em&gt; what we need, we don&amp;rsquo;t always &lt;em&gt;know&lt;/em&gt; what we need, and even when we&amp;rsquo;re building &lt;em&gt;for&lt;/em&gt; others, we don&amp;rsquo;t always &lt;em&gt;work&lt;/em&gt; towards what we need. Testing is an attempt to make sense of this irrationality.&lt;/p&gt;
+&lt;h2 id=&#34;testing-is-an-attitude&#34;&gt;Testing is an attitude.&lt;/h2&gt;
+&lt;p&gt;Getting good at testing extends to aspects beyond work.&lt;/p&gt;
+&lt;p&gt;Testing is a discipline of questioning. It&amp;rsquo;s having curiosity as a default state and trying to meet people where they are. These are things every project, and every community, needs in spades.&lt;/p&gt;
+&lt;h2 id=&#34;testing-is-rarely-the-destination&#34;&gt;Testing is rarely the destination.&lt;/h2&gt;
+&lt;p&gt;But some time, some how, all roads lead to testing.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

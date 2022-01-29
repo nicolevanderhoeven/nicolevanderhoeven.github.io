@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pkm on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/pkm/</link>
+    <description>Recent content in pkm on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Sat, 29 Jan 2022 23:58:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 Mandatory Obsidian Plugins for Every Software Engineer</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220129-10-mandatory-obsidian-plugins-for-every-software-engineer/</link>
+      <pubDate>Sat, 29 Jan 2022 23:58:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220129-10-mandatory-obsidian-plugins-for-every-software-engineer/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t installed any Obsidian plugins, you&amp;rsquo;re missing out.&lt;/p&gt;
+&lt;p&gt;Many other mainstream PKM apps seem to have been built with the intention of hand-holding users through every step using a pretty interface. On the other hand, Obsidian is perfectly suited to power users who want to change the tool to meet their needs exactly. But you can only do that with plugins.&lt;/p&gt;
+&lt;p&gt;Here are 10 Obsidian plugins you should install if you work in tech:&lt;/p&gt;
+&lt;h2 id=&#34;enable-these-core-plugins&#34;&gt;Enable these Core Plugins.&lt;/h2&gt;
+&lt;p&gt;Core plugins are shipped with Obsidian but are disabled by default.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Daily notes&lt;/em&gt;&lt;/strong&gt;: Creates a new Markdown page according to a specified template that serves as a scratchpad and springboard for every new day.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Templates&lt;/em&gt;&lt;/strong&gt;: Lets you define predetermined formats that can be inserted into notes. Some template examples: Daily/Weekly/Monthly/Yearly notes, meeting notes with agendas, person notes to create your own CRM.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Backlinks&lt;/em&gt;:&lt;/strong&gt; When you have a note open, this shows you all the other notes that have referred to it, explicitly (via [[links]]) or implicitly (unlinked).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Quick switcher&lt;/em&gt;:&lt;/strong&gt; Lets you find any note by hitting CMD+O and showing search results as you type. With this enabled, I never bother with folders.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Workspaces&lt;/em&gt;:&lt;/strong&gt; Lets you save the exact arrangement of notes and sidebar options you have selected, and then load it quickly later. I have workspaces for writing, processing content, playing D&amp;amp;D, and making videos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install-these-community-plugins&#34;&gt;Install these Community Plugins.&lt;/h2&gt;
+&lt;p&gt;Community plugins are created by users and open-sourced on GitHub.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Calendar&lt;/em&gt;&lt;/strong&gt;: Adds a real-world calendar to your side panel that shows daily and weekly notes. Use Fantasy Calendar for even more customization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Editor Syntax Highlight&lt;/em&gt;:&lt;/strong&gt; Formats text in code blocks according to the programming language set. Drastically improves readability of any code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Readwise Official&lt;/em&gt;:&lt;/strong&gt; Regularly imports your highlights from ebooks, web articles, audiobooks, tweets, and PDFs into your Obsidian vault.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Templater&lt;/em&gt;:&lt;/strong&gt; Extends templating functionality by letting you run JAVASCRIPT. In your vault! This blows the functionality of Obsidian wide open.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Dataview&lt;/em&gt;:&lt;/strong&gt; Turns your Obsidian vault into a database using custom parameters in YAML frontmatter. There&amp;rsquo;s even a way to write queries in js!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

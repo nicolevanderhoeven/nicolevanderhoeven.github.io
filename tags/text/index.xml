@@ -7,7 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sat, 29 Jan 2022 23:58:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 22:46:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Things the Obsidian Templater Plugin Can Do That Templates Can&#39;t</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220131-5-things-the-obsidian-templater-can-do-that-templates-cant/</link>
+      <pubDate>Mon, 31 Jan 2022 22:46:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220131-5-things-the-obsidian-templater-can-do-that-templates-cant/</guid>
+      <description>&lt;p&gt;The Templater plugin is what the core Templates plugin should have been.&lt;/p&gt;
+&lt;p&gt;The name is unfortunate, as it implies that the two plugins are similar. Turns out they&amp;rsquo;re only similar in that one is a limited version of the other.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what you can do with Templater&amp;ndash; and not with Templates.&lt;/p&gt;
+&lt;h2 id=&#34;add-dynamic-variables-to-your-notes&#34;&gt;Add dynamic variables to your notes&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;re probably thinking, &lt;em&gt;but Templates can already add dates&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Templater can do that, &lt;em&gt;and more&lt;/em&gt;. You can use it to fetch values in YAML frontmatter, random quotes from the interwebs, and even clipboard contents.&lt;/p&gt;
+&lt;h2 id=&#34;make-your-notes-context-sensitive&#34;&gt;Make your notes context-sensitive&lt;/h2&gt;
+&lt;p&gt;Templater can create notes with different templates depending on context.&lt;/p&gt;
+&lt;p&gt;For example, you could set up Obsidian to create a new note using the &lt;em&gt;Person&lt;/em&gt; template in the &lt;em&gt;People&lt;/em&gt; folder but a &lt;em&gt;Weekly Review&lt;/em&gt; note on Sunday nights.&lt;/p&gt;
+&lt;h2 id=&#34;increment-your-notes-automatically&#34;&gt;Increment your notes automatically&lt;/h2&gt;
+&lt;p&gt;Templater can automatically increment new instances of a series.&lt;/p&gt;
+&lt;p&gt;You can set it up to create a session log for your 100th D&amp;amp;D session, a review note for your 12th monthly review, or your 10th book review.&lt;/p&gt;
+&lt;h2 id=&#34;interact-with-other-plugins&#34;&gt;Interact with other plugins&lt;/h2&gt;
+&lt;p&gt;Templater leverages all the best parts of Obsidian&amp;rsquo;s ecosystem.&lt;/p&gt;
+&lt;p&gt;You can read from and write to YAML frontmatter using Dataview, or run commands that create notes based on text input with Buttons.&lt;/p&gt;
+&lt;h2 id=&#34;write-and-run-your-own-scripts&#34;&gt;Write and run your own scripts&lt;/h2&gt;
+&lt;p&gt;Templater lets you write and call user scripts within an Obsidian note.&lt;/p&gt;
+&lt;p&gt;This is the ultimate in extensibility. The ability to run custom JavaScript means you&amp;rsquo;re limited only by your imagination (and skill).&lt;/p&gt;
+&lt;h2 id=&#34;templater-lets-you-turn-obsidian-into-exactly-what-you-want&#34;&gt;Templater lets you turn Obsidian into exactly what you want.&lt;/h2&gt;
+&lt;p&gt;And isn&amp;rsquo;t that what a PKM should do?&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>10 Mandatory Obsidian Plugins for Every Software Engineer</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220129-10-mandatory-obsidian-plugins-for-every-software-engineer/</link>

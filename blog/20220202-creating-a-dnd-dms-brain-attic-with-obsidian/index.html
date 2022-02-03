@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Creating a D&amp;D DM&#39;s Brain Attic With Obsidian | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Creating a D&amp;D DM&#39;s Brain Attic With Obsidian" />
+<meta property="og:description" content="I started using Obsidian for professional reasons. I use it daily as my main task management and personal knowledge management system for my main job as a software developer advocate at k6.io. However, a surprising use case of mine for Obsidian is playing Dungeons &amp; Dragons, the tabletop roleplaying game.
+Here&rsquo;s a video of me walking through my setup for how to use Obsidian to create my own &ldquo;DM&rsquo;s Brain Attic&rdquo;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220202-creating-a-dnd-dms-brain-attic-with-obsidian/" />
+<meta property="article:published_time" content="2022-02-02T10:46:56+01:00" />
+<meta property="article:modified_time" content="2022-02-02T10:46:56+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating a D&amp;D DM&#39;s Brain Attic With Obsidian"/>
+<meta name="twitter:description" content="I started using Obsidian for professional reasons. I use it daily as my main task management and personal knowledge management system for my main job as a software developer advocate at k6.io. However, a surprising use case of mine for Obsidian is playing Dungeons &amp; Dragons, the tabletop roleplaying game.
+Here&rsquo;s a video of me walking through my setup for how to use Obsidian to create my own &ldquo;DM&rsquo;s Brain Attic&rdquo;."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220201-realistic-calendar-blocking-for-the-agile-knowledge-worker/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&text=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&is_video=false&description=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&name=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian&description=I%20started%20using%20Obsidian%20for%20professional%20reasons.%20I%20use%20it%20daily%20as%20my%20main%20task%20management%20and%20personal%20knowledge%20management%20system%20for%20my%20main%20job%20as%20a%20software%20developer%20advocate%20at%20k6.io.%20However%2c%20a%20surprising%20use%20case%20of%20mine%20for%20Obsidian%20is%20playing%20Dungeons%20%26amp%3b%20Dragons%2c%20the%20tabletop%20roleplaying%20game.%0aHere%26rsquo%3bs%20a%20video%20of%20me%20walking%20through%20my%20setup%20for%20how%20to%20use%20Obsidian%20to%20create%20my%20own%20%26ldquo%3bDM%26rsquo%3bs%20Brain%20Attic%26rdquo%3b.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&t=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#other-resources">Other Resources</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Creating a D&amp;D DM&#39;s Brain Attic With Obsidian
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-02-02 10:46:56 &#43;0100 CET" itemprop="datePublished">2022-Feb-02</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/dd" rel="tag">D&amp;D</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ship30for30" rel="tag">ship30for30</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/zettelkasten" rel="tag">zettelkasten</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>I started using <a href="https://obsidian.md">Obsidian</a> for professional reasons. I use it daily as my main task management and personal knowledge management system for my main job as a software developer advocate at <a href="https://k6.io">k6.io</a>. However, a surprising use case of mine for Obsidian is playing Dungeons &amp; Dragons, the tabletop roleplaying game.</p>
+<p>Here&rsquo;s a video of me walking through my setup for how to use Obsidian to create my own &ldquo;DM&rsquo;s Brain Attic&rdquo;.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Fblwp-Uop_8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="other-resources">Other Resources</h2>
+<ul>
+<li><a href="https://nicolevanderhoeven.com/blog/20210930-non-lazy-dms-use-obsidian-for-dnd/">Non-Lazy DMs use Obsidian for D&amp;D</a></li>
+<li><a href="https://nicolevanderhoeven.com/blog/20211113-how-i-use-obsidian-to-run-and-play-dnd-online/">How I use Obsidian to run and play D&amp;D onliny</a></li>
+<li><a href="https://nicolevanderhoeven.com/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/">5 ways to use Obsidian as a Software Engineer</a></li>
+<li><a href="https://nicolevanderhoeven.com/blog/20211117-how-i-use-obsidian-for-work-as-a-software-developer-advocate/">How I use Obsidian for Work as a Software Developer Advocate</a></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#other-resources">Other Resources</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&text=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&is_video=false&description=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&title=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&name=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian&description=I%20started%20using%20Obsidian%20for%20professional%20reasons.%20I%20use%20it%20daily%20as%20my%20main%20task%20management%20and%20personal%20knowledge%20management%20system%20for%20my%20main%20job%20as%20a%20software%20developer%20advocate%20at%20k6.io.%20However%2c%20a%20surprising%20use%20case%20of%20mine%20for%20Obsidian%20is%20playing%20Dungeons%20%26amp%3b%20Dragons%2c%20the%20tabletop%20roleplaying%20game.%0aHere%26rsquo%3bs%20a%20video%20of%20me%20walking%20through%20my%20setup%20for%20how%20to%20use%20Obsidian%20to%20create%20my%20own%20%26ldquo%3bDM%26rsquo%3bs%20Brain%20Attic%26rdquo%3b.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220202-creating-a-dnd-dms-brain-attic-with-obsidian%2f&t=Creating%20a%20D%26D%20DM%27s%20Brain%20Attic%20With%20Obsidian">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

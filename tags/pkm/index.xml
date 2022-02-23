@@ -7,7 +7,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 16 Feb 2022 17:00:28 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Feb 2022 17:00:08 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 10 Obsidian Plugins I Can&#39;t Do Without</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220223-top-10-obsidian-plugins/</link>
+      <pubDate>Wed, 23 Feb 2022 17:00:08 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220223-top-10-obsidian-plugins/</guid>
+      <description>&lt;p&gt;In this video, I talk about my experience in getting started with &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, and how I went from thinking it wouldn&amp;rsquo;t meet my needs at all to not being able to shut up about how awesome it is.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/W7kTtn9empU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;transcript&#34;&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;The first time I tried to use Obsidian, I didn&amp;rsquo;t like it. It didn&amp;rsquo;t seem intuitive to use. I couldn&amp;rsquo;t quite get it to do what I wanted. And frankly, I just didn&amp;rsquo;t get all of the hype.&lt;/p&gt;
+&lt;p&gt;Today, I have over 10,000 notes over multiple vaults in Obsidian.&lt;/p&gt;
+&lt;p&gt;So what changed? Well, it turns out that there&amp;rsquo;s a pretty crucial element of the experience that I was missing the first time around and that&amp;rsquo;s plugins. Here are my top 10 community plugins for Obsidian so that you don&amp;rsquo;t make the same mistake. \&lt;/p&gt;
+&lt;p&gt;Obsidian already comes with some core plugins, some of which are enabled by default. Today, I&amp;rsquo;m talking about community plugins, which are extensions to Obsidian that are created by other Obsidian users. The security of your notes is still on you though so think about what you&amp;rsquo;re comfortable with before installing anything. \&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-calendar-and-fantasy-calendar&#34;&gt;Obsidian Calendar and Fantasy Calendar&lt;/h2&gt;
+&lt;p&gt;These 10 plugins are arranged alphabetically and the first one is Calendar.&lt;/p&gt;
+&lt;p&gt;Calendar is the most popular Obsidian plugin and for a reason. I don&amp;rsquo;t know at this point why you would ever install Obsidian without the Calendar plugin because Obsidian doesn&amp;rsquo;t have a native implementation of a calendar. The Calendar plugin doesn&amp;rsquo;t just show the calendar. It also lets you create daily notes and see those daily notes over the entire month. And it also lets you create weekly reviews if you have that option enabled, which I do.&lt;/p&gt;
+&lt;p&gt;Recently, I&amp;rsquo;ve been using Calendar and this other plugin, Fantasy Calendar. Even though Fantasy Calendar definitely was made for use in a tabletop role playing game like Dungeons and Dragons, you don&amp;rsquo;t have use it as that. I&amp;rsquo;ve used Fantasy Calendar as my content calendar in Obsidian. It just provides a little bit more customization than the Calendar plugin can but I install and use both heavily.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-dataview&#34;&gt;Obsidian Dataview&lt;/h2&gt;
+&lt;p&gt;Number two is Dataview.&lt;/p&gt;
+&lt;p&gt;Dataview has changed the way I use Obsidian. It&amp;rsquo;s changed the way I format my notes. It essentially allows you to define parameters and values in the YAML front matter or the metadata of your notes and then it lets you search for them. So it essentially lets you create your own database in Obsidian with custom fields for anything that you want.&lt;/p&gt;
+&lt;p&gt;You could use it for meetings or people or tools or books that you&amp;rsquo;ve read. The possibilities are endless. By the way, in addition to the very SQL-like query language that they have, you can also use JavaScript in Dataview. There&amp;rsquo;s just so much to do with this plugin. And I really haven&amp;rsquo;t even scratched the surface of it.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-editor-syntax-highlight&#34;&gt;Obsidian Editor Syntax Highlight&lt;/h2&gt;
+&lt;p&gt;Number three is so small but so useful that I had to include it in the list. It is Editor Syntax Highlight.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve ever copied over any code into Obsidian, you may find that it lacks a little bit in readability. Editors Syntax Highlight dramatically improves readability by changing the syntax highlighting depending on the programming language that you select. It isn&amp;rsquo;t going to replace VS Code anytime soon, but if you&amp;rsquo;re like me and you use it sort of as a dev log while you&amp;rsquo;re trying figure something out and you include your final solution or the code into your note, then I think that this is a must-have.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-kanban&#34;&gt;Obsidian Kanban&lt;/h2&gt;
+&lt;p&gt;Number four is Kanban which is funny because I don&amp;rsquo;t even usually like the Kanban approach. I never understood Trello and I never liked Post-it Notes. I don&amp;rsquo;t use Kanban for task management.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve discovered what it&amp;rsquo;s really good for is a content calendar. I create a card in Kanban for every bit of content that I&amp;rsquo;d like to work on, whether that&amp;rsquo;s code or a section in a workshop, a blog post, a video, or really basically anything. I really like being able to create my own columns and spicing it up by embedding photos within the card itself. It just makes the whole process a lot more visual.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-outliner&#34;&gt;Obsidian Outliner&lt;/h2&gt;
+&lt;p&gt;Number five is Outliner. Before Obsidian, I was using Roam and it definitely shows. While I&amp;rsquo;ve moved on philosophically from Roam Research, I still love the very task-oriented bulletin format that it had.&lt;/p&gt;
+&lt;p&gt;Well, Outliner brings the same thing to Obsidian. So you can have your keyboard shortcuts for quickly moving something up and down a list or indenting and unindenting as well. It has made my transition from Roam Research significantly easier.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-periodic-notes&#34;&gt;Obsidian Periodic Notes&lt;/h2&gt;
+&lt;p&gt;Number six is Periodic Notes.&lt;/p&gt;
+&lt;p&gt;I think one of the most fundamental philosophical differences between Obsidian and tools like Evernote is that Obsidian doesn&amp;rsquo;t want you to just capture it all. Obsidian is about bringing those notes to the forefront, processing them, analyzing them, really learning them, and then changing them as your knowledge changes and Periodic Notes really helps with that.&lt;/p&gt;
+&lt;p&gt;It is particularly useful for OKR or objective setting because it provides a system for reviewing notes daily, weekly, monthly, quarterly, and yearly. You don&amp;rsquo;t have to use all of those, but I find that using some of them is really useful in helping me step back and think about what I actually want to accomplish.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-publish&#34;&gt;Obsidian Publish&lt;/h2&gt;
+&lt;p&gt;Number seven probably would be my number one if I were ranking these, but since it&amp;rsquo;s alphabetical, number seven is Obsidian Publish.&lt;/p&gt;
+&lt;p&gt;Obsidian Publish is a premium add-on to Obsidian that lets you instantly publish all of your notes or at least the notes that you select to be published to a certain domain. Now I have it going to a custom domain and yes, it&amp;rsquo;s not free. And yes, I do know that there are other ways that you could do this with markdown files. I have my personal blog using Hugo as a static generator for instance, but there&amp;rsquo;s just something about Publish and just it taking just a few clicks between writing something and putting it out there that really reduces the inertia for me to learn in public.&lt;/p&gt;
+&lt;p&gt;Learning in public and growing a digital garden that is constantly changing is really important to me and it has been essential to my professional and personal development. So Obsidian Publish has to be, hands-down, my favorite plugin for Obsidian.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-readwise-official&#34;&gt;Obsidian Readwise Official&lt;/h2&gt;
+&lt;p&gt;Number eight is the Readwise Official plugin and this is a plugin that I&amp;rsquo;ve been wanting for a very long time. In fact, before the official plugin came out, I created my own Python script that I was running regularly just to be able to move my things from Readwise to Obsidian.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt;, if you don&amp;rsquo;t know, is a way to collect all of the things that you&amp;rsquo;re doing on the internet. It&amp;rsquo;s an easy way to collect eBooks, web articles, audiobooks, tweets, and even PDFs. And it all brings your highlights of those into your Obsidian vault.&lt;/p&gt;
+&lt;p&gt;It is a really essential part to my learning process because it ensures that everything I&amp;rsquo;ve learned from a variety of different sources ends up in my Obsidian vault for me to process and analyze.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-sync&#34;&gt;Obsidian Sync&lt;/h2&gt;
+&lt;p&gt;Number nine is Obsidian Sync and it is also a premium add-on, kind of like Obsidian Publish, but it&amp;rsquo;s also totally optional.&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t really need Obsidian Sync. I already use Dropbox, but unfortunately, one of the problems with Dropbox is that you can&amp;rsquo;t yet use it to sync between different devices. I use Obsidian on my laptop, on my iPad, and on my Samsung mobile. So I have three different devices that I need all of my notes on.&lt;/p&gt;
+&lt;p&gt;There are currently two options for this. It&amp;rsquo;s either iCloud or Obsidian Sync. I don&amp;rsquo;t like iCloud, and so, Obsidian Sync is my service of choice.&lt;/p&gt;
+&lt;h2 id=&#34;obsidian-templater&#34;&gt;Obsidian Templater&lt;/h2&gt;
+&lt;p&gt;Number 10 is the most recent plugin of this 10 and it is Templater.&lt;/p&gt;
+&lt;p&gt;Now don&amp;rsquo;t get it confused with Templates which is an Obsidian core plugin. TemplateR is a community plugin that&amp;rsquo;s like Templates on steroids. It extends templating functionality by letting you run JavaScript in your vault. This blows the functionality of Obsidian wide open as now I can run JavaScript in my vault to do certain things for me.&lt;/p&gt;
+&lt;p&gt;I was already a fan of the core plugin Templates, so having Templater and all of the customization options that are possible is just amazing. Definitely recommend it.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;ve made it this far and you&amp;rsquo;re wondering what the heck is Obsidian, well maybe take a step back and watch this video on how to get started with Obsidian. And if you want to know about my usage of any of the particular plugins that I mentioned, leave me a comment below so that I know that I should make a video on that next.&lt;/p&gt;
+&lt;p&gt;Thank you for watching. Happy note taking!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to get started with Obsidian in 2022 - from scratch</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220216-obsidian-for-beginners/</link>

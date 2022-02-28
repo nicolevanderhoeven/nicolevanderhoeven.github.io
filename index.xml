@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 23 Feb 2022 17:00:08 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 18:00:11 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postman for load testing using k6, with Tim Haselaars (k6 Office Hours #43)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220225-koh43-postman-for-load-testing-using-k6/</link>
+      <pubDate>Fri, 25 Feb 2022 18:00:11 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220225-koh43-postman-for-load-testing-using-k6/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.postman.com/&#34;&gt;Postman&lt;/a&gt; is a near-ubiquitous tool for anyone doing API testing, and many teams use collections to create and organize complicated test suites. However, there&amp;rsquo;s one thing that Postman isn&amp;rsquo;t good at: load testing. That&amp;rsquo;s where k6 comes in.&lt;/p&gt;
+&lt;p&gt;In this video, &lt;a href=&#34;https://twitter.com/timhaselaars&#34;&gt;Tim Haselaars&lt;/a&gt; joined k6 Office Hours to talk to &lt;a href=&#34;https://twitter.com/javaducky&#34;&gt;Paul Balogh&lt;/a&gt; and me about how to use Postman collections to run load tests using k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Be66Db4wHLA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Top 10 Obsidian Plugins I Can&#39;t Do Without</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220223-top-10-obsidian-plugins/</link>

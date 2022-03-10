@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 23 Feb 2022 17:00:08 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 10:03:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Wed, 23 Feb 2022 17:00:08 +0100</pubDate>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
       <description></description>
@@ -20,25 +20,43 @@
     <item>
       <title>obsidian</title>
       <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
-      <pubDate>Wed, 23 Feb 2022 17:00:08 +0100</pubDate>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>personal knowledge management</title>
+      <link>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</link>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>pkm</title>
       <link>https://nicolevanderhoeven.github.io/tags/pkm/</link>
-      <pubDate>Wed, 23 Feb 2022 17:00:08 +0100</pubDate>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/pkm/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>roam research</title>
+      <link>https://nicolevanderhoeven.github.io/tags/roam-research/</link>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/roam-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>video</title>
       <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Wed, 23 Feb 2022 17:00:08 +0100</pubDate>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
       <description></description>
@@ -47,7 +65,7 @@
     <item>
       <title>k6 Office Hours</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Fri, 18 Feb 2022 18:20:21 +0100</pubDate>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
       <description></description>
@@ -56,9 +74,45 @@
     <item>
       <title>k6.io</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Fri, 18 Feb 2022 18:20:21 +0100</pubDate>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>load testing</title>
+      <link>https://nicolevanderhoeven.github.io/tags/load-testing/</link>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/load-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance testing</title>
+      <link>https://nicolevanderhoeven.github.io/tags/performance-testing/</link>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/performance-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://nicolevanderhoeven.github.io/tags/testing/</link>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chaos engineering</title>
+      <link>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</link>
+      <pubDate>Wed, 02 Mar 2022 09:59:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</guid>
       <description></description>
     </item>
     
@@ -171,15 +225,6 @@
     </item>
     
     <item>
-      <title>testing</title>
-      <link>https://nicolevanderhoeven.github.io/tags/testing/</link>
-      <pubDate>Fri, 28 Jan 2022 23:27:47 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/testing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>spanish</title>
       <link>https://nicolevanderhoeven.github.io/tags/spanish/</link>
       <pubDate>Thu, 27 Jan 2022 23:25:13 +0100</pubDate>
@@ -203,15 +248,6 @@
       <pubDate>Tue, 25 Jan 2022 23:59:03 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/career/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>personal knowledge management</title>
-      <link>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</link>
-      <pubDate>Mon, 24 Jan 2022 21:47:59 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</guid>
       <description></description>
     </item>
     
@@ -549,15 +585,6 @@
     </item>
     
     <item>
-      <title>chaos engineering</title>
-      <link>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</link>
-      <pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>continuous testing</title>
       <link>https://nicolevanderhoeven.github.io/tags/continuous-testing/</link>
       <pubDate>Fri, 10 Sep 2021 18:13:26 +0200</pubDate>
@@ -662,15 +689,6 @@
       <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>roam research</title>
-      <link>https://nicolevanderhoeven.github.io/tags/roam-research/</link>
-      <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/roam-research/</guid>
       <description></description>
     </item>
     

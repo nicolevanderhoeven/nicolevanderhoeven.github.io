@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 18 Feb 2022 18:20:21 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Mar 2022 10:01:57 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Private Load Zones for Load Testing (k6 Office Hours #44)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220304-koh44-private-load-zones-for-load-testing/</link>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220304-koh44-private-load-zones-for-load-testing/</guid>
+      <description>&lt;p&gt;Load testing on the cloud definitely has its advantages, but what if you need to load test behind a firewall? Here to talk about using private load zones in k6 are k6 CTO Pawel Suwala and k6 Backend Lead Samuel Regandell. Private load zones are a new feature of k6 Cloud that will allow you to run load tests against applications that are not publicly accessible and also use your own AWS account to generate the load.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sqKc95zdXyI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to design a workload model in k6, with the k6 Developer Advocates (k6 Office Hours #42)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220218-koh43-how-to-design-a-workload-model-in-k6/</link>

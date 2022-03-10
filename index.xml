@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 25 Feb 2022 18:00:11 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 10:03:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I Chose Obsidian Over Roam Research (as a Roam investor)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</link>
+      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</guid>
+      <description>&lt;p&gt;I was a Roam Research power user, a Believer, and investor before I discovered Obsidian. Here&amp;rsquo;s why I still ended up choosing Obsidian over Roam as my personal knowledge management tool of choice. My goal with this video is to share with you my reasons for making the choice that I did, not to judge you or anyone else who disagrees. In the end, we all have to decide for ourselves what tool fits best in our lives.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/AWUk8-6yG2g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Private Load Zones for Load Testing (k6 Office Hours #44)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220304-koh44-private-load-zones-for-load-testing/</link>
+      <pubDate>Fri, 04 Mar 2022 10:01:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220304-koh44-private-load-zones-for-load-testing/</guid>
+      <description>&lt;p&gt;Load testing on the cloud definitely has its advantages, but what if you need to load test behind a firewall? Here to talk about using private load zones in k6 are k6 CTO Pawel Suwala and k6 Backend Lead Samuel Regandell. Private load zones are a new feature of k6 Cloud that will allow you to run load tests against applications that are not publicly accessible and also use your own AWS account to generate the load.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sqKc95zdXyI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Basics of Chaos Engineering for Testers</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220302-basics-of-chaos-engineering-for-testers/</link>
+      <pubDate>Wed, 02 Mar 2022 09:59:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220302-basics-of-chaos-engineering-for-testers/</guid>
+      <description>&lt;p&gt;What is chaos engineering? And what does it mean for testers? In this video, I go through the basics of chaos engineering from the perspective of a software tester. How can we go about incorporating principles of chaos into our testing activities?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/z1-_R-h2unE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Postman for load testing using k6, with Tim Haselaars (k6 Office Hours #43)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220225-koh43-postman-for-load-testing-using-k6/</link>

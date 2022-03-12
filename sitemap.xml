@@ -3,23 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/ethics/</loc>
-    <lastmod>2022-03-10T21:18:55+02:00</lastmod>
+    <loc>https://nicolevanderhoeven.github.io/blog/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
+    <loc>https://nicolevanderhoeven.github.io/tags/devops/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/load-testing/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20220311-koh45-load-testing-for-devops/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
+    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/ethics/</loc>
+    <lastmod>2022-03-10T21:18:55+02:00</lastmod>
   </url>
   
   <url>
@@ -43,33 +83,8 @@
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</loc>
     <lastmod>2022-03-09T10:03:41+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
-    <lastmod>2022-03-04T10:01:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
-    <lastmod>2022-03-04T10:01:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/load-testing/</loc>
-    <lastmod>2022-03-04T10:01:57+01:00</lastmod>
   </url>
   
   <url>
@@ -98,6 +113,11 @@
   </url>
   
   <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/postman/</loc>
+    <lastmod>2022-02-25T18:00:11+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220225-koh43-postman-for-load-testing-using-k6/</loc>
     <lastmod>2022-02-25T18:00:11+01:00</lastmod>
   </url>
@@ -108,12 +128,7 @@
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/blog/20220218-koh43-how-to-design-a-workload-model-in-k6/</loc>
-    <lastmod>2022-02-18T18:20:21+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
+    <loc>https://nicolevanderhoeven.github.io/blog/20220218-koh42-how-to-design-a-workload-model-in-k6/</loc>
     <lastmod>2022-02-18T18:20:21+01:00</lastmod>
   </url>
   

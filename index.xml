@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 09 Mar 2022 10:03:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 11:12:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load Testing for DevOps with Victor Farcic (k6 Office Hours #45)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220311-koh45-load-testing-for-devops/</link>
+      <pubDate>Fri, 11 Mar 2022 11:12:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220311-koh45-load-testing-for-devops/</guid>
+      <description>&lt;p&gt;How can you use load testing for DevOps? What kind of performance testing can or should be included in CI/CD pipelines? Viktor Farcic from Upbound and DevOps Toolkit join Nicole van der Hoeven and Paul Balogh to discuss how he sees k6 fitting into the daily duties of a DevOps engineer.&lt;/p&gt;
+&lt;p&gt;{{ youtube xUlNdsr6y_E }}&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ethics Statement</title>
       <link>https://nicolevanderhoeven.github.io/ethics/</link>
@@ -732,10 +743,10 @@
     
     <item>
       <title>How to design a workload model in k6, with the k6 Developer Advocates (k6 Office Hours #42)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220218-koh43-how-to-design-a-workload-model-in-k6/</link>
+      <link>https://nicolevanderhoeven.github.io/blog/20220218-koh42-how-to-design-a-workload-model-in-k6/</link>
       <pubDate>Fri, 18 Feb 2022 18:20:21 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/blog/20220218-koh43-how-to-design-a-workload-model-in-k6/</guid>
+      <guid>https://nicolevanderhoeven.github.io/blog/20220218-koh42-how-to-design-a-workload-model-in-k6/</guid>
       <description>&lt;p&gt;On this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://twitter.com/javaducky&#34;&gt;Paul Balogh&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/srperf&#34;&gt;Leandro Melendez&lt;/a&gt; join me to talk about how to design workload models in k6 load testing scripts using scenarios and executors.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -3384,7 +3395,7 @@ reactions:
 &lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;A &lt;a href=&#34;https://shortform.com&#34;&gt;Shortform&lt;/a&gt; account.&lt;/li&gt;
-&lt;li&gt;A &lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt; account.&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; account. &lt;em&gt;(This is an affiliate link. If you sign up with this link, you&amp;rsquo;ll get a two-month free trial instead of one, and I get a small percentage if you sign up for a plan.)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;A tool that Readwise can export to, such as &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;, &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt;, or &lt;a href=&#34;https://evernote.com&#34;&gt;Evernote&lt;/a&gt;. You can also use their CSV and Markdown exports.&lt;/li&gt;
 &lt;li&gt;A local installation of Python 3, which you can &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;download here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -3448,6 +3459,7 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
 &lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -3562,7 +3574,7 @@ As Grafana Labs continues to grow, we’d like you to get to know the team membe
 
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-plugin.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Almost exactly six months ago, I &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/&#34;&gt;wrote a blog post&lt;/a&gt; detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.&lt;/p&gt;
-&lt;p&gt;That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;an official Obsidian community plugin&lt;/a&gt;, and I disabled my trusty old python script for good.&lt;/p&gt;
+&lt;p&gt;That method worked, and you can read the original article in the link above. However, today, &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; announced that they now have &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;an official Obsidian community plugin&lt;/a&gt;, and I disabled my trusty old python script for good.&lt;/p&gt;
 &lt;p&gt;You see, although my old script worked, there were quirks&amp;ndash; not the least of which was that making changes to it meant programming in Python. I&amp;rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&amp;rsquo;m thrilled to have something significantly better from Readwise itself! Here&amp;rsquo;s a video from the Readwise team, or read on for instructions on how to get started.&lt;/p&gt;
 &lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -3646,6 +3658,7 @@ date: {{date}}
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-auto-sync.png&#34; alt=&#34;Screenshot of auto sync options for Readwise Official plugin&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;I love this new plugin! It was very much needed, because existing options for accomplishing the same thing were flawed in some way, mainly because they were community-driven&amp;ndash; meaning the people who created these workarounds (myself included) were &amp;ldquo;just&amp;rdquo; users who had other jobs. I&amp;rsquo;m grateful that the Readwise team has acknowledged the popularity of Obsidian and taken on the maintenance burden. I&amp;rsquo;ve experimented with the plugin quite a bit and haven&amp;rsquo;t found any major issues so far. It is a seamless way to get the best of the content I&amp;rsquo;ve consumed from various sources into one single source of truth: Obsidian. I highly recommend it to anyone looking to streamline content processing and creation processes.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

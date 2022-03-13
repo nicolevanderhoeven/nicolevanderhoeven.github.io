@@ -204,5 +204,89 @@ date: {{date}}
 </description>
     </item>
     
+    <item>
+      <title>Readwise to Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</link>
+      <pubDate>Sat, 06 Feb 2021 09:55:36 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</guid>
+      <description>
+
+&lt;meta property=“og:image” content=&#34;/assets/20210206-06-readwise-to-obsidian.png&#34; /&gt;
+&lt;meta property=”og:image:width” content=”1200″ /&gt;
+&lt;meta property=”og:image:height” content=”628″ /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;Readwise Official&lt;/a&gt;, which is available now! I now recomment &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;this method&lt;/a&gt; over the one outlined in this article.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m about 9 months into heavily using &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em&gt;seriously&lt;/em&gt; attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p&gt;
+&lt;p&gt;Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instapaper (for highlights and notes on online articles)&lt;/li&gt;
+&lt;li&gt;Amazon Kindle (for highlights on ebooks)&lt;/li&gt;
+&lt;li&gt;Twitter (for interesting tweets)&lt;/li&gt;
+&lt;li&gt;(Readwise) Web highlighter (for straight highlights off any webpage)&lt;/li&gt;
+&lt;li&gt;Airr (for quotes and notes from audio podcasts)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&amp;rsquo;s what that looks like when it gets pulled into my Daily Note:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-01-readwiseimportsinroam.png&#34; alt=&#34;Tweet, podcast, and book notes pulled into Roam Research via Readwise&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Readwise also pulls metadata into Roam, depending on the source. Here&amp;rsquo;s what the page for the book &amp;ldquo;Ready Player Two&amp;rdquo; looks like in Roam:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png&#34; alt=&#34;Ready Player Two book notes in Roam, imported via Readwise&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Readwise integration is an &lt;em&gt;essential&lt;/em&gt; feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em&gt;have&lt;/em&gt; an Obsidian integration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png&#34; alt=&#34;Readwise doesn&amp;rsquo;t automatically export to Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://readwise.io/export&#34;&gt;Readwise Exports&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p&gt;
+&lt;h2 id=&#34;readwise2directory&#34;&gt;readwise2directory&lt;/h2&gt;
+&lt;p&gt;I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found &lt;a href=&#34;https://github.com/nicrivard/readwise2directory&#34;&gt;this Python project on GitHub&lt;/a&gt; by &lt;a href=&#34;https://github.com/nicrivard&#34;&gt;nicrivard&lt;/a&gt;, who had already done that! Why rebuild the wheel? His solution already did what I needed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It connects to Readwise via your Readwise access token&lt;/li&gt;
+&lt;li&gt;Checks for new highlights or updated ones&lt;/li&gt;
+&lt;li&gt;Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It even pulls in highlight tags from Readwise, if you&amp;rsquo;ve created any (which I haven&amp;rsquo;t).&lt;/p&gt;
+&lt;p&gt;I &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;forked the project here&lt;/a&gt; to add just a few minor touches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed date format of imported notes&lt;/li&gt;
+&lt;li&gt;Added a section to output the import date to a comment block (an &lt;a href=&#34;https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295&#34;&gt;Obsidian Insider build feature&lt;/a&gt;) rather than YAML frontmatter, so that the date would actually be linked and backlinked.&lt;/li&gt;
+&lt;li&gt;Customized tags and filename for my use&lt;/li&gt;
+&lt;li&gt;Sort imports into folders within my Obsidian vault depending on source (&lt;code&gt;Article/&lt;/code&gt;, &lt;code&gt;Tweet/&lt;/code&gt;, and so on).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This works out pretty well. Here&amp;rsquo;s an example of an import from the podcast app &lt;a href=&#34;https://airr.io&#34;&gt;Airr&lt;/a&gt; into Obsidian, in Edit mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-04-airrtoobsidian.png&#34; alt=&#34;readwise2directory import from Airr into Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s placed within my &lt;code&gt;Podcast&lt;/code&gt; folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-05-airrinobsidian_preview.png&#34; alt=&#34;Preview mode of imported Airr quote in Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So that works out well, except for one thing: firing off the script that does all this is still manual.&lt;/p&gt;
+&lt;h2 id=&#34;scheduling-the-script&#34;&gt;Scheduling the script&lt;/h2&gt;
+&lt;p&gt;Luckily, it&amp;rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&amp;rsquo;m on macOS, so I used a built-in utility called &lt;code&gt;cron&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
+&lt;p&gt;Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on my laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
+&lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
+&lt;p&gt;Then, from my terminal, I ran the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up the list of cronjobs I had currently.&lt;/p&gt;
+&lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
+&lt;p&gt;I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;* * * * * command
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minute&lt;/li&gt;
+&lt;li&gt;hour&lt;/li&gt;
+&lt;li&gt;day of the month&lt;/li&gt;
+&lt;li&gt;month&lt;/li&gt;
+&lt;li&gt;day of the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; * * * * cd /Users/nic/git/readwise2directory/ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;python-issues&#34;&gt;Python issues&lt;/h4&gt;
+&lt;p&gt;I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code&gt;which python3&lt;/code&gt; to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code&gt;cd&lt;/code&gt; to the project directory, for some reason.&lt;/p&gt;
+&lt;p&gt;While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p&gt;
+&lt;p&gt;Once I added the schedule as in the example above, though, it worked a treat!&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This solution did require some setup at the beginning, but doesn&amp;rsquo;t need any maintenance once it&amp;rsquo;s going. I&amp;rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&amp;rsquo;ll all be waiting for me in my Obsidian vault whenever I&amp;rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

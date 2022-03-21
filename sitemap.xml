@@ -3,33 +3,163 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/affiliates/</loc>
-    <lastmod>2022-03-12T10:18:55+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/devops/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+    <loc>https://nicolevanderhoeven.github.io/tags/dataview/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/live/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20220319-obsidian-dataview-livestream/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/pkm/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/productivity/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/reclaim/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/templater/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
+    <lastmod>2022-03-19T17:42:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/crossplane/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/devops/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/kubernetes/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/loki/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/performance-testing/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/prometheus/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/upbound/</loc>
+    <lastmod>2022-03-18T17:30:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/e-residency/</loc>
+    <lastmod>2022-03-16T17:09:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20220316-e-residency-benefits-why-and-how-to-start-a-company-in-estonia/</loc>
+    <lastmod>2022-03-16T17:09:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/flag-theory/</loc>
+    <lastmod>2022-03-16T17:09:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/browser/</loc>
+    <lastmod>2022-03-16T16:55:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20220315-real-browser-testing-with-xk6-browser/</loc>
+    <lastmod>2022-03-16T16:55:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/testing/</loc>
+    <lastmod>2022-03-16T16:55:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolevanderhoeven.github.io/affiliates/</loc>
+    <lastmod>2022-03-12T10:18:55+02:00</lastmod>
   </url>
   
   <url>
@@ -43,42 +173,12 @@
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
-    <lastmod>2022-03-11T11:12:52+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolevanderhoeven.github.io/ethics/</loc>
     <lastmod>2022-03-10T21:18:55+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</loc>
-    <lastmod>2022-03-09T10:03:41+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/pkm/</loc>
     <lastmod>2022-03-09T10:03:41+01:00</lastmod>
   </url>
   
@@ -93,17 +193,7 @@
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/performance-testing/</loc>
-    <lastmod>2022-03-04T10:01:57+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220304-koh44-private-load-zones-for-load-testing/</loc>
-    <lastmod>2022-03-04T10:01:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/testing/</loc>
     <lastmod>2022-03-04T10:01:57+01:00</lastmod>
   </url>
   
@@ -165,16 +255,6 @@
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/travel/</loc>
     <lastmod>2022-02-10T20:04:46+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/productivity/</loc>
-    <lastmod>2022-02-09T19:56:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/reclaim/</loc>
-    <lastmod>2022-02-09T19:56:13+01:00</lastmod>
   </url>
   
   <url>
@@ -304,11 +384,6 @@
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/</loc>
-    <lastmod>2022-01-21T18:23:47+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
     <lastmod>2022-01-21T18:23:47+01:00</lastmod>
   </url>
   
@@ -508,11 +583,6 @@
   </url>
   
   <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/flag-theory/</loc>
-    <lastmod>2021-12-01T17:12:58+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20211201-the-basics-of-flag-theory-for-software-engineers/</loc>
     <lastmod>2021-12-01T17:12:58+01:00</lastmod>
   </url>
@@ -544,11 +614,6 @@
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</loc>
-    <lastmod>2021-11-23T16:57:26+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/prometheus/</loc>
     <lastmod>2021-11-23T16:57:26+01:00</lastmod>
   </url>
   
@@ -779,11 +844,6 @@
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/tags/digitalocean/</loc>
-    <lastmod>2021-08-11T18:55:49+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/kubernetes/</loc>
     <lastmod>2021-08-11T18:55:49+02:00</lastmod>
   </url>
   
@@ -1389,11 +1449,6 @@
   
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</loc>
-    <lastmod>2020-04-21T17:36:28+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolevanderhoeven.github.io/tags/browser/</loc>
     <lastmod>2020-04-21T17:36:28+01:00</lastmod>
   </url>
   

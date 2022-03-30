@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> New in Obsidian: Obsidian Callouts (available now) | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="New in Obsidian: Obsidian Callouts (available now)" />
+<meta property="og:description" content="Transcript:
+One thing I&rsquo;ve learned from writing technical documentation in the last few years is that good writing is skimmable, at least in the digital age. So since I look at my notes in Obsidian the same way as I do a sort of personal documentation, I think that a lot of the same principles apply.
+Today I wanna talk about an early access feature that the Obsidian team rolled out two weeks ago, and it&rsquo;s called Callouts." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220330-new-in-obsidian-obsidian-callouts/" />
+<meta property="article:published_time" content="2022-03-30T17:36:20+02:00" />
+<meta property="article:modified_time" content="2022-03-30T17:36:20+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="New in Obsidian: Obsidian Callouts (available now)"/>
+<meta name="twitter:description" content="Transcript:
+One thing I&rsquo;ve learned from writing technical documentation in the last few years is that good writing is skimmable, at least in the digital age. So since I look at my notes in Obsidian the same way as I do a sort of personal documentation, I think that a lot of the same principles apply.
+Today I wanna talk about an early access feature that the Obsidian team rolled out two weeks ago, and it&rsquo;s called Callouts."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220325-koh47-how-to-analyze-load-testing-results-with-k6/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&text=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&is_video=false&description=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&name=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29&description=Transcript%3a%0aOne%20thing%20I%26rsquo%3bve%20learned%20from%20writing%20technical%20documentation%20in%20the%20last%20few%20years%20is%20that%20good%20writing%20is%20skimmable%2c%20at%20least%20in%20the%20digital%20age.%20So%20since%20I%20look%20at%20my%20notes%20in%20Obsidian%20the%20same%20way%20as%20I%20do%20a%20sort%20of%20personal%20documentation%2c%20I%20think%20that%20a%20lot%20of%20the%20same%20principles%20apply.%0aToday%20I%20wanna%20talk%20about%20an%20early%20access%20feature%20that%20the%20Obsidian%20team%20rolled%20out%20two%20weeks%20ago%2c%20and%20it%26rsquo%3bs%20called%20Callouts.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&t=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-about-obsidian-admonition">What about Obsidian Admonition?</a>
+      <ul>
+        <li><a href="#admonitioncallout-example">Admonition/callout example</a></li>
+      </ul>
+    </li>
+    <li><a href="#enter-obsidian-callouts">Enter Obsidian Callouts</a></li>
+    <li><a href="#how-to-use-obsidian-callouts">How to use Obsidian Callouts</a></li>
+    <li><a href="#types-of-callouts">Types of Callouts</a>
+      <ul>
+        <li><a href="#note">note</a></li>
+        <li><a href="#abstract-summary-tldr">abstract, summary, tldr</a></li>
+        <li><a href="#info-todo">info, todo</a></li>
+        <li><a href="#tip-hint-important">tip, hint, important</a></li>
+        <li><a href="#success-check-done">success, check, done</a></li>
+        <li><a href="#questions-help-faq">questions, help, faq</a></li>
+        <li><a href="#warning-caution-attention">warning, caution, attention</a></li>
+        <li><a href="#fail-failure-missing">fail, failure, missing</a></li>
+        <li><a href="#danger-error">danger, error</a></li>
+        <li><a href="#bug">bug</a></li>
+        <li><a href="#quote-cite">quote, cite</a></li>
+      </ul>
+    </li>
+    <li><a href="#collapsing-and-expanding-callouts">Collapsing and expanding callouts</a></li>
+    <li><a href="#benefits-of-obsidian-callouts">Benefits of Obsidian Callouts</a>
+      <ul>
+        <li><a href="#better-documentation">Better documentation</a></li>
+        <li><a href="#ability-to-modify-callouts">Ability to modify callouts</a></li>
+        <li><a href="#callouts-are-native-on-obsidian-publish">Callouts are native on Obsidian Publish</a></li>
+      </ul>
+    </li>
+    <li><a href="#why-did-the-format-change-from-admonition-to-callouts">Why did the format change from Admonition to callouts?</a>
+      <ul>
+        <li><a href="#new-format-works-better-even-if-callouts-arent-supported">New format works better even if callouts aren&rsquo;t supported</a></li>
+        <li><a href="#markdown-inside-blockquotes-gets-parsed">Markdown inside blockquotes gets parsed</a></li>
+      </ul>
+    </li>
+    <li><a href="#does-this-completely-replace-obsidian-admonition">Does this completely replace Obsidian Admonition?</a>
+      <ul>
+        <li><a href="#admonition-can-convert-between-formats">Admonition can convert between formats</a></li>
+        <li><a href="#admonition-lets-you-change-callout-appearance">Admonition lets you change callout appearance</a></li>
+      </ul>
+    </li>
+    <li><a href="#should-you-keep-using-obsidian-admonition">Should you keep using Obsidian Admonition?</a>
+      <ul>
+        <li><a href="#custom-icons-and-admonition-types">Custom icons and admonition types</a></li>
+        <li><a href="#user-interface-for-inserting-callouts-or-admonitions">User interface for inserting callouts OR admonitions</a></li>
+      </ul>
+    </li>
+    <li><a href="#obsidian-callouts-is-available-now">Obsidian callouts is available now</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        New in Obsidian: Obsidian Callouts (available now)
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-03-30 17:36:20 &#43;0200 CEST" itemprop="datePublished">2022-Mar-30</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/personal-knowledge-management" rel="tag">personal knowledge management</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/TqYQ0kA1yAo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><em>Transcript:</em></p>
+<p>One thing I&rsquo;ve learned from writing technical documentation in the last few years is that good writing is skimmable, at least in the digital age. So since I look at my notes in Obsidian the same way as I do a sort of personal documentation, I think that a lot of the same principles apply.</p>
+<p>Today I wanna talk about an early access feature that the Obsidian team rolled out two weeks ago, and it&rsquo;s called Callouts. So before I demonstrate this, I want to say that this is only available right now in the Insider Build version 0.14, but that build always gets pushed to the public, it&rsquo;s just a little bit ahead of the public release. So think of this as a bit of a sneak preview. <em>(Note: Obsidian callouts is <a href="https://help.obsidian.md/How+to/Use+callouts">out now</a>!)</em></p>
+<h2 id="what-about-obsidian-admonition">What about Obsidian Admonition?</h2>
+<p>Now, before Obsidian Callouts was released, I was using something called Obsidian Admonition. So if we go here, I can bring up my Obsidian Admonition page, and it looked something like this.</p>
+<p>You would do three backticks. That&rsquo;s kind of the code block syntax. And you would do something like add note. Maybe you&rsquo;d have a title here, like reminder, and then you&rsquo;d have your note here. And because I have Live Preview turned on, if I enter out of this, it&rsquo;s going to look like this. So this is what Obsidian Admonition always looked like.</p>
+<p>So in general, the idea here is that to make your writing more skimmable, you have these kind of, well, callout boxes that highlight sections of your text and make sure that they address something that is about the notes that you&rsquo;re writing, kind of like meta notes, they&rsquo;re notes about your notes, but because they&rsquo;re visually distinguished from the rest of the text, it&rsquo;s a lot easier for you or for your readers to easily figure out whether something is important to read or only in specific situations.</p>
+<h3 id="admonitioncallout-example">Admonition/callout example</h3>
+<p>And that happens a lot in technical documentation, so it&rsquo;s no secret that I have used it a lot in sort of programming kind of notes. So if we go back to my vault here, let&rsquo;s look at <a href="https://notes.nicolevanderhoeven.com/g">my note on g</a>. g is a package manager for Go, the language.</p>
+<p>And here&rsquo;s a type of callout or admonition that I used. And this is kind of like this page tells you how to use, what g is and how to use it. But this note, this particular callout, is kind of like an aside. It&rsquo;s like, hey, just in case you get this error, here&rsquo;s how to troubleshoot it. And it&rsquo;s really cool that it&rsquo;s hidden by, it&rsquo;s collapsed by default. And you can just click on that, and then it says, oh, if you get the error, g not found, hey, maybe restart your shell session after installation.</p>
+<p>So that sort of callout really helps when you&rsquo;re trying to quickly skim a page. So programming is certainly one use for it, and another one is tutorials in general. You know, I have this a lot for my Obsidian stuff in case I need to say that this only works for Mac or this only works for windows or something like that.</p>
+<p>And I also use it a lot in my D&amp;D games. As a Dungeon Master, I have different scenarios that I may not even need to go into depending on what my players decide to do. That is the perfect task for callouts or for admonitions.</p>
+<h2 id="enter-obsidian-callouts">Enter Obsidian Callouts</h2>
+<p>So I was using this admonitions format with a code block for, basically, since I learned about it. It is made by a TTRPG plugin developer called Jeremy Valentine, and he&rsquo;s made a lot of very popular ones, like the Dice Roller and the Initiative Tracker and Leaflet, and it just goes on and on. But I&rsquo;m digressing.</p>
+<p>This plugin was apparently so good that even the Obsidian team realized that it really should be part of Obsidian, because a key part of Obsidian&rsquo;s functionality is documentation.</p>
+<p>So the big release is that they&rsquo;ve now incorporated Admonitions-like functionality into core Obsidian, not a core plugin, so it&rsquo;s not something that you even have to install or enable, it just ships by default with Obsidian, which is really awesome.</p>
+<h2 id="how-to-use-obsidian-callouts">How to use Obsidian Callouts</h2>
+<p>So let&rsquo;s look into how to use it. I&rsquo;m going to go to my Obsidian Callouts page here. And the syntax is a little bit different from the admonitions one. Instead of the code blocks with the three backticks, this callouts functionality now uses blockquotes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">[!info] Your title
+</span><span style="font-style:italic"></span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">The contents of your note here
+</span></code></pre></div><p>So you do a single blockquote like an arrow, and then you do brackets, and then an exclamation point. And then there are a bunch of different types, which we&rsquo;ll get into, but the most common one, I guess, is note. Then you would put your title here, and then you can put the rest of the note here. So this is now doing it as a blockquote. And if I exit out of that, you&rsquo;ll see that it has a nice icon of a kinda pencil or pen there, and it is visually distinguished from the rest of the note.</p>
+<h2 id="types-of-callouts">Types of Callouts</h2>
+<h3 id="note">note</h3>
+<p>Now, let&rsquo;s go into the types, &lsquo;cause there are a few of them.</p>
+<p>The first one I already showed you, this is a note. I put this within code blocks just to show you the syntax. And then this is what it looks like. Basically, this is the standard format of callouts, you just change whatever&rsquo;s here. And then you always put the title outside of the brackets, and then the content of the note below it. So this is what a note looks like. That&rsquo;s probably the most common.</p>
+<h3 id="abstract-summary-tldr">abstract, summary, tldr</h3>
+<p>And then another one is abstract, summary, or TLDR.</p>
+<p>Now, all of these are the same, so like this is a TLDR, so I can actually edit it here as well. So here in this case, I was using TLDR, but if I do abstract, it&rsquo;s going to look, actually, it looks a little bit different now that I think about it I thought it was going to look the same, but it&rsquo;s also dependent on the theme that you&rsquo;re using.</p>
+<p>Yeah, so these three are actually different, even though they&rsquo;re semantically the same. Well, that&rsquo;s interesting. I just literally found that out right now as well.</p>
+<h3 id="info-todo">info, todo</h3>
+<p>And there&rsquo;s info and todo. So this I believe is the todo. And if I go to info, it looks slightly different, just has a little eye here.</p>
+<p>This is what I use for descriptions. What we call it in TTRPG is what we call box text, when players enter a new scene and there&rsquo;s a part that you read out word for word, rather than improvising it. This is what I use for it.</p>
+<h3 id="tip-hint-important">tip, hint, important</h3>
+<p>Then you have tips, hint, tip, hint, or important. This one is a tip.</p>
+<p>Let&rsquo;s see what important looks like. All right. Yeah, all right. So there&rsquo;s some highlighting going on there as well, and it&rsquo;s marked by an asterisk.</p>
+<h3 id="success-check-done">success, check, done</h3>
+<p>There&rsquo;s success, check, done. I particularly like, I think it was done. It&rsquo;s kind of like the todo had a checkbox. This one actually has the check.</p>
+<h3 id="questions-help-faq">questions, help, faq</h3>
+<p>There&rsquo;s questions, help, or faq.</p>
+<h3 id="warning-caution-attention">warning, caution, attention</h3>
+<p>There&rsquo;s warning, caution, or attention, which is what I use for errors or gotchas when you&rsquo;re programming or something things that you might fall into that I want to call out, because I did fall into it.</p>
+<h3 id="fail-failure-missing">fail, failure, missing</h3>
+<p>And there&rsquo;s also fail, failure, and missing. So this is all bad stuff, essentially.</p>
+<h3 id="danger-error">danger, error</h3>
+<p>There&rsquo;s danger, error. It looks like this with a little lightning symbol.</p>
+<h3 id="bug">bug</h3>
+<p>There&rsquo;s bug, which I use quite a bit when I&rsquo;m reporting bugs or documenting bugs, anyway. This example, which kind of looks like abstract, actually.</p>
+<h3 id="quote-cite">quote, cite</h3>
+<p>Quote, and cite, which is kind of a blockquote, except a little bit fancier.</p>
+<h2 id="collapsing-and-expanding-callouts">Collapsing and expanding callouts</h2>
+<p>So as you can see, there are a lot of different types of callouts. And aside from all of those, you can also choose whether it&rsquo;s collapsed or expanded, and that&rsquo;s kind of the folding behavior that I showed you earlier. So let&rsquo;s just do that now as well.</p>
+<p>I&rsquo;m going to say bug, and I&rsquo;ll say bug detected, let&rsquo;s say. And this time though, where just before the title, right outside of the parenthesis for the type that I&rsquo;m using, I&rsquo;m going to type a minus. And I&rsquo;ll put, this is a bug. And I get out of that. This is what it looks like.</p>
+<p>So it is very different from this one where it&rsquo;s just expanded by default, that&rsquo;s a default behavior, but if you add the minus there, that means that you&rsquo;re saying that this must be minimized or collapsed by default. So then you can always click on that, and look, you see what was in the text there. You can also specify that it&rsquo;s always expanded by default, but it already is always expanded by default, so you don&rsquo;t really have to set that, unless you&rsquo;ve changed the settings.</p>
+<h2 id="benefits-of-obsidian-callouts">Benefits of Obsidian Callouts</h2>
+<h3 id="better-documentation">Better documentation</h3>
+<p>So this is a really cool and easy way of having these different colors. I know a lot of people that have come from Notion are kind of missing some of that in Obsidian. Well, this is an easy way to do that.</p>
+<h3 id="ability-to-modify-callouts">Ability to modify callouts</h3>
+<p>And you can also change how it looks by modifying either the CSS of the theme or by selecting themes that just really use it and display it to its advantages.</p>
+<p>This theme here that I&rsquo;m using is, let me check that, because I&rsquo;m sure that people will ask. This is one of the gems of the year, one of the themes that won, it&rsquo;s called Primary. Yeah, it&rsquo;s really cool, and it&rsquo;s on the light setting. This is a test vault.</p>
+<h3 id="callouts-are-native-on-obsidian-publish">Callouts are native on Obsidian Publish</h3>
+<p>And one of the coolest things about this new callouts feature is that it now works natively on Obsidian Publish. So I use Obsidian Publish for my public Obsidian vault, that&rsquo;s <a href="https://notes.nicolevanderhoeven.com/Obsidian+Callouts">notes.nicolevanderhoeven.com</a>. There&rsquo;ll be a link in the description if you want to see what that looks like. It&rsquo;s basically my way of learning in public. And I select different notes to publish on there for people to see, for anybody to see.</p>
+<p>Now, for a long time, admonitions, because it&rsquo;s a plugin, wouldn&rsquo;t show up up there. And then there was a way to do it where you can change the CSS and then kind of do it that way, but now that callouts is in core Obsidian, you don&rsquo;t even have to do that. It&rsquo;s just going to work right out of the box. So all of your notes that have the Obsidian callout syntax on them will show up the same way in your Obsidian Publish site, which is really awesome.</p>
+<h2 id="why-did-the-format-change-from-admonition-to-callouts">Why did the format change from Admonition to callouts?</h2>
+<p>So you might think, this is really just a format change, right? From admonition to callout, and part of it is that. I asked about why they changed the format, and the answer was that having the blockquote format falls back to blockquotes in unsupported Markdown renderer.</p>
+<h3 id="new-format-works-better-even-if-callouts-arent-supported">New format works better even if callouts aren&rsquo;t supported</h3>
+<p>So for example, if you&rsquo;re reading this note in an ID and IDE that doesn&rsquo;t support that syntax, it&rsquo;s at least still just going to look like a blockquote, which does make more sense than it looking like a code block, because you might not have code there. This is not just for code, this is for any sort of like sticky note that you wanna put on your notes.</p>
+<h3 id="markdown-inside-blockquotes-gets-parsed">Markdown inside blockquotes gets parsed</h3>
+<p>And also because it just uses blockquotes, this means that all of the Markdown inside it also gets parsed, including links and embeds and even Dataview queries apparently.</p>
+<p>And that also means that spellcheck can check it. Because if you put something in a code block, that&rsquo;s kind of a signal for spellchecks not to have a look at the contents of that code block.</p>
+<h2 id="does-this-completely-replace-obsidian-admonition">Does this completely replace Obsidian Admonition?</h2>
+<p>So, what happens with admonition? Because it&rsquo;s been around for a while, it&rsquo;s actually still up. And in fact, admonition-style code blocks will continue to work. They&rsquo;re now supporting, Obsidian is now supporting both the callouts and admonition if you have admonition plugin still enabled, then you&rsquo;re still going to be able to use both. So it&rsquo;s not like it&rsquo;s going away, but you should probably use the callout syntax going forward, just because that&rsquo;s what everyone&rsquo;s going to be developing based off of.</p>
+<h3 id="admonition-can-convert-between-formats">Admonition can convert between formats</h3>
+<p>So there is also another thing that admonition is going to do is it does conversion. So if you have existing code block admonitions, then those can be converted to callouts. Actually, I want to show where you can find that.</p>
+<p>So if you go to settings here and look at admonition, there are a bunch of settings here, but let&rsquo;s look at, yeah, the conversions. You convert MSDoc admonitions to callouts, and you can convert code block admonitions to callouts as well. Now, this will modify your notes, so just be a little bit careful with it. Save a backup or do a push to Git if you save it in a Git repo like I do. But that&rsquo;s what admonition is going to be doing.</p>
+<h3 id="admonition-lets-you-change-callout-appearance">Admonition lets you change callout appearance</h3>
+<p>And in addition to that, it&rsquo;s also shifted to being able to let you change the appearance of those callouts.</p>
+<p>So it has a bunch of functionality like, do you wanna add drop shadows? And do you want it to be collapsible by default? Because I said that it&rsquo;s expanded by default, but you could change that behavior and toggle it. And then, you could still just expand it on a case-by-case basis. But if you don&rsquo;t specify anything, then it&rsquo;ll just say that it should be collapsed.</p>
+<p>There&rsquo;s also the add copy button, which is actually really interesting because a lot of times that is something that I just want to copy and paste to like my players or something if I wanna paste a description or if it actually is a code block or some sort of troubleshooting thing, so I enable that. And you can set admonition colors.</p>
+<p>You can also change the icons that are loaded there. So right now, admonition uses the Font Awesome icons. So I was showing you all of these different types of callouts, right? But those are the default ones. And admonition adds the Font Awesome ones as well. And you can even add your own types of icons. So you can load additional icons. There&rsquo;s Octicons and RPG-Awesome, which sounds really interesting, actually.</p>
+<p>And a cool effect of that is we need to do this in admonition syntax, so it&rsquo;s code blocks. Let&rsquo;s say, let&rsquo;s just go with question. This is a question. A cool thing that you can do with admonition is you can do icon, and then choose an icon that isn&rsquo;t already in there. So as an example, I happen to know that there is a Font Awesome icon that&rsquo;s a cloud, so I&rsquo;m just going to put cloud there and then I&rsquo;m going to put, here&rsquo;s the answer. If I go out there, look, now it looks like a little green cloud, so I can change everything about how it looks. This is still in the admonition syntax, though, but it functions the same way as callouts, just extended.</p>
+<p>I really like this for being able to give instructions and then say, you know, this is Apple-only and not for Windows. So that&rsquo;s really cool.</p>
+<h2 id="should-you-keep-using-obsidian-admonition">Should you keep using Obsidian Admonition?</h2>
+<p>So I guess the question is, and this was my question when I learned about these changes, is it still worthwhile to use admonitions because of all these quality-of-life improvements?</p>
+<p>I think it is, because, don&rsquo;t get me wrong, I&rsquo;m very happy that callouts is part of Obsidian now, that just made sense for an app that is so focused on notes and note-taking and documentation. You really need these different ways to take notes on your notes.</p>
+<h3 id="custom-icons-and-admonition-types">Custom icons and admonition types</h3>
+<p>But I do think think that admonition is still worthwhile installing and using if you want to delve down into the specifics of this feature. So if you want different icons that make sense to you, but maybe not to other people, this is still the best way to do it.</p>
+<h3 id="user-interface-for-inserting-callouts-or-admonitions">User interface for inserting callouts OR admonitions</h3>
+<p>Another cool thing that I didn&rsquo;t show, let me show that now, is maybe you don&rsquo;t want to remember the syntax with either with the blockquotes or with the code blocks.</p>
+<p>So with admonition turned on and enable, installed and enabled, you can bring up your command pane, which for me is Command + P, and I&rsquo;m gonna type in admonition, and then you can just either a callout or an admonition and a bunch of other things as well, but I&rsquo;m just going to insert a callout. And if you didn&rsquo;t remember what the types were, they&rsquo;re all here. And this is what they&rsquo;re going to look like.</p>
+<p>Now, as I mentioned, I think these, the ones that I grouped, are actually supposed to look the same without the admonition plugin, it&rsquo;s just that either the admonition plugin or my theme is making them look a little bit different, but these are the standard ones.</p>
+<p>So then you can choose which one you want. You can have the title there. You can choose whether or not it is collapsible. It even shows you a preview. So let&rsquo;s insert that. And look, I didn&rsquo;t have to type out any of that and I didn&rsquo;t have to remember any of that syntax. So that&rsquo;s just a nice little upgrade that you can only get with admonitions.</p>
+<h2 id="obsidian-callouts-is-available-now">Obsidian callouts is available now</h2>
+<p><em>Note: Obsidian callouts is available for all users for free now!</em></p>
+<p>Again, Obsidian callouts, at the time of this recording, is only available in Insider Build version 0.14, which means you can only get it right now, if you need to get it right now, you&rsquo;d have to pay for the Catalyst plan, which is a one-off $25 fee. I&rsquo;ve paid that just because I wanted to give back to the Obsidian developers for this amazing tool that they just give for free.</p>
+<p>But if you&rsquo;re willing to wait, this feature, like all features, will soon be publicly available, Insiders just get it a little bit earlier. And when that happens, I&rsquo;ll pin a comment in the comments below for this video so that you know when it&rsquo;s available.</p>
+<p>And if you&rsquo;d like to learn about other Obsidian plugins, I do have <a href="https://youtu.be/W7kTtn9empU">a video on the top 10 Obsidian plugins</a>, so maybe check that out.</p>
+<p>Thank you for watching!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-about-obsidian-admonition">What about Obsidian Admonition?</a>
+      <ul>
+        <li><a href="#admonitioncallout-example">Admonition/callout example</a></li>
+      </ul>
+    </li>
+    <li><a href="#enter-obsidian-callouts">Enter Obsidian Callouts</a></li>
+    <li><a href="#how-to-use-obsidian-callouts">How to use Obsidian Callouts</a></li>
+    <li><a href="#types-of-callouts">Types of Callouts</a>
+      <ul>
+        <li><a href="#note">note</a></li>
+        <li><a href="#abstract-summary-tldr">abstract, summary, tldr</a></li>
+        <li><a href="#info-todo">info, todo</a></li>
+        <li><a href="#tip-hint-important">tip, hint, important</a></li>
+        <li><a href="#success-check-done">success, check, done</a></li>
+        <li><a href="#questions-help-faq">questions, help, faq</a></li>
+        <li><a href="#warning-caution-attention">warning, caution, attention</a></li>
+        <li><a href="#fail-failure-missing">fail, failure, missing</a></li>
+        <li><a href="#danger-error">danger, error</a></li>
+        <li><a href="#bug">bug</a></li>
+        <li><a href="#quote-cite">quote, cite</a></li>
+      </ul>
+    </li>
+    <li><a href="#collapsing-and-expanding-callouts">Collapsing and expanding callouts</a></li>
+    <li><a href="#benefits-of-obsidian-callouts">Benefits of Obsidian Callouts</a>
+      <ul>
+        <li><a href="#better-documentation">Better documentation</a></li>
+        <li><a href="#ability-to-modify-callouts">Ability to modify callouts</a></li>
+        <li><a href="#callouts-are-native-on-obsidian-publish">Callouts are native on Obsidian Publish</a></li>
+      </ul>
+    </li>
+    <li><a href="#why-did-the-format-change-from-admonition-to-callouts">Why did the format change from Admonition to callouts?</a>
+      <ul>
+        <li><a href="#new-format-works-better-even-if-callouts-arent-supported">New format works better even if callouts aren&rsquo;t supported</a></li>
+        <li><a href="#markdown-inside-blockquotes-gets-parsed">Markdown inside blockquotes gets parsed</a></li>
+      </ul>
+    </li>
+    <li><a href="#does-this-completely-replace-obsidian-admonition">Does this completely replace Obsidian Admonition?</a>
+      <ul>
+        <li><a href="#admonition-can-convert-between-formats">Admonition can convert between formats</a></li>
+        <li><a href="#admonition-lets-you-change-callout-appearance">Admonition lets you change callout appearance</a></li>
+      </ul>
+    </li>
+    <li><a href="#should-you-keep-using-obsidian-admonition">Should you keep using Obsidian Admonition?</a>
+      <ul>
+        <li><a href="#custom-icons-and-admonition-types">Custom icons and admonition types</a></li>
+        <li><a href="#user-interface-for-inserting-callouts-or-admonitions">User interface for inserting callouts OR admonitions</a></li>
+      </ul>
+    </li>
+    <li><a href="#obsidian-callouts-is-available-now">Obsidian callouts is available now</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&text=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&is_video=false&description=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&title=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&name=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29&description=Transcript%3a%0aOne%20thing%20I%26rsquo%3bve%20learned%20from%20writing%20technical%20documentation%20in%20the%20last%20few%20years%20is%20that%20good%20writing%20is%20skimmable%2c%20at%20least%20in%20the%20digital%20age.%20So%20since%20I%20look%20at%20my%20notes%20in%20Obsidian%20the%20same%20way%20as%20I%20do%20a%20sort%20of%20personal%20documentation%2c%20I%20think%20that%20a%20lot%20of%20the%20same%20principles%20apply.%0aToday%20I%20wanna%20talk%20about%20an%20early%20access%20feature%20that%20the%20Obsidian%20team%20rolled%20out%20two%20weeks%20ago%2c%20and%20it%26rsquo%3bs%20called%20Callouts.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220330-new-in-obsidian-obsidian-callouts%2f&t=New%20in%20Obsidian%3a%20Obsidian%20Callouts%20%28available%20now%29">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

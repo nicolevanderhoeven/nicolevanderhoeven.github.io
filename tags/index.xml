@@ -7,20 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 30 Mar 2022 17:36:20 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 17:00:26 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataview</title>
+      <link>https://nicolevanderhoeven.github.io/tags/dataview/</link>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/dataview/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>notion</title>
+      <link>https://nicolevanderhoeven.github.io/tags/notion/</link>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/notion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>obsidian</title>
       <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
-      <pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
       <description></description>
@@ -29,7 +47,7 @@
     <item>
       <title>personal knowledge management</title>
       <link>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</link>
-      <pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</guid>
       <description></description>
@@ -38,7 +56,7 @@
     <item>
       <title>pkm</title>
       <link>https://nicolevanderhoeven.github.io/tags/pkm/</link>
-      <pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/pkm/</guid>
       <description></description>
@@ -47,7 +65,7 @@
     <item>
       <title>video</title>
       <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate>
+      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
       <description></description>
@@ -56,7 +74,7 @@
     <item>
       <title>k6 Office Hours</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Fri, 25 Mar 2022 18:00:56 +0200</pubDate>
+      <pubDate>Fri, 01 Apr 2022 10:02:29 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
       <description></description>
@@ -65,7 +83,7 @@
     <item>
       <title>k6.io</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Fri, 25 Mar 2022 18:00:56 +0200</pubDate>
+      <pubDate>Fri, 01 Apr 2022 10:02:29 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
       <description></description>
@@ -74,7 +92,7 @@
     <item>
       <title>load testing</title>
       <link>https://nicolevanderhoeven.github.io/tags/load-testing/</link>
-      <pubDate>Fri, 25 Mar 2022 18:00:56 +0200</pubDate>
+      <pubDate>Fri, 01 Apr 2022 10:02:29 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/load-testing/</guid>
       <description></description>
@@ -83,9 +101,36 @@
     <item>
       <title>performance</title>
       <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
-      <pubDate>Fri, 25 Mar 2022 18:00:56 +0200</pubDate>
+      <pubDate>Fri, 01 Apr 2022 10:02:29 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer advocacy</title>
+      <link>https://nicolevanderhoeven.github.io/tags/developer-advocacy/</link>
+      <pubDate>Thu, 31 Mar 2022 09:58:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/developer-advocacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevRel</title>
+      <link>https://nicolevanderhoeven.github.io/tags/devrel/</link>
+      <pubDate>Thu, 31 Mar 2022 09:58:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/devrel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>livestream</title>
+      <link>https://nicolevanderhoeven.github.io/tags/livestream/</link>
+      <pubDate>Thu, 31 Mar 2022 09:58:46 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/livestream/</guid>
       <description></description>
     </item>
     
@@ -104,15 +149,6 @@
       <pubDate>Wed, 23 Mar 2022 16:00:28 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/zettelkasten/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dataview</title>
-      <link>https://nicolevanderhoeven.github.io/tags/dataview/</link>
-      <pubDate>Sat, 19 Mar 2022 17:42:54 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/dataview/</guid>
       <description></description>
     </item>
     
@@ -387,15 +423,6 @@
     </item>
     
     <item>
-      <title>DevRel</title>
-      <link>https://nicolevanderhoeven.github.io/tags/devrel/</link>
-      <pubDate>Sun, 23 Jan 2022 16:16:33 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/devrel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>tech</title>
       <link>https://nicolevanderhoeven.github.io/tags/tech/</link>
       <pubDate>Sun, 23 Jan 2022 16:16:33 +0100</pubDate>
@@ -599,15 +626,6 @@
       <pubDate>Thu, 25 Nov 2021 17:01:06 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/kanban/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>notion</title>
-      <link>https://nicolevanderhoeven.github.io/tags/notion/</link>
-      <pubDate>Thu, 25 Nov 2021 17:01:06 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/notion/</guid>
       <description></description>
     </item>
     

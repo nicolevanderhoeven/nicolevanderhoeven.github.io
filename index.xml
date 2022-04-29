@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 22 Apr 2022 17:00:12 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Apr 2022 16:00:31 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Actually Getting Things Done With Obsidian - Checklist plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220429-actually-getting-things-done-with-obsidian/</link>
+      <pubDate>Fri, 29 Apr 2022 16:00:31 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220429-actually-getting-things-done-with-obsidian/</guid>
+      <description>&lt;p&gt;The Getting Things Done methodology is showing its age now, but there are still some parts of it that can be updated and used in the digital age. In this video, I talk about how to actually get things done with Obsidian using the Obsidian community plugin called Checklist.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ODhHTngIMJE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</link>
@@ -6195,7 +6210,10 @@ k6 scripts give you the freedom to import and use JS libraries, so you can build
       <description>&lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;p&gt;Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available &lt;a href=&#34;https://slides.nicolevanderhoeven.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
+&lt;p&gt;08/06   &lt;strong&gt;DevOps Paradox podcast&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
+&lt;p&gt;07/04   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCfz8x0lVzJpb_dgWm9kPVrw&#34;&gt;DevOps Toolkit (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TestOps - Ask Me Anything (English).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;31/03   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCgUgg53iJX1pdabUxpkgozA&#34;&gt;Gift Egwuenu (YouTube)&lt;/a&gt;&lt;/strong&gt;]: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220331-working-in-devrel-chat/&#34;&gt;Working in Devrel Chat. (English).&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;10/02   &lt;strong&gt;&lt;a href=&#34;https://guildconferences.com/ag-2022/&#34;&gt;Automation Guild 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;In search of the best Pokémon: Browser automation and load testing in one script with k6. (English).&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2021&#34;&gt;2021&lt;/h2&gt;
 &lt;p&gt;23/11   &lt;strong&gt;&lt;a href=&#34;https://www.facebook.com/pg/TestowanieWydajnosciAplikacji/events/&#34;&gt;Testowanie wydajności aplikacji - Performance Objective meetup&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211123-intro-to-load-testing-with-k6-and-grafana/&#34;&gt;Intro to load testing with k6 and Grafana&lt;/a&gt;. (English)&lt;/em&gt;&lt;/p&gt;

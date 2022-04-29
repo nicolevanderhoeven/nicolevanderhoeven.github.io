@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 06 Apr 2022 17:00:26 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Apr 2022 17:00:25 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian task management with Dataviewjs, Templates, Daily Notes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220420-obsidian-task-management-with-dataview/</link>
+      <pubDate>Wed, 20 Apr 2022 17:00:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220420-obsidian-task-management-with-dataview/</guid>
+      <description>&lt;p&gt;Ever wanted to use Obsidian for managing your tasks? In this video, I demonstrate one way to consolidate tasks from all your notes and show them on the date they&amp;rsquo;re due, using DataviewJS. Obsidian Dataview is a community plugin that can be used to show a task list.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ccN5vJzXwvo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Use the Obsidian Dataview Plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/</link>
+      <pubDate>Wed, 13 Apr 2022 17:00:06 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/</guid>
+      <description>&lt;p&gt;What even IS Obsidian Dataview? Dataview has quickly become one of the most popular plugins for Obsidian, but how do you actually use it? Whether you&amp;rsquo;re a non-programmer or an expert coder, here&amp;rsquo;s how to use the Obsidian Dataview plugin and some common use cases for it.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JTObSymEvWA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Notion vs Obsidian - Databases vs Dataview</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220406-notion-vs-obsidian/</link>

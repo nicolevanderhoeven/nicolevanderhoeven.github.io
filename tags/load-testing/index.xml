@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 01 Apr 2022 10:02:29 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/load-testing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Apr 2022 17:00:12 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/load-testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</link>
+      <pubDate>Fri, 22 Apr 2022 17:00:12 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</guid>
+      <description>&lt;p&gt;Have you ever wondered how to test a platform built for testing other products? Our frontend developer, Thomas Wikman, joins us on k6 Office Hours to talk about his experience being a user of one of our tools - xk6-browser - and how he uses it to test the entire k6 Cloud frontend.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UtMJfasNjSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Load testing results in the k6 Cloud App for Grafana, with Edgar Fisher (k6 Office Hours #49)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220408-koh-49-load-testing-results-in-k6-cloud-app/</link>
+      <pubDate>Fri, 08 Apr 2022 18:00:18 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220408-koh-49-load-testing-results-in-k6-cloud-app/</guid>
+      <description>&lt;p&gt;There are many ways to get k6 load testing results into Grafana, but our frontend software engineer, Edgar Fisher, talks to us about the easiest way of them all: the new k6 Cloud App for Grafana.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bt6civUmHUU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Building Reliable Systems With k6 (k6 Office Hours #48)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220401-koh48-building-reliable-systems-with-k6/</link>

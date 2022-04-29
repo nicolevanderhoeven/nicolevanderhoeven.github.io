@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 16 Mar 2022 16:55:56 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Apr 2022 17:00:12 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</link>
+      <pubDate>Fri, 22 Apr 2022 17:00:12 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</guid>
+      <description>&lt;p&gt;Have you ever wondered how to test a platform built for testing other products? Our frontend developer, Thomas Wikman, joins us on k6 Office Hours to talk about his experience being a user of one of our tools - xk6-browser - and how he uses it to test the entire k6 Cloud frontend.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UtMJfasNjSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Real Browser Testing With xk6-browser</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220315-real-browser-testing-with-xk6-browser/</link>

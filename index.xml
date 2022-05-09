@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 29 Apr 2022 17:00:26 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 17:00:28 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Grafana Mimir? (k6 Office Hours #53)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220506-koh53-what-is-grafana-mimir/</link>
+      <pubDate>Fri, 06 May 2022 17:00:28 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220506-koh53-what-is-grafana-mimir/</guid>
+      <description>&lt;p&gt;Maintainer Marco Pracucci talks about the new Grafana project, Mimir, a next-generation time-series database for Prometheus. He joins Developer Advocates Nicole van der Hoeven and Paul Balogh to talk about what Mimir is, why it was needed, and how he helped scale it using k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2P1UViYf1mQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Using the Obsidian Templater Plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220505-using-the-obsidian-templater-plugin/</link>
+      <pubDate>Fri, 06 May 2022 16:00:22 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220505-using-the-obsidian-templater-plugin/</guid>
+      <description>&lt;p&gt;What IS the Obsidian Templater plugin and more importantly, how do you use it? I outline the three main use cases for it, from the simplest to the most complex, to show off its capabilities and usefulness in a personal knowledge management system.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5j9fAvJCaig&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Speaking Engagements</title>
       <link>https://nicolevanderhoeven.github.io/speaking/</link>
@@ -17,9 +47,10 @@
       <description>&lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;p&gt;Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available &lt;a href=&#34;https://slides.nicolevanderhoeven.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
+&lt;p&gt;19/05   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/conference&#34;&gt;Linking Your Thinking Conference&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://lu.ma/3m1fh781&#34;&gt;Use it or lose it: What to do with your notes&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;31/05   &lt;strong&gt;Grafana Labs APAC&lt;/strong&gt;: &lt;em&gt;Intro to k6 (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;02/06   &lt;strong&gt;&lt;a href=&#34;https://expoqa.com/&#34;&gt;ExpoQA Madrid&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;How to be a Gish: API, browser, and chaos in one script (English).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;08/06   &lt;strong&gt;DevOps Paradox podcast&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;08/06   &lt;strong&gt;DevOps Paradox podcast&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;17/06   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafanaconline/2022/demo-load-testing-with-k6/&#34;&gt;GrafanaCON 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Grafana k6: Testing without Limits (English).&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
 &lt;p&gt;07/04   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCfz8x0lVzJpb_dgWm9kPVrw&#34;&gt;DevOps Toolkit (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TestOps - Ask Me Anything (English).&lt;/em&gt;&lt;/p&gt;

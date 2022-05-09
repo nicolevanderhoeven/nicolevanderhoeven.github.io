@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 29 Apr 2022 17:00:26 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 17:00:28 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Grafana Mimir? (k6 Office Hours #53)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220506-koh53-what-is-grafana-mimir/</link>
+      <pubDate>Fri, 06 May 2022 17:00:28 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220506-koh53-what-is-grafana-mimir/</guid>
+      <description>&lt;p&gt;Maintainer Marco Pracucci talks about the new Grafana project, Mimir, a next-generation time-series database for Prometheus. He joins Developer Advocates Nicole van der Hoeven and Paul Balogh to talk about what Mimir is, why it was needed, and how he helped scale it using k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2P1UViYf1mQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>API load testing using k6, with Tom Miseur (k6 Office Hours #52)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220429-koh52-api-load-testing-using-k6/</link>

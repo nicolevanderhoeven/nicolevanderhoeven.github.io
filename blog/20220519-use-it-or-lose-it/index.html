@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> What Is Grafana Mimir? (k6 Office Hours #53) | Nicole van der Hoeven</title>
+  <title> Use It or Lose It - Linking Your Thinking Conference | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io. I&#39;ve spent my career making software faster as a load tester. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (currently learning TL, EN, NL, ES, EO, DE, FR), and polymath. I publicly learn cool things I have no business learning, then share what I&#39;ve learned. I write technical and fictional articles and books, film and produce videos, create podcasts, speak at conferences, and otherwise just generally enjoy getting to know people. This site is a home for everything I&#39;m doing on the interwebs, but my real-life home these days is Maastricht, in the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="What Is Grafana Mimir? (k6 Office Hours #53)" />
-<meta property="og:description" content="Maintainer Marco Pracucci talks about the new Grafana project, Mimir, a next-generation time-series database for Prometheus. He joins Developer Advocates Nicole van der Hoeven and Paul Balogh to talk about what Mimir is, why it was needed, and how he helped scale it using k6.
-  " />
+  <meta property="og:title" content="Use It or Lose It - Linking Your Thinking Conference" />
+<meta property="og:description" content="Today I spoke at the Linking Your Thinking conference about what I do with notes I take, and how I manage to use them to actually create stuff.
+I&rsquo;ll update this post with the link to the video in the future, but for now, here are the slides!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220506-koh53-what-is-grafana-mimir/" />
-<meta property="article:published_time" content="2022-05-06T17:00:28+02:00" />
-<meta property="article:modified_time" content="2022-05-06T17:00:28+02:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/" />
+<meta property="article:published_time" content="2022-05-19T14:03:13+02:00" />
+<meta property="article:modified_time" content="2022-05-19T14:03:13+02:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="What Is Grafana Mimir? (k6 Office Hours #53)"/>
-<meta name="twitter:description" content="Maintainer Marco Pracucci talks about the new Grafana project, Mimir, a next-generation time-series database for Prometheus. He joins Developer Advocates Nicole van der Hoeven and Paul Balogh to talk about what Mimir is, why it was needed, and how he helped scale it using k6.
-  "/>
+<meta name="twitter:title" content="Use It or Lose It - Linking Your Thinking Conference"/>
+<meta name="twitter:description" content="Today I spoke at the Linking Your Thinking conference about what I do with notes I take, and how I manage to use them to actually create stuff.
+I&rsquo;ll update this post with the link to the video in the future, but for now, here are the slides!"/>
 
   
   
@@ -117,17 +117,11 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220505-using-the-obsidian-templater-plugin/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -155,57 +149,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&text=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&text=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&is_video=false&description=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&is_video=false&description=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f">
+    <a class="icon" href="mailto:?subject=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&name=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29&description=Maintainer%20Marco%20Pracucci%20talks%20about%20the%20new%20Grafana%20project%2c%20Mimir%2c%20a%20next-generation%20time-series%20database%20for%20Prometheus.%20He%20joins%20Developer%20Advocates%20Nicole%20van%20der%20Hoeven%20and%20Paul%20Balogh%20to%20talk%20about%20what%20Mimir%20is%2c%20why%20it%20was%20needed%2c%20and%20how%20he%20helped%20scale%20it%20using%20k6.%0a%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&name=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference&description=Today%20I%20spoke%20at%20the%20Linking%20Your%20Thinking%20conference%20about%20what%20I%20do%20with%20notes%20I%20take%2c%20and%20how%20I%20manage%20to%20use%20them%20to%20actually%20create%20stuff.%0aI%26rsquo%3bll%20update%20this%20post%20with%20the%20link%20to%20the%20video%20in%20the%20future%2c%20but%20for%20now%2c%20here%20are%20the%20slides%21">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&t=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&t=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -222,13 +216,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        What Is Grafana Mimir? (k6 Office Hours #53)
+        Use It or Lose It - Linking Your Thinking Conference
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2022-05-06 17:00:28 &#43;0200 CEST" itemprop="datePublished">2022-May-06</time>
+          <time datetime="2022-05-19 14:03:13 &#43;0200 CEST" itemprop="datePublished">2022-May-19</time>
           
         </div>
         
@@ -240,25 +234,25 @@
             <a class="tag-link" href="/tags/english" rel="tag">english</a>
             
              ,  
-            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            <a class="tag-link" href="/tags/presentation" rel="tag">presentation</a>
             
              ,  
-            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
             
              ,  
-            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
             
              ,  
-            <a class="tag-link" href="/tags/load-testing" rel="tag">load testing</a>
+            <a class="tag-link" href="/tags/productivity" rel="tag">productivity</a>
             
              ,  
-            <a class="tag-link" href="/tags/k6-office-hours" rel="tag">k6 Office Hours</a>
+            <a class="tag-link" href="/tags/content" rel="tag">content</a>
             
              ,  
-            <a class="tag-link" href="/tags/grafana-labs" rel="tag">Grafana Labs</a>
+            <a class="tag-link" href="/tags/kanban" rel="tag">kanban</a>
             
              ,  
-            <a class="tag-link" href="/tags/mimir" rel="tag">mimir</a>
+            <a class="tag-link" href="/tags/readwise" rel="tag">readwise</a>
             
         </div>
         
@@ -267,12 +261,8 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>Maintainer Marco Pracucci talks about the new Grafana project, Mimir, a next-generation time-series database for Prometheus. He joins Developer Advocates Nicole van der Hoeven and Paul Balogh to talk about what Mimir is, why it was needed, and how he helped scale it using k6.</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/2P1UViYf1mQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+      <p>Today I spoke at the <a href="https://lu.ma/3m1fh781">Linking Your Thinking</a> conference about what I do with notes I take, and how I manage to use them to actually create stuff.</p>
+<p>I&rsquo;ll update this post with the link to the video in the future, but for now, <a href="https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#">here are the slides</a>!</p>
 
     </div>
   </article>
@@ -322,57 +312,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&text=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&text=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&is_video=false&description=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&is_video=false&description=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f">
+    <a class="icon" href="mailto:?subject=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&title=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&title=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&name=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29&description=Maintainer%20Marco%20Pracucci%20talks%20about%20the%20new%20Grafana%20project%2c%20Mimir%2c%20a%20next-generation%20time-series%20database%20for%20Prometheus.%20He%20joins%20Developer%20Advocates%20Nicole%20van%20der%20Hoeven%20and%20Paul%20Balogh%20to%20talk%20about%20what%20Mimir%20is%2c%20why%20it%20was%20needed%2c%20and%20how%20he%20helped%20scale%20it%20using%20k6.%0a%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&name=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference&description=Today%20I%20spoke%20at%20the%20Linking%20Your%20Thinking%20conference%20about%20what%20I%20do%20with%20notes%20I%20take%2c%20and%20how%20I%20manage%20to%20use%20them%20to%20actually%20create%20stuff.%0aI%26rsquo%3bll%20update%20this%20post%20with%20the%20link%20to%20the%20video%20in%20the%20future%2c%20but%20for%20now%2c%20here%20are%20the%20slides%21">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220506-koh53-what-is-grafana-mimir%2f&t=What%20Is%20Grafana%20Mimir%3f%20%28k6%20Office%20Hours%20%2353%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220519-use-it-or-lose-it%2f&t=Use%20It%20or%20Lose%20It%20-%20Linking%20Your%20Thinking%20Conference">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

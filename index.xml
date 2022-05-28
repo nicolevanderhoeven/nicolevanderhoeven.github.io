@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 19 May 2022 14:03:13 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 17:00:03 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Presentations as Code - How to use Obsidian Advanced Slides</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220527-presentations-as-code-advanced-slides/</link>
+      <pubDate>Fri, 27 May 2022 17:00:03 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220527-presentations-as-code-advanced-slides/</guid>
+      <description>&lt;p&gt;The Obsidian Advanced Slides plugin is a great way to create presentations as code (or notes) from right inside your Obsidian vault. Using this plugin has helped me reduce the friction and the time between creating something and sharing it, whether that&amp;rsquo;s a presentation, a coding project, a video, or a blog post.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LtBK_iNcVEQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Use It or Lose It - Linking Your Thinking Conference</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</link>
@@ -15,7 +30,12 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</guid>
       <description>&lt;p&gt;Today I spoke at the &lt;a href=&#34;https://lu.ma/3m1fh781&#34;&gt;Linking Your Thinking&lt;/a&gt; conference about what I do with notes I take, and how I manage to use them to actually create stuff.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ll update this post with the link to the video in the future, but for now, &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#&#34;&gt;here are the slides&lt;/a&gt;!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SMNSUs6ffnE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you&amp;rsquo;d like to see the result for yourself, &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#&#34;&gt;here are the slides&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     
@@ -73,12 +93,11 @@
       <description>&lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;p&gt;Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available &lt;a href=&#34;https://slides.nicolevanderhoeven.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;19/05   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/conference&#34;&gt;Linking Your Thinking Conference&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://lu.ma/3m1fh781&#34;&gt;Use it or lose it: What to do with your notes&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;31/05   &lt;strong&gt;Grafana Labs APAC&lt;/strong&gt;: &lt;em&gt;Intro to k6 (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;02/06   &lt;strong&gt;&lt;a href=&#34;https://expoqa.com/&#34;&gt;ExpoQA Madrid&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;How to be a Gish: API, browser, and chaos in one script (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;08/06   &lt;strong&gt;DevOps Paradox podcast&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;17/06   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafanaconline/2022/demo-load-testing-with-k6/&#34;&gt;GrafanaCON 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Grafana k6: Testing without Limits (English).&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
+&lt;p&gt;19/05   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/conference&#34;&gt;Linking Your Thinking Conference&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220519-use-it-or-lose-it/&#34;&gt;Use it or lose it: What to do with your notes&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;07/04   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCfz8x0lVzJpb_dgWm9kPVrw&#34;&gt;DevOps Toolkit (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TestOps - Ask Me Anything (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;31/03   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCgUgg53iJX1pdabUxpkgozA&#34;&gt;Gift Egwuenu (YouTube)&lt;/a&gt;&lt;/strong&gt;]: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220331-working-in-devrel-chat/&#34;&gt;Working in Devrel Chat. (English).&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;10/02   &lt;strong&gt;&lt;a href=&#34;https://guildconferences.com/ag-2022/&#34;&gt;Automation Guild 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;In search of the best Pokémon: Browser automation and load testing in one script with k6. (English).&lt;/em&gt;&lt;/p&gt;
@@ -602,6 +621,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.tubebuddy.com/nicolevdh&#34;&gt;TubeBuddy&lt;/a&gt;, my YouTube analytics platform&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://typeshare.co/?via=nicole&#34;&gt;Typeshare&lt;/a&gt;, for posting atomic essays to Twitter&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.canva.com/join/ttv-mhj-zgx&#34;&gt;Canva&lt;/a&gt;, for creating YouTube thumbnails and graphics in general&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://try.rev.com/6cP3lQ&#34;&gt;Rev&lt;/a&gt;, for creating captions for YouTube videos&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

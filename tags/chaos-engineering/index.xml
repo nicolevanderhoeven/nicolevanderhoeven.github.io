@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 02 Mar 2022 09:59:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/chaos-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 14:06:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/chaos-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link>
+      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid>
+      <description>&lt;p&gt;For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;what a gish is, and how it applies to the field of testing&lt;/li&gt;
+&lt;li&gt;how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li&gt;
+&lt;li&gt;how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li&gt;
+&lt;li&gt;a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href=&#34;https://k6.io/&#34;&gt;k6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aq0XSNcXDb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Basics of Chaos Engineering for Testers</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220302-basics-of-chaos-engineering-for-testers/</link>

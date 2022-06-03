@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 May 2022 17:00:03 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 14:06:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link>
+      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid>
+      <description>&lt;p&gt;For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;what a gish is, and how it applies to the field of testing&lt;/li&gt;
+&lt;li&gt;how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li&gt;
+&lt;li&gt;how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li&gt;
+&lt;li&gt;a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href=&#34;https://k6.io/&#34;&gt;k6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aq0XSNcXDb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Presentations as Code - How to use Obsidian Advanced Slides</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220527-presentations-as-code-advanced-slides/</link>
@@ -93,10 +116,10 @@
       <description>&lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;p&gt;Looking for my slides? I&amp;rsquo;ve started to make my slides publicly available &lt;a href=&#34;https://slides.nicolevanderhoeven.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;02/06   &lt;strong&gt;&lt;a href=&#34;https://expoqa.com/&#34;&gt;ExpoQA Madrid&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;How to be a Gish: API, browser, and chaos in one script (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;08/06   &lt;strong&gt;DevOps Paradox podcast&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;17/06   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafanaconline/2022/demo-load-testing-with-k6/&#34;&gt;GrafanaCON 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Grafana k6: Testing without Limits (English).&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
+&lt;p&gt;02/06   &lt;strong&gt;&lt;a href=&#34;https://expoqa.com/en-sessions.html#van_der_Hoeven&#34;&gt;ExpoQA Madrid&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220601-how-to-be-a-gish-expoqa/&#34;&gt;How to be a Gish: API, browser, and chaos in one script&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;19/05   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/conference&#34;&gt;Linking Your Thinking Conference&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220519-use-it-or-lose-it/&#34;&gt;Use it or lose it: What to do with your notes&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;07/04   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCfz8x0lVzJpb_dgWm9kPVrw&#34;&gt;DevOps Toolkit (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TestOps - Ask Me Anything (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;31/03   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCgUgg53iJX1pdabUxpkgozA&#34;&gt;Gift Egwuenu (YouTube)&lt;/a&gt;&lt;/strong&gt;]: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220331-working-in-devrel-chat/&#34;&gt;Working in Devrel Chat. (English).&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;

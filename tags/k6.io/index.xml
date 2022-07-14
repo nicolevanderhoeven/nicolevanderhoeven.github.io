@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 08 Jun 2022 17:40:22 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 17:00:57 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to migrate to Kubernetes, with Carlos Ruiz Lantero (k6 Office Hours #55)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220708-koh55-how-to-migrate-to-kubernetes/</link>
+      <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220708-koh55-how-to-migrate-to-kubernetes/</guid>
+      <description>&lt;p&gt;k6 Cloud Backend developer Carlos Ruiz Lantero joins Developer Advocates Nicole van der Hoeven and Paul Balogh to discuss how to migrate to Kubernetes. Carlos has been working on migrating k6 Cloud services from ECS to EKS, and in this video, he shares his best practices for migration and things he wishes he&amp;rsquo;d done differently.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wPX0QP45Yo4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>DevOps Paradox: Performance Testing With k6</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220608-performance-testing-with-k6/</link>

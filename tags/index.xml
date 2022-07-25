@@ -7,13 +7,112 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 15 Jul 2022 16:00:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 19:00:33 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Fri, 15 Jul 2022 16:00:52 +0100</pubDate>
+      <pubDate>Fri, 22 Jul 2022 19:00:33 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flag theory</title>
+      <link>https://nicolevanderhoeven.github.io/tags/flag-theory/</link>
+      <pubDate>Fri, 22 Jul 2022 19:00:33 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/flag-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal finance</title>
+      <link>https://nicolevanderhoeven.github.io/tags/personal-finance/</link>
+      <pubDate>Fri, 22 Jul 2022 19:00:33 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/personal-finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
+      <pubDate>Fri, 22 Jul 2022 19:00:33 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k6 Office Hours</title>
+      <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
+      <pubDate>Fri, 22 Jul 2022 17:00:05 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k6.io</title>
+      <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
+      <pubDate>Fri, 22 Jul 2022 17:00:05 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>livestream</title>
+      <link>https://nicolevanderhoeven.github.io/tags/livestream/</link>
+      <pubDate>Fri, 22 Jul 2022 17:00:05 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/livestream/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
+      <pubDate>Fri, 22 Jul 2022 17:00:05 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workload modeling</title>
+      <link>https://nicolevanderhoeven.github.io/tags/workload-modeling/</link>
+      <pubDate>Fri, 22 Jul 2022 17:00:05 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/workload-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chaos engineering</title>
+      <link>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</link>
+      <pubDate>Fri, 15 Jul 2022 18:00:13 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://nicolevanderhoeven.github.io/tags/kubernetes/</link>
+      <pubDate>Fri, 15 Jul 2022 18:00:13 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>observability</title>
+      <link>https://nicolevanderhoeven.github.io/tags/observability/</link>
+      <pubDate>Fri, 15 Jul 2022 18:00:13 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/observability/</guid>
       <description></description>
     </item>
     
@@ -45,65 +144,11 @@
     </item>
     
     <item>
-      <title>video</title>
-      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Fri, 15 Jul 2022 16:00:52 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>grafana</title>
       <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
       <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k6 Office Hours</title>
-      <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k6.io</title>
-      <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://nicolevanderhoeven.github.io/tags/kubernetes/</link>
-      <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>livestream</title>
-      <link>https://nicolevanderhoeven.github.io/tags/livestream/</link>
-      <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/livestream/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>observability</title>
-      <link>https://nicolevanderhoeven.github.io/tags/observability/</link>
-      <pubDate>Fri, 08 Jul 2022 17:00:57 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/observability/</guid>
       <description></description>
     </item>
     
@@ -234,29 +279,11 @@
     </item>
     
     <item>
-      <title>chaos engineering</title>
-      <link>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</link>
-      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/chaos-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>español</title>
       <link>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</link>
       <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>performance</title>
-      <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
-      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
       <description></description>
     </item>
     
@@ -540,15 +567,6 @@
     </item>
     
     <item>
-      <title>flag theory</title>
-      <link>https://nicolevanderhoeven.github.io/tags/flag-theory/</link>
-      <pubDate>Wed, 16 Mar 2022 17:09:33 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/flag-theory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>roam research</title>
       <link>https://nicolevanderhoeven.github.io/tags/roam-research/</link>
       <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
@@ -761,15 +779,6 @@
       <pubDate>Thu, 13 Jan 2022 16:43:46 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/financial-independence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>personal finance</title>
-      <link>https://nicolevanderhoeven.github.io/tags/personal-finance/</link>
-      <pubDate>Thu, 13 Jan 2022 16:43:46 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/personal-finance/</guid>
       <description></description>
     </item>
     

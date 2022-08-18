@@ -7,7 +7,97 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 19:00:33 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 16:21:10 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Make Your Notes Visual in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</link>
+      <pubDate>Thu, 18 Aug 2022 16:21:10 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</guid>
+      <description>&lt;p&gt;In this video, I demonstrate how to make your notes visual with visual PKM plugins like Excalidraw, Excalibrain, Advanced Slides, and Mind Map. Adding visual elements to your notes, whether through distinguishing text or adding images and video, helps make notes more meaningful to you, increasing understanding and retention.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9ELqSWucVYo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Observability Trends and Future Best Practices (k6 Office Hours #59)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220812-koh59-observability-trends-and-future-best-practices/</link>
+      <pubDate>Fri, 12 Aug 2022 16:19:13 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220812-koh59-observability-trends-and-future-best-practices/</guid>
+      <description>&lt;p&gt;What are some observability trends and best practices in 2022 and going forward? Technical Program Manager Daniel González Lopes joins Developer Advocates Nicole van der Hoeven and Paul Balogh to chat about trending concepts and new areas of exploration in the field of observability. We&amp;rsquo;re going to talk about distributed tracing, continuous profiling, eBPF monitoring, and more!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/4NPCzt5eF9w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How I Learn in Obsidian - Keeping up with tech trends</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link>
+      <pubDate>Fri, 12 Aug 2022 16:17:11 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s how I learn in Obsidian by processing articles I&amp;rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6kzsCBKCl94&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Using the Obsidian QuickAdd Plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220805-using-the-obsidian-quick-add-plugin/</link>
+      <pubDate>Fri, 05 Aug 2022 16:15:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220805-using-the-obsidian-quick-add-plugin/</guid>
+      <description>&lt;p&gt;The Obsidian Quick Add plugin won #10 in the Obsidian Gems of the Year 2021, but how do you use it? There are four types of &amp;ldquo;choices&amp;rdquo; in the plugin: multi, template, capture, and macro. Learn how to use each one with examples for real use cases.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LrQVQ37y6IU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>1 Year Ago We Were Acquired. Here&#39;s what happened next. (k6 Office Hours #58)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220729-koh58-1-year-ago-we-were-acquired/</link>
+      <pubDate>Fri, 29 Jul 2022 16:12:34 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220729-koh58-1-year-ago-we-were-acquired/</guid>
+      <description>&lt;p&gt;In June 2021, CEO Raj Dutt announced that k6 had become part of the Grafana Labs family, and the year that followed has been replete with changes in features, organizational structure, and overall culture within the k6 team. In this video, Nicole van der Hoeven and Paul Balogh reflect on everything that&amp;rsquo;s happened in the last year and how k6 has fared 1 year after the acquisition.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LjC--G-QLpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Do D&amp;D Prep in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220729-how-to-do-dnd-prep-in-obsidian/</link>
+      <pubDate>Fri, 29 Jul 2022 15:57:47 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220729-how-to-do-dnd-prep-in-obsidian/</guid>
+      <description>&lt;p&gt;In this video, I show you in detail how I do D&amp;amp;D prep in Obsidian as I prepare for my D&amp;amp;D 5e game. I also show my setup using plugins like Obsidian Templater, Callouts, Leaflet, QuickAdd, Buttons, Initiative Tracker, and more.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0ohV4CpXX5w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>The finances of a YouTuber</title>
       <link>https://nicolevanderhoeven.github.io/youtube/</link>
@@ -364,7 +454,7 @@
 &lt;p&gt;09/06   &lt;strong&gt;&lt;a href=&#34;https://www.womentech.net/speaker/Nicole/van%20der%20Hoeven/50129&#34;&gt;Women Tech Global&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210609-convergence-of-code-and-speech/&#34;&gt;The Convergence of Code and Speech&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;31/05   &lt;strong&gt;&lt;a href=&#34;https://open.spotify.com/show/7wOCHzZBCzOi071QuDPodI&#34;&gt;Performance Time Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210531-performance-time/&#34;&gt;An Interview with Nicole van der Hoeven&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;27/05   &lt;strong&gt;&lt;a href=&#34;https://newrelic.com/futurestack/speakers/nicole-van-der-hoeven&#34;&gt;New Relic FutureStack&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;Schrödinger&amp;rsquo;s Pokemon: Observability for Chaotic Load Testing&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
-&lt;p&gt;23/03   &lt;strong&gt;&lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing Philippines meetup&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Performance testing with Cypress, Lighthouse, and k6&lt;/em&gt;. (English)&lt;/p&gt;
+&lt;p&gt;23/03   &lt;strong&gt;&lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing Philippines meetup&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210323-performance-testing-with-k6-and-cypress&#34;&gt;Performance testing with Cypress, Lighthouse, and k6&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;18/03   &lt;strong&gt;Cambridge University Press QA Week 2021&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210318-load-tests-as-code/&#34;&gt;Load tests as code: An introduction to k6&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;p&gt;16/03   &lt;strong&gt;&lt;a href=&#34;https://testguild.com/&#34;&gt;Test Guild Performance Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210316-testing-our-performance-test-tools/&#34;&gt;Testing our Performance Test Tools&lt;/a&gt;&lt;/em&gt;. (English)&lt;/p&gt;
 &lt;h2 id=&#34;2020&#34;&gt;2020&lt;/h2&gt;
@@ -859,10 +949,12 @@
 &lt;li&gt;&lt;a href=&#34;https://ptya.samcart.com/referral/IKjWOptt/ag3CrAXhy7tQJ1Wb&#34;&gt;Ali Abdaal&amp;rsquo;s Part-time YouTuber Academy&lt;/a&gt;, about how to become a YouTuber from scratch&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://monthly.com/casey-neistat-filmmaking?friend=nicole-van-der-hoeven&#34;&gt;Filmmaking &amp;amp; Storytelling with Casey Neistat&lt;/a&gt;, about making videos&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.italki.com/i/ref/fHFBb&#34;&gt;Italki&lt;/a&gt;, for learning languages&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://skl.sh/37RmSOG&#34;&gt;Skillshare&lt;/a&gt;, for learning anything&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://brilliant.org/nicolevdh&#34;&gt;Brilliant&lt;/a&gt;, an app that teaches topics in the maths and sciences in bite-sized chunks&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;other-products-and-services-i-use-regularly&#34;&gt;Other Products and services I use regularly&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xolo.io/ref/NICVAN2&#34;&gt;Xolo Leap&lt;/a&gt;, for managing a company in Estonia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.xolo.io/ref/NICVAN2&#34;&gt;Xolo Leap&lt;/a&gt;, for managing the finances of my Estonian company&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3CmuLH1&#34;&gt;Amazon&lt;/a&gt;, for buying gear and books&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://streamyard.com?pal=4894166466428928&#34;&gt;Streamyard&lt;/a&gt;, my streaming platform&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.epidemicsound.com/referral/9927mk&#34;&gt;Epidemic Sound&lt;/a&gt;, my source of high-quality music&lt;/li&gt;
@@ -870,6 +962,7 @@
 &lt;li&gt;&lt;a href=&#34;http://typeshare.co/?via=nicole&#34;&gt;Typeshare&lt;/a&gt;, for posting atomic essays to Twitter&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.canva.com/join/ttv-mhj-zgx&#34;&gt;Canva&lt;/a&gt;, for creating YouTube thumbnails and graphics in general&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://try.rev.com/6cP3lQ&#34;&gt;Rev&lt;/a&gt;, for creating captions for YouTube videos&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wise.com/invite/u/nicolev120&#34;&gt;Wise&lt;/a&gt;, for transferring money and accepting money in different currencies&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -895,19 +988,19 @@
 &lt;p&gt;This statement governs my principles regarding my activities as a content creator. I&amp;rsquo;ve made this information public for transparency, consistency, and fairness in my dealings with viewers, readers, employers, and sponsors alike. It is a list of my expectations from others, but it also a list of what others can expect from me.&lt;/p&gt;
 &lt;h2 id=&#34;promotions-and-sponsorships&#34;&gt;Promotions and sponsorships&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve personally paid for at least 95%, if not more, of the gear and apps I use to create content. The remaining 5% have been purchased for me by previous and current employers in the course of my normal day job. These cases cover things like laptops that I am allowed to use for personal work as well. I never expense items through my employer if their primary use is for my personal projects.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;Promotion&amp;rdquo; includes me doing one, or a combination, of the following things:&lt;/p&gt;
+&lt;p&gt;In my view, &amp;ldquo;promotion&amp;rdquo; includes me doing one, or a combination, of the following things:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Talking positively about a product or service, digital or analog, in any form of media, including social media networks, videos, blog posts, or collaborations.&lt;/li&gt;
 &lt;li&gt;Using a product in a video or photo.&lt;/li&gt;
 &lt;li&gt;Showing a product on video or in a photo, including in the background.&lt;/li&gt;
 &lt;li&gt;Reviewing a product or service.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Promotion includes compensation in the following forms:&lt;/p&gt;
+&lt;p&gt;For the most part, I do promotions without reaching out to companies. For example, I make a lot of Obsidian videos but I&amp;rsquo;ve never gotten compensation or support from the Obsidian team. I&amp;rsquo;ll never shy away from mentioning an app or service just because I don&amp;rsquo;t get paid. However, it&amp;rsquo;s cool when I get something in return for promoting products I love!&lt;/p&gt;
+&lt;p&gt;Paid promotion might consist of compensation in the following forms:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;money (paid promotion or sponsorship)&lt;/li&gt;
+&lt;li&gt;money (a commission for people who use my affiliate links, or money offered to me to promote a product)&lt;/li&gt;
 &lt;li&gt;access to a digital app/service&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;free&amp;rdquo; products&lt;/li&gt;
-&lt;li&gt;nothing (in cases where I have no relationship at all with a company but still choose to promote their products)&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;free&amp;rdquo; physical products&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When I promote a product or service:&lt;/p&gt;
 &lt;ul&gt;
@@ -918,15 +1011,15 @@
 &lt;/ul&gt;
 &lt;p&gt;I only promote a product or service if:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It is something I already use regularly or genuinely feel would add value to my life. This also means that apps I promote must be accessible on devices I actually use! For an app: If I don&amp;rsquo;t use it daily or weekly at the very least, it&amp;rsquo;s out. If I don&amp;rsquo;t think I would continue to use it after the promotion for whatever reason, I won&amp;rsquo;t promote it.&lt;/li&gt;
-&lt;li&gt;I am &lt;em&gt;excited&lt;/em&gt; by the prospect of using it&amp;ndash; it&amp;rsquo;s not enough to think it&amp;rsquo;s serviceable. Lukewarm feelings don&amp;rsquo;t cut it, either.&lt;/li&gt;
+&lt;li&gt;It is something I &lt;em&gt;already use regularly or genuinely feel would add value to my life&lt;/em&gt;. This also means that apps I promote must be accessible on devices I actually use! If I don&amp;rsquo;t think I would continue to use it after the promotion for whatever reason, I won&amp;rsquo;t promote it.&lt;/li&gt;
+&lt;li&gt;I am &lt;em&gt;excited&lt;/em&gt; by the prospect of using it&amp;ndash; it&amp;rsquo;s not enough to think it&amp;rsquo;s serviceable. I have to think it&amp;rsquo;s one of the best ones on the market for its class!&lt;/li&gt;
 &lt;li&gt;(In the case of a review) The company does NOT have any input on what I say. They don&amp;rsquo;t get to see videos for approval or revisions before I publish them.&lt;/li&gt;
 &lt;li&gt;The company that produces it is ethical in its practices. I don&amp;rsquo;t claim to know everything, but I will never knowingly promote a product from a company with deplorable practices.&lt;/li&gt;
 &lt;li&gt;It is open-source OR has features that make it more compelling than open-source alternatives. I always prioritize open-source tools over commercial offerings.&lt;/li&gt;
-&lt;li&gt;(In the case of paid promotions) It does not directly compete with my permanent employer, Grafana Labs (and k6)&amp;ndash; not because I don&amp;rsquo;t welcome the competition, but because I am under contractual obligations to avoid this conflict of interest.&lt;/li&gt;
+&lt;li&gt;It does not directly compete with my permanent employer, Grafana Labs (and k6)&amp;ndash; I am under contractual obligations to avoid this conflict of interest.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;unsolicited-benefits&#34;&gt;Unsolicited benefits&lt;/h3&gt;
-&lt;p&gt;Giving me a free product does not mean I am under an obligation to mention it, and it certainly doesn&amp;rsquo;t guarantee a positive review. Please don&amp;rsquo;t send me anything with strings I haven&amp;rsquo;t agreed to.&lt;/p&gt;
+&lt;p&gt;Giving me a free product does not mean I am under an obligation to mention it, and it certainly doesn&amp;rsquo;t guarantee a positive review. Please don&amp;rsquo;t send me anything with strings attached.&lt;/p&gt;
 &lt;h2 id=&#34;comments&#34;&gt;Comments&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s ok to disagree with me, and I especially welcome constructive feedback. I don&amp;rsquo;t delete comments that disagree with me, but be nice; I&amp;rsquo;m a person too. So are other commenters.&lt;/p&gt;
 &lt;p&gt;I will not hesitate to delete, block, or reject comments if:&lt;/p&gt;
@@ -5707,6 +5800,21 @@ where file.ctime &amp;gt;= date(today) -dur(1 month)
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/3FyV1j3TRBk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Performance Testing with k6 and Cypress (Ministry of Testing)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</link>
+      <pubDate>Tue, 23 Mar 2021 19:52:48 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</guid>
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; and I teamed up to give a presentation about performance testing at a &lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing (Philippines) meetup&lt;/a&gt;, and we talked about using &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; for front-end performance testing and &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt; for back-end performance testing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yPmbZl2Qtus&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>

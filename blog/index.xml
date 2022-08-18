@@ -7,7 +7,97 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 19:00:33 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 16:21:10 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Make Your Notes Visual in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</link>
+      <pubDate>Thu, 18 Aug 2022 16:21:10 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</guid>
+      <description>&lt;p&gt;In this video, I demonstrate how to make your notes visual with visual PKM plugins like Excalidraw, Excalibrain, Advanced Slides, and Mind Map. Adding visual elements to your notes, whether through distinguishing text or adding images and video, helps make notes more meaningful to you, increasing understanding and retention.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9ELqSWucVYo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Observability Trends and Future Best Practices (k6 Office Hours #59)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220812-koh59-observability-trends-and-future-best-practices/</link>
+      <pubDate>Fri, 12 Aug 2022 16:19:13 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220812-koh59-observability-trends-and-future-best-practices/</guid>
+      <description>&lt;p&gt;What are some observability trends and best practices in 2022 and going forward? Technical Program Manager Daniel González Lopes joins Developer Advocates Nicole van der Hoeven and Paul Balogh to chat about trending concepts and new areas of exploration in the field of observability. We&amp;rsquo;re going to talk about distributed tracing, continuous profiling, eBPF monitoring, and more!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/4NPCzt5eF9w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How I Learn in Obsidian - Keeping up with tech trends</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link>
+      <pubDate>Fri, 12 Aug 2022 16:17:11 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s how I learn in Obsidian by processing articles I&amp;rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6kzsCBKCl94&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Using the Obsidian QuickAdd Plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220805-using-the-obsidian-quick-add-plugin/</link>
+      <pubDate>Fri, 05 Aug 2022 16:15:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220805-using-the-obsidian-quick-add-plugin/</guid>
+      <description>&lt;p&gt;The Obsidian Quick Add plugin won #10 in the Obsidian Gems of the Year 2021, but how do you use it? There are four types of &amp;ldquo;choices&amp;rdquo; in the plugin: multi, template, capture, and macro. Learn how to use each one with examples for real use cases.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LrQVQ37y6IU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>1 Year Ago We Were Acquired. Here&#39;s what happened next. (k6 Office Hours #58)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220729-koh58-1-year-ago-we-were-acquired/</link>
+      <pubDate>Fri, 29 Jul 2022 16:12:34 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220729-koh58-1-year-ago-we-were-acquired/</guid>
+      <description>&lt;p&gt;In June 2021, CEO Raj Dutt announced that k6 had become part of the Grafana Labs family, and the year that followed has been replete with changes in features, organizational structure, and overall culture within the k6 team. In this video, Nicole van der Hoeven and Paul Balogh reflect on everything that&amp;rsquo;s happened in the last year and how k6 has fared 1 year after the acquisition.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LjC--G-QLpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Do D&amp;D Prep in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220729-how-to-do-dnd-prep-in-obsidian/</link>
+      <pubDate>Fri, 29 Jul 2022 15:57:47 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220729-how-to-do-dnd-prep-in-obsidian/</guid>
+      <description>&lt;p&gt;In this video, I show you in detail how I do D&amp;amp;D prep in Obsidian as I prepare for my D&amp;amp;D 5e game. I also show my setup using plugins like Obsidian Templater, Callouts, Leaflet, QuickAdd, Buttons, Initiative Tracker, and more.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0ohV4CpXX5w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Why You Should Move to Another Country</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220722-why-you-should-move-to-another-country/</link>
@@ -5394,6 +5484,21 @@ where file.ctime &amp;gt;= date(today) -dur(1 month)
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/3FyV1j3TRBk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Performance Testing with k6 and Cypress (Ministry of Testing)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</link>
+      <pubDate>Tue, 23 Mar 2021 19:52:48 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</guid>
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; and I teamed up to give a presentation about performance testing at a &lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing (Philippines) meetup&lt;/a&gt;, and we talked about using &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; for front-end performance testing and &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt; for back-end performance testing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yPmbZl2Qtus&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>

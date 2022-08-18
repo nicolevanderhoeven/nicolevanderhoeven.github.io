@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How I Learn in Obsidian - Keeping up with tech trends | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer. I&#39;m a proud polynational (Filipino, Australian, and Dutch), polyglot (constantly learning TL, EN, NL, ES, EO, DE, FR, PT), and polymath. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Setúbal, Portugal and Maastricht, the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How I Learn in Obsidian - Keeping up with tech trends" />
+<meta property="og:description" content="Here&rsquo;s how I learn in Obsidian by processing articles I&rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.
+  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/" />
+<meta property="article:published_time" content="2022-08-12T16:17:11+01:00" />
+<meta property="article:modified_time" content="2022-08-12T16:17:11+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I Learn in Obsidian - Keeping up with tech trends"/>
+<meta name="twitter:description" content="Here&rsquo;s how I learn in Obsidian by processing articles I&rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.
+  "/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220805-using-the-obsidian-quick-add-plugin/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20220812-koh59-observability-trends-and-future-best-practices/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&text=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&is_video=false&description=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&name=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends&description=Here%26rsquo%3bs%20how%20I%20learn%20in%20Obsidian%20by%20processing%20articles%20I%26rsquo%3bve%20read%20into%20consolidated%20notes%20that%20help%20me%20understand%20technical%20concepts.%20I%20also%20show%20how%20I%20improve%20my%20learning%20by%20incorporating%20visual%20elements%20using%20Obsidian%20Excalidraw%2c%20Excalibrain%2c%20and%20Advanced%20Slides.%0a%20%20">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&t=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How I Learn in Obsidian - Keeping up with tech trends
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-08-12 16:17:11 &#43;0100 WEST" itemprop="datePublished">2022-Aug-12</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/ebpf" rel="tag">ebpf</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/zettelkasten" rel="tag">zettelkasten</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/readwise" rel="tag">readwise</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/excalidraw" rel="tag">excalidraw</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/excalibrain" rel="tag">excalibrain</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/advanced-slides" rel="tag">advanced slides</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Here&rsquo;s how I learn in Obsidian by processing articles I&rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6kzsCBKCl94" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&text=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&is_video=false&description=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&title=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&name=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends&description=Here%26rsquo%3bs%20how%20I%20learn%20in%20Obsidian%20by%20processing%20articles%20I%26rsquo%3bve%20read%20into%20consolidated%20notes%20that%20help%20me%20understand%20technical%20concepts.%20I%20also%20show%20how%20I%20improve%20my%20learning%20by%20incorporating%20visual%20elements%20using%20Obsidian%20Excalidraw%2c%20Excalibrain%2c%20and%20Advanced%20Slides.%0a%20%20">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220812-how-i-learn-in-obsidian%2f&t=How%20I%20Learn%20in%20Obsidian%20-%20Keeping%20up%20with%20tech%20trends">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

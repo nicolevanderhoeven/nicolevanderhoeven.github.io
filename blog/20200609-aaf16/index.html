@@ -11,19 +11,20 @@
   <meta property="og:title" content="Ask a Flooder 16: How do I use test data with Element?" />
 <meta property="og:description" content="Originally posted on Tricentis Flood.
 In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&rsquo;ll find a copy of the Element script I used below.
-‍   And, if you prefer, here&rsquo;s the audio version:
- Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?" />
+‍ And, if you prefer, here&rsquo;s the audio version:
+Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200609-aaf16/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200609-aaf16/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-06-09T22:18:41+01:00" />
 <meta property="article:modified_time" content="2020-06-09T22:18:41+01:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ask a Flooder 16: How do I use test data with Element?"/>
 <meta name="twitter:description" content="Originally posted on Tricentis Flood.
 In this video, I discuss how to make your load testing scripts more realistic by including test data. The load testing tool I use is Flood Element, but you can apply these principles to any tool. You&rsquo;ll find a copy of the Element script I used below.
-‍   And, if you prefer, here&rsquo;s the audio version:
- Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?"/>
+‍ And, if you prefer, here&rsquo;s the audio version:
+Transcript Hi everyone, Nicole van der Hoeven here back with another Ask a Flooder, and this time the question is: How do I use test data with Flood Element?"/>
 
   
   
@@ -200,7 +201,7 @@ In this video, I discuss how to make your load testing scripts more realistic by
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200609-aaf16%2f&name=Ask%20a%20Flooder%2016%3a%20How%20do%20I%20use%20test%20data%20with%20Element%3f&description=Originally%20posted%20on%20Tricentis%20Flood.%0aIn%20this%20video%2c%20I%20discuss%20how%20to%20make%20your%20load%20testing%20scripts%20more%20realistic%20by%20including%20test%20data.%20The%20load%20testing%20tool%20I%c2%a0use%20is%20Flood%20Element%2c%20but%20you%20can%20apply%20these%20principles%20to%20any%20tool.%20You%26rsquo%3bll%20find%20a%20copy%20of%20the%20Element%20script%20I%c2%a0used%20below.%0a%e2%80%8d%20%20%20And%2c%20if%20you%20prefer%2c%20here%26rsquo%3bs%20the%20audio%20version%3a%0a%20Transcript%20Hi%20everyone%2c%20Nicole%20van%20der%20Hoeven%20here%20back%20with%20another%20Ask%20a%20Flooder%2c%20and%20this%20time%20the%20question%20is%3a%20How%20do%20I%20use%20test%20data%20with%20Flood%20Element%3f">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200609-aaf16%2f&name=Ask%20a%20Flooder%2016%3a%20How%20do%20I%20use%20test%20data%20with%20Element%3f&description=Originally%20posted%20on%20Tricentis%20Flood.%0aIn%20this%20video%2c%20I%20discuss%20how%20to%20make%20your%20load%20testing%20scripts%20more%20realistic%20by%20including%20test%20data.%20The%20load%20testing%20tool%20I%c2%a0use%20is%20Flood%20Element%2c%20but%20you%20can%20apply%20these%20principles%20to%20any%20tool.%20You%26rsquo%3bll%20find%20a%20copy%20of%20the%20Element%20script%20I%c2%a0used%20below.%0a%e2%80%8d%20And%2c%20if%20you%20prefer%2c%20here%26rsquo%3bs%20the%20audio%20version%3a%0aTranscript%20Hi%20everyone%2c%20Nicole%20van%20der%20Hoeven%20here%20back%20with%20another%20Ask%20a%20Flooder%2c%20and%20this%20time%20the%20question%20is%3a%20How%20do%20I%20use%20test%20data%20with%20Flood%20Element%3f">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -233,7 +234,7 @@ In this video, I discuss how to make your load testing scripts more realistic by
         
         <div class="postdate">
           
-          <time datetime="2020-06-09 22:18:41 &#43;0100 WEST" itemprop="datePublished">2020-Jun-09</time>
+          <time datetime="2020-06-09 22:18:41 &#43;0100 &#43;0100" itemprop="datePublished">2020-Jun-09</time>
           
         </div>
         
@@ -293,61 +294,61 @@ In this video, I discuss how to make your load testing scripts more realistic by
 <p>Now let&rsquo;s talk about why you might want to use test data. In load testing, it&rsquo;s important to make your scripts behave as similarly to real users as possible so that the load that you generate is production-like. The problem is that if you send the same data over and over again to the server, that server is probably going to cache that response. The response being cached means that the server will return the response way faster than it normally would if it had been a unique request. So we can use test data, instead of static data hardcoded in your scripts, to make sure that this doesn&rsquo;t happen.</p>
 <p>Using test data can also help us test different responses. For example, let&rsquo;s say we&rsquo;re testing a loan application system, where a user inputs the application ID, the server looks it up, and returns the status of that loan application. Now, loan applications might be in different stages of the process. For instance, some might be saved but not submitted, or maybe they&rsquo;ve been submitted but failed the identity verification check.</p>
 <p>If we used the same application ID every time, then the server would always return the same status and the same details. Instead, let&rsquo;s create a CSV file that we can use as test data. It might look something like this.‍</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">applicationId
-A100001
-B100002
-C100003
-D100004
-</code></pre></div><p>We can have <code>applicationId</code> as the single header here, and we can populate this with a list of different application IDs in different stages of the process. That way, when we run the script, the server will have to respond authentically to every request without it being cached.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>applicationId
+</span></span><span style="display:flex;"><span>A100001
+</span></span><span style="display:flex;"><span>B100002
+</span></span><span style="display:flex;"><span>C100003
+</span></span><span style="display:flex;"><span>D100004
+</span></span></code></pre></div><p>We can have <code>applicationId</code> as the single header here, and we can populate this with a list of different application IDs in different stages of the process. That way, when we run the script, the server will have to respond authentically to every request without it being cached.</p>
 <p>Now to create our script. This is an empty Element script. To start with, make sure you&rsquo;re importing <code>TestData</code> here in the first line of your script.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">Until</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">TestData</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
-</code></pre></div><p>The first thing we&rsquo;re going to need to do is to create an interface for the CSV file. Let&rsquo;s call it <code>AppData</code>. Within this interface, we&rsquo;ll need to define all the fields that we intend to use in our data file and what type of values we can expect to be in those fields. Looking at our CSV here, we&rsquo;ve just got the application ID, so I&rsquo;m just going to copy that, and it&rsquo;s a mixture of characters and numbers, so I&rsquo;m going to put that in as a string.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AppData</span> {
-    <span style="color:#a6e22e">applicationId</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>    
-}
-</code></pre></div><p>Now we need to tell Element how to find this test data. We&rsquo;ll say that it&rsquo;s from the CSV, using the interface we&rsquo;ve just created. Now we&rsquo;ll tell Element the filename. In this situation, the CSV file that I&rsquo;m using is actually in the same directory, so I don&rsquo;t need to specify a path here, but if you&rsquo;re putting it somewhere else, then you&rsquo;ll need to specify the folder and the path to it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)
-</code></pre></div><p>Now let&rsquo;s use the data in a step. In real life, you might want to use an application ID to type it into a text field, but for demonstration purposes, I&rsquo;m just going to show you how to output it to the console log. Printing to the console is also a good way to debug your tests, especially if you&rsquo;re dealing with test data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">Until</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">TestData</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+</span></span></code></pre></div><p>The first thing we&rsquo;re going to need to do is to create an interface for the CSV file. Let&rsquo;s call it <code>AppData</code>. Within this interface, we&rsquo;ll need to define all the fields that we intend to use in our data file and what type of values we can expect to be in those fields. Looking at our CSV here, we&rsquo;ve just got the application ID, so I&rsquo;m just going to copy that, and it&rsquo;s a mixture of characters and numbers, so I&rsquo;m going to put that in as a string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AppData</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">applicationId</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>    
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now we need to tell Element how to find this test data. We&rsquo;ll say that it&rsquo;s from the CSV, using the interface we&rsquo;ve just created. Now we&rsquo;ll tell Element the filename. In this situation, the CSV file that I&rsquo;m using is actually in the same directory, so I don&rsquo;t need to specify a path here, but if you&rsquo;re putting it somewhere else, then you&rsquo;ll need to specify the folder and the path to it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)
+</span></span></code></pre></div><p>Now let&rsquo;s use the data in a step. In real life, you might want to use an application ID to type it into a text field, but for demonstration purposes, I&rsquo;m just going to show you how to output it to the console log. Printing to the console is also a good way to debug your tests, especially if you&rsquo;re dealing with test data.</p>
 <p>We need to let Element know that we want to use AppData. So now, let&rsquo;s output this to the console. Since we&rsquo;re just debugging, let&rsquo;s output the application ID. To actually get the value from the data file, we&rsquo;ll use this syntax:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;Print to console&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">browser</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">AppData</span>) =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;application ID: &#39;</span>, <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">applicationId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>) 
-})
-</code></pre></div><p>‍By default, Element reads the data files sequentially. The problem with that is we only have a handful of application IDs. So if we wanted to run this one script 100 times, we&rsquo;re going to run out of data. What we can do here is add <code>circular</code>. That way, when the script reaches the very last value of the file, the next value it selects will be the first one, and it never runs out of test data.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)    
-  .<span style="color:#a6e22e">circular</span>()
-</code></pre></div><p>Another thing you might be wondering is how to make it so that Element chooses a random value every time. To do that, we&rsquo;ll also have to add <code>shuffle</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)    
-  .<span style="color:#a6e22e">circular</span>()
-</code></pre></div><p>‍Now let&rsquo;s try to run the test.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">element run test-data.ts
-</code></pre></div><p>As you can see, it&rsquo;s been finished. The application ID that was selected was indeed a random one because the first one would have started with A. So, it actually chose the last one randomly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;Print to console&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">browser</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">AppData</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;application ID: &#39;</span>, <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">applicationId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>) 
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>‍By default, Element reads the data files sequentially. The problem with that is we only have a handful of application IDs. So if we wanted to run this one script 100 times, we&rsquo;re going to run out of data. What we can do here is add <code>circular</code>. That way, when the script reaches the very last value of the file, the next value it selects will be the first one, and it never runs out of test data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)    
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">circular</span>()
+</span></span></code></pre></div><p>Another thing you might be wondering is how to make it so that Element chooses a random value every time. To do that, we&rsquo;ll also have to add <code>shuffle</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)    
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">circular</span>()
+</span></span></code></pre></div><p>‍Now let&rsquo;s try to run the test.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>element run test-data.ts
+</span></span></code></pre></div><p>As you can see, it&rsquo;s been finished. The application ID that was selected was indeed a random one because the first one would have started with A. So, it actually chose the last one randomly.</p>
 <p>And that&rsquo;s it for test data with Element. Now, this user actually had a follow-up question, which was about unique test data. I&rsquo;m going to answer that in the next video. Until next time, happy Flooding!</p>
 <h2 id="sample-script">Sample script</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">Until</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">TestData</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
-<span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">assert</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;assert&#39;</span>
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {    
-  <span style="color:#a6e22e">loopCount</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,    
-  <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Test Data&#39;</span>,    
-  <span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,    
-  <span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,    
-  <span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,    
-  <span style="color:#a6e22e">clearCookies</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-}
-
-<span style="color:#75715e">/*** Test Data * Version: 1.0 */</span>
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> () =&gt; {    
-  <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AppData</span> {        
-    <span style="color:#a6e22e">applicationId</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>    }    
-  <span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)    
-    .<span style="color:#a6e22e">circular</span>()    
-    .<span style="color:#a6e22e">shuffle</span>()    
-  <span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;Print to console&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">browser</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">AppData</span>) =&gt; {        
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;application ID: &#39;</span>, <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">applicationId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)    
-  })
-}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">Until</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">TestData</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">assert</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;assert&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">loopCount</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Test Data&#39;</span>,    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">clearCookies</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*** Test Data * Version: 1.0 */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> () =&gt; {    
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AppData</span> {        
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">applicationId</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>    }    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">TestData</span>.<span style="color:#a6e22e">fromCSV</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppData</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;applicationids.csv&#39;</span>)    
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">circular</span>()    
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">shuffle</span>()    
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;Print to console&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">browser</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Browser</span>, <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">AppData</span>) =&gt; {        
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;application ID: &#39;</span>, <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">applicationId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)    
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
     </div>
   </article>
 
@@ -444,7 +445,7 @@ D100004
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200609-aaf16%2f&name=Ask%20a%20Flooder%2016%3a%20How%20do%20I%20use%20test%20data%20with%20Element%3f&description=Originally%20posted%20on%20Tricentis%20Flood.%0aIn%20this%20video%2c%20I%20discuss%20how%20to%20make%20your%20load%20testing%20scripts%20more%20realistic%20by%20including%20test%20data.%20The%20load%20testing%20tool%20I%c2%a0use%20is%20Flood%20Element%2c%20but%20you%20can%20apply%20these%20principles%20to%20any%20tool.%20You%26rsquo%3bll%20find%20a%20copy%20of%20the%20Element%20script%20I%c2%a0used%20below.%0a%e2%80%8d%20%20%20And%2c%20if%20you%20prefer%2c%20here%26rsquo%3bs%20the%20audio%20version%3a%0a%20Transcript%20Hi%20everyone%2c%20Nicole%20van%20der%20Hoeven%20here%20back%20with%20another%20Ask%20a%20Flooder%2c%20and%20this%20time%20the%20question%20is%3a%20How%20do%20I%20use%20test%20data%20with%20Flood%20Element%3f">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20200609-aaf16%2f&name=Ask%20a%20Flooder%2016%3a%20How%20do%20I%20use%20test%20data%20with%20Element%3f&description=Originally%20posted%20on%20Tricentis%20Flood.%0aIn%20this%20video%2c%20I%20discuss%20how%20to%20make%20your%20load%20testing%20scripts%20more%20realistic%20by%20including%20test%20data.%20The%20load%20testing%20tool%20I%c2%a0use%20is%20Flood%20Element%2c%20but%20you%20can%20apply%20these%20principles%20to%20any%20tool.%20You%26rsquo%3bll%20find%20a%20copy%20of%20the%20Element%20script%20I%c2%a0used%20below.%0a%e2%80%8d%20And%2c%20if%20you%20prefer%2c%20here%26rsquo%3bs%20the%20audio%20version%3a%0aTranscript%20Hi%20everyone%2c%20Nicole%20van%20der%20Hoeven%20here%20back%20with%20another%20Ask%20a%20Flooder%2c%20and%20this%20time%20the%20question%20is%3a%20How%20do%20I%20use%20test%20data%20with%20Flood%20Element%3f">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 12 Aug 2022 16:17:11 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 18:01:12 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I can finally tell you about Readwise Reader</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</link>
+      <pubDate>Wed, 07 Sep 2022 18:01:12 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</guid>
+      <description>&lt;p&gt;Readwise Reader is the latest read-it-later app, except not just for books. Reader brings in your highlights from books, articles, tweets, PDFs, epubs, emails, and even newsletters! While it&amp;rsquo;s not yet officially launched, it&amp;rsquo;s now in public beta and you can sign up to be put on a wait list to try out this awesome product that&amp;rsquo;s been so essential to my workflows.&lt;/p&gt;
+&lt;p&gt;Note: I do have an affiliate link of &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;, but this video was not sponsored. They know I&amp;rsquo;m making this video, because I had to reach out to get permission to post the screenshot of a private email, but they did not review this video and had no idea what I was going to say. :)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uNH1JDOmGJw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Take Notes from a book with Obsidian (The Culture Map)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</link>
+      <pubDate>Fri, 02 Sep 2022 17:58:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</guid>
+      <description>&lt;p&gt;I demonstrate how to take notes from a book (The Culture Map) using Obsidian. In the process of taking notes, I also create learning exhaust in the form of notes, an atomic essay to go on Twitter, a visual that summarises a concept, and a video presentation. Taking notes from books is more than just understanding what the author wanted to say; it should also involve consolidation and interrogation of the book&amp;rsquo;s ideas into our personal knowledge management systems.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VumFk-C4iFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How I Learn in Obsidian - Keeping up with tech trends</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link>
@@ -105,13 +136,13 @@
 &lt;p&gt;Clone &lt;a href=&#34;https://github.com/nicolevanderhoeven/shortform-to-readwise&#34;&gt;my Shortform-to-Readwise repository on GitHub&lt;/a&gt; or download it to your computer.&lt;/p&gt;
 &lt;h3 id=&#34;enter-your-tokens&#34;&gt;Enter your tokens&lt;/h3&gt;
 &lt;p&gt;The file &lt;code&gt;variables.py&lt;/code&gt; requires two tokens: one from your Shortform account and another from your Readwise account:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Your authorization token for Shortform&lt;/span&gt;
-authToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# Your Readwise API token&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# Retrieve this token from https://readwise.io/access_token&lt;/span&gt;
-readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;getting-your-shortform-token&#34;&gt;Getting your Shortform token&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Your authorization token for Shortform&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;authToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Your Readwise API token&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Retrieve this token from https://readwise.io/access_token&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;getting-your-shortform-token&#34;&gt;Getting your Shortform token&lt;/h4&gt;
 &lt;p&gt;This is a little hacky, because Shortform doesn&amp;rsquo;t expose an API token in their web app. So you&amp;rsquo;ll need to log in to your Shortform account and open up DevTools in your browser. In Chrome, go to Options &amp;gt; More Tools &amp;gt; Developer Tools (or, on Mac, hit CMD+OPTION+I). Click on the Network panel.&lt;/p&gt;
 &lt;p&gt;You should now see Shortform on one side, and DevTools on another in the same browser window.&lt;/p&gt;
 &lt;p&gt;Then, go to &lt;a href=&#34;https://www.shortform.com/app/highlights&#34;&gt;your Highlights page&lt;/a&gt;. Doing so will populate the Network panel with a bunch of requests that look like this:&lt;/p&gt;
@@ -127,8 +158,8 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;p&gt;Note: Don&amp;rsquo;t share either of these tokens with anyone else, as they will then be able to access your Shortform or Readwise accounts.&lt;/p&gt;
 &lt;h3 id=&#34;run-the-script&#34;&gt;Run the script&lt;/h3&gt;
 &lt;p&gt;Open up your terminal, and &lt;code&gt;cd&lt;/code&gt; into the &lt;code&gt;/shortform-to-readwise&lt;/code&gt; repository. Then, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;python3 getHighlights.py
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to &lt;a href=&#34;https://readwise.io/books&#34;&gt;your Readwise library&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 getHighlights.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to &lt;a href=&#34;https://readwise.io/books&#34;&gt;your Readwise library&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-04.png&#34; alt=&#34;Shortform exports showing up in your Readwise library&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Shortform exports showing up in your Readwise library.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You should see books that have the &lt;code&gt;Shortform-&lt;/code&gt; prefix. If you do, then you&amp;rsquo;re done! If you&amp;rsquo;ve got your Readwise account set up to push your highlights elsewhere (such as Obsidian), then you&amp;rsquo;re all set!&lt;/p&gt;
@@ -139,14 +170,14 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;p&gt;Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on your laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
 &lt;h3 id=&#34;find-the-path-for-your-python3-installation&#34;&gt;Find the path for your python3 installation&lt;/h3&gt;
 &lt;p&gt;In your terminal, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;which python3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will give you a path. For me, it was &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Copy this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;which python3
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will give you a path. For me, it was &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Copy this.&lt;/p&gt;
 &lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
 &lt;p&gt;Then, from your terminal, run the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up a list of cronjobs. If you don&amp;rsquo;t have any other jobs, this will be blank.&lt;/p&gt;
 &lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
 &lt;p&gt;Add a line to crontab for the schedule you want to create. This line has to be in the format&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;* * * * * command
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * command
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;minute&lt;/li&gt;
 &lt;li&gt;hour&lt;/li&gt;
@@ -155,8 +186,8 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;li&gt;day of the week&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In my case, I wanted it to run every 30 minutes, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository and your python3 path instead of &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository and your python3 path instead of &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
 &lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;
@@ -214,7 +245,7 @@ readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span 
 &lt;p&gt;I did make some changes in this section just to tweak how I want information to be displayed.&lt;/p&gt;
 &lt;h4 id=&#34;page-metadata&#34;&gt;Page metadata&lt;/h4&gt;
 &lt;p&gt;I don&amp;rsquo;t see the need for Page metadata since this is what I use YAML front matter for, so I removed the matadata section and the document tags (I never use those either). So my Page metadata section looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{% if image_url -%}
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{% if image_url -%}
 ![rw-book-cover]({{image_url}})
 
 {% endif -%}
@@ -224,20 +255,18 @@ URL: {{url}}
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;highlight&#34;&gt;Highlight&lt;/h4&gt;
 &lt;p&gt;By default, highlights are entered in bullet-point form. That&amp;rsquo;s fine when &lt;em&gt;I&amp;rsquo;m&lt;/em&gt; taking notes, but when I&amp;rsquo;m highlighting someone else&amp;rsquo;s words, I like to be very careful to use blockquotes. I frequently do block searches in Obsidian, and I do NOT want to accidentally pass off a quote as something I said.&lt;/p&gt;
 &lt;p&gt;To this end, I added a &lt;code&gt;&amp;gt;&lt;/code&gt; before each highlight and two newlines (carriage returns) at the end to delineate each highlight. That way, I can quote just one highlight at a time.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
     - Note: {{ highlight_note }}{% endif %}
-
-
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see above, I also removed highlight tags, which I never use.&lt;/p&gt;
 &lt;h4 id=&#34;yaml-front-matter&#34;&gt;YAML front matter&lt;/h4&gt;
 &lt;p&gt;Metadata has to be quite specific, so I added parameters I already use for other notes in this section. The &lt;code&gt;TVZ&lt;/code&gt; is a tag I use that means &amp;ldquo;To Verzettelen&amp;rdquo;, meaning pages that I need to process further.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Title: {{full_title}}
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Title: {{full_title}}
 Author: {{author}}
 Tags: TVZ, readwise, {{category}}
 date: {{date}}
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;sync-notification&#34;&gt;Sync notification&lt;/h4&gt;
 &lt;p&gt;As someone who has worked on a syncing plugin for Readwise to Obsidian, I know that things go wrong sometimes. Enabling this outputs a synchronization log to a note, which has come in handy MANY times in the past. &lt;em&gt;Has that book been synced, or did something go wrong?&lt;/em&gt; So I copied what the Readwise team suggested:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- [[{{date|date(&#39;Y-m-d&#39;)}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- [[{{date|date(&amp;#39;Y-m-d&amp;#39;)}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
 {% for book in books %}    - {{ book.num_highlights_added}} highlights from {{ book.title }}
 {%endfor %}
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;select-items-to-be-exported&#34;&gt;Select Items to be Exported&lt;/h3&gt;
@@ -296,7 +325,7 @@ date: {{date}}
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png&#34; alt=&#34;Ready Player Two book notes in Roam, imported via Readwise&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Readwise integration is an &lt;em&gt;essential&lt;/em&gt; feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p&gt;
 &lt;p&gt;That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em&gt;have&lt;/em&gt; an Obsidian integration.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png&#34; alt=&#34;Readwise doesn&amp;rsquo;t automatically export to Obsidian&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png&#34; alt=&#34;Readwise doesn&amp;amp;rsquo;t automatically export to Obsidian&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href=&#34;https://readwise.io/export&#34;&gt;Readwise Exports&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p&gt;
 &lt;h2 id=&#34;readwise2directory&#34;&gt;readwise2directory&lt;/h2&gt;
@@ -327,8 +356,8 @@ date: {{date}}
 &lt;p&gt;Then, from my terminal, I ran the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up the list of cronjobs I had currently.&lt;/p&gt;
 &lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
 &lt;p&gt;I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;* * * * * command
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * command
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;minute&lt;/li&gt;
 &lt;li&gt;hour&lt;/li&gt;
@@ -337,10 +366,9 @@ date: {{date}}
 &lt;li&gt;day of the week&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; * * * * cd /Users/nic/git/readwise2directory/ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;python-issues&#34;&gt;Python issues&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; * * * * cd /Users/nic/git/readwise2directory/ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;python-issues&#34;&gt;Python issues&lt;/h4&gt;
 &lt;p&gt;I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code&gt;which python3&lt;/code&gt; to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code&gt;cd&lt;/code&gt; to the project directory, for some reason.&lt;/p&gt;
 &lt;p&gt;While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p&gt;
 &lt;p&gt;Once I added the schedule as in the example above, though, it worked a treat!&lt;/p&gt;

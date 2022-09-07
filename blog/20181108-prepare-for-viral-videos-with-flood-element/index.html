@@ -12,9 +12,10 @@
 <meta property="og:description" content="Originally posted here.
 One of the more interesting things to load test is video. You see, traditional load test tools are protocol-based, which means that their approach to load testing video is to capture and simulate the traffic that the browser generates under the covers, sending the same requests to the application. This approach can still be successful&ndash; in fact, one of our favourite clients here at Flood recently used Gatling to simulate 6 million concurrent users streaming video from their application." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20181108-prepare-for-viral-videos-with-flood-element/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2018-11-08T23:24:31+01:00" />
 <meta property="article:modified_time" content="2018-11-08T23:24:31+01:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Prepare for Viral Videos With Flood Element"/>
@@ -244,7 +245,7 @@ One of the more interesting things to load test is video. You see, traditional l
         
         <div class="postdate">
           
-          <time datetime="2018-11-08 23:24:31 &#43;0100 &#43;0100" itemprop="datePublished">2018-Nov-08</time>
+          <time datetime="2018-11-08 23:24:31 &#43;0100 CET" itemprop="datePublished">2018-Nov-08</time>
           
         </div>
         
@@ -285,24 +286,24 @@ One of the more interesting things to load test is video. You see, traditional l
 <p>Testing video with Flood Element is actually pretty easy, especially if you are familiar with open source testing tools like Selenium. If you haven’t yet begun using Element, go through the installation guide <a href="https://element.flood.io/">here</a>. You can download the full script used for this tutorial <a href="https://github.com/flood-io/element/blob/master/examples/youtube.ts">here</a>. In this example, we’re going to be using a YouTube video of the opening credits the classical cartoon Top Cat (the indisputable leader of the gang) from Warner Bros.</p>
 <h3 id="step-1-navigate-to-the-video-page">Step 1. Navigate to the video page</h3>
 <p>Let’s start with a basic script:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Until</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">loopCount</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,
-    <span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-    <span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-    <span style="color:#a6e22e">actionDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
-    <span style="color:#a6e22e">stepDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
-    <span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-    <span style="color:#a6e22e">userAgent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;flood-element-test&#39;</span>,
-}
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> () =&gt; {
-	<span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;01_Home&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
-		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">visit</span>(<span style="color:#e6db74">&#39;https://www.youtube.com/watch?v=6fvhLlrBrPQI&#39;</span>)
-		
-		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
-	})
-}
-</code></pre></div><p>This is the bones of a basic script in Flood Element. It consists of a single step that involves doing two things: visiting the starting URL, which in this case is the direct link to the YouTube video, and then taking a screenshot once loading the page. Taking screenshots is particularly useful when testing video because screenshots give you a way to check that your script is doing what you want it to do. It’s good to take periodic screenshots as well, to measure progress.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Until</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">settings</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TestSettings</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">loopCount</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">clearCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">disableCache</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">actionDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stepDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">screenshotOnFailure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">userAgent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;flood-element-test&#39;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> () =&gt; {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;01_Home&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">visit</span>(<span style="color:#e6db74">&#39;https://www.youtube.com/watch?v=6fvhLlrBrPQI&#39;</span>)
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+</span></span><span style="display:flex;"><span>	})
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This is the bones of a basic script in Flood Element. It consists of a single step that involves doing two things: visiting the starting URL, which in this case is the direct link to the YouTube video, and then taking a screenshot once loading the page. Taking screenshots is particularly useful when testing video because screenshots give you a way to check that your script is doing what you want it to do. It’s good to take periodic screenshots as well, to measure progress.</p>
 <p>To help you validate that the script runs well locally before scaling to hundreds or thousands of users, you can use our Element CLI. If you save the above code as youtube.ts, open up your terminal in that directory and then type:</p>
 <p><code>element run youtube.ts</code></p>
 <p>Assuming you’ve got Element set up correctly, you should see something like this: (Note that screenshots are only available when using iTerm as your shell. They are also saved as files under <code>.../tmp/element-results/youtube</code> .)
@@ -311,29 +312,29 @@ One of the more interesting things to load test is video. You see, traditional l
 <p>Oops! It looks like our script does navigate to the page, but it doesn’t play the video. We’ll need to click on that play button. Let’s add that to our script.</p>
 <h3 id="step-2-click-the-play-button">Step 2. Click the Play button</h3>
 <p>We’ll need to add some lines to click the play button after visiting the page but before we take the screenshot, so that we can verify later whether or not the play button was clicked.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;02_ClickPlay&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
-	<span style="color:#75715e">//Click on Play button
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">playBtn</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//button[@aria-label=&#34;Play&#34;]&#39;</span>))
-	<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">playBtn</span>.<span style="color:#a6e22e">click</span>()
-	
-<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
-	})
-</code></pre></div><p>In this example I used Xpath, but you do have the option to select based on partial text, CSS selector, etc. A tool I like to use to get these is Chrome Developer Tools’ Elements tab, which allows you to get the selectors for a particular element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;02_ClickPlay&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//Click on Play button
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">playBtn</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#a6e22e">By</span>.<span style="color:#a6e22e">xpath</span>(<span style="color:#e6db74">&#39;//button[@aria-label=&#34;Play&#34;]&#39;</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">playBtn</span>.<span style="color:#a6e22e">click</span>()
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+</span></span><span style="display:flex;"><span>	})
+</span></span></code></pre></div><p>In this example I used Xpath, but you do have the option to select based on partial text, CSS selector, etc. A tool I like to use to get these is Chrome Developer Tools’ Elements tab, which allows you to get the selectors for a particular element.</p>
 <h3 id="step-3-take-periodic-screenshots">Step 3. Take periodic screenshots</h3>
 <p>To make sure that the video is really playing, we’ll need to take a screenshot a few seconds after the initial screenshot in order to visually confirm that the video has progressed. Even better, we can get Element to take screenshots at regular intervals. So let’s add a third step:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;03_Play&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
-        <span style="color:#75715e">//Take a screenshot every 5 seconds until video finishes
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">‍</span>
-        <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-            <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
-            <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#ae81ff">5</span>)
-        }
-    })
-</code></pre></div><p>To use <code>i</code>, we&rsquo;ll also need to declare it earlier in the script:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Until</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
-<span style="color:#960050;background-color:#1e0010">‍</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</code></pre></div><p>In this step, <code>i</code> will correspond to every 5 seconds of playtime for the video, so we&rsquo;ll need to make sure that the limit of <code>i</code> that we set is sufficient time for the entire video to play. Every 5 seconds, Element will take a screenshot, which will help us verify that the video is progressing after the test.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;03_Play&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Take a screenshot every 5 seconds until video finishes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">‍</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">takeScreenshot</span>()
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    })
+</span></span></code></pre></div><p>To use <code>i</code>, we&rsquo;ll also need to declare it earlier in the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">step</span>, <span style="color:#a6e22e">TestSettings</span>, <span style="color:#a6e22e">By</span>, <span style="color:#a6e22e">Until</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@flood/element&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">‍</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p>In this step, <code>i</code> will correspond to every 5 seconds of playtime for the video, so we&rsquo;ll need to make sure that the limit of <code>i</code> that we set is sufficient time for the entire video to play. Every 5 seconds, Element will take a screenshot, which will help us verify that the video is progressing after the test.</p>
 <p>Click <a href="https://github.com/flood-io/element/blob/master/examples/youtube.ts">here</a> to download the script before moving on to the next step, unless you’ve been following along at home.</p>
 <h3 id="step-4-run-it-on-flood">Step 4. Run it on Flood!</h3>
 <p>The final step is to upload it to Flood and run the test. Click <a href="https://guides.flood.io/scripting-and-tools/flood-element/getting-started-with-element">here</a> to see a step-by-step guide for how to do just that. You can choose how many users you’d like to run on Flood and across how many nodes. New users will be given 5 node hours which will allow them to run a test with up to 250 users for 1 hour.  Each node will have a different IP address, so plan for that accordingly if your application takes that into account.</p>

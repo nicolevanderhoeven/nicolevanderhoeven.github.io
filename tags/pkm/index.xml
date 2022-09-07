@@ -7,7 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 18 Aug 2022 16:21:10 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 18:01:12 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I can finally tell you about Readwise Reader</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</link>
+      <pubDate>Wed, 07 Sep 2022 18:01:12 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</guid>
+      <description>&lt;p&gt;Readwise Reader is the latest read-it-later app, except not just for books. Reader brings in your highlights from books, articles, tweets, PDFs, epubs, emails, and even newsletters! While it&amp;rsquo;s not yet officially launched, it&amp;rsquo;s now in public beta and you can sign up to be put on a wait list to try out this awesome product that&amp;rsquo;s been so essential to my workflows.&lt;/p&gt;
+&lt;p&gt;Note: I do have an affiliate link of &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;, but this video was not sponsored. They know I&amp;rsquo;m making this video, because I had to reach out to get permission to post the screenshot of a private email, but they did not review this video and had no idea what I was going to say. :)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uNH1JDOmGJw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Take Notes from a book with Obsidian (The Culture Map)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</link>
+      <pubDate>Fri, 02 Sep 2022 17:58:52 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</guid>
+      <description>&lt;p&gt;I demonstrate how to take notes from a book (The Culture Map) using Obsidian. In the process of taking notes, I also create learning exhaust in the form of notes, an atomic essay to go on Twitter, a visual that summarises a concept, and a video presentation. Taking notes from books is more than just understanding what the author wanted to say; it should also involve consolidation and interrogation of the book&amp;rsquo;s ideas into our personal knowledge management systems.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VumFk-C4iFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How I Study Using Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220826-how-i-study-using-obsidian/</link>
+      <pubDate>Fri, 26 Aug 2022 17:53:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220826-how-i-study-using-obsidian/</guid>
+      <description>&lt;p&gt;Visit &lt;a href=&#34;https://brilliant.org/nicolevdh/&#34;&gt;https://brilliant.org/nicolevdh/&lt;/a&gt; to get started learning STEM for free, and the first 200 people will get 20% off their annual premium subscription. I also talk about how I study in Obsidian: the courses, platforms, and apps I use&amp;ndash; and how I make sense of it all using Obsidian. Studying isn&amp;rsquo;t just for students. as a professional, I am also constantly learning. To make sure I make the most of the costs of education, I&amp;rsquo;ve made a deal with myself to commit to processing everything in Obsidian.&lt;/p&gt;
+&lt;p&gt;This video was sponsored by &lt;a href=&#34;https://brilliant.org/nicolevdh&#34;&gt;Brilliant&lt;/a&gt;! (affiliate link)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FAy9ZWaHSIw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to Make Your Notes Visual in Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</link>
@@ -248,9 +295,9 @@
 &lt;p&gt;So the big release is that they&amp;rsquo;ve now incorporated Admonitions-like functionality into core Obsidian, not a core plugin, so it&amp;rsquo;s not something that you even have to install or enable, it just ships by default with Obsidian, which is really awesome.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-use-obsidian-callouts&#34;&gt;How to use Obsidian Callouts&lt;/h2&gt;
 &lt;p&gt;So let&amp;rsquo;s look into how to use it. I&amp;rsquo;m going to go to my Obsidian Callouts page here. And the syntax is a little bit different from the admonitions one. Instead of the code blocks with the three backticks, this callouts functionality now uses blockquotes.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;[!info] Your title
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;The contents of your note here
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So you do a single blockquote like an arrow, and then you do brackets, and then an exclamation point. And then there are a bunch of different types, which we&amp;rsquo;ll get into, but the most common one, I guess, is note. Then you would put your title here, and then you can put the rest of the note here. So this is now doing it as a blockquote. And if I exit out of that, you&amp;rsquo;ll see that it has a nice icon of a kinda pencil or pen there, and it is visually distinguished from the rest of the note.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;[!info] Your title
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;The contents of your note here
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So you do a single blockquote like an arrow, and then you do brackets, and then an exclamation point. And then there are a bunch of different types, which we&amp;rsquo;ll get into, but the most common one, I guess, is note. Then you would put your title here, and then you can put the rest of the note here. So this is now doing it as a blockquote. And if I exit out of that, you&amp;rsquo;ll see that it has a nice icon of a kinda pencil or pen there, and it is visually distinguished from the rest of the note.&lt;/p&gt;
 &lt;h2 id=&#34;types-of-callouts&#34;&gt;Types of Callouts&lt;/h2&gt;
 &lt;h3 id=&#34;note&#34;&gt;note&lt;/h3&gt;
 &lt;p&gt;Now, let&amp;rsquo;s go into the types, &amp;lsquo;cause there are a few of them.&lt;/p&gt;

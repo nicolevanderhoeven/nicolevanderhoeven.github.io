@@ -13,9 +13,10 @@
 Roam assets are linked to in the Markdown files like this:
 ![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media&amp;token=1e03b680-5472-33dc-9b06-a127301af37f) Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&rsquo;ll still render correctly." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-06-02T00:27:59+02:00" />
 <meta property="article:modified_time" content="2021-06-02T00:27:59+02:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Downloading files uploaded to Roam Research for use with Obsidian"/>
@@ -226,7 +227,7 @@ Roam assets are linked to in the Markdown files like this:
         
         <div class="postdate">
           
-          <time datetime="2021-06-02 00:27:59 &#43;0200 &#43;0200" itemprop="datePublished">2021-Jun-02</time>
+          <time datetime="2021-06-02 00:27:59 &#43;0200 CEST" itemprop="datePublished">2021-Jun-02</time>
           
         </div>
         
@@ -264,16 +265,16 @@ Roam assets are linked to in the Markdown files like this:
     <div class="content" itemprop="articleBody">
       <p>If you&rsquo;ve recently transitioned from <a href="https://roamresearch.com">Roam Research</a> to <a href="https://obsidian.md">Obsidian</a>, you might run into a few issues, even after you&rsquo;ve run the &ldquo;Markdown format importer&rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to <a href="https://firebase.google.com/">Google Firebase</a>.</p>
 <p>Roam assets are linked to in the Markdown files like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media<span style="color:#960050;background-color:#1e0010">&amp;</span>token=1e03b680-5472-33dc-9b06-a127301af37f)
-</code></pre></div><p>Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&rsquo;ll still render correctly. However, I still think it&rsquo;s worth downloading the files for three reasons:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media<span style="color:#960050;background-color:#1e0010">&amp;</span>token=1e03b680-5472-33dc-9b06-a127301af37f)
+</span></span></code></pre></div><p>Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&rsquo;ll still render correctly. However, I still think it&rsquo;s worth downloading the files for three reasons:</p>
 <ul>
 <li>If you don&rsquo;t intend to use Roam anymore and cancel your subscription, they will likely delete those assets at some point, leaving you with a lot of broken links in Obsidian.</li>
 <li>Part of Obsidian&rsquo;s appeal is that you own your assets. Not so if they&rsquo;re on someone else&rsquo;s server.</li>
 <li>You can&rsquo;t access Firebase files without an internet connection.</li>
 </ul>
 <p>So, instead, you want to download the contents of that link and replace it in your notes with something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![](assets/newfile.png)
-</code></pre></div><p>That way, you&rsquo;ll have full control over all your assets, and you won&rsquo;t be dependent on those assets being stored on Firebase by Roam.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![](assets/newfile.png)
+</span></span></code></pre></div><p>That way, you&rsquo;ll have full control over all your assets, and you won&rsquo;t be dependent on those assets being stored on Firebase by Roam.</p>
 <p>To fix this, I wrote a Python script that will:</p>
 <ul>
 <li>Go through every file and every folder within a specified root vault directory</li>

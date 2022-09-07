@@ -12,9 +12,10 @@
 <meta property="og:description" content="Note-taking and personal knowledge management get talked about in academic circles, by both students and teachers. But there&rsquo;s not much said about its use outside of the academe.
 I&rsquo;ll admit, due to my job description, I may be in a better position than most to take advantage of note-taking in a professional context. My background is in software performance testing. My job for several years has been to make sure that applications are prepared to withstand traffic from many users accessing it, usually by writing code to simulate that traffic before it&rsquo;s released to real users." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210518-how-i-use-obsidian-at-work/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-05-18T22:33:18+02:00" />
 <meta property="article:modified_time" content="2021-05-18T22:33:18+02:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How I Use Obsidian at Work"/>
@@ -260,7 +261,7 @@ I&rsquo;ll admit, due to my job description, I may be in a better position than 
         
         <div class="postdate">
           
-          <time datetime="2021-05-18 22:33:18 &#43;0200 &#43;0200" itemprop="datePublished">2021-May-18</time>
+          <time datetime="2021-05-18 22:33:18 &#43;0200 CEST" itemprop="datePublished">2021-May-18</time>
           
         </div>
         
@@ -344,8 +345,8 @@ I&rsquo;ll admit, due to my job description, I may be in a better position than 
 <p>After publishing, I use iframes in Obsidian to update my notes with the final result. Here&rsquo;s a video on YouTube about chaos engineering that my colleague <a href="https://simme.dev">Simme</a> and I planned out collaboratively on Obsidian, embedded into Obsidian:</p>
 <p><img src="/assets/embedded-youtube-iframe.png" alt="Embedding a video in an iframe"></p>
 <p>The video plays in Obsidian with all the same controls. The Obsidian desktop app is an Electron app, so it behaves just like a normal browser for playing back the video. To embed the video, I just used the Share &gt; Embed code on YouTube and pasted it straight into Obsidian:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;315&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;YouTube video player&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allow</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;</span> <span style="color:#a6e22e">allowfullscreen</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
-</code></pre></div><h2 id="meetings">Meetings</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;315&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;YouTube video player&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allow</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;</span> <span style="color:#a6e22e">allowfullscreen</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
+</span></span></code></pre></div><h2 id="meetings">Meetings</h2>
 <p>I take meeting notes to help me focus on the meeting, and I create templates for recurring meetings. Templates let you define the format of a note. Once created, you can insert templates into notes with a keyboard shortcut (I set mine to <code>CMD + ;</code>). Here&rsquo;s an example of what that looks like, with the template on the left and the inserted template on the right:</p>
 <p><img src="/assets/obsidian-meeting-templates.png" alt="Template (left) and inserted template in a new note (right) in Obsidian">
 <em>Template (left) and inserted template in a new note (right) in Obsidian</em></p>
@@ -381,8 +382,8 @@ I&rsquo;ll admit, due to my job description, I may be in a better position than 
 <h2 id="dataview">Dataview</h2>
 <p>The <a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview plugin</a> is my favorite recent discovery, and it&rsquo;s changing the way I do frontmatter. This plugin brings something akin to SQL (albeit not as powerful) to Obsidian. It lets you query your notes based on some file-related metadata <strong>as well as parameters you set in your frontmatter</strong>.</p>
 <p>For example, this query:</p>
-<pre><code class="language-dataview" data-lang="dataview">table file.ctime as Date
-from &quot;Meeting&quot;
+<pre tabindex="0"><code class="language-dataview" data-lang="dataview">table file.ctime as Date
+from &#34;Meeting&#34;
 where file.ctime &gt;= date(today) -dur(1 month)
 </code></pre><p>when rendered (i.e., viewed in Preview mode in Obsidian), returns a list of all my notes under the subfolder <code>Meeting</code> in the last month:</p>
 <p><img src="/assets/obsidian-dataview-meetings.png" alt="Obsidian Dataview results as a table"></p>

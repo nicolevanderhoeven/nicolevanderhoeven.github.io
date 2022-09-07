@@ -54,30 +54,30 @@
 &lt;p&gt;This helps me get back up to speed quickly instead of doing the usual &amp;ldquo;Where were we again?&amp;rdquo; that takes up time.&lt;/p&gt;
 &lt;h3 id=&#34;hp-table&#34;&gt;HP table&lt;/h3&gt;
 &lt;p&gt;My character is a multiclassed healer, so it&amp;rsquo;s important for me to know who needs heals or other buffs. I keep track of this separately, and it helps out my DM as well because it&amp;rsquo;s easy to miss something in the excitement of a battle. I do include the HP table in my workspace, in Preview mode, but here&amp;rsquo;s what it looks like in Edit mode:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/HP-table.png&#34; alt=&#34;A table of the party&amp;rsquo;s HP, surges, and conditions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/HP-table.png&#34; alt=&#34;A table of the party&amp;amp;rsquo;s HP, surges, and conditions&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tables in Markdown can be a pain, but the &lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;Advanced Tables plugin&lt;/a&gt; goes a long way towards making this easier by adding some nice features like tabbing to the next cell, adding commands for inserting and deleting a column or row, and just automatically formatting a table so that it&amp;rsquo;s not a jumble of lines. I also heavily use this plugin for my characters stats and skills, both of which I keep in tables.&lt;/p&gt;
 &lt;h3 id=&#34;keeping-track-of-fights&#34;&gt;Keeping track of fights&lt;/h3&gt;
 &lt;p&gt;When a fight breaks out, I insert an intiative template, which is just a list of all the characters in the party:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;Initiative!
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Ka&amp;#39;ira
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Maestro
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Xio
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Eraithe
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Keren
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This makes it easier to add the initiative value rolled, as well as that of any other baddies we&amp;rsquo;re fighting. I use the &lt;a href=&#34;https://github.com/vslinko/obsidian-outliner&#34;&gt;Outliner plugin&lt;/a&gt; to be able to easily move people on the list up or down as needed without having to copy or paste. I have the shortcuts set to CMD+SHIFT+UP and CMD+SHIFT+DOWN so I don&amp;rsquo;t even need to use my mouse.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Initiative!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Ka&amp;#39;ira
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Maestro
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Xio
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Eraithe
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Keren
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This makes it easier to add the initiative value rolled, as well as that of any other baddies we&amp;rsquo;re fighting. I use the &lt;a href=&#34;https://github.com/vslinko/obsidian-outliner&#34;&gt;Outliner plugin&lt;/a&gt; to be able to easily move people on the list up or down as needed without having to copy or paste. I have the shortcuts set to CMD+SHIFT+UP and CMD+SHIFT+DOWN so I don&amp;rsquo;t even need to use my mouse.&lt;/p&gt;
 &lt;p&gt;I also have a template for Defenses. D&amp;amp;D 4th Edition has four different kinds of defenses, and since my character&amp;rsquo;s powers target a few of them, I keep track of the defenses of each monster. Here&amp;rsquo;s what that template looks like, in Edit mode:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| Defense               | Value |
-| --------------------- | ----- |
-| [[Reflex Defense]]    |       |
-| [[Fortitude Defense]] |       |
-| [[Will Defense]]      |       |
-| [[Armor Class]]       |       |
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;ll notice that I also link to the pages I have for each defense type, in case I need to remind myself which stat a defense is comprised of.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Defense               | Value |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| --------------------- | ----- |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Reflex Defense]]    |       |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Fortitude Defense]] |       |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Will Defense]]      |       |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Armor Class]]       |       |
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;ll notice that I also link to the pages I have for each defense type, in case I need to remind myself which stat a defense is comprised of.&lt;/p&gt;
 &lt;h3 id=&#34;character-powers&#34;&gt;Character powers&lt;/h3&gt;
 &lt;p&gt;Like many, I have migrated from playing games on a literal tabletop to doing it virtually. These days, I play 100% online, using a bunch of different tools. For the most part, though, I still prefer to roll actual dice. There&amp;rsquo;s just something satisfying about the feel of a die in my hand. Since I switched to Obsidian, though, I have looked into virtual dice. On the off chance I don&amp;rsquo;t have any dice (ha) or all my dice have betrayed me (much more likely), I use the &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller plugin&lt;/a&gt;. It turns&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`dice: 1d20+7`&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;into a random die roll. Here it is when incorporated into my character&amp;rsquo;s list of powers:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/powers-sample.png&#34; alt=&#34;My character&amp;rsquo;s powers page&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`dice: 1d20+7`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;into a random die roll. Here it is when incorporated into my character&amp;rsquo;s list of powers:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/powers-sample.png&#34; alt=&#34;My character&amp;amp;rsquo;s powers page&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sometimes, when I&amp;rsquo;m feeling superstitious about my dice, I&amp;rsquo;ll switch to using this dice roller &amp;ldquo;just to be safe&amp;rdquo;. It has other cool features too, which I&amp;rsquo;ll cover more in detail in the Dungeon Master&amp;rsquo;s edition of this article.&lt;/p&gt;
 &lt;h3 id=&#34;search-linked-unlinked-mentions&#34;&gt;Search, linked, unlinked mentions&lt;/h3&gt;
 &lt;p&gt;Frequently, something comes up in a game that I&amp;rsquo;m &lt;em&gt;sure&lt;/em&gt; we&amp;rsquo;ve heard of before, but I can&amp;rsquo;t quite remember where or when. Actually, sometimes something comes up that I&amp;rsquo;m quite sure we&amp;rsquo;ve &lt;em&gt;never&lt;/em&gt; heard of before, but it turns out we have. Luckily, Obsidian is quick to tell me that using the linked/unlinked mentions and the search features.&lt;/p&gt;
@@ -85,7 +85,7 @@
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Netheril-mentions.png&#34; alt=&#34;Linked mentioned for the word Netheril&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Unlinked mentions show up too, in case the word came up somewhere and I didn&amp;rsquo;t think to specifically create a page on it.&lt;/p&gt;
 &lt;p&gt;On monster pages, mentions remind me when we fought them last, and any tips for fighting them. It can be handy when one of the other players has forgotten something that happened to them, too. If I want to remember how Ka&amp;rsquo;ira got her festering wound, I can type it into the Obsidian search bar:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/festering-wound.png&#34; alt=&#34;A search in Obsidian for &amp;ldquo;festering wound&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/festering-wound.png&#34; alt=&#34;A search in Obsidian for &amp;amp;ldquo;festering wound&amp;amp;rdquo;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;and be able to confidently say that Ka&amp;rsquo;ira got her last festering wound on session 68, in the Blue Crystal Fortress that we now know to be the Twisted Fane, while fighting aberrations.&lt;/p&gt;
 &lt;h2 id=&#34;after-a-game&#34;&gt;After a game&lt;/h2&gt;
 &lt;p&gt;I think I might use Obsidian even more between games than during the game, because after the game is when I process everything my character learned.&lt;/p&gt;
@@ -93,11 +93,11 @@
 &lt;p&gt;Immediately after the game is when I create a short session summary. I like to do this when the session is still fresh in my mind. Then, I add &lt;code&gt;^summary&lt;/code&gt; at the end of the paragraph to identify it and to be able to pull it into the next session&amp;rsquo;s recap. Block references and block embeds are some of my most frequently used Obsidian features.&lt;/p&gt;
 &lt;h3 id=&#34;creating-new-pages&#34;&gt;Creating new pages&lt;/h3&gt;
 &lt;p&gt;I then create new pages for any people, places, magical items, or events that we encountered. I like to use a standard frontmatter:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 type: 
 location: [Neverwinter]
-world: &amp;quot;Forgotten Realms&amp;quot;
-campaign: &amp;quot;Order of the Wandering Mind&amp;quot;
+world: &amp;#34;Forgotten Realms&amp;#34;
+campaign: &amp;#34;Order of the Wandering Mind&amp;#34;
 date: 2021-06-23
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s an example of the page for an NPC:&lt;/p&gt;
@@ -110,26 +110,25 @@ date: 2021-06-23
 &lt;p&gt;To keep historical events straight in my head, especially since we tend to discover them out of sequence, I use the &lt;a href=&#34;https://github.com/Darakah/obsidian-timelines&#34;&gt;Obsidian Timelines plugin&lt;/a&gt;, which lets me create pages like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-timeline-for-dnd.png&#34; alt=&#34;Obsidian Timeline in my game&#34;&gt;&lt;/p&gt;
 &lt;p&gt;by using this code in the timeline page:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```timeline
-fr
-\```
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(without the backtick) and this for every event that I want to include:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
-date: [2021-06-23]
-tags: [timeline, fr]
----
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; 
-	  &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ob-timelines&amp;#39;&lt;/span&gt; 
-	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-date&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt; 
-	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Xionerys is born&amp;#39;&lt;/span&gt; 
-	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;orange&amp;#39;&lt;/span&gt; 
-          &lt;span style=&#34;color:#a6e22e&#34;&gt;data-img &lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;assets/xionerys.jpg&amp;#39;&lt;/span&gt; 
-	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;range&amp;#39;&lt;/span&gt; 
-	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-end&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt;&amp;gt; 
-	Xionerys is born in Calimshan.
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Using this method, I&amp;rsquo;ve been able to call out discrepancies in what two different NPCs told us and figure out that one was lying&amp;ndash; or at least misinformed.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```timeline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fr
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\```
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(without the backtick) and this for every event that I want to include:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: [2021-06-23]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [timeline, fr]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ob-timelines&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-date&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Xionerys is born&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;orange&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#a6e22e&#34;&gt;data-img &lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;assets/xionerys.jpg&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;range&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-end&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt;&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	Xionerys is born in Calimshan.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Using this method, I&amp;rsquo;ve been able to call out discrepancies in what two different NPCs told us and figure out that one was lying&amp;ndash; or at least misinformed.&lt;/p&gt;
 &lt;h3 id=&#34;replace-all&#34;&gt;Replace all&lt;/h3&gt;
 &lt;p&gt;When I inevitably get a fantasy name wrong, having pages as flat .md files is great because I can do a find and replace on ALL mentions of a certain NPC name/place I&amp;rsquo;ve misspelled (those fantasy names!). I do this with my usual code/text editor, VSCode, just because I usually already have it up, but you can do it using terminal commands. If it&amp;rsquo;s just the name of a page, updating the spelling in Obsidian changes it everywhere else it&amp;rsquo;s linked to as well, which is useful.&lt;/p&gt;
 &lt;h3 id=&#34;updating-open-loops&#34;&gt;Updating open loops&lt;/h3&gt;
@@ -170,59 +169,58 @@ tags: [timeline, fr]
 &lt;/ul&gt;
 &lt;h3 id=&#34;create-a-new-hugo-site&#34;&gt;Create a new Hugo site&lt;/h3&gt;
 &lt;p&gt;Open up a terminal window and &lt;code&gt;cd&lt;/code&gt; to a folder in your Obsidian vault. Then, create a new Hugo-generated site:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site slides
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;slides&lt;/code&gt; with the name of your new site.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site slides
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;slides&lt;/code&gt; with the name of your new site.&lt;/p&gt;
 &lt;p&gt;You should have a new directory, &lt;code&gt;slides&lt;/code&gt;, in your Obsidian vault.&lt;/p&gt;
 &lt;h3 id=&#34;add-the-reveal-hugo-theme&#34;&gt;Add the reveal-hugo theme&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; into &lt;code&gt;slides&lt;/code&gt; and clone the reveal-hugo repo. The documentation suggests using a submodule:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Personally, I just cloned it because I know I&amp;rsquo;m probably going to be messing around with it substantially:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should have a &lt;code&gt;/themes/reveal-hugo&lt;/code&gt; folder that contains the theme.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Personally, I just cloned it because I know I&amp;rsquo;m probably going to be messing around with it substantially:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should have a &lt;code&gt;/themes/reveal-hugo&lt;/code&gt; folder that contains the theme.&lt;/p&gt;
 &lt;h3 id=&#34;configure-reveal-hugo-theme&#34;&gt;Configure reveal-hugo theme&lt;/h3&gt;
 &lt;p&gt;Set up your new Hugo site to use the reveal-hugo theme by adding the following to &lt;code&gt;/config.toml&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;theme = &amp;#34;reveal-hugo&amp;#34;&lt;/span&gt;
-
-[&lt;span style=&#34;color:#ae81ff&#34;&gt;markup.goldmark.renderer]&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;unsafe = true&lt;/span&gt;
-
-[&lt;span style=&#34;color:#ae81ff&#34;&gt;outputFormats.Reveal]&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;baseName = &amp;#34;index&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;mediaType = &amp;#34;text/html&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;isHTML = true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;Reveal&lt;/code&gt; part is what lets you output text in slide format.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;theme = &amp;#34;reveal-hugo&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;markup.goldmark.renderer]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;unsafe = true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;outputFormats.Reveal]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;baseName = &amp;#34;index&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;mediaType = &amp;#34;text/html&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;isHTML = true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;Reveal&lt;/code&gt; part is what lets you output text in slide format.&lt;/p&gt;
 &lt;h3 id=&#34;create-your-slides&#34;&gt;Create your slides&lt;/h3&gt;
 &lt;p&gt;Go to &lt;code&gt;/content&lt;/code&gt; and create a file there, called &lt;code&gt;_index.md&lt;/code&gt;. The filename is important, as is its location (I learned that the hard way). This file is going to be the first page people see, so it should probably be a list of your presentation slides. For now, put in something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;+++
-title = &amp;#34;My presentations&amp;#34;
-outputs = [&amp;#34;Reveal&amp;#34;]
-+++
-
-Here are my presentation slides!
-
-[&lt;span style=&#34;color:#f92672&#34;&gt;sample presentation&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/sample&lt;/span&gt;)
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, create a new folder for your presentation, such as &lt;code&gt;sample&lt;/code&gt;. In &lt;code&gt;/content/sample&lt;/code&gt;, create a file called &lt;code&gt;_index.md&lt;/code&gt;. Again , the filename is also important here (guess how I learned that).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+++
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title = &amp;#34;My presentations&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;outputs = [&amp;#34;Reveal&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+++
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Here are my presentation slides!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;sample presentation&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/sample&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, create a new folder for your presentation, such as &lt;code&gt;sample&lt;/code&gt;. In &lt;code&gt;/content/sample&lt;/code&gt;, create a file called &lt;code&gt;_index.md&lt;/code&gt;. Again , the filename is also important here (guess how I learned that).&lt;/p&gt;
 &lt;p&gt;This index file is going to be where you actually create your slides. Here&amp;rsquo;s the context of my &lt;code&gt;/content/sample/_index.md&lt;/code&gt;:&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Each slide is separated by &lt;code&gt;---&lt;/code&gt;, just like in Obsidian, which apparently uses the same converter that reveal-hugo does, &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;. Note that if you want to try out having an image as a background to one of the slides, you&amp;rsquo;ll need to add that to your &lt;code&gt;/sample&lt;/code&gt; folder and change the filename in the slide in this part:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;slide background-image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;generate-your-site&#34;&gt;Generate your site&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;slide background-image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;generate-your-site&#34;&gt;Generate your site&lt;/h3&gt;
 &lt;p&gt;Now it&amp;rsquo;s time to generate your site! Wait - didn&amp;rsquo;t we already do that? Sort of that. That was creating the framework for the site, but now you need to get Hugo to convert those Markdown files you&amp;rsquo;ve just created into something publishable. So cd to the root directory &lt;code&gt;slides&lt;/code&gt; and run this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That command should generate a &lt;code&gt;slides/public&lt;/code&gt; folder, where all the publishable code will go.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That command should generate a &lt;code&gt;slides/public&lt;/code&gt; folder, where all the publishable code will go.&lt;/p&gt;
 &lt;p&gt;At this point, you can also check your work by starting a local server with &lt;code&gt;hugo server&lt;/code&gt; and navigating to &lt;code&gt;http://localhost:1313&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;push-your-site-to-a-remote-github-repo&#34;&gt;Push your site to a remote GitHub repo&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; into your public folder. This is important, as I initially started the repo in &lt;code&gt;slides&lt;/code&gt; and it took me ages to realize that GitHub Pages requires an &lt;code&gt;index.html&lt;/code&gt; in the root directory to function.&lt;/p&gt;
 &lt;p&gt;Initialize a Git repo:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Stage and commit your changes:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Initial commit&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a repository on your GitHub account called &lt;code&gt;username.github.io&lt;/code&gt; where &lt;code&gt;username&lt;/code&gt; is your GitHub username. (If you already have a repo called that, you can alternatively push the contents of &lt;code&gt;public&lt;/code&gt; to a branch called &lt;code&gt;gh-pages&lt;/code&gt;). The repo name matters.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Stage and commit your changes:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Initial commit&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a repository on your GitHub account called &lt;code&gt;username.github.io&lt;/code&gt; where &lt;code&gt;username&lt;/code&gt; is your GitHub username. (If you already have a repo called that, you can alternatively push the contents of &lt;code&gt;public&lt;/code&gt; to a branch called &lt;code&gt;gh-pages&lt;/code&gt;). The repo name matters.&lt;/p&gt;
 &lt;p&gt;Push your changes to your repo.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should now have a repository on GitHub called &lt;code&gt;username.github.io&lt;/code&gt;, containing everything in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should now have a repository on GitHub called &lt;code&gt;username.github.io&lt;/code&gt;, containing everything in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;set-up-github-pages&#34;&gt;Set up GitHub Pages&lt;/h3&gt;
 &lt;p&gt;On GitHub, go to the repository settings and scroll down to the GitHub Pages section. Select the right branch (&lt;code&gt;master&lt;/code&gt; in most cases) and click Save.&lt;/p&gt;
 &lt;h3 id=&#34;optional-using-a-custom-domain&#34;&gt;(Optional) Using a custom domain&lt;/h3&gt;
@@ -242,16 +240,15 @@ Here are my presentation slides!
 &lt;h4 id=&#34;use-worktrees-not-subtrees-or-submodules&#34;&gt;Use worktrees, not subtrees or submodules&lt;/h4&gt;
 &lt;p&gt;After attempts to make this setup work with submodules and subtrees, both of which were way too complicated for what I needed, I settled on using worktrees.&lt;/p&gt;
 &lt;p&gt;Add &lt;code&gt;public&lt;/code&gt; to &lt;code&gt;.gitignore&lt;/code&gt;. From &lt;code&gt;slides&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;public/&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a worktree for &lt;code&gt;public&lt;/code&gt;, to be tracked on the branch &lt;code&gt;gh-pages&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git worktree add public gh-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you generate the static code via &lt;code&gt;hugo&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd public
-git add .
-git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Commit message&amp;#39;&lt;/span&gt;
-git push origin gh-pages
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your &lt;code&gt;gh-pages&lt;/code&gt; branch should contain only the files in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;public/&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a worktree for &lt;code&gt;public&lt;/code&gt;, to be tracked on the branch &lt;code&gt;gh-pages&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git worktree add public gh-pages
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you generate the static code via &lt;code&gt;hugo&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Commit message&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin gh-pages
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your &lt;code&gt;gh-pages&lt;/code&gt; branch should contain only the files in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;github-pages-with-a-private-repo&#34;&gt;GitHub Pages with a private repo&lt;/h4&gt;
 &lt;p&gt;GitHub Pages is free, but if you want to be able to use it with a private repo, &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages&#34;&gt;you can&amp;rsquo;t&lt;/a&gt;. Sorry!&lt;/p&gt;
 &lt;p&gt;You can look into using GitHub Actions to copy &lt;code&gt;public&lt;/code&gt; from your private repo to a public one, or you could just &lt;a href=&#34;https://github.com/pricing&#34;&gt;spend the $4/month&lt;/a&gt; to remove the restriction. I opted to pay, because I love GitHub anyway.&lt;/p&gt;

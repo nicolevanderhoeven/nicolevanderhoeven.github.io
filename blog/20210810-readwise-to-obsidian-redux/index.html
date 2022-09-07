@@ -12,9 +12,10 @@
 <meta property="og:description" content="Almost exactly six months ago, I wrote a blog post detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.
 That method worked, and you can read the original article in the link above. However, today, Readwise announced that they now have an official Obsidian community plugin, and I disabled my trusty old python script for good." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-08-10T19:50:40+02:00" />
 <meta property="article:modified_time" content="2021-08-10T19:50:40+02:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux"/>
@@ -247,7 +248,7 @@ That method worked, and you can read the original article in the link above. How
         
         <div class="postdate">
           
-          <time datetime="2021-08-10 19:50:40 &#43;0200 &#43;0200" itemprop="datePublished">2021-Aug-10</time>
+          <time datetime="2021-08-10 19:50:40 &#43;0200 CEST" itemprop="datePublished">2021-Aug-10</time>
           
         </div>
         
@@ -324,7 +325,7 @@ That method worked, and you can read the original article in the link above. How
 <p>I did make some changes in this section just to tweak how I want information to be displayed.</p>
 <h4 id="page-metadata">Page metadata</h4>
 <p>I don&rsquo;t see the need for Page metadata since this is what I use YAML front matter for, so I removed the matadata section and the document tags (I never use those either). So my Page metadata section looks like this:</p>
-<pre><code>{% if image_url -%}
+<pre tabindex="0"><code>{% if image_url -%}
 ![rw-book-cover]({{image_url}})
 
 {% endif -%}
@@ -334,20 +335,18 @@ URL: {{url}}
 </code></pre><h4 id="highlight">Highlight</h4>
 <p>By default, highlights are entered in bullet-point form. That&rsquo;s fine when <em>I&rsquo;m</em> taking notes, but when I&rsquo;m highlighting someone else&rsquo;s words, I like to be very careful to use blockquotes. I frequently do block searches in Obsidian, and I do NOT want to accidentally pass off a quote as something I said.</p>
 <p>To this end, I added a <code>&gt;</code> before each highlight and two newlines (carriage returns) at the end to delineate each highlight. That way, I can quote just one highlight at a time.</p>
-<pre><code>&gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
+<pre tabindex="0"><code>&gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
     - Note: {{ highlight_note }}{% endif %}
-
-
 </code></pre><p>As you can see above, I also removed highlight tags, which I never use.</p>
 <h4 id="yaml-front-matter">YAML front matter</h4>
 <p>Metadata has to be quite specific, so I added parameters I already use for other notes in this section. The <code>TVZ</code> is a tag I use that means &ldquo;To Verzettelen&rdquo;, meaning pages that I need to process further.</p>
-<pre><code>Title: {{full_title}}
+<pre tabindex="0"><code>Title: {{full_title}}
 Author: {{author}}
 Tags: TVZ, readwise, {{category}}
 date: {{date}}
 </code></pre><h4 id="sync-notification">Sync notification</h4>
 <p>As someone who has worked on a syncing plugin for Readwise to Obsidian, I know that things go wrong sometimes. Enabling this outputs a synchronization log to a note, which has come in handy MANY times in the past. <em>Has that book been synced, or did something go wrong?</em> So I copied what the Readwise team suggested:</p>
-<pre><code>- [[{{date|date('Y-m-d')}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
+<pre tabindex="0"><code>- [[{{date|date(&#39;Y-m-d&#39;)}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
 {% for book in books %}    - {{ book.num_highlights_added}} highlights from {{ book.title }}
 {%endfor %}
 </code></pre><h3 id="select-items-to-be-exported">Select Items to be Exported</h3>

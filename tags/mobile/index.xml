@@ -78,7 +78,7 @@
 &lt;h3 id=&#34;load-testing-for-back-end-performance&#34;&gt;Load testing for back-end performance&lt;/h3&gt;
 &lt;p&gt;Load testing is about determining how your mobile application behaves in response to traffic, so it targets the back-end components of the application, not the front-end.&lt;/p&gt;
 &lt;p&gt;Both front-end and back-end performance are necessary to get a holistic view of mobile performance. Still, &lt;strong&gt;if you want to load test your mobile app, you need to generate traffic on your application &lt;em&gt;server&lt;/em&gt;, and not necessarily to drive the app on real devices&lt;/strong&gt;. Understanding this opens up options for mobile load testing.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200221-02.jpg&#34; alt=&#34;A data center can be out of most testing teams&#39; reach&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200221-02.jpg&#34; alt=&#34;A data center can be out of most testing teams&amp;amp;rsquo; reach&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;api-load-testing&#34;&gt;API load testing&lt;/h2&gt;
 &lt;p&gt;Most native mobile apps work by using a RESTful API to send instructions to the application server. Luckily for us, there&amp;rsquo;s no magic in sending these types of requests from a smartphone— we can simulate this easily by using an API load testing tool to send these requests on a non-mobile device too.&lt;/p&gt;
 &lt;p&gt;Here are some advantages of using API load testing tools to test your mobile app instead of using a device farm:&lt;/p&gt;

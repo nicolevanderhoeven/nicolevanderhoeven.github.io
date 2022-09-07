@@ -13,9 +13,10 @@
 Apache has just launched JMeter 4.0, a big step up from their previous release, 3.3, which was only released in September last year. Apache seems to be stepping up the frequency of it’s releases, and we’re not complaining. JMeter is an amazing open source load testing tool and the most popular one used at Tricentis Flood by far.
 The big question is: Should you upgrade? Are the new features worth the leap?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20180223-should-i-upgrade-to-jmeter-4/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2018-02-23T23:43:25+01:00" />
 <meta property="article:modified_time" content="2018-02-23T23:43:25+01:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Should I Upgrade to JMeter 4.0? 5 Reasons to Upgrade"/>
@@ -233,7 +234,7 @@ The big question is: Should you upgrade? Are the new features worth the leap?"/>
         
         <div class="postdate">
           
-          <time datetime="2018-02-23 23:43:25 &#43;0100 &#43;0100" itemprop="datePublished">2018-Feb-23</time>
+          <time datetime="2018-02-23 23:43:25 &#43;0100 CET" itemprop="datePublished">2018-Feb-23</time>
           
         </div>
         
@@ -269,8 +270,8 @@ The big question is: Should you upgrade? Are the new features worth the leap?"/>
 <p>The big question is: Should you upgrade? Are the new features worth the leap? Will the new black UI make you a better load tester? While this choice should be made on a case-by-case basis and we certainly can’t pretend to give one-size-fits-all advice, here are some good arguments to do it:</p>
 <h3 id="1-java-9-support">#1: Java 9 support</h3>
 <p>JDK 9 was released back in September 2017, and if you were one of the people who upgraded to it when prompted, you would have noticed to your frustration that JMeter 3.3 did not play well with it, yielding the error:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Error: Java version -- 9.0.1 -- is too low to run JMeter. Needs a Java version greater than or equal to 1.8.0 errorlevel<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
-</code></pre></div><p>Good news! This is now fixed. JMeter 4.0 runs smoothly on JDK 9. We&rsquo;ll continue running on JDK 8 at Flood for consistency amongst all our open source load testing tools.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Error: Java version -- 9.0.1 -- is too low to run JMeter. Needs a Java version greater than or equal to 1.8.0 errorlevel<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
+</span></span></code></pre></div><p>Good news! This is now fixed. JMeter 4.0 runs smoothly on JDK 9. We&rsquo;ll continue running on JDK 8 at Flood for consistency amongst all our open source load testing tools.</p>
 <h3 id="2-new-boundary-extractor">#2: New Boundary Extractor</h3>
 <p>Previously, my preferred way to extract dynamic values in JMeter was to use a regular expression extractor, but there’s no doubt that it can sometimes be tricky to get just the right text out of a response. Enter the <a href="http://jmeter.apache.org/usermanual/component_reference.html#Boundary_Extractor">Boundary Extractor</a>.</p>
 <p>The boundary extractor allows you to simply set the text immediately before and after the text you want to extract. This saves you wondering whether you should have used a + or a * in your regular expression, and is also easier to validate.</p>

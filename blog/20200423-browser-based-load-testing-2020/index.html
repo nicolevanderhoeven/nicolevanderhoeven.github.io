@@ -14,9 +14,10 @@ We first announced our open-source browser-based load testing tool based on Pupp
 Tim Koopmans: Load testing for DevOps&hellip; with Browser Level Users (BLU)
 Kevin Dunne: A new approach to load testing with browser level users" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20200423-browser-based-load-testing-2020/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-04-23T16:48:09+01:00" />
 <meta property="article:modified_time" content="2020-04-23T16:48:09+01:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Browser-based load testing in 2020"/>
@@ -267,7 +268,7 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
         
         <div class="postdate">
           
-          <time datetime="2020-04-23 16:48:09 &#43;0100 WEST" itemprop="datePublished">2020-Apr-23</time>
+          <time datetime="2020-04-23 16:48:09 &#43;0100 &#43;0100" itemprop="datePublished">2020-Apr-23</time>
           
         </div>
         
@@ -343,12 +344,12 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
 <em>Example of an HTTP request with parameters on JMeter</em></p>
 <p>In browser-based load testing, real browser instances are opened on load generators, and the load testing tool plays the part of a real user in navigating the web application using the GUI. We refer to the virtual users in browser-based load testing as Browser-Level Users (BLU).</p>
 <p>Here&rsquo;s an example of the same action in the JMeter example above, but this time in an Element test script:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;Step 1&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
-    <span style="color:#75715e">//Click Start button
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">startButton</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#e6db74">&#39;.btn-default&#39;</span>)
-    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">startButton</span>.<span style="color:#a6e22e">click</span>()
-})
-</code></pre></div><p>This version simply describes the button to be found and clicked, whereas the protocol-level version needs to be more precise in what exactly is passed to the server.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">step</span>(<span style="color:#e6db74">&#39;Step 1&#39;</span>, <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Click Start button
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">startButton</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">findElement</span>(<span style="color:#e6db74">&#39;.btn-default&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">startButton</span>.<span style="color:#a6e22e">click</span>()
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>This version simply describes the button to be found and clicked, whereas the protocol-level version needs to be more precise in what exactly is passed to the server.</p>
 <p>Both types of load testing tools can apply the same load on an application (as long as it supports both methods— see the next section). The main difference is in how the load is generated.</p>
 <p>A protocol-level script will contain instructions on which messages to send, which protocols to use, which headers to include, and other information that a typical end-user would not see.</p>
 <p>A browser-level script will contain instructions on how to <em>interact</em> with the application: which buttons to click, what to type in text fields, which links to follow, and other on-screen elements that an end-user would be familiar with. This leads us to one of the big advantages of browser-based load testing.</p>
@@ -372,8 +373,8 @@ Kevin Dunne: A new approach to load testing with browser level users"/>
 <h4 id="easier-to-maintain">Easier to maintain</h4>
 <p>Lower script complexity means that a browser-based test script is more resilient to changes in the codebase. A change in the underlying requests sent will not require a change in the test script, making it perfect for regression testing.</p>
 <p>It&rsquo;s also easier to pass on to other members of the team due to high readability. Here&rsquo;s an example of how to select a value from a dropdown menu in Element:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">selectByValue</span>(<span style="color:#e6db74">&#39;#challenger_age&#39;</span>,<span style="color:#e6db74">&#39;34&#39;</span>)
-</code></pre></div><p>It&rsquo;s easy to see that the script is looking for an element with the ID &ldquo;challenger_age&rdquo; and selecting the value &ldquo;34&rdquo;. This step could correspond to dozens of requests that need to be scripted if testing on the protocol level, which makes those scripts harder to understand without a proper handover.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">selectByValue</span>(<span style="color:#e6db74">&#39;#challenger_age&#39;</span>,<span style="color:#e6db74">&#39;34&#39;</span>)
+</span></span></code></pre></div><p>It&rsquo;s easy to see that the script is looking for an element with the ID &ldquo;challenger_age&rdquo; and selecting the value &ldquo;34&rdquo;. This step could correspond to dozens of requests that need to be scripted if testing on the protocol level, which makes those scripts harder to understand without a proper handover.</p>
 <h3 id="cons">Cons</h3>
 <p>Browser-based load testing tools have a higher CPU and memory footprint than protocol-based tools. Test scripts in JMeter and Gatling send messages to and record responses from a server without really needing to parse responses. By contrast, browser-based tools parse the server response in order to access the Domain Object Model (DOM) elements on the page.</p>
 <p>Using real browsers might be closer to the real user experience, but it also takes its toll on node resources. It is possible to run in headless mode, where browsers are started &ldquo;invisibly&rdquo; without actually graphically rendering them. However, even then, a browser-level tool can run fewer concurrent users on a node than a protocol-level tool.</p>

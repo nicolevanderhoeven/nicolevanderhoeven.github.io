@@ -37,59 +37,58 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;create-a-new-hugo-site&#34;&gt;Create a new Hugo site&lt;/h3&gt;
 &lt;p&gt;Open up a terminal window and &lt;code&gt;cd&lt;/code&gt; to a folder in your Obsidian vault. Then, create a new Hugo-generated site:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site slides
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;slides&lt;/code&gt; with the name of your new site.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site slides
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;slides&lt;/code&gt; with the name of your new site.&lt;/p&gt;
 &lt;p&gt;You should have a new directory, &lt;code&gt;slides&lt;/code&gt;, in your Obsidian vault.&lt;/p&gt;
 &lt;h3 id=&#34;add-the-reveal-hugo-theme&#34;&gt;Add the reveal-hugo theme&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; into &lt;code&gt;slides&lt;/code&gt; and clone the reveal-hugo repo. The documentation suggests using a submodule:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Personally, I just cloned it because I know I&amp;rsquo;m probably going to be messing around with it substantially:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should have a &lt;code&gt;/themes/reveal-hugo&lt;/code&gt; folder that contains the theme.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Personally, I just cloned it because I know I&amp;rsquo;m probably going to be messing around with it substantially:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should have a &lt;code&gt;/themes/reveal-hugo&lt;/code&gt; folder that contains the theme.&lt;/p&gt;
 &lt;h3 id=&#34;configure-reveal-hugo-theme&#34;&gt;Configure reveal-hugo theme&lt;/h3&gt;
 &lt;p&gt;Set up your new Hugo site to use the reveal-hugo theme by adding the following to &lt;code&gt;/config.toml&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;theme = &amp;#34;reveal-hugo&amp;#34;&lt;/span&gt;
-
-[&lt;span style=&#34;color:#ae81ff&#34;&gt;markup.goldmark.renderer]&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;unsafe = true&lt;/span&gt;
-
-[&lt;span style=&#34;color:#ae81ff&#34;&gt;outputFormats.Reveal]&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;baseName = &amp;#34;index&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;mediaType = &amp;#34;text/html&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;isHTML = true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;Reveal&lt;/code&gt; part is what lets you output text in slide format.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;theme = &amp;#34;reveal-hugo&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;markup.goldmark.renderer]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;unsafe = true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;outputFormats.Reveal]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;baseName = &amp;#34;index&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;mediaType = &amp;#34;text/html&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;isHTML = true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;Reveal&lt;/code&gt; part is what lets you output text in slide format.&lt;/p&gt;
 &lt;h3 id=&#34;create-your-slides&#34;&gt;Create your slides&lt;/h3&gt;
 &lt;p&gt;Go to &lt;code&gt;/content&lt;/code&gt; and create a file there, called &lt;code&gt;_index.md&lt;/code&gt;. The filename is important, as is its location (I learned that the hard way). This file is going to be the first page people see, so it should probably be a list of your presentation slides. For now, put in something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;+++
-title = &amp;#34;My presentations&amp;#34;
-outputs = [&amp;#34;Reveal&amp;#34;]
-+++
-
-Here are my presentation slides!
-
-[&lt;span style=&#34;color:#f92672&#34;&gt;sample presentation&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/sample&lt;/span&gt;)
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, create a new folder for your presentation, such as &lt;code&gt;sample&lt;/code&gt;. In &lt;code&gt;/content/sample&lt;/code&gt;, create a file called &lt;code&gt;_index.md&lt;/code&gt;. Again , the filename is also important here (guess how I learned that).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+++
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title = &amp;#34;My presentations&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;outputs = [&amp;#34;Reveal&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+++
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Here are my presentation slides!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;sample presentation&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/sample&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, create a new folder for your presentation, such as &lt;code&gt;sample&lt;/code&gt;. In &lt;code&gt;/content/sample&lt;/code&gt;, create a file called &lt;code&gt;_index.md&lt;/code&gt;. Again , the filename is also important here (guess how I learned that).&lt;/p&gt;
 &lt;p&gt;This index file is going to be where you actually create your slides. Here&amp;rsquo;s the context of my &lt;code&gt;/content/sample/_index.md&lt;/code&gt;:&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Each slide is separated by &lt;code&gt;---&lt;/code&gt;, just like in Obsidian, which apparently uses the same converter that reveal-hugo does, &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;. Note that if you want to try out having an image as a background to one of the slides, you&amp;rsquo;ll need to add that to your &lt;code&gt;/sample&lt;/code&gt; folder and change the filename in the slide in this part:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;slide background-image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;generate-your-site&#34;&gt;Generate your site&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;slide background-image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;generate-your-site&#34;&gt;Generate your site&lt;/h3&gt;
 &lt;p&gt;Now it&amp;rsquo;s time to generate your site! Wait - didn&amp;rsquo;t we already do that? Sort of that. That was creating the framework for the site, but now you need to get Hugo to convert those Markdown files you&amp;rsquo;ve just created into something publishable. So cd to the root directory &lt;code&gt;slides&lt;/code&gt; and run this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That command should generate a &lt;code&gt;slides/public&lt;/code&gt; folder, where all the publishable code will go.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That command should generate a &lt;code&gt;slides/public&lt;/code&gt; folder, where all the publishable code will go.&lt;/p&gt;
 &lt;p&gt;At this point, you can also check your work by starting a local server with &lt;code&gt;hugo server&lt;/code&gt; and navigating to &lt;code&gt;http://localhost:1313&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;push-your-site-to-a-remote-github-repo&#34;&gt;Push your site to a remote GitHub repo&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; into your public folder. This is important, as I initially started the repo in &lt;code&gt;slides&lt;/code&gt; and it took me ages to realize that GitHub Pages requires an &lt;code&gt;index.html&lt;/code&gt; in the root directory to function.&lt;/p&gt;
 &lt;p&gt;Initialize a Git repo:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Stage and commit your changes:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Initial commit&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a repository on your GitHub account called &lt;code&gt;username.github.io&lt;/code&gt; where &lt;code&gt;username&lt;/code&gt; is your GitHub username. (If you already have a repo called that, you can alternatively push the contents of &lt;code&gt;public&lt;/code&gt; to a branch called &lt;code&gt;gh-pages&lt;/code&gt;). The repo name matters.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Stage and commit your changes:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Initial commit&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a repository on your GitHub account called &lt;code&gt;username.github.io&lt;/code&gt; where &lt;code&gt;username&lt;/code&gt; is your GitHub username. (If you already have a repo called that, you can alternatively push the contents of &lt;code&gt;public&lt;/code&gt; to a branch called &lt;code&gt;gh-pages&lt;/code&gt;). The repo name matters.&lt;/p&gt;
 &lt;p&gt;Push your changes to your repo.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should now have a repository on GitHub called &lt;code&gt;username.github.io&lt;/code&gt;, containing everything in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should now have a repository on GitHub called &lt;code&gt;username.github.io&lt;/code&gt;, containing everything in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;set-up-github-pages&#34;&gt;Set up GitHub Pages&lt;/h3&gt;
 &lt;p&gt;On GitHub, go to the repository settings and scroll down to the GitHub Pages section. Select the right branch (&lt;code&gt;master&lt;/code&gt; in most cases) and click Save.&lt;/p&gt;
 &lt;h3 id=&#34;optional-using-a-custom-domain&#34;&gt;(Optional) Using a custom domain&lt;/h3&gt;
@@ -109,16 +108,15 @@ Here are my presentation slides!
 &lt;h4 id=&#34;use-worktrees-not-subtrees-or-submodules&#34;&gt;Use worktrees, not subtrees or submodules&lt;/h4&gt;
 &lt;p&gt;After attempts to make this setup work with submodules and subtrees, both of which were way too complicated for what I needed, I settled on using worktrees.&lt;/p&gt;
 &lt;p&gt;Add &lt;code&gt;public&lt;/code&gt; to &lt;code&gt;.gitignore&lt;/code&gt;. From &lt;code&gt;slides&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;public/&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a worktree for &lt;code&gt;public&lt;/code&gt;, to be tracked on the branch &lt;code&gt;gh-pages&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git worktree add public gh-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you generate the static code via &lt;code&gt;hugo&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd public
-git add .
-git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Commit message&amp;#39;&lt;/span&gt;
-git push origin gh-pages
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your &lt;code&gt;gh-pages&lt;/code&gt; branch should contain only the files in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;public/&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a worktree for &lt;code&gt;public&lt;/code&gt;, to be tracked on the branch &lt;code&gt;gh-pages&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git worktree add public gh-pages
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you generate the static code via &lt;code&gt;hugo&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Commit message&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin gh-pages
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your &lt;code&gt;gh-pages&lt;/code&gt; branch should contain only the files in &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;github-pages-with-a-private-repo&#34;&gt;GitHub Pages with a private repo&lt;/h4&gt;
 &lt;p&gt;GitHub Pages is free, but if you want to be able to use it with a private repo, &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages&#34;&gt;you can&amp;rsquo;t&lt;/a&gt;. Sorry!&lt;/p&gt;
 &lt;p&gt;You can look into using GitHub Actions to copy &lt;code&gt;public&lt;/code&gt; from your private repo to a public one, or you could just &lt;a href=&#34;https://github.com/pricing&#34;&gt;spend the $4/month&lt;/a&gt; to remove the restriction. I opted to pay, because I love GitHub anyway.&lt;/p&gt;

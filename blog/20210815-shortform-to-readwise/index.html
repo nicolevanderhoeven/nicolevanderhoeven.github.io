@@ -11,9 +11,10 @@
   <meta property="og:title" content="How to import Shortform highlights to Obsidian via Readwise" />
 <meta property="og:description" content="I&rsquo;ve always been dubious of those book summary apps. You know the ones&ndash; they tend to have obnoxious ads that promise to help you &ldquo;read 5 books a day&rdquo; or learn the world&rsquo;s secrets in 15 minutes. Having tried a few of them, I&rsquo;ve been disappointed with the quality of their summaries (or lack thereof). They attempt to distill the message of a 300&#43; page book into a handful of bullet points, which I&rsquo;ve found neither accurate nor useful." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-08-16T21:40:16+02:00" />
 <meta property="article:modified_time" content="2021-08-16T21:40:16+02:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to import Shortform highlights to Obsidian via Readwise"/>
@@ -247,7 +248,7 @@
         
         <div class="postdate">
           
-          <time datetime="2021-08-16 21:40:16 &#43;0200 &#43;0200" itemprop="datePublished">2021-Aug-16</time>
+          <time datetime="2021-08-16 21:40:16 &#43;0200 CEST" itemprop="datePublished">2021-Aug-16</time>
           
         </div>
         
@@ -315,13 +316,13 @@
 <p>Clone <a href="https://github.com/nicolevanderhoeven/shortform-to-readwise">my Shortform-to-Readwise repository on GitHub</a> or download it to your computer.</p>
 <h3 id="enter-your-tokens">Enter your tokens</h3>
 <p>The file <code>variables.py</code> requires two tokens: one from your Shortform account and another from your Readwise account:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Your authorization token for Shortform</span>
-authToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-
-<span style="color:#75715e"># Your Readwise API token</span>
-<span style="color:#75715e"># Retrieve this token from https://readwise.io/access_token</span>
-readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-</code></pre></div><h4 id="getting-your-shortform-token">Getting your Shortform token</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Your authorization token for Shortform</span>
+</span></span><span style="display:flex;"><span>authToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Your Readwise API token</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Retrieve this token from https://readwise.io/access_token</span>
+</span></span><span style="display:flex;"><span>readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span></code></pre></div><h4 id="getting-your-shortform-token">Getting your Shortform token</h4>
 <p>This is a little hacky, because Shortform doesn&rsquo;t expose an API token in their web app. So you&rsquo;ll need to log in to your Shortform account and open up DevTools in your browser. In Chrome, go to Options &gt; More Tools &gt; Developer Tools (or, on Mac, hit CMD+OPTION+I). Click on the Network panel.</p>
 <p>You should now see Shortform on one side, and DevTools on another in the same browser window.</p>
 <p>Then, go to <a href="https://www.shortform.com/app/highlights">your Highlights page</a>. Doing so will populate the Network panel with a bunch of requests that look like this:</p>
@@ -337,8 +338,8 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <p>Note: Don&rsquo;t share either of these tokens with anyone else, as they will then be able to access your Shortform or Readwise accounts.</p>
 <h3 id="run-the-script">Run the script</h3>
 <p>Open up your terminal, and <code>cd</code> into the <code>/shortform-to-readwise</code> repository. Then, run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 getHighlights.py
-</code></pre></div><p>It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to <a href="https://readwise.io/books">your Readwise library</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 getHighlights.py
+</span></span></code></pre></div><p>It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to <a href="https://readwise.io/books">your Readwise library</a>.</p>
 <p><img src="/assets/20210816-shortform-04.png" alt="Shortform exports showing up in your Readwise library"></p>
 <p><em>Shortform exports showing up in your Readwise library.</em></p>
 <p>You should see books that have the <code>Shortform-</code> prefix. If you do, then you&rsquo;re done! If you&rsquo;ve got your Readwise account set up to push your highlights elsewhere (such as Obsidian), then you&rsquo;re all set!</p>
@@ -349,14 +350,14 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <p>Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &gt; Security &amp; Privacy &gt; Privacy &gt; Full Disk Access on your laptop and add <code>/usr/bin/cron</code> to the &ldquo;allowed&rdquo; list.</p>
 <h3 id="find-the-path-for-your-python3-installation">Find the path for your python3 installation</h3>
 <p>In your terminal, run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">which python3
-</code></pre></div><p>This will give you a path. For me, it was <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Copy this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>which python3
+</span></span></code></pre></div><p>This will give you a path. For me, it was <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Copy this.</p>
 <h3 id="open-crontab">Open crontab</h3>
 <p>Then, from your terminal, run the command <code>env EDITOR=nano crontab -e</code> to open up a list of cronjobs. If you don&rsquo;t have any other jobs, this will be blank.</p>
 <h3 id="set-a-schedule">Set a schedule</h3>
 <p>Add a line to crontab for the schedule you want to create. This line has to be in the format</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">* * * * * command
-</code></pre></div><p>where the five asterisks correspond to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>* * * * * command
+</span></span></code></pre></div><p>where the five asterisks correspond to:</p>
 <ul>
 <li>minute</li>
 <li>hour</li>
@@ -365,8 +366,8 @@ readwiseToken <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <li>day of the week</li>
 </ul>
 <p>In my case, I wanted it to run every 30 minutes, so here&rsquo;s what my schedule looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
-</code></pre></div><p>Make sure you change <code>/Users/nic/python/</code> to the path where you put the repository and your python3 path instead of <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
+</span></span></code></pre></div><p>Make sure you change <code>/Users/nic/python/</code> to the path where you put the repository and your python3 path instead of <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.</p>
 <h2 id="thats-it">That&rsquo;s it!</h2>
 <p>I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&rsquo;s why I love services like Shortform and Readwise&ndash; they let me get what I&rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.</p>
 <p>Both are paid services (which I paid for out of my own money), but I really think they&rsquo;re worth it.</p>

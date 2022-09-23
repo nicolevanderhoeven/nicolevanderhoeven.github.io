@@ -1036,6 +1036,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;, for collating highlights from content&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://reclaim.ai/r/s/yYOqK&#34;&gt;Reclaim&lt;/a&gt;, a smart calendar blocking tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt;, for thoughtful and researched summaries of nonfiction books&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;learning-and-professional-development&#34;&gt;Learning and Professional Development&lt;/h2&gt;
 &lt;ul&gt;
@@ -1079,6 +1080,8 @@
       <guid>https://nicolevanderhoeven.github.io/ethics/</guid>
       <description>&lt;h1 id=&#34;my-ethics-statement&#34;&gt;My Ethics Statement&lt;/h1&gt;
 &lt;p&gt;This statement governs my principles regarding my activities as a content creator. I&amp;rsquo;ve made this information public for transparency, consistency, and fairness in my dealings with viewers, readers, employers, and sponsors alike. It is a list of my expectations from others, but it also a list of what others can expect from me.&lt;/p&gt;
+&lt;h2 id=&#34;personal-information&#34;&gt;Personal Information&lt;/h2&gt;
+&lt;p&gt;In the course of my activities, it may sometimes be necessary to collect some personal information such as email addresses, names, and other contact information from people who have chosen to subscribe to newsletters or memberships. I will only collect this information when it is necessary for the purpose of providing the service or product that have requested. I will NEVER sell or share this information with any third party without explicit consent.&lt;/p&gt;
 &lt;h2 id=&#34;promotions-and-sponsorships&#34;&gt;Promotions and sponsorships&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve personally paid for at least 95%, if not more, of the gear and apps I use to create content. The remaining 5% have been purchased for me by previous and current employers in the course of my normal day job. These cases cover things like laptops that I am allowed to use for personal work as well. I never expense items through my employer if their primary use is for my personal projects.&lt;/p&gt;
 &lt;p&gt;In my view, &amp;ldquo;promotion&amp;rdquo; includes me doing one, or a combination, of the following things:&lt;/p&gt;
@@ -1109,7 +1112,7 @@
 &lt;li&gt;(In the case of a review) The company does NOT have any input on what I say. They don&amp;rsquo;t get to see videos for approval or revisions before I publish them.&lt;/li&gt;
 &lt;li&gt;The company that produces it is ethical in its practices. I don&amp;rsquo;t claim to know everything, but I will never knowingly promote a product from a company with deplorable practices.&lt;/li&gt;
 &lt;li&gt;It is open-source OR has features that make it more compelling than open-source alternatives. I always prioritize open-source tools over commercial offerings.&lt;/li&gt;
-&lt;li&gt;It does not directly compete with my permanent employer, Grafana Labs (and k6)&amp;ndash; I am under contractual obligations to avoid this conflict of interest.&lt;/li&gt;
+&lt;li&gt;It does not directly compete with my full-time employer, Raintank Inc. (Grafana Labs) &amp;ndash; I am under contractual obligations to avoid this conflict of interest.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;unsolicited-benefits&#34;&gt;Unsolicited benefits&lt;/h3&gt;
 &lt;p&gt;Giving me a free product does not mean I am under an obligation to mention it, and it certainly doesn&amp;rsquo;t guarantee a positive review. Please don&amp;rsquo;t send me anything with strings attached.&lt;/p&gt;
@@ -1118,10 +1121,11 @@
 &lt;p&gt;I will not hesitate to delete, block, or reject comments if:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;they are discriminatory in any way (racist, sexist, homophobic, transphobic, ageist, anything that involves projecting qualities onto an entire group)&lt;/li&gt;
-&lt;li&gt;they include swear words meant to denigrate others or express frustration. Be civil and rational in your discourse.&lt;/li&gt;
+&lt;li&gt;they include swear words meant to denigrate others. Be civil and rational in your discourse.&lt;/li&gt;
 &lt;li&gt;they are spam.&lt;/li&gt;
 &lt;li&gt;they are obvious attempts to promote your own product, service, or content.&lt;/li&gt;
 &lt;li&gt;they reveal personally identifiable information about anyone.&lt;/li&gt;
+&lt;li&gt;they constitute harassment or bullying.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;If you&amp;rsquo;d still like to support me after reading this statement, check out my &lt;a href=&#34;https://nicolevanderhoeven.com/affiliates/&#34;&gt;Affiliates&lt;/a&gt; page.&lt;/p&gt;
@@ -4446,7 +4450,7 @@ reactions:
 &lt;p&gt;The screenshot above shows the final result: highlights I made in the Shortform web or mobile app that have been synced to a page in my Obsidian vault. Here&amp;rsquo;s how I did that.&lt;/p&gt;
 &lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A &lt;a href=&#34;https://shortform.com&#34;&gt;Shortform&lt;/a&gt; account.&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt; account. &lt;em&gt;(affiliate link)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;A &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; account. &lt;em&gt;(This is an affiliate link. If you sign up with this link, you&amp;rsquo;ll get a two-month free trial instead of one, and I get a small percentage if you sign up for a plan.)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;A tool that Readwise can export to, such as &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;, &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt;, or &lt;a href=&#34;https://evernote.com&#34;&gt;Evernote&lt;/a&gt;. You can also use their CSV and Markdown exports.&lt;/li&gt;
 &lt;li&gt;A local installation of Python 3, which you can &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;download here&lt;/a&gt;.&lt;/li&gt;
@@ -4511,7 +4515,7 @@ reactions:
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
 &lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: This post contains affiliate links. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

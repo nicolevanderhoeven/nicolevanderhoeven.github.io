@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 02 Sep 2022 16:56:14 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 12:18:07 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The future of k6 (k6 Office Hours #64)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220923-koh64-future-of-k6/</link>
+      <pubDate>Fri, 23 Sep 2022 12:18:07 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220923-koh64-future-of-k6/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re talking about the future of k6 with CEO Robin Gustafsson and CTO Pawel Suwala. What&amp;rsquo;s next for k6? What new features are we working on? What&amp;rsquo;s the plan for further integrations with Grafana? What are the plans for the k6 team as we transition out of the honeymoon period after the Grafana acquisition?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/r1kj3oGHDmo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with xk6-browser (k6 Office Hours #63)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220916-koh63-getting-started-with-xk6-browser/</link>
+      <pubDate>Fri, 16 Sep 2022 12:13:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220916-koh63-getting-started-with-xk6-browser/</guid>
+      <description>&lt;p&gt;Marie Drake, the newest Developer Advocate to join the k6 team, shares her experience in getting started with xk6-browser: how to install it, issues she encountered, and the state of browser testing with k6 as she sees it.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CRSTQ6n05hM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Load Testing Apache Kafka using k6 (k6 Office Hours #62)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220909-koh62-load-testing-apache-kafka/</link>
+      <pubDate>Fri, 09 Sep 2022 12:09:36 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220909-koh62-load-testing-apache-kafka/</guid>
+      <description>&lt;p&gt;Senior Software Engineer Mostafa Moradian joins us to talk about load testing Apache Kafka using k6 and the extension he created, called xk6-kafka. He describes what Kafka is, the basics of Kafka, and why he thinks load testing it is important. Mostafa works on the backend team at k6/Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NQ0fyhq1mxo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Resilience and Chaos Testing with SteadyBit and k6 (k6 Office Hours #61)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220902-koh61-resilience-and-chaos-testing-with-steadybit-and-k6/</link>

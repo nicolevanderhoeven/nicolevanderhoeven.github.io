@@ -84,6 +84,23 @@
     </item>
     
     <item>
+      <title>In search of the best Pokémon: Browser automation and load testing in one script with k6 (Automation Guild 2022)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</link>
+      <pubDate>Thu, 10 Feb 2022 12:01:53 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</guid>
+      <description>&lt;p&gt;Being a tester is like being a pokémon trainer: we want to choose the right pokémon for the job. The problem with doing different types of testing is that we also end up with multiple scripts in different languages and testing tools. We end up choosing a squad of pokémon: one for unit testing, one for automation testing, one for load testing, and so on. Making sure they all work together is a task in itself!&lt;/p&gt;
+&lt;p&gt;But what if we could just use one? What if we only needed one Mega-evolved pokémon that could fulfill multiple roles? Is it really possible to write a browser automation script and then reuse it for load testing?&lt;/p&gt;
+&lt;p&gt;In this presentation, I talk about my search for the elusive one pokémon that does multiple jobs, the advantages of hybrid load testing, and how to pick pokémon that make our life as trainers and testers easier.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SFag8ggkXKo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Basics of load testing with k6 and Grafana in 20 minutes</title>
       <link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link>
       <pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate>

@@ -7,7 +7,83 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 07 Sep 2022 18:01:12 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 12:18:07 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The future of k6 (k6 Office Hours #64)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220923-koh64-future-of-k6/</link>
+      <pubDate>Fri, 23 Sep 2022 12:18:07 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220923-koh64-future-of-k6/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re talking about the future of k6 with CEO Robin Gustafsson and CTO Pawel Suwala. What&amp;rsquo;s next for k6? What new features are we working on? What&amp;rsquo;s the plan for further integrations with Grafana? What are the plans for the k6 team as we transition out of the honeymoon period after the Grafana acquisition?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/r1kj3oGHDmo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How I Learn Languages in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220923-how-i-learn-languages-in-obsidian/</link>
+      <pubDate>Fri, 23 Sep 2022 12:14:58 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220923-how-i-learn-languages-in-obsidian/</guid>
+      <description>&lt;p&gt;In this video, I demonstrate how I learn Swedish in 30 days using Obsidian and other apps. Learning foreign languages is never easy, but having a system in place definitely makes the process easier. The Obsidian Spaced Repetition plugin in particular helps create flashcards that I can use on my laptop or mobile devices.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/b_P5yIBkYLg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Visit &lt;a href=&#34;https://brilliant.org/nicolevdh&#34;&gt;Brilliant&lt;/a&gt; &lt;em&gt;(affiliate link)&lt;/em&gt; to get started learning STEM for free, and the first 200 people will get 20% off their annual premium subscription. Check out my &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;Ethics page&lt;/a&gt; to see how I decide on products to promote.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with xk6-browser (k6 Office Hours #63)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220916-koh63-getting-started-with-xk6-browser/</link>
+      <pubDate>Fri, 16 Sep 2022 12:13:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220916-koh63-getting-started-with-xk6-browser/</guid>
+      <description>&lt;p&gt;Marie Drake, the newest Developer Advocate to join the k6 team, shares her experience in getting started with xk6-browser: how to install it, issues she encountered, and the state of browser testing with k6 as she sees it.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CRSTQ6n05hM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Use the Excalibrain Obsidian Plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</link>
+      <pubDate>Fri, 16 Sep 2022 12:11:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</guid>
+      <description>&lt;p&gt;In this video, I demonstrate how to use the ExcaliBrain Obsidian plugin and what it can be used for. ExcaliBrain is a very powerful plugin, and it can significantly improve your Obsidian workflows. I also mention go through installing and getting started with ExcaliBrain at four different levels of uses for it: letting it infer relationships, setting explicit relationships, creating custom relationships, and finally creating semantic relationships in ExcaliBrain.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gqEtn3gCZF0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Load Testing Apache Kafka using k6 (k6 Office Hours #62)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220909-koh62-load-testing-apache-kafka/</link>
+      <pubDate>Fri, 09 Sep 2022 12:09:36 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220909-koh62-load-testing-apache-kafka/</guid>
+      <description>&lt;p&gt;Senior Software Engineer Mostafa Moradian joins us to talk about load testing Apache Kafka using k6 and the extension he created, called xk6-kafka. He describes what Kafka is, the basics of Kafka, and why he thinks load testing it is important. Mostafa works on the backend team at k6/Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NQ0fyhq1mxo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>I can finally tell you about Readwise Reader</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</link>
@@ -2024,6 +2100,23 @@
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/ZrFP8nhiKMY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>In search of the best Pokémon: Browser automation and load testing in one script with k6 (Automation Guild 2022)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</link>
+      <pubDate>Thu, 10 Feb 2022 12:01:53 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</guid>
+      <description>&lt;p&gt;Being a tester is like being a pokémon trainer: we want to choose the right pokémon for the job. The problem with doing different types of testing is that we also end up with multiple scripts in different languages and testing tools. We end up choosing a squad of pokémon: one for unit testing, one for automation testing, one for load testing, and so on. Making sure they all work together is a task in itself!&lt;/p&gt;
+&lt;p&gt;But what if we could just use one? What if we only needed one Mega-evolved pokémon that could fulfill multiple roles? Is it really possible to write a browser automation script and then reuse it for load testing?&lt;/p&gt;
+&lt;p&gt;In this presentation, I talk about my search for the elusive one pokémon that does multiple jobs, the advantages of hybrid load testing, and how to pick pokémon that make our life as trainers and testers easier.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SFag8ggkXKo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>

@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 30 Sep 2022 12:45:08 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance-testing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Oct 2022 18:36:55 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance-testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load Testing Types and k6 Executors (k6 Office Hours #67)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20221014-koh67-load-testing-types-and-k6-executors/</link>
+      <pubDate>Fri, 14 Oct 2022 18:36:55 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20221014-koh67-load-testing-types-and-k6-executors/</guid>
+      <description>&lt;p&gt;What are the different load testing types, and how do they relate to the k6 executors? We go through every single k6 executor and how, when, and why you should use each one in this week&amp;rsquo;s episode of k6 Office Hours.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ypli_y3UryU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>All About Web Performance (k6 Office Hours #66)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20221007-koh66-all-about-web-performance/</link>
+      <pubDate>Fri, 07 Oct 2022 17:25:24 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20221007-koh66-all-about-web-performance/</guid>
+      <description>&lt;p&gt;My fellow Developer Advocate and tester Marie Cruz and I talk all about web performance and best practices for making websites faster. What&amp;rsquo;s the difference between performance testing a website vs. an API? What are some things you should keep in mind when testing a web app?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gYfUoX85ElA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Performance testing for beginners (k6 Office Hours #65)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220930-koh65-performance-testing-for-beginners/</link>

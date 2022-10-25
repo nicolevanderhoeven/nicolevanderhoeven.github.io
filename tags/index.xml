@@ -7,38 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sat, 15 Oct 2022 22:38:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>dnd</title>
-      <link>https://nicolevanderhoeven.github.io/tags/dnd/</link>
-      <pubDate>Sat, 15 Oct 2022 22:38:50 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/dnd/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 21 Oct 2022 18:17:53 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Sat, 15 Oct 2022 22:38:50 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 18:17:53 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>live</title>
-      <link>https://nicolevanderhoeven.github.io/tags/live/</link>
-      <pubDate>Sat, 15 Oct 2022 22:38:50 +0200</pubDate>
+      <title>Markdown</title>
+      <link>https://nicolevanderhoeven.github.io/tags/markdown/</link>
+      <pubDate>Fri, 21 Oct 2022 18:17:53 +0200</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/tags/live/</guid>
+      <guid>https://nicolevanderhoeven.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>obsidian</title>
       <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
-      <pubDate>Sat, 15 Oct 2022 22:38:50 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 18:17:53 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
       <description></description>
@@ -47,16 +38,34 @@
     <item>
       <title>video</title>
       <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Sat, 15 Oct 2022 22:38:50 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 18:17:53 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>behavior-driven development</title>
+      <link>https://nicolevanderhoeven.github.io/tags/behavior-driven-development/</link>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/behavior-driven-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional testing</title>
+      <link>https://nicolevanderhoeven.github.io/tags/functional-testing/</link>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/functional-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>k6 Office Hours</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Fri, 14 Oct 2022 18:36:55 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
       <description></description>
@@ -65,16 +74,25 @@
     <item>
       <title>k6.io</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Fri, 14 Oct 2022 18:36:55 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>live</title>
+      <link>https://nicolevanderhoeven.github.io/tags/live/</link>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/live/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>load testing</title>
       <link>https://nicolevanderhoeven.github.io/tags/load-testing/</link>
-      <pubDate>Fri, 14 Oct 2022 18:36:55 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/load-testing/</guid>
       <description></description>
@@ -83,9 +101,27 @@
     <item>
       <title>performance testing</title>
       <link>https://nicolevanderhoeven.github.io/tags/performance-testing/</link>
-      <pubDate>Fri, 14 Oct 2022 18:36:55 +0200</pubDate>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/performance-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test-driven-development</title>
+      <link>https://nicolevanderhoeven.github.io/tags/test-driven-development/</link>
+      <pubDate>Fri, 21 Oct 2022 16:29:35 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/test-driven-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dnd</title>
+      <link>https://nicolevanderhoeven.github.io/tags/dnd/</link>
+      <pubDate>Sat, 15 Oct 2022 22:38:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/dnd/</guid>
       <description></description>
     </item>
     
@@ -1085,15 +1121,6 @@
       <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/digitalocean/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://nicolevanderhoeven.github.io/tags/markdown/</link>
-      <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     

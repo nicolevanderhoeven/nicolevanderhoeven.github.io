@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blinkist on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/blinkist/</link>
+    <description>Recent content in blinkist on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 28 Oct 2022 16:00:34 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/blinkist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taking Better Notes From Books: Shortform-Readwise-Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</link>
+      <pubDate>Fri, 28 Oct 2022 16:00:34 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JfL9iAEfSCg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt; for over a year. I&amp;rsquo;ve written &lt;a href=&#34;https://github.com/nicolevanderhoeven/shortform-to-readwise&#34;&gt;some code&lt;/a&gt; for it and I&amp;rsquo;ve also written &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/&#34;&gt;a blog post&lt;/a&gt; about it. It&amp;rsquo;s an essential part of my workflow for taking better notes from books, particularly in conjunction with &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; and my current note-taking tool of choice, &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt;. Here&amp;rsquo;s what you need to know!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-shortform&#34;&gt;What is Shortform?&lt;/h2&gt;
+&lt;p&gt;Shortform is a service that creates book summaries out of popular books, but it&amp;rsquo;s also so much more than that! They&amp;rsquo;re like Netflix but for books, if you can imagine that. The summaries that Shortform gives you are not just your typical high school level summaries of a book report that we used to do when we were younger.&lt;/p&gt;
+&lt;p&gt;Sound familiar?&lt;/p&gt;
+&lt;h2 id=&#34;what-makes-shortform-different&#34;&gt;What makes Shortform different?&lt;/h2&gt;
+&lt;p&gt;Here are things that differentiate Shortform from other book summary services.&lt;/p&gt;
+&lt;h3 id=&#34;researched-commentary&#34;&gt;Researched commentary&lt;/h3&gt;
+&lt;p&gt;Shortform has really thoughtful and nuanced commentary that place it firmly head and shoulders above other services.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a screenshot of some Shortform commentary from the book &lt;a href=&#34;https://amzn.to/3gO0gmP&#34;&gt;Why We Sleep&lt;/a&gt;, taken on the Shortform mobile app.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-why-we-sleep.jpg&#34; alt=&#34;Screenshot of Shortform commentary from the book &amp;amp;ldquo;Why We Sleep&amp;amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The highlighted section is a Shortform note&amp;ndash; additional commentary that the Shortform team added. In this case, they are fact-checking the author, citing &lt;a href=&#34;https://www.sleep.pitt.edu/wp-content/uploads/2020/03/The-AASM-Manual-for-Scoring-of-Sleep-and-Associated-Events-2007-.pdf&#34;&gt;sources&lt;/a&gt; that prove a statement the author made to be false.&lt;/p&gt;
+&lt;p&gt;When I was reading this book, I didn&amp;rsquo;t really think about questioning those claims. But Shortform thoroughly goes over every claim that Walker, the author, made in thsi book.&lt;/p&gt;
+&lt;p&gt;Reading with Shortform is like having somebody else read a book with you&amp;ndash; a more critical and more well-informed someone who has the time to fact-check statements. It&amp;rsquo;s a bit like having your own personal book club.&lt;/p&gt;
+&lt;h4 id=&#34;shortform-vs-blinkist&#34;&gt;Shortform vs. Blinkist&lt;/h4&gt;
+&lt;p&gt;Another service in this vein that I&amp;rsquo;ve used is &lt;a href=&#34;https://blinkist.com/&#34;&gt;Blinkist&lt;/a&gt;. Let&amp;rsquo;s look at the same book in Shortform and Blinkist to figure out why I like Shortform so much better.&lt;/p&gt;
+&lt;p&gt;This is what the Blinkist summary for the book &lt;a href=&#34;https://amzn.to/3W8rFQH&#34;&gt;Indistractable&lt;/a&gt; looks like.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/blinkist-indistractable-summary.jpg&#34; alt=&#34;Screenshot of Blinkist summary of Indistractable&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Blinkist is based on the idea that every book can be distilled into these &lt;em&gt;blinks&lt;/em&gt;: very short summaries of every idea. For this book it has eight. Each of these blinks is a few paragraphs long. Here&amp;rsquo;s what the first looks like.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/blinkist-indistractable-first-section.jpg&#34; alt=&#34;Screenshot of Blinkist&amp;amp;rsquo;s Indistractable blink&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A blink is a straight summary. There&amp;rsquo;s no commentary. There&amp;rsquo;s no research or anything like that. It seems like the whole focus of this is to be able to distill exactly what the author has said and let other people do the work of trying to figure out for themselves whether something is true or not. There&amp;rsquo;s really not much more than just these blinks.&lt;/p&gt;
+&lt;p&gt;In contrast, if we look at the one on Shortform, this is the same book and it also has like a one page summary like Blinkist did.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-summary.jpg&#34; alt=&#34;Screenshot of Shortform summary of Indistractable&#34;&gt;&lt;/p&gt;
+&lt;p&gt;But then it also has a full book guide, which goes through every single chapter or part and adds more detail into it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-first-section.jpg&#34; alt=&#34;Screenshot of Shorform&amp;amp;rsquo;s Indistractable first part&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, Shortform takes a different approach: instead of just summarizing the book, they&amp;rsquo;re truly trying to explain it in their own unique way, providing examples and making it more readable using bullet points.&lt;/p&gt;
+&lt;h3 id=&#34;action-oriented-exercises&#34;&gt;Action-oriented exercises&lt;/h3&gt;
+&lt;p&gt;Shortform also has these exercises based on the things that the author has said in the book. These exercises are peppered throughout and between these chapters, and they really force you to put things into practice right away as soon as you learn them, which is another element of learning.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-exercises.jpg&#34; alt=&#34;Screenshot of an exercise in Shortform&amp;amp;rsquo;s Indistractable summary&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;critical-thinking-comparisons-to-other-ideas&#34;&gt;Critical thinking: comparisons to other ideas&lt;/h3&gt;
+&lt;p&gt;Shortform tries to examine ideas in the context of other books they&amp;rsquo;ve made summaries for. Here&amp;rsquo;s an example of a Shortform note where Shortform suggests the summary of the book &lt;a href=&#34;https://amzn.to/3NdqE5C&#34;&gt;How to Stop Worrying and Start Living&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-comparison.jpeg&#34; alt=&#34;Screenshot of Shortform note connecting Indistractable to another book&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Fans of the Zettelkasten method will be happy to see this, because Shortform often prompts me to consider the differences or similarities between ideas from different authors. It helps me see connections I might not have considered. Incidentally, I&amp;rsquo;ve also found many good books this way!&lt;/p&gt;
+&lt;h2 id=&#34;how-to-use-shortform-with-obsidian&#34;&gt;How to use Shortform with Obsidian&lt;/h2&gt;
+&lt;p&gt;The other thing that really sells it for me is the integration. Because I don&amp;rsquo;t want that learning to stop in the Shortform app. You know me, and I want everything in Obsidian. And Shortform has an integration that Blinkist does not.&lt;/p&gt;
+&lt;p&gt;I actually tried to solve this problem myself a year ago, because no integration existed. I &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/&#34;&gt;wrote a Python script&lt;/a&gt; that would take the Shortform highlights, because it has an API, and then call the Readwise API and kind of string them together. Now, that still works as far as I know, but that&amp;rsquo;s not what I recommend anymore. I talked to the Readwise founders and suggested to them that Shortform was a great company to partner with. Not too long after that, they came out with &lt;a href=&#34;https://readwise.io/changelog/shortform-import&#34;&gt;an awesome integration&lt;/a&gt;!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, sign up to both &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Shortform&lt;/a&gt; and &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. They both have free trials, so you don&amp;rsquo;t have to commit to anything just yet.&lt;/li&gt;
+&lt;li&gt;Then, &lt;a href=&#34;https://readwise.io/welcome/sync#shortform&#34;&gt;click on this link to connect&lt;/a&gt; your Readwise account to Shortform.&lt;/li&gt;
+&lt;li&gt;(optional) If you use Obsidian like I do, &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;follow these instructions&lt;/a&gt; to install the Readwise Official plugin for Obsidian.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s pretty much it!&lt;/p&gt;
+&lt;p&gt;From now on, here&amp;rsquo;s how things will work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You make highlights on books on Shortform.&lt;/li&gt;
+&lt;li&gt;Those highlights are sent to Readwise automatically.&lt;/li&gt;
+&lt;li&gt;Through the Readwise official plugin, those highlights get synced into your Obsidian vault.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-result-shortform-highlights-in-obsidian&#34;&gt;The result: Shortform highlights in Obsidian&lt;/h3&gt;
+&lt;p&gt;Here&amp;rsquo;s what my Shortform highlights look like in Obsidian. Note that after setting this up, all I had to do was make highlights on Shortform&amp;ndash; it&amp;rsquo;s quite low-touch after that.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-shortform-indistractable.png&#34; alt=&#34;Shorform highlights synced to Obsidian vault via Readwise&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I tweaked the export settings in Readwise to set the format I want the note to have in Obsidian. You don&amp;rsquo;t have to do this, but if you want to, you can change those settings &lt;a href=&#34;https://readwise.io/export/obsidian/preferences&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;my-shortform-workflow-for-taking-notes-on-books&#34;&gt;My Shortform workflow for taking notes on books&lt;/h2&gt;
+&lt;p&gt;This is pretty much how a lot of my book-buying and -reading goes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I start by browsing books on Shortform and read the one-page summaries.&lt;/li&gt;
+&lt;li&gt;If I find one I like, I buy the book on Kindle.&lt;/li&gt;
+&lt;li&gt;I make highlights on the Kindle version. (Those are synced to Obsidian too!)&lt;/li&gt;
+&lt;li&gt;If I really like the book, I flip back to the Shortform detailed chapter summaries as I finish each chapter, because they provide more context. I make highlights and notes from Shortform here sometimes.&lt;/li&gt;
+&lt;li&gt;Sometimes I do the Shortform exercises too.&lt;/li&gt;
+&lt;li&gt;After I finish the book, I go back to the Shortform summary and make more highlights/notes.&lt;/li&gt;
+&lt;li&gt;After I&amp;rsquo;ve read my fill of both the Shortform summary and the book itself, I go back to Obsidian and write my own notes that combine what I&amp;rsquo;ve learned.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If that sounds like a lot, it is! But keep in mind that I don&amp;rsquo;t do this for &lt;em&gt;every&lt;/em&gt; book. At every step of the way, Shortform helps me filter out books that I don&amp;rsquo;t want to read, or don&amp;rsquo;t want to finish.&lt;/p&gt;
+&lt;p&gt;Shortform definitely saves me money: it costs less than a book a month and it stops me from reading more than one book a month. From that perspective, it&amp;rsquo;s already worth it.&lt;/p&gt;
+&lt;p&gt;But more than that, the thoughtfulness of the summaries and the research that goes into those commentaries save me more than just money: &lt;em&gt;they save me time&lt;/em&gt;. And that&amp;rsquo;s really what I keep coming back for.&lt;/p&gt;
+&lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;The easiest way to sync Kindle highlights to Obsidian - Readwise to Obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/&#34;&gt;How to process notes in Obsidian with Readwise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/&#34;&gt;I can finally tell you about Readwise Reader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/&#34;&gt;How to take notes from a book with Obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/&#34;&gt;Use it or lose it: what to do with all those notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Some of the links on this page are affiliate links. Click &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;here&lt;/a&gt; to check out my ethics statement and see how I decide what to promote in this way.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

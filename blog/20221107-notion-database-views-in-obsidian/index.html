@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Notion Database Views in Obsidian (Live) | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Notion Database Views in Obsidian (Live)" />
+<meta property="og:description" content="Have you ever wanted rotating Notion database views in Obsidian? Marcus Olsson&rsquo;s Obsidian Projects plugin does exactly that, letting you create Table, Board, Calendar, and Gallery views for the same notes in Obsidian, just like in Notion! Join us as Marcus shows us how this awesome new plugin works and how it can be used to display the same data in different ways.
+Resources Marcus&rsquo;s post on the plugin The Obsidian Projects GitHub repo The Projects roadmap My video on the old way to create a Content Calendar in Obsidian " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20221107-notion-database-views-in-obsidian/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-11-07T14:06:02+01:00" />
+<meta property="article:modified_time" content="2022-11-07T14:06:02+01:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notion Database Views in Obsidian (Live)"/>
+<meta name="twitter:description" content="Have you ever wanted rotating Notion database views in Obsidian? Marcus Olsson&rsquo;s Obsidian Projects plugin does exactly that, letting you create Table, Board, Calendar, and Gallery views for the same notes in Obsidian, just like in Notion! Join us as Marcus shows us how this awesome new plugin works and how it can be used to display the same data in different ways.
+Resources Marcus&rsquo;s post on the plugin The Obsidian Projects GitHub repo The Projects roadmap My video on the old way to create a Content Calendar in Obsidian "/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20221104-koh70-distributed-tracing-with-grafana-k6/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20221111-how-many-obsidian-vaults-should-you-have/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&text=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&is_video=false&description=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&name=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29&description=Have%20you%20ever%20wanted%20rotating%20Notion%20database%20views%20in%20Obsidian%3f%20Marcus%20Olsson%26rsquo%3bs%20Obsidian%20Projects%20plugin%20does%20exactly%20that%2c%20letting%20you%20create%20Table%2c%20Board%2c%20Calendar%2c%20and%20Gallery%20views%20for%20the%20same%20notes%20in%20Obsidian%2c%20just%20like%20in%20Notion%21%20Join%20us%20as%20Marcus%20shows%20us%20how%20this%20awesome%20new%20plugin%20works%20and%20how%20it%20can%20be%20used%20to%20display%20the%20same%20data%20in%20different%20ways.%0aResources%20Marcus%26rsquo%3bs%20post%20on%20the%20plugin%20The%20Obsidian%20Projects%20GitHub%20repo%20The%20Projects%20roadmap%20My%20video%20on%20the%20old%20way%20to%20create%20a%20Content%20Calendar%20in%20Obsidian%20">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&t=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Notion Database Views in Obsidian (Live)
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-11-07 14:06:02 &#43;0100 CET" itemprop="datePublished">2022-Nov-07</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/live" rel="tag">live</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/notion" rel="tag">notion</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian-projects" rel="tag">obsidian projects</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Have you ever wanted rotating Notion database views in Obsidian? Marcus Olsson&rsquo;s Obsidian Projects plugin does exactly that, letting you create Table, Board, Calendar, and Gallery views for the same notes in Obsidian, just like in Notion! Join us as Marcus shows us how this awesome new plugin works and how it can be used to display the same data in different ways.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/LdaMe2rzAW8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://marcus.se.net/announcing-obsidian-projects/">Marcus&rsquo;s post on the plugin</a></li>
+<li><a href="https://github.com/marcusolsson/obsidian-projects">The Obsidian Projects GitHub repo</a></li>
+<li><a href="https://github.com/users/marcusolsson/projects/4/views/14">The Projects roadmap</a></li>
+<li>My video on <a href="https://www.youtube.com/watch?v=iU60ItemuDo">the old way to create a Content Calendar in Obsidian</a></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&text=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&is_video=false&description=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&title=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&name=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29&description=Have%20you%20ever%20wanted%20rotating%20Notion%20database%20views%20in%20Obsidian%3f%20Marcus%20Olsson%26rsquo%3bs%20Obsidian%20Projects%20plugin%20does%20exactly%20that%2c%20letting%20you%20create%20Table%2c%20Board%2c%20Calendar%2c%20and%20Gallery%20views%20for%20the%20same%20notes%20in%20Obsidian%2c%20just%20like%20in%20Notion%21%20Join%20us%20as%20Marcus%20shows%20us%20how%20this%20awesome%20new%20plugin%20works%20and%20how%20it%20can%20be%20used%20to%20display%20the%20same%20data%20in%20different%20ways.%0aResources%20Marcus%26rsquo%3bs%20post%20on%20the%20plugin%20The%20Obsidian%20Projects%20GitHub%20repo%20The%20Projects%20roadmap%20My%20video%20on%20the%20old%20way%20to%20create%20a%20Content%20Calendar%20in%20Obsidian%20">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221107-notion-database-views-in-obsidian%2f&t=Notion%20Database%20Views%20in%20Obsidian%20%28Live%29">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 28 Oct 2022 16:00:34 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Dec 2022 16:28:29 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading and Taking Notes on Kindle and Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/</link>
+      <pubDate>Fri, 16 Dec 2022 16:28:29 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/</guid>
+      <description>&lt;p&gt;Reading on a Kindle can be more convenient than reading paperbacks because you can import your Kindle highlights and notes into Obsidian or your note-taking app of choice. Here are some tips for making the most out of every book you read.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DwgtBGVxHTg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian redux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/&#34;&gt;I can finally tell you about Readwise Reader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📝 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/&#34;&gt;Readwise to Obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📝 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/&#34;&gt;How to import Shortform highlights to Obsidian via Readwise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/&#34;&gt;How real people process notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Taking Better Notes From Books: Shortform-Readwise-Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</link>
@@ -397,7 +420,7 @@ date: {{date}}
 &lt;meta property=”og:image:height” content=”628″ /&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;Readwise Official&lt;/a&gt;, which is available now! I now recomment &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;this method&lt;/a&gt; over the one outlined in this article.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;Readwise Official&lt;/a&gt;, which is available now! I now recommend &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;this method&lt;/a&gt; over the one outlined in this article.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m about 9 months into heavily using &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em&gt;seriously&lt;/em&gt; attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p&gt;
 &lt;p&gt;Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p&gt;

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Mastobot: a Mastodon Bot for Readwise and Obsidian | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Mastobot: a Mastodon Bot for Readwise and Obsidian" />
+<meta property="og:description" content="I&rsquo;ve had a love affair with Readwise for a while, enough to write some code to extend it. I wrote a Python script to save Readwise highlights to my Obsidian vault, switched to the Readwise Official plugin when they released it, wrote another script sending Shortform highlights to Readwise, and then was happy when the two companies established an official integration thanks to me introducing them.
+Maybe I should have learned to just be patient and wait for the awesome Readwise team to build integrations I want, but remembered I&rsquo;m not that patient." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-12-25T00:31:28+00:00" />
+<meta property="article:modified_time" content="2022-12-25T00:31:28+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mastobot: a Mastodon Bot for Readwise and Obsidian"/>
+<meta name="twitter:description" content="I&rsquo;ve had a love affair with Readwise for a while, enough to write some code to extend it. I wrote a Python script to save Readwise highlights to my Obsidian vault, switched to the Readwise Official plugin when they released it, wrote another script sending Shortform highlights to Readwise, and then was happy when the two companies established an official integration thanks to me introducing them.
+Maybe I should have learned to just be patient and wait for the awesome Readwise team to build integrations I want, but remembered I&rsquo;m not that patient."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20221223-visual-atomic-note-taking-with-obsidian-excalidraw/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&text=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&is_video=false&description=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&name=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian&description=I%26rsquo%3bve%20had%20a%20love%20affair%20with%20Readwise%20for%20a%20while%2c%20enough%20to%20write%20some%20code%20to%20extend%20it.%20I%20wrote%20a%20Python%20script%20to%20save%20Readwise%20highlights%20to%20my%20Obsidian%20vault%2c%20switched%20to%20the%20Readwise%20Official%20plugin%20when%20they%20released%20it%2c%20wrote%20another%20script%20sending%20Shortform%20highlights%20to%20Readwise%2c%20and%20then%20was%20happy%20when%20the%20two%20companies%20established%20an%20official%20integration%20thanks%20to%20me%20introducing%20them.%0aMaybe%20I%20should%20have%20learned%20to%20just%20be%20patient%20and%20wait%20for%20the%20awesome%20Readwise%20team%20to%20build%20integrations%20I%20want%2c%20but%20remembered%20I%26rsquo%3bm%20not%20that%20patient.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&t=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-problem">The problem</a></li>
+    <li><a href="#the-result">The result</a></li>
+    <li><a href="#the-solution">The solution</a>
+      <ul>
+        <li><a href="#pre-requisites">Pre-requisites</a></li>
+        <li><a href="#setup">Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#limitations">Limitations</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#related">Related</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Mastobot: a Mastodon Bot for Readwise and Obsidian
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-12-25 00:31:28 &#43;0000 UTC" itemprop="datePublished">2022-Dec-25</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/mastodon" rel="tag">mastodon</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/code" rel="tag">code</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/readwise" rel="tag">readwise</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/mastodon" rel="tag">mastodon</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/nodejs" rel="tag">nodejs</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/javascript" rel="tag">javascript</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>I&rsquo;ve had a love affair with <a href="https://readwise.io/nicole">Readwise</a> for a while, enough to write some code to extend it. I <a href="/blog/20210206-readwise-to-obsidian/">wrote a Python script to save Readwise highlights to my Obsidian vault</a>, switched to the <a href="/blog/20210810-readwise-to-obsidian-redux/">Readwise Official plugin</a> when they released it, <a href="https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/">wrote another script sending Shortform highlights to Readwise</a>, and then was happy when the two companies established an official integration thanks to me introducing them.</p>
+<p>Maybe I should have learned to just be patient and wait for the awesome Readwise team to build integrations I want, but remembered I&rsquo;m not that patient. This is about how I created a Mastodon bot to send Mastodon posts I like to my Readwise account, and, by extension, to my <a href="https://obsidian.md/">Obsidian</a> vault.</p>
+<p>You might say there&rsquo;s a pattern here.</p>
+<h2 id="the-problem">The problem</h2>
+<p>I&rsquo;ve been dabbling in <a href="https://joinmastodon.org/">Mastodon</a> for a while, but only recently got extremely involved with it when I decided to start and maintain a Mastodon server, <a href="https://pkm.social">pkm.social</a>, for the personal knowledge management community.</p>
+<p>Readwise already has an awesome <a href="https://youtu.be/Rw1L5sxlnuU?t=400">Twitter integration</a> that I really enjoyed. Basically, once you&rsquo;ve set it up, sending any tweet to <a href="https://twitter.com/readwise">@readwise</a> adds it to your Readwise account. This means that whenever someone says something actually meaningful or interesting on Twitter, I can make sure it gets sent to Readwise, and then from there to my notes in Obsidian.</p>
+<p>I wanted the same setup for Mastodon.</p>
+<h2 id="the-result">The result</h2>
+<p>First, the end result: I managed to get Mastodon posts I send to my bot to be sent to my Readwise account. Here are some early posts in the &ldquo;Tweets&rdquo; section of my Readwise Library:</p>
+<p><img src="/assets/mastodon-on-readwise.png" alt=""></p>
+<p>And here are the resulting notes in Obsidian, also automatically synced and formatted:</p>
+<p><img src="/assets/mastodon-in-obsidian.png" alt=""></p>
+<h2 id="the-solution">The solution</h2>
+<p>Next, here&rsquo;s how to set it up.</p>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>You&rsquo;ll need a few things to get started:</p>
+<ul>
+<li>A Mastodon account (I use and co-host <a href="https://pkm.social">pkm.social</a> for free)</li>
+<li>A Readwise account (<a href="https://readwise.io/nicole">Here&rsquo;s an affiliate link</a>)</li>
+<li>Familiarity with GitHub, the command line, Node.js (although I&rsquo;m not a Node.js developer, so you don&rsquo;t have to be, either)</li>
+<li>The willingness/ability to leave a Node.js script running on a server somewhere</li>
+</ul>
+<h3 id="setup">Setup</h3>
+<ol>
+<li>Clone <a href="https://github.com/nicolevanderhoeven/mastobot">my Mastobot repository</a>.</li>
+<li>In your Mastodon account settings, go to the Development section for your Mastodon server (e.g. <code>https://pkm.social/settings/applications</code>) and click New Application.</li>
+<li>Fill in the application name (this can be anything you want), leave everything else the same, and then click Save Changes.</li>
+<li>Click on the application you just created, and note your client key, client secret, and access token. You&rsquo;ll need these later.</li>
+<li>In this repository, copy the contents of <code>.env.sample</code> to a new file called <code>.env</code>.</li>
+</ol>
+<p>It should look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">ACCESS_TOKEN</span><span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">CLIENT_SECRET</span><span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">CLIENT_KEY</span><span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">READWISE_TOKEN</span><span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DOMAIN</span><span style="color:#f92672">=</span>
+</span></span></code></pre></div><ol start="6">
+<li>Fill out the fields in <code>.env</code> with the information you just obtained from your Mastodon account.</li>
+<li>For the <code>READWISE_TOKEN</code> field, enter your <a href="https://readwise.io/access_token">Readwise access token</a>.</li>
+<li>For the <code>DOMAIN</code> field, enter your Mastodon server&rsquo;s domain (e.g. <code>https://pkm.social</code>).</li>
+<li>Run <code>npm install</code> to install the dependencies.</li>
+<li>Run <code>node bot.js</code> to start the bot.</li>
+<li>In Mastodon, find a post you like and reply to it with <code>@accountname Your comment here.</code> Within a few minutes, the original post you replied to will be sent to your Readwise account as a highlight and your comment as a note.</li>
+</ol>
+<h2 id="limitations">Limitations</h2>
+<p>This workflow is not without its limitations:</p>
+<ul>
+<li>You need to keep the script running somewhere to be able to use it. I considered using a polling approach, but decided I wanted to experiment with Mastodon&rsquo;t streaming API, which would also be more responsive, so I went with that.</li>
+<li>Right now, because the bot takes environment variables about <em>your</em> particular setup, it&rsquo;s not as versatile as the official Twitter implementation. As it is, it&rsquo;s for one person&rsquo;s use only.</li>
+<li>It uses the &ldquo;Tweets&rdquo; category in Readwise, which is not ideal, but I can&rsquo;t really do anything about that until they give Mastodon its own category. This isn&rsquo;t really a big deal.</li>
+<li>Right now, the bot doesn&rsquo;t support images or other media embedded to posts.</li>
+</ul>
+<p>I may address some of these issues, but for now, I&rsquo;m just happy with the result. I fully expect that the Readwise team will eventually be able to flesh this out into a more robust integration, so I&rsquo;m hesitant to spend too much more effort now that I&rsquo;ve got it doing the minimum of what I wanted.</p>
+<h2 id="resources">Resources</h2>
+<p>If you&rsquo;re interested in doing this for yourself, here are some resources that might be useful:</p>
+<ul>
+<li><a href="https://github.com/nicolevanderhoeven/mastobot">Mastobot on GitHub</a></li>
+<li><a href="https://github.com/vanita5/mastodon-api">Mastodon API client for NodeJS</a></li>
+<li><a href="https://docs.joinmastodon.org/api/">Mastodon official API</a></li>
+<li>Great video tutorial series by <a href="https://www.youtube.com/watch?v=sKSxBd56H70">The Coding Train</a> on creating a Mastodon bot</li>
+</ul>
+<h2 id="related">Related</h2>
+<ul>
+<li>📝 <a href="/blog/20210810-readwise-to-obsidian-redux/">Readwise to Obsidian (Redux)</a></li>
+<li>🎥 <a href="/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/">How to process notes in Obsidian - Readwise Official Obsidian plugin</a></li>
+<li>🎥 <a href="/blog/20220907-what-is-readwise-reader/">I can finally tell you about Readwise Reader</a></li>
+<li>📝🎥 <a href="/blog/20221028-taking-better-notes-from-books-shortform-review/">Taking better notes from books: Shortform-Readwise-Obsdian</a>]</li>
+<li>🎥 <a href="/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/">Reading and taking notes on Kindle and Obsidian</a></li>
+</ul>
+<p><em>Note: I&rsquo;ve included affiliate links for <a href="https://readwise.io/nicole">Readwise</a> in this post, in accordance with my <a href="https://nicolevanderhoeven.com/ethics/">Ethics Statement</a>.</em></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-problem">The problem</a></li>
+    <li><a href="#the-result">The result</a></li>
+    <li><a href="#the-solution">The solution</a>
+      <ul>
+        <li><a href="#pre-requisites">Pre-requisites</a></li>
+        <li><a href="#setup">Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#limitations">Limitations</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#related">Related</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&text=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&is_video=false&description=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&title=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&name=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian&description=I%26rsquo%3bve%20had%20a%20love%20affair%20with%20Readwise%20for%20a%20while%2c%20enough%20to%20write%20some%20code%20to%20extend%20it.%20I%20wrote%20a%20Python%20script%20to%20save%20Readwise%20highlights%20to%20my%20Obsidian%20vault%2c%20switched%20to%20the%20Readwise%20Official%20plugin%20when%20they%20released%20it%2c%20wrote%20another%20script%20sending%20Shortform%20highlights%20to%20Readwise%2c%20and%20then%20was%20happy%20when%20the%20two%20companies%20established%20an%20official%20integration%20thanks%20to%20me%20introducing%20them.%0aMaybe%20I%20should%20have%20learned%20to%20just%20be%20patient%20and%20wait%20for%20the%20awesome%20Readwise%20team%20to%20build%20integrations%20I%20want%2c%20but%20remembered%20I%26rsquo%3bm%20not%20that%20patient.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20221225-mastodon-bot-for-readwise-and-obsidian%2f&t=Mastobot%3a%20a%20Mastodon%20Bot%20for%20Readwise%20and%20Obsidian">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

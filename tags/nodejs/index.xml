@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/nodejs/</link>
+    <description>Recent content in nodejs on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Sun, 25 Dec 2022 00:31:28 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastobot: a Mastodon Bot for Readwise and Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</link>
+      <pubDate>Sun, 25 Dec 2022 00:31:28 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had a love affair with &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; for a while, enough to write some code to extend it. I &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/&#34;&gt;wrote a Python script to save Readwise highlights to my Obsidian vault&lt;/a&gt;, switched to the &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;Readwise Official plugin&lt;/a&gt; when they released it, &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/&#34;&gt;wrote another script sending Shortform highlights to Readwise&lt;/a&gt;, and then was happy when the two companies established an official integration thanks to me introducing them.&lt;/p&gt;
+&lt;p&gt;Maybe I should have learned to just be patient and wait for the awesome Readwise team to build integrations I want, but remembered I&amp;rsquo;m not that patient. This is about how I created a Mastodon bot to send Mastodon posts I like to my Readwise account, and, by extension, to my &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; vault.&lt;/p&gt;
+&lt;p&gt;You might say there&amp;rsquo;s a pattern here.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve been dabbling in &lt;a href=&#34;https://joinmastodon.org/&#34;&gt;Mastodon&lt;/a&gt; for a while, but only recently got extremely involved with it when I decided to start and maintain a Mastodon server, &lt;a href=&#34;https://pkm.social&#34;&gt;pkm.social&lt;/a&gt;, for the personal knowledge management community.&lt;/p&gt;
+&lt;p&gt;Readwise already has an awesome &lt;a href=&#34;https://youtu.be/Rw1L5sxlnuU?t=400&#34;&gt;Twitter integration&lt;/a&gt; that I really enjoyed. Basically, once you&amp;rsquo;ve set it up, sending any tweet to &lt;a href=&#34;https://twitter.com/readwise&#34;&gt;@readwise&lt;/a&gt; adds it to your Readwise account. This means that whenever someone says something actually meaningful or interesting on Twitter, I can make sure it gets sent to Readwise, and then from there to my notes in Obsidian.&lt;/p&gt;
+&lt;p&gt;I wanted the same setup for Mastodon.&lt;/p&gt;
+&lt;h2 id=&#34;the-result&#34;&gt;The result&lt;/h2&gt;
+&lt;p&gt;First, the end result: I managed to get Mastodon posts I send to my bot to be sent to my Readwise account. Here are some early posts in the &amp;ldquo;Tweets&amp;rdquo; section of my Readwise Library:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/mastodon-on-readwise.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And here are the resulting notes in Obsidian, also automatically synced and formatted:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/mastodon-in-obsidian.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The solution&lt;/h2&gt;
+&lt;p&gt;Next, here&amp;rsquo;s how to set it up.&lt;/p&gt;
+&lt;h3 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h3&gt;
+&lt;p&gt;You&amp;rsquo;ll need a few things to get started:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Mastodon account (I use and co-host &lt;a href=&#34;https://pkm.social&#34;&gt;pkm.social&lt;/a&gt; for free)&lt;/li&gt;
+&lt;li&gt;A Readwise account (&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Here&amp;rsquo;s an affiliate link&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Familiarity with GitHub, the command line, Node.js (although I&amp;rsquo;m not a Node.js developer, so you don&amp;rsquo;t have to be, either)&lt;/li&gt;
+&lt;li&gt;The willingness/ability to leave a Node.js script running on a server somewhere&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone &lt;a href=&#34;https://github.com/nicolevanderhoeven/mastobot&#34;&gt;my Mastobot repository&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;In your Mastodon account settings, go to the Development section for your Mastodon server (e.g. &lt;code&gt;https://pkm.social/settings/applications&lt;/code&gt;) and click New Application.&lt;/li&gt;
+&lt;li&gt;Fill in the application name (this can be anything you want), leave everything else the same, and then click Save Changes.&lt;/li&gt;
+&lt;li&gt;Click on the application you just created, and note your client key, client secret, and access token. You&amp;rsquo;ll need these later.&lt;/li&gt;
+&lt;li&gt;In this repository, copy the contents of &lt;code&gt;.env.sample&lt;/code&gt; to a new file called &lt;code&gt;.env&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It should look like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACCESS_TOKEN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CLIENT_SECRET&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CLIENT_KEY&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;READWISE_TOKEN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;DOMAIN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Fill out the fields in &lt;code&gt;.env&lt;/code&gt; with the information you just obtained from your Mastodon account.&lt;/li&gt;
+&lt;li&gt;For the &lt;code&gt;READWISE_TOKEN&lt;/code&gt; field, enter your &lt;a href=&#34;https://readwise.io/access_token&#34;&gt;Readwise access token&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For the &lt;code&gt;DOMAIN&lt;/code&gt; field, enter your Mastodon server&amp;rsquo;s domain (e.g. &lt;code&gt;https://pkm.social&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;npm install&lt;/code&gt; to install the dependencies.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;node bot.js&lt;/code&gt; to start the bot.&lt;/li&gt;
+&lt;li&gt;In Mastodon, find a post you like and reply to it with &lt;code&gt;@accountname Your comment here.&lt;/code&gt; Within a few minutes, the original post you replied to will be sent to your Readwise account as a highlight and your comment as a note.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;This workflow is not without its limitations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You need to keep the script running somewhere to be able to use it. I considered using a polling approach, but decided I wanted to experiment with Mastodon&amp;rsquo;t streaming API, which would also be more responsive, so I went with that.&lt;/li&gt;
+&lt;li&gt;Right now, because the bot takes environment variables about &lt;em&gt;your&lt;/em&gt; particular setup, it&amp;rsquo;s not as versatile as the official Twitter implementation. As it is, it&amp;rsquo;s for one person&amp;rsquo;s use only.&lt;/li&gt;
+&lt;li&gt;It uses the &amp;ldquo;Tweets&amp;rdquo; category in Readwise, which is not ideal, but I can&amp;rsquo;t really do anything about that until they give Mastodon its own category. This isn&amp;rsquo;t really a big deal.&lt;/li&gt;
+&lt;li&gt;Right now, the bot doesn&amp;rsquo;t support images or other media embedded to posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I may address some of these issues, but for now, I&amp;rsquo;m just happy with the result. I fully expect that the Readwise team will eventually be able to flesh this out into a more robust integration, so I&amp;rsquo;m hesitant to spend too much more effort now that I&amp;rsquo;ve got it doing the minimum of what I wanted.&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in doing this for yourself, here are some resources that might be useful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nicolevanderhoeven/mastobot&#34;&gt;Mastobot on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vanita5/mastodon-api&#34;&gt;Mastodon API client for NodeJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.joinmastodon.org/api/&#34;&gt;Mastodon official API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Great video tutorial series by &lt;a href=&#34;https://www.youtube.com/watch?v=sKSxBd56H70&#34;&gt;The Coding Train&lt;/a&gt; on creating a Mastodon bot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;Readwise to Obsidian (Redux)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/&#34;&gt;How to process notes in Obsidian - Readwise Official Obsidian plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/&#34;&gt;I can finally tell you about Readwise Reader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📝🎥 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/&#34;&gt;Taking better notes from books: Shortform-Readwise-Obsdian&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/&#34;&gt;Reading and taking notes on Kindle and Obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note: I&amp;rsquo;ve included affiliate links for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; in this post, in accordance with my &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;Ethics Statement&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

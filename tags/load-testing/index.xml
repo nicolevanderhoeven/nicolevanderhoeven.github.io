@@ -7,7 +7,244 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 04 Nov 2022 14:03:04 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/load-testing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jan 2023 17:12:42 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/load-testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide to Load Testing Websites</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230112-load-testing-websites/</link>
+      <pubDate>Thu, 12 Jan 2023 17:12:42 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230112-load-testing-websites/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Original article &lt;a href=&#34;https://k6.io/docs/testing-guides/load-testing-websites/&#34;&gt;here&lt;/a&gt;, written for k6.io&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This doc explains some key concepts about load testing websites, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The difference between backend and frontend performance testing&lt;/li&gt;
+&lt;li&gt;When to choose between protocol-based, browser-based, or hybrid scripts&lt;/li&gt;
+&lt;li&gt;Recommended practices about how to load test websites&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All load tests try to simulate real user traffic  to prevent failures, improve reliability, and release new code with confidence.
+But your approach to load testing must adapt to the type of application you want to test.&lt;/p&gt;
+&lt;p&gt;In this guide, learn about strategies to test websites, including specific recommendations for complex scenario scripting and test execution.&lt;/p&gt;
+&lt;h2 id=&#34;load-testing-approaches&#34;&gt;Load testing approaches&lt;/h2&gt;
+&lt;p&gt;When you approach the load test, first consider the following perspectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend vs. frontend performance&lt;/li&gt;
+&lt;li&gt;Protocol-based, browser-based, or hybrid load testing&lt;/li&gt;
+&lt;li&gt;Component testing vs. end-to-end testing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;backend-vs-frontend-performance&#34;&gt;Backend vs. frontend performance&lt;/h2&gt;
+&lt;p&gt;Performance has a significant influence on the user experience of a website.&lt;/p&gt;
+&lt;p&gt;For example, when users want to visualize or interact with some information, they expect the website to react quickly.&lt;/p&gt;
+&lt;p&gt;To measure performance, testers often look at response times, which are affected by two main factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Frontend performance&lt;/li&gt;
+&lt;li&gt;Backend performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;frontend-performance&#34;&gt;Frontend performance&lt;/h3&gt;
+&lt;p&gt;Frontend performance testing verifies application performance on the interface level, measuring round-trip metrics that consider how and when page elements appear on the screen. It&amp;rsquo;s concerned with the end-user experience of an application, usually involving a browser.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/frontend-rendering.png&#34; alt=&#34;Snapshots over time of webpage elements rendering on a browser&#34; title=&#34;Snapshots over time of webpage elements rendering on a browser&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Frontend performance testing excels at identifying issues on a micro level but does not expose issues in the underlying architecture of a system.&lt;/p&gt;
+&lt;p&gt;Because it primarily measures a single user&amp;rsquo;s experience of the system, frontend performance testing tends to be easier to run on a small scale.
+Frontend performance testing has metrics that are distinct from backend performance testing. Frontend performance tests for things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whether the pages of the application are optimized to render quickly on a user&amp;rsquo;s screen&lt;/li&gt;
+&lt;li&gt;How long it takes a user to interact with the UI elements of the application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some concerns when doing this type of performance testing are its dependency on fully integrated environments and the cost of scaling. You can test frontend performance only once the application code and infrastructure have been integrated with a user interface. Tools to automate frontend testing are also inherently more resource-intensive, so they can be costly to run at scale and are not suitable for high load tests.&lt;/p&gt;
+&lt;h3 id=&#34;backend-performance&#34;&gt;Backend performance&lt;/h3&gt;
+&lt;p&gt;Backend performance testing targets the underlying application servers to see how they behave under production-like conditions. When it comes to websites, while frontend performance involves how assets included in the page are rendered, backend performance focuses on how those assets are processed by the application servers, served to users, and downloaded by browsers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/backend-performance.png&#34; alt=&#34;Backend components&#34; title=&#34;Backend components of an application&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Backend testing is broader in scope than frontend performance testing. API testing can be used to target specific components or integrated components, meaning that application teams have more flexibility and higher chances of finding performance issues earlier. Backend testing is less resource-intensive than frontend performance testing and is thus more suitable for generating high load.&lt;/p&gt;
+&lt;h3 id=&#34;which-one-should-you-test&#34;&gt;Which one should you test?&lt;/h3&gt;
+&lt;p&gt;It depends! Ideally, both.&lt;/p&gt;
+&lt;p&gt;Frontend testing tools are executed on the client side and are limited in scope: they do not provide enough information about backend components for fine-tuning beyond the user interface.&lt;/p&gt;
+&lt;p&gt;This limitation can lead to false confidence in overall application performance when the amount of traffic against an application increases. While the frontend component of response time remains more or less constant, the backend component of response time increases exponentially with the number of concurrent users:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Frontend-Backend-LoadTesting.png&#34; alt=&#34;Backend performance often contributes significantly to overall user experience&#34; title=&#34;Backend performance often contributes significantly to overall user experience&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Testing &lt;em&gt;only&lt;/em&gt; frontend performance ignores a large part of the application, one more susceptible to increased failures and performance bottlenecks at higher levels of load.&lt;/p&gt;
+&lt;p&gt;Testing &lt;em&gt;only&lt;/em&gt; backend performance, on the other hand, ignores &amp;ldquo;the first mile&amp;rdquo; of user experience and breadth. Backend testing involves messaging at the protocol level rather than interacting with page elements the way a real user would. It verifies the foundation of an application rather than the highest layer of it that a user ultimately sees.&lt;/p&gt;
+&lt;p&gt;Testing both frontend and backend performance leads to the best overall performance and user experience for your application. Ignoring one or the other exposes you to performance bottlenecks that significantly decrease a user&amp;rsquo;s satisfaction with your application.&lt;/p&gt;
+&lt;p&gt;However, if your testing is smaller in scope, you can choose to focus on either frontend or backend with the goal of eventually building a test suite that encompasses both.&lt;/p&gt;
+&lt;h2 id=&#34;component-testing-vs-end-to-end-testing&#34;&gt;Component testing vs. end-to-end testing&lt;/h2&gt;
+&lt;p&gt;When you&amp;rsquo;re testing a web app, you may wonder whether how you structure your test scripts. Consider the following two methods.&lt;/p&gt;
+&lt;h3 id=&#34;component-testing&#34;&gt;Component testing&lt;/h3&gt;
+&lt;p&gt;One way you could load test a web app is to load test its components. Maybe you know there are issues with a specific functionality due to previous production issues, or maybe you&amp;rsquo;d like to target components that are business-critical to reduce risk exposure.&lt;/p&gt;
+&lt;p&gt;In these cases, the type of test you write may:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;be protocol-based&lt;/li&gt;
+&lt;li&gt;call only those API endpoints that are relevant&lt;/li&gt;
+&lt;li&gt;have smaller or no sleep/think time&lt;/li&gt;
+&lt;li&gt;be focused on eventually stress testing a component or service or finding its breaking point&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Testing in this way is more flexible. With protocol testing, you can specify the endpoints or servers you&amp;rsquo;d like to hit, and narrow your test&amp;rsquo;s target that way. You can test specific functionalities while skipping others that come chronologically before it in a standard user flow. You can more finely control the type of traffic that is generated. If you&amp;rsquo;re recreating a specific mix of requests, you can script those requests and reproduce them in a repeatable manner.&lt;/p&gt;
+&lt;p&gt;Doing component testing for load may not always require that your script behave like an end user. In fact, it may be necessary to artificially inflate traffic to more quickly reproduce issues, or to deflate traffic to reduce the noise in the logs. By the nature of this type of testing, scripts don&amp;rsquo;t contain the full flow of a request that you would expect to see in production, so realism is not a priority.&lt;/p&gt;
+&lt;h3 id=&#34;end-to-end-testing&#34;&gt;End-to-end testing&lt;/h3&gt;
+&lt;p&gt;You could also do end-to-end testing against a web app. End-to-end testing seeks to replicate real user behaviour and track its effects across the entire stack. When doing end-to-end testing, you might:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;do protocol-level, browser-level, or hybrid load testing&lt;/li&gt;
+&lt;li&gt;replicate the actions in a typical user flow&lt;/li&gt;
+&lt;li&gt;think about the performance of the entire workflow as well as how long a request took to be processed by each component&lt;/li&gt;
+&lt;li&gt;write scripts that access the application the same way users would, such as by browsing to the homepage before finding their way to other parts of the website&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This type of load testing is broader in scope than component testing, but shallower in terms of depth. With end-to-end testing, you get a better idea of the full user experience of the application as a whole. However, it can also be more complex to troubleshoot, as you have more components to monitor and more places to look for issues that are found.&lt;/p&gt;
+&lt;p&gt;End-to-end testing is based on real user behavior, so it&amp;rsquo;s often important that end-to-end test scripts also be realistic.&lt;/p&gt;
+&lt;h2 id=&#34;protocol-based-browser-based-or-hybrid-load-testing&#34;&gt;Protocol-based, browser-based, or hybrid load testing&lt;/h2&gt;
+&lt;p&gt;The decision of whether to test the frontend, backend, or both will also affect the type of load testing you should carry out and the kind of scripts you should write.&lt;/p&gt;
+&lt;h3 id=&#34;protocol-based-load-testing&#34;&gt;Protocol-based load testing&lt;/h3&gt;
+&lt;p&gt;Protocol-based load testing verifies the backend performance of an application by simulating the requests underlying user actions. For websites, this commonly involves HTTP requests that bypass the user interface of your application and are sent directly to a server or application component.&lt;/p&gt;
+&lt;p&gt;For example, a protocol-based load testing script might request all the resources on a webpage from the application servers, but those resources are merely downloaded. The response times reported by a purely protocol-based script do not include frontend metrics such as the time taken for images to render on a browser. The load is generated by simulating many requests sent to application servers.&lt;/p&gt;
+&lt;p&gt;While protocol-based load testing may seem to lend itself better to component testing, you can also do end-to-end website testing with protocol-level scripts.&lt;/p&gt;
+&lt;h4 id=&#34;sample-protocol-based-test-script&#34;&gt;Sample protocol-based test script&lt;/h4&gt;
+&lt;p&gt;The following is an example of a protocol-based load testing script in k6 that fetches the homepage, along with resources embedded into the page.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Homepage&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;sec-ch-ua&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;Chromium&amp;#34;;v=&amp;#34;94&amp;#34;, &amp;#34;Google Chrome&amp;#34;;v=&amp;#34;94&amp;#34;, &amp;#34;;Not A Brand&amp;#34;;v=&amp;#34;99&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accept-encoding&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;gzip, deflate, br&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accept-language&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;en-GB,en;q=0.9&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// 01. Go to the homepage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;batch&lt;/span&gt;([
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/style.min.css&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/header.png&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/polyfill.min.js&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt;, {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homepage loaded&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;JSON&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stringify&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Welcome to my site&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// 02. View products
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;batch&lt;/span&gt;([
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/products&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/style.css&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/product1.jpg&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/product2.jpg&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/displaylist.js&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt;, {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Products loaded&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;JSON&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stringify&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Add to Cart&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://k6.io/docs/test-authoring/recording-a-session/browser-recorder/&#34;&gt;Recording browser traffic&lt;/a&gt; helps you prototype to test websites on the protocol level.&lt;/p&gt;
+&lt;h3 id=&#34;browser-based-load-testing&#34;&gt;Browser-based load testing&lt;/h3&gt;
+&lt;p&gt;Browser-based load testing verifies the frontend performance of an application by simulating real users using a browser to access your website.&lt;/p&gt;
+&lt;p&gt;For example, a browser-based load testing script might include instructions to navigate to a page, click on a button, and type out text on a form. Those user actions then trigger underlying requests on the protocol layer, but only user actions are scripted in browser-based testing.&lt;/p&gt;
+&lt;p&gt;Unlike protocol-based load testing, browser-based load testing scripts generate load by starting multiple instances of browsers and interacting with your application the way real users would. Testing at the browser level can also be the only option for testing Single-Page Applications where a lot of the application logic is executed by client-side scripts.&lt;/p&gt;
+&lt;p&gt;Scripting on the browser level usually requires the use of different tools from the ones used to test at the protocol level.
+However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascript-api/xk6-browser/&#34;&gt;xk6-browser&lt;/a&gt; that allows the creation of browser-based test scripts alongside protocol-based ones.&lt;/p&gt;
+&lt;h4 id=&#34;sample-browser-based-test-script&#34;&gt;Sample browser-based test script&lt;/h4&gt;
+&lt;p&gt;The following is an example of a browser-based load testing script in k6 using xk6-browser on a dummy website. Instead of making an HTTP request, the script views the homepage, then looks for and clicks on a link to the product page.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;chromium&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/x/browser&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chromium&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;launch&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;headless&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;newPage&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// 01. Go to the homepage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#66d9ef&#34;&gt;goto&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com&amp;#39;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;waitUntil&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;networkidle&amp;#39;&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(() =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;waitForSelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;p[class=&amp;#34;woocommerce-result-count&amp;#34;]&amp;#34;]&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;screenshot&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;screenshots/01_homepage.png&amp;#39;&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// 02. View products
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a[class=&amp;#34;woocommerce-LoopProduct-link woocommerce-loop-product__link&amp;#34;]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;waitForSelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;button[name=&amp;#34;add-to-cart&amp;#34;]&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;screenshot&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;screenshots/02_view-product.png&amp;#39;&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#66d9ef&#34;&gt;finally&lt;/span&gt;(() =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;close&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;close&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;tips-for-writing-browser-level-scripts&#34;&gt;Tips for writing browser-level scripts&lt;/h4&gt;
+&lt;p&gt;The following steps can help you get started with a browser-level test script.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Script user actions, not requests.&lt;/strong&gt; Determine what a user might do for a particular task, and script interactions with elements on the browser level. For example, script what buttons the user clicks on.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Identify unique selectors.&lt;/strong&gt; Once you have identified which page elements a user interacts with, use the Element Inspector for DevTools in your browser to find a unique, static, and simple way to identify each element. The script needs selectors to find the right element to interact with.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use elements to verify responses.&lt;/strong&gt; After every action, use &lt;a href=&#34;https://k6.io/docs/javascript-api/xk6-browser/api/locator/&#34;&gt;locators&lt;/a&gt; to search for elements on the page that you would expect to find. This verification helps ensure that the script has reached the expected page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take screenshots for every action while debugging.&lt;/strong&gt; One of the advantages of browser-based testing is the ability to take screenshots. After every user interaction the script simulates, use &lt;a href=&#34;https://k6.io/docs/javascript-api/xk6-browser/api/page/&#34;&gt;page.screenshot&lt;/a&gt; to save a visual image of what the script encountered for later troubleshooting.&lt;/p&gt;
+&lt;h3 id=&#34;hybrid-load-testing&#34;&gt;Hybrid load testing&lt;/h3&gt;
+&lt;p&gt;Hybrid load testing is a combination of protocol-based and browser-based load testing. While you can use two tools or two scripts to execute different types of load tests (one protocol-based and one browser-based), having both types of tests executed by the same script and the same tool is ideal. Aggregating results between different tools can be difficult at best and inconsistent at worst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/hybrid-testing.png&#34; alt=&#34;Hybrid of frontend and backend performance testing&#34; title=&#34;In hybrid load testing, both the frontend and backend are tested&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A best practice in hybrid load testing is to generate most of the load using the protocol-level test, and then to run a smaller number of the browser-level testing scripts. This approach:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reduces the number of load generators needed, since protocol-level testing requires fewer machines to generate the same load&lt;/li&gt;
+&lt;li&gt;measures backend and frontend performance in the same test execution&lt;/li&gt;
+&lt;li&gt;provides a single source of aggregated output at the end&lt;/li&gt;
+&lt;li&gt;reduces complexity in the creation and maintenance of scripts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;scripting-considerations&#34;&gt;Scripting considerations&lt;/h2&gt;
+&lt;p&gt;When you script a test for a website, consider these recommendations.&lt;/p&gt;
+&lt;h3 id=&#34;consider-factors-that-affect-script-realism&#34;&gt;Consider factors that affect script realism&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Record your user journey.&lt;/strong&gt;  Using the browser recorder can facilitate initial test script creation by capturing all the embedded resources on webpages. Check out the &lt;a href=&#34;https://k6.io/docs/test-authoring/recording-a-session&#34;&gt;Session Recording guide&lt;/a&gt; to learn more about how to auto-generate your load test from a user session.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Correlate data.&lt;/strong&gt; Recordings often don&amp;rsquo;t take into account dynamic values that are generated anew each time a request is made. Go through the recorded requests and determine whether you need to &lt;a href=&#34;https://k6.io/docs/examples/correlation-and-dynamic-data/&#34;&gt;extract values from previous responses&lt;/a&gt; and use parameters in subsequent requests. This practice ensures your VUs behave more like real users would.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Include or exclude static resources.&lt;/strong&gt; Determine whether you should include or exclude static resources on pages such as images, JavaScript, etc. Consider including them if you want to measure overall user experience. Consider excluding them if you are using a Content Delivery Network (CDN) that is under a separate Service Level Agreement (SLA).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exclude third-party requests.&lt;/strong&gt; Don&amp;rsquo;t load test servers that you don&amp;rsquo;t own. Many applications make calls to third-party providers for authentication, social sharing, and marketing analytics. Disable these requests unless you have permission to include them in your tests.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use concurrent requests.&lt;/strong&gt; To mimic the way modern browsers download some requests in parallel, use &lt;a href=&#34;https://k6.io/docs/javascript-api/k6-http/batch/&#34;&gt;batching&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Determine cache and cookie behaviour.&lt;/strong&gt;  k6 automatically resets cookies between iterations, but you can also &lt;a href=&#34;https://k6.io/docs/using-k6/k6-options/reference/#no-cookies-reset&#34;&gt;change this behavior&lt;/a&gt; if maintaining cookies would be more realistic.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use dynamic think time and pacing.&lt;/strong&gt;  Consider adding varying &lt;a href=&#34;https://k6.io/docs/javascript-api/k6/sleep/&#34;&gt;delays&lt;/a&gt; so you don&amp;rsquo;t artificially stagger a script with completely uniform delays.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use test data.&lt;/strong&gt; Real users typically don&amp;rsquo;t search for or submit the same data repeatedly. Consider adding a &lt;a href=&#34;https://k6.io/docs/examples/data-parameterization/&#34;&gt;test data file&lt;/a&gt; for the script to iterate through.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Model test parameters and load profile after production.&lt;/strong&gt; In k6, you can use &lt;a href=&#34;https://k6.io/docs/using-k6/k6-options/how-to&#34;&gt;test options&lt;/a&gt; to determine the exact shape and profile of your load test script. Select the appropriate &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/executors/&#34;&gt;executors&lt;/a&gt; for the job.&lt;/p&gt;
+&lt;h3 id=&#34;create-a-reusable-framework&#34;&gt;Create a reusable framework&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use tags and groups.&lt;/strong&gt; Organizing requests by &lt;a href=&#34;https://k6.io/docs/using-k6/tags-and-groups/&#34;&gt;tagging and grouping them&lt;/a&gt; helps you consolidate like metrics and makes your test scripts more understandable by others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use scenarios.&lt;/strong&gt; When combining protocol-based and browser-based tests, use &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/&#34;&gt;scenarios&lt;/a&gt; to independently control their test parameters and &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/executors/&#34;&gt;executors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modularize scripts.&lt;/strong&gt; Use &lt;a href=&#34;https://k6.io/docs/using-k6/modules/&#34;&gt;modules&lt;/a&gt; to separate and organize functions for protocol-level testing and browser-level testing, and then use a test runner script to execute them. This approach means different scripts can be versioned and changed without affecting each other.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Integrate your tests into your CI pipeline.&lt;/strong&gt; Adopting a &amp;ldquo;tests as code&amp;rdquo; approach enables you to tie your load tests more closely into your project&amp;rsquo;s existing CI/CD processes, helping you get the most value out of every test.&lt;/p&gt;
+&lt;h3 id=&#34;test-with-thresholds-in-mind&#34;&gt;Test with thresholds in mind&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Create thresholds for both types of testing.&lt;/strong&gt; Some browser-level and protocol-level metrics cannot be combined because they don&amp;rsquo;t measure the same thing. Set &lt;a href=&#34;https://k6.io/docs/using-k6/thresholds/&#34;&gt;thresholds&lt;/a&gt; for relevant metrics from both the browser-level script and the protocol-level one.&lt;/p&gt;
+&lt;h3 id=&#34;when-possible-use-hybrid-load-testing&#34;&gt;When possible, use hybrid load testing&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use protocol-based scripts to generate majority of the load.&lt;/strong&gt; When writing the test scenario, use the protocol-based requests to simulate most of the traffic and use fewer VUs for the browser-based requests. Relying on the protocol-level traffic helps keep resource utilization on load generators down.&lt;/p&gt;
+&lt;h2 id=&#34;execution-considerations&#34;&gt;Execution considerations&lt;/h2&gt;
+&lt;p&gt;When you run tests, consider the test environment and the load generator location.&lt;/p&gt;
+&lt;h3 id=&#34;run-your-tests-in-the-appropriate-environment&#34;&gt;Run your tests in the appropriate environment&lt;/h3&gt;
+&lt;p&gt;Testing in pre-production environments and in production environments both add value.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Testing in pre-production environments&lt;/strong&gt; (staging, test, system integration testing, user acceptance testing, and production replica environments) enables you to identify performance defects early, which can save a lot of time and effort (and reputation) later on. Running in test environments also means you can often afford to be more aggressive with your tests. However, it&amp;rsquo;s also more critical to get your load profiles right, and the test results you get may not necessarily apply to production.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Testing in production&lt;/strong&gt; yields the most accurate results, but it&amp;rsquo;s also more risky. Often, testing production is the only feasible alternative. You can reduce the risk of impact to real customers while testing in production by using lower levels of load when running load tests during peak hours, schedule tests for off-peak hours, choosing load test types that are less risky, using techniques like synthetic monitoring that generate less traffic, using real user monitoring tools to get snapshots of user performance at load, and ensuring that your observability stack is working at peak efficiency.&lt;/p&gt;
+&lt;h3 id=&#34;run-tests-where-your-customers-are&#34;&gt;Run tests where your customers are&lt;/h3&gt;
+&lt;p&gt;The location of the load generator(s), where the traffic is coming &lt;em&gt;from&lt;/em&gt;, can also have an impact on your test results. The question is: where are your end users located?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On-premises load testing&lt;/strong&gt; can be ideal when testing early on in the development a website, or when there are machines that can be repurposed as load generators. However, testing entirely from within a corporate network may also yield false positives, in that response times reported are significantly lower than if the same application servers were accessed from across the country.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Load testing on the cloud&lt;/strong&gt; is an essential part of the testing strategy for many public-facing websites. Using load generators on the cloud gives you access to test in different states and geographical countries, creating a mix of load generators proportional to your users&amp;rsquo; locations. Cloud load generators are easier to provision and cheaper to maintain in the long run than on-premise ones. Load testing on the cloud can help you include the effects of network latency in your tests and yield results that are more realistic.&lt;/p&gt;
+&lt;h2 id=&#34;recommendations&#34;&gt;Recommendations&lt;/h2&gt;
+&lt;p&gt;Here are some recommendations to help you plan, script, and execute your load tests for websites.&lt;/p&gt;
+&lt;p&gt;If you want to test the last-mile user experience of your website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;focus on &lt;strong&gt;frontend performance&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;write &lt;strong&gt;browser-based test scripts&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;and consider doing more realistic &lt;strong&gt;end-to-end&lt;/strong&gt; tests of the user flow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to test the underlying infrastructure of your website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;focus on &lt;strong&gt;backend performance&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;write &lt;strong&gt;protocol-based test scripts&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;and consider starting with &lt;strong&gt;component testing&lt;/strong&gt; and then gradually increasing the scope.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your website is meant for internal or has limited access:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;on-premise load generators&lt;/strong&gt; located within the network that most of your users access the website from.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your website is external and public-facing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;cloud load generators&lt;/strong&gt; in the load zones where your users reside.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Test in &lt;strong&gt;pre-production environments&lt;/strong&gt; when you can, but also consider &lt;strong&gt;testing in production&lt;/strong&gt; in a limited capacity.&lt;/p&gt;
+&lt;p&gt;Load testing websites can be complex due to the number of viable testing approaches available, the scope for performance testing, and the potential effects of releasing undertested code. By following the recommendations we&amp;rsquo;ve put forward here, you can tailor your testing more closely to your objectives.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Distributed Tracing With Grafana k6 (k6 Office Hours #70)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20221104-koh70-distributed-tracing-with-grafana-k6/</link>

@@ -3,22 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> How to Do Exploratory Testing for Performance (k6 Office Hours #79) | Nicole van der Hoeven</title>
+  <title> Integrating k6 and Tracetest (k6 Office Hours #77) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="How to Do Exploratory Testing for Performance (k6 Office Hours #79)" />
-<meta property="og:description" content="Marie Cruz and Nicole van der Hoeven talk about what exploratory testing is, why you should do it, and how to do exploratory testing to improve application performance. They discuss some heuristics to add structure and intention to exploratory testing for both frontend and backend performance." />
+  <meta property="og:title" content="Integrating k6 and Tracetest (k6 Office Hours #77)" />
+<meta property="og:description" content="Tracetest enables trace-based testing with assertions at any point within a request transaction. Using the xk6-tracetest extension, your k6 tests can launch deep testing by unlocking the power of OpenTelemetry.
+Join us as Developer Advocates Nicole and der Hoeven and Paul Balogh are joined by founder Ken Hamric and software engineer Oscar Reyes from Tracetest.
+Check out Tracetest:
+site xk6-tracetest: repo for k6 extension docs on how to use Tracetest with k6 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230224-koh79-how-to-do-exploratory-testing-for-performance/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-02-24T23:01:26+00:00" />
-<meta property="article:modified_time" content="2023-02-24T23:01:26+00:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230203-koh77-integrating-k6-and-tracetest/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-02-03T08:00:15+00:00" />
+<meta property="article:modified_time" content="2023-02-03T08:00:15+00:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Do Exploratory Testing for Performance (k6 Office Hours #79)"/>
-<meta name="twitter:description" content="Marie Cruz and Nicole van der Hoeven talk about what exploratory testing is, why you should do it, and how to do exploratory testing to improve application performance. They discuss some heuristics to add structure and intention to exploratory testing for both frontend and backend performance."/>
+<meta name="twitter:title" content="Integrating k6 and Tracetest (k6 Office Hours #77)"/>
+<meta name="twitter:description" content="Tracetest enables trace-based testing with assertions at any point within a request transaction. Using the xk6-tracetest extension, your k6 tests can launch deep testing by unlocking the power of OpenTelemetry.
+Join us as Developer Advocates Nicole and der Hoeven and Paul Balogh are joined by founder Ken Hamric and software engineer Oscar Reyes from Tracetest.
+Check out Tracetest:
+site xk6-tracetest: repo for k6 extension docs on how to use Tracetest with k6 "/>
 
   
   
@@ -112,14 +118,14 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230224-my-new-favorite-obsidian-theme-anuppucin/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230201-frontend-vs-backend-performance-testing/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20230303-writing-a-book-in-obsidian/">
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20230203-my-setup-in-obsidian-for-ttrpgs/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -150,57 +156,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&text=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&text=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&is_video=false&description=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&is_video=false&description=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f">
+    <a class="icon" href="mailto:?subject=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&name=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29&description=Marie%20Cruz%20and%20Nicole%20van%20der%20Hoeven%20talk%20about%20what%20exploratory%20testing%20is%2c%20why%20you%20should%20do%20it%2c%20and%20how%20to%20do%20exploratory%20testing%20to%20improve%20application%20performance.%20They%20discuss%20some%20heuristics%20to%20add%20structure%20and%20intention%20to%20exploratory%20testing%20for%20both%20frontend%20and%20backend%20performance.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&name=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29&description=Tracetest%20enables%20trace-based%20testing%20with%20assertions%20at%20any%20point%20within%20a%20request%20transaction.%20Using%20the%20xk6-tracetest%20extension%2c%20your%20k6%20tests%20can%20launch%20deep%20testing%20by%20unlocking%20the%20power%20of%20OpenTelemetry.%0aJoin%20us%20as%20Developer%20Advocates%20Nicole%20and%20der%20Hoeven%20and%20Paul%20Balogh%20are%20joined%20by%20founder%20Ken%20Hamric%20and%20software%20engineer%20Oscar%20Reyes%20from%20Tracetest.%0aCheck%20out%20Tracetest%3a%0asite%20xk6-tracetest%3a%20repo%20for%20k6%20extension%20docs%20on%20how%20to%20use%20Tracetest%20with%20k6%20">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&t=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&t=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -217,13 +223,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        How to Do Exploratory Testing for Performance (k6 Office Hours #79)
+        Integrating k6 and Tracetest (k6 Office Hours #77)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2023-02-24 23:01:26 &#43;0000 UTC" itemprop="datePublished">2023-Feb-24</time>
+          <time datetime="2023-02-03 08:00:15 &#43;0000 UTC" itemprop="datePublished">2023-Feb-03</time>
           
         </div>
         
@@ -265,10 +271,17 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>Marie Cruz and Nicole van der Hoeven talk about what exploratory testing is, why you should do it, and how to do exploratory testing to improve application performance. They discuss some heuristics to add structure and intention to exploratory testing for both frontend and backend performance.</p>
+      <p>Tracetest enables trace-based testing with assertions at any point within a request transaction. Using the xk6-tracetest extension, your k6 tests can launch deep testing by unlocking the power of OpenTelemetry.</p>
+<p>Join us as Developer Advocates Nicole and der Hoeven and Paul Balogh are joined by founder Ken Hamric and software engineer Oscar Reyes from Tracetest.</p>
+<p>Check out Tracetest:</p>
+<ul>
+<li><a href="https://tracetest.io/">site</a></li>
+<li><a href="https://github.com/kubeshop/xk6-tracetest">xk6-tracetest</a>: repo for k6 extension</li>
+<li><a href="https://docs.tracetest.io/tools-and-integrations/k6/">docs</a> on how to use Tracetest with k6</li>
+</ul>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/6wVwdlMwsJ8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/Dog70D7aVyg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -280,7 +293,7 @@
     <h2>See Also</h3>
     <ul>
     
-    <li><a href="/blog/20230203-koh77-integrating-k6-and-tracetest/">Integrating k6 and Tracetest (k6 Office Hours #77)</a></li>
+    <li><a href="/blog/20230224-koh79-how-to-do-exploratory-testing-for-performance/">How to Do Exploratory Testing for Performance (k6 Office Hours #79)</a></li>
     
     <li><a href="/blog/20230317-randomness-in-obsidian-with-dice-roller/">Randomness in Obsidian With Dice Roller</a></li>
     
@@ -335,57 +348,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&text=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&text=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&is_video=false&description=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&is_video=false&description=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f">
+    <a class="icon" href="mailto:?subject=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&title=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&title=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&name=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29&description=Marie%20Cruz%20and%20Nicole%20van%20der%20Hoeven%20talk%20about%20what%20exploratory%20testing%20is%2c%20why%20you%20should%20do%20it%2c%20and%20how%20to%20do%20exploratory%20testing%20to%20improve%20application%20performance.%20They%20discuss%20some%20heuristics%20to%20add%20structure%20and%20intention%20to%20exploratory%20testing%20for%20both%20frontend%20and%20backend%20performance.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&name=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29&description=Tracetest%20enables%20trace-based%20testing%20with%20assertions%20at%20any%20point%20within%20a%20request%20transaction.%20Using%20the%20xk6-tracetest%20extension%2c%20your%20k6%20tests%20can%20launch%20deep%20testing%20by%20unlocking%20the%20power%20of%20OpenTelemetry.%0aJoin%20us%20as%20Developer%20Advocates%20Nicole%20and%20der%20Hoeven%20and%20Paul%20Balogh%20are%20joined%20by%20founder%20Ken%20Hamric%20and%20software%20engineer%20Oscar%20Reyes%20from%20Tracetest.%0aCheck%20out%20Tracetest%3a%0asite%20xk6-tracetest%3a%20repo%20for%20k6%20extension%20docs%20on%20how%20to%20use%20Tracetest%20with%20k6%20">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230224-koh79-how-to-do-exploratory-testing-for-performance%2f&t=How%20to%20Do%20Exploratory%20Testing%20for%20Performance%20%28k6%20Office%20Hours%20%2379%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230203-koh77-integrating-k6-and-tracetest%2f&t=Integrating%20k6%20and%20Tracetest%20%28k6%20Office%20Hours%20%2377%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

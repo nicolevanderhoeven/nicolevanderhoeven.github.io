@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 12 Aug 2022 16:19:13 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 15:20:58 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Grafana Cloud k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/</link>
+      <pubDate>Tue, 21 Mar 2023 15:20:58 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/</guid>
+      <description>&lt;p&gt;Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure. With Grafana Cloud k6, you can get a holistic look at your system&amp;rsquo;s performance&amp;ndash; on any environment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://grafana.com/products/cloud/k6/&#34;&gt;Sign up to Grafana Cloud k6&lt;/a&gt;.
+&lt;a href=&#34;https://k6.io/docs/cloud/integrations/grafana-app/&#34;&gt;Learn more about Grafana Cloud k6&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OMh7bWk2qnQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Observability Trends and Future Best Practices (k6 Office Hours #59)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220812-koh59-observability-trends-and-future-best-practices/</link>

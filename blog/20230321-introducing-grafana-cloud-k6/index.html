@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> How to Run a Load Test With the k6 Cloud Test Builder | Nicole van der Hoeven</title>
+  <title> Introducing Grafana Cloud k6 | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="How to Run a Load Test With the k6 Cloud Test Builder" />
-<meta property="og:description" content="In this video, I demonstrate how to create and run a load test from scratch without coding, using k6 Cloud&rsquo;s Test Builder. k6 Cloud is a load testing platform as a service, and you can run 50 free load tests on the cloud here." />
+  <meta property="og:title" content="Introducing Grafana Cloud k6" />
+<meta property="og:description" content="Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-04-12T17:00:48+02:00" />
-<meta property="article:modified_time" content="2022-04-12T17:00:48+02:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-03-21T15:20:58+00:00" />
+<meta property="article:modified_time" content="2023-03-21T15:20:58+00:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Run a Load Test With the k6 Cloud Test Builder"/>
-<meta name="twitter:description" content="In this video, I demonstrate how to create and run a load test from scratch without coding, using k6 Cloud&rsquo;s Test Builder. k6 Cloud is a load testing platform as a service, and you can run 50 free load tests on the cloud here."/>
+<meta name="twitter:title" content="Introducing Grafana Cloud k6"/>
+<meta name="twitter:description" content="Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure."/>
 
   
   
@@ -112,17 +112,11 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20220409-jeremy-valentine-and-his-obsidian-plugins/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230317-randomness-in-obsidian-with-dice-roller/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -150,57 +144,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&text=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&text=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&is_video=false&description=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&is_video=false&description=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f">
+    <a class="icon" href="mailto:?subject=Introducing%20Grafana%20Cloud%20k6&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&name=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder&description=In%20this%20video%2c%20I%20demonstrate%20how%20to%20create%20and%20run%20a%20load%20test%20from%20scratch%20without%20coding%2c%20using%20k6%20Cloud%26rsquo%3bs%20Test%20Builder.%20k6%20Cloud%20is%20a%20load%20testing%20platform%20as%20a%20service%2c%20and%20you%20can%20run%2050%20free%20load%20tests%20on%20the%20cloud%20here.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&name=Introducing%20Grafana%20Cloud%20k6&description=Grafana%20Cloud%20k6%20is%20a%20feature%20available%20to%20all%20users%20of%20Grafana%20Cloud.%20It%20allows%20you%20to%20run%20load%20and%20performance%20tests%20right%20from%20the%20comfort%20of%20your%20Grafana%20Cloud%20instance%2c%20without%20needing%20to%20create%20a%20separate%20account%20on%20k6%20Cloud.%20Grafana%20Cloud%20k6%20helps%20you%20get%20started%20quickly%20with%20a%20GUI%20Test%20Builder%20or%20with%20test%20scripts%20written%20in%20JavaScript%2c%20and%20then%20visualize%20your%20test%20results%20in%20real-time%2c%20alongside%20your%20other%20Grafana%20dashboards%20that%20monitor%20your%20system%20infrastructure.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&t=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&t=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -217,13 +211,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        How to Run a Load Test With the k6 Cloud Test Builder
+        Introducing Grafana Cloud k6
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2022-04-12 17:00:48 &#43;0200 &#43;0200" itemprop="datePublished">2022-Apr-12</time>
+          <time datetime="2023-03-21 15:20:58 &#43;0000 UTC" itemprop="datePublished">2023-Mar-21</time>
           
         </div>
         
@@ -238,13 +232,16 @@
             <a class="tag-link" href="/tags/english" rel="tag">english</a>
             
              ,  
-            <a class="tag-link" href="/tags/k6-cloud" rel="tag">k6 Cloud</a>
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
             
              ,  
             <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
             
              ,  
             <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
             
         </div>
         
@@ -253,10 +250,12 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>In this video, I demonstrate how to create and run a load test from scratch without coding, using k6 Cloud&rsquo;s Test Builder. k6 Cloud is a load testing platform as a service, and you can run 50 <a href="https://app.k6.io/account/register">free load tests on the cloud here</a>.</p>
+      <p>Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure. With Grafana Cloud k6, you can get a holistic look at your system&rsquo;s performance&ndash; on any environment.</p>
+<p><a href="https://grafana.com/products/cloud/k6/">Sign up to Grafana Cloud k6</a>.
+<a href="https://k6.io/docs/cloud/integrations/grafana-app/">Learn more about Grafana Cloud k6</a>.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/3ZFGyp-gHoA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/OMh7bWk2qnQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -268,15 +267,15 @@
     <h2>See Also</h3>
     <ul>
     
-    <li><a href="/blog/20211203-koh36-whats-new-with-k6-cloud/">What&#39;s new with k6 Cloud, with front-end lead Simon Legander (k6 Office Hours #36)</a></li>
+    <li><a href="/blog/20220812-koh59-observability-trends-and-future-best-practices/">Observability Trends and Future Best Practices (k6 Office Hours #59)</a></li>
     
-    <li><a href="/blog/20230321-introducing-grafana-cloud-k6/">Introducing Grafana Cloud k6</a></li>
+    <li><a href="/blog/20211012-basics-of-load-testing-with-k6-and-grafana/">Basics of load testing with k6 and Grafana in 20 minutes</a></li>
     
-    <li><a href="/blog/20230317-koh82-experimental-modules-in-k6/">Experimental modules in k6 (k6 Office Hours #82)</a></li>
+    <li><a href="/blog/20211005-testing-with-k6-and-grafana-better-together/">Testing With k6 &#43; Grafana: Better Together (Grafana virtual meetup EMEA)</a></li>
     
-    <li><a href="/blog/20230224-koh79-how-to-do-exploratory-testing-for-performance/">How to Do Exploratory Testing for Performance (k6 Office Hours #79)</a></li>
+    <li><a href="/blog/20210916-intro-to-load-testing-with-k6-and-grafana/">Intro to Load Testing With k6 and Grafana (webinar)</a></li>
     
-    <li><a href="/blog/20230203-koh77-integrating-k6-and-tracetest/">Integrating k6 and Tracetest (k6 Office Hours #77)</a></li>
+    <li><a href="/blog/20210908-schrodingers-pokemon-k6-and-grafana/">Schrödinger&#39;s Pokémon: k6 and Grafana edition</a></li>
     
     </ul>
     
@@ -323,57 +322,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&text=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&text=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&is_video=false&description=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&is_video=false&description=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f">
+    <a class="icon" href="mailto:?subject=Introducing%20Grafana%20Cloud%20k6&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&title=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&name=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder&description=In%20this%20video%2c%20I%20demonstrate%20how%20to%20create%20and%20run%20a%20load%20test%20from%20scratch%20without%20coding%2c%20using%20k6%20Cloud%26rsquo%3bs%20Test%20Builder.%20k6%20Cloud%20is%20a%20load%20testing%20platform%20as%20a%20service%2c%20and%20you%20can%20run%2050%20free%20load%20tests%20on%20the%20cloud%20here.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&name=Introducing%20Grafana%20Cloud%20k6&description=Grafana%20Cloud%20k6%20is%20a%20feature%20available%20to%20all%20users%20of%20Grafana%20Cloud.%20It%20allows%20you%20to%20run%20load%20and%20performance%20tests%20right%20from%20the%20comfort%20of%20your%20Grafana%20Cloud%20instance%2c%20without%20needing%20to%20create%20a%20separate%20account%20on%20k6%20Cloud.%20Grafana%20Cloud%20k6%20helps%20you%20get%20started%20quickly%20with%20a%20GUI%20Test%20Builder%20or%20with%20test%20scripts%20written%20in%20JavaScript%2c%20and%20then%20visualize%20your%20test%20results%20in%20real-time%2c%20alongside%20your%20other%20Grafana%20dashboards%20that%20monitor%20your%20system%20infrastructure.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20220412-how-to-run-a-load-test-with-the-k6-cloud-test-builder%2f&t=How%20to%20Run%20a%20Load%20Test%20With%20the%20k6%20Cloud%20Test%20Builder">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&t=Introducing%20Grafana%20Cloud%20k6">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

@@ -2,40 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nicolevanderhoeven.github.io/tags/audio/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/learning-in-public/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/podcast/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2023-03-26T20:14:56+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20230324-koh-83-grafana-cloud-k6/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
+    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/</loc>
     <lastmod>2023-03-21T15:20:58+00:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
-    <lastmod>2023-03-21T15:20:58+00:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/dice-roller/</loc>
-    <lastmod>2023-03-17T17:00:25+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
     <lastmod>2023-03-17T17:00:25+00:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/plugin/</loc>
@@ -48,9 +69,6 @@
     <lastmod>2023-03-17T17:00:25+00:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230317-koh82-experimental-modules-in-k6/</loc>
-    <lastmod>2023-03-17T16:00:35+00:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
     <lastmod>2023-03-17T16:00:35+00:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/scripting/</loc>
@@ -419,9 +437,6 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20220729-koh58-1-year-ago-we-were-acquired/</loc>
     <lastmod>2022-07-29T16:12:34+01:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
-    <lastmod>2022-07-29T16:12:34+01:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/dd/</loc>
     <lastmod>2022-07-29T15:57:47+01:00</lastmod>
   </url><url>
@@ -498,9 +513,6 @@
     <lastmod>2022-06-17T17:37:14+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220608-performance-testing-with-k6/</loc>
-    <lastmod>2022-06-08T17:40:22+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/podcast/</loc>
     <lastmod>2022-06-08T17:40:22+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220603-visual-map-of-content-in-obsidian-with-excalidraw/</loc>
@@ -1013,9 +1025,6 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</loc>
     <lastmod>2021-08-09T17:46:51+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/audio/</loc>
-    <lastmod>2021-08-07T22:15:13+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/flood-element/</loc>
     <lastmod>2021-08-07T22:15:13+02:00</lastmod>
   </url><url>
@@ -1128,9 +1137,6 @@
     <lastmod>2021-05-18T22:33:18+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</loc>
-    <lastmod>2021-05-14T21:53:09+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/learning-in-public/</loc>
     <lastmod>2021-05-14T21:53:09+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/new-relic/</loc>

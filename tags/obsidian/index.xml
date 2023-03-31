@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 27 Mar 2023 08:56:48 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 14:30:21 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taking Notes for RPGs in Obsidian with Andy Polaine</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230331-taking-notes-for-rpgs-in-obsidian-with-andy-polaine/</link>
+      <pubDate>Fri, 31 Mar 2023 14:30:21 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230331-taking-notes-for-rpgs-in-obsidian-with-andy-polaine/</guid>
+      <description>&lt;p&gt;My friend, &lt;a href=&#34;https://polaine.com&#34;&gt;Andy Polaine&lt;/a&gt;, joins me to discuss taking notes for RPGs in Obsidian. Andy is the Dungeon Master for one of my weekly games of D&amp;amp;D, and in this livestream, we&amp;rsquo;re comparing our notes (his as a DM, mine as a player) for the same campaign, a homebrew one in the world of Exandria (from Critical Role). We&amp;rsquo;re showing the differences between our styles of note-taking and playing games.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8IyaSGI8X8Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Taking Notes for Research with Bianca Pereira</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230327-taking-notes-for-research/</link>
@@ -319,6 +334,20 @@ Now that I have my notes, how can I create new ideas from those notes and use an
   &lt;iframe src=&#34;https://www.youtube.com/embed/TkNTuFF2t-c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;key-takeaways&#34;&gt;Key takeaways&lt;/h2&gt;
+&lt;p&gt;10 notable points raised in the video were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stephan thinks the proliferation of tools for thought is a positive thing, in that every new tool that uses Markdown makes the standard more futureproof.&lt;/li&gt;
+&lt;li&gt;Obsidian&amp;rsquo;s three major pillars are extensibility, privacy, and longevity. Those are things Obsidian excels at.&lt;/li&gt;
+&lt;li&gt;The things Obsidian is bad at are the consequences of those three major pillars (such as fragmentation, difficulty in sharing, and being restricted to Markdown).&lt;/li&gt;
+&lt;li&gt;The Obsidian team consists of five full-time people, including founders Licat (Shida, dev) and Silver (Erica, product), Liam (dev of Calendar plugin), and Joethei (plugin reviews and dev ecosystem).&lt;/li&gt;
+&lt;li&gt;Upcoming features: better metadata format than YAML (think something like Dataview inline fields), better querying of tasks&lt;/li&gt;
+&lt;li&gt;Stephan wants to keep the Obsidian team small, and grow only when absolutely necessary.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s difficult to get exact usage figures for Obsidian, but going by downloads of the app bundle, there are about 1 million users.&lt;/li&gt;
+&lt;li&gt;The Obsidian team doesn&amp;rsquo;t want to bring on venture capital investors.&lt;/li&gt;
+&lt;li&gt;Better sharing in Obsidian is something they&amp;rsquo;re thinking about, but they need to prioritize use cases.&lt;/li&gt;
+&lt;li&gt;Artificial intelligence in Obsidian is likely to remain in the realm of community plugins for now.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Below is a transcript of the video.&lt;/p&gt;
 &lt;h2 id=&#34;introductions-nicole-van-der-hoeven-stephan-ango-andy-polaine&#34;&gt;Introductions: Nicole van der Hoeven, Stephan Ango, Andy Polaine&lt;/h2&gt;
 &lt;p&gt;Nicole: Hello, everyone. I&amp;rsquo;m Nicole van der Hoeven, and today I&amp;rsquo;m joined by two special guests. And I&amp;rsquo;d like to introduce first, I guess, Stephan Ango, or you might know him better as Kepano.&lt;/p&gt;

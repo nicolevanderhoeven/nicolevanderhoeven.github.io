@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sun, 25 Dec 2022 00:31:28 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 13:00:42 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Javascript Ecosystem (k6 Office Hours #85)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230407-koh85-k6-javascript-ecosystem/</link>
+      <pubDate>Fri, 07 Apr 2023 13:00:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230407-koh85-k6-javascript-ecosystem/</guid>
+      <description>&lt;p&gt;Did you know that there is a k6 JavaScript ecosystem on top of the Go extension ecosystem? What&amp;rsquo;s the difference between the two? What does k6 actually support? What types of things can you do with JavaScript? In this k6 Office Hours, Software Engineer and k6 maintainer Mihail Stoykov joins me to talk all about the different options for k6 available through JavaScript libraries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UZ-1yXd4xkk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Mastobot: a Mastodon Bot for Readwise and Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</link>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Frontend vs. backend: How to plan your performance testing strategy | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Frontend vs. backend: How to plan your performance testing strategy" />
+<meta property="og:description" content="Originally posted here.
+There are many aspects of application performance, but they broadly fall into two categories: frontend performance and backend performance. As a tester, it’s important to know the differences between the two and how that impacts the way you approach your tests.
+In this blog, I’ll provide a high-level overview of frontend performance testing and backend performance testing, including pros and cons of each one. I’ll also explain why you need both if you really want a holistic view of how your application is performing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230403-frontend-vs-backend-testing/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-03T13:20:53+01:00" />
+<meta property="article:modified_time" content="2023-04-03T13:20:53+01:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Frontend vs. backend: How to plan your performance testing strategy"/>
+<meta name="twitter:description" content="Originally posted here.
+There are many aspects of application performance, but they broadly fall into two categories: frontend performance and backend performance. As a tester, it’s important to know the differences between the two and how that impacts the way you approach your tests.
+In this blog, I’ll provide a high-level overview of frontend performance testing and backend performance testing, including pros and cons of each one. I’ll also explain why you need both if you really want a holistic view of how your application is performing."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230331-taking-notes-for-rpgs-in-obsidian-with-andy-polaine/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20230407-koh85-k6-javascript-ecosystem/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&text=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&is_video=false&description=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&name=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy&description=Originally%20posted%20here.%0aThere%20are%20many%20aspects%20of%20application%20performance%2c%20but%20they%20broadly%20fall%20into%20two%20categories%3a%20frontend%20performance%20and%20backend%20performance.%20As%20a%20tester%2c%20it%e2%80%99s%20important%20to%20know%20the%20differences%20between%20the%20two%20and%20how%20that%20impacts%20the%20way%20you%20approach%20your%20tests.%0aIn%20this%20blog%2c%20I%e2%80%99ll%20provide%20a%20high-level%20overview%20of%20frontend%20performance%20testing%20and%20backend%20performance%20testing%2c%20including%20pros%20and%20cons%20of%20each%20one.%20I%e2%80%99ll%20also%20explain%20why%20you%20need%20both%20if%20you%20really%20want%20a%20holistic%20view%20of%20how%20your%20application%20is%20performing.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&t=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-and-where-to-use-frontend-performance-testing">Why (and where) to use frontend performance testing</a>
+      <ul>
+        <li><a href="#advantages-of-frontend-performance-testing">Advantages of frontend performance testing</a></li>
+        <li><a href="#disadvantages-of-frontend-performance-testing">Disadvantages of frontend performance testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#why-and-where-to-use-backend-performance-testing">Why (and where) to use backend performance testing</a>
+      <ul>
+        <li><a href="#advantages-of-backend-performance-testing">Advantages of backend performance testing</a></li>
+        <li><a href="#disadvantages-of-backend-performance-testing">Disadvantages of backend performance testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#frontend--backend-testing-for-the-win">Frontend + backend testing for the win</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Frontend vs. backend: How to plan your performance testing strategy
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-04-03 13:20:53 &#43;0100 WEST" itemprop="datePublished">2023-Apr-03</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana-labs" rel="tag">grafana labs</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/load-testing" rel="tag">load testing</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p><em>Originally posted <a href="https://grafana.com/blog/2023/04/03/frontend-vs.-backend-how-to-plan-your-performance-testing-strategy/">here</a></em>.</p>
+<p>There are many aspects of application performance, but they broadly fall into two categories: frontend performance and backend performance. As a tester, it’s important to know the differences between the two and how that impacts the way you approach your tests.</p>
+<p>In this blog, I’ll provide a high-level overview of frontend performance testing and backend performance testing, including pros and cons of each one. I’ll also explain why you need both if you really want a holistic view of how your application is performing.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xVACRP5qIJI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="why-and-where-to-use-frontend-performance-testing">Why (and where) to use frontend performance testing</h2>
+<p>Frontend performance testing verifies user experience <a href="https://grafana.com/blog/2023/02/10/watch-how-to-pair-grafana-faro-and-grafana-k6-for-frontend-observability/">at the interface level</a>. Basically, this entails everything a user sees when they access your web app, whether it’s on a laptop or other devices. This might involve automating user interactions with the site through the browser — for example, clicking on a button, filling out a form, or having scripts that load on the browser and run.</p>
+<p><img src="/assets/crocs-r-cool.png" alt="mockup of a site called &amp;ldquo;Crocs R Cool&amp;rdquo;">
+<em>In frontend testing, you&rsquo;re looking at how components of the UI respond.</em></p>
+<p>The metrics we analyze for frontend performance tests are typically quite different from what we use for backend testing. Let’s say we want to know the time it takes for a page to render after a user clicks on a button that directs them there. This isn’t the same thing as measuring server response time; that total round trip takes a lot more into account — things like latency or the time it takes for a client-side script to run and display the requested information.</p>
+<h3 id="advantages-of-frontend-performance-testing">Advantages of frontend performance testing</h3>
+<p>The great thing about frontend performance testing is that it provides a more realistic measurement of your end users’ experiences. They don’t care what’s going on under the hood; they care about the overall experience — and that’s exactly what frontend performance testing measures. Unlike backend performance testing, frontend performance testing looks at everything from a user’s point of view: from the time they visit a webpage to the time they can interact with something on that page.</p>
+<p>On top of that, most (about 80%) of the performance issues end users report are frontend issues. It doesn’t make much sense to skip this type of testing; it can be a critical step in finding ways to improve the overall user experience.</p>
+<h3 id="disadvantages-of-frontend-performance-testing">Disadvantages of frontend performance testing</h3>
+<p>The most obvious disadvantage of frontend testing is that it doesn’t look under the hood. If you only do frontend testing, you’re almost certain to miss something. Maybe a component isn’t working, which is creating issues for your users. But you wouldn’t know that because you’re only testing what’s visible from the browser. In other words, you might be in the situation where you know something in the application is wrong and responding too slowly, but you don’t know what.</p>
+<p>Frontend performance testing can also be quite expensive compared to, say, protocol-based testing. That’s because you need enough resources (memory and CPU) to actually spin up a browser instance and interact with your application the way that a real user would. The same load generator that could run tens of thousands of backend virtual users may only be able to run 50 frontend virtual users before running out of resources.</p>
+<p>Finally, only testing frontend performance can sometimes lead to pretty misleading results, especially as you scale. As load increases, the response time for the frontend remains fairly constant, but that’s not the case with the backend.</p>
+<p><img src="/assets/Frontend-Backend-LoadTesting.png" alt="graph plotting response time over the number of concurrent users for front-end and back-end"></p>
+<p><em>While the frontend component of response time remains more or less constant, the backend component of response time increases exponentially with the number of concurrent users.</em></p>
+<p>This phenomenon occurs because most of the issues that frontend performance tests might identify, such as a slow-running client-side script, don’t tend to compound. It’ll be just as slow on each user’s computer regardless of how many users are running it. However, problems uncovered by backend performance testing are on the side of the application, not the users. If a database can’t keep up with 100 users sending queries to it, then 1,000 users sending it queries is likely to yield an even worse response time.</p>
+<h2 id="why-and-where-to-use-backend-performance-testing">Why (and where) to use backend performance testing</h2>
+<p>As you might have guessed at this point, backend performance testing targets the infrastructure under the hood. This could be a database that contains customer information, a payment gateway, or an authentication service for customers that have already signed up. These are things that an end user doesn’t see and maybe isn’t ever even aware of, but they still have an effect on response times.</p>
+<p><img src="/assets/backend.png" alt="graphic of application components"></p>
+<p><em>Backend testing addresses infrastructure users might not even be aware of, like different databases, gateways, and services that underpin an application.</em></p>
+<p>Scripting against the backend is quite different from scripting against the frontend. Instead of scripting user interactions like clicking, you’re scripting certain requests that are being sent on the protocol level. So, for example, you could have an HTTP GET request for the page and also for its embedded resources.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/http&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sleep</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;https://test.k6.io&#39;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The sample Grafana k6 script above is an example of a simplified backend performance test. It makes a single HTTP request to retrieve the contents of <a href="https://test.k6.io">https://test.k6.io</a>, and then waits one second.</p>
+<p>Backend performance includes things beyond just load times and latency. It includes scalability, availability, reliability, and similar attributes, so the metrics that we measure are different as well. We might look at server uptime or response times per component. We could also trace the path of a particular request through the application stack.</p>
+<p>An illustration shows that performance testing can address scalability, elasticity, availability, latency, resiliency, and reliability.
+Application performance is more than just speed. Backend testing helps us verify many different aspects of performance.</p>
+<p><img src="/assets/performance-ilities.png" alt="diagram of different types of performance"></p>
+<p><em>Application performance is more than just speed. Backend testing helps us verify many different aspects of performance.</em></p>
+<h3 id="advantages-of-backend-performance-testing">Advantages of backend performance testing</h3>
+<p>As we already discussed, frontend testing doesn’t cover everything, but it’s also more complicated than that. The 20% or so of performance bottlenecks that are backend-related can be the hardest to troubleshoot, identify, and fix. Even worse, a lot of backend performance issues can spiral out of control at higher levels of load and can be quite expensive to fix later on in a development cycle. The worst time to realize that you need to rethink your entire infrastructure is after it’s already failed in production. If you take care of backend performance testing earlier (commonly known as shifting left), it makes such pivots less costly.</p>
+<p>Another advantage of backend testing is the ability to target different components of an application. You can choose which API endpoint to hit and how hard, and you can target specific user flows, so it doesn’t always have to be end-to-end testing.</p>
+<p>And finally, backend performance tests tend to be less resource-intensive; they’re just protocol-level requests that can be easily ramped up.You don’t need to spin up a browser instance, or even parse through the Document Object Module (DOM) of a webpage or look for specific elements. It’s just a matter of sending these requests, and that’s something that you can increase the scale of pretty cheaply.</p>
+<h3 id="disadvantages-of-backend-performance-testing">Disadvantages of backend performance testing</h3>
+<p>Backend performance testing won’t tell you anything about what’s happening on the frontend, and a lot of sites these days actually use scripts that have to run on the frontend. So with backend performance testing tools, you just download those scripts. But the response time they measure is the download time, which is not really realistic because those scripts are executed. A backend performance test would fetch the text of the script. A frontend performance test would run it — and that script might do something like perform a calculation. You need frontend performance testing to measure that properly.</p>
+<p>Backend performance testing is also much more expansive than front end performance testing, especially with microservices-based applications. There are so many components to track that it can be difficult to determine where to look. You can quickly find yourself going down a rabbit hole of constant, never-ending performance tuning.</p>
+<h2 id="frontend--backend-testing-for-the-win">Frontend + backend testing for the win</h2>
+<p>So, as we’ve seen, frontend testing and backend testing both seem to have advantages and disadvantages. So which one should you use? Both, if at all possible! They look at different parts of application performance, so doing both is essential if you want a holistic view of user experience.</p>
+<p><img src="/assets/frontend-vs-backend-meta.png" alt="diagram of k6 being used for both frontend and backend testing"></p>
+<p><em>Software teams can use Grafana k6 to address frontend and backend performance testing.</em></p>
+<p>If you’re operating at a smaller scale, use your own discretion about how to find the right mix for needs. But if you’re testing at a larger scale with thousands of users and you want to test both the frontend and backend aspects of application performance, I suggest you change your test strategy so the majority of the load is generated with backend performance testing scripts. That’s because of the resource intensiveness of frontend performance testing scripts, which we discussed earlier.</p>
+<p>So, if you generate most of the load with the backend and then you have a handful of frontend performance testing scripts running in the background, you should still get a good idea of how both are performing. Remember, frontend application performance remains fairly constant throughout different levels of load, so you’ll still get a lot of useful insights on both types of performance without worrying too much about the scaling costs.</p>
+<p>Frontend and backend performance both affect what your end users think of your application. If the underlying application servers respond immediately to all requests, but then a huge picture of a crocodile makes your homepage excruciatingly slow to load, then users aren’t going to like that.</p>
+<p>On the other hand, if your homepage is really sleek and quick to load, but the application server hasn’t responded with the data that the browser needs to render, then users aren’t going to like that either.</p>
+<p>A common problem when testing both frontend and backend performance is script duplication: because of the differences in the two approaches, you often have to use two separate tools — which means two test suites and potentially two scripting languages. While this is a valid approach, it’s more sustainable to look for a tool that can target both types of performance, such as k6.</p>
+<p>Whichever tool(s) you end up using, testing both frontend and backend performance is going to give you the clearest view of how your application really performs.</p>
+<p><em>The easiest way to get started with k6 is through Grafana Cloud k6. The free tier includes 500 virtual user hours/month for k6 testing and more. <a href="https://grafana.com/auth/sign-up/create-user?pg=blog&amp;plcmt=body-txt">Sign up for free now!</a></em></p>
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20230112-load-testing-websites/">Guide to Load Testing Websites</a></li>
+    
+    <li><a href="/blog/20230324-koh-83-grafana-cloud-k6/">Grafana Cloud k6 (k6 Office Hours #83)</a></li>
+    
+    <li><a href="/blog/20220506-koh53-what-is-grafana-mimir/">What Is Grafana Mimir? (k6 Office Hours #53)</a></li>
+    
+    <li><a href="/blog/20220429-koh52-api-load-testing-using-k6/">API load testing using k6, with Tom Miseur (k6 Office Hours #52)</a></li>
+    
+    <li><a href="/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/">End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-and-where-to-use-frontend-performance-testing">Why (and where) to use frontend performance testing</a>
+      <ul>
+        <li><a href="#advantages-of-frontend-performance-testing">Advantages of frontend performance testing</a></li>
+        <li><a href="#disadvantages-of-frontend-performance-testing">Disadvantages of frontend performance testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#why-and-where-to-use-backend-performance-testing">Why (and where) to use backend performance testing</a>
+      <ul>
+        <li><a href="#advantages-of-backend-performance-testing">Advantages of backend performance testing</a></li>
+        <li><a href="#disadvantages-of-backend-performance-testing">Disadvantages of backend performance testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#frontend--backend-testing-for-the-win">Frontend + backend testing for the win</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&text=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&is_video=false&description=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&title=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&name=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy&description=Originally%20posted%20here.%0aThere%20are%20many%20aspects%20of%20application%20performance%2c%20but%20they%20broadly%20fall%20into%20two%20categories%3a%20frontend%20performance%20and%20backend%20performance.%20As%20a%20tester%2c%20it%e2%80%99s%20important%20to%20know%20the%20differences%20between%20the%20two%20and%20how%20that%20impacts%20the%20way%20you%20approach%20your%20tests.%0aIn%20this%20blog%2c%20I%e2%80%99ll%20provide%20a%20high-level%20overview%20of%20frontend%20performance%20testing%20and%20backend%20performance%20testing%2c%20including%20pros%20and%20cons%20of%20each%20one.%20I%e2%80%99ll%20also%20explain%20why%20you%20need%20both%20if%20you%20really%20want%20a%20holistic%20view%20of%20how%20your%20application%20is%20performing.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230403-frontend-vs-backend-testing%2f&t=Frontend%20vs.%20backend%3a%20How%20to%20plan%20your%20performance%20testing%20strategy">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

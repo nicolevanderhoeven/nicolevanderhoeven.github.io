@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Introducing Grafana Cloud k6 | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Introducing Grafana Cloud k6" />
+<meta property="og:description" content="Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-03-21T15:20:58+00:00" />
+<meta property="article:modified_time" content="2023-03-21T15:20:58+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introducing Grafana Cloud k6"/>
+<meta name="twitter:description" content="Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230317-randomness-in-obsidian-with-dice-roller/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20230324-koh-83-grafana-cloud-k6/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&text=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&is_video=false&description=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Introducing%20Grafana%20Cloud%20k6&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&name=Introducing%20Grafana%20Cloud%20k6&description=Grafana%20Cloud%20k6%20is%20a%20feature%20available%20to%20all%20users%20of%20Grafana%20Cloud.%20It%20allows%20you%20to%20run%20load%20and%20performance%20tests%20right%20from%20the%20comfort%20of%20your%20Grafana%20Cloud%20instance%2c%20without%20needing%20to%20create%20a%20separate%20account%20on%20k6%20Cloud.%20Grafana%20Cloud%20k6%20helps%20you%20get%20started%20quickly%20with%20a%20GUI%20Test%20Builder%20or%20with%20test%20scripts%20written%20in%20JavaScript%2c%20and%20then%20visualize%20your%20test%20results%20in%20real-time%2c%20alongside%20your%20other%20Grafana%20dashboards%20that%20monitor%20your%20system%20infrastructure.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&t=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Introducing Grafana Cloud k6
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-03-21 15:20:58 &#43;0000 UTC" itemprop="datePublished">2023-Mar-21</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure. With Grafana Cloud k6, you can get a holistic look at your system&rsquo;s performance&ndash; on any environment.</p>
+<p><a href="https://grafana.com/products/cloud/k6/">Sign up to Grafana Cloud k6</a>.</p>
+<p><a href="https://k6.io/docs/cloud/integrations/grafana-app/">Learn more about Grafana Cloud k6</a>.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OMh7bWk2qnQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20230324-koh-83-grafana-cloud-k6/">Grafana Cloud k6 (k6 Office Hours #83)</a></li>
+    
+    <li><a href="/blog/20220812-koh59-observability-trends-and-future-best-practices/">Observability Trends and Future Best Practices (k6 Office Hours #59)</a></li>
+    
+    <li><a href="/blog/20211012-basics-of-load-testing-with-k6-and-grafana/">Basics of load testing with k6 and Grafana in 20 minutes</a></li>
+    
+    <li><a href="/blog/20211005-testing-with-k6-and-grafana-better-together/">Testing With k6 &#43; Grafana: Better Together (Grafana virtual meetup EMEA)</a></li>
+    
+    <li><a href="/blog/20210916-intro-to-load-testing-with-k6-and-grafana/">Intro to Load Testing With k6 and Grafana (webinar)</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&text=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&is_video=false&description=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Introducing%20Grafana%20Cloud%20k6&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&title=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&name=Introducing%20Grafana%20Cloud%20k6&description=Grafana%20Cloud%20k6%20is%20a%20feature%20available%20to%20all%20users%20of%20Grafana%20Cloud.%20It%20allows%20you%20to%20run%20load%20and%20performance%20tests%20right%20from%20the%20comfort%20of%20your%20Grafana%20Cloud%20instance%2c%20without%20needing%20to%20create%20a%20separate%20account%20on%20k6%20Cloud.%20Grafana%20Cloud%20k6%20helps%20you%20get%20started%20quickly%20with%20a%20GUI%20Test%20Builder%20or%20with%20test%20scripts%20written%20in%20JavaScript%2c%20and%20then%20visualize%20your%20test%20results%20in%20real-time%2c%20alongside%20your%20other%20Grafana%20dashboards%20that%20monitor%20your%20system%20infrastructure.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230321-introducing-grafana-cloud-k6%2f&t=Introducing%20Grafana%20Cloud%20k6">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

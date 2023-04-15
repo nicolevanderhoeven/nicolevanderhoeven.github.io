@@ -7,7 +7,233 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 01 Jun 2022 14:06:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Mar 2023 14:54:43 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How we got into tech (Adobo &amp; Avocados #1)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230329-adobo-and-avocados-how-we-got-into-tech/</link>
+      <pubDate>Wed, 29 Mar 2023 14:54:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230329-adobo-and-avocados-how-we-got-into-tech/</guid>
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I have been wanting to talk about a few topics related to diversity in tech, and over the few years we&amp;rsquo;ve known each other, we&amp;rsquo;ve only added to that list. We finally decided to take a leap and start a new YouTube channel/video podcast just so we have a space to have those discussions. Here&amp;rsquo;s the first one, where we talk about how we got into tech.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/25Ba4Z694Gw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Below is a transcript of our conversation.&lt;/p&gt;
+&lt;h2 id=&#34;why-adobo--avocados&#34;&gt;Why &amp;ldquo;Adobo &amp;amp; Avocados&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;MARIE: All right, we&amp;rsquo;re live. So, hey everyone, my name is Marie Cruz and with me I have my colleague today.&lt;/p&gt;
+&lt;p&gt;NICOLE: Hi, I&amp;rsquo;m Nicole van der Hoeven, I&amp;rsquo;m her colleague. And I&amp;rsquo;m a little sick, but I&amp;rsquo;m here.&lt;/p&gt;
+&lt;p&gt;MARIE: So we, today we&amp;rsquo;re actually gonna be doing the first ever recording for the Adobo and Avocados podcast. So we thought about this name and initially like Nicole and I wanted to, you know, ever since before we wanted to launch a podcast where we can talk about, you know, our experiences working in tech and all other things. And then we thought about the name Adobo and Avocado. So you know, to anyone who doesn&amp;rsquo;t know, so we&amp;rsquo;re both from the Philippines, and Adobo is the national dish of the Philippines. So that&amp;rsquo;s why we thought we&amp;rsquo;ll add the name of Adobo in our podcast title. Avocados, &amp;lsquo;cause we&amp;rsquo;re both Developer Advocates. But yeah, I think, why don&amp;rsquo;t we discuss like, why was it called avocados in the first place? Do you have any idea?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, well, we don&amp;rsquo;t really know for sure. So I thought that it was something to do with the language of it. Like, you know, an advocate is usually like a, could be like a lawyer in common non-tech senses. And the translation for that is abogado in Spanish or Tagalog actually,&lt;/p&gt;
+&lt;p&gt;MARIE: Even in Tagalog.&lt;/p&gt;
+&lt;p&gt;NICOLE: our native language.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So it&amp;rsquo;s like kind of similar to avocado. I don&amp;rsquo;t know, that&amp;rsquo;s kind of what I thought.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah, that&amp;rsquo;s actually an interesting thought. Like, &amp;lsquo;cause the abogado does sound very, you know, similar to avocado, but I actually read this one article where I think their project manager had a hard time saying Developer Advocate, they ended up saying developer avocado. So who knows what the origin is. But yeah, I think it&amp;rsquo;s a great, you know, you know, term in terms of like, you know, the whole play, like playful, you know, meaning behind the word Developer Advocate.&lt;/p&gt;
+&lt;h2 id=&#34;how-we-got-into-tech&#34;&gt;How we got into tech&lt;/h2&gt;
+&lt;p&gt;MARIE: So yeah, I guess first things first, like you know, who we are? Like, why are we doing this podcast? How, you know, we got into tech? So we&amp;rsquo;ll talk first about, I guess a bit of some introductions about ourselves. So Nicole, why don&amp;rsquo;t you start, like how did you get started? You know, what&amp;rsquo;s been your, I guess, background so far? Did you have a traditional, you know, computer science background or did you do like a different, I guess course back when you were still studying?&lt;/p&gt;
+&lt;h3 id=&#34;nicoles-background&#34;&gt;Nicole&amp;rsquo;s background&lt;/h3&gt;
+&lt;p&gt;NICOLE: I did not have a traditional background. I grew up in the Philippines. I moved away when I was 18. And I don&amp;rsquo;t know what your experience was, Marie, but mine was that in the Philippines there are still, I think we do a pretty good job at being equal between genders, but I think there&amp;rsquo;s still gender roles. And when I was growing up, I really loved both the maths and sciences and like literature and languages, but I was very heavily pushed towards the humanities, &amp;lsquo;cause that&amp;rsquo;s what girls do. Girls don&amp;rsquo;t go into tech.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: And so I really struggled at uni and in college. I shifted majors six times. I had no idea what I wanted to do.&lt;/p&gt;
+&lt;p&gt;MARIE: Wow.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I went through, and that was over two countries. I went to the US to study as well. None of them was computer science because my brother was a developer. And I don&amp;rsquo;t know, he&amp;rsquo;s a little too introverted for me. And I just had this idea that, if I go into computer science, I have to be a developer, and if I&amp;rsquo;m a developer, I won&amp;rsquo;t talk to anyone. I&amp;rsquo;m just going to be&lt;/p&gt;
+&lt;p&gt;MARIE: Yes.&lt;/p&gt;
+&lt;p&gt;NICOLE: with a machine. Like I had that in mind, which now I know is completely wrong,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: but that&amp;rsquo;s why I never went into it. So finally my parents were just like, we don&amp;rsquo;t care what you finish,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: we don&amp;rsquo;t care if it&amp;rsquo;s basket weaving, just pick a major and finish it.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And that was economics,&lt;/p&gt;
+&lt;p&gt;MARIE: Oh.&lt;/p&gt;
+&lt;p&gt;NICOLE: which I have never used in a job.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then so-&lt;/p&gt;
+&lt;p&gt;MARIE: That&amp;rsquo;s really interesting. Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then I, how did I get into IT? I was applying for different economics related ones, and then I met my now husband and he,&lt;/p&gt;
+&lt;p&gt;MARIE: Hi Rob.&lt;/p&gt;
+&lt;p&gt;NICOLE: he was a test manager. Yeah, hi Rob! He was a test manager and I said, well what&amp;rsquo;s a test manager? And then he told me about the world of testing.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I didn&amp;rsquo;t understand it at first, but I wanted to know more. And then I thought the way that he described it sounded so interesting, like the idea that,&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: that there is a job, there is a person whose job it is to be the one using applications or products first. And then trying to see what&amp;rsquo;s wrong with it for the purposes of improving it. I just, I really loved that idea and it was another branch of tech that I didn&amp;rsquo;t know existed.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So I started to, I did an ISTQB certification just to like have something&lt;/p&gt;
+&lt;p&gt;MARIE: No background.&lt;/p&gt;
+&lt;p&gt;NICOLE: &amp;lsquo;cause I didn&amp;rsquo;t have any background. Yeah. And I started job hunting, and somehow managed to land a performance testing job under someone who became my mentor.&lt;/p&gt;
+&lt;h3 id=&#34;maries-background&#34;&gt;Marie&amp;rsquo;s background&lt;/h3&gt;
+&lt;p&gt;MARIE: Hmm, nice. Yeah, it&amp;rsquo;s really relatable because like similar with myself, I fall into tech accidentally. Like it was never my intention, you know, okay, I&amp;rsquo;m gonna study computer science, although I did actually have a computer science degree.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, wow.&lt;/p&gt;
+&lt;p&gt;MARIE: But the story, the story behind that, I don&amp;rsquo;t share it too much to other people &amp;lsquo;cause I think the story behind it is a bit funny. But my first experience with tech is actually updating my MySpace profile. Do you remember MySpace?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yes.&lt;/p&gt;
+&lt;p&gt;MARIE: Yes so, before you can customize your profile with a bunch of HTML, CSS codes and like I think before I was just trying to, you know, create something even though it didn&amp;rsquo;t look very accessible. I remember I had lots of animations, just lots of like&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh.&lt;/p&gt;
+&lt;p&gt;MARIE: striking fonts, background music, and it was just something that I was doing for fun. I did a mass communications course back home in the Philippines. So I was majoring in digital media. And then I had to go back here in the UK. So I was working first for about two years before I decided to go back to uni. And during that time when I was looking at, you know, courses catalog, &amp;lsquo;cause I wasn&amp;rsquo;t really sure what to pick. So I saw a course which basically has three different things. So it&amp;rsquo;s computer science with business management and financial accounting.&lt;/p&gt;
+&lt;p&gt;So I thought,&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh wow, okay.&lt;/p&gt;
+&lt;p&gt;MARIE: I was like thinking in my head I think that sounds like a really cool name for a course, so I&amp;rsquo;m gonna go for it. So to me I just found the name like very interesting. And it means that-&lt;/p&gt;
+&lt;p&gt;NICOLE: So when did you&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah?&lt;/p&gt;
+&lt;p&gt;NICOLE: move out of the Philippines?&lt;/p&gt;
+&lt;p&gt;MARIE: So I, so we went back 2008. So I was in the UK since 2004. Actually no, we went back 2006, and then I went back in the UK 2008. So 2006 I enrolled, you know, to study mass communications. I didn&amp;rsquo;t finish the course &amp;lsquo;cause I had to go back in the UK after two years because of like visa, like status. And then when I got back, I just put that into a pause, you know, did some work experience. So I was working as an office assistant for about two years and then my friend and I just decided, okay, I think we should go back to uni. So I actually applied as a mature student &amp;lsquo;cause I didn&amp;rsquo;t, you know, had any like actual qualifications &amp;lsquo;cause I never graduated from my degree in the Philippines. I never finished high school as well, &amp;lsquo;cause I kept going back and forth between the UK and the Philippines. So the last time I actually graduated was during middle school.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, wow.&lt;/p&gt;
+&lt;p&gt;MARIE: but applying as a mature student, they just looked at my, you know, work credentials, like my work attitude. And I submitted some of my grades like back, you know, when I was still in the Philippines &amp;lsquo;cause like my first two years I had some, you know, grades from like the different subjects that I was doing. But yeah, that&amp;rsquo;s how I got into tech. I just found the name like really interesting and I thought before I could mix and match it with business and accounting. So even if the computer science bit didn&amp;rsquo;t work out, like I can still maybe utilize some of the things that I&amp;rsquo;ve learned on the business side and on the accounting side. And then, when I was about to look for graduate jobs, I got approached by a testing consultancy company. I didn&amp;rsquo;t, I wasn&amp;rsquo;t aware that there&amp;rsquo;s a graduate job for, you know, just doing testing &amp;lsquo;cause most of the graduate jobs that, you know, we were being offered is, you know, how to, you know, do like development, or like database like management roles. So initially I wasn&amp;rsquo;t really sure if I wanted to do the developer route. Like I enjoyed the coding, I was doing the coding bit, but like back then I wasn&amp;rsquo;t like fully 100% sure that it was the right path for me. So I found out that, yeah you can have a career in testing. Again this is all accidental &amp;lsquo;cause if that testing company didn&amp;rsquo;t approach me, I would&amp;rsquo;ve probably looked at like other roles. So it was like really great to hear that, yeah, there&amp;rsquo;s like a graduate jobs for just doing testing. And yeah, we were doing the ISTQB as well. So we were doing some training. And yeah, the rest is history. It&amp;rsquo;s funny because I didn&amp;rsquo;t intend to continue on a developer route, but then now I work as a Developer Advocate.&lt;/p&gt;
+&lt;h2 id=&#34;how-did-we-become-developer-advocates-without-being-developers&#34;&gt;How did we become Developer Advocates without being developers?&lt;/h2&gt;
+&lt;p&gt;NICOLE: Yeah, maybe we should talk about that a bit &amp;lsquo;cause I also don&amp;rsquo;t consider myself as a developer even though I can code.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm. Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And yet somehow we&amp;rsquo;re both Developer Advocates. How did that happen?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. It&amp;rsquo;s like there&amp;rsquo;s some sort of, I guess, interesting link between software testing and developer advocacy. I don&amp;rsquo;t know like if it&amp;rsquo;s the same for you, but like with me, I really enjoy the teaching part, the learning and public part as well. And when I was doing my role as a software tester, I felt that I was doing the advocacy, but maybe, you know, not really in a way that it&amp;rsquo;s very out there. So I was, you know, helping my colleagues, I was talking about tools that I&amp;rsquo;ve learned, you know, with them, I was showing them how to use it. And then while I was working as well, like I started doing the learning in public on the side. So I started with my personal blog and then getting involved, you know, with meetups to talk about, you know, the different tools that I&amp;rsquo;ve learned. So I guess for me, like being a software tester also, you know, encouraged me to, I guess be a Developer Advocate &amp;lsquo;cause I was just telling people what I&amp;rsquo;ve been doing as a software tester. I&amp;rsquo;ve been telling them what different tools I&amp;rsquo;ve been using, you know, different concepts that I&amp;rsquo;ve been learning as well on like a day-to-day. So is that the same for you?&lt;/p&gt;
+&lt;p&gt;NICOLE: For me it was more because I was a consultant,&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: which means I was going on different projects all the time. And when you&amp;rsquo;re really new in an industry, I think it&amp;rsquo;s really exciting and you&amp;rsquo;re learning a lot. And certainly every project has like its own framework and different languages and different people, which is interesting for a while.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: But I don&amp;rsquo;t know, after several years of it, I started to feel like, people are actually asking the same questions. You know, there&amp;rsquo;s always, there&amp;rsquo;s some things that I always had to explain. You know, I always had to, for example, fight against the fact that performance testing is often seen as just something where you run the test, okay, you check the box, you&amp;rsquo;ve done performance testing.&lt;/p&gt;
+&lt;p&gt;MARIE: Uh-huh.&lt;/p&gt;
+&lt;p&gt;NICOLE: There&amp;rsquo;s always a certain amount of education where I&amp;rsquo;m like, no, it&amp;rsquo;s not just about checking the box, it can actually provide real value, here&amp;rsquo;s how.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I just found myself repeating a lot of the same things. And so I actually started to create videos also because load testing results are kind of difficult to explain sometimes.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I would create this like test summary report that lots of people don&amp;rsquo;t read.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And so, as kind of an alternative way to explain things, I started creating video summaries to go along with it. And then I just thought, well maybe I can, &amp;lsquo;cause I can&amp;rsquo;t publish those, because it&amp;rsquo;s very specific to that company.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: But then I, I thought maybe I can pull out, I can abstract away some things and then publish those videos where I&amp;rsquo;m not talking about a specific project. And I guess that&amp;rsquo;s kind of how it started. I started, I put it into text first, because that&amp;rsquo;s just easier than video.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then eventually found myself into video anyway.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So I guess for me, I got into Developer Advocacy because I was tired of, I was trying to automate a part of my life, the explanation part where I kept having to say the same things and I just wanted to be like, hey, read this blog post where I explain why you need think time in a much more coherent and considerate way.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So that&amp;rsquo;s, that&amp;rsquo;s how it naturally happened. I think you and I are the same in that regard that we were already doing it before we got the title.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. I totally relate to that. Like, especially when you said that like, we&amp;rsquo;re just trying to solve the same problems. I started, you know, my blogging journey just trying to communicate like, you know, questions that people have been asking me on a day-to-day basis. And rather than just, you know, speaking to individual people and repeating the same things like again and again, like just put everything into a post or like you said like a video, and then just share that, you know, like to the public, &amp;lsquo;cause you&amp;rsquo;re not only gonna be able to help like one person but you know, maybe if someone else stumbled upon your blog or your video, then like, you might help them as well. I think like one of the, like, one of the best reward that I experienced when doing this like learning in public and you know, sharing more content out there is if you just get a message from someone or like a comment and then they say that, oh, like, I&amp;rsquo;ve been stuck with the same issue, I found your blog post or your video and it really helped me. And just that feeling that you know, you&amp;rsquo;ve helped someone is like a really great feeling. &amp;lsquo;Cause at first I wanted the blog as well just so that I can have something that I can look back to in case I, you know, forget like what I&amp;rsquo;ve done on a previous project. Like I can document it on a blog post, but then like now it&amp;rsquo;s also helping like other people who are experiencing the same like issues at work.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I definitely see that. At first I was doing these things for myself because you know, you don&amp;rsquo;t really know that you know a subject until you can teach it to some degree. And I really believe that. And I, for me there were so many things &amp;lsquo;cause as a consultant, you have to switch tools very quickly, you have to switch languages, you have to be a polyglot on a lot of different levels and it&amp;rsquo;s impossible to keep all that in your mind. So after every project I tried to like, distill my learnings from it, so that I,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: future me would come back to that framework, or tool, or whatever, and not be starting from zero. But yeah,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: the kind of other people finding it was an unexpected boon.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. So let&amp;rsquo;s just move on a bit. So we&amp;rsquo;ve talked about, you know, how we transition from software testing to developer advocacy. But I guess in terms of like the process, like did you apply to a lot of, you know, companies? Was developer advocacy something that, you know, you were aware of already, or like you just found a job description and then you&amp;rsquo;re like, oh, this is what I do already. Okay, let me apply to that job. So what&amp;rsquo;s been like the process for you?&lt;/p&gt;
+&lt;p&gt;NICOLE: So I was, this is only, this is my first job as an actual, like the first job where I have Developer Advocate in my title.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: My previous job was with a, well at the time it was a startup, it was Flood.io, which is now acquired by Tricentis.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And when I joined, I think I was like, I think the fifth person that they hired in the team.&lt;/p&gt;
+&lt;p&gt;MARIE: Oh, wow.&lt;/p&gt;
+&lt;p&gt;NICOLE: So it was very small. And it was, I really love that environment because you can do a lot of things, you can wear multiple hats. And that&amp;rsquo;s really where it started. On a typical day, I might be answering questions in support, or presenting at a conference or ducking into a sales call or like,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: there were so many things that I could do. I was like part of the rotation for things going down basically, for things exploding. And I had to learn a lot about infrastructure as well to be competent in that role. And I started doing a lot of advocacy type things, mainly from a support perspective&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: because I got the same questions there as well. And I wanted to be able to focus on the crunchier topics.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And you can&amp;rsquo;t do that unless you address some of the more basic or common questions. And then my manager at the time told me about Developer Advocacy&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: and my immediate response was, but I&amp;rsquo;m not a developer.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: He said that that&amp;rsquo;s just the name for the whole industry that I think you would be really good at and that you&amp;rsquo;re already doing. And with his encouragement, this is Tim Koopmans, the one of the co-founders of Flood, with his encouragement, strong encouragement by the way, things like, he said, oh, I&amp;rsquo;ve got this conference in Moscow that I&amp;rsquo;m speaking at. Do you wanna come watch me?&lt;/p&gt;
+&lt;p&gt;MARIE: Right.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I said yes. And he backed out so I had to do it, things like that. Because of things like that that he did, I started to understand what developer advocacy is&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: and when it was, when I felt the time to change directions, I specifically looked at k6 actually. I didn&amp;rsquo;t apply to any other jobs because I was pretty happy where I was.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: But I really loved k6. I had already not used it in a project, but I&amp;rsquo;d already, I knew what the tool was and I used it, I tested it a bit. I love the site, I love the principles behind it. And I saw that they had a Developer Advocate role. So,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: It just kind of happened. How about you?&lt;/p&gt;
+&lt;p&gt;MARIE: Well the first time I heard about the term was from you, when you said that, hey we&amp;rsquo;ve got this role for, you know like, you know like, we&amp;rsquo;ve got a Developer Advocate role for one of the tools that, you know, we&amp;rsquo;re gonna launch. Like, you&amp;rsquo;ll be like the great fit. So I didn&amp;rsquo;t really send any CV. I don&amp;rsquo;t think I sent any CV or like, yeah, I think, you just like, &amp;lsquo;cause we just connected already like via this Automation Guild conference. So like we were already connected via Twitter. And I think this is where like one of the benefits of like learning in public really came into play, &amp;lsquo;cause I was just, you know, publishing constantly. I was, you know, talking at various meetups and conferences already. But I was just doing all of this like as part of my, you know, side projects. Like it wasn&amp;rsquo;t part of my day-to-day role on my previous job. So when you explain to me what a Developer Advocate is, I&amp;rsquo;m like, oh yeah, I&amp;rsquo;ve been doing that on the side. So that was my first actual, you know, experience of like hearing what a Developer Advocate, you know, does on a day-to-day. &amp;lsquo;Cause I had the same perception that I&amp;rsquo;m not a developer, how can I be a Developer Advocate? But I think because as like as part of our day-to-day jobs, like even if we&amp;rsquo;re not writing application code, we&amp;rsquo;re still writing, you know, test scripts. we&amp;rsquo;re creating test automation frameworks. So I think that&amp;rsquo;s really helped as well transitioning into this role. But yeah, like I never sent any CV. I just remembered like we were talking a lot like back and forth and then I met up with, you know, a bunch of our colleagues now. And yeah, the rest is like history again.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I think that there are just some people that when you meet them, you click or you don&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: And when that click happens, I&amp;rsquo;m just like, okay, I&amp;rsquo;m gonna write her name down. I think I told you about it like for two years,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah, I just joined-&lt;/p&gt;
+&lt;p&gt;NICOLE: we were talking, and I was like, hey, this could happen&amp;hellip;&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I don&amp;rsquo;t know when. I think you&amp;rsquo;d be perfect for it. And you&amp;rsquo;re like, okay,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: but it&amp;rsquo;s kind of early to be telling me, right?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: I was like, Yeah, yeah, but let&amp;rsquo;s just keep in touch. You know, and it worked out. I can&amp;rsquo;t believe it actually did.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. And now we&amp;rsquo;re, doing.&lt;/p&gt;
+&lt;p&gt;NICOLE: We didn&amp;rsquo;t actually-&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah, go on Nicole.&lt;/p&gt;
+&lt;p&gt;NICOLE: We haven&amp;rsquo;t actually defined what a Developer Advocate is.&lt;/p&gt;
+&lt;h2 id=&#34;whats-a-developer-advocate&#34;&gt;What&amp;rsquo;s a Developer Advocate?&lt;/h2&gt;
+&lt;p&gt;MARIE: Yeah, I guess like we can both, you know, share what our, you know, view is of a Developer Advocate. So to me when it comes to developers, I guess trying out, you know, new tools or learning about new things, they feel most comfortable talking to someone who&amp;rsquo;s actually used, you know, the product, or you know, the tool that they want to use. So, we are, you know, that person. So we&amp;rsquo;re helping developers, we&amp;rsquo;re helping testers when it comes to, I guess learning about best recommended practices, learning about different tools. So we&amp;rsquo;re kind of like a bridge between the community and like the company that we work for. There&amp;rsquo;s a lot of misconception that people think that we&amp;rsquo;re salespeople but we&amp;rsquo;re actually not, like it&amp;rsquo;s a completely different, you know, role. We are focused more on the community side, helping them grow, helping them, you know, I guess in some ways, like be some sort of champions as well, so they can also promote like, you know, the different tools, the different practices that we have been communicating to them. But yeah, what about you? Is that like sort of the same concept?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I agree with everything you said, especially about being a bridge.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: Because as a Developer Advocate you&amp;rsquo;re not quite a developer, that&amp;rsquo;s not our primary responsibility,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: but we&amp;rsquo;re also not like marketers or sales people. Although there&amp;rsquo;s an overlap there in both. I kind of think of it as anti-marketing. So a marketer is going to be talking about something that they themselves have never used, are not the target user for.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And might not know much about in terms of the technical details.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: A Developer Advocate is someone who actually is the target user. So for those who don&amp;rsquo;t know, Marie and I work at Grafana Labs specifically on k6, which is a performance testing tool. But we have both used k6, we have both been testers and still are. And so there are things that we can suggest. Part of it is advocating internally.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: We advocate for testers everywhere to the product team so that we say, like these are the features that we would be looking for as testers. Like we would say it this way or we wouldn&amp;rsquo;t really use that feature, we want this other one. But another part of it is advocating externally. So this is the part that people think of as marketing, but I think of it as anti-marketing, because we&amp;rsquo;re not going out there and saying, hey, you should use this product that we&amp;rsquo;ve never used before.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Instead, we build cool things and demonstrate cool things that we have done, not some other developer.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Like we do our demos,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then when people ask us, then we say, oh yeah, we use k6. So I don&amp;rsquo;t know, marketing definitely has its place, but for me I am so addicted to that authenticity and genuineness that comes from just talking about a tool that you actually love, which is,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: what k6 is for me.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. I really like that because for me, an important part of, you know, this advocacy is, like communicating something that I truly believe in. Like I&amp;rsquo;m not going to advocate for, you know, a tool that I haven&amp;rsquo;t used. Like I would just feel like, you know, I&amp;rsquo;m a fraud if I do that. So if I know that, you know, there are situations where a certain tool or a certain practice, you know, would work better, then I would advocate for, you know, that as well. So it&amp;rsquo;s not just about, you know, for example, like at the moment we can&amp;rsquo;t do k6 for accessibility and I&amp;rsquo;m an accessibility advocate as well. So I would go and, you know, recommend like other tools and practices based on what like I&amp;rsquo;ve experienced, based on what I&amp;rsquo;ve done. And I think, like for me, that&amp;rsquo;s one of the biggest like advantage, &amp;lsquo;cause yeah, if I&amp;rsquo;ve been put on the spot and say, hey, you should talk about this to then promote it to other people, that would just totally go against my, like one of my beliefs.&lt;/p&gt;
+&lt;p&gt;NICOLE: I think I also really appreciate that this position lets us shine a light on people like us who maybe,&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: who don&amp;rsquo;t look like the average person in tech. I know it&amp;rsquo;s still, I&amp;rsquo;ve been lucky to work with teams of mainly men that haven&amp;rsquo;t treated me any differently because I&amp;rsquo;m a woman, but there is still like a sense of being Other.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah And I guess that-&lt;/p&gt;
+&lt;p&gt;NICOLE: And being in a position of advocacy means that we&amp;rsquo;re, we&amp;rsquo;re also able to appeal to other women who maybe didn&amp;rsquo;t, who didn&amp;rsquo;t have as good an experience as we did.&lt;/p&gt;
+&lt;h2 id=&#34;what-can-you-expect-from-adobo--avocados&#34;&gt;What can you expect from Adobo &amp;amp; Avocados?&lt;/h2&gt;
+&lt;p&gt;MARIE: Yeah. And I guess that really leads to this next question. And you know, people who will watch this in the future might also ask like, what are the expectations like for this podcast? Like why are we doing this? So do you want to maybe start.&lt;/p&gt;
+&lt;p&gt;NICOLE: Why ARE we doing this Marie?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. Oh, yeah. So do you wanna start like from your side, like what are the expectations that you know, that we can, yeah, share to people?&lt;/p&gt;
+&lt;p&gt;NICOLE: Sure. I think that you and I both do a lot of technical advocacy. We, you know, do demos, we write scripts, and we tell people how to do things in tech, very technical things. But, I think that there&amp;rsquo;s a whole other side of tech that doesn&amp;rsquo;t get talked about and that&amp;rsquo;s like, things like interpersonal dynamics or cultural differences. You and I are both Europeans that have to work in, in our situation, predominantly American space, and we&amp;rsquo;re also Asian. So balancing the two, you know, we are on different sides of the spectrum on that. Just also the general stress that comes with tech. It is not easy, not just as a Developer Advocate, but just to be in tech to keep up with changing trends.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: I feel like there are so many emotional aspects and psychological aspects that don&amp;rsquo;t get talked about that I would really like to cover.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Then also, I kind of alluded to it. I would like to make it a little bit more open, an open discussion for particularly underrepresented people&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: like ourselves. We identify with several minority groups.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And maybe help them along a bit by telling them things that we had to find out the hard way early on in our career. How about you?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. Yeah, I agree with all of those. And I guess it&amp;rsquo;s also to just have a safe space, you know, for everyone just to share their experiences in tech. Like you said, there&amp;rsquo;s this whole other side of tech that we don&amp;rsquo;t talk about that maybe other women are also uncomfortable to talk about, you know, with like, I guess other colleagues, especially if it&amp;rsquo;s just predominantly male. So we want to, you know, have a safe space for them, share, you know, I guess from their side, like their unique experiences as well. And maybe like we can all have, I mean maybe we also have those shared experiences that we don&amp;rsquo;t talk about, but then when someone says, oh yeah, I&amp;rsquo;ve experienced that too. So it&amp;rsquo;s just really finding, you know, shared experiences that we can all relate to. And like you said, just helping them, you know, or empower them to, I guess move forward in terms of like the next stage in their career. Like, you know, share what&amp;rsquo;s worked for us, share what hasn&amp;rsquo;t worked for us. &amp;lsquo;cause I think it&amp;rsquo;s all about like being authentic as well and not just talking about the good things, but we could also talk about the bad and the negative things as well.&lt;/p&gt;
+&lt;p&gt;NICOLE: I&amp;rsquo;m excited to see where we go from here.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: I think we have a lot of ideas about where we&amp;rsquo;re going to take this and I hope people will come along for the ride.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. So, yep. I guess this is it for the first episode. We are just, you know, extremely excited to do this on a regular basis. So we&amp;rsquo;ll talk about different, you know, topics in every episode. And we might, you know, have like really awesome, like guests as well in future episodes. So yeah, I guess just stay tuned and yeah, look out for Adobo and Avocados.&lt;/p&gt;
+&lt;p&gt;MARIE: Thanks everyone. See you next time.&lt;/p&gt;
+&lt;p&gt;NICOLE: Bye-bye.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Frontend vs Backend Performance Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230201-frontend-vs-backend-performance-testing/</link>
+      <pubDate>Wed, 01 Feb 2023 22:59:18 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230201-frontend-vs-backend-performance-testing/</guid>
+      <description>&lt;p&gt;Which should you do: frontend vs. backend performance testing? The short answer is both. Each has its pros and cons, but hybrid load testing combines them and gives you the most holistic view of performance, including frontend concerns like how quickly a page renders or perceived application performance as well as backend concerns like response times of individual components.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xVACRP5qIJI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Performance Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230125-introduction-to-performance-testing/</link>
+      <pubDate>Wed, 25 Jan 2023 22:28:43 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230125-introduction-to-performance-testing/</guid>
+      <description>&lt;p&gt;In this introduction to performance testing, we talk about how performance is part of the functionality of an application, why you should do performance testing, and some myths about performance that discourage teams from testing for it and make applications more likely to fail and fail miserably.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FqOwO4y8SbA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link>

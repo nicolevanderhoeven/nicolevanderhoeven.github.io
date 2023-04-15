@@ -7,7 +7,411 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 29 Jul 2022 15:57:47 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/dd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 08:01:11 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/dd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organizing PDFs in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230414-organizing-pdfs-in-obsidian/</link>
+      <pubDate>Fri, 14 Apr 2023 08:01:11 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230414-organizing-pdfs-in-obsidian/</guid>
+      <description>&lt;p&gt;There are many tools for organizing PDFs in Obsidian, but which one is the best? In this video, I go through several options, including DevonThink, Readwise, Skim, and Zotero. For my (non-academic) use case of organizing my TTRPG-related PDFs, I decided on Zotero&amp;ndash; but maybe something else will be better for you!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VqOc9OsMX_s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.devontechnologies.com/apps/devonthink&#34;&gt;DevonThink&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://skim-app.sourceforge.io/&#34;&gt;Skim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zotero-plugins-mentioned&#34;&gt;Zotero plugins mentioned&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/retorquere/zotero-folder-import&#34;&gt;Zotero folder import&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wshanks/Zutilo&#34;&gt;Zutilo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/argenos/zotero-mdnotes&#34;&gt;MD Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://patreon.com/mcdm&#34;&gt;Support MCDM on Patreon&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;thanks&#34;&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;Thanks to the following people for their input and help in experimenting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://polaine.com&#34;&gt;Andy Polaine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leahferguson.com/&#34;&gt;Leah Fergusson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@argentum#3920 on Discord&lt;/li&gt;
+&lt;li&gt;The lovely folks on &lt;a href=&#34;https://patreon.com/nicolevdh&#34;&gt;my Patreon Discord server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lazy GM Note Taking With Notion and Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230412-lazy-gm-note-taking-with-notion-and-obsidian/</link>
+      <pubDate>Wed, 12 Apr 2023 12:36:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230412-lazy-gm-note-taking-with-notion-and-obsidian/</guid>
+      <description>&lt;p&gt;How does Mike Shea (Sly Flourish) do lazy GM note taking with Notion? Mike shows me how he uses Notion to prep and run games, and I&amp;rsquo;m taking the opportunity to show him some of how I do the same in Obsidian. Mike is the author of several RPG-related books, including the Return of the Lazy Dungeon Master and his latest, The Lazy DM&amp;rsquo;s Companion. Mike has been playing RPGs for almost 40 years and is a forever DM. He also has a YouTube channel where he releases two videos weekly: one about news in the RPG community and one where he preps live for one of his games.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/k1YgPpvQYnw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;about-sly-flourish&#34;&gt;About Sly Flourish&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://slyflourish.com/subscribe/&#34;&gt;Sly Flourish newsletter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/slyflourish&#34;&gt;Sly Flourish Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shop.slyflourish.com/&#34;&gt;Sly Flourish bookstore&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taking Notes for RPGs in Obsidian with Andy Polaine</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230331-taking-notes-for-rpgs-in-obsidian-with-andy-polaine/</link>
+      <pubDate>Fri, 31 Mar 2023 14:30:21 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230331-taking-notes-for-rpgs-in-obsidian-with-andy-polaine/</guid>
+      <description>&lt;p&gt;My friend, &lt;a href=&#34;https://polaine.com&#34;&gt;Andy Polaine&lt;/a&gt;, joins me to discuss taking notes for RPGs in Obsidian. Andy is the Dungeon Master for one of my weekly games of D&amp;amp;D, and in this livestream, we&amp;rsquo;re comparing our notes (his as a DM, mine as a player) for the same campaign, a homebrew one in the world of Exandria (from Critical Role). We&amp;rsquo;re showing the differences between our styles of note-taking and playing games.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8IyaSGI8X8Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;key-takeaways&#34;&gt;Key takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Andy&amp;rsquo;s DM style is improv-heavy and inspired by the Lazy GM, &lt;a href=&#34;https://slyflourish.com&#34;&gt;Sly Flourish&lt;/a&gt;. His notes reflect that philosophy.&lt;/li&gt;
+&lt;li&gt;Andy primarily uses folders for organization due to concerns regarding futureproofness, whereas I use links and Dataview and have no sub-folders.&lt;/li&gt;
+&lt;li&gt;Andy has Dice Roller tables for random generation, but he also embeds existing websites as iframes within Obsidian.&lt;/li&gt;
+&lt;li&gt;When a situation calls for many moving parts, monsters, or factions that the party might encounter, Andy uses an Adversary Roster to keep track of where everyone is.&lt;/li&gt;
+&lt;li&gt;Andy uses Canvas to display multiple statblocks at a time and be able to zoom in individually when necessary. He said he initially had performance issues with this approach, but those seem to be resolved now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;resources-mentioned&#34;&gt;Resources mentioned&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dmheroes.com/&#34;&gt;DM Heroes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rpgtinker.com/&#34;&gt;RPG Tinker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tetra-cube.com/dnd/dnd-statblock.html&#34;&gt;TetraCube Statblock generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slyflourish.com&#34;&gt;Sly Flourish&lt;/a&gt; Lazy GM method for session prep&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/DnD/comments/775caq/my_friends_and_i_have_something_called_knife/&#34;&gt;Knife Theory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below is a transcript of the video.&lt;/p&gt;
+&lt;h2 id=&#34;how-we-met&#34;&gt;How we met&lt;/h2&gt;
+&lt;p&gt;NICOLE: Hello, everyone. Welcome to the channel. I&amp;rsquo;m Nicole van der Hoeven. You probably already know me, but today, I&amp;rsquo;m also Scura, the level eight Pallid Elf Twilight Cleric/Stars Druid. And with me today is a someone who should be a familiar face now. I think this is your third time back. Andy Polaine.&lt;/p&gt;
+&lt;p&gt;ANDY: Not sure. Second time on the stream, I think maybe, I&amp;rsquo;m not sure.&lt;/p&gt;
+&lt;p&gt;NICOLE: Okay, okay. But we already did a TTRPG thing together.&lt;/p&gt;
+&lt;p&gt;ANDY: That&amp;rsquo;s right. So it is the third time in the Obsidian DM world.&lt;/p&gt;
+&lt;p&gt;NICOLE: So Andy happens to be my DM, my Dungeon Master for my D&amp;amp;D 5e game. And that actually happened because of that presentation we did on Obsidian, right?&lt;/p&gt;
+&lt;p&gt;ANDY: It is, yes. We&amp;rsquo;re chatting on the Obsidian channel, the TTRPG channel. And at some point, I kinda said, oh yeah, well actually I need another person. But you probably, &amp;lsquo;cause you had said something like, I play 50 games a week or whatever. And I said, &amp;ldquo;You probably don&amp;rsquo;t need another game.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;NICOLE: It was like four.&lt;/p&gt;
+&lt;p&gt;ANDY: And you went, &amp;ldquo;Well actually.&amp;rdquo; So yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah. So you slid into my DMs and you&amp;rsquo;re like, &amp;ldquo;Well, just in case you need a fifth.&amp;rdquo; And I&amp;rsquo;m like, &amp;ldquo;Actually, I don&amp;rsquo;t have a weekday one yet. So maybe, yeah.&amp;rdquo; So let&amp;rsquo;s talk about that, because you definitely knew when you asked me to join your game that I took notes. What was going on inside your head? Were you like, &amp;ldquo;Yeah, I want someone to take notes.&amp;rdquo; Or did you not really know how much I would take notice of everything that happens?&lt;/p&gt;
+&lt;p&gt;ANDY: No, I mean, I wanted another player and I wanted someone who was into the same stuff and I thought you would be interested and a great player and you have been. It&amp;rsquo;s great to have you in the game. I mean, leading up to that, actually, I guess, I had played D&amp;amp;D when I was a kid, teenager, and then I stopped and then COVID happened and like a lot of people, I sort of thought, &amp;ldquo;Oh yeah, D&amp;amp;D that&amp;rsquo;s a thing.&amp;rdquo; And it was actually to talk to my daughter about it and try and persuade her to play. And then the internet happened between when I stopped playing D&amp;amp;D and when I wanted to start again. And so I was looking for ways to note take and have everything. And I&amp;rsquo;ve tried a few different things, including Notion and I didn&amp;rsquo;t really like Notion&amp;rsquo;s&amp;hellip; The main thing was no offline mode, which was a real big thing for me. But I&amp;rsquo;m also like many people who use Obsidian, I&amp;rsquo;ve been keeping my notes for my work stuff in as plain text markdown for years. And so I thought, &amp;ldquo;Ah, I&amp;rsquo;m gonna, I&amp;rsquo;m gonna switch to that.&amp;rdquo; So very quickly, I did one game in Notion and I started actually the campaign that you&amp;rsquo;re currently play in Notion. I think the first few, maybe five or six sessions, and then I switched to Obsidian.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, I didn&amp;rsquo;t know that.&lt;/p&gt;
+&lt;p&gt;ANDY: With all the pain that exporting out of Notion with like these horrid, long hex or these database codes attached to all the files. I&amp;rsquo;ve still got some of that junk occasionally appears in my auto completes.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I can imagine. I think by that point, I&amp;rsquo;d been using Obsidian for a while, but I had just started to use it a lot for TTRPGs &amp;lsquo;cause you know, I was gonna use it for like serious stuff like work. and that changed very quickly. I know. Hey, do you have dice with you?&lt;/p&gt;
+&lt;p&gt;ANDY: I do have dice I do have dice.&lt;/p&gt;
+&lt;p&gt;NICOLE: Let&amp;rsquo;s do rollies again.&lt;/p&gt;
+&lt;p&gt;ANDY: Okay, alright.&lt;/p&gt;
+&lt;p&gt;NICOLE: I got my-&lt;/p&gt;
+&lt;p&gt;ANDY: You better explain what rollies is for people who may not-&lt;/p&gt;
+&lt;p&gt;NICOLE: It&amp;rsquo;s just rolling a d20, seeing which one&amp;rsquo;s higher &amp;lsquo;cause I have a question from Patreon. And the person who gets higher is going to decide whether they answer first or the other person answers first.&lt;/p&gt;
+&lt;p&gt;ANDY: All right, okay. All right, you ready?&lt;/p&gt;
+&lt;p&gt;NICOLE: Okay, yeah.&lt;/p&gt;
+&lt;p&gt;ANDY: 16.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh no. Natural one. Okay, you decide.&lt;/p&gt;
+&lt;p&gt;ANDY: Okay, okay. I decide whether, well, I don&amp;rsquo;t know what the question is. So that would-&lt;/p&gt;
+&lt;p&gt;NICOLE: No, you gotta decide if you wanna go first or me.&lt;/p&gt;
+&lt;p&gt;ANDY: Well ladies first.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, great. Okay, so the question is for me, what GM are you? And for you, what player am I? Andy is a very empathetic GM. He listens and he listens to not just the stuff from the character but also your stuff. And maybe this is something where we should talk about knife theory &amp;lsquo;cause Andy&amp;rsquo;s particularly good at remembering things that draw you into the story, your character and you. And I think he&amp;rsquo;s mentioned quite a few times that he likes slightly messing with us all, so.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah. So, okay, so what player are you? Well, you&amp;rsquo;re great. You are actually very empathetic player and you play a cleric, right?&lt;/p&gt;
+&lt;p&gt;NICOLE: That was my thing.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, yeah. And so, no, what I used to say is that basically, Scura runs around healing everyone way too much from my liking as the DM. But Scura does a lot of, if you like a hit point machine, just of vending machine, like here you go, you have hit points and you have some hit points. And so you&amp;rsquo;re very engaged on that front. You&amp;rsquo;re very engaged in the role play. And thanks to Obsidian, Scura has got like a sort of photographic memory. So you have&amp;hellip; And you, Nicole, use it I think to kind of mess with me as well sometimes too, which is, usually through sending-&lt;/p&gt;
+&lt;p&gt;NICOLE: No, I would never.&lt;/p&gt;
+&lt;h2 id=&#34;how-i-use-sending-to-mess-with-andy&#34;&gt;How I use Sending to mess with Andy&lt;/h2&gt;
+&lt;p&gt;ANDY: Should we talk about sendings here?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I could.&lt;/p&gt;
+&lt;p&gt;ANDY: I&amp;rsquo;m assuming here that everyone knows about how D&amp;amp;D works and stuff. So I don&amp;rsquo;t know if this is true, but you might all be Obsidian people just interested in this. For those of you don&amp;rsquo;t know, there&amp;rsquo;s a spell in D&amp;amp;D. It&amp;rsquo;s called sending where you can send 25 words to someone sort of telepathically over distances. So tell me what you do with that.&lt;/p&gt;
+&lt;p&gt;NICOLE: Well, I actually have something to show on that front.&lt;/p&gt;
+&lt;p&gt;ANDY: Okay. All right.&lt;/p&gt;
+&lt;p&gt;(recorded video plays)&lt;/p&gt;
+&lt;p&gt;NICOLE: I&amp;rsquo;m gonna play a little clip that I got permission to show. I&amp;rsquo;m going to send to, I&amp;rsquo;m not sure what her name is. Sabilis, Sybilis.&lt;/p&gt;
+&lt;p&gt;ANDY: I don&amp;rsquo;t who.&lt;/p&gt;
+&lt;p&gt;NICOLE: The drow priestess that wanted Wally to come with her to Xhorhas.&lt;/p&gt;
+&lt;p&gt;ANDY: Oh my God. Let me just check who that might be.&lt;/p&gt;
+&lt;p&gt;TYLER: Great pull. Great pull.&lt;/p&gt;
+&lt;p&gt;ANDY: That is like, I gotta choose this, this really random that you haven&amp;rsquo;t thought about for ages.&lt;/p&gt;
+&lt;p&gt;(back to livestream)&lt;/p&gt;
+&lt;p&gt;NICOLE: So that was a clip from our actual game where I pulled out a particularly unexpected sending. I don&amp;rsquo;t know why it was unexpected really, because my character had been try trying to chase down this thread for the other character. So I don&amp;rsquo;t know why I was unexpected, Andy.&lt;/p&gt;
+&lt;p&gt;ANDY: Well&amp;hellip;. There&amp;rsquo;s so much that&amp;rsquo;s unexpected. So I would say there was a couple things actually about that group. So I mean, it may be interesting on the note front for people. So if there&amp;rsquo;s an important NPC, and I&amp;rsquo;ll show some stuff in a second, if there&amp;rsquo;s an important NPC, I will usually make a note for them. But sometimes as in this case, there&amp;rsquo;s like a group of NPCs. In this case there was a group of drow, they&amp;rsquo;re called the Kryn in Exandria. We play in the critical role Exandria Wildemount world. There was one of those times where I didn&amp;rsquo;t have much prep time and I thought, &amp;ldquo;Oh, I just need to come up with some names and stuff. And so I think I probably just pulled some stat blocks form somewhere just in case you had a fight with them. But actually, the names, I just had them in a little list and there&amp;rsquo;s a block and like a one line description. I think you might see some in a minute too. And so they didn&amp;rsquo;t have any notes made for them. And so when you said that, and I&amp;rsquo;m looking through my dashboard and stuff and I think I can&amp;rsquo;t think who that is at all. And the name didn&amp;rsquo;t stick with me at all, so yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, you know what&amp;rsquo;s weird is I actually wasn&amp;rsquo;t there. I wasn&amp;rsquo;t there when they met her. I was going off of the recording, this is when I think I briefly came in, I dialed in from the airport. So I had very limited video to go on because not everything was recorded. And so I wasn&amp;rsquo;t actually sure, that&amp;rsquo;s why I didn&amp;rsquo;t know the name. But I can show you how I look at how I decide who to send to. So I&amp;rsquo;m using the new bookmarks feature. I actually have one for sending, in particular. These are all the sendings. There&amp;rsquo;s a tag now that I do. So like for example, I didn&amp;rsquo;t change any of my notes so I hope nothing comes up. But this is how I do it. So I have the sending tag, I have the name of the person and then what I actually sent. And that&amp;rsquo;s easy because then I can highlight it and I can see, &amp;ldquo;Hey look, it&amp;rsquo;s 25 words, which is the limit of the spell.&amp;rdquo; And then when I go into a particular NPC, I also later put down all of the sendings I&amp;rsquo;ve ever sent to them and their response back. So this particular NPC, I have apparently reluctantly sent him messages a few times. But I also have an agenda page. So I have some sendings planned already and I go down the list. And I also have, this is a Dataview query that it&amp;rsquo;s a Dataview JS query. And it&amp;rsquo;s all like random NPC. So there is an element of randomness &amp;lsquo;cause sometimes, these are the ones that I know I want to send to, but these are the ones that I&amp;rsquo;m like, &amp;ldquo;Huh, I wonder who Rolf is and what they&amp;rsquo;re doing today.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;ANDY: It&amp;rsquo;s annoying.&lt;/p&gt;
+&lt;p&gt;NICOLE: I have-&lt;/p&gt;
+&lt;p&gt;ANDY: It&amp;rsquo;s in a good way, it&amp;rsquo;s very funny.&lt;/p&gt;
+&lt;p&gt;NICOLE: Annoying in a good way. That&amp;rsquo;s me. I have a follow up list. These are the people that I like to talk to often that I&amp;rsquo;ve sent more than one sending to. They&amp;rsquo;re like important to my character or to the group or to the story. And I&amp;rsquo;m also using Supercharged Links by the way. That&amp;rsquo;s why all of these icons are there. So the rainbow is like a PC and the other one, which is like a vampire actually. It&amp;rsquo;s like an NPC. So that&amp;rsquo;s basically it. I have ideas of whom to send to. And they&amp;rsquo;re also based on the quests and questions that we&amp;rsquo;ve got. &amp;lsquo;Cause these are like, some of them are just for me, for my character and some of them are for the group. I don&amp;rsquo;t know. I find sometimes that I&amp;rsquo;m the one that&amp;rsquo;s like, other people in the group are like, &amp;ldquo;Hey, what are we doing here again?&amp;rdquo; I&amp;rsquo;m like, &amp;ldquo;Okay, this is what we&amp;rsquo;re doing.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;ANDY: Scura would definitely have glasses or something and be the one that goes, the one who&amp;rsquo;s the character who is most likely the brainy, one of the group who actually knows everything&amp;rsquo;s going on and pulls everyone else into line on that front.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I actually rolled a journal for her in her starting items.&lt;/p&gt;
+&lt;p&gt;ANDY: That&amp;rsquo;s perfect. So that&amp;rsquo;s handy, A magical journal where you can interlink different pages.&lt;/p&gt;
+&lt;p&gt;NICOLE: I know. I actually purposely never play a character with low intelligence because of it. Because I don&amp;rsquo;t think it&amp;rsquo;s realistic. We have a question. Oh, by the way, there&amp;rsquo;s someone, Mariana Bergo, who said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What a lovely collision of worlds. I follow Andy&amp;rsquo;s work on service design but had no idea he&amp;rsquo;s a D&amp;amp;D guy as well. That&amp;rsquo;s awesome.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ANDY: I have in mind to do some crossover stuff actually about this, about some of stuff I&amp;rsquo;ve learned from RPGs too and managing teams and design leadership and stuff and vice versa. So we&amp;rsquo;ll see if that emerges. So what&amp;rsquo;s the question?&lt;/p&gt;
+&lt;p&gt;NICOLE: Courtney Robertson says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Does your group share notes? Curious if the group might use GitHub or some other means to sync?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Okay, so no. Well, I publish my notes and sometimes, I&amp;rsquo;ll post my notes especially if somebody was away that week or something. I&amp;rsquo;ll publish my notes. There&amp;rsquo;s another person who we got into Obsidian and he doesn&amp;rsquo;t publish it though. He will just often like export to PDF from Obsidian. And Andy of course, can&amp;rsquo;t share his notes with us.&lt;/p&gt;
+&lt;h2 id=&#34;andys-dm-style&#34;&gt;Andy&amp;rsquo;s DM style&lt;/h2&gt;
+&lt;p&gt;ANDY: Yeah, I think a couple of them actually, a couple of others too. So I think three out of the other four use Obsidian and what state their notes are in. So I have to say it&amp;rsquo;s incredibly handy for me. So as the DM, I really do make up quite a lot. I mean, I think people forget&amp;hellip; It maybe just my style. So one of the things you would ask me, what am I like as a DM? I follow the Sly Flourish&amp;rsquo;s Lazy GM format. So I prep kind of&amp;hellip; I think about it a lot. I caught myself this week actually thinking about some stuff like all week. And in fact, the session that we just had on Tuesday, there was a little bit of trolling I did to Nicole&amp;rsquo;s character that I-&lt;/p&gt;
+&lt;p&gt;NICOLE: A little.&lt;/p&gt;
+&lt;p&gt;ANDY: Had been thinking about the joke basically, and the setup of it and just crafting it all week. But then generally, I spend maybe an hour, two hours maybe. And in fact the one we&amp;rsquo;re about to have a look at, the session we&amp;rsquo;ll look at in a second, I spent probably a lot of time. Over a couple of weeks, I probably spent about four hours maybe prepping this, plus the map. But usually, I spend less than that. But then, I did that classic thing where I sometimes I prep very little and I&amp;rsquo;m terribly worried. And literally, so this group is an interesting group in that they&amp;rsquo;re violent pacifists. They&amp;rsquo;ll sort of avoid combat and then chop people in half. Once they get triggered, it goes violent. And they&amp;rsquo;re quite a suspicious group, so quite a suspicious party. So we&amp;rsquo;ve had sessions where it&amp;rsquo;s literally taken like half an hour in real time to decide to go through a doorway or something. And I think this isn&amp;rsquo;t unusual actually in other parties. So sometimes that happens and I think I prep all of this stuff and I think, &amp;ldquo;Oh God, I&amp;rsquo;m not prepped at all.&amp;rdquo; And literally we get through about 20% of it. And sometimes, we blast through it or they desire to do something else. And there of course, I have to improvise an awful lot. Should we have a look at some notes?&lt;/p&gt;
+&lt;p&gt;NICOLE: I take pleasure at that happening. I wanna ask you first, how many notes, yeah, how many notes do you think I have for this campaign?&lt;/p&gt;
+&lt;p&gt;ANDY: Oh, I don&amp;rsquo;t know. It&amp;rsquo;s gonna be 1,000. No, I don&amp;rsquo;t know, 800. I don&amp;rsquo;t know how many, like including other stuff or just the campaign itself?&lt;/p&gt;
+&lt;p&gt;NICOLE: Just the campaign. Not including pictures.&lt;/p&gt;
+&lt;p&gt;ANDY: 700.&lt;/p&gt;
+&lt;p&gt;NICOLE: Less actually.&lt;/p&gt;
+&lt;p&gt;ANDY: Oh, okay.&lt;/p&gt;
+&lt;p&gt;NICOLE: It is 486 notes.&lt;/p&gt;
+&lt;p&gt;ANDY: It&amp;rsquo;s still quite a lot.&lt;/p&gt;
+&lt;p&gt;NICOLE: It is but it&amp;rsquo;s 133,784 words.&lt;/p&gt;
+&lt;p&gt;ANDY: Wow. It&amp;rsquo;s telling me I&amp;rsquo;ve got, well, 1,915 files. But actually, the DM notes come up to 321. And here&amp;rsquo;s where all the Obsidian people fall off the 102 folders. So I might want to explain-&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh God.&lt;/p&gt;
+&lt;p&gt;ANDY: -why that is. Oh God, you use folders? You heathen.&lt;/p&gt;
+&lt;p&gt;NICOLE: Heathen!&lt;/p&gt;
+&lt;p&gt;ANDY: So do you wanna have a look?&lt;/p&gt;
+&lt;p&gt;NICOLE: Do you know bookmarks can- Yeah, yeah. Do you wanna add it or do you want me to do that?&lt;/p&gt;
+&lt;p&gt;ANDY: No, I&amp;rsquo;ll do it. I&amp;rsquo;ll do the same. Bookmarks can what?&lt;/p&gt;
+&lt;p&gt;NICOLE: Bookmarks can actually on my version, bookmarks can bookmark a folder.&lt;/p&gt;
+&lt;h2 id=&#34;a-tour-of-andys-dm-vault&#34;&gt;A tour of Andy&amp;rsquo;s DM vault&lt;/h2&gt;
+&lt;p&gt;ANDY: I can do that too. I can do that too. Yeah, it does work.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m gonna show people around my vault a little bit. Not too much. And you&amp;rsquo;ll see I&amp;rsquo;ve got the episode title here and it says sanitized &amp;lsquo;cause there there was like two secrets that you&amp;rsquo;re not allowed to see.&lt;/p&gt;
+&lt;h3 id=&#34;dm-reference-resources&#34;&gt;DM reference resources&lt;/h3&gt;
+&lt;p&gt;So I have a bunch of DM resources here. I have the raw reference here, the SRD plus other stuff I&amp;rsquo;ve added. I have this thing which I don&amp;rsquo;t really use anymore, which is called default tabs. So I used to use it quite a lot where I&amp;rsquo;d pull up some generators and cheat sheet and stuff. I don&amp;rsquo;t really use it anymore. And in fact, I think I&amp;rsquo;ve lost my DM screen, but I&amp;rsquo;ll put it back up there. I have a DM screen, which is set up as a list. I used to have it as a Kanban, but I prefer it in a list &amp;lsquo;cause I can just sneak it in in that left-hand column. So I have two keyboard hotkeys set up, which is to hide the two sides and I use them all the time both in work and also DMing. So this is quite handy.&lt;/p&gt;
+&lt;p&gt;And the other thing plugin I use a lot is the hover one. So I&amp;rsquo;m really quite often doing this thing where I&amp;rsquo;m just checking something here. And so, that&amp;rsquo;s how I&amp;rsquo;m doing that. So back to this.&lt;/p&gt;
+&lt;h3 id=&#34;random-tables&#34;&gt;Random tables&lt;/h3&gt;
+&lt;p&gt;So I have a bunch of random raw tables. I don&amp;rsquo;t use these so much. The one I use a lot is the NPC. So I have a big random roller, which is like, pulls from a lot of stuff. It&amp;rsquo;s got a button at the top and it&amp;rsquo;s pulling from a bunch of lists. I think some of these will break, but it&amp;rsquo;s also got things like sort of encounter some of these encounter roll tables and stuff that I&amp;rsquo;ve got around in my vault. So if I just go, I&amp;rsquo;m going to&amp;hellip; So I re-roll that. And I can quickly find an NPC and a name. Something&amp;rsquo;s a bit weird I think with the name there actually now it&amp;rsquo;s pulling, it should be first name, second name. And they&amp;rsquo;ve got some stuff here and I sometimes re-roll that bit. Always drinking over by under. Sometimes, that&amp;rsquo;s handy. And occasionally, if you&amp;rsquo;re wandering around, you will meet some of this stuff. Probably less so. I sometimes might use it when I&amp;rsquo;m writing bits of an encounter or I might trust, okay, travelers on the road do they meet someone or a roadside encounter. But I actually don&amp;rsquo;t use this as much as I thought I would.&lt;/p&gt;
+&lt;p&gt;What I probably use most are things like these things which are iframes. So there&amp;rsquo;s a website called RPG Heroes. I use this all the time. So when you go, &amp;ldquo;So do I see anyone to ask directions?&amp;rdquo; And I&amp;rsquo;m like, &amp;ldquo;Oh yeah.&amp;rdquo; And then I go, &amp;ldquo;Yes, there&amp;rsquo;s a guy with a long beard and a cloak and stuff.&amp;rdquo; &amp;lsquo;Cause I like the visual. And I quite often ignore the rest of it, but sometimes, it&amp;rsquo;s quite useful. This one is useful for stat blocks. It generates stat blocks as well. So RPG Tinker is good and there&amp;rsquo;s a bestiary version of it too. And sometimes, use Tetra Cube one, but I mostly use those or I have quick name lists as well.&lt;/p&gt;
+&lt;p&gt;So in game, that&amp;rsquo;s what I&amp;rsquo;m doing. All the other stuff is mostly for adventure writing if I&amp;rsquo;m doing stuff. And there&amp;rsquo;s more of that in there. Now I&amp;rsquo;m seeing amount of PDFs and stuff in here.&lt;/p&gt;
+&lt;p&gt;I have some charts and tables like price list I use quite often. We&amp;rsquo;ve just had a couple of shopping episodes. I have a price list encyclopedia here and when someone goes, &amp;ldquo;Oh, I wanna go and buy a crossbow.&amp;rdquo; And I&amp;rsquo;m like, &amp;ldquo;Crossbow. Oh yeah, yeah, well that&amp;rsquo;s gonna cost you.&amp;rdquo; Let&amp;rsquo;s just go through hand crossbow, that&amp;rsquo;s 75 gold. So I&amp;rsquo;m not spending ages searching around in stuff for this.&lt;/p&gt;
+&lt;p&gt;So that&amp;rsquo;s most of the stuff I&amp;rsquo;m using in game. And there&amp;rsquo;s obviously sort of monsters and stuff like that. I have them in folders partly because this existed before Obsidian and I like to have my stuff in folders on the desktop. So when I don&amp;rsquo;t have Obsidian handy or maybe one day might use something else whatever, the stuff is organized. I don&amp;rsquo;t want to become so dependent on say on Dataview that I can&amp;rsquo;t use all the stuff in my folders or tags for that matter. I do actually just started tagging stuff on macOS in Finder.&lt;/p&gt;
+&lt;h3 id=&#34;dm-notes&#34;&gt;DM notes&lt;/h3&gt;
+&lt;p&gt;My actual DM notes are in Wildemounts - Tuesday Wildemount DM notes. I didn&amp;rsquo;t change that &amp;lsquo;cause this is like ripple across so many links. So I&amp;rsquo;ve got a previous sessions note and I have a current one, and I make a folder. And the reason why I have it in folder instead of just a note is &amp;lsquo;cause sometimes, I have sub bits of a plot arc. And particularly, if I&amp;rsquo;m borrowing bits from an existing adventure like a published adventure, I&amp;rsquo;ll have them in here and the bits of that are actually in that session&amp;rsquo;s folder.&lt;/p&gt;
+&lt;p&gt;And I do it as separate notes because then, what I can do is if we don&amp;rsquo;t get through it all, I can just move the bits that we haven&amp;rsquo;t got through into the next problem. So that&amp;rsquo;s why I do that. So that&amp;rsquo;s my current session always.&lt;/p&gt;
+&lt;p&gt;I do have a previous session lister. So this is a Dataview query that is doing that. And I can go through an hour, in fact hour, and sometimes I have a few other bits and pieces. I have some scratch stuff so you&amp;rsquo;re not seeing this but these are sort of things I&amp;rsquo;m thinking of that might come up. They end up sort of in there. So I have adventures, I&amp;rsquo;ve got some different quests. I&amp;rsquo;ve got some extra lore stuff in here. I&amp;rsquo;ve got some specific images to this world and items and stuff. And then I have locations.&lt;/p&gt;
+&lt;h3 id=&#34;location-dashboard&#34;&gt;Location dashboard&lt;/h3&gt;
+&lt;p&gt;In every location, so we are gonna have a look at a place named Shadycreek Run. Every location has its folder, there&amp;rsquo;s some hooks, plot hooks in there, there are locations in there, there are maps and there are NPCs. And that&amp;rsquo;s how I structure it. And then I usually have a dashboard. So this one here is the Shadycreek dashboard I&amp;rsquo;ve actually gotta open up here.&lt;/p&gt;
+&lt;p&gt;And that is a bunch of&amp;hellip; That&amp;rsquo;s a map using the leaflet plugin. I have a bunch of Dataview things that are pulling stuff out that&amp;rsquo;s tagged as locations, NPCs and so forth. And back to my point that I don&amp;rsquo;t wanna become so dependent on Dataview that I can&amp;rsquo;t live without it, that&amp;rsquo;s what the folders are for, right?&lt;/p&gt;
+&lt;p&gt;Stuff in here is tagged. And so if I didn&amp;rsquo;t have Obsidian, if I didn&amp;rsquo;t have Dataview, I can still go and find all those NPCs and stuff &amp;lsquo;cause they&amp;rsquo;re in that folder and I&amp;rsquo;m not having to hunt around amongst locations and other stuff as well. So that&amp;rsquo;s why I do it. But the dashboard is super handy. It&amp;rsquo;s particularly handy for when they go, &amp;ldquo;I wanna go and go to the blacksmith.&amp;rdquo; And I&amp;rsquo;m like, &amp;ldquo;Hang on a second, I have that table.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;NICOLE: We haven&amp;rsquo;t gone to most of these!&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, yeah, we have. So then I&amp;rsquo;m like, &amp;ldquo;Oh yeah, blacksmith. Oh I want to go to a shop.&amp;rdquo; And I think with this one here, so I&amp;rsquo;ll often just gonna pull up there. I don&amp;rsquo;t know why that&amp;rsquo;s looping. It&amp;rsquo;s into like some ridiculous nested thing there.&lt;/p&gt;
+&lt;p&gt;So the Jezean Emporium for example, they went there. I pretty much, that&amp;rsquo;s very weird. That&amp;rsquo;s doing that. What have I got down going on there that is making that nest? I think that&amp;rsquo;s a weird artifact. I don&amp;rsquo;t know why, maybe it&amp;rsquo;s this. What this is here, this blank thing, I still haven&amp;rsquo;t come up with an image for the NPC who&amp;rsquo;s here. I&amp;rsquo;m pretty sure I decided that he was a taxidermist like, on the spot. So you went-&lt;/p&gt;
+&lt;p&gt;NICOLE: Really?&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, yeah. And then I decided he was this known taxidermist and I thought it was funny to have this taxidermist that was this little gnome. And he was in the middle of pretty disgustingly actually stuffing a worg and preserving a worg, which was this big creature. So I had this idea, it was like sort of getting inside. And he was-&lt;/p&gt;
+&lt;p&gt;NICOLE: I thought that was intentional.&lt;/p&gt;
+&lt;p&gt;ANDY: No, no. And then as I was doing it I was thinking, &amp;ldquo;Oh, this is quite good because one of the characters, this guy, Ionos Jagentoth, I had him collecting these sort of exotic monsters and stuff and keeping them in a dungeon menagerie. So he&amp;rsquo;s got this dungeon or he had this dungeon, we&amp;rsquo;ll come to that in a minute. That was full of these different creatures.&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;Cause I was looking through Kobold Press&amp;rsquo;s Tome of Beasts and I thought, &amp;ldquo;Wouldn&amp;rsquo;t it be really great to have just a whole load of monsters of different kinds in one place in a dungeon or in an area, they&amp;rsquo;re in cages and there&amp;rsquo;s a bunch of switches on the walls and the players don&amp;rsquo;t really know what the switches do.&amp;rdquo; And so I had a random roll table for the switches and I was rolling to see what they did. I can&amp;rsquo;t remember if I got you to roll. I think I&amp;rsquo;ve got you to roll. Which what the switch did. So sometimes, it like it opened one cage but there was a couple of switches that opened everything and it would&amp;rsquo;ve probably been-&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh God we would&amp;rsquo;ve died.&lt;/p&gt;
+&lt;p&gt;ANDY: All the creatures come out. And I thought it was really nice and funny. I thought it was funny most of the time, I&amp;rsquo;m trying to think of stuff that was funny idea to have all these different creatures.&lt;/p&gt;
+&lt;p&gt;And they might start fighting each other and stuff as well &amp;lsquo;cause they were creatures that definitely probably would just like feed off of each other and things in the midst of this sort of chaos. Plus you had a fairly major boss character turn up at the same time. So that was the idea behind this. And anyway, so Kimbal Jezean who was the&amp;hellip; And I am pretty sure the source for this by the way, was the very good Exandria Discord. It&amp;rsquo;s a very good community online.&lt;/p&gt;
+&lt;p&gt;NICOLE: Wait a minute, his potion prices are plus 10%, what?!&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, his prices, well because you are in&amp;ndash; so Shadycreek Run, for those of you who don&amp;rsquo;t know, is like the Mos Eisley of Wildemount. It is a dodgy sort of outpost outside of the main empire. And so yeah, so there is a premium on the prices. right?&lt;/p&gt;
+&lt;p&gt;So I had some potions for sale here, which you may or may not have got. Burned down, thanks to Halkin. So one of our players, his character got petrified, he&amp;rsquo;s a wizard and so he rolled another character, which is a barbarian dragonborn. And who followed these sort earth goddess called Melora. Anyway, seeing these stuffed animals, he was incensed and basically paid someone to burn it down. There was a lot of that going on in this particular thing.&lt;/p&gt;
+&lt;p&gt;So anyway, the main thing that I wanna say about him is that a lot of the stuff about him being a taxidermist and well I just sort of thought, &amp;ldquo;Oh, that&amp;rsquo;d be funny.&amp;rdquo; And then I thought, &amp;ldquo;Oh maybe he&amp;rsquo;s delivering creatures, either live creatures or stuffed versions of it as trophies to the Jagentoths.&amp;rdquo; And I thought that might be a good connection.&lt;/p&gt;
+&lt;p&gt;And then I just came up with his character and his voice, which I&amp;rsquo;m not gonna do right now immediately.&lt;/p&gt;
+&lt;p&gt;NICOLE: But that was the best part about him.&lt;/p&gt;
+&lt;p&gt;ANDY: Let&amp;rsquo;s go like this. Oh hang, on a minute. I&amp;rsquo;ve just gotta go and get this slime off of my hands.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh it was perfect. Did you do that just on the spot?&lt;/p&gt;
+&lt;p&gt;ANDY: I did do that on the spot, yeah. And I regretted it &amp;lsquo;cause I-&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh wow.&lt;/p&gt;
+&lt;p&gt;ANDY: After about five minutes of talking I was like. So that was it. So that&amp;rsquo;s how I then reuse something like that dashboard and the NPCs that are in it &amp;lsquo;cause when Nicole as Scura goes, &amp;ldquo;Oh I&amp;rsquo;m just gonna send sending to this person.&amp;rdquo; I&amp;rsquo;m like, &amp;ldquo;Yeah, who&amp;rsquo;s that again?&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;nicoles-note-on-shadycreek-run&#34;&gt;Nicole&amp;rsquo;s note on Shadycreek Run&lt;/h2&gt;
+&lt;p&gt;NICOLE: I wonder if I should show my Shadycreek dashboard.&lt;/p&gt;
+&lt;p&gt;ANDY: Well do you wanna show, yeah, maybe let&amp;rsquo;s switch &amp;lsquo;cause there&amp;rsquo;s more I can show you. &amp;lsquo;Cause I&amp;rsquo;d like to show you the Jagentoth compound.&lt;/p&gt;
+&lt;p&gt;NICOLE: Ooh, we&amp;rsquo;re switching.&lt;/p&gt;
+&lt;p&gt;ANDY: But you go to yours first and see where you got to.&lt;/p&gt;
+&lt;p&gt;NICOLE: Okay, so this is my note on Shadycreek Run. I also have the Leaflet thing. I think you gave us this. And then the places that we have been to are already marked on there. So when I click on them, it goes to the note. I do also have Dataview queries. These are the locations that aren&amp;rsquo;t shops. I have factions because a big part of Shadycreek Run is that it&amp;rsquo;s ruled by these families. And so I have notes on each of them like, here&amp;rsquo;s the Jagentoth family. People that they&amp;rsquo;ve killed, businesses. I even have like a little diagram of their family tree.&lt;/p&gt;
+&lt;p&gt;ANDY: It&amp;rsquo;s more than I have, I can tell you.&lt;/p&gt;
+&lt;p&gt;NICOLE: I think I asked you and you&amp;rsquo;re like, &amp;ldquo;Uh, yeah, Reese. Reese is his name.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, I don&amp;rsquo;t know what I thought. No, I think some of them are in the book.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, okay. And then also I have Dataview query that lists everybody that&amp;rsquo;s on there. So every NPC I put their family if it&amp;rsquo;s relevant as a faction as well. And then some of these have skulls, that&amp;rsquo;s &amp;lsquo;cause we killed them.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, quite a lot of them.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, so here are all my NPCs from Shadycreek Run. Some of them are dead. And I have a little description of them. I mean, sometimes it&amp;rsquo;s really like, Sybastien: doesn&amp;rsquo;t like Wally. Sometimes, it&amp;rsquo;s very vague. And then here are the shops in Shadycreek, &amp;lsquo;cause that&amp;rsquo;s like a separate thing. Kimbal said I might get calming tea here which I did actually. And then I have sessions. So I think there was one point when we were like, &amp;ldquo;Oh, when was that? What session was it that we were last here?&amp;rdquo; I&amp;rsquo;m like, &amp;ldquo;Oh it was on 37 or whatever.&amp;rdquo; But my numbering is different from Andy&amp;rsquo;s by the way, just because I came in like after 17 sessions. So I&amp;rsquo;m 17 sessions behind. So that&amp;rsquo;s my Shadycreek Run one.&lt;/p&gt;
+&lt;p&gt;ANDY: Next week with session 83. So it&amp;rsquo;s been going for two years. Actually just around this time, I think April, it was the session zero.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah. So should we go into a particular session that you-&lt;/p&gt;
+&lt;p&gt;ANDY: Let&amp;rsquo;s do that. Yeah, let&amp;rsquo;s do that.&lt;/p&gt;
+&lt;p&gt;NICOLE: Okay, well&amp;hellip; Let me ask first though.&lt;/p&gt;
+&lt;h2 id=&#34;background-for-the-session-andy-chose-to-show&#34;&gt;Background for the session Andy chose to show&lt;/h2&gt;
+&lt;p&gt;NICOLE: Why did you really choose this session and why was it to troll me?&lt;/p&gt;
+&lt;p&gt;ANDY: Okay. So I did not deliberately troll you. So there was a significant event with an NPC from Scura&amp;rsquo;s backstory in this episode. And I actually thought it had happened in the previous episode, session.&lt;/p&gt;
+&lt;p&gt;NICOLE: Still not convinced.&lt;/p&gt;
+&lt;p&gt;ANDY: And I chose this one because it was one that I had prepped sort of quite a lot for it. It&amp;rsquo;s got some, I think some maybe some interesting prep stuff in it in terms of the way I went about structuring it. And it was interesting on because there was some extra bits that I did, which I then have probably then carried on and we&amp;rsquo;ll probably continue in the future because it was quite complex. There were a lot of NPCs. So the session is, they go to this place they&amp;rsquo;re called Jagentoths, they go to their compound, it&amp;rsquo;s this house set in the forest surrounded by the perimeter fence. And there&amp;rsquo;s an NPC called, sorry, there&amp;rsquo;s an NPC called Floyd. And I&amp;rsquo;ll explain why I&amp;rsquo;m laughing in a second. His name&amp;rsquo;s Floyd Hemsworth.&lt;/p&gt;
+&lt;p&gt;And one of the other characters-&lt;/p&gt;
+&lt;p&gt;NICOLE: Crownsguard Douche.&lt;/p&gt;
+&lt;p&gt;ANDY: -Milla, had a dalliance with him. Crownsguard Douche, as you&amp;rsquo;ve christened him.&lt;/p&gt;
+&lt;p&gt;And there was reverse damseling. So basically they had to go and rescue him. He had been captured by this boss guy.&lt;/p&gt;
+&lt;p&gt;And so you&amp;rsquo;ve got the NPCs, a lot of NPCs cause there&amp;rsquo;s guards and there&amp;rsquo;s all the other characters that have been, they&amp;rsquo;re also in it. And this is a thing we talked about in session zero. There are some slaves in this that these are nasty people. So I really wanted to go, this is one of those things where I&amp;rsquo;m not going to have slavery, like the characters have the main party, have slaves, for fun and stuff. But these are bad people.&lt;/p&gt;
+&lt;p&gt;So bad that in fact the party decided to burn their whole place down and kill them all and rescue the slaves. So you&amp;rsquo;ve got the slaves, you&amp;rsquo;ve got the family, you&amp;rsquo;ve got all the guards, plus you&amp;rsquo;ve got this basement, this dungeon menagerie in the basement with all these different creatures.&lt;/p&gt;
+&lt;p&gt;So there&amp;rsquo;s quite a lot going on and it could have gone in a lot of different directions for me as a DM. So that&amp;rsquo;s one of the reasons why I prepped it. Fairly often, I don&amp;rsquo;t do that much prep.&lt;/p&gt;
+&lt;p&gt;Fairly often, I&amp;rsquo;ve got maybe three or four scenes, very bare bones sketched out what&amp;rsquo;s gonna happen. If there&amp;rsquo;s any encounter stuff, I&amp;rsquo;ll have a sort of encounter set up and that&amp;rsquo;s about it. And then kind of, I don&amp;rsquo;t know, I think I&amp;rsquo;m fairly good at winging it. I think quite often, I said I feel so unprepared and you guys don&amp;rsquo;t think so.&lt;/p&gt;
+&lt;p&gt;What was entertaining about this one is I was really prepared and I expected you to do a sort of heist thing and sneak in to the house, rescue, explore the house. I had all these kind of, I&amp;rsquo;m gonna show you. Let me put up my thing and I&amp;rsquo;ll show you.&lt;/p&gt;
+&lt;h3 id=&#34;andys-session-prep&#34;&gt;Andy&amp;rsquo;s session prep&lt;/h3&gt;
+&lt;p&gt;ANDY: So in the house. Here&amp;rsquo;s the session, So the session starts with, I have just have a reminder calendar links back to the Wildemount, I can never remember the names of the week and stuff. So we do a little bit of a thing. There&amp;rsquo;s an eclipse coming up. I don&amp;rsquo;t use this that much, but it just reminds me to, in fact, this is an old Owlbear link. I don&amp;rsquo;t even use that anymore. I use Owlbear-&lt;/p&gt;
+&lt;p&gt;NICOLE: Actually Andy.&lt;/p&gt;
+&lt;p&gt;ANDY: The new one.&lt;/p&gt;
+&lt;p&gt;NICOLE: I remember in the first session &amp;lsquo;cause I went back to the first session we played, that played with you and you weren&amp;rsquo;t using calendars, no one had asked about the time.&lt;/p&gt;
+&lt;p&gt;ANDY: No, that&amp;rsquo;s right. That&amp;rsquo;s one of the things that now, we do have a calendar actually. So now we have the Fantasy Calendar plugin. Thank you, Jeremy. And as you can see, our game moves pretty slowly. There&amp;rsquo;s like five sessions in the space that have happened in the game day.&lt;/p&gt;
+&lt;p&gt;NICOLE: I think we started in Quen&amp;rsquo;pillar though, didn&amp;rsquo;t we?&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, I think you did. But I don&amp;rsquo;t remember. I don&amp;rsquo;t think I started adding to the calendar until more recently. So in this, I&amp;rsquo;ve made myself a little note to remind about the X or fast forward cards session zero thing. Because of the slavery thing and because one of the guys is the main guy, the main bad is a torturer. I wanted to just remind people if this is something they don&amp;rsquo;t want, they can skip. So then there&amp;rsquo;s a recap and then I have a few DM notes. So these are basically things I mustn&amp;rsquo;t forget to open or I know that I&amp;rsquo;m going to wanna go back and have a look at. I usually list all the NPCs out and this is all done manually.&lt;/p&gt;
+&lt;p&gt;NICOLE: Who is Phespo?&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, who&amp;rsquo;s Phespo? That&amp;rsquo;s a very good point. Oh, that&amp;rsquo;s the Medusa. You didn&amp;rsquo;t know? Did you not know her name? Her name is Phespo.&lt;/p&gt;
+&lt;p&gt;NICOLE: No.&lt;/p&gt;
+&lt;p&gt;ANDY: So there was a character, there was a Medusa that they faced a couple of sessions before this. And so that&amp;rsquo;s why she&amp;rsquo;s there. Just in case I have to go back and remember some of that. And then the rescue&amp;rsquo;s on. So there&amp;rsquo;s the Jagentoth. I called them Jagentoth, it&amp;rsquo;s probably Jagentoth but I live in Germany and for me the Js&amp;ndash; Jagen is to hunt&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, it should be Jagentoth, yeah.&lt;/p&gt;
+&lt;p&gt;ANDY: And so I&amp;rsquo;ve got these two people, I&amp;rsquo;ve got one note here. That&amp;rsquo;s the scene basically. They&amp;rsquo;re gonna dine around 8 PM. So that&amp;rsquo;s what I had in mind. They&amp;rsquo;re in the dining room at this point in time. You didn&amp;rsquo;t know this, did you?&lt;/p&gt;
+&lt;p&gt;NICOLE: No, I very nearly poisoned them. I had the midnight tears, ugh.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, let me go to the compound because in the compound, I think I&amp;rsquo;ve got a map or have I? Haven&amp;rsquo;t got a map wherever I put it. I haven&amp;rsquo;t got a map. Somewhere, I&amp;rsquo;ve got a map. So what I&amp;rsquo;ve done here on the left-hand side, you can see I&amp;rsquo;ve broken out all of the rooms in the compound. So I&amp;rsquo;m sure I&amp;rsquo;d got&amp;hellip; I thought I&amp;rsquo;ve got.&lt;/p&gt;
+&lt;p&gt;NICOLE: Wow, this is a lot.&lt;/p&gt;
+&lt;p&gt;ANDY: This is a lot, yeah. And so I had built this room, I built this mansion in Dungeon Alchemist.&lt;/p&gt;
+&lt;p&gt;NICOLE: Dungeon Alchemist.&lt;/p&gt;
+&lt;p&gt;ANDY: And what&amp;rsquo;s it called? What&amp;rsquo;d you say? It&amp;rsquo;s called Dungeon Alchemist.&lt;/p&gt;
+&lt;p&gt;NICOLE: Dungeon Alchemist.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, yeah. And I&amp;rsquo;d furnished it all and all of these rooms have some thought behind it. There&amp;rsquo;s a little tree and there&amp;rsquo;s a kitchen here. And here is-&lt;/p&gt;
+&lt;p&gt;NICOLE: We didn&amp;rsquo;t see it all.&lt;/p&gt;
+&lt;p&gt;ANDY: No you didn&amp;rsquo;t. So here is the bedroom, the bedroom has a door to this study. The study has a secret passage, a secret bookshelf door into this secret study with a safe. And then here at the end of this corridor is a secret passageway down into the dungeon. And over here is the slave hut. This is a secret passageway down into the dungeon too. And this was the guardhouse, which you never got to see inside. Because&amp;hellip;&lt;/p&gt;
+&lt;p&gt;NICOLE: &amp;lsquo;Cause we just burned it.&lt;/p&gt;
+&lt;p&gt;ANDY: Because you decided to burn the place down. So they-&lt;/p&gt;
+&lt;p&gt;NICOLE: We used an immovable rod.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, yeah. So they used an invisible rod to block the guardhouse door. They put sort of casks of gunpowder, which they had got illegally elsewhere. You blew up the latrine was the first thing. And then you basically ended up setting fire to the house. So that was quite an interesting thing for me in the sense that, okay, so all that stuff I prepared, they&amp;rsquo;re not gonna see &amp;lsquo;cause they just burnt it down. And all those secrets and all that loot and things like that, that were quite important.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh no. There was loot??&lt;/p&gt;
+&lt;p&gt;ANDY: They&amp;rsquo;re gonna see. There&amp;rsquo;s loads of secrets and stuff in there that I had to relocate.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh no.&lt;/p&gt;
+&lt;p&gt;ANDY: So then what happened was quite an interesting mechanic for me though, &amp;lsquo;cause they had actually started that in the previous session. I then thought, &amp;ldquo;Okay, what would be going on?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So all the guards are obviously some people are trying to put out the fires. A lot of people are gonna trying to be rescuing stuff from the house. So what was happening is that all these people are kind of pulling stuff out of the house and they&amp;rsquo;re putting onto the lawn and things like that. It&amp;rsquo;s kind like people do when there&amp;rsquo;s a bushfire or something trying to rescue the stuff.&lt;/p&gt;
+&lt;p&gt;But meanwhile down in the dungeon menagerie. Let me open that. What you guys ended up doing was I had, so there were these&amp;hellip; For reasons I won&amp;rsquo;t go into, all the slaves were tieflings. And there was one of them.&lt;/p&gt;
+&lt;p&gt;So I had some stuff in here, which is my sort of read aloud thing. Oh, I think I&amp;rsquo;ve got a read aloud callout here and I use that so I can just flip that up. And then what I do is I use embed, so transcludes. So I have all the different bits here and then I can transclude them. That&amp;rsquo;s why I find this quite useful to split them into separate notes. Because then I can adjust the structure and things of what I&amp;rsquo;m gonna be doing in that session. &amp;lsquo;Cause you spent like two or three sessions around this compound. And so I can adjust it, I can embed a note in the scene like I did here and I go, &amp;ldquo;Okay, so the slave house so this is gonna be this thing.&amp;rdquo; And then the dungeon menagerie and then I&amp;rsquo;ve got some stuff around here.&lt;/p&gt;
+&lt;p&gt;So I have the dungeon menagerie. I&amp;rsquo;ve got Ionos and Ilbane, who was the big bad in this. I pulled a stat block from LevelUp, actually, 5e. Because it was more interesting.&lt;/p&gt;
+&lt;p&gt;NICOLE: Is this just an image?&lt;/p&gt;
+&lt;p&gt;ANDY: This is just an image. Yeah, I think I&amp;rsquo;ve just clipped a stat block. Out of LevelUp. And sometimes, you use the statblocks plugin and sometimes, it&amp;rsquo;s just easier to grab an image.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I get that.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah. And in this one for the dungeon menagerie, I actually like an idiot.&lt;/p&gt;
+&lt;p&gt;NICOLE: Ooh, ooh, looking at all the secrets.&lt;/p&gt;
+&lt;p&gt;ANDY: It wasn&amp;rsquo;t like an- And there&amp;rsquo;s a secrets and clues things at the end. And I think you know all of these but you know all of these. So I have secrets and clues. So when they found this stuff I go, &amp;ldquo;Okay, right. They found that.&amp;rdquo; These will been reset I think because I can&amp;rsquo;t remember why. Probably made a new sanitized version of it.&lt;/p&gt;
+&lt;p&gt;So then I have the encounter. So this is using the encounter plugin. So when this is going on, it fires up the encounter there and I work it that way. But the dungeon menagerie was a real issue &amp;lsquo;cause I thought, &amp;ldquo;Oh my god. And there&amp;rsquo;s so many people in this place, how am I gonna manage it?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So I had for the first time ever did an adversary roster. So if anyone knows the Alexandrian, Justin Alexander, he recommends this. It was quite an old school D&amp;amp;D thing to do. And the adversary roster looks like this. It&amp;rsquo;s just a little markdown table, it&amp;rsquo;s got links to some people. And it was just so I can remember, these are all the different people around in the house. And I have an idea of where they are, but they can move around.&lt;/p&gt;
+&lt;p&gt;NICOLE: Did you plan that one of them had a birthday?&lt;/p&gt;
+&lt;p&gt;ANDY: So I had this idea. I wanted the guards. I didn&amp;rsquo;t want the guards to dominate everything that you were gonna be fighting multiple guards for ages. And you&amp;rsquo;d gone there, you&amp;rsquo;d scoped it out during the day and then you&amp;rsquo;d gone there in the evening.&lt;/p&gt;
+&lt;p&gt;So I thought would it be fun for the guards to be in the guard house getting drunk and being loud. And then, I think in the moment, I thought you hear that one of them&amp;rsquo;s singing &amp;ldquo;Happy Birthday.&amp;rdquo; And it was particularly poetic because that one then came out and got axed, I think by Halkin. It&amp;rsquo;s like, &amp;ldquo;You just killed the guy whose birthday it was.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;And I quite like messing with them that way. I remember there was one thug and you found a note. I think, I can&amp;rsquo;t remember if you were playing for this point.&lt;/p&gt;
+&lt;p&gt;NICOLE: Many, many ways you like to mess with us.&lt;/p&gt;
+&lt;p&gt;ANDY: So they killed two random thugs who were guarding a place. And then of course, when they searched the bodies, I had a thing where one of them had a note in their pocket from his estranged wife saying, &amp;ldquo;Please come home. Your daughter misses you. Please give up this way of life&amp;rdquo; and stuff. And they&amp;rsquo;re all like, &amp;ldquo;Oh no, we just killed this henchman, but they had a life and stuff.&amp;rdquo; So I apologize.&lt;/p&gt;
+&lt;p&gt;NICOLE: How cruel is that? What a sadistic, okay, I change my answer. You&amp;rsquo;re a sadistic DM.&lt;/p&gt;
+&lt;p&gt;ANDY: My job is to mess with you as well.&lt;/p&gt;
+&lt;p&gt;So anyway, adversary roster and then I had an encounter table. So using the encounter plugin such as separate, it&amp;rsquo;s in a separate thing as well, a separate transclude, there&amp;rsquo;s an encounter table so that depending on where you went, I could fire up a, a different set of encounters. So if you were gonna fight the house guards and the captain, I can fire up that one and so on.&lt;/p&gt;
+&lt;p&gt;And this was the dungeon menagerie. So I just had this set up like all the creatures are in here and then I would just skip them in the initiative if depending on who was there. You would&amp;rsquo;ve probably struggled if they&amp;rsquo;d all escaped in one go.&lt;/p&gt;
+&lt;p&gt;But as it happened, you set fire to the house and missed out quite a lot of, all that prep, all these bedrooms and everything that I created, you guys just completely missed out &amp;lsquo;cause they turned to ash.&lt;/p&gt;
+&lt;p&gt;NICOLE: There was an ettercap?&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, there was an ettercap in the dungeon menagerie. So we play, we use Owlbear Rodeo. So this was loaded into our Owlbear Rodeo and yeah, there was the one that was the ether cap was, there was one cage you might remember that was full of spiderwebs and cobwebs. That was the&amp;hellip;&lt;/p&gt;
+&lt;p&gt;NICOLE: Cool.&lt;/p&gt;
+&lt;p&gt;ANDY: And then I guess the last thing you were, Floyd&amp;hellip; So the joke was that this Domovoi was Floyd. Ah, so Floyd, he was just a Crownsguard. He was just a guard on a gate. And I thought it would be funny if there was like a really good looking guy and a young doofus who was as a comedic pair.&lt;/p&gt;
+&lt;p&gt;And then I said, &amp;ldquo;Oh, this guy&amp;rsquo;s, his name&amp;rsquo;s&amp;hellip;&amp;rdquo; I thought of Pink Floyd or something, his name&amp;rsquo;s Floyd. And when you ask him directions and that&amp;rsquo;s how it started. And then I said, &amp;ldquo;He&amp;rsquo;s really good looking. He looks like Chris Hemsworth.&amp;rdquo; And so that&amp;rsquo;s how he became Floyd Hemsworth. And then-&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, I didn&amp;rsquo;t know that.&lt;/p&gt;
+&lt;p&gt;ANDY: You asked him to come with you. Yeah, the party asked him to come with you. He started flirting with one of the characters who then was flirting, well, she was flirting with him. And then he had all sorts of thoughts about, he became, then I had to build a whole backstory and family and stuff and connections for him. But it was one of the examples of a randomly invented NPC became actually quite important.&lt;/p&gt;
+&lt;p&gt;So anyway, the way the setup was he was in here and the Domovoi had made him invisible but had made himself look like Floyd and was in here. So the idea was that I was gonna lure a character into the cage, get the cage closed, there was gonna be a little cage fight inside here except what happened?&lt;/p&gt;
+&lt;p&gt;What happened, Scura? Tell us.&lt;/p&gt;
+&lt;p&gt;NICOLE: I foiled your plans.&lt;/p&gt;
+&lt;p&gt;ANDY: Milla. It was Milla that foiled the plans actually. Two of you, both of you, between the two of you.&lt;/p&gt;
+&lt;p&gt;NICOLE: I cast the see invisibility, yeah.&lt;/p&gt;
+&lt;p&gt;ANDY: So you cast see invisibility and Milla cast Detect Thoughts. And so basically between the two of them, they could work out who was in which cage. So that didn&amp;rsquo;t work. Anyway. So that was my setup for all of that. That&amp;rsquo;s probably as much as I need to carry on going on about, it&amp;rsquo;s been quite a long time, but it was quite complex. And then got foiled by the players.&lt;/p&gt;
+&lt;h3 id=&#34;nicoles-session-notes&#34;&gt;Nicole&amp;rsquo;s session notes&lt;/h3&gt;
+&lt;p&gt;NICOLE: Good. I can show you mine for the same one.&lt;/p&gt;
+&lt;p&gt;ANDY: Okay. And if anyone has any questions, please fire away.&lt;/p&gt;
+&lt;p&gt;NICOLE: Okay, so this is the same session. I always like to have like a Midjourney thing that I do just so that in the worldview, in the world note, it&amp;rsquo;s just nice to have cards and each session has like an image of what it looks like. Sometimes it&amp;rsquo;s not quite right, but it&amp;rsquo;s enough to remind me of the session.&lt;/p&gt;
+&lt;p&gt;And oh, that&amp;rsquo;s our video of it actually happening. Oh, so we have a player-only chat where we scheme against Andy.&lt;/p&gt;
+&lt;p&gt;ANDY: I didn&amp;rsquo;t know about this.&lt;/p&gt;
+&lt;p&gt;NICOLE: And plan to mess with him almost as much as he plans to mess with us. So there were, at the time, Tyler, who plays Wally, he was away. So sometimes, I put things like instructions for Wally and he had this weapon. He told me when to use it and what the abilities were. And then I like to use these little call outs sometimes to mark what I know and what I don&amp;rsquo;t know or what other players don&amp;rsquo;t know.&lt;/p&gt;
+&lt;p&gt;Sometimes, I put things in comments so that if somebody goes into my Obsidian published notes, one of the other players, they won&amp;rsquo;t immediately see some things there. So it&amp;rsquo;s the same thing, right?&lt;/p&gt;
+&lt;p&gt;So here I cast &lt;em&gt;see invisibility&lt;/em&gt; as we were going down into the dungeon. And then I also use Initiative Tracker.&lt;/p&gt;
+&lt;p&gt;I mean, I&amp;rsquo;m a healer. So part of the reason I love being a healer is that I always love keeping track of where everyone is. So this is what it looks like. I happen to have taken a screenshot of the end of this session. So this is what it looks like. I have everyone&amp;rsquo;s HP, I&amp;rsquo;m going through this using the initiative tracker and I have these custom statuses. So I track things like, if our barbarian has used reckless this round, then I know that he&amp;rsquo;s gonna need a little bit more help &amp;lsquo;cause he is probably gonna get hit.&lt;/p&gt;
+&lt;p&gt;And if I have temporary hit points that I&amp;rsquo;m giving to people, I would track that here as well. Even things like if people have reacted or not, &amp;lsquo;cause that affects whether my party can leave the threat range. And what I noticed though, you use the initiative tracker, but you don&amp;rsquo;t use the log, do you?&lt;/p&gt;
+&lt;p&gt;ANDY: Yes, sometimes. I do turn it on and off. I do use the log but once I, something crashed or something and I couldn&amp;rsquo;t remember everyone&amp;rsquo;s, the initiative order. What I don&amp;rsquo;t do is I don&amp;rsquo;t really log everyone&amp;rsquo;s hit points. I let you guys decide. I let you keep track of your character. Obviously, I&amp;rsquo;m keeping track of your opponents, but I&amp;rsquo;m not keeping track of your hit points. Obviously, I&amp;rsquo;m seeing it.&lt;/p&gt;
+&lt;p&gt;NICOLE: That&amp;rsquo;s fair enough.&lt;/p&gt;
+&lt;p&gt;ANDY: We still have our character sheets on D&amp;amp;D Beyond, so I&amp;rsquo;m usually checking where you&amp;rsquo;re at on D&amp;amp;D Beyond in the phone app.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, so I do that mainly in Obsidian because I need to know who needs healing and I always turn the log on, and this log is like an optional thing for Initiative Tracker, which is the same one that Andy uses. So I have a bunch of them here. There&amp;rsquo;s a separate Folder for log and those are the combats. And then I embed that combat into the session note so that way, it gets updated here. And then while I&amp;rsquo;m going through the rounds, I also just type in some explanation because otherwise, it&amp;rsquo;s just things like, &amp;ldquo;Grom took three damage.&amp;rdquo; And it doesn&amp;rsquo;t say, Oh that was because of Divine Smite. So I also track it along the way. And it&amp;rsquo;s just also handy I think if Andy, your initiative tracker stuffs up or something or you lose it, I can say like, &amp;ldquo;No, we&amp;rsquo;re in round three&amp;rdquo; or whatever.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, it is super handy. I think one of this is one of the differences between being the DM and being a player also is that as a DM, I&amp;rsquo;m just flat out like in a combat thing, but there&amp;rsquo;s like lots of creatures and people going on. I&amp;rsquo;m flat out concentrating on like everything. Whereas there&amp;rsquo;s a player, you&amp;rsquo;ve got the space between your turn and the next time it comes round to-&lt;/p&gt;
+&lt;p&gt;NICOLE: We&amp;rsquo;re much more immersed.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, yeah. Well, you are much more immersed, but also you have time. You have time to write notes.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, true.&lt;/p&gt;
+&lt;p&gt;ANDY: I barely write any notes when I&amp;rsquo;m DMing by the way. I probably should. I know loads of people who also don&amp;rsquo;t, I occasionally will write some at the end of the session if like, &amp;ldquo;Oh, I must remember that that&amp;rsquo;s happened.&amp;rdquo; I like Scura gave her two daggers to one of the NPCs, so I wrote that down.&lt;/p&gt;
+&lt;p&gt;NICOLE: Everything. I gave everything.&lt;/p&gt;
+&lt;p&gt;ANDY: I forget everything. I&amp;rsquo;m very reliant on note-taking players.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, so mine was basically the combat after that. And here, I&amp;rsquo;m tracking whether somebody has used my Guiding Bolt advantage on attacks and things like that.&lt;/p&gt;
+&lt;p&gt;And at the time, I was also playing two players because one of the other, two characters, because one of the other players was gone. So this is like where I put the next moves for both of them. And then at the end, I had a little note to tell him because I don&amp;rsquo;t have access to his character sheet.&lt;/p&gt;
+&lt;p&gt;But I was thinking that maybe I could also show how I create a new session because this is the world page and I have this nice little add new session button and when I click it, look, everything&amp;rsquo;s filled in for me.&lt;/p&gt;
+&lt;p&gt;I guess I haven&amp;rsquo;t processed the last one yet, The Leaky Cucumber. But it creates- It creates the session already. So yeah, I use funny titles as well. So this is where it is at the end of the session, I would put like a summary here so that when I generate the next one that&amp;rsquo;s pulled in, so this is the recap.&lt;/p&gt;
+&lt;p&gt;So often, I do the recap. Sometimes I try to get one of the other players to do it, to encourage them as well. But it&amp;rsquo;s just nice to have everything filled in. And this is also pulling in the date. I set today&amp;rsquo;s date on Fantasy Calendar so that it always chooses today&amp;rsquo;s date. My character is a Twilight Cleric and a Stars Druid, so moons matter. So I do have that as well. Let&amp;rsquo;s just show, oh, by the way, our party&amp;rsquo;s name is Temporary White Circle, and now you didn&amp;rsquo;t notice, Andy. Do you see there?&lt;/p&gt;
+&lt;p&gt;ANDY: Oh yeah, I see the logo. Yeah, yeah, that&amp;rsquo;s what we&amp;rsquo;ve got on here, TWC.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah. So there, you can also see the moons, Catha and Ruidus. Isn&amp;rsquo;t that cool?&lt;/p&gt;
+&lt;p&gt;ANDY: So you are way more organized in terms of the automation than I am. I generally start by duplicating the previous session&amp;rsquo;s note and because of the stuff in there, there&amp;rsquo;s some secrets and clues still that they haven&amp;rsquo;t discovered and I sort of delete stuff out and then go back in. So my metadata is all manually done. I should probably try and automate some of that.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I can just give it to you.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, but then all the rest of the stuff doesn&amp;rsquo;t work and I just don&amp;rsquo;t have the inclination to go back through every session note though and add it all back in, so.&lt;/p&gt;
+&lt;p&gt;NICOLE: Octavian Datcu says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Nicole, how do you color tags without any tags surrounding it?&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what you mean exactly. Let me share my screen.&lt;/p&gt;
+&lt;p&gt;ANDY: It could be the theme. Is it the?&lt;/p&gt;
+&lt;p&gt;NICOLE: You mean, does Octavian mean like the italics and stuff? Because yeah, this is the Anuppuccin theme where you can have the text decorations a different color. So that&amp;rsquo;s handy. For example, if I just put something here, it&amp;rsquo;s automatically green because it&amp;rsquo;s italic. And then this one would be automatically red &amp;lsquo;cause it&amp;rsquo;s bold. I love Anuppuccin.&lt;/p&gt;
+&lt;h2 id=&#34;how-has-me-taking-notes-changed-the-way-andy-gms&#34;&gt;How has me taking notes changed the way Andy GMs?&lt;/h2&gt;
+&lt;p&gt;NICOLE: Andy. Do you think that it&amp;rsquo;s changed anything about the way that you GM that we take notes, and I take notes, so much?&lt;/p&gt;
+&lt;p&gt;ANDY: I don&amp;rsquo;t know because this was the first big campaign. I&amp;rsquo;d played some small stuff with my family. But it&amp;rsquo;s the first big campaign that I&amp;rsquo;ve done since I was a kid. And so, I guess you came in, I mean, couple of the other players did take notes, but probably, you take obviously more extreme notes.&lt;/p&gt;
+&lt;p&gt;What has it changed? I don&amp;rsquo;t think it changes much. I mean, it&amp;rsquo;s just really useful for me. &amp;lsquo;Cause I know that I&amp;rsquo;ve like, &amp;ldquo;Oh God, I didn&amp;rsquo;t make a note of what happened here or who&amp;rsquo;s got what,&amp;rdquo; and things like that especially when you&amp;rsquo;re dividing up loot and things like that. And I know that one of you has made a note, so I&amp;rsquo;ll often ask for your notes or go and have a look at them and that&amp;rsquo;s pretty useful.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably, I think, we&amp;rsquo;ve joking about the sending stuff before. I don&amp;rsquo;t know what it&amp;rsquo;s like for you as a player. I mean, I get the feeling that it sort of makes the world a bit more alive because NPCs, they&amp;rsquo;re not just like, &amp;ldquo;Oh yeah, we spoke to that person and we recorded that one and then we moved on and we&amp;rsquo;ve forgotten all about them.&amp;rdquo; It means that they sort of come back into the world a bit and I think that maybe makes the world feel more alive maybe to you as players.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I mean part of it is me just wanting to mess with you, but also some of these things are actually for a greater purpose. Most of them are not completely random. I am actually trying to do a background check or whatever.&lt;/p&gt;
+&lt;p&gt;And yeah, I am very engaged in the world. And there have been a few times where I would&amp;rsquo;ve gone further if I didn&amp;rsquo;t think I was taking up too much time already. I would&amp;rsquo;ve, like, engaged with an NPC a bit more.&lt;/p&gt;
+&lt;h2 id=&#34;taking-notes-on-other-pcs&#34;&gt;Taking notes on other PCs&lt;/h2&gt;
+&lt;p&gt;NICOLE: I don&amp;rsquo;t know, maybe I&amp;rsquo;ll also show my notes on the PCs. So this is one of them. Yeah, I&amp;rsquo;m hoping that they won&amp;rsquo;t watch till this part.&lt;/p&gt;
+&lt;p&gt;So this is the one for Milla, there&amp;rsquo;s a picture of her, there&amp;rsquo;s a backstory that I&amp;rsquo;ve pieced together from things that she&amp;rsquo;s told me in the game. I do something called an OGAS framework. Occupation, goal, attitudes, stake. So I&amp;rsquo;m just&amp;hellip; I&amp;rsquo;m thinking of what her goals are because I think my character is very supportive and she wants her fellow party to achieve their goals. So I have to know them first. So I take notes on everybody. So I also have ideals, bonds, and flaws, not the actual ones that she has. So I don&amp;rsquo;t see that, but just, I&amp;rsquo;m guessing. I&amp;rsquo;m guessing based on what she said. And then I also have a section for knives.&lt;/p&gt;
+&lt;p&gt;Andy, can you explain knife theory?&lt;/p&gt;
+&lt;p&gt;ANDY: Oh, we didn&amp;rsquo;t talk about that, yeah.&lt;/p&gt;
+&lt;p&gt;So knife theory is the thing, and there&amp;rsquo;s a Reddit post. So if you Google like Reddit knife theory D&amp;amp;D or something, you&amp;rsquo;ll find it.&lt;/p&gt;
+&lt;p&gt;So knife theory is this idea that what you do when you create a player, when you create a character as a player, you give a bunch of knives in there that the DM can use basically to stab you with later.&lt;/p&gt;
+&lt;p&gt;Which is, there are some things like, I did this thing and I&amp;rsquo;m trying to escape from it or so I have this adversary or I have this ally, or I have this particular weakness, or I have this thing in my past.&lt;/p&gt;
+&lt;p&gt;And the more knives there are, the more useful it is for me. The more I can as a DM and the more I can integrate you into the world or integrate the story with their backstories.&lt;/p&gt;
+&lt;p&gt;And a lot of stuff comes up fairly randomly as I talked about Floyd Hemsworth. And he is, like I said, he&amp;rsquo;s just a random NPC. And then it forced me, if I go here.&lt;/p&gt;
+&lt;p&gt;ANDY: Actually, for this session, the dungeon menagerie one, I put all the stat blocks on a canvas. And it was really crawling on the day of the session, so I stopped using it, but it would now actually be quite useful. So I could just quickly grab the stat block.&lt;/p&gt;
+&lt;p&gt;So here&amp;rsquo;s Floyd. I found a picture of Chris Hemsworth, I don&amp;rsquo;t know what you know, what this is from here. He is dressed up and he looked a bit like.&lt;/p&gt;
+&lt;p&gt;NICOLE: Well, so he really is just a basic guard.&lt;/p&gt;
+&lt;p&gt;ANDY: Yeah, well he&amp;rsquo;s a captain now. Well, he&amp;rsquo;s more than the captain now anyway. And super handsome Crownsguard.&lt;/p&gt;
+&lt;p&gt;NICOLE: Super handsome!&lt;/p&gt;
+&lt;p&gt;ANDY: And then there&amp;rsquo;s a backstory for him. I came up with a kind of, his father&amp;rsquo;s a general and all this stuff. And they ended up being quite a scene with me talking to myself, like him talking to his father, NPC to NPC about it. And so it was quite of, I was able to connect him to a couple of the other characters&amp;rsquo; backstories in interesting ways.&lt;/p&gt;
+&lt;p&gt;So one of the characters, Wally, I thought, well, like I said, Wally&amp;rsquo;s character is actually, his father&amp;rsquo;s also in the military. So I thought, &amp;ldquo;Oh, this would be interesting that they know each other and stuff.&amp;rdquo; You have to be a little bit careful because you can also end up with a thing like of too many coincidences. But it helps and I&amp;rsquo;d really like the knife thing. And then, occasionally, there are actual player things that I know like things that I then just use to mess with them.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I like that stuff. But I also keep notes on knives for the other players and that&amp;rsquo;s what I like&amp;ndash; my character likes to do Zone of Truth, which is basically just us telling&amp;ndash; me, me asking questions to the group-&lt;/p&gt;
+&lt;p&gt;ANDY: It&amp;rsquo;s spin the bottle.&lt;/p&gt;
+&lt;p&gt;NICOLE: -to the characters. Pretty much, yeah. And those questions come from some knives that I&amp;rsquo;ve identified, like things that they react to in a positive or negative way.&lt;/p&gt;
+&lt;p&gt;And I also actually have a section where. So here, the knives are things that the tiefling likes and doesn&amp;rsquo;t like. And then I always have a section of how I can help them for every PC. What are the things that my character, Scura, could do. And then I have this section, which is all of the questions that I ask in Zone of Truth. I also have stuff for playing the tiefling in case she&amp;rsquo;s away.&lt;/p&gt;
+&lt;p&gt;ANDY: The tiefling.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I have them. Yeah, I guess she&amp;rsquo;s not THE tiefling anymore, but yeah. They&amp;rsquo;re my notes.&lt;/p&gt;
+&lt;p&gt;ANDY: I sometimes&amp;ndash; I have a cheat sheet. I found a cheat sheet for Scura actually from a session &amp;lsquo;cause I think that was the one where you were away, you were like getting on a plane or something, so I had a little cheat sheet.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah. Well we should probably end this &amp;lsquo;cause we&amp;rsquo;re over time. There&amp;rsquo;s so much that I would&amp;rsquo;ve wanted to ask you, but probably for my own edification.&lt;/p&gt;
+&lt;p&gt;ANDY: You can ask one more.&lt;/p&gt;
+&lt;p&gt;NICOLE: Maybe I&amp;rsquo;ll ask you offline. Okay. What should I ask? Oh, no.&lt;/p&gt;
+&lt;p&gt;ANDY: Roll dice.&lt;/p&gt;
+&lt;h2 id=&#34;taking-notes-on-the-players&#34;&gt;Taking notes on the players&lt;/h2&gt;
+&lt;p&gt;NICOLE: Okay, okay, I know. Because the kind of GMing that you do, it is very specific to us as the players. I don&amp;rsquo;t know, at least that&amp;rsquo;s what I feel. It&amp;rsquo;s our characters and it&amp;rsquo;s what we&amp;rsquo;ve given you in our backstory as knives. But the more that you know us, the more that you also know our knives as players. So do you take notes on us as well as our characters? Do you just remember that?&lt;/p&gt;
+&lt;p&gt;ANDY: Only up here. Yeah, I don&amp;rsquo;t write notes really about you as people. No, no, not as players. Some things come up during the week or something and I&amp;rsquo;ll think of something I thought that would be funny to mess with the player. I can do this to their character to mess with the player and I do that, but I don&amp;rsquo;t have notes. I mean, I do have notes from session zero about you and stuff like that. And that&amp;rsquo;s mostly around so I can remember what you said you did and didn&amp;rsquo;t want and things like that. But otherwise no. I don&amp;rsquo;t take notes. Not like you.&lt;/p&gt;
+&lt;p&gt;NICOLE: Wow. You just have space in your mind for all sorts of devious things then.&lt;/p&gt;
+&lt;p&gt;ANDY: Well, lots of improv.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, no, it&amp;rsquo;s really well done. It means a lot to me to have a safe space to play a game and to like truly try out things that I wouldn&amp;rsquo;t do in real life.&lt;/p&gt;
+&lt;p&gt;ANDY: That&amp;rsquo;s good. I&amp;rsquo;m glad that it feels that way. That&amp;rsquo;s the aim.&lt;/p&gt;
+&lt;p&gt;NICOLE: All right, let&amp;rsquo;s close this so that I can ask you the real questions afterwards. Thanks for coming on to the channel again for the second time.&lt;/p&gt;
+&lt;p&gt;ANDY: Thanks for having me.&lt;/p&gt;
+&lt;p&gt;NICOLE: Maybe we&amp;rsquo;ll have you on for a third. You&amp;rsquo;re always welcome.&lt;/p&gt;
+&lt;p&gt;ANDY: Okay. Take care.&lt;/p&gt;
+&lt;p&gt;NICOLE: Thank you, everyone for listening and I&amp;rsquo;ll see you next week. Bye.&lt;/p&gt;
+&lt;p&gt;ANDY: Bye.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to Do D&amp;D Prep in Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20220729-how-to-do-dnd-prep-in-obsidian/</link>

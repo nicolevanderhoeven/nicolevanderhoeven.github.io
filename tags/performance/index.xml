@@ -7,7 +7,656 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Sun, 18 Dec 2022 15:54:07 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 13:00:42 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k6 Javascript Ecosystem (k6 Office Hours #85)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230407-koh85-k6-javascript-ecosystem/</link>
+      <pubDate>Fri, 07 Apr 2023 13:00:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230407-koh85-k6-javascript-ecosystem/</guid>
+      <description>&lt;p&gt;Did you know that there is a k6 JavaScript ecosystem on top of the Go extension ecosystem? What&amp;rsquo;s the difference between the two? What does k6 actually support? What types of things can you do with JavaScript? In this k6 Office Hours, Software Engineer and k6 maintainer Mihail Stoykov joins me to talk all about the different options for k6 available through JavaScript libraries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UZ-1yXd4xkk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Frontend vs. backend: How to plan your performance testing strategy</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230403-frontend-vs-backend-testing/</link>
+      <pubDate>Mon, 03 Apr 2023 13:20:53 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230403-frontend-vs-backend-testing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://grafana.com/blog/2023/04/03/frontend-vs.-backend-how-to-plan-your-performance-testing-strategy/&#34;&gt;here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;There are many aspects of application performance, but they broadly fall into two categories: frontend performance and backend performance. As a tester, it’s important to know the differences between the two and how that impacts the way you approach your tests.&lt;/p&gt;
+&lt;p&gt;In this blog, I’ll provide a high-level overview of frontend performance testing and backend performance testing, including pros and cons of each one. I’ll also explain why you need both if you really want a holistic view of how your application is performing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xVACRP5qIJI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;why-and-where-to-use-frontend-performance-testing&#34;&gt;Why (and where) to use frontend performance testing&lt;/h2&gt;
+&lt;p&gt;Frontend performance testing verifies user experience &lt;a href=&#34;https://grafana.com/blog/2023/02/10/watch-how-to-pair-grafana-faro-and-grafana-k6-for-frontend-observability/&#34;&gt;at the interface level&lt;/a&gt;. Basically, this entails everything a user sees when they access your web app, whether it’s on a laptop or other devices. This might involve automating user interactions with the site through the browser — for example, clicking on a button, filling out a form, or having scripts that load on the browser and run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/crocs-r-cool.png&#34; alt=&#34;mockup of a site called &amp;amp;ldquo;Crocs R Cool&amp;amp;rdquo;&#34;&gt;
+&lt;em&gt;In frontend testing, you&amp;rsquo;re looking at how components of the UI respond.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The metrics we analyze for frontend performance tests are typically quite different from what we use for backend testing. Let’s say we want to know the time it takes for a page to render after a user clicks on a button that directs them there. This isn’t the same thing as measuring server response time; that total round trip takes a lot more into account — things like latency or the time it takes for a client-side script to run and display the requested information.&lt;/p&gt;
+&lt;h3 id=&#34;advantages-of-frontend-performance-testing&#34;&gt;Advantages of frontend performance testing&lt;/h3&gt;
+&lt;p&gt;The great thing about frontend performance testing is that it provides a more realistic measurement of your end users’ experiences. They don’t care what’s going on under the hood; they care about the overall experience — and that’s exactly what frontend performance testing measures. Unlike backend performance testing, frontend performance testing looks at everything from a user’s point of view: from the time they visit a webpage to the time they can interact with something on that page.&lt;/p&gt;
+&lt;p&gt;On top of that, most (about 80%) of the performance issues end users report are frontend issues. It doesn’t make much sense to skip this type of testing; it can be a critical step in finding ways to improve the overall user experience.&lt;/p&gt;
+&lt;h3 id=&#34;disadvantages-of-frontend-performance-testing&#34;&gt;Disadvantages of frontend performance testing&lt;/h3&gt;
+&lt;p&gt;The most obvious disadvantage of frontend testing is that it doesn’t look under the hood. If you only do frontend testing, you’re almost certain to miss something. Maybe a component isn’t working, which is creating issues for your users. But you wouldn’t know that because you’re only testing what’s visible from the browser. In other words, you might be in the situation where you know something in the application is wrong and responding too slowly, but you don’t know what.&lt;/p&gt;
+&lt;p&gt;Frontend performance testing can also be quite expensive compared to, say, protocol-based testing. That’s because you need enough resources (memory and CPU) to actually spin up a browser instance and interact with your application the way that a real user would. The same load generator that could run tens of thousands of backend virtual users may only be able to run 50 frontend virtual users before running out of resources.&lt;/p&gt;
+&lt;p&gt;Finally, only testing frontend performance can sometimes lead to pretty misleading results, especially as you scale. As load increases, the response time for the frontend remains fairly constant, but that’s not the case with the backend.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Frontend-Backend-LoadTesting.png&#34; alt=&#34;graph plotting response time over the number of concurrent users for front-end and back-end&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;While the frontend component of response time remains more or less constant, the backend component of response time increases exponentially with the number of concurrent users.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This phenomenon occurs because most of the issues that frontend performance tests might identify, such as a slow-running client-side script, don’t tend to compound. It’ll be just as slow on each user’s computer regardless of how many users are running it. However, problems uncovered by backend performance testing are on the side of the application, not the users. If a database can’t keep up with 100 users sending queries to it, then 1,000 users sending it queries is likely to yield an even worse response time.&lt;/p&gt;
+&lt;h2 id=&#34;why-and-where-to-use-backend-performance-testing&#34;&gt;Why (and where) to use backend performance testing&lt;/h2&gt;
+&lt;p&gt;As you might have guessed at this point, backend performance testing targets the infrastructure under the hood. This could be a database that contains customer information, a payment gateway, or an authentication service for customers that have already signed up. These are things that an end user doesn’t see and maybe isn’t ever even aware of, but they still have an effect on response times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/backend.png&#34; alt=&#34;graphic of application components&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Backend testing addresses infrastructure users might not even be aware of, like different databases, gateways, and services that underpin an application.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Scripting against the backend is quite different from scripting against the frontend. Instead of scripting user interactions like clicking, you’re scripting certain requests that are being sent on the protocol level. So, for example, you could have an HTTP GET request for the page and also for its embedded resources.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://test.k6.io&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The sample Grafana k6 script above is an example of a simplified backend performance test. It makes a single HTTP request to retrieve the contents of &lt;a href=&#34;https://test.k6.io&#34;&gt;https://test.k6.io&lt;/a&gt;, and then waits one second.&lt;/p&gt;
+&lt;p&gt;Backend performance includes things beyond just load times and latency. It includes scalability, availability, reliability, and similar attributes, so the metrics that we measure are different as well. We might look at server uptime or response times per component. We could also trace the path of a particular request through the application stack.&lt;/p&gt;
+&lt;p&gt;An illustration shows that performance testing can address scalability, elasticity, availability, latency, resiliency, and reliability.
+Application performance is more than just speed. Backend testing helps us verify many different aspects of performance.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/performance-ilities.png&#34; alt=&#34;diagram of different types of performance&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Application performance is more than just speed. Backend testing helps us verify many different aspects of performance.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;advantages-of-backend-performance-testing&#34;&gt;Advantages of backend performance testing&lt;/h3&gt;
+&lt;p&gt;As we already discussed, frontend testing doesn’t cover everything, but it’s also more complicated than that. The 20% or so of performance bottlenecks that are backend-related can be the hardest to troubleshoot, identify, and fix. Even worse, a lot of backend performance issues can spiral out of control at higher levels of load and can be quite expensive to fix later on in a development cycle. The worst time to realize that you need to rethink your entire infrastructure is after it’s already failed in production. If you take care of backend performance testing earlier (commonly known as shifting left), it makes such pivots less costly.&lt;/p&gt;
+&lt;p&gt;Another advantage of backend testing is the ability to target different components of an application. You can choose which API endpoint to hit and how hard, and you can target specific user flows, so it doesn’t always have to be end-to-end testing.&lt;/p&gt;
+&lt;p&gt;And finally, backend performance tests tend to be less resource-intensive; they’re just protocol-level requests that can be easily ramped up.You don’t need to spin up a browser instance, or even parse through the Document Object Module (DOM) of a webpage or look for specific elements. It’s just a matter of sending these requests, and that’s something that you can increase the scale of pretty cheaply.&lt;/p&gt;
+&lt;h3 id=&#34;disadvantages-of-backend-performance-testing&#34;&gt;Disadvantages of backend performance testing&lt;/h3&gt;
+&lt;p&gt;Backend performance testing won’t tell you anything about what’s happening on the frontend, and a lot of sites these days actually use scripts that have to run on the frontend. So with backend performance testing tools, you just download those scripts. But the response time they measure is the download time, which is not really realistic because those scripts are executed. A backend performance test would fetch the text of the script. A frontend performance test would run it — and that script might do something like perform a calculation. You need frontend performance testing to measure that properly.&lt;/p&gt;
+&lt;p&gt;Backend performance testing is also much more expansive than front end performance testing, especially with microservices-based applications. There are so many components to track that it can be difficult to determine where to look. You can quickly find yourself going down a rabbit hole of constant, never-ending performance tuning.&lt;/p&gt;
+&lt;h2 id=&#34;frontend--backend-testing-for-the-win&#34;&gt;Frontend + backend testing for the win&lt;/h2&gt;
+&lt;p&gt;So, as we’ve seen, frontend testing and backend testing both seem to have advantages and disadvantages. So which one should you use? Both, if at all possible! They look at different parts of application performance, so doing both is essential if you want a holistic view of user experience.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/frontend-vs-backend-meta.png&#34; alt=&#34;diagram of k6 being used for both frontend and backend testing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Software teams can use Grafana k6 to address frontend and backend performance testing.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you’re operating at a smaller scale, use your own discretion about how to find the right mix for needs. But if you’re testing at a larger scale with thousands of users and you want to test both the frontend and backend aspects of application performance, I suggest you change your test strategy so the majority of the load is generated with backend performance testing scripts. That’s because of the resource intensiveness of frontend performance testing scripts, which we discussed earlier.&lt;/p&gt;
+&lt;p&gt;So, if you generate most of the load with the backend and then you have a handful of frontend performance testing scripts running in the background, you should still get a good idea of how both are performing. Remember, frontend application performance remains fairly constant throughout different levels of load, so you’ll still get a lot of useful insights on both types of performance without worrying too much about the scaling costs.&lt;/p&gt;
+&lt;p&gt;Frontend and backend performance both affect what your end users think of your application. If the underlying application servers respond immediately to all requests, but then a huge picture of a crocodile makes your homepage excruciatingly slow to load, then users aren’t going to like that.&lt;/p&gt;
+&lt;p&gt;On the other hand, if your homepage is really sleek and quick to load, but the application server hasn’t responded with the data that the browser needs to render, then users aren’t going to like that either.&lt;/p&gt;
+&lt;p&gt;A common problem when testing both frontend and backend performance is script duplication: because of the differences in the two approaches, you often have to use two separate tools — which means two test suites and potentially two scripting languages. While this is a valid approach, it’s more sustainable to look for a tool that can target both types of performance, such as k6.&lt;/p&gt;
+&lt;p&gt;Whichever tool(s) you end up using, testing both frontend and backend performance is going to give you the clearest view of how your application really performs.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The easiest way to get started with k6 is through Grafana Cloud k6. The free tier includes 500 virtual user hours/month for k6 testing and more. &lt;a href=&#34;https://grafana.com/auth/sign-up/create-user?pg=blog&amp;amp;plcmt=body-txt&#34;&gt;Sign up for free now!&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How we got into tech (Adobo &amp; Avocados #1)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230329-adobo-and-avocados-how-we-got-into-tech/</link>
+      <pubDate>Wed, 29 Mar 2023 14:54:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230329-adobo-and-avocados-how-we-got-into-tech/</guid>
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I have been wanting to talk about a few topics related to diversity in tech, and over the few years we&amp;rsquo;ve known each other, we&amp;rsquo;ve only added to that list. We finally decided to take a leap and start a new YouTube channel/video podcast just so we have a space to have those discussions. Here&amp;rsquo;s the first one, where we talk about how we got into tech.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/25Ba4Z694Gw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Below is a transcript of our conversation.&lt;/p&gt;
+&lt;h2 id=&#34;why-adobo--avocados&#34;&gt;Why &amp;ldquo;Adobo &amp;amp; Avocados&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;MARIE: All right, we&amp;rsquo;re live. So, hey everyone, my name is Marie Cruz and with me I have my colleague today.&lt;/p&gt;
+&lt;p&gt;NICOLE: Hi, I&amp;rsquo;m Nicole van der Hoeven, I&amp;rsquo;m her colleague. And I&amp;rsquo;m a little sick, but I&amp;rsquo;m here.&lt;/p&gt;
+&lt;p&gt;MARIE: So we, today we&amp;rsquo;re actually gonna be doing the first ever recording for the Adobo and Avocados podcast. So we thought about this name and initially like Nicole and I wanted to, you know, ever since before we wanted to launch a podcast where we can talk about, you know, our experiences working in tech and all other things. And then we thought about the name Adobo and Avocado. So you know, to anyone who doesn&amp;rsquo;t know, so we&amp;rsquo;re both from the Philippines, and Adobo is the national dish of the Philippines. So that&amp;rsquo;s why we thought we&amp;rsquo;ll add the name of Adobo in our podcast title. Avocados, &amp;lsquo;cause we&amp;rsquo;re both Developer Advocates. But yeah, I think, why don&amp;rsquo;t we discuss like, why was it called avocados in the first place? Do you have any idea?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, well, we don&amp;rsquo;t really know for sure. So I thought that it was something to do with the language of it. Like, you know, an advocate is usually like a, could be like a lawyer in common non-tech senses. And the translation for that is abogado in Spanish or Tagalog actually,&lt;/p&gt;
+&lt;p&gt;MARIE: Even in Tagalog.&lt;/p&gt;
+&lt;p&gt;NICOLE: our native language.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So it&amp;rsquo;s like kind of similar to avocado. I don&amp;rsquo;t know, that&amp;rsquo;s kind of what I thought.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah, that&amp;rsquo;s actually an interesting thought. Like, &amp;lsquo;cause the abogado does sound very, you know, similar to avocado, but I actually read this one article where I think their project manager had a hard time saying Developer Advocate, they ended up saying developer avocado. So who knows what the origin is. But yeah, I think it&amp;rsquo;s a great, you know, you know, term in terms of like, you know, the whole play, like playful, you know, meaning behind the word Developer Advocate.&lt;/p&gt;
+&lt;h2 id=&#34;how-we-got-into-tech&#34;&gt;How we got into tech&lt;/h2&gt;
+&lt;p&gt;MARIE: So yeah, I guess first things first, like you know, who we are? Like, why are we doing this podcast? How, you know, we got into tech? So we&amp;rsquo;ll talk first about, I guess a bit of some introductions about ourselves. So Nicole, why don&amp;rsquo;t you start, like how did you get started? You know, what&amp;rsquo;s been your, I guess, background so far? Did you have a traditional, you know, computer science background or did you do like a different, I guess course back when you were still studying?&lt;/p&gt;
+&lt;h3 id=&#34;nicoles-background&#34;&gt;Nicole&amp;rsquo;s background&lt;/h3&gt;
+&lt;p&gt;NICOLE: I did not have a traditional background. I grew up in the Philippines. I moved away when I was 18. And I don&amp;rsquo;t know what your experience was, Marie, but mine was that in the Philippines there are still, I think we do a pretty good job at being equal between genders, but I think there&amp;rsquo;s still gender roles. And when I was growing up, I really loved both the maths and sciences and like literature and languages, but I was very heavily pushed towards the humanities, &amp;lsquo;cause that&amp;rsquo;s what girls do. Girls don&amp;rsquo;t go into tech.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: And so I really struggled at uni and in college. I shifted majors six times. I had no idea what I wanted to do.&lt;/p&gt;
+&lt;p&gt;MARIE: Wow.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I went through, and that was over two countries. I went to the US to study as well. None of them was computer science because my brother was a developer. And I don&amp;rsquo;t know, he&amp;rsquo;s a little too introverted for me. And I just had this idea that, if I go into computer science, I have to be a developer, and if I&amp;rsquo;m a developer, I won&amp;rsquo;t talk to anyone. I&amp;rsquo;m just going to be&lt;/p&gt;
+&lt;p&gt;MARIE: Yes.&lt;/p&gt;
+&lt;p&gt;NICOLE: with a machine. Like I had that in mind, which now I know is completely wrong,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: but that&amp;rsquo;s why I never went into it. So finally my parents were just like, we don&amp;rsquo;t care what you finish,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: we don&amp;rsquo;t care if it&amp;rsquo;s basket weaving, just pick a major and finish it.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And that was economics,&lt;/p&gt;
+&lt;p&gt;MARIE: Oh.&lt;/p&gt;
+&lt;p&gt;NICOLE: which I have never used in a job.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then so-&lt;/p&gt;
+&lt;p&gt;MARIE: That&amp;rsquo;s really interesting. Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then I, how did I get into IT? I was applying for different economics related ones, and then I met my now husband and he,&lt;/p&gt;
+&lt;p&gt;MARIE: Hi Rob.&lt;/p&gt;
+&lt;p&gt;NICOLE: he was a test manager. Yeah, hi Rob! He was a test manager and I said, well what&amp;rsquo;s a test manager? And then he told me about the world of testing.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I didn&amp;rsquo;t understand it at first, but I wanted to know more. And then I thought the way that he described it sounded so interesting, like the idea that,&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: that there is a job, there is a person whose job it is to be the one using applications or products first. And then trying to see what&amp;rsquo;s wrong with it for the purposes of improving it. I just, I really loved that idea and it was another branch of tech that I didn&amp;rsquo;t know existed.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So I started to, I did an ISTQB certification just to like have something&lt;/p&gt;
+&lt;p&gt;MARIE: No background.&lt;/p&gt;
+&lt;p&gt;NICOLE: &amp;lsquo;cause I didn&amp;rsquo;t have any background. Yeah. And I started job hunting, and somehow managed to land a performance testing job under someone who became my mentor.&lt;/p&gt;
+&lt;h3 id=&#34;maries-background&#34;&gt;Marie&amp;rsquo;s background&lt;/h3&gt;
+&lt;p&gt;MARIE: Hmm, nice. Yeah, it&amp;rsquo;s really relatable because like similar with myself, I fall into tech accidentally. Like it was never my intention, you know, okay, I&amp;rsquo;m gonna study computer science, although I did actually have a computer science degree.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, wow.&lt;/p&gt;
+&lt;p&gt;MARIE: But the story, the story behind that, I don&amp;rsquo;t share it too much to other people &amp;lsquo;cause I think the story behind it is a bit funny. But my first experience with tech is actually updating my MySpace profile. Do you remember MySpace?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yes.&lt;/p&gt;
+&lt;p&gt;MARIE: Yes so, before you can customize your profile with a bunch of HTML, CSS codes and like I think before I was just trying to, you know, create something even though it didn&amp;rsquo;t look very accessible. I remember I had lots of animations, just lots of like&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh.&lt;/p&gt;
+&lt;p&gt;MARIE: striking fonts, background music, and it was just something that I was doing for fun. I did a mass communications course back home in the Philippines. So I was majoring in digital media. And then I had to go back here in the UK. So I was working first for about two years before I decided to go back to uni. And during that time when I was looking at, you know, courses catalog, &amp;lsquo;cause I wasn&amp;rsquo;t really sure what to pick. So I saw a course which basically has three different things. So it&amp;rsquo;s computer science with business management and financial accounting.&lt;/p&gt;
+&lt;p&gt;So I thought,&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh wow, okay.&lt;/p&gt;
+&lt;p&gt;MARIE: I was like thinking in my head I think that sounds like a really cool name for a course, so I&amp;rsquo;m gonna go for it. So to me I just found the name like very interesting. And it means that-&lt;/p&gt;
+&lt;p&gt;NICOLE: So when did you&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah?&lt;/p&gt;
+&lt;p&gt;NICOLE: move out of the Philippines?&lt;/p&gt;
+&lt;p&gt;MARIE: So I, so we went back 2008. So I was in the UK since 2004. Actually no, we went back 2006, and then I went back in the UK 2008. So 2006 I enrolled, you know, to study mass communications. I didn&amp;rsquo;t finish the course &amp;lsquo;cause I had to go back in the UK after two years because of like visa, like status. And then when I got back, I just put that into a pause, you know, did some work experience. So I was working as an office assistant for about two years and then my friend and I just decided, okay, I think we should go back to uni. So I actually applied as a mature student &amp;lsquo;cause I didn&amp;rsquo;t, you know, had any like actual qualifications &amp;lsquo;cause I never graduated from my degree in the Philippines. I never finished high school as well, &amp;lsquo;cause I kept going back and forth between the UK and the Philippines. So the last time I actually graduated was during middle school.&lt;/p&gt;
+&lt;p&gt;NICOLE: Oh, wow.&lt;/p&gt;
+&lt;p&gt;MARIE: but applying as a mature student, they just looked at my, you know, work credentials, like my work attitude. And I submitted some of my grades like back, you know, when I was still in the Philippines &amp;lsquo;cause like my first two years I had some, you know, grades from like the different subjects that I was doing. But yeah, that&amp;rsquo;s how I got into tech. I just found the name like really interesting and I thought before I could mix and match it with business and accounting. So even if the computer science bit didn&amp;rsquo;t work out, like I can still maybe utilize some of the things that I&amp;rsquo;ve learned on the business side and on the accounting side. And then, when I was about to look for graduate jobs, I got approached by a testing consultancy company. I didn&amp;rsquo;t, I wasn&amp;rsquo;t aware that there&amp;rsquo;s a graduate job for, you know, just doing testing &amp;lsquo;cause most of the graduate jobs that, you know, we were being offered is, you know, how to, you know, do like development, or like database like management roles. So initially I wasn&amp;rsquo;t really sure if I wanted to do the developer route. Like I enjoyed the coding, I was doing the coding bit, but like back then I wasn&amp;rsquo;t like fully 100% sure that it was the right path for me. So I found out that, yeah you can have a career in testing. Again this is all accidental &amp;lsquo;cause if that testing company didn&amp;rsquo;t approach me, I would&amp;rsquo;ve probably looked at like other roles. So it was like really great to hear that, yeah, there&amp;rsquo;s like a graduate jobs for just doing testing. And yeah, we were doing the ISTQB as well. So we were doing some training. And yeah, the rest is history. It&amp;rsquo;s funny because I didn&amp;rsquo;t intend to continue on a developer route, but then now I work as a Developer Advocate.&lt;/p&gt;
+&lt;h2 id=&#34;how-did-we-become-developer-advocates-without-being-developers&#34;&gt;How did we become Developer Advocates without being developers?&lt;/h2&gt;
+&lt;p&gt;NICOLE: Yeah, maybe we should talk about that a bit &amp;lsquo;cause I also don&amp;rsquo;t consider myself as a developer even though I can code.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm. Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And yet somehow we&amp;rsquo;re both Developer Advocates. How did that happen?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. It&amp;rsquo;s like there&amp;rsquo;s some sort of, I guess, interesting link between software testing and developer advocacy. I don&amp;rsquo;t know like if it&amp;rsquo;s the same for you, but like with me, I really enjoy the teaching part, the learning and public part as well. And when I was doing my role as a software tester, I felt that I was doing the advocacy, but maybe, you know, not really in a way that it&amp;rsquo;s very out there. So I was, you know, helping my colleagues, I was talking about tools that I&amp;rsquo;ve learned, you know, with them, I was showing them how to use it. And then while I was working as well, like I started doing the learning in public on the side. So I started with my personal blog and then getting involved, you know, with meetups to talk about, you know, the different tools that I&amp;rsquo;ve learned. So I guess for me, like being a software tester also, you know, encouraged me to, I guess be a Developer Advocate &amp;lsquo;cause I was just telling people what I&amp;rsquo;ve been doing as a software tester. I&amp;rsquo;ve been telling them what different tools I&amp;rsquo;ve been using, you know, different concepts that I&amp;rsquo;ve been learning as well on like a day-to-day. So is that the same for you?&lt;/p&gt;
+&lt;p&gt;NICOLE: For me it was more because I was a consultant,&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: which means I was going on different projects all the time. And when you&amp;rsquo;re really new in an industry, I think it&amp;rsquo;s really exciting and you&amp;rsquo;re learning a lot. And certainly every project has like its own framework and different languages and different people, which is interesting for a while.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: But I don&amp;rsquo;t know, after several years of it, I started to feel like, people are actually asking the same questions. You know, there&amp;rsquo;s always, there&amp;rsquo;s some things that I always had to explain. You know, I always had to, for example, fight against the fact that performance testing is often seen as just something where you run the test, okay, you check the box, you&amp;rsquo;ve done performance testing.&lt;/p&gt;
+&lt;p&gt;MARIE: Uh-huh.&lt;/p&gt;
+&lt;p&gt;NICOLE: There&amp;rsquo;s always a certain amount of education where I&amp;rsquo;m like, no, it&amp;rsquo;s not just about checking the box, it can actually provide real value, here&amp;rsquo;s how.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I just found myself repeating a lot of the same things. And so I actually started to create videos also because load testing results are kind of difficult to explain sometimes.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I would create this like test summary report that lots of people don&amp;rsquo;t read.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And so, as kind of an alternative way to explain things, I started creating video summaries to go along with it. And then I just thought, well maybe I can, &amp;lsquo;cause I can&amp;rsquo;t publish those, because it&amp;rsquo;s very specific to that company.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: But then I, I thought maybe I can pull out, I can abstract away some things and then publish those videos where I&amp;rsquo;m not talking about a specific project. And I guess that&amp;rsquo;s kind of how it started. I started, I put it into text first, because that&amp;rsquo;s just easier than video.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then eventually found myself into video anyway.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So I guess for me, I got into Developer Advocacy because I was tired of, I was trying to automate a part of my life, the explanation part where I kept having to say the same things and I just wanted to be like, hey, read this blog post where I explain why you need think time in a much more coherent and considerate way.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: So that&amp;rsquo;s, that&amp;rsquo;s how it naturally happened. I think you and I are the same in that regard that we were already doing it before we got the title.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. I totally relate to that. Like, especially when you said that like, we&amp;rsquo;re just trying to solve the same problems. I started, you know, my blogging journey just trying to communicate like, you know, questions that people have been asking me on a day-to-day basis. And rather than just, you know, speaking to individual people and repeating the same things like again and again, like just put everything into a post or like you said like a video, and then just share that, you know, like to the public, &amp;lsquo;cause you&amp;rsquo;re not only gonna be able to help like one person but you know, maybe if someone else stumbled upon your blog or your video, then like, you might help them as well. I think like one of the, like, one of the best reward that I experienced when doing this like learning in public and you know, sharing more content out there is if you just get a message from someone or like a comment and then they say that, oh, like, I&amp;rsquo;ve been stuck with the same issue, I found your blog post or your video and it really helped me. And just that feeling that you know, you&amp;rsquo;ve helped someone is like a really great feeling. &amp;lsquo;Cause at first I wanted the blog as well just so that I can have something that I can look back to in case I, you know, forget like what I&amp;rsquo;ve done on a previous project. Like I can document it on a blog post, but then like now it&amp;rsquo;s also helping like other people who are experiencing the same like issues at work.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I definitely see that. At first I was doing these things for myself because you know, you don&amp;rsquo;t really know that you know a subject until you can teach it to some degree. And I really believe that. And I, for me there were so many things &amp;lsquo;cause as a consultant, you have to switch tools very quickly, you have to switch languages, you have to be a polyglot on a lot of different levels and it&amp;rsquo;s impossible to keep all that in your mind. So after every project I tried to like, distill my learnings from it, so that I,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: future me would come back to that framework, or tool, or whatever, and not be starting from zero. But yeah,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: the kind of other people finding it was an unexpected boon.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. So let&amp;rsquo;s just move on a bit. So we&amp;rsquo;ve talked about, you know, how we transition from software testing to developer advocacy. But I guess in terms of like the process, like did you apply to a lot of, you know, companies? Was developer advocacy something that, you know, you were aware of already, or like you just found a job description and then you&amp;rsquo;re like, oh, this is what I do already. Okay, let me apply to that job. So what&amp;rsquo;s been like the process for you?&lt;/p&gt;
+&lt;p&gt;NICOLE: So I was, this is only, this is my first job as an actual, like the first job where I have Developer Advocate in my title.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: My previous job was with a, well at the time it was a startup, it was Flood.io, which is now acquired by Tricentis.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And when I joined, I think I was like, I think the fifth person that they hired in the team.&lt;/p&gt;
+&lt;p&gt;MARIE: Oh, wow.&lt;/p&gt;
+&lt;p&gt;NICOLE: So it was very small. And it was, I really love that environment because you can do a lot of things, you can wear multiple hats. And that&amp;rsquo;s really where it started. On a typical day, I might be answering questions in support, or presenting at a conference or ducking into a sales call or like,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: there were so many things that I could do. I was like part of the rotation for things going down basically, for things exploding. And I had to learn a lot about infrastructure as well to be competent in that role. And I started doing a lot of advocacy type things, mainly from a support perspective&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: because I got the same questions there as well. And I wanted to be able to focus on the crunchier topics.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And you can&amp;rsquo;t do that unless you address some of the more basic or common questions. And then my manager at the time told me about Developer Advocacy&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: and my immediate response was, but I&amp;rsquo;m not a developer.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: He said that that&amp;rsquo;s just the name for the whole industry that I think you would be really good at and that you&amp;rsquo;re already doing. And with his encouragement, this is Tim Koopmans, the one of the co-founders of Flood, with his encouragement, strong encouragement by the way, things like, he said, oh, I&amp;rsquo;ve got this conference in Moscow that I&amp;rsquo;m speaking at. Do you wanna come watch me?&lt;/p&gt;
+&lt;p&gt;MARIE: Right.&lt;/p&gt;
+&lt;p&gt;NICOLE: And I said yes. And he backed out so I had to do it, things like that. Because of things like that that he did, I started to understand what developer advocacy is&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: and when it was, when I felt the time to change directions, I specifically looked at k6 actually. I didn&amp;rsquo;t apply to any other jobs because I was pretty happy where I was.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: But I really loved k6. I had already not used it in a project, but I&amp;rsquo;d already, I knew what the tool was and I used it, I tested it a bit. I love the site, I love the principles behind it. And I saw that they had a Developer Advocate role. So,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: It just kind of happened. How about you?&lt;/p&gt;
+&lt;p&gt;MARIE: Well the first time I heard about the term was from you, when you said that, hey we&amp;rsquo;ve got this role for, you know like, you know like, we&amp;rsquo;ve got a Developer Advocate role for one of the tools that, you know, we&amp;rsquo;re gonna launch. Like, you&amp;rsquo;ll be like the great fit. So I didn&amp;rsquo;t really send any CV. I don&amp;rsquo;t think I sent any CV or like, yeah, I think, you just like, &amp;lsquo;cause we just connected already like via this Automation Guild conference. So like we were already connected via Twitter. And I think this is where like one of the benefits of like learning in public really came into play, &amp;lsquo;cause I was just, you know, publishing constantly. I was, you know, talking at various meetups and conferences already. But I was just doing all of this like as part of my, you know, side projects. Like it wasn&amp;rsquo;t part of my day-to-day role on my previous job. So when you explain to me what a Developer Advocate is, I&amp;rsquo;m like, oh yeah, I&amp;rsquo;ve been doing that on the side. So that was my first actual, you know, experience of like hearing what a Developer Advocate, you know, does on a day-to-day. &amp;lsquo;Cause I had the same perception that I&amp;rsquo;m not a developer, how can I be a Developer Advocate? But I think because as like as part of our day-to-day jobs, like even if we&amp;rsquo;re not writing application code, we&amp;rsquo;re still writing, you know, test scripts. we&amp;rsquo;re creating test automation frameworks. So I think that&amp;rsquo;s really helped as well transitioning into this role. But yeah, like I never sent any CV. I just remembered like we were talking a lot like back and forth and then I met up with, you know, a bunch of our colleagues now. And yeah, the rest is like history again.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I think that there are just some people that when you meet them, you click or you don&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: And when that click happens, I&amp;rsquo;m just like, okay, I&amp;rsquo;m gonna write her name down. I think I told you about it like for two years,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah, I just joined-&lt;/p&gt;
+&lt;p&gt;NICOLE: we were talking, and I was like, hey, this could happen&amp;hellip;&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I don&amp;rsquo;t know when. I think you&amp;rsquo;d be perfect for it. And you&amp;rsquo;re like, okay,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: but it&amp;rsquo;s kind of early to be telling me, right?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: I was like, Yeah, yeah, but let&amp;rsquo;s just keep in touch. You know, and it worked out. I can&amp;rsquo;t believe it actually did.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. And now we&amp;rsquo;re, doing.&lt;/p&gt;
+&lt;p&gt;NICOLE: We didn&amp;rsquo;t actually-&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah, go on Nicole.&lt;/p&gt;
+&lt;p&gt;NICOLE: We haven&amp;rsquo;t actually defined what a Developer Advocate is.&lt;/p&gt;
+&lt;h2 id=&#34;whats-a-developer-advocate&#34;&gt;What&amp;rsquo;s a Developer Advocate?&lt;/h2&gt;
+&lt;p&gt;MARIE: Yeah, I guess like we can both, you know, share what our, you know, view is of a Developer Advocate. So to me when it comes to developers, I guess trying out, you know, new tools or learning about new things, they feel most comfortable talking to someone who&amp;rsquo;s actually used, you know, the product, or you know, the tool that they want to use. So, we are, you know, that person. So we&amp;rsquo;re helping developers, we&amp;rsquo;re helping testers when it comes to, I guess learning about best recommended practices, learning about different tools. So we&amp;rsquo;re kind of like a bridge between the community and like the company that we work for. There&amp;rsquo;s a lot of misconception that people think that we&amp;rsquo;re salespeople but we&amp;rsquo;re actually not, like it&amp;rsquo;s a completely different, you know, role. We are focused more on the community side, helping them grow, helping them, you know, I guess in some ways, like be some sort of champions as well, so they can also promote like, you know, the different tools, the different practices that we have been communicating to them. But yeah, what about you? Is that like sort of the same concept?&lt;/p&gt;
+&lt;p&gt;NICOLE: Yeah, I agree with everything you said, especially about being a bridge.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: Because as a Developer Advocate you&amp;rsquo;re not quite a developer, that&amp;rsquo;s not our primary responsibility,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: but we&amp;rsquo;re also not like marketers or sales people. Although there&amp;rsquo;s an overlap there in both. I kind of think of it as anti-marketing. So a marketer is going to be talking about something that they themselves have never used, are not the target user for.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And might not know much about in terms of the technical details.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: A Developer Advocate is someone who actually is the target user. So for those who don&amp;rsquo;t know, Marie and I work at Grafana Labs specifically on k6, which is a performance testing tool. But we have both used k6, we have both been testers and still are. And so there are things that we can suggest. Part of it is advocating internally.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: We advocate for testers everywhere to the product team so that we say, like these are the features that we would be looking for as testers. Like we would say it this way or we wouldn&amp;rsquo;t really use that feature, we want this other one. But another part of it is advocating externally. So this is the part that people think of as marketing, but I think of it as anti-marketing, because we&amp;rsquo;re not going out there and saying, hey, you should use this product that we&amp;rsquo;ve never used before.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Instead, we build cool things and demonstrate cool things that we have done, not some other developer.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Like we do our demos,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And then when people ask us, then we say, oh yeah, we use k6. So I don&amp;rsquo;t know, marketing definitely has its place, but for me I am so addicted to that authenticity and genuineness that comes from just talking about a tool that you actually love, which is,&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: what k6 is for me.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. I really like that because for me, an important part of, you know, this advocacy is, like communicating something that I truly believe in. Like I&amp;rsquo;m not going to advocate for, you know, a tool that I haven&amp;rsquo;t used. Like I would just feel like, you know, I&amp;rsquo;m a fraud if I do that. So if I know that, you know, there are situations where a certain tool or a certain practice, you know, would work better, then I would advocate for, you know, that as well. So it&amp;rsquo;s not just about, you know, for example, like at the moment we can&amp;rsquo;t do k6 for accessibility and I&amp;rsquo;m an accessibility advocate as well. So I would go and, you know, recommend like other tools and practices based on what like I&amp;rsquo;ve experienced, based on what I&amp;rsquo;ve done. And I think, like for me, that&amp;rsquo;s one of the biggest like advantage, &amp;lsquo;cause yeah, if I&amp;rsquo;ve been put on the spot and say, hey, you should talk about this to then promote it to other people, that would just totally go against my, like one of my beliefs.&lt;/p&gt;
+&lt;p&gt;NICOLE: I think I also really appreciate that this position lets us shine a light on people like us who maybe,&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: who don&amp;rsquo;t look like the average person in tech. I know it&amp;rsquo;s still, I&amp;rsquo;ve been lucky to work with teams of mainly men that haven&amp;rsquo;t treated me any differently because I&amp;rsquo;m a woman, but there is still like a sense of being Other.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah And I guess that-&lt;/p&gt;
+&lt;p&gt;NICOLE: And being in a position of advocacy means that we&amp;rsquo;re, we&amp;rsquo;re also able to appeal to other women who maybe didn&amp;rsquo;t, who didn&amp;rsquo;t have as good an experience as we did.&lt;/p&gt;
+&lt;h2 id=&#34;what-can-you-expect-from-adobo--avocados&#34;&gt;What can you expect from Adobo &amp;amp; Avocados?&lt;/h2&gt;
+&lt;p&gt;MARIE: Yeah. And I guess that really leads to this next question. And you know, people who will watch this in the future might also ask like, what are the expectations like for this podcast? Like why are we doing this? So do you want to maybe start.&lt;/p&gt;
+&lt;p&gt;NICOLE: Why ARE we doing this Marie?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. Oh, yeah. So do you wanna start like from your side, like what are the expectations that you know, that we can, yeah, share to people?&lt;/p&gt;
+&lt;p&gt;NICOLE: Sure. I think that you and I both do a lot of technical advocacy. We, you know, do demos, we write scripts, and we tell people how to do things in tech, very technical things. But, I think that there&amp;rsquo;s a whole other side of tech that doesn&amp;rsquo;t get talked about and that&amp;rsquo;s like, things like interpersonal dynamics or cultural differences. You and I are both Europeans that have to work in, in our situation, predominantly American space, and we&amp;rsquo;re also Asian. So balancing the two, you know, we are on different sides of the spectrum on that. Just also the general stress that comes with tech. It is not easy, not just as a Developer Advocate, but just to be in tech to keep up with changing trends.&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: I feel like there are so many emotional aspects and psychological aspects that don&amp;rsquo;t get talked about that I would really like to cover.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: Then also, I kind of alluded to it. I would like to make it a little bit more open, an open discussion for particularly underrepresented people&lt;/p&gt;
+&lt;p&gt;MARIE: Mm-hmm.&lt;/p&gt;
+&lt;p&gt;NICOLE: like ourselves. We identify with several minority groups.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: And maybe help them along a bit by telling them things that we had to find out the hard way early on in our career. How about you?&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. Yeah, I agree with all of those. And I guess it&amp;rsquo;s also to just have a safe space, you know, for everyone just to share their experiences in tech. Like you said, there&amp;rsquo;s this whole other side of tech that we don&amp;rsquo;t talk about that maybe other women are also uncomfortable to talk about, you know, with like, I guess other colleagues, especially if it&amp;rsquo;s just predominantly male. So we want to, you know, have a safe space for them, share, you know, I guess from their side, like their unique experiences as well. And maybe like we can all have, I mean maybe we also have those shared experiences that we don&amp;rsquo;t talk about, but then when someone says, oh yeah, I&amp;rsquo;ve experienced that too. So it&amp;rsquo;s just really finding, you know, shared experiences that we can all relate to. And like you said, just helping them, you know, or empower them to, I guess move forward in terms of like the next stage in their career. Like, you know, share what&amp;rsquo;s worked for us, share what hasn&amp;rsquo;t worked for us. &amp;lsquo;cause I think it&amp;rsquo;s all about like being authentic as well and not just talking about the good things, but we could also talk about the bad and the negative things as well.&lt;/p&gt;
+&lt;p&gt;NICOLE: I&amp;rsquo;m excited to see where we go from here.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah.&lt;/p&gt;
+&lt;p&gt;NICOLE: I think we have a lot of ideas about where we&amp;rsquo;re going to take this and I hope people will come along for the ride.&lt;/p&gt;
+&lt;p&gt;MARIE: Yeah. So, yep. I guess this is it for the first episode. We are just, you know, extremely excited to do this on a regular basis. So we&amp;rsquo;ll talk about different, you know, topics in every episode. And we might, you know, have like really awesome, like guests as well in future episodes. So yeah, I guess just stay tuned and yeah, look out for Adobo and Avocados.&lt;/p&gt;
+&lt;p&gt;MARIE: Thanks everyone. See you next time.&lt;/p&gt;
+&lt;p&gt;NICOLE: Bye-bye.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Grafana Cloud k6 (k6 Office Hours #83)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230324-koh-83-grafana-cloud-k6/</link>
+      <pubDate>Fri, 24 Mar 2023 18:00:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230324-koh-83-grafana-cloud-k6/</guid>
+      <description>&lt;p&gt;With the release of Grafana Cloud k6, you can get observability and performance testing in the same platform. Senior Product Manager Mark Meier and Frontend Lead Simon Legander join me to talk about what Grafana Cloud k6 is, how you can use it, and demonstrate what it can do to improve your system&amp;rsquo;s reliability.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/products/cloud/k6/&#34;&gt;Sign up to Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/&#34;&gt;Learn more about Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oIBNIsZaN_8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing Grafana Cloud k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/</link>
+      <pubDate>Tue, 21 Mar 2023 15:20:58 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/</guid>
+      <description>&lt;p&gt;Grafana Cloud k6 is a feature available to all users of Grafana Cloud. It allows you to run load and performance tests right from the comfort of your Grafana Cloud instance, without needing to create a separate account on k6 Cloud. Grafana Cloud k6 helps you get started quickly with a GUI Test Builder or with test scripts written in JavaScript, and then visualize your test results in real-time, alongside your other Grafana dashboards that monitor your system infrastructure. With Grafana Cloud k6, you can get a holistic look at your system&amp;rsquo;s performance&amp;ndash; on any environment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://grafana.com/products/cloud/k6/&#34;&gt;Sign up to Grafana Cloud k6&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://k6.io/docs/cloud/integrations/grafana-app/&#34;&gt;Learn more about Grafana Cloud k6&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OMh7bWk2qnQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Experimental modules in k6 (k6 Office Hours #82)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230317-koh82-experimental-modules-in-k6/</link>
+      <pubDate>Fri, 17 Mar 2023 16:00:35 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230317-koh82-experimental-modules-in-k6/</guid>
+      <description>&lt;p&gt;Experimental modules in k6 were released in v0.40, and new modules for distributed tracing and browser testing have been added since. In this video, k6 Senior Software Engineer Théo Crevon talks to Developer Advocates Marie Cruz and Nicole van der Hoeven about what experimental modules are and how to use them.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0-dfzCUV7m4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Do Exploratory Testing for Performance (k6 Office Hours #79)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230224-koh79-how-to-do-exploratory-testing-for-performance/</link>
+      <pubDate>Fri, 24 Feb 2023 23:01:26 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230224-koh79-how-to-do-exploratory-testing-for-performance/</guid>
+      <description>&lt;p&gt;Marie Cruz and Nicole van der Hoeven talk about what exploratory testing is, why you should do it, and how to do exploratory testing to improve application performance. They discuss some heuristics to add structure and intention to exploratory testing for both frontend and backend performance.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6wVwdlMwsJ8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Integrating k6 and Tracetest (k6 Office Hours #77)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230203-koh77-integrating-k6-and-tracetest/</link>
+      <pubDate>Fri, 03 Feb 2023 08:00:15 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230203-koh77-integrating-k6-and-tracetest/</guid>
+      <description>&lt;p&gt;Tracetest enables trace-based testing with assertions at any point within a request transaction. Using the xk6-tracetest extension, your k6 tests can launch deep testing by unlocking the power of OpenTelemetry.&lt;/p&gt;
+&lt;p&gt;Join us as Developer Advocates Nicole and der Hoeven and Paul Balogh are joined by founder Ken Hamric and software engineer Oscar Reyes from Tracetest.&lt;/p&gt;
+&lt;p&gt;Check out Tracetest:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tracetest.io/&#34;&gt;site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kubeshop/xk6-tracetest&#34;&gt;xk6-tracetest&lt;/a&gt;: repo for k6 extension&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tracetest.io/tools-and-integrations/k6/&#34;&gt;docs&lt;/a&gt; on how to use Tracetest with k6&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Dog70D7aVyg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Frontend vs Backend Performance Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230201-frontend-vs-backend-performance-testing/</link>
+      <pubDate>Wed, 01 Feb 2023 22:59:18 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230201-frontend-vs-backend-performance-testing/</guid>
+      <description>&lt;p&gt;Which should you do: frontend vs. backend performance testing? The short answer is both. Each has its pros and cons, but hybrid load testing combines them and gives you the most holistic view of performance, including frontend concerns like how quickly a page renders or perceived application performance as well as backend concerns like response times of individual components.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xVACRP5qIJI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Organize Testing Scripts in k6 (k6 Office Hours #76)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230127-koh76-how-to-organize-testing-scripts-in-k6/</link>
+      <pubDate>Fri, 27 Jan 2023 17:00:10 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230127-koh76-how-to-organize-testing-scripts-in-k6/</guid>
+      <description>&lt;p&gt;In this video, we talk about how to organize testing scripts in k6 using features like tags, groups, and functions depending on what type of testing you want to do with your test script. Developer Advocates Paul Balogh, Marie Cruz, and Nicole van der Hoeven show us a few examples of how they would organize and modularize scripts in a test suite.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zDtEzp_JUOE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Performance Testing</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230125-introduction-to-performance-testing/</link>
+      <pubDate>Wed, 25 Jan 2023 22:28:43 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230125-introduction-to-performance-testing/</guid>
+      <description>&lt;p&gt;In this introduction to performance testing, we talk about how performance is part of the functionality of an application, why you should do performance testing, and some myths about performance that discourage teams from testing for it and make applications more likely to fail and fail miserably.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FqOwO4y8SbA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Guide to Load Testing Websites</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230112-load-testing-websites/</link>
+      <pubDate>Thu, 12 Jan 2023 17:12:42 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230112-load-testing-websites/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Original article &lt;a href=&#34;https://k6.io/docs/testing-guides/load-testing-websites/&#34;&gt;here&lt;/a&gt;, written for k6.io&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This doc explains some key concepts about load testing websites, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The difference between backend and frontend performance testing&lt;/li&gt;
+&lt;li&gt;When to choose between protocol-based, browser-based, or hybrid scripts&lt;/li&gt;
+&lt;li&gt;Recommended practices about how to load test websites&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All load tests try to simulate real user traffic  to prevent failures, improve reliability, and release new code with confidence.
+But your approach to load testing must adapt to the type of application you want to test.&lt;/p&gt;
+&lt;p&gt;In this guide, learn about strategies to test websites, including specific recommendations for complex scenario scripting and test execution.&lt;/p&gt;
+&lt;h2 id=&#34;load-testing-approaches&#34;&gt;Load testing approaches&lt;/h2&gt;
+&lt;p&gt;When you approach the load test, first consider the following perspectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend vs. frontend performance&lt;/li&gt;
+&lt;li&gt;Protocol-based, browser-based, or hybrid load testing&lt;/li&gt;
+&lt;li&gt;Component testing vs. end-to-end testing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;backend-vs-frontend-performance&#34;&gt;Backend vs. frontend performance&lt;/h2&gt;
+&lt;p&gt;Performance has a significant influence on the user experience of a website.&lt;/p&gt;
+&lt;p&gt;For example, when users want to visualize or interact with some information, they expect the website to react quickly.&lt;/p&gt;
+&lt;p&gt;To measure performance, testers often look at response times, which are affected by two main factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Frontend performance&lt;/li&gt;
+&lt;li&gt;Backend performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;frontend-performance&#34;&gt;Frontend performance&lt;/h3&gt;
+&lt;p&gt;Frontend performance testing verifies application performance on the interface level, measuring round-trip metrics that consider how and when page elements appear on the screen. It&amp;rsquo;s concerned with the end-user experience of an application, usually involving a browser.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/frontend-rendering.png&#34; alt=&#34;Snapshots over time of webpage elements rendering on a browser&#34; title=&#34;Snapshots over time of webpage elements rendering on a browser&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Frontend performance testing excels at identifying issues on a micro level but does not expose issues in the underlying architecture of a system.&lt;/p&gt;
+&lt;p&gt;Because it primarily measures a single user&amp;rsquo;s experience of the system, frontend performance testing tends to be easier to run on a small scale.
+Frontend performance testing has metrics that are distinct from backend performance testing. Frontend performance tests for things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whether the pages of the application are optimized to render quickly on a user&amp;rsquo;s screen&lt;/li&gt;
+&lt;li&gt;How long it takes a user to interact with the UI elements of the application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some concerns when doing this type of performance testing are its dependency on fully integrated environments and the cost of scaling. You can test frontend performance only once the application code and infrastructure have been integrated with a user interface. Tools to automate frontend testing are also inherently more resource-intensive, so they can be costly to run at scale and are not suitable for high load tests.&lt;/p&gt;
+&lt;h3 id=&#34;backend-performance&#34;&gt;Backend performance&lt;/h3&gt;
+&lt;p&gt;Backend performance testing targets the underlying application servers to see how they behave under production-like conditions. When it comes to websites, while frontend performance involves how assets included in the page are rendered, backend performance focuses on how those assets are processed by the application servers, served to users, and downloaded by browsers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/backend-performance.png&#34; alt=&#34;Backend components&#34; title=&#34;Backend components of an application&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Backend testing is broader in scope than frontend performance testing. API testing can be used to target specific components or integrated components, meaning that application teams have more flexibility and higher chances of finding performance issues earlier. Backend testing is less resource-intensive than frontend performance testing and is thus more suitable for generating high load.&lt;/p&gt;
+&lt;h3 id=&#34;which-one-should-you-test&#34;&gt;Which one should you test?&lt;/h3&gt;
+&lt;p&gt;It depends! Ideally, both.&lt;/p&gt;
+&lt;p&gt;Frontend testing tools are executed on the client side and are limited in scope: they do not provide enough information about backend components for fine-tuning beyond the user interface.&lt;/p&gt;
+&lt;p&gt;This limitation can lead to false confidence in overall application performance when the amount of traffic against an application increases. While the frontend component of response time remains more or less constant, the backend component of response time increases exponentially with the number of concurrent users:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Frontend-Backend-LoadTesting.png&#34; alt=&#34;Backend performance often contributes significantly to overall user experience&#34; title=&#34;Backend performance often contributes significantly to overall user experience&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Testing &lt;em&gt;only&lt;/em&gt; frontend performance ignores a large part of the application, one more susceptible to increased failures and performance bottlenecks at higher levels of load.&lt;/p&gt;
+&lt;p&gt;Testing &lt;em&gt;only&lt;/em&gt; backend performance, on the other hand, ignores &amp;ldquo;the first mile&amp;rdquo; of user experience and breadth. Backend testing involves messaging at the protocol level rather than interacting with page elements the way a real user would. It verifies the foundation of an application rather than the highest layer of it that a user ultimately sees.&lt;/p&gt;
+&lt;p&gt;Testing both frontend and backend performance leads to the best overall performance and user experience for your application. Ignoring one or the other exposes you to performance bottlenecks that significantly decrease a user&amp;rsquo;s satisfaction with your application.&lt;/p&gt;
+&lt;p&gt;However, if your testing is smaller in scope, you can choose to focus on either frontend or backend with the goal of eventually building a test suite that encompasses both.&lt;/p&gt;
+&lt;h2 id=&#34;component-testing-vs-end-to-end-testing&#34;&gt;Component testing vs. end-to-end testing&lt;/h2&gt;
+&lt;p&gt;When you&amp;rsquo;re testing a web app, you may wonder whether how you structure your test scripts. Consider the following two methods.&lt;/p&gt;
+&lt;h3 id=&#34;component-testing&#34;&gt;Component testing&lt;/h3&gt;
+&lt;p&gt;One way you could load test a web app is to load test its components. Maybe you know there are issues with a specific functionality due to previous production issues, or maybe you&amp;rsquo;d like to target components that are business-critical to reduce risk exposure.&lt;/p&gt;
+&lt;p&gt;In these cases, the type of test you write may:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;be protocol-based&lt;/li&gt;
+&lt;li&gt;call only those API endpoints that are relevant&lt;/li&gt;
+&lt;li&gt;have smaller or no sleep/think time&lt;/li&gt;
+&lt;li&gt;be focused on eventually stress testing a component or service or finding its breaking point&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Testing in this way is more flexible. With protocol testing, you can specify the endpoints or servers you&amp;rsquo;d like to hit, and narrow your test&amp;rsquo;s target that way. You can test specific functionalities while skipping others that come chronologically before it in a standard user flow. You can more finely control the type of traffic that is generated. If you&amp;rsquo;re recreating a specific mix of requests, you can script those requests and reproduce them in a repeatable manner.&lt;/p&gt;
+&lt;p&gt;Doing component testing for load may not always require that your script behave like an end user. In fact, it may be necessary to artificially inflate traffic to more quickly reproduce issues, or to deflate traffic to reduce the noise in the logs. By the nature of this type of testing, scripts don&amp;rsquo;t contain the full flow of a request that you would expect to see in production, so realism is not a priority.&lt;/p&gt;
+&lt;h3 id=&#34;end-to-end-testing&#34;&gt;End-to-end testing&lt;/h3&gt;
+&lt;p&gt;You could also do end-to-end testing against a web app. End-to-end testing seeks to replicate real user behaviour and track its effects across the entire stack. When doing end-to-end testing, you might:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;do protocol-level, browser-level, or hybrid load testing&lt;/li&gt;
+&lt;li&gt;replicate the actions in a typical user flow&lt;/li&gt;
+&lt;li&gt;think about the performance of the entire workflow as well as how long a request took to be processed by each component&lt;/li&gt;
+&lt;li&gt;write scripts that access the application the same way users would, such as by browsing to the homepage before finding their way to other parts of the website&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This type of load testing is broader in scope than component testing, but shallower in terms of depth. With end-to-end testing, you get a better idea of the full user experience of the application as a whole. However, it can also be more complex to troubleshoot, as you have more components to monitor and more places to look for issues that are found.&lt;/p&gt;
+&lt;p&gt;End-to-end testing is based on real user behavior, so it&amp;rsquo;s often important that end-to-end test scripts also be realistic.&lt;/p&gt;
+&lt;h2 id=&#34;protocol-based-browser-based-or-hybrid-load-testing&#34;&gt;Protocol-based, browser-based, or hybrid load testing&lt;/h2&gt;
+&lt;p&gt;The decision of whether to test the frontend, backend, or both will also affect the type of load testing you should carry out and the kind of scripts you should write.&lt;/p&gt;
+&lt;h3 id=&#34;protocol-based-load-testing&#34;&gt;Protocol-based load testing&lt;/h3&gt;
+&lt;p&gt;Protocol-based load testing verifies the backend performance of an application by simulating the requests underlying user actions. For websites, this commonly involves HTTP requests that bypass the user interface of your application and are sent directly to a server or application component.&lt;/p&gt;
+&lt;p&gt;For example, a protocol-based load testing script might request all the resources on a webpage from the application servers, but those resources are merely downloaded. The response times reported by a purely protocol-based script do not include frontend metrics such as the time taken for images to render on a browser. The load is generated by simulating many requests sent to application servers.&lt;/p&gt;
+&lt;p&gt;While protocol-based load testing may seem to lend itself better to component testing, you can also do end-to-end website testing with protocol-level scripts.&lt;/p&gt;
+&lt;h4 id=&#34;sample-protocol-based-test-script&#34;&gt;Sample protocol-based test script&lt;/h4&gt;
+&lt;p&gt;The following is an example of a protocol-based load testing script in k6 that fetches the homepage, along with resources embedded into the page.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/http&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Homepage&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;sec-ch-ua&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;Chromium&amp;#34;;v=&amp;#34;94&amp;#34;, &amp;#34;Google Chrome&amp;#34;;v=&amp;#34;94&amp;#34;, &amp;#34;;Not A Brand&amp;#34;;v=&amp;#34;99&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accept-encoding&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;gzip, deflate, br&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accept-language&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;en-GB,en;q=0.9&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// 01. Go to the homepage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;batch&lt;/span&gt;([
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/style.min.css&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/header.png&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/polyfill.min.js&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt;, {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homepage loaded&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;JSON&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stringify&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Welcome to my site&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// 02. View products
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;batch&lt;/span&gt;([
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/products&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com/style.css&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/product1.jpg&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/product2.jpg&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://website.com/displaylist.js&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;check&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;responses&lt;/span&gt;, {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Products loaded&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;JSON&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stringify&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Add to Cart&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://k6.io/docs/test-authoring/recording-a-session/browser-recorder/&#34;&gt;Recording browser traffic&lt;/a&gt; helps you prototype to test websites on the protocol level.&lt;/p&gt;
+&lt;h3 id=&#34;browser-based-load-testing&#34;&gt;Browser-based load testing&lt;/h3&gt;
+&lt;p&gt;Browser-based load testing verifies the frontend performance of an application by simulating real users using a browser to access your website.&lt;/p&gt;
+&lt;p&gt;For example, a browser-based load testing script might include instructions to navigate to a page, click on a button, and type out text on a form. Those user actions then trigger underlying requests on the protocol layer, but only user actions are scripted in browser-based testing.&lt;/p&gt;
+&lt;p&gt;Unlike protocol-based load testing, browser-based load testing scripts generate load by starting multiple instances of browsers and interacting with your application the way real users would. Testing at the browser level can also be the only option for testing Single-Page Applications where a lot of the application logic is executed by client-side scripts.&lt;/p&gt;
+&lt;p&gt;Scripting on the browser level usually requires the use of different tools from the ones used to test at the protocol level.
+However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascript-api/xk6-browser/&#34;&gt;xk6-browser&lt;/a&gt; that allows the creation of browser-based test scripts alongside protocol-based ones.&lt;/p&gt;
+&lt;h4 id=&#34;sample-browser-based-test-script&#34;&gt;Sample browser-based test script&lt;/h4&gt;
+&lt;p&gt;The following is an example of a browser-based load testing script in k6 using xk6-browser on a dummy website. Instead of making an HTTP request, the script views the homepage, then looks for and clicks on a link to the product page.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;chromium&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6/x/browser&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k6&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chromium&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;launch&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;headless&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;newPage&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// 01. Go to the homepage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#66d9ef&#34;&gt;goto&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://mywebsite.com&amp;#39;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;waitUntil&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;networkidle&amp;#39;&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(() =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;waitForSelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;p[class=&amp;#34;woocommerce-result-count&amp;#34;]&amp;#34;]&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;screenshot&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;screenshots/01_homepage.png&amp;#39;&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// 02. View products
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a[class=&amp;#34;woocommerce-LoopProduct-link woocommerce-loop-product__link&amp;#34;]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;waitForSelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;button[name=&amp;#34;add-to-cart&amp;#34;]&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;screenshot&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;screenshots/02_view-product.png&amp;#39;&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#66d9ef&#34;&gt;finally&lt;/span&gt;(() =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;close&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;close&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;tips-for-writing-browser-level-scripts&#34;&gt;Tips for writing browser-level scripts&lt;/h4&gt;
+&lt;p&gt;The following steps can help you get started with a browser-level test script.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Script user actions, not requests.&lt;/strong&gt; Determine what a user might do for a particular task, and script interactions with elements on the browser level. For example, script what buttons the user clicks on.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Identify unique selectors.&lt;/strong&gt; Once you have identified which page elements a user interacts with, use the Element Inspector for DevTools in your browser to find a unique, static, and simple way to identify each element. The script needs selectors to find the right element to interact with.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use elements to verify responses.&lt;/strong&gt; After every action, use &lt;a href=&#34;https://k6.io/docs/javascript-api/xk6-browser/api/locator/&#34;&gt;locators&lt;/a&gt; to search for elements on the page that you would expect to find. This verification helps ensure that the script has reached the expected page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take screenshots for every action while debugging.&lt;/strong&gt; One of the advantages of browser-based testing is the ability to take screenshots. After every user interaction the script simulates, use &lt;a href=&#34;https://k6.io/docs/javascript-api/xk6-browser/api/page/&#34;&gt;page.screenshot&lt;/a&gt; to save a visual image of what the script encountered for later troubleshooting.&lt;/p&gt;
+&lt;h3 id=&#34;hybrid-load-testing&#34;&gt;Hybrid load testing&lt;/h3&gt;
+&lt;p&gt;Hybrid load testing is a combination of protocol-based and browser-based load testing. While you can use two tools or two scripts to execute different types of load tests (one protocol-based and one browser-based), having both types of tests executed by the same script and the same tool is ideal. Aggregating results between different tools can be difficult at best and inconsistent at worst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/hybrid-testing.png&#34; alt=&#34;Hybrid of frontend and backend performance testing&#34; title=&#34;In hybrid load testing, both the frontend and backend are tested&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A best practice in hybrid load testing is to generate most of the load using the protocol-level test, and then to run a smaller number of the browser-level testing scripts. This approach:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reduces the number of load generators needed, since protocol-level testing requires fewer machines to generate the same load&lt;/li&gt;
+&lt;li&gt;measures backend and frontend performance in the same test execution&lt;/li&gt;
+&lt;li&gt;provides a single source of aggregated output at the end&lt;/li&gt;
+&lt;li&gt;reduces complexity in the creation and maintenance of scripts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;scripting-considerations&#34;&gt;Scripting considerations&lt;/h2&gt;
+&lt;p&gt;When you script a test for a website, consider these recommendations.&lt;/p&gt;
+&lt;h3 id=&#34;consider-factors-that-affect-script-realism&#34;&gt;Consider factors that affect script realism&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Record your user journey.&lt;/strong&gt;  Using the browser recorder can facilitate initial test script creation by capturing all the embedded resources on webpages. Check out the &lt;a href=&#34;https://k6.io/docs/test-authoring/recording-a-session&#34;&gt;Session Recording guide&lt;/a&gt; to learn more about how to auto-generate your load test from a user session.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Correlate data.&lt;/strong&gt; Recordings often don&amp;rsquo;t take into account dynamic values that are generated anew each time a request is made. Go through the recorded requests and determine whether you need to &lt;a href=&#34;https://k6.io/docs/examples/correlation-and-dynamic-data/&#34;&gt;extract values from previous responses&lt;/a&gt; and use parameters in subsequent requests. This practice ensures your VUs behave more like real users would.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Include or exclude static resources.&lt;/strong&gt; Determine whether you should include or exclude static resources on pages such as images, JavaScript, etc. Consider including them if you want to measure overall user experience. Consider excluding them if you are using a Content Delivery Network (CDN) that is under a separate Service Level Agreement (SLA).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exclude third-party requests.&lt;/strong&gt; Don&amp;rsquo;t load test servers that you don&amp;rsquo;t own. Many applications make calls to third-party providers for authentication, social sharing, and marketing analytics. Disable these requests unless you have permission to include them in your tests.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use concurrent requests.&lt;/strong&gt; To mimic the way modern browsers download some requests in parallel, use &lt;a href=&#34;https://k6.io/docs/javascript-api/k6-http/batch/&#34;&gt;batching&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Determine cache and cookie behaviour.&lt;/strong&gt;  k6 automatically resets cookies between iterations, but you can also &lt;a href=&#34;https://k6.io/docs/using-k6/k6-options/reference/#no-cookies-reset&#34;&gt;change this behavior&lt;/a&gt; if maintaining cookies would be more realistic.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use dynamic think time and pacing.&lt;/strong&gt;  Consider adding varying &lt;a href=&#34;https://k6.io/docs/javascript-api/k6/sleep/&#34;&gt;delays&lt;/a&gt; so you don&amp;rsquo;t artificially stagger a script with completely uniform delays.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use test data.&lt;/strong&gt; Real users typically don&amp;rsquo;t search for or submit the same data repeatedly. Consider adding a &lt;a href=&#34;https://k6.io/docs/examples/data-parameterization/&#34;&gt;test data file&lt;/a&gt; for the script to iterate through.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Model test parameters and load profile after production.&lt;/strong&gt; In k6, you can use &lt;a href=&#34;https://k6.io/docs/using-k6/k6-options/how-to&#34;&gt;test options&lt;/a&gt; to determine the exact shape and profile of your load test script. Select the appropriate &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/executors/&#34;&gt;executors&lt;/a&gt; for the job.&lt;/p&gt;
+&lt;h3 id=&#34;create-a-reusable-framework&#34;&gt;Create a reusable framework&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use tags and groups.&lt;/strong&gt; Organizing requests by &lt;a href=&#34;https://k6.io/docs/using-k6/tags-and-groups/&#34;&gt;tagging and grouping them&lt;/a&gt; helps you consolidate like metrics and makes your test scripts more understandable by others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use scenarios.&lt;/strong&gt; When combining protocol-based and browser-based tests, use &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/&#34;&gt;scenarios&lt;/a&gt; to independently control their test parameters and &lt;a href=&#34;https://k6.io/docs/using-k6/scenarios/executors/&#34;&gt;executors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modularize scripts.&lt;/strong&gt; Use &lt;a href=&#34;https://k6.io/docs/using-k6/modules/&#34;&gt;modules&lt;/a&gt; to separate and organize functions for protocol-level testing and browser-level testing, and then use a test runner script to execute them. This approach means different scripts can be versioned and changed without affecting each other.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Integrate your tests into your CI pipeline.&lt;/strong&gt; Adopting a &amp;ldquo;tests as code&amp;rdquo; approach enables you to tie your load tests more closely into your project&amp;rsquo;s existing CI/CD processes, helping you get the most value out of every test.&lt;/p&gt;
+&lt;h3 id=&#34;test-with-thresholds-in-mind&#34;&gt;Test with thresholds in mind&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Create thresholds for both types of testing.&lt;/strong&gt; Some browser-level and protocol-level metrics cannot be combined because they don&amp;rsquo;t measure the same thing. Set &lt;a href=&#34;https://k6.io/docs/using-k6/thresholds/&#34;&gt;thresholds&lt;/a&gt; for relevant metrics from both the browser-level script and the protocol-level one.&lt;/p&gt;
+&lt;h3 id=&#34;when-possible-use-hybrid-load-testing&#34;&gt;When possible, use hybrid load testing&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use protocol-based scripts to generate majority of the load.&lt;/strong&gt; When writing the test scenario, use the protocol-based requests to simulate most of the traffic and use fewer VUs for the browser-based requests. Relying on the protocol-level traffic helps keep resource utilization on load generators down.&lt;/p&gt;
+&lt;h2 id=&#34;execution-considerations&#34;&gt;Execution considerations&lt;/h2&gt;
+&lt;p&gt;When you run tests, consider the test environment and the load generator location.&lt;/p&gt;
+&lt;h3 id=&#34;run-your-tests-in-the-appropriate-environment&#34;&gt;Run your tests in the appropriate environment&lt;/h3&gt;
+&lt;p&gt;Testing in pre-production environments and in production environments both add value.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Testing in pre-production environments&lt;/strong&gt; (staging, test, system integration testing, user acceptance testing, and production replica environments) enables you to identify performance defects early, which can save a lot of time and effort (and reputation) later on. Running in test environments also means you can often afford to be more aggressive with your tests. However, it&amp;rsquo;s also more critical to get your load profiles right, and the test results you get may not necessarily apply to production.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Testing in production&lt;/strong&gt; yields the most accurate results, but it&amp;rsquo;s also more risky. Often, testing production is the only feasible alternative. You can reduce the risk of impact to real customers while testing in production by using lower levels of load when running load tests during peak hours, schedule tests for off-peak hours, choosing load test types that are less risky, using techniques like synthetic monitoring that generate less traffic, using real user monitoring tools to get snapshots of user performance at load, and ensuring that your observability stack is working at peak efficiency.&lt;/p&gt;
+&lt;h3 id=&#34;run-tests-where-your-customers-are&#34;&gt;Run tests where your customers are&lt;/h3&gt;
+&lt;p&gt;The location of the load generator(s), where the traffic is coming &lt;em&gt;from&lt;/em&gt;, can also have an impact on your test results. The question is: where are your end users located?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On-premises load testing&lt;/strong&gt; can be ideal when testing early on in the development a website, or when there are machines that can be repurposed as load generators. However, testing entirely from within a corporate network may also yield false positives, in that response times reported are significantly lower than if the same application servers were accessed from across the country.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Load testing on the cloud&lt;/strong&gt; is an essential part of the testing strategy for many public-facing websites. Using load generators on the cloud gives you access to test in different states and geographical countries, creating a mix of load generators proportional to your users&amp;rsquo; locations. Cloud load generators are easier to provision and cheaper to maintain in the long run than on-premise ones. Load testing on the cloud can help you include the effects of network latency in your tests and yield results that are more realistic.&lt;/p&gt;
+&lt;h2 id=&#34;recommendations&#34;&gt;Recommendations&lt;/h2&gt;
+&lt;p&gt;Here are some recommendations to help you plan, script, and execute your load tests for websites.&lt;/p&gt;
+&lt;p&gt;If you want to test the last-mile user experience of your website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;focus on &lt;strong&gt;frontend performance&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;write &lt;strong&gt;browser-based test scripts&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;and consider doing more realistic &lt;strong&gt;end-to-end&lt;/strong&gt; tests of the user flow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to test the underlying infrastructure of your website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;focus on &lt;strong&gt;backend performance&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;write &lt;strong&gt;protocol-based test scripts&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;and consider starting with &lt;strong&gt;component testing&lt;/strong&gt; and then gradually increasing the scope.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your website is meant for internal or has limited access:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;on-premise load generators&lt;/strong&gt; located within the network that most of your users access the website from.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your website is external and public-facing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;cloud load generators&lt;/strong&gt; in the load zones where your users reside.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Test in &lt;strong&gt;pre-production environments&lt;/strong&gt; when you can, but also consider &lt;strong&gt;testing in production&lt;/strong&gt; in a limited capacity.&lt;/p&gt;
+&lt;p&gt;Load testing websites can be complex due to the number of viable testing approaches available, the scope for performance testing, and the potential effects of releasing undertested code. By following the recommendations we&amp;rsquo;ve put forward here, you can tailor your testing more closely to your objectives.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Distributed Load Testing Using Kubernetes With k6</title>
       <link>https://nicolevanderhoeven.github.io/blog/20221118-koh72-distributed-load-testing-using-kubernetes-with-k6/</link>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Guide to Load Testing Websites | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Guide to Load Testing Websites" />
+<meta property="og:description" content="Original article here, written for k6.io
+This doc explains some key concepts about load testing websites, including:
+The difference between backend and frontend performance testing When to choose between protocol-based, browser-based, or hybrid scripts Recommended practices about how to load test websites All load tests try to simulate real user traffic to prevent failures, improve reliability, and release new code with confidence. But your approach to load testing must adapt to the type of application you want to test." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230112-load-testing-websites/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-01-12T17:12:42+00:00" />
+<meta property="article:modified_time" content="2023-01-12T17:12:42+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Guide to Load Testing Websites"/>
+<meta name="twitter:description" content="Original article here, written for k6.io
+This doc explains some key concepts about load testing websites, including:
+The difference between backend and frontend performance testing When to choose between protocol-based, browser-based, or hybrid scripts Recommended practices about how to load test websites All load tests try to simulate real user traffic to prevent failures, improve reliability, and release new code with confidence. But your approach to load testing must adapt to the type of application you want to test."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230106-my-time-management-setup-in-obsidian/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20230113-overview-of-obsidian/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&text=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&is_video=false&description=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Guide%20to%20Load%20Testing%20Websites&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&name=Guide%20to%20Load%20Testing%20Websites&description=Original%20article%20here%2c%20written%20for%20k6.io%0aThis%20doc%20explains%20some%20key%20concepts%20about%20load%20testing%20websites%2c%20including%3a%0aThe%20difference%20between%20backend%20and%20frontend%20performance%20testing%20When%20to%20choose%20between%20protocol-based%2c%20browser-based%2c%20or%20hybrid%20scripts%20Recommended%20practices%20about%20how%20to%20load%20test%20websites%20All%20load%20tests%20try%20to%20simulate%20real%20user%20traffic%20to%20prevent%20failures%2c%20improve%20reliability%2c%20and%20release%20new%20code%20with%20confidence.%20But%20your%20approach%20to%20load%20testing%20must%20adapt%20to%20the%20type%20of%20application%20you%20want%20to%20test.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&t=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#load-testing-approaches">Load testing approaches</a></li>
+    <li><a href="#backend-vs-frontend-performance">Backend vs. frontend performance</a>
+      <ul>
+        <li><a href="#frontend-performance">Frontend performance</a></li>
+        <li><a href="#backend-performance">Backend performance</a></li>
+        <li><a href="#which-one-should-you-test">Which one should you test?</a></li>
+      </ul>
+    </li>
+    <li><a href="#component-testing-vs-end-to-end-testing">Component testing vs. end-to-end testing</a>
+      <ul>
+        <li><a href="#component-testing">Component testing</a></li>
+        <li><a href="#end-to-end-testing">End-to-end testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#protocol-based-browser-based-or-hybrid-load-testing">Protocol-based, browser-based, or hybrid load testing</a>
+      <ul>
+        <li><a href="#protocol-based-load-testing">Protocol-based load testing</a>
+          <ul>
+            <li><a href="#sample-protocol-based-test-script">Sample protocol-based test script</a></li>
+          </ul>
+        </li>
+        <li><a href="#browser-based-load-testing">Browser-based load testing</a>
+          <ul>
+            <li><a href="#sample-browser-based-test-script">Sample browser-based test script</a></li>
+            <li><a href="#tips-for-writing-browser-level-scripts">Tips for writing browser-level scripts</a></li>
+          </ul>
+        </li>
+        <li><a href="#hybrid-load-testing">Hybrid load testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripting-considerations">Scripting considerations</a>
+      <ul>
+        <li><a href="#consider-factors-that-affect-script-realism">Consider factors that affect script realism</a></li>
+        <li><a href="#create-a-reusable-framework">Create a reusable framework</a></li>
+        <li><a href="#test-with-thresholds-in-mind">Test with thresholds in mind</a></li>
+        <li><a href="#when-possible-use-hybrid-load-testing">When possible, use hybrid load testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#execution-considerations">Execution considerations</a>
+      <ul>
+        <li><a href="#run-your-tests-in-the-appropriate-environment">Run your tests in the appropriate environment</a></li>
+        <li><a href="#run-tests-where-your-customers-are">Run tests where your customers are</a></li>
+      </ul>
+    </li>
+    <li><a href="#recommendations">Recommendations</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Guide to Load Testing Websites
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-01-12 17:12:42 &#43;0000 UTC" itemprop="datePublished">2023-Jan-12</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/load-testing" rel="tag">load testing</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/k6.io" rel="tag">k6.io</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/text" rel="tag">text</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p><em>Original article <a href="https://k6.io/docs/testing-guides/load-testing-websites/">here</a>, written for k6.io</em></p>
+<p>This doc explains some key concepts about load testing websites, including:</p>
+<ul>
+<li>The difference between backend and frontend performance testing</li>
+<li>When to choose between protocol-based, browser-based, or hybrid scripts</li>
+<li>Recommended practices about how to load test websites</li>
+</ul>
+<p>All load tests try to simulate real user traffic  to prevent failures, improve reliability, and release new code with confidence.
+But your approach to load testing must adapt to the type of application you want to test.</p>
+<p>In this guide, learn about strategies to test websites, including specific recommendations for complex scenario scripting and test execution.</p>
+<h2 id="load-testing-approaches">Load testing approaches</h2>
+<p>When you approach the load test, first consider the following perspectives:</p>
+<ul>
+<li>Backend vs. frontend performance</li>
+<li>Protocol-based, browser-based, or hybrid load testing</li>
+<li>Component testing vs. end-to-end testing</li>
+</ul>
+<h2 id="backend-vs-frontend-performance">Backend vs. frontend performance</h2>
+<p>Performance has a significant influence on the user experience of a website.</p>
+<p>For example, when users want to visualize or interact with some information, they expect the website to react quickly.</p>
+<p>To measure performance, testers often look at response times, which are affected by two main factors:</p>
+<ul>
+<li>Frontend performance</li>
+<li>Backend performance</li>
+</ul>
+<h3 id="frontend-performance">Frontend performance</h3>
+<p>Frontend performance testing verifies application performance on the interface level, measuring round-trip metrics that consider how and when page elements appear on the screen. It&rsquo;s concerned with the end-user experience of an application, usually involving a browser.</p>
+<p><img src="/assets/frontend-rendering.png" alt="Snapshots over time of webpage elements rendering on a browser" title="Snapshots over time of webpage elements rendering on a browser"></p>
+<p>Frontend performance testing excels at identifying issues on a micro level but does not expose issues in the underlying architecture of a system.</p>
+<p>Because it primarily measures a single user&rsquo;s experience of the system, frontend performance testing tends to be easier to run on a small scale.
+Frontend performance testing has metrics that are distinct from backend performance testing. Frontend performance tests for things like:</p>
+<ul>
+<li>Whether the pages of the application are optimized to render quickly on a user&rsquo;s screen</li>
+<li>How long it takes a user to interact with the UI elements of the application.</li>
+</ul>
+<p>Some concerns when doing this type of performance testing are its dependency on fully integrated environments and the cost of scaling. You can test frontend performance only once the application code and infrastructure have been integrated with a user interface. Tools to automate frontend testing are also inherently more resource-intensive, so they can be costly to run at scale and are not suitable for high load tests.</p>
+<h3 id="backend-performance">Backend performance</h3>
+<p>Backend performance testing targets the underlying application servers to see how they behave under production-like conditions. When it comes to websites, while frontend performance involves how assets included in the page are rendered, backend performance focuses on how those assets are processed by the application servers, served to users, and downloaded by browsers.</p>
+<p><img src="/assets/backend-performance.png" alt="Backend components" title="Backend components of an application"></p>
+<p>Backend testing is broader in scope than frontend performance testing. API testing can be used to target specific components or integrated components, meaning that application teams have more flexibility and higher chances of finding performance issues earlier. Backend testing is less resource-intensive than frontend performance testing and is thus more suitable for generating high load.</p>
+<h3 id="which-one-should-you-test">Which one should you test?</h3>
+<p>It depends! Ideally, both.</p>
+<p>Frontend testing tools are executed on the client side and are limited in scope: they do not provide enough information about backend components for fine-tuning beyond the user interface.</p>
+<p>This limitation can lead to false confidence in overall application performance when the amount of traffic against an application increases. While the frontend component of response time remains more or less constant, the backend component of response time increases exponentially with the number of concurrent users:</p>
+<p><img src="/assets/Frontend-Backend-LoadTesting.png" alt="Backend performance often contributes significantly to overall user experience" title="Backend performance often contributes significantly to overall user experience"></p>
+<p>Testing <em>only</em> frontend performance ignores a large part of the application, one more susceptible to increased failures and performance bottlenecks at higher levels of load.</p>
+<p>Testing <em>only</em> backend performance, on the other hand, ignores &ldquo;the first mile&rdquo; of user experience and breadth. Backend testing involves messaging at the protocol level rather than interacting with page elements the way a real user would. It verifies the foundation of an application rather than the highest layer of it that a user ultimately sees.</p>
+<p>Testing both frontend and backend performance leads to the best overall performance and user experience for your application. Ignoring one or the other exposes you to performance bottlenecks that significantly decrease a user&rsquo;s satisfaction with your application.</p>
+<p>However, if your testing is smaller in scope, you can choose to focus on either frontend or backend with the goal of eventually building a test suite that encompasses both.</p>
+<h2 id="component-testing-vs-end-to-end-testing">Component testing vs. end-to-end testing</h2>
+<p>When you&rsquo;re testing a web app, you may wonder whether how you structure your test scripts. Consider the following two methods.</p>
+<h3 id="component-testing">Component testing</h3>
+<p>One way you could load test a web app is to load test its components. Maybe you know there are issues with a specific functionality due to previous production issues, or maybe you&rsquo;d like to target components that are business-critical to reduce risk exposure.</p>
+<p>In these cases, the type of test you write may:</p>
+<ul>
+<li>be protocol-based</li>
+<li>call only those API endpoints that are relevant</li>
+<li>have smaller or no sleep/think time</li>
+<li>be focused on eventually stress testing a component or service or finding its breaking point</li>
+</ul>
+<p>Testing in this way is more flexible. With protocol testing, you can specify the endpoints or servers you&rsquo;d like to hit, and narrow your test&rsquo;s target that way. You can test specific functionalities while skipping others that come chronologically before it in a standard user flow. You can more finely control the type of traffic that is generated. If you&rsquo;re recreating a specific mix of requests, you can script those requests and reproduce them in a repeatable manner.</p>
+<p>Doing component testing for load may not always require that your script behave like an end user. In fact, it may be necessary to artificially inflate traffic to more quickly reproduce issues, or to deflate traffic to reduce the noise in the logs. By the nature of this type of testing, scripts don&rsquo;t contain the full flow of a request that you would expect to see in production, so realism is not a priority.</p>
+<h3 id="end-to-end-testing">End-to-end testing</h3>
+<p>You could also do end-to-end testing against a web app. End-to-end testing seeks to replicate real user behaviour and track its effects across the entire stack. When doing end-to-end testing, you might:</p>
+<ul>
+<li>do protocol-level, browser-level, or hybrid load testing</li>
+<li>replicate the actions in a typical user flow</li>
+<li>think about the performance of the entire workflow as well as how long a request took to be processed by each component</li>
+<li>write scripts that access the application the same way users would, such as by browsing to the homepage before finding their way to other parts of the website</li>
+</ul>
+<p>This type of load testing is broader in scope than component testing, but shallower in terms of depth. With end-to-end testing, you get a better idea of the full user experience of the application as a whole. However, it can also be more complex to troubleshoot, as you have more components to monitor and more places to look for issues that are found.</p>
+<p>End-to-end testing is based on real user behavior, so it&rsquo;s often important that end-to-end test scripts also be realistic.</p>
+<h2 id="protocol-based-browser-based-or-hybrid-load-testing">Protocol-based, browser-based, or hybrid load testing</h2>
+<p>The decision of whether to test the frontend, backend, or both will also affect the type of load testing you should carry out and the kind of scripts you should write.</p>
+<h3 id="protocol-based-load-testing">Protocol-based load testing</h3>
+<p>Protocol-based load testing verifies the backend performance of an application by simulating the requests underlying user actions. For websites, this commonly involves HTTP requests that bypass the user interface of your application and are sent directly to a server or application component.</p>
+<p>For example, a protocol-based load testing script might request all the resources on a webpage from the application servers, but those resources are merely downloaded. The response times reported by a purely protocol-based script do not include frontend metrics such as the time taken for images to render on a browser. The load is generated by simulating many requests sent to application servers.</p>
+<p>While protocol-based load testing may seem to lend itself better to component testing, you can also do end-to-end website testing with protocol-level scripts.</p>
+<h4 id="sample-protocol-based-test-script">Sample protocol-based test script</h4>
+<p>The following is an example of a protocol-based load testing script in k6 that fetches the homepage, along with resources embedded into the page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/http&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sleep</span>, <span style="color:#a6e22e">check</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Homepage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">params</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;sec-ch-ua&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;Chromium&#34;;v=&#34;94&#34;, &#34;Google Chrome&#34;;v=&#34;94&#34;, &#34;;Not A Brand&#34;;v=&#34;99&#34;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;accept-encoding&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;gzip, deflate, br&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;accept-language&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;en-GB,en;q=0.9&#39;</span>,
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 01. Go to the homepage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">responses</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">batch</span>([
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://mywebsite.com/&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://mywebsite.com/style.min.css&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://website.com/header.png&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://website.com/polyfill.min.js&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>  ]);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">check</span>(<span style="color:#a6e22e">responses</span>, {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;Homepage loaded&#39;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">r</span>) =&gt; <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">r</span>).<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#39;Welcome to my site&#39;</span>),
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">4</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 02. View products
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">responses</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">batch</span>([
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://mywebsite.com/products&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://mywebsite.com/style.css&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://website.com/product1.jpg&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://website.com/product2.jpg&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;https://website.com/displaylist.js&#39;</span>, <span style="color:#a6e22e">params</span>],
+</span></span><span style="display:flex;"><span>  ]);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">check</span>(<span style="color:#a6e22e">responses</span>, {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;Products loaded&#39;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">r</span>) =&gt; <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">r</span>).<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#39;Add to Cart&#39;</span>),
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><a href="https://k6.io/docs/test-authoring/recording-a-session/browser-recorder/">Recording browser traffic</a> helps you prototype to test websites on the protocol level.</p>
+<h3 id="browser-based-load-testing">Browser-based load testing</h3>
+<p>Browser-based load testing verifies the frontend performance of an application by simulating real users using a browser to access your website.</p>
+<p>For example, a browser-based load testing script might include instructions to navigate to a page, click on a button, and type out text on a form. Those user actions then trigger underlying requests on the protocol layer, but only user actions are scripted in browser-based testing.</p>
+<p>Unlike protocol-based load testing, browser-based load testing scripts generate load by starting multiple instances of browsers and interacting with your application the way real users would. Testing at the browser level can also be the only option for testing Single-Page Applications where a lot of the application logic is executed by client-side scripts.</p>
+<p>Scripting on the browser level usually requires the use of different tools from the ones used to test at the protocol level.
+However, k6 has an extension called <a href="https://k6.io/docs/javascript-api/xk6-browser/">xk6-browser</a> that allows the creation of browser-based test scripts alongside protocol-based ones.</p>
+<h4 id="sample-browser-based-test-script">Sample browser-based test script</h4>
+<p>The following is an example of a browser-based load testing script in k6 using xk6-browser on a dummy website. Instead of making an HTTP request, the script views the homepage, then looks for and clicks on a link to the product page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">chromium</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/x/browser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sleep</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">chromium</span>.<span style="color:#a6e22e">launch</span>({ <span style="color:#a6e22e">headless</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> });
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">newPage</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 01. Go to the homepage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">page</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#39;https://mywebsite.com&#39;</span>, { <span style="color:#a6e22e">waitUntil</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;networkidle&#39;</span> })
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">waitForSelector</span>(<span style="color:#e6db74">&#39;p[class=&#34;woocommerce-result-count&#34;]&#34;]&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({ <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshots/01_homepage.png&#39;</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">4</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 02. View products
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">element</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">$</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;a[class=&#34;woocommerce-LoopProduct-link woocommerce-loop-product__link&#34;]&#39;</span>
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">click</span>();
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">waitForSelector</span>(<span style="color:#e6db74">&#39;button[name=&#34;add-to-cart&#34;]&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({ <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshots/02_view-product.png&#39;</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">finally</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="tips-for-writing-browser-level-scripts">Tips for writing browser-level scripts</h4>
+<p>The following steps can help you get started with a browser-level test script.</p>
+<p><strong>Script user actions, not requests.</strong> Determine what a user might do for a particular task, and script interactions with elements on the browser level. For example, script what buttons the user clicks on.</p>
+<p><strong>Identify unique selectors.</strong> Once you have identified which page elements a user interacts with, use the Element Inspector for DevTools in your browser to find a unique, static, and simple way to identify each element. The script needs selectors to find the right element to interact with.</p>
+<p><strong>Use elements to verify responses.</strong> After every action, use <a href="https://k6.io/docs/javascript-api/xk6-browser/api/locator/">locators</a> to search for elements on the page that you would expect to find. This verification helps ensure that the script has reached the expected page.</p>
+<p><strong>Take screenshots for every action while debugging.</strong> One of the advantages of browser-based testing is the ability to take screenshots. After every user interaction the script simulates, use <a href="https://k6.io/docs/javascript-api/xk6-browser/api/page/">page.screenshot</a> to save a visual image of what the script encountered for later troubleshooting.</p>
+<h3 id="hybrid-load-testing">Hybrid load testing</h3>
+<p>Hybrid load testing is a combination of protocol-based and browser-based load testing. While you can use two tools or two scripts to execute different types of load tests (one protocol-based and one browser-based), having both types of tests executed by the same script and the same tool is ideal. Aggregating results between different tools can be difficult at best and inconsistent at worst.</p>
+<p><img src="/assets/hybrid-testing.png" alt="Hybrid of frontend and backend performance testing" title="In hybrid load testing, both the frontend and backend are tested"></p>
+<p>A best practice in hybrid load testing is to generate most of the load using the protocol-level test, and then to run a smaller number of the browser-level testing scripts. This approach:</p>
+<ul>
+<li>reduces the number of load generators needed, since protocol-level testing requires fewer machines to generate the same load</li>
+<li>measures backend and frontend performance in the same test execution</li>
+<li>provides a single source of aggregated output at the end</li>
+<li>reduces complexity in the creation and maintenance of scripts</li>
+</ul>
+<h2 id="scripting-considerations">Scripting considerations</h2>
+<p>When you script a test for a website, consider these recommendations.</p>
+<h3 id="consider-factors-that-affect-script-realism">Consider factors that affect script realism</h3>
+<p><strong>Record your user journey.</strong>  Using the browser recorder can facilitate initial test script creation by capturing all the embedded resources on webpages. Check out the <a href="https://k6.io/docs/test-authoring/recording-a-session">Session Recording guide</a> to learn more about how to auto-generate your load test from a user session.</p>
+<p><strong>Correlate data.</strong> Recordings often don&rsquo;t take into account dynamic values that are generated anew each time a request is made. Go through the recorded requests and determine whether you need to <a href="https://k6.io/docs/examples/correlation-and-dynamic-data/">extract values from previous responses</a> and use parameters in subsequent requests. This practice ensures your VUs behave more like real users would.</p>
+<p><strong>Include or exclude static resources.</strong> Determine whether you should include or exclude static resources on pages such as images, JavaScript, etc. Consider including them if you want to measure overall user experience. Consider excluding them if you are using a Content Delivery Network (CDN) that is under a separate Service Level Agreement (SLA).</p>
+<p><strong>Exclude third-party requests.</strong> Don&rsquo;t load test servers that you don&rsquo;t own. Many applications make calls to third-party providers for authentication, social sharing, and marketing analytics. Disable these requests unless you have permission to include them in your tests.</p>
+<p><strong>Use concurrent requests.</strong> To mimic the way modern browsers download some requests in parallel, use <a href="https://k6.io/docs/javascript-api/k6-http/batch/">batching</a>.</p>
+<p><strong>Determine cache and cookie behaviour.</strong>  k6 automatically resets cookies between iterations, but you can also <a href="https://k6.io/docs/using-k6/k6-options/reference/#no-cookies-reset">change this behavior</a> if maintaining cookies would be more realistic.</p>
+<p><strong>Use dynamic think time and pacing.</strong>  Consider adding varying <a href="https://k6.io/docs/javascript-api/k6/sleep/">delays</a> so you don&rsquo;t artificially stagger a script with completely uniform delays.</p>
+<p><strong>Use test data.</strong> Real users typically don&rsquo;t search for or submit the same data repeatedly. Consider adding a <a href="https://k6.io/docs/examples/data-parameterization/">test data file</a> for the script to iterate through.</p>
+<p><strong>Model test parameters and load profile after production.</strong> In k6, you can use <a href="https://k6.io/docs/using-k6/k6-options/how-to">test options</a> to determine the exact shape and profile of your load test script. Select the appropriate <a href="https://k6.io/docs/using-k6/scenarios/executors/">executors</a> for the job.</p>
+<h3 id="create-a-reusable-framework">Create a reusable framework</h3>
+<p><strong>Use tags and groups.</strong> Organizing requests by <a href="https://k6.io/docs/using-k6/tags-and-groups/">tagging and grouping them</a> helps you consolidate like metrics and makes your test scripts more understandable by others.</p>
+<p><strong>Use scenarios.</strong> When combining protocol-based and browser-based tests, use <a href="https://k6.io/docs/using-k6/scenarios/">scenarios</a> to independently control their test parameters and <a href="https://k6.io/docs/using-k6/scenarios/executors/">executors</a>.</p>
+<p><strong>Modularize scripts.</strong> Use <a href="https://k6.io/docs/using-k6/modules/">modules</a> to separate and organize functions for protocol-level testing and browser-level testing, and then use a test runner script to execute them. This approach means different scripts can be versioned and changed without affecting each other.</p>
+<p><strong>Integrate your tests into your CI pipeline.</strong> Adopting a &ldquo;tests as code&rdquo; approach enables you to tie your load tests more closely into your project&rsquo;s existing CI/CD processes, helping you get the most value out of every test.</p>
+<h3 id="test-with-thresholds-in-mind">Test with thresholds in mind</h3>
+<p><strong>Create thresholds for both types of testing.</strong> Some browser-level and protocol-level metrics cannot be combined because they don&rsquo;t measure the same thing. Set <a href="https://k6.io/docs/using-k6/thresholds/">thresholds</a> for relevant metrics from both the browser-level script and the protocol-level one.</p>
+<h3 id="when-possible-use-hybrid-load-testing">When possible, use hybrid load testing</h3>
+<p><strong>Use protocol-based scripts to generate majority of the load.</strong> When writing the test scenario, use the protocol-based requests to simulate most of the traffic and use fewer VUs for the browser-based requests. Relying on the protocol-level traffic helps keep resource utilization on load generators down.</p>
+<h2 id="execution-considerations">Execution considerations</h2>
+<p>When you run tests, consider the test environment and the load generator location.</p>
+<h3 id="run-your-tests-in-the-appropriate-environment">Run your tests in the appropriate environment</h3>
+<p>Testing in pre-production environments and in production environments both add value.</p>
+<p><strong>Testing in pre-production environments</strong> (staging, test, system integration testing, user acceptance testing, and production replica environments) enables you to identify performance defects early, which can save a lot of time and effort (and reputation) later on. Running in test environments also means you can often afford to be more aggressive with your tests. However, it&rsquo;s also more critical to get your load profiles right, and the test results you get may not necessarily apply to production.</p>
+<p><strong>Testing in production</strong> yields the most accurate results, but it&rsquo;s also more risky. Often, testing production is the only feasible alternative. You can reduce the risk of impact to real customers while testing in production by using lower levels of load when running load tests during peak hours, schedule tests for off-peak hours, choosing load test types that are less risky, using techniques like synthetic monitoring that generate less traffic, using real user monitoring tools to get snapshots of user performance at load, and ensuring that your observability stack is working at peak efficiency.</p>
+<h3 id="run-tests-where-your-customers-are">Run tests where your customers are</h3>
+<p>The location of the load generator(s), where the traffic is coming <em>from</em>, can also have an impact on your test results. The question is: where are your end users located?</p>
+<p><strong>On-premises load testing</strong> can be ideal when testing early on in the development a website, or when there are machines that can be repurposed as load generators. However, testing entirely from within a corporate network may also yield false positives, in that response times reported are significantly lower than if the same application servers were accessed from across the country.</p>
+<p><strong>Load testing on the cloud</strong> is an essential part of the testing strategy for many public-facing websites. Using load generators on the cloud gives you access to test in different states and geographical countries, creating a mix of load generators proportional to your users&rsquo; locations. Cloud load generators are easier to provision and cheaper to maintain in the long run than on-premise ones. Load testing on the cloud can help you include the effects of network latency in your tests and yield results that are more realistic.</p>
+<h2 id="recommendations">Recommendations</h2>
+<p>Here are some recommendations to help you plan, script, and execute your load tests for websites.</p>
+<p>If you want to test the last-mile user experience of your website:</p>
+<ul>
+<li>focus on <strong>frontend performance</strong>,</li>
+<li>write <strong>browser-based test scripts</strong>,</li>
+<li>and consider doing more realistic <strong>end-to-end</strong> tests of the user flow.</li>
+</ul>
+<p>If you want to test the underlying infrastructure of your website:</p>
+<ul>
+<li>focus on <strong>backend performance</strong>,</li>
+<li>write <strong>protocol-based test scripts</strong>,</li>
+<li>and consider starting with <strong>component testing</strong> and then gradually increasing the scope.</li>
+</ul>
+<p>If your website is meant for internal or has limited access:</p>
+<ul>
+<li>Use <strong>on-premise load generators</strong> located within the network that most of your users access the website from.</li>
+</ul>
+<p>If your website is external and public-facing:</p>
+<ul>
+<li>Use <strong>cloud load generators</strong> in the load zones where your users reside.</li>
+</ul>
+<p>Test in <strong>pre-production environments</strong> when you can, but also consider <strong>testing in production</strong> in a limited capacity.</p>
+<p>Load testing websites can be complex due to the number of viable testing approaches available, the scope for performance testing, and the potential effects of releasing undertested code. By following the recommendations we&rsquo;ve put forward here, you can tailor your testing more closely to your objectives.</p>
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20230403-frontend-vs-backend-testing/">Frontend vs. backend: How to plan your performance testing strategy</a></li>
+    
+    <li><a href="/blog/20220506-koh53-what-is-grafana-mimir/">What Is Grafana Mimir? (k6 Office Hours #53)</a></li>
+    
+    <li><a href="/blog/20220429-koh52-api-load-testing-using-k6/">API load testing using k6, with Tom Miseur (k6 Office Hours #52)</a></li>
+    
+    <li><a href="/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/">End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</a></li>
+    
+    <li><a href="/blog/20220408-koh-49-load-testing-results-in-k6-cloud-app/">Load testing results in the k6 Cloud App for Grafana, with Edgar Fisher (k6 Office Hours #49)</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#load-testing-approaches">Load testing approaches</a></li>
+    <li><a href="#backend-vs-frontend-performance">Backend vs. frontend performance</a>
+      <ul>
+        <li><a href="#frontend-performance">Frontend performance</a></li>
+        <li><a href="#backend-performance">Backend performance</a></li>
+        <li><a href="#which-one-should-you-test">Which one should you test?</a></li>
+      </ul>
+    </li>
+    <li><a href="#component-testing-vs-end-to-end-testing">Component testing vs. end-to-end testing</a>
+      <ul>
+        <li><a href="#component-testing">Component testing</a></li>
+        <li><a href="#end-to-end-testing">End-to-end testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#protocol-based-browser-based-or-hybrid-load-testing">Protocol-based, browser-based, or hybrid load testing</a>
+      <ul>
+        <li><a href="#protocol-based-load-testing">Protocol-based load testing</a>
+          <ul>
+            <li><a href="#sample-protocol-based-test-script">Sample protocol-based test script</a></li>
+          </ul>
+        </li>
+        <li><a href="#browser-based-load-testing">Browser-based load testing</a>
+          <ul>
+            <li><a href="#sample-browser-based-test-script">Sample browser-based test script</a></li>
+            <li><a href="#tips-for-writing-browser-level-scripts">Tips for writing browser-level scripts</a></li>
+          </ul>
+        </li>
+        <li><a href="#hybrid-load-testing">Hybrid load testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripting-considerations">Scripting considerations</a>
+      <ul>
+        <li><a href="#consider-factors-that-affect-script-realism">Consider factors that affect script realism</a></li>
+        <li><a href="#create-a-reusable-framework">Create a reusable framework</a></li>
+        <li><a href="#test-with-thresholds-in-mind">Test with thresholds in mind</a></li>
+        <li><a href="#when-possible-use-hybrid-load-testing">When possible, use hybrid load testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#execution-considerations">Execution considerations</a>
+      <ul>
+        <li><a href="#run-your-tests-in-the-appropriate-environment">Run your tests in the appropriate environment</a></li>
+        <li><a href="#run-tests-where-your-customers-are">Run tests where your customers are</a></li>
+      </ul>
+    </li>
+    <li><a href="#recommendations">Recommendations</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&text=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&is_video=false&description=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Guide%20to%20Load%20Testing%20Websites&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&title=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&name=Guide%20to%20Load%20Testing%20Websites&description=Original%20article%20here%2c%20written%20for%20k6.io%0aThis%20doc%20explains%20some%20key%20concepts%20about%20load%20testing%20websites%2c%20including%3a%0aThe%20difference%20between%20backend%20and%20frontend%20performance%20testing%20When%20to%20choose%20between%20protocol-based%2c%20browser-based%2c%20or%20hybrid%20scripts%20Recommended%20practices%20about%20how%20to%20load%20test%20websites%20All%20load%20tests%20try%20to%20simulate%20real%20user%20traffic%20to%20prevent%20failures%2c%20improve%20reliability%2c%20and%20release%20new%20code%20with%20confidence.%20But%20your%20approach%20to%20load%20testing%20must%20adapt%20to%20the%20type%20of%20application%20you%20want%20to%20test.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230112-load-testing-websites%2f&t=Guide%20to%20Load%20Testing%20Websites">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

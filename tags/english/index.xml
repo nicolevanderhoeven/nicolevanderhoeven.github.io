@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 08:01:11 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Apr 2023 00:21:06 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emergent Load Testing - rules for organized chaos</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</link>
+      <pubDate>Wed, 19 Apr 2023 00:21:06 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</guid>
+      <description>&lt;p&gt;Today I spoke at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt; about &lt;a href=&#34;https://sched.co/1HyYH&#34;&gt;emergent load testing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing/#&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s the abstract:&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&amp;rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.&lt;/p&gt;
+&lt;p&gt;Emergence is a phenomenon where parts of a whole independently develop properties not originally present in the whole. Emergence is what helps ant workers develop roles without leadership, prompts animals to evolve adaptive traits without forethought, and facilitates non-toxic communities without moderators.&lt;/p&gt;
+&lt;p&gt;The growing field of emergent software applies this swarm logic to the programs that we write. What would it take to write emergent load testing scripts? It turns out that there are a few ingredients for emergence: a large population size, opportunities to interact, feedback, and an element of control.&lt;/p&gt;
+&lt;p&gt;In this talk, Nicole van der Hoeven discusses how to bring these elements to load testing by writing a script in Grafana k6 that can independently decide what requests to make next, modify Kubernetes app pods, and disrupt services based on a continual feed of results during runtime&amp;ndash; all without manual intervention. She shows how to wield this new breed of load testing to improve confidence in the complex systems we build.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Organizing PDFs in Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230414-organizing-pdfs-in-obsidian/</link>

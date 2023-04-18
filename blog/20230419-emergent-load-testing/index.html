@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Emergent Load Testing - rules for organized chaos | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Emergent Load Testing - rules for organized chaos" />
+<meta property="og:description" content="Today I spoke at KubeCon EU 2023 about emergent load testing.
+Here are the slides.
+And here&rsquo;s the abstract:
+Abstract When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.
+Emergence is a phenomenon where parts of a whole independently develop properties not originally present in the whole." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-19T00:21:06+02:00" />
+<meta property="article:modified_time" content="2023-04-19T00:21:06+02:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Emergent Load Testing - rules for organized chaos"/>
+<meta name="twitter:description" content="Today I spoke at KubeCon EU 2023 about emergent load testing.
+Here are the slides.
+And here&rsquo;s the abstract:
+Abstract When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.
+Emergence is a phenomenon where parts of a whole independently develop properties not originally present in the whole."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230414-organizing-pdfs-in-obsidian/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&text=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&is_video=false&description=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&name=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos&description=Today%20I%20spoke%20at%20KubeCon%20EU%202023%20about%20emergent%20load%20testing.%0aHere%20are%20the%20slides.%0aAnd%20here%26rsquo%3bs%20the%20abstract%3a%0aAbstract%20When%20we%20write%20load%20testing%20scripts%20against%20our%20applications%2c%20we%20write%20them%20sequentially%3a%20A%2c%20then%20B%2c%20then%20C.%20But%20this%20doesn%26rsquo%3bt%20accurately%20reflect%20the%20organized%20chaos%20of%20a%20system%20in%20production%2c%20nor%20does%20it%20prepare%20the%20system%20for%20the%20unexpected.%0aEmergence%20is%20a%20phenomenon%20where%20parts%20of%20a%20whole%20independently%20develop%20properties%20not%20originally%20present%20in%20the%20whole.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&t=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Emergent Load Testing - rules for organized chaos
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-04-19 00:21:06 &#43;0200 CEST" itemprop="datePublished">2023-Apr-19</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/presentation" rel="tag">presentation</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/load-testing" rel="tag">load testing</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/kubernetes" rel="tag">kubernetes</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/performance" rel="tag">performance</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>Today I spoke at <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/">KubeCon EU 2023</a> about <a href="https://sched.co/1HyYH">emergent load testing</a>.</p>
+<p><a href="https://slides.nicolevanderhoeven.com/2023-emergent-load-testing/#">Here are the slides</a>.</p>
+<p>And here&rsquo;s the abstract:</p>
+<h2 id="abstract">Abstract</h2>
+<p>When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.</p>
+<p>Emergence is a phenomenon where parts of a whole independently develop properties not originally present in the whole. Emergence is what helps ant workers develop roles without leadership, prompts animals to evolve adaptive traits without forethought, and facilitates non-toxic communities without moderators.</p>
+<p>The growing field of emergent software applies this swarm logic to the programs that we write. What would it take to write emergent load testing scripts? It turns out that there are a few ingredients for emergence: a large population size, opportunities to interact, feedback, and an element of control.</p>
+<p>In this talk, Nicole van der Hoeven discusses how to bring these elements to load testing by writing a script in Grafana k6 that can independently decide what requests to make next, modify Kubernetes app pods, and disrupt services based on a continual feed of results during runtime&ndash; all without manual intervention. She shows how to wield this new breed of load testing to improve confidence in the complex systems we build.</p>
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20230403-frontend-vs-backend-testing/">Frontend vs. backend: How to plan your performance testing strategy</a></li>
+    
+    <li><a href="/blog/20230112-load-testing-websites/">Guide to Load Testing Websites</a></li>
+    
+    <li><a href="/blog/20221118-koh72-distributed-load-testing-using-kubernetes-with-k6/">Distributed Load Testing Using Kubernetes With k6</a></li>
+    
+    <li><a href="/blog/20220601-how-to-be-a-gish-expoqa/">How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</a></li>
+    
+    <li><a href="/blog/20220506-koh53-what-is-grafana-mimir/">What Is Grafana Mimir? (k6 Office Hours #53)</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&text=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&is_video=false&description=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&title=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&name=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos&description=Today%20I%20spoke%20at%20KubeCon%20EU%202023%20about%20emergent%20load%20testing.%0aHere%20are%20the%20slides.%0aAnd%20here%26rsquo%3bs%20the%20abstract%3a%0aAbstract%20When%20we%20write%20load%20testing%20scripts%20against%20our%20applications%2c%20we%20write%20them%20sequentially%3a%20A%2c%20then%20B%2c%20then%20C.%20But%20this%20doesn%26rsquo%3bt%20accurately%20reflect%20the%20organized%20chaos%20of%20a%20system%20in%20production%2c%20nor%20does%20it%20prepare%20the%20system%20for%20the%20unexpected.%0aEmergence%20is%20a%20phenomenon%20where%20parts%20of%20a%20whole%20independently%20develop%20properties%20not%20originally%20present%20in%20the%20whole.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230419-emergent-load-testing%2f&t=Emergent%20Load%20Testing%20-%20rules%20for%20organized%20chaos">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

@@ -15,7 +15,21 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</guid>
       <description>&lt;p&gt;Today I spoke at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt; about &lt;a href=&#34;https://sched.co/1HyYH&#34;&gt;emergent load testing&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing/#&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Below are some links to extensions and experimental modules that I mentioned:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/&#34;&gt;Grafana&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/&#34;&gt;k6 site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;k6 repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/&#34;&gt;k6 docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/using-k6-browser/overview/&#34;&gt;k6 browser&lt;/a&gt; (experimental module)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/results-output/real-time/prometheus-remote-write/&#34;&gt;Prometheus Remote Write&lt;/a&gt; (experimental module)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/javascript-api/k6-experimental/tracing/&#34;&gt;k6 tracing&lt;/a&gt; (experimental module)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-kubernetes&#34;&gt;xk6-kubernetes&lt;/a&gt; (extension)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/javascript-api/k6-experimental/redis/&#34;&gt;k6 redis&lt;/a&gt; (experimental module)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-disruptor&#34;&gt;xk6 disruptor&lt;/a&gt; (extension)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;And here&amp;rsquo;s the abstract:&lt;/p&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&amp;rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.&lt;/p&gt;

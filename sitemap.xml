@@ -3,15 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2023-04-20T10:37:51+02:00</lastmod>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/bookmarks/</loc>
-    <lastmod>2023-04-20T10:37:51+02:00</lastmod>
+    <loc>https://nicolevanderhoeven.github.io/tags/browser-testing/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/core-web-vitals/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2023-04-20T10:37:51+02:00</lastmod>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20230428-koh86-how-to-get-core-web-vitals-in-k6/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/xk6-browser/</loc>
+    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/bookmarks/</loc>
     <lastmod>2023-04-20T10:37:51+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
@@ -23,12 +50,6 @@
     <loc>https://nicolevanderhoeven.github.io/tags/pkm/</loc>
     <lastmod>2023-04-20T10:37:51+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
-    <lastmod>2023-04-20T10:37:51+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
-    <lastmod>2023-04-20T10:37:51+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</loc>
     <lastmod>2023-04-19T00:21:06+02:00</lastmod>
   </url><url>
@@ -36,9 +57,6 @@
     <lastmod>2023-04-19T00:21:06+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/load-testing/</loc>
-    <lastmod>2023-04-19T00:21:06+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
     <lastmod>2023-04-19T00:21:06+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/presentation/</loc>
@@ -75,12 +93,6 @@
     <lastmod>2023-04-07T13:00:42+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230407-koh85-k6-javascript-ecosystem/</loc>
-    <lastmod>2023-04-07T13:00:42+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
-    <lastmod>2023-04-07T13:00:42+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
     <lastmod>2023-04-07T13:00:42+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230403-frontend-vs-backend-testing/</loc>
@@ -422,9 +434,6 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20220930-koh65-performance-testing-for-beginners/</loc>
     <lastmod>2022-09-30T12:45:08+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/browser-testing/</loc>
-    <lastmod>2022-09-23T12:18:07+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220923-koh64-future-of-k6/</loc>
     <lastmod>2022-09-23T12:18:07+02:00</lastmod>
   </url><url>
@@ -627,9 +636,6 @@
     <lastmod>2022-04-29T16:00:31+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</loc>
-    <lastmod>2022-04-22T17:00:12+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/xk6-browser/</loc>
     <lastmod>2022-04-22T17:00:12+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220421-que-es-k6/</loc>

@@ -3,10 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2023-05-12T21:18:45+08:00</lastmod>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/distributed-tracing/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2023-05-12T21:18:45+08:00</lastmod>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/presentation/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/tempo/</loc>
+    <lastmod>2023-05-18T22:41:42+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
+    <lastmod>2023-05-16T22:41:16+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</loc>
+    <lastmod>2023-05-16T22:41:16+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/kubernetes/</loc>
+    <lastmod>2023-05-16T22:41:16+10:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/monitoring/</loc>
+    <lastmod>2023-05-16T22:41:16+10:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/learning-in-public/</loc>
     <lastmod>2023-05-12T21:18:45+08:00</lastmod>
@@ -14,16 +50,10 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20230512-more-than-just-taking-notes-learning-exhaust/</loc>
     <lastmod>2023-05-12T21:18:45+08:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
-    <lastmod>2023-05-12T21:18:45+08:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
     <lastmod>2023-05-12T21:18:45+08:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/pkm/</loc>
-    <lastmod>2023-05-12T21:18:45+08:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
     <lastmod>2023-05-12T21:18:45+08:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
@@ -95,9 +125,6 @@
     <loc>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</loc>
     <lastmod>2023-04-28T16:11:52+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/k6.io/</loc>
-    <lastmod>2023-04-28T16:11:52+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/xk6-browser/</loc>
     <lastmod>2023-04-28T16:11:52+02:00</lastmod>
   </url><url>
@@ -110,13 +137,7 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</loc>
     <lastmod>2023-04-19T00:21:06+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/kubernetes/</loc>
-    <lastmod>2023-04-19T00:21:06+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/load-testing/</loc>
-    <lastmod>2023-04-19T00:21:06+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/presentation/</loc>
     <lastmod>2023-04-19T00:21:06+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/dd/</loc>
@@ -155,9 +176,6 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20230403-frontend-vs-backend-testing/</loc>
     <lastmod>2023-04-03T13:20:53+01:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
-    <lastmod>2023-04-03T13:20:53+01:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/text/</loc>
     <lastmod>2023-04-03T13:20:53+01:00</lastmod>
   </url><url>
@@ -189,9 +207,6 @@
     <lastmod>2023-03-24T18:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230324-koh-83-grafana-cloud-k6/</loc>
-    <lastmod>2023-03-24T18:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
     <lastmod>2023-03-24T18:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230321-introducing-grafana-cloud-k6/</loc>
@@ -390,9 +405,6 @@
     <lastmod>2022-11-04T14:03:04+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/performance-testing/</loc>
-    <lastmod>2022-11-04T14:03:04+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/tempo/</loc>
     <lastmod>2022-11-04T14:03:04+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20221104-how-to-organize-your-notes-in-obsidian/</loc>

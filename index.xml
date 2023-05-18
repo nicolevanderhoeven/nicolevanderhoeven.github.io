@@ -7,7 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 12 May 2023 21:18:45 +0800</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 22:41:42 +1000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load testing and tracing with k6 and Tempo</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</link>
+      <pubDate>Thu, 18 May 2023 22:41:42 +1000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</guid>
+      <description>&lt;p&gt;At &lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON on the Road 2023 in Sydney, Australia&lt;/a&gt;, I talked about why you should use load testing and distributed tracing, how to do it with k6 and Tempo, and the benefits of being able to see beyond traditional black-box testing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZP2aa5qjNOg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1YVn7IgDpaCrzF_5sGzd0xr9C0Mt7QDxpsRzHypCdR4w/edit?usp=sharing&#34;&gt;Check out the slides here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Distributed+tracing&#34;&gt;Distributed tracing&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/xk6-distributed-tracing&#34;&gt;xk6-distributed-tracing&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-syd-01.jpeg&#34; alt=&#34;Photo of the crowd at OCR Sydney&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Avoid the Most Common Kubernetes Monitoring Mistakes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</link>
+      <pubDate>Tue, 16 May 2023 22:41:16 +1000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</guid>
+      <description>&lt;p&gt;For &lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON on the Road Singapore 2023&lt;/a&gt;, I talked about some mistakes people make when monitoring applications within Kubernetes clusters. I also demonstrated Grafana&amp;rsquo;s Kubernetes Monitoring solution and how it can be a shortcut for engineers looking to get started quickly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-sin-01.jpg&#34; alt=&#34;Photo of me speaking at OCR Singapore 2023&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing&#34;&gt;Slides here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Monitoring+Kubernetes&#34;&gt;Monitoring Kubernetes in general&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Grafana+Kubernetes+Monitoring&#34;&gt;The Grafana Kubernetes Monitoring feature&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-sin-02.jpg&#34; alt=&#34;Photo of the crowd at OCR Singapore 2023&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>More Than Just Taking Notes: Learning Exhaust</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230512-more-than-just-taking-notes-learning-exhaust/</link>
@@ -2999,20 +3039,21 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;16/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON 2023 Singapore&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;How to avoid the most common Kubernetes monitoring mistakes&lt;/em&gt; (English).&lt;/p&gt;
-&lt;p&gt;18/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON 2023 Sydney&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;How to prevent issues from hitting customers by using load testing and tracing together&lt;/em&gt; (English).&lt;/p&gt;
-&lt;p&gt;14/06   &lt;strong&gt;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/&#34;&gt;EuroSTAR 2023&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;The Lost Art of Taking Good Notes (English)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;14/06   &lt;strong&gt;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/&#34;&gt;EuroSTAR 2023&lt;/a&gt;&lt;/strong&gt;: (Antwerp, Belgium) &lt;em&gt;The Lost Art of Taking Good Notes (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;25-27/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Emergent load testing: Rules for Organized Chaos&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;6-8/11  &lt;strong&gt;Workshop on Performance and Reliability&lt;/strong&gt; (Santiago, Chile): &lt;em&gt;(Spanish)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;13-16/11 &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Adobo and Avocados: Intersectionality in Tech and DevRel&lt;/a&gt;&lt;/strong&gt; (Potsdam, Germany): &lt;em&gt;(English)&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;
-&lt;p&gt;26/03   &lt;strong&gt;&lt;a href=&#34;https://theinformed.life/&#34;&gt;The Informed Life Podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/&#34;&gt;Nicole van der Hoeven on Obsidian&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
-&lt;p&gt;19/04   &lt;strong&gt;&lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/&#34;&gt;Emergent Load Testing: Rules for Organized Chaos&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;26/03   &lt;strong&gt;&lt;a href=&#34;https://theinformed.life/&#34;&gt;The Informed Life Podcast&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/&#34;&gt;Nicole van der Hoeven on Obsidian&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;19/04   &lt;strong&gt;&lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt;&lt;/strong&gt;: (Amsterdam, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/&#34;&gt;Emergent Load Testing: Rules for Organized Chaos&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;16/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON 2023 Singapore&lt;/a&gt;&lt;/strong&gt;: (Singapore) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/&#34;&gt;How to avoid the most common Kubernetes monitoring mistakes&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;18/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON 2023 Australia&lt;/a&gt;&lt;/strong&gt;: (Sydney, Australia) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230518-how-to-prevent-issues-from-hitting-customers-by-using-load-testing-and-tracing-together/&#34;&gt;How to prevent issues from hitting customers by using load testing and tracing together&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
 &lt;p&gt;10/02   &lt;strong&gt;&lt;a href=&#34;https://guildconferences.com/ag-2022/&#34;&gt;Automation Guild 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/&#34;&gt;In search of the best Pokémon: Browser automation and load testing in one script with k6.&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;31/03   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCgUgg53iJX1pdabUxpkgozA&#34;&gt;Gift Egwuenu (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220331-working-in-devrel-chat/&#34;&gt;Working in Devrel Chat. (English).&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;07/04   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCfz8x0lVzJpb_dgWm9kPVrw&#34;&gt;DevOps Toolkit (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;TestOps - Ask Me Anything (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;19/05   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/conference&#34;&gt;Linking Your Thinking Conference&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/&#34;&gt;Use it or lose it: What to do with your notes&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;02/06   &lt;strong&gt;&lt;a href=&#34;https://expoqa.com/en-sessions.html#van_der_Hoeven&#34;&gt;ExpoQA Madrid&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/&#34;&gt;How to be a Gish: API, browser, and chaos in one script&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;02/06   &lt;strong&gt;&lt;a href=&#34;https://expoqa.com/en-sessions.html#van_der_Hoeven&#34;&gt;ExpoQA Madrid&lt;/a&gt;&lt;/strong&gt;: (Madrid, Spain) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/&#34;&gt;How to be a Gish: API, browser, and chaos in one script&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;08/06   &lt;strong&gt;&lt;a href=&#34;https://www.devopsparadox.com/&#34;&gt;DevOps Paradox podcast&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220608-performance-testing-with-k6/&#34;&gt;Performance Testing With k6&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;17/06   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/go/grafanaconline/2022/demo-load-testing-with-k6/&#34;&gt;GrafanaCON 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Grafana k6: Testing without Limits (English).&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2021&#34;&gt;2021&lt;/h2&gt;

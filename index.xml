@@ -7,7 +7,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 18 May 2023 22:41:42 +1000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jun 2023 18:32:32 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use k6 for site reliability engineering (k6 Office Hours #90)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230609-koh90-how-to-use-k6-for-sre/</link>
+      <pubDate>Fri, 09 Jun 2023 18:32:32 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230609-koh90-how-to-use-k6-for-sre/</guid>
+      <description>&lt;p&gt;In this k6 Office Hours, our k6 Champion, Sarah Zipkin, chats to the Grafana Labs Developer Advocates on how a Site Reliability Engineer uses k6 to test for reliability.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yBXzUUGRCMQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Text Expansion in Obsidian With Espanso</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230609-text-expansion-in-obsidian-with-espanso/</link>
+      <pubDate>Fri, 09 Jun 2023 18:12:41 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230609-text-expansion-in-obsidian-with-espanso/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve gotten a few questions asking me how I do text expansion in Obsidian, because there are a lot of text expander plugins out there. The truth, though, is that I don&amp;rsquo;t use any of them. Instead, I use a separate, free, open-source app called Espanso to define text triggers and replace them with certain phrases. One of the best things about Espanso is that it stores all configuration in plain text files.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zoeQ5yNoXsY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>10 tips for starting (or progressing) a career in tech (Adobo &amp; Avocados #4)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230607-ana04-10-tips-for-starting-a-career-in-tech/</link>
+      <pubDate>Wed, 07 Jun 2023 08:00:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230607-ana04-10-tips-for-starting-a-career-in-tech/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I did another Adobo &amp;amp; Avocados livestream, this time about 10 tips (five from each of us) about starting a career in tech.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LVVR_56jdU0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How Supabase does performance benchmarking using k6 (k6 Office Hours #89)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230526-koh89-how-supabase-does-performance-benchmarking-using-k6/</link>
+      <pubDate>Fri, 26 May 2023 16:19:51 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230526-koh89-how-supabase-does-performance-benchmarking-using-k6/</guid>
+      <description>&lt;p&gt;In this k6 Office Hours, we talk about how Supabase does performance benchmarking using k6 with Egor Romanov, SDET at Supabase; Théo Crevon, Senior Software Engineer at Grafana Labs; and Nicole van der Hoeven, Senior Developer Advocate at Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VcrQidYBjEg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supabase is an open-source alternative to Firebase. Learn more about Supabase &lt;a href=&#34;https://supabase.io&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Remote Work Setup While Traveling for a Month</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230519-my-remote-work-setup-while-traveling-for-a-month/</link>
+      <pubDate>Fri, 19 May 2023 18:00:14 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230519-my-remote-work-setup-while-traveling-for-a-month/</guid>
+      <description>&lt;p&gt;In this video, I go through everything that&amp;rsquo;s in my remote work setup while traveling for a month in 5 different countries&amp;ndash; all in one backpack and one sling. I work remotely full-time, and in this trip I have three talks in one month, several meetups with friends and family, and livestreams to do. Here&amp;rsquo;s what I chose to bring with me to remain fully operational while also travelling.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bV6mR6UwE90&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For a list of everything I mentioned in this video, check out my &lt;a href=&#34;https://nicolevanderhoeven.github.io/gear/&#34;&gt;Gear list&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Load testing and tracing with k6 and Tempo</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</link>
@@ -7736,7 +7813,11 @@ date: 2021-06-23
 &lt;/ul&gt;
 &lt;h2 id=&#34;my-remote-work-setup-for-a-month&#34;&gt;My Remote Work Setup for a month&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s what I bring with me when I need to be able to work while travelling continuously for a month. This setup lets me create videos, run livestreams, do programming work, and do presentations at conferences with minimal bulk and maximal functionality.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/travel-setup-20230430_220231.jpg&#34; alt=&#34;Snapshot of my actual setup at a hotel in Frankfurt&#34;&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bV6mR6UwE90&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Platypus soft bottle. &lt;a href=&#34;https://amzn.to/3TWaEH1&#34;&gt;Similar here&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3xX8y1A&#34;&gt;Samsung Galaxy Active 2&lt;/a&gt;: my smartwatch&lt;/li&gt;
@@ -7766,6 +7847,7 @@ date: 2021-06-23
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;: my primary mobile phone, used to take this photo&lt;/li&gt;
 &lt;li&gt;(not pictured, but since added) &lt;a href=&#34;https://amzn.to/3VL52Cc&#34;&gt;Logitech POP Mouse&lt;/a&gt;: travel mouse, even though I hate that it requires an AA battery.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/travel-setup-20230430_220231.jpg&#34; alt=&#34;Snapshot of my actual setup at a hotel in Frankfurt&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     

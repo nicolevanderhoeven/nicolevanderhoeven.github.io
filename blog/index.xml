@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 09 Jun 2023 18:32:32 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 08:00:21 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Lost Art of Taking Good Notes (EuroSTAR 2023)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</link>
+      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</guid>
+      <description>&lt;p&gt;Today I gave the talk &amp;ldquo;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes&#34;&gt;The Lost Art of Taking Good Notes&lt;/a&gt;&amp;rdquo; at &lt;a href=&#34;https://conference.eurostarsoftwaretesting.com&#34;&gt;EuroSTAR 2023&lt;/a&gt;, about how I use Obsidian for work and why creating a personal knowledge management system is so valuable in the career of a tester.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-lost-art-of-taking-good-notes&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to use k6 for site reliability engineering (k6 Office Hours #90)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230609-koh90-how-to-use-k6-for-sre/</link>

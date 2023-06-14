@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 09 Jun 2023 18:32:32 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 08:00:21 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Lost Art of Taking Good Notes (EuroSTAR 2023)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</link>
+      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</guid>
+      <description>&lt;p&gt;Today I gave the talk &amp;ldquo;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes&#34;&gt;The Lost Art of Taking Good Notes&lt;/a&gt;&amp;rdquo; at &lt;a href=&#34;https://conference.eurostarsoftwaretesting.com&#34;&gt;EuroSTAR 2023&lt;/a&gt;, about how I use Obsidian for work and why creating a personal knowledge management system is so valuable in the career of a tester.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-lost-art-of-taking-good-notes&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to use k6 for site reliability engineering (k6 Office Hours #90)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230609-koh90-how-to-use-k6-for-sre/</link>
@@ -3116,7 +3127,6 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;14/06   &lt;strong&gt;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/&#34;&gt;EuroSTAR 2023&lt;/a&gt;&lt;/strong&gt;: (Antwerp, Belgium) &lt;em&gt;The Lost Art of Taking Good Notes (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;25-27/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Emergent load testing: Rules for Organized Chaos&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;6-8/11  &lt;strong&gt;Workshop on Performance and Reliability&lt;/strong&gt; (Santiago, Chile): &lt;em&gt;(Spanish)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;13-16/11 &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Adobo and Avocados: Intersectionality in Tech and DevRel&lt;/a&gt;&lt;/strong&gt; (Potsdam, Germany): &lt;em&gt;(English)&lt;/em&gt;&lt;/p&gt;
@@ -3125,6 +3135,7 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
 &lt;p&gt;19/04   &lt;strong&gt;&lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt;&lt;/strong&gt;: (Amsterdam, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/&#34;&gt;Emergent Load Testing: Rules for Organized Chaos&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;16/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON 2023 Singapore&lt;/a&gt;&lt;/strong&gt;: (Singapore) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/&#34;&gt;How to avoid the most common Kubernetes monitoring mistakes&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;18/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON 2023 Australia&lt;/a&gt;&lt;/strong&gt;: (Sydney, Australia) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230518-how-to-prevent-issues-from-hitting-customers-by-using-load-testing-and-tracing-together/&#34;&gt;How to prevent issues from hitting customers by using load testing and tracing together&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;14/06   &lt;strong&gt;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/&#34;&gt;EuroSTAR 2023&lt;/a&gt;&lt;/strong&gt;: (Antwerp, Belgium) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes&#34;&gt;The Lost Art of Taking Good Notes&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
 &lt;p&gt;10/02   &lt;strong&gt;&lt;a href=&#34;https://guildconferences.com/ag-2022/&#34;&gt;Automation Guild 2022&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/&#34;&gt;In search of the best Pokémon: Browser automation and load testing in one script with k6.&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;31/03   &lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCgUgg53iJX1pdabUxpkgozA&#34;&gt;Gift Egwuenu (YouTube)&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220331-working-in-devrel-chat/&#34;&gt;Working in Devrel Chat. (English).&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;

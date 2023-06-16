@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 14 Jun 2023 08:00:21 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 19:00:33 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taking Notes for Work With Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</link>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</guid>
+      <description>&lt;p&gt;In this talk, I show why I think taking notes for work with Obsidian has not just helped me learn faster but improved my career working in tech as a Developer Advocate and performance engineer. I take notes continuously as a way to keep my skills relevant. This is a rehearsal of a presentation I gave &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes&#34;&gt;at EuroSTAR 2023&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0g38K_DtxFI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Testing Kubernetes Networking With k6 (k6 Office Hours #91)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</link>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</guid>
+      <description>&lt;p&gt;How would you go about testing Kubernetes networking? For his initial project with k6, our new Senior Software Engineer, Roberto Santalla, talks to us about how he used k6 to improve end-to-end network throughput and some insights he learned about Kubernetes networking along the way. I also invited my colleague, Leandro Melendez, to help me interview Roberto.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DryiirlkKIo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New in Grafana 10? (Grafana Office Hours #01)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/</link>
+      <pubDate>Fri, 16 Jun 2023 12:00:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/</guid>
+      <description>&lt;p&gt;What&amp;rsquo;s new in Grafana 10? I interview Grafana Labs Product Director Mitch Seaman about all the new features in Grafana 10, including Scenes, correlations, some important plugin development changes, and improved security.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uk7NoagbJ28&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>The Lost Art of Taking Good Notes (EuroSTAR 2023)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</link>
@@ -15,6 +60,11 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</guid>
       <description>&lt;p&gt;Today I gave the talk &amp;ldquo;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes&#34;&gt;The Lost Art of Taking Good Notes&lt;/a&gt;&amp;rdquo; at &lt;a href=&#34;https://conference.eurostarsoftwaretesting.com&#34;&gt;EuroSTAR 2023&lt;/a&gt;, about how I use Obsidian for work and why creating a personal knowledge management system is so valuable in the career of a tester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0g38K_DtxFI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-lost-art-of-taking-good-notes&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>

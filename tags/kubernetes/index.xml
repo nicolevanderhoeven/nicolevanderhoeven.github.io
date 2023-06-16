@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 16 May 2023 22:41:16 +1000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 13:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Kubernetes Networking With k6 (k6 Office Hours #91)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</link>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</guid>
+      <description>&lt;p&gt;How would you go about testing Kubernetes networking? For his initial project with k6, our new Senior Software Engineer, Roberto Santalla, talks to us about how he used k6 to improve end-to-end network throughput and some insights he learned about Kubernetes networking along the way. I also invited my colleague, Leandro Melendez, to help me interview Roberto.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DryiirlkKIo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to Avoid the Most Common Kubernetes Monitoring Mistakes</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</link>

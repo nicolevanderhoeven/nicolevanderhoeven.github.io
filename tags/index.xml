@@ -7,20 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 14 Jun 2023 08:00:21 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 19:00:33 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>note-taking</title>
+      <link>https://nicolevanderhoeven.github.io/tags/note-taking/</link>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/note-taking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>obsidian</title>
       <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
-      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
       <description></description>
@@ -29,7 +38,7 @@
     <item>
       <title>pkm</title>
       <link>https://nicolevanderhoeven.github.io/tags/pkm/</link>
-      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/pkm/</guid>
       <description></description>
@@ -38,16 +47,25 @@
     <item>
       <title>presentation</title>
       <link>https://nicolevanderhoeven.github.io/tags/presentation/</link>
-      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/presentation/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>video</title>
+      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
+      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>k6 Office Hours</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</link>
-      <pubDate>Fri, 09 Jun 2023 18:32:32 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6-office-hours/</guid>
       <description></description>
@@ -56,18 +74,63 @@
     <item>
       <title>k6.io</title>
       <link>https://nicolevanderhoeven.github.io/tags/k6.io/</link>
-      <pubDate>Fri, 09 Jun 2023 18:32:32 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/k6.io/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>kubernetes</title>
+      <link>https://nicolevanderhoeven.github.io/tags/kubernetes/</link>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>live</title>
+      <link>https://nicolevanderhoeven.github.io/tags/live/</link>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/live/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>https://nicolevanderhoeven.github.io/tags/networking/</link>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>performance</title>
       <link>https://nicolevanderhoeven.github.io/tags/performance/</link>
-      <pubDate>Fri, 09 Jun 2023 18:32:32 +0200</pubDate>
+      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana</title>
+      <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
+      <pubDate>Fri, 16 Jun 2023 12:00:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana cloud</title>
+      <link>https://nicolevanderhoeven.github.io/tags/grafana-cloud/</link>
+      <pubDate>Fri, 16 Jun 2023 12:00:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/grafana-cloud/</guid>
       <description></description>
     </item>
     
@@ -86,15 +149,6 @@
       <pubDate>Fri, 09 Jun 2023 18:32:32 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/slos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>video</title>
-      <link>https://nicolevanderhoeven.github.io/tags/video/</link>
-      <pubDate>Fri, 09 Jun 2023 18:32:32 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/video/</guid>
       <description></description>
     </item>
     
@@ -221,15 +275,6 @@
       <pubDate>Tue, 16 May 2023 22:41:16 +1000</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/grafana-labs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://nicolevanderhoeven.github.io/tags/kubernetes/</link>
-      <pubDate>Tue, 16 May 2023 22:41:16 +1000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -387,15 +432,6 @@
     </item>
     
     <item>
-      <title>live</title>
-      <link>https://nicolevanderhoeven.github.io/tags/live/</link>
-      <pubDate>Wed, 12 Apr 2023 12:36:50 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/live/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>notion</title>
       <link>https://nicolevanderhoeven.github.io/tags/notion/</link>
       <pubDate>Wed, 12 Apr 2023 12:36:50 +0200</pubDate>
@@ -464,15 +500,6 @@
       <pubDate>Sun, 26 Mar 2023 20:14:56 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/podcast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grafana</title>
-      <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
-      <pubDate>Fri, 24 Mar 2023 18:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
       <description></description>
     </item>
     

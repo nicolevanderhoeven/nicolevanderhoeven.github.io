@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grafana Office Hours on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/grafana-office-hours/</link>
+    <description>Recent content in Grafana Office Hours on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Thu, 29 Jun 2023 23:29:35 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Changes to Grafana Plugins in Grafana 10 (Grafana Office Hours #03)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/</link>
+      <pubDate>Thu, 29 Jun 2023 23:29:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/</guid>
+      <description>&lt;p&gt;Grafana 10 is fresh off the presses, and it includes some important changes to Grafana plugins that any plugin developer or user will want to know. Senior Product Manager David Harris chats to me about all the new features available to plugins (including the new Scenes framework) and some breaking changes to legacy plugins.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MliUlT3UNdM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New in Grafana 10? (Grafana Office Hours #01)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/</link>
+      <pubDate>Fri, 16 Jun 2023 12:00:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/</guid>
+      <description>&lt;p&gt;What&amp;rsquo;s new in Grafana 10? I interview Grafana Labs Product Director Mitch Seaman about all the new features in Grafana 10, including Scenes, correlations, some important plugin development changes, and improved security.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uk7NoagbJ28&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>What Is Grafana Scenes? with Torkel Ödegaard (Grafana Office Hours #03)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</guid>
+      <description>&lt;p&gt;In GrafanaCON 2023, the latest version of Grafana 10 was announced, and with it, Scenes. But what is Grafana Scenes? Torkel Ödegaard, creator of Grafana and co-founder of Grafana Labs, joined me to discuss what Scenes is and how you can use it to create dynamic dashboards like never before.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pJlWAD5SUYA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

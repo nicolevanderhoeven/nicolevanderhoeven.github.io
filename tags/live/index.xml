@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 16 Jun 2023 13:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jun 2023 23:33:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recording a Performance Test With Grafana Cloud k6 (k6 Office Hours #93)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</link>
+      <pubDate>Fri, 30 Jun 2023 23:33:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</guid>
+      <description>&lt;p&gt;Senior Frontend Engineer Edvinas Daugirdas demonstrates recording a performance test with Grafana Cloud k6 and some other new features that have recently come to Grafana Cloud. He is joined by Developer Advocates Marie Drake and Nicole van der Hoeven to talk about getting started with k6 for free.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CZRyiQN7ht4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Changes to Grafana Plugins in Grafana 10 (Grafana Office Hours #03)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/</link>
+      <pubDate>Thu, 29 Jun 2023 23:29:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/</guid>
+      <description>&lt;p&gt;Grafana 10 is fresh off the presses, and it includes some important changes to Grafana plugins that any plugin developer or user will want to know. Senior Product Manager David Harris chats to me about all the new features available to plugins (including the new Scenes framework) and some breaking changes to legacy plugins.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MliUlT3UNdM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>From Load Testing to Reliability Testing Tool (k6 Office Hours #92)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230623-koh92-from-load-testing-to-reliability-testing-tool/</link>
+      <pubDate>Fri, 23 Jun 2023 23:43:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230623-koh92-from-load-testing-to-reliability-testing-tool/</guid>
+      <description>&lt;p&gt;In this k6 Office Hours, Developer Advocates Nicole van der Hoeven and Marie Cruz talk about the evolution of k6 from a load testing tool to a reliability testing tool. They also demonstrate how to combine various modules and extensions with k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/N2x94S_3mNE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Testing Kubernetes Networking With k6 (k6 Office Hours #91)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</link>

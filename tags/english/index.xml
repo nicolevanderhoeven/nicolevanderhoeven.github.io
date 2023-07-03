@@ -7,7 +7,82 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 16 Jun 2023 19:00:33 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jun 2023 23:39:17 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Every Single Plugin I Use (Obsidian Tour 2023)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/</link>
+      <pubDate>Fri, 30 Jun 2023 23:39:17 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/</guid>
+      <description>&lt;p&gt;In this video, I talk about all the Obsidian plugins I currently use&amp;hellip; all 46 of them. I demonstrate some of them, talk about why I didn&amp;rsquo;t keep others, and talk through my use cases for each one. These plugins aren&amp;rsquo;t necessarily the best ones out there for Obsidian - they&amp;rsquo;re just the ones that are useful enough for my use cases to have them installed on a daily basis.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3UMncGbocAU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Recording a Performance Test With Grafana Cloud k6 (k6 Office Hours #93)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</link>
+      <pubDate>Fri, 30 Jun 2023 23:33:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</guid>
+      <description>&lt;p&gt;Senior Frontend Engineer Edvinas Daugirdas demonstrates recording a performance test with Grafana Cloud k6 and some other new features that have recently come to Grafana Cloud. He is joined by Developer Advocates Marie Drake and Nicole van der Hoeven to talk about getting started with k6 for free.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CZRyiQN7ht4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Changes to Grafana Plugins in Grafana 10 (Grafana Office Hours #03)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/</link>
+      <pubDate>Thu, 29 Jun 2023 23:29:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/</guid>
+      <description>&lt;p&gt;Grafana 10 is fresh off the presses, and it includes some important changes to Grafana plugins that any plugin developer or user will want to know. Senior Product Manager David Harris chats to me about all the new features available to plugins (including the new Scenes framework) and some breaking changes to legacy plugins.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MliUlT3UNdM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>From Load Testing to Reliability Testing Tool (k6 Office Hours #92)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230623-koh92-from-load-testing-to-reliability-testing-tool/</link>
+      <pubDate>Fri, 23 Jun 2023 23:43:31 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230623-koh92-from-load-testing-to-reliability-testing-tool/</guid>
+      <description>&lt;p&gt;In this k6 Office Hours, Developer Advocates Nicole van der Hoeven and Marie Cruz talk about the evolution of k6 from a load testing tool to a reliability testing tool. They also demonstrate how to combine various modules and extensions with k6.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/N2x94S_3mNE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How I Structure My Obsidian Vault (Obsidian Tour 2023)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230623-how-i-structure-my-obsidian-vault-obsidian-tour-2023/</link>
+      <pubDate>Fri, 23 Jun 2023 18:00:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230623-how-i-structure-my-obsidian-vault-obsidian-tour-2023/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s how I structure my Obsidian vault using tags, folders, links, metadata (used in conjunction with Dataview queries), and bookmarks. This is an Obsidian tour of my main vault, and we&amp;rsquo;re starting with organization. As with anything on this channel, don&amp;rsquo;t take what you see here as gospel. I&amp;rsquo;m just sharing my approach in case it sparks ideas for some of you.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vAwS-js2iB0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Taking Notes for Work With Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</link>
@@ -12403,6 +12478,21 @@ The easy fix is to edit &lt;code&gt;jmeter.bat&lt;/code&gt; and increase the hea
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Now I’m not saying that everyone can do this in five years. My husband and I were lucky enough to have dual high incomes. But the point is not to do all of this in five years. The point is to start now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What Is Grafana Scenes? with Torkel Ödegaard (Grafana Office Hours #03)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</guid>
+      <description>&lt;p&gt;In GrafanaCON 2023, the latest version of Grafana 10 was announced, and with it, Scenes. But what is Grafana Scenes? Torkel Ödegaard, creator of Grafana and co-founder of Grafana Labs, joined me to discuss what Scenes is and how you can use it to create dynamic dashboards like never before.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pJlWAD5SUYA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

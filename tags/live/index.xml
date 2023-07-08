@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 30 Jun 2023 23:33:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jul 2023 21:59:57 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitor behind a Firewall With Private Data Source Connect (Grafana Office Hours #04)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230707-goh04-monitor-behind-a-firewall-with-private-data-source-connect/</link>
+      <pubDate>Fri, 07 Jul 2023 21:59:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230707-goh04-monitor-behind-a-firewall-with-private-data-source-connect/</guid>
+      <description>&lt;p&gt;How do you monitor behind a firewall? With Grafana Cloud Private Data Connect, you can create a secure tunnel to query data sources, even including those in VPCs on public cloud vendors. Senior Software Engineers Stephanie Hingtgen and Georges Chaudy talk to me about how it works.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9oPe1IICE80&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Recording a Performance Test With Grafana Cloud k6 (k6 Office Hours #93)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</link>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grafana loki on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/grafana-loki/</link>
+    <description>Recent content in grafana loki on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 25 Aug 2023 20:41:32 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-loki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting started with Grafana Loki (Grafana Office Hours #09)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230825-goh09-getting-started-with-grafana-loki/</link>
+      <pubDate>Fri, 25 Aug 2023 20:41:32 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230825-goh09-getting-started-with-grafana-loki/</guid>
+      <description>&lt;p&gt;Senior Principal Solutions Engineer &lt;a href=&#34;https://www.linkedin.com/in/wardbekker/&#34;&gt;Ward Bekker&lt;/a&gt; talks about getting started with Grafana Loki: what Loki is, why you need log aggregation, and how it fits into the rest of the Grafana stack. He is joined by Developer Advocates Paul Balogh and Nicole van der Hoeven to tell you everything you need to know about Loki.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OLebNPLIJMI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>OpenTelemetry demo app with Grafana, Tempo, Loki, and Prometheus (Grafana Office Hours #06)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</link>
+      <pubDate>Fri, 28 Jul 2023 20:25:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</guid>
+      <description>&lt;p&gt;DevOps &lt;a href=&#34;https://www.linkedin.com/in/blueswen/&#34;&gt;Engineer Blueswen Liu&lt;/a&gt; 劉義瑋 joins us to walk us through some OpenTelemetry demo apps he created, instrumented with Grafana, Loki, Prometheus, and Tempo.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dXR8WNm5uos&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>internet of things on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/internet-of-things/</link>
+    <description>Recent content in internet of things on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 11 Aug 2023 20:31:53 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/internet-of-things/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Observing the Internet of Things (Grafana Office Hours #08)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230811-goh08-observing-an-internet-of-things/</link>
+      <pubDate>Fri, 11 Aug 2023 20:31:53 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230811-goh08-observing-an-internet-of-things/</guid>
+      <description>&lt;p&gt;My colleague &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; and I welcomed &lt;a href=&#34;https://danielmangum.com/&#34;&gt;Daniel Mangum&lt;/a&gt;, Lead Cloud Engineer from &lt;a href=&#34;https://golioth.io&#34;&gt;Golioth&lt;/a&gt;. We learned how Golioth uses Grafana to report data from varied sensors and monitors.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xMd0pT0ZjUY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

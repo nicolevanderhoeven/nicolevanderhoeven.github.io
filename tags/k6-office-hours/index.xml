@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 30 Jun 2023 23:33:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Sep 2023 20:56:43 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6-office-hours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Celebrating 100 episodes of k6 Office Hours (k6 Office Hours #100)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230908-koh100-celebrating-100-episodes-of-koh/</link>
+      <pubDate>Fri, 08 Sep 2023 20:56:43 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230908-koh100-celebrating-100-episodes-of-koh/</guid>
+      <description>&lt;p&gt;In this 100th episode of k6 Office Hours, the Grafana Developer Advocates celebrate how it all started! Join us at this live fika with our favorite drinks and discuss our favorite moments and episodes.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OVanapEZYFM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s new in k6 browser? (k6 Office Hours #98)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230811-koh98-whats-new-in-k6-browser/</link>
+      <pubDate>Fri, 11 Aug 2023 20:37:25 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230811-koh98-whats-new-in-k6-browser/</guid>
+      <description>&lt;p&gt;k6 browser adds browser-level APIs to automate browser actions and collect web performance metrics as part of your k6 test. It&amp;rsquo;s an experimental module, and there is a good reason why!&lt;/p&gt;
+&lt;p&gt;In this k6 Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven are joined by Software Engineers Ankur Agarwal and Daniel Jimenez to discuss the breaking changes that are about to come to k6 browser! You wouldn&amp;rsquo;t want to miss this.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/d614EQjPzew&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Recording a Performance Test With Grafana Cloud k6 (k6 Office Hours #93)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</link>

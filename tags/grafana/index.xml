@@ -7,7 +7,113 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 16 Jun 2023 12:00:25 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Sep 2023 21:01:39 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modernizing government documents with Govable and Grafana (Grafana Office Hours #12)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230922-goh12-modernizing-government-documents-with-govable-and-grafana/</link>
+      <pubDate>Fri, 22 Sep 2023 21:01:39 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230922-goh12-modernizing-government-documents-with-govable-and-grafana/</guid>
+      <description>&lt;p&gt;Ari Hershowitz and Andrii Kovalov from Govable.ai talk about modernizing government documents with Govable and Grafana, and how they saved weeks of effort by using Grafana as a ready-made frontend for their clients. They are joined by Developer Advocates Nicole van der Hoeven and Paul Balogh from Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fodMyzisa6s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Grafana k6 for WebSockets and infrastructure testing (Grafana Office Hours #11)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230908-goh11-grafana-k6-for-websockets-and-infrastructure-testing/</link>
+      <pubDate>Fri, 08 Sep 2023 20:54:28 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230908-goh11-grafana-k6-for-websockets-and-infrastructure-testing/</guid>
+      <description>&lt;p&gt;In this episode of Grafana Office Hours, Solution Architect &lt;a href=&#34;https://www.youtube.com/@huzaifaasif8580&#34;&gt;Huzaifa Asif&lt;/a&gt; talks about how he has used Grafana k6 for WebSockets and infrastructure testing, and how k6 can be used for general reliability testing in addition to load testing. He is joined by Grafana Labs Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_V81Xm22l_c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to learn Grafana with Grafana Play (Grafana Office Hours #10)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230901-goh10-how-to-learn-grafana-with-grafana-play/</link>
+      <pubDate>Fri, 01 Sep 2023 20:50:02 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230901-goh10-how-to-learn-grafana-with-grafana-play/</guid>
+      <description>&lt;p&gt;If you were wondering how to learn Grafana, &lt;a href=&#34;https://play.grafana.com&#34;&gt;Grafana Play&lt;/a&gt; is probably the easiest way. Grafana Play is a collection of ready-made dashboards and apps that you can use without creating an account. Developer Advocates Matt Abrams, Paul Balogh, and Nicole van der Hoeven discuss how to take advantage of this awesome tool and what you can do with it.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fqs8Y1IDzYY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with Grafana Loki (Grafana Office Hours #09)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230825-goh09-getting-started-with-grafana-loki/</link>
+      <pubDate>Fri, 25 Aug 2023 20:41:32 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230825-goh09-getting-started-with-grafana-loki/</guid>
+      <description>&lt;p&gt;Senior Principal Solutions Engineer &lt;a href=&#34;https://www.linkedin.com/in/wardbekker/&#34;&gt;Ward Bekker&lt;/a&gt; talks about getting started with Grafana Loki: what Loki is, why you need log aggregation, and how it fits into the rest of the Grafana stack. He is joined by Developer Advocates Paul Balogh and Nicole van der Hoeven to tell you everything you need to know about Loki.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OLebNPLIJMI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Observing the Internet of Things (Grafana Office Hours #08)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230811-goh08-observing-an-internet-of-things/</link>
+      <pubDate>Fri, 11 Aug 2023 20:31:53 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230811-goh08-observing-an-internet-of-things/</guid>
+      <description>&lt;p&gt;My colleague &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; and I welcomed &lt;a href=&#34;https://danielmangum.com/&#34;&gt;Daniel Mangum&lt;/a&gt;, Lead Cloud Engineer from &lt;a href=&#34;https://golioth.io&#34;&gt;Golioth&lt;/a&gt;. We learned how Golioth uses Grafana to report data from varied sensors and monitors.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xMd0pT0ZjUY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to get started with Grafana and Docker (Grafana Office Hours #07)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230803-goh07-how-to-get-started-with-grafana-and-docker/</link>
+      <pubDate>Thu, 03 Aug 2023 20:28:40 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230803-goh07-how-to-get-started-with-grafana-and-docker/</guid>
+      <description>&lt;p&gt;My colleague Usman Ahmad and I talk about how to use Docker to quickly get up and running with Grafana, how to add Grafana plugins, and how to troubleshoot common issues.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FlDfcMbSLXs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Grafana documentation on &lt;a href=&#34;https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/&#34;&gt;how to install Grafana on Docker here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenTelemetry demo app with Grafana, Tempo, Loki, and Prometheus (Grafana Office Hours #06)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</link>
+      <pubDate>Fri, 28 Jul 2023 20:25:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</guid>
+      <description>&lt;p&gt;DevOps &lt;a href=&#34;https://www.linkedin.com/in/blueswen/&#34;&gt;Engineer Blueswen Liu&lt;/a&gt; 劉義瑋 joins us to walk us through some OpenTelemetry demo apps he created, instrumented with Grafana, Loki, Prometheus, and Tempo.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dXR8WNm5uos&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>What&#39;s New in Grafana 10? (Grafana Office Hours #01)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/</link>

@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 22 Sep 2023 21:01:39 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Oct 2023 17:26:14 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Role of AI in Gender Equality (Adobo &amp; Avocados #15)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231004-ana15-the-role-of-ai-in-gender-equality/</link>
+      <pubDate>Wed, 04 Oct 2023 17:26:14 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231004-ana15-the-role-of-ai-in-gender-equality/</guid>
+      <description>&lt;p&gt;In this episode of Adobo and Avocados, my friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I chat with &lt;a href=&#34;https://linktr.ee/nlmit&#34;&gt;Nicola Martin&lt;/a&gt;, Head of Quality Engineering at Adarga, to talk about the role of AI, technology, and education in gender equality.&lt;/p&gt;
+&lt;p&gt;Nicola is a Council and Committee Member for the British Computer Society and WomenTech Global Network. She is also a mentor, speaker, and panelist speaking on subjects such as AI and quality, software testing, and diversity in tech.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yoErbu09AGw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Deploy Grafana on Kubernetes (Grafana Office Hours #13)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230929-goh13-how-to-deploy-grafana-on-kubernetes/</link>
+      <pubDate>Fri, 29 Sep 2023 17:30:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230929-goh13-how-to-deploy-grafana-on-kubernetes/</guid>
+      <description>&lt;p&gt;My coworker Usman Ahmad and I talk about how to deploy Grafana on Kubernetes for beginners: what Kubernetes is, how it&amp;rsquo;s an evolution of distributed computing, what its relationship to Docker is, other things you might need to know to work with Kubernetes, and how you can deploy Grafana on your own Kubernetes clusters.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DEv5wtZxNCk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Documentation on how to deploy Grafana on Kubernetes &lt;a href=&#34;https://grafana.com/docs/grafana/latest/setup-grafana/installation/kubernetes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Modernizing government documents with Govable and Grafana (Grafana Office Hours #12)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230922-goh12-modernizing-government-documents-with-govable-and-grafana/</link>

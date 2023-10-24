@@ -7,7 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 20 Oct 2023 12:55:11 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 20:05:36 +0300</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emergent Load Testing - TestCon Europe 2023</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</link>
+      <pubDate>Tue, 24 Oct 2023 20:05:36 +0300</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</guid>
+      <description>&lt;p&gt;I presented at &lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt; in Vilnius, Lithuania about emergent load testing, and how to use it to find the limits of your system. My talk was called &lt;a href=&#34;https://events.pinetool.ai/3078/#sessions/100686?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing-testconeu/&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inspiring others and fuelling your passion with Jonah Andersson (Adobo &amp; Avocados #18)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231023-ana18-inspiring-others-and-fuelling-your-passion/</link>
+      <pubDate>Tue, 24 Oct 2023 20:00:53 +0300</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231023-ana18-inspiring-others-and-fuelling-your-passion/</guid>
+      <description>&lt;p&gt;In this episode of Adobo &amp;amp; Avocados, my friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I chat with Jonah Andersson, a Software Developer, Cloud &amp;amp; DevOps Engineer, and the founder of Azure User Group Sweden. We spoke about her career journey and how she is fuelling her passion and inspiring others.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bO67fbpFRJM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>What is Grafana Agent? (Grafana Office Hours #16)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link>

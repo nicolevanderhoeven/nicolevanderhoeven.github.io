@@ -7,7 +7,68 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Oct 2023 07:00:19 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 12:30:43 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
+      <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid>
+      <description>&lt;p&gt;In this episode of Grafana Office Hours, my colleagues &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Becoming an accessibility advocate with Erin Crise (Adobo &amp; Avocados #19)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231101-ana19-becoming-an-accessibility-advocate-with-erin-crise/</link>
+      <pubDate>Wed, 01 Nov 2023 12:22:40 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231101-ana19-becoming-an-accessibility-advocate-with-erin-crise/</guid>
+      <description>&lt;p&gt;In this episode of Adobo and Avocados, &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I speak with Erin Crise about her tech career journey, what led to her accessibility advocacy, and why empathy drives innovation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZCr_z9ii4Io&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>K-SIX News v0.47</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231030-ksix-news-0_47/</link>
+      <pubDate>Mon, 30 Oct 2023 11:57:21 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231030-ksix-news-0_47/</guid>
+      <description>&lt;p&gt;In this video, my colleagues (&lt;a href=&#34;https://www.srperf.com/&#34;&gt;Leandro Melendez&lt;/a&gt;, &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, and &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;) and I discuss the latest updates in k6 v0.47.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iUwSgJgJBAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here are some of the highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;ve created an official &lt;a href=&#34;https://grafana.com/grafana/dashboards/19665-k6-prometheus/&#34;&gt;k6 Prometheus Grafana dashboard&lt;/a&gt; and &lt;a href=&#34;https://grafana.com/grafana/dashboards/18030-k6-prometheus-native-histograms/&#34;&gt;another dashboard for Prometheus with native histograms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;New APIs have been added for Prometheus Remote Write output for k6 (authentication and HTTP headers).&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve increased the character limit for metric names from 63 to 128, aligned with the OpenTelemetry specification update.&lt;/li&gt;
+&lt;li&gt;k6 browser tests can be executed in Grafana Cloud by everyone.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve improved the cookie API for k6 browser.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve added support for &lt;code&gt;page.on(&#39;console&#39;)&lt;/code&gt; for k6 browser.&lt;/li&gt;
+&lt;li&gt;There are now official Docker images that include a Chromium-based browser for running k6 browser tests within CI/CD pipelines.&lt;/li&gt;
+&lt;li&gt;Distributed tracing is in public preview for Grafana Cloud.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/avitalique/xk6-file&#34;&gt;xk6-file&lt;/a&gt; is a new extension that lets you rename files within your k6 script.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/deejiw/xk6-gcp&#34;&gt;xk6-gcp&lt;/a&gt; is a new extension that adds k6 support for messaging using Google PubSub.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-dashboard&#34;&gt;xk6-dashboard&lt;/a&gt; is now an official Grafana extension that lets you generate HTML dashboards from k6 test results.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/szkiba/k6x&#34;&gt;k6x&lt;/a&gt; is a new utility that automatically detects when you import k6 extensions and builds the custom k6 binary for you so that you don&amp;rsquo;t have to.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6-operator&lt;/a&gt; now has a Helmchart deployment option.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Real User Monitoring With Grafana Faro (Grafana Office Hours #17)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/</link>

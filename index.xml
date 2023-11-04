@@ -7,7 +7,98 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Oct 2023 07:00:19 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 12:30:43 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
+      <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid>
+      <description>&lt;p&gt;In this episode of Grafana Office Hours, my colleagues &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>(ES) Observando Bitácoras With Matías Chomicki (Café con Grafana #002)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231102-ccg002-observando-bit%C3%A1coras-with-mat%C3%ADas-chomicki/</link>
+      <pubDate>Thu, 02 Nov 2023 12:25:53 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231102-ccg002-observando-bit%C3%A1coras-with-mat%C3%ADas-chomicki/</guid>
+      <description>&lt;p&gt;Hoy hababa con mis colegas &lt;a href=&#34;https://www.srperf.com/&#34;&gt;Leandro Melendez&lt;/a&gt; and Matías Chomicki sobre observabilidad de logs en Grafana: qué son, con qué se comen, qué tienen que ver con Loki, otras plataformas donde se pueden usar, y muchos detalles mas!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2eA93JHQD3U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Becoming an accessibility advocate with Erin Crise (Adobo &amp; Avocados #19)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231101-ana19-becoming-an-accessibility-advocate-with-erin-crise/</link>
+      <pubDate>Wed, 01 Nov 2023 12:22:40 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231101-ana19-becoming-an-accessibility-advocate-with-erin-crise/</guid>
+      <description>&lt;p&gt;In this episode of Adobo and Avocados, &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I speak with Erin Crise about her tech career journey, what led to her accessibility advocacy, and why empathy drives innovation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZCr_z9ii4Io&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>(TL) Ano ang relasyon ng testing at observabilidad?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231101-relasyon-ng-testing-at-observabilidad/</link>
+      <pubDate>Wed, 01 Nov 2023 12:19:46 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231101-relasyon-ng-testing-at-observabilidad/</guid>
+      <description>&lt;p&gt;Ano ang relasyon ng testing sa observabilidad? Sa video na ito, pinag-uusapan namin ng kaibigan kong si &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; kung ano ang testing, ano ang observabilidad, at bakit dapat nating gamitin pero para pabutihin ang ating mga aplikasyon.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rC9trgeMYyk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>K-SIX News v0.47</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231030-ksix-news-0_47/</link>
+      <pubDate>Mon, 30 Oct 2023 11:57:21 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231030-ksix-news-0_47/</guid>
+      <description>&lt;p&gt;In this video, my colleagues (&lt;a href=&#34;https://www.srperf.com/&#34;&gt;Leandro Melendez&lt;/a&gt;, &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, and &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;) and I discuss the latest updates in k6 v0.47.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iUwSgJgJBAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here are some of the highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;ve created an official &lt;a href=&#34;https://grafana.com/grafana/dashboards/19665-k6-prometheus/&#34;&gt;k6 Prometheus Grafana dashboard&lt;/a&gt; and &lt;a href=&#34;https://grafana.com/grafana/dashboards/18030-k6-prometheus-native-histograms/&#34;&gt;another dashboard for Prometheus with native histograms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;New APIs have been added for Prometheus Remote Write output for k6 (authentication and HTTP headers).&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve increased the character limit for metric names from 63 to 128, aligned with the OpenTelemetry specification update.&lt;/li&gt;
+&lt;li&gt;k6 browser tests can be executed in Grafana Cloud by everyone.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve improved the cookie API for k6 browser.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve added support for &lt;code&gt;page.on(&#39;console&#39;)&lt;/code&gt; for k6 browser.&lt;/li&gt;
+&lt;li&gt;There are now official Docker images that include a Chromium-based browser for running k6 browser tests within CI/CD pipelines.&lt;/li&gt;
+&lt;li&gt;Distributed tracing is in public preview for Grafana Cloud.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/avitalique/xk6-file&#34;&gt;xk6-file&lt;/a&gt; is a new extension that lets you rename files within your k6 script.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/deejiw/xk6-gcp&#34;&gt;xk6-gcp&lt;/a&gt; is a new extension that adds k6 support for messaging using Google PubSub.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-dashboard&#34;&gt;xk6-dashboard&lt;/a&gt; is now an official Grafana extension that lets you generate HTML dashboards from k6 test results.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/szkiba/k6x&#34;&gt;k6x&lt;/a&gt; is a new utility that automatically detects when you import k6 extensions and builds the custom k6 binary for you so that you don&amp;rsquo;t have to.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6-operator&lt;/a&gt; now has a Helmchart deployment option.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Real User Monitoring With Grafana Faro (Grafana Office Hours #17)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/</link>
@@ -24,7 +115,7 @@
     </item>
     
     <item>
-      <title>Grafana Como Código (Café con Grafana #01)</title>
+      <title>(ES) Grafana Como Código (Café con Grafana #01)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</link>
       <pubDate>Thu, 26 Oct 2023 06:55:37 +0200</pubDate>
       
@@ -85,7 +176,7 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
     </item>
     
     <item>
-      <title>Inicia (Café con Grafana #000)</title>
+      <title>(ES) Inicia (Café con Grafana #000)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
       <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
       
@@ -3915,9 +4006,9 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;25/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;16/11 &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days&lt;/a&gt;&lt;/strong&gt;: (Potsdam, Germany) &lt;em&gt;&lt;a href=&#34;https://agiletestingdays.com/2023/session/adobo-and-avocados-intersectionality-in-tech-and-devrel/&#34;&gt;Adobo and Avocados: Intersectionality in Tech and DevRel&lt;/a&gt; (English)&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;
+&lt;p&gt;25/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;26/03   &lt;strong&gt;&lt;a href=&#34;https://theinformed.life/&#34;&gt;The Informed Life Podcast&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/&#34;&gt;Nicole van der Hoeven on Obsidian&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;19/04   &lt;strong&gt;&lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt;&lt;/strong&gt;: (Amsterdam, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/&#34;&gt;Emergent Load Testing: Rules for Organized Chaos&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;16/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON 2023 Singapore&lt;/a&gt;&lt;/strong&gt;: (Singapore) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/&#34;&gt;How to avoid the most common Kubernetes monitoring mistakes&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;

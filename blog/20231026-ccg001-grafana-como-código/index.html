@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Grafana Como Código (Café con Grafana #01) | Nicole van der Hoeven</title>
+  <title> (ES) Grafana Como Código (Café con Grafana #01) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Grafana Como Código (Café con Grafana #01)" />
+  <meta property="og:title" content="(ES) Grafana Como Código (Café con Grafana #01)" />
 <meta property="og:description" content="En este episodio platicamos con Joan López de la Franca, Ingeniero de software senior en Grafana. El nos viene a platicar de las funcionalidades de Grafana como código, que es, como funciona, cuando conviene utilizarlo e incluso nos traerá algunos demos al respecto." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/" /><meta property="article:section" content="blog" />
@@ -17,7 +17,7 @@
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Grafana Como Código (Café con Grafana #01)"/>
+<meta name="twitter:title" content="(ES) Grafana Como Código (Café con Grafana #01)"/>
 <meta name="twitter:description" content="En este episodio platicamos con Joan López de la Franca, Ingeniero de software senior en Grafana. El nos viene a platicar de las funcionalidades de Grafana como código, que es, como funciona, cuando conviene utilizarlo e incluso nos traerá algunos demos al respecto."/>
 
   
@@ -159,52 +159,52 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&text=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&text=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&is_video=false&description=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&is_video=false&description=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f">
+    <a class="icon" href="mailto:?subject=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&name=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&description=En%20este%20episodio%20platicamos%20con%20Joan%20L%c3%b3pez%20de%20la%20Franca%2c%20Ingeniero%20de%20software%20senior%20en%20Grafana.%20El%20nos%20viene%20a%20platicar%20de%20las%20funcionalidades%20de%20Grafana%20como%20c%c3%b3digo%2c%20que%20es%2c%20como%20funciona%2c%20cuando%20conviene%20utilizarlo%20e%20incluso%20nos%20traer%c3%a1%20algunos%20demos%20al%20respecto.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&name=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&description=En%20este%20episodio%20platicamos%20con%20Joan%20L%c3%b3pez%20de%20la%20Franca%2c%20Ingeniero%20de%20software%20senior%20en%20Grafana.%20El%20nos%20viene%20a%20platicar%20de%20las%20funcionalidades%20de%20Grafana%20como%20c%c3%b3digo%2c%20que%20es%2c%20como%20funciona%2c%20cuando%20conviene%20utilizarlo%20e%20incluso%20nos%20traer%c3%a1%20algunos%20demos%20al%20respecto.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&t=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&t=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -221,13 +221,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        Grafana Como Código (Café con Grafana #01)
+        (ES) Grafana Como Código (Café con Grafana #01)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2023-10-26 06:55:37 &#43;0200 &#43;0200" itemprop="datePublished">2023-Oct-26</time>
+          <time datetime="2023-10-26 06:55:37 &#43;0200 CEST" itemprop="datePublished">2023-Oct-26</time>
           
         </div>
         
@@ -273,15 +273,15 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
     <h2>See Also</h3>
     <ul>
     
-    <li><a href="/blog/20231019-ccg00-cafe-con-grafana/">Inicia (Café con Grafana #000)</a></li>
+    <li><a href="/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/">Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</a></li>
+    
+    <li><a href="/blog/20231019-ccg00-cafe-con-grafana/">(ES) Inicia (Café con Grafana #000)</a></li>
     
     <li><a href="/blog/20230324-koh-83-grafana-cloud-k6/">Grafana Cloud k6 (k6 Office Hours #83)</a></li>
     
+    <li><a href="/blog/20231101-relasyon-ng-testing-at-observabilidad/">(TL) Ano ang relasyon ng testing at observabilidad?</a></li>
+    
     <li><a href="/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/">Real User Monitoring With Grafana Faro (Grafana Office Hours #17)</a></li>
-    
-    <li><a href="/blog/20231020-goh16-what-is-grafana-agent/">What is Grafana Agent? (Grafana Office Hours #16)</a></li>
-    
-    <li><a href="/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/">Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</a></li>
     
     </ul>
     
@@ -335,52 +335,52 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&text=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&text=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&is_video=false&description=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&is_video=false&description=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f">
+    <a class="icon" href="mailto:?subject=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&title=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&name=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&description=En%20este%20episodio%20platicamos%20con%20Joan%20L%c3%b3pez%20de%20la%20Franca%2c%20Ingeniero%20de%20software%20senior%20en%20Grafana.%20El%20nos%20viene%20a%20platicar%20de%20las%20funcionalidades%20de%20Grafana%20como%20c%c3%b3digo%2c%20que%20es%2c%20como%20funciona%2c%20cuando%20conviene%20utilizarlo%20e%20incluso%20nos%20traer%c3%a1%20algunos%20demos%20al%20respecto.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&name=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29&description=En%20este%20episodio%20platicamos%20con%20Joan%20L%c3%b3pez%20de%20la%20Franca%2c%20Ingeniero%20de%20software%20senior%20en%20Grafana.%20El%20nos%20viene%20a%20platicar%20de%20las%20funcionalidades%20de%20Grafana%20como%20c%c3%b3digo%2c%20que%20es%2c%20como%20funciona%2c%20cuando%20conviene%20utilizarlo%20e%20incluso%20nos%20traer%c3%a1%20algunos%20demos%20al%20respecto.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&t=Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231026-ccg001-grafana-como-c%25C3%25B3digo%2f&t=%28ES%29%20Grafana%20Como%20C%c3%b3digo%20%28Caf%c3%a9%20con%20Grafana%20%2301%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

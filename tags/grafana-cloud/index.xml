@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 16 Jun 2023 12:00:25 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 13:57:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Repasemos el G-stack (Café con Grafana #005)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link>
+      <pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid>
+      <description>&lt;p&gt;En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/irUr96JV-Sg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>What&#39;s New in Grafana 10? (Grafana Office Hours #01)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/</link>

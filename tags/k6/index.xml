@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 17 Nov 2023 11:40:46 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 13:57:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Repasemos el G-stack (Café con Grafana #005)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link>
+      <pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid>
+      <description>&lt;p&gt;En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/irUr96JV-Sg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Dimensionando el Grafana Suite (Café con Grafana #004)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</link>
+      <pubDate>Thu, 23 Nov 2023 13:51:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</guid>
+      <description>&lt;p&gt;Almudena Vivanco viene a platicarnos de todos los experimentos y pruebas a las que someten a toda la suite de Grafana. Desde Mimir hasta k6 ella pone al limite todos los elementos constantemente. Además nos dará muchos tips de su experiencia para usar Grafana y mucho mas!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O9tAkdKMvDg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Realistic Tests with Testcontainers (Grafana Office Hours #20)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</link>
@@ -46,6 +76,26 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;The Grafana k6 repo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator repo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/&#34;&gt;Docs on Private Load Zones in Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>(ES) Cómo hacer pruebas de carga con Grafana k6 (Café con Grafana #003)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</link>
+      <pubDate>Wed, 08 Nov 2023 13:43:50 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</guid>
+      <description>&lt;p&gt;Daniel González Lopes nos viene a demostrar cómo hacer pruebas de carga con Grafana k6 desde zero, y cómo utilizar k6 para ejecutar otros tipos de pruebas. En este episodio para principiantes, hablaremos también sobre la relación entre pruebas y observabilidad.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NF2R-Zk9iek&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;Repositorio de k6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/k6/latest/&#34;&gt;Documentación de k6&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

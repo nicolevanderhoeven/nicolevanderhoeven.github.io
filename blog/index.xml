@@ -61,6 +61,47 @@
     </item>
     
     <item>
+      <title>Repasemos el G-stack (Café con Grafana #005)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link>
+      <pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid>
+      <description>&lt;p&gt;En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/irUr96JV-Sg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Performance Testing With Nicole Van Der Hoeven (Quality Bits Podcast)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</link>
+      <pubDate>Tue, 28 Nov 2023 14:01:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</guid>
+      <description>&lt;p&gt;My friend Lina Zubyte invited me to her podcast Quality Bits to talk about performance testing. We talked about what performance testing is, why it is important, how to get started, and how to get better at it. We also talked about the foundation of any type of testing: empathy.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://qualitybits.buzzsprout.com/2037134/13909242-performance-testing-with-nicole-van-der-hoeven&#34;&gt;Check out the episode here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Navigating through Unemployment with Renata Andrade (Adobo &amp; Avocados #22)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231128-ana22-navigating-through-unemployment/</link>
+      <pubDate>Tue, 28 Nov 2023 13:16:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231128-ana22-navigating-through-unemployment/</guid>
+      <description>&lt;p&gt;With the rise of redundancies in the tech industry, how do you navigate through unemployment calmly? In this episode of Adobo and Avocados, Renata Andrade, a Quality Engineer Lead, talks to &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and me about her experience navigating unemployment and the steps she followed to bounce back.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0UlUBkAETCU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>How to Use Flow Mode for Grafana Agent (Grafana Office Hours #21)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</link>
       <pubDate>Fri, 24 Nov 2023 11:47:00 +0100</pubDate>
@@ -82,6 +123,21 @@
 &lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1TqaZD1JPfNadZ4V81OCBPCG_TksDYGlNlGdMnTWUSpo/edit#heading=h.jkpb8gk2r6u8&#34;&gt;Grafana Agent Community Call agenda&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent-modules&#34;&gt;Modules for Grafana Agent&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dimensionando el Grafana Suite (Café con Grafana #004)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</link>
+      <pubDate>Thu, 23 Nov 2023 13:51:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</guid>
+      <description>&lt;p&gt;Almudena Vivanco viene a platicarnos de todos los experimentos y pruebas a las que someten a toda la suite de Grafana. Desde Mimir hasta k6 ella pone al limite todos los elementos constantemente. Además nos dará muchos tips de su experiencia para usar Grafana y mucho mas!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O9tAkdKMvDg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -117,6 +173,21 @@
     </item>
     
     <item>
+      <title>Minimalism in Software Testing with Lina Zubyte (Adobo &amp; Avocados #21)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231115-ana21-minimalism-in-software-testing/</link>
+      <pubDate>Wed, 15 Nov 2023 13:13:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231115-ana21-minimalism-in-software-testing/</guid>
+      <description>&lt;p&gt;How can we apply minimalism in software testing? Lina Zubyte, an Independent Quality Consultant, talks to &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I about what really matters in testing, why empathy is at the root of the testing attitude, and how we can incorporate principles from minimalism to improve quality.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VQQFFVXg-Do&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Load Testing on Kubernetes with k6 Private Load Zones (Grafana Office Hours #19)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</link>
       <pubDate>Fri, 10 Nov 2023 10:46:48 +0100</pubDate>
@@ -134,6 +205,56 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator repo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/&#34;&gt;Docs on Private Load Zones in Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>(ES) Cómo hacer pruebas de carga con Grafana k6 (Café con Grafana #003)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</link>
+      <pubDate>Wed, 08 Nov 2023 13:43:50 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</guid>
+      <description>&lt;p&gt;Daniel González Lopes nos viene a demostrar cómo hacer pruebas de carga con Grafana k6 desde zero, y cómo utilizar k6 para ejecutar otros tipos de pruebas. En este episodio para principiantes, hablaremos también sobre la relación entre pruebas y observabilidad.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NF2R-Zk9iek&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;Repositorio de k6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/k6/latest/&#34;&gt;Documentación de k6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning about experience design with Jenna Charlton (Adobo &amp; Avocados #20)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231108-ana20-learning-about-experience-design/</link>
+      <pubDate>Wed, 08 Nov 2023 13:01:12 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231108-ana20-learning-about-experience-design/</guid>
+      <description>&lt;p&gt;In this episode of Adobo and Avocados, my friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I chat with fellow Developer Advocate Jenna Charlton, where they talk about their career journey, what can we learn from experience design, and the impact of different job titles to testers.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aooYirC-meo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Creating Characters in TTRPGs (Beyond the Character Sheet #01)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231105-bcs01-creating-characters-in-ttrpgs/</link>
+      <pubDate>Sun, 05 Nov 2023 13:33:17 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231105-bcs01-creating-characters-in-ttrpgs/</guid>
+      <description>&lt;p&gt;In this first episode of Beyond the Character Sheet, &lt;a href=&#34;https://leahferguson.com&#34;&gt;Leah Ferguson&lt;/a&gt; and I talk about creating characters in TTRPGs: how to create a character you love, how it works in different systems, and the interplay between player personality and character personality.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZJZA01rgaxs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

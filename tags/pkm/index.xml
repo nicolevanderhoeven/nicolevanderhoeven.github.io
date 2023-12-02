@@ -7,7 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 14 Jul 2023 15:55:33 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 12:03:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Refactor Notes in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231201-how-i-refactor-notes-in-obsidian/</link>
+      <pubDate>Fri, 01 Dec 2023 12:03:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231201-how-i-refactor-notes-in-obsidian/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s not enough for me to just take notes - they have to be useful, too. Here&amp;rsquo;s how I refactor notes in Obsidian using community and core plugins to inventory, structure, categorise, explain, and modularise my notes. Refactoring isn&amp;rsquo;t just for code. It&amp;rsquo;s for notes too! It&amp;rsquo;s only through gradually updating my notes over time that I can begin to reap the benefits of continuous note-taking.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J8-1eOzQ438&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Monitoring&#34;&gt;Monitoring&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Coding+and+writing+are+converging&#34;&gt;Coding and writing converging&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Quick+Switcher&#34;&gt;Quick Switcher&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Outline&#34;&gt;Outline&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Search&#34;&gt;Search&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Community+Plugins/Strange+New+Worlds&#34;&gt;Strange New Worlds&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Rw1L5sxlnuU&#34;&gt;Readwise Official&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/gqEtn3gCZF0&#34;&gt;ExcaliBrain&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=erKrXsIwbAg&#34;&gt;Obsidian Excalidraw&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Community+Plugins/Note+Refactor&#34;&gt;Note Refactor&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Taking notes on podcasts with Snipd, Readwise, and Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230714-taking-notes-on-podcasts-with-snipd/</link>

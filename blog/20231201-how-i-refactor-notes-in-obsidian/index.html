@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How I Refactor Notes in Obsidian | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Developer Advocate at k6.io (Grafana Labs). I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How I Refactor Notes in Obsidian" />
+<meta property="og:description" content="It&rsquo;s not enough for me to just take notes - they have to be useful, too. Here&rsquo;s how I refactor notes in Obsidian using community and core plugins to inventory, structure, categorise, explain, and modularise my notes. Refactoring isn&rsquo;t just for code. It&rsquo;s for notes too! It&rsquo;s only through gradually updating my notes over time that I can begin to reap the benefits of continuous note-taking.
+Resources Monitoring (notes) Coding and writing converging (notes) Quick Switcher (notes) Outline (notes) Search (notes) Strange New Worlds (notes) Readwise Official (video) ExcaliBrain (video) Obsidian Excalidraw (video) Note Refactor (notes) " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20231201-how-i-refactor-notes-in-obsidian/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-12-01T12:03:58+01:00" />
+<meta property="article:modified_time" content="2023-12-01T12:03:58+01:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I Refactor Notes in Obsidian"/>
+<meta name="twitter:description" content="It&rsquo;s not enough for me to just take notes - they have to be useful, too. Here&rsquo;s how I refactor notes in Obsidian using community and core plugins to inventory, structure, categorise, explain, and modularise my notes. Refactoring isn&rsquo;t just for code. It&rsquo;s for notes too! It&rsquo;s only through gradually updating my notes over time that I can begin to reap the benefits of continuous note-taking.
+Resources Monitoring (notes) Coding and writing converging (notes) Quick Switcher (notes) Outline (notes) Search (notes) Strange New Worlds (notes) Readwise Official (video) ExcaliBrain (video) Obsidian Excalidraw (video) Note Refactor (notes) "/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&text=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&is_video=false&description=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Refactor%20Notes%20in%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&name=How%20I%20Refactor%20Notes%20in%20Obsidian&description=It%26rsquo%3bs%20not%20enough%20for%20me%20to%20just%20take%20notes%20-%20they%20have%20to%20be%20useful%2c%20too.%20Here%26rsquo%3bs%20how%20I%20refactor%20notes%20in%20Obsidian%20using%20community%20and%20core%20plugins%20to%20inventory%2c%20structure%2c%20categorise%2c%20explain%2c%20and%20modularise%20my%20notes.%20Refactoring%20isn%26rsquo%3bt%20just%20for%20code.%20It%26rsquo%3bs%20for%20notes%20too%21%20It%26rsquo%3bs%20only%20through%20gradually%20updating%20my%20notes%20over%20time%20that%20I%20can%20begin%20to%20reap%20the%20benefits%20of%20continuous%20note-taking.%0aResources%20Monitoring%20%28notes%29%20Coding%20and%20writing%20converging%20%28notes%29%20Quick%20Switcher%20%28notes%29%20Outline%20%28notes%29%20Search%20%28notes%29%20Strange%20New%20Worlds%20%28notes%29%20Readwise%20Official%20%28video%29%20ExcaliBrain%20%28video%29%20Obsidian%20Excalidraw%20%28video%29%20Note%20Refactor%20%28notes%29%20">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&t=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How I Refactor Notes in Obsidian
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-12-01 12:03:58 &#43;0100 CET" itemprop="datePublished">2023-Dec-01</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>It&rsquo;s not enough for me to just take notes - they have to be useful, too. Here&rsquo;s how I refactor notes in Obsidian using community and core plugins to inventory, structure, categorise, explain, and modularise my notes. Refactoring isn&rsquo;t just for code. It&rsquo;s for notes too! It&rsquo;s only through gradually updating my notes over time that I can begin to reap the benefits of continuous note-taking.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/J8-1eOzQ438" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://notes.nicolevanderhoeven.com/Monitoring">Monitoring</a> (notes)</li>
+<li><a href="https://notes.nicolevanderhoeven.com/Coding+and+writing+are+converging">Coding and writing converging</a> (notes)</li>
+<li><a href="https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Quick+Switcher">Quick Switcher</a> (notes)</li>
+<li><a href="https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Outline">Outline</a> (notes)</li>
+<li><a href="https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Search">Search</a> (notes)</li>
+<li><a href="https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Community+Plugins/Strange+New+Worlds">Strange New Worlds</a> (notes)</li>
+<li><a href="https://www.youtube.com/watch?v=Rw1L5sxlnuU">Readwise Official</a> (video)</li>
+<li><a href="https://youtu.be/gqEtn3gCZF0">ExcaliBrain</a> (video)</li>
+<li><a href="https://www.youtube.com/watch?v=erKrXsIwbAg">Obsidian Excalidraw</a> (video)</li>
+<li><a href="https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Community+Plugins/Note+Refactor">Note Refactor</a> (notes)</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20220818-how-to-make-your-notes-visual-in-obsidian/">How to Make Your Notes Visual in Obsidian</a></li>
+    
+    <li><a href="/blog/20230714-taking-notes-on-podcasts-with-snipd/">Taking notes on podcasts with Snipd, Readwise, and Obsidian</a></li>
+    
+    <li><a href="/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/">Every Single Plugin I Use (Obsidian Tour 2023)</a></li>
+    
+    <li><a href="/blog/20230623-how-i-structure-my-obsidian-vault-obsidian-tour-2023/">How I Structure My Obsidian Vault (Obsidian Tour 2023)</a></li>
+    
+    <li><a href="/blog/20230616-taking-notes-for-work-with-obsidian/">Taking Notes for Work With Obsidian</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&text=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&is_video=false&description=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20I%20Refactor%20Notes%20in%20Obsidian&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&title=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&name=How%20I%20Refactor%20Notes%20in%20Obsidian&description=It%26rsquo%3bs%20not%20enough%20for%20me%20to%20just%20take%20notes%20-%20they%20have%20to%20be%20useful%2c%20too.%20Here%26rsquo%3bs%20how%20I%20refactor%20notes%20in%20Obsidian%20using%20community%20and%20core%20plugins%20to%20inventory%2c%20structure%2c%20categorise%2c%20explain%2c%20and%20modularise%20my%20notes.%20Refactoring%20isn%26rsquo%3bt%20just%20for%20code.%20It%26rsquo%3bs%20for%20notes%20too%21%20It%26rsquo%3bs%20only%20through%20gradually%20updating%20my%20notes%20over%20time%20that%20I%20can%20begin%20to%20reap%20the%20benefits%20of%20continuous%20note-taking.%0aResources%20Monitoring%20%28notes%29%20Coding%20and%20writing%20converging%20%28notes%29%20Quick%20Switcher%20%28notes%29%20Outline%20%28notes%29%20Search%20%28notes%29%20Strange%20New%20Worlds%20%28notes%29%20Readwise%20Official%20%28video%29%20ExcaliBrain%20%28video%29%20Obsidian%20Excalidraw%20%28video%29%20Note%20Refactor%20%28notes%29%20">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20231201-how-i-refactor-notes-in-obsidian%2f&t=How%20I%20Refactor%20Notes%20in%20Obsidian">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

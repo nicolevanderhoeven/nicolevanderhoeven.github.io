@@ -76,7 +76,7 @@
     </item>
     
     <item>
-      <title>Performance Testing With Nicole Van Der Hoeven (Quality Bits Podcast)</title>
+      <title>Performance Testing With Nicole van der Hoeven (Quality Bits Podcast)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</link>
       <pubDate>Tue, 28 Nov 2023 14:01:35 +0100</pubDate>
       
@@ -413,6 +413,10 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
       <guid>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</guid>
       <description>&lt;p&gt;I presented at &lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt; in Vilnius, Lithuania about emergent load testing, and how to use it to find the limits of your system. My talk was called &lt;a href=&#34;https://events.pinetool.ai/3078/#sessions/100686?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing-testconeu/&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg&#34; alt=&#34;Me speaking at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0102.jpg&#34; alt=&#34;Portrait snapshot of me presenting at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0193.jpg&#34; alt=&#34;Wide shot of me talking about agency, feedback, and affordances&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0208.jpg&#34; alt=&#34;Me at the podium at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -4299,7 +4303,7 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/speaking/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg&#34; alt=&#34;Me speaking at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
 &lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;
@@ -4309,8 +4313,8 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
 &lt;p&gt;16/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON 2023 Singapore&lt;/a&gt;&lt;/strong&gt;: (Singapore) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/&#34;&gt;How to avoid the most common Kubernetes monitoring mistakes&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;18/05   &lt;strong&gt;&lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON 2023 Australia&lt;/a&gt;&lt;/strong&gt;: (Sydney, Australia) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/&#34;&gt;How to prevent issues from hitting customers by using load testing and tracing together&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;14/06   &lt;strong&gt;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/&#34;&gt;EuroSTAR 2023&lt;/a&gt;&lt;/strong&gt;: (Antwerp, Belgium) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes&#34;&gt;The Lost Art of Taking Good Notes&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;25/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://events.pinetool.ai/3078/#sessions/100686?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;16/11 &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days&lt;/a&gt;&lt;/strong&gt;: (Potsdam, Germany) &lt;em&gt;&lt;a href=&#34;https://agiletestingdays.com/2023/session/adobo-and-avocados-intersectionality-in-tech-and-devrel/&#34;&gt;Adobo and Avocados: Intersectionality in Tech and DevRel&lt;/a&gt; (English)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;25/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;16/11 &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days&lt;/a&gt;&lt;/strong&gt;: (Potsdam, Germany) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/&#34;&gt;Adobo and Avocados: Intersectionality in Tech and DevRel&lt;/a&gt; (English)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;28/11 &lt;strong&gt;&lt;a href=&#34;https://qualitybits.buzzsprout.com/2037134&#34;&gt;Quality Bits Podcast&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/&#34;&gt;Performance Testing with Nicole van der Hoeven&lt;/a&gt; (English)&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;
 &lt;p&gt;10/02   &lt;strong&gt;&lt;a href=&#34;https://guildconferences.com/ag-2022/&#34;&gt;Automation Guild 2022&lt;/a&gt;&lt;/strong&gt; (online): &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/&#34;&gt;In search of the best Pokémon: Browser automation and load testing in one script with k6.&lt;/a&gt; (English).&lt;/em&gt;&lt;/p&gt;

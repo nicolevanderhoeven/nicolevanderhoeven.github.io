@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grafana agent on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/grafana-agent/</link>
+    <description>Recent content in grafana agent on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 20 Oct 2023 12:55:11 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Grafana Agent? (Grafana Office Hours #16)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link>
+      <pubDate>Fri, 20 Oct 2023 12:55:11 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid>
+      <description>&lt;p&gt;What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/i0mA0w_MCPQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>(ES) Inicia (Café con Grafana #000)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
+      <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid>
+      <description>&lt;p&gt;Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad.  Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Kdgu2gutp7o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</link>
+      <pubDate>Fri, 13 Oct 2023 10:56:15 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</guid>
+      <description>&lt;p&gt;Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks to me and my coworker &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EYR5lQJ_kG8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

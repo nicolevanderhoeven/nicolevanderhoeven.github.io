@@ -7,155 +7,141 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 01 Dec 2023 11:55:55 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-labs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 12:30:43 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-labs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Get Started with Tempo (Grafana Office Hours #22)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</link>
-      <pubDate>Fri, 01 Dec 2023 11:55:55 +0100</pubDate>
+      <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
+      <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</guid>
-      <description>&lt;p&gt;Grafana Labs Principal Engineer and Tempo maintainer Joe Elliot talks about how to get started with Tempo, what distributed tracing is, and why TraceQL is cool. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zDrA7Ly3ovU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=pUAmL28uzos&#34;&gt;Getting started with Tempo&lt;/a&gt; (video)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/tempo&#34;&gt;Grafana Tempo repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/tempo/latest/getting-started/&#34;&gt;Grafana Tempo docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://community.grafana.com/c/grafana-tempo/40&#34;&gt;The Tempo category on the Grafana community forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLDGkOdUX1UjrA4D1MRdAzUgEGp5UXvW3z&#34;&gt;Video playlist for Grafana Tempo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=petbezEmIw4&#34;&gt;Distributed tracing with Grafana Cloud k6&lt;/a&gt; (Grafana Office Hours video)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Use Flow Mode for Grafana Agent (Grafana Office Hours #21)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</link>
-      <pubDate>Fri, 24 Nov 2023 11:47:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</guid>
-      <description>&lt;p&gt;Senior Software Engineer Matt Durham shows us how to use flow mode for Grafana Agent. Flow mode is a new and better way to install and configure Grafana Agent than the older &amp;ldquo;static mode&amp;rdquo;. Among other things, flow mode&amp;rsquo;s modularity makes it easier to build more complex workflows like traditional data pipelines and allows for more use cases than collecting and processing telemetry.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/-_SsFLoJvoc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/latest/&#34;&gt;Grafana Agent docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/latest/flow/&#34;&gt;Grafana Agent flow mode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtube.com/live/i0mA0w_MCPQ&#34;&gt;What is Grafana Agent?&lt;/a&gt; (previous Grafana Office Hours video)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://slack.grafana.com/&#34;&gt;Grafana Slack&lt;/a&gt; - there&amp;rsquo;s an &lt;code&gt;#agent&lt;/code&gt; channel&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1TqaZD1JPfNadZ4V81OCBPCG_TksDYGlNlGdMnTWUSpo/edit#heading=h.jkpb8gk2r6u8&#34;&gt;Grafana Agent Community Call agenda&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent-modules&#34;&gt;Modules for Grafana Agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Realistic Tests with Testcontainers (Grafana Office Hours #20)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</link>
-      <pubDate>Fri, 17 Nov 2023 11:40:46 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, we talk about realistic unit tests utilizing actual instances of databases and other dependencies. We&amp;rsquo;ll be joined by Manuel de la Peña from AtomicJar, and Pablo Chacin from Grafana to learn how we can use the Testcontainers open-source framework to create lightweight, throwaway dependencies for our tests.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/LtlRvmWzCRE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/&#34;&gt;Testcontainers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/modules/k3s/&#34;&gt;k3s Module&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/modules/k6/&#34;&gt;k6 Module&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Load Testing on Kubernetes with k6 Private Load Zones (Grafana Office Hours #19)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</link>
-      <pubDate>Fri, 10 Nov 2023 10:46:48 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</guid>
-      <description>&lt;p&gt;This week, we&amp;rsquo;re talking about how you can do load testing on Kubernetes with k6 Private Load Zones, a new feature on Grafana Cloud k6 that leverages the k6 Kubernetes operator to allow you to run distributed load tests against applications behind a firewall. Here to discuss this new feature are Senior Software Engineer Olha Yevtushenko, Product Manager Daniel González Lopes, Developer Advocate Paul Balogh, and Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/RXLavQT58YA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;The Grafana k6 repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/&#34;&gt;Docs on Private Load Zones in Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Combining Frontend and Backend Performance (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</link>
-      <pubDate>Fri, 03 Nov 2023 16:43:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven speak with John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA’s Open MCT.&lt;/p&gt;
+      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid>
+      <description>&lt;p&gt;In this episode of Grafana Office Hours, my colleagues &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>(TL) Ano ang relasyon ng testing at observabilidad?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231101-relasyon-ng-testing-at-observabilidad/</link>
+      <pubDate>Wed, 01 Nov 2023 12:19:46 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231101-relasyon-ng-testing-at-observabilidad/</guid>
+      <description>&lt;p&gt;Ano ang relasyon ng testing sa observabilidad? Sa video na ito, pinag-uusapan namin ng kaibigan kong si &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; kung ano ang testing, ano ang observabilidad, at bakit dapat nating gamitin pero para pabutihin ang ating mga aplikasyon.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rC9trgeMYyk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>K-SIX News v0.47</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231030-ksix-news-0_47/</link>
+      <pubDate>Mon, 30 Oct 2023 11:57:21 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231030-ksix-news-0_47/</guid>
+      <description>&lt;p&gt;In this video, my colleagues (&lt;a href=&#34;https://www.srperf.com/&#34;&gt;Leandro Melendez&lt;/a&gt;, &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, and &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;) and I discuss the latest updates in k6 v0.47.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iUwSgJgJBAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here are some of the highlights:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nasa/openmct/discussions/4303&#34;&gt;Open e2e Testing Initiative&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unlikelyzero/openmct-performance&#34;&gt;Open MCT performance Github project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve created an official &lt;a href=&#34;https://grafana.com/grafana/dashboards/19665-k6-prometheus/&#34;&gt;k6 Prometheus Grafana dashboard&lt;/a&gt; and &lt;a href=&#34;https://grafana.com/grafana/dashboards/18030-k6-prometheus-native-histograms/&#34;&gt;another dashboard for Prometheus with native histograms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;New APIs have been added for Prometheus Remote Write output for k6 (authentication and HTTP headers).&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve increased the character limit for metric names from 63 to 128, aligned with the OpenTelemetry specification update.&lt;/li&gt;
+&lt;li&gt;k6 browser tests can be executed in Grafana Cloud by everyone.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve improved the cookie API for k6 browser.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve added support for &lt;code&gt;page.on(&#39;console&#39;)&lt;/code&gt; for k6 browser.&lt;/li&gt;
+&lt;li&gt;There are now official Docker images that include a Chromium-based browser for running k6 browser tests within CI/CD pipelines.&lt;/li&gt;
+&lt;li&gt;Distributed tracing is in public preview for Grafana Cloud.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/avitalique/xk6-file&#34;&gt;xk6-file&lt;/a&gt; is a new extension that lets you rename files within your k6 script.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/deejiw/xk6-gcp&#34;&gt;xk6-gcp&lt;/a&gt; is a new extension that adds k6 support for messaging using Google PubSub.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-dashboard&#34;&gt;xk6-dashboard&lt;/a&gt; is now an official Grafana extension that lets you generate HTML dashboards from k6 test results.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/szkiba/k6x&#34;&gt;k6x&lt;/a&gt; is a new utility that automatically detects when you import k6 extensions and builds the custom k6 binary for you so that you don&amp;rsquo;t have to.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6-operator&lt;/a&gt; now has a Helmchart deployment option.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>Real user monitoring with Grafana Faro (Grafana Office Hours #17)</title>
+      <title>Real User Monitoring With Grafana Faro (Grafana Office Hours #17)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/</link>
-      <pubDate>Fri, 27 Oct 2023 16:41:13 +0100</pubDate>
+      <pubDate>Fri, 27 Oct 2023 07:00:19 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/</guid>
-      <description>&lt;p&gt;Have you heard of Grafana Faro and how it can help in providing insights into your real user experience? Developer Advocates Nicole van der Hoeven and Marie Cruz chat with Software Engineers Kostas Pelelis and Marco Schaefer to discuss what Grafana Faro is, why it&amp;rsquo;s important to have a real user monitoring solution, and how to get started with Grafana Faro.&lt;/p&gt;
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I chat with Software Engineers Kostas Pelelis and Marco Schaefer to discuss what Grafana Faro is, why it&amp;rsquo;s important to have a real user monitoring solution, and how to get started with it.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/lUYj28znIu8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/&#34;&gt;Frontend observability docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/faro-web-sdk&#34;&gt;Grafana Faro repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>What Is Grafana Agent? (Grafana Office Hours #16)</title>
+      <title>(ES) Grafana Como Código (Café con Grafana #01)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</link>
+      <pubDate>Thu, 26 Oct 2023 06:55:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</guid>
+      <description>&lt;p&gt;En este episodio platicamos con Joan López de la Franca, Ingeniero de software senior en Grafana.
+El nos viene a platicar de las funcionalidades de Grafana como código, que es, como funciona, cuando conviene utilizarlo e incluso nos traerá algunos demos al respecto.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OqGFN22dvhQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Emergent Load Testing - TestCon Europe 2023</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</link>
+      <pubDate>Wed, 25 Oct 2023 20:05:36 +0300</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</guid>
+      <description>&lt;p&gt;I presented at &lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt; in Vilnius, Lithuania about emergent load testing, and how to use it to find the limits of your system. My talk was called &lt;a href=&#34;https://events.pinetool.ai/3078/#sessions/100686?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing-testconeu/&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Grafana Agent? (Grafana Office Hours #16)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link>
-      <pubDate>Fri, 20 Oct 2023 16:39:01 +0100</pubDate>
+      <pubDate>Fri, 20 Oct 2023 12:55:11 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid>
-      <description>&lt;p&gt;What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent.&lt;/p&gt;
+      <description>&lt;p&gt;What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/i0mA0w_MCPQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>(ES) Inicia (Café con Grafana #000)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
+      <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid>
+      <description>&lt;p&gt;Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad.  Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Kdgu2gutp7o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -175,6 +161,26 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs on Metrics Endpoint&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post on Metrics Endpoint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</link>
+      <pubDate>Fri, 13 Oct 2023 10:56:15 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</guid>
+      <description>&lt;p&gt;Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks to me and my coworker &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EYR5lQJ_kG8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -7,24 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Oct 2023 16:41:13 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/real-user-monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Oct 2023 07:00:19 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/real-user-monitoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Real user monitoring with Grafana Faro (Grafana Office Hours #17)</title>
+      <title>Real User Monitoring With Grafana Faro (Grafana Office Hours #17)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/</link>
-      <pubDate>Fri, 27 Oct 2023 16:41:13 +0100</pubDate>
+      <pubDate>Fri, 27 Oct 2023 07:00:19 +0200</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/blog/20231027-goh17-real-user-monitoring-with-grafana-faro/</guid>
-      <description>&lt;p&gt;Have you heard of Grafana Faro and how it can help in providing insights into your real user experience? Developer Advocates Nicole van der Hoeven and Marie Cruz chat with Software Engineers Kostas Pelelis and Marco Schaefer to discuss what Grafana Faro is, why it&amp;rsquo;s important to have a real user monitoring solution, and how to get started with Grafana Faro.&lt;/p&gt;
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I chat with Software Engineers Kostas Pelelis and Marco Schaefer to discuss what Grafana Faro is, why it&amp;rsquo;s important to have a real user monitoring solution, and how to get started with it.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/lUYj28znIu8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/&#34;&gt;Frontend observability docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/faro-web-sdk&#34;&gt;Grafana Faro repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

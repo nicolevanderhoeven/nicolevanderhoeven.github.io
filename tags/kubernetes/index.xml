@@ -7,28 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 10 Nov 2023 10:46:48 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Load Testing on Kubernetes with k6 Private Load Zones (Grafana Office Hours #19)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</link>
-      <pubDate>Fri, 10 Nov 2023 10:46:48 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</guid>
-      <description>&lt;p&gt;This week, we&amp;rsquo;re talking about how you can do load testing on Kubernetes with k6 Private Load Zones, a new feature on Grafana Cloud k6 that leverages the k6 Kubernetes operator to allow you to run distributed load tests against applications behind a firewall. Here to discuss this new feature are Senior Software Engineer Olha Yevtushenko, Product Manager Daniel González Lopes, Developer Advocate Paul Balogh, and Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/RXLavQT58YA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;The Grafana k6 repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/&#34;&gt;Docs on Private Load Zones in Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
+    <lastBuildDate>Fri, 29 Sep 2023 17:30:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Deploy Grafana on Kubernetes (Grafana Office Hours #13)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230929-goh13-how-to-deploy-grafana-on-kubernetes/</link>

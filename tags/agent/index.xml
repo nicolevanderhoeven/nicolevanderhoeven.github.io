@@ -7,7 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 13 Oct 2023 16:35:45 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Nov 2023 11:47:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Flow Mode for Grafana Agent (Grafana Office Hours #21)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</link>
+      <pubDate>Fri, 24 Nov 2023 11:47:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</guid>
+      <description>&lt;p&gt;Senior Software Engineer Matt Durham shows us how to use flow mode for Grafana Agent. Flow mode is a new and better way to install and configure Grafana Agent than the older &amp;ldquo;static mode&amp;rdquo;. Among other things, flow mode&amp;rsquo;s modularity makes it easier to build more complex workflows like traditional data pipelines and allows for more use cases than collecting and processing telemetry.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-_SsFLoJvoc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/latest/&#34;&gt;Grafana Agent docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/latest/flow/&#34;&gt;Grafana Agent flow mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtube.com/live/i0mA0w_MCPQ&#34;&gt;What is Grafana Agent?&lt;/a&gt; (previous Grafana Office Hours video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slack.grafana.com/&#34;&gt;Grafana Slack&lt;/a&gt; - there&amp;rsquo;s an &lt;code&gt;#agent&lt;/code&gt; channel&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1TqaZD1JPfNadZ4V81OCBPCG_TksDYGlNlGdMnTWUSpo/edit#heading=h.jkpb8gk2r6u8&#34;&gt;Grafana Agent Community Call agenda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent-modules&#34;&gt;Modules for Grafana Agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Agentless Monitoring for Grafana Cloud (Grafana Office Hours #15)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-grafana-cloud/</link>

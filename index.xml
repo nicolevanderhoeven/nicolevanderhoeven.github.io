@@ -7,7 +7,105 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 16 Nov 2023 09:45:15 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 12:03:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Refactor Notes in Obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231201-how-i-refactor-notes-in-obsidian/</link>
+      <pubDate>Fri, 01 Dec 2023 12:03:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231201-how-i-refactor-notes-in-obsidian/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s not enough for me to just take notes - they have to be useful, too. Here&amp;rsquo;s how I refactor notes in Obsidian using community and core plugins to inventory, structure, categorise, explain, and modularise my notes. Refactoring isn&amp;rsquo;t just for code. It&amp;rsquo;s for notes too! It&amp;rsquo;s only through gradually updating my notes over time that I can begin to reap the benefits of continuous note-taking.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J8-1eOzQ438&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Monitoring&#34;&gt;Monitoring&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Coding+and+writing+are+converging&#34;&gt;Coding and writing converging&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Quick+Switcher&#34;&gt;Quick Switcher&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Outline&#34;&gt;Outline&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Core+Plugins/Search&#34;&gt;Search&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Community+Plugins/Strange+New+Worlds&#34;&gt;Strange New Worlds&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Rw1L5sxlnuU&#34;&gt;Readwise Official&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/gqEtn3gCZF0&#34;&gt;ExcaliBrain&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=erKrXsIwbAg&#34;&gt;Obsidian Excalidraw&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/obsidian-playbook/Obsidian+Plugins/Community+Plugins/Note+Refactor&#34;&gt;Note Refactor&lt;/a&gt; (notes)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Get Started with Tempo (Grafana Office Hours #22)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</link>
+      <pubDate>Fri, 01 Dec 2023 11:55:55 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</guid>
+      <description>&lt;p&gt;Grafana Labs Principal Engineer and Tempo maintainer Joe Elliot talks about how to get started with Tempo, what distributed tracing is, and why TraceQL is cool. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zDrA7Ly3ovU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=pUAmL28uzos&#34;&gt;Getting started with Tempo&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/tempo&#34;&gt;Grafana Tempo repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/tempo/latest/getting-started/&#34;&gt;Grafana Tempo docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://community.grafana.com/c/grafana-tempo/40&#34;&gt;The Tempo category on the Grafana community forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLDGkOdUX1UjrA4D1MRdAzUgEGp5UXvW3z&#34;&gt;Video playlist for Grafana Tempo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=petbezEmIw4&#34;&gt;Distributed tracing with Grafana Cloud k6&lt;/a&gt; (Grafana Office Hours video)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Use Flow Mode for Grafana Agent (Grafana Office Hours #21)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</link>
+      <pubDate>Fri, 24 Nov 2023 11:47:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231124-goh21-how-to-use-flow-mode-for-grafana-agent/</guid>
+      <description>&lt;p&gt;Senior Software Engineer Matt Durham shows us how to use flow mode for Grafana Agent. Flow mode is a new and better way to install and configure Grafana Agent than the older &amp;ldquo;static mode&amp;rdquo;. Among other things, flow mode&amp;rsquo;s modularity makes it easier to build more complex workflows like traditional data pipelines and allows for more use cases than collecting and processing telemetry.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-_SsFLoJvoc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/latest/&#34;&gt;Grafana Agent docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/latest/flow/&#34;&gt;Grafana Agent flow mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtube.com/live/i0mA0w_MCPQ&#34;&gt;What is Grafana Agent?&lt;/a&gt; (previous Grafana Office Hours video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slack.grafana.com/&#34;&gt;Grafana Slack&lt;/a&gt; - there&amp;rsquo;s an &lt;code&gt;#agent&lt;/code&gt; channel&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1TqaZD1JPfNadZ4V81OCBPCG_TksDYGlNlGdMnTWUSpo/edit#heading=h.jkpb8gk2r6u8&#34;&gt;Grafana Agent Community Call agenda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent-modules&#34;&gt;Modules for Grafana Agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Realistic Tests with Testcontainers (Grafana Office Hours #20)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</link>
+      <pubDate>Fri, 17 Nov 2023 11:40:46 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</guid>
+      <description>&lt;p&gt;In this episode of Grafana Office Hours, we talk about realistic unit tests utilizing actual instances of databases and other dependencies. We&amp;rsquo;ll be joined by Manuel de la Peña from AtomicJar, and Pablo Chacin from Grafana to learn how we can use the Testcontainers open-source framework to create lightweight, throwaway dependencies for our tests.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LtlRvmWzCRE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/&#34;&gt;Testcontainers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/modules/k3s/&#34;&gt;k3s Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/modules/k6/&#34;&gt;k6 Module&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Adobo &amp; Avocados: Intersectionality in Tech and DevRel (Agile Testing Days 2023)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</link>
@@ -15,6 +113,47 @@
       
       <guid>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</guid>
       <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I presented today at &lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days 2023&lt;/a&gt; in Potsdam, Germany. Our talk was called &lt;a href=&#34;https://agiletestingdays.com/2023/session/adobo-and-avocados-intersectionality-in-tech-and-devrel/&#34;&gt;Adobo &amp;amp; Avocados: Intersectionality in Tech and DevRel&lt;/a&gt;. We talked about what intersectionality is, shared our personal experiences regarding diversity and intersecting identities, and gave tips on how to think about intersectionality as we build and use software. You can find the &lt;a href=&#34;https://www.canva.com/design/DAFzmIZBsAM/vuZZ7KE4fHxczHYdwZTvmw/view?utm_content=DAFzmIZBsAM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=editor&#34;&gt;slides here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Load Testing on Kubernetes with k6 Private Load Zones (Grafana Office Hours #19)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</link>
+      <pubDate>Fri, 10 Nov 2023 10:46:48 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</guid>
+      <description>&lt;p&gt;This week, we&amp;rsquo;re talking about how you can do load testing on Kubernetes with k6 Private Load Zones, a new feature on Grafana Cloud k6 that leverages the k6 Kubernetes operator to allow you to run distributed load tests against applications behind a firewall. Here to discuss this new feature are Senior Software Engineer Olha Yevtushenko, Product Manager Daniel González Lopes, Developer Advocate Paul Balogh, and Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RXLavQT58YA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;The Grafana k6 repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/&#34;&gt;Docs on Private Load Zones in Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Combining Frontend and Backend Performance (Grafana Office Hours #18)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</link>
+      <pubDate>Fri, 03 Nov 2023 16:43:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</guid>
+      <description>&lt;p&gt;In this episode of Grafana Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven speak with John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA’s Open MCT.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nasa/openmct/discussions/4303&#34;&gt;Open e2e Testing Initiative&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unlikelyzero/openmct-performance&#34;&gt;Open MCT performance Github project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -121,6 +260,11 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/lUYj28znIu8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/&#34;&gt;Frontend observability docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/faro-web-sdk&#34;&gt;Grafana Faro repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -173,15 +317,16 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
       
       <guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid>
       <description>&lt;p&gt;What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/i0mA0w_MCPQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -4036,23 +4181,6 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;h1 id=&#34;1611-agile-testing-dayshttpsagiletestingdayscom-potsdam-germany-_adobo-and-avocados-intersectionality-in-tech-and-devrelhttpsagiletestingdayscom2023sessionadobo-and-avocados-intersectionality-in-tech-and-devrel-english_&#34;&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
-16/11 &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days&lt;/a&gt;&lt;/strong&gt;: (Potsdam, Germany) &lt;em&gt;&lt;a href=&#34;https://agiletestingdays.com/2023/session/adobo-and-avocados-intersectionality-in-tech-and-devrel/&#34;&gt;Adobo and Avocados: Intersectionality in Tech and DevRel&lt;/a&gt; (English)&lt;/em&gt;&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;a9f1951 (Update speaking page)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
 &lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;
 &lt;p&gt;25/10    &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;26/03   &lt;strong&gt;&lt;a href=&#34;https://theinformed.life/&#34;&gt;The Informed Life Podcast&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/&#34;&gt;Nicole van der Hoeven on Obsidian&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;

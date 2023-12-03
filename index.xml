@@ -1100,6 +1100,21 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
     </item>
     
     <item>
+      <title>What Is Grafana Scenes? with Torkel Ödegaard (Grafana Office Hours #02)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</link>
+      <pubDate>Mon, 19 Jun 2023 23:03:43 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</guid>
+      <description>&lt;p&gt;In GrafanaCON 2023, the latest version of Grafana 10 was announced, and with it, Scenes. But what is Grafana Scenes? Torkel Ödegaard, creator of Grafana and co-founder of Grafana Labs, joined me to discuss what Scenes is and how you can use it to create dynamic dashboards like never before.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pJlWAD5SUYA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Taking Notes for Work With Obsidian</title>
       <link>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</link>
       <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
@@ -8822,9 +8837,56 @@ date: 2021-06-23
       <guid>https://nicolevanderhoeven.github.io/gear/</guid>
       <description>&lt;h1 id=&#34;gear-i-use&#34;&gt;Gear I Use&lt;/h1&gt;
 &lt;p&gt;One of my favorite obsessions is watching or reading about the gear other people use. I&amp;rsquo;ve watched almost every &amp;ldquo;What&amp;rsquo;s in my tech bag&amp;rdquo; video on YouTube, it feels like, and I&amp;rsquo;m always prowling blog posts that detail what someone is using. In case there&amp;rsquo;s anybody out there that is as interested in these things as I am, here&amp;rsquo;s an overview of the gear that I use to make videos, write both blog posts and code, and generally mess around on the internet.&lt;/p&gt;
-&lt;h2 id=&#34;home-office-1-the-netherlands&#34;&gt;Home Office 1 (the Netherlands)&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/gear-study.JPG&#34; alt=&#34;A photo of my home office on any given day&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Edit: After a reader suggested I provide links to these items, I&amp;rsquo;ve included them below, and some are affiliate links. You are under no obligation to click these links, but if you do, I get a tiny percentage of the sale. Thanks!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sections&#34;&gt;Sections&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s a lot here! I&amp;rsquo;ve broken it down into sections, so you can skip to the section you&amp;rsquo;re interested in.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#daily-hardware&#34;&gt;Daily hardware&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#home-office-1-the-netherlands&#34;&gt;Home Office 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#home-office-2-portugal&#34;&gt;Home Office 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#my-everyday-carry&#34;&gt;Everyday Carry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#my-remote-working-tech-bag&#34;&gt;Remote Working Tech Bag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#my-remote-work-setup-for-a-month&#34;&gt;Remote Work Setup for a month&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;daily-hardware&#34;&gt;Daily hardware&lt;/h2&gt;
+&lt;p&gt;(&lt;a href=&#34;#sections&#34;&gt;back to top&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Here are the main devices I use every day.&lt;/p&gt;
+&lt;h3 id=&#34;computers&#34;&gt;Computers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3uOnkJ0&#34;&gt;Macbook Air 15&amp;quot; (2023)&lt;/a&gt;: 24 GB RAM, 2TB SSD, M2 chip - this is my main workhorse&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3rZggnG&#34;&gt;Macbook Pro 13&amp;quot; (2020)&lt;/a&gt;: 2,3 GHz Quad-Core Intel Core i7, 32 GB RAM - secondary laptop&lt;/li&gt;
+&lt;li&gt;Mac Mini (&lt;a href=&#34;https://amzn.to/3t3B968&#34;&gt;later version here&lt;/a&gt;): M1 chip, 16GB RAM, 1 TB SSD - desktop, always on&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mobiles&#34;&gt;Mobiles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/47FaefX&#34;&gt;Samsung Galaxy Z Fold 5&lt;/a&gt;: 512GB - my main mobile, always with me&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.apple.com/iphone-15-pro/&#34;&gt;Apple iPhone 15&lt;/a&gt;: Pro Max - secondary mobile, always with me&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3CfKxmH&#34;&gt;Samsung Galaxy Note 10+&lt;/a&gt;: extra mobile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tablets&#34;&gt;Tablets&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3CgzR7E&#34;&gt;Apple iPad Pro 11&amp;quot;&lt;/a&gt; (2020) tablet - still works great!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;readers&#34;&gt;Readers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3GrSbOc&#34;&gt;Amazon Kindle Scribe&lt;/a&gt;: my couch reader, for nonfiction and PDFs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3xsRwFy&#34;&gt;Amazon Kindle Oasis&lt;/a&gt;: my bed reader, for fiction&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/46LEZ1k&#34;&gt;Kobo Sage&lt;/a&gt;: for non-Amazon ebooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wearables&#34;&gt;Wearables&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ouraring.com/product/heritage-silver/step1&#34;&gt;Oura&lt;/a&gt;: health and sleep tracking ring&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/417Szev&#34;&gt;Samsung Galaxy Watch 6&lt;/a&gt;: smartwatch&lt;/li&gt;
+&lt;li&gt;American Express Prada wearable (not available for purchase separately): for contactless payments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;earbuds&#34;&gt;Earbuds&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/47RdhBo&#34;&gt;Apple AirPods Pro&lt;/a&gt;: second generation, for Apple products&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3p6OHLJ&#34;&gt;Bose QuietComfort Earbuds II&lt;/a&gt;: for non-Apple products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;home-office-1-the-netherlands&#34;&gt;Home Office 1 (the Netherlands)&lt;/h2&gt;
+&lt;p&gt;(&lt;a href=&#34;#sections&#34;&gt;back to top&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/gear-study.JPG&#34; alt=&#34;A photo of my home office on any given day&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;video-production-gear&#34;&gt;Video production gear&lt;/h3&gt;
 &lt;h4 id=&#34;not-on-desk&#34;&gt;Not on desk&lt;/h4&gt;
 &lt;ul&gt;
@@ -8883,7 +8945,7 @@ date: 2021-06-23
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3fst7JV&#34;&gt;Samsung Galaxy S10&lt;/a&gt; (secondary phone, primarily for timelapses and overhead videos)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3lrYgkl&#34;&gt;Samsung Galaxy Wireless Buds&lt;/a&gt;, rose&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://amzn.to/3CfKxmH&#34;&gt;Samsung Galaxy Note 10+&lt;/a&gt; (primary phone)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3CfKxmH&#34;&gt;Samsung Galaxy Note 10+&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3lotmtj&#34;&gt;Apple Macbook Air 11&amp;quot;&lt;/a&gt; (2011, used as my presentation laptop)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3inWn6g&#34;&gt;Apple Magic Trackpad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3CgzR7E&#34;&gt;Apple iPad Pro 11&amp;quot;&lt;/a&gt; (2020) tablet&lt;/li&gt;
@@ -8893,6 +8955,7 @@ date: 2021-06-23
 &lt;li&gt;&lt;a href=&#34;https://ouraring.com/product/heritage-silver/step1&#34;&gt;Oura&lt;/a&gt; health and sleep tracking ring&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;home-office-2-portugal&#34;&gt;Home Office 2 (Portugal)&lt;/h2&gt;
+&lt;p&gt;(&lt;a href=&#34;#sections&#34;&gt;back to top&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;I live between two countries: the Netherlands and Portugal. Since I spend a few months in each place, that also means I need a place to work in each apartment! My home office in Portugal is larger but definitely less well-equipped. It&amp;rsquo;s a little embarrassing, but I thought it would be interesting to show a more realistic, in-progress setup.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/portugal-home-office.jpeg&#34; alt=&#34;A photo of my home office in Portugal&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Why yes, I do indeed have clothes hanging on a rack behind my desk to try and soak up sound.&lt;/p&gt;
@@ -8925,9 +8988,10 @@ date: 2021-06-23
 &lt;/ul&gt;
 &lt;h3 id=&#34;not-pictured&#34;&gt;Not pictured&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;: my primary mobile phone, used to take this photo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;: used to take this photo&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;my-everyday-carry&#34;&gt;My everyday carry&lt;/h2&gt;
+&lt;p&gt;(&lt;a href=&#34;#sections&#34;&gt;back to top&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;What about what I carry every day?&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -8937,7 +9001,7 @@ date: 2021-06-23
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3xX8y1A&#34;&gt;Samsung Galaxy Active 2&lt;/a&gt;: my smartwatch&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.etsy.com/listing/1108272100/critsuccess-d20-dice-ring-in-black&#34;&gt;d20 spinner ring&lt;/a&gt;: a ring that acts like a 20-sided die for roleplaying games on the go&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;: my primary mobile phone&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.aersf.com/day-sling-3-xpac-black&#34;&gt;Aer Day Sling 3 X-Pac&lt;/a&gt;: my sling bag of choice&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3fnkTp6&#34;&gt;Nitecore Tini 2 USB C flashlight&lt;/a&gt;: tiny USB-C rechargeable flashlight&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3SuWBru&#34;&gt;Nite-Ize locking S-biners&lt;/a&gt;: for a little extra security for zippers&lt;/li&gt;
@@ -8963,6 +9027,7 @@ date: 2021-06-23
 &lt;li&gt;&lt;a href=&#34;https://shop.trezor.io/product/trezor-model-t&#34;&gt;Trezor Model T&lt;/a&gt;: hardware wallet and security key&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;my-remote-working-tech-bag&#34;&gt;My Remote Working Tech Bag&lt;/h2&gt;
+&lt;p&gt;(&lt;a href=&#34;#sections&#34;&gt;back to top&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;If I need to go somewhere to work, my EDC bag won&amp;rsquo;t cut it! Here&amp;rsquo;s what I bring with me to work and play remotely:&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -9004,6 +9069,7 @@ date: 2021-06-23
 &lt;li&gt;Hyper Drive USB hub. &lt;a href=&#34;https://amzn.to/3UUtboq&#34;&gt;Updated version&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;my-remote-work-setup-for-a-month&#34;&gt;My Remote Work Setup for a month&lt;/h2&gt;
+&lt;p&gt;(&lt;a href=&#34;#sections&#34;&gt;back to top&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s what I bring with me when I need to be able to work while travelling continuously for a month. This setup lets me create videos, run livestreams, do programming work, and do presentations at conferences with minimal bulk and maximal functionality.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -9036,7 +9102,7 @@ date: 2021-06-23
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/41Zm7KV&#34;&gt;Lume Cube Panel Mini&lt;/a&gt; LED light.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amzn.to/3ClU7Xz&#34;&gt;Joby Gorillapod GripTight Smartphone Micro Tripod&lt;/a&gt;: tripod for Lume Cube&lt;/li&gt;
 &lt;li&gt;Samsung X5 2TB SSD. &lt;a href=&#34;https://amzn.to/3VqqlIY&#34;&gt;Better here - T7&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;: my primary mobile phone, used to take this photo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amzn.to/3fls6Gu&#34;&gt;Samsung Galaxy Z Fold 3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;(not pictured, but since added) &lt;a href=&#34;https://amzn.to/3VL52Cc&#34;&gt;Logitech POP Mouse&lt;/a&gt;: travel mouse, even though I hate that it requires an AA battery.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/travel-setup-20230430_220231.jpg&#34; alt=&#34;Snapshot of my actual setup at a hotel in Frankfurt&#34;&gt;&lt;/p&gt;
@@ -14343,21 +14409,6 @@ The easy fix is to edit &lt;code&gt;jmeter.bat&lt;/code&gt; and increase the hea
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Now I’m not saying that everyone can do this in five years. My husband and I were lucky enough to have dual high incomes. But the point is not to do all of this in five years. The point is to start now.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>What Is Grafana Scenes? with Torkel Ödegaard (Grafana Office Hours #03)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230619-goh02-what-is-grafana-scenes/</guid>
-      <description>&lt;p&gt;In GrafanaCON 2023, the latest version of Grafana 10 was announced, and with it, Scenes. But what is Grafana Scenes? Torkel Ödegaard, creator of Grafana and co-founder of Grafana Labs, joined me to discuss what Scenes is and how you can use it to create dynamic dashboards like never before.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/pJlWAD5SUYA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
 </description>
     </item>
     

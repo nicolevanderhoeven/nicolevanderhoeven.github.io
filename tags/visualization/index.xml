@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>visualization on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/visualization/</link>
+    <description>Recent content in visualization on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 15 Dec 2023 17:42:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Microscopy with Grafana, Theia Scientific, and Volkov Labs (Grafana Office Hours #24)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</link>
+      <pubDate>Fri, 15 Dec 2023 17:42:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</guid>
+      <description>&lt;p&gt;What do you get when you combine AI microscopy with Grafana? Well, in this case, you get the Theiascope platform: an application for doing real-time analysis on microscopy images using a combination of Grafana, Prometheus, and PostgreSQL/Timescale. The Theiascope platform was a collaboration between Dr. Christopher Field, Co-Founder/President/ Principal Investigator at Theia Scientific and Mikhail Volkov, Founder/CEO of Volkov Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BgRd-RAFMEE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

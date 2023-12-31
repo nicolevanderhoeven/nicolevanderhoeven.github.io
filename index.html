@@ -165,14 +165,20 @@
   <section id="subscribe">
     <div id="email-embed">
       <div class="email-form-group">
-        <label for="member_email">Sign up for my newsletter: </label>
-        <form action="https://courses.nicolevanderhoeven.com/email_lists/443865/subscriptions" accept-charset="UTF-8" method="post">
-          <input type="text" name="name" placeholder="Name" />
-        <input type="email" name="email" required="required" placeholder="Email" />
-        <input type="submit" value="Join" />
-      </form>
+        <label for="member_email">Sign up for my newsletter, <i>Thinking in Public</i>: </label>
+        <form
+  action="https://buttondown.email/api/emails/embed-subscribe/nvdh"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://tip.nicolevanderhoeven.com', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email address:</label>
+  <input type="email" name="email" id="bd-email" />
+  
+  <input type="submit" value="Subscribe" />
+</form>
       </div>
-      <div class="email-form-footer"><i>(I send only important updates once every few months because I hate a cluttered inbox!</i></div>
       </form>
     </div>
   </section>

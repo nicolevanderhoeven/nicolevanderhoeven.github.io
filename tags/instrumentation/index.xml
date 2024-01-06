@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>instrumentation on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/instrumentation/</link>
+    <description>Recent content in instrumentation on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 05 Jan 2024 18:03:52 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/instrumentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to eBPF With Grafana Beyla (Grafana Office Hours #25)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240105-goh25-introduction-to-ebpf-with-grafana-beyla/</link>
+      <pubDate>Fri, 05 Jan 2024 18:03:52 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240105-goh25-introduction-to-ebpf-with-grafana-beyla/</guid>
+      <description>&lt;p&gt;Nikola Grčevski, Principal Software Engineer at Grafana Labs, gives us an introduction to eBPF with Grafana Beyla. We discuss what is eBPF, how you can use it to auto-instrument applications, and how to get started with Beyla. eBPF observability is all the rage because we all want automagical instrumentation&amp;ndash; but does it live up to that promise? Nikola&amp;rsquo;s here to tell us what eBPF can and can&amp;rsquo;t do, and where he&amp;rsquo;d like to take Beyla next.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZEUzucqXUnQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/beyla&#34;&gt;Grafana Beyla repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-applications/beyla/&#34;&gt;Grafana Beyla docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-applications/application-observability/&#34;&gt;Application Observability docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 15 Dec 2023 17:42:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 16:00:25 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entendiendo los sintéticos (Café con Grafana #008)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link>
+      <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid>
+      <description>&lt;p&gt;En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fXNSqrUtiJo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Lee la documentación sobre el monitoreo de sintéticos &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/&#34;&gt;en Grafana Cloud aquí&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>AI Microscopy with Grafana, Theia Scientific, and Volkov Labs (Grafana Office Hours #24)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</link>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>continuous profiling on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/continuous-profiling/</link>
+    <description>Recent content in continuous profiling on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 19 Jan 2024 18:09:01 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/continuous-profiling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
+      <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</guid>
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; and I interview &lt;a href=&#34;https://ryanperry.io&#34;&gt;Ryan Perry&lt;/a&gt;, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&amp;rsquo;s resources.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pzNRvMQzrJ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pyroscope &lt;a href=&#34;https://grafana.com/docs/pyroscope/&#34;&gt;docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pyroscope &lt;a href=&#34;https://pyroscope.io/&#34;&gt;site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pyroscope &lt;a href=&#34;https://github.com/grafana/pyroscope&#34;&gt;repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Weigh in on the &lt;a href=&#34;https://github.com/open-telemetry/oteps/pull/239&#34;&gt;OpenTelemetry Profiling Data Model&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

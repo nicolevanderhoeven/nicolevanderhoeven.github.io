@@ -7,7 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 19 Jan 2024 18:09:01 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 14:00:47 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to publish your notes for free with Quartz</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240126-how-to-publish-your-notes-for-free-with-quartz/</link>
+      <pubDate>Fri, 26 Jan 2024 14:00:47 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240126-how-to-publish-your-notes-for-free-with-quartz/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://quartz.jzhao.xyz/&#34;&gt;Quartz&lt;/a&gt; just won Best Tool in the &lt;a href=&#34;https://obsidian.md/blog/2023-goty-winners/&#34;&gt;Obsidian Gems of the Year 2023&lt;/a&gt; awards, and with good reason. It&amp;rsquo;s a free, open-source static site generator that works really well with Markdown-based note-taking apps&amp;ndash; including Obsidian, which it was originally designed for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doingitinpublic.com/&#34;&gt;Here&amp;rsquo;s what Quartz looks like when published&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6s6DT1yN4dw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&#34;&gt;How to publish Obsidian notes with Quartz on GitHub Pages&lt;/a&gt;: The video in text form so you can follow along&lt;/li&gt;
+&lt;li&gt;🙏🏻 &lt;a href=&#34;https://links.gilbertsanchez.com/&#34;&gt;Gilbert Sanchez&lt;/a&gt; shared his experiences in trying to find a static site generator replacement for Obsidian Publish on &lt;a href=&#34;https://nicole.to/discord&#34;&gt;my Discord server&lt;/a&gt; and inspired me to try Quartz.&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://quartz.jzhao.xyz/&#34;&gt;Quartz documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://docs.github.com/&#34;&gt;GitHub documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://docs.github.com/en/pages&#34;&gt;GitHub Pages documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://help.obsidian.md/Home&#34;&gt;Obsidian documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mental Health as a Superpower with Karen Todd (Adobo &amp; Avocados #28)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240125-ana28-mental-health-as-a-superpower-with-karen-todd/</link>
+      <pubDate>Thu, 25 Jan 2024 15:12:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240125-ana28-mental-health-as-a-superpower-with-karen-todd/</guid>
+      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I interviewed &lt;a href=&#34;https://www.youtube.com/c/KarenTestsStuff&#34;&gt;Karen Todd&lt;/a&gt; about neurodivergence and neurodiversity, and how her ADHD can be a positive thing in her career as a tester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/X0dQY-gxPYg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
@@ -4625,7 +4665,7 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg&#34; alt=&#34;Me speaking at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;22-23/03    &lt;strong&gt;&lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;TBD&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;22-23/03    &lt;strong&gt;&lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://pkmsummit.com/nicole-van-der-hoeven/&#34;&gt;TBD&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;13/06    &lt;strong&gt;&lt;a href=&#34;https://romaniatesting.ro/&#34;&gt;Romanian Testing Conference&lt;/a&gt;&lt;/strong&gt;: (Cluj-Napoca, Romania) &lt;em&gt;&lt;a href=&#34;https://romaniatesting.ro/sessions/cartography-of-the-deep-distributed-tracing-for-testing/&#34;&gt;Cartography of the Deep: Distributed Tracing for Testing&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;
 &lt;p&gt;26/03   &lt;strong&gt;&lt;a href=&#34;https://theinformed.life/&#34;&gt;The Informed Life Podcast&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/&#34;&gt;Nicole van der Hoeven on Obsidian&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;

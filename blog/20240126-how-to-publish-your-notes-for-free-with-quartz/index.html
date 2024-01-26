@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How to publish your notes for free with Quartz | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How to publish your notes for free with Quartz" />
+<meta property="og:description" content="Quartz just won Best Tool in the Obsidian Gems of the Year 2023 awards, and with good reason. It&rsquo;s a free, open-source static site generator that works really well with Markdown-based note-taking apps&ndash; including Obsidian, which it was originally designed for.
+Here&rsquo;s what Quartz looks like when published.
+Links 🖊️ How to publish Obsidian notes with Quartz on GitHub Pages: The video in text form so you can follow along 🙏🏻 Gilbert Sanchez shared his experiences in trying to find a static site generator replacement for Obsidian Publish on my Discord server and inspired me to try Quartz." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20240126-how-to-publish-your-notes-for-free-with-quartz/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-01-26T14:00:47+01:00" />
+<meta property="article:modified_time" content="2024-01-26T14:00:47+01:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to publish your notes for free with Quartz"/>
+<meta name="twitter:description" content="Quartz just won Best Tool in the Obsidian Gems of the Year 2023 awards, and with good reason. It&rsquo;s a free, open-source static site generator that works really well with Markdown-based note-taking apps&ndash; including Obsidian, which it was originally designed for.
+Here&rsquo;s what Quartz looks like when published.
+Links 🖊️ How to publish Obsidian notes with Quartz on GitHub Pages: The video in text form so you can follow along 🙏🏻 Gilbert Sanchez shared his experiences in trying to find a static site generator replacement for Obsidian Publish on my Discord server and inspired me to try Quartz."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="/gear">Gear</a></li>
+      
+        <li><a href="/ethics">Ethics</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20240125-ana28-mental-health-as-a-superpower-with-karen-todd/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&text=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&is_video=false&description=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&name=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz&description=Quartz%20just%20won%20Best%20Tool%20in%20the%20Obsidian%20Gems%20of%20the%20Year%202023%20awards%2c%20and%20with%20good%20reason.%20It%26rsquo%3bs%20a%20free%2c%20open-source%20static%20site%20generator%20that%20works%20really%20well%20with%20Markdown-based%20note-taking%20apps%26ndash%3b%20including%20Obsidian%2c%20which%20it%20was%20originally%20designed%20for.%0aHere%26rsquo%3bs%20what%20Quartz%20looks%20like%20when%20published.%0aLinks%20%f0%9f%96%8a%ef%b8%8f%20How%20to%20publish%20Obsidian%20notes%20with%20Quartz%20on%20GitHub%20Pages%3a%20The%20video%20in%20text%20form%20so%20you%20can%20follow%20along%20%f0%9f%99%8f%f0%9f%8f%bb%20Gilbert%20Sanchez%20shared%20his%20experiences%20in%20trying%20to%20find%20a%20static%20site%20generator%20replacement%20for%20Obsidian%20Publish%20on%20my%20Discord%20server%20and%20inspired%20me%20to%20try%20Quartz.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&t=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#links">Links</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How to publish your notes for free with Quartz
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2024-01-26 14:00:47 &#43;0100 CET" itemprop="datePublished">2024-Jan-26</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/quartz" rel="tag">quartz</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/obsidian" rel="tag">obsidian</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/pkm" rel="tag">pkm</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/markdown" rel="tag">markdown</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/learning-in-public" rel="tag">learning in public</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/doing-it-in-public" rel="tag">doing it in public</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p><a href="https://quartz.jzhao.xyz/">Quartz</a> just won Best Tool in the <a href="https://obsidian.md/blog/2023-goty-winners/">Obsidian Gems of the Year 2023</a> awards, and with good reason. It&rsquo;s a free, open-source static site generator that works really well with Markdown-based note-taking apps&ndash; including Obsidian, which it was originally designed for.</p>
+<p><a href="https://doingitinpublic.com/">Here&rsquo;s what Quartz looks like when published</a>.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6s6DT1yN4dw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="links">Links</h2>
+<ul>
+<li>🖊️ <a href="https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages">How to publish Obsidian notes with Quartz on GitHub Pages</a>: The video in text form so you can follow along</li>
+<li>🙏🏻 <a href="https://links.gilbertsanchez.com/">Gilbert Sanchez</a> shared his experiences in trying to find a static site generator replacement for Obsidian Publish on <a href="https://nicole.to/discord">my Discord server</a> and inspired me to try Quartz.</li>
+<li>🖊️ <a href="https://quartz.jzhao.xyz/">Quartz documentation</a></li>
+<li>🖊️ <a href="https://docs.github.com/">GitHub documentation</a></li>
+<li>🖊️ <a href="https://docs.github.com/en/pages">GitHub Pages documentation</a></li>
+<li>🖊️ <a href="https://help.obsidian.md/Home">Obsidian documentation</a></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20230512-more-than-just-taking-notes-learning-exhaust/">More Than Just Taking Notes: Learning Exhaust</a></li>
+    
+    <li><a href="/blog/20230428-emergent-note-taking/">Emergent Note Taking</a></li>
+    
+    <li><a href="/blog/20220818-how-to-make-your-notes-visual-in-obsidian/">How to Make Your Notes Visual in Obsidian</a></li>
+    
+    <li><a href="/blog/20240119-learning-new-things-in-obsidian-in-defense-of-remembering/">Learning new things in Obsidian: in defense of remembering</a></li>
+    
+    <li><a href="/blog/20240112-my-workflow-for-making-videos-with-obsidian/">My workflow for making videos with Obsidian</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="/gear">Gear</a></li>
+         
+          <li><a href="/ethics">Ethics</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#links">Links</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&text=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&is_video=false&description=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&title=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&name=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz&description=Quartz%20just%20won%20Best%20Tool%20in%20the%20Obsidian%20Gems%20of%20the%20Year%202023%20awards%2c%20and%20with%20good%20reason.%20It%26rsquo%3bs%20a%20free%2c%20open-source%20static%20site%20generator%20that%20works%20really%20well%20with%20Markdown-based%20note-taking%20apps%26ndash%3b%20including%20Obsidian%2c%20which%20it%20was%20originally%20designed%20for.%0aHere%26rsquo%3bs%20what%20Quartz%20looks%20like%20when%20published.%0aLinks%20%f0%9f%96%8a%ef%b8%8f%20How%20to%20publish%20Obsidian%20notes%20with%20Quartz%20on%20GitHub%20Pages%3a%20The%20video%20in%20text%20form%20so%20you%20can%20follow%20along%20%f0%9f%99%8f%f0%9f%8f%bb%20Gilbert%20Sanchez%20shared%20his%20experiences%20in%20trying%20to%20find%20a%20static%20site%20generator%20replacement%20for%20Obsidian%20Publish%20on%20my%20Discord%20server%20and%20inspired%20me%20to%20try%20Quartz.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240126-how-to-publish-your-notes-for-free-with-quartz%2f&t=How%20to%20publish%20your%20notes%20for%20free%20with%20Quartz">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2024  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="/gear">Gear</a></li>
+         
+        <li><a href="/ethics">Ethics</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

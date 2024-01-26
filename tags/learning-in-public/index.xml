@@ -7,7 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 04 Dec 2023 16:57:23 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/learning-in-public/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 14:00:47 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/learning-in-public/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to publish your notes for free with Quartz</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240126-how-to-publish-your-notes-for-free-with-quartz/</link>
+      <pubDate>Fri, 26 Jan 2024 14:00:47 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240126-how-to-publish-your-notes-for-free-with-quartz/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://quartz.jzhao.xyz/&#34;&gt;Quartz&lt;/a&gt; just won Best Tool in the &lt;a href=&#34;https://obsidian.md/blog/2023-goty-winners/&#34;&gt;Obsidian Gems of the Year 2023&lt;/a&gt; awards, and with good reason. It&amp;rsquo;s a free, open-source static site generator that works really well with Markdown-based note-taking apps&amp;ndash; including Obsidian, which it was originally designed for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doingitinpublic.com/&#34;&gt;Here&amp;rsquo;s what Quartz looks like when published&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6s6DT1yN4dw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&#34;&gt;How to publish Obsidian notes with Quartz on GitHub Pages&lt;/a&gt;: The video in text form so you can follow along&lt;/li&gt;
+&lt;li&gt;🙏🏻 &lt;a href=&#34;https://links.gilbertsanchez.com/&#34;&gt;Gilbert Sanchez&lt;/a&gt; shared his experiences in trying to find a static site generator replacement for Obsidian Publish on &lt;a href=&#34;https://nicole.to/discord&#34;&gt;my Discord server&lt;/a&gt; and inspired me to try Quartz.&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://quartz.jzhao.xyz/&#34;&gt;Quartz documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://docs.github.com/&#34;&gt;GitHub documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://docs.github.com/en/pages&#34;&gt;GitHub Pages documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖊️ &lt;a href=&#34;https://help.obsidian.md/Home&#34;&gt;Obsidian documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Personal Branding for Engineers (Adobo &amp; Avocados #23)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231204-ana23-personal-branding-for-engineers/</link>

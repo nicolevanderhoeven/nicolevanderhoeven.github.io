@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 02 Feb 2024 18:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Nov 2024 09:37:19 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Watching the Watchers: How We do Continuous Reliability at Grafana Labs (KubeCon NA 2024)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/</link>
+      <pubDate>Wed, 13 Nov 2024 09:37:19 -0700</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/</guid>
+      <description>&lt;p&gt;Today I did a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/&#34;&gt;KubeCon North America 2024&lt;/a&gt; in Salt Lake City, Utah, USA. &lt;a href=&#34;https://kccncna2024.sched.com/event/1i7m6&#34;&gt;Here&amp;rsquo;s the abstract&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nothing is foolproof. Everything fails eventually. Observability tools help predict and lessen the impact of those failures, as the watchers of your software systems. But who watches the watchers?&lt;/p&gt;
+&lt;p&gt;At Grafana Labs, we&amp;rsquo;re not immune to production incidents. Just like any company, we still sometimes move too quickly. We run complex, microservices-based systems ourselves, so we have to eat our own dogfood on a daily basis.&lt;/p&gt;
+&lt;p&gt;In this talk, I reveal:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how we solved a years-long mystery that cost us $100,000+&lt;/li&gt;
+&lt;li&gt;how we got our internal Mimir clusters to reliably hold 1.3 billion time series for metrics&lt;/li&gt;
+&lt;li&gt;what we&amp;rsquo;ve had to do to scale our Loki clusters to handle 324 TB of logs a day&lt;/li&gt;
+&lt;li&gt;what our Grafana dashboards to monitor Grafana Cloud look like&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sometimes, it&amp;rsquo;s easier to learn from failures in observability than from successes. This talk is a confession of some of our worst sins as well as a realistic look under the hood at how we&amp;rsquo;re improving the continuous reliability of our stack.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can find the slides &lt;a href=&#34;https://www.canva.com/design/DAGV-7UbEVo/QVrjCs0kKvtiEG_LlNLrvA/view?utm_content=DAGV-7UbEVo&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=editor&#34;&gt;here&lt;/a&gt; and a PDF version &lt;a href=&#34;https://nicolevanderhoeven.github.io/assets/20241113-kubecon-na-2024-watching-the-watchers.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Top 10 Ways I Learn in Public</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240202-top-10-ways-i-learn-in-public/</link>
@@ -4745,11 +4768,11 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg&#34; alt=&#34;Me speaking at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;19/09   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/workshop&#34;&gt;Linking Your Thinking 14 workshop&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;Doing It in Public: Observability for PKM (English)&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;24/10   &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2024&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://events.pinetool.ai/3253/#sessions/108082?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Flirting with Risk: A Playbook for Continuous Reliability&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;13/11   &lt;strong&gt;&lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/&#34;&gt;KubeCon North America 2024&lt;/a&gt;&lt;/strong&gt;: (Utah, USA) &lt;em&gt;&lt;a href=&#34;https://kccncna2024.sched.com/event/1i7m6&#34;&gt;Watching the Watchers: How We Do Continuous Reliability at Grafana Labs&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;21/11   &lt;strong&gt;&lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days EU 2024&lt;/a&gt;&lt;/strong&gt;: (Potsdam, Germany) &lt;em&gt;&lt;a href=&#34;https://agiletestingdays.com/2024/session/flirting-with-risk/&#34;&gt;Flirting with Risk: A Playbook for Continuous Reliability&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;2024&#34;&gt;2024&lt;/h2&gt;
+&lt;p&gt;24/10   &lt;strong&gt;&lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2024&lt;/a&gt;&lt;/strong&gt;: (Vilnius, Lithuania) &lt;em&gt;&lt;a href=&#34;https://events.pinetool.ai/3253/#sessions/108082?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Flirting with Risk: A Playbook for Continuous Reliability&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;19/09   &lt;strong&gt;&lt;a href=&#34;https://www.linkingyourthinking.com/workshop&#34;&gt;Linking Your Thinking 14 workshop&lt;/a&gt;&lt;/strong&gt;: (online) &lt;em&gt;Doing It in Public: Observability for PKM (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;13/06    &lt;strong&gt;&lt;a href=&#34;https://romaniatesting.ro/&#34;&gt;Romanian Testing Conference&lt;/a&gt;&lt;/strong&gt;: (Cluj-Napoca, Romania) &lt;em&gt;&lt;a href=&#34;https://romaniatesting.ro/sessions/cartography-of-the-deep-distributed-tracing-for-testing/&#34;&gt;Cartography of the Deep: Distributed Tracing for Testing&lt;/a&gt; (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;28/03    &lt;strong&gt;&lt;a href=&#34;https://www.digitalefitheid.nl/&#34;&gt;Digitale Fitheid Community&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;Doing it in public: Observability for PKM (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;23/03    &lt;strong&gt;&lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://pkmsummit.com/nicole-van-der-hoeven/&#34;&gt;Doing it in public: Observability for PKM&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;

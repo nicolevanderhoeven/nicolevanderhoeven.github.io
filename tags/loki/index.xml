@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 11 Jan 2024 16:00:25 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/loki/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jun 2025 15:21:49 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/loki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Query Grafana Loki</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</link>
+      <pubDate>Fri, 13 Jun 2025 15:21:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</guid>
+      <description>&lt;p&gt;In this video, I show you how to query &lt;a href=&#34;https://gra.fan/lokirepo&#34;&gt;Grafana Loki&lt;/a&gt;, the open source log aggregation system from Grafana Labs. I cover the basics of Loki&amp;rsquo;s query language, LogQL, and demonstrate how to use it to filter and search logs effectively.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/57dQwcmqkpQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Entendiendo los sintéticos (Café con Grafana #008)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link>

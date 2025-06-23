@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> The Basics of Flag Theory for Software Engineers | Nicole van der Hoeven</title>
+  <title> How to Query Grafana Loki | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="The Basics of Flag Theory for Software Engineers" />
-<meta property="og:description" content="One of the most common questions I get from friends and family is &ldquo;Why do you have three passports and how on earth did you get them?!&rdquo; In this video, I talk about what flag theory is, why I think it&rsquo;s useful, and how I apply it to my life in areas such as finance, investment, real estate, and, yes, nationalities." />
+  <meta property="og:title" content="How to Query Grafana Loki" />
+<meta property="og:description" content="In this video, I show you how to query Grafana Loki, the open source log aggregation system from Grafana Labs. I cover the basics of Loki&rsquo;s query language, LogQL, and demonstrate how to use it to filter and search logs effectively." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20211201-the-basics-of-flag-theory-for-software-engineers/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-12-01T17:12:58+01:00" />
-<meta property="article:modified_time" content="2021-12-01T17:12:58+01:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-06-13T15:21:49+02:00" />
+<meta property="article:modified_time" content="2025-06-13T15:21:49+02:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Basics of Flag Theory for Software Engineers"/>
-<meta name="twitter:description" content="One of the most common questions I get from friends and family is &ldquo;Why do you have three passports and how on earth did you get them?!&rdquo; In this video, I talk about what flag theory is, why I think it&rsquo;s useful, and how I apply it to my life in areas such as finance, investment, real estate, and, yes, nationalities."/>
+<meta name="twitter:title" content="How to Query Grafana Loki"/>
+<meta name="twitter:description" content="In this video, I show you how to query Grafana Loki, the open source log aggregation system from Grafana Labs. I cover the basics of Loki&rsquo;s query language, LogQL, and demonstrate how to use it to filter and search logs effectively."/>
 
   
   
@@ -116,17 +116,11 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20211125-creating-a-content-calendar-in-obsidian/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20211203-koh36-whats-new-with-k6-cloud/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -154,57 +148,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&text=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&text=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&is_video=false&description=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&is_video=false&description=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f">
+    <a class="icon" href="mailto:?subject=How%20to%20Query%20Grafana%20Loki&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&name=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers&description=One%20of%20the%20most%20common%20questions%20I%20get%20from%20friends%20and%20family%20is%20%26ldquo%3bWhy%20do%20you%20have%20three%20passports%20and%20how%20on%20earth%20did%20you%20get%20them%3f%21%26rdquo%3b%20In%20this%20video%2c%20I%20talk%20about%20what%20flag%20theory%20is%2c%20why%20I%20think%20it%26rsquo%3bs%20useful%2c%20and%20how%20I%20apply%20it%20to%20my%20life%20in%20areas%20such%20as%20finance%2c%20investment%2c%20real%20estate%2c%20and%2c%20yes%2c%20nationalities.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&name=How%20to%20Query%20Grafana%20Loki&description=In%20this%20video%2c%20I%20show%20you%20how%20to%20query%20Grafana%20Loki%2c%20the%20open%20source%20log%20aggregation%20system%20from%20Grafana%20Labs.%20I%20cover%20the%20basics%20of%20Loki%26rsquo%3bs%20query%20language%2c%20LogQL%2c%20and%20demonstrate%20how%20to%20use%20it%20to%20filter%20and%20search%20logs%20effectively.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&t=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&t=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -221,13 +215,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        The Basics of Flag Theory for Software Engineers
+        How to Query Grafana Loki
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2021-12-01 17:12:58 &#43;0100 CET" itemprop="datePublished">2021-Dec-01</time>
+          <time datetime="2025-06-13 15:21:49 &#43;0200 CEST" itemprop="datePublished">2025-Jun-13</time>
           
         </div>
         
@@ -236,13 +230,19 @@
             <i class="fas fa-tag"></i>
             
             
+            <a class="tag-link" href="/tags/grafana-labs" rel="tag">grafana labs</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/loki" rel="tag">loki</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
+            
+             ,  
             <a class="tag-link" href="/tags/video" rel="tag">video</a>
             
              ,  
-            <a class="tag-link" href="/tags/flag-theory" rel="tag">flag theory</a>
-            
-             ,  
-            <a class="tag-link" href="/tags/digital-nomad" rel="tag">digital nomad</a>
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
             
         </div>
         
@@ -251,10 +251,10 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>One of the most common questions I get from friends and family is &ldquo;Why do you have three passports and how on earth did you get them?!&rdquo; In this video, I talk about what flag theory is, why I think it&rsquo;s useful, and how I apply it to my life in areas such as finance, investment, real estate, and, yes, nationalities.</p>
+      <p>In this video, I show you how to query <a href="https://gra.fan/lokirepo">Grafana Loki</a>, the open source log aggregation system from Grafana Labs. I cover the basics of Loki&rsquo;s query language, LogQL, and demonstrate how to use it to filter and search logs effectively.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/NBUVWlhmVDM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/57dQwcmqkpQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -266,15 +266,15 @@
     <h2>See Also</h3>
     <ul>
     
-    <li><a href="/blog/20240112-my-workflow-for-making-videos-with-obsidian/">My workflow for making videos with Obsidian</a></li>
+    <li><a href="/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/">How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</a></li>
     
-    <li><a href="/blog/20220722-why-you-should-move-to-another-country/">Why You Should Move to Another Country</a></li>
+    <li><a href="/blog/20240109-how-to-deploy-grafana-beyla-on-kubernetes-as-a-sidecar-container/">How to Deploy Grafana Beyla on Kubernetes as a Sidecar Container</a></li>
     
-    <li><a href="/blog/20220316-e-residency-benefits-why-and-how-to-start-a-company-in-estonia/">E-residency Benefits: Why and How to Start a Company in Estonia</a></li>
+    <li><a href="/blog/20240105-goh25-introduction-to-ebpf-with-grafana-beyla/">Introduction to eBPF With Grafana Beyla (Grafana Office Hours #25)</a></li>
     
-    <li><a href="/blog/20200421-aaf12/">Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?</a></li>
+    <li><a href="/blog/20231208-goh23-getting-started-with-opentelemetry/">Getting Started with OpenTelemetry (Grafana Office Hours #23)</a></li>
     
-    <li><a href="/blog/20250612-how-to-query-grafana-loki/">How to Query Grafana Loki</a></li>
+    <li><a href="/blog/20231103-goh18-combining-frontend-and-backend-performance/">Combining Frontend and Backend Performance (Grafana Office Hours #18)</a></li>
     
     </ul>
     
@@ -323,57 +323,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&text=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&text=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&is_video=false&description=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&is_video=false&description=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f">
+    <a class="icon" href="mailto:?subject=How%20to%20Query%20Grafana%20Loki&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&title=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&title=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&name=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers&description=One%20of%20the%20most%20common%20questions%20I%20get%20from%20friends%20and%20family%20is%20%26ldquo%3bWhy%20do%20you%20have%20three%20passports%20and%20how%20on%20earth%20did%20you%20get%20them%3f%21%26rdquo%3b%20In%20this%20video%2c%20I%20talk%20about%20what%20flag%20theory%20is%2c%20why%20I%20think%20it%26rsquo%3bs%20useful%2c%20and%20how%20I%20apply%20it%20to%20my%20life%20in%20areas%20such%20as%20finance%2c%20investment%2c%20real%20estate%2c%20and%2c%20yes%2c%20nationalities.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&name=How%20to%20Query%20Grafana%20Loki&description=In%20this%20video%2c%20I%20show%20you%20how%20to%20query%20Grafana%20Loki%2c%20the%20open%20source%20log%20aggregation%20system%20from%20Grafana%20Labs.%20I%20cover%20the%20basics%20of%20Loki%26rsquo%3bs%20query%20language%2c%20LogQL%2c%20and%20demonstrate%20how%20to%20use%20it%20to%20filter%20and%20search%20logs%20effectively.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20211201-the-basics-of-flag-theory-for-software-engineers%2f&t=The%20Basics%20of%20Flag%20Theory%20for%20Software%20Engineers">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250612-how-to-query-grafana-loki%2f&t=How%20to%20Query%20Grafana%20Loki">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

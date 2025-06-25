@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> What&#39;s New in Grafana 10? (Grafana Office Hours #01) | Nicole van der Hoeven</title>
+  <title> Getting Started with Logging and Grafana Loki (webinar) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="What&#39;s New in Grafana 10? (Grafana Office Hours #01)" />
-<meta property="og:description" content="What&rsquo;s new in Grafana 10? I interview Grafana Labs Product Director Mitch Seaman about all the new features in Grafana 10, including Scenes, correlations, some important plugin development changes, and improved security." />
+  <meta property="og:title" content="Getting Started with Logging and Grafana Loki (webinar)" />
+<meta property="og:description" content="In this webinar, I talk about the key benefits of Grafana Loki, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20230616-goh01-whats-new-in-grafana-10/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-06-16T12:00:25+02:00" />
-<meta property="article:modified_time" content="2023-06-16T12:00:25+02:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-04-16T08:18:04+02:00" />
+<meta property="article:modified_time" content="2025-04-16T08:18:04+02:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="What&#39;s New in Grafana 10? (Grafana Office Hours #01)"/>
-<meta name="twitter:description" content="What&rsquo;s new in Grafana 10? I interview Grafana Labs Product Director Mitch Seaman about all the new features in Grafana 10, including Scenes, correlations, some important plugin development changes, and improved security."/>
+<meta name="twitter:title" content="Getting Started with Logging and Grafana Loki (webinar)"/>
+<meta name="twitter:description" content="In this webinar, I talk about the key benefits of Grafana Loki, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:"/>
 
   
   
@@ -116,14 +116,14 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/">
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -154,57 +154,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&text=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&text=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&is_video=false&description=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&is_video=false&description=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f">
+    <a class="icon" href="mailto:?subject=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&name=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29&description=What%26rsquo%3bs%20new%20in%20Grafana%2010%3f%20I%20interview%20Grafana%20Labs%20Product%20Director%20Mitch%20Seaman%20about%20all%20the%20new%20features%20in%20Grafana%2010%2c%20including%20Scenes%2c%20correlations%2c%20some%20important%20plugin%20development%20changes%2c%20and%20improved%20security.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&name=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&description=In%20this%20webinar%2c%20I%20talk%20about%20the%20key%20benefits%20of%20Grafana%20Loki%2c%20the%20open%20source%20log%20aggregation%20system%20from%20Grafana%20Labs.%20I%20cover%20the%20basics%20of%20logging%2c%20how%20Loki%20works%2c%20and%20how%20to%20get%20started%20with%20it.%20This%20was%20a%20live%20webinar%2c%20but%20I%20recorded%20the%20session%20here%20as%20well%3a">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&t=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&t=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -221,13 +221,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        What&#39;s New in Grafana 10? (Grafana Office Hours #01)
+        Getting Started with Logging and Grafana Loki (webinar)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2023-06-16 12:00:25 &#43;0200 CEST" itemprop="datePublished">2023-Jun-16</time>
+          <time datetime="2025-04-16 08:18:04 &#43;0200 CEST" itemprop="datePublished">2025-Apr-16</time>
           
         </div>
         
@@ -236,22 +236,19 @@
             <i class="fas fa-tag"></i>
             
             
-            <a class="tag-link" href="/tags/english" rel="tag">english</a>
-            
-             ,  
             <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
             
              ,  
-            <a class="tag-link" href="/tags/live" rel="tag">live</a>
+            <a class="tag-link" href="/tags/loki" rel="tag">loki</a>
             
              ,  
             <a class="tag-link" href="/tags/video" rel="tag">video</a>
             
              ,  
-            <a class="tag-link" href="/tags/grafana-cloud" rel="tag">grafana cloud</a>
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
             
              ,  
-            <a class="tag-link" href="/tags/grafana-office-hours" rel="tag">Grafana Office Hours</a>
+            <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
             
         </div>
         
@@ -260,10 +257,10 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>What&rsquo;s new in Grafana 10? I interview Grafana Labs Product Director Mitch Seaman about all the new features in Grafana 10, including Scenes, correlations, some important plugin development changes, and improved security.</p>
+      <p>In this webinar, I talk about the key benefits of <a href="https://gra.fan/lokirepo">Grafana Loki</a>, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/uk7NoagbJ28" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/9XL4o5lLfVM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -275,15 +272,15 @@
     <h2>See Also</h3>
     <ul>
     
+    <li><a href="/blog/20250612-how-to-query-grafana-loki/">How to Query Grafana Loki</a></li>
+    
     <li><a href="/blog/20240109-how-to-deploy-grafana-beyla-on-kubernetes-as-a-sidecar-container/">How to Deploy Grafana Beyla on Kubernetes as a Sidecar Container</a></li>
     
-    <li><a href="/blog/20230707-goh04-monitor-behind-a-firewall-with-private-data-source-connect/">Monitor behind a Firewall With Private Data Source Connect (Grafana Office Hours #04)</a></li>
+    <li><a href="/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/">Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</a></li>
     
-    <li><a href="/blog/20230629-goh03-changes-to-grafana-plugins-in-grafana-10/">Changes to Grafana Plugins in Grafana 10 (Grafana Office Hours #03)</a></li>
+    <li><a href="/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/">OpenTelemetry demo app with Grafana, Tempo, Loki, and Prometheus (Grafana Office Hours #06)</a></li>
     
-    <li><a href="/blog/20221104-koh70-distributed-tracing-with-grafana-k6/">Distributed Tracing With Grafana k6 (k6 Office Hours #70)</a></li>
-    
-    <li><a href="/blog/20250416-getting-started-with-logging-and-grafana-loki/">Getting Started with Logging and Grafana Loki (webinar)</a></li>
+    <li><a href="/blog/20230324-koh-83-grafana-cloud-k6/">Grafana Cloud k6 (k6 Office Hours #83)</a></li>
     
     </ul>
     
@@ -332,57 +329,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&text=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&text=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&is_video=false&description=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&is_video=false&description=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f">
+    <a class="icon" href="mailto:?subject=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&title=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&name=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29&description=What%26rsquo%3bs%20new%20in%20Grafana%2010%3f%20I%20interview%20Grafana%20Labs%20Product%20Director%20Mitch%20Seaman%20about%20all%20the%20new%20features%20in%20Grafana%2010%2c%20including%20Scenes%2c%20correlations%2c%20some%20important%20plugin%20development%20changes%2c%20and%20improved%20security.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&name=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&description=In%20this%20webinar%2c%20I%20talk%20about%20the%20key%20benefits%20of%20Grafana%20Loki%2c%20the%20open%20source%20log%20aggregation%20system%20from%20Grafana%20Labs.%20I%20cover%20the%20basics%20of%20logging%2c%20how%20Loki%20works%2c%20and%20how%20to%20get%20started%20with%20it.%20This%20was%20a%20live%20webinar%2c%20but%20I%20recorded%20the%20session%20here%20as%20well%3a">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20230616-goh01-whats-new-in-grafana-10%2f&t=What%27s%20New%20in%20Grafana%2010%3f%20%28Grafana%20Office%20Hours%20%2301%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&t=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

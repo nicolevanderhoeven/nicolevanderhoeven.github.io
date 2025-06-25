@@ -24,6 +24,21 @@
     </item>
     
     <item>
+      <title>Getting Started with Logging and Grafana Loki (webinar)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</link>
+      <pubDate>Wed, 16 Apr 2025 08:18:04 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</guid>
+      <description>&lt;p&gt;In this webinar, I talk about the key benefits of &lt;a href=&#34;https://gra.fan/lokirepo&#34;&gt;Grafana Loki&lt;/a&gt;, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9XL4o5lLfVM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
       <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>

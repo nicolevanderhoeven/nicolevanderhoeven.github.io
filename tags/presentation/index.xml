@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 16 Nov 2023 09:45:15 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2025 13:46:42 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asmiov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/</link>
+      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/</guid>
+      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
+&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Adobo &amp; Avocados: Intersectionality in Tech and DevRel (Agile Testing Days 2023)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</link>

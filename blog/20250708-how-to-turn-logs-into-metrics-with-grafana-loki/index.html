@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Getting Started with Logging and Grafana Loki (webinar) | Nicole van der Hoeven</title>
+  <title> How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Getting Started with Logging and Grafana Loki (webinar)" />
-<meta property="og:description" content="In this webinar, I talk about the key benefits of Grafana Loki, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:" />
+  <meta property="og:title" content="How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)" />
+<meta property="og:description" content="In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2025-04-16T08:18:04+02:00" />
-<meta property="article:modified_time" content="2025-04-16T08:18:04+02:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-07-08T17:23:23+02:00" />
+<meta property="article:modified_time" content="2025-07-08T17:23:23+02:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Getting Started with Logging and Grafana Loki (webinar)"/>
-<meta name="twitter:description" content="In this webinar, I talk about the key benefits of Grafana Loki, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:"/>
+<meta name="twitter:title" content="How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)"/>
+<meta name="twitter:description" content="In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards."/>
 
   
   
@@ -116,17 +116,11 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -154,57 +148,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&text=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&text=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&is_video=false&description=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&is_video=false&description=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
+    <a class="icon" href="mailto:?subject=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&name=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&description=In%20this%20webinar%2c%20I%20talk%20about%20the%20key%20benefits%20of%20Grafana%20Loki%2c%20the%20open%20source%20log%20aggregation%20system%20from%20Grafana%20Labs.%20I%20cover%20the%20basics%20of%20logging%2c%20how%20Loki%20works%2c%20and%20how%20to%20get%20started%20with%20it.%20This%20was%20a%20live%20webinar%2c%20but%20I%20recorded%20the%20session%20here%20as%20well%3a">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&name=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&description=In%20this%20Loki%20Community%20Call%2c%20we%20talk%20all%20about%20how%20to%20turn%20metrics%20into%20logs%20in%20Grafana%20Loki%20using%20metric%20queries.%20We%20cover%20the%20basics%20of%20metric%20queries%2c%20how%20to%20use%20them%20to%20create%20metrics%20from%20logs%2c%20and%20some%20advanced%20use%20cases%20like%20using%20metric%20queries%20to%20create%20alerts%20and%20dashboards.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&t=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&t=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -221,13 +215,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        Getting Started with Logging and Grafana Loki (webinar)
+        How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2025-04-16 08:18:04 &#43;0200 CEST" itemprop="datePublished">2025-Apr-16</time>
+          <time datetime="2025-07-08 17:23:23 &#43;0200 CEST" itemprop="datePublished">2025-Jul-08</time>
           
         </div>
         
@@ -236,7 +230,7 @@
             <i class="fas fa-tag"></i>
             
             
-            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            <a class="tag-link" href="/tags/grafana-labs" rel="tag">grafana labs</a>
             
              ,  
             <a class="tag-link" href="/tags/loki" rel="tag">loki</a>
@@ -250,6 +244,9 @@
              ,  
             <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
             
+             ,  
+            <a class="tag-link" href="/tags/loki-community-call" rel="tag">loki community call</a>
+            
         </div>
         
       </div>
@@ -257,10 +254,10 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>In this webinar, I talk about the key benefits of <a href="https://gra.fan/lokirepo">Grafana Loki</a>, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:</p>
+      <p>In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/9XL4o5lLfVM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -272,13 +269,13 @@
     <h2>See Also</h3>
     <ul>
     
-    <li><a href="/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/">How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)</a></li>
-    
-    <li><a href="/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</a></li>
-    
     <li><a href="/blog/20250624-lcc-the-road-to-loki-4_0/">The Road to Loki 4.0 (Loki Community Call June 2025)</a></li>
     
     <li><a href="/blog/20250612-how-to-query-grafana-loki/">How to Query Grafana Loki</a></li>
+    
+    <li><a href="/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</a></li>
+    
+    <li><a href="/blog/20250416-getting-started-with-logging-and-grafana-loki/">Getting Started with Logging and Grafana Loki (webinar)</a></li>
     
     <li><a href="/blog/20250402-asimovs-zeroth-law-of-robotics/">Asmiov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</a></li>
     
@@ -329,57 +326,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&text=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&text=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&is_video=false&description=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&is_video=false&description=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f">
+    <a class="icon" href="mailto:?subject=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&title=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&name=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29&description=In%20this%20webinar%2c%20I%20talk%20about%20the%20key%20benefits%20of%20Grafana%20Loki%2c%20the%20open%20source%20log%20aggregation%20system%20from%20Grafana%20Labs.%20I%20cover%20the%20basics%20of%20logging%2c%20how%20Loki%20works%2c%20and%20how%20to%20get%20started%20with%20it.%20This%20was%20a%20live%20webinar%2c%20but%20I%20recorded%20the%20session%20here%20as%20well%3a">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&name=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&description=In%20this%20Loki%20Community%20Call%2c%20we%20talk%20all%20about%20how%20to%20turn%20metrics%20into%20logs%20in%20Grafana%20Loki%20using%20metric%20queries.%20We%20cover%20the%20basics%20of%20metric%20queries%2c%20how%20to%20use%20them%20to%20create%20metrics%20from%20logs%2c%20and%20some%20advanced%20use%20cases%20like%20using%20metric%20queries%20to%20create%20alerts%20and%20dashboards.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250416-getting-started-with-logging-and-grafana-loki%2f&t=Getting%20Started%20with%20Logging%20and%20Grafana%20Loki%20%28webinar%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&t=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

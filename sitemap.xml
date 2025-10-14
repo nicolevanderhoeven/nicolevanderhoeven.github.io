@@ -3,30 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/excalidraw/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/logs/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/loki/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/metrics/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/presentation/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/prometheus/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/visual-thinking/</loc>
+    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/</loc>
     <lastmod>2025-07-08T17:23:23+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/loki/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/loki-community-call/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
-    <lastmod>2025-07-08T17:23:23+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
     <lastmod>2025-07-08T17:23:23+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
@@ -38,25 +65,13 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</loc>
     <lastmod>2025-07-03T15:01:24+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
-    <lastmod>2025-07-03T15:01:24+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/k6/</loc>
-    <lastmod>2025-07-03T15:01:24+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/logs/</loc>
-    <lastmod>2025-07-03T15:01:24+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/metrics/</loc>
     <lastmod>2025-07-03T15:01:24+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/open-telemetry/</loc>
     <lastmod>2025-07-03T15:01:24+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/openlit/</loc>
-    <lastmod>2025-07-03T15:01:24+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/presentation/</loc>
     <lastmod>2025-07-03T15:01:24+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/tempo/</loc>
@@ -74,22 +89,13 @@
     <loc>https://nicolevanderhoeven.github.io/tags/breadcrumbs/</loc>
     <lastmod>2025-06-25T12:13:37+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
-    <lastmod>2025-06-25T12:13:37+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/zettelkasten/</loc>
     <lastmod>2025-06-25T12:13:37+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250624-lcc-the-road-to-loki-4_0/</loc>
     <lastmod>2025-06-24T13:56:45+02:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/excalidraw/</loc>
-    <lastmod>2025-06-18T15:30:49+02:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250618-how-to-sketch-your-mind-in-obsidian/</loc>
-    <lastmod>2025-06-18T15:30:49+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/visual-thinking/</loc>
     <lastmod>2025-06-18T15:30:49+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</loc>
@@ -183,9 +189,6 @@
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/opentelemetry/</loc>
-    <lastmod>2024-01-19T18:09:01+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/prometheus/</loc>
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/pyroscope/</loc>

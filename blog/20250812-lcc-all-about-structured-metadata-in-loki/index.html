@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025) | Nicole van der Hoeven</title>
+  <title> All About Structured Metadata in Loki (Loki Community Call August 2025) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)" />
-<meta property="og:description" content="In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards." />
+  <meta property="og:title" content="All About Structured Metadata in Loki (Loki Community Call August 2025)" />
+<meta property="og:description" content="In this video, Jay Clifford and I talk to Senior Software Engineer Salva Corts Sánchez from the Loki team about structured metadata in Loki. We discuss what it is, why you might want to use it, and also how to query it. Structured metadata is especially useful if you&rsquo;re instrumenting your system with OpenTelemetry, so we also touch on that." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2025-07-08T17:23:23+02:00" />
-<meta property="article:modified_time" content="2025-07-08T17:23:23+02:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-08-12T19:56:32-07:00" />
+<meta property="article:modified_time" content="2025-08-12T19:56:32-07:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)"/>
-<meta name="twitter:description" content="In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards."/>
+<meta name="twitter:title" content="All About Structured Metadata in Loki (Loki Community Call August 2025)"/>
+<meta name="twitter:description" content="In this video, Jay Clifford and I talk to Senior Software Engineer Salva Corts Sánchez from the Loki team about structured metadata in Loki. We discuss what it is, why you might want to use it, and also how to query it. Structured metadata is especially useful if you&rsquo;re instrumenting your system with OpenTelemetry, so we also touch on that."/>
 
   
   
@@ -116,14 +116,14 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/">
+          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -154,57 +154,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&text=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&text=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&is_video=false&description=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&is_video=false&description=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
+    <a class="icon" href="mailto:?subject=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&name=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&description=In%20this%20Loki%20Community%20Call%2c%20we%20talk%20all%20about%20how%20to%20turn%20metrics%20into%20logs%20in%20Grafana%20Loki%20using%20metric%20queries.%20We%20cover%20the%20basics%20of%20metric%20queries%2c%20how%20to%20use%20them%20to%20create%20metrics%20from%20logs%2c%20and%20some%20advanced%20use%20cases%20like%20using%20metric%20queries%20to%20create%20alerts%20and%20dashboards.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&name=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29&description=In%20this%20video%2c%20Jay%20Clifford%20and%20I%20talk%20to%20Senior%20Software%20Engineer%20Salva%20Corts%20S%c3%a1nchez%20from%20the%20Loki%20team%20about%20structured%20metadata%20in%20Loki.%20We%20discuss%20what%20it%20is%2c%20why%20you%20might%20want%20to%20use%20it%2c%20and%20also%20how%20to%20query%20it.%20Structured%20metadata%20is%20especially%20useful%20if%20you%26rsquo%3bre%20instrumenting%20your%20system%20with%20OpenTelemetry%2c%20so%20we%20also%20touch%20on%20that.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&t=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&t=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -221,13 +221,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)
+        All About Structured Metadata in Loki (Loki Community Call August 2025)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2025-07-08 17:23:23 &#43;0200 &#43;0200" itemprop="datePublished">2025-Jul-08</time>
+          <time datetime="2025-08-12 19:56:32 -0700 PDT" itemprop="datePublished">2025-Aug-12</time>
           
         </div>
         
@@ -236,22 +236,22 @@
             <i class="fas fa-tag"></i>
             
             
-            <a class="tag-link" href="/tags/grafana-labs" rel="tag">grafana labs</a>
-            
-             ,  
             <a class="tag-link" href="/tags/loki" rel="tag">loki</a>
             
              ,  
-            <a class="tag-link" href="/tags/video" rel="tag">video</a>
-            
-             ,  
-            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            <a class="tag-link" href="/tags/loki-community-call" rel="tag">loki community call</a>
             
              ,  
             <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
             
              ,  
-            <a class="tag-link" href="/tags/loki-community-call" rel="tag">loki community call</a>
+            <a class="tag-link" href="/tags/grafana" rel="tag">grafana</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
             
         </div>
         
@@ -260,10 +260,10 @@
     
   
     <div class="content" itemprop="articleBody">
-      <p>In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards.</p>
+      <p>In this video, <a href="https://www.linkedin.com/in/jaymand13/">Jay Clifford</a> and I talk to Senior Software Engineer Salva Corts Sánchez from the Loki team about structured metadata in Loki. We discuss what it is, why you might want to use it, and also how to query it. Structured metadata is especially useful if you&rsquo;re instrumenting your system with OpenTelemetry, so we also touch on that.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/IKdRzjwFXYI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -275,11 +275,11 @@
     <h2>See Also</h3>
     <ul>
     
+    <li><a href="/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/">How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)</a></li>
+    
     <li><a href="/blog/20250624-lcc-the-road-to-loki-4_0/">The Road to Loki 4.0 (Loki Community Call June 2025)</a></li>
     
-    <li><a href="/blog/20250812-lcc-all-about-structured-metadata-in-loki/">All About Structured Metadata in Loki (Loki Community Call August 2025)</a></li>
-    
-    <li><a href="/blog/20250612-how-to-query-grafana-loki/">How to Query Grafana Loki</a></li>
+    <li><a href="/blog/20250416-getting-started-with-logging-and-grafana-loki/">Getting Started with Logging and Grafana Loki (webinar)</a></li>
     
     <li><a href="/blog/20251013-how-i-use-visuals-in-my-pkm/">One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</a></li>
     
@@ -332,57 +332,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&text=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&text=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&is_video=false&description=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&is_video=false&description=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f">
+    <a class="icon" href="mailto:?subject=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&title=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&title=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&name=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29&description=In%20this%20Loki%20Community%20Call%2c%20we%20talk%20all%20about%20how%20to%20turn%20metrics%20into%20logs%20in%20Grafana%20Loki%20using%20metric%20queries.%20We%20cover%20the%20basics%20of%20metric%20queries%2c%20how%20to%20use%20them%20to%20create%20metrics%20from%20logs%2c%20and%20some%20advanced%20use%20cases%20like%20using%20metric%20queries%20to%20create%20alerts%20and%20dashboards.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&name=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29&description=In%20this%20video%2c%20Jay%20Clifford%20and%20I%20talk%20to%20Senior%20Software%20Engineer%20Salva%20Corts%20S%c3%a1nchez%20from%20the%20Loki%20team%20about%20structured%20metadata%20in%20Loki.%20We%20discuss%20what%20it%20is%2c%20why%20you%20might%20want%20to%20use%20it%2c%20and%20also%20how%20to%20query%20it.%20Structured%20metadata%20is%20especially%20useful%20if%20you%26rsquo%3bre%20instrumenting%20your%20system%20with%20OpenTelemetry%2c%20so%20we%20also%20touch%20on%20that.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250708-how-to-turn-logs-into-metrics-with-grafana-loki%2f&t=How%20to%20Turn%20Logs%20Into%20Metrics%20with%20Grafana%20Loki%20%28Loki%20Community%20Call%20July%202025%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250812-lcc-all-about-structured-metadata-in-loki%2f&t=All%20About%20Structured%20Metadata%20in%20Loki%20%28Loki%20Community%20Call%20August%202025%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

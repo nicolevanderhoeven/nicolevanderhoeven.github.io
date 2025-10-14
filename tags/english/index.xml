@@ -34,6 +34,21 @@
     </item>
     
     <item>
+      <title>All About Structured Metadata in Loki (Loki Community Call August 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</link>
+      <pubDate>Tue, 12 Aug 2025 19:56:32 -0700</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</guid>
+      <description>&lt;p&gt;In this video, &lt;a href=&#34;https://www.linkedin.com/in/jaymand13/&#34;&gt;Jay Clifford&lt;/a&gt; and I talk to Senior Software Engineer Salva Corts Sánchez from the Loki team about structured metadata in Loki. We discuss what it is, why you might want to use it, and also how to query it. Structured metadata is especially useful if you&amp;rsquo;re instrumenting your system with OpenTelemetry, so we also touch on that.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IKdRzjwFXYI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/</link>
       <pubDate>Tue, 08 Jul 2025 17:23:23 +0200</pubDate>

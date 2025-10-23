@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grafana otel community call on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/grafana-otel-community-call/</link>
+    <description>Recent content in grafana otel community call on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Wed, 22 Oct 2025 15:02:21 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-otel-community-call/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Declarative Configuration in OpenTelemetry SDKs</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</link>
+      <pubDate>Wed, 22 Oct 2025 15:02:21 -0700</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m very lucky to have the opportunity to work with &lt;a href=&#34;https://www.linkedin.com/in/lmolkova/&#34;&gt;Liudmila Molkova&lt;/a&gt;, who just joined as a Staff Developer Advocate at Grafana Labs. We decided we would start a new monthly livestream called the Grafana ❤️‍🔥 OpenTelemetry Community Call. In this inaugural episode, we interviewed &lt;a href=&#34;https://www.linkedin.com/in/maryliag/&#34;&gt;Marylia Gutierrez&lt;/a&gt; about declarative configuration for OpenTelemetry SDKs. We talked about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pains in getting started with OpenTelemetry, particularly around instrumentation and configuration&lt;/li&gt;
+&lt;li&gt;What declarative configuration is, and how it improves the experience&lt;/li&gt;
+&lt;li&gt;Which languages declarative configuration is for&lt;/li&gt;
+&lt;li&gt;The future of declarative configuration in OpenTelemetry&lt;/li&gt;
+&lt;li&gt;Marylia&amp;rsquo;s candidacy for Governing Committee of OTel (&lt;a href=&#34;https://gra.fan/otelvote&#34;&gt;vote for her here&lt;/a&gt; from October 27th-30th, 2025)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FwnyV5z_ij4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

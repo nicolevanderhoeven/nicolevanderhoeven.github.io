@@ -3,18 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana-otel-community-call/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/opentelemetry/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
+    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/excalidraw/</loc>
     <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
-    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
     <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/logs/</loc>
@@ -24,9 +42,6 @@
     <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/metrics/</loc>
-    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
     <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
@@ -44,9 +59,6 @@
     <loc>https://nicolevanderhoeven.github.io/tags/prometheus/</loc>
     <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
-    <lastmod>2025-10-13T13:33:18-07:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/visual-thinking/</loc>
     <lastmod>2025-10-13T13:33:18-07:00</lastmod>
   </url><url>
@@ -54,9 +66,6 @@
     <lastmod>2025-08-12T19:56:32-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/loki-community-call/</loc>
-    <lastmod>2025-08-12T19:56:32-07:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
     <lastmod>2025-08-12T19:56:32-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/</loc>
@@ -112,6 +121,15 @@
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/</loc>
     <lastmod>2024-11-13T09:37:19-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/alloy/</loc>
+    <lastmod>2024-06-13T12:24:02-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</loc>
+    <lastmod>2024-06-13T12:24:02-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/tracing/</loc>
+    <lastmod>2024-06-13T12:24:02-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/doing-it-in-public/</loc>
     <lastmod>2024-02-02T18:00:50+02:00</lastmod>
@@ -189,9 +207,6 @@
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/instrumentation/</loc>
-    <lastmod>2024-01-19T18:09:01+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/opentelemetry/</loc>
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/pyroscope/</loc>
@@ -537,9 +552,6 @@
     <lastmod>2023-10-11T11:52:37+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</loc>
-    <lastmod>2023-10-07T08:31:03+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/tracing/</loc>
     <lastmod>2023-10-07T08:31:03+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/gender/</loc>

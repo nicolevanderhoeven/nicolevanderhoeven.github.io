@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 13:33:18 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Oct 2025 15:02:21 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Declarative Configuration in OpenTelemetry SDKs</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</link>
+      <pubDate>Wed, 22 Oct 2025 15:02:21 -0700</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m very lucky to have the opportunity to work with &lt;a href=&#34;https://www.linkedin.com/in/lmolkova/&#34;&gt;Liudmila Molkova&lt;/a&gt;, who just joined as a Staff Developer Advocate at Grafana Labs. We decided we would start a new monthly livestream called the Grafana ❤️‍🔥 OpenTelemetry Community Call. In this inaugural episode, we interviewed &lt;a href=&#34;https://www.linkedin.com/in/maryliag/&#34;&gt;Marylia Gutierrez&lt;/a&gt; about declarative configuration for OpenTelemetry SDKs. We talked about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pains in getting started with OpenTelemetry, particularly around instrumentation and configuration&lt;/li&gt;
+&lt;li&gt;What declarative configuration is, and how it improves the experience&lt;/li&gt;
+&lt;li&gt;Which languages declarative configuration is for&lt;/li&gt;
+&lt;li&gt;The future of declarative configuration in OpenTelemetry&lt;/li&gt;
+&lt;li&gt;Marylia&amp;rsquo;s candidacy for Governing Committee of OTel (&lt;a href=&#34;https://gra.fan/otelvote&#34;&gt;vote for her here&lt;/a&gt; from October 27th-30th, 2025)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FwnyV5z_ij4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link>
@@ -154,6 +176,23 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/9XL4o5lLfVM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
+      <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid>
+      <description>&lt;p&gt;I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nicole.to/rtc2024&#34;&gt;Here are my slides&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
+&lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
+&lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
 </description>
     </item>
     

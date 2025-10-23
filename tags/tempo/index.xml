@@ -40,6 +40,23 @@
     </item>
     
     <item>
+      <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
+      <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid>
+      <description>&lt;p&gt;I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nicole.to/rtc2024&#34;&gt;Here are my slides&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
+&lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
+&lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Get Started with Tempo (Grafana Office Hours #22)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</link>
       <pubDate>Fri, 01 Dec 2023 11:55:55 +0100</pubDate>

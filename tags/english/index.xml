@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 22 Oct 2025 15:02:21 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Nov 2025 03:07:38 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link>
+      <pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid>
+      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://oredev.org/&#34;&gt;Øredev 2025&lt;/a&gt; in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p&gt;
+&lt;p&gt;The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p&gt;
+&lt;p&gt;In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here are some resources mentioned in the talk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can play the game Spice Runner &lt;a href=&#34;https://nicole.to/spicegame&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicerepo&#34;&gt;The spice-runner repo&lt;/a&gt; containing everything you need to know about how to deploy it yourself&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nicole.to/spiceslides&#34;&gt;The slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG&#34; alt=&#34;Photo of me at Øredev 2025&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Declarative Configuration in OpenTelemetry SDKs</title>
       <link>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</link>

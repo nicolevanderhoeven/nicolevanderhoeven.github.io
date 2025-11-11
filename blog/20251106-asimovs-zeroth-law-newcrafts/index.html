@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025) | Nicole van der Hoeven</title>
+  <title> Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)" />
-<meta property="og:description" content="Today I gave a talk at KubeCon EU 2025 in London called &ldquo;Asmiov&rsquo;s Zeroth Law of Robotics: Observability for AI&rdquo;. Here&rsquo;s the abstract:
-A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years." />
+  <meta property="og:title" content="Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)" />
+<meta property="og:description" content="Today I presented at Newcrafts in Paris, France. I gave a talk I&rsquo;ve given before, called Asimov&rsquo;s Zeroth Law of Robotics: Observability for AI, which I had previously presented at KubeCon EU in London and at Dutch Cloud Native Day 2025 in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on GitHub.
+The main change I made was to use the &ldquo;AI as judge&rdquo; approach that I had previously only talked about in theory." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2025-04-02T13:46:42+02:00" />
-<meta property="article:modified_time" content="2025-04-02T13:46:42+02:00" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-11-06T12:23:19+01:00" />
+<meta property="article:modified_time" content="2025-11-06T12:23:19+01:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)"/>
-<meta name="twitter:description" content="Today I gave a talk at KubeCon EU 2025 in London called &ldquo;Asmiov&rsquo;s Zeroth Law of Robotics: Observability for AI&rdquo;. Here&rsquo;s the abstract:
-A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years."/>
+<meta name="twitter:title" content="Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)"/>
+<meta name="twitter:description" content="Today I presented at Newcrafts in Paris, France. I gave a talk I&rsquo;ve given before, called Asimov&rsquo;s Zeroth Law of Robotics: Observability for AI, which I had previously presented at KubeCon EU in London and at Dutch Cloud Native Day 2025 in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on GitHub.
+The main change I made was to use the &ldquo;AI as judge&rdquo; approach that I had previously only talked about in theory."/>
 
   
   
@@ -118,17 +118,11 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
       <ul>
         
         <li>
-          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/">
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -156,57 +150,57 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&text=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&text=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&is_video=false&description=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&is_video=false&description=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f">
+    <a class="icon" href="mailto:?subject=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&name=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29&description=Today%20I%20gave%20a%20talk%20at%20KubeCon%20EU%202025%20in%20London%20called%20%26ldquo%3bAsmiov%26rsquo%3bs%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%26rdquo%3b.%20Here%26rsquo%3bs%20the%20abstract%3a%0aA%20robot%20may%20not%20harm%20humans.%20A%20robot%20must%20obey%20humans.%20A%20robot%20must%20protect%20its%20own%20existence.%20These%20are%20Isaac%20Asimov%26rsquo%3bs%20three%20Laws%20of%20Robotics%2c%20created%20to%20govern%20the%20ethical%20programming%20of%20artificial%20intelligences.%20From%20the%20Butlerian%20Jihad%20to%20Skynet%20to%20cylons%2c%20we%26rsquo%3bve%20been%20immortalizing%20our%20collective%20nightmares%20about%20artificial%20intelligence%20for%20years.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&name=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29&description=Today%20I%20presented%20at%20Newcrafts%20in%20Paris%2c%20France.%20I%20gave%20a%20talk%20I%26rsquo%3bve%20given%20before%2c%20called%20Asimov%26rsquo%3bs%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%2c%20which%20I%20had%20previously%20presented%20at%20KubeCon%20EU%20in%20London%20and%20at%20Dutch%20Cloud%20Native%20Day%202025%20in%20Utrecht.%20I%20was%20happy%20to%20present%20it%20again%2c%20as%20it%20gave%20me%20the%20chance%20to%20further%20refine%20my%20demo%20application%2c%20which%20you%20can%20find%20on%20GitHub.%0aThe%20main%20change%20I%20made%20was%20to%20use%20the%20%26ldquo%3bAI%20as%20judge%26rdquo%3b%20approach%20that%20I%20had%20previously%20only%20talked%20about%20in%20theory.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&t=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&t=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -223,13 +217,13 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)
+        Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2025-04-02 13:46:42 &#43;0200 CEST" itemprop="datePublished">2025-Apr-02</time>
+          <time datetime="2025-11-06 12:23:19 &#43;0100 CET" itemprop="datePublished">2025-Nov-06</time>
           
         </div>
         
@@ -239,9 +233,6 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
             
             
             <a class="tag-link" href="/tags/observability" rel="tag">observability</a>
-            
-             ,  
-            <a class="tag-link" href="/tags/video" rel="tag">video</a>
             
              ,  
             <a class="tag-link" href="/tags/presentation" rel="tag">presentation</a>
@@ -276,6 +267,15 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
              ,  
             <a class="tag-link" href="/tags/tempo" rel="tag">tempo</a>
             
+             ,  
+            <a class="tag-link" href="/tags/openlit" rel="tag">openlit</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/open-telemetry" rel="tag">open telemetry</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
         </div>
         
       </div>
@@ -283,16 +283,8 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
     
   
     <div class="content" itemprop="articleBody">
-      <p>Today I gave a talk at <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London</a> called &ldquo;Asmiov&rsquo;s Zeroth Law of Robotics: Observability for AI&rdquo;. Here&rsquo;s the abstract:</p>
-<blockquote>
-<p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.</p>
-<p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.</p>
-</blockquote>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/x6EKTCAWtn8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+      <p>Today I presented at <a href="https://ncrafts.io/">Newcrafts</a> in Paris, France. I gave a talk I&rsquo;ve given before, called <em>Asimov&rsquo;s Zeroth Law of Robotics: Observability for AI</em>, which I had previously presented at <a href="/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU</a> in London and at <a href="/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025</a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on <a href="https://nicole.to/asimov">GitHub</a>.</p>
+<p>The main change I made was to use the &ldquo;AI as judge&rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.</p>
 
     </div>
   </article>
@@ -302,9 +294,9 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
     <h2>See Also</h3>
     <ul>
     
-    <li><a href="/blog/20251106-asimovs-zeroth-law-newcrafts/">Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</a></li>
-    
     <li><a href="/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</a></li>
+    
+    <li><a href="/blog/20250402-asimovs-zeroth-law-of-robotics/">Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</a></li>
     
     <li><a href="/blog/20251013-how-i-use-visuals-in-my-pkm/">One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</a></li>
     
@@ -359,57 +351,57 @@ A robot may not harm humans. A robot must obey humans. A robot must protect its 
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&text=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&text=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&is_video=false&description=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&is_video=false&description=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f">
+    <a class="icon" href="mailto:?subject=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&title=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&name=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29&description=Today%20I%20gave%20a%20talk%20at%20KubeCon%20EU%202025%20in%20London%20called%20%26ldquo%3bAsmiov%26rsquo%3bs%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%26rdquo%3b.%20Here%26rsquo%3bs%20the%20abstract%3a%0aA%20robot%20may%20not%20harm%20humans.%20A%20robot%20must%20obey%20humans.%20A%20robot%20must%20protect%20its%20own%20existence.%20These%20are%20Isaac%20Asimov%26rsquo%3bs%20three%20Laws%20of%20Robotics%2c%20created%20to%20govern%20the%20ethical%20programming%20of%20artificial%20intelligences.%20From%20the%20Butlerian%20Jihad%20to%20Skynet%20to%20cylons%2c%20we%26rsquo%3bve%20been%20immortalizing%20our%20collective%20nightmares%20about%20artificial%20intelligence%20for%20years.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&name=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29&description=Today%20I%20presented%20at%20Newcrafts%20in%20Paris%2c%20France.%20I%20gave%20a%20talk%20I%26rsquo%3bve%20given%20before%2c%20called%20Asimov%26rsquo%3bs%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%2c%20which%20I%20had%20previously%20presented%20at%20KubeCon%20EU%20in%20London%20and%20at%20Dutch%20Cloud%20Native%20Day%202025%20in%20Utrecht.%20I%20was%20happy%20to%20present%20it%20again%2c%20as%20it%20gave%20me%20the%20chance%20to%20further%20refine%20my%20demo%20application%2c%20which%20you%20can%20find%20on%20GitHub.%0aThe%20main%20change%20I%20made%20was%20to%20use%20the%20%26ldquo%3bAI%20as%20judge%26rdquo%3b%20approach%20that%20I%20had%20previously%20only%20talked%20about%20in%20theory.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20250402-asimovs-zeroth-law-of-robotics%2f&t=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28KubeCon%20EU%202025%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251106-asimovs-zeroth-law-newcrafts%2f&t=Asimov%27s%20Zeroth%20Law%20of%20Robotics%3a%20Observability%20for%20AI%20%28Newcrafts%202025%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

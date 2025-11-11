@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 05 Nov 2025 03:07:38 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
+      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
+      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link>
@@ -5002,12 +5013,12 @@ However, k6 has an extension called &lt;a href=&#34;https://k6.io/docs/javascrip
       <description>&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg&#34; alt=&#34;Me speaking at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Below is a list of places I&amp;rsquo;ve spoken at, including conferences, events, and podcasts. You might also be interested in watching some &lt;a href=&#34;https://www.youtube.com/channel/UCrmQZ9HHnJ2qpd6udc8iYYw&#34;&gt;videos&lt;/a&gt; I&amp;rsquo;ve made on various topics.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming&#34;&gt;Upcoming&lt;/h2&gt;
-&lt;p&gt;06/11   &lt;strong&gt;&lt;a href=&#34;https://ncrafts.io/&#34;&gt;NewCrafts Paris 2025&lt;/a&gt;&lt;/strong&gt;: (Paris, France) &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI (English)&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;2025&#34;&gt;2025&lt;/h2&gt;
 &lt;p&gt;02/04   &lt;strong&gt;&lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon Europe 2025&lt;/a&gt;&lt;/strong&gt;: (London, UK). &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;03/07   &lt;strong&gt;&lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day&#34;&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;13/10   &lt;strong&gt;&lt;a href=&#34;https://sketch-your-mind.com/2025/&#34;&gt;Sketch Your Mind&lt;/a&gt;&lt;/strong&gt;: (virtual) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm&#34;&gt;One Year Later: How I use visuals in my PKM&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;p&gt;05/11   &lt;strong&gt;&lt;a href=&#34;https://oredev.org/&#34;&gt;Øredev 2025&lt;/a&gt;&lt;/strong&gt;: (Malmö, Sweden) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow&#34;&gt;The Spice Must Flow: The Fremen guide to sustainable observability&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
+&lt;p&gt;06/11   &lt;strong&gt;&lt;a href=&#34;https://ncrafts.io/&#34;&gt;NewCrafts Paris 2025&lt;/a&gt;&lt;/strong&gt;: (Paris, France) &lt;em&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts&#34;&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;
 &lt;h2 id=&#34;2024&#34;&gt;2024&lt;/h2&gt;
 &lt;p&gt;22/03    &lt;strong&gt;&lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://pkmsummit.com/nicole-van-der-hoeven/&#34;&gt;Roll for connections: RPGs, CRM, and PKM&lt;/a&gt;&lt;/em&gt; - joint talk with &lt;a href=&#34;https://www.youtube.com/@VisualPKM&#34;&gt;Zsolt Viczián&lt;/a&gt; (English).&lt;/p&gt;
 &lt;p&gt;23/03    &lt;strong&gt;&lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit&lt;/a&gt;&lt;/strong&gt;: (Utrecht, the Netherlands) &lt;em&gt;&lt;a href=&#34;https://pkmsummit.com/nicole-van-der-hoeven/&#34;&gt;Doing it in public: Observability for PKM&lt;/a&gt;&lt;/em&gt; (English).&lt;/p&gt;

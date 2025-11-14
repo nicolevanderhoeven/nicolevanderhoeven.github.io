@@ -24,7 +24,7 @@
     </item>
     
     <item>
-      <title>Declarative Configuration in OpenTelemetry SDKs</title>
+      <title>Declarative Configuration in OpenTelemetry SDKs (Grafana ❤️‍🔥 OpenTelemetry Community Call October 2025)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</link>
       <pubDate>Wed, 22 Oct 2025 15:02:21 -0700</pubDate>
       
@@ -137,6 +137,21 @@
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/57dQwcmqkpQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>State of the Observability Databases (Grafana Office Hours #30)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link>
+      <pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid>
+      <description>&lt;p&gt;In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Ph5nvicm6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>
@@ -275,6 +290,21 @@
     </item>
     
     <item>
+      <title>AI Observability with Ishan Jain (Grafana Office Hours #29)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</link>
+      <pubDate>Fri, 08 Nov 2024 18:24:29 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</guid>
+      <description>&lt;p&gt;In this Grafana Office Hours, Ishan Jain talks about AI Observability with Grafana: what it entails, factors to consider when monitoring and observing LLMs, and how to do it all with Grafana. He is joined by Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9X7M-bvnZG0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>All About Logs Drilldown (Loki Community Call October 2024)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</link>
       <pubDate>Thu, 03 Oct 2024 17:45:33 +0100</pubDate>
@@ -300,6 +330,36 @@
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/keXrUf8jw1A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>API Monitoring with Traefik, Grafana, and OpenTelemetry (Grafana Office Hours #28)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240712-goh28-api-monitoring-with-traefik-grafana-and-opentelemetry/</link>
+      <pubDate>Fri, 12 Jul 2024 18:27:03 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240712-goh28-api-monitoring-with-traefik-grafana-and-opentelemetry/</guid>
+      <description>&lt;p&gt;Maytham Alfouadi (Solutions Architect) and Immánuel Fodor (Product Manager) from Traefik Labs give us a demonstration of how to do API monitoring with Traefik, Grafana, and OpenTelemetry. They talk about Traefik, an open-source reverse proxy, among other things, that is now included by default in k3s and Rancher. They are joined by Usman Ahmad and Nicole van der Hoeven, both Senior Developer Advocates at Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1Buk3wPpJdY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Grafana Loki Design Basics with Ed Welch (Grafana Office Hours #27)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</link>
+      <pubDate>Fri, 07 Jun 2024 18:29:26 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</guid>
+      <description>&lt;p&gt;Ed Welch, Principal Engineer on the Loki team, is talking to us about how to get started with Grafana Loki for beginners. He tells us the story of why Loki was created in the first place, talks about the terminology of Loki (what are indices, streams, labels, metadata, tags, and chunks?), and shares candidly about what Loki is good at and what it&amp;rsquo;s not good at.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3uFMJLufgSo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>
@@ -442,7 +502,7 @@
     </item>
     
     <item>
-      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
+      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
       <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>
       
@@ -894,26 +954,6 @@
     </item>
     
     <item>
-      <title>Combining Frontend and Backend Performance (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</link>
-      <pubDate>Fri, 03 Nov 2023 16:43:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven speak with John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA’s Open MCT.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nasa/openmct/discussions/4303&#34;&gt;Open e2e Testing Initiative&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unlikelyzero/openmct-performance&#34;&gt;Open MCT performance Github project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
       <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
@@ -1087,26 +1127,6 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
   &lt;iframe src=&#34;https://www.youtube.com/embed/K9jQ7HEo5bw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>Agentless Monitoring for Grafana Cloud (Grafana Office Hours #15)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-grafana-cloud/</link>
-      <pubDate>Fri, 13 Oct 2023 16:35:45 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-grafana-cloud/</guid>
-      <description>&lt;p&gt;Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/EYR5lQJ_kG8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs on Metrics Endpoint&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post on Metrics Endpoint&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

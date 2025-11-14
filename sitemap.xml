@@ -137,6 +137,24 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</loc>
     <lastmod>2025-06-13T15:21:49+02:00</lastmod>
   </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/databases/</loc>
+    <lastmod>2025-05-15T18:22:26+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana-office-hours/</loc>
+    <lastmod>2025-05-15T18:22:26+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/kafka/</loc>
+    <lastmod>2025-05-15T18:22:26+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/mimir/</loc>
+    <lastmod>2025-05-15T18:22:26+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/pyroscope/</loc>
+    <lastmod>2025-05-15T18:22:26+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</loc>
+    <lastmod>2025-05-15T18:22:26+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</loc>
     <lastmod>2025-05-12T17:59:48+01:00</lastmod>
   </url><url>
@@ -185,6 +203,12 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/</loc>
     <lastmod>2024-11-13T09:37:19-07:00</lastmod>
   </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</loc>
+    <lastmod>2024-11-08T18:24:29+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/llm/</loc>
+    <lastmod>2024-11-08T18:24:29+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</loc>
     <lastmod>2024-10-03T17:45:33+01:00</lastmod>
   </url><url>
@@ -197,6 +221,12 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</loc>
     <lastmod>2024-09-05T17:41:18+01:00</lastmod>
   </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20240712-goh28-api-monitoring-with-traefik-grafana-and-opentelemetry/</loc>
+    <lastmod>2024-07-12T18:27:03+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/traefik/</loc>
+    <lastmod>2024-07-12T18:27:03+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/alloy/</loc>
     <lastmod>2024-06-13T12:24:02-07:00</lastmod>
   </url><url>
@@ -205,6 +235,9 @@
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/tracing/</loc>
     <lastmod>2024-06-13T12:24:02-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</loc>
+    <lastmod>2024-06-07T18:29:26+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</loc>
     <lastmod>2024-05-10T18:12:09+01:00</lastmod>
@@ -302,16 +335,10 @@
     <loc>https://nicolevanderhoeven.github.io/tags/ebpf/</loc>
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana-office-hours/</loc>
-    <lastmod>2024-01-19T18:09:01+01:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</loc>
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/instrumentation/</loc>
-    <lastmod>2024-01-19T18:09:01+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/pyroscope/</loc>
     <lastmod>2024-01-19T18:09:01+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/learning/</loc>
@@ -357,9 +384,6 @@
     <lastmod>2024-01-11T16:00:25+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/load-testing/</loc>
-    <lastmod>2024-01-11T16:00:25+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/mimir/</loc>
     <lastmod>2024-01-11T16:00:25+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/performance/</loc>
@@ -560,12 +584,6 @@
     <loc>https://nicolevanderhoeven.github.io/tags/ttrpg/</loc>
     <lastmod>2023-11-05T13:33:17+01:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</loc>
-    <lastmod>2023-11-03T16:43:35+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/frontend/</loc>
-    <lastmod>2023-11-03T16:43:35+01:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</loc>
     <lastmod>2023-11-03T12:30:43+01:00</lastmod>
   </url><url>
@@ -637,9 +655,6 @@
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20231018-ana17-having-a-coaching-mindset/</loc>
     <lastmod>2023-10-18T12:27:16+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-grafana-cloud/</loc>
-    <lastmod>2023-10-13T16:35:45+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</loc>
     <lastmod>2023-10-13T10:56:15+02:00</lastmod>
@@ -1227,9 +1242,6 @@
     <lastmod>2022-09-23T12:14:58+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220916-koh63-getting-started-with-xk6-browser/</loc>
-    <lastmod>2022-09-16T12:13:33+02:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/kafka/</loc>
     <lastmod>2022-09-16T12:13:33+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</loc>

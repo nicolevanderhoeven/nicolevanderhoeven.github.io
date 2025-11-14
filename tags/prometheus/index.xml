@@ -56,7 +56,22 @@
     </item>
     
     <item>
-      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
+      <title>State of the Observability Databases (Grafana Office Hours #30)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link>
+      <pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid>
+      <description>&lt;p&gt;In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Ph5nvicm6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
       <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>
       

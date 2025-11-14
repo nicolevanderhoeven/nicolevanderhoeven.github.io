@@ -322,6 +322,21 @@
     </item>
     
     <item>
+      <title>Grafana Loki Design Basics with Ed Welch (Grafana Office Hours #27)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</link>
+      <pubDate>Fri, 07 Jun 2024 18:29:26 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</guid>
+      <description>&lt;p&gt;Ed Welch, Principal Engineer on the Loki team, is talking to us about how to get started with Grafana Loki for beginners. He tells us the story of why Loki was created in the first place, talks about the terminology of Loki (what are indices, streams, labels, metadata, tags, and chunks?), and shares candidly about what Loki is good at and what it&amp;rsquo;s not good at.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3uFMJLufgSo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>How to Get Started With Loki</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</link>
       <pubDate>Fri, 10 May 2024 18:12:09 +0100</pubDate>

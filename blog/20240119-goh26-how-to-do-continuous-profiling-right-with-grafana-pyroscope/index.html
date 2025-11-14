@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27) | Nicole van der Hoeven</title>
+  <title> How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26) | Nicole van der Hoeven</title>
   <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)" />
+  <meta property="og:title" content="How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)" />
 <meta property="og:description" content="My friend Paul Balogh and I interview Ryan Perry, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&rsquo;s resources.
 Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry Profiling Data Model " />
 <meta property="og:type" content="article" />
@@ -18,7 +18,7 @@ Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)"/>
+<meta name="twitter:title" content="How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)"/>
 <meta name="twitter:description" content="My friend Paul Balogh and I interview Ryan Perry, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&rsquo;s resources.
 Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry Profiling Data Model "/>
 
@@ -161,52 +161,52 @@ Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&text=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&text=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&is_video=false&description=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&is_video=false&description=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f">
+    <a class="icon" href="mailto:?subject=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&name=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29&description=My%20friend%20Paul%20Balogh%20and%20I%20interview%20Ryan%20Perry%2c%20co-founder%20of%20Grafana%20Pyroscope%2c%20about%20how%20to%20do%20continuous%20profiling%20right.%20Ryan%2c%20and%20the%20rest%20of%20the%20Pyroscope%20team%2c%20joined%20Grafana%20Labs%2c%20where%20he%20is%20now%20a%20Director%20of%20Engineer.%20Ryan%20discusses%20the%20main%20concerns%20in%20continuous%20profiling%20and%20how%20to%20avoid%20those%20pitfalls.%20Pyroscope%20is%20an%20open-source%20project%20for%20aggregating%20continuous%20profiling%20data%20about%20your%20system%26rsquo%3bs%20resources.%0aLinks%20Pyroscope%20docs%20Pyroscope%20site%20Pyroscope%20repo%20Weigh%20in%20on%20the%20OpenTelemetry%20Profiling%20Data%20Model%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&name=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29&description=My%20friend%20Paul%20Balogh%20and%20I%20interview%20Ryan%20Perry%2c%20co-founder%20of%20Grafana%20Pyroscope%2c%20about%20how%20to%20do%20continuous%20profiling%20right.%20Ryan%2c%20and%20the%20rest%20of%20the%20Pyroscope%20team%2c%20joined%20Grafana%20Labs%2c%20where%20he%20is%20now%20a%20Director%20of%20Engineer.%20Ryan%20discusses%20the%20main%20concerns%20in%20continuous%20profiling%20and%20how%20to%20avoid%20those%20pitfalls.%20Pyroscope%20is%20an%20open-source%20project%20for%20aggregating%20continuous%20profiling%20data%20about%20your%20system%26rsquo%3bs%20resources.%0aLinks%20Pyroscope%20docs%20Pyroscope%20site%20Pyroscope%20repo%20Weigh%20in%20on%20the%20OpenTelemetry%20Profiling%20Data%20Model%20">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&t=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&t=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -227,7 +227,7 @@ Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)
+        How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)
       </h1>
       <div class="meta">
         
@@ -311,13 +311,13 @@ Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry
     
     <li><a href="/blog/20240105-goh25-introduction-to-ebpf-with-grafana-beyla/">Introduction to eBPF With Grafana Beyla (Grafana Office Hours #25)</a></li>
     
+    <li><a href="/blog/20250515-goh30-state-of-the-observability-databases/">State of the Observability Databases (Grafana Office Hours #30)</a></li>
+    
     <li><a href="/blog/20231208-goh23-getting-started-with-opentelemetry/">Getting Started with OpenTelemetry (Grafana Office Hours #23)</a></li>
     
     <li><a href="/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/">Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</a></li>
     
     <li><a href="/blog/20231020-goh16-what-is-grafana-agent/">What is Grafana Agent? (Grafana Office Hours #16)</a></li>
-    
-    <li><a href="/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/">Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</a></li>
     
     </ul>
     
@@ -375,52 +375,52 @@ Links Pyroscope docs Pyroscope site Pyroscope repo Weigh in on the OpenTelemetry
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&text=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&text=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&is_video=false&description=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&is_video=false&description=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f">
+    <a class="icon" href="mailto:?subject=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&title=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&name=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29&description=My%20friend%20Paul%20Balogh%20and%20I%20interview%20Ryan%20Perry%2c%20co-founder%20of%20Grafana%20Pyroscope%2c%20about%20how%20to%20do%20continuous%20profiling%20right.%20Ryan%2c%20and%20the%20rest%20of%20the%20Pyroscope%20team%2c%20joined%20Grafana%20Labs%2c%20where%20he%20is%20now%20a%20Director%20of%20Engineer.%20Ryan%20discusses%20the%20main%20concerns%20in%20continuous%20profiling%20and%20how%20to%20avoid%20those%20pitfalls.%20Pyroscope%20is%20an%20open-source%20project%20for%20aggregating%20continuous%20profiling%20data%20about%20your%20system%26rsquo%3bs%20resources.%0aLinks%20Pyroscope%20docs%20Pyroscope%20site%20Pyroscope%20repo%20Weigh%20in%20on%20the%20OpenTelemetry%20Profiling%20Data%20Model%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&name=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29&description=My%20friend%20Paul%20Balogh%20and%20I%20interview%20Ryan%20Perry%2c%20co-founder%20of%20Grafana%20Pyroscope%2c%20about%20how%20to%20do%20continuous%20profiling%20right.%20Ryan%2c%20and%20the%20rest%20of%20the%20Pyroscope%20team%2c%20joined%20Grafana%20Labs%2c%20where%20he%20is%20now%20a%20Director%20of%20Engineer.%20Ryan%20discusses%20the%20main%20concerns%20in%20continuous%20profiling%20and%20how%20to%20avoid%20those%20pitfalls.%20Pyroscope%20is%20an%20open-source%20project%20for%20aggregating%20continuous%20profiling%20data%20about%20your%20system%26rsquo%3bs%20resources.%0aLinks%20Pyroscope%20docs%20Pyroscope%20site%20Pyroscope%20repo%20Weigh%20in%20on%20the%20OpenTelemetry%20Profiling%20Data%20Model%20">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&t=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2327%29">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope%2f&t=How%20to%20do%20continuous%20profiling%20right%20with%20Grafana%20Pyroscope%20and%20Ryan%20Perry%2c%20%28Grafana%20Office%20Hours%20%2326%29">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

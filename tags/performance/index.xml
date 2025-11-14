@@ -156,26 +156,6 @@
     </item>
     
     <item>
-      <title>Combining Frontend and Backend Performance (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</link>
-      <pubDate>Fri, 03 Nov 2023 16:43:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven speak with John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA’s Open MCT.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nasa/openmct/discussions/4303&#34;&gt;Open e2e Testing Initiative&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unlikelyzero/openmct-performance&#34;&gt;Open MCT performance Github project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>(TL) Ano ang relasyon ng testing at observabilidad?</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231101-relasyon-ng-testing-at-observabilidad/</link>
       <pubDate>Wed, 01 Nov 2023 12:19:46 +0100</pubDate>

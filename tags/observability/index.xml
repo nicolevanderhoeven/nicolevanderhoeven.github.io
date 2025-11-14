@@ -144,6 +144,21 @@
     </item>
     
     <item>
+      <title>State of the Observability Databases (Grafana Office Hours #30)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link>
+      <pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid>
+      <description>&lt;p&gt;In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Ph5nvicm6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Meta-monitoring Loki (Loki Community Call May 2025)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</link>
       <pubDate>Mon, 12 May 2025 17:59:48 +0100</pubDate>
@@ -217,6 +232,21 @@
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/3_DtwTOppiI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>AI Observability with Ishan Jain (Grafana Office Hours #29)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</link>
+      <pubDate>Fri, 08 Nov 2024 18:24:29 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</guid>
+      <description>&lt;p&gt;In this Grafana Office Hours, Ishan Jain talks about AI Observability with Grafana: what it entails, factors to consider when monitoring and observing LLMs, and how to do it all with Grafana. He is joined by Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9X7M-bvnZG0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>
@@ -316,7 +346,7 @@
     </item>
     
     <item>
-      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
+      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
       <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>
       
@@ -475,26 +505,6 @@
     </item>
     
     <item>
-      <title>Combining Frontend and Backend Performance (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</link>
-      <pubDate>Fri, 03 Nov 2023 16:43:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven speak with John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA’s Open MCT.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nasa/openmct/discussions/4303&#34;&gt;Open e2e Testing Initiative&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unlikelyzero/openmct-performance&#34;&gt;Open MCT performance Github project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
       <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
@@ -606,26 +616,6 @@ El nos viene a platicar de las funcionalidades de Grafana como código, que es, 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Agentless Monitoring for Grafana Cloud (Grafana Office Hours #15)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-grafana-cloud/</link>
-      <pubDate>Fri, 13 Oct 2023 16:35:45 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-grafana-cloud/</guid>
-      <description>&lt;p&gt;Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/EYR5lQJ_kG8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs on Metrics Endpoint&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post on Metrics Endpoint&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

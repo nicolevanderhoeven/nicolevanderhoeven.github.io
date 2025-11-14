@@ -31,6 +31,21 @@
     </item>
     
     <item>
+      <title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link>
+      <pubDate>Fri, 25 Apr 2025 17:57:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</guid>
+      <description>&lt;p&gt;In this pre-recorded Loki Community Call, we talk all about OTel and logging on Kubernetes with Cyril Tovena, Ward Bekker, Jay Clifford, and Nicole van der Hoeven at KubeCon EU 2025 in London. We discuss when why you should switch to OTel and why you shouldn&amp;rsquo;t, what OTLP is exactly, and best practices for ingesting data through an OTLP endpoint.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/27ZHOg-LaM0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
       <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>

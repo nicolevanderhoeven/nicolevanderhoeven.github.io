@@ -31,6 +31,36 @@
     </item>
     
     <item>
+      <title>Deploying Loki on Kubernetes via Helm (Loki Community Call October 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</link>
+      <pubDate>Wed, 29 Oct 2025 18:04:30 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</guid>
+      <description>&lt;p&gt;This Loki Community Call is about deploying Loki on Kubernetes via Helm charts. We talk about why you might want to use Helm to deploy on Kubernetes, best practices for deployment, and which Helm chart you should use! We are Jay Clifford and Nicole van der Hoeven, Developer Advocates at Grafana Labs, and we have invited Grafana Champion and Loki Helm Maintainer Jan-Otto Kröpke, Principal Cloud Architect at QualityOperations GmbH, to talk about the state of the Loki Helm Chart.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZqumpIXutXg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link>
+      <pubDate>Fri, 25 Apr 2025 17:57:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</guid>
+      <description>&lt;p&gt;In this pre-recorded Loki Community Call, we talk all about OTel and logging on Kubernetes with Cyril Tovena, Ward Bekker, Jay Clifford, and Nicole van der Hoeven at KubeCon EU 2025 in London. We discuss when why you should switch to OTel and why you shouldn&amp;rsquo;t, what OTLP is exactly, and best practices for ingesting data through an OTLP endpoint.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/27ZHOg-LaM0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>How to Deploy Grafana Beyla on Kubernetes as a Sidecar Container</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240109-how-to-deploy-grafana-beyla-on-kubernetes-as-a-sidecar-container/</link>
       <pubDate>Tue, 09 Jan 2024 13:41:38 +0100</pubDate>
@@ -259,6 +289,27 @@
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/bYdDRZqRSHA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Run Loki at Scale on Kubernetes (Loki Community Call January 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</guid>
+      <description>&lt;p&gt;Happy New Year from the Loki Engineering team. To kick off 2025, Nicole and Jay will be joined by Poyzan Taneli from the Loki Engineering team to discuss how to run Loki at scale on Kubernetes. If you are currently running Loki in microservices mode or preparing to do so, we will be discussing best practices for scaling its components to meet the demands of production use cases.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How many Ingesters vs Queriers do I need?&lt;/li&gt;
+&lt;li&gt;What is the minimum cost of running Loki as a production cluster?&lt;/li&gt;
+&lt;li&gt;What is the average node size for running Loki?
+How do I monitor my Loki deployment?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lAr0GwuZHiw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>

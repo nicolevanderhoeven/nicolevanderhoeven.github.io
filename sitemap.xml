@@ -77,6 +77,18 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</loc>
     <lastmod>2025-11-05T03:07:38+01:00</lastmod>
   </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</loc>
+    <lastmod>2025-10-29T18:04:30+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/helm/</loc>
+    <lastmod>2025-10-29T18:04:30+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/loki-community-call/</loc>
+    <lastmod>2025-10-29T18:04:30+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
+    <lastmod>2025-10-29T18:04:30+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20251022-gocc01-declarative-config-in-otel/</loc>
     <lastmod>2025-10-22T15:02:21-07:00</lastmod>
   </url><url>
@@ -84,9 +96,6 @@
     <lastmod>2025-10-22T15:02:21-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/opentelemetry/</loc>
-    <lastmod>2025-10-22T15:02:21-07:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/video/</loc>
     <lastmod>2025-10-22T15:02:21-07:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/excalidraw/</loc>
@@ -104,10 +113,7 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</loc>
     <lastmod>2025-08-12T19:56:32-07:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/loki-community-call/</loc>
-    <lastmod>2025-08-12T19:56:32-07:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/blog/20250708-how-to-turn-logs-into-metrics-with-grafana-loki/</loc>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250708-lcc-how-to-turn-logs-into-metrics-with-grafana-loki/</loc>
     <lastmod>2025-07-08T17:23:23+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</loc>
@@ -131,11 +137,38 @@
     <loc>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</loc>
     <lastmod>2025-06-13T15:21:49+02:00</lastmod>
   </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</loc>
+    <lastmod>2025-05-12T17:59:48+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/monitoring/</loc>
+    <lastmod>2025-05-12T17:59:48+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</loc>
+    <lastmod>2025-04-25T17:57:58+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/logging/</loc>
+    <lastmod>2025-04-25T17:57:58+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</loc>
     <lastmod>2025-04-16T08:18:04+02:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</loc>
     <lastmod>2025-04-02T13:46:42+02:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/caching/</loc>
+    <lastmod>2025-03-25T17:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250325-lcc-dos-and-donts-of-scaling-loki-cache/</loc>
+    <lastmod>2025-03-25T17:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/scaling/</loc>
+    <lastmod>2025-03-25T17:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/alerting/</loc>
+    <lastmod>2025-02-26T17:54:15+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</loc>
+    <lastmod>2025-02-26T17:54:15+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20250110-my-year-in-pkm-2024-in-numbers/</loc>
     <lastmod>2025-01-10T17:36:38+01:00</lastmod>
@@ -143,8 +176,26 @@
     <loc>https://nicolevanderhoeven.github.io/tags/pkm/</loc>
     <lastmod>2025-01-10T17:36:38+01:00</lastmod>
   </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</loc>
+    <lastmod>2024-12-05T17:48:49+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/logql/</loc>
+    <lastmod>2024-12-05T17:48:49+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20241113-watching-the-watchers/</loc>
     <lastmod>2024-11-13T09:37:19-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</loc>
+    <lastmod>2024-10-03T17:45:33+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/drilldown/</loc>
+    <lastmod>2024-10-03T17:45:33+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</loc>
+    <lastmod>2024-09-20T18:09:35+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</loc>
+    <lastmod>2024-09-05T17:41:18+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/alloy/</loc>
     <lastmod>2024-06-13T12:24:02-07:00</lastmod>
@@ -154,6 +205,9 @@
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/tracing/</loc>
     <lastmod>2024-06-13T12:24:02-07:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</loc>
+    <lastmod>2024-05-10T18:12:09+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</loc>
     <lastmod>2024-04-26T17:34:58+01:00</lastmod>
@@ -825,9 +879,6 @@
     <lastmod>2023-05-18T22:41:42+10:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</loc>
-    <lastmod>2023-05-16T22:41:16+10:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/monitoring/</loc>
     <lastmod>2023-05-16T22:41:16+10:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20230512-more-than-just-taking-notes-learning-exhaust/</loc>
@@ -2193,5 +2244,7 @@
     <lastmod>2018-02-22T11:40:32+00:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/categories/</loc>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</loc>
   </url>
 </urlset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>alerting on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/alerting/</link>
+    <description>Recent content in alerting on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Wed, 26 Feb 2025 17:54:15 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/alerting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Practices for Recording and Alerting (Loki Community Call February 2025)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</link>
+      <pubDate>Wed, 26 Feb 2025 17:54:15 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</guid>
+      <description>&lt;p&gt;In this Loki Community Call, we talk about the best practices for recording and alerting rules with Loki Staff Engineer George Robinson and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven. Ever wondered what’s the difference between the Ruler and Alertmanager? 🤔 Curious about the different modes the Ruler can run in when querying Loki? Want to avoid the most common pitfalls when setting up alerting and recording rules? We cover all of these, including optimizing rule performance to structure alerts effectively.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3_DtwTOppiI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

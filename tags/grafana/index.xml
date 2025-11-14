@@ -128,6 +128,70 @@
     </item>
     
     <item>
+      <title>Grafana Loki Query Best Practices with LogQL (Loki Community Call December 2024)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</link>
+      <pubDate>Thu, 05 Dec 2024 17:48:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</guid>
+      <description>&lt;p&gt;In this December&amp;rsquo;s Loki Community Call, Cyril Tovena, Senior Principal Engineer and LogQL guru walks us through a Grafana Loki query tutorial with LogQL, the Log Query Language used for Loki. He talks about the key &amp;ldquo;Dos and Don&amp;rsquo;ts&amp;rdquo; of LogQL, offering practical tips to help you write better queries, boost performance, and sidestep common mistakes.&lt;/p&gt;
+&lt;p&gt;Whether you’re tuning up your current setup or just diving into LogQL, Cyril’s got you covered. Bring your questions, connect with the Loki community, and pick up insights that’ll make your log-querying life easier. See you there!&lt;/p&gt;
+&lt;p&gt;Make sure you leave your questions &lt;a href=&#34;https://forms.gle/nm7TGX2EeWnRLmbs6&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cyril is joined by Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/d61nQX-n91c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>All About Logs Drilldown (Loki Community Call October 2024)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</link>
+      <pubDate>Thu, 03 Oct 2024 17:45:33 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</guid>
+      <description>&lt;p&gt;In this Community Call, Senior Software Engineer Trevor Whitney talks to us all about Drilldown Logs for Grafana Loki, an open-source app for visualizing logs from Loki in Grafana without needing to learn and write LogQL queries. He is joined by Senior Developer Advocates Nicole van der Hoeven and Jay Clifford.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XJMQbEuBeMc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>All the Components of Loki Explained</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</link>
+      <pubDate>Fri, 20 Sep 2024 18:09:35 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</guid>
+      <description>&lt;p&gt;Here are all the components of Loki explained so that you can figure out how many instances of each you need for a resilient Loki deployment. Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk you through what each component does and which ones are optional.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_hv4i84Z68s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Bloom Filter Changes for Grafana Loki (Loki Community Call September 2024)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</link>
+      <pubDate>Thu, 05 Sep 2024 17:41:18 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</guid>
+      <description>&lt;p&gt;In this Community Call, Senior Software Engineer Christian Haudum talks to us about bloom filter changes for Grafana Loki, including the deprecation of the bloom compactor and a pivot towards creating bloom filters for structured metadata. Bloom filters are a probabilistic data structure that we&amp;rsquo;re using to improve query performance in Loki.&lt;/p&gt;
+&lt;p&gt;Community Calls are monthly meetings that are open to everyone interested in the development of Loki. They are an opportunity for software engineers working on Loki to discuss new features as well as for open-source users of Loki to ask questions. To participate in the next Community Call, &lt;a href=&#34;https://gra.fan/lokicccal&#34;&gt;subscribe to the calendar here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/keXrUf8jw1A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
       <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
@@ -141,6 +205,21 @@
 &lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
 &lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
 &lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Get Started With Loki</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</link>
+      <pubDate>Fri, 10 May 2024 18:12:09 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</guid>
+      <description>&lt;p&gt;If you were looking for how to get started with Loki, here&amp;rsquo;s a video where Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk about what Loki is, how to ingest logs with Loki, how to deploy Loki, and finally how to visualize your logs with Grafana.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1uk8LtQqsZQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

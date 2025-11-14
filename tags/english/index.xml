@@ -213,6 +213,21 @@
     </item>
     
     <item>
+      <title>My Year in PKM: 2024 in Numbers</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20250110-my-year-in-pkm-2024-in-numbers/</link>
+      <pubDate>Fri, 10 Jan 2025 17:36:38 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20250110-my-year-in-pkm-2024-in-numbers/</guid>
+      <description>&lt;p&gt;Rather than a full explanation of what in the world happened to me last year, here&amp;rsquo;s my year in PKM. I use my Personal Knowledge Management system for everything, so I thought I&amp;rsquo;d let it speak for me through some statistics I gathered from different tools I consider part of that system.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NxCZ8GaM-Vw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
       <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
@@ -226,6 +241,81 @@
 &lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
 &lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
 &lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Connecting Visual Notes with Obsidian Excalidraw</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</link>
+      <pubDate>Fri, 26 Apr 2024 17:34:58 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</guid>
+      <description>&lt;p&gt;Connecting visual notes isn&amp;rsquo;t as easy as connecting textual notes. Yet those connections are an essential part of taking notes that actually help you learn or remember things. In this video, I talk about ways to connect Excalidraw drawings and hybrid notes.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lGh53N_Lj2Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Visual Note Templates With Obsidian Excalidraw</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240419-visual-note-templates-with-obsidian-excalidraw/</link>
+      <pubDate>Fri, 19 Apr 2024 17:31:57 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240419-visual-note-templates-with-obsidian-excalidraw/</guid>
+      <description>&lt;p&gt;How can you create visual note templates that encourage both visual and textual note-taking? The Obsidian Excalidraw community plugin bridges this gap in Obsidian by allowing the creation of hybrid notes: notes that are both textual and visual by default. Obsidian Excalidraw is created by Zsolt Viczián.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Doing It in Public: Observability for PKM</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240405-doing-it-in-public-observability-for-pkm/</link>
+      <pubDate>Fri, 05 Apr 2024 17:26:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240405-doing-it-in-public-observability-for-pkm/</guid>
+      <description>&lt;p&gt;The quest of learning in public with Personal Knowledge Management is really about making what you learn observable and exposing your process, rather than your result, early and often. This is a rendition of a talk I gave at the PKM Summit in Utrecht, the Netherlands, on March 23rd, 2024, and it relates concepts borrowed from performance engineering and software development to PKM systems.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/i-uNtkre1aE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Real-time Collaboration in Obsidian with Peerdraft</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240323-real-time-collaboration-in-obsidian-with-peerdraft/</link>
+      <pubDate>Sat, 23 Mar 2024 17:24:07 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240323-real-time-collaboration-in-obsidian-with-peerdraft/</guid>
+      <description>&lt;p&gt;Working with others in Obsidian hasn&amp;rsquo;t always been the easiest task. Obsidian Peerdraft is a new community plugin and accompanying web app that brings real-time collaboration to Obsidian. In this video, I tell you how to use Peerdraft, collaborate with a friend live while using it, and interview the developer of the app and plugin, Dominik Schlund.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5ZyMyrmL_xc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How I&#39;m Writing a Book in Public</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240216-how-im-writing-a-book-in-public/</link>
+      <pubDate>Fri, 16 Feb 2024 17:21:16 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240216-how-im-writing-a-book-in-public/</guid>
+      <description>&lt;p&gt;I previously announced I&amp;rsquo;d be writing a book in public, but that didn&amp;rsquo;t happen. I explain what happened and why I&amp;rsquo;m writing another book instead. The new book is called Doing It in Public, and it&amp;rsquo;s about learning in public, my way&amp;hellip; and, appropriately, I&amp;rsquo;m writing it in public!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MwNPY9DmQTY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

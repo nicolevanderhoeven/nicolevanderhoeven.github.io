@@ -195,6 +195,21 @@
     </item>
     
     <item>
+      <title>Doing It in Public: Observability for PKM</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20240405-doing-it-in-public-observability-for-pkm/</link>
+      <pubDate>Fri, 05 Apr 2024 17:26:42 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20240405-doing-it-in-public-observability-for-pkm/</guid>
+      <description>&lt;p&gt;The quest of learning in public with Personal Knowledge Management is really about making what you learn observable and exposing your process, rather than your result, early and often. This is a rendition of a talk I gave at the PKM Summit in Utrecht, the Netherlands, on March 23rd, 2024, and it relates concepts borrowed from performance engineering and software development to PKM systems.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/i-uNtkre1aE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #27)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
       <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>

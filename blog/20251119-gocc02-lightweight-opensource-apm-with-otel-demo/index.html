@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Lightweight Opensource APM with OTel Demo (Grafana ❤️‍🔥 OpenTelemetry Community Call #2) | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Lightweight Opensource APM with OTel Demo (Grafana ❤️‍🔥 OpenTelemetry Community Call #2)" />
+<meta property="og:description" content="This community call with my coworker Liudmila Molkova featured an interview with Cyrille Le Clerc from Grafana Labs, focusing on the OpenTelemetry demo as a practical example of a lightweight, open-source Application Performance Monitoring (APM) solution. Cyril explained the purpose and architecture of the OTel demo, highlighting its role as a realistic, complex microservices application that has become a de facto standard for observability vendors. The discussion explored the modern definition of APM, followed by a detailed walkthrough of a Grafana dashboard built on OTel data, covering RED metrics, alerting, trace correlation, and infrastructure monitoring." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/blog/20251119-gocc02-lightweight-opensource-apm-with-otel-demo/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-11-19T14:48:59+01:00" />
+<meta property="article:modified_time" content="2025-11-19T14:48:59+01:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lightweight Opensource APM with OTel Demo (Grafana ❤️‍🔥 OpenTelemetry Community Call #2)"/>
+<meta name="twitter:description" content="This community call with my coworker Liudmila Molkova featured an interview with Cyrille Le Clerc from Grafana Labs, focusing on the OpenTelemetry demo as a practical example of a lightweight, open-source Application Performance Monitoring (APM) solution. Cyril explained the purpose and architecture of the OTel demo, highlighting its role as a realistic, complex microservices application that has become a de facto standard for observability vendors. The discussion explored the modern definition of APM, followed by a detailed walkthrough of a Grafana dashboard built on OTel data, covering RED metrics, alerting, trace correlation, and infrastructure monitoring."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+        <li><a href="https://doingitinpublic.com">Book</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+         
+        <li><a href="https://doingitinpublic.com">Book</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&text=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&is_video=false&description=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&name=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29&description=This%20community%20call%20with%20my%20coworker%20Liudmila%20Molkova%20featured%20an%20interview%20with%20Cyrille%20Le%20Clerc%20from%20Grafana%20Labs%2c%20focusing%20on%20the%20OpenTelemetry%20demo%20as%20a%20practical%20example%20of%20a%20lightweight%2c%20open-source%20Application%20Performance%20Monitoring%20%28APM%29%20solution.%20Cyril%20explained%20the%20purpose%20and%20architecture%20of%20the%20OTel%20demo%2c%20highlighting%20its%20role%20as%20a%20realistic%2c%20complex%20microservices%20application%20that%20has%20become%20a%20de%20facto%20standard%20for%20observability%20vendors.%20The%20discussion%20explored%20the%20modern%20definition%20of%20APM%2c%20followed%20by%20a%20detailed%20walkthrough%20of%20a%20Grafana%20dashboard%20built%20on%20OTel%20data%2c%20covering%20RED%20metrics%2c%20alerting%2c%20trace%20correlation%2c%20and%20infrastructure%20monitoring.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&t=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transcript">Transcript</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#what-is-the-opentelemetry-demo">What is the OpenTelemetry Demo?</a></li>
+        <li><a href="#exploring-the-application">Exploring the Application</a></li>
+        <li><a href="#application-performance-monitoring-apm">Application Performance Monitoring (APM)</a></li>
+        <li><a href="#apm-dashboard-exploration">APM Dashboard Exploration</a>
+          <ul>
+            <li><a href="#alert-analysis">Alert Analysis</a></li>
+          </ul>
+        </li>
+        <li><a href="#logs-and-observability">Logs and Observability</a></li>
+        <li><a href="#questions-and-community-engagement">Questions and Community Engagement</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Lightweight Opensource APM with OTel Demo (Grafana ❤️‍🔥 OpenTelemetry Community Call #2)
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2025-11-19 14:48:59 &#43;0100 CET" itemprop="datePublished">2025-Nov-19</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/opentelemetry" rel="tag">opentelemetry</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/english" rel="tag">english</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/video" rel="tag">video</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana-labs" rel="tag">grafana labs</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/grafana-otel-community-call" rel="tag">grafana otel community call</a>
+            
+        </div>
+        
+      </div>
+    </header>
+    
+  
+    <div class="content" itemprop="articleBody">
+      <p>This community call with my coworker Liudmila Molkova featured an interview with Cyrille Le Clerc from Grafana Labs, focusing on the OpenTelemetry demo as a practical example of a lightweight, open-source Application Performance Monitoring (APM) solution. Cyril explained the purpose and architecture of the OTel demo, highlighting its role as a realistic, complex microservices application that has become a de facto standard for observability vendors. The discussion explored the modern definition of APM, followed by a detailed walkthrough of a Grafana dashboard built on OTel data, covering RED metrics, alerting, trace correlation, and infrastructure monitoring. A significant portion of the conversation was dedicated to the role and challenges of integrating logs within an OpenTelemetry framework. The interview concluded with a look at the future of the OTel demo, including plans for AI observability and eBPF instrumentation.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cX74hkdI1zM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="transcript">Transcript</h2>
+<h3 id="introduction">Introduction</h3>
+<p><strong>Liudmila:</strong><br>
+Okay. Hi everyone. Welcome to the second Grafana and OpenTelemetry community call. This time we&rsquo;re going to talk about the lightweight open-source APM and we will use the OpenTelemetry demo as our playground. We have an expert, Cyrille, who works at Grafana. Cyrille, do you want to introduce yourCyrillef?</p>
+<p><strong>Cyrille:</strong><br>
+Thank you very much, Liudmila. My name is Cyrille, and I am a product manager at Grafana Labs. I&rsquo;ve been working on open-source products for 15 years, first on Jenkins for CI/CDs, then at Elastic on observability, and now at Grafana Labs, also on observability. In addition to my day job, I have been an open-source contributor for about 20 years, starting with Apache Java projects and then moving on to Jenkins integration with Maven and OpenTelemetry. Now, I focus more on the OpenTelemetry project, like the OpenTelemetry demo, and I contribute to OpenTelemetry Helm charts as well. At Grafana Labs, I am the product management lead in charge of OpenTelemetry and I cover other areas as well. [laughter]</p>
+<p><strong>Nicole:</strong><br>
+That&rsquo;s great. It&rsquo;s great to have you here with us. Also, great for my internet to act up just a few minutes before this. Anyway, hi! I’m Nicole van der Hoeven, a developer advocate at Grafana. I work with Cyrille over there, and I&rsquo;m really excited to be talking about OpenTelemetry. I&rsquo;m the newbie of all of us here. [laughter] I have used OpenTelemetry in some demo apps I&rsquo;ve built. Most recently, I used it for instrumenting an AI app. I&rsquo;m excited to ask Cyrille all my questions because when he says he likes OpenTelemetry, what he really means is he&rsquo;s the guy at Grafana who&rsquo;s always banging on that OpenTelemetry drum. He&rsquo;s like, &ldquo;Tell all the things!&rdquo; [laughter]</p>
+<p><strong>Liudmila:</strong><br>
+It&rsquo;s probably my turn. I&rsquo;m Liudmila. I work on the OpenTelemetry project and I&rsquo;m a technical committee member. To echo what Nicole said, nobody knows all of OpenTelemetry, and this call is where we will uncover areas that are new to each of us. Going forward, we&rsquo;ll probably have more of these calls. So, with that, let’s talk about the OpenTelemetry demo. Cyrille, what is it? Why do we care?</p>
+<h3 id="what-is-the-opentelemetry-demo">What is the OpenTelemetry Demo?</h3>
+<p><strong>Cyrille:</strong><br>
+So, the OpenTelemetry demo was born to showcase OpenTelemetry. OpenTelemetry was created in the context of cloud-native architecture. This demo is a cloud-native application—a distributed microservices application that is instrumented with OpenTelemetry. It&rsquo;s maintained by the OpenTelemetry community and showcases all dimensions of modern monitoring or observability, including all telemetry types: traces, metrics, logs, and more at every layer. We started with monitoring the application layer and are now extending to show the infrastructure layer.</p>
+<p>We demo various technologies: Java, .NET, Node.js, and nearly all programming languages, including Rust. We also show how to instrument middleware and databases, such as Kafka, PostgreSQL, and Redis, all deployed on Docker Compose to make it easy to play with on your local desktop or deployed on Kubernetes to be more production-like.</p>
+<p>This is a complex demo that shows everything, and what&rsquo;s interesting is that it is realistic and currently used by 40 observability vendors to demonstrate their solutions with the OpenTelemetry demo. So, when you get familiar with the OpenTelemetry demo, it’s really easy to evaluate different vendors quickly. It comes &ldquo;batteries included,&rdquo; with open-source monitoring and observability technologies like Prometheus, Jaeger, OpenSearch, and Grafana to showcase how to implement an observability solution with OpenTelemetry.</p>
+<h3 id="exploring-the-application">Exploring the Application</h3>
+<p><strong>Liudmila:</strong><br>
+Thanks for the intro! So maybe we should take a quick look at what the application itCyrillef looks like to make it more concrete.</p>
+<p>I&rsquo;m connected to a Kubernetes cluster, and I&rsquo;m just port forwarding. This is the telescope shop we have in the OpenTelemetry demo. We can go and buy things, and now we have something in the cart that we can place an order for. Oh, actually, this application might not work as expected. Well, that&rsquo;s why we need observability, right? If things don&rsquo;t work, we need to figure out what&rsquo;s broken and how to fix it.</p>
+<p>Before we move on, I just want to show that even though you only see the front-end web shop, it&rsquo;s a relatively large application. It has quite a few services, databases, caches, a front-end proxy, and a log generator that consistently sends requests.</p>
+<p>We&rsquo;re super lucky to have all the telemetry Cyrille talked about. We have metrics in Prometheus, traces in Jaeger, and logs in OpenSearch, all visible in Grafana as a single pane of glass that you can refer to. With this, we can start looking at the telemetry itCyrillef. But I wanted to check with Cyrille or Nicole if you have any additional thoughts or anything we should cover here.</p>
+<p><strong>Nicole:</strong><br>
+No, I think you presented it well. It&rsquo;s a very complex topology because we want to demo everything.</p>
+<p><strong>Cyrille:</strong><br>
+Yeah, it&rsquo;s almost complex by design. You could probably have made this simpler, but it&rsquo;s supposed to approximate real applications that aren&rsquo;t simple. That&rsquo;s the problem with some of these other demo apps; they are so simple to deploy that they work because they&rsquo;re monolithic or something like that. This one is much more of a polyglot architecture, involving microservices that represent the real challenges that people face in the field.</p>
+<h3 id="application-performance-monitoring-apm">Application Performance Monitoring (APM)</h3>
+<p><strong>Liudmila:</strong><br>
+One great thing about this demo is that sometimes it&rsquo;s hard to understand how someone onboarded an application to OpenTelemetry. The demo has a lot of information on what services are used, and it demonstrates what&rsquo;s been done to instrument this application with OpenTelemetry, which can help anyone with their journey in the OpenTelemetry space. Okay, wonderful! Let’s change gears and start looking at the APM dashboard.</p>
+<p>Before we go there, let&rsquo;s talk about what APM is for a second. Why do we care? What is it?</p>
+<p><strong>Cyrille:</strong><br>
+APM is a very old concept—over 15 years old. We’ve had several generations of monitoring tools. APM stands for Application Performance Monitoring. I see APM as a monitoring and observability technology that helps you monitor your application and understand its health.</p>
+<p>When I think about it, the first thing that comes to mind is understanding if my service is healthy or unhealthy. In a distributed architecture, I need to see my service in the context of the connections between services, typically represented with a service map. If I find something unhealthy, I need to drill down to see the health of a service. This means switching back and forth between the service metrics, which are more aggregated, and the traces, which give indications of how business transactions are executed.</p>
+<p>I also need to access logs to verify how things really happen and if there are messages that help me understand the problem. This is how I understand my service. Additionally, my service is deployed on a runtime and middleware, so I need to be able to zoom lower to see how it&rsquo;s behaving on the Kubernetes pod or Linux box.</p>
+<p>APM allows me to switch back and forth between all layers, zooming in and out all the time across all telemetry types. This is essential for understanding health and troubleshooting. Another dimension is detecting anomalies, so I can wake people up at night when something goes wrong. This is where I create alerts and notifications.</p>
+<p>In the past, with monoliths, we created many alerts, but now we adopt best practices with SLOs, observing workflows, and root cause analysis. This is my vision of APM and why I think it’s more important than ever.</p>
+<p><strong>Nicole:</strong><br>
+When you talk about application performance management or monitoring, do you differentiate that from the wider field of observability? Some people say APM sounds outdated because it focuses on the application or just on performance, which is ambiguous.</p>
+<p><strong>Cyrille:</strong><br>
+The monitoring landscape has evolved a lot. With cloud-native architecture, many things have changed, and we had to change our best practices. The best practices from 20 years ago in monoliths are not the same as today’s best practices for distributed cloud-native architectures.</p>
+<p>There were disruptions in the past by innovators who focused primarily on traces, and we learned a lot from that. But now I think the landscape is getting more stable. We recognize the value in metrics, traces, and logs, and we’ve evolved our best practices to leverage the best of all three.</p>
+<p>Some people prefer to call it observability. I know there are nuances, but this is my current perspective.</p>
+<p><strong>Liudmila:</strong><br>
+It&rsquo;s good to synchronize on terms. It sounds like we are on the same page.</p>
+<p><strong>Cyrille:</strong><br>
+Now, with microservices architecture, we focus more on alerting symptoms rather than causes, centering more on the health of the application and the service provided to users than on the infrastructure layer. So, application monitoring or observability is becoming the entry point for people in charge of keeping the systems running.</p>
+<p><strong>Nicole:</strong><br>
+Why don’t we take a look at the dashboard and go through it?</p>
+<h3 id="apm-dashboard-exploration">APM Dashboard Exploration</h3>
+<p><strong>Cyrille:</strong><br>
+We will cover different parts of the dashboard throughout the hour. Let’s start with the top row—the red metrics. You can call them duration, error, and request rate.</p>
+<p><strong>Nicole:</strong><br>
+I believe the red metrics were created by Tom Wilkerson, who still works at Grafana. I think it was looCyrilley based on the Google SRE book, even though they didn&rsquo;t explicitly say “red” there.</p>
+<p><strong>Cyrille:</strong><br>
+When you think about any particular service, you would think about some well-known terminology, which might be service level indicators, or just your application. Service level indicators talk more about what&rsquo;s important for the application, while red metrics focus more on the telemetry itCyrillef, like the raw data behind your SLI.</p>
+<p>One thing that stands out is the alerts. It looks pretty awesome to see that something violates the threshold we&rsquo;ve set—probably high latency. Let’s explore it. We see it&rsquo;s been firing for 17 hours. That’s quite a duration.</p>
+<p><strong>Nicole:</strong><br>
+That’s not so good. Let’s see the alert on the latency. The P95 is firing for a specific operation.</p>
+<p><strong>Cyrille:</strong><br>
+We can look at this chart, which shows the latency around P99, which is like 18 milliseconds. Is it really a problem?</p>
+<p><strong>Nicole:</strong><br>
+No, it was for the demo. It&rsquo;s very situational; it depends on your services. The focus was to show practitioners best practices for creating alerts on HTTP endpoints. Typically, you have two families of alerts: latency alerts and error rate alerts.</p>
+<p><strong>Cyrille:</strong><br>
+We decided to take P95 as a commonly adopted indicator. Some take P99, but P95 is often more relevant. Something that&rsquo;s perhaps not noted here is that we take a time interval of 5 minutes. We wanted to provide this out of the box because it relates to the data collection interval, which is typically every minute for hotel setups and quite common in Prometheus.</p>
+<p>Having a 5-minute window is quite good. These are best practices we worked on, identifying good labels to help practitioners succeed by easily routing alerts to the right people and having the right notification schemes.</p>
+<p><strong>Nicole:</strong><br>
+Imagine if there was actually high latency. Now we can enable this view and look at the examples of operations with the worst performance—like the outliers you would see here. We use Jaeger as a store for telemetry, and if it were any other store that supports tracing, you would see something similar.</p>
+<p><strong>Cyrille:</strong><br>
+This brings us to the Jaeger UI. I don&rsquo;t want to spend a lot of time here, but it’s just another confirmation that nothing is visibly wrong with this operation. Things are just going a bit slower in the cloud, as usual.</p>
+<h4 id="alert-analysis">Alert Analysis</h4>
+<p><strong>Liudmila:</strong><br>
+We talked about alerts. There are other interesting things in this picture. For example, the request rate is pretty normal. If there were a spike in usage, we would see it here. The error rate looks good—there are no errors. By looking at these three metrics, you can get a basic understanding of the health of your system and this specific service.</p>
+<p><strong>Cyrille:</strong><br>
+This dashboard illustrates years of best practices that the industry has accumulated. We have layers of information. At the top, you have your service identifier, the last metrics received time, and the overview of the aggregated service red metrics.</p>
+<p>This aggregated view across all operations of my service will help you decide if this service is healthy or not. If you have doubts or think something is going wrong, P95 is good at surfacing outliers.</p>
+<p>Typically, you will scroll down to the HTTP or gRPC operations, where you have the details broken down by operation. It’s likely that not all business operations have problems; it could be just a subset of them.</p>
+<p>Here you can see the outbound services. If you have a problem, this data will help you understand if it’s happening within your service or is it a downstream service. In microservices architecture, that’s always a question.</p>
+<p><strong>Nicole:</strong><br>
+Are those dashboards powered exclusively by metrics?</p>
+<p><strong>Cyrille:</strong><br>
+Everything is powered by metrics, specifically the OpenTelemetry semantic conventions. Initially, the OpenTelemetry demo derived metrics from spans, which was a great idea four years ago, but it had some limits. Now, OpenTelemetry has standardized some semantic conventions for HTTP server calls, client calls, database client calls, RPC calls, and messaging.</p>
+<p><strong>Nicole:</strong><br>
+I noticed during my time with the demo that the coverage of metrics is uneven across programming languages. Java, for instance, has great instrumentation, while in other languages, it depends on the instrumentation.</p>
+<p><strong>Cyrille:</strong><br>
+Yes, that’s true. It’s uncommon for OpenTelemetry instrumentations to emit logs these days, but let’s move on to that.</p>
+<h3 id="logs-and-observability">Logs and Observability</h3>
+<p><strong>Nicole:</strong><br>
+So, what’s the deal with logs? Why are they not as important?</p>
+<p><strong>Cyrille:</strong><br>
+Logs are traditionally outputted in stdout, and we’ve lost Nicole. [laughter] The challenge is that traces and metrics are captured by SDKs within your app, while logs come from external log collectors, making correlation tough. When we discuss with practitioners and tell them that the OpenTelemetry SDK can directly export logs, they often respond that their log processes are mature and they can’t disrupt them just to trust the new kid on the block.</p>
+<p>It takes time to change your log toolchain. And while OpenTelemetry SDKs have capabilities to directly export logs, it’s not easy to get people to change practices they’ve had for 30 years.</p>
+<p><strong>Nicole:</strong><br>
+To demonstrate Cyrille’s point about correlation, the most basic way to correlate is by trace ID and span ID. When we capture distributed traces, we can also attribute logs to the specific operation.</p>
+<p><strong>Cyrille:</strong><br>
+Yes, and when we look at a trace inside Grafana, we can see logs associated with it.</p>
+<p><strong>Nicole:</strong><br>
+If we open the trace view, we can see the details for this operation. There are a bunch of attributes you can correlate to understand what happened.</p>
+<p><strong>Cyrille:</strong><br>
+Logs provide the details. I think the negative sentiment around logs came from the idea that they don’t work as well in distributed applications as they did in monolithic applications. We had to evolve our practices to log the right way for distributed applications.</p>
+<p><strong>Nicole:</strong><br>
+It’s user error because logs are the signals you can abuse the most. You can put anything in a log line, which causes issues. With metrics, you don’t have as much leeway, which makes it simpler to deal with.</p>
+<p><strong>Cyrille:</strong><br>
+Yes, and we need to convince users that going into log analytics tools is much more efficient than tailing logs directly.</p>
+<p><strong>Nicole:</strong><br>
+It is more complicated to analyze logs than traces because they aren’t always structured.</p>
+<p><strong>Cyrille:</strong><br>
+Exactly. We have to help organizations better structure their logs for better value.</p>
+<h3 id="questions-and-community-engagement">Questions and Community Engagement</h3>
+<p><strong>Liudmila:</strong><br>
+We have a question here. “We are planning to adopt the LGTM stack as an observability platform. Is there any blueprint documentation aligned with observability 2.0?”</p>
+<p><strong>Cyrille:</strong><br>
+LGTM stands for Loki, Grafana, Tempo, and Mimir. It’s an integrated solution. Observability 2.0 is about unified telemetry—having everything correlated and not just reacting to errors. It’s about understanding business impacts when you decrease response times.</p>
+<p><strong>Nicole:</strong><br>
+So, it’s more about understanding the overall system rather than just monitoring.</p>
+<p><strong>Cyrille:</strong><br>
+Yes, exactly.</p>
+<p><strong>Liudmila:</strong><br>
+How do I know which metrics and traces to prioritize first when instrumenting a distributed system with OpenTelemetry?</p>
+<p><strong>Cyrille:</strong><br>
+We recommend starting with auto-instrumentation first. It provides metrics and traces at a technical level, and with HTTP, the endpoints are meaningful from a business standpoint. You start with auto-instrumentation and then add custom instrumentation on critical workflows.</p>
+<p><strong>Nicole:</strong><br>
+What’s the current state of the OpenTelemetry demo? Can it monitor infrastructure as well?</p>
+<p><strong>Cyrille:</strong><br>
+Yes, OpenTelemetry was born in the application layer, but infrastructure monitoring came a bit later. We’re working with the hotel demo folks to showcase better infrastructure monitoring done by OpenTelemetry.</p>
+<p><strong>Liudmila:</strong><br>
+If people want to contribute or try out the hotel demo for themCyrilleves, where should they go?</p>
+<p><strong>Nicole:</strong><br>
+I posted the link in the chat to the OpenTelemetry site.</p>
+<p><strong>Cyrille:</strong><br>
+If you want to participate in the demo, we have community meetings, and I can share another link in the channel for more information.</p>
+<p><strong>Liudmila:</strong><br>
+Great! Thank you both for being here and for everyone watching. I think that&rsquo;s a great way to end this call.</p>
+<p><strong>Cyrille:</strong><br>
+Thank you very much! It was a pleasure to be invited and an honor.</p>
+<p><strong>Nicole:</strong><br>
+Thank you!</p>
+
+    </div>
+  </article>
+
+  
+    
+    <h2>See Also</h3>
+    <ul>
+    
+    <li><a href="/blog/20251022-gocc01-declarative-config-in-otel/">Declarative Configuration in OpenTelemetry SDKs (Grafana ❤️‍🔥 OpenTelemetry Community Call October 2025)</a></li>
+    
+    <li><a href="/blog/20250515-goh30-state-of-the-observability-databases/">State of the Observability Databases (Grafana Office Hours #30)</a></li>
+    
+    <li><a href="/blog/20240712-goh28-api-monitoring-with-traefik-grafana-and-opentelemetry/">API Monitoring with Traefik, Grafana, and OpenTelemetry (Grafana Office Hours #28)</a></li>
+    
+    <li><a href="/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/">How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</a></li>
+    
+    <li><a href="/blog/20240105-goh25-introduction-to-ebpf-with-grafana-beyla/">Introduction to eBPF With Grafana Beyla (Grafana Office Hours #25)</a></li>
+    
+    </ul>
+    
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/blog">Blog</a></li>
+         
+          <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+          <li><a href="/work">Work</a></li>
+         
+          <li><a href="/speaking">Speaking</a></li>
+         
+          <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+         
+          <li><a href="https://doingitinpublic.com">Book</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transcript">Transcript</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#what-is-the-opentelemetry-demo">What is the OpenTelemetry Demo?</a></li>
+        <li><a href="#exploring-the-application">Exploring the Application</a></li>
+        <li><a href="#application-performance-monitoring-apm">Application Performance Monitoring (APM)</a></li>
+        <li><a href="#apm-dashboard-exploration">APM Dashboard Exploration</a>
+          <ul>
+            <li><a href="#alert-analysis">Alert Analysis</a></li>
+          </ul>
+        </li>
+        <li><a href="#logs-and-observability">Logs and Observability</a></li>
+        <li><a href="#questions-and-community-engagement">Questions and Community Engagement</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&text=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&is_video=false&description=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29&body=Check out this article: https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&title=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&name=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29&description=This%20community%20call%20with%20my%20coworker%20Liudmila%20Molkova%20featured%20an%20interview%20with%20Cyrille%20Le%20Clerc%20from%20Grafana%20Labs%2c%20focusing%20on%20the%20OpenTelemetry%20demo%20as%20a%20practical%20example%20of%20a%20lightweight%2c%20open-source%20Application%20Performance%20Monitoring%20%28APM%29%20solution.%20Cyril%20explained%20the%20purpose%20and%20architecture%20of%20the%20OTel%20demo%2c%20highlighting%20its%20role%20as%20a%20realistic%2c%20complex%20microservices%20application%20that%20has%20become%20a%20de%20facto%20standard%20for%20observability%20vendors.%20The%20discussion%20explored%20the%20modern%20definition%20of%20APM%2c%20followed%20by%20a%20detailed%20walkthrough%20of%20a%20Grafana%20dashboard%20built%20on%20OTel%20data%2c%20covering%20RED%20metrics%2c%20alerting%2c%20trace%20correlation%2c%20and%20infrastructure%20monitoring.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnicolevanderhoeven.github.io%2fblog%2f20251119-gocc02-lightweight-opensource-apm-with-otel-demo%2f&t=Lightweight%20Opensource%20APM%20with%20OTel%20Demo%20%28Grafana%20%e2%9d%a4%ef%b8%8f%e2%80%8d%f0%9f%94%a5%20OpenTelemetry%20Community%20Call%20%232%29">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2025  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+         
+        <li><a href="https://doingitinpublic.com">Book</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

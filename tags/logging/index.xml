@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 25 Apr 2025 17:57:58 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Dec 2025 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logging Best Practices (Grafana ❤️🔥 OpenTelemetry Community Call #3)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20251217-gocc03-logging-best-practices/</link>
+      <pubDate>Wed, 17 Dec 2025 16:00:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20251217-gocc03-logging-best-practices/</guid>
+      <description>&lt;p&gt;In this community call with my coworker Liudmila Molkova, we explored logging best practices in the context of OpenTelemetry. We discussed how to structure logs for observability, the relationship between logs and other telemetry signals (traces and metrics), and practical patterns for making logs more useful in distributed systems. The conversation covered log levels, contextual information, correlation with traces, and common pitfalls to avoid when instrumenting applications with OpenTelemetry logging.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D-bWeY-gBWU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link>

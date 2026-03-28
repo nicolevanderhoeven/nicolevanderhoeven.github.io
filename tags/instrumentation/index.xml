@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 19 Jan 2024 18:09:01 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/instrumentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Feb 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/instrumentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Behind the Magic of Auto-Instrumentation (Grafana ❤️🔥 OpenTelemetry Community Call #6)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20260227-gocc06-auto-instrumentation/</link>
+      <pubDate>Fri, 27 Feb 2026 16:00:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20260227-gocc06-auto-instrumentation/</guid>
+      <description>&lt;p&gt;In this community call with my coworker Liudmila Molkova, we pulled back the curtain on OpenTelemetry&amp;rsquo;s auto-instrumentation capabilities. We explored how auto-instrumentation works under the hood, when to use it versus manual instrumentation, and the trade-offs involved. The discussion covered language-specific implementations, the Collector&amp;rsquo;s role in auto-instrumentation, and practical tips for getting started with zero-code observability.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/HItumi3qt90&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>

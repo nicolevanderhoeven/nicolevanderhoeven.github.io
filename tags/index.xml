@@ -7,22 +7,103 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Feb 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 19:30:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>auto-instrumentation</title>
-      <link>https://nicolevanderhoeven.github.io/tags/auto-instrumentation/</link>
-      <pubDate>Fri, 27 Feb 2026 16:00:00 +0100</pubDate>
+      <title>ai</title>
+      <link>https://nicolevanderhoeven.github.io/tags/ai/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
       
-      <guid>https://nicolevanderhoeven.github.io/tags/auto-instrumentation/</guid>
+      <guid>https://nicolevanderhoeven.github.io/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>english</title>
       <link>https://nicolevanderhoeven.github.io/tags/english/</link>
-      <pubDate>Fri, 27 Feb 2026 16:00:00 +0100</pubDate>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana</title>
+      <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana assistant</title>
+      <link>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meetup</title>
+      <link>https://nicolevanderhoeven.github.io/tags/meetup/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/meetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talk</title>
+      <link>https://nicolevanderhoeven.github.io/tags/talk/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>observability</title>
+      <link>https://nicolevanderhoeven.github.io/tags/observability/</link>
+      <pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/observability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>obsidian</title>
+      <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
+      <pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pkm</title>
+      <link>https://nicolevanderhoeven.github.io/tags/pkm/</link>
+      <pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/pkm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pkm summit</title>
+      <link>https://nicolevanderhoeven.github.io/tags/pkm-summit/</link>
+      <pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/pkm-summit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auto-instrumentation</title>
+      <link>https://nicolevanderhoeven.github.io/tags/auto-instrumentation/</link>
+      <pubDate>Fri, 27 Feb 2026 16:00:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/auto-instrumentation/</guid>
       <description></description>
     </item>
     
@@ -99,56 +180,20 @@
     </item>
     
     <item>
-      <title>ai</title>
-      <link>https://nicolevanderhoeven.github.io/tags/ai/</link>
-      <pubDate>Sun, 25 Jan 2026 14:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>genai</title>
       <link>https://nicolevanderhoeven.github.io/tags/genai/</link>
-      <pubDate>Sun, 25 Jan 2026 14:00:00 +0100</pubDate>
+      <pubDate>Wed, 21 Jan 2026 16:00:00 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/genai/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>grafana assistant</title>
-      <link>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</link>
-      <pubDate>Sun, 25 Jan 2026 14:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>llm</title>
       <link>https://nicolevanderhoeven.github.io/tags/llm/</link>
-      <pubDate>Sun, 25 Jan 2026 14:00:00 +0100</pubDate>
+      <pubDate>Wed, 21 Jan 2026 16:00:00 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/llm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>demo</title>
-      <link>https://nicolevanderhoeven.github.io/tags/demo/</link>
-      <pubDate>Sun, 25 Jan 2026 12:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grafana cloud</title>
-      <link>https://nicolevanderhoeven.github.io/tags/grafana-cloud/</link>
-      <pubDate>Sun, 25 Jan 2026 12:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/grafana-cloud/</guid>
       <description></description>
     </item>
     
@@ -158,15 +203,6 @@
       <pubDate>Wed, 17 Dec 2025 16:00:00 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/logging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grafana</title>
-      <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/grafana/</guid>
       <description></description>
     </item>
     
@@ -203,15 +239,6 @@
       <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/metrics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>observability</title>
-      <link>https://nicolevanderhoeven.github.io/tags/observability/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/observability/</guid>
       <description></description>
     </item>
     
@@ -333,15 +360,6 @@
     </item>
     
     <item>
-      <title>obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/tags/obsidian/</link>
-      <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/obsidian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>visual thinking</title>
       <link>https://nicolevanderhoeven.github.io/tags/visual-thinking/</link>
       <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
@@ -446,15 +464,6 @@
       <pubDate>Wed, 26 Feb 2025 17:54:15 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/alerting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pkm</title>
-      <link>https://nicolevanderhoeven.github.io/tags/pkm/</link>
-      <pubDate>Fri, 10 Jan 2025 17:36:38 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/pkm/</guid>
       <description></description>
     </item>
     
@@ -756,6 +765,15 @@
     </item>
     
     <item>
+      <title>grafana cloud</title>
+      <link>https://nicolevanderhoeven.github.io/tags/grafana-cloud/</link>
+      <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/tags/grafana-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>load testing</title>
       <link>https://nicolevanderhoeven.github.io/tags/load-testing/</link>
       <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
@@ -1049,15 +1067,6 @@
       <pubDate>Thu, 16 Nov 2023 09:45:15 +0100</pubDate>
       
       <guid>https://nicolevanderhoeven.github.io/tags/intersectionality/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>talk</title>
-      <link>https://nicolevanderhoeven.github.io/tags/talk/</link>
-      <pubDate>Thu, 16 Nov 2023 09:45:15 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/tags/talk/</guid>
       <description></description>
     </item>
     

@@ -7,7 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 27 Feb 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 19:30:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let There Be Dashboards: Introducing Grafana Assistant</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid>
+      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/grafana-friends-lisboa/events/313572885/&#34;&gt;Grafana &amp;amp; Friends Lisbon Meetup&lt;/a&gt; in Lisbon, Portugal.&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Do Androids Dream of Second Brains?</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</link>
+      <pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</guid>
+      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit 2026&lt;/a&gt; in Utrecht, the Netherlands.&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;We often describe our PKM systems as &amp;ldquo;second brains&amp;rdquo;. But can we really say our systems think for themselves?&lt;/p&gt;
+&lt;p&gt;In Philip K. Dick&amp;rsquo;s &amp;ldquo;Do Androids Dream of Electric Sheep?&amp;rdquo;, the inspiration for the movie Bladerunner, the boundary between humans and machines is tested through observation and subtle signals. In this talk, we&amp;rsquo;ll explore a similar question for our knowledge systems: what happens when we start observing them?&lt;/p&gt;
+&lt;p&gt;By instrumenting an Obsidian vault with an observability stack and layering AI tools on top, we can begin to see patterns in how ideas form, connect, and evolve. The result isn&amp;rsquo;t quite a thinking system&amp;hellip; but it may be something closer than we&amp;rsquo;ve had before.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Behind the Magic of Auto-Instrumentation (Grafana ❤️🔥 OpenTelemetry Community Call #6)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20260227-gocc06-auto-instrumentation/</link>
@@ -33,36 +59,6 @@
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/1lMHX8CRHsc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Evaluating LLM Agents in the Real World: Inside Grafana Assistant</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260125-gocc-evaluating-llm-agents/</link>
-      <pubDate>Sun, 25 Jan 2026 14:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260125-gocc-evaluating-llm-agents/</guid>
-      <description>&lt;p&gt;This video offers a behind-the-scenes look at how we evaluate LLM agents in production at Grafana Labs. Using Grafana Assistant as a case study, I discuss the challenges of evaluating non-deterministic AI systems, the metrics that matter for agent quality, and practical approaches to monitoring and improving AI agent performance over time. The talk covers evaluation frameworks, feedback loops, and lessons learned from running AI agents at scale.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0N4JXCLzN8U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>GenAI Observability in Grafana Cloud: End-to-End Agent Debugging (Demo)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260125-gocc-genai-observability-demo/</link>
-      <pubDate>Sun, 25 Jan 2026 12:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260125-gocc-genai-observability-demo/</guid>
-      <description>&lt;p&gt;This demo video accompanies the Grafana ❤️🔥 OpenTelemetry Community Call series, showing a practical walkthrough of GenAI observability in Grafana Cloud. I demonstrate end-to-end debugging of an AI agent, showing how to trace requests through the entire pipeline, identify bottlenecks, and troubleshoot issues in production AI systems using Grafana&amp;rsquo;s observability stack.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/IeKgA6RqnVs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>

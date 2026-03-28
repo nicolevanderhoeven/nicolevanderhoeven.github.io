@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 19:30:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let There Be Dashboards: Introducing Grafana Assistant</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link>
+      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid>
+      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/grafana-friends-lisboa/events/313572885/&#34;&gt;Grafana &amp;amp; Friends Lisbon Meetup&lt;/a&gt; in Lisbon, Portugal.&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
       <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>

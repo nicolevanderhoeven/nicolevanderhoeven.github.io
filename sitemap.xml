@@ -2,19 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nicolevanderhoeven.github.io/spice-runner/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/agents/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/ai/</loc>
-    <lastmod>2026-03-26T19:30:00+01:00</lastmod>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/</loc>
-    <lastmod>2026-03-26T19:30:00+01:00</lastmod>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/english/</loc>
-    <lastmod>2026-03-26T19:30:00+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
-    <lastmod>2026-03-26T19:30:00+01:00</lastmod>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/llm/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</loc>
+    <lastmod>2026-04-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://nicolevanderhoeven.github.io/tags/grafana/</loc>
     <lastmod>2026-03-26T19:30:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</loc>
@@ -23,19 +47,10 @@
     <loc>https://nicolevanderhoeven.github.io/tags/meetup/</loc>
     <lastmod>2026-03-26T19:30:00+01:00</lastmod>
   </url><url>
-    <loc>https://nicolevanderhoeven.github.io/</loc>
-    <lastmod>2026-03-26T19:30:00+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/</loc>
-    <lastmod>2026-03-26T19:30:00+01:00</lastmod>
-  </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/talk/</loc>
     <lastmod>2026-03-26T19:30:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</loc>
-    <lastmod>2026-03-21T11:15:00+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/observability/</loc>
     <lastmod>2026-03-21T11:15:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/obsidian/</loc>
@@ -51,9 +66,6 @@
     <lastmod>2026-02-27T16:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20260227-gocc06-auto-instrumentation/</loc>
-    <lastmod>2026-02-27T16:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/grafana-labs/</loc>
     <lastmod>2026-02-27T16:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/grafana-otel-community-call/</loc>
@@ -81,9 +93,6 @@
     <lastmod>2026-02-12T16:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/tags/genai/</loc>
-    <lastmod>2026-01-21T16:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://nicolevanderhoeven.github.io/tags/llm/</loc>
     <lastmod>2026-01-21T16:00:00+01:00</lastmod>
   </url><url>
     <loc>https://nicolevanderhoeven.github.io/blog/20260121-gocc04-observability-for-genai-applications/</loc>

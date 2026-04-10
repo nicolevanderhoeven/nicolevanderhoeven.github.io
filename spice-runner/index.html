@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Spice Runner | Nicole van der Hoeven</title>
+  <meta name="description" content="Hi, I&#39;m Nicole van der Hoeven. I&#39;m a Senior Developer Advocate at Grafana Labs. I&#39;ve spent my career making software faster as a performance engineer, but I&#39;m also a YouTuber. I write stuff, film and produce videos, speak at conferences, and otherwise just generally learn in public. This site is a home for everything I&#39;m doing on the interwebs. I currently live between two places: Portugal and the Netherlands.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Spice Runner" />
+<meta property="og:description" content="Spice Runner is a browser-based endless runner game built as a demo app for the talk The Spice Must Flow: The Fremen Guide to Sustainable Observability, first presented at Øredev 2025 in Malmö, Sweden.
+The game exists to make a point: even a simple, throwaway game generates a surprising amount of telemetry — and that telemetry has real financial and environmental costs. The dashboard on Grafana Play shows real player data, live." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nicolevanderhoeven.github.io/spice-runner/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2026-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-04-10T00:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Spice Runner"/>
+<meta name="twitter:description" content="Spice Runner is a browser-based endless runner game built as a demo app for the talk The Spice Must Flow: The Fremen Guide to Sustainable Observability, first presented at Øredev 2025 in Malmö, Sweden.
+The game exists to make a point: even a simple, throwaway game generates a surprising amount of telemetry — and that telemetry has real financial and environmental costs. The dashboard on Grafana Play shows real player data, live."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://nicolevanderhoeven.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://nicolevanderhoeven.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+
+  <script async defer data-domain="nicolevanderhoeven.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+    <header id="header">
+  <a href="https://nicolevanderhoeven.github.io">
+  
+    <div id="logo" style="background-image: url(https://nicolevanderhoeven.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Nicole van der Hoeven</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/blog">Blog</a></li>
+      
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+      
+        <li><a href="/work">Work</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+      
+        <li><a href="https://doingitinpublic.com">Book</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="content" itemprop="articleBody">
+  
+    <p><strong>Spice Runner</strong> is a browser-based endless runner game built as a demo app for the talk <a href="/blog/20251105-the-spice-must-flow/"><em>The Spice Must Flow: The Fremen Guide to Sustainable Observability</em></a>, first presented at <a href="https://oredev.org/">Øredev 2025</a> in Malmö, Sweden.</p>
+<p>The game exists to make a point: even a simple, throwaway game generates a surprising amount of telemetry — and that telemetry has real financial and environmental costs. The dashboard on Grafana Play shows real player data, live.</p>
+<p><strong><a href="https://nvdh.dev/spice">🎮 Play it</a></strong> | <strong><a href="https://nicole.to/spicedashboard">📊 Live dashboard</a></strong> | <strong><a href="https://nicole.to/spicerepo">💻 Source code</a></strong></p>
+<p><img src="/assets/spice-runner.png" alt="Spice Runner — a sustainable observability demo"></p>
+<hr>
+<h2 id="what-it-demonstrates">What it demonstrates</h2>
+<ul>
+<li><strong><a href="https://grafana.com/oss/faro/">Grafana Faro</a></strong> for Real User Monitoring (RUM) — every jump, game start, score, and collision is instrumented as a custom event</li>
+<li><strong>Full observability stack on Kubernetes</strong>: Prometheus for metrics, Grafana Loki for logs, Grafana Tempo for traces, Grafana Alloy as the collector, Grafana for dashboards</li>
+<li><strong><a href="https://keda.sh/">KEDA</a></strong> for event-driven autoscaling — the cluster grows when players are active and shrinks when they&rsquo;re not, demonstrating cost-aware infrastructure</li>
+<li><strong><a href="https://k6.io">k6</a></strong> for load testing the leaderboard API</li>
+</ul>
+<h2 id="architecture">Architecture</h2>
+<p>The app has two layers:</p>
+<p><strong>Game + leaderboard</strong> — vanilla JavaScript game (<code>runner.js</code>) served by Nginx, with a Golang leaderboard API backed by PostgreSQL and Redis for score storage and caching.</p>
+<p><strong>Observability stack</strong> — Grafana Faro instruments the frontend; Nginx exporter, Alloy, Loki, Tempo, and Prometheus cover the backend. Everything is deployed on Kubernetes on GCP with persistent volumes so telemetry survives pod restarts.</p>
+<h2 id="the-talk">The talk</h2>
+<p>The <em>Spice Must Flow</em> talk uses Dune as its framing. Arrakis is rich in spice but poor in water; our systems are rich in telemetry but poor in budget and carbon budget. The Fremen survive by wasting nothing — the talk argues we should apply the same philosophy to observability.</p>
+<p>Key themes: the hidden environmental cost of observability, using KEDA to right-size resources dynamically, and the single most effective thing you can do to reduce cost — deleting telemetry you don&rsquo;t actually need.</p>
+<p>The talk has been given at <a href="https://oredev.org/">Øredev 2025</a> and will be given again at <a href="https://expoqa.eu/">ExpoQA Madrid 2026</a>.</p>
+
+  
+  </div>
+</article>
+
+
+    
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2026  Nicole van der Hoeven 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/blog">Blog</a></li>
+         
+        <li><a href="https://notes.nicolevanderhoeven.com">Notes</a></li>
+         
+        <li><a href="/work">Work</a></li>
+         
+        <li><a href="/speaking">Speaking</a></li>
+         
+        <li><a href="https://courses.nicolevanderhoeven.com/o4e">Course</a></li>
+         
+        <li><a href="https://doingitinpublic.com">Book</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+</html>

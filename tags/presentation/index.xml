@@ -1,792 +1,412 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>presentation on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/presentation/</link>
-    <description>Recent content in presentation on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
-      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link>
-      <pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://oredev.org/&#34;&gt;Øredev 2025&lt;/a&gt; in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p&gt;
-&lt;p&gt;The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p&gt;
-&lt;p&gt;In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here are some resources mentioned in the talk:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can play the game Spice Runner &lt;a href=&#34;https://nicole.to/spicegame&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicerepo&#34;&gt;The spice-runner repo&lt;/a&gt; containing everything you need to know about how to deploy it yourself&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spiceslides&#34;&gt;The slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicedashboard&#34;&gt;The Spice Runner dashboard&lt;/a&gt; for observing the application&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/spice-runner&#34;&gt;More about Spice Runner&lt;/a&gt;: architecture, tech stack, and what it demonstrates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG&#34; alt=&#34;Photo of me at Øredev 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link>
-      <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid>
-      <description>&lt;p&gt;Today I gave &lt;a href=&#34;https://sketch-your-mind.com/2025/sessions/nicole/&#34;&gt;a talk&lt;/a&gt; at my friend Zsolt Viczián&amp;rsquo;s &lt;a href=&#34;https://sketchyourmind.com/&#34;&gt;Sketch Your Mind Conference&lt;/a&gt; about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li&gt;
-&lt;li&gt;Adopting a visual Zettelkasten-like approach&lt;/li&gt;
-&lt;li&gt;Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li&gt;
-&lt;li&gt;Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li&gt;
-&lt;li&gt;Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li&gt;
-&lt;li&gt;Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href=&#34;https://github.com/nicolevanderhoeven/obsidian-grafana&#34;&gt;here&amp;rsquo;s the repo&lt;/a&gt; for anyone interested in replicating it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link>
-      <pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid>
-      <description>&lt;p&gt;Today I presented at the &lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht, the Netherlands. I gave a talk titled &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link>
-      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
-&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
-      <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid>
-      <description>&lt;p&gt;I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://nicole.to/rtc2024&#34;&gt;Here are my slides&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
-&lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
-&lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Adobo &amp; Avocados: Intersectionality in Tech and DevRel (Agile Testing Days 2023)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</link>
-      <pubDate>Thu, 16 Nov 2023 09:45:15 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I presented today at &lt;a href=&#34;https://agiletestingdays.com/&#34;&gt;Agile Testing Days 2023&lt;/a&gt; in Potsdam, Germany. Our talk was called &lt;a href=&#34;https://agiletestingdays.com/2023/session/adobo-and-avocados-intersectionality-in-tech-and-devrel/&#34;&gt;Adobo &amp;amp; Avocados: Intersectionality in Tech and DevRel&lt;/a&gt;. We talked about what intersectionality is, shared our personal experiences regarding diversity and intersecting identities, and gave tips on how to think about intersectionality as we build and use software. You can find the &lt;a href=&#34;https://www.canva.com/design/DAFzmIZBsAM/vuZZ7KE4fHxczHYdwZTvmw/view?utm_content=DAFzmIZBsAM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=editor&#34;&gt;slides here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Emergent Load Testing - TestCon Europe 2023</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</link>
-      <pubDate>Wed, 25 Oct 2023 20:05:36 +0300</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</guid>
-      <description>&lt;p&gt;I presented at &lt;a href=&#34;https://testcon.lt/&#34;&gt;TestCon Europe 2023&lt;/a&gt; in Vilnius, Lithuania about emergent load testing, and how to use it to find the limits of your system. My talk was called &lt;a href=&#34;https://events.pinetool.ai/3078/#sessions/100686?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions&#34;&gt;Emergent load testing: Rules for Organized Chaos&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing-testconeu/&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg&#34; alt=&#34;Me speaking at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0102.jpg&#34; alt=&#34;Portrait snapshot of me presenting at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0193.jpg&#34; alt=&#34;Wide shot of me talking about agency, feedback, and affordances&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/JUJ_0208.jpg&#34; alt=&#34;Me at the podium at TestCon Europe 2023&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Taking Notes for Work With Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</link>
-      <pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</guid>
-      <description>&lt;p&gt;In this talk, I show why I think taking notes for work with Obsidian has not just helped me learn faster but improved my career working in tech as a Developer Advocate and performance engineer. I take notes continuously as a way to keep my skills relevant. This is a rehearsal of a presentation I gave &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes&#34;&gt;at EuroSTAR 2023&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0g38K_DtxFI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>The Lost Art of Taking Good Notes (EuroSTAR 2023)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</link>
-      <pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</guid>
-      <description>&lt;p&gt;Today I gave the talk &amp;ldquo;&lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes&#34;&gt;The Lost Art of Taking Good Notes&lt;/a&gt;&amp;rdquo; at &lt;a href=&#34;https://conference.eurostarsoftwaretesting.com&#34;&gt;EuroSTAR 2023&lt;/a&gt;, about how I use Obsidian for work and why creating a personal knowledge management system is so valuable in the career of a tester.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0g38K_DtxFI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-lost-art-of-taking-good-notes&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Load testing and tracing with k6 and Tempo</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</link>
-      <pubDate>Thu, 18 May 2023 22:41:42 +1000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</guid>
-      <description>&lt;p&gt;At &lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON on the Road 2023 in Sydney, Australia&lt;/a&gt;, I talked about why you should use load testing and distributed tracing, how to do it with k6 and Tempo, and the benefits of being able to see beyond traditional black-box testing.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZP2aa5qjNOg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing&#34;&gt;Check out the slides here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Distributed+tracing&#34;&gt;Distributed tracing&lt;/a&gt; (notes)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/xk6-distributed-tracing&#34;&gt;xk6-distributed-tracing&lt;/a&gt; (notes)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-syd-01.jpeg&#34; alt=&#34;Photo of the crowd at OCR Sydney&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Avoid the Most Common Kubernetes Monitoring Mistakes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</link>
-      <pubDate>Tue, 16 May 2023 22:41:16 +1000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</guid>
-      <description>&lt;p&gt;For &lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/singapore/&#34;&gt;ObservabilityCON on the Road Singapore 2023&lt;/a&gt;, I talked about some mistakes people make when monitoring applications within Kubernetes clusters. I also demonstrated Grafana&amp;rsquo;s Kubernetes Monitoring solution and how it can be a shortcut for engineers looking to get started quickly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-sin-01.jpg&#34; alt=&#34;Photo of me speaking at OCR Singapore 2023&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing&#34;&gt;Slides here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Monitoring+Kubernetes&#34;&gt;Monitoring Kubernetes in general&lt;/a&gt; (notes)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Grafana+Kubernetes+Monitoring&#34;&gt;The Grafana Kubernetes Monitoring feature&lt;/a&gt; (notes)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-sin-02.jpg&#34; alt=&#34;Photo of the crowd at OCR Singapore 2023&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Emergent Load Testing - rules for organized chaos</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</link>
-      <pubDate>Wed, 19 Apr 2023 00:21:06 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</guid>
-      <description>&lt;p&gt;Today I spoke at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/&#34;&gt;KubeCon EU 2023&lt;/a&gt; about &lt;a href=&#34;https://sched.co/1HyYH&#34;&gt;emergent load testing&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Og4-Z6j_0M0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/img_3556.jpg&#34; alt=&#34;Me just before the presentation, with the opening slide on the screen behind me.&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://slides.nicolevanderhoeven.com/2023-emergent-load-testing/#&#34;&gt;Here are the slides&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Below are some links to extensions and experimental modules that I mentioned:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/&#34;&gt;Grafana&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://k6.io/&#34;&gt;k6 site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;k6 repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/&#34;&gt;k6 docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/using-k6-browser/overview/&#34;&gt;k6 browser&lt;/a&gt; (experimental module)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/results-output/real-time/prometheus-remote-write/&#34;&gt;Prometheus Remote Write&lt;/a&gt; (experimental module)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/javascript-api/k6-experimental/tracing/&#34;&gt;k6 tracing&lt;/a&gt; (experimental module)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-kubernetes&#34;&gt;xk6-kubernetes&lt;/a&gt; (extension)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://k6.io/docs/javascript-api/k6-experimental/redis/&#34;&gt;k6 redis&lt;/a&gt; (experimental module)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-disruptor&#34;&gt;xk6 disruptor&lt;/a&gt; (extension)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/img_3560-1.jpg&#34; alt=&#34;Me presenting, with a slide containing my definition of emergence on the screen&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&amp;rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.&lt;/p&gt;
-&lt;p&gt;Emergence is a phenomenon where parts of a whole independently develop properties not originally present in the whole. Emergence is what helps ant workers develop roles without leadership, prompts animals to evolve adaptive traits without forethought, and facilitates non-toxic communities without moderators.&lt;/p&gt;
-&lt;p&gt;The growing field of emergent software applies this swarm logic to the programs that we write. What would it take to write emergent load testing scripts? It turns out that there are a few ingredients for emergence: a large population size, opportunities to interact, feedback, and an element of control.&lt;/p&gt;
-&lt;p&gt;In this talk, Nicole van der Hoeven discusses how to bring these elements to load testing by writing a script in Grafana k6 that can independently decide what requests to make next, modify Kubernetes app pods, and disrupt services based on a continual feed of results during runtime&amp;ndash; all without manual intervention. She shows how to wield this new breed of load testing to improve confidence in the complex systems we build.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/img_3558.jpg&#34; alt=&#34;Photo of the room while I was presenting&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to create things with your notes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</link>
-      <pubDate>Fri, 17 Jun 2022 17:37:14 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</guid>
-      <description>&lt;p&gt;What do you do with all those notes? In this presentation, I talk about how to create things with your notes. I demonstrate my process of going from raw notes to this very presentation and share some of my strategies for creating output with little effort by learning in public and identifying topics to create content about using existing notes.&lt;/p&gt;
-&lt;p&gt;On May 19th, I did a talk at the &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220519-use-it-or-lose-it/&#34;&gt;Linking Your Thinking Conference&lt;/a&gt; about using your notes (or losing them), and about what we can do to make something useful of all our notes. This was my run through!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/4zrs_vVRwD4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link>
-      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid>
-      <description>&lt;p&gt;For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;what a gish is, and how it applies to the field of testing&lt;/li&gt;
-&lt;li&gt;how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li&gt;
-&lt;li&gt;how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li&gt;
-&lt;li&gt;a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href=&#34;https://k6.io/&#34;&gt;k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/aq0XSNcXDb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;And here are some photos from the event!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-1.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-4.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Use It or Lose It - Linking Your Thinking Conference</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</link>
-      <pubDate>Thu, 19 May 2022 14:03:13 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</guid>
-      <description>&lt;p&gt;Today I spoke at the &lt;a href=&#34;https://lu.ma/3m1fh781&#34;&gt;Linking Your Thinking&lt;/a&gt; conference about what I do with notes I take, and how I manage to use them to actually create stuff.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SMNSUs6ffnE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you&amp;rsquo;d like to see the result for yourself, &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#&#34;&gt;here are the slides&lt;/a&gt;!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TestOps Ask Me Anything on Devops Toolkit</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220407-testops-ama-on-devops-toolkit/</link>
-      <pubDate>Thu, 07 Apr 2022 18:00:30 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220407-testops-ama-on-devops-toolkit/</guid>
-      <description>&lt;p&gt;I joined my friend Viktor Farcic on his channel, DevOps Toolkit, to do an Ask Me Anything on the topic of TestOps.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/IRAa81s3WQQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We ended up talking a lot about &lt;a href=&#34;https://k6.io&#34;&gt;k6.io&lt;/a&gt;, different &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana Labs&lt;/a&gt; open-source projects, and what performance testing has to do with DevOps and Site Reliability Engineering.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>In search of the best Pokémon: Browser automation and load testing in one script with k6 (Automation Guild 2022)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</link>
-      <pubDate>Thu, 10 Feb 2022 12:01:53 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</guid>
-      <description>&lt;p&gt;Being a tester is like being a pokémon trainer: we want to choose the right pokémon for the job. The problem with doing different types of testing is that we also end up with multiple scripts in different languages and testing tools. We end up choosing a squad of pokémon: one for unit testing, one for automation testing, one for load testing, and so on. Making sure they all work together is a task in itself!&lt;/p&gt;
-&lt;p&gt;But what if we could just use one? What if we only needed one Mega-evolved pokémon that could fulfill multiple roles? Is it really possible to write a browser automation script and then reuse it for load testing?&lt;/p&gt;
-&lt;p&gt;In this presentation, I talk about my search for the elusive one pokémon that does multiple jobs, the advantages of hybrid load testing, and how to pick pokémon that make our life as trainers and testers easier.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SFag8ggkXKo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Basics of load testing with k6 and Grafana in 20 minutes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link>
-      <pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid>
-      <description>&lt;p&gt;This was a video I pre-recorded in preparation for &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;the first Grafana EMEA virtual meetup&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/gvounvDSDGg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p&gt;
-&lt;p&gt;Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p&gt;
-&lt;p&gt;Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p&gt;
-&lt;p&gt;In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;how to run a simple script in k6 OSS&lt;/li&gt;
-&lt;li&gt;how to make sense of the results of a load test&lt;/li&gt;
-&lt;li&gt;test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li&gt;
-&lt;li&gt;two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TTRPG Obsidian Showcase</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211009-ttrpg-obsidian-showcase/</link>
-      <pubDate>Sat, 09 Oct 2021 00:43:25 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211009-ttrpg-obsidian-showcase/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a presentation I participated in about a bunch of nerds who like both &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; and D&amp;amp;D. My part begins around &lt;a href=&#34;https://www.youtube.com/watch?v=Ovqu_1aW3Sw&amp;amp;t=2720&#34;&gt;0:45:20&lt;/a&gt;, but I thought the other speakers&amp;rsquo; parts were really fascinating as well!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Ovqu_1aW3Sw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Testing With k6 &#43; Grafana: Better Together (Grafana virtual meetup EMEA)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</link>
-      <pubDate>Tue, 05 Oct 2021 21:49:13 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</guid>
-      <description>&lt;p&gt;In this first EMEA session of the Grafana Labs virtual meetups, I talked about how to use k6 and Grafana together to get the full performance picture for a software application. Observability, using tools like Prometheus and Grafana, lets us see what&amp;rsquo;s going on inside the application, and load testing, using k6, helps us get those insights earlier on in software cycles, such as during pre-production.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/MUd5xuuxt0A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Intro to Load Testing With k6 and Grafana (webinar)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</link>
-      <pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</guid>
-      <description>&lt;p&gt;Tonight I did a webinar with Grafana Labs&amp;ndash; the first k6-related webinar since the acquisition. I was more than a little nervous to give it, because I knew I was introducing k6 to a lot of new users, but also to Grafana for the first time. I think it went pretty well! I was still quite relieved when it was over, however. :)&lt;/p&gt;
-&lt;p&gt;In the webinar, I talk about:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;why it&amp;rsquo;s still a good idea to do load testing in pre-production&lt;/li&gt;
-&lt;li&gt;what k6 is&lt;/li&gt;
-&lt;li&gt;why k6 and Grafana together make sense&lt;/li&gt;
-&lt;li&gt;and how to integrate k6 and Grafana&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There&amp;rsquo;s quite a bit of demo in it, and I also had the k6 CEO, Robin Gustafsson, join me for Q&amp;amp;A as a nice treat.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/tFsIgbqXbxM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Check out the full webinar &lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;here&lt;/a&gt;&amp;ndash; it&amp;rsquo;s already up on the Grafana site. You can also go through my slides &lt;a href=&#34;https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing&#34;&gt;here&lt;/a&gt;, if you&amp;rsquo;d like.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Schrödinger&#39;s Pokémon: k6 and Grafana edition</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link>
-      <pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid>
-      <description>&lt;p&gt;Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;chaos engineering with k6 and New Relic&lt;/a&gt;. A few months ago, k6 got acquired by &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana Labs&lt;/a&gt;, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/2QHs_HEX7r0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I presented this talk at &lt;a href=&#34;https://www.youtube.com/watch?v=jSgH3I8_ldk&#34;&gt;TestCon Europe 2021&lt;/a&gt; today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit&#34;&gt;Slides are here.&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Schrödinger&#39;s Pokémon: Observability for chaotic load testing (New Relic FutureStack)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210730-schrodingers-pokemon/</link>
-      <pubDate>Sun, 01 Aug 2021 18:54:27 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210730-schrodingers-pokemon/</guid>
-      <description>&lt;p&gt;This is a presentation I gave at &lt;a href=&#34;https://newrelic.com/futurestack/speakers/nicole-van-der-hoeven&#34;&gt;New Relic FutureStack 2021&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Deploying an application to production is often like putting a pokémon in a box and hoping it manages to stay alive despite real-world chaos and potential outages. What can we, as testers, do to prepare applications for these situations before they go live? In this talk, I discuss chaos engineering concepts and demonstrates how to apply them by incorporating load tests with chaos experiments and setting up observability tools to watch it all happen. Because without observability, how can we tell whether Schrödinger&amp;rsquo;s pokémon is alive or dead?&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/356yC-DOSmo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Convergence of Code and Speech</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210609-convergence-of-code-and-speech/</link>
-      <pubDate>Wed, 09 Jun 2021 22:23:19 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210609-convergence-of-code-and-speech/</guid>
-      <description>&lt;p&gt;As part of the &lt;a href=&#34;https://www.womentech.net/en-us/women-tech-conference&#34;&gt;Women Tech Global 2021&lt;/a&gt; conference, I presented a short talk called &amp;ldquo;&lt;a href=&#34;https://www.womentech.net/speaker/Nicole/van%20der%20Hoeven/50129&#34;&gt;Convergence of Code and Speech&lt;/a&gt;&amp;rdquo;, under the theme of &amp;ldquo;Future of Work&amp;rdquo;. In hindsight, the title was a little pretentious, but what are you going to do?&lt;/p&gt;
-&lt;p&gt;I haven&amp;rsquo;t gotten the recording of the live version yet, but I always like to do a recorded test run by myself, and here&amp;rsquo;s what that was like:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/sbZ3A8GrDk0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Programming code and human speech are often seen as being positioned at different ends of the spectrum. At one end, code is terse, strictly logical, and limited. On the other end, speech is unbounded and often verbose. However, the gap between the two is narrowing.&lt;/p&gt;
-&lt;p&gt;Code is moving towards speech. Good code these days is code that exceeds simply being functional; good code is concise, but expressive; good code is easily comprehensible; good code refers to human concepts rather than technical components.&lt;/p&gt;
-&lt;p&gt;Shrinking global borders and the internet are making collaborating on code easier than ever before, but contributors may come from different cultures and languages. Remote work has significantly increased the likelihood of a multilingual devleopment team, so code style guides have emerged that are similar to writing style guides. Artificial intelligence is learning to interpret intention, and many apps now employ fuzzy search algorithms. Our expectations for code have increased such that we now expect code to understand us even when we&amp;rsquo;re being imprecise or inaccurate. Modern programming languages like React and Python use hierarchical abstraction to hide complexity, moving towards code that prioritizes being understood over being thorough.&lt;/p&gt;
-&lt;p&gt;On the other side of the spectrum, speech is also moving towards coding. Multilingual teams also encourage simplicity in written communication, removing colloquialisms and cultural references so that a more global audience can understand us. Tools like Grammarly correct for simplicity and conciseness. Verbal speech, too, is becoming increasingly programmatic with the rise of &amp;ldquo;smart&amp;rdquo; speakers and personal assistants that enforce a syntax for voice commands. Advances in artificial intelligence and machine learning have enabled us to interact with machines in natural language, and machines to interact with us back. OpenAI&amp;rsquo;s GPT-3 can produce convincingly human text about a variety of topics with little prompting. Writing tools like Notion, Roam Research, and Obsidian are growing ecosystems that mix human language with programming keywords to enable backlinks or access other features.&lt;/p&gt;
-&lt;p&gt;What are the implications of this convergence of code and speech? Writers will need to learn to code, and coders will need to learn to write. The two will become synonymous, and equally essential especially for knowledge workers. Tools that enable both coding and writing will become more valuable, so it&amp;rsquo;s worth investing the time to learn them. Both code and speech have inherent linguistic or cultural biases, so using inclusive language will become even more important.&lt;/p&gt;
-&lt;p&gt;What are coding and speech converging into? Their intersection is simply expressing thought. She who is able to express thought, both programmatically and naturally, will be best poised to take advantage of this convergence.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Load Tests as Code: An introduction to k6</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</link>
-      <pubDate>Thu, 18 Mar 2021 20:36:41 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</guid>
-      <description>&lt;p&gt;Today, I attended the &lt;a href=&#34;https://www.cambridge.org/&#34;&gt;Cambridge University Press&lt;/a&gt; QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/kz3Mt97L9CY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;And &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/&#34;&gt;here are the slides&lt;/a&gt; I used!&lt;/p&gt;
-&lt;p&gt;I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
-      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Y la versión audio:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
-&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
-&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
-&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
-&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
-&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
-&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
-&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
-&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
-&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
-&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
-&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
-&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
-&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
-&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
-&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
-&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
-&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
-&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
-&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
-&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
-&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
-&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
-&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
-&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Become a Load Tester</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</link>
-      <pubDate>Wed, 07 Oct 2020 14:15:45 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</guid>
-      <description>
-
-&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/how-to-become-a-load-tester&#34;&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.flood.io/blog/how-to-become-a-load-tester&#34;&gt;Originally posted here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.&lt;/p&gt;
-&lt;p&gt;In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_R2dmEmtO48&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;background-required-for-load-testing&#34;&gt;Background required for load testing&lt;/h2&gt;
-&lt;p&gt;Load testing can be quite technical. It involves not just the ability to use different programming languages to create load testing scripts but also familiarity with software engineering practices, DevOps, application infrastructure, site reliability, and networking. A good load tester needs to be able to understand the basics of how an application works and how different components interact with each other. It&amp;rsquo;s common for a load tester to work on applications employing a variety of technologies, so staying up to date with recent technological trends and switching seamlessly from one language to another, or from one platform to another, is of utmost importantance. This technical side of load testing might make you think that a load tester needs to have formal studies in computer science and several years of experience in software testing. The reality is that there are many load testers who stumbled into the field from wildly unexpected backgrounds. So you might think load testing looks like this:&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester01.jpg&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Photo by &lt;a href=&#34;https://unsplash.com/@wocintechchat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Christina @ wocintechchat.com&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/meeting?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;And sometimes it does. But it more often looks something like this:&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester02.jpg&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Photo by &lt;a href=&#34;https://unsplash.com/@youxventures?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;You X Ventures&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/meeting?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You see, load testing is an interdisciplinary field. So much of the job involves talking to people. Sometimes the requirements for a project are not clear, and someone needs to talk to the both the business and the developers to make sure that nonfunctional requirements are clarified. A load tester is a detective, tracing a request as it goes from one application component to another, coordinating with different application teams. A load tester is a scientist, using the scientific method to design experiments that yield the results. A load tester is a statistician, making sense of a jumble of data and seeking correlations between variables. A load tester is a public speaker. Even when the actual load testing has been completed and the report has been sent, a load tester makes sure all stakeholders understand the report so that the results can be used to make meaningful changes to improve application performance. All these tasks require a mishmash of skills and competencies that can be difficult to find in just the field of computer science.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s take our backgrounds as anecdotal examples.&lt;/p&gt;
-&lt;p&gt;Tim grew up and currently lives in a small country town in Australia, and he joined the military straight after school. He later developed a love of automating things, which led him first to use tools like perl to scrape websites and try to win bids with early versions of ebay, and then later to starting a performance engineering consulting career and co-founding Flood itself.&lt;/p&gt;
-&lt;p&gt;I, Nicole, grew up in Metro Manila in the Philippines (which has 14,000 more people per km2 than Mumbai does). I learned English as a foreign language in school, and I have a university degree in Economics. When I discovered load testing, I had a job in a completely different field– I was working for an airline and making sure engine components were properly maintained and repaired. My love for gadgets and technology took me down an 8-year rabbit hole involving doing performance consulting for clients across a variety of industries in Australia and the Netherlands. At Flood, I help customers around the world improve their application performance.&lt;/p&gt;
-&lt;p&gt;As you can see, Tim and I came from very different backgrounds and different parts of the world. Neither of us knew what load testing even was when we started working. Neither of us got formal instruction in load testing. But somehow, we still both ended up becoming load testers at Flood.&lt;/p&gt;
-&lt;h2 id=&#34;reasons-to-become-a-load-tester&#34;&gt;Reasons to become a load tester&lt;/h2&gt;
-&lt;p&gt;So why become a load tester? Here are some practical reasons.&lt;/p&gt;
-&lt;h3 id=&#34;load-testing-is-cool&#34;&gt;Load testing is cool&lt;/h3&gt;
-&lt;p&gt;A little-known fact about load testing is that it can be really satisfying to be involved in big-name projects that end up going live.&lt;/p&gt;
-&lt;p&gt;You may have heard of Flood. But even if you haven’t, we’re sure you&amp;rsquo;re familiar with the results of load testing done on Flood. In the last few years, we have been helping Hotstar, one of the largest streaming services in the world, load test their systems in preparation for the Indian Premier League.&lt;/p&gt;
-&lt;p&gt;Hotstar uses an open-source tool that we support, Gatling, to create scripts to simulate users tuning in to watch cricket games. Then, they use Flood to create a “Game Day” simulation. They scale up those load tests and run 5 million users on thousands of machines in the cloud. We help them coordinate execution, spot problems quickly with real-time results from all those machines while the test is still running, and identify bottlenecks so that they don’t occur in production, when India’s playing.&lt;/p&gt;
-&lt;p&gt;As a load tester, you&amp;rsquo;ll definitely be working with brands you recognize and love.&lt;/p&gt;
-&lt;h3 id=&#34;load-testing-can-pay-well&#34;&gt;Load testing can pay well&lt;/h3&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester03.png&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://www.payscale.com/research/IN/Job=Software_Tester/Salary&#34;&gt;Payscale&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester04.png&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://www.payscale.com/research/IN/Job=Performance_Engineer/Salary&#34;&gt;Payscale&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I said this would be a practical list, right?&lt;/p&gt;
-&lt;p&gt;Here are 261,768 practical reasons. The average performance engineer’s salary is 71% more than that of an average software tester in India, according to Payscale.com. We all know that money isn’t everything, but this is a clear signal from the market about the importance of performance-related skills. Adding load testing to your CV as a tester makes you more attractive to employers. It’s a great way to differentiate yourself in an over-saturated market.&lt;/p&gt;
-&lt;h3 id=&#34;load-testing-can-literally-take-you-places&#34;&gt;Load testing can literally take you places&lt;/h3&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester05.png&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://twitter.com/shamim_j&#34;&gt;Shamim&lt;/a&gt; from &lt;a href=&#34;https://www.flood.io/blog/inside-the-career-of-a-digital-nomad-is-a-life-on-the-road-right-for-you&#34;&gt;Flood&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Then there are the side benefits of being in load testing. The photos above are real ones from the Flood team. That’s me on the upper left, exploring a castle in Belgrade, Serbia, and that’s Tim in the bottom right, taking a photo in San Francisco, USA.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.flood.io/blog/inside-the-career-of-a-digital-nomad-is-a-life-on-the-road-right-for-you&#34;&gt;We’re a fully distributed team on Flood&lt;/a&gt;, which means we can work from anywhere. Flood is a web app, so you don’t need to install anything– I’ve been known to start load tests from my iPad in a café. Load testing on the cloud frees you from being tied to running tests from the office. You can start load generators when you need them and shut them down when you don’t– all from a web browser. It’s a job that can come with a great work/life balance, if you find the right company.&lt;/p&gt;
-&lt;p&gt;Load testing can also be a great way to move to another country. It’s what’s allowed me to move to other countries– twice. In Australia, the average performance engineer’s salary is AU$108,053, or over 5.6 million rupee.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester06.png&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://www.payscale.com/research/AU/Job=Performance_Engineer/Salary&#34;&gt;Payscale&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;So it’s clear that there are some pretty good reasons for you to become a load tester. I&amp;rsquo;m going to walk you through the practical steps to become a load tester. You may not be an expert by the end of this, but I hope I can convince you that you can get started in load testing whether your background looks like Tim’s or mine.&lt;/p&gt;
-&lt;h3 id=&#34;load-testing-adds-real-value&#34;&gt;Load testing adds real value&lt;/h3&gt;
-&lt;p&gt;And the trite, but absolutely true reason: Everyone fails.&lt;/p&gt;
-&lt;p&gt;As a load tester, you are a gatekeeper of quality. What you do directly affects revenue and customer experience.&lt;/p&gt;
-&lt;p&gt;Performance is an aspect of software that is often overlooked, but it’s only becoming more important in a world where everything is going online. People are being born who have never known what it’s like not to have the internet, and consumers in general expect applications to be responsive and stable. Would-be customers who can’t get an e-commerce site to load within 3 seconds may switch to a competitor’s site, and we all know there are many of them. Performance-related outages can be seriously damaging to a company’s reputation, and social networking amplifies customer dissatisfaction by effectively giving everyone a megaphone to complain into.&lt;/p&gt;
-&lt;p&gt;Software functionality is still important. However, if an online store goes live with no critical functional defects, but it fails when the 100th person logs into it, or it takes 10 seconds to load the homepage, can you really say that it was ready for production?&lt;/p&gt;
-&lt;p&gt;Load testing is a crucial part of ensuring software quality, and quality is the responsibility of everyone on a team, even if the word “performance” isn’t in your job title.&lt;/p&gt;
-&lt;h2 id=&#34;the-essential-ingredients-of-a-load-test&#34;&gt;The essential ingredients of a load test&lt;/h2&gt;
-&lt;p&gt;Load testing is like cooking a meal. This is one of Tim&amp;rsquo;s favorite dishes, aloo matar.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester07.jpg&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://www.cubesnjuliennes.com/aloo-matar-recipe/&#34;&gt;Cubes n Juliennes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You can approach cooking as a science. There are recipes with a list of ingredients, a precise measurement of how much you need for each, and a procedure for creating the dish.&lt;/p&gt;
-&lt;p&gt;But you can also look at cooking as an art. Cooking the same dish over and over again will give you an experience in working with those ingredients that a novice cook won’t have. There’s room in cooking for adding one ingredient, changing the quantity of another, or just trying something new.&lt;/p&gt;
-&lt;p&gt;A master chef knows how to use both the science and the art to create something delicious. But you don’t HAVE to be at that level in order to cook.&lt;/p&gt;
-&lt;p&gt;Anyone can cook. If you know how to follow a basic recipe, you may not create a masterpiece, but if you’re like me and you haven’t had lunch yet, you’ll still end up with something you’ll eat.&lt;/p&gt;
-&lt;p&gt;So here’s the recipe for load testing.&lt;/p&gt;
-&lt;p&gt;I prefer kadai paneer myself, but aloo matar requires, among other things, peas. And so does load testing.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;P is Preparation&lt;/strong&gt;. To prepare for a load test, you need to get your ingredients ready. You need to decide what it is you want to test, why you’re testing it, and how. You write load testing scripts that will simulate real users as closely as possible.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;E is Execution&lt;/strong&gt;. This is when you do the actual cooking. You run your load tests and scale them up according to your requirements.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A is Analysis&lt;/strong&gt;. You figure out whether the dish you created is edible. You determine how your application servers responded during the load test, and decide if that’s acceptable.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Preparation – Execution – Analysis.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;preparing-for-a-load-test&#34;&gt;Preparing for a load test&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“As far as the World Cup is concerned, it is a process. We don’t want to jump to the 50th floor straight away. We must start on the ground floor.” - Sachin Tendulkar, via &lt;a href=&#34;https://www.espncricinfo.com/story/_/id/22538610/world-cup-final-dream-tendulkar&#34;&gt;ESPN&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Load testing doesn’t start with writing a script. Load testing starts with building a foundation for later tests.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester08.png&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://www.insidesport.co/cricket-sachin-tendulkar-comes-to-aid-of-ailing-ashraf-who-once-fixed-his-bats/&#34;&gt;Inside Sport&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Part of that foundation is asking WHY. Why do you want to do a load test? Has there been a performance-related issue before? Are you trying to determine whether an application is ready to go live, or is it already live, and you just want to improve its performance? What type of application do you want to test?&lt;/p&gt;
-&lt;p&gt;WHOM are you cooking for? I think you’d cook differently for yourself than you would for Sachin Tendulkar. What do your end users typically do on your site? Where do they come from?&lt;/p&gt;
-&lt;p&gt;These are questions that need to be answered before you think about scripting. Here are some resource for planning your load tests:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.flood.io/blog/start-with-why-how-to-write-requirements-for-api-load-testing&#34;&gt;Start with Why: How to write requirements for API load testing&lt;/a&gt;
-&lt;a href=&#34;https://www.flood.io/blog/how-to-write-a-test-plan-for-load-testing&#34;&gt;How to write a test plan for load testing&lt;/a&gt;
-&lt;a href=&#34;https://guides.flood.io/ebooks/api-load-testing/scripting-an-api-load-test&#34;&gt;Selecting a tool for load testing&lt;/a&gt;
-Generating a load testing script without coding: &lt;a href=&#34;https://guides.flood.io/overview-of-flood/scripting-your-load-test&#34;&gt;Getting Started with Test Builder&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;execution-of-a-load-test&#34;&gt;Execution of a load test&lt;/h2&gt;
-&lt;p&gt;So now we’re ready to start cooking. This is the Execution phase. You’ll need a machine to use as a load generator. Depending on the number of users you want to run with, you may need more than one machine. You might be tempted to run a load test on your laptop, or on a bunch of machines you have lying around, but that introduces new variables that may affect the results.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester09.jpeg&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://unsplash.com/@suicide_chewbacca?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Ashwini Chaudhary&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/indian-food?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Like any good cook, you’ll also need to make sure you have all your ingredients handy. In load testing, that means making sure your scripts and test data files are ready to be executed on every load generator.&lt;/p&gt;
-&lt;p&gt;Both of these problems – provisioning a load generator and transferring files over to them – are solved pretty easily by running on the cloud using something like Flood.&lt;/p&gt;
-&lt;p&gt;Designing and executing your load test&lt;/p&gt;
-&lt;p&gt;Where should you run your load tests? A look at demand, hosted, and on-premise infrastructure&lt;/p&gt;
-&lt;h2 id=&#34;analysis-of-results&#34;&gt;Analysis of Results&lt;/h2&gt;
-&lt;p&gt;The last part is Analysis.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester10.jpeg&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://www.finedininglovers.com/recipes/brunch/potato-pakoras-yogurt-sauce&#34;&gt;Fine Dining Lovers&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is a pretty crucial moment, because this is when you figure out whether what you cooked was delicious or not. Unfortunately, in load testing, it’s not always easy to tell how your test went. It’s like this photo of pakora (onion is my favorite kind). It’s kind of hard to say what expression that is in their faces. Is it disgust? Or is the pakora so yummy that they just can’t wait to eat more?&lt;/p&gt;
-&lt;p&gt;Load testing typically generates a LOT of data. You’d have to go copy every single file from every load generator you used. But can you imagine the hundreds of load generators that Hotstar used? Of course they didn’t manually copy those files. Instead, they used Flood.&lt;/p&gt;
-&lt;p&gt;On Flood, we show real-time graphs as you’re running the test so that you can tell immediately whether transactions are failing or whether a server has stopped responding.&lt;/p&gt;
-&lt;p&gt;After the test, you can also compare this data to previous tests to spot trends, or even create your own dashboards using an analytics engine.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/results-analysis/metrics-during-test&#34;&gt;Real-time metrics during your load test&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/results-analysis/archived-results&#34;&gt;Downloading results and logs after the test&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;is-that-it&#34;&gt;Is that it?&lt;/h2&gt;
-&lt;p&gt;You’ve prepared for a load test, you’ve executed a load test, and you’ve analysed the results from the load test. Congratulations, you’re a load tester! By following this recipe, you’re already doing better than many people, and you’re certainly doing a lot better than those who do not run any load tests at all.&lt;/p&gt;
-&lt;p&gt;The cool thing about load testing, though, is that this is just the beginning. There’s always room for improvement.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester11.jpeg&#34; alt=&#34;&#34;&gt;
-&lt;em&gt;Source: &lt;a href=&#34;https://popupcity.net/observations/dabbawalla-hot-lunch-delivery-by-mumbais-fastest/&#34;&gt;Pop Up City&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Dabbawallas are people who deliver hot lunches, and while the concept is not new, the implementation in India is particularly interesting.&lt;/p&gt;
-&lt;p&gt;For these dabbawallas, having the meals prepared is not the end of the job. Once the food is ready, it needs to be packed into lunchboxes, picked up, separated according to destination, put on trains, and delivered. Later, the empty lunchboxes are picked up, and the system works in reverse.&lt;/p&gt;
-&lt;p&gt;It turns out that this is actually a pretty sophisticated system. In fact, it’s been estimated that only one tiffin every two months is not delivered. That’s equivalent to a &lt;a href=&#34;https://www.bbc.com/future/article/20170114-the-125-year-old-network-that-keeps-mumbai-going&#34;&gt;Six-Sigma quality rating of 99.9999999%&lt;/a&gt; (that’s nine nines) or more.&lt;/p&gt;
-&lt;p&gt;Dabbawallas didn’t get that rating just by delivering quickly. They did it by being consistent and reliable. They did it by having a process.&lt;/p&gt;
-&lt;p&gt;Once you see the benefits of running a load test, you may also start to understand that the real value of load testing is not in a test that you run once whenever you think of it. Imagine having the benefits of a load test tied to your development process, so that it is automated.&lt;/p&gt;
-&lt;p&gt;As an advanced topic, &lt;a href=&#34;https://www.flood.io/blog/load-testing-in-devops-pipelines-with-azure-and-flood&#34;&gt;adding your load testing&lt;/a&gt; to your team&amp;rsquo;s Continuous Integration/Continuous Development pipelines such as sets up a repeatable process that reaps benefits far into the future, not just whenever official load testing activities are carried out.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://guides.flood.io/continuous-integration/what-is-continuous-integration&#34;&gt;Continuous Integration with Flood&lt;/a&gt;: Integrating Travis CI, Circle CI, and Jenkins&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;So that’s the recipe for becoming a load tester.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Preparation – Execution – Analysis.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;Preparation&lt;/strong&gt;, you determine why you’re testing and what tool best fits your needs. We showed you how to use Element, but there are many open source tools out there. Don’t get overwhelmed by scripting– a lot of times it can just mean replacing a URL with the one YOU want to test.&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;Execution&lt;/strong&gt;, you run a baseline test that will serve as a point of comparison for future testing, choose the number of users and the number of regions you want, and then you run your test. Running on the cloud is the easiest (and usually cheapest) way to get started.&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;Analysis&lt;/strong&gt;, you view the results in real-time, compare historical performance to see trends, and share reports to stakeholders so that your team can make changes to your application.&lt;/p&gt;
-&lt;p&gt;We also talked about the bonus topic of &lt;strong&gt;CI/CD&lt;/strong&gt; and how you can incorporate load testing into your pipeline to get a continuous feedback during your development cycle.&lt;/p&gt;
-&lt;p&gt;Tim and I started in very different places and had different experiences before we discovered load testing. But eventually, we ended up on the same path, and that’s what we’ve outlined for you here. We hope that this convinces you that load testing doesn’t have to be complicated.&lt;/p&gt;
-&lt;p&gt;You absolutely don’t need to be an expert to run a load test. Even if you don’t think you’ll get all these steps right, a load test that is less than ideal is still better than no load testing at all.&lt;/p&gt;
-&lt;p&gt;In the end, anyone can be a load tester with the right attitude and the right tools.&lt;/p&gt;
-&lt;h2 id=&#34;learning-about-load-testing&#34;&gt;Learning about load testing&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites&#34;&gt;High Performance Websites&lt;/a&gt; book by Steve Souders&lt;/p&gt;
-&lt;p&gt;Ministry of Testing/PerfBytes &lt;a href=&#34;https://www.ministryoftesting.com/dojo/lessons/a-quick-start-guide-to-learning-performance-testing&#34;&gt;list of resources&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.perfbytes.com/&#34;&gt;PerfBytes podcast&lt;/a&gt; (EN and ES)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://guildconferences.com/conference/perfguild-2020/&#34;&gt;PerfGuild conferences&lt;/a&gt; by Joe Colantonio&lt;/p&gt;
-&lt;p&gt;Señor Performo’s YouTube Channel: &lt;a href=&#34;https://www.youtube.com/channel/UCO-RlGccAUQnMqTaBkvUJhQ&#34;&gt;Señor Performo ENG&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Scott Moore’s &lt;a href=&#34;https://www.youtube.com/watch?v=9H2GSGvGwqQ&amp;amp;list=PLXRCdih3vTUEFz1TVyP7RRqEEk__CYGoB&#34;&gt;Performance Tour&lt;/a&gt; on YouTube&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lifting the lid on performance testing</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20200924-testing-talks-online/</link>
-      <pubDate>Thu, 24 Sep 2020 23:38:56 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20200924-testing-talks-online/</guid>
-      <description>&lt;p&gt;I joined other performance and testing engineers in this online panel at Testing Talks Online about load testing best practices.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/pHQ4FwdwGGk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;From the &lt;a href=&#34;https://www.testingtalks.com.au/presentations/lifting-the-lid-on-performance-testing-best-practices-from-leading-companies&#34;&gt;Testing Talks Online site&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Performance testing is an essential part of the quality assurance function. However, across the industry the great majority of companies still struggle to master and execute a successful performance testing strategy that produces measurable results.
-In this panel discussion, Cameron Bradley will host some of the best performance engineers in the world. The panel will discuss how we as quality assurance experts and performance engineers can better understand performance testing, the value of performance testing and how world leaders are approaching and succeeding with performance testing as part of the delivery life cycle.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hybrid load testing: the best of testing using protocols and real browsers</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</link>
-      <pubDate>Tue, 02 Jun 2020 22:21:11 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</guid>
-      <description>&lt;p&gt;At &lt;a href=&#34;https://guildconferences.com/speaker/nicole-hoeven/&#34;&gt;PerfGuild 2020&lt;/a&gt;, I spoke about hybrid load testing and how to mix two different approaches to load testing: protocol-based and browser-based.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20200602-01.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Here’s the unlisted video from that presentation:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/KwlU6unOD9E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>TestCon Moscow 2019: Dismantling Cognitive Biases</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</link>
-      <pubDate>Wed, 03 Apr 2019 23:14:31 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</guid>
-      <description>
-
-&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;
-
-&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&#34;https://testconf.ru/2019/en/nicole-van-der-hoeven/index.html&#34;&gt;this year’s TestCon conference&lt;/a&gt;, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.&lt;/p&gt;
-&lt;p&gt;In the talk, I discuss:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;two types of thinking: fast thinking and slow thinking (from Daniel Kahneman&amp;rsquo;s book &lt;a href=&#34;https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;how to influence the sentence duration that judges give perpetrators&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;what cognitive biases are and how they can affect performance testing results&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;a real-life production incident that occurred on Flood and how our team&amp;rsquo;s cognitive biases got in the way of its resolution&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;what to do to avoid cognitive biases when testing software&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here&amp;rsquo;s the video of my full talk:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/GPD8F0e7eX8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Download the presentation &lt;a href=&#34;https://nicolevanderhoeven.github.io/assets/20190403-01.pdf&#34;&gt;in PDF format&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Presentation on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/presentation/</link><description>Recent content in Presentation on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link><pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid><description>&lt;p>Today I presented at &lt;a href="https://ncrafts.io/">Newcrafts&lt;/a> in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> in London and at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025&lt;/a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p></description></item><item><title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link><pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://oredev.org/">Øredev 2025&lt;/a> in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p>
+&lt;p>The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p>
+&lt;p>In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p>&lt;/blockquote>
+&lt;p>Here are some resources mentioned in the talk:&lt;/p>
+&lt;ul>
+&lt;li>You can play the game Spice Runner &lt;a href="https://nicole.to/spicegame">here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicerepo">The spice-runner repo&lt;/a> containing everything you need to know about how to deploy it yourself&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spiceslides">The slides&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicedashboard">The Spice Runner dashboard&lt;/a> for observing the application&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/spice-runner">More about Spice Runner&lt;/a>: architecture, tech stack, and what it demonstrates&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG" alt="Photo of me at Øredev 2025">&lt;/p></description></item><item><title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link><pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid><description>&lt;p>Today I gave &lt;a href="https://sketch-your-mind.com/2025/sessions/nicole/">a talk&lt;/a> at my friend Zsolt Viczián&amp;rsquo;s &lt;a href="https://sketchyourmind.com/">Sketch Your Mind Conference&lt;/a> about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zmgqMZi6QL8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p>
+&lt;ul>
+&lt;li>Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li>
+&lt;li>Adopting a visual Zettelkasten-like approach&lt;/li>
+&lt;li>Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li>
+&lt;li>Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li>
+&lt;li>Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li>
+&lt;li>Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li>
+&lt;/ul>
+&lt;p>I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href="https://github.com/nicolevanderhoeven/obsidian-grafana">here&amp;rsquo;s the repo&lt;/a> for anyone interested in replicating it.&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link><pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid><description>&lt;p>Today I presented at the &lt;a href="https://www.dutchcloudnativeday.nl">Dutch Cloud Native Day 2025&lt;/a> in Utrecht, the Netherlands. I gave a talk titled &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link><pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London&lt;/a> called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p>
+&lt;p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x6EKTCAWtn8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link><pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid><description>&lt;p>I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p>
+&lt;p>&lt;a href="https://nicole.to/rtc2024">Here are my slides&lt;/a>!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg" alt="">&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p>
+&lt;p>The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p>
+&lt;p>In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p></description></item><item><title>Adobo &amp; Avocados: Intersectionality in Tech and DevRel (Agile Testing Days 2023)</title><link>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</link><pubDate>Thu, 16 Nov 2023 09:45:15 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231116-adobo-and-avocados-intersectionality-in-tech-and-devrel/</guid><description>&lt;p>My friend &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a> and I presented today at &lt;a href="https://agiletestingdays.com/">Agile Testing Days 2023&lt;/a> in Potsdam, Germany. Our talk was called &lt;a href="https://agiletestingdays.com/2023/session/adobo-and-avocados-intersectionality-in-tech-and-devrel/">Adobo &amp;amp; Avocados: Intersectionality in Tech and DevRel&lt;/a>. We talked about what intersectionality is, shared our personal experiences regarding diversity and intersecting identities, and gave tips on how to think about intersectionality as we build and use software. You can find the &lt;a href="https://www.canva.com/design/DAFzmIZBsAM/vuZZ7KE4fHxczHYdwZTvmw/view?utm_content=DAFzmIZBsAM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=editor">slides here&lt;/a>.&lt;/p></description></item><item><title>Emergent Load Testing - TestCon Europe 2023</title><link>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</link><pubDate>Wed, 25 Oct 2023 20:05:36 +0300</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231025-emergent-load-testing-testconeu/</guid><description>&lt;p>I presented at &lt;a href="https://testcon.lt/">TestCon Europe 2023&lt;/a> in Vilnius, Lithuania about emergent load testing, and how to use it to find the limits of your system. My talk was called &lt;a href="https://events.pinetool.ai/3078/#sessions/100686?referrer%5Bpathname%5D=%2Fsessions&amp;amp;referrer%5Bsearch%5D=&amp;amp;referrer%5Btitle%5D=Sessions">Emergent load testing: Rules for Organized Chaos&lt;/a>.&lt;/p>
+&lt;p>You can find the slides &lt;a href="https://slides.nicolevanderhoeven.com/2023-emergent-load-testing-testconeu/">here&lt;/a>!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/JUJ_0079.jpg" alt="Me speaking at TestCon Europe 2023">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/JUJ_0102.jpg" alt="Portrait snapshot of me presenting at TestCon Europe 2023">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/JUJ_0193.jpg" alt="Wide shot of me talking about agency, feedback, and affordances">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/JUJ_0208.jpg" alt="Me at the podium at TestCon Europe 2023">&lt;/p></description></item><item><title>Taking Notes for Work With Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</link><pubDate>Fri, 16 Jun 2023 19:00:33 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230616-taking-notes-for-work-with-obsidian/</guid><description>&lt;p>In this talk, I show why I think taking notes for work with Obsidian has not just helped me learn faster but improved my career working in tech as a Developer Advocate and performance engineer. I take notes continuously as a way to keep my skills relevant. This is a rehearsal of a presentation I gave &lt;a href="https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes">at EuroSTAR 2023&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0g38K_DtxFI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>The Lost Art of Taking Good Notes (EuroSTAR 2023)</title><link>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</link><pubDate>Wed, 14 Jun 2023 08:00:21 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230614-lost-art-of-taking-good-notes/</guid><description>&lt;p>Today I gave the talk &amp;ldquo;&lt;a href="https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes">The Lost Art of Taking Good Notes&lt;/a>&amp;rdquo; at &lt;a href="https://conference.eurostarsoftwaretesting.com">EuroSTAR 2023&lt;/a>, about how I use Obsidian for work and why creating a personal knowledge management system is so valuable in the career of a tester.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0g38K_DtxFI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://slides.nicolevanderhoeven.com/2023-lost-art-of-taking-good-notes">Here are the slides&lt;/a>.&lt;/p></description></item><item><title>Load testing and tracing with k6 and Tempo</title><link>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</link><pubDate>Thu, 18 May 2023 22:41:42 +1000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</guid><description>&lt;p>At &lt;a href="https://grafana.com/about/events/observabilitycon/2023/sydney/">ObservabilityCON on the Road 2023 in Sydney, Australia&lt;/a>, I talked about why you should use load testing and distributed tracing, how to do it with k6 and Tempo, and the benefits of being able to see beyond traditional black-box testing.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZP2aa5qjNOg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing">Check out the slides here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Distributed+tracing">Distributed tracing&lt;/a> (notes)&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/xk6-distributed-tracing">xk6-distributed-tracing&lt;/a> (notes)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/ocr-2023-syd-01.jpeg" alt="Photo of the crowd at OCR Sydney">&lt;/p></description></item><item><title>How to Avoid the Most Common Kubernetes Monitoring Mistakes</title><link>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</link><pubDate>Tue, 16 May 2023 22:41:16 +1000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</guid><description>&lt;p>For &lt;a href="https://grafana.com/about/events/observabilitycon/2023/singapore/">ObservabilityCON on the Road Singapore 2023&lt;/a>, I talked about some mistakes people make when monitoring applications within Kubernetes clusters. I also demonstrated Grafana&amp;rsquo;s Kubernetes Monitoring solution and how it can be a shortcut for engineers looking to get started quickly.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/ocr-2023-sin-01.jpg" alt="Photo of me speaking at OCR Singapore 2023">&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing">Slides here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Monitoring+Kubernetes">Monitoring Kubernetes in general&lt;/a> (notes)&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Kubernetes+Monitoring">The Grafana Kubernetes Monitoring feature&lt;/a> (notes)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/ocr-2023-sin-02.jpg" alt="Photo of the crowd at OCR Singapore 2023">&lt;/p></description></item><item><title>Emergent Load Testing - rules for organized chaos</title><link>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</link><pubDate>Wed, 19 Apr 2023 00:21:06 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230419-emergent-load-testing/</guid><description>&lt;p>Today I spoke at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/program/schedule/">KubeCon EU 2023&lt;/a> about &lt;a href="https://sched.co/1HyYH">emergent load testing&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Og4-Z6j_0M0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/img_3556.jpg" alt="Me just before the presentation, with the opening slide on the screen behind me.">&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;p>&lt;a href="https://slides.nicolevanderhoeven.com/2023-emergent-load-testing/#">Here are the slides&lt;/a>.&lt;/p>
+&lt;p>Below are some links to extensions and experimental modules that I mentioned:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/">Grafana&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://k6.io/">k6 site&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/k6">k6 repo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://k6.io/docs/">k6 docs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://k6.io/docs/using-k6-browser/overview/">k6 browser&lt;/a> (experimental module)&lt;/li>
+&lt;li>&lt;a href="https://k6.io/docs/results-output/real-time/prometheus-remote-write/">Prometheus Remote Write&lt;/a> (experimental module)&lt;/li>
+&lt;li>&lt;a href="https://k6.io/docs/javascript-api/k6-experimental/tracing/">k6 tracing&lt;/a> (experimental module)&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/xk6-kubernetes">xk6-kubernetes&lt;/a> (extension)&lt;/li>
+&lt;li>&lt;a href="https://k6.io/docs/javascript-api/k6-experimental/redis/">k6 redis&lt;/a> (experimental module)&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/xk6-disruptor">xk6 disruptor&lt;/a> (extension)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/img_3560-1.jpg" alt="Me presenting, with a slide containing my definition of emergence on the screen">&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>When we write load testing scripts against our applications, we write them sequentially: A, then B, then C. But this doesn&amp;rsquo;t accurately reflect the organized chaos of a system in production, nor does it prepare the system for the unexpected.&lt;/p>
+&lt;p>Emergence is a phenomenon where parts of a whole independently develop properties not originally present in the whole. Emergence is what helps ant workers develop roles without leadership, prompts animals to evolve adaptive traits without forethought, and facilitates non-toxic communities without moderators.&lt;/p>
+&lt;p>The growing field of emergent software applies this swarm logic to the programs that we write. What would it take to write emergent load testing scripts? It turns out that there are a few ingredients for emergence: a large population size, opportunities to interact, feedback, and an element of control.&lt;/p>
+&lt;p>In this talk, Nicole van der Hoeven discusses how to bring these elements to load testing by writing a script in Grafana k6 that can independently decide what requests to make next, modify Kubernetes app pods, and disrupt services based on a continual feed of results during runtime&amp;ndash; all without manual intervention. She shows how to wield this new breed of load testing to improve confidence in the complex systems we build.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/img_3558.jpg" alt="Photo of the room while I was presenting">&lt;/p></description></item><item><title>How to create things with your notes</title><link>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</link><pubDate>Fri, 17 Jun 2022 17:37:14 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</guid><description>&lt;p>What do you do with all those notes? In this presentation, I talk about how to create things with your notes. I demonstrate my process of going from raw notes to this very presentation and share some of my strategies for creating output with little effort by learning in public and identifying topics to create content about using existing notes.&lt;/p>
+&lt;p>On May 19th, I did a talk at the &lt;a href="https://nicolevanderhoeven.com/blog/20220519-use-it-or-lose-it/">Linking Your Thinking Conference&lt;/a> about using your notes (or losing them), and about what we can do to make something useful of all our notes. This was my run through!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4zrs_vVRwD4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title><link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link><pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid><description>&lt;p>For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p>
+&lt;ul>
+&lt;li>what a gish is, and how it applies to the field of testing&lt;/li>
+&lt;li>how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li>
+&lt;li>how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li>
+&lt;li>a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href="https://k6.io/">k6&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aq0XSNcXDb0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>You can find the slides &lt;a href="https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/">here&lt;/a>.&lt;/p>
+&lt;p>And here are some photos from the event!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-1.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-4.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p></description></item><item><title>Use It or Lose It - Linking Your Thinking Conference</title><link>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</link><pubDate>Thu, 19 May 2022 14:03:13 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</guid><description>&lt;p>Today I spoke at the &lt;a href="https://lu.ma/3m1fh781">Linking Your Thinking&lt;/a> conference about what I do with notes I take, and how I manage to use them to actually create stuff.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SMNSUs6ffnE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>If you&amp;rsquo;d like to see the result for yourself, &lt;a href="https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#">here are the slides&lt;/a>!&lt;/p></description></item><item><title>TestOps Ask Me Anything on Devops Toolkit</title><link>https://nicolevanderhoeven.github.io/blog/20220407-testops-ama-on-devops-toolkit/</link><pubDate>Thu, 07 Apr 2022 18:00:30 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220407-testops-ama-on-devops-toolkit/</guid><description>&lt;p>I joined my friend Viktor Farcic on his channel, DevOps Toolkit, to do an Ask Me Anything on the topic of TestOps.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IRAa81s3WQQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>We ended up talking a lot about &lt;a href="https://k6.io">k6.io&lt;/a>, different &lt;a href="https://grafana.com">Grafana Labs&lt;/a> open-source projects, and what performance testing has to do with DevOps and Site Reliability Engineering.&lt;/p></description></item><item><title>In search of the best Pokémon: Browser automation and load testing in one script with k6 (Automation Guild 2022)</title><link>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</link><pubDate>Thu, 10 Feb 2022 12:01:53 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220210-in-search-of-the-best-pokemon/</guid><description>&lt;p>Being a tester is like being a pokémon trainer: we want to choose the right pokémon for the job. The problem with doing different types of testing is that we also end up with multiple scripts in different languages and testing tools. We end up choosing a squad of pokémon: one for unit testing, one for automation testing, one for load testing, and so on. Making sure they all work together is a task in itself!&lt;/p>
+&lt;p>But what if we could just use one? What if we only needed one Mega-evolved pokémon that could fulfill multiple roles? Is it really possible to write a browser automation script and then reuse it for load testing?&lt;/p>
+&lt;p>In this presentation, I talk about my search for the elusive one pokémon that does multiple jobs, the advantages of hybrid load testing, and how to pick pokémon that make our life as trainers and testers easier.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SFag8ggkXKo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Basics of load testing with k6 and Grafana in 20 minutes</title><link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link><pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid><description>&lt;p>This was a video I pre-recorded in preparation for &lt;a href="https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/">the first Grafana EMEA virtual meetup&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gvounvDSDGg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p>
+&lt;p>Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p>
+&lt;p>Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p>
+&lt;p>In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p>
+&lt;ul>
+&lt;li>how to run a simple script in k6 OSS&lt;/li>
+&lt;li>how to make sense of the results of a load test&lt;/li>
+&lt;li>test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li>
+&lt;li>two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li>
+&lt;/ul></description></item><item><title>TTRPG Obsidian Showcase</title><link>https://nicolevanderhoeven.github.io/blog/20211009-ttrpg-obsidian-showcase/</link><pubDate>Sat, 09 Oct 2021 00:43:25 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211009-ttrpg-obsidian-showcase/</guid><description>&lt;p>Here&amp;rsquo;s a presentation I participated in about a bunch of nerds who like both &lt;a href="https://obsidian.md">Obsidian&lt;/a> and D&amp;amp;D. My part begins around &lt;a href="https://www.youtube.com/watch?v=Ovqu_1aW3Sw&amp;amp;t=2720">0:45:20&lt;/a>, but I thought the other speakers&amp;rsquo; parts were really fascinating as well!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ovqu_1aW3Sw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Testing With k6 + Grafana: Better Together (Grafana virtual meetup EMEA)</title><link>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</link><pubDate>Tue, 05 Oct 2021 21:49:13 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</guid><description>&lt;p>In this first EMEA session of the Grafana Labs virtual meetups, I talked about how to use k6 and Grafana together to get the full performance picture for a software application. Observability, using tools like Prometheus and Grafana, lets us see what&amp;rsquo;s going on inside the application, and load testing, using k6, helps us get those insights earlier on in software cycles, such as during pre-production.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MUd5xuuxt0A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Intro to Load Testing With k6 and Grafana (webinar)</title><link>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</link><pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</guid><description>&lt;p>Tonight I did a webinar with Grafana Labs&amp;ndash; the first k6-related webinar since the acquisition. I was more than a little nervous to give it, because I knew I was introducing k6 to a lot of new users, but also to Grafana for the first time. I think it went pretty well! I was still quite relieved when it was over, however. :)&lt;/p>
+&lt;p>In the webinar, I talk about:&lt;/p>
+&lt;ul>
+&lt;li>why it&amp;rsquo;s still a good idea to do load testing in pre-production&lt;/li>
+&lt;li>what k6 is&lt;/li>
+&lt;li>why k6 and Grafana together make sense&lt;/li>
+&lt;li>and how to integrate k6 and Grafana&lt;/li>
+&lt;/ul>
+&lt;p>There&amp;rsquo;s quite a bit of demo in it, and I also had the k6 CEO, Robin Gustafsson, join me for Q&amp;amp;A as a nice treat.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tFsIgbqXbxM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Check out the full webinar &lt;a href="https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/">here&lt;/a>&amp;ndash; it&amp;rsquo;s already up on the Grafana site. You can also go through my slides &lt;a href="https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing">here&lt;/a>, if you&amp;rsquo;d like.&lt;/p></description></item><item><title>Schrödinger's Pokémon: k6 and Grafana edition</title><link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link><pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid><description>&lt;p>Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href="https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/">chaos engineering with k6 and New Relic&lt;/a>. A few months ago, k6 got acquired by &lt;a href="https://grafana.com">Grafana Labs&lt;/a>, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p>
+&lt;p>Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2QHs_HEX7r0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>I presented this talk at &lt;a href="https://www.youtube.com/watch?v=jSgH3I8_ldk">TestCon Europe 2021&lt;/a> today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p>
+&lt;p>&lt;a href="https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit">Slides are here.&lt;/a>&lt;/p></description></item><item><title>Schrödinger's Pokémon: Observability for chaotic load testing (New Relic FutureStack)</title><link>https://nicolevanderhoeven.github.io/blog/20210730-schrodingers-pokemon/</link><pubDate>Sun, 01 Aug 2021 18:54:27 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210730-schrodingers-pokemon/</guid><description>&lt;p>This is a presentation I gave at &lt;a href="https://newrelic.com/futurestack/speakers/nicole-van-der-hoeven">New Relic FutureStack 2021&lt;/a>.&lt;/p>
+&lt;p>Deploying an application to production is often like putting a pokémon in a box and hoping it manages to stay alive despite real-world chaos and potential outages. What can we, as testers, do to prepare applications for these situations before they go live? In this talk, I discuss chaos engineering concepts and demonstrates how to apply them by incorporating load tests with chaos experiments and setting up observability tools to watch it all happen. Because without observability, how can we tell whether Schrödinger&amp;rsquo;s pokémon is alive or dead?&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/356yC-DOSmo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Convergence of Code and Speech</title><link>https://nicolevanderhoeven.github.io/blog/20210609-convergence-of-code-and-speech/</link><pubDate>Wed, 09 Jun 2021 22:23:19 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210609-convergence-of-code-and-speech/</guid><description>&lt;p>As part of the &lt;a href="https://www.womentech.net/en-us/women-tech-conference">Women Tech Global 2021&lt;/a> conference, I presented a short talk called &amp;ldquo;&lt;a href="https://www.womentech.net/speaker/Nicole/van%20der%20Hoeven/50129">Convergence of Code and Speech&lt;/a>&amp;rdquo;, under the theme of &amp;ldquo;Future of Work&amp;rdquo;. In hindsight, the title was a little pretentious, but what are you going to do?&lt;/p>
+&lt;p>I haven&amp;rsquo;t gotten the recording of the live version yet, but I always like to do a recorded test run by myself, and here&amp;rsquo;s what that was like:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sbZ3A8GrDk0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Programming code and human speech are often seen as being positioned at different ends of the spectrum. At one end, code is terse, strictly logical, and limited. On the other end, speech is unbounded and often verbose. However, the gap between the two is narrowing.&lt;/p>
+&lt;p>Code is moving towards speech. Good code these days is code that exceeds simply being functional; good code is concise, but expressive; good code is easily comprehensible; good code refers to human concepts rather than technical components.&lt;/p>
+&lt;p>Shrinking global borders and the internet are making collaborating on code easier than ever before, but contributors may come from different cultures and languages. Remote work has significantly increased the likelihood of a multilingual devleopment team, so code style guides have emerged that are similar to writing style guides. Artificial intelligence is learning to interpret intention, and many apps now employ fuzzy search algorithms. Our expectations for code have increased such that we now expect code to understand us even when we&amp;rsquo;re being imprecise or inaccurate. Modern programming languages like React and Python use hierarchical abstraction to hide complexity, moving towards code that prioritizes being understood over being thorough.&lt;/p>
+&lt;p>On the other side of the spectrum, speech is also moving towards coding. Multilingual teams also encourage simplicity in written communication, removing colloquialisms and cultural references so that a more global audience can understand us. Tools like Grammarly correct for simplicity and conciseness. Verbal speech, too, is becoming increasingly programmatic with the rise of &amp;ldquo;smart&amp;rdquo; speakers and personal assistants that enforce a syntax for voice commands. Advances in artificial intelligence and machine learning have enabled us to interact with machines in natural language, and machines to interact with us back. OpenAI&amp;rsquo;s GPT-3 can produce convincingly human text about a variety of topics with little prompting. Writing tools like Notion, Roam Research, and Obsidian are growing ecosystems that mix human language with programming keywords to enable backlinks or access other features.&lt;/p>
+&lt;p>What are the implications of this convergence of code and speech? Writers will need to learn to code, and coders will need to learn to write. The two will become synonymous, and equally essential especially for knowledge workers. Tools that enable both coding and writing will become more valuable, so it&amp;rsquo;s worth investing the time to learn them. Both code and speech have inherent linguistic or cultural biases, so using inclusive language will become even more important.&lt;/p>
+&lt;p>What are coding and speech converging into? Their intersection is simply expressing thought. She who is able to express thought, both programmatically and naturally, will be best poised to take advantage of this convergence.&lt;/p></description></item><item><title>Load Tests as Code: An introduction to k6</title><link>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</link><pubDate>Thu, 18 Mar 2021 20:36:41 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210318-load-tests-as-code/</guid><description>&lt;p>Today, I attended the &lt;a href="https://www.cambridge.org/">Cambridge University Press&lt;/a> QA Week 2021 to talk about load testing with k6. Here&amp;rsquo;s a recording of the presentation.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kz3Mt97L9CY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>And &lt;a href="https://slides.nicolevanderhoeven.com/2021-load-tests-as-code/">here are the slides&lt;/a> I used!&lt;/p>
+&lt;p>I had fun discussing the advantages of the load test as code approach and why k6 is a great way to implement it.&lt;/p></description></item><item><title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title><link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link><pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid><description>&lt;p>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href="https://jmeterenespanol.org/">JMeter en Español&lt;/a> el 31 de Oktubre, 2020.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1KB8e2Ld08M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Y la versión audio:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;h2 id="introducción">Introducción&lt;/h2>
+&lt;p>Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p>
+&lt;h2 id="amazon---ui--dev-tools">Amazon - UI + Dev Tools&lt;/h2>
+&lt;p>Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p>
+&lt;h2 id="jmeter---creando-un-script">JMeter - Creando un script&lt;/h2>
+&lt;p>Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p>
+&lt;p>Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p>
+&lt;p>A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p>
+&lt;h2 id="flood-challenge">Flood Challenge&lt;/h2>
+&lt;p>La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p>
+&lt;p>Podemos verlo en la aplicación de muestra &lt;a href="https://challenge.flood.io">Flood Challenge&lt;/a>. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p>
+&lt;h2 id="correlación-en-jmeter---flood-challenge-script">Correlación en JMeter - Flood challenge script&lt;/h2>
+&lt;p>Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p>
+&lt;h2 id="la-experiencia-del-usuario">La experiencia del usuario&lt;/h2>
+&lt;p>La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p>
+&lt;p>Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href="https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google's,is%20spent%20on%20the%20frontend">hasta 90% del tiempo de respuesta&lt;/a> que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p>
+&lt;h2 id="developer-tools---lighthouse">Developer Tools - Lighthouse&lt;/h2>
+&lt;p>Entonces, ¿qué podemos hacer?&lt;/p>
+&lt;p>Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p>
+&lt;h2 id="webpagetest">WebPageTest&lt;/h2>
+&lt;p>También uso &lt;a href="https://webpagetest.org">WebPageTest&lt;/a> a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p>
+&lt;h2 id="herramientas-alternativas-para-pruebas-de-carga">Herramientas alternativas para pruebas de carga&lt;/h2>
+&lt;p>Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p>
+&lt;p>&lt;a href="https://www.selenium.dev/">Selenium&lt;/a> es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p>
+&lt;p>Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/microsoft/playwright">Playwright&lt;/a> es una creación de Microsoft.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://jest.io">Jest&lt;/a> fue desarrollado por Facebook&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mocha es otro framework que es la base para &lt;a href="https://cypress.io">Cypress&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p>
+&lt;h2 id="element-script">Element script&lt;/h2>
+&lt;p>Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p>
+&lt;p>Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p>
+&lt;p>Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href="https://jmeter.apache.org">JMeter&lt;/a> o &lt;a href="https://gatling.io">Gatling&lt;/a> o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p>
+&lt;h2 id="conclusión">Conclusión&lt;/h2>
+&lt;p>Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>No ejecutan scripts del lado del navegador&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>No miden la experiencia final de un usuario&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p>
+&lt;p>Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p></description></item><item><title>How to Become a Load Tester</title><link>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</link><pubDate>Wed, 07 Oct 2020 14:15:45 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201007-how-to-become-a-load-tester/</guid><description>
+&lt;link rel="canonical" href="https://www.flood.io/blog/how-to-become-a-load-tester">
+&lt;p>&lt;em>&lt;a href="https://www.flood.io/blog/how-to-become-a-load-tester">Originally posted here&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>Load testing can be a pretty intimidating field to get into, but it&amp;rsquo;s easy to get started. Here are some concrete steps you can take to start learning how to load test from scratch.&lt;/p>
+&lt;p>In this video, Flood co-founder Tim Koopmans and I teamed up at Tricentis User Conference 2020 to talk about the essential ingredients for load testing.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_R2dmEmtO48?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="background-required-for-load-testing">Background required for load testing&lt;/h2>
+&lt;p>Load testing can be quite technical. It involves not just the ability to use different programming languages to create load testing scripts but also familiarity with software engineering practices, DevOps, application infrastructure, site reliability, and networking. A good load tester needs to be able to understand the basics of how an application works and how different components interact with each other. It&amp;rsquo;s common for a load tester to work on applications employing a variety of technologies, so staying up to date with recent technological trends and switching seamlessly from one language to another, or from one platform to another, is of utmost importantance. This technical side of load testing might make you think that a load tester needs to have formal studies in computer science and several years of experience in software testing. The reality is that there are many load testers who stumbled into the field from wildly unexpected backgrounds. So you might think load testing looks like this:&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester01.jpg" alt="">
+&lt;em>Photo by &lt;a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Christina @ wocintechchat.com&lt;/a> on &lt;a href="https://unsplash.com/s/photos/meeting?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Unsplash&lt;/a>&lt;/em>&lt;/p>
+&lt;p>And sometimes it does. But it more often looks something like this:&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester02.jpg" alt="">
+&lt;em>Photo by &lt;a href="https://unsplash.com/@youxventures?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">You X Ventures&lt;/a> on &lt;a href="https://unsplash.com/s/photos/meeting?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Unsplash&lt;/a>&lt;/em>&lt;/p>
+&lt;p>You see, load testing is an interdisciplinary field. So much of the job involves talking to people. Sometimes the requirements for a project are not clear, and someone needs to talk to the both the business and the developers to make sure that nonfunctional requirements are clarified. A load tester is a detective, tracing a request as it goes from one application component to another, coordinating with different application teams. A load tester is a scientist, using the scientific method to design experiments that yield the results. A load tester is a statistician, making sense of a jumble of data and seeking correlations between variables. A load tester is a public speaker. Even when the actual load testing has been completed and the report has been sent, a load tester makes sure all stakeholders understand the report so that the results can be used to make meaningful changes to improve application performance. All these tasks require a mishmash of skills and competencies that can be difficult to find in just the field of computer science.&lt;/p>
+&lt;p>Let&amp;rsquo;s take our backgrounds as anecdotal examples.&lt;/p>
+&lt;p>Tim grew up and currently lives in a small country town in Australia, and he joined the military straight after school. He later developed a love of automating things, which led him first to use tools like perl to scrape websites and try to win bids with early versions of ebay, and then later to starting a performance engineering consulting career and co-founding Flood itself.&lt;/p>
+&lt;p>I, Nicole, grew up in Metro Manila in the Philippines (which has 14,000 more people per km2 than Mumbai does). I learned English as a foreign language in school, and I have a university degree in Economics. When I discovered load testing, I had a job in a completely different field– I was working for an airline and making sure engine components were properly maintained and repaired. My love for gadgets and technology took me down an 8-year rabbit hole involving doing performance consulting for clients across a variety of industries in Australia and the Netherlands. At Flood, I help customers around the world improve their application performance.&lt;/p>
+&lt;p>As you can see, Tim and I came from very different backgrounds and different parts of the world. Neither of us knew what load testing even was when we started working. Neither of us got formal instruction in load testing. But somehow, we still both ended up becoming load testers at Flood.&lt;/p>
+&lt;h2 id="reasons-to-become-a-load-tester">Reasons to become a load tester&lt;/h2>
+&lt;p>So why become a load tester? Here are some practical reasons.&lt;/p>
+&lt;h3 id="load-testing-is-cool">Load testing is cool&lt;/h3>
+&lt;p>A little-known fact about load testing is that it can be really satisfying to be involved in big-name projects that end up going live.&lt;/p>
+&lt;p>You may have heard of Flood. But even if you haven’t, we’re sure you&amp;rsquo;re familiar with the results of load testing done on Flood. In the last few years, we have been helping Hotstar, one of the largest streaming services in the world, load test their systems in preparation for the Indian Premier League.&lt;/p>
+&lt;p>Hotstar uses an open-source tool that we support, Gatling, to create scripts to simulate users tuning in to watch cricket games. Then, they use Flood to create a “Game Day” simulation. They scale up those load tests and run 5 million users on thousands of machines in the cloud. We help them coordinate execution, spot problems quickly with real-time results from all those machines while the test is still running, and identify bottlenecks so that they don’t occur in production, when India’s playing.&lt;/p>
+&lt;p>As a load tester, you&amp;rsquo;ll definitely be working with brands you recognize and love.&lt;/p>
+&lt;h3 id="load-testing-can-pay-well">Load testing can pay well&lt;/h3>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester03.png" alt="">
+&lt;em>Source: &lt;a href="https://www.payscale.com/research/IN/Job=Software_Tester/Salary">Payscale&lt;/a>&lt;/em>&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester04.png" alt="">
+&lt;em>Source: &lt;a href="https://www.payscale.com/research/IN/Job=Performance_Engineer/Salary">Payscale&lt;/a>&lt;/em>&lt;/p>
+&lt;p>I said this would be a practical list, right?&lt;/p>
+&lt;p>Here are 261,768 practical reasons. The average performance engineer’s salary is 71% more than that of an average software tester in India, according to Payscale.com. We all know that money isn’t everything, but this is a clear signal from the market about the importance of performance-related skills. Adding load testing to your CV as a tester makes you more attractive to employers. It’s a great way to differentiate yourself in an over-saturated market.&lt;/p>
+&lt;h3 id="load-testing-can-literally-take-you-places">Load testing can literally take you places&lt;/h3>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester05.png" alt="">
+&lt;em>Source: &lt;a href="https://twitter.com/shamim_j">Shamim&lt;/a> from &lt;a href="https://www.flood.io/blog/inside-the-career-of-a-digital-nomad-is-a-life-on-the-road-right-for-you">Flood&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Then there are the side benefits of being in load testing. The photos above are real ones from the Flood team. That’s me on the upper left, exploring a castle in Belgrade, Serbia, and that’s Tim in the bottom right, taking a photo in San Francisco, USA.&lt;/p>
+&lt;p>&lt;a href="https://www.flood.io/blog/inside-the-career-of-a-digital-nomad-is-a-life-on-the-road-right-for-you">We’re a fully distributed team on Flood&lt;/a>, which means we can work from anywhere. Flood is a web app, so you don’t need to install anything– I’ve been known to start load tests from my iPad in a café. Load testing on the cloud frees you from being tied to running tests from the office. You can start load generators when you need them and shut them down when you don’t– all from a web browser. It’s a job that can come with a great work/life balance, if you find the right company.&lt;/p>
+&lt;p>Load testing can also be a great way to move to another country. It’s what’s allowed me to move to other countries– twice. In Australia, the average performance engineer’s salary is AU$108,053, or over 5.6 million rupee.&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester06.png" alt="">
+&lt;em>Source: &lt;a href="https://www.payscale.com/research/AU/Job=Performance_Engineer/Salary">Payscale&lt;/a>&lt;/em>&lt;/p>
+&lt;p>So it’s clear that there are some pretty good reasons for you to become a load tester. I&amp;rsquo;m going to walk you through the practical steps to become a load tester. You may not be an expert by the end of this, but I hope I can convince you that you can get started in load testing whether your background looks like Tim’s or mine.&lt;/p>
+&lt;h3 id="load-testing-adds-real-value">Load testing adds real value&lt;/h3>
+&lt;p>And the trite, but absolutely true reason: Everyone fails.&lt;/p>
+&lt;p>As a load tester, you are a gatekeeper of quality. What you do directly affects revenue and customer experience.&lt;/p>
+&lt;p>Performance is an aspect of software that is often overlooked, but it’s only becoming more important in a world where everything is going online. People are being born who have never known what it’s like not to have the internet, and consumers in general expect applications to be responsive and stable. Would-be customers who can’t get an e-commerce site to load within 3 seconds may switch to a competitor’s site, and we all know there are many of them. Performance-related outages can be seriously damaging to a company’s reputation, and social networking amplifies customer dissatisfaction by effectively giving everyone a megaphone to complain into.&lt;/p>
+&lt;p>Software functionality is still important. However, if an online store goes live with no critical functional defects, but it fails when the 100th person logs into it, or it takes 10 seconds to load the homepage, can you really say that it was ready for production?&lt;/p>
+&lt;p>Load testing is a crucial part of ensuring software quality, and quality is the responsibility of everyone on a team, even if the word “performance” isn’t in your job title.&lt;/p>
+&lt;h2 id="the-essential-ingredients-of-a-load-test">The essential ingredients of a load test&lt;/h2>
+&lt;p>Load testing is like cooking a meal. This is one of Tim&amp;rsquo;s favorite dishes, aloo matar.&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester07.jpg" alt="">
+&lt;em>Source: &lt;a href="https://www.cubesnjuliennes.com/aloo-matar-recipe/">Cubes n Juliennes&lt;/a>&lt;/em>&lt;/p>
+&lt;p>You can approach cooking as a science. There are recipes with a list of ingredients, a precise measurement of how much you need for each, and a procedure for creating the dish.&lt;/p>
+&lt;p>But you can also look at cooking as an art. Cooking the same dish over and over again will give you an experience in working with those ingredients that a novice cook won’t have. There’s room in cooking for adding one ingredient, changing the quantity of another, or just trying something new.&lt;/p>
+&lt;p>A master chef knows how to use both the science and the art to create something delicious. But you don’t HAVE to be at that level in order to cook.&lt;/p>
+&lt;p>Anyone can cook. If you know how to follow a basic recipe, you may not create a masterpiece, but if you’re like me and you haven’t had lunch yet, you’ll still end up with something you’ll eat.&lt;/p>
+&lt;p>So here’s the recipe for load testing.&lt;/p>
+&lt;p>I prefer kadai paneer myself, but aloo matar requires, among other things, peas. And so does load testing.&lt;/p>
+&lt;p>&lt;strong>P is Preparation&lt;/strong>. To prepare for a load test, you need to get your ingredients ready. You need to decide what it is you want to test, why you’re testing it, and how. You write load testing scripts that will simulate real users as closely as possible.&lt;/p>
+&lt;p>&lt;strong>E is Execution&lt;/strong>. This is when you do the actual cooking. You run your load tests and scale them up according to your requirements.&lt;/p>
+&lt;p>&lt;strong>A is Analysis&lt;/strong>. You figure out whether the dish you created is edible. You determine how your application servers responded during the load test, and decide if that’s acceptable.&lt;/p>
+&lt;p>&lt;strong>Preparation – Execution – Analysis.&lt;/strong>&lt;/p>
+&lt;h2 id="preparing-for-a-load-test">Preparing for a load test&lt;/h2>
+&lt;blockquote>
+&lt;p>“As far as the World Cup is concerned, it is a process. We don’t want to jump to the 50th floor straight away. We must start on the ground floor.” - Sachin Tendulkar, via &lt;a href="https://www.espncricinfo.com/story/_/id/22538610/world-cup-final-dream-tendulkar">ESPN&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;p>Load testing doesn’t start with writing a script. Load testing starts with building a foundation for later tests.&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester08.png" alt="">
+&lt;em>Source: &lt;a href="https://www.insidesport.co/cricket-sachin-tendulkar-comes-to-aid-of-ailing-ashraf-who-once-fixed-his-bats/">Inside Sport&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Part of that foundation is asking WHY. Why do you want to do a load test? Has there been a performance-related issue before? Are you trying to determine whether an application is ready to go live, or is it already live, and you just want to improve its performance? What type of application do you want to test?&lt;/p>
+&lt;p>WHOM are you cooking for? I think you’d cook differently for yourself than you would for Sachin Tendulkar. What do your end users typically do on your site? Where do they come from?&lt;/p>
+&lt;p>These are questions that need to be answered before you think about scripting. Here are some resource for planning your load tests:&lt;/p>
+&lt;p>&lt;a href="https://www.flood.io/blog/start-with-why-how-to-write-requirements-for-api-load-testing">Start with Why: How to write requirements for API load testing&lt;/a>
+&lt;a href="https://www.flood.io/blog/how-to-write-a-test-plan-for-load-testing">How to write a test plan for load testing&lt;/a>
+&lt;a href="https://guides.flood.io/ebooks/api-load-testing/scripting-an-api-load-test">Selecting a tool for load testing&lt;/a>
+Generating a load testing script without coding: &lt;a href="https://guides.flood.io/overview-of-flood/scripting-your-load-test">Getting Started with Test Builder&lt;/a>&lt;/p>
+&lt;h2 id="execution-of-a-load-test">Execution of a load test&lt;/h2>
+&lt;p>So now we’re ready to start cooking. This is the Execution phase. You’ll need a machine to use as a load generator. Depending on the number of users you want to run with, you may need more than one machine. You might be tempted to run a load test on your laptop, or on a bunch of machines you have lying around, but that introduces new variables that may affect the results.&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester09.jpeg" alt="">
+&lt;em>Source: &lt;a href="https://unsplash.com/@suicide_chewbacca?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Ashwini Chaudhary&lt;/a> on &lt;a href="https://unsplash.com/s/photos/indian-food?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Unsplash&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Like any good cook, you’ll also need to make sure you have all your ingredients handy. In load testing, that means making sure your scripts and test data files are ready to be executed on every load generator.&lt;/p>
+&lt;p>Both of these problems – provisioning a load generator and transferring files over to them – are solved pretty easily by running on the cloud using something like Flood.&lt;/p>
+&lt;p>Designing and executing your load test&lt;/p>
+&lt;p>Where should you run your load tests? A look at demand, hosted, and on-premise infrastructure&lt;/p>
+&lt;h2 id="analysis-of-results">Analysis of Results&lt;/h2>
+&lt;p>The last part is Analysis.&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester10.jpeg" alt="">
+&lt;em>Source: &lt;a href="https://www.finedininglovers.com/recipes/brunch/potato-pakoras-yogurt-sauce">Fine Dining Lovers&lt;/a>&lt;/em>&lt;/p>
+&lt;p>This is a pretty crucial moment, because this is when you figure out whether what you cooked was delicious or not. Unfortunately, in load testing, it’s not always easy to tell how your test went. It’s like this photo of pakora (onion is my favorite kind). It’s kind of hard to say what expression that is in their faces. Is it disgust? Or is the pakora so yummy that they just can’t wait to eat more?&lt;/p>
+&lt;p>Load testing typically generates a LOT of data. You’d have to go copy every single file from every load generator you used. But can you imagine the hundreds of load generators that Hotstar used? Of course they didn’t manually copy those files. Instead, they used Flood.&lt;/p>
+&lt;p>On Flood, we show real-time graphs as you’re running the test so that you can tell immediately whether transactions are failing or whether a server has stopped responding.&lt;/p>
+&lt;p>After the test, you can also compare this data to previous tests to spot trends, or even create your own dashboards using an analytics engine.&lt;/p>
+&lt;p>&lt;a href="https://guides.flood.io/results-analysis/metrics-during-test">Real-time metrics during your load test&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://guides.flood.io/results-analysis/archived-results">Downloading results and logs after the test&lt;/a>&lt;/p>
+&lt;h2 id="is-that-it">Is that it?&lt;/h2>
+&lt;p>You’ve prepared for a load test, you’ve executed a load test, and you’ve analysed the results from the load test. Congratulations, you’re a load tester! By following this recipe, you’re already doing better than many people, and you’re certainly doing a lot better than those who do not run any load tests at all.&lt;/p>
+&lt;p>The cool thing about load testing, though, is that this is just the beginning. There’s always room for improvement.&lt;/p>
+&lt;p>‍&lt;img src="https://nicolevanderhoeven.github.io/assets/how-to-become-a-load-tester11.jpeg" alt="">
+&lt;em>Source: &lt;a href="https://popupcity.net/observations/dabbawalla-hot-lunch-delivery-by-mumbais-fastest/">Pop Up City&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Dabbawallas are people who deliver hot lunches, and while the concept is not new, the implementation in India is particularly interesting.&lt;/p>
+&lt;p>For these dabbawallas, having the meals prepared is not the end of the job. Once the food is ready, it needs to be packed into lunchboxes, picked up, separated according to destination, put on trains, and delivered. Later, the empty lunchboxes are picked up, and the system works in reverse.&lt;/p>
+&lt;p>It turns out that this is actually a pretty sophisticated system. In fact, it’s been estimated that only one tiffin every two months is not delivered. That’s equivalent to a &lt;a href="https://www.bbc.com/future/article/20170114-the-125-year-old-network-that-keeps-mumbai-going">Six-Sigma quality rating of 99.9999999%&lt;/a> (that’s nine nines) or more.&lt;/p>
+&lt;p>Dabbawallas didn’t get that rating just by delivering quickly. They did it by being consistent and reliable. They did it by having a process.&lt;/p>
+&lt;p>Once you see the benefits of running a load test, you may also start to understand that the real value of load testing is not in a test that you run once whenever you think of it. Imagine having the benefits of a load test tied to your development process, so that it is automated.&lt;/p>
+&lt;p>As an advanced topic, &lt;a href="https://www.flood.io/blog/load-testing-in-devops-pipelines-with-azure-and-flood">adding your load testing&lt;/a> to your team&amp;rsquo;s Continuous Integration/Continuous Development pipelines such as sets up a repeatable process that reaps benefits far into the future, not just whenever official load testing activities are carried out.&lt;/p>
+&lt;p>&lt;a href="https://guides.flood.io/continuous-integration/what-is-continuous-integration">Continuous Integration with Flood&lt;/a>: Integrating Travis CI, Circle CI, and Jenkins&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>So that’s the recipe for becoming a load tester.&lt;/p>
+&lt;p>&lt;strong>Preparation – Execution – Analysis.&lt;/strong>&lt;/p>
+&lt;p>In &lt;strong>Preparation&lt;/strong>, you determine why you’re testing and what tool best fits your needs. We showed you how to use Element, but there are many open source tools out there. Don’t get overwhelmed by scripting– a lot of times it can just mean replacing a URL with the one YOU want to test.&lt;/p>
+&lt;p>In &lt;strong>Execution&lt;/strong>, you run a baseline test that will serve as a point of comparison for future testing, choose the number of users and the number of regions you want, and then you run your test. Running on the cloud is the easiest (and usually cheapest) way to get started.&lt;/p>
+&lt;p>In &lt;strong>Analysis&lt;/strong>, you view the results in real-time, compare historical performance to see trends, and share reports to stakeholders so that your team can make changes to your application.&lt;/p>
+&lt;p>We also talked about the bonus topic of &lt;strong>CI/CD&lt;/strong> and how you can incorporate load testing into your pipeline to get a continuous feedback during your development cycle.&lt;/p>
+&lt;p>Tim and I started in very different places and had different experiences before we discovered load testing. But eventually, we ended up on the same path, and that’s what we’ve outlined for you here. We hope that this convinces you that load testing doesn’t have to be complicated.&lt;/p>
+&lt;p>You absolutely don’t need to be an expert to run a load test. Even if you don’t think you’ll get all these steps right, a load test that is less than ideal is still better than no load testing at all.&lt;/p>
+&lt;p>In the end, anyone can be a load tester with the right attitude and the right tools.&lt;/p>
+&lt;h2 id="learning-about-load-testing">Learning about load testing&lt;/h2>
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites">High Performance Websites&lt;/a> book by Steve Souders&lt;/p>
+&lt;p>Ministry of Testing/PerfBytes &lt;a href="https://www.ministryoftesting.com/dojo/lessons/a-quick-start-guide-to-learning-performance-testing">list of resources&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.perfbytes.com/">PerfBytes podcast&lt;/a> (EN and ES)&lt;/p>
+&lt;p>&lt;a href="https://guildconferences.com/conference/perfguild-2020/">PerfGuild conferences&lt;/a> by Joe Colantonio&lt;/p>
+&lt;p>Señor Performo’s YouTube Channel: &lt;a href="https://www.youtube.com/channel/UCO-RlGccAUQnMqTaBkvUJhQ">Señor Performo ENG&lt;/a>&lt;/p>
+&lt;p>Scott Moore’s &lt;a href="https://www.youtube.com/watch?v=9H2GSGvGwqQ&amp;amp;list=PLXRCdih3vTUEFz1TVyP7RRqEEk__CYGoB">Performance Tour&lt;/a> on YouTube&lt;/p></description></item><item><title>Lifting the lid on performance testing</title><link>https://nicolevanderhoeven.github.io/blog/20200924-testing-talks-online/</link><pubDate>Thu, 24 Sep 2020 23:38:56 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200924-testing-talks-online/</guid><description>&lt;p>I joined other performance and testing engineers in this online panel at Testing Talks Online about load testing best practices.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pHQ4FwdwGGk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>From the &lt;a href="https://www.testingtalks.com.au/presentations/lifting-the-lid-on-performance-testing-best-practices-from-leading-companies">Testing Talks Online site&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Performance testing is an essential part of the quality assurance function. However, across the industry the great majority of companies still struggle to master and execute a successful performance testing strategy that produces measurable results.
+In this panel discussion, Cameron Bradley will host some of the best performance engineers in the world. The panel will discuss how we as quality assurance experts and performance engineers can better understand performance testing, the value of performance testing and how world leaders are approaching and succeeding with performance testing as part of the delivery life cycle.&lt;/p>&lt;/blockquote></description></item><item><title>Hybrid load testing: the best of testing using protocols and real browsers</title><link>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</link><pubDate>Tue, 02 Jun 2020 22:21:11 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200602-hybrid-load-testing/</guid><description>&lt;p>At &lt;a href="https://guildconferences.com/speaker/nicole-hoeven/">PerfGuild 2020&lt;/a>, I spoke about hybrid load testing and how to mix two different approaches to load testing: protocol-based and browser-based.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20200602-01.jpeg" alt="">&lt;/p>
+&lt;p>Here’s the unlisted video from that presentation:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KwlU6unOD9E?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>TestCon Moscow 2019: Dismantling Cognitive Biases</title><link>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</link><pubDate>Wed, 03 Apr 2019 23:14:31 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20190403-testcon-moscow-2019/</guid><description>
+&lt;link rel="canonical" href="https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing">
+&lt;p>&lt;em>Originally posted &lt;a href="https://www.flood.io/blog/dismantling-cognitive-biases-in-performance-testing">here&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>Developers and testers alike prefer to think of themselves as entirely rational beings, because both software development and software testing do require systematic rigor and logical reasoning. However, the reality is that the human element still comes into play when building and testing software.&lt;/p>
+&lt;p>In &lt;a href="https://testconf.ru/2019/en/nicole-van-der-hoeven/index.html">this year’s TestCon conference&lt;/a>, held in Moscow, Russia, I delivered a talk on how cognitive biases affect web performance outcomes.&lt;/p>
+&lt;p>In the talk, I discuss:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>two types of thinking: fast thinking and slow thinking (from Daniel Kahneman&amp;rsquo;s book &lt;a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>how to influence the sentence duration that judges give perpetrators&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>what cognitive biases are and how they can affect performance testing results&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>a real-life production incident that occurred on Flood and how our team&amp;rsquo;s cognitive biases got in the way of its resolution&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>what to do to avoid cognitive biases when testing software&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s the video of my full talk:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GPD8F0e7eX8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Download the presentation &lt;a href="https://nicolevanderhoeven.github.io/assets/20190403-01.pdf">in PDF format&lt;/a>.&lt;/p></description></item></channel></rss>

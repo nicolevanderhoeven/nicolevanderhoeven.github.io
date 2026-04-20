@@ -1,454 +1,123 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>loki on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/loki/</link>
-    <description>Recent content in loki on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/loki/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
-      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link>
-      <pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://oredev.org/&#34;&gt;Øredev 2025&lt;/a&gt; in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p&gt;
-&lt;p&gt;The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p&gt;
-&lt;p&gt;In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here are some resources mentioned in the talk:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can play the game Spice Runner &lt;a href=&#34;https://nicole.to/spicegame&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicerepo&#34;&gt;The spice-runner repo&lt;/a&gt; containing everything you need to know about how to deploy it yourself&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spiceslides&#34;&gt;The slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicedashboard&#34;&gt;The Spice Runner dashboard&lt;/a&gt; for observing the application&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/spice-runner&#34;&gt;More about Spice Runner&lt;/a&gt;: architecture, tech stack, and what it demonstrates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG&#34; alt=&#34;Photo of me at Øredev 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Deploying Loki on Kubernetes via Helm (Loki Community Call October 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</link>
-      <pubDate>Wed, 29 Oct 2025 18:04:30 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</guid>
-      <description>&lt;p&gt;This Loki Community Call is about deploying Loki on Kubernetes via Helm charts. We talk about why you might want to use Helm to deploy on Kubernetes, best practices for deployment, and which Helm chart you should use! We are Jay Clifford and Nicole van der Hoeven, Developer Advocates at Grafana Labs, and we have invited Grafana Champion and Loki Helm Maintainer Jan-Otto Kröpke, Principal Cloud Architect at QualityOperations GmbH, to talk about the state of the Loki Helm Chart.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZqumpIXutXg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link>
-      <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid>
-      <description>&lt;p&gt;Today I gave &lt;a href=&#34;https://sketch-your-mind.com/2025/sessions/nicole/&#34;&gt;a talk&lt;/a&gt; at my friend Zsolt Viczián&amp;rsquo;s &lt;a href=&#34;https://sketchyourmind.com/&#34;&gt;Sketch Your Mind Conference&lt;/a&gt; about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li&gt;
-&lt;li&gt;Adopting a visual Zettelkasten-like approach&lt;/li&gt;
-&lt;li&gt;Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li&gt;
-&lt;li&gt;Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li&gt;
-&lt;li&gt;Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li&gt;
-&lt;li&gt;Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href=&#34;https://github.com/nicolevanderhoeven/obsidian-grafana&#34;&gt;here&amp;rsquo;s the repo&lt;/a&gt; for anyone interested in replicating it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>All About Structured Metadata in Loki (Loki Community Call August 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</link>
-      <pubDate>Tue, 12 Aug 2025 19:56:32 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</guid>
-      <description>&lt;p&gt;In this video, &lt;a href=&#34;https://www.linkedin.com/in/jaymand13/&#34;&gt;Jay Clifford&lt;/a&gt; and I talk to Senior Software Engineer Salva Corts Sánchez from the Loki team about structured metadata in Loki. We discuss what it is, why you might want to use it, and also how to query it. Structured metadata is especially useful if you&amp;rsquo;re instrumenting your system with OpenTelemetry, so we also touch on that.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/IKdRzjwFXYI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250708-lcc-how-to-turn-logs-into-metrics-with-grafana-loki/</link>
-      <pubDate>Tue, 08 Jul 2025 17:23:23 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250708-lcc-how-to-turn-logs-into-metrics-with-grafana-loki/</guid>
-      <description>&lt;p&gt;In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/tKcnQ0Q2E-k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link>
-      <pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid>
-      <description>&lt;p&gt;Today I presented at the &lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht, the Netherlands. I gave a talk titled &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Road to Loki 4.0 (Loki Community Call June 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250624-lcc-the-road-to-loki-4_0/</link>
-      <pubDate>Tue, 24 Jun 2025 13:56:45 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250624-lcc-the-road-to-loki-4_0/</guid>
-      <description>&lt;p&gt;In this video, my colleague &lt;a href=&#34;https://www.linkedin.com/in/jaymand13/&#34;&gt;Jay Clifford&lt;/a&gt; and I interview Ed Welch, Principal Engineer on the Loki team at Grafana Labs, about the upcoming Loki 4.0 release. We talk about some pretty big features that make this next release almost an entire rewrite of Loki, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A shift towards columnar storage, using a new storage format called &amp;ldquo;DataObject&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;A new Kafka/WarpStream architecture that decouples the read and write paths&lt;/li&gt;
-&lt;li&gt;A new Loki Query Engine that decouples the query language from the rest of the system, allowing for more options in, for example, allowing for SQL queries against Loki in the future&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/LWDeIHfAC9A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Query Grafana Loki</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</link>
-      <pubDate>Fri, 13 Jun 2025 15:21:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</guid>
-      <description>&lt;p&gt;In this video, I show you how to query &lt;a href=&#34;https://gra.fan/lokirepo&#34;&gt;Grafana Loki&lt;/a&gt;, the open source log aggregation system from Grafana Labs. I cover the basics of Loki&amp;rsquo;s query language, LogQL, and demonstrate how to use it to filter and search logs effectively.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/57dQwcmqkpQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Meta-monitoring Loki (Loki Community Call May 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</link>
-      <pubDate>Mon, 12 May 2025 17:59:48 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</guid>
-      <description>&lt;p&gt;In this Loki Community Call, we talk about the need for meta-monitoring Loki: why Loki needs to be monitored, what to watch out for, and how to do it. We talk about different ways to get information from Loki that allow you to make it reliable, consistent, and performant, including a Helm chart to deploy a meta-monitoring stack on Kubernetes. We discuss the Loki mixin for Grafana and how to use it to visualize data about Loki. On the call are Jay Clifford, Nicole van der Hoeven, and Dylan Guedes from Grafana Labs.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/OzYHV9xHIms&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link>
-      <pubDate>Fri, 25 Apr 2025 17:57:58 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</guid>
-      <description>&lt;p&gt;In this pre-recorded Loki Community Call, we talk all about OTel and logging on Kubernetes with Cyril Tovena, Ward Bekker, Jay Clifford, and Nicole van der Hoeven at KubeCon EU 2025 in London. We discuss when why you should switch to OTel and why you shouldn&amp;rsquo;t, what OTLP is exactly, and best practices for ingesting data through an OTLP endpoint.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/27ZHOg-LaM0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Logging and Grafana Loki (webinar)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</link>
-      <pubDate>Wed, 16 Apr 2025 08:18:04 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</guid>
-      <description>&lt;p&gt;In this webinar, I talk about the key benefits of &lt;a href=&#34;https://gra.fan/lokirepo&#34;&gt;Grafana Loki&lt;/a&gt;, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/9XL4o5lLfVM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link>
-      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
-&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Do&#39;s and Don&#39;ts of Scaling Loki Cache (Loki Community Call March 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250325-lcc-dos-and-donts-of-scaling-loki-cache/</link>
-      <pubDate>Tue, 25 Mar 2025 17:56:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250325-lcc-dos-and-donts-of-scaling-loki-cache/</guid>
-      <description>&lt;p&gt;In this Loki community call, Poyzan (Staff Engineer on the Loki team) returns this time with Paul Rogers (Staff Engineer on the Loki team) to talk all about Loki cache! This topic was heavily discussed in our &amp;ldquo;How to run Loki at scale on Kubernetes&amp;rdquo; call. Some of the topics we will cover:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Types of cache and cache tiering&lt;/li&gt;
-&lt;li&gt;Best practices for scaling your cache&lt;/li&gt;
-&lt;li&gt;Understanding failure scenarios with Loki cache and how to detect them&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3u8UxLfmq6I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Best Practices for Recording and Alerting (Loki Community Call February 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</link>
-      <pubDate>Wed, 26 Feb 2025 17:54:15 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</guid>
-      <description>&lt;p&gt;In this Loki Community Call, we talk about the best practices for recording and alerting rules with Loki Staff Engineer George Robinson and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven. Ever wondered what’s the difference between the Ruler and Alertmanager? 🤔 Curious about the different modes the Ruler can run in when querying Loki? Want to avoid the most common pitfalls when setting up alerting and recording rules? We cover all of these, including optimizing rule performance to structure alerts effectively.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3_DtwTOppiI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Grafana Loki Query Best Practices with LogQL (Loki Community Call December 2024)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</link>
-      <pubDate>Thu, 05 Dec 2024 17:48:49 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</guid>
-      <description>&lt;p&gt;In this December&amp;rsquo;s Loki Community Call, Cyril Tovena, Senior Principal Engineer and LogQL guru walks us through a Grafana Loki query tutorial with LogQL, the Log Query Language used for Loki. He talks about the key &amp;ldquo;Dos and Don&amp;rsquo;ts&amp;rdquo; of LogQL, offering practical tips to help you write better queries, boost performance, and sidestep common mistakes.&lt;/p&gt;
-&lt;p&gt;Whether you’re tuning up your current setup or just diving into LogQL, Cyril’s got you covered. Bring your questions, connect with the Loki community, and pick up insights that’ll make your log-querying life easier. See you there!&lt;/p&gt;
-&lt;p&gt;Make sure you leave your questions &lt;a href=&#34;https://forms.gle/nm7TGX2EeWnRLmbs6&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Cyril is joined by Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/d61nQX-n91c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>All About Logs Drilldown (Loki Community Call October 2024)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</link>
-      <pubDate>Thu, 03 Oct 2024 17:45:33 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</guid>
-      <description>&lt;p&gt;In this Community Call, Senior Software Engineer Trevor Whitney talks to us all about Drilldown Logs for Grafana Loki, an open-source app for visualizing logs from Loki in Grafana without needing to learn and write LogQL queries. He is joined by Senior Developer Advocates Nicole van der Hoeven and Jay Clifford.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/XJMQbEuBeMc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>All the Components of Loki Explained</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</link>
-      <pubDate>Fri, 20 Sep 2024 18:09:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</guid>
-      <description>&lt;p&gt;Here are all the components of Loki explained so that you can figure out how many instances of each you need for a resilient Loki deployment. Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk you through what each component does and which ones are optional.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_hv4i84Z68s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Bloom Filter Changes for Grafana Loki (Loki Community Call September 2024)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</link>
-      <pubDate>Thu, 05 Sep 2024 17:41:18 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</guid>
-      <description>&lt;p&gt;In this Community Call, Senior Software Engineer Christian Haudum talks to us about bloom filter changes for Grafana Loki, including the deprecation of the bloom compactor and a pivot towards creating bloom filters for structured metadata. Bloom filters are a probabilistic data structure that we&amp;rsquo;re using to improve query performance in Loki.&lt;/p&gt;
-&lt;p&gt;Community Calls are monthly meetings that are open to everyone interested in the development of Loki. They are an opportunity for software engineers working on Loki to discuss new features as well as for open-source users of Loki to ask questions. To participate in the next Community Call, &lt;a href=&#34;https://gra.fan/lokicccal&#34;&gt;subscribe to the calendar here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/keXrUf8jw1A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Grafana Loki Design Basics with Ed Welch (Grafana Office Hours #27)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</link>
-      <pubDate>Fri, 07 Jun 2024 18:29:26 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</guid>
-      <description>&lt;p&gt;Ed Welch, Principal Engineer on the Loki team, is talking to us about how to get started with Grafana Loki for beginners. He tells us the story of why Loki was created in the first place, talks about the terminology of Loki (what are indices, streams, labels, metadata, tags, and chunks?), and shares candidly about what Loki is good at and what it&amp;rsquo;s not good at.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3uFMJLufgSo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Get Started With Loki</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</link>
-      <pubDate>Fri, 10 May 2024 18:12:09 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</guid>
-      <description>&lt;p&gt;If you were looking for how to get started with Loki, here&amp;rsquo;s a video where Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk about what Loki is, how to ingest logs with Loki, how to deploy Loki, and finally how to visualize your logs with Grafana.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1uk8LtQqsZQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Entendiendo los sintéticos (Café con Grafana #008)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link>
-      <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fXNSqrUtiJo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Lee la documentación sobre el monitoreo de sintéticos &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/&#34;&gt;en Grafana Cloud aquí&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Repasemos el G-stack (Café con Grafana #005)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link>
-      <pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/irUr96JV-Sg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Observando Bitácoras With Matías Chomicki (Café con Grafana #002)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231102-ccg002-observando-bit%C3%A1coras-with-mat%C3%ADas-chomicki/</link>
-      <pubDate>Thu, 02 Nov 2023 12:25:53 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231102-ccg002-observando-bit%C3%A1coras-with-mat%C3%ADas-chomicki/</guid>
-      <description>&lt;p&gt;Hoy hababa con mis colegas &lt;a href=&#34;https://www.srperf.com/&#34;&gt;Leandro Melendez&lt;/a&gt; and Matías Chomicki sobre observabilidad de logs en Grafana: qué son, con qué se comen, qué tienen que ver con Loki, otras plataformas donde se pueden usar, y muchos detalles mas!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/2eA93JHQD3U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Inicia (Café con Grafana #000)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
-      <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid>
-      <description>&lt;p&gt;Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad.  Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Kdgu2gutp7o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Make Kubernetes Clusters Production Ready using Crossplane, with Viktor Farcic (k6 Office Hours #46)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</link>
-      <pubDate>Fri, 18 Mar 2022 17:30:45 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</guid>
-      <description>&lt;p&gt;In this video, Viktor Farcic, Paul Balogh and I talk about how to make Kubernetes clusters production-ready. Viktor is a Developer Advocate from &lt;a href=&#34;https://www.upbound.io/&#34;&gt;Upbound&lt;/a&gt;, and he demonstrates a solution that ties together &lt;a href=&#34;https://crossplane.io&#34;&gt;Crossplane&lt;/a&gt;, &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana&lt;/a&gt;, &lt;a href=&#34;https://prometheus.io&#34;&gt;Prometheus&lt;/a&gt;, and &lt;a href=&#34;https://grafana.com/oss/loki/&#34;&gt;Loki&lt;/a&gt; to deploy and manage clusters in production.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/cPVrCNhHo7Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Run Loki at Scale on Kubernetes (Loki Community Call January 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</guid>
-      <description>&lt;p&gt;Happy New Year from the Loki Engineering team. To kick off 2025, Nicole and Jay will be joined by Poyzan Taneli from the Loki Engineering team to discuss how to run Loki at scale on Kubernetes. If you are currently running Loki in microservices mode or preparing to do so, we will be discussing best practices for scaling its components to meet the demands of production use cases.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How many Ingesters vs Queriers do I need?&lt;/li&gt;
-&lt;li&gt;What is the minimum cost of running Loki as a production cluster?&lt;/li&gt;
-&lt;li&gt;What is the average node size for running Loki?
-How do I monitor my Loki deployment?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/lAr0GwuZHiw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Loki on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/loki/</link><description>Recent content in Loki on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/loki/index.xml" rel="self" type="application/rss+xml"/><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link><pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid><description>&lt;p>Today I presented at &lt;a href="https://ncrafts.io/">Newcrafts&lt;/a> in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> in London and at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025&lt;/a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p></description></item><item><title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link><pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://oredev.org/">Øredev 2025&lt;/a> in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p>
+&lt;p>The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p>
+&lt;p>In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p>&lt;/blockquote>
+&lt;p>Here are some resources mentioned in the talk:&lt;/p>
+&lt;ul>
+&lt;li>You can play the game Spice Runner &lt;a href="https://nicole.to/spicegame">here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicerepo">The spice-runner repo&lt;/a> containing everything you need to know about how to deploy it yourself&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spiceslides">The slides&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicedashboard">The Spice Runner dashboard&lt;/a> for observing the application&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/spice-runner">More about Spice Runner&lt;/a>: architecture, tech stack, and what it demonstrates&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG" alt="Photo of me at Øredev 2025">&lt;/p></description></item><item><title>Deploying Loki on Kubernetes via Helm (Loki Community Call October 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</link><pubDate>Wed, 29 Oct 2025 18:04:30 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251029-lcc-deploying-loki-on-kubernetes-via-helm/</guid><description>&lt;p>This Loki Community Call is about deploying Loki on Kubernetes via Helm charts. We talk about why you might want to use Helm to deploy on Kubernetes, best practices for deployment, and which Helm chart you should use! We are Jay Clifford and Nicole van der Hoeven, Developer Advocates at Grafana Labs, and we have invited Grafana Champion and Loki Helm Maintainer Jan-Otto Kröpke, Principal Cloud Architect at QualityOperations GmbH, to talk about the state of the Loki Helm Chart.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZqumpIXutXg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link><pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid><description>&lt;p>Today I gave &lt;a href="https://sketch-your-mind.com/2025/sessions/nicole/">a talk&lt;/a> at my friend Zsolt Viczián&amp;rsquo;s &lt;a href="https://sketchyourmind.com/">Sketch Your Mind Conference&lt;/a> about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zmgqMZi6QL8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p>
+&lt;ul>
+&lt;li>Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li>
+&lt;li>Adopting a visual Zettelkasten-like approach&lt;/li>
+&lt;li>Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li>
+&lt;li>Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li>
+&lt;li>Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li>
+&lt;li>Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li>
+&lt;/ul>
+&lt;p>I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href="https://github.com/nicolevanderhoeven/obsidian-grafana">here&amp;rsquo;s the repo&lt;/a> for anyone interested in replicating it.&lt;/p></description></item><item><title>All About Structured Metadata in Loki (Loki Community Call August 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</link><pubDate>Tue, 12 Aug 2025 19:56:32 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250812-lcc-all-about-structured-metadata-in-loki/</guid><description>&lt;p>In this video, &lt;a href="https://www.linkedin.com/in/jaymand13/">Jay Clifford&lt;/a> and I talk to Senior Software Engineer Salva Corts Sánchez from the Loki team about structured metadata in Loki. We discuss what it is, why you might want to use it, and also how to query it. Structured metadata is especially useful if you&amp;rsquo;re instrumenting your system with OpenTelemetry, so we also touch on that.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IKdRzjwFXYI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Turn Logs Into Metrics with Grafana Loki (Loki Community Call July 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250708-lcc-how-to-turn-logs-into-metrics-with-grafana-loki/</link><pubDate>Tue, 08 Jul 2025 17:23:23 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250708-lcc-how-to-turn-logs-into-metrics-with-grafana-loki/</guid><description>&lt;p>In this Loki Community Call, we talk all about how to turn metrics into logs in Grafana Loki using metric queries. We cover the basics of metric queries, how to use them to create metrics from logs, and some advanced use cases like using metric queries to create alerts and dashboards.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tKcnQ0Q2E-k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Asimov's Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link><pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid><description>&lt;p>Today I presented at the &lt;a href="https://www.dutchcloudnativeday.nl">Dutch Cloud Native Day 2025&lt;/a> in Utrecht, the Netherlands. I gave a talk titled &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p></description></item><item><title>The Road to Loki 4.0 (Loki Community Call June 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250624-lcc-the-road-to-loki-4_0/</link><pubDate>Tue, 24 Jun 2025 13:56:45 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250624-lcc-the-road-to-loki-4_0/</guid><description>&lt;p>In this video, my colleague &lt;a href="https://www.linkedin.com/in/jaymand13/">Jay Clifford&lt;/a> and I interview Ed Welch, Principal Engineer on the Loki team at Grafana Labs, about the upcoming Loki 4.0 release. We talk about some pretty big features that make this next release almost an entire rewrite of Loki, including:&lt;/p>
+&lt;ul>
+&lt;li>A shift towards columnar storage, using a new storage format called &amp;ldquo;DataObject&amp;rdquo;&lt;/li>
+&lt;li>A new Kafka/WarpStream architecture that decouples the read and write paths&lt;/li>
+&lt;li>A new Loki Query Engine that decouples the query language from the rest of the system, allowing for more options in, for example, allowing for SQL queries against Loki in the future&lt;/li>
+&lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LWDeIHfAC9A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Query Grafana Loki</title><link>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</link><pubDate>Fri, 13 Jun 2025 15:21:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250612-how-to-query-grafana-loki/</guid><description>&lt;p>In this video, I show you how to query &lt;a href="https://gra.fan/lokirepo">Grafana Loki&lt;/a>, the open source log aggregation system from Grafana Labs. I cover the basics of Loki&amp;rsquo;s query language, LogQL, and demonstrate how to use it to filter and search logs effectively.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/57dQwcmqkpQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Meta-monitoring Loki (Loki Community Call May 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</link><pubDate>Mon, 12 May 2025 17:59:48 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250512-lcc-meta-monitoring-loki/</guid><description>&lt;p>In this Loki Community Call, we talk about the need for meta-monitoring Loki: why Loki needs to be monitored, what to watch out for, and how to do it. We talk about different ways to get information from Loki that allow you to make it reliable, consistent, and performant, including a Helm chart to deploy a meta-monitoring stack on Kubernetes. We discuss the Loki mixin for Grafana and how to use it to visualize data about Loki. On the call are Jay Clifford, Nicole van der Hoeven, and Dylan Guedes from Grafana Labs.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OzYHV9xHIms?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link><pubDate>Fri, 25 Apr 2025 17:57:58 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</guid><description>&lt;p>In this pre-recorded Loki Community Call, we talk all about OTel and logging on Kubernetes with Cyril Tovena, Ward Bekker, Jay Clifford, and Nicole van der Hoeven at KubeCon EU 2025 in London. We discuss when why you should switch to OTel and why you shouldn&amp;rsquo;t, what OTLP is exactly, and best practices for ingesting data through an OTLP endpoint.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/27ZHOg-LaM0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Getting Started with Logging and Grafana Loki (webinar)</title><link>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</link><pubDate>Wed, 16 Apr 2025 08:18:04 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250416-getting-started-with-logging-and-grafana-loki/</guid><description>&lt;p>In this webinar, I talk about the key benefits of &lt;a href="https://gra.fan/lokirepo">Grafana Loki&lt;/a>, the open source log aggregation system from Grafana Labs. I cover the basics of logging, how Loki works, and how to get started with it. This was a live webinar, but I recorded the session here as well:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9XL4o5lLfVM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link><pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London&lt;/a> called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p>
+&lt;p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x6EKTCAWtn8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Do's and Don'ts of Scaling Loki Cache (Loki Community Call March 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250325-lcc-dos-and-donts-of-scaling-loki-cache/</link><pubDate>Tue, 25 Mar 2025 17:56:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250325-lcc-dos-and-donts-of-scaling-loki-cache/</guid><description>&lt;p>In this Loki community call, Poyzan (Staff Engineer on the Loki team) returns this time with Paul Rogers (Staff Engineer on the Loki team) to talk all about Loki cache! This topic was heavily discussed in our &amp;ldquo;How to run Loki at scale on Kubernetes&amp;rdquo; call. Some of the topics we will cover:&lt;/p>
+&lt;ul>
+&lt;li>Types of cache and cache tiering&lt;/li>
+&lt;li>Best practices for scaling your cache&lt;/li>
+&lt;li>Understanding failure scenarios with Loki cache and how to detect them&lt;/li>
+&lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3u8UxLfmq6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Best Practices for Recording and Alerting (Loki Community Call February 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</link><pubDate>Wed, 26 Feb 2025 17:54:15 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250226-lcc-best-practices-for-recording-and-alerting/</guid><description>&lt;p>In this Loki Community Call, we talk about the best practices for recording and alerting rules with Loki Staff Engineer George Robinson and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven. Ever wondered what’s the difference between the Ruler and Alertmanager? 🤔 Curious about the different modes the Ruler can run in when querying Loki? Want to avoid the most common pitfalls when setting up alerting and recording rules? We cover all of these, including optimizing rule performance to structure alerts effectively.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3_DtwTOppiI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Run Loki at Scale on Kubernetes (Loki Community Call January 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</link><pubDate>Thu, 23 Jan 2025 17:51:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250123-lcc-how-to-run-loki-at-scale-on-kubernetes/</guid><description>&lt;p>Happy New Year from the Loki Engineering team. To kick off 2025, Nicole and Jay will be joined by Poyzan Taneli from the Loki Engineering team to discuss how to run Loki at scale on Kubernetes. If you are currently running Loki in microservices mode or preparing to do so, we will be discussing best practices for scaling its components to meet the demands of production use cases.&lt;/p>
+&lt;ul>
+&lt;li>How many Ingesters vs Queriers do I need?&lt;/li>
+&lt;li>What is the minimum cost of running Loki as a production cluster?&lt;/li>
+&lt;li>What is the average node size for running Loki?
+How do I monitor my Loki deployment?&lt;/li>
+&lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/lAr0GwuZHiw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Grafana Loki Query Best Practices with LogQL (Loki Community Call December 2024)</title><link>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</link><pubDate>Thu, 05 Dec 2024 17:48:49 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</guid><description>&lt;p>In this December&amp;rsquo;s Loki Community Call, Cyril Tovena, Senior Principal Engineer and LogQL guru walks us through a Grafana Loki query tutorial with LogQL, the Log Query Language used for Loki. He talks about the key &amp;ldquo;Dos and Don&amp;rsquo;ts&amp;rdquo; of LogQL, offering practical tips to help you write better queries, boost performance, and sidestep common mistakes.&lt;/p>
+&lt;p>Whether you’re tuning up your current setup or just diving into LogQL, Cyril’s got you covered. Bring your questions, connect with the Loki community, and pick up insights that’ll make your log-querying life easier. See you there!&lt;/p>
+&lt;p>Make sure you leave your questions &lt;a href="https://forms.gle/nm7TGX2EeWnRLmbs6">here&lt;/a>.&lt;/p>
+&lt;p>Cyril is joined by Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/d61nQX-n91c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>All About Logs Drilldown (Loki Community Call October 2024)</title><link>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</link><pubDate>Thu, 03 Oct 2024 17:45:33 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</guid><description>&lt;p>In this Community Call, Senior Software Engineer Trevor Whitney talks to us all about Drilldown Logs for Grafana Loki, an open-source app for visualizing logs from Loki in Grafana without needing to learn and write LogQL queries. He is joined by Senior Developer Advocates Nicole van der Hoeven and Jay Clifford.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XJMQbEuBeMc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>All the Components of Loki Explained</title><link>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</link><pubDate>Fri, 20 Sep 2024 18:09:35 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</guid><description>&lt;p>Here are all the components of Loki explained so that you can figure out how many instances of each you need for a resilient Loki deployment. Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk you through what each component does and which ones are optional.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_hv4i84Z68s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Bloom Filter Changes for Grafana Loki (Loki Community Call September 2024)</title><link>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</link><pubDate>Thu, 05 Sep 2024 17:41:18 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</guid><description>&lt;p>In this Community Call, Senior Software Engineer Christian Haudum talks to us about bloom filter changes for Grafana Loki, including the deprecation of the bloom compactor and a pivot towards creating bloom filters for structured metadata. Bloom filters are a probabilistic data structure that we&amp;rsquo;re using to improve query performance in Loki.&lt;/p>
+&lt;p>Community Calls are monthly meetings that are open to everyone interested in the development of Loki. They are an opportunity for software engineers working on Loki to discuss new features as well as for open-source users of Loki to ask questions. To participate in the next Community Call, &lt;a href="https://gra.fan/lokicccal">subscribe to the calendar here&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/keXrUf8jw1A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Grafana Loki Design Basics with Ed Welch (Grafana Office Hours #27)</title><link>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</link><pubDate>Fri, 07 Jun 2024 18:29:26 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240607-goh27-grafana-loki-design-basics-with-ed-welch/</guid><description>&lt;p>Ed Welch, Principal Engineer on the Loki team, is talking to us about how to get started with Grafana Loki for beginners. He tells us the story of why Loki was created in the first place, talks about the terminology of Loki (what are indices, streams, labels, metadata, tags, and chunks?), and shares candidly about what Loki is good at and what it&amp;rsquo;s not good at.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3uFMJLufgSo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Get Started With Loki</title><link>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</link><pubDate>Fri, 10 May 2024 18:12:09 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</guid><description>&lt;p>If you were looking for how to get started with Loki, here&amp;rsquo;s a video where Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk about what Loki is, how to ingest logs with Loki, how to deploy Loki, and finally how to visualize your logs with Grafana.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1uk8LtQqsZQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Entendiendo los sintéticos (Café con Grafana #008)</title><link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link><pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid><description>&lt;p>En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fXNSqrUtiJo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Lee la documentación sobre el monitoreo de sintéticos &lt;a href="https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/">en Grafana Cloud aquí&lt;/a>.&lt;/p></description></item><item><title>Repasemos el G-stack (Café con Grafana #005)</title><link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link><pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid><description>&lt;p>En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/irUr96JV-Sg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>(ES) Observando Bitácoras With Matías Chomicki (Café con Grafana #002)</title><link>https://nicolevanderhoeven.github.io/blog/20231102-ccg002-observando-bit%C3%A1coras-with-mat%C3%ADas-chomicki/</link><pubDate>Thu, 02 Nov 2023 12:25:53 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231102-ccg002-observando-bit%C3%A1coras-with-mat%C3%ADas-chomicki/</guid><description>&lt;p>Hoy hababa con mis colegas &lt;a href="https://www.srperf.com/">Leandro Melendez&lt;/a> and Matías Chomicki sobre observabilidad de logs en Grafana: qué son, con qué se comen, qué tienen que ver con Loki, otras plataformas donde se pueden usar, y muchos detalles mas!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2eA93JHQD3U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>(ES) Inicia (Café con Grafana #000)</title><link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link><pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid><description>&lt;p>Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad. Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Kdgu2gutp7o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Make Kubernetes Clusters Production Ready using Crossplane, with Viktor Farcic (k6 Office Hours #46)</title><link>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</link><pubDate>Fri, 18 Mar 2022 17:30:45 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</guid><description>&lt;p>In this video, Viktor Farcic, Paul Balogh and I talk about how to make Kubernetes clusters production-ready. Viktor is a Developer Advocate from &lt;a href="https://www.upbound.io/">Upbound&lt;/a>, and he demonstrates a solution that ties together &lt;a href="https://crossplane.io">Crossplane&lt;/a>, &lt;a href="https://grafana.com">Grafana&lt;/a>, &lt;a href="https://prometheus.io">Prometheus&lt;/a>, and &lt;a href="https://grafana.com/oss/loki/">Loki&lt;/a> to deploy and manage clusters in production.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cPVrCNhHo7Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

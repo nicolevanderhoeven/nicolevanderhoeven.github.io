@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>networking on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/networking/</link>
-    <description>Recent content in networking on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 16 Jun 2023 13:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Testing Kubernetes Networking With k6 (k6 Office Hours #91)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</link>
-      <pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</guid>
-      <description>&lt;p&gt;How would you go about testing Kubernetes networking? For his initial project with k6, our new Senior Software Engineer, Roberto Santalla, talks to us about how he used k6 to improve end-to-end network throughput and some insights he learned about Kubernetes networking along the way. I also invited my colleague, Leandro Melendez, to help me interview Roberto.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DryiirlkKIo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Networking on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/networking/</link><description>Recent content in Networking on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 16 Jun 2023 13:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing Kubernetes Networking With k6 (k6 Office Hours #91)</title><link>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</link><pubDate>Fri, 16 Jun 2023 13:00:50 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230616-koh91-testing-kubernetes-networking-with-k6/</guid><description>&lt;p>How would you go about testing Kubernetes networking? For his initial project with k6, our new Senior Software Engineer, Roberto Santalla, talks to us about how he used k6 to improve end-to-end network throughput and some insights he learned about Kubernetes networking along the way. I also invited my colleague, Leandro Melendez, to help me interview Roberto.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DryiirlkKIo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

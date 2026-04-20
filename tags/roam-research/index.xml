@@ -1,427 +1,341 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>roam research on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/roam-research/</link>
-    <description>Recent content in roam research on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 09 Mar 2022 10:03:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/roam-research/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Why I Chose Obsidian Over Roam Research (as a Roam investor)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</link>
-      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</guid>
-      <description>&lt;p&gt;I was a Roam Research power user, a Believer, and investor before I discovered Obsidian. Here&amp;rsquo;s why I still ended up choosing Obsidian over Roam as my personal knowledge management tool of choice. My goal with this video is to share with you my reasons for making the choice that I did, not to judge you or anyone else who disagrees. In the end, we all have to decide for ourselves what tool fits best in our lives.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/AWUk8-6yG2g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How I use Obsidian for D&amp;D - Player&#39;s Edition</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</link>
-      <pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</guid>
-      <description>
-
-&lt;meta property=“og:image” content=&#34;/assets/Forgotten-Realms-workspace-in-Obsidian.png&#34; /&gt;
-&lt;meta property=”og:image:width” content=”1200″ /&gt;
-&lt;meta property=”og:image:height” content=”628″ /&gt;
-
-&lt;p&gt;I&amp;rsquo;ve previously written about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210518-how-i-use-obsidian-at-work/&#34;&gt;how I use Obsidian for work&lt;/a&gt;, and I&amp;rsquo;ve also talked about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20201214-roam-for-dnd/&#34;&gt;how I use Roam Research for D&amp;amp;D&lt;/a&gt;. Shortly after the latter post, however, I moved to Obsidian. That was six months ago, so I thought it was time for an update.&lt;/p&gt;
-&lt;h2 id=&#34;before-the-game&#34;&gt;Before the game&lt;/h2&gt;
-&lt;h3 id=&#34;world&#34;&gt;World&lt;/h3&gt;
-&lt;p&gt;My World page is the main jumping-off point for all my notes for a specific campaign, and each campaign gets one. It contains:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The main locations in the world&lt;/li&gt;
-&lt;li&gt;The player characters, and links to their individual pages with information about what my character knows or thinks of them&lt;/li&gt;
-&lt;li&gt;A link to Open Loops (Quests and Questions and Agenda, as discussed below)&lt;/li&gt;
-&lt;li&gt;The list of all the sessions I&amp;rsquo;ve played for the campaign&lt;/li&gt;
-&lt;li&gt;Campaign-specific house rules that the DM has introduced&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/world-page.png&#34; alt=&#34;The World page for my Forgotten Realms campaign&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;quests-and-questions&#34;&gt;Quests and Questions&lt;/h3&gt;
-&lt;p&gt;I like to play high-intelligence characters, so I like to keep track of unanswered questions and other adventure hooks my DM has dropped that the party hasn&amp;rsquo;t quite gotten around to resolving yet. Some of them are critical quest or story arcs, and others are random tidbits of information that NPCs have mentioned. I organize them by location, and then by quest, so that it&amp;rsquo;s easy to follow a thread depending on where the party is or how much downtime we have. Here&amp;rsquo;s an example of that page:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/quests-and-questions.png&#34; alt=&#34;Quests and Questions page&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
-&lt;p&gt;While the Quests and Questions page records unfinished business that my character is actively thinking about but may not quite know how to explore yet, my Agenda page is where I write down specific tasks. I loosely follow the &lt;a href=&#34;https://gettingthingsdone.com/&#34;&gt;Getting Things Done&lt;/a&gt; methodology and divide this page into Next Actions and Waiting For. I group tasks by person and/or by location.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Agenda-sample.png&#34; alt=&#34;Agenda page&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I use the Obsidian &lt;a href=&#34;https://github.com/DahaWong/obsidian-completed-area&#34;&gt;Completed Area plugin&lt;/a&gt; so that hitting a CTRL + ENTER on a task automatically checks it and then moves that task to a separate Completed section at the bottom of the note. This helps me keep the agenda clean and relevant.&lt;/p&gt;
-&lt;h2 id=&#34;during-a-game&#34;&gt;During a game&lt;/h2&gt;
-&lt;h3 id=&#34;workspace&#34;&gt;Workspace&lt;/h3&gt;
-&lt;p&gt;One of the best parts about Obsidian is that it allows me to save and load custom workspaces. This is useful because I use Obsidian for work as well as play, so I can set up the two workspaces differently. I also DM one campaign and play in another, and I have a workspace for each of them because I need different information available to me. The workspace features lets me customize my dashboard. Here&amp;rsquo;s what my workspace looks like for the 4e game that I play in:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Forgotten-Realms-workspace-in-Obsidian.png&#34; alt=&#34;My Forgotten Realms campaign workspace in Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;At the beginning of a game, I&amp;rsquo;ll create a new session page in the last pane, enter into it, and then stay in the workspace for the rest of the game. I have my character&amp;rsquo;s stats sheet handy (which I need to do manually since I haven&amp;rsquo;t found a D&amp;amp;D Beyond-like service for 4e) and all the powers and abilities I need to refer to.&lt;/p&gt;
-&lt;h3 id=&#34;session-template&#34;&gt;Session template&lt;/h3&gt;
-&lt;p&gt;I love Obsidian templates! I use templates for things like inserting an HP tracker with all my party&amp;rsquo;s names, their max HP, healing surges (4e); a defense table to keep track of a creature&amp;rsquo;s defenses (again, 4e); and campaign-specific session log formats.&lt;/p&gt;
-&lt;p&gt;At the beginning of the game, I&amp;rsquo;ll create a new page in the Session List, click into it, and insert a session log template (I have this hotkeyed to CMD+&lt;code&gt;;&lt;/code&gt;). Here&amp;rsquo;s what a fresh one looks like, in Edit mode:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/session-template-fresh.png&#34; alt=&#34;My session template, newly inserted&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I add metadata to every session so that I can query it later using the excellent &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Obsidian Dataview plugin&lt;/a&gt;, though I do this more often for the campaign I DM rather than the one I play in.&lt;/p&gt;
-&lt;p&gt;We usually do a recap at the beginning of the game, so I jump into the &lt;code&gt;Recap of the last session&lt;/code&gt; section and embed the summary from the previous session using &lt;code&gt; ![](/assets/86_20210717 Day 16 Hunting the Ice Phase Spider#^summary)&lt;/code&gt;, which pulls in the section marked with &lt;code&gt;^summary&lt;/code&gt; from the last session. That embeds just that portion of the last session in the current session, like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Recap.png&#34; alt=&#34;Session recap using block embed&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This helps me get back up to speed quickly instead of doing the usual &amp;ldquo;Where were we again?&amp;rdquo; that takes up time.&lt;/p&gt;
-&lt;h3 id=&#34;hp-table&#34;&gt;HP table&lt;/h3&gt;
-&lt;p&gt;My character is a multiclassed healer, so it&amp;rsquo;s important for me to know who needs heals or other buffs. I keep track of this separately, and it helps out my DM as well because it&amp;rsquo;s easy to miss something in the excitement of a battle. I do include the HP table in my workspace, in Preview mode, but here&amp;rsquo;s what it looks like in Edit mode:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/HP-table.png&#34; alt=&#34;A table of the party&amp;amp;rsquo;s HP, surges, and conditions&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Tables in Markdown can be a pain, but the &lt;a href=&#34;https://github.com/tgrosinger/advanced-tables-obsidian&#34;&gt;Advanced Tables plugin&lt;/a&gt; goes a long way towards making this easier by adding some nice features like tabbing to the next cell, adding commands for inserting and deleting a column or row, and just automatically formatting a table so that it&amp;rsquo;s not a jumble of lines. I also heavily use this plugin for my characters stats and skills, both of which I keep in tables.&lt;/p&gt;
-&lt;h3 id=&#34;keeping-track-of-fights&#34;&gt;Keeping track of fights&lt;/h3&gt;
-&lt;p&gt;When a fight breaks out, I insert an intiative template, which is just a list of all the characters in the party:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Initiative!
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Ka&amp;#39;ira
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Maestro
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Xio
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Eraithe
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Keren
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This makes it easier to add the initiative value rolled, as well as that of any other baddies we&amp;rsquo;re fighting. I use the &lt;a href=&#34;https://github.com/vslinko/obsidian-outliner&#34;&gt;Outliner plugin&lt;/a&gt; to be able to easily move people on the list up or down as needed without having to copy or paste. I have the shortcuts set to CMD+SHIFT+UP and CMD+SHIFT+DOWN so I don&amp;rsquo;t even need to use my mouse.&lt;/p&gt;
-&lt;p&gt;I also have a template for Defenses. D&amp;amp;D 4th Edition has four different kinds of defenses, and since my character&amp;rsquo;s powers target a few of them, I keep track of the defenses of each monster. Here&amp;rsquo;s what that template looks like, in Edit mode:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Defense               | Value |
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| --------------------- | ----- |
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Reflex Defense]]    |       |
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Fortitude Defense]] |       |
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Will Defense]]      |       |
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| [[Armor Class]]       |       |
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;ll notice that I also link to the pages I have for each defense type, in case I need to remind myself which stat a defense is comprised of.&lt;/p&gt;
-&lt;h3 id=&#34;character-powers&#34;&gt;Character powers&lt;/h3&gt;
-&lt;p&gt;Like many, I have migrated from playing games on a literal tabletop to doing it virtually. These days, I play 100% online, using a bunch of different tools. For the most part, though, I still prefer to roll actual dice. There&amp;rsquo;s just something satisfying about the feel of a die in my hand. Since I switched to Obsidian, though, I have looked into virtual dice. On the off chance I don&amp;rsquo;t have any dice (ha) or all my dice have betrayed me (much more likely), I use the &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller plugin&lt;/a&gt;. It turns&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`dice: 1d20+7`&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;into a random die roll. Here it is when incorporated into my character&amp;rsquo;s list of powers:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/powers-sample.png&#34; alt=&#34;My character&amp;amp;rsquo;s powers page&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Sometimes, when I&amp;rsquo;m feeling superstitious about my dice, I&amp;rsquo;ll switch to using this dice roller &amp;ldquo;just to be safe&amp;rdquo;. It has other cool features too, which I&amp;rsquo;ll cover more in detail in the Dungeon Master&amp;rsquo;s edition of this article.&lt;/p&gt;
-&lt;h3 id=&#34;search-linked-unlinked-mentions&#34;&gt;Search, linked, unlinked mentions&lt;/h3&gt;
-&lt;p&gt;Frequently, something comes up in a game that I&amp;rsquo;m &lt;em&gt;sure&lt;/em&gt; we&amp;rsquo;ve heard of before, but I can&amp;rsquo;t quite remember where or when. Actually, sometimes something comes up that I&amp;rsquo;m quite sure we&amp;rsquo;ve &lt;em&gt;never&lt;/em&gt; heard of before, but it turns out we have. Luckily, Obsidian is quick to tell me that using the linked/unlinked mentions and the search features.&lt;/p&gt;
-&lt;p&gt;Here are the mentions in my note for the word &amp;ldquo;Netheril&amp;rdquo;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/Netheril-mentions.png&#34; alt=&#34;Linked mentioned for the word Netheril&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Unlinked mentions show up too, in case the word came up somewhere and I didn&amp;rsquo;t think to specifically create a page on it.&lt;/p&gt;
-&lt;p&gt;On monster pages, mentions remind me when we fought them last, and any tips for fighting them. It can be handy when one of the other players has forgotten something that happened to them, too. If I want to remember how Ka&amp;rsquo;ira got her festering wound, I can type it into the Obsidian search bar:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/festering-wound.png&#34; alt=&#34;A search in Obsidian for &amp;amp;ldquo;festering wound&amp;amp;rdquo;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;and be able to confidently say that Ka&amp;rsquo;ira got her last festering wound on session 68, in the Blue Crystal Fortress that we now know to be the Twisted Fane, while fighting aberrations.&lt;/p&gt;
-&lt;h2 id=&#34;after-a-game&#34;&gt;After a game&lt;/h2&gt;
-&lt;p&gt;I think I might use Obsidian even more between games than during the game, because after the game is when I process everything my character learned.&lt;/p&gt;
-&lt;h3 id=&#34;session-summary&#34;&gt;Session summary&lt;/h3&gt;
-&lt;p&gt;Immediately after the game is when I create a short session summary. I like to do this when the session is still fresh in my mind. Then, I add &lt;code&gt;^summary&lt;/code&gt; at the end of the paragraph to identify it and to be able to pull it into the next session&amp;rsquo;s recap. Block references and block embeds are some of my most frequently used Obsidian features.&lt;/p&gt;
-&lt;h3 id=&#34;creating-new-pages&#34;&gt;Creating new pages&lt;/h3&gt;
-&lt;p&gt;I then create new pages for any people, places, magical items, or events that we encountered. I like to use a standard frontmatter:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
-type: 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Roam Research on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/roam-research/</link><description>Recent content in Roam Research on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 09 Mar 2022 10:03:41 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/roam-research/index.xml" rel="self" type="application/rss+xml"/><item><title>Why I Chose Obsidian Over Roam Research (as a Roam investor)</title><link>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</link><pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</guid><description>&lt;p>I was a Roam Research power user, a Believer, and investor before I discovered Obsidian. Here&amp;rsquo;s why I still ended up choosing Obsidian over Roam as my personal knowledge management tool of choice. My goal with this video is to share with you my reasons for making the choice that I did, not to judge you or anyone else who disagrees. In the end, we all have to decide for ourselves what tool fits best in our lives.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AWUk8-6yG2g?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How I use Obsidian for D&amp;D - Player's Edition</title><link>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</link><pubDate>Mon, 09 Aug 2021 17:46:51 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210809-dnd-obsidian-player/</guid><description>
+&lt;meta property=“og:image” content="/assets/Forgotten-Realms-workspace-in-Obsidian.png" />
+&lt;meta property=”og:image:width” content=”1200″ />
+&lt;meta property=”og:image:height” content=”628″ />
+&lt;p>I&amp;rsquo;ve previously written about &lt;a href="https://nicolevanderhoeven.com/blog/20210518-how-i-use-obsidian-at-work/">how I use Obsidian for work&lt;/a>, and I&amp;rsquo;ve also talked about &lt;a href="https://nicolevanderhoeven.com/blog/20201214-roam-for-dnd/">how I use Roam Research for D&amp;amp;D&lt;/a>. Shortly after the latter post, however, I moved to Obsidian. That was six months ago, so I thought it was time for an update.&lt;/p>
+&lt;h2 id="before-the-game">Before the game&lt;/h2>
+&lt;h3 id="world">World&lt;/h3>
+&lt;p>My World page is the main jumping-off point for all my notes for a specific campaign, and each campaign gets one. It contains:&lt;/p>
+&lt;ul>
+&lt;li>The main locations in the world&lt;/li>
+&lt;li>The player characters, and links to their individual pages with information about what my character knows or thinks of them&lt;/li>
+&lt;li>A link to Open Loops (Quests and Questions and Agenda, as discussed below)&lt;/li>
+&lt;li>The list of all the sessions I&amp;rsquo;ve played for the campaign&lt;/li>
+&lt;li>Campaign-specific house rules that the DM has introduced&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/world-page.png" alt="The World page for my Forgotten Realms campaign">&lt;/p>
+&lt;h3 id="quests-and-questions">Quests and Questions&lt;/h3>
+&lt;p>I like to play high-intelligence characters, so I like to keep track of unanswered questions and other adventure hooks my DM has dropped that the party hasn&amp;rsquo;t quite gotten around to resolving yet. Some of them are critical quest or story arcs, and others are random tidbits of information that NPCs have mentioned. I organize them by location, and then by quest, so that it&amp;rsquo;s easy to follow a thread depending on where the party is or how much downtime we have. Here&amp;rsquo;s an example of that page:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/quests-and-questions.png" alt="Quests and Questions page">&lt;/p>
+&lt;h3 id="agenda">Agenda&lt;/h3>
+&lt;p>While the Quests and Questions page records unfinished business that my character is actively thinking about but may not quite know how to explore yet, my Agenda page is where I write down specific tasks. I loosely follow the &lt;a href="https://gettingthingsdone.com/">Getting Things Done&lt;/a> methodology and divide this page into Next Actions and Waiting For. I group tasks by person and/or by location.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/Agenda-sample.png" alt="Agenda page">&lt;/p>
+&lt;p>I use the Obsidian &lt;a href="https://github.com/DahaWong/obsidian-completed-area">Completed Area plugin&lt;/a> so that hitting a CTRL + ENTER on a task automatically checks it and then moves that task to a separate Completed section at the bottom of the note. This helps me keep the agenda clean and relevant.&lt;/p>
+&lt;h2 id="during-a-game">During a game&lt;/h2>
+&lt;h3 id="workspace">Workspace&lt;/h3>
+&lt;p>One of the best parts about Obsidian is that it allows me to save and load custom workspaces. This is useful because I use Obsidian for work as well as play, so I can set up the two workspaces differently. I also DM one campaign and play in another, and I have a workspace for each of them because I need different information available to me. The workspace features lets me customize my dashboard. Here&amp;rsquo;s what my workspace looks like for the 4e game that I play in:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/Forgotten-Realms-workspace-in-Obsidian.png" alt="My Forgotten Realms campaign workspace in Obsidian">&lt;/p>
+&lt;p>At the beginning of a game, I&amp;rsquo;ll create a new session page in the last pane, enter into it, and then stay in the workspace for the rest of the game. I have my character&amp;rsquo;s stats sheet handy (which I need to do manually since I haven&amp;rsquo;t found a D&amp;amp;D Beyond-like service for 4e) and all the powers and abilities I need to refer to.&lt;/p>
+&lt;h3 id="session-template">Session template&lt;/h3>
+&lt;p>I love Obsidian templates! I use templates for things like inserting an HP tracker with all my party&amp;rsquo;s names, their max HP, healing surges (4e); a defense table to keep track of a creature&amp;rsquo;s defenses (again, 4e); and campaign-specific session log formats.&lt;/p>
+&lt;p>At the beginning of the game, I&amp;rsquo;ll create a new page in the Session List, click into it, and insert a session log template (I have this hotkeyed to CMD+&lt;code>;&lt;/code>). Here&amp;rsquo;s what a fresh one looks like, in Edit mode:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/session-template-fresh.png" alt="My session template, newly inserted">&lt;/p>
+&lt;p>I add metadata to every session so that I can query it later using the excellent &lt;a href="https://github.com/blacksmithgu/obsidian-dataview">Obsidian Dataview plugin&lt;/a>, though I do this more often for the campaign I DM rather than the one I play in.&lt;/p>
+&lt;p>We usually do a recap at the beginning of the game, so I jump into the &lt;code>Recap of the last session&lt;/code> section and embed the summary from the previous session using &lt;code> ![](/assets/86_20210717 Day 16 Hunting the Ice Phase Spider#^summary)&lt;/code>, which pulls in the section marked with &lt;code>^summary&lt;/code> from the last session. That embeds just that portion of the last session in the current session, like this:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/Recap.png" alt="Session recap using block embed">&lt;/p>
+&lt;p>This helps me get back up to speed quickly instead of doing the usual &amp;ldquo;Where were we again?&amp;rdquo; that takes up time.&lt;/p>
+&lt;h3 id="hp-table">HP table&lt;/h3>
+&lt;p>My character is a multiclassed healer, so it&amp;rsquo;s important for me to know who needs heals or other buffs. I keep track of this separately, and it helps out my DM as well because it&amp;rsquo;s easy to miss something in the excitement of a battle. I do include the HP table in my workspace, in Preview mode, but here&amp;rsquo;s what it looks like in Edit mode:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/HP-table.png" alt="A table of the party&amp;rsquo;s HP, surges, and conditions">&lt;/p>
+&lt;p>Tables in Markdown can be a pain, but the &lt;a href="https://github.com/tgrosinger/advanced-tables-obsidian">Advanced Tables plugin&lt;/a> goes a long way towards making this easier by adding some nice features like tabbing to the next cell, adding commands for inserting and deleting a column or row, and just automatically formatting a table so that it&amp;rsquo;s not a jumble of lines. I also heavily use this plugin for my characters stats and skills, both of which I keep in tables.&lt;/p>
+&lt;h3 id="keeping-track-of-fights">Keeping track of fights&lt;/h3>
+&lt;p>When a fight breaks out, I insert an intiative template, which is just a list of all the characters in the party:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>Initiative!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">-&lt;/span> Ka&amp;#39;ira
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">-&lt;/span> Maestro
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">-&lt;/span> Xio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">-&lt;/span> Eraithe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">-&lt;/span> Keren
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This makes it easier to add the initiative value rolled, as well as that of any other baddies we&amp;rsquo;re fighting. I use the &lt;a href="https://github.com/vslinko/obsidian-outliner">Outliner plugin&lt;/a> to be able to easily move people on the list up or down as needed without having to copy or paste. I have the shortcuts set to CMD+SHIFT+UP and CMD+SHIFT+DOWN so I don&amp;rsquo;t even need to use my mouse.&lt;/p>
+&lt;p>I also have a template for Defenses. D&amp;amp;D 4th Edition has four different kinds of defenses, and since my character&amp;rsquo;s powers target a few of them, I keep track of the defenses of each monster. Here&amp;rsquo;s what that template looks like, in Edit mode:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>| Defense | Value |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| --------------------- | ----- |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| [[Reflex Defense]] | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| [[Fortitude Defense]] | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| [[Will Defense]] | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| [[Armor Class]] | |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You&amp;rsquo;ll notice that I also link to the pages I have for each defense type, in case I need to remind myself which stat a defense is comprised of.&lt;/p>
+&lt;h3 id="character-powers">Character powers&lt;/h3>
+&lt;p>Like many, I have migrated from playing games on a literal tabletop to doing it virtually. These days, I play 100% online, using a bunch of different tools. For the most part, though, I still prefer to roll actual dice. There&amp;rsquo;s just something satisfying about the feel of a die in my hand. Since I switched to Obsidian, though, I have looked into virtual dice. On the off chance I don&amp;rsquo;t have any dice (ha) or all my dice have betrayed me (much more likely), I use the &lt;a href="https://github.com/valentine195/obsidian-dice-roller">Dice Roller plugin&lt;/a>. It turns&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">`dice: 1d20+7`&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>into a random die roll. Here it is when incorporated into my character&amp;rsquo;s list of powers:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/powers-sample.png" alt="My character&amp;rsquo;s powers page">&lt;/p>
+&lt;p>Sometimes, when I&amp;rsquo;m feeling superstitious about my dice, I&amp;rsquo;ll switch to using this dice roller &amp;ldquo;just to be safe&amp;rdquo;. It has other cool features too, which I&amp;rsquo;ll cover more in detail in the Dungeon Master&amp;rsquo;s edition of this article.&lt;/p>
+&lt;h3 id="search-linked-unlinked-mentions">Search, linked, unlinked mentions&lt;/h3>
+&lt;p>Frequently, something comes up in a game that I&amp;rsquo;m &lt;em>sure&lt;/em> we&amp;rsquo;ve heard of before, but I can&amp;rsquo;t quite remember where or when. Actually, sometimes something comes up that I&amp;rsquo;m quite sure we&amp;rsquo;ve &lt;em>never&lt;/em> heard of before, but it turns out we have. Luckily, Obsidian is quick to tell me that using the linked/unlinked mentions and the search features.&lt;/p>
+&lt;p>Here are the mentions in my note for the word &amp;ldquo;Netheril&amp;rdquo;:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/Netheril-mentions.png" alt="Linked mentioned for the word Netheril">&lt;/p>
+&lt;p>Unlinked mentions show up too, in case the word came up somewhere and I didn&amp;rsquo;t think to specifically create a page on it.&lt;/p>
+&lt;p>On monster pages, mentions remind me when we fought them last, and any tips for fighting them. It can be handy when one of the other players has forgotten something that happened to them, too. If I want to remember how Ka&amp;rsquo;ira got her festering wound, I can type it into the Obsidian search bar:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/festering-wound.png" alt="A search in Obsidian for &amp;ldquo;festering wound&amp;rdquo;">&lt;/p>
+&lt;p>and be able to confidently say that Ka&amp;rsquo;ira got her last festering wound on session 68, in the Blue Crystal Fortress that we now know to be the Twisted Fane, while fighting aberrations.&lt;/p>
+&lt;h2 id="after-a-game">After a game&lt;/h2>
+&lt;p>I think I might use Obsidian even more between games than during the game, because after the game is when I process everything my character learned.&lt;/p>
+&lt;h3 id="session-summary">Session summary&lt;/h3>
+&lt;p>Immediately after the game is when I create a short session summary. I like to do this when the session is still fresh in my mind. Then, I add &lt;code>^summary&lt;/code> at the end of the paragraph to identify it and to be able to pull it into the next session&amp;rsquo;s recap. Block references and block embeds are some of my most frequently used Obsidian features.&lt;/p>
+&lt;h3 id="creating-new-pages">Creating new pages&lt;/h3>
+&lt;p>I then create new pages for any people, places, magical items, or events that we encountered. I like to use a standard frontmatter:&lt;/p>
+&lt;pre tabindex="0">&lt;code>---
+type:
 location: [Neverwinter]
 world: &amp;#34;Forgotten Realms&amp;#34;
 campaign: &amp;#34;Order of the Wandering Mind&amp;#34;
 date: 2021-06-23
 ---
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s an example of the page for an NPC:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/npc-sample.png&#34; alt=&#34;An NPC page in my campaign&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If my DM has given us character art, I include it in the page.&lt;/p&gt;
-&lt;p&gt;And here&amp;rsquo;s an example of a page for a location:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/twisted-fane-location-example.png&#34; alt=&#34;Location page: Twisted Fane&#34;&gt;&lt;/p&gt;
-&lt;p&gt;For this page, I used a plugin called &lt;a href=&#34;https://github.com/valentine195/obsidian-leaflet-plugin&#34;&gt;Obsidian Leaflet&lt;/a&gt;, which lets me add maps to my notes! In this case, my DM gave us this map of the structure as a guide, but during combats we didn&amp;rsquo;t use a map. To keep myself oriented between games, I added red pawprint pins where we had spotted or fought monsters, green thumbtacks to mark where we&amp;rsquo;d ended sessions, and green markers where we had spotted allies. I also like to add links to monsters or sessions on the pins/markers so that I can jump to those pages quickly if I need to.&lt;/p&gt;
-&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
-&lt;p&gt;To keep historical events straight in my head, especially since we tend to discover them out of sequence, I use the &lt;a href=&#34;https://github.com/Darakah/obsidian-timelines&#34;&gt;Obsidian Timelines plugin&lt;/a&gt;, which lets me create pages like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-timeline-for-dnd.png&#34; alt=&#34;Obsidian Timeline in my game&#34;&gt;&lt;/p&gt;
-&lt;p&gt;by using this code in the timeline page:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```timeline
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fr
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\```
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(without the backtick) and this for every event that I want to include:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: [2021-06-23]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [timeline, fr]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ob-timelines&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-date&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Xionerys is born&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;orange&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#a6e22e&#34;&gt;data-img &lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;assets/xionerys.jpg&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;range&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#a6e22e&#34;&gt;data-end&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1443-00&amp;#39;&lt;/span&gt;&amp;gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	Xionerys is born in Calimshan.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Using this method, I&amp;rsquo;ve been able to call out discrepancies in what two different NPCs told us and figure out that one was lying&amp;ndash; or at least misinformed.&lt;/p&gt;
-&lt;h3 id=&#34;replace-all&#34;&gt;Replace all&lt;/h3&gt;
-&lt;p&gt;When I inevitably get a fantasy name wrong, having pages as flat .md files is great because I can do a find and replace on ALL mentions of a certain NPC name/place I&amp;rsquo;ve misspelled (those fantasy names!). I do this with my usual code/text editor, VSCode, just because I usually already have it up, but you can do it using terminal commands. If it&amp;rsquo;s just the name of a page, updating the spelling in Obsidian changes it everywhere else it&amp;rsquo;s linked to as well, which is useful.&lt;/p&gt;
-&lt;h3 id=&#34;updating-open-loops&#34;&gt;Updating open loops&lt;/h3&gt;
-&lt;p&gt;To finish processing the last session, I update Open Loops: I add new points or update existing points in Quests and Questions, and then add tasks to Agenda that I want to do in the next session. I find that it&amp;rsquo;s best to do it after a game because it&amp;rsquo;s a week, sometimes more, between games and there&amp;rsquo;s a high likelihood I&amp;rsquo;ll have forgotten what I want to do by then!&lt;/p&gt;
-&lt;h3 id=&#34;publish&#34;&gt;Publish&lt;/h3&gt;
-&lt;p&gt;I also publish my D&amp;amp;D notes, just for transparency. My DM has joked that he looks in there sometimes when he&amp;rsquo;s forgotten something. Even if he doesn&amp;rsquo;t, I enjoy having my notes so easily accessible. I often navigate there myself when I have a spare moment, remembering old sessions and thinking about some loose threads. If you&amp;rsquo;re interested, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/TTRPGs/Order+of+the+Wandering+Mind/World&#34;&gt;here they are&lt;/a&gt;! Just be warned that the plugins won&amp;rsquo;t work in the web version, so sometimes you&amp;rsquo;ll come across bits of code that didn&amp;rsquo;t render. I also migrated these notes from Roam Research, and haven&amp;rsquo;t gone back and updated all the older notes.&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Since I&amp;rsquo;ve switched to Obsidian, it&amp;rsquo;s been an indispensable part of my workflow for D&amp;amp;D. Without it, I&amp;rsquo;d be just another murder hobo with no notes. And no DM wants that!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Downloading files uploaded to Roam Research for use with Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</link>
-      <pubDate>Wed, 02 Jun 2021 00:27:59 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;ve recently transitioned from &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; to &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, you might run into a few issues, even after you&amp;rsquo;ve run the &amp;ldquo;Markdown format importer&amp;rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to &lt;a href=&#34;https://firebase.google.com/&#34;&gt;Google Firebase&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Roam assets are linked to in the Markdown files like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt;token=1e03b680-5472-33dc-9b06-a127301af37f)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&amp;rsquo;ll still render correctly. However, I still think it&amp;rsquo;s worth downloading the files for three reasons:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If you don&amp;rsquo;t intend to use Roam anymore and cancel your subscription, they will likely delete those assets at some point, leaving you with a lot of broken links in Obsidian.&lt;/li&gt;
-&lt;li&gt;Part of Obsidian&amp;rsquo;s appeal is that you own your assets. Not so if they&amp;rsquo;re on someone else&amp;rsquo;s server.&lt;/li&gt;
-&lt;li&gt;You can&amp;rsquo;t access Firebase files without an internet connection.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So, instead, you want to download the contents of that link and replace it in your notes with something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![](assets/newfile.png)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That way, you&amp;rsquo;ll have full control over all your assets, and you won&amp;rsquo;t be dependent on those assets being stored on Firebase by Roam.&lt;/p&gt;
-&lt;p&gt;To fix this, I wrote a Python script that will:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Go through every file and every folder within a specified root vault directory&lt;/li&gt;
-&lt;li&gt;Look for links to Google Firebase&lt;/li&gt;
-&lt;li&gt;Download all assets from Firebase to a local folder (&lt;code&gt;/assets&lt;/code&gt; by default), using the timestamp and index number as a filename&lt;/li&gt;
-&lt;li&gt;Replace the Firebase links in your vault with links to the newly downloaded files, accounting for PDFs, whose links are formatted differently in Roam as &lt;code&gt;{{ pdf: ... }}&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Before you run this script, I highly recommend backing up your vault or trying this out on a dummy vault.&lt;/p&gt;
-
-
-&lt;script src=&#34;https://gist.github.com/nicolevanderhoeven/b25c97a8a68ea97e7bdf5ee674fdaec4.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;After downloading and saving the script, run &lt;code&gt;python3 downloadfirebase.py&lt;/code&gt; on your terminal.&lt;/p&gt;
-&lt;p&gt;This worked really well for me, and I can breathe a little more easily now that my vault is self-contained.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Readwise to Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</link>
-      <pubDate>Sat, 06 Feb 2021 09:55:36 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</guid>
-      <description>
-
-&lt;meta property=“og:image” content=&#34;/assets/20210206-06-readwise-to-obsidian.png&#34; /&gt;
-&lt;meta property=”og:image:width” content=”1200″ /&gt;
-&lt;meta property=”og:image:height” content=”628″ /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;Readwise Official&lt;/a&gt;, which is available now! I now recommend &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;this method&lt;/a&gt; over the one outlined in this article.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m about 9 months into heavily using &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em&gt;seriously&lt;/em&gt; attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p&gt;
-&lt;p&gt;Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Instapaper (for highlights and notes on online articles)&lt;/li&gt;
-&lt;li&gt;Amazon Kindle (for highlights on ebooks)&lt;/li&gt;
-&lt;li&gt;Twitter (for interesting tweets)&lt;/li&gt;
-&lt;li&gt;(Readwise) Web highlighter (for straight highlights off any webpage)&lt;/li&gt;
-&lt;li&gt;Airr (for quotes and notes from audio podcasts)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&amp;rsquo;s what that looks like when it gets pulled into my Daily Note:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-01-readwiseimportsinroam.png&#34; alt=&#34;Tweet, podcast, and book notes pulled into Roam Research via Readwise&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Readwise also pulls metadata into Roam, depending on the source. Here&amp;rsquo;s what the page for the book &amp;ldquo;Ready Player Two&amp;rdquo; looks like in Roam:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png&#34; alt=&#34;Ready Player Two book notes in Roam, imported via Readwise&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Readwise integration is an &lt;em&gt;essential&lt;/em&gt; feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em&gt;have&lt;/em&gt; an Obsidian integration.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png&#34; alt=&#34;Readwise doesn&amp;amp;rsquo;t automatically export to Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&#34;https://readwise.io/export&#34;&gt;Readwise Exports&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p&gt;
-&lt;h2 id=&#34;readwise2directory&#34;&gt;readwise2directory&lt;/h2&gt;
-&lt;p&gt;I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found &lt;a href=&#34;https://github.com/nicrivard/readwise2directory&#34;&gt;this Python project on GitHub&lt;/a&gt; by &lt;a href=&#34;https://github.com/nicrivard&#34;&gt;nicrivard&lt;/a&gt;, who had already done that! Why rebuild the wheel? His solution already did what I needed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It connects to Readwise via your Readwise access token&lt;/li&gt;
-&lt;li&gt;Checks for new highlights or updated ones&lt;/li&gt;
-&lt;li&gt;Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It even pulls in highlight tags from Readwise, if you&amp;rsquo;ve created any (which I haven&amp;rsquo;t).&lt;/p&gt;
-&lt;p&gt;I &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;forked the project here&lt;/a&gt; to add just a few minor touches:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Changed date format of imported notes&lt;/li&gt;
-&lt;li&gt;Added a section to output the import date to a comment block (an &lt;a href=&#34;https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295&#34;&gt;Obsidian Insider build feature&lt;/a&gt;) rather than YAML frontmatter, so that the date would actually be linked and backlinked.&lt;/li&gt;
-&lt;li&gt;Customized tags and filename for my use&lt;/li&gt;
-&lt;li&gt;Sort imports into folders within my Obsidian vault depending on source (&lt;code&gt;Article/&lt;/code&gt;, &lt;code&gt;Tweet/&lt;/code&gt;, and so on).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This works out pretty well. Here&amp;rsquo;s an example of an import from the podcast app &lt;a href=&#34;https://airr.io&#34;&gt;Airr&lt;/a&gt; into Obsidian, in Edit mode.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-04-airrtoobsidian.png&#34; alt=&#34;readwise2directory import from Airr into Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s placed within my &lt;code&gt;Podcast&lt;/code&gt; folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-05-airrinobsidian_preview.png&#34; alt=&#34;Preview mode of imported Airr quote in Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So that works out well, except for one thing: firing off the script that does all this is still manual.&lt;/p&gt;
-&lt;h2 id=&#34;scheduling-the-script&#34;&gt;Scheduling the script&lt;/h2&gt;
-&lt;p&gt;Luckily, it&amp;rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&amp;rsquo;m on macOS, so I used a built-in utility called &lt;code&gt;cron&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
-&lt;p&gt;Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on my laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
-&lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
-&lt;p&gt;Then, from my terminal, I ran the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up the list of cronjobs I had currently.&lt;/p&gt;
-&lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
-&lt;p&gt;I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * command
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;minute&lt;/li&gt;
-&lt;li&gt;hour&lt;/li&gt;
-&lt;li&gt;day of the month&lt;/li&gt;
-&lt;li&gt;month&lt;/li&gt;
-&lt;li&gt;day of the week&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; * * * * cd /Users/nic/git/readwise2directory/ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;python-issues&#34;&gt;Python issues&lt;/h4&gt;
-&lt;p&gt;I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code&gt;which python3&lt;/code&gt; to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code&gt;cd&lt;/code&gt; to the project directory, for some reason.&lt;/p&gt;
-&lt;p&gt;While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p&gt;
-&lt;p&gt;Once I added the schedule as in the example above, though, it worked a treat!&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;This solution did require some setup at the beginning, but doesn&amp;rsquo;t need any maintenance once it&amp;rsquo;s going. I&amp;rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&amp;rsquo;ll all be waiting for me in my Obsidian vault whenever I&amp;rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link>
-      <pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid>
-      <description>&lt;p&gt;Listen to the audio version of this blog post here:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href=&#34;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy&#34;&gt;this very excellent video&lt;/a&gt; by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p&gt;
-&lt;p&gt;Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;install-yinote-chrome-extension&#34;&gt;Install YiNote Chrome extension&lt;/h2&gt;
-&lt;p&gt;I use a free app called &lt;a href=&#34;https://yinote.co/&#34;&gt;YiNote&lt;/a&gt; to take video notes in particular.  I use &lt;a href=&#34;https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf&#34;&gt;their Chrome extension&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;take-notes&#34;&gt;Take Notes&lt;/h2&gt;
-&lt;p&gt;I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here&amp;rsquo;s what it looks like while taking notes:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;export-yinote-notes&#34;&gt;Export YiNote notes&lt;/h2&gt;
-&lt;p&gt;After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p&gt;
-&lt;p&gt;I click the Export as Markdown button.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;That lets me save a &lt;code&gt;.md&lt;/code&gt; file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p&gt;
-&lt;h2 id=&#34;run-reformatter-script&#34;&gt;Run reformatter script&lt;/h2&gt;
-&lt;p&gt;This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/#installation&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- # &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:19&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The scheduler is what makes sure the Goroutines run concurrently.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:29&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p&gt;
-&lt;p&gt;So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p&gt;
-
-
-&lt;script src=&#34;https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;The script results in an output file that is better formatted for Roam.&lt;/p&gt;
-&lt;h2 id=&#34;import-resulting-file-to-roam&#34;&gt;Import resulting file to Roam&lt;/h2&gt;
-&lt;p&gt;On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
-&lt;p&gt;I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How I use Roam Research for D&amp;D: Session Notes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201214-roam-for-dnd/</link>
-      <pubDate>Mon, 14 Dec 2020 20:13:13 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201214-roam-for-dnd/</guid>
-      <description>&lt;p&gt;In case you thought this site was all about performance and load testing, surprise! It&amp;rsquo;s not.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;ve talked to me personally for longer than ten minutes in the last year, there&amp;rsquo;s a pretty good chance I&amp;rsquo;ve mentioned &lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt;, or the note-taking and learning methodology called &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt;. Sorrynotsorry. I&amp;rsquo;ve been obsessed since I discovered it.&lt;/p&gt;
-&lt;p&gt;To say Roam Research is a note-taking device is like saying Bitcoin is currency: yes, it IS that, but also so much more. To me, it&amp;rsquo;s my second brain. It&amp;rsquo;s a record of what I know and what I want to know, and sometimes even things I don&amp;rsquo;t know yet. The real reason that Roam and the Zettelkasten idea resonated with me so much is that I can use it a lot for my work. But I&amp;rsquo;ve discovered another use case that Roam is perfect for: Dungeons &amp;amp; Dragons.&lt;/p&gt;
-&lt;p&gt;This became longer than I thought it would be, so I&amp;rsquo;ll just talk about how I handle Session Notes in particular.&lt;/p&gt;
-&lt;h2 id=&#34;starting-a-new-session&#34;&gt;Starting a new session&lt;/h2&gt;
-&lt;p&gt;Everything starts with sitting down to play D&amp;amp;D. I write a log of events and information that comes out while I&amp;rsquo;m playing. Here&amp;rsquo;s what a new session log looks like:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I preface pages in this campaign with &lt;code&gt;D&amp;amp;D/&lt;/code&gt; to make it a separate &lt;a href=&#34;https://forum.roamresearch.com/t/namespaces-how-do-they-work/276&#34;&gt;namespace&lt;/a&gt;. A namespace is like a folder, and I use it mainly because I have two D&amp;amp;D campaigns, both of which would have the page &lt;code&gt;Campaign&lt;/code&gt;, &lt;code&gt;Characters&lt;/code&gt;, &lt;code&gt;Locations&lt;/code&gt;, etc, even though the two campaigns are on different worlds. To keep them separate, and to keep from getting mixed up (&lt;em&gt;Was Gloomtoes an NPC in this campaign or that one?&lt;/em&gt;) I use different namespaces for each campaign.&lt;/p&gt;
-&lt;p&gt;I add the real-world date in the page name, and then an in-game date reference. The in-game date reference is useful for keeping track of time since I might go a couple weeks (okay, maybe &lt;em&gt;one&lt;/em&gt; week; let&amp;rsquo;s not get too crazy) without playing this campaign, but no time in the in-game world has elapsed. Then, I end the page name with a descriptive title, which I always end up changing after the session. Sometimes I&amp;rsquo;ll title a page &lt;code&gt;Exploring Castle Never&lt;/code&gt;, but then we end up getting carried away in another part of the city instead. That&amp;rsquo;s okay - when I change a page name, Roam then updates all references to that page that I&amp;rsquo;ve made from other pages.&lt;/p&gt;
-&lt;p&gt;I don&amp;rsquo;t type all this out manually - I use a &lt;a href=&#34;https://textexpander.com/&#34;&gt;TextExpander&lt;/a&gt; template so that to start a new session, all I have to do is create a page in Roam, type &lt;code&gt;;s.dnd&lt;/code&gt; and that is automatically replaced with prompts for a few fields.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Date&lt;/code&gt;: This is the real-world date of when I played this particular session.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Tags&lt;/code&gt;: When I first create session notes, this is prepopulated with &lt;code&gt;#TVZ&lt;/code&gt;, which stands for &lt;em&gt;To Verzettelen&lt;/em&gt;. It&amp;rsquo;s just my personal way of marking a note as one that needs to be processed.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Location&lt;/code&gt;: Here I note down the in-game places that my character visited this session. Usually I&amp;rsquo;ll just put city names, but I sometimes also split locations up into districts within a city or rooms within a dungeon.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Characters&lt;/code&gt;: I&amp;rsquo;ve found it helpful to keep track of which characters (players and NPCs) I&amp;rsquo;ve come across in this session.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Session Summary&lt;/code&gt;: This is a section I leave blank when the session is initially created.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;filling-in-the-session-log&#34;&gt;Filling in the session log&lt;/h2&gt;
-&lt;p&gt;The rest of the page, after &lt;code&gt;Session Summary&lt;/code&gt;, is where I&amp;rsquo;ll spend most of the time writing. I just write whatever comes to mind and whatever I have time to write, in bullet form. I don&amp;rsquo;t worry about formatting or grammar or linking to other pages. I just type all my thoughts out in plain text.&lt;/p&gt;
-&lt;h3 id=&#34;hp&#34;&gt;HP&lt;/h3&gt;
-&lt;p&gt;I like to play healers, which means I care a lot about how everyone in the party is doing so that I can figure out who best needs healing. &lt;code&gt;{{[[table]]}}&lt;/code&gt; in Roam lets me create a custom table, and I have a &lt;code&gt;;hp&lt;/code&gt; snippet in TextExpander that recreates this table, with all the names of the people currently in my party, so that I just worry about filling in the values. Sometimes I still get it wrong, or miss a bit of damage that the DM calls out, but it&amp;rsquo;s enough to give me an idea of who needs heals.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-04.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I also write down initiative orders, the defenses/vulnerabilities/immunities of monsters we face, descriptions of NPCs we meet, suspicions or questions I might have&amp;hellip; basically anything and everything that comes to mind. Session time is pretty much a brain dump, with no formatting.&lt;/p&gt;
-&lt;h3 id=&#34;equipment&#34;&gt;Equipment&lt;/h3&gt;
-&lt;p&gt;If I acquire a new item during a session, I&amp;rsquo;ll tag that line with &lt;code&gt;#[[D&amp;amp;D/Carrying]]&lt;/code&gt;. This lets me stay on the Session Notes page while still maintaining an up-to-date record of what I&amp;rsquo;m carrying.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;A tag in Roam is the same as a page, so when I click on that link, it takes me to the &lt;code&gt;D&amp;amp;D/Carrying&lt;/code&gt; page, which conveniently also shows me all the references to that page from other pages.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Roam shows me not just the page, but the exact block where I made the reference to &lt;code&gt;D&amp;amp;D/Carrying&lt;/code&gt;, so it&amp;rsquo;s easy to see at a glance what I have and where I got it.&lt;/p&gt;
-&lt;h3 id=&#34;next-actions-and-waiting-for&#34;&gt;Next Actions and Waiting For&lt;/h3&gt;
-&lt;p&gt;I use David Allen&amp;rsquo;s &lt;a href=&#34;https://gettingthingsdone.com/&#34;&gt;GTD&lt;/a&gt; methodology in D&amp;amp;D too. When I want to remember to do something later, I tag it with &lt;code&gt;#[[D&amp;amp;D/Agenda]]&lt;/code&gt; and &lt;code&gt;#[[Next Actions]]&lt;/code&gt; or &lt;code&gt;#[[Waiting For]]&lt;/code&gt;. This presents me with the same opportunities as &lt;code&gt;D&amp;amp;D/Carrying&lt;/code&gt;, where I can see references to those pages later as well.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-07.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;processing-the-session&#34;&gt;Processing the session&lt;/h2&gt;
-&lt;p&gt;Sometime after the session, I&amp;rsquo;ll go and fill in the metadata from my template, including the session summary, which is just a paragraph or two describing what happened in the session at a high level. This is mainly to jog my memory in the next session, when I&amp;rsquo;ve already forgotten what we did in the previous one.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s what it looks like, all filled in:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;adding-links-and-fleshing-out-pages&#34;&gt;Adding links and fleshing out pages&lt;/h3&gt;
-&lt;p&gt;I then go back through the notes themselves and add turn any people, places, or interesting objects that I mention into links. In Roam, that&amp;rsquo;s a matter of highlighting them and hitting &lt;code&gt;[[&lt;/code&gt;. Then, I click on the page I&amp;rsquo;ve just created and try to add information that I&amp;rsquo;ve learned. This isn&amp;rsquo;t strictly necessary, since all mentions of that page will show up as a linked reference, but it&amp;rsquo;s an opportunity to consolidate my information on that subject and see how it fits into what else I&amp;rsquo;ve written there.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a page for an NPC:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-09.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Having these links means that when an NPC says &amp;ldquo;I&amp;rsquo;m from Leilon&amp;rdquo;, I can type &lt;code&gt;Leilon&lt;/code&gt; into Roam:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-08.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;hellip; and say, &amp;ldquo;Oh, Leilon. I heard you had a dragon problem there recently. Did your family get out okay?&amp;rdquo; Boom! Instant advantage on a Diplomacy check.&lt;/p&gt;
-&lt;p&gt;Sometimes we&amp;rsquo;re in a dungeon with many rooms, and this is the point where I draw a quick map on my iPad Pro and Apple Pencil using &lt;a href=&#34;https://www.gingerlabs.com/&#34;&gt;Notability&lt;/a&gt;, and then I upload it right from my iPad to Roam.&lt;/p&gt;
-&lt;p&gt;This map is in my page for Castle Never:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The little blue &amp;ldquo;8&amp;rdquo; on the upper left of the map is versions. Information rarely comes all at once in D&amp;amp;D; it usually comes in trickles. As I learned more about the castle, I revised the map and added a new version to it, so that I can still see previous versions and what I thought the map was like when we first explored it.&lt;/p&gt;
-&lt;p&gt;At this stage, I also add any tags I forgot to add during the session.&lt;/p&gt;
-&lt;h3 id=&#34;reviewing-quests-and-questions&#34;&gt;Reviewing quests and questions&lt;/h3&gt;
-&lt;p&gt;After I go through the session notes, I go to the page called &lt;code&gt;D&amp;amp;D/Quests and Questions&lt;/code&gt;, where I keep a running list of all the open quest hooks and any unanswered questions I might have.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Not everything on this page is meant to be resolved, but I find it comforting to track everything anyway, in case I happen to find myself in a city with nothing in particular to do. I mark these with a checkbox (&lt;code&gt;{{[[TODO]]}})&lt;/code&gt; in Roam) and tick the box when one is resolved. Roam lets me filter out the resolved quests so I only see things that are outstanding.&lt;/p&gt;
-&lt;p&gt;This is where I get the most value out of taking notes. It&amp;rsquo;s at this point where I&amp;rsquo;ll add our progress towards quests, make connections between two seemingly disconnected quests, and situate what I&amp;rsquo;ve just learned in the session within the broader context of the world and the campaign. I also review and update items on the Next Actions and Waiting For.&lt;/p&gt;
-&lt;p&gt;This is the part that takes the longest, but it&amp;rsquo;s also what most prepares me for when I get to the table again next week.&lt;/p&gt;
-&lt;h2 id=&#34;tying-it-all-together&#34;&gt;Tying it all together&lt;/h2&gt;
-&lt;p&gt;I use a &lt;code&gt;D&amp;amp;D/Campaign&lt;/code&gt; page as my landing page for this campaign. It includes &lt;code&gt;D&amp;amp;D/Quests and Questions&lt;/code&gt; as well as a list of all sessions to date, so that I always know what happened and when.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201214-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;why-do-i-take-notes-for-a-game&#34;&gt;Why do I take notes for a game?&lt;/h2&gt;
-&lt;p&gt;You might be wondering why I go to so much trouble. Why do I take complicated notes about something I do &amp;ldquo;just&amp;rdquo; for fun?&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Taking notes helps me offload this all safely from my brain.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I take my fun as seriously as I take my work.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/code>&lt;/pre>&lt;p>Here&amp;rsquo;s an example of the page for an NPC:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/npc-sample.png" alt="An NPC page in my campaign">&lt;/p>
+&lt;p>If my DM has given us character art, I include it in the page.&lt;/p>
+&lt;p>And here&amp;rsquo;s an example of a page for a location:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/twisted-fane-location-example.png" alt="Location page: Twisted Fane">&lt;/p>
+&lt;p>For this page, I used a plugin called &lt;a href="https://github.com/valentine195/obsidian-leaflet-plugin">Obsidian Leaflet&lt;/a>, which lets me add maps to my notes! In this case, my DM gave us this map of the structure as a guide, but during combats we didn&amp;rsquo;t use a map. To keep myself oriented between games, I added red pawprint pins where we had spotted or fought monsters, green thumbtacks to mark where we&amp;rsquo;d ended sessions, and green markers where we had spotted allies. I also like to add links to monsters or sessions on the pins/markers so that I can jump to those pages quickly if I need to.&lt;/p>
+&lt;h3 id="history">History&lt;/h3>
+&lt;p>To keep historical events straight in my head, especially since we tend to discover them out of sequence, I use the &lt;a href="https://github.com/Darakah/obsidian-timelines">Obsidian Timelines plugin&lt;/a>, which lets me create pages like this:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/obsidian-timeline-for-dnd.png" alt="Obsidian Timeline in my game">&lt;/p>
+&lt;p>by using this code in the timeline page:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>``&lt;span style="color:#e6db74">`timeline
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">fr
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">\`&lt;/span>``
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>(without the backtick) and this for every event that I want to include:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>date: [2021-06-23]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tags: [timeline, fr]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">span&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;ob-timelines&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data-date&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;1443-00&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data-title&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;Xionerys is born&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data-class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;orange&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data-img &lt;/span>&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;assets/xionerys.jpg&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data-type&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;range&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data-end&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;1443-00&amp;#39;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Xionerys is born in Calimshan.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">span&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Using this method, I&amp;rsquo;ve been able to call out discrepancies in what two different NPCs told us and figure out that one was lying&amp;ndash; or at least misinformed.&lt;/p>
+&lt;h3 id="replace-all">Replace all&lt;/h3>
+&lt;p>When I inevitably get a fantasy name wrong, having pages as flat .md files is great because I can do a find and replace on ALL mentions of a certain NPC name/place I&amp;rsquo;ve misspelled (those fantasy names!). I do this with my usual code/text editor, VSCode, just because I usually already have it up, but you can do it using terminal commands. If it&amp;rsquo;s just the name of a page, updating the spelling in Obsidian changes it everywhere else it&amp;rsquo;s linked to as well, which is useful.&lt;/p>
+&lt;h3 id="updating-open-loops">Updating open loops&lt;/h3>
+&lt;p>To finish processing the last session, I update Open Loops: I add new points or update existing points in Quests and Questions, and then add tasks to Agenda that I want to do in the next session. I find that it&amp;rsquo;s best to do it after a game because it&amp;rsquo;s a week, sometimes more, between games and there&amp;rsquo;s a high likelihood I&amp;rsquo;ll have forgotten what I want to do by then!&lt;/p>
+&lt;h3 id="publish">Publish&lt;/h3>
+&lt;p>I also publish my D&amp;amp;D notes, just for transparency. My DM has joked that he looks in there sometimes when he&amp;rsquo;s forgotten something. Even if he doesn&amp;rsquo;t, I enjoy having my notes so easily accessible. I often navigate there myself when I have a spare moment, remembering old sessions and thinking about some loose threads. If you&amp;rsquo;re interested, &lt;a href="https://notes.nicolevanderhoeven.com/TTRPGs/Order+of+the+Wandering+Mind/World">here they are&lt;/a>! Just be warned that the plugins won&amp;rsquo;t work in the web version, so sometimes you&amp;rsquo;ll come across bits of code that didn&amp;rsquo;t render. I also migrated these notes from Roam Research, and haven&amp;rsquo;t gone back and updated all the older notes.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>Since I&amp;rsquo;ve switched to Obsidian, it&amp;rsquo;s been an indispensable part of my workflow for D&amp;amp;D. Without it, I&amp;rsquo;d be just another murder hobo with no notes. And no DM wants that!&lt;/p></description></item><item><title>Downloading files uploaded to Roam Research for use with Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</link><pubDate>Wed, 02 Jun 2021 00:27:59 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210602-downloading-files-from-roam/</guid><description>&lt;p>If you&amp;rsquo;ve recently transitioned from &lt;a href="https://roamresearch.com">Roam Research&lt;/a> to &lt;a href="https://obsidian.md">Obsidian&lt;/a>, you might run into a few issues, even after you&amp;rsquo;ve run the &amp;ldquo;Markdown format importer&amp;rdquo; core plugin. One of the most annoying ones that I ran into was that files uploaded to Roam (images, pdfs, etc.) are automatically uploaded to &lt;a href="https://firebase.google.com/">Google Firebase&lt;/a>.&lt;/p>
+&lt;p>Roam assets are linked to in the Markdown files like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>![](https://firebasestorage.googleapis.com/v0/b/firescript-471a1.appspot.com/o/imgs%2Fapp%2FMyNotes%2FxRFXx7l-ZK.png?alt=media&lt;span style="color:#960050;background-color:#1e0010">&amp;amp;&lt;/span>token=1e03b680-5472-33dc-9b06-a127301af37f)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now, since Roam relies on security by obscurity on this front, the links to your assets will still be accessible in your Obsidian vault, and they&amp;rsquo;ll still render correctly. However, I still think it&amp;rsquo;s worth downloading the files for three reasons:&lt;/p>
+&lt;ul>
+&lt;li>If you don&amp;rsquo;t intend to use Roam anymore and cancel your subscription, they will likely delete those assets at some point, leaving you with a lot of broken links in Obsidian.&lt;/li>
+&lt;li>Part of Obsidian&amp;rsquo;s appeal is that you own your assets. Not so if they&amp;rsquo;re on someone else&amp;rsquo;s server.&lt;/li>
+&lt;li>You can&amp;rsquo;t access Firebase files without an internet connection.&lt;/li>
+&lt;/ul>
+&lt;p>So, instead, you want to download the contents of that link and replace it in your notes with something like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>![](assets/newfile.png)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>That way, you&amp;rsquo;ll have full control over all your assets, and you won&amp;rsquo;t be dependent on those assets being stored on Firebase by Roam.&lt;/p>
+&lt;p>To fix this, I wrote a Python script that will:&lt;/p>
+&lt;ul>
+&lt;li>Go through every file and every folder within a specified root vault directory&lt;/li>
+&lt;li>Look for links to Google Firebase&lt;/li>
+&lt;li>Download all assets from Firebase to a local folder (&lt;code>/assets&lt;/code> by default), using the timestamp and index number as a filename&lt;/li>
+&lt;li>Replace the Firebase links in your vault with links to the newly downloaded files, accounting for PDFs, whose links are formatted differently in Roam as &lt;code>{{ pdf: ... }}&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>Before you run this script, I highly recommend backing up your vault or trying this out on a dummy vault.&lt;/p>
+&lt;script src="https://gist.github.com/nicolevanderhoeven/b25c97a8a68ea97e7bdf5ee674fdaec4.js">&lt;/script>
+&lt;p>After downloading and saving the script, run &lt;code>python3 downloadfirebase.py&lt;/code> on your terminal.&lt;/p>
+&lt;p>This worked really well for me, and I can breathe a little more easily now that my vault is self-contained.&lt;/p></description></item><item><title>Readwise to Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</link><pubDate>Sat, 06 Feb 2021 09:55:36 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</guid><description>
+&lt;meta property=“og:image” content="/assets/20210206-06-readwise-to-obsidian.png" />
+&lt;meta property=”og:image:width” content=”1200″ />
+&lt;meta property=”og:image:height” content=”628″ />
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png" alt="Readwise to Obsidian workflow">&lt;/p>
+&lt;p>&lt;em>August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href="https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work">Readwise Official&lt;/a>, which is available now! I now recommend &lt;a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/">this method&lt;/a> over the one outlined in this article.&lt;/em>&lt;/p>
+&lt;p>I&amp;rsquo;m about 9 months into heavily using &lt;a href="https://roamresearch.com">Roam Research&lt;/a> as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href="https://obsidian.md">Obsidian&lt;/a> is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em>seriously&lt;/em> attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p>
+&lt;p>Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p>
+&lt;p>&lt;a href="https://readwise.io/nicole">Readwise&lt;/a> is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p>
+&lt;ul>
+&lt;li>Instapaper (for highlights and notes on online articles)&lt;/li>
+&lt;li>Amazon Kindle (for highlights on ebooks)&lt;/li>
+&lt;li>Twitter (for interesting tweets)&lt;/li>
+&lt;li>(Readwise) Web highlighter (for straight highlights off any webpage)&lt;/li>
+&lt;li>Airr (for quotes and notes from audio podcasts)&lt;/li>
+&lt;/ul>
+&lt;p>Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&amp;rsquo;s what that looks like when it gets pulled into my Daily Note:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-01-readwiseimportsinroam.png" alt="Tweet, podcast, and book notes pulled into Roam Research via Readwise">&lt;/p>
+&lt;p>Readwise also pulls metadata into Roam, depending on the source. Here&amp;rsquo;s what the page for the book &amp;ldquo;Ready Player Two&amp;rdquo; looks like in Roam:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png" alt="Ready Player Two book notes in Roam, imported via Readwise">&lt;/p>
+&lt;p>Readwise integration is an &lt;em>essential&lt;/em> feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p>
+&lt;p>That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em>have&lt;/em> an Obsidian integration.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png" alt="Readwise doesn&amp;rsquo;t automatically export to Obsidian">&lt;/p>
+&lt;p>Source: &lt;a href="https://readwise.io/export">Readwise Exports&lt;/a>&lt;/p>
+&lt;p>The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p>
+&lt;h2 id="readwise2directory">readwise2directory&lt;/h2>
+&lt;p>I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found &lt;a href="https://github.com/nicrivard/readwise2directory">this Python project on GitHub&lt;/a> by &lt;a href="https://github.com/nicrivard">nicrivard&lt;/a>, who had already done that! Why rebuild the wheel? His solution already did what I needed:&lt;/p>
+&lt;ul>
+&lt;li>It connects to Readwise via your Readwise access token&lt;/li>
+&lt;li>Checks for new highlights or updated ones&lt;/li>
+&lt;li>Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)&lt;/li>
+&lt;/ul>
+&lt;p>It even pulls in highlight tags from Readwise, if you&amp;rsquo;ve created any (which I haven&amp;rsquo;t).&lt;/p>
+&lt;p>I &lt;a href="https://github.com/nicolevanderhoeven/readwise2directory">forked the project here&lt;/a> to add just a few minor touches:&lt;/p>
+&lt;ul>
+&lt;li>Changed date format of imported notes&lt;/li>
+&lt;li>Added a section to output the import date to a comment block (an &lt;a href="https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295">Obsidian Insider build feature&lt;/a>) rather than YAML frontmatter, so that the date would actually be linked and backlinked.&lt;/li>
+&lt;li>Customized tags and filename for my use&lt;/li>
+&lt;li>Sort imports into folders within my Obsidian vault depending on source (&lt;code>Article/&lt;/code>, &lt;code>Tweet/&lt;/code>, and so on).&lt;/li>
+&lt;/ul>
+&lt;p>This works out pretty well. Here&amp;rsquo;s an example of an import from the podcast app &lt;a href="https://airr.io">Airr&lt;/a> into Obsidian, in Edit mode.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-04-airrtoobsidian.png" alt="readwise2directory import from Airr into Obsidian">&lt;/p>
+&lt;p>It&amp;rsquo;s placed within my &lt;code>Podcast&lt;/code> folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-05-airrinobsidian_preview.png" alt="Preview mode of imported Airr quote in Obsidian">&lt;/p>
+&lt;p>So that works out well, except for one thing: firing off the script that does all this is still manual.&lt;/p>
+&lt;h2 id="scheduling-the-script">Scheduling the script&lt;/h2>
+&lt;p>Luckily, it&amp;rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&amp;rsquo;m on macOS, so I used a built-in utility called &lt;code>cron&lt;/code>.&lt;/p>
+&lt;h3 id="give-cron-full-system-access">Give cron full system access&lt;/h3>
+&lt;p>Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on my laptop and add &lt;code>/usr/bin/cron&lt;/code> to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p>
+&lt;h3 id="open-crontab">Open crontab&lt;/h3>
+&lt;p>Then, from my terminal, I ran the command &lt;code>env EDITOR=nano crontab -e&lt;/code> to open up the list of cronjobs I had currently.&lt;/p>
+&lt;h3 id="set-a-schedule">Set a schedule&lt;/h3>
+&lt;p>I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>* * * * * command
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where the five asterisks correspond to:&lt;/p>
+&lt;ul>
+&lt;li>minute&lt;/li>
+&lt;li>hour&lt;/li>
+&lt;li>day of the month&lt;/li>
+&lt;li>month&lt;/li>
+&lt;li>day of the week&lt;/li>
+&lt;/ul>
+&lt;p>In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">0&lt;/span> * * * * cd /Users/nic/git/readwise2directory/ &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="python-issues">Python issues&lt;/h4>
+&lt;p>I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code>which python3&lt;/code> to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code>cd&lt;/code> to the project directory, for some reason.&lt;/p>
+&lt;p>While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p>
+&lt;p>Once I added the schedule as in the example above, though, it worked a treat!&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>This solution did require some setup at the beginning, but doesn&amp;rsquo;t need any maintenance once it&amp;rsquo;s going. I&amp;rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&amp;rsquo;ll all be waiting for me in my Obsidian vault whenever I&amp;rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!&lt;/p>
+&lt;p>&lt;em>Note: This post contains an affiliate link for &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href="https://nicolevanderhoeven.com/ethics/">My Ethics Statement&lt;/a> to see my standards for promotions.&lt;/em>&lt;/p></description></item><item><title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title><link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link><pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid><description>&lt;p>Listen to the audio version of this blog post here:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;p>I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href="https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy">this very excellent video&lt;/a> by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p>
+&lt;p>Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href="https://roamresearch.com">Roam Research&lt;/a>.&lt;/p>
+&lt;h2 id="install-yinote-chrome-extension">Install YiNote Chrome extension&lt;/h2>
+&lt;p>I use a free app called &lt;a href="https://yinote.co/">YiNote&lt;/a> to take video notes in particular. I use &lt;a href="https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf">their Chrome extension&lt;/a>.&lt;/p>
+&lt;h2 id="take-notes">Take Notes&lt;/h2>
+&lt;p>I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s what it looks like while taking notes:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-01.png" alt="">&lt;/p>
+&lt;h2 id="export-yinote-notes">Export YiNote notes&lt;/h2>
+&lt;p>After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p>
+&lt;p>I click the Export as Markdown button.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-02.png" alt="">&lt;/p>
+&lt;p>That lets me save a &lt;code>.md&lt;/code> file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p>
+&lt;h2 id="run-reformatter-script">Run reformatter script&lt;/h2>
+&lt;p>This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/&lt;/span>#installation&lt;span style="color:#75715e">&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- # &lt;/span>[&lt;span style="color:#f92672">GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- ## &lt;/span>[&lt;span style="color:#f92672">1:19&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>The scheduler is what makes sure the Goroutines run concurrently.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- ## &lt;/span>[&lt;span style="color:#f92672">1:29&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p>
+&lt;p>So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p>
+&lt;script src="https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js">&lt;/script>
+&lt;p>The script results in an output file that is better formatted for Roam.&lt;/p>
+&lt;h2 id="import-resulting-file-to-roam">Import resulting file to Roam&lt;/h2>
+&lt;p>On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-03.png" alt="">&lt;/p>
+&lt;h2 id="thats-it">That&amp;rsquo;s it!&lt;/h2>
+&lt;p>I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p></description></item><item><title>How I use Roam Research for D&amp;D: Session Notes</title><link>https://nicolevanderhoeven.github.io/blog/20201214-roam-for-dnd/</link><pubDate>Mon, 14 Dec 2020 20:13:13 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201214-roam-for-dnd/</guid><description>&lt;p>In case you thought this site was all about performance and load testing, surprise! It&amp;rsquo;s not.&lt;/p>
+&lt;p>If you&amp;rsquo;ve talked to me personally for longer than ten minutes in the last year, there&amp;rsquo;s a pretty good chance I&amp;rsquo;ve mentioned &lt;a href="https://roamresearch.com/">Roam Research&lt;/a>, or the note-taking and learning methodology called &lt;a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten&lt;/a>. Sorrynotsorry. I&amp;rsquo;ve been obsessed since I discovered it.&lt;/p>
+&lt;p>To say Roam Research is a note-taking device is like saying Bitcoin is currency: yes, it IS that, but also so much more. To me, it&amp;rsquo;s my second brain. It&amp;rsquo;s a record of what I know and what I want to know, and sometimes even things I don&amp;rsquo;t know yet. The real reason that Roam and the Zettelkasten idea resonated with me so much is that I can use it a lot for my work. But I&amp;rsquo;ve discovered another use case that Roam is perfect for: Dungeons &amp;amp; Dragons.&lt;/p>
+&lt;p>This became longer than I thought it would be, so I&amp;rsquo;ll just talk about how I handle Session Notes in particular.&lt;/p>
+&lt;h2 id="starting-a-new-session">Starting a new session&lt;/h2>
+&lt;p>Everything starts with sitting down to play D&amp;amp;D. I write a log of events and information that comes out while I&amp;rsquo;m playing. Here&amp;rsquo;s what a new session log looks like:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-03.png" alt="">&lt;/p>
+&lt;p>I preface pages in this campaign with &lt;code>D&amp;amp;D/&lt;/code> to make it a separate &lt;a href="https://forum.roamresearch.com/t/namespaces-how-do-they-work/276">namespace&lt;/a>. A namespace is like a folder, and I use it mainly because I have two D&amp;amp;D campaigns, both of which would have the page &lt;code>Campaign&lt;/code>, &lt;code>Characters&lt;/code>, &lt;code>Locations&lt;/code>, etc, even though the two campaigns are on different worlds. To keep them separate, and to keep from getting mixed up (&lt;em>Was Gloomtoes an NPC in this campaign or that one?&lt;/em>) I use different namespaces for each campaign.&lt;/p>
+&lt;p>I add the real-world date in the page name, and then an in-game date reference. The in-game date reference is useful for keeping track of time since I might go a couple weeks (okay, maybe &lt;em>one&lt;/em> week; let&amp;rsquo;s not get too crazy) without playing this campaign, but no time in the in-game world has elapsed. Then, I end the page name with a descriptive title, which I always end up changing after the session. Sometimes I&amp;rsquo;ll title a page &lt;code>Exploring Castle Never&lt;/code>, but then we end up getting carried away in another part of the city instead. That&amp;rsquo;s okay - when I change a page name, Roam then updates all references to that page that I&amp;rsquo;ve made from other pages.&lt;/p>
+&lt;p>I don&amp;rsquo;t type all this out manually - I use a &lt;a href="https://textexpander.com/">TextExpander&lt;/a> template so that to start a new session, all I have to do is create a page in Roam, type &lt;code>;s.dnd&lt;/code> and that is automatically replaced with prompts for a few fields.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>Date&lt;/code>: This is the real-world date of when I played this particular session.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Tags&lt;/code>: When I first create session notes, this is prepopulated with &lt;code>#TVZ&lt;/code>, which stands for &lt;em>To Verzettelen&lt;/em>. It&amp;rsquo;s just my personal way of marking a note as one that needs to be processed.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Location&lt;/code>: Here I note down the in-game places that my character visited this session. Usually I&amp;rsquo;ll just put city names, but I sometimes also split locations up into districts within a city or rooms within a dungeon.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Characters&lt;/code>: I&amp;rsquo;ve found it helpful to keep track of which characters (players and NPCs) I&amp;rsquo;ve come across in this session.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Session Summary&lt;/code>: This is a section I leave blank when the session is initially created.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="filling-in-the-session-log">Filling in the session log&lt;/h2>
+&lt;p>The rest of the page, after &lt;code>Session Summary&lt;/code>, is where I&amp;rsquo;ll spend most of the time writing. I just write whatever comes to mind and whatever I have time to write, in bullet form. I don&amp;rsquo;t worry about formatting or grammar or linking to other pages. I just type all my thoughts out in plain text.&lt;/p>
+&lt;h3 id="hp">HP&lt;/h3>
+&lt;p>I like to play healers, which means I care a lot about how everyone in the party is doing so that I can figure out who best needs healing. &lt;code>{{[[table]]}}&lt;/code> in Roam lets me create a custom table, and I have a &lt;code>;hp&lt;/code> snippet in TextExpander that recreates this table, with all the names of the people currently in my party, so that I just worry about filling in the values. Sometimes I still get it wrong, or miss a bit of damage that the DM calls out, but it&amp;rsquo;s enough to give me an idea of who needs heals.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-04.png" alt="">&lt;/p>
+&lt;p>I also write down initiative orders, the defenses/vulnerabilities/immunities of monsters we face, descriptions of NPCs we meet, suspicions or questions I might have&amp;hellip; basically anything and everything that comes to mind. Session time is pretty much a brain dump, with no formatting.&lt;/p>
+&lt;h3 id="equipment">Equipment&lt;/h3>
+&lt;p>If I acquire a new item during a session, I&amp;rsquo;ll tag that line with &lt;code>#[[D&amp;amp;D/Carrying]]&lt;/code>. This lets me stay on the Session Notes page while still maintaining an up-to-date record of what I&amp;rsquo;m carrying.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-05.png" alt="">&lt;/p>
+&lt;p>A tag in Roam is the same as a page, so when I click on that link, it takes me to the &lt;code>D&amp;amp;D/Carrying&lt;/code> page, which conveniently also shows me all the references to that page from other pages.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-06.png" alt="">&lt;/p>
+&lt;p>Roam shows me not just the page, but the exact block where I made the reference to &lt;code>D&amp;amp;D/Carrying&lt;/code>, so it&amp;rsquo;s easy to see at a glance what I have and where I got it.&lt;/p>
+&lt;h3 id="next-actions-and-waiting-for">Next Actions and Waiting For&lt;/h3>
+&lt;p>I use David Allen&amp;rsquo;s &lt;a href="https://gettingthingsdone.com/">GTD&lt;/a> methodology in D&amp;amp;D too. When I want to remember to do something later, I tag it with &lt;code>#[[D&amp;amp;D/Agenda]]&lt;/code> and &lt;code>#[[Next Actions]]&lt;/code> or &lt;code>#[[Waiting For]]&lt;/code>. This presents me with the same opportunities as &lt;code>D&amp;amp;D/Carrying&lt;/code>, where I can see references to those pages later as well.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-07.png" alt="">&lt;/p>
+&lt;h2 id="processing-the-session">Processing the session&lt;/h2>
+&lt;p>Sometime after the session, I&amp;rsquo;ll go and fill in the metadata from my template, including the session summary, which is just a paragraph or two describing what happened in the session at a high level. This is mainly to jog my memory in the next session, when I&amp;rsquo;ve already forgotten what we did in the previous one.&lt;/p>
+&lt;p>Here&amp;rsquo;s what it looks like, all filled in:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-02.png" alt="">&lt;/p>
+&lt;h3 id="adding-links-and-fleshing-out-pages">Adding links and fleshing out pages&lt;/h3>
+&lt;p>I then go back through the notes themselves and add turn any people, places, or interesting objects that I mention into links. In Roam, that&amp;rsquo;s a matter of highlighting them and hitting &lt;code>[[&lt;/code>. Then, I click on the page I&amp;rsquo;ve just created and try to add information that I&amp;rsquo;ve learned. This isn&amp;rsquo;t strictly necessary, since all mentions of that page will show up as a linked reference, but it&amp;rsquo;s an opportunity to consolidate my information on that subject and see how it fits into what else I&amp;rsquo;ve written there.&lt;/p>
+&lt;p>Here&amp;rsquo;s a page for an NPC:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-09.png" alt="">&lt;/p>
+&lt;p>Having these links means that when an NPC says &amp;ldquo;I&amp;rsquo;m from Leilon&amp;rdquo;, I can type &lt;code>Leilon&lt;/code> into Roam:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-08.png" alt="">&lt;/p>
+&lt;p>&amp;hellip; and say, &amp;ldquo;Oh, Leilon. I heard you had a dragon problem there recently. Did your family get out okay?&amp;rdquo; Boom! Instant advantage on a Diplomacy check.&lt;/p>
+&lt;p>Sometimes we&amp;rsquo;re in a dungeon with many rooms, and this is the point where I draw a quick map on my iPad Pro and Apple Pencil using &lt;a href="https://www.gingerlabs.com/">Notability&lt;/a>, and then I upload it right from my iPad to Roam.&lt;/p>
+&lt;p>This map is in my page for Castle Never:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-10.png" alt="">&lt;/p>
+&lt;p>The little blue &amp;ldquo;8&amp;rdquo; on the upper left of the map is versions. Information rarely comes all at once in D&amp;amp;D; it usually comes in trickles. As I learned more about the castle, I revised the map and added a new version to it, so that I can still see previous versions and what I thought the map was like when we first explored it.&lt;/p>
+&lt;p>At this stage, I also add any tags I forgot to add during the session.&lt;/p>
+&lt;h3 id="reviewing-quests-and-questions">Reviewing quests and questions&lt;/h3>
+&lt;p>After I go through the session notes, I go to the page called &lt;code>D&amp;amp;D/Quests and Questions&lt;/code>, where I keep a running list of all the open quest hooks and any unanswered questions I might have.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-11.png" alt="">&lt;/p>
+&lt;p>Not everything on this page is meant to be resolved, but I find it comforting to track everything anyway, in case I happen to find myself in a city with nothing in particular to do. I mark these with a checkbox (&lt;code>{{[[TODO]]}})&lt;/code> in Roam) and tick the box when one is resolved. Roam lets me filter out the resolved quests so I only see things that are outstanding.&lt;/p>
+&lt;p>This is where I get the most value out of taking notes. It&amp;rsquo;s at this point where I&amp;rsquo;ll add our progress towards quests, make connections between two seemingly disconnected quests, and situate what I&amp;rsquo;ve just learned in the session within the broader context of the world and the campaign. I also review and update items on the Next Actions and Waiting For.&lt;/p>
+&lt;p>This is the part that takes the longest, but it&amp;rsquo;s also what most prepares me for when I get to the table again next week.&lt;/p>
+&lt;h2 id="tying-it-all-together">Tying it all together&lt;/h2>
+&lt;p>I use a &lt;code>D&amp;amp;D/Campaign&lt;/code> page as my landing page for this campaign. It includes &lt;code>D&amp;amp;D/Quests and Questions&lt;/code> as well as a list of all sessions to date, so that I always know what happened and when.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201214-01.png" alt="">&lt;/p>
+&lt;h2 id="why-do-i-take-notes-for-a-game">Why do I take notes for a game?&lt;/h2>
+&lt;p>You might be wondering why I go to so much trouble. Why do I take complicated notes about something I do &amp;ldquo;just&amp;rdquo; for fun?&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Taking notes helps me offload this all safely from my brain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>I take my fun as seriously as I take my work.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

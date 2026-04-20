@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>infrastructure as code on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/infrastructure-as-code/</link>
-    <description>Recent content in infrastructure as code on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 09 Apr 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/infrastructure-as-code/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Testing Kubernetes and infrastructure as code with Sid Palas (k6 Office Hours)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</link>
-      <pubDate>Fri, 09 Apr 2021 21:53:09 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</guid>
-      <description>&lt;p&gt;For this week&amp;rsquo;s k6 Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I had &lt;a href=&#34;https://twitter.com/sidpalas&#34;&gt;Sid Palas&lt;/a&gt; from &lt;a href=&#34;https://www.youtube.com/channel/UC4MdpjzjPuop_qWNAvR23JA&#34;&gt;DevOps Directive&lt;/a&gt; come on board to talk about what Kubernetes is, how it relates to Infrastructure as Code, and why either of those should matter to testers.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/bYdDRZqRSHA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Infrastructure as Code on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/infrastructure-as-code/</link><description>Recent content in Infrastructure as Code on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 09 Apr 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/infrastructure-as-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing Kubernetes and infrastructure as code with Sid Palas (k6 Office Hours)</title><link>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</link><pubDate>Fri, 09 Apr 2021 21:53:09 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210409-koh-sid/</guid><description>&lt;p>For this week&amp;rsquo;s k6 Office Hours, &lt;a href="https://simme.dev">Simme&lt;/a> and I had &lt;a href="https://twitter.com/sidpalas">Sid Palas&lt;/a> from &lt;a href="https://www.youtube.com/channel/UC4MdpjzjPuop_qWNAvR23JA">DevOps Directive&lt;/a> come on board to talk about what Kubernetes is, how it relates to Infrastructure as Code, and why either of those should matter to testers.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bYdDRZqRSHA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

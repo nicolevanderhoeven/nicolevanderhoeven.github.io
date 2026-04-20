@@ -1,156 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>metrics on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/metrics/</link>
-    <description>Recent content in metrics on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/metrics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
-      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link>
-      <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid>
-      <description>&lt;p&gt;Today I gave &lt;a href=&#34;https://sketch-your-mind.com/2025/sessions/nicole/&#34;&gt;a talk&lt;/a&gt; at my friend Zsolt Viczián&amp;rsquo;s &lt;a href=&#34;https://sketchyourmind.com/&#34;&gt;Sketch Your Mind Conference&lt;/a&gt; about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li&gt;
-&lt;li&gt;Adopting a visual Zettelkasten-like approach&lt;/li&gt;
-&lt;li&gt;Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li&gt;
-&lt;li&gt;Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li&gt;
-&lt;li&gt;Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li&gt;
-&lt;li&gt;Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href=&#34;https://github.com/nicolevanderhoeven/obsidian-grafana&#34;&gt;here&amp;rsquo;s the repo&lt;/a&gt; for anyone interested in replicating it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link>
-      <pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid>
-      <description>&lt;p&gt;Today I presented at the &lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht, the Netherlands. I gave a talk titled &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link>
-      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
-&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
-      <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; and I interview &lt;a href=&#34;https://ryanperry.io&#34;&gt;Ryan Perry&lt;/a&gt;, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&amp;rsquo;s resources.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/pzNRvMQzrJ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Pyroscope &lt;a href=&#34;https://grafana.com/docs/pyroscope/&#34;&gt;docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Pyroscope &lt;a href=&#34;https://pyroscope.io/&#34;&gt;site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Pyroscope &lt;a href=&#34;https://github.com/grafana/pyroscope&#34;&gt;repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Weigh in on the &lt;a href=&#34;https://github.com/open-telemetry/oteps/pull/239&#34;&gt;OpenTelemetry Profiling Data Model&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
-      <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, my colleagues &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>What is Grafana Agent? (Grafana Office Hours #16)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link>
-      <pubDate>Fri, 20 Oct 2023 12:55:11 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid>
-      <description>&lt;p&gt;What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/i0mA0w_MCPQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</link>
-      <pubDate>Fri, 13 Oct 2023 10:56:15 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</guid>
-      <description>&lt;p&gt;Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks to me and my coworker &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/EYR5lQJ_kG8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Metrics on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/metrics/</link><description>Recent content in Metrics on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/metrics/index.xml" rel="self" type="application/rss+xml"/><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link><pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid><description>&lt;p>Today I presented at &lt;a href="https://ncrafts.io/">Newcrafts&lt;/a> in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> in London and at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025&lt;/a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p></description></item><item><title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link><pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid><description>&lt;p>Today I gave &lt;a href="https://sketch-your-mind.com/2025/sessions/nicole/">a talk&lt;/a> at my friend Zsolt Viczián&amp;rsquo;s &lt;a href="https://sketchyourmind.com/">Sketch Your Mind Conference&lt;/a> about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zmgqMZi6QL8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p>
+&lt;ul>
+&lt;li>Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li>
+&lt;li>Adopting a visual Zettelkasten-like approach&lt;/li>
+&lt;li>Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li>
+&lt;li>Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li>
+&lt;li>Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li>
+&lt;li>Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li>
+&lt;/ul>
+&lt;p>I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href="https://github.com/nicolevanderhoeven/obsidian-grafana">here&amp;rsquo;s the repo&lt;/a> for anyone interested in replicating it.&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link><pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid><description>&lt;p>Today I presented at the &lt;a href="https://www.dutchcloudnativeday.nl">Dutch Cloud Native Day 2025&lt;/a> in Utrecht, the Netherlands. I gave a talk titled &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link><pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London&lt;/a> called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p>
+&lt;p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x6EKTCAWtn8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title><link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link><pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</guid><description>&lt;p>My friend &lt;a href="https://javaducky.com">Paul Balogh&lt;/a> and I interview &lt;a href="https://ryanperry.io">Ryan Perry&lt;/a>, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&amp;rsquo;s resources.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pzNRvMQzrJ0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;ul>
+&lt;li>Pyroscope &lt;a href="https://grafana.com/docs/pyroscope/">docs&lt;/a>&lt;/li>
+&lt;li>Pyroscope &lt;a href="https://pyroscope.io/">site&lt;/a>&lt;/li>
+&lt;li>Pyroscope &lt;a href="https://github.com/grafana/pyroscope">repo&lt;/a>&lt;/li>
+&lt;li>Weigh in on the &lt;a href="https://github.com/open-telemetry/oteps/pull/239">OpenTelemetry Profiling Data Model&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title><link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link><pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid><description>&lt;p>In this episode of Grafana Office Hours, my colleagues &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a>, &lt;a href="https://javaducky.com">Paul Balogh&lt;/a>, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8Z67vAkv3J0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>What is Grafana Agent? (Grafana Office Hours #16)</title><link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link><pubDate>Fri, 20 Oct 2023 12:55:11 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid><description>&lt;p>What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/i0mA0w_MCPQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="useful-links">Useful links&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/grafana/agent">Grafana Agent repo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/agent/">Documentation on Grafana Agent&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</title><link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</link><pubDate>Fri, 13 Oct 2023 10:56:15 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</guid><description>&lt;p>Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks to me and my coworker &lt;a href="https://javaducky.com">Paul Balogh&lt;/a> about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EYR5lQJ_kG8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/">Docs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/">Blog post&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

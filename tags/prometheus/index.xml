@@ -1,357 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>prometheus on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/prometheus/</link>
-    <description>Recent content in prometheus on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 05 Nov 2025 03:07:38 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link>
-      <pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://oredev.org/&#34;&gt;Øredev 2025&lt;/a&gt; in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p&gt;
-&lt;p&gt;The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p&gt;
-&lt;p&gt;In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here are some resources mentioned in the talk:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can play the game Spice Runner &lt;a href=&#34;https://nicole.to/spicegame&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicerepo&#34;&gt;The spice-runner repo&lt;/a&gt; containing everything you need to know about how to deploy it yourself&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spiceslides&#34;&gt;The slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicedashboard&#34;&gt;The Spice Runner dashboard&lt;/a&gt; for observing the application&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/spice-runner&#34;&gt;More about Spice Runner&lt;/a&gt;: architecture, tech stack, and what it demonstrates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG&#34; alt=&#34;Photo of me at Øredev 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link>
-      <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid>
-      <description>&lt;p&gt;Today I gave &lt;a href=&#34;https://sketch-your-mind.com/2025/sessions/nicole/&#34;&gt;a talk&lt;/a&gt; at my friend Zsolt Viczián&amp;rsquo;s &lt;a href=&#34;https://sketchyourmind.com/&#34;&gt;Sketch Your Mind Conference&lt;/a&gt; about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li&gt;
-&lt;li&gt;Adopting a visual Zettelkasten-like approach&lt;/li&gt;
-&lt;li&gt;Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li&gt;
-&lt;li&gt;Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li&gt;
-&lt;li&gt;Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li&gt;
-&lt;li&gt;Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href=&#34;https://github.com/nicolevanderhoeven/obsidian-grafana&#34;&gt;here&amp;rsquo;s the repo&lt;/a&gt; for anyone interested in replicating it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>State of the Observability Databases (Grafana Office Hours #30)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link>
-      <pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid>
-      <description>&lt;p&gt;In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6Ph5nvicm6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link>
-      <pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; and I interview &lt;a href=&#34;https://ryanperry.io&#34;&gt;Ryan Perry&lt;/a&gt;, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&amp;rsquo;s resources.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/pzNRvMQzrJ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Pyroscope &lt;a href=&#34;https://grafana.com/docs/pyroscope/&#34;&gt;docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Pyroscope &lt;a href=&#34;https://pyroscope.io/&#34;&gt;site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Pyroscope &lt;a href=&#34;https://github.com/grafana/pyroscope&#34;&gt;repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Weigh in on the &lt;a href=&#34;https://github.com/open-telemetry/oteps/pull/239&#34;&gt;OpenTelemetry Profiling Data Model&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Entendiendo los sintéticos (Café con Grafana #008)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link>
-      <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fXNSqrUtiJo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Lee la documentación sobre el monitoreo de sintéticos &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/&#34;&gt;en Grafana Cloud aquí&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>AI Microscopy with Grafana, Theia Scientific, and Volkov Labs (Grafana Office Hours #24)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</link>
-      <pubDate>Fri, 15 Dec 2023 17:42:58 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</guid>
-      <description>&lt;p&gt;What do you get when you combine AI microscopy with Grafana? Well, in this case, you get the Theiascope platform: an application for doing real-time analysis on microscopy images using a combination of Grafana, Prometheus, and PostgreSQL/Timescale. The Theiascope platform was a collaboration between Dr. Christopher Field, Co-Founder/President/ Principal Investigator at Theia Scientific and Mikhail Volkov, Founder/CEO of Volkov Labs.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/BgRd-RAFMEE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Repasemos el G-stack (Café con Grafana #005)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link>
-      <pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/irUr96JV-Sg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
-      <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, my colleagues &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>What is Grafana Agent? (Grafana Office Hours #16)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link>
-      <pubDate>Fri, 20 Oct 2023 12:55:11 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid>
-      <description>&lt;p&gt;What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/i0mA0w_MCPQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/agent&#34;&gt;Grafana Agent repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/agent/&#34;&gt;Documentation on Grafana Agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Inicia (Café con Grafana #000)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
-      <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid>
-      <description>&lt;p&gt;Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad.  Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Kdgu2gutp7o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</link>
-      <pubDate>Fri, 13 Oct 2023 10:56:15 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</guid>
-      <description>&lt;p&gt;Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks to me and my coworker &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt; about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/EYR5lQJ_kG8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/&#34;&gt;Docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/&#34;&gt;Blog post&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>OpenTelemetry demo app with Grafana, Tempo, Loki, and Prometheus (Grafana Office Hours #06)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</link>
-      <pubDate>Fri, 28 Jul 2023 20:25:37 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</guid>
-      <description>&lt;p&gt;DevOps &lt;a href=&#34;https://www.linkedin.com/in/blueswen/&#34;&gt;Engineer Blueswen Liu&lt;/a&gt; 劉義瑋 joins us to walk us through some OpenTelemetry demo apps he created, instrumented with Grafana, Loki, Prometheus, and Tempo.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/dXR8WNm5uos&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Make Kubernetes Clusters Production Ready using Crossplane, with Viktor Farcic (k6 Office Hours #46)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</link>
-      <pubDate>Fri, 18 Mar 2022 17:30:45 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</guid>
-      <description>&lt;p&gt;In this video, Viktor Farcic, Paul Balogh and I talk about how to make Kubernetes clusters production-ready. Viktor is a Developer Advocate from &lt;a href=&#34;https://www.upbound.io/&#34;&gt;Upbound&lt;/a&gt;, and he demonstrates a solution that ties together &lt;a href=&#34;https://crossplane.io&#34;&gt;Crossplane&lt;/a&gt;, &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana&lt;/a&gt;, &lt;a href=&#34;https://prometheus.io&#34;&gt;Prometheus&lt;/a&gt;, and &lt;a href=&#34;https://grafana.com/oss/loki/&#34;&gt;Loki&lt;/a&gt; to deploy and manage clusters in production.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/cPVrCNhHo7Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Everyone Can Contribute: Load Performance Testing With k6</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</link>
-      <pubDate>Tue, 23 Nov 2021 16:57:26 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_ty40gSaaw8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This is a recording of a live meetup I spoke at, the Everybody Can Contribute Café hosted by Michael Friedrich, Senior Developer Evangelist at GitLab. This was a more casual conversation and show-and-tell about k6&amp;rsquo;s capabilities, and I really enjoyed it!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Basics of load testing with k6 and Grafana in 20 minutes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link>
-      <pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid>
-      <description>&lt;p&gt;This was a video I pre-recorded in preparation for &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;the first Grafana EMEA virtual meetup&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/gvounvDSDGg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p&gt;
-&lt;p&gt;Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p&gt;
-&lt;p&gt;Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p&gt;
-&lt;p&gt;In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;how to run a simple script in k6 OSS&lt;/li&gt;
-&lt;li&gt;how to make sense of the results of a load test&lt;/li&gt;
-&lt;li&gt;test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li&gt;
-&lt;li&gt;two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Testing With k6 &#43; Grafana: Better Together (Grafana virtual meetup EMEA)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</link>
-      <pubDate>Tue, 05 Oct 2021 21:49:13 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</guid>
-      <description>&lt;p&gt;In this first EMEA session of the Grafana Labs virtual meetups, I talked about how to use k6 and Grafana together to get the full performance picture for a software application. Observability, using tools like Prometheus and Grafana, lets us see what&amp;rsquo;s going on inside the application, and load testing, using k6, helps us get those insights earlier on in software cycles, such as during pre-production.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/MUd5xuuxt0A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Intro to Load Testing With k6 and Grafana (webinar)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</link>
-      <pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</guid>
-      <description>&lt;p&gt;Tonight I did a webinar with Grafana Labs&amp;ndash; the first k6-related webinar since the acquisition. I was more than a little nervous to give it, because I knew I was introducing k6 to a lot of new users, but also to Grafana for the first time. I think it went pretty well! I was still quite relieved when it was over, however. :)&lt;/p&gt;
-&lt;p&gt;In the webinar, I talk about:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;why it&amp;rsquo;s still a good idea to do load testing in pre-production&lt;/li&gt;
-&lt;li&gt;what k6 is&lt;/li&gt;
-&lt;li&gt;why k6 and Grafana together make sense&lt;/li&gt;
-&lt;li&gt;and how to integrate k6 and Grafana&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There&amp;rsquo;s quite a bit of demo in it, and I also had the k6 CEO, Robin Gustafsson, join me for Q&amp;amp;A as a nice treat.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/tFsIgbqXbxM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Check out the full webinar &lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;here&lt;/a&gt;&amp;ndash; it&amp;rsquo;s already up on the Grafana site. You can also go through my slides &lt;a href=&#34;https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing&#34;&gt;here&lt;/a&gt;, if you&amp;rsquo;d like.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Schrödinger&#39;s Pokémon: k6 and Grafana edition</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link>
-      <pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid>
-      <description>&lt;p&gt;Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;chaos engineering with k6 and New Relic&lt;/a&gt;. A few months ago, k6 got acquired by &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana Labs&lt;/a&gt;, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/2QHs_HEX7r0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I presented this talk at &lt;a href=&#34;https://www.youtube.com/watch?v=jSgH3I8_ldk&#34;&gt;TestCon Europe 2021&lt;/a&gt; today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit&#34;&gt;Slides are here.&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Monitoring your k6 load test: how to install Grafana and Prometheus on a Kubernetes cluster</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</link>
-      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</guid>
-      <description>&lt;p&gt;Running a load test is half of the equation, and not having the right observability tools to see how your application responds to the load can sometimes flat-out invalidate a test.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s how to install open-source tools Grafana and Prometheus on a Kubernetes cluster in DigitalOcean and how a performance user could use them for increased visibility during a load test.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/GL2v81xYuAQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prometheus on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/prometheus/</link><description>Recent content in Prometheus on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 05 Nov 2025 03:07:38 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml"/><item><title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link><pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://oredev.org/">Øredev 2025&lt;/a> in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p>
+&lt;p>The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p>
+&lt;p>In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p>&lt;/blockquote>
+&lt;p>Here are some resources mentioned in the talk:&lt;/p>
+&lt;ul>
+&lt;li>You can play the game Spice Runner &lt;a href="https://nicole.to/spicegame">here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicerepo">The spice-runner repo&lt;/a> containing everything you need to know about how to deploy it yourself&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spiceslides">The slides&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicedashboard">The Spice Runner dashboard&lt;/a> for observing the application&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/spice-runner">More about Spice Runner&lt;/a>: architecture, tech stack, and what it demonstrates&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG" alt="Photo of me at Øredev 2025">&lt;/p></description></item><item><title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link><pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid><description>&lt;p>Today I gave &lt;a href="https://sketch-your-mind.com/2025/sessions/nicole/">a talk&lt;/a> at my friend Zsolt Viczián&amp;rsquo;s &lt;a href="https://sketchyourmind.com/">Sketch Your Mind Conference&lt;/a> about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zmgqMZi6QL8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p>
+&lt;ul>
+&lt;li>Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li>
+&lt;li>Adopting a visual Zettelkasten-like approach&lt;/li>
+&lt;li>Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li>
+&lt;li>Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li>
+&lt;li>Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li>
+&lt;li>Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li>
+&lt;/ul>
+&lt;p>I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href="https://github.com/nicolevanderhoeven/obsidian-grafana">here&amp;rsquo;s the repo&lt;/a> for anyone interested in replicating it.&lt;/p></description></item><item><title>State of the Observability Databases (Grafana Office Hours #30)</title><link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link><pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid><description>&lt;p>In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6Ph5nvicm6M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to do continuous profiling right with Grafana Pyroscope and Ryan Perry, (Grafana Office Hours #26)</title><link>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</link><pubDate>Fri, 19 Jan 2024 18:09:01 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240119-goh26-how-to-do-continuous-profiling-right-with-grafana-pyroscope/</guid><description>&lt;p>My friend &lt;a href="https://javaducky.com">Paul Balogh&lt;/a> and I interview &lt;a href="https://ryanperry.io">Ryan Perry&lt;/a>, co-founder of Grafana Pyroscope, about how to do continuous profiling right. Ryan, and the rest of the Pyroscope team, joined Grafana Labs, where he is now a Director of Engineer. Ryan discusses the main concerns in continuous profiling and how to avoid those pitfalls. Pyroscope is an open-source project for aggregating continuous profiling data about your system&amp;rsquo;s resources.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pzNRvMQzrJ0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;ul>
+&lt;li>Pyroscope &lt;a href="https://grafana.com/docs/pyroscope/">docs&lt;/a>&lt;/li>
+&lt;li>Pyroscope &lt;a href="https://pyroscope.io/">site&lt;/a>&lt;/li>
+&lt;li>Pyroscope &lt;a href="https://github.com/grafana/pyroscope">repo&lt;/a>&lt;/li>
+&lt;li>Weigh in on the &lt;a href="https://github.com/open-telemetry/oteps/pull/239">OpenTelemetry Profiling Data Model&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Entendiendo los sintéticos (Café con Grafana #008)</title><link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link><pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid><description>&lt;p>En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fXNSqrUtiJo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Lee la documentación sobre el monitoreo de sintéticos &lt;a href="https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/">en Grafana Cloud aquí&lt;/a>.&lt;/p></description></item><item><title>AI Microscopy with Grafana, Theia Scientific, and Volkov Labs (Grafana Office Hours #24)</title><link>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</link><pubDate>Fri, 15 Dec 2023 17:42:58 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231215-goh24-ai-microscopy-with-grafana-theia-scientific-volkov-labs/</guid><description>&lt;p>What do you get when you combine AI microscopy with Grafana? Well, in this case, you get the Theiascope platform: an application for doing real-time analysis on microscopy images using a combination of Grafana, Prometheus, and PostgreSQL/Timescale. The Theiascope platform was a collaboration between Dr. Christopher Field, Co-Founder/President/ Principal Investigator at Theia Scientific and Mikhail Volkov, Founder/CEO of Volkov Labs.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BgRd-RAFMEE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Repasemos el G-stack (Café con Grafana #005)</title><link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link><pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid><description>&lt;p>En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/irUr96JV-Sg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title><link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link><pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid><description>&lt;p>In this episode of Grafana Office Hours, my colleagues &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a>, &lt;a href="https://javaducky.com">Paul Balogh&lt;/a>, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8Z67vAkv3J0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>What is Grafana Agent? (Grafana Office Hours #16)</title><link>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</link><pubDate>Fri, 20 Oct 2023 12:55:11 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231020-goh16-what-is-grafana-agent/</guid><description>&lt;p>What is Grafana Agent? Senior Software Engineer Paschalis Tsilias tells us about what telemetry collectors do, why they&amp;rsquo;re useful, what you&amp;rsquo;d have to do without them, and how to get started with Grafana Agent. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/i0mA0w_MCPQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="useful-links">Useful links&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/grafana/agent">Grafana Agent repo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/agent/">Documentation on Grafana Agent&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>(ES) Inicia (Café con Grafana #000)</title><link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link><pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid><description>&lt;p>Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad. Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Kdgu2gutp7o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Agentless Monitoring for Prometheus in Grafana Cloud (Grafana Office Hours #15)</title><link>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</link><pubDate>Fri, 13 Oct 2023 10:56:15 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231013-goh15-agentless-monitoring-for-prometheus-in-grafana-cloud/</guid><description>&lt;p>Did you know you could do agentless monitoring for Prometheus in Grafana Cloud? Senior Software Engineer Matt Nolf talks to me and my coworker &lt;a href="https://javaducky.com">Paul Balogh&lt;/a> about the new Metrics Endpoint integration and how you can use it to collect Prometheus metrics from publicly addressable hosts&amp;ndash; WITHOUT using Grafana Agent.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EYR5lQJ_kG8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/">Docs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/blog/2023/09/21/introducing-agentless-monitoring-for-prometheus-in-grafana-cloud/">Blog post&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>OpenTelemetry demo app with Grafana, Tempo, Loki, and Prometheus (Grafana Office Hours #06)</title><link>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</link><pubDate>Fri, 28 Jul 2023 20:25:37 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230728-goh06-open-telemetry-demo-app-with-grafana-tempo-loki-prometheus/</guid><description>&lt;p>DevOps &lt;a href="https://www.linkedin.com/in/blueswen/">Engineer Blueswen Liu&lt;/a> 劉義瑋 joins us to walk us through some OpenTelemetry demo apps he created, instrumented with Grafana, Loki, Prometheus, and Tempo.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dXR8WNm5uos?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Make Kubernetes Clusters Production Ready using Crossplane, with Viktor Farcic (k6 Office Hours #46)</title><link>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</link><pubDate>Fri, 18 Mar 2022 17:30:45 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220318-koh46-how-to-make-kubernetes-clusters-production-ready-with-crossplane/</guid><description>&lt;p>In this video, Viktor Farcic, Paul Balogh and I talk about how to make Kubernetes clusters production-ready. Viktor is a Developer Advocate from &lt;a href="https://www.upbound.io/">Upbound&lt;/a>, and he demonstrates a solution that ties together &lt;a href="https://crossplane.io">Crossplane&lt;/a>, &lt;a href="https://grafana.com">Grafana&lt;/a>, &lt;a href="https://prometheus.io">Prometheus&lt;/a>, and &lt;a href="https://grafana.com/oss/loki/">Loki&lt;/a> to deploy and manage clusters in production.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cPVrCNhHo7Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Everyone Can Contribute: Load Performance Testing With k6</title><link>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</link><pubDate>Tue, 23 Nov 2021 16:57:26 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_ty40gSaaw8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>This is a recording of a live meetup I spoke at, the Everybody Can Contribute Café hosted by Michael Friedrich, Senior Developer Evangelist at GitLab. This was a more casual conversation and show-and-tell about k6&amp;rsquo;s capabilities, and I really enjoyed it!&lt;/p></description></item><item><title>Basics of load testing with k6 and Grafana in 20 minutes</title><link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link><pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid><description>&lt;p>This was a video I pre-recorded in preparation for &lt;a href="https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/">the first Grafana EMEA virtual meetup&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gvounvDSDGg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p>
+&lt;p>Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p>
+&lt;p>Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p>
+&lt;p>In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p>
+&lt;ul>
+&lt;li>how to run a simple script in k6 OSS&lt;/li>
+&lt;li>how to make sense of the results of a load test&lt;/li>
+&lt;li>test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li>
+&lt;li>two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li>
+&lt;/ul></description></item><item><title>Testing With k6 + Grafana: Better Together (Grafana virtual meetup EMEA)</title><link>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</link><pubDate>Tue, 05 Oct 2021 21:49:13 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</guid><description>&lt;p>In this first EMEA session of the Grafana Labs virtual meetups, I talked about how to use k6 and Grafana together to get the full performance picture for a software application. Observability, using tools like Prometheus and Grafana, lets us see what&amp;rsquo;s going on inside the application, and load testing, using k6, helps us get those insights earlier on in software cycles, such as during pre-production.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MUd5xuuxt0A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Intro to Load Testing With k6 and Grafana (webinar)</title><link>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</link><pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</guid><description>&lt;p>Tonight I did a webinar with Grafana Labs&amp;ndash; the first k6-related webinar since the acquisition. I was more than a little nervous to give it, because I knew I was introducing k6 to a lot of new users, but also to Grafana for the first time. I think it went pretty well! I was still quite relieved when it was over, however. :)&lt;/p>
+&lt;p>In the webinar, I talk about:&lt;/p>
+&lt;ul>
+&lt;li>why it&amp;rsquo;s still a good idea to do load testing in pre-production&lt;/li>
+&lt;li>what k6 is&lt;/li>
+&lt;li>why k6 and Grafana together make sense&lt;/li>
+&lt;li>and how to integrate k6 and Grafana&lt;/li>
+&lt;/ul>
+&lt;p>There&amp;rsquo;s quite a bit of demo in it, and I also had the k6 CEO, Robin Gustafsson, join me for Q&amp;amp;A as a nice treat.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tFsIgbqXbxM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Check out the full webinar &lt;a href="https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/">here&lt;/a>&amp;ndash; it&amp;rsquo;s already up on the Grafana site. You can also go through my slides &lt;a href="https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing">here&lt;/a>, if you&amp;rsquo;d like.&lt;/p></description></item><item><title>Schrödinger's Pokémon: k6 and Grafana edition</title><link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link><pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid><description>&lt;p>Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href="https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/">chaos engineering with k6 and New Relic&lt;/a>. A few months ago, k6 got acquired by &lt;a href="https://grafana.com">Grafana Labs&lt;/a>, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p>
+&lt;p>Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2QHs_HEX7r0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>I presented this talk at &lt;a href="https://www.youtube.com/watch?v=jSgH3I8_ldk">TestCon Europe 2021&lt;/a> today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p>
+&lt;p>&lt;a href="https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit">Slides are here.&lt;/a>&lt;/p></description></item><item><title>Monitoring your k6 load test: how to install Grafana and Prometheus on a Kubernetes cluster</title><link>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</link><pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</guid><description>&lt;p>Running a load test is half of the equation, and not having the right observability tools to see how your application responds to the load can sometimes flat-out invalidate a test.&lt;/p>
+&lt;p>Here&amp;rsquo;s how to install open-source tools Grafana and Prometheus on a Kubernetes cluster in DigitalOcean and how a performance user could use them for increased visibility during a load test.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GL2v81xYuAQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

@@ -1,233 +1,146 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ai on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/ai/</link>
-    <description>Recent content in ai on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 09 Apr 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Unlearnings from building Grafana Assistant</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</link>
-      <pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</guid>
-      <description>&lt;p&gt;Originally posted &lt;a href=&#34;https://open.substack.com/pub/contexthorizon/p/unlearnings-from-building-grafana?r=7xe6zg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Everyone&amp;rsquo;s talking about what you need to &lt;em&gt;learn&lt;/em&gt; to build AI agents: Prompt engineering. Tool calling. Retrieval strategies. The content ecosystem is full of it. But while I was watching Context Window Episode 1, it struck me that Mat Ryer, Cyril Tovena, and Sven Großmann&amp;ndash; some of the team behind Grafana Assistant&amp;ndash; spent most of their time on something different: what they had to &lt;em&gt;unlearn&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Grafana Assistant started as a weekend hackathon project. By the time it shipped, the team had thrown out a popular framework, flipped their assumptions about tool design, and discovered that some of the instincts you bring from conventional software development actively work against you when you&amp;rsquo;re building agents.&lt;/p&gt;
-&lt;p&gt;I pulled out the ten moments where received wisdom turned out to be wrong. If you&amp;rsquo;re building anything agentic right now, these are worth sitting with.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/TGWVqBAeIzI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;-langchain-will-help-us-build-faster&#34;&gt;❌ LangChain will help us build faster&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/langchain-ai/langchain&#34;&gt;LangChain&lt;/a&gt; is an opensource framework for building applications that use LLMs. It provides structured components that can be used for rapid prototyping.&lt;/p&gt;
-&lt;p&gt;In the video, Tovena talks about how they started with LangChain during the initial hackathon because they thought it would help them build more quickly, but instead it became obvious fairly early on that the opposite was true. They didn&amp;rsquo;t end up using a lot of the features that LangChain provided and felt they needed more flexibility and speed.&lt;/p&gt;
-&lt;h3 id=&#34;abstraction-overhead&#34;&gt;Abstraction overhead&lt;/h3&gt;
-&lt;p&gt;One possible reason for their troubles with LangChain is that LangChain has standard abstractions for prompts, tool use, and orchestration&amp;ndash; things that sound good in theory. But sometimes abstractions lend themselves to creating a sort of black box in your stack, where you don&amp;rsquo;t know what&amp;rsquo;s happening inside it. It sounds like the Assistant team missed the oversight and control of what was happening.&lt;/p&gt;
-&lt;h2 id=&#34;-use-the-same-prompt-for-every-model&#34;&gt;❌ Use the same prompt for every model&lt;/h2&gt;
-&lt;p&gt;They also talked about how for the sake of simplicity and consistency, they initially used the same prompt for every model. However, they found out that this actually led to worse results. They found more success in creating slightly different prompts for different models, playing to their strengths and weaknesses a bit more.&lt;/p&gt;
-&lt;p&gt;There is even an argument (&lt;a href=&#34;https://arxiv.org/abs/2401.00595&#34;&gt;Mizrahi et al.&amp;rsquo;s &amp;ldquo;State of What Art? A Call for Multi-Prompt LLM Evaluation&lt;/a&gt;) that AI benchmarks that involve sending multiple LLMs the same prompt is a brittle and unreliable way to assess LLM capabilities. Different models respond differently to prompt variations.&lt;/p&gt;
-&lt;p&gt;In practice, what this means is that switching models isn&amp;rsquo;t a drop-in replacement. Even if a new model scores better on benchmarks, your prompts were written with a specific model&amp;rsquo;s tendencies in mind. The unlearning here is letting go of the idea that a prompt is model-agnostic — it&amp;rsquo;s more like a conversation style, and different models have different conversational defaults.&lt;/p&gt;
-&lt;h2 id=&#34;-treat-errors-as-failures&#34;&gt;❌ Treat errors as failures&lt;/h2&gt;
-&lt;p&gt;Traditionally in software, you catch errors and hide them from the user: you log them, handle them, but treat that transaction as a failed one.&lt;/p&gt;
-&lt;p&gt;The Assistant team had to unlearn this habit when dealing with an LLM, because with agents, error messages &lt;em&gt;are&lt;/em&gt; useful data. Feeding it back to the LLM often results in it learning from its own mistake and trying again. It&amp;rsquo;s basically letting the agent debug itself, in a manner that Ryer noted was remarkably similar to how we humans debug errors too.&lt;/p&gt;
-&lt;h2 id=&#34;-return-errors-in-structured-json&#34;&gt;❌ Return errors in structured JSON&lt;/h2&gt;
-&lt;p&gt;On the subject of error messages, Großmann mentioned that at one point they were trying to format the errors in JSON or stringified JSON. This practice shows solid engineer intuition because usually, structuring information helps machines process it faster and more accurately. What they found here was the reverse: it was easier and yielded better results when the LLM was just passed the entire error in natural language.&lt;/p&gt;
-&lt;h2 id=&#34;-build-as-many-tools-as-possible&#34;&gt;❌ Build as many tools as possible&lt;/h2&gt;
-&lt;p&gt;The team mentioned that at the start, they were inclined to create as many tools/skills for Assistant: one for everything that could be done in Grafana. This made sense until they saw LLMs struggle to determine which tool to use in which context.&lt;/p&gt;
-&lt;p&gt;To help LLMs identify the correct tool, they added tool descriptions and also experimented with combining multiple tools into fewer, parameterized, tools. These helped, although the team still observed that allowing users to create their own tools (with potentially very general tool descriptions) could potentially confuse LLMs.&lt;/p&gt;
-&lt;h2 id=&#34;-bigger-context-window--better&#34;&gt;❌ Bigger context window = better&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://developers.googleblog.com/en/new-features-for-the-gemini-api-and-google-ai-studio/&#34;&gt;Gemini 1.5 Pro announced&lt;/a&gt; it had a 2M context window back in 2024, and it might seem that other providers had lagged behind: &lt;a href=&#34;https://openai.com/index/gpt-4-1/&#34;&gt;OpenAI&lt;/a&gt; only announced support for 1M tokens in 2025 and &lt;a href=&#34;https://www.anthropic.com/news/claude-opus-4-6&#34;&gt;Anthropic&lt;/a&gt; followed in 2026. However, the Assistant team pointed out that context wasn&amp;rsquo;t everything. They said that they noticed that bigger wasn&amp;rsquo;t necessarily better, also pointing out that the chat summarization feature on IDEs like &lt;a href=&#34;https://cursor.com/&#34;&gt;Cursor&lt;/a&gt; could still sometimes lose important details when summarizing.&lt;/p&gt;
-&lt;p&gt;This finding seems to coincide with a 2023 Stanford study (&lt;a href=&#34;https://arxiv.org/abs/2307.03172&#34;&gt;Lost in the Middle: How Language Models Use Long Contexts&lt;/a&gt;) that found there was a performance degradation when models access information within a very large context. In the video, they talked about how their system prompts were often 40k tokens long (half for the prompt itself and then the other half for tools).&lt;/p&gt;
-&lt;h2 id=&#34;-start-with-a-multi-agent-architecture&#34;&gt;❌ Start with a multi-agent architecture&lt;/h2&gt;
-&lt;p&gt;Tovena mentioned that creating a multi-agent architecture for Assistant yielded more mixed results than he expected. He said that passing context between agents is difficult, outputs were inconsistent, and there was a bit of a &amp;ldquo;telephone game&amp;rdquo; problem where agents didn&amp;rsquo;t always perfectly understand the intent or output of other agents.&lt;/p&gt;
-&lt;p&gt;In early 2026, &lt;a href=&#34;https://arxiv.org/abs/2601.13295&#34;&gt;Khatua et al. released a study&lt;/a&gt; called &amp;ldquo;CooperBench: Why Coding Agents Cannot Be Your Teammates Yet&amp;rdquo; that showed that AI agents aren&amp;rsquo;t great at collaboration. The study suggests, surprisingly, that this might be because AI agents lack human social habits that help us collaborate better, such as feeling obliged to do what we say and having a good understanding of what others&amp;rsquo; plans are.&lt;/p&gt;
-&lt;p&gt;The Assistant team&amp;rsquo;s experience is also a perfect example of &lt;a href=&#34;https://www.laws-of-software.com/laws/gall/&#34;&gt;Gall&amp;rsquo;s Law&lt;/a&gt;, which states that it&amp;rsquo;s easier to start with simplicity and build complexity than the other way around.&lt;/p&gt;
-&lt;h2 id=&#34;-plan-around-models-as-they-are-now&#34;&gt;❌ Plan around models as they are now&lt;/h2&gt;
-&lt;p&gt;Software has always moved quickly, but it feels like AI models are moving faster. &lt;a href=&#34;https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf&#34;&gt;Stanford&amp;rsquo;s AI Index Report 2025&lt;/a&gt; reported that models went from having a 50% chance to near-human performance in roughly 2 years (2021-2023). In fact, benchmarks keep getting retired as AI saturates them&amp;ndash; meaning that benchmarks can&amp;rsquo;t reliably be used to distinguish between good and bad models because all the models are testing near the ceiling.&lt;/p&gt;
-&lt;p&gt;The rapid pace of development around AI requires us to not be so attached to our work: Großmann recalled an incident where someone wrote a joke prompt that spoke like a dog that shockingly did better than their other system prompts. Ryer also mentioned that at one point someone deleted all the system prompts and Assistant weirdly became more accurate.&lt;/p&gt;
-&lt;p&gt;The lesson is clear: plan for models to improve, and plan to redo a lot of your work when they do.&lt;/p&gt;
-&lt;h2 id=&#34;-we-dont-need-evals&#34;&gt;❌ We don&amp;rsquo;t need evals&lt;/h2&gt;
-&lt;p&gt;The Assistant team said that they went from having no evals to employing several types of evals:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;integration-style evals that exercise whole workflows&lt;/li&gt;
-&lt;li&gt;unit-style evals that feed inputs plus a system prompt and check the output&lt;/li&gt;
-&lt;li&gt;LLM-as-judge, where they pass conversations to an LLM to ask it to judge whether it answered the user&amp;rsquo;s questions.&lt;/li&gt;
-&lt;li&gt;user feedback in the form of thumbs during conversations with Assistant&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beyond evaluation, they talked about how important it was to be able to observe AI. At the very minimum, showing what Assistant is doing at all times (thinking out loud) is very important to them because it builds users&amp;rsquo; trust in the thinking process and, eventually, in the result.&lt;/p&gt;
-&lt;p&gt;Evals aren&amp;rsquo;t a sign that you don&amp;rsquo;t trust your product. They&amp;rsquo;re how you build the confidence to keep shipping it.&lt;/p&gt;
-&lt;h2 id=&#34;-assume-people-already-know-how-to-work-with-ai&#34;&gt;❌ Assume people already know how to work with AI&lt;/h2&gt;
-&lt;p&gt;When you ship an AI feature, it&amp;rsquo;s tempting to assume the hard work is done. You&amp;rsquo;ve built the thing. Users will figure it out.&lt;/p&gt;
-&lt;p&gt;What the Grafana Assistant team found was that this assumption doesn&amp;rsquo;t hold. Users came in with wildly different mental models of what an AI assistant could or should do — some treating it like a search box, others expecting it to read their minds, most not yet sure how to prompt it effectively.&lt;/p&gt;
-&lt;p&gt;Their insight was that this isn&amp;rsquo;t just a UX problem to solve on your end. It&amp;rsquo;s a shared responsibility: AI should try to help the user, but the user also needs to learn how to work with AI. And building an assistant that teaches people how to use it well (through good responses, gentle corrections, showing its work) is part of building the product.&lt;/p&gt;
-&lt;p&gt;There&amp;rsquo;s also a deeper point here specific to observability. Grafana Assistant isn&amp;rsquo;t just an AI feature; it&amp;rsquo;s a way of interacting with your own infrastructure. Every good interaction teaches you something about what questions to ask, what signals to look for, what it means to understand a system. In other words: learning to use AI well makes you a better engineer. The tool and the skill co-evolve.&lt;/p&gt;
-&lt;p&gt;This is the unlearning that sits furthest from the code. It&amp;rsquo;s not about prompts or architectures or frameworks. It&amp;rsquo;s about recognising that you&amp;rsquo;re not just shipping a feature&amp;ndash; you&amp;rsquo;re introducing a new way of working. That takes time. And it&amp;rsquo;s worth designing for explicitly.&lt;/p&gt;
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;What strikes me most about this list isn&amp;rsquo;t any single item — it&amp;rsquo;s the pattern. Most of these unlearnings point in the same direction: &lt;em&gt;less is more, and messiness is the point.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Less abstraction. Fewer tools. Smaller context. Simpler architecture. And rather than hiding the mess — the errors, the reasoning, the uncertainty — let it show. That&amp;rsquo;s where the trust gets built.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re all still early with this. The team that built one of the most thoughtful AI products I&amp;rsquo;ve seen up close still didn&amp;rsquo;t have evals when they launched. That&amp;rsquo;s not a criticism — it&amp;rsquo;s a reminder. You don&amp;rsquo;t need to have it all figured out before you ship. You just need to commit to keep unlearning.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Let There Be Dashboards: Introducing Grafana Assistant</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link>
-      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid>
-      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/grafana-friends-lisboa/events/313572885/&#34;&gt;Grafana &amp;amp; Friends Lisbon Meetup&lt;/a&gt; in Lisbon, Portugal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-01-presenting.jpg&#34; alt=&#34;Demoing Grafana Assistant to the Lisbon meetup&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-dashboard.png&#34; alt=&#34;Dashboard created during the demo using Grafana Assistant&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-02-audience.jpg&#34; alt=&#34;The Grafana &amp;amp; Friends Lisbon crowd&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Thanks to everyone who came out! It was great to connect with the Lisbon tech community.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-03-group.jpg&#34; alt=&#34;Group photo with the meetup attendees&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Do Androids Dream of Second Brains?</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</link>
-      <pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</guid>
-      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://pkmsummit.com/&#34;&gt;PKM Summit 2026&lt;/a&gt; in Utrecht, the Netherlands.&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;We often describe our PKM systems as &amp;ldquo;second brains&amp;rdquo;. But can we really say our systems think for themselves?&lt;/p&gt;
-&lt;p&gt;In Philip K. Dick&amp;rsquo;s &amp;ldquo;Do Androids Dream of Electric Sheep?&amp;rdquo;, the inspiration for the movie Bladerunner, the boundary between humans and machines is tested through observation and subtle signals. In this talk, we&amp;rsquo;ll explore a similar question for our knowledge systems: what happens when we start observing them?&lt;/p&gt;
-&lt;p&gt;By instrumenting an Obsidian vault with an observability stack and layering AI tools on top, we can begin to see patterns in how ideas form, connect, and evolve. The result isn&amp;rsquo;t quite a thinking system&amp;hellip; but it may be something closer than we&amp;rsquo;ve had before.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Observability for GenAI Applications (Grafana ❤️🔥 OpenTelemetry Community Call #4)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260121-gocc04-observability-for-genai-applications/</link>
-      <pubDate>Wed, 21 Jan 2026 16:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260121-gocc04-observability-for-genai-applications/</guid>
-      <description>&lt;p&gt;In this community call with my coworker Liudmila Molkova, we dove into the emerging field of observability for Generative AI applications. We explored how to instrument LLM-powered applications using OpenTelemetry, what metrics and traces matter most when monitoring AI workloads, and how to debug issues in complex AI pipelines. The discussion covered prompt tracing, token usage monitoring, latency considerations, and the unique challenges of observing non-deterministic AI systems.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/LfDVygRWQJU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
-      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link>
-      <pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid>
-      <description>&lt;p&gt;Today I presented at the &lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht, the Netherlands. I gave a talk titled &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link>
-      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
-&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>AI Observability with Ishan Jain (Grafana Office Hours #29)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</link>
-      <pubDate>Fri, 08 Nov 2024 18:24:29 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</guid>
-      <description>&lt;p&gt;In this Grafana Office Hours, Ishan Jain talks about AI Observability with Grafana: what it entails, factors to consider when monitoring and observing LLMs, and how to do it all with Grafana. He is joined by Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/9X7M-bvnZG0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>The Role of AI in Gender Equality with Nicola Martin (Adobo &amp; Avocados #15)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231004-ana15-the-role-of-ai-in-gender-equality/</link>
-      <pubDate>Wed, 04 Oct 2023 17:26:14 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231004-ana15-the-role-of-ai-in-gender-equality/</guid>
-      <description>&lt;p&gt;In this episode of Adobo and Avocados, my friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I chat with &lt;a href=&#34;https://linktr.ee/nlmit&#34;&gt;Nicola Martin&lt;/a&gt;, Head of Quality Engineering at Adarga, to talk about the role of AI, technology, and education in gender equality.&lt;/p&gt;
-&lt;p&gt;Nicola is a Council and Committee Member for the British Computer Society and WomenTech Global Network. She is also a mentor, speaker, and panelist speaking on subjects such as AI and quality, software testing, and diversity in tech.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/yoErbu09AGw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Tagging and Linking With AI: Napkin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230505-tagging-and-linking-with-ai-napkin/</link>
-      <pubDate>Fri, 05 May 2023 00:58:39 +0800</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230505-tagging-and-linking-with-ai-napkin/</guid>
-      <description>&lt;p&gt;In this video, I demonstrate my workflow for tagging and linking with AI using the Napkin.one app. Napkin is an app that uses a fork of GPT-3 to intelligently tag thoughts with keywords that improve over time. I like to use Napkin to tag mostly my highlights from Readwise.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/p2E3gRXiLYY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://napkin.one/?via=nicole&#34;&gt;Napkin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Lost Art of Taking Good Notes&lt;/em&gt;, &lt;a href=&#34;https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/&#34;&gt;my talk at EuroSTAR 2023&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>AI tools for PKM and Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</link>
-      <pubDate>Fri, 27 Jan 2023 16:39:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</guid>
-      <description>&lt;p&gt;Here are some AI tools for learning and taking notes that I&amp;rsquo;ve incorporated into my processes. AI is a controversial topic, but it&amp;rsquo;s important to remember it&amp;rsquo;s just like any other technology: it&amp;rsquo;s only as good as the people that wield it. In this video, I show some ways I use artificial intelligence to improve my learning and note-taking rather than to replace them.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/mKWY33MXLvI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ai on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/ai/</link><description>Recent content in Ai on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Mon, 20 Apr 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>How to use Grafana Assistant with self-hosted Grafana</title><link>https://nicolevanderhoeven.github.io/blog/20260420-grafana-assistant-self-hosted/</link><pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260420-grafana-assistant-self-hosted/</guid><description>&lt;p>In case you missed it, possibly the biggest news to come from GrafanaCON this year is that if you&amp;rsquo;re running self-hosted or open-source Grafana, you can now connect it through your Grafana Cloud account to &lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a>, the purpose-built AI tool for all things Grafana.&lt;/p>
+&lt;p>In this short tutorial, I show you how to enable Assistant on a self-hosted Grafana instance and go from &lt;em>nothing&lt;/em> to a working server-health dashboard with a single prompt.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0O0ZqrruGns?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="a-quick-note-on-what-for-open-source-actually-means">A quick note on what &amp;ldquo;for open source&amp;rdquo; actually means&lt;/h2>
+&lt;p>Assistant itself isn&amp;rsquo;t open source. But you can now use it &lt;em>with&lt;/em> your self-hosted or open-source Grafana instance. The way it works is:&lt;/p>
+&lt;ul>
+&lt;li>You still need a Grafana Cloud account (the free tier has &lt;a href="https://grafana.com/pricing/">generous inclusions&lt;/a> for Assistant).&lt;/li>
+&lt;li>You link your self-hosted Grafana to that Cloud account.&lt;/li>
+&lt;li>Assistant then lights up inside your OSS instance.&lt;/li>
+&lt;/ul>
+&lt;p>Think of the Grafana Cloud account as the key that unlocks Assistant wherever your Grafana lives.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Grafana OSS v13 or later&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>A Grafana Cloud account&lt;/strong> (&lt;a href="https://grafana.com/pricing/">pricing here&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="enabling-assistant">Enabling Assistant&lt;/h2>
+&lt;ol>
+&lt;li>Go to &lt;strong>Administration → Plugins&lt;/strong>, search for &lt;strong>Assistant&lt;/strong>, and click &lt;strong>Install&lt;/strong>.&lt;/li>
+&lt;li>Refresh the page, then open the &lt;strong>Connection&lt;/strong> tab.&lt;/li>
+&lt;li>Click &lt;strong>Start Connection&lt;/strong>. You&amp;rsquo;ll be prompted to log into Grafana Cloud.&lt;/li>
+&lt;li>Select the organization and stack you want, then click &lt;strong>Authorize connection&lt;/strong>.&lt;/li>
+&lt;li>Close the tab. Your self-hosted Grafana is now linked to Assistant.&lt;/li>
+&lt;/ol>
+&lt;h2 id="a-first-dashboard-from-nothing">A first dashboard from nothing&lt;/h2>
+&lt;p>Every Grafana instance ships with a &lt;strong>TestData&lt;/strong> data source — perfect for a first run when you don&amp;rsquo;t yet have real data wired up. Enable it from Data Sources, then open Assistant (the new icon on the top right).&lt;/p>
+&lt;p>Switch Assistant&amp;rsquo;s mode from &lt;strong>General&lt;/strong> to &lt;strong>Dashboarding&lt;/strong> — this mode is tuned for creating and managing dashboards — and ask in plain English, for example:&lt;/p>
+&lt;blockquote>
+&lt;p>Hi Assistant, could you create a server health dashboard for me using the TestData data source?&lt;/p>&lt;/blockquote>
+&lt;p>What comes back is a starting dashboard with CPU, memory, disk, and network panels already wired up. From there you can tweak panels, edit queries, or ask Assistant to iterate. You&amp;rsquo;re not starting from scratch — you&amp;rsquo;re starting from 80%.&lt;/p>
+&lt;h2 id="what-else-assistant-can-do">What else Assistant can do&lt;/h2>
+&lt;p>I only showed dashboarding in this video, but Assistant can also:&lt;/p>
+&lt;ul>
+&lt;li>Answer questions about the data already in your Grafana&lt;/li>
+&lt;li>Run investigations to troubleshoot production incidents&lt;/li>
+&lt;li>Learn new skills&lt;/li>
+&lt;li>Manage alerts&lt;/li>
+&lt;li>Teach you Grafana&lt;/li>
+&lt;/ul>
+&lt;p>That list keeps growing, so stay tuned.&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a> (product page)&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/pricing/">Grafana Cloud pricing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/legal/grafana-cloud-data-processing/">How Grafana Labs handles your data&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">My notes on Grafana Assistant&lt;/a> — everything I&amp;rsquo;m learning as I work on it&lt;/li>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">Unlearnings from building Grafana Assistant&lt;/a> — my Context Horizon piece on what the team had to unlearn&lt;/li>
+&lt;/ul></description></item><item><title>Unlearnings from building Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</link><pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</guid><description>&lt;p>Originally posted &lt;a href="https://open.substack.com/pub/contexthorizon/p/unlearnings-from-building-grafana?r=7xe6zg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true">here&lt;/a>&lt;/p>
+&lt;p>Everyone&amp;rsquo;s talking about what you need to &lt;em>learn&lt;/em> to build AI agents: Prompt engineering. Tool calling. Retrieval strategies. The content ecosystem is full of it. But while I was watching Context Window Episode 1, it struck me that Mat Ryer, Cyril Tovena, and Sven Großmann&amp;ndash; some of the team behind Grafana Assistant&amp;ndash; spent most of their time on something different: what they had to &lt;em>unlearn&lt;/em>.&lt;/p>
+&lt;p>Grafana Assistant started as a weekend hackathon project. By the time it shipped, the team had thrown out a popular framework, flipped their assumptions about tool design, and discovered that some of the instincts you bring from conventional software development actively work against you when you&amp;rsquo;re building agents.&lt;/p>
+&lt;p>I pulled out the ten moments where received wisdom turned out to be wrong. If you&amp;rsquo;re building anything agentic right now, these are worth sitting with.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TGWVqBAeIzI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="-langchain-will-help-us-build-faster">❌ LangChain will help us build faster&lt;/h2>
+&lt;p>&lt;a href="https://github.com/langchain-ai/langchain">LangChain&lt;/a> is an opensource framework for building applications that use LLMs. It provides structured components that can be used for rapid prototyping.&lt;/p>
+&lt;p>In the video, Tovena talks about how they started with LangChain during the initial hackathon because they thought it would help them build more quickly, but instead it became obvious fairly early on that the opposite was true. They didn&amp;rsquo;t end up using a lot of the features that LangChain provided and felt they needed more flexibility and speed.&lt;/p>
+&lt;h3 id="abstraction-overhead">Abstraction overhead&lt;/h3>
+&lt;p>One possible reason for their troubles with LangChain is that LangChain has standard abstractions for prompts, tool use, and orchestration&amp;ndash; things that sound good in theory. But sometimes abstractions lend themselves to creating a sort of black box in your stack, where you don&amp;rsquo;t know what&amp;rsquo;s happening inside it. It sounds like the Assistant team missed the oversight and control of what was happening.&lt;/p>
+&lt;h2 id="-use-the-same-prompt-for-every-model">❌ Use the same prompt for every model&lt;/h2>
+&lt;p>They also talked about how for the sake of simplicity and consistency, they initially used the same prompt for every model. However, they found out that this actually led to worse results. They found more success in creating slightly different prompts for different models, playing to their strengths and weaknesses a bit more.&lt;/p>
+&lt;p>There is even an argument (&lt;a href="https://arxiv.org/abs/2401.00595">Mizrahi et al.&amp;rsquo;s &amp;ldquo;State of What Art? A Call for Multi-Prompt LLM Evaluation&lt;/a>) that AI benchmarks that involve sending multiple LLMs the same prompt is a brittle and unreliable way to assess LLM capabilities. Different models respond differently to prompt variations.&lt;/p>
+&lt;p>In practice, what this means is that switching models isn&amp;rsquo;t a drop-in replacement. Even if a new model scores better on benchmarks, your prompts were written with a specific model&amp;rsquo;s tendencies in mind. The unlearning here is letting go of the idea that a prompt is model-agnostic — it&amp;rsquo;s more like a conversation style, and different models have different conversational defaults.&lt;/p>
+&lt;h2 id="-treat-errors-as-failures">❌ Treat errors as failures&lt;/h2>
+&lt;p>Traditionally in software, you catch errors and hide them from the user: you log them, handle them, but treat that transaction as a failed one.&lt;/p>
+&lt;p>The Assistant team had to unlearn this habit when dealing with an LLM, because with agents, error messages &lt;em>are&lt;/em> useful data. Feeding it back to the LLM often results in it learning from its own mistake and trying again. It&amp;rsquo;s basically letting the agent debug itself, in a manner that Ryer noted was remarkably similar to how we humans debug errors too.&lt;/p>
+&lt;h2 id="-return-errors-in-structured-json">❌ Return errors in structured JSON&lt;/h2>
+&lt;p>On the subject of error messages, Großmann mentioned that at one point they were trying to format the errors in JSON or stringified JSON. This practice shows solid engineer intuition because usually, structuring information helps machines process it faster and more accurately. What they found here was the reverse: it was easier and yielded better results when the LLM was just passed the entire error in natural language.&lt;/p>
+&lt;h2 id="-build-as-many-tools-as-possible">❌ Build as many tools as possible&lt;/h2>
+&lt;p>The team mentioned that at the start, they were inclined to create as many tools/skills for Assistant: one for everything that could be done in Grafana. This made sense until they saw LLMs struggle to determine which tool to use in which context.&lt;/p>
+&lt;p>To help LLMs identify the correct tool, they added tool descriptions and also experimented with combining multiple tools into fewer, parameterized, tools. These helped, although the team still observed that allowing users to create their own tools (with potentially very general tool descriptions) could potentially confuse LLMs.&lt;/p>
+&lt;h2 id="-bigger-context-window--better">❌ Bigger context window = better&lt;/h2>
+&lt;p>&lt;a href="https://developers.googleblog.com/en/new-features-for-the-gemini-api-and-google-ai-studio/">Gemini 1.5 Pro announced&lt;/a> it had a 2M context window back in 2024, and it might seem that other providers had lagged behind: &lt;a href="https://openai.com/index/gpt-4-1/">OpenAI&lt;/a> only announced support for 1M tokens in 2025 and &lt;a href="https://www.anthropic.com/news/claude-opus-4-6">Anthropic&lt;/a> followed in 2026. However, the Assistant team pointed out that context wasn&amp;rsquo;t everything. They said that they noticed that bigger wasn&amp;rsquo;t necessarily better, also pointing out that the chat summarization feature on IDEs like &lt;a href="https://cursor.com/">Cursor&lt;/a> could still sometimes lose important details when summarizing.&lt;/p>
+&lt;p>This finding seems to coincide with a 2023 Stanford study (&lt;a href="https://arxiv.org/abs/2307.03172">Lost in the Middle: How Language Models Use Long Contexts&lt;/a>) that found there was a performance degradation when models access information within a very large context. In the video, they talked about how their system prompts were often 40k tokens long (half for the prompt itself and then the other half for tools).&lt;/p>
+&lt;h2 id="-start-with-a-multi-agent-architecture">❌ Start with a multi-agent architecture&lt;/h2>
+&lt;p>Tovena mentioned that creating a multi-agent architecture for Assistant yielded more mixed results than he expected. He said that passing context between agents is difficult, outputs were inconsistent, and there was a bit of a &amp;ldquo;telephone game&amp;rdquo; problem where agents didn&amp;rsquo;t always perfectly understand the intent or output of other agents.&lt;/p>
+&lt;p>In early 2026, &lt;a href="https://arxiv.org/abs/2601.13295">Khatua et al. released a study&lt;/a> called &amp;ldquo;CooperBench: Why Coding Agents Cannot Be Your Teammates Yet&amp;rdquo; that showed that AI agents aren&amp;rsquo;t great at collaboration. The study suggests, surprisingly, that this might be because AI agents lack human social habits that help us collaborate better, such as feeling obliged to do what we say and having a good understanding of what others&amp;rsquo; plans are.&lt;/p>
+&lt;p>The Assistant team&amp;rsquo;s experience is also a perfect example of &lt;a href="https://www.laws-of-software.com/laws/gall/">Gall&amp;rsquo;s Law&lt;/a>, which states that it&amp;rsquo;s easier to start with simplicity and build complexity than the other way around.&lt;/p>
+&lt;h2 id="-plan-around-models-as-they-are-now">❌ Plan around models as they are now&lt;/h2>
+&lt;p>Software has always moved quickly, but it feels like AI models are moving faster. &lt;a href="https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf">Stanford&amp;rsquo;s AI Index Report 2025&lt;/a> reported that models went from having a 50% chance to near-human performance in roughly 2 years (2021-2023). In fact, benchmarks keep getting retired as AI saturates them&amp;ndash; meaning that benchmarks can&amp;rsquo;t reliably be used to distinguish between good and bad models because all the models are testing near the ceiling.&lt;/p>
+&lt;p>The rapid pace of development around AI requires us to not be so attached to our work: Großmann recalled an incident where someone wrote a joke prompt that spoke like a dog that shockingly did better than their other system prompts. Ryer also mentioned that at one point someone deleted all the system prompts and Assistant weirdly became more accurate.&lt;/p>
+&lt;p>The lesson is clear: plan for models to improve, and plan to redo a lot of your work when they do.&lt;/p>
+&lt;h2 id="-we-dont-need-evals">❌ We don&amp;rsquo;t need evals&lt;/h2>
+&lt;p>The Assistant team said that they went from having no evals to employing several types of evals:&lt;/p>
+&lt;ul>
+&lt;li>integration-style evals that exercise whole workflows&lt;/li>
+&lt;li>unit-style evals that feed inputs plus a system prompt and check the output&lt;/li>
+&lt;li>LLM-as-judge, where they pass conversations to an LLM to ask it to judge whether it answered the user&amp;rsquo;s questions.&lt;/li>
+&lt;li>user feedback in the form of thumbs during conversations with Assistant&lt;/li>
+&lt;/ul>
+&lt;p>Beyond evaluation, they talked about how important it was to be able to observe AI. At the very minimum, showing what Assistant is doing at all times (thinking out loud) is very important to them because it builds users&amp;rsquo; trust in the thinking process and, eventually, in the result.&lt;/p>
+&lt;p>Evals aren&amp;rsquo;t a sign that you don&amp;rsquo;t trust your product. They&amp;rsquo;re how you build the confidence to keep shipping it.&lt;/p>
+&lt;h2 id="-assume-people-already-know-how-to-work-with-ai">❌ Assume people already know how to work with AI&lt;/h2>
+&lt;p>When you ship an AI feature, it&amp;rsquo;s tempting to assume the hard work is done. You&amp;rsquo;ve built the thing. Users will figure it out.&lt;/p>
+&lt;p>What the Grafana Assistant team found was that this assumption doesn&amp;rsquo;t hold. Users came in with wildly different mental models of what an AI assistant could or should do — some treating it like a search box, others expecting it to read their minds, most not yet sure how to prompt it effectively.&lt;/p>
+&lt;p>Their insight was that this isn&amp;rsquo;t just a UX problem to solve on your end. It&amp;rsquo;s a shared responsibility: AI should try to help the user, but the user also needs to learn how to work with AI. And building an assistant that teaches people how to use it well (through good responses, gentle corrections, showing its work) is part of building the product.&lt;/p>
+&lt;p>There&amp;rsquo;s also a deeper point here specific to observability. Grafana Assistant isn&amp;rsquo;t just an AI feature; it&amp;rsquo;s a way of interacting with your own infrastructure. Every good interaction teaches you something about what questions to ask, what signals to look for, what it means to understand a system. In other words: learning to use AI well makes you a better engineer. The tool and the skill co-evolve.&lt;/p>
+&lt;p>This is the unlearning that sits furthest from the code. It&amp;rsquo;s not about prompts or architectures or frameworks. It&amp;rsquo;s about recognising that you&amp;rsquo;re not just shipping a feature&amp;ndash; you&amp;rsquo;re introducing a new way of working. That takes time. And it&amp;rsquo;s worth designing for explicitly.&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>What strikes me most about this list isn&amp;rsquo;t any single item — it&amp;rsquo;s the pattern. Most of these unlearnings point in the same direction: &lt;em>less is more, and messiness is the point.&lt;/em>&lt;/p>
+&lt;p>Less abstraction. Fewer tools. Smaller context. Simpler architecture. And rather than hiding the mess — the errors, the reasoning, the uncertainty — let it show. That&amp;rsquo;s where the trust gets built.&lt;/p>
+&lt;p>We&amp;rsquo;re all still early with this. The team that built one of the most thoughtful AI products I&amp;rsquo;ve seen up close still didn&amp;rsquo;t have evals when they launched. That&amp;rsquo;s not a criticism — it&amp;rsquo;s a reminder. You don&amp;rsquo;t need to have it all figured out before you ship. You just need to commit to keep unlearning.&lt;/p></description></item><item><title>Let There Be Dashboards: Introducing Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link><pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid><description>&lt;p>I gave this talk at the &lt;a href="https://www.meetup.com/grafana-friends-lisboa/events/313572885/">Grafana &amp;amp; Friends Lisbon Meetup&lt;/a> in Lisbon, Portugal.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-01-presenting.jpg" alt="Demoing Grafana Assistant to the Lisbon meetup">&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-dashboard.png" alt="Dashboard created during the demo using Grafana Assistant">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-02-audience.jpg" alt="The Grafana &amp;amp; Friends Lisbon crowd">&lt;/p>
+&lt;p>Thanks to everyone who came out! It was great to connect with the Lisbon tech community.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-03-group.jpg" alt="Group photo with the meetup attendees">&lt;/p></description></item><item><title>Do Androids Dream of Second Brains?</title><link>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</link><pubDate>Sat, 21 Mar 2026 11:15:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/</guid><description>&lt;p>I gave this talk at &lt;a href="https://pkmsummit.com/">PKM Summit 2026&lt;/a> in Utrecht, the Netherlands.&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>We often describe our PKM systems as &amp;ldquo;second brains&amp;rdquo;. But can we really say our systems think for themselves?&lt;/p>
+&lt;p>In Philip K. Dick&amp;rsquo;s &amp;ldquo;Do Androids Dream of Electric Sheep?&amp;rdquo;, the inspiration for the movie Bladerunner, the boundary between humans and machines is tested through observation and subtle signals. In this talk, we&amp;rsquo;ll explore a similar question for our knowledge systems: what happens when we start observing them?&lt;/p>
+&lt;p>By instrumenting an Obsidian vault with an observability stack and layering AI tools on top, we can begin to see patterns in how ideas form, connect, and evolve. The result isn&amp;rsquo;t quite a thinking system&amp;hellip; but it may be something closer than we&amp;rsquo;ve had before.&lt;/p></description></item><item><title>Observability for GenAI Applications (Grafana ❤️🔥 OpenTelemetry Community Call #4)</title><link>https://nicolevanderhoeven.github.io/blog/20260121-gocc04-observability-for-genai-applications/</link><pubDate>Wed, 21 Jan 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260121-gocc04-observability-for-genai-applications/</guid><description>&lt;p>In this community call with my coworker Liudmila Molkova, we dove into the emerging field of observability for Generative AI applications. We explored how to instrument LLM-powered applications using OpenTelemetry, what metrics and traces matter most when monitoring AI workloads, and how to debug issues in complex AI pipelines. The discussion covered prompt tracing, token usage monitoring, latency considerations, and the unique challenges of observing non-deterministic AI systems.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LfDVygRWQJU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link><pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid><description>&lt;p>Today I presented at &lt;a href="https://ncrafts.io/">Newcrafts&lt;/a> in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> in London and at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025&lt;/a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link><pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid><description>&lt;p>Today I presented at the &lt;a href="https://www.dutchcloudnativeday.nl">Dutch Cloud Native Day 2025&lt;/a> in Utrecht, the Netherlands. I gave a talk titled &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link><pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London&lt;/a> called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p>
+&lt;p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x6EKTCAWtn8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>AI Observability with Ishan Jain (Grafana Office Hours #29)</title><link>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</link><pubDate>Fri, 08 Nov 2024 18:24:29 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20241108-goh29-ai-observability-with-ishan-jain/</guid><description>&lt;p>In this Grafana Office Hours, Ishan Jain talks about AI Observability with Grafana: what it entails, factors to consider when monitoring and observing LLMs, and how to do it all with Grafana. He is joined by Senior Developer Advocate Nicole van der Hoeven.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9X7M-bvnZG0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>The Role of AI in Gender Equality with Nicola Martin (Adobo &amp; Avocados #15)</title><link>https://nicolevanderhoeven.github.io/blog/20231004-ana15-the-role-of-ai-in-gender-equality/</link><pubDate>Wed, 04 Oct 2023 17:26:14 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231004-ana15-the-role-of-ai-in-gender-equality/</guid><description>&lt;p>In this episode of Adobo and Avocados, my friend &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a> and I chat with &lt;a href="https://linktr.ee/nlmit">Nicola Martin&lt;/a>, Head of Quality Engineering at Adarga, to talk about the role of AI, technology, and education in gender equality.&lt;/p>
+&lt;p>Nicola is a Council and Committee Member for the British Computer Society and WomenTech Global Network. She is also a mentor, speaker, and panelist speaking on subjects such as AI and quality, software testing, and diversity in tech.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yoErbu09AGw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Tagging and Linking With AI: Napkin</title><link>https://nicolevanderhoeven.github.io/blog/20230505-tagging-and-linking-with-ai-napkin/</link><pubDate>Fri, 05 May 2023 00:58:39 +0800</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230505-tagging-and-linking-with-ai-napkin/</guid><description>&lt;p>In this video, I demonstrate my workflow for tagging and linking with AI using the Napkin.one app. Napkin is an app that uses a fork of GPT-3 to intelligently tag thoughts with keywords that improve over time. I like to use Napkin to tag mostly my highlights from Readwise.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/p2E3gRXiLYY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://napkin.one/?via=nicole">Napkin&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://readwise.io/nicole">Readwise&lt;/a>&lt;/li>
+&lt;li>&lt;em>The Lost Art of Taking Good Notes&lt;/em>, &lt;a href="https://conference.eurostarsoftwaretesting.com/event/2023/the-lost-art-of-taking-good-notes/">my talk at EuroSTAR 2023&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI tools for PKM and Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</link><pubDate>Fri, 27 Jan 2023 16:39:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</guid><description>&lt;p>Here are some AI tools for learning and taking notes that I&amp;rsquo;ve incorporated into my processes. AI is a controversial topic, but it&amp;rsquo;s important to remember it&amp;rsquo;s just like any other technology: it&amp;rsquo;s only as good as the people that wield it. In this video, I show some ways I use artificial intelligence to improve my learning and note-taking rather than to replace them.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mKWY33MXLvI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

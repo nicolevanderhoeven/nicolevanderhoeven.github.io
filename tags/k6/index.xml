@@ -1,340 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>k6 on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/k6/</link>
-    <description>Recent content in k6 on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
-      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link>
-      <pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid>
-      <description>&lt;p&gt;Today I presented at the &lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht, the Netherlands. I gave a talk titled &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link>
-      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
-&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
-      <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid>
-      <description>&lt;p&gt;I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://nicole.to/rtc2024&#34;&gt;Here are my slides&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
-&lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
-&lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Entendiendo los sintéticos (Café con Grafana #008)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link>
-      <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fXNSqrUtiJo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Lee la documentación sobre el monitoreo de sintéticos &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/&#34;&gt;en Grafana Cloud aquí&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Repasemos el G-stack (Café con Grafana #005)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link>
-      <pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/irUr96JV-Sg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Dimensionando el Grafana Suite (Café con Grafana #004)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</link>
-      <pubDate>Thu, 23 Nov 2023 13:51:25 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</guid>
-      <description>&lt;p&gt;Almudena Vivanco viene a platicarnos de todos los experimentos y pruebas a las que someten a toda la suite de Grafana. Desde Mimir hasta k6 ella pone al limite todos los elementos constantemente. Además nos dará muchos tips de su experiencia para usar Grafana y mucho mas!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/O9tAkdKMvDg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Realistic Tests with Testcontainers (Grafana Office Hours #20)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</link>
-      <pubDate>Fri, 17 Nov 2023 11:40:46 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, we talk about realistic unit tests utilizing actual instances of databases and other dependencies. We&amp;rsquo;ll be joined by Manuel de la Peña from AtomicJar, and Pablo Chacin from Grafana to learn how we can use the Testcontainers open-source framework to create lightweight, throwaway dependencies for our tests.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/LtlRvmWzCRE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/&#34;&gt;Testcontainers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/modules/k3s/&#34;&gt;k3s Module&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://testcontainers.com/modules/k6/&#34;&gt;k6 Module&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Load Testing on Kubernetes with k6 Private Load Zones (Grafana Office Hours #19)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</link>
-      <pubDate>Fri, 10 Nov 2023 10:46:48 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</guid>
-      <description>&lt;p&gt;This week, we&amp;rsquo;re talking about how you can do load testing on Kubernetes with k6 Private Load Zones, a new feature on Grafana Cloud k6 that leverages the k6 Kubernetes operator to allow you to run distributed load tests against applications behind a firewall. Here to discuss this new feature are Senior Software Engineer Olha Yevtushenko, Product Manager Daniel González Lopes, Developer Advocate Paul Balogh, and Senior Developer Advocate Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/RXLavQT58YA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;related-links&#34;&gt;Related links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;The Grafana k6 repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/&#34;&gt;Docs on Private Load Zones in Grafana Cloud k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Cómo hacer pruebas de carga con Grafana k6 (Café con Grafana #003)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</link>
-      <pubDate>Wed, 08 Nov 2023 13:43:50 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</guid>
-      <description>&lt;p&gt;Daniel González Lopes nos viene a demostrar cómo hacer pruebas de carga con Grafana k6 desde zero, y cómo utilizar k6 para ejecutar otros tipos de pruebas. En este episodio para principiantes, hablaremos también sobre la relación entre pruebas y observabilidad.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/NF2R-Zk9iek&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6&#34;&gt;Repositorio de k6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/k6/latest/&#34;&gt;Documentación de k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link>
-      <pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, my colleagues &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt;, &lt;a href=&#34;https://javaducky.com&#34;&gt;Paul Balogh&lt;/a&gt;, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z67vAkv3J0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Distributed tracing with Grafana Cloud k6 (Grafana Office Hours #14)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</link>
-      <pubDate>Sat, 07 Oct 2023 08:31:03 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I interview Senior Software Engineer Łukasz Gut about a new feature: Distributed Tracing with Grafana Cloud k6. He discusses what distributed tracing is, why it matters, and how it can help teams find reliability issues faster.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/petbezEmIw4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Celebrating 100 episodes of k6 Office Hours (k6 Office Hours #100)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230908-koh100-celebrating-100-episodes-of-koh/</link>
-      <pubDate>Fri, 08 Sep 2023 20:56:43 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230908-koh100-celebrating-100-episodes-of-koh/</guid>
-      <description>&lt;p&gt;In this 100th episode of k6 Office Hours, the Grafana Developer Advocates celebrate how it all started! Join us at this live fika with our favorite drinks and discuss our favorite moments and episodes.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/OVanapEZYFM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Grafana k6 for WebSockets and infrastructure testing (Grafana Office Hours #11)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230908-goh11-grafana-k6-for-websockets-and-infrastructure-testing/</link>
-      <pubDate>Fri, 08 Sep 2023 20:54:28 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230908-goh11-grafana-k6-for-websockets-and-infrastructure-testing/</guid>
-      <description>&lt;p&gt;In this episode of Grafana Office Hours, Solution Architect &lt;a href=&#34;https://www.youtube.com/@huzaifaasif8580&#34;&gt;Huzaifa Asif&lt;/a&gt; talks about how he has used Grafana k6 for WebSockets and infrastructure testing, and how k6 can be used for general reliability testing in addition to load testing. He is joined by Grafana Labs Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_V81Xm22l_c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s new in k6 browser? (k6 Office Hours #98)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230811-koh98-whats-new-in-k6-browser/</link>
-      <pubDate>Fri, 11 Aug 2023 20:37:25 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230811-koh98-whats-new-in-k6-browser/</guid>
-      <description>&lt;p&gt;k6 browser adds browser-level APIs to automate browser actions and collect web performance metrics as part of your k6 test. It&amp;rsquo;s an experimental module, and there is a good reason why!&lt;/p&gt;
-&lt;p&gt;In this k6 Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven are joined by Software Engineers Ankur Agarwal and Daniel Jimenez to discuss the breaking changes that are about to come to k6 browser! You wouldn&amp;rsquo;t want to miss this.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/d614EQjPzew&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Work week in the life of a Developer Advocate </title>
-      <link>https://nicolevanderhoeven.github.io/blog/20211103-work-week-in-the-life-of-a-developer-advocate/</link>
-      <pubDate>Wed, 03 Nov 2021 00:31:46 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20211103-work-week-in-the-life-of-a-developer-advocate/</guid>
-      <description>&lt;p&gt;Before I became a Developer Advocate, I didn&amp;rsquo;t really know what developer advocates did - so here&amp;rsquo;s my attempt at explaining what it is I do for a living!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/71q0JmEli0k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;weekly-breakdown&#34;&gt;Weekly breakdown&lt;/h2&gt;
-&lt;p&gt;Here&amp;rsquo;s a list of my activities during this week:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Friday
-&lt;ul&gt;
-&lt;li&gt;Filmed new ending for video #1&lt;/li&gt;
-&lt;li&gt;Figured out integration options&lt;/li&gt;
-&lt;li&gt;Did k6 Office Hours&lt;/li&gt;
-&lt;li&gt;Prepared for Clubhouse talk&lt;/li&gt;
-&lt;li&gt;Participated in customer demo&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Saturday
-&lt;ul&gt;
-&lt;li&gt;Did post-production for k6 Office Hours&lt;/li&gt;
-&lt;li&gt;Talked at a Clubhouse meetup&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Sunday
-&lt;ul&gt;
-&lt;li&gt;Wrote (team profile) blog post #1&lt;/li&gt;
-&lt;li&gt;Wrote talking points for Racket&lt;/li&gt;
-&lt;li&gt;Started writing blog post #2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Monday
-&lt;ul&gt;
-&lt;li&gt;Edited video #1&lt;/li&gt;
-&lt;li&gt;Created thumbnail, description&lt;/li&gt;
-&lt;li&gt;Scheduled video #1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Tuesday
-&lt;ul&gt;
-&lt;li&gt;Created slides for presentation&lt;/li&gt;
-&lt;li&gt;Played with Prometheus and Grafana for webinar&lt;/li&gt;
-&lt;li&gt;Had a virtual coffee with colleagues&lt;/li&gt;
-&lt;li&gt;Finished writing blog post #2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Wednesday
-&lt;ul&gt;
-&lt;li&gt;Went to four meetings&lt;/li&gt;
-&lt;li&gt;Caught up on emails, Slack, and social media (last night)&lt;/li&gt;
-&lt;li&gt;Wrote blog post #3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Thursday
-&lt;ul&gt;
-&lt;li&gt;Scripted and filmed videos #2 and #3&lt;/li&gt;
-&lt;li&gt;Started editing video #2&lt;/li&gt;
-&lt;li&gt;Talked to a potential guest on livestream&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Performance Testing with k6 and Cypress (Ministry of Testing)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</link>
-      <pubDate>Tue, 23 Mar 2021 19:52:48 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; and I teamed up to give a presentation about performance testing at a &lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing (Philippines) meetup&lt;/a&gt;, and we talked about using &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; for front-end performance testing and &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt; for back-end performance testing.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/yPmbZl2Qtus&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>K6 on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/k6/</link><description>Recent content in K6 on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 06 Nov 2025 12:23:19 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/k6/index.xml" rel="self" type="application/rss+xml"/><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link><pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid><description>&lt;p>Today I presented at &lt;a href="https://ncrafts.io/">Newcrafts&lt;/a> in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> in London and at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025&lt;/a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link><pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid><description>&lt;p>Today I presented at the &lt;a href="https://www.dutchcloudnativeday.nl">Dutch Cloud Native Day 2025&lt;/a> in Utrecht, the Netherlands. I gave a talk titled &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link><pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London&lt;/a> called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p>
+&lt;p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x6EKTCAWtn8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link><pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid><description>&lt;p>I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p>
+&lt;p>&lt;a href="https://nicole.to/rtc2024">Here are my slides&lt;/a>!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg" alt="">&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p>
+&lt;p>The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p>
+&lt;p>In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p></description></item><item><title>Entendiendo los sintéticos (Café con Grafana #008)</title><link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link><pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid><description>&lt;p>En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fXNSqrUtiJo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Lee la documentación sobre el monitoreo de sintéticos &lt;a href="https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/">en Grafana Cloud aquí&lt;/a>.&lt;/p></description></item><item><title>Repasemos el G-stack (Café con Grafana #005)</title><link>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</link><pubDate>Thu, 30 Nov 2023 13:57:52 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231130-ccg005-repasemos-el-g-stack/</guid><description>&lt;p>En este episodio de Café con Grafana tenemos a Raul Marin, Solutions Engineer (Ingeniero de soluciones?) quien viene a darnos una repasada completisima de todo el stack de Grafana. TODO! Pues hay muchos que no conocen todas las herramientas, caracteristicas y posibilidades que Grafana Labs viene a ofrecer.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/irUr96JV-Sg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Dimensionando el Grafana Suite (Café con Grafana #004)</title><link>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</link><pubDate>Thu, 23 Nov 2023 13:51:25 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231123-ccg004-dimensionando-el-grafana-suite/</guid><description>&lt;p>Almudena Vivanco viene a platicarnos de todos los experimentos y pruebas a las que someten a toda la suite de Grafana. Desde Mimir hasta k6 ella pone al limite todos los elementos constantemente. Además nos dará muchos tips de su experiencia para usar Grafana y mucho mas!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/O9tAkdKMvDg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Realistic Tests with Testcontainers (Grafana Office Hours #20)</title><link>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</link><pubDate>Fri, 17 Nov 2023 11:40:46 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231117-goh20-realistic-tests-with-testcontainers/</guid><description>&lt;p>In this episode of Grafana Office Hours, we talk about realistic unit tests utilizing actual instances of databases and other dependencies. We&amp;rsquo;ll be joined by Manuel de la Peña from AtomicJar, and Pablo Chacin from Grafana to learn how we can use the Testcontainers open-source framework to create lightweight, throwaway dependencies for our tests.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LtlRvmWzCRE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="related-links">Related links&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://testcontainers.com/">Testcontainers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://testcontainers.com/modules/k3s/">k3s Module&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://testcontainers.com/modules/k6/">k6 Module&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Load Testing on Kubernetes with k6 Private Load Zones (Grafana Office Hours #19)</title><link>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</link><pubDate>Fri, 10 Nov 2023 10:46:48 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231110-goh19-load-testing-on-kubernetes-with-k6-private-load-zones/</guid><description>&lt;p>This week, we&amp;rsquo;re talking about how you can do load testing on Kubernetes with k6 Private Load Zones, a new feature on Grafana Cloud k6 that leverages the k6 Kubernetes operator to allow you to run distributed load tests against applications behind a firewall. Here to discuss this new feature are Senior Software Engineer Olha Yevtushenko, Product Manager Daniel González Lopes, Developer Advocate Paul Balogh, and Senior Developer Advocate Nicole van der Hoeven.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RXLavQT58YA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="related-links">Related links&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/grafana/k6">The Grafana k6 repo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/k6-operator">k6 operator repo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/k6/author-run/private-load-zone-v2/">Docs on Private Load Zones in Grafana Cloud k6&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>(ES) Cómo hacer pruebas de carga con Grafana k6 (Café con Grafana #003)</title><link>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</link><pubDate>Wed, 08 Nov 2023 13:43:50 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231108-ccg003-c%C3%B3mo-hacer-pruebas-de-carga-con-grafana-k6/</guid><description>&lt;p>Daniel González Lopes nos viene a demostrar cómo hacer pruebas de carga con Grafana k6 desde zero, y cómo utilizar k6 para ejecutar otros tipos de pruebas. En este episodio para principiantes, hablaremos también sobre la relación entre pruebas y observabilidad.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/NF2R-Zk9iek?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/grafana/k6">Repositorio de k6&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/k6/latest/">Documentación de k6&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Combining Frontend and Backend Performance With John Hill (Grafana Office Hours #18)</title><link>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</link><pubDate>Fri, 03 Nov 2023 12:30:43 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231103-goh18-combining-frontend-and-backend-performance-with-john-hill/</guid><description>&lt;p>In this episode of Grafana Office Hours, my colleagues &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a>, &lt;a href="https://javaducky.com">Paul Balogh&lt;/a>, and I talk to John Hill, a Web UI Test Engineer and Grafana k6 champion, to talk about how the Grafana and k6 ecosystems can be used to ensure performance in mission-critical applications like NASA&amp;rsquo;s Open MCT.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8Z67vAkv3J0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Distributed tracing with Grafana Cloud k6 (Grafana Office Hours #14)</title><link>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</link><pubDate>Sat, 07 Oct 2023 08:31:03 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</guid><description>&lt;p>My friend &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a> and I interview Senior Software Engineer Łukasz Gut about a new feature: Distributed Tracing with Grafana Cloud k6. He discusses what distributed tracing is, why it matters, and how it can help teams find reliability issues faster.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/petbezEmIw4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Celebrating 100 episodes of k6 Office Hours (k6 Office Hours #100)</title><link>https://nicolevanderhoeven.github.io/blog/20230908-koh100-celebrating-100-episodes-of-koh/</link><pubDate>Fri, 08 Sep 2023 20:56:43 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230908-koh100-celebrating-100-episodes-of-koh/</guid><description>&lt;p>In this 100th episode of k6 Office Hours, the Grafana Developer Advocates celebrate how it all started! Join us at this live fika with our favorite drinks and discuss our favorite moments and episodes.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OVanapEZYFM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Grafana k6 for WebSockets and infrastructure testing (Grafana Office Hours #11)</title><link>https://nicolevanderhoeven.github.io/blog/20230908-goh11-grafana-k6-for-websockets-and-infrastructure-testing/</link><pubDate>Fri, 08 Sep 2023 20:54:28 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230908-goh11-grafana-k6-for-websockets-and-infrastructure-testing/</guid><description>&lt;p>In this episode of Grafana Office Hours, Solution Architect &lt;a href="https://www.youtube.com/@huzaifaasif8580">Huzaifa Asif&lt;/a> talks about how he has used Grafana k6 for WebSockets and infrastructure testing, and how k6 can be used for general reliability testing in addition to load testing. He is joined by Grafana Labs Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_V81Xm22l_c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>What's new in k6 browser? (k6 Office Hours #98)</title><link>https://nicolevanderhoeven.github.io/blog/20230811-koh98-whats-new-in-k6-browser/</link><pubDate>Fri, 11 Aug 2023 20:37:25 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230811-koh98-whats-new-in-k6-browser/</guid><description>&lt;p>k6 browser adds browser-level APIs to automate browser actions and collect web performance metrics as part of your k6 test. It&amp;rsquo;s an experimental module, and there is a good reason why!&lt;/p>
+&lt;p>In this k6 Office Hours, Developer Advocates Marie Cruz and Nicole van der Hoeven are joined by Software Engineers Ankur Agarwal and Daniel Jimenez to discuss the breaking changes that are about to come to k6 browser! You wouldn&amp;rsquo;t want to miss this.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/d614EQjPzew?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Work week in the life of a Developer Advocate</title><link>https://nicolevanderhoeven.github.io/blog/20211103-work-week-in-the-life-of-a-developer-advocate/</link><pubDate>Wed, 03 Nov 2021 00:31:46 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20211103-work-week-in-the-life-of-a-developer-advocate/</guid><description>&lt;p>Before I became a Developer Advocate, I didn&amp;rsquo;t really know what developer advocates did - so here&amp;rsquo;s my attempt at explaining what it is I do for a living!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/71q0JmEli0k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="weekly-breakdown">Weekly breakdown&lt;/h2>
+&lt;p>Here&amp;rsquo;s a list of my activities during this week:&lt;/p>
+&lt;ul>
+&lt;li>Friday
+&lt;ul>
+&lt;li>Filmed new ending for video #1&lt;/li>
+&lt;li>Figured out integration options&lt;/li>
+&lt;li>Did k6 Office Hours&lt;/li>
+&lt;li>Prepared for Clubhouse talk&lt;/li>
+&lt;li>Participated in customer demo&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Saturday
+&lt;ul>
+&lt;li>Did post-production for k6 Office Hours&lt;/li>
+&lt;li>Talked at a Clubhouse meetup&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Sunday
+&lt;ul>
+&lt;li>Wrote (team profile) blog post #1&lt;/li>
+&lt;li>Wrote talking points for Racket&lt;/li>
+&lt;li>Started writing blog post #2&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Monday
+&lt;ul>
+&lt;li>Edited video #1&lt;/li>
+&lt;li>Created thumbnail, description&lt;/li>
+&lt;li>Scheduled video #1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tuesday
+&lt;ul>
+&lt;li>Created slides for presentation&lt;/li>
+&lt;li>Played with Prometheus and Grafana for webinar&lt;/li>
+&lt;li>Had a virtual coffee with colleagues&lt;/li>
+&lt;li>Finished writing blog post #2&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Wednesday
+&lt;ul>
+&lt;li>Went to four meetings&lt;/li>
+&lt;li>Caught up on emails, Slack, and social media (last night)&lt;/li>
+&lt;li>Wrote blog post #3&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Thursday
+&lt;ul>
+&lt;li>Scripted and filmed videos #2 and #3&lt;/li>
+&lt;li>Started editing video #2&lt;/li>
+&lt;li>Talked to a potential guest on livestream&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Performance Testing with k6 and Cypress (Ministry of Testing)</title><link>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</link><pubDate>Tue, 23 Mar 2021 19:52:48 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</guid><description>&lt;p>My friend &lt;a href="https://mariedrake.com">Marie Drake&lt;/a> and I teamed up to give a presentation about performance testing at a &lt;a href="https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/">Ministry of Testing (Philippines) meetup&lt;/a>, and we talked about using &lt;a href="https://cypress.io">Cypress&lt;/a> for front-end performance testing and &lt;a href="https://k6.io">k6&lt;/a> for back-end performance testing.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yPmbZl2Qtus?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

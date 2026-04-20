@@ -1,441 +1,262 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>personal knowledge management on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</link>
-    <description>Recent content in personal knowledge management on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 08 Jul 2022 16:00:39 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>June 2022 Patreon Q&amp;A</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220708-june-patreon-q-and-a/</link>
-      <pubDate>Fri, 08 Jul 2022 16:00:39 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220708-june-patreon-q-and-a/</guid>
-      <description>&lt;p&gt;So you&amp;rsquo;re using Obsidian Templater, but what do you do when your template changes? What is YNAB? How do you use daily notes in workspaces? How do you process emails? These questions were sourced from the awesome &lt;a href=&#34;https://patreon.com/nicolevdh&#34;&gt;Patreons&lt;/a&gt; that support these videos. Thanks to you all!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3HsZm5owieg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Use Maps in Obsidian - Leaflet and Kanban</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220624-how-to-use-maps-in-obsidian/</link>
-      <pubDate>Fri, 24 Jun 2022 17:00:54 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220624-how-to-use-maps-in-obsidian/</guid>
-      <description>&lt;p&gt;I share how to use maps in Obsidian using the Obsidian Leaflet and Kanban plugins, specifically for planning a move to another country. Using a map and marking places on it is a great way to keep track of your exploration of a country when you&amp;rsquo;re not quite sure where to live yet!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/BQglSUCKpho&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to create things with your notes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</link>
-      <pubDate>Fri, 17 Jun 2022 17:37:14 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</guid>
-      <description>&lt;p&gt;What do you do with all those notes? In this presentation, I talk about how to create things with your notes. I demonstrate my process of going from raw notes to this very presentation and share some of my strategies for creating output with little effort by learning in public and identifying topics to create content about using existing notes.&lt;/p&gt;
-&lt;p&gt;On May 19th, I did a talk at the &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20220519-use-it-or-lose-it/&#34;&gt;Linking Your Thinking Conference&lt;/a&gt; about using your notes (or losing them), and about what we can do to make something useful of all our notes. This was my run through!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/4zrs_vVRwD4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Notion vs Obsidian - Databases vs Dataview</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220406-notion-vs-obsidian/</link>
-      <pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220406-notion-vs-obsidian/</guid>
-      <description>&lt;p&gt;Notion and Obsidian are similar in many ways, but they have a fundamental difference in philosophy and the way they structure notes. In this video, I talk about structure as well as Notion databases vs. Obsidian&amp;rsquo;s Dataview plugin, and tell you why I ultimately ended up with Obsidian.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/AhhFLXfldJQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>New in Obsidian: Obsidian Callouts (available now)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220330-new-in-obsidian-obsidian-callouts/</link>
-      <pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220330-new-in-obsidian-obsidian-callouts/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/TqYQ0kA1yAo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Transcript:&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;One thing I&amp;rsquo;ve learned from writing technical documentation in the last few years is that good writing is skimmable, at least in the digital age. So since I look at my notes in Obsidian the same way as I do a sort of personal documentation, I think that a lot of the same principles apply.&lt;/p&gt;
-&lt;p&gt;Today I wanna talk about an early access feature that the Obsidian team rolled out two weeks ago, and it&amp;rsquo;s called Callouts. So before I demonstrate this, I want to say that this is only available right now in the Insider Build version 0.14, but that build always gets pushed to the public, it&amp;rsquo;s just a little bit ahead of the public release. So think of this as a bit of a sneak preview. &lt;em&gt;(Note: Obsidian callouts is &lt;a href=&#34;https://help.obsidian.md/How+to/Use+callouts&#34;&gt;out now&lt;/a&gt;!)&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-about-obsidian-admonition&#34;&gt;What about Obsidian Admonition?&lt;/h2&gt;
-&lt;p&gt;Now, before Obsidian Callouts was released, I was using something called Obsidian Admonition. So if we go here, I can bring up my Obsidian Admonition page, and it looked something like this.&lt;/p&gt;
-&lt;p&gt;You would do three backticks. That&amp;rsquo;s kind of the code block syntax. And you would do something like add note. Maybe you&amp;rsquo;d have a title here, like reminder, and then you&amp;rsquo;d have your note here. And because I have Live Preview turned on, if I enter out of this, it&amp;rsquo;s going to look like this. So this is what Obsidian Admonition always looked like.&lt;/p&gt;
-&lt;p&gt;So in general, the idea here is that to make your writing more skimmable, you have these kind of, well, callout boxes that highlight sections of your text and make sure that they address something that is about the notes that you&amp;rsquo;re writing, kind of like meta notes, they&amp;rsquo;re notes about your notes, but because they&amp;rsquo;re visually distinguished from the rest of the text, it&amp;rsquo;s a lot easier for you or for your readers to easily figure out whether something is important to read or only in specific situations.&lt;/p&gt;
-&lt;h3 id=&#34;admonitioncallout-example&#34;&gt;Admonition/callout example&lt;/h3&gt;
-&lt;p&gt;And that happens a lot in technical documentation, so it&amp;rsquo;s no secret that I have used it a lot in sort of programming kind of notes. So if we go back to my vault here, let&amp;rsquo;s look at &lt;a href=&#34;https://notes.nicolevanderhoeven.com/g&#34;&gt;my note on g&lt;/a&gt;. g is a package manager for Go, the language.&lt;/p&gt;
-&lt;p&gt;And here&amp;rsquo;s a type of callout or admonition that I used. And this is kind of like this page tells you how to use, what g is and how to use it. But this note, this particular callout, is kind of like an aside. It&amp;rsquo;s like, hey, just in case you get this error, here&amp;rsquo;s how to troubleshoot it. And it&amp;rsquo;s really cool that it&amp;rsquo;s hidden by, it&amp;rsquo;s collapsed by default. And you can just click on that, and then it says, oh, if you get the error, g not found, hey, maybe restart your shell session after installation.&lt;/p&gt;
-&lt;p&gt;So that sort of callout really helps when you&amp;rsquo;re trying to quickly skim a page. So programming is certainly one use for it, and another one is tutorials in general. You know, I have this a lot for my Obsidian stuff in case I need to say that this only works for Mac or this only works for windows or something like that.&lt;/p&gt;
-&lt;p&gt;And I also use it a lot in my D&amp;amp;D games. As a Dungeon Master, I have different scenarios that I may not even need to go into depending on what my players decide to do. That is the perfect task for callouts or for admonitions.&lt;/p&gt;
-&lt;h2 id=&#34;enter-obsidian-callouts&#34;&gt;Enter Obsidian Callouts&lt;/h2&gt;
-&lt;p&gt;So I was using this admonitions format with a code block for, basically, since I learned about it. It is made by a TTRPG plugin developer called Jeremy Valentine, and he&amp;rsquo;s made a lot of very popular ones, like the Dice Roller and the Initiative Tracker and Leaflet, and it just goes on and on. But I&amp;rsquo;m digressing.&lt;/p&gt;
-&lt;p&gt;This plugin was apparently so good that even the Obsidian team realized that it really should be part of Obsidian, because a key part of Obsidian&amp;rsquo;s functionality is documentation.&lt;/p&gt;
-&lt;p&gt;So the big release is that they&amp;rsquo;ve now incorporated Admonitions-like functionality into core Obsidian, not a core plugin, so it&amp;rsquo;s not something that you even have to install or enable, it just ships by default with Obsidian, which is really awesome.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-use-obsidian-callouts&#34;&gt;How to use Obsidian Callouts&lt;/h2&gt;
-&lt;p&gt;So let&amp;rsquo;s look into how to use it. I&amp;rsquo;m going to go to my Obsidian Callouts page here. And the syntax is a little bit different from the admonitions one. Instead of the code blocks with the three backticks, this callouts functionality now uses blockquotes.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;[!info] Your title
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;The contents of your note here
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So you do a single blockquote like an arrow, and then you do brackets, and then an exclamation point. And then there are a bunch of different types, which we&amp;rsquo;ll get into, but the most common one, I guess, is note. Then you would put your title here, and then you can put the rest of the note here. So this is now doing it as a blockquote. And if I exit out of that, you&amp;rsquo;ll see that it has a nice icon of a kinda pencil or pen there, and it is visually distinguished from the rest of the note.&lt;/p&gt;
-&lt;h2 id=&#34;types-of-callouts&#34;&gt;Types of Callouts&lt;/h2&gt;
-&lt;h3 id=&#34;note&#34;&gt;note&lt;/h3&gt;
-&lt;p&gt;Now, let&amp;rsquo;s go into the types, &amp;lsquo;cause there are a few of them.&lt;/p&gt;
-&lt;p&gt;The first one I already showed you, this is a note. I put this within code blocks just to show you the syntax. And then this is what it looks like. Basically, this is the standard format of callouts, you just change whatever&amp;rsquo;s here. And then you always put the title outside of the brackets, and then the content of the note below it. So this is what a note looks like. That&amp;rsquo;s probably the most common.&lt;/p&gt;
-&lt;h3 id=&#34;abstract-summary-tldr&#34;&gt;abstract, summary, tldr&lt;/h3&gt;
-&lt;p&gt;And then another one is abstract, summary, or TLDR.&lt;/p&gt;
-&lt;p&gt;Now, all of these are the same, so like this is a TLDR, so I can actually edit it here as well. So here in this case, I was using TLDR, but if I do abstract, it&amp;rsquo;s going to look, actually, it looks a little bit different now that I think about it I thought it was going to look the same, but it&amp;rsquo;s also dependent on the theme that you&amp;rsquo;re using.&lt;/p&gt;
-&lt;p&gt;Yeah, so these three are actually different, even though they&amp;rsquo;re semantically the same. Well, that&amp;rsquo;s interesting. I just literally found that out right now as well.&lt;/p&gt;
-&lt;h3 id=&#34;info-todo&#34;&gt;info, todo&lt;/h3&gt;
-&lt;p&gt;And there&amp;rsquo;s info and todo. So this I believe is the todo. And if I go to info, it looks slightly different, just has a little eye here.&lt;/p&gt;
-&lt;p&gt;This is what I use for descriptions. What we call it in TTRPG is what we call box text, when players enter a new scene and there&amp;rsquo;s a part that you read out word for word, rather than improvising it. This is what I use for it.&lt;/p&gt;
-&lt;h3 id=&#34;tip-hint-important&#34;&gt;tip, hint, important&lt;/h3&gt;
-&lt;p&gt;Then you have tips, hint, tip, hint, or important. This one is a tip.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s see what important looks like. All right. Yeah, all right. So there&amp;rsquo;s some highlighting going on there as well, and it&amp;rsquo;s marked by an asterisk.&lt;/p&gt;
-&lt;h3 id=&#34;success-check-done&#34;&gt;success, check, done&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s success, check, done. I particularly like, I think it was done. It&amp;rsquo;s kind of like the todo had a checkbox. This one actually has the check.&lt;/p&gt;
-&lt;h3 id=&#34;questions-help-faq&#34;&gt;questions, help, faq&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s questions, help, or faq.&lt;/p&gt;
-&lt;h3 id=&#34;warning-caution-attention&#34;&gt;warning, caution, attention&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s warning, caution, or attention, which is what I use for errors or gotchas when you&amp;rsquo;re programming or something things that you might fall into that I want to call out, because I did fall into it.&lt;/p&gt;
-&lt;h3 id=&#34;fail-failure-missing&#34;&gt;fail, failure, missing&lt;/h3&gt;
-&lt;p&gt;And there&amp;rsquo;s also fail, failure, and missing. So this is all bad stuff, essentially.&lt;/p&gt;
-&lt;h3 id=&#34;danger-error&#34;&gt;danger, error&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s danger, error. It looks like this with a little lightning symbol.&lt;/p&gt;
-&lt;h3 id=&#34;bug&#34;&gt;bug&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s bug, which I use quite a bit when I&amp;rsquo;m reporting bugs or documenting bugs, anyway. This example, which kind of looks like abstract, actually.&lt;/p&gt;
-&lt;h3 id=&#34;quote-cite&#34;&gt;quote, cite&lt;/h3&gt;
-&lt;p&gt;Quote, and cite, which is kind of a blockquote, except a little bit fancier.&lt;/p&gt;
-&lt;h2 id=&#34;collapsing-and-expanding-callouts&#34;&gt;Collapsing and expanding callouts&lt;/h2&gt;
-&lt;p&gt;So as you can see, there are a lot of different types of callouts. And aside from all of those, you can also choose whether it&amp;rsquo;s collapsed or expanded, and that&amp;rsquo;s kind of the folding behavior that I showed you earlier. So let&amp;rsquo;s just do that now as well.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m going to say bug, and I&amp;rsquo;ll say bug detected, let&amp;rsquo;s say. And this time though, where just before the title, right outside of the parenthesis for the type that I&amp;rsquo;m using, I&amp;rsquo;m going to type a minus. And I&amp;rsquo;ll put, this is a bug. And I get out of that. This is what it looks like.&lt;/p&gt;
-&lt;p&gt;So it is very different from this one where it&amp;rsquo;s just expanded by default, that&amp;rsquo;s a default behavior, but if you add the minus there, that means that you&amp;rsquo;re saying that this must be minimized or collapsed by default. So then you can always click on that, and look, you see what was in the text there. You can also specify that it&amp;rsquo;s always expanded by default, but it already is always expanded by default, so you don&amp;rsquo;t really have to set that, unless you&amp;rsquo;ve changed the settings.&lt;/p&gt;
-&lt;h2 id=&#34;benefits-of-obsidian-callouts&#34;&gt;Benefits of Obsidian Callouts&lt;/h2&gt;
-&lt;h3 id=&#34;better-documentation&#34;&gt;Better documentation&lt;/h3&gt;
-&lt;p&gt;So this is a really cool and easy way of having these different colors. I know a lot of people that have come from Notion are kind of missing some of that in Obsidian. Well, this is an easy way to do that.&lt;/p&gt;
-&lt;h3 id=&#34;ability-to-modify-callouts&#34;&gt;Ability to modify callouts&lt;/h3&gt;
-&lt;p&gt;And you can also change how it looks by modifying either the CSS of the theme or by selecting themes that just really use it and display it to its advantages.&lt;/p&gt;
-&lt;p&gt;This theme here that I&amp;rsquo;m using is, let me check that, because I&amp;rsquo;m sure that people will ask. This is one of the gems of the year, one of the themes that won, it&amp;rsquo;s called Primary. Yeah, it&amp;rsquo;s really cool, and it&amp;rsquo;s on the light setting. This is a test vault.&lt;/p&gt;
-&lt;h3 id=&#34;callouts-are-native-on-obsidian-publish&#34;&gt;Callouts are native on Obsidian Publish&lt;/h3&gt;
-&lt;p&gt;And one of the coolest things about this new callouts feature is that it now works natively on Obsidian Publish. So I use Obsidian Publish for my public Obsidian vault, that&amp;rsquo;s &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Obsidian+Callouts&#34;&gt;notes.nicolevanderhoeven.com&lt;/a&gt;. There&amp;rsquo;ll be a link in the description if you want to see what that looks like. It&amp;rsquo;s basically my way of learning in public. And I select different notes to publish on there for people to see, for anybody to see.&lt;/p&gt;
-&lt;p&gt;Now, for a long time, admonitions, because it&amp;rsquo;s a plugin, wouldn&amp;rsquo;t show up up there. And then there was a way to do it where you can change the CSS and then kind of do it that way, but now that callouts is in core Obsidian, you don&amp;rsquo;t even have to do that. It&amp;rsquo;s just going to work right out of the box. So all of your notes that have the Obsidian callout syntax on them will show up the same way in your Obsidian Publish site, which is really awesome.&lt;/p&gt;
-&lt;h2 id=&#34;why-did-the-format-change-from-admonition-to-callouts&#34;&gt;Why did the format change from Admonition to callouts?&lt;/h2&gt;
-&lt;p&gt;So you might think, this is really just a format change, right? From admonition to callout, and part of it is that. I asked about why they changed the format, and the answer was that having the blockquote format falls back to blockquotes in unsupported Markdown renderer.&lt;/p&gt;
-&lt;h3 id=&#34;new-format-works-better-even-if-callouts-arent-supported&#34;&gt;New format works better even if callouts aren&amp;rsquo;t supported&lt;/h3&gt;
-&lt;p&gt;So for example, if you&amp;rsquo;re reading this note in an ID and IDE that doesn&amp;rsquo;t support that syntax, it&amp;rsquo;s at least still just going to look like a blockquote, which does make more sense than it looking like a code block, because you might not have code there. This is not just for code, this is for any sort of like sticky note that you wanna put on your notes.&lt;/p&gt;
-&lt;h3 id=&#34;markdown-inside-blockquotes-gets-parsed&#34;&gt;Markdown inside blockquotes gets parsed&lt;/h3&gt;
-&lt;p&gt;And also because it just uses blockquotes, this means that all of the Markdown inside it also gets parsed, including links and embeds and even Dataview queries apparently.&lt;/p&gt;
-&lt;p&gt;And that also means that spellcheck can check it. Because if you put something in a code block, that&amp;rsquo;s kind of a signal for spellchecks not to have a look at the contents of that code block.&lt;/p&gt;
-&lt;h2 id=&#34;does-this-completely-replace-obsidian-admonition&#34;&gt;Does this completely replace Obsidian Admonition?&lt;/h2&gt;
-&lt;p&gt;So, what happens with admonition? Because it&amp;rsquo;s been around for a while, it&amp;rsquo;s actually still up. And in fact, admonition-style code blocks will continue to work. They&amp;rsquo;re now supporting, Obsidian is now supporting both the callouts and admonition if you have admonition plugin still enabled, then you&amp;rsquo;re still going to be able to use both. So it&amp;rsquo;s not like it&amp;rsquo;s going away, but you should probably use the callout syntax going forward, just because that&amp;rsquo;s what everyone&amp;rsquo;s going to be developing based off of.&lt;/p&gt;
-&lt;h3 id=&#34;admonition-can-convert-between-formats&#34;&gt;Admonition can convert between formats&lt;/h3&gt;
-&lt;p&gt;So there is also another thing that admonition is going to do is it does conversion. So if you have existing code block admonitions, then those can be converted to callouts. Actually, I want to show where you can find that.&lt;/p&gt;
-&lt;p&gt;So if you go to settings here and look at admonition, there are a bunch of settings here, but let&amp;rsquo;s look at, yeah, the conversions. You convert MSDoc admonitions to callouts, and you can convert code block admonitions to callouts as well. Now, this will modify your notes, so just be a little bit careful with it. Save a backup or do a push to Git if you save it in a Git repo like I do. But that&amp;rsquo;s what admonition is going to be doing.&lt;/p&gt;
-&lt;h3 id=&#34;admonition-lets-you-change-callout-appearance&#34;&gt;Admonition lets you change callout appearance&lt;/h3&gt;
-&lt;p&gt;And in addition to that, it&amp;rsquo;s also shifted to being able to let you change the appearance of those callouts.&lt;/p&gt;
-&lt;p&gt;So it has a bunch of functionality like, do you wanna add drop shadows? And do you want it to be collapsible by default? Because I said that it&amp;rsquo;s expanded by default, but you could change that behavior and toggle it. And then, you could still just expand it on a case-by-case basis. But if you don&amp;rsquo;t specify anything, then it&amp;rsquo;ll just say that it should be collapsed.&lt;/p&gt;
-&lt;p&gt;There&amp;rsquo;s also the add copy button, which is actually really interesting because a lot of times that is something that I just want to copy and paste to like my players or something if I wanna paste a description or if it actually is a code block or some sort of troubleshooting thing, so I enable that. And you can set admonition colors.&lt;/p&gt;
-&lt;p&gt;You can also change the icons that are loaded there. So right now, admonition uses the Font Awesome icons. So I was showing you all of these different types of callouts, right? But those are the default ones. And admonition adds the Font Awesome ones as well. And you can even add your own types of icons. So you can load additional icons. There&amp;rsquo;s Octicons and RPG-Awesome, which sounds really interesting, actually.&lt;/p&gt;
-&lt;p&gt;And a cool effect of that is we need to do this in admonition syntax, so it&amp;rsquo;s code blocks. Let&amp;rsquo;s say, let&amp;rsquo;s just go with question. This is a question. A cool thing that you can do with admonition is you can do icon, and then choose an icon that isn&amp;rsquo;t already in there. So as an example, I happen to know that there is a Font Awesome icon that&amp;rsquo;s a cloud, so I&amp;rsquo;m just going to put cloud there and then I&amp;rsquo;m going to put, here&amp;rsquo;s the answer. If I go out there, look, now it looks like a little green cloud, so I can change everything about how it looks. This is still in the admonition syntax, though, but it functions the same way as callouts, just extended.&lt;/p&gt;
-&lt;p&gt;I really like this for being able to give instructions and then say, you know, this is Apple-only and not for Windows. So that&amp;rsquo;s really cool.&lt;/p&gt;
-&lt;h2 id=&#34;should-you-keep-using-obsidian-admonition&#34;&gt;Should you keep using Obsidian Admonition?&lt;/h2&gt;
-&lt;p&gt;So I guess the question is, and this was my question when I learned about these changes, is it still worthwhile to use admonitions because of all these quality-of-life improvements?&lt;/p&gt;
-&lt;p&gt;I think it is, because, don&amp;rsquo;t get me wrong, I&amp;rsquo;m very happy that callouts is part of Obsidian now, that just made sense for an app that is so focused on notes and note-taking and documentation. You really need these different ways to take notes on your notes.&lt;/p&gt;
-&lt;h3 id=&#34;custom-icons-and-admonition-types&#34;&gt;Custom icons and admonition types&lt;/h3&gt;
-&lt;p&gt;But I do think think that admonition is still worthwhile installing and using if you want to delve down into the specifics of this feature. So if you want different icons that make sense to you, but maybe not to other people, this is still the best way to do it.&lt;/p&gt;
-&lt;h3 id=&#34;user-interface-for-inserting-callouts-or-admonitions&#34;&gt;User interface for inserting callouts OR admonitions&lt;/h3&gt;
-&lt;p&gt;Another cool thing that I didn&amp;rsquo;t show, let me show that now, is maybe you don&amp;rsquo;t want to remember the syntax with either with the blockquotes or with the code blocks.&lt;/p&gt;
-&lt;p&gt;So with admonition turned on and enable, installed and enabled, you can bring up your command pane, which for me is Command + P, and I&amp;rsquo;m gonna type in admonition, and then you can just either a callout or an admonition and a bunch of other things as well, but I&amp;rsquo;m just going to insert a callout. And if you didn&amp;rsquo;t remember what the types were, they&amp;rsquo;re all here. And this is what they&amp;rsquo;re going to look like.&lt;/p&gt;
-&lt;p&gt;Now, as I mentioned, I think these, the ones that I grouped, are actually supposed to look the same without the admonition plugin, it&amp;rsquo;s just that either the admonition plugin or my theme is making them look a little bit different, but these are the standard ones.&lt;/p&gt;
-&lt;p&gt;So then you can choose which one you want. You can have the title there. You can choose whether or not it is collapsible. It even shows you a preview. So let&amp;rsquo;s insert that. And look, I didn&amp;rsquo;t have to type out any of that and I didn&amp;rsquo;t have to remember any of that syntax. So that&amp;rsquo;s just a nice little upgrade that you can only get with admonitions.&lt;/p&gt;
-&lt;h2 id=&#34;obsidian-callouts-is-available-now&#34;&gt;Obsidian callouts is available now&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Note: Obsidian callouts is available for all users for free now!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Again, Obsidian callouts, at the time of this recording, is only available in Insider Build version 0.14, which means you can only get it right now, if you need to get it right now, you&amp;rsquo;d have to pay for the Catalyst plan, which is a one-off $25 fee. I&amp;rsquo;ve paid that just because I wanted to give back to the Obsidian developers for this amazing tool that they just give for free.&lt;/p&gt;
-&lt;p&gt;But if you&amp;rsquo;re willing to wait, this feature, like all features, will soon be publicly available, Insiders just get it a little bit earlier. And when that happens, I&amp;rsquo;ll pin a comment in the comments below for this video so that you know when it&amp;rsquo;s available.&lt;/p&gt;
-&lt;p&gt;And if you&amp;rsquo;d like to learn about other Obsidian plugins, I do have &lt;a href=&#34;https://youtu.be/W7kTtn9empU&#34;&gt;a video on the top 10 Obsidian plugins&lt;/a&gt;, so maybe check that out.&lt;/p&gt;
-&lt;p&gt;Thank you for watching!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Process Notes in Obsidian // Readwise Official Obsidian plugin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</link>
-      <pubDate>Wed, 23 Mar 2022 16:00:28 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</guid>
-      <description>&lt;p&gt;How do you process notes in Obsidian? I demonstrate how to use the Readwise Official Obsidian plugin to go from raw content to notes in a Zettelkasten-like Obsidian vault. &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Sign up for Readwise using my link&lt;/a&gt; and get double the trial period.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Rw1L5sxlnuU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why I Chose Obsidian Over Roam Research (as a Roam investor)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</link>
-      <pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</guid>
-      <description>&lt;p&gt;I was a Roam Research power user, a Believer, and investor before I discovered Obsidian. Here&amp;rsquo;s why I still ended up choosing Obsidian over Roam as my personal knowledge management tool of choice. My goal with this video is to share with you my reasons for making the choice that I did, not to judge you or anyone else who disagrees. In the end, we all have to decide for ourselves what tool fits best in our lives.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/AWUk8-6yG2g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Actually Remember What You Learn, for Engineers with Long Reading Lists</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220124-how-to-actually-remember-what-you-learn/</link>
-      <pubDate>Mon, 24 Jan 2022 21:47:59 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220124-how-to-actually-remember-what-you-learn/</guid>
-      <description>&lt;p&gt;Who says you need the terminology of the Zettelkasten process? Here&amp;rsquo;s how I&amp;rsquo;ve learned how to learn and how to apply new ideas to my daily work.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re reading this, you probably make your living on what you&amp;rsquo;ve learned that other people haven&amp;rsquo;t. Unfortunately, if you don&amp;rsquo;t have a written system to keep track of new ideas, you&amp;rsquo;ll probably unlearn everything in a few years.&lt;/p&gt;
-&lt;h2 id=&#34;most-people-think-reading--learning&#34;&gt;Most people think reading = learning.&lt;/h2&gt;
-&lt;p&gt;Here&amp;rsquo;s why reading isn&amp;rsquo;t enough.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Our brains are best at linking concepts, not at remembering them.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Writing doesn&amp;rsquo;t help us learn; it IS how we learn.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can&amp;rsquo;t learn to swim by reading about it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If reading isn&amp;rsquo;t enough, then what should you do instead?&lt;/p&gt;
-&lt;h3 id=&#34;step-1-consume&#34;&gt;&lt;strong&gt;Step 1: Consume&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The first step is to consume content, but &lt;em&gt;selectively&lt;/em&gt; so.&lt;/p&gt;
-&lt;p&gt;Content could be a book, a video, a podcast, an article, or even a conversation. &lt;em&gt;Take notes&lt;/em&gt; on the author&amp;rsquo;s main points.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt; Shape Up is a methodology emphasising iterative cycles, &amp;ldquo;betting&amp;rdquo; on work to be done, and building fully integrated slices of work.&lt;/p&gt;
-&lt;h3 id=&#34;step-2-redefine&#34;&gt;&lt;strong&gt;Step 2: Redefine&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Next, go beyond facts and add your thoughts.&lt;/p&gt;
-&lt;p&gt;Think about the broader picture of what the author might be saying, and supplement it with &lt;em&gt;your&lt;/em&gt; opinions. &lt;em&gt;Example:&lt;/em&gt; Shape Up is an Agile methodology concerned with the limits we should apply to different stages of work.&lt;/p&gt;
-&lt;h3 id=&#34;step-3-contextualize&#34;&gt;&lt;strong&gt;Step 3: Contextualize&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Think about what the content means to you, specifically&amp;ndash; how does it stack with other things you&amp;rsquo;ve learned? Where does it fit into your interests? Accept that your context, and your notes, will change.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt; Shape Up&amp;rsquo;s idea of fully integrated work supports the notion of context-switching (see: Continuous integration, Multithreading) but could be in contention with productivity concepts like deep work (David Allen), batching, and Productivity Momentum.&lt;/p&gt;
-&lt;h2 id=&#34;its-your-brain&#34;&gt;It&amp;rsquo;s your brain!&lt;/h2&gt;
-&lt;p&gt;In the end, nobody can tell you the &amp;ldquo;right&amp;rdquo; way to learn.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to use Dataview and Templater to run JavaScript in Obsidian for automating task management</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</link>
-      <pubDate>Sun, 16 Jan 2022 16:30:22 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</guid>
-      <description>&lt;p&gt;TIL how to run JavaScript in @obsdmd. A friend of mine had an interesting use case: He had a long reading list from his studies, and wanted to use Obsidian to decide what he could read given a certain amount of time.&lt;/p&gt;
-&lt;p&gt;TL;DR: &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the script&lt;/a&gt;.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Personal Knowledge Management on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</link><description>Recent content in Personal Knowledge Management on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 08 Jul 2022 16:00:39 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/index.xml" rel="self" type="application/rss+xml"/><item><title>June 2022 Patreon Q&amp;A</title><link>https://nicolevanderhoeven.github.io/blog/20220708-june-patreon-q-and-a/</link><pubDate>Fri, 08 Jul 2022 16:00:39 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220708-june-patreon-q-and-a/</guid><description>&lt;p>So you&amp;rsquo;re using Obsidian Templater, but what do you do when your template changes? What is YNAB? How do you use daily notes in workspaces? How do you process emails? These questions were sourced from the awesome &lt;a href="https://patreon.com/nicolevdh">Patreons&lt;/a> that support these videos. Thanks to you all!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3HsZm5owieg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Use Maps in Obsidian - Leaflet and Kanban</title><link>https://nicolevanderhoeven.github.io/blog/20220624-how-to-use-maps-in-obsidian/</link><pubDate>Fri, 24 Jun 2022 17:00:54 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220624-how-to-use-maps-in-obsidian/</guid><description>&lt;p>I share how to use maps in Obsidian using the Obsidian Leaflet and Kanban plugins, specifically for planning a move to another country. Using a map and marking places on it is a great way to keep track of your exploration of a country when you&amp;rsquo;re not quite sure where to live yet!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BQglSUCKpho?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to create things with your notes</title><link>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</link><pubDate>Fri, 17 Jun 2022 17:37:14 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220617-use-it-or-lose-it/</guid><description>&lt;p>What do you do with all those notes? In this presentation, I talk about how to create things with your notes. I demonstrate my process of going from raw notes to this very presentation and share some of my strategies for creating output with little effort by learning in public and identifying topics to create content about using existing notes.&lt;/p>
+&lt;p>On May 19th, I did a talk at the &lt;a href="https://nicolevanderhoeven.com/blog/20220519-use-it-or-lose-it/">Linking Your Thinking Conference&lt;/a> about using your notes (or losing them), and about what we can do to make something useful of all our notes. This was my run through!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4zrs_vVRwD4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Notion vs Obsidian - Databases vs Dataview</title><link>https://nicolevanderhoeven.github.io/blog/20220406-notion-vs-obsidian/</link><pubDate>Wed, 06 Apr 2022 17:00:26 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220406-notion-vs-obsidian/</guid><description>&lt;p>Notion and Obsidian are similar in many ways, but they have a fundamental difference in philosophy and the way they structure notes. In this video, I talk about structure as well as Notion databases vs. Obsidian&amp;rsquo;s Dataview plugin, and tell you why I ultimately ended up with Obsidian.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AhhFLXfldJQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>New in Obsidian: Obsidian Callouts (available now)</title><link>https://nicolevanderhoeven.github.io/blog/20220330-new-in-obsidian-obsidian-callouts/</link><pubDate>Wed, 30 Mar 2022 17:36:20 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220330-new-in-obsidian-obsidian-callouts/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TqYQ0kA1yAo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;em>Transcript:&lt;/em>&lt;/p>
+&lt;p>One thing I&amp;rsquo;ve learned from writing technical documentation in the last few years is that good writing is skimmable, at least in the digital age. So since I look at my notes in Obsidian the same way as I do a sort of personal documentation, I think that a lot of the same principles apply.&lt;/p>
+&lt;p>Today I wanna talk about an early access feature that the Obsidian team rolled out two weeks ago, and it&amp;rsquo;s called Callouts. So before I demonstrate this, I want to say that this is only available right now in the Insider Build version 0.14, but that build always gets pushed to the public, it&amp;rsquo;s just a little bit ahead of the public release. So think of this as a bit of a sneak preview. &lt;em>(Note: Obsidian callouts is &lt;a href="https://help.obsidian.md/How+to/Use+callouts">out now&lt;/a>!)&lt;/em>&lt;/p>
+&lt;h2 id="what-about-obsidian-admonition">What about Obsidian Admonition?&lt;/h2>
+&lt;p>Now, before Obsidian Callouts was released, I was using something called Obsidian Admonition. So if we go here, I can bring up my Obsidian Admonition page, and it looked something like this.&lt;/p>
+&lt;p>You would do three backticks. That&amp;rsquo;s kind of the code block syntax. And you would do something like add note. Maybe you&amp;rsquo;d have a title here, like reminder, and then you&amp;rsquo;d have your note here. And because I have Live Preview turned on, if I enter out of this, it&amp;rsquo;s going to look like this. So this is what Obsidian Admonition always looked like.&lt;/p>
+&lt;p>So in general, the idea here is that to make your writing more skimmable, you have these kind of, well, callout boxes that highlight sections of your text and make sure that they address something that is about the notes that you&amp;rsquo;re writing, kind of like meta notes, they&amp;rsquo;re notes about your notes, but because they&amp;rsquo;re visually distinguished from the rest of the text, it&amp;rsquo;s a lot easier for you or for your readers to easily figure out whether something is important to read or only in specific situations.&lt;/p>
+&lt;h3 id="admonitioncallout-example">Admonition/callout example&lt;/h3>
+&lt;p>And that happens a lot in technical documentation, so it&amp;rsquo;s no secret that I have used it a lot in sort of programming kind of notes. So if we go back to my vault here, let&amp;rsquo;s look at &lt;a href="https://notes.nicolevanderhoeven.com/g">my note on g&lt;/a>. g is a package manager for Go, the language.&lt;/p>
+&lt;p>And here&amp;rsquo;s a type of callout or admonition that I used. And this is kind of like this page tells you how to use, what g is and how to use it. But this note, this particular callout, is kind of like an aside. It&amp;rsquo;s like, hey, just in case you get this error, here&amp;rsquo;s how to troubleshoot it. And it&amp;rsquo;s really cool that it&amp;rsquo;s hidden by, it&amp;rsquo;s collapsed by default. And you can just click on that, and then it says, oh, if you get the error, g not found, hey, maybe restart your shell session after installation.&lt;/p>
+&lt;p>So that sort of callout really helps when you&amp;rsquo;re trying to quickly skim a page. So programming is certainly one use for it, and another one is tutorials in general. You know, I have this a lot for my Obsidian stuff in case I need to say that this only works for Mac or this only works for windows or something like that.&lt;/p>
+&lt;p>And I also use it a lot in my D&amp;amp;D games. As a Dungeon Master, I have different scenarios that I may not even need to go into depending on what my players decide to do. That is the perfect task for callouts or for admonitions.&lt;/p>
+&lt;h2 id="enter-obsidian-callouts">Enter Obsidian Callouts&lt;/h2>
+&lt;p>So I was using this admonitions format with a code block for, basically, since I learned about it. It is made by a TTRPG plugin developer called Jeremy Valentine, and he&amp;rsquo;s made a lot of very popular ones, like the Dice Roller and the Initiative Tracker and Leaflet, and it just goes on and on. But I&amp;rsquo;m digressing.&lt;/p>
+&lt;p>This plugin was apparently so good that even the Obsidian team realized that it really should be part of Obsidian, because a key part of Obsidian&amp;rsquo;s functionality is documentation.&lt;/p>
+&lt;p>So the big release is that they&amp;rsquo;ve now incorporated Admonitions-like functionality into core Obsidian, not a core plugin, so it&amp;rsquo;s not something that you even have to install or enable, it just ships by default with Obsidian, which is really awesome.&lt;/p>
+&lt;h2 id="how-to-use-obsidian-callouts">How to use Obsidian Callouts&lt;/h2>
+&lt;p>So let&amp;rsquo;s look into how to use it. I&amp;rsquo;m going to go to my Obsidian Callouts page here. And the syntax is a little bit different from the admonitions one. Instead of the code blocks with the three backticks, this callouts functionality now uses blockquotes.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">[!info] Your title
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">The contents of your note here
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>So you do a single blockquote like an arrow, and then you do brackets, and then an exclamation point. And then there are a bunch of different types, which we&amp;rsquo;ll get into, but the most common one, I guess, is note. Then you would put your title here, and then you can put the rest of the note here. So this is now doing it as a blockquote. And if I exit out of that, you&amp;rsquo;ll see that it has a nice icon of a kinda pencil or pen there, and it is visually distinguished from the rest of the note.&lt;/p>
+&lt;h2 id="types-of-callouts">Types of Callouts&lt;/h2>
+&lt;h3 id="note">note&lt;/h3>
+&lt;p>Now, let&amp;rsquo;s go into the types, &amp;lsquo;cause there are a few of them.&lt;/p>
+&lt;p>The first one I already showed you, this is a note. I put this within code blocks just to show you the syntax. And then this is what it looks like. Basically, this is the standard format of callouts, you just change whatever&amp;rsquo;s here. And then you always put the title outside of the brackets, and then the content of the note below it. So this is what a note looks like. That&amp;rsquo;s probably the most common.&lt;/p>
+&lt;h3 id="abstract-summary-tldr">abstract, summary, tldr&lt;/h3>
+&lt;p>And then another one is abstract, summary, or TLDR.&lt;/p>
+&lt;p>Now, all of these are the same, so like this is a TLDR, so I can actually edit it here as well. So here in this case, I was using TLDR, but if I do abstract, it&amp;rsquo;s going to look, actually, it looks a little bit different now that I think about it I thought it was going to look the same, but it&amp;rsquo;s also dependent on the theme that you&amp;rsquo;re using.&lt;/p>
+&lt;p>Yeah, so these three are actually different, even though they&amp;rsquo;re semantically the same. Well, that&amp;rsquo;s interesting. I just literally found that out right now as well.&lt;/p>
+&lt;h3 id="info-todo">info, todo&lt;/h3>
+&lt;p>And there&amp;rsquo;s info and todo. So this I believe is the todo. And if I go to info, it looks slightly different, just has a little eye here.&lt;/p>
+&lt;p>This is what I use for descriptions. What we call it in TTRPG is what we call box text, when players enter a new scene and there&amp;rsquo;s a part that you read out word for word, rather than improvising it. This is what I use for it.&lt;/p>
+&lt;h3 id="tip-hint-important">tip, hint, important&lt;/h3>
+&lt;p>Then you have tips, hint, tip, hint, or important. This one is a tip.&lt;/p>
+&lt;p>Let&amp;rsquo;s see what important looks like. All right. Yeah, all right. So there&amp;rsquo;s some highlighting going on there as well, and it&amp;rsquo;s marked by an asterisk.&lt;/p>
+&lt;h3 id="success-check-done">success, check, done&lt;/h3>
+&lt;p>There&amp;rsquo;s success, check, done. I particularly like, I think it was done. It&amp;rsquo;s kind of like the todo had a checkbox. This one actually has the check.&lt;/p>
+&lt;h3 id="questions-help-faq">questions, help, faq&lt;/h3>
+&lt;p>There&amp;rsquo;s questions, help, or faq.&lt;/p>
+&lt;h3 id="warning-caution-attention">warning, caution, attention&lt;/h3>
+&lt;p>There&amp;rsquo;s warning, caution, or attention, which is what I use for errors or gotchas when you&amp;rsquo;re programming or something things that you might fall into that I want to call out, because I did fall into it.&lt;/p>
+&lt;h3 id="fail-failure-missing">fail, failure, missing&lt;/h3>
+&lt;p>And there&amp;rsquo;s also fail, failure, and missing. So this is all bad stuff, essentially.&lt;/p>
+&lt;h3 id="danger-error">danger, error&lt;/h3>
+&lt;p>There&amp;rsquo;s danger, error. It looks like this with a little lightning symbol.&lt;/p>
+&lt;h3 id="bug">bug&lt;/h3>
+&lt;p>There&amp;rsquo;s bug, which I use quite a bit when I&amp;rsquo;m reporting bugs or documenting bugs, anyway. This example, which kind of looks like abstract, actually.&lt;/p>
+&lt;h3 id="quote-cite">quote, cite&lt;/h3>
+&lt;p>Quote, and cite, which is kind of a blockquote, except a little bit fancier.&lt;/p>
+&lt;h2 id="collapsing-and-expanding-callouts">Collapsing and expanding callouts&lt;/h2>
+&lt;p>So as you can see, there are a lot of different types of callouts. And aside from all of those, you can also choose whether it&amp;rsquo;s collapsed or expanded, and that&amp;rsquo;s kind of the folding behavior that I showed you earlier. So let&amp;rsquo;s just do that now as well.&lt;/p>
+&lt;p>I&amp;rsquo;m going to say bug, and I&amp;rsquo;ll say bug detected, let&amp;rsquo;s say. And this time though, where just before the title, right outside of the parenthesis for the type that I&amp;rsquo;m using, I&amp;rsquo;m going to type a minus. And I&amp;rsquo;ll put, this is a bug. And I get out of that. This is what it looks like.&lt;/p>
+&lt;p>So it is very different from this one where it&amp;rsquo;s just expanded by default, that&amp;rsquo;s a default behavior, but if you add the minus there, that means that you&amp;rsquo;re saying that this must be minimized or collapsed by default. So then you can always click on that, and look, you see what was in the text there. You can also specify that it&amp;rsquo;s always expanded by default, but it already is always expanded by default, so you don&amp;rsquo;t really have to set that, unless you&amp;rsquo;ve changed the settings.&lt;/p>
+&lt;h2 id="benefits-of-obsidian-callouts">Benefits of Obsidian Callouts&lt;/h2>
+&lt;h3 id="better-documentation">Better documentation&lt;/h3>
+&lt;p>So this is a really cool and easy way of having these different colors. I know a lot of people that have come from Notion are kind of missing some of that in Obsidian. Well, this is an easy way to do that.&lt;/p>
+&lt;h3 id="ability-to-modify-callouts">Ability to modify callouts&lt;/h3>
+&lt;p>And you can also change how it looks by modifying either the CSS of the theme or by selecting themes that just really use it and display it to its advantages.&lt;/p>
+&lt;p>This theme here that I&amp;rsquo;m using is, let me check that, because I&amp;rsquo;m sure that people will ask. This is one of the gems of the year, one of the themes that won, it&amp;rsquo;s called Primary. Yeah, it&amp;rsquo;s really cool, and it&amp;rsquo;s on the light setting. This is a test vault.&lt;/p>
+&lt;h3 id="callouts-are-native-on-obsidian-publish">Callouts are native on Obsidian Publish&lt;/h3>
+&lt;p>And one of the coolest things about this new callouts feature is that it now works natively on Obsidian Publish. So I use Obsidian Publish for my public Obsidian vault, that&amp;rsquo;s &lt;a href="https://notes.nicolevanderhoeven.com/Obsidian+Callouts">notes.nicolevanderhoeven.com&lt;/a>. There&amp;rsquo;ll be a link in the description if you want to see what that looks like. It&amp;rsquo;s basically my way of learning in public. And I select different notes to publish on there for people to see, for anybody to see.&lt;/p>
+&lt;p>Now, for a long time, admonitions, because it&amp;rsquo;s a plugin, wouldn&amp;rsquo;t show up up there. And then there was a way to do it where you can change the CSS and then kind of do it that way, but now that callouts is in core Obsidian, you don&amp;rsquo;t even have to do that. It&amp;rsquo;s just going to work right out of the box. So all of your notes that have the Obsidian callout syntax on them will show up the same way in your Obsidian Publish site, which is really awesome.&lt;/p>
+&lt;h2 id="why-did-the-format-change-from-admonition-to-callouts">Why did the format change from Admonition to callouts?&lt;/h2>
+&lt;p>So you might think, this is really just a format change, right? From admonition to callout, and part of it is that. I asked about why they changed the format, and the answer was that having the blockquote format falls back to blockquotes in unsupported Markdown renderer.&lt;/p>
+&lt;h3 id="new-format-works-better-even-if-callouts-arent-supported">New format works better even if callouts aren&amp;rsquo;t supported&lt;/h3>
+&lt;p>So for example, if you&amp;rsquo;re reading this note in an ID and IDE that doesn&amp;rsquo;t support that syntax, it&amp;rsquo;s at least still just going to look like a blockquote, which does make more sense than it looking like a code block, because you might not have code there. This is not just for code, this is for any sort of like sticky note that you wanna put on your notes.&lt;/p>
+&lt;h3 id="markdown-inside-blockquotes-gets-parsed">Markdown inside blockquotes gets parsed&lt;/h3>
+&lt;p>And also because it just uses blockquotes, this means that all of the Markdown inside it also gets parsed, including links and embeds and even Dataview queries apparently.&lt;/p>
+&lt;p>And that also means that spellcheck can check it. Because if you put something in a code block, that&amp;rsquo;s kind of a signal for spellchecks not to have a look at the contents of that code block.&lt;/p>
+&lt;h2 id="does-this-completely-replace-obsidian-admonition">Does this completely replace Obsidian Admonition?&lt;/h2>
+&lt;p>So, what happens with admonition? Because it&amp;rsquo;s been around for a while, it&amp;rsquo;s actually still up. And in fact, admonition-style code blocks will continue to work. They&amp;rsquo;re now supporting, Obsidian is now supporting both the callouts and admonition if you have admonition plugin still enabled, then you&amp;rsquo;re still going to be able to use both. So it&amp;rsquo;s not like it&amp;rsquo;s going away, but you should probably use the callout syntax going forward, just because that&amp;rsquo;s what everyone&amp;rsquo;s going to be developing based off of.&lt;/p>
+&lt;h3 id="admonition-can-convert-between-formats">Admonition can convert between formats&lt;/h3>
+&lt;p>So there is also another thing that admonition is going to do is it does conversion. So if you have existing code block admonitions, then those can be converted to callouts. Actually, I want to show where you can find that.&lt;/p>
+&lt;p>So if you go to settings here and look at admonition, there are a bunch of settings here, but let&amp;rsquo;s look at, yeah, the conversions. You convert MSDoc admonitions to callouts, and you can convert code block admonitions to callouts as well. Now, this will modify your notes, so just be a little bit careful with it. Save a backup or do a push to Git if you save it in a Git repo like I do. But that&amp;rsquo;s what admonition is going to be doing.&lt;/p>
+&lt;h3 id="admonition-lets-you-change-callout-appearance">Admonition lets you change callout appearance&lt;/h3>
+&lt;p>And in addition to that, it&amp;rsquo;s also shifted to being able to let you change the appearance of those callouts.&lt;/p>
+&lt;p>So it has a bunch of functionality like, do you wanna add drop shadows? And do you want it to be collapsible by default? Because I said that it&amp;rsquo;s expanded by default, but you could change that behavior and toggle it. And then, you could still just expand it on a case-by-case basis. But if you don&amp;rsquo;t specify anything, then it&amp;rsquo;ll just say that it should be collapsed.&lt;/p>
+&lt;p>There&amp;rsquo;s also the add copy button, which is actually really interesting because a lot of times that is something that I just want to copy and paste to like my players or something if I wanna paste a description or if it actually is a code block or some sort of troubleshooting thing, so I enable that. And you can set admonition colors.&lt;/p>
+&lt;p>You can also change the icons that are loaded there. So right now, admonition uses the Font Awesome icons. So I was showing you all of these different types of callouts, right? But those are the default ones. And admonition adds the Font Awesome ones as well. And you can even add your own types of icons. So you can load additional icons. There&amp;rsquo;s Octicons and RPG-Awesome, which sounds really interesting, actually.&lt;/p>
+&lt;p>And a cool effect of that is we need to do this in admonition syntax, so it&amp;rsquo;s code blocks. Let&amp;rsquo;s say, let&amp;rsquo;s just go with question. This is a question. A cool thing that you can do with admonition is you can do icon, and then choose an icon that isn&amp;rsquo;t already in there. So as an example, I happen to know that there is a Font Awesome icon that&amp;rsquo;s a cloud, so I&amp;rsquo;m just going to put cloud there and then I&amp;rsquo;m going to put, here&amp;rsquo;s the answer. If I go out there, look, now it looks like a little green cloud, so I can change everything about how it looks. This is still in the admonition syntax, though, but it functions the same way as callouts, just extended.&lt;/p>
+&lt;p>I really like this for being able to give instructions and then say, you know, this is Apple-only and not for Windows. So that&amp;rsquo;s really cool.&lt;/p>
+&lt;h2 id="should-you-keep-using-obsidian-admonition">Should you keep using Obsidian Admonition?&lt;/h2>
+&lt;p>So I guess the question is, and this was my question when I learned about these changes, is it still worthwhile to use admonitions because of all these quality-of-life improvements?&lt;/p>
+&lt;p>I think it is, because, don&amp;rsquo;t get me wrong, I&amp;rsquo;m very happy that callouts is part of Obsidian now, that just made sense for an app that is so focused on notes and note-taking and documentation. You really need these different ways to take notes on your notes.&lt;/p>
+&lt;h3 id="custom-icons-and-admonition-types">Custom icons and admonition types&lt;/h3>
+&lt;p>But I do think think that admonition is still worthwhile installing and using if you want to delve down into the specifics of this feature. So if you want different icons that make sense to you, but maybe not to other people, this is still the best way to do it.&lt;/p>
+&lt;h3 id="user-interface-for-inserting-callouts-or-admonitions">User interface for inserting callouts OR admonitions&lt;/h3>
+&lt;p>Another cool thing that I didn&amp;rsquo;t show, let me show that now, is maybe you don&amp;rsquo;t want to remember the syntax with either with the blockquotes or with the code blocks.&lt;/p>
+&lt;p>So with admonition turned on and enable, installed and enabled, you can bring up your command pane, which for me is Command + P, and I&amp;rsquo;m gonna type in admonition, and then you can just either a callout or an admonition and a bunch of other things as well, but I&amp;rsquo;m just going to insert a callout. And if you didn&amp;rsquo;t remember what the types were, they&amp;rsquo;re all here. And this is what they&amp;rsquo;re going to look like.&lt;/p>
+&lt;p>Now, as I mentioned, I think these, the ones that I grouped, are actually supposed to look the same without the admonition plugin, it&amp;rsquo;s just that either the admonition plugin or my theme is making them look a little bit different, but these are the standard ones.&lt;/p>
+&lt;p>So then you can choose which one you want. You can have the title there. You can choose whether or not it is collapsible. It even shows you a preview. So let&amp;rsquo;s insert that. And look, I didn&amp;rsquo;t have to type out any of that and I didn&amp;rsquo;t have to remember any of that syntax. So that&amp;rsquo;s just a nice little upgrade that you can only get with admonitions.&lt;/p>
+&lt;h2 id="obsidian-callouts-is-available-now">Obsidian callouts is available now&lt;/h2>
+&lt;p>&lt;em>Note: Obsidian callouts is available for all users for free now!&lt;/em>&lt;/p>
+&lt;p>Again, Obsidian callouts, at the time of this recording, is only available in Insider Build version 0.14, which means you can only get it right now, if you need to get it right now, you&amp;rsquo;d have to pay for the Catalyst plan, which is a one-off $25 fee. I&amp;rsquo;ve paid that just because I wanted to give back to the Obsidian developers for this amazing tool that they just give for free.&lt;/p>
+&lt;p>But if you&amp;rsquo;re willing to wait, this feature, like all features, will soon be publicly available, Insiders just get it a little bit earlier. And when that happens, I&amp;rsquo;ll pin a comment in the comments below for this video so that you know when it&amp;rsquo;s available.&lt;/p>
+&lt;p>And if you&amp;rsquo;d like to learn about other Obsidian plugins, I do have &lt;a href="https://youtu.be/W7kTtn9empU">a video on the top 10 Obsidian plugins&lt;/a>, so maybe check that out.&lt;/p>
+&lt;p>Thank you for watching!&lt;/p></description></item><item><title>How to Process Notes in Obsidian // Readwise Official Obsidian plugin</title><link>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</link><pubDate>Wed, 23 Mar 2022 16:00:28 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</guid><description>&lt;p>How do you process notes in Obsidian? I demonstrate how to use the Readwise Official Obsidian plugin to go from raw content to notes in a Zettelkasten-like Obsidian vault. &lt;a href="https://readwise.io/nicole">Sign up for Readwise using my link&lt;/a> and get double the trial period.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Rw1L5sxlnuU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;em>Note: This post contains an affiliate link for &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href="https://nicolevanderhoeven.com/ethics/">My Ethics Statement&lt;/a> to see my standards for promotions.&lt;/em>&lt;/p></description></item><item><title>Why I Chose Obsidian Over Roam Research (as a Roam investor)</title><link>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</link><pubDate>Wed, 09 Mar 2022 10:03:41 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220309-why-i-chose-obsidian-over-roam/</guid><description>&lt;p>I was a Roam Research power user, a Believer, and investor before I discovered Obsidian. Here&amp;rsquo;s why I still ended up choosing Obsidian over Roam as my personal knowledge management tool of choice. My goal with this video is to share with you my reasons for making the choice that I did, not to judge you or anyone else who disagrees. In the end, we all have to decide for ourselves what tool fits best in our lives.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AWUk8-6yG2g?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Actually Remember What You Learn, for Engineers with Long Reading Lists</title><link>https://nicolevanderhoeven.github.io/blog/20220124-how-to-actually-remember-what-you-learn/</link><pubDate>Mon, 24 Jan 2022 21:47:59 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220124-how-to-actually-remember-what-you-learn/</guid><description>&lt;p>Who says you need the terminology of the Zettelkasten process? Here&amp;rsquo;s how I&amp;rsquo;ve learned how to learn and how to apply new ideas to my daily work.&lt;/p>
+&lt;p>If you&amp;rsquo;re reading this, you probably make your living on what you&amp;rsquo;ve learned that other people haven&amp;rsquo;t. Unfortunately, if you don&amp;rsquo;t have a written system to keep track of new ideas, you&amp;rsquo;ll probably unlearn everything in a few years.&lt;/p>
+&lt;h2 id="most-people-think-reading--learning">Most people think reading = learning.&lt;/h2>
+&lt;p>Here&amp;rsquo;s why reading isn&amp;rsquo;t enough.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Our brains are best at linking concepts, not at remembering them.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Writing doesn&amp;rsquo;t help us learn; it IS how we learn.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can&amp;rsquo;t learn to swim by reading about it.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>If reading isn&amp;rsquo;t enough, then what should you do instead?&lt;/p>
+&lt;h3 id="step-1-consume">&lt;strong>Step 1: Consume&lt;/strong>&lt;/h3>
+&lt;p>The first step is to consume content, but &lt;em>selectively&lt;/em> so.&lt;/p>
+&lt;p>Content could be a book, a video, a podcast, an article, or even a conversation. &lt;em>Take notes&lt;/em> on the author&amp;rsquo;s main points.&lt;/p>
+&lt;p>&lt;em>Example:&lt;/em> Shape Up is a methodology emphasising iterative cycles, &amp;ldquo;betting&amp;rdquo; on work to be done, and building fully integrated slices of work.&lt;/p>
+&lt;h3 id="step-2-redefine">&lt;strong>Step 2: Redefine&lt;/strong>&lt;/h3>
+&lt;p>Next, go beyond facts and add your thoughts.&lt;/p>
+&lt;p>Think about the broader picture of what the author might be saying, and supplement it with &lt;em>your&lt;/em> opinions. &lt;em>Example:&lt;/em> Shape Up is an Agile methodology concerned with the limits we should apply to different stages of work.&lt;/p>
+&lt;h3 id="step-3-contextualize">&lt;strong>Step 3: Contextualize&lt;/strong>&lt;/h3>
+&lt;p>Think about what the content means to you, specifically&amp;ndash; how does it stack with other things you&amp;rsquo;ve learned? Where does it fit into your interests? Accept that your context, and your notes, will change.&lt;/p>
+&lt;p>&lt;em>Example:&lt;/em> Shape Up&amp;rsquo;s idea of fully integrated work supports the notion of context-switching (see: Continuous integration, Multithreading) but could be in contention with productivity concepts like deep work (David Allen), batching, and Productivity Momentum.&lt;/p>
+&lt;h2 id="its-your-brain">It&amp;rsquo;s your brain!&lt;/h2>
+&lt;p>In the end, nobody can tell you the &amp;ldquo;right&amp;rdquo; way to learn.&lt;/p></description></item><item><title>How to use Dataview and Templater to run JavaScript in Obsidian for automating task management</title><link>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</link><pubDate>Sun, 16 Jan 2022 16:30:22 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</guid><description>&lt;p>TIL how to run JavaScript in @obsdmd. A friend of mine had an interesting use case: He had a long reading list from his studies, and wanted to use Obsidian to decide what he could read given a certain amount of time.&lt;/p>
+&lt;p>TL;DR: &lt;a href="https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244">Here&amp;rsquo;s the script&lt;/a>.
 And here&amp;rsquo;s the end result:
-&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-demo.gif&#34; alt=&#34;Gif of the full setup working&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Requires: Obsidian. The Dataview and Templater plugins. Also requires a separate markdown page for every chapter or bite-sized section of the book or course, with the metadata &lt;code&gt;time_required&lt;/code&gt; in the YAML frontmatter.&lt;/p&gt;
-&lt;p&gt;Why Dataview? Dataview can parse that frontmatter, grab the value for &lt;code&gt;time_required&lt;/code&gt;, and return a list of pages and links. There is a Dataview Query Language, but dataviewjs is more extensible.&lt;/p&gt;
-&lt;p&gt;Why Templater? I initially wanted to write a script within a dataviewjs block, but:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dataview results are only rendered in Preview mode (which I don&amp;rsquo;t spend much time in)&lt;/li&gt;
-&lt;li&gt;I hate testing JavaScript within Obsidian.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Instead, I created a folder &lt;code&gt;scripts&lt;/code&gt; within my vault and selected it as the &amp;ldquo;user scripts folder&amp;rdquo; in Templater settings. Then, I created a script, &lt;code&gt;returnStudyOptions.js&lt;/code&gt;. &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the gist for that&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In a new note, I typed &lt;code&gt;&amp;lt;% tp.user.returnStudyOptions(tp, 60) %&amp;gt;&lt;/code&gt;. This line calls the script I created and also passes 60 minutes as the time available.&lt;/p&gt;
-&lt;p&gt;I selected &amp;ldquo;Templater: Replace templates in the active file&amp;rdquo; from the Command Pane, which runs the script and replaces the line with the script&amp;rsquo;s returned value, which looks something like this:
-&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-result.png&#34; alt=&#34;Screenshot of the notes returned by the script&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I also assigned a hotkey to for replacing the template, for ease of use. That&amp;rsquo;s it! I thought this was a fun way to learn how to use JavaScript in Obsidian. Thanks to &lt;a href=&#34;https://twitter.com/ealameda&#34;&gt;@ealameda&lt;/a&gt; for the use case!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Building a DM&#39;s Brain Attic</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</link>
-      <pubDate>Sat, 15 Jan 2022 16:45:22 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</guid>
-      <description>&lt;p&gt;Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;amp;D and other RPGs, is made up of 37,884 items (287 GB).&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/trpgs.png&#34; alt=&#34;Screenshot of my TRPGs folder with all my third-party items&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Mike from &lt;a href=&#34;https://twitter.com/SlyFlourish&#34;&gt;@SlyFlourish&lt;/a&gt; wrote an article applying Sherlock Holmes&amp;rsquo;s brain attic for lazy dungeon masters, and he called it the &amp;ldquo;[DM Brain Attic](&lt;a href=&#34;https://slyflourish.com/brain_attic.html%22&#34;&gt;https://slyflourish.com/brain_attic.html&amp;quot;&lt;/a&gt;. The idea is to collect interesting techniques or ideas and file them away for later.&lt;/p&gt;
-&lt;p&gt;Sounds like a good idea, but for most of us, this attic is theoretical. We read books, we watch videos, and we read blog posts on monsters and settings and plots, and we trust that they&amp;rsquo;ll all be saved somewhere in our heads.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s not how it works. Our minds are good at making connections, not remembering CRs from monster statblocks. So how do we make this DM Brain Attic less theoretical and more practical?&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Read and take notes. If you haven&amp;rsquo;t read everything you&amp;rsquo;ve bought, you&amp;rsquo;re buying too much. Read what you&amp;rsquo;ve got and write down the parts that are actually relevant to you and your game. Here&amp;rsquo;s what mine looks like for the first Arcadia (@helloMCDM) issue.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/arcadia.png&#34; alt=&#34;Screenshot of my notes on Arcadia issue 1&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Combine like with like. This is the hard part, because it involves creating a central place for monsters, items, spells, etc. &lt;a href=&#34;https://github.com/nicolevanderhoeven/xios-guide-to-monsters&#34;&gt;This&lt;/a&gt; is my attempt to do this for monsters. It creates one page per monster that includes its source. Here&amp;rsquo;s a monster example.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/zombie.png&#34; alt=&#34;Screenshot of a monster page&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s an example for items that includes SRD items and Vault of Magic Items (by &lt;a href=&#34;https://twitter.com/KoboldPress&#34;&gt;@KoboldPress&lt;/a&gt;). Each one links to a page for the item with full details.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/vault-of-magic.png&#34; alt=&#34;Screenshot of my page of items&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Resurface via search: You may have noticed the metadata in the previous page. The metadata gives me criteria to search monsters by. Here&amp;rsquo;s how I can query my monster database using the &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview plugin&lt;/a&gt; for &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dataview-query.png&#34; alt=&#34;Screenshot of a monster query using Dataview&#34;&gt;&lt;/p&gt;
-&lt;p&gt;And here&amp;rsquo;s the result of that query, returning monsters that fit my criteria and, importantly, which of my PDFs they come from.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dataview-result.png&#34; alt=&#34;Screenshot of the results from the Dataview query shown earlier&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Resurface via random table generators. Another way that I resurface content is by using random table generators using the &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller plugin&lt;/a&gt; for Obsidian by Jeremy Valentine. Here&amp;rsquo;s my NPC page, compiled from multiple sources.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/npc-rolls.png&#34; alt=&#34;My NPC creation page with randomized traits&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Each die icon can be clicked to generate a new &amp;ldquo;roll&amp;rdquo;. Here&amp;rsquo;s a gif for how that works, using stuff from Sly Flourish&amp;rsquo;s Uncovered Secrets, accessible to &lt;a href=&#34;https://www.patreon.com/slyflourish&#34;&gt;his Patreons&lt;/a&gt;. Each click &amp;ldquo;rolls&amp;rdquo; on a table I&amp;rsquo;ve defined in a separate note.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/uncoveredsecrets_02.gif&#34; alt=&#34;Gif of how my random tables created from Sly Flourish&amp;amp;rsquo;s Uncovered Secrets&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Is building a DM Brain Attic a lot of work? Yes.&lt;/p&gt;
-&lt;p&gt;But how likely is it that I&amp;rsquo;d use my 287 GB of third-party stuff while preparing for my game if I didn&amp;rsquo;t have this system? Not very.&lt;/p&gt;
-&lt;p&gt;At least this way, I&amp;rsquo;m using what I&amp;rsquo;ve actually bought and putting good content into a very real DM&amp;rsquo;s Brain Attic that I can actually scrounge around for good ideas in, before or during a game.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;d like to know more, check out this video I made about how I use Obsidian to run and play D&amp;amp;D online:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3pt6_srUZ7U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Set Goals in Obsidian for 2022</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</link>
-      <pubDate>Wed, 12 Jan 2022 16:58:39 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</guid>
-      <description>&lt;p&gt;How do you set goals in Obsidian?&lt;/p&gt;
-&lt;p&gt;New Year&amp;rsquo;s Resolutions are infamously left undone. So what should you do instead? OKRs.&lt;/p&gt;
-&lt;p&gt;Setting OKRs (Objective Key Results) instead of resolutions increases your chances of succeeding. Tracking your progress throughout the year also make sure you&amp;rsquo;re getting things done. In this video, I talk about what OKRs are and how I&amp;rsquo;ve set them up in Obsidian for the year ahead.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/T2Aeaq4sk7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>The Tester&#39;s Toolbox Is Flawed</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</link>
-      <pubDate>Tue, 11 Jan 2022 16:30:49 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</guid>
-      <description>&lt;p&gt;Every tester has a toolbox.&lt;/p&gt;
-&lt;p&gt;In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?&lt;/p&gt;
-&lt;p&gt;That kind of thinking could be dangerous.&lt;/p&gt;
-&lt;h2 id=&#34;the-right-tool-for-every-job-fails-for-multiple-jobs&#34;&gt;&amp;ldquo;The right tool for every job&amp;rdquo; fails for multiple jobs.&lt;/h2&gt;
-&lt;p&gt;You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing. &lt;em&gt;This is the modern tester&amp;rsquo;s dilemma&lt;/em&gt;: we spend more time working with our tools than with the application under test.&lt;/p&gt;
-&lt;p&gt;In the real world, including a new tool in your testing stack means a new framework, usually a new programming language, and sometimes even new colleagues with experience in those tools. And what about continuous testing? All those tools have to talk to each other at some point.&lt;/p&gt;
-&lt;p&gt;More tools = more time, effort, and money.&lt;/p&gt;
-&lt;h3 id=&#34;when-choosing-tools-prioritize-multitools&#34;&gt;&lt;strong&gt;When choosing tools, prioritize multitools.&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;A multitool can be used for different purposes and prioritizes flexibility.&lt;/p&gt;
-&lt;p&gt;Here are a few ways to spot a multitool:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;#1: It is a polymath.&lt;/strong&gt; A multitool is good at many things and is limited in use case only by the imagination of those that use it.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;#2: It uses what you know.&lt;/strong&gt; A multitool is built on languages and frameworks you and your team already know, reducing ramp-up time.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;#3 It plays well with others.&lt;/strong&gt; A multitool doesn&amp;rsquo;t force you to use it to the exclusion of everything else. It integrates well with best-in-class tools.&lt;/p&gt;
-&lt;p&gt;When you optimize for individual jobs, you&amp;rsquo;re missing the big picture. You&amp;rsquo;re ultimately left holding the ends of multiple tools and creating a kraken of a test suite with all these tools cobbled together.&lt;/p&gt;
-&lt;p&gt;Instead, prioritize multitools.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Obsidian for the Uninitiated</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</link>
-      <pubDate>Mon, 10 Jan 2022 23:07:06 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</guid>
-      <description>&lt;h1 id=&#34;obsidian-for-the-uninitiated&#34;&gt;Obsidian for the Uninitiated&lt;/h1&gt;
-&lt;p&gt;You&amp;rsquo;ve installed Obsidian and created a new vault. Now what?&lt;/p&gt;
-&lt;p&gt;Unfortunately, it can be more than a little daunting to get started with. It doesn&amp;rsquo;t help that there are terms like &lt;em&gt;Zettelkasten&lt;/em&gt; and &lt;em&gt;Maps of Content&lt;/em&gt; and &lt;em&gt;fleeting notes&lt;/em&gt; and &lt;em&gt;digital garden&lt;/em&gt; that are all just trying to structure what we all learned to do in primary school.&lt;/p&gt;
-&lt;h2 id=&#34;start-by-logging-what-youre-doing&#34;&gt;Start by logging what you&amp;rsquo;re doing.&lt;/h2&gt;
-&lt;p&gt;Having a rigid structure does wonders for curtailing creativity and plain fun. Instead, I recommend starting small.&lt;/p&gt;
-&lt;p&gt;Here are some small steps to take after installing Obsidian:&lt;/p&gt;
-&lt;h3 id=&#34;step-1-enable-the-daily-notes-plugin&#34;&gt;&lt;strong&gt;Step 1: Enable the Daily Notes plugin&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The most game-changing feature of Obsidian is plugins.&lt;/p&gt;
-&lt;p&gt;Go into Settings &amp;gt; Core Plugins, and enable the &lt;em&gt;Daily notes&lt;/em&gt; plugin.&lt;/p&gt;
-&lt;p&gt;Then, exit out of the dialog boxes and hit CMD P (Mac) or CTRL P (Windows) to bring up the command pane. Search for and select &lt;em&gt;Daily notes: Open today&amp;rsquo;s daily note&lt;/em&gt;. That creates a new note in your vault with today&amp;rsquo;s date.&lt;/p&gt;
-&lt;p&gt;From now on, do this every day and log things you do during the day: things to do, appointments to keep, videos you watched.&lt;/p&gt;
-&lt;h3 id=&#34;step-2-the-next-time-you-consume-content-take-notes&#34;&gt;&lt;strong&gt;Step 2: The next time you consume content, take notes.&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Now, the next time you read or watch something interesting, type its title into Obsidian with brackets:&lt;code&gt;[[Cool video I watched]]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s now a link. CMD+click on that link, or click the glasses icon on the top right to switch to Preview mode, and then click on the link. You should now have a new note. Write about what you thought of the video.&lt;/p&gt;
-&lt;h3 id=&#34;step-3-start-identifying-and-fleshing-out-ideas&#34;&gt;&lt;strong&gt;Step 3: Start identifying and fleshing out ideas.&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Keep going with these steps and every now and then, start to identify cool ideas you come across. Create new notes from them just like you did in Step 2. Don&amp;rsquo;t worry about getting it all; just do it when and until you feel like it.&lt;/p&gt;
-&lt;p&gt;These three simple steps, over time, will be the foundations of your own Personal Knowlege Management system with Obsidian.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>5 Ways to Use Obsidian as a Software Engineer</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</link>
-      <pubDate>Sun, 09 Jan 2022 19:20:49 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</guid>
-      <description>&lt;p&gt;Yesterday, I wrote about why I think taking notes is the surprising foundation of a tester&amp;rsquo;s career.&lt;/p&gt;
-&lt;p&gt;But it&amp;rsquo;s not just testers. Every software engineer is a knowledge worker, and that means we get paid for what we know. Using a Personal Knowledge Management (PKM) system such as &lt;a href=&#34;http://Obsidian.md&#34;&gt;Obsidian.md&lt;/a&gt; helps us keep up with the constant barrage of new ideas in tech.&lt;/p&gt;
-&lt;p&gt;Here are 5 things I use Obsidian for.&lt;/p&gt;
-&lt;h2 id=&#34;1-my-very-own-stack-overflow&#34;&gt;#1: My very own Stack Overflow&lt;/h2&gt;
-&lt;p&gt;If you code, you&amp;rsquo;ve used Stack Overflow.&lt;/p&gt;
-&lt;p&gt;What if you had your &lt;strong&gt;own&lt;/strong&gt; Stack Overflow, one that contained cheat sheets of every language you&amp;rsquo;ve ever tried to hack something up in, including only commands relevant to your job? This is exactly &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Python&#34;&gt;what I&amp;rsquo;ve done for Python&lt;/a&gt; recently, and it&amp;rsquo;s helping me solidify my knowledge.&lt;/p&gt;
-&lt;h2 id=&#34;2-tools-database&#34;&gt;#2: Tools database&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s a tool for everything.&lt;/p&gt;
-&lt;p&gt;To keep them straight, I have a page for every load testing tool I try, with tutorials for how to get started, an assessment of its features, and observations I had while attempting to learn it. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/k6+(tool)&#34;&gt;Here&amp;rsquo;s what I have for the load testing tool k6&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Bonus: I also use &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;the Dataview plugin&lt;/a&gt; to query tools that fit my criteria.&lt;/p&gt;
-&lt;h2 id=&#34;3-an-agile-workspace&#34;&gt;#3: An Agile workspace&lt;/h2&gt;
-&lt;p&gt;If Agile is good enough for my professional work, it&amp;rsquo;s good enough for my personal work.&lt;/p&gt;
-&lt;p&gt;I use the &lt;a href=&#34;https://github.com/mgmeyers/obsidian-kanban&#34;&gt;Kanban plugin&lt;/a&gt; to keep track of projects, create weekly and monthly review/retro templates, and work iteratively using &lt;a href=&#34;https://github.com/bjsi/incremental-writing&#34;&gt;the Incremental Writing plugin&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;4-a-public-learning-log&#34;&gt;#4: A public learning log&lt;/h2&gt;
-&lt;p&gt;Learning in public is the fastest way to improve.&lt;/p&gt;
-&lt;p&gt;When I&amp;rsquo;m trying to figure something out, I document my attempts. With Obsidian Publish, I can quickly push this log out to my domain and share them with colleagues to get a quick review so that they can easily follow my train of thought and tell me where I went wrong.&lt;/p&gt;
-&lt;h2 id=&#34;5-a-digital-garden-of-software-ideas&#34;&gt;#5: A digital garden of software ideas&lt;/h2&gt;
-&lt;p&gt;Build libraries, not feeds.&lt;/p&gt;
-&lt;p&gt;I use Obsidian to save things I read/watch/listen to but also to save space for ideas I&amp;rsquo;ve learned to germinate. I publish notes before they&amp;rsquo;re fully fleshed out, with the goal of growing everything over time.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com&#34;&gt;Today, I have 4,567 notes&lt;/a&gt;, all about things that matter to me.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Every engineer should have a PKM system.&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Take Notes, Not Tools</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</link>
-      <pubDate>Sat, 08 Jan 2022 17:00:44 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</guid>
-      <description>&lt;p&gt;When I first got into testing, I thought that testing was about learning different tools and frameworks.&lt;/p&gt;
-&lt;p&gt;I learned how to use Neoload, then LoadRunner, then JMeter, and then SeleniumSilkPerformerVisualStudioGatlingPuppeteerPlaywrightk6 in short succession. I took courses on JavaScript, on C, on Java. I ticked off tools like a grocery list.&lt;/p&gt;
-&lt;p&gt;It didn&amp;rsquo;t take me long to realize that I still wasn&amp;rsquo;t a good tester.&lt;/p&gt;
-&lt;h2 id=&#34;taking-notes-not-tools-is-what-makes-a-good-tester&#34;&gt;Taking notes, not tools, is what makes a good tester.&lt;/h2&gt;
-&lt;p&gt;When you think about it, a lot of things a tester does revolves around taking good notes.&lt;/p&gt;
-&lt;p&gt;Requirements are just notes on what the business wants to achieve. Test scenarios are notes on situations that the team wants to simulate. Test cases are notes on how a user would use an application. Defects are notes on issues.&lt;/p&gt;
-&lt;p&gt;The quality of a tester&amp;rsquo;s notes dictates the quality of their work.&lt;/p&gt;
-&lt;h3 id=&#34;listen-to-people-not-tool-tutorials&#34;&gt;&lt;strong&gt;Listen to people, not tool tutorials&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Take notes on what users do.&lt;/strong&gt; Talk to the business. Pore through Google Analytics logs. Piece together a story of the kind of people who use your application, and how they use it.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Take notes on problem areas.&lt;/strong&gt; Talk to customer support about the most common questions they get&amp;ndash; they know more about pain points than anyone else in the company. Talk to the ops engineers who were on call during the last production incident. These problems are what you&amp;rsquo;ll need to test later.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Take notes on what you&amp;rsquo;ve learned.&lt;/strong&gt; If you don&amp;rsquo;t like learning, you&amp;rsquo;re in the wrong field. Document everything, even things you think you&amp;rsquo;ll never forget, because one day, you WILL forget.&lt;/p&gt;
-&lt;p&gt;Taking notes, not tools, is the foundation every testing career is built on.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;img src="https://nicolevanderhoeven.github.io/assets/templater-demo.gif" alt="Gif of the full setup working">&lt;/p>
+&lt;p>Requires: Obsidian. The Dataview and Templater plugins. Also requires a separate markdown page for every chapter or bite-sized section of the book or course, with the metadata &lt;code>time_required&lt;/code> in the YAML frontmatter.&lt;/p>
+&lt;p>Why Dataview? Dataview can parse that frontmatter, grab the value for &lt;code>time_required&lt;/code>, and return a list of pages and links. There is a Dataview Query Language, but dataviewjs is more extensible.&lt;/p>
+&lt;p>Why Templater? I initially wanted to write a script within a dataviewjs block, but:&lt;/p>
+&lt;ul>
+&lt;li>Dataview results are only rendered in Preview mode (which I don&amp;rsquo;t spend much time in)&lt;/li>
+&lt;li>I hate testing JavaScript within Obsidian.&lt;/li>
+&lt;/ul>
+&lt;p>Instead, I created a folder &lt;code>scripts&lt;/code> within my vault and selected it as the &amp;ldquo;user scripts folder&amp;rdquo; in Templater settings. Then, I created a script, &lt;code>returnStudyOptions.js&lt;/code>. &lt;a href="https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244">Here&amp;rsquo;s the gist for that&lt;/a>.&lt;/p>
+&lt;p>In a new note, I typed &lt;code>&amp;lt;% tp.user.returnStudyOptions(tp, 60) %&amp;gt;&lt;/code>. This line calls the script I created and also passes 60 minutes as the time available.&lt;/p>
+&lt;p>I selected &amp;ldquo;Templater: Replace templates in the active file&amp;rdquo; from the Command Pane, which runs the script and replaces the line with the script&amp;rsquo;s returned value, which looks something like this:
+&lt;img src="https://nicolevanderhoeven.github.io/assets/templater-result.png" alt="Screenshot of the notes returned by the script">&lt;/p>
+&lt;p>I also assigned a hotkey to for replacing the template, for ease of use. That&amp;rsquo;s it! I thought this was a fun way to learn how to use JavaScript in Obsidian. Thanks to &lt;a href="https://twitter.com/ealameda">@ealameda&lt;/a> for the use case!&lt;/p></description></item><item><title>Building a DM's Brain Attic</title><link>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</link><pubDate>Sat, 15 Jan 2022 16:45:22 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</guid><description>&lt;p>Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;amp;D and other RPGs, is made up of 37,884 items (287 GB).&lt;/p>
+&lt;p>Here&amp;rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/trpgs.png" alt="Screenshot of my TRPGs folder with all my third-party items">&lt;/p>
+&lt;p>Mike from &lt;a href="https://twitter.com/SlyFlourish">@SlyFlourish&lt;/a> wrote an article applying Sherlock Holmes&amp;rsquo;s brain attic for lazy dungeon masters, and he called it the &amp;ldquo;[DM Brain Attic](&lt;a href="https://slyflourish.com/brain_attic.html%22">https://slyflourish.com/brain_attic.html&amp;quot;&lt;/a>. The idea is to collect interesting techniques or ideas and file them away for later.&lt;/p>
+&lt;p>Sounds like a good idea, but for most of us, this attic is theoretical. We read books, we watch videos, and we read blog posts on monsters and settings and plots, and we trust that they&amp;rsquo;ll all be saved somewhere in our heads.&lt;/p>
+&lt;p>That&amp;rsquo;s not how it works. Our minds are good at making connections, not remembering CRs from monster statblocks. So how do we make this DM Brain Attic less theoretical and more practical?&lt;/p>
+&lt;ol>
+&lt;li>Read and take notes. If you haven&amp;rsquo;t read everything you&amp;rsquo;ve bought, you&amp;rsquo;re buying too much. Read what you&amp;rsquo;ve got and write down the parts that are actually relevant to you and your game. Here&amp;rsquo;s what mine looks like for the first Arcadia (@helloMCDM) issue.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/arcadia.png" alt="Screenshot of my notes on Arcadia issue 1">&lt;/p>
+&lt;ol start="2">
+&lt;li>Combine like with like. This is the hard part, because it involves creating a central place for monsters, items, spells, etc. &lt;a href="https://github.com/nicolevanderhoeven/xios-guide-to-monsters">This&lt;/a> is my attempt to do this for monsters. It creates one page per monster that includes its source. Here&amp;rsquo;s a monster example.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/zombie.png" alt="Screenshot of a monster page">&lt;/p>
+&lt;p>Here&amp;rsquo;s an example for items that includes SRD items and Vault of Magic Items (by &lt;a href="https://twitter.com/KoboldPress">@KoboldPress&lt;/a>). Each one links to a page for the item with full details.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/vault-of-magic.png" alt="Screenshot of my page of items">&lt;/p>
+&lt;ol start="3">
+&lt;li>Resurface via search: You may have noticed the metadata in the previous page. The metadata gives me criteria to search monsters by. Here&amp;rsquo;s how I can query my monster database using the &lt;a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview plugin&lt;/a> for &lt;a href="https://obsidian.md">Obsidian&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/dataview-query.png" alt="Screenshot of a monster query using Dataview">&lt;/p>
+&lt;p>And here&amp;rsquo;s the result of that query, returning monsters that fit my criteria and, importantly, which of my PDFs they come from.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/dataview-result.png" alt="Screenshot of the results from the Dataview query shown earlier">&lt;/p>
+&lt;ol start="4">
+&lt;li>Resurface via random table generators. Another way that I resurface content is by using random table generators using the &lt;a href="https://github.com/valentine195/obsidian-dice-roller">Dice Roller plugin&lt;/a> for Obsidian by Jeremy Valentine. Here&amp;rsquo;s my NPC page, compiled from multiple sources.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/npc-rolls.png" alt="My NPC creation page with randomized traits">&lt;/p>
+&lt;p>Each die icon can be clicked to generate a new &amp;ldquo;roll&amp;rdquo;. Here&amp;rsquo;s a gif for how that works, using stuff from Sly Flourish&amp;rsquo;s Uncovered Secrets, accessible to &lt;a href="https://www.patreon.com/slyflourish">his Patreons&lt;/a>. Each click &amp;ldquo;rolls&amp;rdquo; on a table I&amp;rsquo;ve defined in a separate note.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/uncoveredsecrets_02.gif" alt="Gif of how my random tables created from Sly Flourish&amp;rsquo;s Uncovered Secrets">&lt;/p>
+&lt;p>Is building a DM Brain Attic a lot of work? Yes.&lt;/p>
+&lt;p>But how likely is it that I&amp;rsquo;d use my 287 GB of third-party stuff while preparing for my game if I didn&amp;rsquo;t have this system? Not very.&lt;/p>
+&lt;p>At least this way, I&amp;rsquo;m using what I&amp;rsquo;ve actually bought and putting good content into a very real DM&amp;rsquo;s Brain Attic that I can actually scrounge around for good ideas in, before or during a game.&lt;/p>
+&lt;p>If you&amp;rsquo;d like to know more, check out this video I made about how I use Obsidian to run and play D&amp;amp;D online:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3pt6_srUZ7U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Set Goals in Obsidian for 2022</title><link>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</link><pubDate>Wed, 12 Jan 2022 16:58:39 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</guid><description>&lt;p>How do you set goals in Obsidian?&lt;/p>
+&lt;p>New Year&amp;rsquo;s Resolutions are infamously left undone. So what should you do instead? OKRs.&lt;/p>
+&lt;p>Setting OKRs (Objective Key Results) instead of resolutions increases your chances of succeeding. Tracking your progress throughout the year also make sure you&amp;rsquo;re getting things done. In this video, I talk about what OKRs are and how I&amp;rsquo;ve set them up in Obsidian for the year ahead.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/T2Aeaq4sk7M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>The Tester's Toolbox Is Flawed</title><link>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</link><pubDate>Tue, 11 Jan 2022 16:30:49 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</guid><description>&lt;p>Every tester has a toolbox.&lt;/p>
+&lt;p>In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?&lt;/p>
+&lt;p>That kind of thinking could be dangerous.&lt;/p>
+&lt;h2 id="the-right-tool-for-every-job-fails-for-multiple-jobs">&amp;ldquo;The right tool for every job&amp;rdquo; fails for multiple jobs.&lt;/h2>
+&lt;p>You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing. &lt;em>This is the modern tester&amp;rsquo;s dilemma&lt;/em>: we spend more time working with our tools than with the application under test.&lt;/p>
+&lt;p>In the real world, including a new tool in your testing stack means a new framework, usually a new programming language, and sometimes even new colleagues with experience in those tools. And what about continuous testing? All those tools have to talk to each other at some point.&lt;/p>
+&lt;p>More tools = more time, effort, and money.&lt;/p>
+&lt;h3 id="when-choosing-tools-prioritize-multitools">&lt;strong>When choosing tools, prioritize multitools.&lt;/strong>&lt;/h3>
+&lt;p>A multitool can be used for different purposes and prioritizes flexibility.&lt;/p>
+&lt;p>Here are a few ways to spot a multitool:&lt;/p>
+&lt;p>&lt;strong>#1: It is a polymath.&lt;/strong> A multitool is good at many things and is limited in use case only by the imagination of those that use it.&lt;/p>
+&lt;p>&lt;strong>#2: It uses what you know.&lt;/strong> A multitool is built on languages and frameworks you and your team already know, reducing ramp-up time.&lt;/p>
+&lt;p>&lt;strong>#3 It plays well with others.&lt;/strong> A multitool doesn&amp;rsquo;t force you to use it to the exclusion of everything else. It integrates well with best-in-class tools.&lt;/p>
+&lt;p>When you optimize for individual jobs, you&amp;rsquo;re missing the big picture. You&amp;rsquo;re ultimately left holding the ends of multiple tools and creating a kraken of a test suite with all these tools cobbled together.&lt;/p>
+&lt;p>Instead, prioritize multitools.&lt;/p></description></item><item><title>Obsidian for the Uninitiated</title><link>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</link><pubDate>Mon, 10 Jan 2022 23:07:06 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</guid><description>&lt;h1 id="obsidian-for-the-uninitiated">Obsidian for the Uninitiated&lt;/h1>
+&lt;p>You&amp;rsquo;ve installed Obsidian and created a new vault. Now what?&lt;/p>
+&lt;p>Unfortunately, it can be more than a little daunting to get started with. It doesn&amp;rsquo;t help that there are terms like &lt;em>Zettelkasten&lt;/em> and &lt;em>Maps of Content&lt;/em> and &lt;em>fleeting notes&lt;/em> and &lt;em>digital garden&lt;/em> that are all just trying to structure what we all learned to do in primary school.&lt;/p>
+&lt;h2 id="start-by-logging-what-youre-doing">Start by logging what you&amp;rsquo;re doing.&lt;/h2>
+&lt;p>Having a rigid structure does wonders for curtailing creativity and plain fun. Instead, I recommend starting small.&lt;/p>
+&lt;p>Here are some small steps to take after installing Obsidian:&lt;/p>
+&lt;h3 id="step-1-enable-the-daily-notes-plugin">&lt;strong>Step 1: Enable the Daily Notes plugin&lt;/strong>&lt;/h3>
+&lt;p>The most game-changing feature of Obsidian is plugins.&lt;/p>
+&lt;p>Go into Settings &amp;gt; Core Plugins, and enable the &lt;em>Daily notes&lt;/em> plugin.&lt;/p>
+&lt;p>Then, exit out of the dialog boxes and hit CMD P (Mac) or CTRL P (Windows) to bring up the command pane. Search for and select &lt;em>Daily notes: Open today&amp;rsquo;s daily note&lt;/em>. That creates a new note in your vault with today&amp;rsquo;s date.&lt;/p>
+&lt;p>From now on, do this every day and log things you do during the day: things to do, appointments to keep, videos you watched.&lt;/p>
+&lt;h3 id="step-2-the-next-time-you-consume-content-take-notes">&lt;strong>Step 2: The next time you consume content, take notes.&lt;/strong>&lt;/h3>
+&lt;p>Now, the next time you read or watch something interesting, type its title into Obsidian with brackets:&lt;code>[[Cool video I watched]]&lt;/code>&lt;/p>
+&lt;p>It&amp;rsquo;s now a link. CMD+click on that link, or click the glasses icon on the top right to switch to Preview mode, and then click on the link. You should now have a new note. Write about what you thought of the video.&lt;/p>
+&lt;h3 id="step-3-start-identifying-and-fleshing-out-ideas">&lt;strong>Step 3: Start identifying and fleshing out ideas.&lt;/strong>&lt;/h3>
+&lt;p>Keep going with these steps and every now and then, start to identify cool ideas you come across. Create new notes from them just like you did in Step 2. Don&amp;rsquo;t worry about getting it all; just do it when and until you feel like it.&lt;/p>
+&lt;p>These three simple steps, over time, will be the foundations of your own Personal Knowlege Management system with Obsidian.&lt;/p></description></item><item><title>5 Ways to Use Obsidian as a Software Engineer</title><link>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</link><pubDate>Sun, 09 Jan 2022 19:20:49 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</guid><description>&lt;p>Yesterday, I wrote about why I think taking notes is the surprising foundation of a tester&amp;rsquo;s career.&lt;/p>
+&lt;p>But it&amp;rsquo;s not just testers. Every software engineer is a knowledge worker, and that means we get paid for what we know. Using a Personal Knowledge Management (PKM) system such as &lt;a href="http://Obsidian.md">Obsidian.md&lt;/a> helps us keep up with the constant barrage of new ideas in tech.&lt;/p>
+&lt;p>Here are 5 things I use Obsidian for.&lt;/p>
+&lt;h2 id="1-my-very-own-stack-overflow">#1: My very own Stack Overflow&lt;/h2>
+&lt;p>If you code, you&amp;rsquo;ve used Stack Overflow.&lt;/p>
+&lt;p>What if you had your &lt;strong>own&lt;/strong> Stack Overflow, one that contained cheat sheets of every language you&amp;rsquo;ve ever tried to hack something up in, including only commands relevant to your job? This is exactly &lt;a href="https://notes.nicolevanderhoeven.com/Python">what I&amp;rsquo;ve done for Python&lt;/a> recently, and it&amp;rsquo;s helping me solidify my knowledge.&lt;/p>
+&lt;h2 id="2-tools-database">#2: Tools database&lt;/h2>
+&lt;p>There&amp;rsquo;s a tool for everything.&lt;/p>
+&lt;p>To keep them straight, I have a page for every load testing tool I try, with tutorials for how to get started, an assessment of its features, and observations I had while attempting to learn it. &lt;a href="https://notes.nicolevanderhoeven.com/k6+(tool)">Here&amp;rsquo;s what I have for the load testing tool k6&lt;/a>.&lt;/p>
+&lt;p>Bonus: I also use &lt;a href="https://github.com/blacksmithgu/obsidian-dataview">the Dataview plugin&lt;/a> to query tools that fit my criteria.&lt;/p>
+&lt;h2 id="3-an-agile-workspace">#3: An Agile workspace&lt;/h2>
+&lt;p>If Agile is good enough for my professional work, it&amp;rsquo;s good enough for my personal work.&lt;/p>
+&lt;p>I use the &lt;a href="https://github.com/mgmeyers/obsidian-kanban">Kanban plugin&lt;/a> to keep track of projects, create weekly and monthly review/retro templates, and work iteratively using &lt;a href="https://github.com/bjsi/incremental-writing">the Incremental Writing plugin&lt;/a>.&lt;/p>
+&lt;h2 id="4-a-public-learning-log">#4: A public learning log&lt;/h2>
+&lt;p>Learning in public is the fastest way to improve.&lt;/p>
+&lt;p>When I&amp;rsquo;m trying to figure something out, I document my attempts. With Obsidian Publish, I can quickly push this log out to my domain and share them with colleagues to get a quick review so that they can easily follow my train of thought and tell me where I went wrong.&lt;/p>
+&lt;h2 id="5-a-digital-garden-of-software-ideas">#5: A digital garden of software ideas&lt;/h2>
+&lt;p>Build libraries, not feeds.&lt;/p>
+&lt;p>I use Obsidian to save things I read/watch/listen to but also to save space for ideas I&amp;rsquo;ve learned to germinate. I publish notes before they&amp;rsquo;re fully fleshed out, with the goal of growing everything over time.&lt;/p>
+&lt;p>&lt;a href="https://notes.nicolevanderhoeven.com">Today, I have 4,567 notes&lt;/a>, all about things that matter to me.&lt;/p>
+&lt;p>&lt;strong>Every engineer should have a PKM system.&lt;/strong>&lt;/p></description></item><item><title>Take Notes, Not Tools</title><link>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</link><pubDate>Sat, 08 Jan 2022 17:00:44 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</guid><description>&lt;p>When I first got into testing, I thought that testing was about learning different tools and frameworks.&lt;/p>
+&lt;p>I learned how to use Neoload, then LoadRunner, then JMeter, and then SeleniumSilkPerformerVisualStudioGatlingPuppeteerPlaywrightk6 in short succession. I took courses on JavaScript, on C, on Java. I ticked off tools like a grocery list.&lt;/p>
+&lt;p>It didn&amp;rsquo;t take me long to realize that I still wasn&amp;rsquo;t a good tester.&lt;/p>
+&lt;h2 id="taking-notes-not-tools-is-what-makes-a-good-tester">Taking notes, not tools, is what makes a good tester.&lt;/h2>
+&lt;p>When you think about it, a lot of things a tester does revolves around taking good notes.&lt;/p>
+&lt;p>Requirements are just notes on what the business wants to achieve. Test scenarios are notes on situations that the team wants to simulate. Test cases are notes on how a user would use an application. Defects are notes on issues.&lt;/p>
+&lt;p>The quality of a tester&amp;rsquo;s notes dictates the quality of their work.&lt;/p>
+&lt;h3 id="listen-to-people-not-tool-tutorials">&lt;strong>Listen to people, not tool tutorials&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Take notes on what users do.&lt;/strong> Talk to the business. Pore through Google Analytics logs. Piece together a story of the kind of people who use your application, and how they use it.&lt;/p>
+&lt;p>&lt;strong>Take notes on problem areas.&lt;/strong> Talk to customer support about the most common questions they get&amp;ndash; they know more about pain points than anyone else in the company. Talk to the ops engineers who were on call during the last production incident. These problems are what you&amp;rsquo;ll need to test later.&lt;/p>
+&lt;p>&lt;strong>Take notes on what you&amp;rsquo;ve learned.&lt;/strong> If you don&amp;rsquo;t like learning, you&amp;rsquo;re in the wrong field. Document everything, even things you think you&amp;rsquo;ll never forget, because one day, you WILL forget.&lt;/p>
+&lt;p>Taking notes, not tools, is the foundation every testing career is built on.&lt;/p></description></item></channel></rss>

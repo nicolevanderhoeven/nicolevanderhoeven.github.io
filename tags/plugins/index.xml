@@ -1,117 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>plugins on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/plugins/</link>
-    <description>Recent content in plugins on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 30 Jun 2023 23:39:17 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/plugins/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Every Single Plugin I Use (Obsidian Tour 2023)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/</link>
-      <pubDate>Fri, 30 Jun 2023 23:39:17 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/</guid>
-      <description>&lt;p&gt;In this video, I talk about all the Obsidian plugins I currently use&amp;hellip; all 46 of them. I demonstrate some of them, talk about why I didn&amp;rsquo;t keep others, and talk through my use cases for each one. These plugins aren&amp;rsquo;t necessarily the best ones out there for Obsidian - they&amp;rsquo;re just the ones that are useful enough for my use cases to have them installed on a daily basis.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3UMncGbocAU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Top 10 Core Plugins for Obsidian in 2023</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230120-top-10-core-plugins-for-obsidian-in-2023/</link>
-      <pubDate>Fri, 20 Jan 2023 16:37:32 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230120-top-10-core-plugins-for-obsidian-in-2023/</guid>
-      <description>&lt;p&gt;In this video, I talk about my top 10 core plugins in Obsidian: the built-in options that improve your productivity without adding clutter and complexity to your notes. Unlike community plugins, core plugins are a lower security risk, yet provide a lot of extra value&amp;ndash; but they&amp;rsquo;re also easy to overlook. Here are my favourite underappreciated core plugins.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Lq33gNpeDkE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Introducing Popout Windows for Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220715-popout-windows-for-obsidian/</link>
-      <pubDate>Fri, 15 Jul 2022 16:00:52 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220715-popout-windows-for-obsidian/</guid>
-      <description>&lt;p&gt;Obsidian Desktop v0.15.6 has just released, and with it is a new feature: popout windows for Obsidian! This gives us the functionality to open multiple windows of the same Obsidian vault&amp;ndash; great for anyone who&amp;rsquo;s been running out of visible space while working on their personal knowledge management system.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/TiVVFBhkJU4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Actually Getting Things Done With Obsidian - Checklist plugin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220429-actually-getting-things-done-with-obsidian/</link>
-      <pubDate>Fri, 29 Apr 2022 16:00:31 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220429-actually-getting-things-done-with-obsidian/</guid>
-      <description>&lt;p&gt;The Getting Things Done methodology is showing its age now, but there are still some parts of it that can be updated and used in the digital age. In this video, I talk about how to actually get things done with Obsidian using the Obsidian community plugin called Checklist.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ODhHTngIMJE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Obsidian task management with Dataviewjs, Templates, Daily Notes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220420-obsidian-task-management-with-dataview/</link>
-      <pubDate>Wed, 20 Apr 2022 17:00:25 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220420-obsidian-task-management-with-dataview/</guid>
-      <description>&lt;p&gt;Ever wanted to use Obsidian for managing your tasks? In this video, I demonstrate one way to consolidate tasks from all your notes and show them on the date they&amp;rsquo;re due, using DataviewJS. Obsidian Dataview is a community plugin that can be used to show a task list.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ccN5vJzXwvo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Use the Obsidian Dataview Plugin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/</link>
-      <pubDate>Wed, 13 Apr 2022 17:00:06 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/</guid>
-      <description>&lt;p&gt;What even IS Obsidian Dataview? Dataview has quickly become one of the most popular plugins for Obsidian, but how do you actually use it? Whether you&amp;rsquo;re a non-programmer or an expert coder, here&amp;rsquo;s how to use the Obsidian Dataview plugin and some common use cases for it.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/JTObSymEvWA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>The dev behind the Obsidian TTRPG plugins - Jeremy Valentine</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220409-jeremy-valentine-and-his-obsidian-plugins/</link>
-      <pubDate>Sat, 09 Apr 2022 19:00:57 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220409-jeremy-valentine-and-his-obsidian-plugins/</guid>
-      <description>&lt;p&gt;Jeremy Valentine is the developer behind 13 Obsidian plugins, including 5e statblocks, Admonition, Dice Roller, Fantasy Calendar, Initiative Tracker, Leaflet, and more, and he joins me today to talk about all things Obsidian, plugin development, and maybe even what he&amp;rsquo;s working on next&amp;hellip;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/2Jm5lZWy-0Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plugins on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/plugins/</link><description>Recent content in Plugins on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 30 Jun 2023 23:39:17 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/plugins/index.xml" rel="self" type="application/rss+xml"/><item><title>Every Single Plugin I Use (Obsidian Tour 2023)</title><link>https://nicolevanderhoeven.github.io/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/</link><pubDate>Fri, 30 Jun 2023 23:39:17 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230630-every-single-plugin-i-use-obsidian-tour-2023/</guid><description>&lt;p>In this video, I talk about all the Obsidian plugins I currently use&amp;hellip; all 46 of them. I demonstrate some of them, talk about why I didn&amp;rsquo;t keep others, and talk through my use cases for each one. These plugins aren&amp;rsquo;t necessarily the best ones out there for Obsidian - they&amp;rsquo;re just the ones that are useful enough for my use cases to have them installed on a daily basis.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3UMncGbocAU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Top 10 Core Plugins for Obsidian in 2023</title><link>https://nicolevanderhoeven.github.io/blog/20230120-top-10-core-plugins-for-obsidian-in-2023/</link><pubDate>Fri, 20 Jan 2023 16:37:32 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230120-top-10-core-plugins-for-obsidian-in-2023/</guid><description>&lt;p>In this video, I talk about my top 10 core plugins in Obsidian: the built-in options that improve your productivity without adding clutter and complexity to your notes. Unlike community plugins, core plugins are a lower security risk, yet provide a lot of extra value&amp;ndash; but they&amp;rsquo;re also easy to overlook. Here are my favourite underappreciated core plugins.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lq33gNpeDkE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Introducing Popout Windows for Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20220715-popout-windows-for-obsidian/</link><pubDate>Fri, 15 Jul 2022 16:00:52 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220715-popout-windows-for-obsidian/</guid><description>&lt;p>Obsidian Desktop v0.15.6 has just released, and with it is a new feature: popout windows for Obsidian! This gives us the functionality to open multiple windows of the same Obsidian vault&amp;ndash; great for anyone who&amp;rsquo;s been running out of visible space while working on their personal knowledge management system.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TiVVFBhkJU4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Actually Getting Things Done With Obsidian - Checklist plugin</title><link>https://nicolevanderhoeven.github.io/blog/20220429-actually-getting-things-done-with-obsidian/</link><pubDate>Fri, 29 Apr 2022 16:00:31 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220429-actually-getting-things-done-with-obsidian/</guid><description>&lt;p>The Getting Things Done methodology is showing its age now, but there are still some parts of it that can be updated and used in the digital age. In this video, I talk about how to actually get things done with Obsidian using the Obsidian community plugin called Checklist.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ODhHTngIMJE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Obsidian task management with Dataviewjs, Templates, Daily Notes</title><link>https://nicolevanderhoeven.github.io/blog/20220420-obsidian-task-management-with-dataview/</link><pubDate>Wed, 20 Apr 2022 17:00:25 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220420-obsidian-task-management-with-dataview/</guid><description>&lt;p>Ever wanted to use Obsidian for managing your tasks? In this video, I demonstrate one way to consolidate tasks from all your notes and show them on the date they&amp;rsquo;re due, using DataviewJS. Obsidian Dataview is a community plugin that can be used to show a task list.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ccN5vJzXwvo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Use the Obsidian Dataview Plugin</title><link>https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/</link><pubDate>Wed, 13 Apr 2022 17:00:06 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220413-how-to-use-the-obsidian-dataview-plugin/</guid><description>&lt;p>What even IS Obsidian Dataview? Dataview has quickly become one of the most popular plugins for Obsidian, but how do you actually use it? Whether you&amp;rsquo;re a non-programmer or an expert coder, here&amp;rsquo;s how to use the Obsidian Dataview plugin and some common use cases for it.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JTObSymEvWA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>The dev behind the Obsidian TTRPG plugins - Jeremy Valentine</title><link>https://nicolevanderhoeven.github.io/blog/20220409-jeremy-valentine-and-his-obsidian-plugins/</link><pubDate>Sat, 09 Apr 2022 19:00:57 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220409-jeremy-valentine-and-his-obsidian-plugins/</guid><description>&lt;p>Jeremy Valentine is the developer behind 13 Obsidian plugins, including 5e statblocks, Admonition, Dice Roller, Fantasy Calendar, Initiative Tracker, Leaflet, and more, and he joins me today to talk about all things Obsidian, plugin development, and maybe even what he&amp;rsquo;s working on next&amp;hellip;&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2Jm5lZWy-0Y?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

@@ -1,141 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>browser on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/browser/</link>
-    <description>Recent content in browser on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 30 Jun 2023 23:33:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browser/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Recording a Performance Test With Grafana Cloud k6 (k6 Office Hours #93)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</link>
-      <pubDate>Fri, 30 Jun 2023 23:33:12 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</guid>
-      <description>&lt;p&gt;Senior Frontend Engineer Edvinas Daugirdas demonstrates recording a performance test with Grafana Cloud k6 and some other new features that have recently come to Grafana Cloud. He is joined by Developer Advocates Marie Drake and Nicole van der Hoeven to talk about getting started with k6 for free.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/CZRyiQN7ht4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link>
-      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid>
-      <description>&lt;p&gt;For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;what a gish is, and how it applies to the field of testing&lt;/li&gt;
-&lt;li&gt;how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li&gt;
-&lt;li&gt;how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li&gt;
-&lt;li&gt;a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href=&#34;https://k6.io/&#34;&gt;k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/aq0XSNcXDb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;And here are some photos from the event!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-1.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-4.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</link>
-      <pubDate>Fri, 22 Apr 2022 17:00:12 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</guid>
-      <description>&lt;p&gt;Have you ever wondered how to test a platform built for testing other products? Our frontend developer, Thomas Wikman, joins us on k6 Office Hours to talk about his experience being a user of one of our tools - xk6-browser - and how he uses it to test the entire k6 Cloud frontend.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/UtMJfasNjSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Real Browser Testing With xk6-browser</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220315-real-browser-testing-with-xk6-browser/</link>
-      <pubDate>Wed, 16 Mar 2022 16:55:56 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220315-real-browser-testing-with-xk6-browser/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/y04wavsZxSs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Transcript:&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Without a doubt, my favorite k6 extension is xk6-browser. xk6-browser finally brings browser test automation to k6. So you don&amp;rsquo;t need to learn a new tool or figure out how to integrate it if you already have load tests. You can create JavaScript-based, browser-driven tests with k6. Here&amp;rsquo;s how.&lt;/p&gt;
-&lt;p&gt;Since xk6-browser is an extension, we&amp;rsquo;re gonna need to build a custom version of k6 that includes that extension. And the thing that builds that is called xk6. What I&amp;rsquo;m doing here is I&amp;rsquo;m instructing xk6 to create a build using version 0.35 of k6, that includes xk6-browser. And this is a link to the repository where xk6-browser is stored.&lt;/p&gt;
-&lt;h2 id=&#34;writing-a-browser-testing-script&#34;&gt;Writing a browser testing script&lt;/h2&gt;
-&lt;p&gt;So now that we have a version of k6 that includes xk6-browser, the next step is to create the browser script. Now you can do that in the one script, but just for ease of debugging I&amp;rsquo;m gonna put it in another script for now. We&amp;rsquo;re not going to be using the HTTP requests anymore so I&amp;rsquo;m going to import launcher from k6/x/browser. And I&amp;rsquo;ll save that as browser.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m definitely going to be using sleep, so let me go ahead and import that now as well. We&amp;rsquo;ll also need a default function for this. We&amp;rsquo;re setting up an instance of the launcher that&amp;rsquo;s going to launch Chromium in particular, and we do want to see it so I&amp;rsquo;m going to say &lt;code&gt;headless: false&lt;/code&gt;. If you set this to true, that means that you won&amp;rsquo;t actually see the web browser being driven by the script, which is handy to see during demos. So we&amp;rsquo;ll do that, and then we have to set up the context.&lt;/p&gt;
-&lt;p&gt;So browser, oops, new context. And then we set up a page. The first one is go to the homepage. The second one is to view a product. Third, add the product to the cart. Fourth is go to the cart and then last, I want to check out. So to do that, I&amp;rsquo;ve already defined the browser context in page. Now I need to do &lt;code&gt;page.goto http://ecommerce.k6.io&lt;/code&gt; and I will also want to wait for &lt;code&gt;waitUntil: networkidle&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Great. I wanted to add some sort of check to make sure that I&amp;rsquo;ve actually gotten to a place so, let&amp;rsquo;s open up DevTools here and I wanna make sure that some results are displayed. I don&amp;rsquo;t necessarily need, you know 1-12 of 17 but, I want this one. Okay, so I&amp;rsquo;ll also say &lt;code&gt;page.waitForSelector&lt;/code&gt; and that&amp;rsquo;ll be this.&lt;/p&gt;
-&lt;p&gt;And then let&amp;rsquo;s do a screenshot, because we just for, just in case we wanna debug later we wanna make sure that we will be able to have a look at at this screenshot to see what exactly went wrong. And I&amp;rsquo;ll put that in screenshots and I&amp;rsquo;ll say &lt;code&gt;01_homepage&lt;/code&gt;. Then let&amp;rsquo;s do a sleep. And I always like to do the random one. Random, and let&amp;rsquo;s say it from zero to four. This time I&amp;rsquo;m doing the custom k6 version &lt;code&gt;browser.js&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;For browser-based tests, I find it much more useful to actually see what&amp;rsquo;s going on rather than to look at the output. Because as you can see there are all sorts of errors here and I believe that they&amp;rsquo;re actually application errors so they can be a little bit misleading. It looks like that happened but let&amp;rsquo;s just look at the screenshots. Screenshot, yeah. That, that loaded fine. So we can continue.&lt;/p&gt;
-&lt;p&gt;Next step is to view a product. Okay, let&amp;rsquo;s go back here. This time I want to click this thing. It doesn&amp;rsquo;t really matter which, which item it is. I&amp;rsquo;ll just choose the first one. Looks like this is the actual product link. So let element = page. And this is where we actually paste the selector which is what I got from DevTools.&lt;/p&gt;
-&lt;p&gt;And then we haven&amp;rsquo;t done anything yet with it. We want to actually click it. So &lt;code&gt;element.click&lt;/code&gt;. After that though, I&amp;rsquo;m going to want to make sure that we get to the right page. So, let&amp;rsquo;s see what happens when we click it. What can we look for? I guess we can look for this add to cart button, cuz if the item didn&amp;rsquo;t show up then we wouldn&amp;rsquo;t be able to add it to the cart. So let&amp;rsquo;s grab that. Button, button name is add to cart. Copy that.&lt;/p&gt;
-&lt;p&gt;So then I&amp;rsquo;ll say &lt;code&gt;page.waitForSelector&lt;/code&gt;, the selector with a button name there. Take another screenshot because why not? I&amp;rsquo;ll say &lt;code&gt;02_view-product&lt;/code&gt; and then another sleep. From here it was pretty much more of the same. Here&amp;rsquo;s me scripting adding the product to the cart, viewing the cart and then finally going to the checkout page. And here&amp;rsquo;s what happened when I played it all back. Here it is going to the homepage, and then clicking on the first product, and then adding that product to the cart, and then clicking view cart, and then proceeding to checkout.&lt;/p&gt;
-&lt;p&gt;The best part about this is that you don&amp;rsquo;t have to choose between the browser test and the protocol test. They&amp;rsquo;re both in k6 and written in JavaScript so you could include them in the same script. You can use stages to schedule when one starts and when one ends. You can change the load profile, add checks and thresholds. And you can also use all of the output options that are available for protocol tests for the browser tests as well.&lt;/p&gt;
-&lt;p&gt;The catch is that xk6-browser is really new. We&amp;rsquo;ve just announced it. It&amp;rsquo;s still in beta so you are likely to come across more than a few bugs. However, I&amp;rsquo;d still recommend that you give it a go. I&amp;rsquo;ve been playing around with it and I&amp;rsquo;ve found it more than serviceable for a lot of my use cases. Plus it&amp;rsquo;s just really cool to be able to test front-end performance along with back-end performance in the same testing script.&lt;/p&gt;
-&lt;p&gt;Thanks for watching. I will put a link to the xk6-browser repository below and happy testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</link>
-      <pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid>
-      <description>
-
-&lt;link rel=&#34;canonical&#34; href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;
-
-&lt;p&gt;&lt;em&gt;Originally posted &lt;a href=&#34;https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/K61W7ivhsuE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Or catch the audio version here:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/76u25lI7sFx5SwgbsFLU5Z&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re actually getting this quite a bit now as Puppeteer grows in popularity, but first, let&amp;rsquo;s discuss the similarities. They&amp;rsquo;re tools that you can use to drive browsers. The work by identifying and interacting with elements on a website in the same way that a user would. They are also both open-source, and both can be used for load testing. This is a great strategy because instead of writing tests for an automation suite and then tests for load testing, you can just write the one test suite and re-use it, so it saves a lot of resources in the end. To answer this question, I&amp;rsquo;m going to focus on load testing because that&amp;rsquo;s what my experience is in.&lt;/p&gt;
-&lt;h2 id=&#34;difference-between-selenium-and-puppeteer&#34;&gt;Difference between Selenium and Puppeteer&lt;/h2&gt;
-&lt;h3 id=&#34;pros-and-cons-of-selenium&#34;&gt;Pros and cons of Selenium&lt;/h3&gt;
-&lt;p&gt;Now for the difference. Selenium supports more browsers than does Puppeteer. It supports Chrome, Firefox, IE, Safari, and Opera, so there are a lot more options to choose from depending on your application.&lt;/p&gt;
-&lt;p&gt;Selenium is also what I would call automation-first. It was built with automation in mind, which means it&amp;rsquo;s very good at that. It&amp;rsquo;s very robust, and if you have a complicated test scenario, Selenium is an excellent choice.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s also been around for much longer than Puppeteer, which is important because that means it&amp;rsquo;s had more time to build up a community. There are way more resources and tutorials for Selenium than for Puppeteer.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s also, unfortunately, very resource-intensive. That&amp;rsquo;s not something that you would typically care too much about from a test automation perspective, but when you&amp;rsquo;re running thousands of users on the cloud, it IS important to keep in mind that Selenium, just because of how it&amp;rsquo;s built and its complexity, can only run about five users per node. We&amp;rsquo;ve found that out at Flood, after baselining specifically an AWS m5.xlarge instance. So you can look at the specs of that and compare it with the machines that you&amp;rsquo;re wanting to run Selenium on, to see how that would equate for you.&lt;/p&gt;
-&lt;h3 id=&#34;pros-and-cons-of-puppeteer&#34;&gt;Pros and cons of Puppeteer&lt;/h3&gt;
-&lt;p&gt;Puppeteer is a NodeJS library developed by Google, which means it plays very well with Chrome. There are a whole lot of things that you have access to with Puppeteer, and if you&amp;rsquo;re using it with Chrome, pretty much anything in Chrome, including rendering times, you can see and access with a Puppeteer script. So that&amp;rsquo;s a huge advantage.&lt;/p&gt;
-&lt;p&gt;Unfortunately, that also means it supports fewer browsers. Obviously, it supports Chrome very well, and they recently came out with support for Firefox, although they do have plans to incorporate support for more browsers in the future.&lt;/p&gt;
-&lt;p&gt;One of Puppeteer&amp;rsquo;s advantages is that we at Flood actually created a tool on top of Puppeteer. It&amp;rsquo;s also open-source. It&amp;rsquo;s called Flood Element, and Element is built to be performance-first because obviously, that&amp;rsquo;s what we had in mind when we were building it. It takes everything that&amp;rsquo;s good about Puppeteer and makes it really easy to set parameters that you normally would expect to need for load testing, like users and ramp-up.&lt;/p&gt;
-&lt;p&gt;This also means that it&amp;rsquo;s way less resource-intensive. I said that with Selenium, you can run up to five users on an AWS m5.xlarge instance, and for the same instance type, you can run, from our experiments, anywhere from 30-50 Element scripts/users. That is a huge saving when you&amp;rsquo;re running a really large-scale test.&lt;/p&gt;
-&lt;h2 id=&#34;should-you-choose-selenium-or-puppeteer-for-load-testing&#34;&gt;Should you choose Selenium or Puppeteer for load testing?&lt;/h2&gt;
-&lt;p&gt;I would say that if you already have a large Selenium automation suite, if you have a complex test scenario, or if you aren&amp;rsquo;t running that many users for your load test, then Selenium is a great choice. If you ARE running thousands of users, though, and resource efficiency, and therefore cost efficiency, is really important to you, then choose Element.&lt;/p&gt;
-&lt;p&gt;My advice is always to try both. If you have the time, do a proof of concept with both of them. That way, your whole team can better understand what the pros and cons are for each one and decide which one is best going forward. Or maybe you don&amp;rsquo;t even decide on one. At Flood, we support both of them at the same price, so it depends on what you prefer.&lt;/p&gt;
-&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Browser on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/browser/</link><description>Recent content in Browser on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 30 Jun 2023 23:33:12 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/browser/index.xml" rel="self" type="application/rss+xml"/><item><title>Recording a Performance Test With Grafana Cloud k6 (k6 Office Hours #93)</title><link>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</link><pubDate>Fri, 30 Jun 2023 23:33:12 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230630-koh93-recording-a-performance-test-with-grafana-cloud-k6/</guid><description>&lt;p>Senior Frontend Engineer Edvinas Daugirdas demonstrates recording a performance test with Grafana Cloud k6 and some other new features that have recently come to Grafana Cloud. He is joined by Developer Advocates Marie Drake and Nicole van der Hoeven to talk about getting started with k6 for free.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CZRyiQN7ht4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title><link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link><pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid><description>&lt;p>For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p>
+&lt;ul>
+&lt;li>what a gish is, and how it applies to the field of testing&lt;/li>
+&lt;li>how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li>
+&lt;li>how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li>
+&lt;li>a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href="https://k6.io/">k6&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aq0XSNcXDb0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>You can find the slides &lt;a href="https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/">here&lt;/a>.&lt;/p>
+&lt;p>And here are some photos from the event!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-1.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-4.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p></description></item><item><title>End-to-end browser testing using xk6-browser, with Thomas Wikman (k6 Office Hours #51)</title><link>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</link><pubDate>Fri, 22 Apr 2022 17:00:12 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220422-koh-51-end-to-end-browser-testing-with-k6/</guid><description>&lt;p>Have you ever wondered how to test a platform built for testing other products? Our frontend developer, Thomas Wikman, joins us on k6 Office Hours to talk about his experience being a user of one of our tools - xk6-browser - and how he uses it to test the entire k6 Cloud frontend.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UtMJfasNjSY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Real Browser Testing With xk6-browser</title><link>https://nicolevanderhoeven.github.io/blog/20220315-real-browser-testing-with-xk6-browser/</link><pubDate>Wed, 16 Mar 2022 16:55:56 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220315-real-browser-testing-with-xk6-browser/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/y04wavsZxSs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;em>Transcript:&lt;/em>&lt;/p>
+&lt;p>Without a doubt, my favorite k6 extension is xk6-browser. xk6-browser finally brings browser test automation to k6. So you don&amp;rsquo;t need to learn a new tool or figure out how to integrate it if you already have load tests. You can create JavaScript-based, browser-driven tests with k6. Here&amp;rsquo;s how.&lt;/p>
+&lt;p>Since xk6-browser is an extension, we&amp;rsquo;re gonna need to build a custom version of k6 that includes that extension. And the thing that builds that is called xk6. What I&amp;rsquo;m doing here is I&amp;rsquo;m instructing xk6 to create a build using version 0.35 of k6, that includes xk6-browser. And this is a link to the repository where xk6-browser is stored.&lt;/p>
+&lt;h2 id="writing-a-browser-testing-script">Writing a browser testing script&lt;/h2>
+&lt;p>So now that we have a version of k6 that includes xk6-browser, the next step is to create the browser script. Now you can do that in the one script, but just for ease of debugging I&amp;rsquo;m gonna put it in another script for now. We&amp;rsquo;re not going to be using the HTTP requests anymore so I&amp;rsquo;m going to import launcher from k6/x/browser. And I&amp;rsquo;ll save that as browser.&lt;/p>
+&lt;p>I&amp;rsquo;m definitely going to be using sleep, so let me go ahead and import that now as well. We&amp;rsquo;ll also need a default function for this. We&amp;rsquo;re setting up an instance of the launcher that&amp;rsquo;s going to launch Chromium in particular, and we do want to see it so I&amp;rsquo;m going to say &lt;code>headless: false&lt;/code>. If you set this to true, that means that you won&amp;rsquo;t actually see the web browser being driven by the script, which is handy to see during demos. So we&amp;rsquo;ll do that, and then we have to set up the context.&lt;/p>
+&lt;p>So browser, oops, new context. And then we set up a page. The first one is go to the homepage. The second one is to view a product. Third, add the product to the cart. Fourth is go to the cart and then last, I want to check out. So to do that, I&amp;rsquo;ve already defined the browser context in page. Now I need to do &lt;code>page.goto http://ecommerce.k6.io&lt;/code> and I will also want to wait for &lt;code>waitUntil: networkidle&lt;/code>.&lt;/p>
+&lt;p>Great. I wanted to add some sort of check to make sure that I&amp;rsquo;ve actually gotten to a place so, let&amp;rsquo;s open up DevTools here and I wanna make sure that some results are displayed. I don&amp;rsquo;t necessarily need, you know 1-12 of 17 but, I want this one. Okay, so I&amp;rsquo;ll also say &lt;code>page.waitForSelector&lt;/code> and that&amp;rsquo;ll be this.&lt;/p>
+&lt;p>And then let&amp;rsquo;s do a screenshot, because we just for, just in case we wanna debug later we wanna make sure that we will be able to have a look at at this screenshot to see what exactly went wrong. And I&amp;rsquo;ll put that in screenshots and I&amp;rsquo;ll say &lt;code>01_homepage&lt;/code>. Then let&amp;rsquo;s do a sleep. And I always like to do the random one. Random, and let&amp;rsquo;s say it from zero to four. This time I&amp;rsquo;m doing the custom k6 version &lt;code>browser.js&lt;/code>.&lt;/p>
+&lt;p>For browser-based tests, I find it much more useful to actually see what&amp;rsquo;s going on rather than to look at the output. Because as you can see there are all sorts of errors here and I believe that they&amp;rsquo;re actually application errors so they can be a little bit misleading. It looks like that happened but let&amp;rsquo;s just look at the screenshots. Screenshot, yeah. That, that loaded fine. So we can continue.&lt;/p>
+&lt;p>Next step is to view a product. Okay, let&amp;rsquo;s go back here. This time I want to click this thing. It doesn&amp;rsquo;t really matter which, which item it is. I&amp;rsquo;ll just choose the first one. Looks like this is the actual product link. So let element = page. And this is where we actually paste the selector which is what I got from DevTools.&lt;/p>
+&lt;p>And then we haven&amp;rsquo;t done anything yet with it. We want to actually click it. So &lt;code>element.click&lt;/code>. After that though, I&amp;rsquo;m going to want to make sure that we get to the right page. So, let&amp;rsquo;s see what happens when we click it. What can we look for? I guess we can look for this add to cart button, cuz if the item didn&amp;rsquo;t show up then we wouldn&amp;rsquo;t be able to add it to the cart. So let&amp;rsquo;s grab that. Button, button name is add to cart. Copy that.&lt;/p>
+&lt;p>So then I&amp;rsquo;ll say &lt;code>page.waitForSelector&lt;/code>, the selector with a button name there. Take another screenshot because why not? I&amp;rsquo;ll say &lt;code>02_view-product&lt;/code> and then another sleep. From here it was pretty much more of the same. Here&amp;rsquo;s me scripting adding the product to the cart, viewing the cart and then finally going to the checkout page. And here&amp;rsquo;s what happened when I played it all back. Here it is going to the homepage, and then clicking on the first product, and then adding that product to the cart, and then clicking view cart, and then proceeding to checkout.&lt;/p>
+&lt;p>The best part about this is that you don&amp;rsquo;t have to choose between the browser test and the protocol test. They&amp;rsquo;re both in k6 and written in JavaScript so you could include them in the same script. You can use stages to schedule when one starts and when one ends. You can change the load profile, add checks and thresholds. And you can also use all of the output options that are available for protocol tests for the browser tests as well.&lt;/p>
+&lt;p>The catch is that xk6-browser is really new. We&amp;rsquo;ve just announced it. It&amp;rsquo;s still in beta so you are likely to come across more than a few bugs. However, I&amp;rsquo;d still recommend that you give it a go. I&amp;rsquo;ve been playing around with it and I&amp;rsquo;ve found it more than serviceable for a lot of my use cases. Plus it&amp;rsquo;s just really cool to be able to test front-end performance along with back-end performance in the same testing script.&lt;/p>
+&lt;p>Thanks for watching. I will put a link to the xk6-browser repository below and happy testing.&lt;/p></description></item><item><title>Ask a Flooder 12: Puppeteer vs Selenium: which one is better for load testing?</title><link>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</link><pubDate>Tue, 21 Apr 2020 17:36:28 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200421-aaf12/</guid><description>
+&lt;link rel="canonical" href="https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing">
+&lt;p>&lt;em>Originally posted &lt;a href="https://www.flood.io/blog/ask-a-flooder-12-puppeteer-vs-selenium-which-one-is-better-for-load-testing">here&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>When it comes to software testing, the debate of Puppeteer vs Selenium is a hot one. Nicole tackles it here to determine which one is better for load testing in particular. Spoiler: The answer is still &amp;ldquo;it depends&amp;rdquo;.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/K61W7ivhsuE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Or catch the audio version here:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/76u25lI7sFx5SwgbsFLU5Z" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;p>Hi everyone, Nicole here again, back for another Ask a Flooder, and today, the question is: &amp;ldquo;Puppeteer vs. Selenium: which one is better for load testing?&amp;rdquo;&lt;/p>
+&lt;p>We&amp;rsquo;re actually getting this quite a bit now as Puppeteer grows in popularity, but first, let&amp;rsquo;s discuss the similarities. They&amp;rsquo;re tools that you can use to drive browsers. The work by identifying and interacting with elements on a website in the same way that a user would. They are also both open-source, and both can be used for load testing. This is a great strategy because instead of writing tests for an automation suite and then tests for load testing, you can just write the one test suite and re-use it, so it saves a lot of resources in the end. To answer this question, I&amp;rsquo;m going to focus on load testing because that&amp;rsquo;s what my experience is in.&lt;/p>
+&lt;h2 id="difference-between-selenium-and-puppeteer">Difference between Selenium and Puppeteer&lt;/h2>
+&lt;h3 id="pros-and-cons-of-selenium">Pros and cons of Selenium&lt;/h3>
+&lt;p>Now for the difference. Selenium supports more browsers than does Puppeteer. It supports Chrome, Firefox, IE, Safari, and Opera, so there are a lot more options to choose from depending on your application.&lt;/p>
+&lt;p>Selenium is also what I would call automation-first. It was built with automation in mind, which means it&amp;rsquo;s very good at that. It&amp;rsquo;s very robust, and if you have a complicated test scenario, Selenium is an excellent choice.&lt;/p>
+&lt;p>It&amp;rsquo;s also been around for much longer than Puppeteer, which is important because that means it&amp;rsquo;s had more time to build up a community. There are way more resources and tutorials for Selenium than for Puppeteer.&lt;/p>
+&lt;p>It&amp;rsquo;s also, unfortunately, very resource-intensive. That&amp;rsquo;s not something that you would typically care too much about from a test automation perspective, but when you&amp;rsquo;re running thousands of users on the cloud, it IS important to keep in mind that Selenium, just because of how it&amp;rsquo;s built and its complexity, can only run about five users per node. We&amp;rsquo;ve found that out at Flood, after baselining specifically an AWS m5.xlarge instance. So you can look at the specs of that and compare it with the machines that you&amp;rsquo;re wanting to run Selenium on, to see how that would equate for you.&lt;/p>
+&lt;h3 id="pros-and-cons-of-puppeteer">Pros and cons of Puppeteer&lt;/h3>
+&lt;p>Puppeteer is a NodeJS library developed by Google, which means it plays very well with Chrome. There are a whole lot of things that you have access to with Puppeteer, and if you&amp;rsquo;re using it with Chrome, pretty much anything in Chrome, including rendering times, you can see and access with a Puppeteer script. So that&amp;rsquo;s a huge advantage.&lt;/p>
+&lt;p>Unfortunately, that also means it supports fewer browsers. Obviously, it supports Chrome very well, and they recently came out with support for Firefox, although they do have plans to incorporate support for more browsers in the future.&lt;/p>
+&lt;p>One of Puppeteer&amp;rsquo;s advantages is that we at Flood actually created a tool on top of Puppeteer. It&amp;rsquo;s also open-source. It&amp;rsquo;s called Flood Element, and Element is built to be performance-first because obviously, that&amp;rsquo;s what we had in mind when we were building it. It takes everything that&amp;rsquo;s good about Puppeteer and makes it really easy to set parameters that you normally would expect to need for load testing, like users and ramp-up.&lt;/p>
+&lt;p>This also means that it&amp;rsquo;s way less resource-intensive. I said that with Selenium, you can run up to five users on an AWS m5.xlarge instance, and for the same instance type, you can run, from our experiments, anywhere from 30-50 Element scripts/users. That is a huge saving when you&amp;rsquo;re running a really large-scale test.&lt;/p>
+&lt;h2 id="should-you-choose-selenium-or-puppeteer-for-load-testing">Should you choose Selenium or Puppeteer for load testing?&lt;/h2>
+&lt;p>I would say that if you already have a large Selenium automation suite, if you have a complex test scenario, or if you aren&amp;rsquo;t running that many users for your load test, then Selenium is a great choice. If you ARE running thousands of users, though, and resource efficiency, and therefore cost efficiency, is really important to you, then choose Element.&lt;/p>
+&lt;p>My advice is always to try both. If you have the time, do a proof of concept with both of them. That way, your whole team can better understand what the pros and cons are for each one and decide which one is best going forward. Or maybe you don&amp;rsquo;t even decide on one. At Flood, we support both of them at the same price, so it depends on what you prefer.&lt;/p>
+&lt;p>Until next time, happy flooding!&lt;/p></description></item></channel></rss>

@@ -1,221 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tempo on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/tempo/</link>
-    <description>Recent content in tempo on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 12 Feb 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/tempo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Practical Distributed Tracing from the Field (Grafana ❤️🔥 OpenTelemetry Community Call #5)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260212-gocc05-practical-distributed-tracing/</link>
-      <pubDate>Thu, 12 Feb 2026 16:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260212-gocc05-practical-distributed-tracing/</guid>
-      <description>&lt;p&gt;In this community call with my coworker Liudmila Molkova, we teamed up with Grafana Tempo to discuss practical distributed tracing. We shared real-world experiences and lessons learned from implementing tracing in production environments, covering common challenges, instrumentation strategies, and how to get the most value from your traces. The discussion bridged OpenTelemetry instrumentation with Grafana Tempo&amp;rsquo;s storage and querying capabilities.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1lMHX8CRHsc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link>
-      <pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid>
-      <description>&lt;p&gt;Today I presented at &lt;a href=&#34;https://ncrafts.io/&#34;&gt;Newcrafts&lt;/a&gt; in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; in London and at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link>
-      <pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://oredev.org/&#34;&gt;Øredev 2025&lt;/a&gt; in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p&gt;
-&lt;p&gt;The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p&gt;
-&lt;p&gt;In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here are some resources mentioned in the talk:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can play the game Spice Runner &lt;a href=&#34;https://nicole.to/spicegame&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicerepo&#34;&gt;The spice-runner repo&lt;/a&gt; containing everything you need to know about how to deploy it yourself&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spiceslides&#34;&gt;The slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicole.to/spicedashboard&#34;&gt;The Spice Runner dashboard&lt;/a&gt; for observing the application&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/spice-runner&#34;&gt;More about Spice Runner&lt;/a&gt;: architecture, tech stack, and what it demonstrates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG&#34; alt=&#34;Photo of me at Øredev 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link>
-      <pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid>
-      <description>&lt;p&gt;Today I presented at the &lt;a href=&#34;https://www.dutchcloudnativeday.nl&#34;&gt;Dutch Cloud Native Day 2025&lt;/a&gt; in Utrecht, the Netherlands. I gave a talk titled &lt;em&gt;Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em&gt;, which I had previously presented at &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/&#34;&gt;KubeCon EU&lt;/a&gt; earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href=&#34;https://nicole.to/asimov&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg&#34; alt=&#34;Me speaking at Dutch Cloud Native Day 2025&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>State of the Observability Databases (Grafana Office Hours #30)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link>
-      <pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid>
-      <description>&lt;p&gt;In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6Ph5nvicm6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Asimov&#39;s Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link>
-      <pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid>
-      <description>&lt;p&gt;Today I gave a talk at &lt;a href=&#34;https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/&#34;&gt;KubeCon EU 2025 in London&lt;/a&gt; called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p&gt;
-&lt;p&gt;In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x6EKTCAWtn8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link>
-      <pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid>
-      <description>&lt;p&gt;I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://nicole.to/rtc2024&#34;&gt;Here are my slides&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p&gt;
-&lt;p&gt;The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p&gt;
-&lt;p&gt;In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Get Started with Tempo (Grafana Office Hours #22)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</link>
-      <pubDate>Fri, 01 Dec 2023 11:55:55 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</guid>
-      <description>&lt;p&gt;Grafana Labs Principal Engineer and Tempo maintainer Joe Elliot talks about how to get started with Tempo, what distributed tracing is, and why TraceQL is cool. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zDrA7Ly3ovU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=pUAmL28uzos&#34;&gt;Getting started with Tempo&lt;/a&gt; (video)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/tempo&#34;&gt;Grafana Tempo repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/docs/tempo/latest/getting-started/&#34;&gt;Grafana Tempo docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://community.grafana.com/c/grafana-tempo/40&#34;&gt;The Tempo category on the Grafana community forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLDGkOdUX1UjrA4D1MRdAzUgEGp5UXvW3z&#34;&gt;Video playlist for Grafana Tempo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=petbezEmIw4&#34;&gt;Distributed tracing with Grafana Cloud k6&lt;/a&gt; (Grafana Office Hours video)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Inicia (Café con Grafana #000)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
-      <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid>
-      <description>&lt;p&gt;Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad.  Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Kdgu2gutp7o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Distributed tracing with Grafana Cloud k6 (Grafana Office Hours #14)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</link>
-      <pubDate>Sat, 07 Oct 2023 08:31:03 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://testingwithmarie.com&#34;&gt;Marie Cruz&lt;/a&gt; and I interview Senior Software Engineer Łukasz Gut about a new feature: Distributed Tracing with Grafana Cloud k6. He discusses what distributed tracing is, why it matters, and how it can help teams find reliability issues faster.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/petbezEmIw4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Load testing and tracing with k6 and Tempo</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</link>
-      <pubDate>Thu, 18 May 2023 22:41:42 +1000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</guid>
-      <description>&lt;p&gt;At &lt;a href=&#34;https://grafana.com/about/events/observabilitycon/2023/sydney/&#34;&gt;ObservabilityCON on the Road 2023 in Sydney, Australia&lt;/a&gt;, I talked about why you should use load testing and distributed tracing, how to do it with k6 and Tempo, and the benefits of being able to see beyond traditional black-box testing.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZP2aa5qjNOg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing&#34;&gt;Check out the slides here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/Distributed+tracing&#34;&gt;Distributed tracing&lt;/a&gt; (notes)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com/xk6-distributed-tracing&#34;&gt;xk6-distributed-tracing&lt;/a&gt; (notes)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/ocr-2023-syd-01.jpeg&#34; alt=&#34;Photo of the crowd at OCR Sydney&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Distributed Tracing With Grafana k6 (k6 Office Hours #70)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221104-koh70-distributed-tracing-with-grafana-k6/</link>
-      <pubDate>Fri, 04 Nov 2022 14:03:04 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221104-koh70-distributed-tracing-with-grafana-k6/</guid>
-      <description>&lt;p&gt;Just announced: distributed tracing with Grafana k6 x Tempo! Daniel González Lopes joins us to talk about what distributed tracing is, and how traces using the Tempo backend could help you troubleshoot your performance issues and improve overall reliability. This new integration was just announced at ObservabilityCon 2022, and Daniel&amp;rsquo;s here to tell us all about it!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/g9xU_pFr-Vc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2022/11/03/how-to-correlate-performance-testing-and-distributed-tracing-to-proactively-improve-reliability/&#34;&gt;Blog post on k6 x Tempo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grafana.com/blog/2022/11/02/observabilitycon-2022-announcements&#34;&gt;Other announcements from ObservabilityCON 2022&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tempo on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/tempo/</link><description>Recent content in Tempo on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 12 Feb 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/tempo/index.xml" rel="self" type="application/rss+xml"/><item><title>Practical Distributed Tracing from the Field (Grafana ❤️🔥 OpenTelemetry Community Call #5)</title><link>https://nicolevanderhoeven.github.io/blog/20260212-gocc05-practical-distributed-tracing/</link><pubDate>Thu, 12 Feb 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260212-gocc05-practical-distributed-tracing/</guid><description>&lt;p>In this community call with my coworker Liudmila Molkova, we teamed up with Grafana Tempo to discuss practical distributed tracing. We shared real-world experiences and lessons learned from implementing tracing in production environments, covering common challenges, instrumentation strategies, and how to get the most value from your traces. The discussion bridged OpenTelemetry instrumentation with Grafana Tempo&amp;rsquo;s storage and querying capabilities.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1lMHX8CRHsc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (Newcrafts 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</link><pubDate>Thu, 06 Nov 2025 12:23:19 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251106-asimovs-zeroth-law-newcrafts/</guid><description>&lt;p>Today I presented at &lt;a href="https://ncrafts.io/">Newcrafts&lt;/a> in Paris, France. I gave a talk I&amp;rsquo;ve given before, called &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> in London and at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/">Dutch Cloud Native Day 2025&lt;/a> in Utrecht. I was happy to present it again, as it gave me the chance to further refine my demo application, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>The main change I made was to use the &amp;ldquo;AI as judge&amp;rdquo; approach that I had previously only talked about in theory. In this version of the demo app, I use AI in both the game as well as in the testing of the game, showing how AI can be integrated into both the application and its observability/testing stack. It was really interesting to note that testing with AI ended up exposing more defects than my hardcoded test cases did, which goes to show the potential of AI-driven testing.&lt;/p></description></item><item><title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link><pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://oredev.org/">Øredev 2025&lt;/a> in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p>
+&lt;p>The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p>
+&lt;p>In this talk, you&amp;rsquo;ll learn about the hidden environmental and financial costs of your observability stack and how to reduce them. You&amp;rsquo;ll learn about the complications of measuring cost for ephemeral resources on Kubernetes, how to use KEDA to &amp;ldquo;right-size&amp;rdquo; resources when you don&amp;rsquo;t know what the right size is, and how to convince your teams to drop all but the most meaningful telemetry data. In the end, the spice must flow, but there must still be enough water to sustain all.&lt;/p>&lt;/blockquote>
+&lt;p>Here are some resources mentioned in the talk:&lt;/p>
+&lt;ul>
+&lt;li>You can play the game Spice Runner &lt;a href="https://nicole.to/spicegame">here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicerepo">The spice-runner repo&lt;/a> containing everything you need to know about how to deploy it yourself&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spiceslides">The slides&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicole.to/spicedashboard">The Spice Runner dashboard&lt;/a> for observing the application&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/spice-runner">More about Spice Runner&lt;/a>: architecture, tech stack, and what it demonstrates&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-11-05-oredev.JPG" alt="Photo of me at Øredev 2025">&lt;/p></description></item><item><title>Asimov's Zeroth Law of Robotics (Dutch Cloud Native Day 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</link><pubDate>Thu, 03 Jul 2025 15:01:24 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250703-asimovs-zeroth-law-dutch-cloud-native-day/</guid><description>&lt;p>Today I presented at the &lt;a href="https://www.dutchcloudnativeday.nl">Dutch Cloud Native Day 2025&lt;/a> in Utrecht, the Netherlands. I gave a talk titled &lt;em>Asimov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&lt;/em>, which I had previously presented at &lt;a href="https://nicolevanderhoeven.github.io/blog/20250402-asmiovs-zeroth-law-of-robotics/">KubeCon EU&lt;/a> earlier on in the year, in London. I was very happy to be able to present it again, because it gave me the opportunity to improve the demo app I used, which you can find on &lt;a href="https://nicole.to/asimov">GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_01.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/2025-07-03-dcnd_02.jpg" alt="Me speaking at Dutch Cloud Native Day 2025">&lt;/p></description></item><item><title>State of the Observability Databases (Grafana Office Hours #30)</title><link>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</link><pubDate>Thu, 15 May 2025 18:22:26 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250515-goh30-state-of-the-observability-databases/</guid><description>&lt;p>In this Grafana Office Hours, we talk about the state of observability databases (Grafana Loki, Mimir, Tempo, and Pyroscope) and where they&amp;rsquo;re going. We talk about current and upcoming architectural changes in all four, how we&amp;rsquo;re making them more performant, how compatible they are with OpenTelemetry, and what we&amp;rsquo;re working on next for each database. In this conversation are Dee Kitchen (VP of Engineering for Databases) and Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6Ph5nvicm6M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Asimov's Zeroth Law of Robotics: Observability for AI (KubeCon EU 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</link><pubDate>Wed, 02 Apr 2025 13:46:42 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250402-asimovs-zeroth-law-of-robotics/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/">KubeCon EU 2025 in London&lt;/a> called &amp;ldquo;Asmiov&amp;rsquo;s Zeroth Law of Robotics: Observability for AI&amp;rdquo;. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>A robot may not harm humans. A robot must obey humans. A robot must protect its own existence. These are Isaac Asimov&amp;rsquo;s three Laws of Robotics, created to govern the ethical programming of artificial intelligences. From the Butlerian Jihad to Skynet to cylons, we&amp;rsquo;ve been immortalizing our collective nightmares about artificial intelligence for years. But there&amp;rsquo;s an unmentioned law that comes as a prerequisite to all of that: a robot must be observable.&lt;/p>
+&lt;p>In this talk, I discuss the different types of AI, the factors that make observing AI different from observing applications, and the telemetry signals specific to AI that we might want to listen to. How do we deal with large data sets? How do we observe for model drift? How do we take into account the costs of LLMs? How can we use distributed tracing to follow event sequences? Part cautionary tale and part technical demo, this talk shows how to instrument and monitor AI apps using OpenTelemetry, Prometheus, OpenLit, and more.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x6EKTCAWtn8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Cartography of the Deep: Distributed Tracing for Testing (Romanian Testing Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</link><pubDate>Thu, 13 Jun 2024 12:24:02 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240613-cartography-of-the-deep/</guid><description>&lt;p>I presented a talk today at the Romanian Testing Conference 2024 in Cluj-Napoca, Romania! My talk was called &amp;ldquo;Cartography of the Deep: Distributed Tracing for Testing&amp;rdquo; and it covered how to tie in distributed tracing into tests to get a better understanding of your system under test.&lt;/p>
+&lt;p>&lt;a href="https://nicole.to/rtc2024">Here are my slides&lt;/a>!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/rtc2024-02.jpg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/rtc2024-01.jpg" alt="">&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>From the Scandinavian Kraken that drags entire ships to their early graves to the Philippine Bakunawa said to rise from the waters to swallow the moon, our existential fears about what lurks at the bottom of our own oceans has inspired us to create hundreds of folkloric monsters across cultures. We&amp;rsquo;ve charted the surface of our planet, but the vast majority of the ocean floor remains a mystery.&lt;/p>
+&lt;p>The mysterious depths of modern software architectures makes it difficult for us to test a system for performance and reliability. The easy solution? Unmanned underwater probes: send inputs to the system, and judge its state based on the outputs that return. But this method is often too limited to tell us what&amp;rsquo;s really going on when something goes wrong. What if there were a way to make our tests themselves more observable?&lt;/p>
+&lt;p>In this talk, you will learn how to use open-source tools to instrument performance tests, identify bottlenecks at the code level using distributed tracing, and map out a system using a type of software bathymetry. You&amp;rsquo;ll also learn about the Mariana Trench expeditions, the difficulties of operating in a high-pressure underwater environment, and how to come face to face with monsters of our mythologies.&lt;/p></description></item><item><title>How to Get Started with Tempo (Grafana Office Hours #22)</title><link>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</link><pubDate>Fri, 01 Dec 2023 11:55:55 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231201-goh22-how-to-get-started-with-tempo/</guid><description>&lt;p>Grafana Labs Principal Engineer and Tempo maintainer Joe Elliot talks about how to get started with Tempo, what distributed tracing is, and why TraceQL is cool. He is joined by Developer Advocates Nicole van der Hoeven and Paul Balogh.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zDrA7Ly3ovU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=pUAmL28uzos">Getting started with Tempo&lt;/a> (video)&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/tempo">Grafana Tempo repo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/tempo/latest/getting-started/">Grafana Tempo docs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://community.grafana.com/c/grafana-tempo/40">The Tempo category on the Grafana community forum&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLDGkOdUX1UjrA4D1MRdAzUgEGp5UXvW3z">Video playlist for Grafana Tempo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=petbezEmIw4">Distributed tracing with Grafana Cloud k6&lt;/a> (Grafana Office Hours video)&lt;/li>
+&lt;/ul></description></item><item><title>(ES) Inicia (Café con Grafana #000)</title><link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link><pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid><description>&lt;p>Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad. Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Kdgu2gutp7o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Distributed tracing with Grafana Cloud k6 (Grafana Office Hours #14)</title><link>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</link><pubDate>Sat, 07 Oct 2023 08:31:03 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231007-goh14-distributed-tracing-with-grafana-cloud-k6/</guid><description>&lt;p>My friend &lt;a href="https://testingwithmarie.com">Marie Cruz&lt;/a> and I interview Senior Software Engineer Łukasz Gut about a new feature: Distributed Tracing with Grafana Cloud k6. He discusses what distributed tracing is, why it matters, and how it can help teams find reliability issues faster.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/petbezEmIw4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Load testing and tracing with k6 and Tempo</title><link>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</link><pubDate>Thu, 18 May 2023 22:41:42 +1000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230518-load-testing-and-tracing-with-k6-and-tempo/</guid><description>&lt;p>At &lt;a href="https://grafana.com/about/events/observabilitycon/2023/sydney/">ObservabilityCON on the Road 2023 in Sydney, Australia&lt;/a>, I talked about why you should use load testing and distributed tracing, how to do it with k6 and Tempo, and the benefits of being able to see beyond traditional black-box testing.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZP2aa5qjNOg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing">Check out the slides here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Distributed+tracing">Distributed tracing&lt;/a> (notes)&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/xk6-distributed-tracing">xk6-distributed-tracing&lt;/a> (notes)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/ocr-2023-syd-01.jpeg" alt="Photo of the crowd at OCR Sydney">&lt;/p></description></item><item><title>Distributed Tracing With Grafana k6 (k6 Office Hours #70)</title><link>https://nicolevanderhoeven.github.io/blog/20221104-koh70-distributed-tracing-with-grafana-k6/</link><pubDate>Fri, 04 Nov 2022 14:03:04 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221104-koh70-distributed-tracing-with-grafana-k6/</guid><description>&lt;p>Just announced: distributed tracing with Grafana k6 x Tempo! Daniel González Lopes joins us to talk about what distributed tracing is, and how traces using the Tempo backend could help you troubleshoot your performance issues and improve overall reliability. This new integration was just announced at ObservabilityCon 2022, and Daniel&amp;rsquo;s here to tell us all about it!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/g9xU_pFr-Vc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/blog/2022/11/03/how-to-correlate-performance-testing-and-distributed-tracing-to-proactively-improve-reliability/">Blog post on k6 x Tempo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/blog/2022/11/02/observabilitycon-2022-announcements">Other announcements from ObservabilityCON 2022&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

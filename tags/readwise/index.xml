@@ -1,654 +1,438 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>readwise on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/readwise/</link>
-    <description>Recent content in readwise on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 02 Feb 2024 18:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Top 10 Ways I Learn in Public</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240202-top-10-ways-i-learn-in-public/</link>
-      <pubDate>Fri, 02 Feb 2024 18:00:50 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240202-top-10-ways-i-learn-in-public/</guid>
-      <description>&lt;p&gt;In this video, I talk about the different ways that I learn in public, including how I use &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;, social networks like &lt;a href=&#34;https://pkm.social/@nicole&#34;&gt;Mastodon&lt;/a&gt;, YouTube, and &lt;a href=&#34;https://tip.nicolevanderhoeven.com&#34;&gt;Buttondown&lt;/a&gt; to do so. I also announce my new in-progress book, &lt;a href=&#34;https://doingitinpublic.com&#34;&gt;Doing It in Public&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/IE94ZZo6IVw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Learning new things in Obsidian: in defense of remembering</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240119-learning-new-things-in-obsidian-in-defense-of-remembering/</link>
-      <pubDate>Fri, 19 Jan 2024 12:01:34 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240119-learning-new-things-in-obsidian-in-defense-of-remembering/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s how I&amp;rsquo;m learning things in Obsidian in 2024, and the tools I use in my information processing pipeline to read, listen, and watch content and turn that into ideas and output. I also talk about why it&amp;rsquo;s important to remember what you&amp;rsquo;ve consumed, and the value of writing stuff down to help you do so.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZJop14hgf40&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The Imperfectionist - &lt;a href=&#34;https://ckarchive.com/b/68ueh8hk25687hkq88gqmtzope0kk&#34;&gt;How to forget what you read&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sign up for &lt;a href=&#34;https://www.oliverburkeman.com/the-imperfectionist&#34;&gt;The Imperfectionist newsletter&lt;/a&gt; (recommended!)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://chromewebstore.google.com/detail/readwise-highlighter/jjhefcfhmnkfeepcpnilbbkaadhngkbi&#34;&gt;Readwise Highlighter&lt;/a&gt; (browser extension)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://link.snipd.com/Cx7S/nicole&#34;&gt;Snipd&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://napkin.one/?via=nicole&#34;&gt;Napkin.one&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://amzn.to/3Smvvpw&#34;&gt;Deep Work&lt;/a&gt; (book)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Taking notes on podcasts with Snipd, Readwise, and Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230714-taking-notes-on-podcasts-with-snipd/</link>
-      <pubDate>Fri, 14 Jul 2023 15:55:33 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230714-taking-notes-on-podcasts-with-snipd/</guid>
-      <description>&lt;p&gt;In this video, I show you my favorite method for taking notes on podcasts with Snipd, Readwise, and Obsidian: three tools that work very well together. Snipd is a mobile podcast player app for iOS and Android that integrates with Readwise. With the Readwise Official plugin for Obsidian, that means my highlights and notes from podcasts end up automatically in my Obsidian vault, tagged appropriately.&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;RESOURCES&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.snipd.com/ai-podcast-notes?invitationCode=NICOLE&#34;&gt;Snipd AI Podcast Notes wishlist&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.snipd.com&#34;&gt;Snipd&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://share.snipd.com/episode-takeaways/6eb18522-d1f3-4a09-aa81-d6a07bd9f770&#34;&gt;Sample AI podcast notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;@CalNewportMedia - Deep Questions - &lt;a href=&#34;https://www.youtube.com/watch?v=Udzf5F1GPME&#34;&gt;The Failure of Cybernetic Productivity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;@CalNewportMedia - Deep Questions - &lt;a href=&#34;https://www.youtube.com/watch?v=EoWlWIUJyPQ&#34;&gt;Decoding Overhead&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;@masteringdungeons - &lt;a href=&#34;https://www.youtube.com/watch?v=hFsCanZZ-gU&#34;&gt;Mike Shea on Organized Play vs Home Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The Informed Life - &lt;a href=&#34;https://theinformed.life/2020/06/21/episode-38-andy-polaine/&#34;&gt;Andy Polaine on Service Design&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ierImyE5pgU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>AI tools for PKM and Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</link>
-      <pubDate>Fri, 27 Jan 2023 16:39:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</guid>
-      <description>&lt;p&gt;Here are some AI tools for learning and taking notes that I&amp;rsquo;ve incorporated into my processes. AI is a controversial topic, but it&amp;rsquo;s important to remember it&amp;rsquo;s just like any other technology: it&amp;rsquo;s only as good as the people that wield it. In this video, I show some ways I use artificial intelligence to improve my learning and note-taking rather than to replace them.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/mKWY33MXLvI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Taking Notes From Youtube Videos in Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</link>
-      <pubDate>Fri, 30 Dec 2022 11:30:38 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</guid>
-      <description>&lt;p&gt;In this video, I talk about five different ways to take notes on YouTube videos in Obsidian, for those (like me) who love learning things on YouTube and want a way to capture new thoughts in Obsidian. I mention a few community plugins, a browser extension, and a separate service as well as my workflow for just using vanilla Obsidian, so you can take your pick!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/qjWq4ck2-0o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Mastobot: a Mastodon Bot for Readwise and Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</link>
-      <pubDate>Sun, 25 Dec 2022 00:31:28 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve had a love affair with &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; for a while, enough to write some code to extend it. I &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/&#34;&gt;wrote a Python script to save Readwise highlights to my Obsidian vault&lt;/a&gt;, switched to the &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;Readwise Official plugin&lt;/a&gt; when they released it, &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/&#34;&gt;wrote another script sending Shortform highlights to Readwise&lt;/a&gt;, and then was happy when the two companies established an official integration thanks to me introducing them.&lt;/p&gt;
-&lt;p&gt;Maybe I should have learned to just be patient and wait for the awesome Readwise team to build integrations I want, but remembered I&amp;rsquo;m not that patient. This is about how I created a Mastodon bot to send Mastodon posts I like to my Readwise account, and, by extension, to my &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; vault.&lt;/p&gt;
-&lt;p&gt;You might say there&amp;rsquo;s a pattern here.&lt;/p&gt;
-&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;ve been dabbling in &lt;a href=&#34;https://joinmastodon.org/&#34;&gt;Mastodon&lt;/a&gt; for a while, but only recently got extremely involved with it when I decided to start and maintain a Mastodon server, &lt;a href=&#34;https://pkm.social&#34;&gt;pkm.social&lt;/a&gt;, for the personal knowledge management community.&lt;/p&gt;
-&lt;p&gt;Readwise already has an awesome &lt;a href=&#34;https://youtu.be/Rw1L5sxlnuU?t=400&#34;&gt;Twitter integration&lt;/a&gt; that I really enjoyed. Basically, once you&amp;rsquo;ve set it up, sending any tweet to &lt;a href=&#34;https://twitter.com/readwise&#34;&gt;@readwise&lt;/a&gt; adds it to your Readwise account. This means that whenever someone says something actually meaningful or interesting on Twitter, I can make sure it gets sent to Readwise, and then from there to my notes in Obsidian.&lt;/p&gt;
-&lt;p&gt;I wanted the same setup for Mastodon.&lt;/p&gt;
-&lt;h2 id=&#34;the-result&#34;&gt;The result&lt;/h2&gt;
-&lt;p&gt;First, the end result: I managed to get Mastodon posts I send to my bot to be sent to my Readwise account. Here are some early posts in the &amp;ldquo;Tweets&amp;rdquo; section of my Readwise Library:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/mastodon-on-readwise.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;And here are the resulting notes in Obsidian, also automatically synced and formatted:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/mastodon-in-obsidian.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;the-solution&#34;&gt;The solution&lt;/h2&gt;
-&lt;p&gt;Next, here&amp;rsquo;s how to set it up.&lt;/p&gt;
-&lt;h3 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h3&gt;
-&lt;p&gt;You&amp;rsquo;ll need a few things to get started:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A Mastodon account (I use and co-host &lt;a href=&#34;https://pkm.social&#34;&gt;pkm.social&lt;/a&gt; for free)&lt;/li&gt;
-&lt;li&gt;A Readwise account (&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Here&amp;rsquo;s an affiliate link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Familiarity with GitHub, the command line, Node.js (although I&amp;rsquo;m not a Node.js developer, so you don&amp;rsquo;t have to be, either)&lt;/li&gt;
-&lt;li&gt;The willingness/ability to leave a Node.js script running on a server somewhere&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Clone &lt;a href=&#34;https://github.com/nicolevanderhoeven/mastobot&#34;&gt;my Mastobot repository&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;In your Mastodon account settings, go to the Development section for your Mastodon server (e.g. &lt;code&gt;https://pkm.social/settings/applications&lt;/code&gt;) and click New Application.&lt;/li&gt;
-&lt;li&gt;Fill in the application name (this can be anything you want), leave everything else the same, and then click Save Changes.&lt;/li&gt;
-&lt;li&gt;Click on the application you just created, and note your client key, client secret, and access token. You&amp;rsquo;ll need these later.&lt;/li&gt;
-&lt;li&gt;In this repository, copy the contents of &lt;code&gt;.env.sample&lt;/code&gt; to a new file called &lt;code&gt;.env&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;It should look like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACCESS_TOKEN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CLIENT_SECRET&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CLIENT_KEY&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;READWISE_TOKEN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;DOMAIN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Fill out the fields in &lt;code&gt;.env&lt;/code&gt; with the information you just obtained from your Mastodon account.&lt;/li&gt;
-&lt;li&gt;For the &lt;code&gt;READWISE_TOKEN&lt;/code&gt; field, enter your &lt;a href=&#34;https://readwise.io/access_token&#34;&gt;Readwise access token&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;For the &lt;code&gt;DOMAIN&lt;/code&gt; field, enter your Mastodon server&amp;rsquo;s domain (e.g. &lt;code&gt;https://pkm.social&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;npm install&lt;/code&gt; to install the dependencies.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;node bot.js&lt;/code&gt; to start the bot.&lt;/li&gt;
-&lt;li&gt;In Mastodon, find a post you like and reply to it with &lt;code&gt;@accountname Your comment here.&lt;/code&gt; Within a few minutes, the original post you replied to will be sent to your Readwise account as a highlight and your comment as a note.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
-&lt;p&gt;This workflow is not without its limitations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You need to keep the script running somewhere to be able to use it. I considered using a polling approach, but decided I wanted to experiment with Mastodon&amp;rsquo;t streaming API, which would also be more responsive, so I went with that.&lt;/li&gt;
-&lt;li&gt;Right now, because the bot takes environment variables about &lt;em&gt;your&lt;/em&gt; particular setup, it&amp;rsquo;s not as versatile as the official Twitter implementation. As it is, it&amp;rsquo;s for one person&amp;rsquo;s use only.&lt;/li&gt;
-&lt;li&gt;It uses the &amp;ldquo;Tweets&amp;rdquo; category in Readwise, which is not ideal, but I can&amp;rsquo;t really do anything about that until they give Mastodon its own category. This isn&amp;rsquo;t really a big deal.&lt;/li&gt;
-&lt;li&gt;Right now, the bot doesn&amp;rsquo;t support images or other media embedded to posts.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I may address some of these issues, but for now, I&amp;rsquo;m just happy with the result. I fully expect that the Readwise team will eventually be able to flesh this out into a more robust integration, so I&amp;rsquo;m hesitant to spend too much more effort now that I&amp;rsquo;ve got it doing the minimum of what I wanted.&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in doing this for yourself, here are some resources that might be useful:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nicolevanderhoeven/mastobot&#34;&gt;Mastobot on GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/vanita5/mastodon-api&#34;&gt;Mastodon API client for NodeJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.joinmastodon.org/api/&#34;&gt;Mastodon official API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Great video tutorial series by &lt;a href=&#34;https://www.youtube.com/watch?v=sKSxBd56H70&#34;&gt;The Coding Train&lt;/a&gt; on creating a Mastodon bot&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Note: I&amp;rsquo;ve included affiliate links for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; in this post, in accordance with my &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;Ethics Statement&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reading and Taking Notes on Kindle and Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/</link>
-      <pubDate>Fri, 16 Dec 2022 16:28:29 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/</guid>
-      <description>&lt;p&gt;Reading on a Kindle can be more convenient than reading paperbacks because you can import your Kindle highlights and notes into Obsidian or your note-taking app of choice. Here are some tips for making the most out of every book you read.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DwgtBGVxHTg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Taking Better Notes From Books: Shortform-Readwise-Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</link>
-      <pubDate>Fri, 28 Oct 2022 16:00:34 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/JfL9iAEfSCg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt; for over a year. I&amp;rsquo;ve written &lt;a href=&#34;https://github.com/nicolevanderhoeven/shortform-to-readwise&#34;&gt;some code&lt;/a&gt; for it and I&amp;rsquo;ve also written &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/&#34;&gt;a blog post&lt;/a&gt; about it. It&amp;rsquo;s an essential part of my workflow for taking better notes from books, particularly in conjunction with &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; and my current note-taking tool of choice, &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt;. Here&amp;rsquo;s what you need to know!&lt;/p&gt;
-&lt;h2 id=&#34;what-is-shortform&#34;&gt;What is Shortform?&lt;/h2&gt;
-&lt;p&gt;Shortform is a service that creates book summaries out of popular books, but it&amp;rsquo;s also so much more than that! They&amp;rsquo;re like Netflix but for books, if you can imagine that. The summaries that Shortform gives you are not just your typical high school level summaries of a book report that we used to do when we were younger.&lt;/p&gt;
-&lt;p&gt;Sound familiar?&lt;/p&gt;
-&lt;h2 id=&#34;what-makes-shortform-different&#34;&gt;What makes Shortform different?&lt;/h2&gt;
-&lt;p&gt;Here are things that differentiate Shortform from other book summary services.&lt;/p&gt;
-&lt;h3 id=&#34;researched-commentary&#34;&gt;Researched commentary&lt;/h3&gt;
-&lt;p&gt;Shortform has really thoughtful and nuanced commentary that place it firmly head and shoulders above other services.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a screenshot of some Shortform commentary from the book &lt;a href=&#34;https://amzn.to/3gO0gmP&#34;&gt;Why We Sleep&lt;/a&gt;, taken on the Shortform mobile app.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-why-we-sleep.jpg&#34; alt=&#34;Screenshot of Shortform commentary from the book &amp;amp;ldquo;Why We Sleep&amp;amp;rdquo;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The highlighted section is a Shortform note&amp;ndash; additional commentary that the Shortform team added. In this case, they are fact-checking the author, citing &lt;a href=&#34;https://www.sleep.pitt.edu/wp-content/uploads/2020/03/The-AASM-Manual-for-Scoring-of-Sleep-and-Associated-Events-2007-.pdf&#34;&gt;sources&lt;/a&gt; that prove a statement the author made to be false.&lt;/p&gt;
-&lt;p&gt;When I was reading this book, I didn&amp;rsquo;t really think about questioning those claims. But Shortform thoroughly goes over every claim that Walker, the author, made in thsi book.&lt;/p&gt;
-&lt;p&gt;Reading with Shortform is like having somebody else read a book with you&amp;ndash; a more critical and more well-informed someone who has the time to fact-check statements. It&amp;rsquo;s a bit like having your own personal book club.&lt;/p&gt;
-&lt;h4 id=&#34;shortform-vs-blinkist&#34;&gt;Shortform vs. Blinkist&lt;/h4&gt;
-&lt;p&gt;Another service in this vein that I&amp;rsquo;ve used is &lt;a href=&#34;https://blinkist.com/&#34;&gt;Blinkist&lt;/a&gt;. Let&amp;rsquo;s look at the same book in Shortform and Blinkist to figure out why I like Shortform so much better.&lt;/p&gt;
-&lt;p&gt;This is what the Blinkist summary for the book &lt;a href=&#34;https://amzn.to/3W8rFQH&#34;&gt;Indistractable&lt;/a&gt; looks like.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/blinkist-indistractable-summary.jpg&#34; alt=&#34;Screenshot of Blinkist summary of Indistractable&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Blinkist is based on the idea that every book can be distilled into these &lt;em&gt;blinks&lt;/em&gt;: very short summaries of every idea. For this book it has eight. Each of these blinks is a few paragraphs long. Here&amp;rsquo;s what the first looks like.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/blinkist-indistractable-first-section.jpg&#34; alt=&#34;Screenshot of Blinkist&amp;amp;rsquo;s Indistractable blink&#34;&gt;&lt;/p&gt;
-&lt;p&gt;A blink is a straight summary. There&amp;rsquo;s no commentary. There&amp;rsquo;s no research or anything like that. It seems like the whole focus of this is to be able to distill exactly what the author has said and let other people do the work of trying to figure out for themselves whether something is true or not. There&amp;rsquo;s really not much more than just these blinks.&lt;/p&gt;
-&lt;p&gt;In contrast, if we look at the one on Shortform, this is the same book and it also has like a one page summary like Blinkist did.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-summary.jpg&#34; alt=&#34;Screenshot of Shortform summary of Indistractable&#34;&gt;&lt;/p&gt;
-&lt;p&gt;But then it also has a full book guide, which goes through every single chapter or part and adds more detail into it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-first-section.jpg&#34; alt=&#34;Screenshot of Shorform&amp;amp;rsquo;s Indistractable first part&#34;&gt;&lt;/p&gt;
-&lt;p&gt;As you can see, Shortform takes a different approach: instead of just summarizing the book, they&amp;rsquo;re truly trying to explain it in their own unique way, providing examples and making it more readable using bullet points.&lt;/p&gt;
-&lt;h3 id=&#34;action-oriented-exercises&#34;&gt;Action-oriented exercises&lt;/h3&gt;
-&lt;p&gt;Shortform also has these exercises based on the things that the author has said in the book. These exercises are peppered throughout and between these chapters, and they really force you to put things into practice right away as soon as you learn them, which is another element of learning.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-exercises.jpg&#34; alt=&#34;Screenshot of an exercise in Shortform&amp;amp;rsquo;s Indistractable summary&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;critical-thinking-comparisons-to-other-ideas&#34;&gt;Critical thinking: comparisons to other ideas&lt;/h3&gt;
-&lt;p&gt;Shortform tries to examine ideas in the context of other books they&amp;rsquo;ve made summaries for. Here&amp;rsquo;s an example of a Shortform note where Shortform suggests the summary of the book &lt;a href=&#34;https://amzn.to/3NdqE5C&#34;&gt;How to Stop Worrying and Start Living&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/shortform-indistractable-comparison.jpeg&#34; alt=&#34;Screenshot of Shortform note connecting Indistractable to another book&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Fans of the Zettelkasten method will be happy to see this, because Shortform often prompts me to consider the differences or similarities between ideas from different authors. It helps me see connections I might not have considered. Incidentally, I&amp;rsquo;ve also found many good books this way!&lt;/p&gt;
-&lt;h2 id=&#34;how-to-use-shortform-with-obsidian&#34;&gt;How to use Shortform with Obsidian&lt;/h2&gt;
-&lt;p&gt;The other thing that really sells it for me is the integration. Because I don&amp;rsquo;t want that learning to stop in the Shortform app. You know me, and I want everything in Obsidian. And Shortform has an integration that Blinkist does not.&lt;/p&gt;
-&lt;p&gt;I actually tried to solve this problem myself a year ago, because no integration existed. I &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/&#34;&gt;wrote a Python script&lt;/a&gt; that would take the Shortform highlights, because it has an API, and then call the Readwise API and kind of string them together. Now, that still works as far as I know, but that&amp;rsquo;s not what I recommend anymore. I talked to the Readwise founders and suggested to them that Shortform was a great company to partner with. Not too long after that, they came out with &lt;a href=&#34;https://readwise.io/changelog/shortform-import&#34;&gt;an awesome integration&lt;/a&gt;!&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;First, sign up to both &lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt; and &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. They both have free trials, so you don&amp;rsquo;t have to commit to anything just yet.&lt;/li&gt;
-&lt;li&gt;Then, &lt;a href=&#34;https://readwise.io/welcome/sync#shortform&#34;&gt;click on this link to connect&lt;/a&gt; your Readwise account to Shortform.&lt;/li&gt;
-&lt;li&gt;(optional) If you use Obsidian like I do, &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;follow these instructions&lt;/a&gt; to install the Readwise Official plugin for Obsidian.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;That&amp;rsquo;s pretty much it!&lt;/p&gt;
-&lt;p&gt;From now on, here&amp;rsquo;s how things will work:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You make highlights on books on Shortform.&lt;/li&gt;
-&lt;li&gt;Those highlights are sent to Readwise automatically.&lt;/li&gt;
-&lt;li&gt;Through the Readwise official plugin, those highlights get synced into your Obsidian vault.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;the-result-shortform-highlights-in-obsidian&#34;&gt;The result: Shortform highlights in Obsidian&lt;/h3&gt;
-&lt;p&gt;Here&amp;rsquo;s what my Shortform highlights look like in Obsidian. Note that after setting this up, all I had to do was make highlights on Shortform&amp;ndash; it&amp;rsquo;s quite low-touch after that.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-shortform-indistractable.png&#34; alt=&#34;Shorform highlights synced to Obsidian vault via Readwise&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I tweaked the export settings in Readwise to set the format I want the note to have in Obsidian. You don&amp;rsquo;t have to do this, but if you want to, you can change those settings &lt;a href=&#34;https://readwise.io/export/obsidian/preferences&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;my-shortform-workflow-for-taking-notes-on-books&#34;&gt;My Shortform workflow for taking notes on books&lt;/h2&gt;
-&lt;p&gt;This is pretty much how a lot of my book-buying and -reading goes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I start by browsing books on Shortform and read the one-page summaries.&lt;/li&gt;
-&lt;li&gt;If I find one I like, I buy the book on Kindle.&lt;/li&gt;
-&lt;li&gt;I make highlights on the Kindle version. (Those are synced to Obsidian too!)&lt;/li&gt;
-&lt;li&gt;If I really like the book, I flip back to the Shortform detailed chapter summaries as I finish each chapter, because they provide more context. I make highlights and notes from Shortform here sometimes.&lt;/li&gt;
-&lt;li&gt;Sometimes I do the Shortform exercises too.&lt;/li&gt;
-&lt;li&gt;After I finish the book, I go back to the Shortform summary and make more highlights/notes.&lt;/li&gt;
-&lt;li&gt;After I&amp;rsquo;ve read my fill of both the Shortform summary and the book itself, I go back to Obsidian and write my own notes that combine what I&amp;rsquo;ve learned.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If that sounds like a lot, it is! But keep in mind that I don&amp;rsquo;t do this for &lt;em&gt;every&lt;/em&gt; book. At every step of the way, Shortform helps me filter out books that I don&amp;rsquo;t want to read, or don&amp;rsquo;t want to finish.&lt;/p&gt;
-&lt;p&gt;Shortform definitely saves me money: it costs less than a book a month and it stops me from reading more than one book a month. From that perspective, it&amp;rsquo;s already worth it.&lt;/p&gt;
-&lt;p&gt;But more than that, the thoughtfulness of the summaries and the research that goes into those commentaries save me more than just money: &lt;em&gt;they save me time&lt;/em&gt;. And that&amp;rsquo;s really what I keep coming back for.&lt;/p&gt;
-&lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;The easiest way to sync Kindle highlights to Obsidian - Readwise to Obsidian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/&#34;&gt;How to process notes in Obsidian with Readwise&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/&#34;&gt;I can finally tell you about Readwise Reader&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/&#34;&gt;How to take notes from a book with Obsidian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/&#34;&gt;Use it or lose it: what to do with all those notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Some of the links on this page are affiliate links. Click &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;here&lt;/a&gt; to check out my ethics statement and see how I decide what to promote in this way.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>I can finally tell you about Readwise Reader</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</link>
-      <pubDate>Wed, 07 Sep 2022 18:01:12 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</guid>
-      <description>&lt;p&gt;Readwise Reader is the latest read-it-later app, except not just for books. Reader brings in your highlights from books, articles, tweets, PDFs, epubs, emails, and even newsletters! While it&amp;rsquo;s not yet officially launched, it&amp;rsquo;s now in public beta and you can sign up to be put on a wait list to try out this awesome product that&amp;rsquo;s been so essential to my workflows.&lt;/p&gt;
-&lt;p&gt;Note: I do have an affiliate link of &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;, but this video was not sponsored. They know I&amp;rsquo;m making this video, because I had to reach out to get permission to post the screenshot of a private email, but they did not review this video and had no idea what I was going to say. :)&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/uNH1JDOmGJw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Take Notes from a book with Obsidian (The Culture Map)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</link>
-      <pubDate>Fri, 02 Sep 2022 17:58:52 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</guid>
-      <description>&lt;p&gt;I demonstrate how to take notes from a book (The Culture Map) using Obsidian. In the process of taking notes, I also create learning exhaust in the form of notes, an atomic essay to go on Twitter, a visual that summarises a concept, and a video presentation. Taking notes from books is more than just understanding what the author wanted to say; it should also involve consolidation and interrogation of the book&amp;rsquo;s ideas into our personal knowledge management systems.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/VumFk-C4iFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How I Learn in Obsidian - Keeping up with tech trends</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link>
-      <pubDate>Fri, 12 Aug 2022 16:17:11 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s how I learn in Obsidian by processing articles I&amp;rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6kzsCBKCl94&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Use It or Lose It - Linking Your Thinking Conference</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</link>
-      <pubDate>Thu, 19 May 2022 14:03:13 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</guid>
-      <description>&lt;p&gt;Today I spoke at the &lt;a href=&#34;https://lu.ma/3m1fh781&#34;&gt;Linking Your Thinking&lt;/a&gt; conference about what I do with notes I take, and how I manage to use them to actually create stuff.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SMNSUs6ffnE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you&amp;rsquo;d like to see the result for yourself, &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#&#34;&gt;here are the slides&lt;/a&gt;!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How Real People Process Notes</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/</link>
-      <pubDate>Thu, 12 May 2022 17:00:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s a glaring gap in most productivity systems: time. How do REAL people, with real jobs and obligations, find the time to process notes? Is Inbox Zero an achievable and sustainable goal? I think the answer is no. In this video, I talk about what to do instead, and what is a healthier way to look at productivity.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6Bbj7xYj3Bc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Process Notes in Obsidian // Readwise Official Obsidian plugin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</link>
-      <pubDate>Wed, 23 Mar 2022 16:00:28 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</guid>
-      <description>&lt;p&gt;How do you process notes in Obsidian? I demonstrate how to use the Readwise Official Obsidian plugin to go from raw content to notes in a Zettelkasten-like Obsidian vault. &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Sign up for Readwise using my link&lt;/a&gt; and get double the trial period.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Rw1L5sxlnuU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to import Shortform highlights to Obsidian via Readwise</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</link>
-      <pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</guid>
-      <description>
-
-&lt;meta property=“og:image” content=&#34;/assets/20210816-shortform-to-readwise-title.png.png&#34; /&gt;
-&lt;meta property=”og:image:width” content=”1200″ /&gt;
-&lt;meta property=”og:image:height” content=”628″ /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-to-readwise-title.png&#34; alt=&#34;Shortform to Readwise hero photo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve always been dubious of those book summary apps. You know the ones&amp;ndash; they tend to have obnoxious ads that promise to help you &amp;ldquo;read 5 books a day&amp;rdquo; or learn the world&amp;rsquo;s secrets in 15 minutes. Having tried a few of them, I&amp;rsquo;ve been disappointed with the quality of their summaries (or lack thereof). They attempt to distill the message of a 300+ page book into a handful of bullet points, which I&amp;rsquo;ve found neither accurate nor useful. Recently, though, I found myself happily subscribing to one, and here&amp;rsquo;s why.&lt;/p&gt;
-&lt;h2 id=&#34;whats-shortform-and-why-is-it-awesome&#34;&gt;What&amp;rsquo;s Shortform and why is it awesome?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt; really took me aback because it isn&amp;rsquo;t just a book summary. I should mention here that I&amp;rsquo;m not affiliated with Shortform and gain nothing by recommending them. I&amp;rsquo;m just a happy subscriber.&lt;/p&gt;
-&lt;p&gt;When I read their guide for the book &lt;em&gt;Why We Sleep&lt;/em&gt;, I was pleasantly surprised to find that Shortform not only summarized it succinctly, but they also added intelligent counterarguments to the author&amp;rsquo;s points. In some cases, when the author made a false claim, there were Shortform notes that linked to studies that showed &lt;em&gt;why&lt;/em&gt; the claim was false. In other cases, Shortform mentioned related concepts proposed in other books that strengthened the author&amp;rsquo;s viewpoint. I found myself looking up their guides of books I&amp;rsquo;d already read, just because I was curious to see if I had missed anything. And I had!&lt;/p&gt;
-&lt;p&gt;In short, Shortform is the only book summary reader I&amp;rsquo;ve found that goes beyond summarizing and actually &lt;em&gt;adds value&lt;/em&gt; to the reading experience, &lt;em&gt;even if you&amp;rsquo;ve read the book.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;They also have a one-page summary of the book AND a summary per chapter, so information is presented at different levels of detail. In my time with it, my most frequent workflow with it has involved reading the one-page summary of a book, buying it if it was interestering enough, reading the book, and then going back to Shortform to go read the chapter summaries. And both the one-page and detailed chapter summaries, including Shortform notes, can be highlighted!&lt;/p&gt;
-&lt;p&gt;Naturally I wanted to take it further than that. I already &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux&#34;&gt;sync my Kindle highlights to Obsidian&lt;/a&gt; automatically and incrementally process them in Obsidian, so I wrote a script to have my Shortform highlights going to &lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt; as well.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-01.png&#34; alt=&#34;Shortform highlights in my Obsidian vault&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;My Shortform highlights for the book Mindset, in my Obsidian vault.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The screenshot above shows the final result: highlights I made in the Shortform web or mobile app that have been synced to a page in my Obsidian vault. Here&amp;rsquo;s how I did that.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: Since this article was published, Shortform and Readwise have created an integration, so the script I mention here is no longer necessary. Click &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20221021-obsidian-for-non-coders&#34;&gt;here&lt;/a&gt; to see what I&amp;rsquo;d recommend doing today.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A &lt;a href=&#34;https://shortform.com/nicole&#34;&gt;Shortform&lt;/a&gt; account. &lt;em&gt;(affiliate link)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;A &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; account. &lt;em&gt;(This is an affiliate link. If you sign up with this link, you&amp;rsquo;ll get a two-month free trial instead of one, and I get a small percentage if you sign up for a plan.)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;A tool that Readwise can export to, such as &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;, &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt;, or &lt;a href=&#34;https://evernote.com&#34;&gt;Evernote&lt;/a&gt;. You can also use their CSV and Markdown exports.&lt;/li&gt;
-&lt;li&gt;A local installation of Python 3, which you can &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;download here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Obsidian is my Personal Knowledge Management tool of choice, and I use the &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;Readwise Official community plugin&lt;/a&gt; to get Readwise to send highlights to Obsidian. However, using Obsidian is not necessary as my script connects only Shortform to Readwise.&lt;/p&gt;
-&lt;h2 id=&#34;the-setup&#34;&gt;The setup&lt;/h2&gt;
-&lt;p&gt;Clone &lt;a href=&#34;https://github.com/nicolevanderhoeven/shortform-to-readwise&#34;&gt;my Shortform-to-Readwise repository on GitHub&lt;/a&gt; or download it to your computer.&lt;/p&gt;
-&lt;h3 id=&#34;enter-your-tokens&#34;&gt;Enter your tokens&lt;/h3&gt;
-&lt;p&gt;The file &lt;code&gt;variables.py&lt;/code&gt; requires two tokens: one from your Shortform account and another from your Readwise account:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Your authorization token for Shortform&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;authToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Your Readwise API token&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Retrieve this token from https://readwise.io/access_token&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;readwiseToken &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;getting-your-shortform-token&#34;&gt;Getting your Shortform token&lt;/h4&gt;
-&lt;p&gt;This is a little hacky, because Shortform doesn&amp;rsquo;t expose an API token in their web app. So you&amp;rsquo;ll need to log in to your Shortform account and open up DevTools in your browser. In Chrome, go to Options &amp;gt; More Tools &amp;gt; Developer Tools (or, on Mac, hit CMD+OPTION+I). Click on the Network panel.&lt;/p&gt;
-&lt;p&gt;You should now see Shortform on one side, and DevTools on another in the same browser window.&lt;/p&gt;
-&lt;p&gt;Then, go to &lt;a href=&#34;https://www.shortform.com/app/highlights&#34;&gt;your Highlights page&lt;/a&gt;. Doing so will populate the Network panel with a bunch of requests that look like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-02.png&#34; alt=&#34;DevTools open in Chrome, showing requests from Shortform&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;DevTools open in Chrome, showing requests from Shortform.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Click on the request with the name &lt;code&gt;?sort=date&lt;/code&gt;, highlighted above. That&amp;rsquo;ll open another side panel that will show Headers. Scroll down to the section marked &amp;ldquo;Request Headers&amp;rdquo;, and look for where it says &lt;code&gt;Authorization: Basic &lt;/code&gt; followed by a bunch of characters.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-03.png&#34; alt=&#34;Authorization headers for Shortform, in DevTools&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Authorization headers for Shortform, in DevTools.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve removed my personal authorization token from the screenshot above, but it&amp;rsquo;s a long series of characters that comes after &lt;code&gt;Authorization: Basic &lt;/code&gt;. Go ahead and right click on it and click Copy Value. Paste it into &lt;code&gt;variables.py&lt;/code&gt; as the value for &lt;code&gt;authToken&lt;/code&gt;, and then _remove &lt;code&gt;Basic &lt;/code&gt; (including the space after it) so that you&amp;rsquo;re saving only everything that comes afterwards.&lt;/p&gt;
-&lt;h4 id=&#34;getting-your-readwise-token&#34;&gt;Getting your Readwise token&lt;/h4&gt;
-&lt;p&gt;Thankfully, this one&amp;rsquo;s a little easier. Go to &lt;a href=&#34;https://readwise.io/access_token&#34;&gt;this page on Readwise&lt;/a&gt; after logging in. Click &amp;ldquo;Get Token&amp;rdquo;, click &amp;ldquo;Copy to clipboard&amp;rdquo;, and then paste it into &lt;code&gt;variables.py&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Save &lt;code&gt;variables.py&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Note: Don&amp;rsquo;t share either of these tokens with anyone else, as they will then be able to access your Shortform or Readwise accounts.&lt;/p&gt;
-&lt;h3 id=&#34;run-the-script&#34;&gt;Run the script&lt;/h3&gt;
-&lt;p&gt;Open up your terminal, and &lt;code&gt;cd&lt;/code&gt; into the &lt;code&gt;/shortform-to-readwise&lt;/code&gt; repository. Then, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 getHighlights.py
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to &lt;a href=&#34;https://readwise.io/books&#34;&gt;your Readwise library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210816-shortform-04.png&#34; alt=&#34;Shortform exports showing up in your Readwise library&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Shortform exports showing up in your Readwise library.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You should see books that have the &lt;code&gt;Shortform-&lt;/code&gt; prefix. If you do, then you&amp;rsquo;re done! If you&amp;rsquo;ve got your Readwise account set up to push your highlights elsewhere (such as Obsidian), then you&amp;rsquo;re all set!&lt;/p&gt;
-&lt;p&gt;In case you&amp;rsquo;re wondering why I added the &lt;code&gt;Shortform-&lt;/code&gt; prefix, it&amp;rsquo;s because I often read the Shortform guide, and then read the book itself. Rather than end up in a sticky situation where the Shortform guide highlights might override the actual book highlights, I titled it differently so that I get two pages for the two sets of highlights.&lt;/p&gt;
-&lt;h2 id=&#34;what-about-running-the-script-regularly&#34;&gt;What about running the script regularly?&lt;/h2&gt;
-&lt;p&gt;The whole point of this, at least for me, was to set it up so that I&amp;rsquo;ve got highlights going to Obsidian &lt;em&gt;automatically&lt;/em&gt;, without needing my intervention. What I did was to use &lt;code&gt;crontab&lt;/code&gt; on macOS to run the script every 30 minutes, but you can set up your own schedule.&lt;/p&gt;
-&lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
-&lt;p&gt;Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on your laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
-&lt;h3 id=&#34;find-the-path-for-your-python3-installation&#34;&gt;Find the path for your python3 installation&lt;/h3&gt;
-&lt;p&gt;In your terminal, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;which python3
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will give you a path. For me, it was &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Copy this.&lt;/p&gt;
-&lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
-&lt;p&gt;Then, from your terminal, run the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up a list of cronjobs. If you don&amp;rsquo;t have any other jobs, this will be blank.&lt;/p&gt;
-&lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
-&lt;p&gt;Add a line to crontab for the schedule you want to create. This line has to be in the format&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * command
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;minute&lt;/li&gt;
-&lt;li&gt;hour&lt;/li&gt;
-&lt;li&gt;day of the month&lt;/li&gt;
-&lt;li&gt;month&lt;/li&gt;
-&lt;li&gt;day of the week&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In my case, I wanted it to run every 30 minutes, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure you change &lt;code&gt;/Users/nic/python/&lt;/code&gt; to the path where you put the repository and your python3 path instead of &lt;code&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code&gt;. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p&gt;
-&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
-&lt;p&gt;I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p&gt;
-&lt;p&gt;Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: This post contains affiliate links. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</link>
-      <pubDate>Tue, 10 Aug 2021 19:50:40 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</guid>
-      <description>
-
-&lt;meta property=“og:image” content=&#34;/assets/readwise-official-plugin.png&#34; /&gt;
-&lt;meta property=”og:image:width” content=”1200″ /&gt;
-&lt;meta property=”og:image:height” content=”628″ /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-plugin.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Almost exactly six months ago, I &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/&#34;&gt;wrote a blog post&lt;/a&gt; detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.&lt;/p&gt;
-&lt;p&gt;That method worked, and you can read the original article in the link above. However, today, &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; announced that they now have &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;an official Obsidian community plugin&lt;/a&gt;, and I disabled my trusty old python script for good.&lt;/p&gt;
-&lt;p&gt;You see, although my old script worked, there were quirks&amp;ndash; not the least of which was that making changes to it meant programming in Python. I&amp;rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&amp;rsquo;m thrilled to have something significantly better from Readwise itself! Here&amp;rsquo;s a video from the Readwise team, or read on for instructions on how to get started.&lt;/p&gt;
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DOYwwdDC9LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;em&gt;From &lt;a href=&#34;https://www.youtube.com/watch?v=DOYwwdDC9LQ&#34;&gt;Readwise on YouTube&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;install-the-obsidian-plugin&#34;&gt;Install the Obsidian plugin.&lt;/h2&gt;
-&lt;p&gt;In your Obsidian vault, go to Settings &amp;gt; Community plugins. You&amp;rsquo;ll need to turn Safe mode off for community plugins if you haven&amp;rsquo;t already.&lt;/p&gt;
-&lt;p&gt;Then, click Browse and search for Readwise Official.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official.png&#34; alt=&#34;Screenshot of the Readwise Official plugin within Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Install it, and then enable it.&lt;/p&gt;
-&lt;h2 id=&#34;connect-your-readwise-account-to-the-obsidian-plugin&#34;&gt;Connect your Readwise account to the Obsidian plugin&lt;/h2&gt;
-&lt;p&gt;Head back to the Settings menu and scroll down to the &amp;ldquo;Plugin Options&amp;rdquo; section, and then click Readwise Official.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-connect.png&#34; alt=&#34;Screenshot of the initial screen of the Readwise Official plugin&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Click connect as highlighted in orange above, and a browser window will open, showing the &lt;a href=&#34;https://readwise.io/export/obsidian/preferences&#34;&gt;Obsidian Export&lt;/a&gt; options. You&amp;rsquo;ll need to sign into your Readwise account if you haven&amp;rsquo;t already.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/obsidian-export.png&#34; alt=&#34;Obsidian export page&#34;&gt;&lt;/p&gt;
-&lt;p&gt;At this point, your Readwise account will have been connected to the Readwise Official plugin, but you won&amp;rsquo;t have triggered any syncs yet. If you don&amp;rsquo;t want to change any of the configuration settings, you can then skip ahead to triggering the sync on Obsidian, but let&amp;rsquo;s run through the options anyway.&lt;/p&gt;
-&lt;h2 id=&#34;modifying-configuration-settings&#34;&gt;Modifying configuration settings&lt;/h2&gt;
-&lt;p&gt;On the Obsidian Exports page, you&amp;rsquo;ll be presented with a few options.&lt;/p&gt;
-&lt;h3 id=&#34;group-files-in-category-folders&#34;&gt;Group Files in Category Folders&lt;/h3&gt;
-&lt;p&gt;By default, this will be enabled. When enabled, Readwise will put your highlights in different folders depending on its source. For example, Kindle highlights will appear in the folder &lt;code&gt;Books&lt;/code&gt;. Disabling this option means all new notes will be created in the directory specified in the Obsidian plugin settings, which we&amp;rsquo;ll cover later. I left this enabled in case I read a book that has the same name as a blog post about the book, for example.&lt;/p&gt;
-&lt;h3 id=&#34;use-custom-formatting&#34;&gt;Use Custom Formatting&lt;/h3&gt;
-&lt;p&gt;Custom formatting is disabled by default, and lets you choose how the final note looks. Here are the things you can change in this section&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Page title&lt;/li&gt;
-&lt;li&gt;Page metadata&lt;/li&gt;
-&lt;li&gt;Highlights header&lt;/li&gt;
-&lt;li&gt;Highlight&lt;/li&gt;
-&lt;li&gt;YAML front matter&lt;/li&gt;
-&lt;li&gt;Sync notification&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I did make some changes in this section just to tweak how I want information to be displayed.&lt;/p&gt;
-&lt;h4 id=&#34;page-metadata&#34;&gt;Page metadata&lt;/h4&gt;
-&lt;p&gt;I don&amp;rsquo;t see the need for Page metadata since this is what I use YAML front matter for, so I removed the matadata section and the document tags (I never use those either). So my Page metadata section looks like this:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{% if image_url -%}
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Readwise on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/readwise/</link><description>Recent content in Readwise on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 02 Feb 2024 18:00:50 +0200</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/readwise/index.xml" rel="self" type="application/rss+xml"/><item><title>Top 10 Ways I Learn in Public</title><link>https://nicolevanderhoeven.github.io/blog/20240202-top-10-ways-i-learn-in-public/</link><pubDate>Fri, 02 Feb 2024 18:00:50 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240202-top-10-ways-i-learn-in-public/</guid><description>&lt;p>In this video, I talk about the different ways that I learn in public, including how I use &lt;a href="https://obsidian.md">Obsidian&lt;/a>, &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>, social networks like &lt;a href="https://pkm.social/@nicole">Mastodon&lt;/a>, YouTube, and &lt;a href="https://tip.nicolevanderhoeven.com">Buttondown&lt;/a> to do so. I also announce my new in-progress book, &lt;a href="https://doingitinpublic.com">Doing It in Public&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IE94ZZo6IVw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Learning new things in Obsidian: in defense of remembering</title><link>https://nicolevanderhoeven.github.io/blog/20240119-learning-new-things-in-obsidian-in-defense-of-remembering/</link><pubDate>Fri, 19 Jan 2024 12:01:34 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240119-learning-new-things-in-obsidian-in-defense-of-remembering/</guid><description>&lt;p>Here&amp;rsquo;s how I&amp;rsquo;m learning things in Obsidian in 2024, and the tools I use in my information processing pipeline to read, listen, and watch content and turn that into ideas and output. I also talk about why it&amp;rsquo;s important to remember what you&amp;rsquo;ve consumed, and the value of writing stuff down to help you do so.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJop14hgf40?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;ul>
+&lt;li>The Imperfectionist - &lt;a href="https://ckarchive.com/b/68ueh8hk25687hkq88gqmtzope0kk">How to forget what you read&lt;/a>&lt;/li>
+&lt;li>Sign up for &lt;a href="https://www.oliverburkeman.com/the-imperfectionist">The Imperfectionist newsletter&lt;/a> (recommended!)&lt;/li>
+&lt;li>&lt;a href="https://chromewebstore.google.com/detail/readwise-highlighter/jjhefcfhmnkfeepcpnilbbkaadhngkbi">Readwise Highlighter&lt;/a> (browser extension)&lt;/li>
+&lt;li>&lt;a href="https://shortform.com/nicole">Shortform&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://link.snipd.com/Cx7S/nicole">Snipd&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://readwise.io/nicole">Readwise&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://napkin.one/?via=nicole">Napkin.one&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/3Smvvpw">Deep Work&lt;/a> (book)&lt;/li>
+&lt;/ul></description></item><item><title>Taking notes on podcasts with Snipd, Readwise, and Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20230714-taking-notes-on-podcasts-with-snipd/</link><pubDate>Fri, 14 Jul 2023 15:55:33 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230714-taking-notes-on-podcasts-with-snipd/</guid><description>&lt;p>In this video, I show you my favorite method for taking notes on podcasts with Snipd, Readwise, and Obsidian: three tools that work very well together. Snipd is a mobile podcast player app for iOS and Android that integrates with Readwise. With the Readwise Official plugin for Obsidian, that means my highlights and notes from podcasts end up automatically in my Obsidian vault, tagged appropriately.&lt;/p>
+&lt;h2 id="resources">RESOURCES&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.snipd.com/ai-podcast-notes?invitationCode=NICOLE">Snipd AI Podcast Notes wishlist&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.snipd.com">Snipd&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://readwise.io/nicole">Readwise&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://share.snipd.com/episode-takeaways/6eb18522-d1f3-4a09-aa81-d6a07bd9f770">Sample AI podcast notes&lt;/a>&lt;/li>
+&lt;li>@CalNewportMedia - Deep Questions - &lt;a href="https://www.youtube.com/watch?v=Udzf5F1GPME">The Failure of Cybernetic Productivity&lt;/a>&lt;/li>
+&lt;li>@CalNewportMedia - Deep Questions - &lt;a href="https://www.youtube.com/watch?v=EoWlWIUJyPQ">Decoding Overhead&lt;/a>&lt;/li>
+&lt;li>@masteringdungeons - &lt;a href="https://www.youtube.com/watch?v=hFsCanZZ-gU">Mike Shea on Organized Play vs Home Games&lt;/a>&lt;/li>
+&lt;li>The Informed Life - &lt;a href="https://theinformed.life/2020/06/21/episode-38-andy-polaine/">Andy Polaine on Service Design&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ierImyE5pgU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>AI tools for PKM and Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</link><pubDate>Fri, 27 Jan 2023 16:39:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230127-ai-tools-for-pkm-and-obsidian/</guid><description>&lt;p>Here are some AI tools for learning and taking notes that I&amp;rsquo;ve incorporated into my processes. AI is a controversial topic, but it&amp;rsquo;s important to remember it&amp;rsquo;s just like any other technology: it&amp;rsquo;s only as good as the people that wield it. In this video, I show some ways I use artificial intelligence to improve my learning and note-taking rather than to replace them.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mKWY33MXLvI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Taking Notes From Youtube Videos in Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</link><pubDate>Fri, 30 Dec 2022 11:30:38 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</guid><description>&lt;p>In this video, I talk about five different ways to take notes on YouTube videos in Obsidian, for those (like me) who love learning things on YouTube and want a way to capture new thoughts in Obsidian. I mention a few community plugins, a browser extension, and a separate service as well as my workflow for just using vanilla Obsidian, so you can take your pick!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qjWq4ck2-0o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Mastobot: a Mastodon Bot for Readwise and Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</link><pubDate>Sun, 25 Dec 2022 00:31:28 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221225-mastodon-bot-for-readwise-and-obsidian/</guid><description>&lt;p>I&amp;rsquo;ve had a love affair with &lt;a href="https://readwise.io/nicole">Readwise&lt;/a> for a while, enough to write some code to extend it. I &lt;a href="https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/">wrote a Python script to save Readwise highlights to my Obsidian vault&lt;/a>, switched to the &lt;a href="https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/">Readwise Official plugin&lt;/a> when they released it, &lt;a href="https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/">wrote another script sending Shortform highlights to Readwise&lt;/a>, and then was happy when the two companies established an official integration thanks to me introducing them.&lt;/p>
+&lt;p>Maybe I should have learned to just be patient and wait for the awesome Readwise team to build integrations I want, but remembered I&amp;rsquo;m not that patient. This is about how I created a Mastodon bot to send Mastodon posts I like to my Readwise account, and, by extension, to my &lt;a href="https://obsidian.md/">Obsidian&lt;/a> vault.&lt;/p>
+&lt;p>You might say there&amp;rsquo;s a pattern here.&lt;/p>
+&lt;h2 id="the-problem">The problem&lt;/h2>
+&lt;p>I&amp;rsquo;ve been dabbling in &lt;a href="https://joinmastodon.org/">Mastodon&lt;/a> for a while, but only recently got extremely involved with it when I decided to start and maintain a Mastodon server, &lt;a href="https://pkm.social">pkm.social&lt;/a>, for the personal knowledge management community.&lt;/p>
+&lt;p>Readwise already has an awesome &lt;a href="https://youtu.be/Rw1L5sxlnuU?t=400">Twitter integration&lt;/a> that I really enjoyed. Basically, once you&amp;rsquo;ve set it up, sending any tweet to &lt;a href="https://twitter.com/readwise">@readwise&lt;/a> adds it to your Readwise account. This means that whenever someone says something actually meaningful or interesting on Twitter, I can make sure it gets sent to Readwise, and then from there to my notes in Obsidian.&lt;/p>
+&lt;p>I wanted the same setup for Mastodon.&lt;/p>
+&lt;h2 id="the-result">The result&lt;/h2>
+&lt;p>First, the end result: I managed to get Mastodon posts I send to my bot to be sent to my Readwise account. Here are some early posts in the &amp;ldquo;Tweets&amp;rdquo; section of my Readwise Library:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/mastodon-on-readwise.png" alt="">&lt;/p>
+&lt;p>And here are the resulting notes in Obsidian, also automatically synced and formatted:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/mastodon-in-obsidian.png" alt="">&lt;/p>
+&lt;h2 id="the-solution">The solution&lt;/h2>
+&lt;p>Next, here&amp;rsquo;s how to set it up.&lt;/p>
+&lt;h3 id="pre-requisites">Pre-requisites&lt;/h3>
+&lt;p>You&amp;rsquo;ll need a few things to get started:&lt;/p>
+&lt;ul>
+&lt;li>A Mastodon account (I use and co-host &lt;a href="https://pkm.social">pkm.social&lt;/a> for free)&lt;/li>
+&lt;li>A Readwise account (&lt;a href="https://readwise.io/nicole">Here&amp;rsquo;s an affiliate link&lt;/a>)&lt;/li>
+&lt;li>Familiarity with GitHub, the command line, Node.js (although I&amp;rsquo;m not a Node.js developer, so you don&amp;rsquo;t have to be, either)&lt;/li>
+&lt;li>The willingness/ability to leave a Node.js script running on a server somewhere&lt;/li>
+&lt;/ul>
+&lt;h3 id="setup">Setup&lt;/h3>
+&lt;ol>
+&lt;li>Clone &lt;a href="https://github.com/nicolevanderhoeven/mastobot">my Mastobot repository&lt;/a>.&lt;/li>
+&lt;li>In your Mastodon account settings, go to the Development section for your Mastodon server (e.g. &lt;code>https://pkm.social/settings/applications&lt;/code>) and click New Application.&lt;/li>
+&lt;li>Fill in the application name (this can be anything you want), leave everything else the same, and then click Save Changes.&lt;/li>
+&lt;li>Click on the application you just created, and note your client key, client secret, and access token. You&amp;rsquo;ll need these later.&lt;/li>
+&lt;li>In this repository, copy the contents of &lt;code>.env.sample&lt;/code> to a new file called &lt;code>.env&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;p>It should look like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">ACCESS_TOKEN&lt;/span>&lt;span style="color:#f92672">=&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">CLIENT_SECRET&lt;/span>&lt;span style="color:#f92672">=&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">CLIENT_KEY&lt;/span>&lt;span style="color:#f92672">=&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">READWISE_TOKEN&lt;/span>&lt;span style="color:#f92672">=&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">DOMAIN&lt;/span>&lt;span style="color:#f92672">=&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
+&lt;li>Fill out the fields in &lt;code>.env&lt;/code> with the information you just obtained from your Mastodon account.&lt;/li>
+&lt;li>For the &lt;code>READWISE_TOKEN&lt;/code> field, enter your &lt;a href="https://readwise.io/access_token">Readwise access token&lt;/a>.&lt;/li>
+&lt;li>For the &lt;code>DOMAIN&lt;/code> field, enter your Mastodon server&amp;rsquo;s domain (e.g. &lt;code>https://pkm.social&lt;/code>).&lt;/li>
+&lt;li>Run &lt;code>npm install&lt;/code> to install the dependencies.&lt;/li>
+&lt;li>Run &lt;code>node bot.js&lt;/code> to start the bot.&lt;/li>
+&lt;li>In Mastodon, find a post you like and reply to it with &lt;code>@accountname Your comment here.&lt;/code> Within a few minutes, the original post you replied to will be sent to your Readwise account as a highlight and your comment as a note.&lt;/li>
+&lt;/ol>
+&lt;h2 id="limitations">Limitations&lt;/h2>
+&lt;p>This workflow is not without its limitations:&lt;/p>
+&lt;ul>
+&lt;li>You need to keep the script running somewhere to be able to use it. I considered using a polling approach, but decided I wanted to experiment with Mastodon&amp;rsquo;t streaming API, which would also be more responsive, so I went with that.&lt;/li>
+&lt;li>Right now, because the bot takes environment variables about &lt;em>your&lt;/em> particular setup, it&amp;rsquo;s not as versatile as the official Twitter implementation. As it is, it&amp;rsquo;s for one person&amp;rsquo;s use only.&lt;/li>
+&lt;li>It uses the &amp;ldquo;Tweets&amp;rdquo; category in Readwise, which is not ideal, but I can&amp;rsquo;t really do anything about that until they give Mastodon its own category. This isn&amp;rsquo;t really a big deal.&lt;/li>
+&lt;li>Right now, the bot doesn&amp;rsquo;t support images or other media embedded to posts.&lt;/li>
+&lt;/ul>
+&lt;p>I may address some of these issues, but for now, I&amp;rsquo;m just happy with the result. I fully expect that the Readwise team will eventually be able to flesh this out into a more robust integration, so I&amp;rsquo;m hesitant to spend too much more effort now that I&amp;rsquo;ve got it doing the minimum of what I wanted.&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;p>If you&amp;rsquo;re interested in doing this for yourself, here are some resources that might be useful:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/nicolevanderhoeven/mastobot">Mastobot on GitHub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/vanita5/mastodon-api">Mastodon API client for NodeJS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.joinmastodon.org/api/">Mastodon official API&lt;/a>&lt;/li>
+&lt;li>Great video tutorial series by &lt;a href="https://www.youtube.com/watch?v=sKSxBd56H70">The Coding Train&lt;/a> on creating a Mastodon bot&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>Note: I&amp;rsquo;ve included affiliate links for &lt;a href="https://readwise.io/nicole">Readwise&lt;/a> in this post, in accordance with my &lt;a href="https://nicolevanderhoeven.com/ethics/">Ethics Statement&lt;/a>.&lt;/em>&lt;/p></description></item><item><title>Reading and Taking Notes on Kindle and Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/</link><pubDate>Fri, 16 Dec 2022 16:28:29 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221216-reading-and-taking-notes-on-kindle-and-obsidian/</guid><description>&lt;p>Reading on a Kindle can be more convenient than reading paperbacks because you can import your Kindle highlights and notes into Obsidian or your note-taking app of choice. Here are some tips for making the most out of every book you read.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DwgtBGVxHTg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Taking Better Notes From Books: Shortform-Readwise-Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</link><pubDate>Fri, 28 Oct 2022 16:00:34 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221028-taking-better-notes-from-books-shortform-review/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JfL9iAEfSCg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>I&amp;rsquo;ve been using &lt;a href="https://shortform.com/nicole">Shortform&lt;/a> for over a year. I&amp;rsquo;ve written &lt;a href="https://github.com/nicolevanderhoeven/shortform-to-readwise">some code&lt;/a> for it and I&amp;rsquo;ve also written &lt;a href="https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/">a blog post&lt;/a> about it. It&amp;rsquo;s an essential part of my workflow for taking better notes from books, particularly in conjunction with &lt;a href="https://readwise.io/nicole">Readwise&lt;/a> and my current note-taking tool of choice, &lt;a href="https://obsidian.md/">Obsidian&lt;/a>. Here&amp;rsquo;s what you need to know!&lt;/p>
+&lt;h2 id="what-is-shortform">What is Shortform?&lt;/h2>
+&lt;p>Shortform is a service that creates book summaries out of popular books, but it&amp;rsquo;s also so much more than that! They&amp;rsquo;re like Netflix but for books, if you can imagine that. The summaries that Shortform gives you are not just your typical high school level summaries of a book report that we used to do when we were younger.&lt;/p>
+&lt;p>Sound familiar?&lt;/p>
+&lt;h2 id="what-makes-shortform-different">What makes Shortform different?&lt;/h2>
+&lt;p>Here are things that differentiate Shortform from other book summary services.&lt;/p>
+&lt;h3 id="researched-commentary">Researched commentary&lt;/h3>
+&lt;p>Shortform has really thoughtful and nuanced commentary that place it firmly head and shoulders above other services.&lt;/p>
+&lt;p>Here&amp;rsquo;s a screenshot of some Shortform commentary from the book &lt;a href="https://amzn.to/3gO0gmP">Why We Sleep&lt;/a>, taken on the Shortform mobile app.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/shortform-why-we-sleep.jpg" alt="Screenshot of Shortform commentary from the book &amp;ldquo;Why We Sleep&amp;rdquo;">&lt;/p>
+&lt;p>The highlighted section is a Shortform note&amp;ndash; additional commentary that the Shortform team added. In this case, they are fact-checking the author, citing &lt;a href="https://www.sleep.pitt.edu/wp-content/uploads/2020/03/The-AASM-Manual-for-Scoring-of-Sleep-and-Associated-Events-2007-.pdf">sources&lt;/a> that prove a statement the author made to be false.&lt;/p>
+&lt;p>When I was reading this book, I didn&amp;rsquo;t really think about questioning those claims. But Shortform thoroughly goes over every claim that Walker, the author, made in thsi book.&lt;/p>
+&lt;p>Reading with Shortform is like having somebody else read a book with you&amp;ndash; a more critical and more well-informed someone who has the time to fact-check statements. It&amp;rsquo;s a bit like having your own personal book club.&lt;/p>
+&lt;h4 id="shortform-vs-blinkist">Shortform vs. Blinkist&lt;/h4>
+&lt;p>Another service in this vein that I&amp;rsquo;ve used is &lt;a href="https://blinkist.com/">Blinkist&lt;/a>. Let&amp;rsquo;s look at the same book in Shortform and Blinkist to figure out why I like Shortform so much better.&lt;/p>
+&lt;p>This is what the Blinkist summary for the book &lt;a href="https://amzn.to/3W8rFQH">Indistractable&lt;/a> looks like.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/blinkist-indistractable-summary.jpg" alt="Screenshot of Blinkist summary of Indistractable">&lt;/p>
+&lt;p>Blinkist is based on the idea that every book can be distilled into these &lt;em>blinks&lt;/em>: very short summaries of every idea. For this book it has eight. Each of these blinks is a few paragraphs long. Here&amp;rsquo;s what the first looks like.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/blinkist-indistractable-first-section.jpg" alt="Screenshot of Blinkist&amp;rsquo;s Indistractable blink">&lt;/p>
+&lt;p>A blink is a straight summary. There&amp;rsquo;s no commentary. There&amp;rsquo;s no research or anything like that. It seems like the whole focus of this is to be able to distill exactly what the author has said and let other people do the work of trying to figure out for themselves whether something is true or not. There&amp;rsquo;s really not much more than just these blinks.&lt;/p>
+&lt;p>In contrast, if we look at the one on Shortform, this is the same book and it also has like a one page summary like Blinkist did.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/shortform-indistractable-summary.jpg" alt="Screenshot of Shortform summary of Indistractable">&lt;/p>
+&lt;p>But then it also has a full book guide, which goes through every single chapter or part and adds more detail into it.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/shortform-indistractable-first-section.jpg" alt="Screenshot of Shorform&amp;rsquo;s Indistractable first part">&lt;/p>
+&lt;p>As you can see, Shortform takes a different approach: instead of just summarizing the book, they&amp;rsquo;re truly trying to explain it in their own unique way, providing examples and making it more readable using bullet points.&lt;/p>
+&lt;h3 id="action-oriented-exercises">Action-oriented exercises&lt;/h3>
+&lt;p>Shortform also has these exercises based on the things that the author has said in the book. These exercises are peppered throughout and between these chapters, and they really force you to put things into practice right away as soon as you learn them, which is another element of learning.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/shortform-indistractable-exercises.jpg" alt="Screenshot of an exercise in Shortform&amp;rsquo;s Indistractable summary">&lt;/p>
+&lt;h3 id="critical-thinking-comparisons-to-other-ideas">Critical thinking: comparisons to other ideas&lt;/h3>
+&lt;p>Shortform tries to examine ideas in the context of other books they&amp;rsquo;ve made summaries for. Here&amp;rsquo;s an example of a Shortform note where Shortform suggests the summary of the book &lt;a href="https://amzn.to/3NdqE5C">How to Stop Worrying and Start Living&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/shortform-indistractable-comparison.jpeg" alt="Screenshot of Shortform note connecting Indistractable to another book">&lt;/p>
+&lt;p>Fans of the Zettelkasten method will be happy to see this, because Shortform often prompts me to consider the differences or similarities between ideas from different authors. It helps me see connections I might not have considered. Incidentally, I&amp;rsquo;ve also found many good books this way!&lt;/p>
+&lt;h2 id="how-to-use-shortform-with-obsidian">How to use Shortform with Obsidian&lt;/h2>
+&lt;p>The other thing that really sells it for me is the integration. Because I don&amp;rsquo;t want that learning to stop in the Shortform app. You know me, and I want everything in Obsidian. And Shortform has an integration that Blinkist does not.&lt;/p>
+&lt;p>I actually tried to solve this problem myself a year ago, because no integration existed. I &lt;a href="https://nicolevanderhoeven.com/blog/20210815-shortform-to-readwise/">wrote a Python script&lt;/a> that would take the Shortform highlights, because it has an API, and then call the Readwise API and kind of string them together. Now, that still works as far as I know, but that&amp;rsquo;s not what I recommend anymore. I talked to the Readwise founders and suggested to them that Shortform was a great company to partner with. Not too long after that, they came out with &lt;a href="https://readwise.io/changelog/shortform-import">an awesome integration&lt;/a>!&lt;/p>
+&lt;ol>
+&lt;li>First, sign up to both &lt;a href="https://shortform.com/nicole">Shortform&lt;/a> and &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>. They both have free trials, so you don&amp;rsquo;t have to commit to anything just yet.&lt;/li>
+&lt;li>Then, &lt;a href="https://readwise.io/welcome/sync#shortform">click on this link to connect&lt;/a> your Readwise account to Shortform.&lt;/li>
+&lt;li>(optional) If you use Obsidian like I do, &lt;a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/">follow these instructions&lt;/a> to install the Readwise Official plugin for Obsidian.&lt;/li>
+&lt;/ol>
+&lt;p>That&amp;rsquo;s pretty much it!&lt;/p>
+&lt;p>From now on, here&amp;rsquo;s how things will work:&lt;/p>
+&lt;ul>
+&lt;li>You make highlights on books on Shortform.&lt;/li>
+&lt;li>Those highlights are sent to Readwise automatically.&lt;/li>
+&lt;li>Through the Readwise official plugin, those highlights get synced into your Obsidian vault.&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-result-shortform-highlights-in-obsidian">The result: Shortform highlights in Obsidian&lt;/h3>
+&lt;p>Here&amp;rsquo;s what my Shortform highlights look like in Obsidian. Note that after setting this up, all I had to do was make highlights on Shortform&amp;ndash; it&amp;rsquo;s quite low-touch after that.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/obsidian-shortform-indistractable.png" alt="Shorform highlights synced to Obsidian vault via Readwise">&lt;/p>
+&lt;p>I tweaked the export settings in Readwise to set the format I want the note to have in Obsidian. You don&amp;rsquo;t have to do this, but if you want to, you can change those settings &lt;a href="https://readwise.io/export/obsidian/preferences">here&lt;/a>.&lt;/p>
+&lt;h2 id="my-shortform-workflow-for-taking-notes-on-books">My Shortform workflow for taking notes on books&lt;/h2>
+&lt;p>This is pretty much how a lot of my book-buying and -reading goes:&lt;/p>
+&lt;ul>
+&lt;li>I start by browsing books on Shortform and read the one-page summaries.&lt;/li>
+&lt;li>If I find one I like, I buy the book on Kindle.&lt;/li>
+&lt;li>I make highlights on the Kindle version. (Those are synced to Obsidian too!)&lt;/li>
+&lt;li>If I really like the book, I flip back to the Shortform detailed chapter summaries as I finish each chapter, because they provide more context. I make highlights and notes from Shortform here sometimes.&lt;/li>
+&lt;li>Sometimes I do the Shortform exercises too.&lt;/li>
+&lt;li>After I finish the book, I go back to the Shortform summary and make more highlights/notes.&lt;/li>
+&lt;li>After I&amp;rsquo;ve read my fill of both the Shortform summary and the book itself, I go back to Obsidian and write my own notes that combine what I&amp;rsquo;ve learned.&lt;/li>
+&lt;/ul>
+&lt;p>If that sounds like a lot, it is! But keep in mind that I don&amp;rsquo;t do this for &lt;em>every&lt;/em> book. At every step of the way, Shortform helps me filter out books that I don&amp;rsquo;t want to read, or don&amp;rsquo;t want to finish.&lt;/p>
+&lt;p>Shortform definitely saves me money: it costs less than a book a month and it stops me from reading more than one book a month. From that perspective, it&amp;rsquo;s already worth it.&lt;/p>
+&lt;p>But more than that, the thoughtfulness of the summaries and the research that goes into those commentaries save me more than just money: &lt;em>they save me time&lt;/em>. And that&amp;rsquo;s really what I keep coming back for.&lt;/p>
+&lt;h2 id="related">Related&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/">The easiest way to sync Kindle highlights to Obsidian - Readwise to Obsidian&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/">How to process notes in Obsidian with Readwise&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/">I can finally tell you about Readwise Reader&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/">How to take notes from a book with Obsidian&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/">Use it or lose it: what to do with all those notes&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>Some of the links on this page are affiliate links. Click &lt;a href="https://nicolevanderhoeven.com/ethics/">here&lt;/a> to check out my ethics statement and see how I decide what to promote in this way.&lt;/em>&lt;/p></description></item><item><title>I can finally tell you about Readwise Reader</title><link>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</link><pubDate>Wed, 07 Sep 2022 18:01:12 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220907-what-is-readwise-reader/</guid><description>&lt;p>Readwise Reader is the latest read-it-later app, except not just for books. Reader brings in your highlights from books, articles, tweets, PDFs, epubs, emails, and even newsletters! While it&amp;rsquo;s not yet officially launched, it&amp;rsquo;s now in public beta and you can sign up to be put on a wait list to try out this awesome product that&amp;rsquo;s been so essential to my workflows.&lt;/p>
+&lt;p>Note: I do have an affiliate link of &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>, but this video was not sponsored. They know I&amp;rsquo;m making this video, because I had to reach out to get permission to post the screenshot of a private email, but they did not review this video and had no idea what I was going to say. :)&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uNH1JDOmGJw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Take Notes from a book with Obsidian (The Culture Map)</title><link>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</link><pubDate>Fri, 02 Sep 2022 17:58:52 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220902-how-to-take-notes-from-a-book-with-obsidian/</guid><description>&lt;p>I demonstrate how to take notes from a book (The Culture Map) using Obsidian. In the process of taking notes, I also create learning exhaust in the form of notes, an atomic essay to go on Twitter, a visual that summarises a concept, and a video presentation. Taking notes from books is more than just understanding what the author wanted to say; it should also involve consolidation and interrogation of the book&amp;rsquo;s ideas into our personal knowledge management systems.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/VumFk-C4iFc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How I Learn in Obsidian - Keeping up with tech trends</title><link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link><pubDate>Fri, 12 Aug 2022 16:17:11 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</guid><description>&lt;p>Here&amp;rsquo;s how I learn in Obsidian by processing articles I&amp;rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6kzsCBKCl94?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Use It or Lose It - Linking Your Thinking Conference</title><link>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</link><pubDate>Thu, 19 May 2022 14:03:13 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220519-use-it-or-lose-it/</guid><description>&lt;p>Today I spoke at the &lt;a href="https://lu.ma/3m1fh781">Linking Your Thinking&lt;/a> conference about what I do with notes I take, and how I manage to use them to actually create stuff.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SMNSUs6ffnE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>If you&amp;rsquo;d like to see the result for yourself, &lt;a href="https://slides.nicolevanderhoeven.com/2022-use-it-or-lose-it/#">here are the slides&lt;/a>!&lt;/p></description></item><item><title>How Real People Process Notes</title><link>https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/</link><pubDate>Thu, 12 May 2022 17:00:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220512-how-real-people-process-notes/</guid><description>&lt;p>There&amp;rsquo;s a glaring gap in most productivity systems: time. How do REAL people, with real jobs and obligations, find the time to process notes? Is Inbox Zero an achievable and sustainable goal? I think the answer is no. In this video, I talk about what to do instead, and what is a healthier way to look at productivity.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6Bbj7xYj3Bc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Process Notes in Obsidian // Readwise Official Obsidian plugin</title><link>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</link><pubDate>Wed, 23 Mar 2022 16:00:28 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220323-how-to-process-notes-in-obsidian-with-readwise/</guid><description>&lt;p>How do you process notes in Obsidian? I demonstrate how to use the Readwise Official Obsidian plugin to go from raw content to notes in a Zettelkasten-like Obsidian vault. &lt;a href="https://readwise.io/nicole">Sign up for Readwise using my link&lt;/a> and get double the trial period.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Rw1L5sxlnuU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;em>Note: This post contains an affiliate link for &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href="https://nicolevanderhoeven.com/ethics/">My Ethics Statement&lt;/a> to see my standards for promotions.&lt;/em>&lt;/p></description></item><item><title>How to import Shortform highlights to Obsidian via Readwise</title><link>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</link><pubDate>Mon, 16 Aug 2021 21:40:16 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210815-shortform-to-readwise/</guid><description>
+&lt;meta property=“og:image” content="/assets/20210816-shortform-to-readwise-title.png.png" />
+&lt;meta property=”og:image:width” content=”1200″ />
+&lt;meta property=”og:image:height” content=”628″ />
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210816-shortform-to-readwise-title.png" alt="Shortform to Readwise hero photo">&lt;/p>
+&lt;p>I&amp;rsquo;ve always been dubious of those book summary apps. You know the ones&amp;ndash; they tend to have obnoxious ads that promise to help you &amp;ldquo;read 5 books a day&amp;rdquo; or learn the world&amp;rsquo;s secrets in 15 minutes. Having tried a few of them, I&amp;rsquo;ve been disappointed with the quality of their summaries (or lack thereof). They attempt to distill the message of a 300+ page book into a handful of bullet points, which I&amp;rsquo;ve found neither accurate nor useful. Recently, though, I found myself happily subscribing to one, and here&amp;rsquo;s why.&lt;/p>
+&lt;h2 id="whats-shortform-and-why-is-it-awesome">What&amp;rsquo;s Shortform and why is it awesome?&lt;/h2>
+&lt;p>&lt;a href="https://shortform.com/nicole">Shortform&lt;/a> really took me aback because it isn&amp;rsquo;t just a book summary. I should mention here that I&amp;rsquo;m not affiliated with Shortform and gain nothing by recommending them. I&amp;rsquo;m just a happy subscriber.&lt;/p>
+&lt;p>When I read their guide for the book &lt;em>Why We Sleep&lt;/em>, I was pleasantly surprised to find that Shortform not only summarized it succinctly, but they also added intelligent counterarguments to the author&amp;rsquo;s points. In some cases, when the author made a false claim, there were Shortform notes that linked to studies that showed &lt;em>why&lt;/em> the claim was false. In other cases, Shortform mentioned related concepts proposed in other books that strengthened the author&amp;rsquo;s viewpoint. I found myself looking up their guides of books I&amp;rsquo;d already read, just because I was curious to see if I had missed anything. And I had!&lt;/p>
+&lt;p>In short, Shortform is the only book summary reader I&amp;rsquo;ve found that goes beyond summarizing and actually &lt;em>adds value&lt;/em> to the reading experience, &lt;em>even if you&amp;rsquo;ve read the book.&lt;/em>&lt;/p>
+&lt;p>They also have a one-page summary of the book AND a summary per chapter, so information is presented at different levels of detail. In my time with it, my most frequent workflow with it has involved reading the one-page summary of a book, buying it if it was interestering enough, reading the book, and then going back to Shortform to go read the chapter summaries. And both the one-page and detailed chapter summaries, including Shortform notes, can be highlighted!&lt;/p>
+&lt;p>Naturally I wanted to take it further than that. I already &lt;a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux">sync my Kindle highlights to Obsidian&lt;/a> automatically and incrementally process them in Obsidian, so I wrote a script to have my Shortform highlights going to &lt;a href="https://readwise.io">Readwise&lt;/a> as well.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210816-shortform-01.png" alt="Shortform highlights in my Obsidian vault">&lt;/p>
+&lt;p>&lt;em>My Shortform highlights for the book Mindset, in my Obsidian vault.&lt;/em>&lt;/p>
+&lt;p>The screenshot above shows the final result: highlights I made in the Shortform web or mobile app that have been synced to a page in my Obsidian vault. Here&amp;rsquo;s how I did that.&lt;/p>
+&lt;p>&lt;em>Note: Since this article was published, Shortform and Readwise have created an integration, so the script I mention here is no longer necessary. Click &lt;a href="https://nicolevanderhoeven.github.io/blog/20221021-obsidian-for-non-coders">here&lt;/a> to see what I&amp;rsquo;d recommend doing today.&lt;/em>&lt;/p>
+&lt;h2 id="what-you-need">What you need&lt;/h2>
+&lt;ul>
+&lt;li>A &lt;a href="https://shortform.com/nicole">Shortform&lt;/a> account. &lt;em>(affiliate link)&lt;/em>&lt;/li>
+&lt;li>A &lt;a href="https://readwise.io/nicole">Readwise&lt;/a> account. &lt;em>(This is an affiliate link. If you sign up with this link, you&amp;rsquo;ll get a two-month free trial instead of one, and I get a small percentage if you sign up for a plan.)&lt;/em>&lt;/li>
+&lt;li>A tool that Readwise can export to, such as &lt;a href="https://obsidian.md">Obsidian&lt;/a>, &lt;a href="https://roamresearch.com">Roam Research&lt;/a>, &lt;a href="https://notion.so">Notion&lt;/a>, or &lt;a href="https://evernote.com">Evernote&lt;/a>. You can also use their CSV and Markdown exports.&lt;/li>
+&lt;li>A local installation of Python 3, which you can &lt;a href="https://www.python.org/downloads/">download here&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Obsidian is my Personal Knowledge Management tool of choice, and I use the &lt;a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/">Readwise Official community plugin&lt;/a> to get Readwise to send highlights to Obsidian. However, using Obsidian is not necessary as my script connects only Shortform to Readwise.&lt;/p>
+&lt;h2 id="the-setup">The setup&lt;/h2>
+&lt;p>Clone &lt;a href="https://github.com/nicolevanderhoeven/shortform-to-readwise">my Shortform-to-Readwise repository on GitHub&lt;/a> or download it to your computer.&lt;/p>
+&lt;h3 id="enter-your-tokens">Enter your tokens&lt;/h3>
+&lt;p>The file &lt;code>variables.py&lt;/code> requires two tokens: one from your Shortform account and another from your Readwise account:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Your authorization token for Shortform&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>authToken &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Your Readwise API token&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Retrieve this token from https://readwise.io/access_token&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>readwiseToken &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="getting-your-shortform-token">Getting your Shortform token&lt;/h4>
+&lt;p>This is a little hacky, because Shortform doesn&amp;rsquo;t expose an API token in their web app. So you&amp;rsquo;ll need to log in to your Shortform account and open up DevTools in your browser. In Chrome, go to Options &amp;gt; More Tools &amp;gt; Developer Tools (or, on Mac, hit CMD+OPTION+I). Click on the Network panel.&lt;/p>
+&lt;p>You should now see Shortform on one side, and DevTools on another in the same browser window.&lt;/p>
+&lt;p>Then, go to &lt;a href="https://www.shortform.com/app/highlights">your Highlights page&lt;/a>. Doing so will populate the Network panel with a bunch of requests that look like this:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210816-shortform-02.png" alt="DevTools open in Chrome, showing requests from Shortform">&lt;/p>
+&lt;p>&lt;em>DevTools open in Chrome, showing requests from Shortform.&lt;/em>&lt;/p>
+&lt;p>Click on the request with the name &lt;code>?sort=date&lt;/code>, highlighted above. That&amp;rsquo;ll open another side panel that will show Headers. Scroll down to the section marked &amp;ldquo;Request Headers&amp;rdquo;, and look for where it says &lt;code>Authorization: Basic &lt;/code> followed by a bunch of characters.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210816-shortform-03.png" alt="Authorization headers for Shortform, in DevTools">&lt;/p>
+&lt;p>&lt;em>Authorization headers for Shortform, in DevTools.&lt;/em>&lt;/p>
+&lt;p>I&amp;rsquo;ve removed my personal authorization token from the screenshot above, but it&amp;rsquo;s a long series of characters that comes after &lt;code>Authorization: Basic &lt;/code>. Go ahead and right click on it and click Copy Value. Paste it into &lt;code>variables.py&lt;/code> as the value for &lt;code>authToken&lt;/code>, and then _remove &lt;code>Basic &lt;/code> (including the space after it) so that you&amp;rsquo;re saving only everything that comes afterwards.&lt;/p>
+&lt;h4 id="getting-your-readwise-token">Getting your Readwise token&lt;/h4>
+&lt;p>Thankfully, this one&amp;rsquo;s a little easier. Go to &lt;a href="https://readwise.io/access_token">this page on Readwise&lt;/a> after logging in. Click &amp;ldquo;Get Token&amp;rdquo;, click &amp;ldquo;Copy to clipboard&amp;rdquo;, and then paste it into &lt;code>variables.py&lt;/code>.&lt;/p>
+&lt;p>Save &lt;code>variables.py&lt;/code>.&lt;/p>
+&lt;p>Note: Don&amp;rsquo;t share either of these tokens with anyone else, as they will then be able to access your Shortform or Readwise accounts.&lt;/p>
+&lt;h3 id="run-the-script">Run the script&lt;/h3>
+&lt;p>Open up your terminal, and &lt;code>cd&lt;/code> into the &lt;code>/shortform-to-readwise&lt;/code> repository. Then, run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python3 getHighlights.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It should finish in a few seconds (depending on how many Shortform highlights you have), and then you can verify that it worked by going to &lt;a href="https://readwise.io/books">your Readwise library&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210816-shortform-04.png" alt="Shortform exports showing up in your Readwise library">&lt;/p>
+&lt;p>&lt;em>Shortform exports showing up in your Readwise library.&lt;/em>&lt;/p>
+&lt;p>You should see books that have the &lt;code>Shortform-&lt;/code> prefix. If you do, then you&amp;rsquo;re done! If you&amp;rsquo;ve got your Readwise account set up to push your highlights elsewhere (such as Obsidian), then you&amp;rsquo;re all set!&lt;/p>
+&lt;p>In case you&amp;rsquo;re wondering why I added the &lt;code>Shortform-&lt;/code> prefix, it&amp;rsquo;s because I often read the Shortform guide, and then read the book itself. Rather than end up in a sticky situation where the Shortform guide highlights might override the actual book highlights, I titled it differently so that I get two pages for the two sets of highlights.&lt;/p>
+&lt;h2 id="what-about-running-the-script-regularly">What about running the script regularly?&lt;/h2>
+&lt;p>The whole point of this, at least for me, was to set it up so that I&amp;rsquo;ve got highlights going to Obsidian &lt;em>automatically&lt;/em>, without needing my intervention. What I did was to use &lt;code>crontab&lt;/code> on macOS to run the script every 30 minutes, but you can set up your own schedule.&lt;/p>
+&lt;h3 id="give-cron-full-system-access">Give cron full system access&lt;/h3>
+&lt;p>Cron needs to have the right permissions to run scripts on your behalf, so you may have to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on your laptop and add &lt;code>/usr/bin/cron&lt;/code> to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p>
+&lt;h3 id="find-the-path-for-your-python3-installation">Find the path for your python3 installation&lt;/h3>
+&lt;p>In your terminal, run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>which python3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will give you a path. For me, it was &lt;code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code>. Copy this.&lt;/p>
+&lt;h3 id="open-crontab">Open crontab&lt;/h3>
+&lt;p>Then, from your terminal, run the command &lt;code>env EDITOR=nano crontab -e&lt;/code> to open up a list of cronjobs. If you don&amp;rsquo;t have any other jobs, this will be blank.&lt;/p>
+&lt;h3 id="set-a-schedule">Set a schedule&lt;/h3>
+&lt;p>Add a line to crontab for the schedule you want to create. This line has to be in the format&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>* * * * * command
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where the five asterisks correspond to:&lt;/p>
+&lt;ul>
+&lt;li>minute&lt;/li>
+&lt;li>hour&lt;/li>
+&lt;li>day of the month&lt;/li>
+&lt;li>month&lt;/li>
+&lt;li>day of the week&lt;/li>
+&lt;/ul>
+&lt;p>In my case, I wanted it to run every 30 minutes, so here&amp;rsquo;s what my schedule looks like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>*/30 * * * * /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/python/shortform-to-readwise/gethighlights.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Make sure you change &lt;code>/Users/nic/python/&lt;/code> to the path where you put the repository and your python3 path instead of &lt;code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;/code>. Now exit out of it and save it (CTRL+X, and yes). The Python script should automatically run every 30 minutes.&lt;/p>
+&lt;h2 id="thats-it">That&amp;rsquo;s it!&lt;/h2>
+&lt;p>I consume a lot of content daily, but without systems in place to capture insights from that content and process it, it all just gets forgotten eventually. That&amp;rsquo;s why I love services like Shortform and Readwise&amp;ndash; they let me get what I&amp;rsquo;ve read/watched/heard out of my head and into Obsidian, where I can review them more critically and truly learn the important parts.&lt;/p>
+&lt;p>Both are paid services (which I paid for out of my own money), but I really think they&amp;rsquo;re worth it.&lt;/p>
+&lt;p>&lt;em>Note: This post contains affiliate links. Check out &lt;a href="https://nicolevanderhoeven.com/ethics/">My Ethics Statement&lt;/a> to see my standards for promotions.&lt;/em>&lt;/p></description></item><item><title>The easiest way to sync Kindle highlights to Obsidian: Readwise to Obsidian Redux</title><link>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</link><pubDate>Tue, 10 Aug 2021 19:50:40 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210810-readwise-to-obsidian-redux/</guid><description>
+&lt;meta property=“og:image” content="/assets/readwise-official-plugin.png" />
+&lt;meta property=”og:image:width” content=”1200″ />
+&lt;meta property=”og:image:height” content=”628″ />
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-official-plugin.png" alt="Readwise to Obsidian workflow">&lt;/p>
+&lt;p>Almost exactly six months ago, I &lt;a href="https://nicolevanderhoeven.com/blog/20210206-readwise-to-obsidian/">wrote a blog post&lt;/a> detailing my workflow for processing content. Specifically, I wrote about how I used a python script to take my highlights from Instapaper, Kindle, Twitter, and Airr and automatically put them into Obsidian.&lt;/p>
+&lt;p>That method worked, and you can read the original article in the link above. However, today, &lt;a href="https://readwise.io/nicole">Readwise&lt;/a> announced that they now have &lt;a href="https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work">an official Obsidian community plugin&lt;/a>, and I disabled my trusty old python script for good.&lt;/p>
+&lt;p>You see, although my old script worked, there were quirks&amp;ndash; not the least of which was that making changes to it meant programming in Python. I&amp;rsquo;m not a developer, so while I made do, it was never a painless experience. I also ran into issues with time zones and invalid characters being used in titles. So I&amp;rsquo;m thrilled to have something significantly better from Readwise itself! Here&amp;rsquo;s a video from the Readwise team, or read on for instructions on how to get started.&lt;/p>
+&lt;p>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DOYwwdDC9LQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;em>From &lt;a href="https://www.youtube.com/watch?v=DOYwwdDC9LQ">Readwise on YouTube&lt;/a>&lt;/em>&lt;/p>
+&lt;h2 id="install-the-obsidian-plugin">Install the Obsidian plugin.&lt;/h2>
+&lt;p>In your Obsidian vault, go to Settings &amp;gt; Community plugins. You&amp;rsquo;ll need to turn Safe mode off for community plugins if you haven&amp;rsquo;t already.&lt;/p>
+&lt;p>Then, click Browse and search for Readwise Official.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-official.png" alt="Screenshot of the Readwise Official plugin within Obsidian">&lt;/p>
+&lt;p>Install it, and then enable it.&lt;/p>
+&lt;h2 id="connect-your-readwise-account-to-the-obsidian-plugin">Connect your Readwise account to the Obsidian plugin&lt;/h2>
+&lt;p>Head back to the Settings menu and scroll down to the &amp;ldquo;Plugin Options&amp;rdquo; section, and then click Readwise Official.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-official-connect.png" alt="Screenshot of the initial screen of the Readwise Official plugin">&lt;/p>
+&lt;p>Click connect as highlighted in orange above, and a browser window will open, showing the &lt;a href="https://readwise.io/export/obsidian/preferences">Obsidian Export&lt;/a> options. You&amp;rsquo;ll need to sign into your Readwise account if you haven&amp;rsquo;t already.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/obsidian-export.png" alt="Obsidian export page">&lt;/p>
+&lt;p>At this point, your Readwise account will have been connected to the Readwise Official plugin, but you won&amp;rsquo;t have triggered any syncs yet. If you don&amp;rsquo;t want to change any of the configuration settings, you can then skip ahead to triggering the sync on Obsidian, but let&amp;rsquo;s run through the options anyway.&lt;/p>
+&lt;h2 id="modifying-configuration-settings">Modifying configuration settings&lt;/h2>
+&lt;p>On the Obsidian Exports page, you&amp;rsquo;ll be presented with a few options.&lt;/p>
+&lt;h3 id="group-files-in-category-folders">Group Files in Category Folders&lt;/h3>
+&lt;p>By default, this will be enabled. When enabled, Readwise will put your highlights in different folders depending on its source. For example, Kindle highlights will appear in the folder &lt;code>Books&lt;/code>. Disabling this option means all new notes will be created in the directory specified in the Obsidian plugin settings, which we&amp;rsquo;ll cover later. I left this enabled in case I read a book that has the same name as a blog post about the book, for example.&lt;/p>
+&lt;h3 id="use-custom-formatting">Use Custom Formatting&lt;/h3>
+&lt;p>Custom formatting is disabled by default, and lets you choose how the final note looks. Here are the things you can change in this section&lt;/p>
+&lt;ul>
+&lt;li>Page title&lt;/li>
+&lt;li>Page metadata&lt;/li>
+&lt;li>Highlights header&lt;/li>
+&lt;li>Highlight&lt;/li>
+&lt;li>YAML front matter&lt;/li>
+&lt;li>Sync notification&lt;/li>
+&lt;/ul>
+&lt;p>I did make some changes in this section just to tweak how I want information to be displayed.&lt;/p>
+&lt;h4 id="page-metadata">Page metadata&lt;/h4>
+&lt;p>I don&amp;rsquo;t see the need for Page metadata since this is what I use YAML front matter for, so I removed the matadata section and the document tags (I never use those either). So my Page metadata section looks like this:&lt;/p>
+&lt;pre tabindex="0">&lt;code>{% if image_url -%}
 ![rw-book-cover]({{image_url}})
-
 {% endif -%}
 {% if url -%}
 URL: {{url}}
 {% endif -%}
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;highlight&#34;&gt;Highlight&lt;/h4&gt;
-&lt;p&gt;By default, highlights are entered in bullet-point form. That&amp;rsquo;s fine when &lt;em&gt;I&amp;rsquo;m&lt;/em&gt; taking notes, but when I&amp;rsquo;m highlighting someone else&amp;rsquo;s words, I like to be very careful to use blockquotes. I frequently do block searches in Obsidian, and I do NOT want to accidentally pass off a quote as something I said.&lt;/p&gt;
-&lt;p&gt;To this end, I added a &lt;code&gt;&amp;gt;&lt;/code&gt; before each highlight and two newlines (carriage returns) at the end to delineate each highlight. That way, I can quote just one highlight at a time.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
-    - Note: {{ highlight_note }}{% endif %}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see above, I also removed highlight tags, which I never use.&lt;/p&gt;
-&lt;h4 id=&#34;yaml-front-matter&#34;&gt;YAML front matter&lt;/h4&gt;
-&lt;p&gt;Metadata has to be quite specific, so I added parameters I already use for other notes in this section. The &lt;code&gt;TVZ&lt;/code&gt; is a tag I use that means &amp;ldquo;To Verzettelen&amp;rdquo;, meaning pages that I need to process further.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Title: {{full_title}}
+&lt;/code>&lt;/pre>&lt;h4 id="highlight">Highlight&lt;/h4>
+&lt;p>By default, highlights are entered in bullet-point form. That&amp;rsquo;s fine when &lt;em>I&amp;rsquo;m&lt;/em> taking notes, but when I&amp;rsquo;m highlighting someone else&amp;rsquo;s words, I like to be very careful to use blockquotes. I frequently do block searches in Obsidian, and I do NOT want to accidentally pass off a quote as something I said.&lt;/p>
+&lt;p>To this end, I added a &lt;code>&amp;gt;&lt;/code> before each highlight and two newlines (carriage returns) at the end to delineate each highlight. That way, I can quote just one highlight at a time.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;gt; {{ highlight_text }}{% if highlight_location and highlight_location_url %} ([{{highlight_location}}]({{highlight_location_url}})){% elif highlight_location %} ({{highlight_location}}){% endif %}{% if highlight_note %}
+- Note: {{ highlight_note }}{% endif %}
+&lt;/code>&lt;/pre>&lt;p>As you can see above, I also removed highlight tags, which I never use.&lt;/p>
+&lt;h4 id="yaml-front-matter">YAML front matter&lt;/h4>
+&lt;p>Metadata has to be quite specific, so I added parameters I already use for other notes in this section. The &lt;code>TVZ&lt;/code> is a tag I use that means &amp;ldquo;To Verzettelen&amp;rdquo;, meaning pages that I need to process further.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Title: {{full_title}}
 Author: {{author}}
 Tags: TVZ, readwise, {{category}}
 date: {{date}}
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;sync-notification&#34;&gt;Sync notification&lt;/h4&gt;
-&lt;p&gt;As someone who has worked on a syncing plugin for Readwise to Obsidian, I know that things go wrong sometimes. Enabling this outputs a synchronization log to a note, which has come in handy MANY times in the past. &lt;em&gt;Has that book been synced, or did something go wrong?&lt;/em&gt; So I copied what the Readwise team suggested:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- [[{{date|date(&amp;#39;Y-m-d&amp;#39;)}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
-{% for book in books %}    - {{ book.num_highlights_added}} highlights from {{ book.title }}
+&lt;/code>&lt;/pre>&lt;h4 id="sync-notification">Sync notification&lt;/h4>
+&lt;p>As someone who has worked on a syncing plugin for Readwise to Obsidian, I know that things go wrong sometimes. Enabling this outputs a synchronization log to a note, which has come in handy MANY times in the past. &lt;em>Has that book been synced, or did something go wrong?&lt;/em> So I copied what the Readwise team suggested:&lt;/p>
+&lt;pre tabindex="0">&lt;code>- [[{{date|date(&amp;#39;Y-m-d&amp;#39;)}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
+{% for book in books %} - {{ book.num_highlights_added}} highlights from {{ book.title }}
 {%endfor %}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;select-items-to-be-exported&#34;&gt;Select Items to be Exported&lt;/h3&gt;
-&lt;p&gt;In this section, you can choose which books/podcasts/other content in Readwise you want to export. It is disabled by default. If you haven&amp;rsquo;t synced Readwise to Obsidian before, and you just want to pull in everything, leave it disabled.&lt;/p&gt;
-&lt;p&gt;In my case, I have already synchronized everything using the plugin I mentioned, and didn&amp;rsquo;t want to create another few hundred duplicate notes in my vault. So I enabled it and selected a few more recent books.&lt;/p&gt;
-&lt;p&gt;A weird thing about this Export settings page is that there is no saving&amp;ndash; it just automatically saves it. Just a note, because I was scrolling up and down that page looking for an indication that it had been saved before I realized it is done automatically.&lt;/p&gt;
-&lt;h2 id=&#34;initiate-sync-from-obsidian&#34;&gt;Initiate Sync from Obsidian&lt;/h2&gt;
-&lt;p&gt;Head back to Obsidian and to the Readwise Official plugin options page. You should see a &amp;ldquo;Initiate Sync&amp;rdquo; button where the &amp;ldquo;Connect&amp;rdquo; one was before.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-initiate.png&#34; alt=&#34;Screenshot of Initiate Sync button&#34;&gt;&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s a good sign - that means your Readwise account has been connected, and your configuration settings from the previous step will be fetched.&lt;/p&gt;
-&lt;p&gt;Before you click the button, note that the &lt;em&gt;Customize base folder&lt;/em&gt; option is set to &lt;code&gt;Readwise&lt;/code&gt;. This is the directory that all your Readwise notes will be created. So if you enabled &lt;em&gt;Group Files in Category Folders&lt;/em&gt; earlier, your Kindle highlights will be saved in &lt;code&gt;Readwise/Books/booktitle.md&lt;/code&gt;. You can change the base folder if you prefer, but I just kept the default.&lt;/p&gt;
-&lt;p&gt;Time to click the button!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-synced.png&#34; alt=&#34;Screenshot of synced status from Readwise plugin&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You&amp;rsquo;ll see a few messages popping up on the upper right corner of your screen, and you&amp;rsquo;ll also see a &lt;em&gt;Synced!&lt;/em&gt; message appear next to the button you just clicked.&lt;/p&gt;
-&lt;h2 id=&#34;verifying-results&#34;&gt;Verifying results&lt;/h2&gt;
-&lt;p&gt;In your Obsidian vault, search for one of the items you synced. Here&amp;rsquo;s what my note for Pat Flynn&amp;rsquo;s &lt;em&gt;Superfans&lt;/em&gt; looks like:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-obsidian-kindle.png&#34; alt=&#34;An example of Kindle highlights imported to Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Great! It looks exactly how I want it to look.&lt;/p&gt;
-&lt;h2 id=&#34;set-up-automatic-sync&#34;&gt;Set up automatic sync&lt;/h2&gt;
-&lt;p&gt;If you leave it there, the plugin will only sync when you tell it to, so you&amp;rsquo;d need to go into the plugin options each time. That&amp;rsquo;s not particularly useful for me, because I want it to just happen.&lt;/p&gt;
-&lt;p&gt;If you feel similarly, head back into Plugin Options one more time and select your desired frequency in the &lt;em&gt;Configure resync frequency&lt;/em&gt; dropdown menu. I chose 1 hour, the minimum. I also enabled the automatic sync when Obsidian opens.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/readwise-official-auto-sync.png&#34; alt=&#34;Screenshot of auto sync options for Readwise Official plugin&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;I love this new plugin! It was very much needed, because existing options for accomplishing the same thing were flawed in some way, mainly because they were community-driven&amp;ndash; meaning the people who created these workarounds (myself included) were &amp;ldquo;just&amp;rdquo; users who had other jobs. I&amp;rsquo;m grateful that the Readwise team has acknowledged the popularity of Obsidian and taken on the maintenance burden. I&amp;rsquo;ve experimented with the plugin quite a bit and haven&amp;rsquo;t found any major issues so far. It is a seamless way to get the best of the content I&amp;rsquo;ve consumed from various sources into one single source of truth: Obsidian. I highly recommend it to anyone looking to streamline content processing and creation processes.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Readwise to Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</link>
-      <pubDate>Sat, 06 Feb 2021 09:55:36 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</guid>
-      <description>
-
-&lt;meta property=“og:image” content=&#34;/assets/20210206-06-readwise-to-obsidian.png&#34; /&gt;
-&lt;meta property=”og:image:width” content=”1200″ /&gt;
-&lt;meta property=”og:image:height” content=”628″ /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png&#34; alt=&#34;Readwise to Obsidian workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href=&#34;https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work&#34;&gt;Readwise Official&lt;/a&gt;, which is available now! I now recommend &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/&#34;&gt;this method&lt;/a&gt; over the one outlined in this article.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m about 9 months into heavily using &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em&gt;seriously&lt;/em&gt; attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p&gt;
-&lt;p&gt;Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt; is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Instapaper (for highlights and notes on online articles)&lt;/li&gt;
-&lt;li&gt;Amazon Kindle (for highlights on ebooks)&lt;/li&gt;
-&lt;li&gt;Twitter (for interesting tweets)&lt;/li&gt;
-&lt;li&gt;(Readwise) Web highlighter (for straight highlights off any webpage)&lt;/li&gt;
-&lt;li&gt;Airr (for quotes and notes from audio podcasts)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&amp;rsquo;s what that looks like when it gets pulled into my Daily Note:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-01-readwiseimportsinroam.png&#34; alt=&#34;Tweet, podcast, and book notes pulled into Roam Research via Readwise&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Readwise also pulls metadata into Roam, depending on the source. Here&amp;rsquo;s what the page for the book &amp;ldquo;Ready Player Two&amp;rdquo; looks like in Roam:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png&#34; alt=&#34;Ready Player Two book notes in Roam, imported via Readwise&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Readwise integration is an &lt;em&gt;essential&lt;/em&gt; feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em&gt;have&lt;/em&gt; an Obsidian integration.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png&#34; alt=&#34;Readwise doesn&amp;amp;rsquo;t automatically export to Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&#34;https://readwise.io/export&#34;&gt;Readwise Exports&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p&gt;
-&lt;h2 id=&#34;readwise2directory&#34;&gt;readwise2directory&lt;/h2&gt;
-&lt;p&gt;I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found &lt;a href=&#34;https://github.com/nicrivard/readwise2directory&#34;&gt;this Python project on GitHub&lt;/a&gt; by &lt;a href=&#34;https://github.com/nicrivard&#34;&gt;nicrivard&lt;/a&gt;, who had already done that! Why rebuild the wheel? His solution already did what I needed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It connects to Readwise via your Readwise access token&lt;/li&gt;
-&lt;li&gt;Checks for new highlights or updated ones&lt;/li&gt;
-&lt;li&gt;Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It even pulls in highlight tags from Readwise, if you&amp;rsquo;ve created any (which I haven&amp;rsquo;t).&lt;/p&gt;
-&lt;p&gt;I &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;forked the project here&lt;/a&gt; to add just a few minor touches:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Changed date format of imported notes&lt;/li&gt;
-&lt;li&gt;Added a section to output the import date to a comment block (an &lt;a href=&#34;https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295&#34;&gt;Obsidian Insider build feature&lt;/a&gt;) rather than YAML frontmatter, so that the date would actually be linked and backlinked.&lt;/li&gt;
-&lt;li&gt;Customized tags and filename for my use&lt;/li&gt;
-&lt;li&gt;Sort imports into folders within my Obsidian vault depending on source (&lt;code&gt;Article/&lt;/code&gt;, &lt;code&gt;Tweet/&lt;/code&gt;, and so on).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This works out pretty well. Here&amp;rsquo;s an example of an import from the podcast app &lt;a href=&#34;https://airr.io&#34;&gt;Airr&lt;/a&gt; into Obsidian, in Edit mode.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-04-airrtoobsidian.png&#34; alt=&#34;readwise2directory import from Airr into Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s placed within my &lt;code&gt;Podcast&lt;/code&gt; folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20210206-05-airrinobsidian_preview.png&#34; alt=&#34;Preview mode of imported Airr quote in Obsidian&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So that works out well, except for one thing: firing off the script that does all this is still manual.&lt;/p&gt;
-&lt;h2 id=&#34;scheduling-the-script&#34;&gt;Scheduling the script&lt;/h2&gt;
-&lt;p&gt;Luckily, it&amp;rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&amp;rsquo;m on macOS, so I used a built-in utility called &lt;code&gt;cron&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;give-cron-full-system-access&#34;&gt;Give cron full system access&lt;/h3&gt;
-&lt;p&gt;Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on my laptop and add &lt;code&gt;/usr/bin/cron&lt;/code&gt; to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p&gt;
-&lt;h3 id=&#34;open-crontab&#34;&gt;Open crontab&lt;/h3&gt;
-&lt;p&gt;Then, from my terminal, I ran the command &lt;code&gt;env EDITOR=nano crontab -e&lt;/code&gt; to open up the list of cronjobs I had currently.&lt;/p&gt;
-&lt;h3 id=&#34;set-a-schedule&#34;&gt;Set a schedule&lt;/h3&gt;
-&lt;p&gt;I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * command
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the five asterisks correspond to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;minute&lt;/li&gt;
-&lt;li&gt;hour&lt;/li&gt;
-&lt;li&gt;day of the month&lt;/li&gt;
-&lt;li&gt;month&lt;/li&gt;
-&lt;li&gt;day of the week&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; * * * * cd /Users/nic/git/readwise2directory/ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;python-issues&#34;&gt;Python issues&lt;/h4&gt;
-&lt;p&gt;I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code&gt;which python3&lt;/code&gt; to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code&gt;cd&lt;/code&gt; to the project directory, for some reason.&lt;/p&gt;
-&lt;p&gt;While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p&gt;
-&lt;p&gt;Once I added the schedule as in the example above, though, it worked a treat!&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;This solution did require some setup at the beginning, but doesn&amp;rsquo;t need any maintenance once it&amp;rsquo;s going. I&amp;rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&amp;rsquo;ll all be waiting for me in my Obsidian vault whenever I&amp;rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: This post contains an affiliate link for &lt;a href=&#34;https://readwise.io/nicole&#34;&gt;Readwise&lt;/a&gt;. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href=&#34;https://nicolevanderhoeven.com/ethics/&#34;&gt;My Ethics Statement&lt;/a&gt; to see my standards for promotions.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/code>&lt;/pre>&lt;h3 id="select-items-to-be-exported">Select Items to be Exported&lt;/h3>
+&lt;p>In this section, you can choose which books/podcasts/other content in Readwise you want to export. It is disabled by default. If you haven&amp;rsquo;t synced Readwise to Obsidian before, and you just want to pull in everything, leave it disabled.&lt;/p>
+&lt;p>In my case, I have already synchronized everything using the plugin I mentioned, and didn&amp;rsquo;t want to create another few hundred duplicate notes in my vault. So I enabled it and selected a few more recent books.&lt;/p>
+&lt;p>A weird thing about this Export settings page is that there is no saving&amp;ndash; it just automatically saves it. Just a note, because I was scrolling up and down that page looking for an indication that it had been saved before I realized it is done automatically.&lt;/p>
+&lt;h2 id="initiate-sync-from-obsidian">Initiate Sync from Obsidian&lt;/h2>
+&lt;p>Head back to Obsidian and to the Readwise Official plugin options page. You should see a &amp;ldquo;Initiate Sync&amp;rdquo; button where the &amp;ldquo;Connect&amp;rdquo; one was before.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-official-initiate.png" alt="Screenshot of Initiate Sync button">&lt;/p>
+&lt;p>That&amp;rsquo;s a good sign - that means your Readwise account has been connected, and your configuration settings from the previous step will be fetched.&lt;/p>
+&lt;p>Before you click the button, note that the &lt;em>Customize base folder&lt;/em> option is set to &lt;code>Readwise&lt;/code>. This is the directory that all your Readwise notes will be created. So if you enabled &lt;em>Group Files in Category Folders&lt;/em> earlier, your Kindle highlights will be saved in &lt;code>Readwise/Books/booktitle.md&lt;/code>. You can change the base folder if you prefer, but I just kept the default.&lt;/p>
+&lt;p>Time to click the button!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-synced.png" alt="Screenshot of synced status from Readwise plugin">&lt;/p>
+&lt;p>You&amp;rsquo;ll see a few messages popping up on the upper right corner of your screen, and you&amp;rsquo;ll also see a &lt;em>Synced!&lt;/em> message appear next to the button you just clicked.&lt;/p>
+&lt;h2 id="verifying-results">Verifying results&lt;/h2>
+&lt;p>In your Obsidian vault, search for one of the items you synced. Here&amp;rsquo;s what my note for Pat Flynn&amp;rsquo;s &lt;em>Superfans&lt;/em> looks like:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-obsidian-kindle.png" alt="An example of Kindle highlights imported to Obsidian">&lt;/p>
+&lt;p>Great! It looks exactly how I want it to look.&lt;/p>
+&lt;h2 id="set-up-automatic-sync">Set up automatic sync&lt;/h2>
+&lt;p>If you leave it there, the plugin will only sync when you tell it to, so you&amp;rsquo;d need to go into the plugin options each time. That&amp;rsquo;s not particularly useful for me, because I want it to just happen.&lt;/p>
+&lt;p>If you feel similarly, head back into Plugin Options one more time and select your desired frequency in the &lt;em>Configure resync frequency&lt;/em> dropdown menu. I chose 1 hour, the minimum. I also enabled the automatic sync when Obsidian opens.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/readwise-official-auto-sync.png" alt="Screenshot of auto sync options for Readwise Official plugin">&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>I love this new plugin! It was very much needed, because existing options for accomplishing the same thing were flawed in some way, mainly because they were community-driven&amp;ndash; meaning the people who created these workarounds (myself included) were &amp;ldquo;just&amp;rdquo; users who had other jobs. I&amp;rsquo;m grateful that the Readwise team has acknowledged the popularity of Obsidian and taken on the maintenance burden. I&amp;rsquo;ve experimented with the plugin quite a bit and haven&amp;rsquo;t found any major issues so far. It is a seamless way to get the best of the content I&amp;rsquo;ve consumed from various sources into one single source of truth: Obsidian. I highly recommend it to anyone looking to streamline content processing and creation processes.&lt;/p>
+&lt;p>&lt;em>Note: This post contains an affiliate link for &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href="https://nicolevanderhoeven.com/ethics/">My Ethics Statement&lt;/a> to see my standards for promotions.&lt;/em>&lt;/p></description></item><item><title>Readwise to Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</link><pubDate>Sat, 06 Feb 2021 09:55:36 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210206-readwise-to-obsidian/</guid><description>
+&lt;meta property=“og:image” content="/assets/20210206-06-readwise-to-obsidian.png" />
+&lt;meta property=”og:image:width” content=”1200″ />
+&lt;meta property=”og:image:height” content=”628″ />
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-06-readwise-to-obsidian.png" alt="Readwise to Obsidian workflow">&lt;/p>
+&lt;p>&lt;em>August 10th, 2021: Readwise just released their own Obsidian plugin, &lt;a href="https://help.readwise.io/article/125-how-does-the-readwise-to-obsidian-export-integration-work">Readwise Official&lt;/a>, which is available now! I now recommend &lt;a href="https://nicolevanderhoeven.com/blog/20210810-readwise-to-obsidian-redux/">this method&lt;/a> over the one outlined in this article.&lt;/em>&lt;/p>
+&lt;p>I&amp;rsquo;m about 9 months into heavily using &lt;a href="https://roamresearch.com">Roam Research&lt;/a> as my primary note-taking, task management, capture-everything system, and for the most part, that&amp;rsquo;s gone very well. &lt;a href="https://obsidian.md">Obsidian&lt;/a> is another excellent personal knowledge management (PKM) system, though, and I&amp;rsquo;ve been curious about it for almost as long as I&amp;rsquo;ve been using Roam. I&amp;rsquo;ve had it installed for a while, but I never really &lt;em>seriously&lt;/em> attempted to make the switch. Until now. I&amp;rsquo;ve decided to use Obsidian as my primary PKM and zettelkasten for the next month, to see if it&amp;rsquo;s something I can switch to.&lt;/p>
+&lt;p>Why I&amp;rsquo;m considering switching from Roam to Obsidian is another post, probably one I&amp;rsquo;ll write at the end of this experiment, when my thoughts and opinions are more solidified. For now, I want to address one of the things I struggled with when switching over: Readwise integration.&lt;/p>
+&lt;p>&lt;a href="https://readwise.io/nicole">Readwise&lt;/a> is an app that&amp;rsquo;s all about importing notes and highlights you&amp;rsquo;ve made from all over the internet and exporting them all into a single format. Readwise supports far more import sources than I use, but here are the ones I&amp;rsquo;ve got hooked up to it:&lt;/p>
+&lt;ul>
+&lt;li>Instapaper (for highlights and notes on online articles)&lt;/li>
+&lt;li>Amazon Kindle (for highlights on ebooks)&lt;/li>
+&lt;li>Twitter (for interesting tweets)&lt;/li>
+&lt;li>(Readwise) Web highlighter (for straight highlights off any webpage)&lt;/li>
+&lt;li>Airr (for quotes and notes from audio podcasts)&lt;/li>
+&lt;/ul>
+&lt;p>Readwise collates my activity in all of these input sources and automatically sends them to my Roam Research account. Here&amp;rsquo;s what that looks like when it gets pulled into my Daily Note:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-01-readwiseimportsinroam.png" alt="Tweet, podcast, and book notes pulled into Roam Research via Readwise">&lt;/p>
+&lt;p>Readwise also pulls metadata into Roam, depending on the source. Here&amp;rsquo;s what the page for the book &amp;ldquo;Ready Player Two&amp;rdquo; looks like in Roam:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-02-readyplayertwo.png" alt="Ready Player Two book notes in Roam, imported via Readwise">&lt;/p>
+&lt;p>Readwise integration is an &lt;em>essential&lt;/em> feature for me in any PKM, because I can take notes wherever I&amp;rsquo;m consuming my content and just have it automagically appear in my notes, tagged and ready for processing. So it&amp;rsquo;s absolutely something I need to have in my Obsidian workflow.&lt;/p>
+&lt;p>That&amp;rsquo;s where things get tricky, because Readwise doesn&amp;rsquo;t &lt;em>have&lt;/em> an Obsidian integration.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-03-readwise-export-options.png" alt="Readwise doesn&amp;rsquo;t automatically export to Obsidian">&lt;/p>
+&lt;p>Source: &lt;a href="https://readwise.io/export">Readwise Exports&lt;/a>&lt;/p>
+&lt;p>The closest thing is the Markdown export, but that&amp;rsquo;s not automatic. You can manually trigger an export, and then copy those exports over into your Obsidian vault, and thne make sure they&amp;rsquo;re in the right format with the right tags. I knew I was never going to do that, so I found a way to automate it.&lt;/p>
+&lt;h2 id="readwise2directory">readwise2directory&lt;/h2>
+&lt;p>I discovered that Readwise has an API, and briefly thought about building my own integration. Happily, I found &lt;a href="https://github.com/nicrivard/readwise2directory">this Python project on GitHub&lt;/a> by &lt;a href="https://github.com/nicrivard">nicrivard&lt;/a>, who had already done that! Why rebuild the wheel? His solution already did what I needed:&lt;/p>
+&lt;ul>
+&lt;li>It connects to Readwise via your Readwise access token&lt;/li>
+&lt;li>Checks for new highlights or updated ones&lt;/li>
+&lt;li>Exports the new/updated highlights to a local folder of your choosing (presumably your Obsidian vault)&lt;/li>
+&lt;/ul>
+&lt;p>It even pulls in highlight tags from Readwise, if you&amp;rsquo;ve created any (which I haven&amp;rsquo;t).&lt;/p>
+&lt;p>I &lt;a href="https://github.com/nicolevanderhoeven/readwise2directory">forked the project here&lt;/a> to add just a few minor touches:&lt;/p>
+&lt;ul>
+&lt;li>Changed date format of imported notes&lt;/li>
+&lt;li>Added a section to output the import date to a comment block (an &lt;a href="https://forum.obsidian.md/t/obsidian-release-v0-10-12-insider-build/12295">Obsidian Insider build feature&lt;/a>) rather than YAML frontmatter, so that the date would actually be linked and backlinked.&lt;/li>
+&lt;li>Customized tags and filename for my use&lt;/li>
+&lt;li>Sort imports into folders within my Obsidian vault depending on source (&lt;code>Article/&lt;/code>, &lt;code>Tweet/&lt;/code>, and so on).&lt;/li>
+&lt;/ul>
+&lt;p>This works out pretty well. Here&amp;rsquo;s an example of an import from the podcast app &lt;a href="https://airr.io">Airr&lt;/a> into Obsidian, in Edit mode.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-04-airrtoobsidian.png" alt="readwise2directory import from Airr into Obsidian">&lt;/p>
+&lt;p>It&amp;rsquo;s placed within my &lt;code>Podcast&lt;/code> folder inside my value, is tagged appropriately, and contains links to the source. Switching to Preview mode shows an imported cover photo and even a playable recorder for the part of the podcast that I snipped on Airr:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20210206-05-airrinobsidian_preview.png" alt="Preview mode of imported Airr quote in Obsidian">&lt;/p>
+&lt;p>So that works out well, except for one thing: firing off the script that does all this is still manual.&lt;/p>
+&lt;h2 id="scheduling-the-script">Scheduling the script&lt;/h2>
+&lt;p>Luckily, it&amp;rsquo;s pretty easy to schedule a Python script to run at certain intervals. I&amp;rsquo;m on macOS, so I used a built-in utility called &lt;code>cron&lt;/code>.&lt;/p>
+&lt;h3 id="give-cron-full-system-access">Give cron full system access&lt;/h3>
+&lt;p>Cron needs to have the right permissions to run scripts on my behalf, so I had to go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access on my laptop and add &lt;code>/usr/bin/cron&lt;/code> to the &amp;ldquo;allowed&amp;rdquo; list.&lt;/p>
+&lt;h3 id="open-crontab">Open crontab&lt;/h3>
+&lt;p>Then, from my terminal, I ran the command &lt;code>env EDITOR=nano crontab -e&lt;/code> to open up the list of cronjobs I had currently.&lt;/p>
+&lt;h3 id="set-a-schedule">Set a schedule&lt;/h3>
+&lt;p>I added a line to crontab for the schedule I wanted to create. This line has to be in the format&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>* * * * * command
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where the five asterisks correspond to:&lt;/p>
+&lt;ul>
+&lt;li>minute&lt;/li>
+&lt;li>hour&lt;/li>
+&lt;li>day of the month&lt;/li>
+&lt;li>month&lt;/li>
+&lt;li>day of the week&lt;/li>
+&lt;/ul>
+&lt;p>In my case, I wanted it to run every hour, so here&amp;rsquo;s what my schedule looks like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">0&lt;/span> * * * * cd /Users/nic/git/readwise2directory/ &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 /Users/nic/git/readwise2directory/readwise-GET.py &amp;gt;&amp;gt; /Users/nic/git/readwise2directory/readwiseGET.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="python-issues">Python issues&lt;/h4>
+&lt;p>I had some trouble getting cron to work until I realized it was because I had multiple versions of Python installed. I ran a &lt;code>which python3&lt;/code> to find the path to the version I wanted to use and added that path to the command. I also had to &lt;code>cd&lt;/code> to the project directory, for some reason.&lt;/p>
+&lt;p>While I was troubleshooting, I found it really useful to output to a log so I could see what had gone wrong.&lt;/p>
+&lt;p>Once I added the schedule as in the example above, though, it worked a treat!&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>This solution did require some setup at the beginning, but doesn&amp;rsquo;t need any maintenance once it&amp;rsquo;s going. I&amp;rsquo;m pretty happy with it as it means I can keep taking notes on various places from anywhere, and it&amp;rsquo;ll all be waiting for me in my Obsidian vault whenever I&amp;rsquo;m ready to sit down and process them into my system. Thanks to nicrivard for the repo that made it possible!&lt;/p>
+&lt;p>&lt;em>Note: This post contains an affiliate link for &lt;a href="https://readwise.io/nicole">Readwise&lt;/a>. Clicking on that link will give you a two-month trial of Readwise, double the usual amount, and they give me a small percentage if you sign up for a plan. Check out &lt;a href="https://nicolevanderhoeven.com/ethics/">My Ethics Statement&lt;/a> to see my standards for promotions.&lt;/em>&lt;/p></description></item></channel></rss>

@@ -1,191 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>excalidraw on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/excalidraw/</link>
-    <description>Recent content in excalidraw on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 13:33:18 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/excalidraw/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link>
-      <pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid>
-      <description>&lt;p&gt;Today I gave &lt;a href=&#34;https://sketch-your-mind.com/2025/sessions/nicole/&#34;&gt;a talk&lt;/a&gt; at my friend Zsolt Viczián&amp;rsquo;s &lt;a href=&#34;https://sketchyourmind.com/&#34;&gt;Sketch Your Mind Conference&lt;/a&gt; about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li&gt;
-&lt;li&gt;Adopting a visual Zettelkasten-like approach&lt;/li&gt;
-&lt;li&gt;Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li&gt;
-&lt;li&gt;Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li&gt;
-&lt;li&gt;Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li&gt;
-&lt;li&gt;Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href=&#34;https://github.com/nicolevanderhoeven/obsidian-grafana&#34;&gt;here&amp;rsquo;s the repo&lt;/a&gt; for anyone interested in replicating it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Sketch Your Mind in Obsidian and more, with Zsolt Viczián</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250618-how-to-sketch-your-mind-in-obsidian/</link>
-      <pubDate>Wed, 18 Jun 2025 15:30:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250618-how-to-sketch-your-mind-in-obsidian/</guid>
-      <description>&lt;p&gt;My friend Zsolt Viczián, a visual thinker and developer behind the plugins Obsidian Excalidraw and Obsidian ExcaliBrain, has written a book called &amp;ldquo;Sketch Your Mind: Nurture a Playful and Creative Brain&amp;rdquo;. The book is about how to create a system for visual thinking that helps you to think better, make connections, and make things with your ideas.&lt;/p&gt;
-&lt;p&gt;Get Zsolt&amp;rsquo;s book &lt;a href=&#34;https://amzn.to/3Tz58we&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/3uIeSIFWx0w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Connecting Visual Notes with Obsidian Excalidraw</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</link>
-      <pubDate>Fri, 26 Apr 2024 17:34:58 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</guid>
-      <description>&lt;p&gt;Connecting visual notes isn&amp;rsquo;t as easy as connecting textual notes. Yet those connections are an essential part of taking notes that actually help you learn or remember things. In this video, I talk about ways to connect Excalidraw drawings and hybrid notes.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/lGh53N_Lj2Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Visual Note Templates With Obsidian Excalidraw</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240419-visual-note-templates-with-obsidian-excalidraw/</link>
-      <pubDate>Fri, 19 Apr 2024 17:31:57 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240419-visual-note-templates-with-obsidian-excalidraw/</guid>
-      <description>&lt;p&gt;How can you create visual note templates that encourage both visual and textual note-taking? The Obsidian Excalidraw community plugin bridges this gap in Obsidian by allowing the creation of hybrid notes: notes that are both textual and visual by default. Obsidian Excalidraw is created by Zsolt Viczián.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zmgqMZi6QL8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Visual Atomic Note Taking With Obsidian Excalidraw</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221223-visual-atomic-note-taking-with-obsidian-excalidraw/</link>
-      <pubDate>Fri, 23 Dec 2022 16:35:57 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221223-visual-atomic-note-taking-with-obsidian-excalidraw/</guid>
-      <description>&lt;p&gt;Visual atomic note taking in Obsidian can be a great complement to taking notes in text form if you use tools like the Obsidian Excalidraw plugin. Obsidian Excalidraw lets you link and backlink with images, tag them for querying later, and even embed images AND parts of images. It&amp;rsquo;s an essential part of taking notes visually while not missing out on the benefits of plain text.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/GqrczIftYyA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Part of this video was sponsored by &lt;a href=&#34;https://brilliant.org/nicolevdh&#34;&gt;Brilliant&lt;/a&gt;. Thanks, Brilliant!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Making Notes Actually Useful in Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221125-making-notes-actually-useful-in-obsidian/</link>
-      <pubDate>Fri, 25 Nov 2022 15:57:17 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221125-making-notes-actually-useful-in-obsidian/</guid>
-      <description>&lt;p&gt;How do you go about making notes actually useful? Using notes well entails taking good notes in the first place, processing them, and then creating something new out of them. In this video, I talk about the plugins that I use in every stage of the process, and some guidelines for how I actually make a note on something I&amp;rsquo;ve learned into content that I (and others) can make use of.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/v7BbraqevMg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This video was sponsored by &lt;a href=&#34;https://brilliant.org/nicolevdh&#34;&gt;Brilliant&lt;/a&gt;. Thanks, Brilliant! :)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Use the Excalibrain Obsidian Plugin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</link>
-      <pubDate>Fri, 16 Sep 2022 12:11:37 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</guid>
-      <description>&lt;p&gt;In this video, I demonstrate how to use the ExcaliBrain Obsidian plugin and what it can be used for. ExcaliBrain is a very powerful plugin, and it can significantly improve your Obsidian workflows. I also mention go through installing and getting started with ExcaliBrain at four different levels of uses for it: letting it infer relationships, setting explicit relationships, creating custom relationships, and finally creating semantic relationships in ExcaliBrain.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/gqEtn3gCZF0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Live - Visual PKM With Zsolt Viczián</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220820-visual-pkm-with-zsolt-viczian/</link>
-      <pubDate>Sat, 20 Aug 2022 17:48:41 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220820-visual-pkm-with-zsolt-viczian/</guid>
-      <description>&lt;p&gt;What is a visual Personal Knowledge Management (PKM) and how can it help you make connections between your notes? Zsolt Vizcain, developer of the Obsidian Excalidraw and Excalibrain plugins, joins me to talk about how to use his plugins to make your PKM system more visual.&lt;/p&gt;
-&lt;p&gt;Zsolt makes videos too! Check his channel out: &lt;a href=&#34;https://www.youtube.com/c/VisualPKM&#34;&gt;https://www.youtube.com/c/VisualPKM&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fXGcOWycgG4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Make Your Notes Visual in Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</link>
-      <pubDate>Thu, 18 Aug 2022 16:21:10 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</guid>
-      <description>&lt;p&gt;In this video, I demonstrate how to make your notes visual with visual PKM plugins like Excalidraw, Excalibrain, Advanced Slides, and Mind Map. Adding visual elements to your notes, whether through distinguishing text or adding images and video, helps make notes more meaningful to you, increasing understanding and retention.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/9ELqSWucVYo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How I Learn in Obsidian - Keeping up with tech trends</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link>
-      <pubDate>Fri, 12 Aug 2022 16:17:11 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s how I learn in Obsidian by processing articles I&amp;rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6kzsCBKCl94&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Visual Map of Content in Obsidian // Excalidraw plugin</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220603-visual-map-of-content-in-obsidian-with-excalidraw/</link>
-      <pubDate>Fri, 03 Jun 2022 15:30:37 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220603-visual-map-of-content-in-obsidian-with-excalidraw/</guid>
-      <description>&lt;p&gt;Did you know you can create a visual map of content in Obsidian to consolidate your notes? The Excalidraw plugin by Zsolt Viczian can be used to create a dashboard in Obsidian, take sketchnotes instead of text notes, express your ideas visually, and many more. Maps of content are useful for bottom-up thinking, and having a visual representation of your notes can inspire you to consider other perspectives or communicate your ideas in a clearer way.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/erKrXsIwbAg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excalidraw on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/excalidraw/</link><description>Recent content in Excalidraw on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Mon, 13 Oct 2025 13:33:18 -0700</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/excalidraw/index.xml" rel="self" type="application/rss+xml"/><item><title>One Year Later: How I Use Visuals in My PKM (Sketch Your Mind Conference)</title><link>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</link><pubDate>Mon, 13 Oct 2025 13:33:18 -0700</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251013-how-i-use-visuals-in-my-pkm/</guid><description>&lt;p>Today I gave &lt;a href="https://sketch-your-mind.com/2025/sessions/nicole/">a talk&lt;/a> at my friend Zsolt Viczián&amp;rsquo;s &lt;a href="https://sketchyourmind.com/">Sketch Your Mind Conference&lt;/a> about how I use visuals in my PKM, a follow-up to my video about Obsidian Excalidraw last year where I shared that I&amp;rsquo;d changed all my Obsidian templates to hybrid Obsidian Excalidraw notes:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zmgqMZi6QL8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>In the talk, I shared how I&amp;rsquo;ve evolved my use of visuals in my PKM over the last year, including:&lt;/p>
+&lt;ul>
+&lt;li>Referring to icon and logo libraries that dynamically compile all the atomic visuals I use in my notes&lt;/li>
+&lt;li>Adopting a visual Zettelkasten-like approach&lt;/li>
+&lt;li>Creating notes at conferences to track people I&amp;rsquo;ve met and talks I&amp;rsquo;ve attended&lt;/li>
+&lt;li>Using Obsidian Excalidraw to create compelling presentations in lieu of slides&lt;/li>
+&lt;li>Combining visuals with audio recordings to create literature notes of books I&amp;rsquo;m reading&lt;/li>
+&lt;li>Using a full observability pipeline to monitor and analyze the notes in my Obsidian vault&lt;/li>
+&lt;/ul>
+&lt;p>I was particularly excited about the last point. I work at Grafana Labs and help people monitor their computer systems using opensource software. I realized that I could use the same tools to monitor my PKM system, so I set up a pipeline where a Python script scrapes note metadata, and sends information to Loki and Prometheus via Alloy, and then I visualize it all in Grafana. It&amp;rsquo;s a pretty nerdy and totally unnecessary setup, but &lt;a href="https://github.com/nicolevanderhoeven/obsidian-grafana">here&amp;rsquo;s the repo&lt;/a> for anyone interested in replicating it.&lt;/p></description></item><item><title>How to Sketch Your Mind in Obsidian and more, with Zsolt Viczián</title><link>https://nicolevanderhoeven.github.io/blog/20250618-how-to-sketch-your-mind-in-obsidian/</link><pubDate>Wed, 18 Jun 2025 15:30:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250618-how-to-sketch-your-mind-in-obsidian/</guid><description>&lt;p>My friend Zsolt Viczián, a visual thinker and developer behind the plugins Obsidian Excalidraw and Obsidian ExcaliBrain, has written a book called &amp;ldquo;Sketch Your Mind: Nurture a Playful and Creative Brain&amp;rdquo;. The book is about how to create a system for visual thinking that helps you to think better, make connections, and make things with your ideas.&lt;/p>
+&lt;p>Get Zsolt&amp;rsquo;s book &lt;a href="https://amzn.to/3Tz58we">here&lt;/a>!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3uIeSIFWx0w?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Connecting Visual Notes with Obsidian Excalidraw</title><link>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</link><pubDate>Fri, 26 Apr 2024 17:34:58 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240426-connecting-visual-notes-with-obsidian-excalidraw/</guid><description>&lt;p>Connecting visual notes isn&amp;rsquo;t as easy as connecting textual notes. Yet those connections are an essential part of taking notes that actually help you learn or remember things. In this video, I talk about ways to connect Excalidraw drawings and hybrid notes.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/lGh53N_Lj2Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Visual Note Templates With Obsidian Excalidraw</title><link>https://nicolevanderhoeven.github.io/blog/20240419-visual-note-templates-with-obsidian-excalidraw/</link><pubDate>Fri, 19 Apr 2024 17:31:57 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240419-visual-note-templates-with-obsidian-excalidraw/</guid><description>&lt;p>How can you create visual note templates that encourage both visual and textual note-taking? The Obsidian Excalidraw community plugin bridges this gap in Obsidian by allowing the creation of hybrid notes: notes that are both textual and visual by default. Obsidian Excalidraw is created by Zsolt Viczián.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zmgqMZi6QL8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Visual Atomic Note Taking With Obsidian Excalidraw</title><link>https://nicolevanderhoeven.github.io/blog/20221223-visual-atomic-note-taking-with-obsidian-excalidraw/</link><pubDate>Fri, 23 Dec 2022 16:35:57 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221223-visual-atomic-note-taking-with-obsidian-excalidraw/</guid><description>&lt;p>Visual atomic note taking in Obsidian can be a great complement to taking notes in text form if you use tools like the Obsidian Excalidraw plugin. Obsidian Excalidraw lets you link and backlink with images, tag them for querying later, and even embed images AND parts of images. It&amp;rsquo;s an essential part of taking notes visually while not missing out on the benefits of plain text.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GqrczIftYyA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Part of this video was sponsored by &lt;a href="https://brilliant.org/nicolevdh">Brilliant&lt;/a>. Thanks, Brilliant!&lt;/p></description></item><item><title>Making Notes Actually Useful in Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20221125-making-notes-actually-useful-in-obsidian/</link><pubDate>Fri, 25 Nov 2022 15:57:17 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221125-making-notes-actually-useful-in-obsidian/</guid><description>&lt;p>How do you go about making notes actually useful? Using notes well entails taking good notes in the first place, processing them, and then creating something new out of them. In this video, I talk about the plugins that I use in every stage of the process, and some guidelines for how I actually make a note on something I&amp;rsquo;ve learned into content that I (and others) can make use of.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/v7BbraqevMg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>This video was sponsored by &lt;a href="https://brilliant.org/nicolevdh">Brilliant&lt;/a>. Thanks, Brilliant! :)&lt;/p></description></item><item><title>How to Use the Excalibrain Obsidian Plugin</title><link>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</link><pubDate>Fri, 16 Sep 2022 12:11:37 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/</guid><description>&lt;p>In this video, I demonstrate how to use the ExcaliBrain Obsidian plugin and what it can be used for. ExcaliBrain is a very powerful plugin, and it can significantly improve your Obsidian workflows. I also mention go through installing and getting started with ExcaliBrain at four different levels of uses for it: letting it infer relationships, setting explicit relationships, creating custom relationships, and finally creating semantic relationships in ExcaliBrain.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gqEtn3gCZF0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Live - Visual PKM With Zsolt Viczián</title><link>https://nicolevanderhoeven.github.io/blog/20220820-visual-pkm-with-zsolt-viczian/</link><pubDate>Sat, 20 Aug 2022 17:48:41 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220820-visual-pkm-with-zsolt-viczian/</guid><description>&lt;p>What is a visual Personal Knowledge Management (PKM) and how can it help you make connections between your notes? Zsolt Vizcain, developer of the Obsidian Excalidraw and Excalibrain plugins, joins me to talk about how to use his plugins to make your PKM system more visual.&lt;/p>
+&lt;p>Zsolt makes videos too! Check his channel out: &lt;a href="https://www.youtube.com/c/VisualPKM">https://www.youtube.com/c/VisualPKM&lt;/a>&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fXGcOWycgG4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Make Your Notes Visual in Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</link><pubDate>Thu, 18 Aug 2022 16:21:10 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220818-how-to-make-your-notes-visual-in-obsidian/</guid><description>&lt;p>In this video, I demonstrate how to make your notes visual with visual PKM plugins like Excalidraw, Excalibrain, Advanced Slides, and Mind Map. Adding visual elements to your notes, whether through distinguishing text or adding images and video, helps make notes more meaningful to you, increasing understanding and retention.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9ELqSWucVYo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How I Learn in Obsidian - Keeping up with tech trends</title><link>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</link><pubDate>Fri, 12 Aug 2022 16:17:11 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220812-how-i-learn-in-obsidian/</guid><description>&lt;p>Here&amp;rsquo;s how I learn in Obsidian by processing articles I&amp;rsquo;ve read into consolidated notes that help me understand technical concepts. I also show how I improve my learning by incorporating visual elements using Obsidian Excalidraw, Excalibrain, and Advanced Slides.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6kzsCBKCl94?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Visual Map of Content in Obsidian // Excalidraw plugin</title><link>https://nicolevanderhoeven.github.io/blog/20220603-visual-map-of-content-in-obsidian-with-excalidraw/</link><pubDate>Fri, 03 Jun 2022 15:30:37 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220603-visual-map-of-content-in-obsidian-with-excalidraw/</guid><description>&lt;p>Did you know you can create a visual map of content in Obsidian to consolidate your notes? The Excalidraw plugin by Zsolt Viczian can be used to create a dashboard in Obsidian, take sketchnotes instead of text notes, express your ideas visually, and many more. Maps of content are useful for bottom-up thinking, and having a visual representation of your notes can inspire you to consider other perspectives or communicate your ideas in a clearer way.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/erKrXsIwbAg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

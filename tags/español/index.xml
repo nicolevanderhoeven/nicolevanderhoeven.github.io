@@ -1,294 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>español on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</link>
-    <description>Recent content in español on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 11 Jan 2024 16:00:25 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Entendiendo los sintéticos (Café con Grafana #008)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link>
-      <pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid>
-      <description>&lt;p&gt;En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fXNSqrUtiJo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Lee la documentación sobre el monitoreo de sintéticos &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/&#34;&gt;en Grafana Cloud aquí&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Grafana Como Código (Café con Grafana #01)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</link>
-      <pubDate>Thu, 26 Oct 2023 06:55:37 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</guid>
-      <description>&lt;p&gt;En este episodio platicamos con Joan López de la Franca, Ingeniero de software senior en Grafana.
-El nos viene a platicar de las funcionalidades de Grafana como código, que es, como funciona, cuando conviene utilizarlo e incluso nos traerá algunos demos al respecto.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/OqGFN22dvhQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>(ES) Inicia (Café con Grafana #000)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link>
-      <pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid>
-      <description>&lt;p&gt;Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad.  Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Kdgu2gutp7o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link>
-      <pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid>
-      <description>&lt;p&gt;For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;what a gish is, and how it applies to the field of testing&lt;/li&gt;
-&lt;li&gt;how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li&gt;
-&lt;li&gt;how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li&gt;
-&lt;li&gt;a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href=&#34;https://k6.io/&#34;&gt;k6&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/aq0XSNcXDb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You can find the slides &lt;a href=&#34;https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;And here are some photos from the event!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-1.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/expoqa-4.jpeg&#34; alt=&#34;Me speaking at ExpoQA 2022 in Madrid, Spain&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Qué es k6</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220421-que-es-k6/</link>
-      <pubDate>Thu, 21 Apr 2022 16:00:51 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220421-que-es-k6/</guid>
-      <description>&lt;p&gt;En este video hablo con mi colega de trabajo, &lt;a href=&#34;https://twitter.com/dgzlopes&#34;&gt;Daniel Gonzáles Lopez&lt;/a&gt;, sobre qué es k6 y cómo usarlo para hacer pruebas de carga.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/GQlin3QXSrU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>First Look at Estonia | Getting to Tallinn (Lucky Dippers)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</link>
-      <pubDate>Thu, 20 Jan 2022 20:36:59 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</guid>
-      <description>&lt;p&gt;In December 2018, my husband and I met up with some friends and went from Valkenburg and Maastricht in the Netherlands to Riga, Latvia; and then to Tallinn, Estonia. Three countries in one day!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/xMh_yLOAIKI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Grotten Sint Pietersberg Maastricht (LuckyDippers)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210812-ld109-grotten-sint-pietersberg/</link>
-      <pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210812-ld109-grotten-sint-pietersberg/</guid>
-      <description>&lt;p&gt;Another travel vlog from safer times: in September 2018, my husband and I took a friend out to Grotten Sint Pietersberg, a fortress and cave system in Maastricht, the Netherlands. They had been used in the times before that area was not yet part of the city of Maastricht; they were in a small village called Sint Pietersberg that had gotten caught between several invading foreign armies and the people of Maastricht. We enjoyed the day out!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/l7BHMbr-ltM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Balkan Bites free food tour with Bulgarian food | Sofia, Bulgaria (Lucky Dippers)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210806-ld108-balkan-bites/</link>
-      <pubDate>Fri, 06 Aug 2021 13:01:44 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210806-ld108-balkan-bites/</guid>
-      <description>&lt;p&gt;In September 2018, while my husband and I were in Sofia, Bulgaria, we decided to try some delicious Bulgarian cuisine by going on the Balkan Bites free food tour, which let us try Bulgarian relish, yoghurt, doughnuts, cheese, and desserts. Afterwards we went back to one of the restaurants we had gone to on the food tour to have a full meal, which ended up being very delicious. Along the way, I talked about how ilearned the Cyrillic alphabet, and why I thinks it&amp;rsquo;s worth learning even for a short trip like this one.&lt;/p&gt;
-&lt;p&gt;We really enjoyed the &lt;a href=&#34;https://balkanbitesfoodtours.com/&#34;&gt;Balkan Bites food tour&lt;/a&gt;, so if you want to join as well, check them out.&lt;/p&gt;
-&lt;p&gt;And here&amp;rsquo;s the website for the restaurant we ate at, &amp;ldquo;&lt;a href=&#34;https://www.kashtite.com/en/&#34;&gt;Hadjidraganov&amp;rsquo;s House&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/vFYAuu16Pg0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Free walking tour in Sofia, Bulgaria (LuckyDippers)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210730-ld-sofia/</link>
-      <pubDate>Fri, 30 Jul 2021 16:00:48 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210730-ld-sofia/</guid>
-      <description>&lt;p&gt;We haven&amp;rsquo;t travelled since January 2020 for obvious reasons, but fortunately (?) I have a whole lot of footage taken from trips pre-pandemic that I haven&amp;rsquo;t yet turned into travel vlogs. In case you weren&amp;rsquo;t aware, I learned a lot of what I know now about creating videos from making travel vlogs for friends and family as my husband and I travelled around the world for months at a time.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a trip we took in September 2018. We had just finished off a trip to Greece with some friends from Australia, and on the way home, I decided to book a three-day stopover in Sofia, Bulgaria&amp;ndash; a city I really knew next to nothing about. Here&amp;rsquo;s that first day!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/36u9HeLwZ78&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Shopping at Bicester Village and welcome my niece to her new home | London, England (Lucky Dippers)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210716-bicester-village/</link>
-      <pubDate>Fri, 16 Jul 2021 18:38:17 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210716-bicester-village/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a fun little vlog that I&amp;rsquo;ve been meaning to make of the last trip my husband Rob and I took before the pandemic. In January 2020, we went to see my cousin and her daughter (my &amp;ldquo;niece&amp;rdquo;, whom I grew up with) in London. My niece, Steffi, had just arrived in London for some studies abroad (she normally lives in the Philippines), so Rob and I popped over to meet up with her and help her settle in.&lt;/p&gt;
-&lt;p&gt;Poor thing&amp;ndash; not a month after Steffi got to London, news of the pandemic began to spread. Rob and I had intended to visit her again, but of course that didn&amp;rsquo;t happen.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fQf7niizW_Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
-      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Y la versión audio:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
-&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
-&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
-&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
-&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
-&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
-&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
-&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
-&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
-&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
-&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
-&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
-&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
-&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
-&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
-&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
-&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
-&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
-&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
-&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
-&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
-&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
-&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
-&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
-&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Entrevista con Señor Performo en PerfBytes Español</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link>
-      <pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</guid>
-      <description>&lt;p&gt;Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.&lt;/p&gt;
-
-
-&lt;a class=&#34;spreaker-player&#34; href=&#34;https://www.spreaker.com/user/perfbytes/perfbytesesp-s02e04-entrevistanicole&#34; data-resource=&#34;episode_id=31696383&#34; data-theme=&#34;light&#34; data-autoplay=&#34;false&#34; data-playlist=&#34;false&#34; data-cover=&#34;https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/2aed331516599f75dd433a42006da511.jpg&#34; data-width=&#34;100%&#34; data-height=&#34;400px&#34;&gt;Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker.&lt;/a&gt;&lt;script async src=&#34;https://widget.spreaker.com/widgets.js&#34;&gt;&lt;/script&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Mitad de allá y mitad de aquí: reflexiones de una políglota multinacional</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</link>
-      <pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</guid>
-      <description>&lt;p&gt;Originally posted on &lt;a href=&#34;https://medium.com/@n_vanderhoeven/mitad-de-all%C3%A1-y-mitad-de-aqu%C3%AD-reflexiones-de-una-pol%C3%ADglota-multinacional-1d192f488738&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me miran e inmediatamente hablan en inglés. Siempre están sorprendidos cuando respondo en Tagalog. «¿Pero por qué tienes la piel clara?» me preguntan, como si fuera algo que se puede comprar en una tienda. A través de mi piel no pueden ver mi lugar de nacimiento y juventud en las Filipinas, o cuánto echo de menos la voz del vendedor de taho cuando caminas por las calles: «Tahoooooooo!»&lt;/p&gt;
-&lt;p&gt;Los chinos me miran siempre como si fuera una de ellos. Pero después de hablar unos segundos en chino conmigo retroceden con una sonrisa. «Disculpa, es que pensábamos que eras china.» No les importa que tengo sangre china. Lo que les importa es que mi chino es horrible.&lt;/p&gt;
-&lt;p&gt;En EE.UU piensan que soy americana por mi acento en inglés por teléfono, pero cuando me ven, dicen «¡Que bueno tu inglés! ¿Qué eres?» Una mujer? Una ingeniera de software? No — un secreto a voces: &lt;em&gt;No eres una de nosotros&lt;/em&gt;. Eso después del hecho de que todos mis estudios han sido en inglés, y que es mi mejor lengua.&lt;/p&gt;
-&lt;p&gt;En una entrevista de trabajo en Australia, me preguntó el entrevistador de todas las maneras posibles de dónde vengo, y, frustrado con mis respuestas sobre mis trabajos previos en Australia, se alegró mucho al descubrir que mis padres eran filipinos. «¡Todavía no tenemos un filipino aquí!» me dijo. Después, la oferta, y mi vergüenza de conseguir un trabajo por no ser australiana. Yo con una carrera casi completamente hecha en el país.&lt;/p&gt;
-&lt;p&gt;Un holandés me dijo que hay tanta tolerancia en los países bajos. Todas las personas pueden convertirse en holandeses independientemente de sus orígenes. Pero justo cuando explico cómo es posible tener tres ciudadanías, empieza a sacudir la cabeza. «Pero eso no es justo. ¡Tu tienes que elegir! O no serás una verdadera holandesa.» Eso después de un día hablando en holandés.&lt;/p&gt;
-&lt;p&gt;Puedes hacerme otras preguntas, las que van a hacerte sentir más seguro de quién soy, o más capaz de etiquetarme. Y ofrezco mis respuestas, una mezcla y combinación de países. Pero lo que quiero hacer es contar mi vida, porque no puedo contestar en una sola palabra: Soy originalmente filipina. Mis padres son filipinos. Estudiaba en inglés en una escuela internacional, y más tarde en EE.UU. Me mudé a Australia y me casé allí con mi marido australiano. Vivimos allí juntos por más de una década. Nos mudamos a los Países Bajos, donde vivimos ahora. Y todo eso con una colección de idiomas, algunos de esos países, y otros, como el español, de otros.&lt;/p&gt;
-&lt;p&gt;Tengo mucha pasión cuando hablo otros idiomas. Y el aprendizaje de un idioma no es posible sin el conocimiento y la comprensión de la cultura que acompaña cada idioma. ¿En qué idioma pienso? Eso depende — de la situación, de la persona con la que estoy hablando, de mi humor, del tema, de si estoy cansada. Pero pienso en todos. Y, cuando pienso en estos idiomas, también actúo de manera correspondiente a las perspectivas inherentes a ellos. Y me cambian. Soy fundamentalmente diferente por haber aprendido este particular conjunto de idiomas.&lt;/p&gt;
-&lt;p&gt;Me vas a preguntar a qué país pertenezco en mi corazón?&lt;/p&gt;
-&lt;p&gt;Elegir un país o una cultura sería como cortarme el brazo. ¿Cómo sería posible para mí vivir sin reconocer la importancia de la familia como una filipina, sin cambiar al inglés para discutir noticias del mundo informático, sin sentir orgullo a la vista de la bandera australiana, sin relacionarme con personas con una mente abierta como una holandesa?&lt;/p&gt;
-&lt;p&gt;Digo que pertenezco a todos. No voy a elegir. Muchos de los problemas del mundo hoy en día ocurren porque queremos que otros elijan: entre sus países o sus religiones, sus familias o sus sexualidades, sus principios o sus presidentes. La verdad es que no hay una opción sino ser lo que ya son: producto de todos.&lt;/p&gt;
-&lt;p&gt;¿Y no somos todos así?&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Español on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/</link><description>Recent content in Español on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 11 Jan 2024 16:00:25 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/espa%C3%B1ol/index.xml" rel="self" type="application/rss+xml"/><item><title>Entendiendo los sintéticos (Café con Grafana #008)</title><link>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</link><pubDate>Thu, 11 Jan 2024 16:00:25 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240111-ccg008-enteniendo-los-sint%C3%A9ticos/</guid><description>&lt;p>En este episodio de Café con Grafana les traemos a Marcelo Magallón, experto en monitoreo sintético, quien viene precisamente a contarnos que es en sí un sintético. Él nos va a mostrar algunos ejemplos, casos de uso y mucha mas diversión!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fXNSqrUtiJo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Lee la documentación sobre el monitoreo de sintéticos &lt;a href="https://grafana.com/docs/grafana-cloud/monitor-public-endpoints/installation/">en Grafana Cloud aquí&lt;/a>.&lt;/p></description></item><item><title>(ES) Grafana Como Código (Café con Grafana #01)</title><link>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</link><pubDate>Thu, 26 Oct 2023 06:55:37 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231026-ccg001-grafana-como-c%C3%B3digo/</guid><description>&lt;p>En este episodio platicamos con Joan López de la Franca, Ingeniero de software senior en Grafana.
+El nos viene a platicar de las funcionalidades de Grafana como código, que es, como funciona, cuando conviene utilizarlo e incluso nos traerá algunos demos al respecto.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OqGFN22dvhQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>(ES) Inicia (Café con Grafana #000)</title><link>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</link><pubDate>Thu, 19 Oct 2023 12:37:00 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231019-ccg00-cafe-con-grafana/</guid><description>&lt;p>Tenemos un nuevo show para toda la comunidad de habla en Español! En el vamos a estar invitando a Grafanaistas, Champions, Entusiastas y a miembros de la comunidad. Aquí vamos a compartir experiencias, conocimientos, perspectivas, diversion y mucho Español!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Kdgu2gutp7o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Be a Gish - API, browser, and chaos testing in one script (ExpoQA 2022)</title><link>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</link><pubDate>Wed, 01 Jun 2022 14:06:49 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220601-how-to-be-a-gish-expoqa/</guid><description>&lt;p>For the ExpoQA 2022 conference in Madrid, Spain, I presented a talk about how to be a gish. In this talk, I covered the following topics:&lt;/p>
+&lt;ul>
+&lt;li>what a gish is, and how it applies to the field of testing&lt;/li>
+&lt;li>how testing is a multidisciplinary field, and why generalists triumph over specialists in the face of uncertainty&lt;/li>
+&lt;li>how the tool we choose to do our testing informs the type of testing and the type of results we get&lt;/li>
+&lt;li>a hands-on example of how to do API load testing, browser automation, and chaos engineering in one script using a tool like &lt;a href="https://k6.io/">k6&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>There was no recording of the conference talk, but here is a video of me going through my presentation beforehand:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aq0XSNcXDb0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>You can find the slides &lt;a href="https://slides.nicolevanderhoeven.com/2022-how-to-be-a-gish/#/">here&lt;/a>.&lt;/p>
+&lt;p>And here are some photos from the event!&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-3.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-1.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/expoqa-4.jpeg" alt="Me speaking at ExpoQA 2022 in Madrid, Spain">&lt;/p></description></item><item><title>Qué es k6</title><link>https://nicolevanderhoeven.github.io/blog/20220421-que-es-k6/</link><pubDate>Thu, 21 Apr 2022 16:00:51 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220421-que-es-k6/</guid><description>&lt;p>En este video hablo con mi colega de trabajo, &lt;a href="https://twitter.com/dgzlopes">Daniel Gonzáles Lopez&lt;/a>, sobre qué es k6 y cómo usarlo para hacer pruebas de carga.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GQlin3QXSrU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>First Look at Estonia | Getting to Tallinn (Lucky Dippers)</title><link>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</link><pubDate>Thu, 20 Jan 2022 20:36:59 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20220120-first-look-at-estonia/</guid><description>&lt;p>In December 2018, my husband and I met up with some friends and went from Valkenburg and Maastricht in the Netherlands to Riga, Latvia; and then to Tallinn, Estonia. Three countries in one day!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xMh_yLOAIKI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Grotten Sint Pietersberg Maastricht (LuckyDippers)</title><link>https://nicolevanderhoeven.github.io/blog/20210812-ld109-grotten-sint-pietersberg/</link><pubDate>Thu, 12 Aug 2021 12:21:09 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210812-ld109-grotten-sint-pietersberg/</guid><description>&lt;p>Another travel vlog from safer times: in September 2018, my husband and I took a friend out to Grotten Sint Pietersberg, a fortress and cave system in Maastricht, the Netherlands. They had been used in the times before that area was not yet part of the city of Maastricht; they were in a small village called Sint Pietersberg that had gotten caught between several invading foreign armies and the people of Maastricht. We enjoyed the day out!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/l7BHMbr-ltM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Balkan Bites free food tour with Bulgarian food | Sofia, Bulgaria (Lucky Dippers)</title><link>https://nicolevanderhoeven.github.io/blog/20210806-ld108-balkan-bites/</link><pubDate>Fri, 06 Aug 2021 13:01:44 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210806-ld108-balkan-bites/</guid><description>&lt;p>In September 2018, while my husband and I were in Sofia, Bulgaria, we decided to try some delicious Bulgarian cuisine by going on the Balkan Bites free food tour, which let us try Bulgarian relish, yoghurt, doughnuts, cheese, and desserts. Afterwards we went back to one of the restaurants we had gone to on the food tour to have a full meal, which ended up being very delicious. Along the way, I talked about how ilearned the Cyrillic alphabet, and why I thinks it&amp;rsquo;s worth learning even for a short trip like this one.&lt;/p>
+&lt;p>We really enjoyed the &lt;a href="https://balkanbitesfoodtours.com/">Balkan Bites food tour&lt;/a>, so if you want to join as well, check them out.&lt;/p>
+&lt;p>And here&amp;rsquo;s the website for the restaurant we ate at, &amp;ldquo;&lt;a href="https://www.kashtite.com/en/">Hadjidraganov&amp;rsquo;s House&lt;/a>&amp;rdquo;.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vFYAuu16Pg0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Free walking tour in Sofia, Bulgaria (LuckyDippers)</title><link>https://nicolevanderhoeven.github.io/blog/20210730-ld-sofia/</link><pubDate>Fri, 30 Jul 2021 16:00:48 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210730-ld-sofia/</guid><description>&lt;p>We haven&amp;rsquo;t travelled since January 2020 for obvious reasons, but fortunately (?) I have a whole lot of footage taken from trips pre-pandemic that I haven&amp;rsquo;t yet turned into travel vlogs. In case you weren&amp;rsquo;t aware, I learned a lot of what I know now about creating videos from making travel vlogs for friends and family as my husband and I travelled around the world for months at a time.&lt;/p>
+&lt;p>Here&amp;rsquo;s a trip we took in September 2018. We had just finished off a trip to Greece with some friends from Australia, and on the way home, I decided to book a three-day stopover in Sofia, Bulgaria&amp;ndash; a city I really knew next to nothing about. Here&amp;rsquo;s that first day!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/36u9HeLwZ78?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Shopping at Bicester Village and welcome my niece to her new home | London, England (Lucky Dippers)</title><link>https://nicolevanderhoeven.github.io/blog/20210716-bicester-village/</link><pubDate>Fri, 16 Jul 2021 18:38:17 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210716-bicester-village/</guid><description>&lt;p>Here&amp;rsquo;s a fun little vlog that I&amp;rsquo;ve been meaning to make of the last trip my husband Rob and I took before the pandemic. In January 2020, we went to see my cousin and her daughter (my &amp;ldquo;niece&amp;rdquo;, whom I grew up with) in London. My niece, Steffi, had just arrived in London for some studies abroad (she normally lives in the Philippines), so Rob and I popped over to meet up with her and help her settle in.&lt;/p>
+&lt;p>Poor thing&amp;ndash; not a month after Steffi got to London, news of the pandemic began to spread. Rob and I had intended to visit her again, but of course that didn&amp;rsquo;t happen.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fQf7niizW_Y?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title><link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link><pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid><description>&lt;p>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href="https://jmeterenespanol.org/">JMeter en Español&lt;/a> el 31 de Oktubre, 2020.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1KB8e2Ld08M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Y la versión audio:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;h2 id="introducción">Introducción&lt;/h2>
+&lt;p>Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p>
+&lt;h2 id="amazon---ui--dev-tools">Amazon - UI + Dev Tools&lt;/h2>
+&lt;p>Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p>
+&lt;h2 id="jmeter---creando-un-script">JMeter - Creando un script&lt;/h2>
+&lt;p>Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p>
+&lt;p>Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p>
+&lt;p>A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p>
+&lt;h2 id="flood-challenge">Flood Challenge&lt;/h2>
+&lt;p>La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p>
+&lt;p>Podemos verlo en la aplicación de muestra &lt;a href="https://challenge.flood.io">Flood Challenge&lt;/a>. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p>
+&lt;h2 id="correlación-en-jmeter---flood-challenge-script">Correlación en JMeter - Flood challenge script&lt;/h2>
+&lt;p>Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p>
+&lt;h2 id="la-experiencia-del-usuario">La experiencia del usuario&lt;/h2>
+&lt;p>La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p>
+&lt;p>Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href="https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google's,is%20spent%20on%20the%20frontend">hasta 90% del tiempo de respuesta&lt;/a> que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p>
+&lt;h2 id="developer-tools---lighthouse">Developer Tools - Lighthouse&lt;/h2>
+&lt;p>Entonces, ¿qué podemos hacer?&lt;/p>
+&lt;p>Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p>
+&lt;h2 id="webpagetest">WebPageTest&lt;/h2>
+&lt;p>También uso &lt;a href="https://webpagetest.org">WebPageTest&lt;/a> a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p>
+&lt;h2 id="herramientas-alternativas-para-pruebas-de-carga">Herramientas alternativas para pruebas de carga&lt;/h2>
+&lt;p>Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p>
+&lt;p>&lt;a href="https://www.selenium.dev/">Selenium&lt;/a> es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p>
+&lt;p>Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/microsoft/playwright">Playwright&lt;/a> es una creación de Microsoft.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://jest.io">Jest&lt;/a> fue desarrollado por Facebook&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mocha es otro framework que es la base para &lt;a href="https://cypress.io">Cypress&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p>
+&lt;h2 id="element-script">Element script&lt;/h2>
+&lt;p>Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p>
+&lt;p>Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p>
+&lt;p>Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href="https://jmeter.apache.org">JMeter&lt;/a> o &lt;a href="https://gatling.io">Gatling&lt;/a> o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p>
+&lt;h2 id="conclusión">Conclusión&lt;/h2>
+&lt;p>Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>No ejecutan scripts del lado del navegador&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>No miden la experiencia final de un usuario&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p>
+&lt;p>Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p></description></item><item><title>Entrevista con Señor Performo en PerfBytes Español</title><link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link><pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</guid><description>&lt;p>Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.&lt;/p>
+&lt;a class="spreaker-player" href="https://www.spreaker.com/user/perfbytes/perfbytesesp-s02e04-entrevistanicole" data-resource="episode_id=31696383" data-theme="light" data-autoplay="false" data-playlist="false" data-cover="https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/2aed331516599f75dd433a42006da511.jpg" data-width="100%" data-height="400px">Listen to "Entrevista Nicole van der Hoeven" on Spreaker.&lt;/a>&lt;script async src="https://widget.spreaker.com/widgets.js">&lt;/script></description></item><item><title>Mitad de allá y mitad de aquí: reflexiones de una políglota multinacional</title><link>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</link><pubDate>Tue, 28 Aug 2018 23:19:32 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20180828-mitad-de-alla/</guid><description>&lt;p>Originally posted on &lt;a href="https://medium.com/@n_vanderhoeven/mitad-de-all%C3%A1-y-mitad-de-aqu%C3%AD-reflexiones-de-una-pol%C3%ADglota-multinacional-1d192f488738">Medium&lt;/a>.&lt;/p>
+&lt;p>Nadie se da cuenta de que soy filipina. Incluso los filipinos desconocidos me miran e inmediatamente hablan en inglés. Siempre están sorprendidos cuando respondo en Tagalog. «¿Pero por qué tienes la piel clara?» me preguntan, como si fuera algo que se puede comprar en una tienda. A través de mi piel no pueden ver mi lugar de nacimiento y juventud en las Filipinas, o cuánto echo de menos la voz del vendedor de taho cuando caminas por las calles: «Tahoooooooo!»&lt;/p>
+&lt;p>Los chinos me miran siempre como si fuera una de ellos. Pero después de hablar unos segundos en chino conmigo retroceden con una sonrisa. «Disculpa, es que pensábamos que eras china.» No les importa que tengo sangre china. Lo que les importa es que mi chino es horrible.&lt;/p>
+&lt;p>En EE.UU piensan que soy americana por mi acento en inglés por teléfono, pero cuando me ven, dicen «¡Que bueno tu inglés! ¿Qué eres?» Una mujer? Una ingeniera de software? No — un secreto a voces: &lt;em>No eres una de nosotros&lt;/em>. Eso después del hecho de que todos mis estudios han sido en inglés, y que es mi mejor lengua.&lt;/p>
+&lt;p>En una entrevista de trabajo en Australia, me preguntó el entrevistador de todas las maneras posibles de dónde vengo, y, frustrado con mis respuestas sobre mis trabajos previos en Australia, se alegró mucho al descubrir que mis padres eran filipinos. «¡Todavía no tenemos un filipino aquí!» me dijo. Después, la oferta, y mi vergüenza de conseguir un trabajo por no ser australiana. Yo con una carrera casi completamente hecha en el país.&lt;/p>
+&lt;p>Un holandés me dijo que hay tanta tolerancia en los países bajos. Todas las personas pueden convertirse en holandeses independientemente de sus orígenes. Pero justo cuando explico cómo es posible tener tres ciudadanías, empieza a sacudir la cabeza. «Pero eso no es justo. ¡Tu tienes que elegir! O no serás una verdadera holandesa.» Eso después de un día hablando en holandés.&lt;/p>
+&lt;p>Puedes hacerme otras preguntas, las que van a hacerte sentir más seguro de quién soy, o más capaz de etiquetarme. Y ofrezco mis respuestas, una mezcla y combinación de países. Pero lo que quiero hacer es contar mi vida, porque no puedo contestar en una sola palabra: Soy originalmente filipina. Mis padres son filipinos. Estudiaba en inglés en una escuela internacional, y más tarde en EE.UU. Me mudé a Australia y me casé allí con mi marido australiano. Vivimos allí juntos por más de una década. Nos mudamos a los Países Bajos, donde vivimos ahora. Y todo eso con una colección de idiomas, algunos de esos países, y otros, como el español, de otros.&lt;/p>
+&lt;p>Tengo mucha pasión cuando hablo otros idiomas. Y el aprendizaje de un idioma no es posible sin el conocimiento y la comprensión de la cultura que acompaña cada idioma. ¿En qué idioma pienso? Eso depende — de la situación, de la persona con la que estoy hablando, de mi humor, del tema, de si estoy cansada. Pero pienso en todos. Y, cuando pienso en estos idiomas, también actúo de manera correspondiente a las perspectivas inherentes a ellos. Y me cambian. Soy fundamentalmente diferente por haber aprendido este particular conjunto de idiomas.&lt;/p>
+&lt;p>Me vas a preguntar a qué país pertenezco en mi corazón?&lt;/p>
+&lt;p>Elegir un país o una cultura sería como cortarme el brazo. ¿Cómo sería posible para mí vivir sin reconocer la importancia de la familia como una filipina, sin cambiar al inglés para discutir noticias del mundo informático, sin sentir orgullo a la vista de la bandera australiana, sin relacionarme con personas con una mente abierta como una holandesa?&lt;/p>
+&lt;p>Digo que pertenezco a todos. No voy a elegir. Muchos de los problemas del mundo hoy en día ocurren porque queremos que otros elijan: entre sus países o sus religiones, sus familias o sus sexualidades, sus principios o sus presidentes. La verdad es que no hay una opción sino ser lo que ya son: producto de todos.&lt;/p>
+&lt;p>¿Y no somos todos así?&lt;/p></description></item></channel></rss>

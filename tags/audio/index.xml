@@ -1,278 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>audio on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/audio/</link>
-    <description>Recent content in audio on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 28 Nov 2023 14:01:35 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/audio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Performance Testing With Nicole van der Hoeven (Quality Bits Podcast)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</link>
-      <pubDate>Tue, 28 Nov 2023 14:01:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</guid>
-      <description>&lt;p&gt;My friend Lina Zubyte invited me to her podcast Quality Bits to talk about performance testing. We talked about what performance testing is, why it is important, how to get started, and how to get better at it. We also talked about the foundation of any type of testing: empathy.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://qualitybits.buzzsprout.com/2037134/13909242-performance-testing-with-nicole-van-der-hoeven&#34;&gt;Check out the episode here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Informed Life Podcast Interview</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/</link>
-      <pubDate>Sun, 26 Mar 2023 20:14:56 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/</guid>
-      <description>&lt;p&gt;Information architect, author, and educator Jorge Arango &lt;a href=&#34;https://theinformed.life/2023/03/26/episode-110-nicole-van-der-hoeven/&#34;&gt;interviewed me on his podcast&lt;/a&gt;, &lt;em&gt;The Informed Life&lt;/em&gt;, about how I apply the principles of CI/CD to taking notes, why I use Obsidian, and how I use it to learn in public and play roleplaying games.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/intentional-life-podcast-interview.png&#34; alt=&#34;The Informed Life podcast cover&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Realistic load testing</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210807-clubhouse-realistic-load-tests/</link>
-      <pubDate>Sat, 07 Aug 2021 22:15:13 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210807-clubhouse-realistic-load-tests/</guid>
-      <description>&lt;p&gt;This is a conversation I recorded from Clubhouse in the Performance Engineers group created by NaveenKumar Namachivayam today, August 7th, 2021. I started by introducing myself and then let everyone know that I would be recording the conversation. Enjoy!&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed/episode/5MJaz2PAhYfy5FShrIaXUK&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/-hBVZqNJ4_A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Interview on Performance Time Podcast</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</link>
-      <pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</guid>
-      <description>&lt;p&gt;I first heard of &lt;a href=&#34;https://twitter.com/perftestnz&#34;&gt;Stephen Townshend&lt;/a&gt; because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, &lt;a href=&#34;https://www.linkedin.com/in/stijnschepers/&#34;&gt;Stijn Schephers&lt;/a&gt;. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed/episode/3pp3ZFFB8DyfUEtLRuLxGe&#34; width=&#34;100%&#34; height=&#34;232&#34; frameBorder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Testing Our Performance Test Tools</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210316-testing-our-performance-test-tools/</link>
-      <pubDate>Tue, 16 Mar 2021 21:29:33 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210316-testing-our-performance-test-tools/</guid>
-      <description>&lt;p&gt;On this episode of the &lt;a href=&#34;https://testguild.com/&#34;&gt;TestGuild performance podcast&lt;/a&gt;, I had a chat with Joe Colantonio about languages, board games, nontraditional backgrounds in tech, and why we should all test our performance test tools.&lt;/p&gt;
-
-
-
-&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/18351014/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
-
-
-</description>
-    </item>
-    
-    <item>
-      <title>The 503 Podcast</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</link>
-      <pubDate>Thu, 11 Feb 2021 21:46:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</guid>
-      <description>&lt;p&gt;This must be the month for trying new things, because I jumped into livestreaming with the first ever &lt;a href=&#34;https://nicolevanderhoeven.github.io/blog/20210205-k6-office-hours&#34;&gt;k6 Office Hours&lt;/a&gt; just a week ago, and this week I&amp;rsquo;m jumping into podcasting with &lt;a href=&#34;https://simme.dev&#34;&gt;Simme Aronsson&lt;/a&gt;, who&amp;rsquo;s also doing the Office Hours with me. There&amp;rsquo;s definitely safety (at least psychological safety) in numbers, because doing it with someone else makes me feel a little more brave.&lt;/p&gt;
-&lt;p&gt;While the podcast is presented by &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, that&amp;rsquo;s really just a fancy term for saying that we&amp;rsquo;re both employed by k6 and we&amp;rsquo;re recording and producing the podcast on company time. Unlike the Office Hours, which is heavily k6-focused, the podcast will be about software performance and reliability in general. Simme and I happen to have different and complementary skillsets (he comes from a developer background, and I come from a testing background, and I think that makes for an interesting combination of perspectives.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s the first episode! It should also be available on your audio podcasting tool of choice.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/JEpLfLWP4YY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
-      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Y la versión audio:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
-&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
-&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
-&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
-&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
-&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
-&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
-&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
-&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
-&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
-&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
-&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
-&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
-&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
-&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
-&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
-&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
-&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
-&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
-&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
-&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
-&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
-&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
-&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
-&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link>
-      <pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid>
-      <description>&lt;p&gt;Listen to the audio version of this blog post here:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href=&#34;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy&#34;&gt;this very excellent video&lt;/a&gt; by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p&gt;
-&lt;p&gt;Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;install-yinote-chrome-extension&#34;&gt;Install YiNote Chrome extension&lt;/h2&gt;
-&lt;p&gt;I use a free app called &lt;a href=&#34;https://yinote.co/&#34;&gt;YiNote&lt;/a&gt; to take video notes in particular.  I use &lt;a href=&#34;https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf&#34;&gt;their Chrome extension&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;take-notes&#34;&gt;Take Notes&lt;/h2&gt;
-&lt;p&gt;I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here&amp;rsquo;s what it looks like while taking notes:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;export-yinote-notes&#34;&gt;Export YiNote notes&lt;/h2&gt;
-&lt;p&gt;After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p&gt;
-&lt;p&gt;I click the Export as Markdown button.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;That lets me save a &lt;code&gt;.md&lt;/code&gt; file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p&gt;
-&lt;h2 id=&#34;run-reformatter-script&#34;&gt;Run reformatter script&lt;/h2&gt;
-&lt;p&gt;This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/#installation&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- # &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:19&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The scheduler is what makes sure the Goroutines run concurrently.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:29&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p&gt;
-&lt;p&gt;So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p&gt;
-
-
-&lt;script src=&#34;https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;The script results in an output file that is better formatted for Roam.&lt;/p&gt;
-&lt;h2 id=&#34;import-resulting-file-to-roam&#34;&gt;Import resulting file to Roam&lt;/h2&gt;
-&lt;p&gt;On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
-&lt;p&gt;I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Performance Testing FOMO</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</link>
-      <pubDate>Wed, 22 Jul 2020 21:30:43 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</guid>
-      <description>&lt;p&gt;On this episode of the &lt;a href=&#34;https://testguild.com/&#34;&gt;TestGuild performance podcast&lt;/a&gt;, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/M5l9Ba0ykpw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the plain audio version:&lt;/p&gt;
-
-
-&lt;iframe style=&#34;border: none&#34; src=&#34;//html5-player.libsyn.com/embed/episode/id/15312620/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/&#34; height=&#34;90&#34; width=&#34;100%&#34; scrolling=&#34;no&#34;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Entrevista con Señor Performo en PerfBytes Español</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link>
-      <pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</guid>
-      <description>&lt;p&gt;Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.&lt;/p&gt;
-
-
-&lt;a class=&#34;spreaker-player&#34; href=&#34;https://www.spreaker.com/user/perfbytes/perfbytesesp-s02e04-entrevistanicole&#34; data-resource=&#34;episode_id=31696383&#34; data-theme=&#34;light&#34; data-autoplay=&#34;false&#34; data-playlist=&#34;false&#34; data-cover=&#34;https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/2aed331516599f75dd433a42006da511.jpg&#34; data-width=&#34;100%&#34; data-height=&#34;400px&#34;&gt;Listen to &#34;Entrevista Nicole van der Hoeven&#34; on Spreaker.&lt;/a&gt;&lt;script async src=&#34;https://widget.spreaker.com/widgets.js&#34;&gt;&lt;/script&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Audio on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/audio/</link><description>Recent content in Audio on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Tue, 28 Nov 2023 14:01:35 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/audio/index.xml" rel="self" type="application/rss+xml"/><item><title>Performance Testing With Nicole van der Hoeven (Quality Bits Podcast)</title><link>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</link><pubDate>Tue, 28 Nov 2023 14:01:35 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20231128-quality-bits-performance-testing-with-nicole-van-der-hoeven/</guid><description>&lt;p>My friend Lina Zubyte invited me to her podcast Quality Bits to talk about performance testing. We talked about what performance testing is, why it is important, how to get started, and how to get better at it. We also talked about the foundation of any type of testing: empathy.&lt;/p>
+&lt;p>&lt;a href="https://qualitybits.buzzsprout.com/2037134/13909242-performance-testing-with-nicole-van-der-hoeven">Check out the episode here&lt;/a>.&lt;/p></description></item><item><title>Informed Life Podcast Interview</title><link>https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/</link><pubDate>Sun, 26 Mar 2023 20:14:56 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20230326-informed-life-podcast-interview/</guid><description>&lt;p>Information architect, author, and educator Jorge Arango &lt;a href="https://theinformed.life/2023/03/26/episode-110-nicole-van-der-hoeven/">interviewed me on his podcast&lt;/a>, &lt;em>The Informed Life&lt;/em>, about how I apply the principles of CI/CD to taking notes, why I use Obsidian, and how I use it to learn in public and play roleplaying games.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/intentional-life-podcast-interview.png" alt="The Informed Life podcast cover">&lt;/p></description></item><item><title>Realistic load testing</title><link>https://nicolevanderhoeven.github.io/blog/20210807-clubhouse-realistic-load-tests/</link><pubDate>Sat, 07 Aug 2021 22:15:13 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210807-clubhouse-realistic-load-tests/</guid><description>&lt;p>This is a conversation I recorded from Clubhouse in the Performance Engineers group created by NaveenKumar Namachivayam today, August 7th, 2021. I started by introducing myself and then let everyone know that I would be recording the conversation. Enjoy!&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed/episode/5MJaz2PAhYfy5FShrIaXUK" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-hBVZqNJ4_A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Interview on Performance Time Podcast</title><link>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</link><pubDate>Mon, 31 May 2021 11:28:18 +0200</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210531-performance-time/</guid><description>&lt;p>I first heard of &lt;a href="https://twitter.com/perftestnz">Stephen Townshend&lt;/a> because he happens to have gotten the same introduction to performance testing that I did&amp;ndash; our shared mentor, &lt;a href="https://www.linkedin.com/in/stijnschepers/">Stijn Schephers&lt;/a>. He has started a podcast called Performance Time, where he interviews performance engineers about a variety of topics. This week, it was me!&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed/episode/3pp3ZFFB8DyfUEtLRuLxGe" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;p>We talked about how I got started, one of my biggest failures as a performance tester, chaos engineering, what we can do to improve diversity in tech, and why I think note-taking is a key skill for any performance tester.&lt;/p></description></item><item><title>Testing Our Performance Test Tools</title><link>https://nicolevanderhoeven.github.io/blog/20210316-testing-our-performance-test-tools/</link><pubDate>Tue, 16 Mar 2021 21:29:33 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210316-testing-our-performance-test-tools/</guid><description>&lt;p>On this episode of the &lt;a href="https://testguild.com/">TestGuild performance podcast&lt;/a>, I had a chat with Joe Colantonio about languages, board games, nontraditional backgrounds in tech, and why we should all test our performance test tools.&lt;/p>
+&lt;iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/18351014/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>&lt;/iframe></description></item><item><title>The 503 Podcast</title><link>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</link><pubDate>Thu, 11 Feb 2021 21:46:35 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210211-503-podcast/</guid><description>&lt;p>This must be the month for trying new things, because I jumped into livestreaming with the first ever &lt;a href="https://nicolevanderhoeven.github.io/blog/20210205-k6-office-hours">k6 Office Hours&lt;/a> just a week ago, and this week I&amp;rsquo;m jumping into podcasting with &lt;a href="https://simme.dev">Simme Aronsson&lt;/a>, who&amp;rsquo;s also doing the Office Hours with me. There&amp;rsquo;s definitely safety (at least psychological safety) in numbers, because doing it with someone else makes me feel a little more brave.&lt;/p>
+&lt;p>While the podcast is presented by &lt;a href="https://k6.io">k6&lt;/a>, that&amp;rsquo;s really just a fancy term for saying that we&amp;rsquo;re both employed by k6 and we&amp;rsquo;re recording and producing the podcast on company time. Unlike the Office Hours, which is heavily k6-focused, the podcast will be about software performance and reliability in general. Simme and I happen to have different and complementary skillsets (he comes from a developer background, and I come from a testing background, and I think that makes for an interesting combination of perspectives.&lt;/p>
+&lt;p>Here&amp;rsquo;s the first episode! It should also be available on your audio podcasting tool of choice.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JEpLfLWP4YY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title><link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link><pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid><description>&lt;p>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href="https://jmeterenespanol.org/">JMeter en Español&lt;/a> el 31 de Oktubre, 2020.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1KB8e2Ld08M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Y la versión audio:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;h2 id="introducción">Introducción&lt;/h2>
+&lt;p>Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p>
+&lt;h2 id="amazon---ui--dev-tools">Amazon - UI + Dev Tools&lt;/h2>
+&lt;p>Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p>
+&lt;h2 id="jmeter---creando-un-script">JMeter - Creando un script&lt;/h2>
+&lt;p>Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p>
+&lt;p>Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p>
+&lt;p>A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p>
+&lt;h2 id="flood-challenge">Flood Challenge&lt;/h2>
+&lt;p>La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p>
+&lt;p>Podemos verlo en la aplicación de muestra &lt;a href="https://challenge.flood.io">Flood Challenge&lt;/a>. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p>
+&lt;h2 id="correlación-en-jmeter---flood-challenge-script">Correlación en JMeter - Flood challenge script&lt;/h2>
+&lt;p>Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p>
+&lt;h2 id="la-experiencia-del-usuario">La experiencia del usuario&lt;/h2>
+&lt;p>La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p>
+&lt;p>Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href="https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google's,is%20spent%20on%20the%20frontend">hasta 90% del tiempo de respuesta&lt;/a> que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p>
+&lt;h2 id="developer-tools---lighthouse">Developer Tools - Lighthouse&lt;/h2>
+&lt;p>Entonces, ¿qué podemos hacer?&lt;/p>
+&lt;p>Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p>
+&lt;h2 id="webpagetest">WebPageTest&lt;/h2>
+&lt;p>También uso &lt;a href="https://webpagetest.org">WebPageTest&lt;/a> a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p>
+&lt;h2 id="herramientas-alternativas-para-pruebas-de-carga">Herramientas alternativas para pruebas de carga&lt;/h2>
+&lt;p>Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p>
+&lt;p>&lt;a href="https://www.selenium.dev/">Selenium&lt;/a> es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p>
+&lt;p>Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/microsoft/playwright">Playwright&lt;/a> es una creación de Microsoft.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://jest.io">Jest&lt;/a> fue desarrollado por Facebook&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mocha es otro framework que es la base para &lt;a href="https://cypress.io">Cypress&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p>
+&lt;h2 id="element-script">Element script&lt;/h2>
+&lt;p>Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p>
+&lt;p>Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p>
+&lt;p>Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href="https://jmeter.apache.org">JMeter&lt;/a> o &lt;a href="https://gatling.io">Gatling&lt;/a> o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p>
+&lt;h2 id="conclusión">Conclusión&lt;/h2>
+&lt;p>Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>No ejecutan scripts del lado del navegador&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>No miden la experiencia final de un usuario&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p>
+&lt;p>Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p></description></item><item><title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title><link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link><pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid><description>&lt;p>Listen to the audio version of this blog post here:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;p>I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href="https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy">this very excellent video&lt;/a> by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p>
+&lt;p>Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href="https://roamresearch.com">Roam Research&lt;/a>.&lt;/p>
+&lt;h2 id="install-yinote-chrome-extension">Install YiNote Chrome extension&lt;/h2>
+&lt;p>I use a free app called &lt;a href="https://yinote.co/">YiNote&lt;/a> to take video notes in particular. I use &lt;a href="https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf">their Chrome extension&lt;/a>.&lt;/p>
+&lt;h2 id="take-notes">Take Notes&lt;/h2>
+&lt;p>I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s what it looks like while taking notes:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-01.png" alt="">&lt;/p>
+&lt;h2 id="export-yinote-notes">Export YiNote notes&lt;/h2>
+&lt;p>After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p>
+&lt;p>I click the Export as Markdown button.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-02.png" alt="">&lt;/p>
+&lt;p>That lets me save a &lt;code>.md&lt;/code> file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p>
+&lt;h2 id="run-reformatter-script">Run reformatter script&lt;/h2>
+&lt;p>This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/&lt;/span>#installation&lt;span style="color:#75715e">&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- # &lt;/span>[&lt;span style="color:#f92672">GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- ## &lt;/span>[&lt;span style="color:#f92672">1:19&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>The scheduler is what makes sure the Goroutines run concurrently.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- ## &lt;/span>[&lt;span style="color:#f92672">1:29&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p>
+&lt;p>So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p>
+&lt;script src="https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js">&lt;/script>
+&lt;p>The script results in an output file that is better formatted for Roam.&lt;/p>
+&lt;h2 id="import-resulting-file-to-roam">Import resulting file to Roam&lt;/h2>
+&lt;p>On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-03.png" alt="">&lt;/p>
+&lt;h2 id="thats-it">That&amp;rsquo;s it!&lt;/h2>
+&lt;p>I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p></description></item><item><title>Performance Testing FOMO</title><link>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</link><pubDate>Wed, 22 Jul 2020 21:30:43 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200722-performance-testing-fomo/</guid><description>&lt;p>On this episode of the &lt;a href="https://testguild.com/">TestGuild performance podcast&lt;/a>, Joe Colantonio interviews me about how human factors are often not taken into consideration when designing load tests&amp;ndash; a mistake that can have serious consequences.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/M5l9Ba0ykpw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Here&amp;rsquo;s the plain audio version:&lt;/p>
+&lt;iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/15312620/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>&lt;/iframe></description></item><item><title>Entrevista con Señor Performo en PerfBytes Español</title><link>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</link><pubDate>Mon, 22 Jun 2020 21:56:02 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200622-entrevista-con-senor-performo/</guid><description>&lt;p>Aquí está una entrevista que he hecho con Leando Melendez (Señor Performo) en su podcast, PerfBytes Español. Hablamos de performance testing, mis idiomas, y mis consejos para mujeres que quieren entrar en el mundo de tecnología.&lt;/p>
+&lt;a class="spreaker-player" href="https://www.spreaker.com/user/perfbytes/perfbytesesp-s02e04-entrevistanicole" data-resource="episode_id=31696383" data-theme="light" data-autoplay="false" data-playlist="false" data-cover="https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/2aed331516599f75dd433a42006da511.jpg" data-width="100%" data-height="400px">Listen to "Entrevista Nicole van der Hoeven" on Spreaker.&lt;/a>&lt;script async src="https://widget.spreaker.com/widgets.js">&lt;/script></description></item></channel></rss>

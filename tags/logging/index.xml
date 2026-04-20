@@ -1,121 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>logging on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/logging/</link>
-    <description>Recent content in logging on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Wed, 17 Dec 2025 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Logging Best Practices (Grafana ❤️🔥 OpenTelemetry Community Call #3)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20251217-gocc03-logging-best-practices/</link>
-      <pubDate>Wed, 17 Dec 2025 16:00:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20251217-gocc03-logging-best-practices/</guid>
-      <description>&lt;p&gt;In this community call with my coworker Liudmila Molkova, we explored logging best practices in the context of OpenTelemetry. We discussed how to structure logs for observability, the relationship between logs and other telemetry signals (traces and metrics), and practical patterns for making logs more useful in distributed systems. The conversation covered log levels, contextual information, correlation with traces, and common pitfalls to avoid when instrumenting applications with OpenTelemetry logging.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/D-bWeY-gBWU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link>
-      <pubDate>Fri, 25 Apr 2025 17:57:58 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</guid>
-      <description>&lt;p&gt;In this pre-recorded Loki Community Call, we talk all about OTel and logging on Kubernetes with Cyril Tovena, Ward Bekker, Jay Clifford, and Nicole van der Hoeven at KubeCon EU 2025 in London. We discuss when why you should switch to OTel and why you shouldn&amp;rsquo;t, what OTLP is exactly, and best practices for ingesting data through an OTLP endpoint.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/27ZHOg-LaM0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Grafana Loki Query Best Practices with LogQL (Loki Community Call December 2024)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</link>
-      <pubDate>Thu, 05 Dec 2024 17:48:49 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</guid>
-      <description>&lt;p&gt;In this December&amp;rsquo;s Loki Community Call, Cyril Tovena, Senior Principal Engineer and LogQL guru walks us through a Grafana Loki query tutorial with LogQL, the Log Query Language used for Loki. He talks about the key &amp;ldquo;Dos and Don&amp;rsquo;ts&amp;rdquo; of LogQL, offering practical tips to help you write better queries, boost performance, and sidestep common mistakes.&lt;/p&gt;
-&lt;p&gt;Whether you’re tuning up your current setup or just diving into LogQL, Cyril’s got you covered. Bring your questions, connect with the Loki community, and pick up insights that’ll make your log-querying life easier. See you there!&lt;/p&gt;
-&lt;p&gt;Make sure you leave your questions &lt;a href=&#34;https://forms.gle/nm7TGX2EeWnRLmbs6&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Cyril is joined by Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/d61nQX-n91c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>All About Logs Drilldown (Loki Community Call October 2024)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</link>
-      <pubDate>Thu, 03 Oct 2024 17:45:33 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</guid>
-      <description>&lt;p&gt;In this Community Call, Senior Software Engineer Trevor Whitney talks to us all about Drilldown Logs for Grafana Loki, an open-source app for visualizing logs from Loki in Grafana without needing to learn and write LogQL queries. He is joined by Senior Developer Advocates Nicole van der Hoeven and Jay Clifford.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/XJMQbEuBeMc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>All the Components of Loki Explained</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</link>
-      <pubDate>Fri, 20 Sep 2024 18:09:35 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</guid>
-      <description>&lt;p&gt;Here are all the components of Loki explained so that you can figure out how many instances of each you need for a resilient Loki deployment. Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk you through what each component does and which ones are optional.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_hv4i84Z68s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Bloom Filter Changes for Grafana Loki (Loki Community Call September 2024)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</link>
-      <pubDate>Thu, 05 Sep 2024 17:41:18 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</guid>
-      <description>&lt;p&gt;In this Community Call, Senior Software Engineer Christian Haudum talks to us about bloom filter changes for Grafana Loki, including the deprecation of the bloom compactor and a pivot towards creating bloom filters for structured metadata. Bloom filters are a probabilistic data structure that we&amp;rsquo;re using to improve query performance in Loki.&lt;/p&gt;
-&lt;p&gt;Community Calls are monthly meetings that are open to everyone interested in the development of Loki. They are an opportunity for software engineers working on Loki to discuss new features as well as for open-source users of Loki to ask questions. To participate in the next Community Call, &lt;a href=&#34;https://gra.fan/lokicccal&#34;&gt;subscribe to the calendar here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/keXrUf8jw1A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Get Started With Loki</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</link>
-      <pubDate>Fri, 10 May 2024 18:12:09 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</guid>
-      <description>&lt;p&gt;If you were looking for how to get started with Loki, here&amp;rsquo;s a video where Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk about what Loki is, how to ingest logs with Loki, how to deploy Loki, and finally how to visualize your logs with Grafana.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1uk8LtQqsZQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Logging on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/logging/</link><description>Recent content in Logging on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 17 Dec 2025 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml"/><item><title>Logging Best Practices (Grafana ❤️🔥 OpenTelemetry Community Call #3)</title><link>https://nicolevanderhoeven.github.io/blog/20251217-gocc03-logging-best-practices/</link><pubDate>Wed, 17 Dec 2025 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251217-gocc03-logging-best-practices/</guid><description>&lt;p>In this community call with my coworker Liudmila Molkova, we explored logging best practices in the context of OpenTelemetry. We discussed how to structure logs for observability, the relationship between logs and other telemetry signals (traces and metrics), and practical patterns for making logs more useful in distributed systems. The conversation covered log levels, contextual information, correlation with traces, and common pitfalls to avoid when instrumenting applications with OpenTelemetry logging.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D-bWeY-gBWU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>All about OTel and Logging on Kubernetes with Loki (Loki Community Call April 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</link><pubDate>Fri, 25 Apr 2025 17:57:58 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20250425-lcc-all-about-otel-and-logging-on-kubernetes-with-loki/</guid><description>&lt;p>In this pre-recorded Loki Community Call, we talk all about OTel and logging on Kubernetes with Cyril Tovena, Ward Bekker, Jay Clifford, and Nicole van der Hoeven at KubeCon EU 2025 in London. We discuss when why you should switch to OTel and why you shouldn&amp;rsquo;t, what OTLP is exactly, and best practices for ingesting data through an OTLP endpoint.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/27ZHOg-LaM0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Grafana Loki Query Best Practices with LogQL (Loki Community Call December 2024)</title><link>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</link><pubDate>Thu, 05 Dec 2024 17:48:49 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20241205-lcc-grafana-loki-query-best-practices-with-logql/</guid><description>&lt;p>In this December&amp;rsquo;s Loki Community Call, Cyril Tovena, Senior Principal Engineer and LogQL guru walks us through a Grafana Loki query tutorial with LogQL, the Log Query Language used for Loki. He talks about the key &amp;ldquo;Dos and Don&amp;rsquo;ts&amp;rdquo; of LogQL, offering practical tips to help you write better queries, boost performance, and sidestep common mistakes.&lt;/p>
+&lt;p>Whether you’re tuning up your current setup or just diving into LogQL, Cyril’s got you covered. Bring your questions, connect with the Loki community, and pick up insights that’ll make your log-querying life easier. See you there!&lt;/p>
+&lt;p>Make sure you leave your questions &lt;a href="https://forms.gle/nm7TGX2EeWnRLmbs6">here&lt;/a>.&lt;/p>
+&lt;p>Cyril is joined by Senior Developer Advocates Jay Clifford and Nicole van der Hoeven.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/d61nQX-n91c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>All About Logs Drilldown (Loki Community Call October 2024)</title><link>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</link><pubDate>Thu, 03 Oct 2024 17:45:33 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20241003-lcc-all-about-logs-drilldown/</guid><description>&lt;p>In this Community Call, Senior Software Engineer Trevor Whitney talks to us all about Drilldown Logs for Grafana Loki, an open-source app for visualizing logs from Loki in Grafana without needing to learn and write LogQL queries. He is joined by Senior Developer Advocates Nicole van der Hoeven and Jay Clifford.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XJMQbEuBeMc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>All the Components of Loki Explained</title><link>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</link><pubDate>Fri, 20 Sep 2024 18:09:35 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240920-all-the-components-of-loki-explained/</guid><description>&lt;p>Here are all the components of Loki explained so that you can figure out how many instances of each you need for a resilient Loki deployment. Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk you through what each component does and which ones are optional.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_hv4i84Z68s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Bloom Filter Changes for Grafana Loki (Loki Community Call September 2024)</title><link>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</link><pubDate>Thu, 05 Sep 2024 17:41:18 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240905-lcc-bloom-filter-changes-for-grafana-loki/</guid><description>&lt;p>In this Community Call, Senior Software Engineer Christian Haudum talks to us about bloom filter changes for Grafana Loki, including the deprecation of the bloom compactor and a pivot towards creating bloom filters for structured metadata. Bloom filters are a probabilistic data structure that we&amp;rsquo;re using to improve query performance in Loki.&lt;/p>
+&lt;p>Community Calls are monthly meetings that are open to everyone interested in the development of Loki. They are an opportunity for software engineers working on Loki to discuss new features as well as for open-source users of Loki to ask questions. To participate in the next Community Call, &lt;a href="https://gra.fan/lokicccal">subscribe to the calendar here&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/keXrUf8jw1A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to Get Started With Loki</title><link>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</link><pubDate>Fri, 10 May 2024 18:12:09 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20240510-how-to-get-started-with-loki/</guid><description>&lt;p>If you were looking for how to get started with Loki, here&amp;rsquo;s a video where Senior Developer Advocates Jay Clifford and Nicole van der Hoeven talk about what Loki is, how to ingest logs with Loki, how to deploy Loki, and finally how to visualize your logs with Grafana.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1uk8LtQqsZQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

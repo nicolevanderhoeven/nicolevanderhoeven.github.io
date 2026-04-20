@@ -1,91 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>yinote on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/yinote/</link>
-    <description>Recent content in yinote on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 30 Dec 2022 11:30:38 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/yinote/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Taking Notes From Youtube Videos in Obsidian</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</link>
-      <pubDate>Fri, 30 Dec 2022 11:30:38 +0000</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</guid>
-      <description>&lt;p&gt;In this video, I talk about five different ways to take notes on YouTube videos in Obsidian, for those (like me) who love learning things on YouTube and want a way to capture new thoughts in Obsidian. I mention a few community plugins, a browser extension, and a separate service as well as my workflow for just using vanilla Obsidian, so you can take your pick!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/qjWq4ck2-0o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link>
-      <pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid>
-      <description>&lt;p&gt;Listen to the audio version of this blog post here:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href=&#34;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy&#34;&gt;this very excellent video&lt;/a&gt; by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p&gt;
-&lt;p&gt;Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;install-yinote-chrome-extension&#34;&gt;Install YiNote Chrome extension&lt;/h2&gt;
-&lt;p&gt;I use a free app called &lt;a href=&#34;https://yinote.co/&#34;&gt;YiNote&lt;/a&gt; to take video notes in particular.  I use &lt;a href=&#34;https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf&#34;&gt;their Chrome extension&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;take-notes&#34;&gt;Take Notes&lt;/h2&gt;
-&lt;p&gt;I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here&amp;rsquo;s what it looks like while taking notes:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;export-yinote-notes&#34;&gt;Export YiNote notes&lt;/h2&gt;
-&lt;p&gt;After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p&gt;
-&lt;p&gt;I click the Export as Markdown button.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;That lets me save a &lt;code&gt;.md&lt;/code&gt; file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p&gt;
-&lt;h2 id=&#34;run-reformatter-script&#34;&gt;Run reformatter script&lt;/h2&gt;
-&lt;p&gt;This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/#installation&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- # &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:19&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The scheduler is what makes sure the Goroutines run concurrently.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- ## &lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;1:29&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt; --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p&gt;
-&lt;p&gt;So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p&gt;
-
-
-&lt;script src=&#34;https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;The script results in an output file that is better formatted for Roam.&lt;/p&gt;
-&lt;h2 id=&#34;import-resulting-file-to-roam&#34;&gt;Import resulting file to Roam&lt;/h2&gt;
-&lt;p&gt;On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20201215-03.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
-&lt;p&gt;I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yinote on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/yinote/</link><description>Recent content in Yinote on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 30 Dec 2022 11:30:38 +0000</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/yinote/index.xml" rel="self" type="application/rss+xml"/><item><title>Taking Notes From Youtube Videos in Obsidian</title><link>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</link><pubDate>Fri, 30 Dec 2022 11:30:38 +0000</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20221230-taking-notes-from-youtube-videos-in-obsidian/</guid><description>&lt;p>In this video, I talk about five different ways to take notes on YouTube videos in Obsidian, for those (like me) who love learning things on YouTube and want a way to capture new thoughts in Obsidian. I mention a few community plugins, a browser extension, and a separate service as well as my workflow for just using vanilla Obsidian, so you can take your pick!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qjWq4ck2-0o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Taking Notes on a Video: my YiNote to Roam Research Workflow</title><link>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</link><pubDate>Tue, 15 Dec 2020 22:00:34 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201215-yinote-to-roam/</guid><description>&lt;p>Listen to the audio version of this blog post here:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/2TzFxvI8tLNUb3yubhdYvP" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;p>I was working on an article yesterday comparing the performance of k6 with JMeter, and I had a chat to Mihail, one of the devs of k6. He mentioned that a large part of why k6 is so performant compared to other tools (particularly Java-based ones) is that it&amp;rsquo;s written in Go. He talked a bit about Goroutines, and when I told him I was a Go noob, he recommended &lt;a href="https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;ab_channel=GopherAcademy">this very excellent video&lt;/a> by Kavya Joshi, which explains a bit more about the Go Scheduler and how it manages to achieve performance for Go apps that exceeds the typical 1 Virtual User: 1 kernel thread paradigm that many load testing tools (like JMeter) use.&lt;/p>
+&lt;p>Anyway, I got around to watching the video today, and because it was a video I knew I&amp;rsquo;d learn from, I took notes - and ended up improving part of the workflow (more on that later). Other people have commented on my notes before, so I thought I&amp;rsquo;d share how I process videos into my personal wiki, currently held in &lt;a href="https://roamresearch.com">Roam Research&lt;/a>.&lt;/p>
+&lt;h2 id="install-yinote-chrome-extension">Install YiNote Chrome extension&lt;/h2>
+&lt;p>I use a free app called &lt;a href="https://yinote.co/">YiNote&lt;/a> to take video notes in particular. I use &lt;a href="https://chrome.google.com/webstore/detail/yinote/fhpgggnmdlmekfdpkdgeiccfkignhkdf">their Chrome extension&lt;/a>.&lt;/p>
+&lt;h2 id="take-notes">Take Notes&lt;/h2>
+&lt;p>I was pretty dubious about using an app just to take notes for video specifically, but there were a few things that sold me:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>When you click on the text field to take notes in the extension, YiNote automatically pauses the video so that you can type without missing what&amp;rsquo;s being said.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YiNote also automatically saves the timestamps associated with notes you create, so that you can click on it afterwards to jump to the specific section that you wrote a note on.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YiNote has an export to Markdown option - great compatibility with Roam or &lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also export your notes to a PDF, which is great for sharing. It saves screenshots of the presentation and puts your notes next to the relevant screenshot.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s what it looks like while taking notes:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-01.png" alt="">&lt;/p>
+&lt;h2 id="export-yinote-notes">Export YiNote notes&lt;/h2>
+&lt;p>After watching the video, I click the Settings wheel from the Chrome extension panel.&lt;/p>
+&lt;p>I click the Export as Markdown button.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-02.png" alt="">&lt;/p>
+&lt;p>That lets me save a &lt;code>.md&lt;/code> file to my local drive. I always save YiNote files in the same folder as the script below.&lt;/p>
+&lt;h2 id="run-reformatter-script">Run reformatter script&lt;/h2>
+&lt;p>This is the part that I tweaked today. YiNote&amp;rsquo;s exported Markdown file is formatted in a way that doesn&amp;rsquo;t really play well with Roam. Here&amp;rsquo;s what it looks like, fresh from YiNote:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- Generated by &amp;lt;a href=&amp;#34;https://www.yinote.co/&lt;/span>#installation&lt;span style="color:#75715e">&amp;#34;&amp;gt;YiNote&amp;lt;/a&amp;gt; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- # &lt;/span>[&lt;span style="color:#f92672">GopherCon 2018: Kavya Joshi - The Scheduler Saga&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- ## &lt;/span>[&lt;span style="color:#f92672">1:19&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=79&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>The scheduler is what makes sure the Goroutines run concurrently.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!-- ## &lt;/span>[&lt;span style="color:#f92672">1:29&lt;/span>](&lt;span style="color:#a6e22e">https://www.youtube.com/watch?v=YHRO5WQGh0k&amp;amp;t=89&lt;/span>)&lt;span style="color:#75715e"> --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>All the information is there, but importing that to Roam, with the comments, isn&amp;rsquo;t really useful. I want to see those timestamps as clickable links, and I want my notes to be nested underneath the corresponding timestamp so I know what belongs where.&lt;/p>
+&lt;p>So I dusted off my Python skills tonight and wrote up this little script to do just that. Warning: I am not a developer; I just occasionally code. So I&amp;rsquo;m sure that this isn&amp;rsquo;t the most concise way to do it (contact me and let me know how it could have been better if you have any ideas). But it&amp;rsquo;s functional. And, in the spirit of learning in public, here it is:&lt;/p>
+&lt;script src="https://gist.github.com/nicolevanderhoeven/8d089da1617cdbce13dcd406d1d0b960.js">&lt;/script>
+&lt;p>The script results in an output file that is better formatted for Roam.&lt;/p>
+&lt;h2 id="import-resulting-file-to-roam">Import resulting file to Roam&lt;/h2>
+&lt;p>On Roam, I hit Options &amp;gt; Import Files, select the output file, hit OK, and that creates a new page in a way better format than the one directly from YiNote. After adding the date, author, and &amp;ldquo;Recommended By&amp;rdquo; fields, this is what it looks like in Roam:&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20201215-03.png" alt="">&lt;/p>
+&lt;h2 id="thats-it">That&amp;rsquo;s it!&lt;/h2>
+&lt;p>I don&amp;rsquo;t do this for every video I watch, but I find this process useful for more technical videos that I really want to learn from. It&amp;rsquo;s really important to me to get all my notes from disparate sources into Roam, so that they then get processed like any other note into my Zettelkasten - but that&amp;rsquo;s a process for another day.&lt;/p></description></item></channel></rss>

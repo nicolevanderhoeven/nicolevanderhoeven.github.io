@@ -1,121 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>cypress on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/cypress/</link>
-    <description>Recent content in cypress on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Tue, 23 Mar 2021 19:52:48 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Performance Testing with k6 and Cypress (Ministry of Testing)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</link>
-      <pubDate>Tue, 23 Mar 2021 19:52:48 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</guid>
-      <description>&lt;p&gt;My friend &lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; and I teamed up to give a presentation about performance testing at a &lt;a href=&#34;https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/&#34;&gt;Ministry of Testing (Philippines) meetup&lt;/a&gt;, and we talked about using &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; for front-end performance testing and &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt; for back-end performance testing.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/yPmbZl2Qtus&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>k6 Office Hours 04: Using Cypress with Marie Drake</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</link>
-      <pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://mariedrake.com&#34;&gt;Marie Drake&lt;/a&gt; joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt; and how it can compliment a back-end performance testing strategy.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ve7Rg0MUZ0g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link>
-      <pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid>
-      <description>&lt;p&gt;Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href=&#34;https://jmeterenespanol.org/&#34;&gt;JMeter en Español&lt;/a&gt; el 31 de Oktubre, 2020.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1KB8e2Ld08M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Y la versión audio:&lt;/p&gt;
-
-
-&lt;iframe src=&#34;https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH&#34; width=&#34;100%&#34; height=&#34;232&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p&gt;
-&lt;h2 id=&#34;amazon---ui--dev-tools&#34;&gt;Amazon - UI + Dev Tools&lt;/h2&gt;
-&lt;p&gt;Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p&gt;
-&lt;h2 id=&#34;jmeter---creando-un-script&#34;&gt;JMeter - Creando un script&lt;/h2&gt;
-&lt;p&gt;Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p&gt;
-&lt;p&gt;Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p&gt;
-&lt;p&gt;A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p&gt;
-&lt;h2 id=&#34;flood-challenge&#34;&gt;Flood Challenge&lt;/h2&gt;
-&lt;p&gt;La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p&gt;
-&lt;p&gt;Podemos verlo en la aplicación de muestra &lt;a href=&#34;https://challenge.flood.io&#34;&gt;Flood Challenge&lt;/a&gt;. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;correlación-en-jmeter---flood-challenge-script&#34;&gt;Correlación en JMeter - Flood challenge script&lt;/h2&gt;
-&lt;p&gt;Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;la-experiencia-del-usuario&#34;&gt;La experiencia del usuario&lt;/h2&gt;
-&lt;p&gt;La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p&gt;
-&lt;p&gt;Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href=&#34;https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google&#39;s,is%20spent%20on%20the%20frontend&#34;&gt;hasta 90% del tiempo de respuesta&lt;/a&gt; que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p&gt;
-&lt;h2 id=&#34;developer-tools---lighthouse&#34;&gt;Developer Tools - Lighthouse&lt;/h2&gt;
-&lt;p&gt;Entonces, ¿qué podemos hacer?&lt;/p&gt;
-&lt;p&gt;Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p&gt;
-&lt;h2 id=&#34;webpagetest&#34;&gt;WebPageTest&lt;/h2&gt;
-&lt;p&gt;También uso &lt;a href=&#34;https://webpagetest.org&#34;&gt;WebPageTest&lt;/a&gt; a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p&gt;
-&lt;h2 id=&#34;herramientas-alternativas-para-pruebas-de-carga&#34;&gt;Herramientas alternativas para pruebas de carga&lt;/h2&gt;
-&lt;p&gt;Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.selenium.dev/&#34;&gt;Selenium&lt;/a&gt; es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p&gt;
-&lt;p&gt;Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/playwright&#34;&gt;Playwright&lt;/a&gt; es una creación de Microsoft.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://jest.io&#34;&gt;Jest&lt;/a&gt; fue desarrollado por Facebook&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mocha es otro framework que es la base para &lt;a href=&#34;https://cypress.io&#34;&gt;Cypress&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p&gt;
-&lt;h2 id=&#34;element-script&#34;&gt;Element script&lt;/h2&gt;
-&lt;p&gt;Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p&gt;
-&lt;p&gt;Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p&gt;
-&lt;p&gt;Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href=&#34;https://jmeter.apache.org&#34;&gt;JMeter&lt;/a&gt; o &lt;a href=&#34;https://gatling.io&#34;&gt;Gatling&lt;/a&gt; o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p&gt;
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
-&lt;p&gt;Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;No ejecutan scripts del lado del navegador&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No miden la experiencia final de un usuario&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p&gt;
-&lt;p&gt;Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cypress on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/cypress/</link><description>Recent content in Cypress on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Tue, 23 Mar 2021 19:52:48 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/cypress/index.xml" rel="self" type="application/rss+xml"/><item><title>Performance Testing with k6 and Cypress (Ministry of Testing)</title><link>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</link><pubDate>Tue, 23 Mar 2021 19:52:48 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210323-performance-testing-with-k6-and-cypress/</guid><description>&lt;p>My friend &lt;a href="https://mariedrake.com">Marie Drake&lt;/a> and I teamed up to give a presentation about performance testing at a &lt;a href="https://www.meetup.com/Ministry-of-Testing-Manila/events/276622895/">Ministry of Testing (Philippines) meetup&lt;/a>, and we talked about using &lt;a href="https://cypress.io">Cypress&lt;/a> for front-end performance testing and &lt;a href="https://k6.io">k6&lt;/a> for back-end performance testing.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yPmbZl2Qtus?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>k6 Office Hours 04: Using Cypress with Marie Drake</title><link>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</link><pubDate>Fri, 05 Mar 2021 21:46:56 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210305-k6-office-hours04/</guid><description>&lt;p>&lt;a href="https://mariedrake.com">Marie Drake&lt;/a> joined us today on k6 Office Hours to talk about front-end performance testing using a test tool called &lt;a href="https://cypress.io">Cypress&lt;/a> and how it can compliment a back-end performance testing strategy.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ve7Rg0MUZ0g?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>Cuándo JMeter no alcanza: Pruebas de carga simulando navegadores</title><link>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</link><pubDate>Wed, 16 Dec 2020 18:18:23 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20201216-cuando-jmeter-no-alcanza/</guid><description>&lt;p>Aquí está el video de mi presentación en JMeter Scripting Day, un evento organizado por &lt;a href="https://jmeterenespanol.org/">JMeter en Español&lt;/a> el 31 de Oktubre, 2020.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1KB8e2Ld08M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Y la versión audio:&lt;/p>
+&lt;iframe src="https://open.spotify.com/embed-podcast/episode/1f17kzrbYmOxk8e65JBTQH" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">&lt;/iframe>
+&lt;h2 id="introducción">Introducción&lt;/h2>
+&lt;p>Hola a todos! Yo soy Nicole van der Hoeven, y soy performance tester. JMeter es una de mis herramientas favoritas porque es gratis, simple, y por muchos casos hace exactamente lo que quiero y no más. Sin embargo, como performers es parte de nuestro trabajo elegir la herramienta adecuada para cada proyecto, y hay que admitir que hay situaciones en que JMeter simplemente no es suficiente.&lt;/p>
+&lt;h2 id="amazon---ui--dev-tools">Amazon - UI + Dev Tools&lt;/h2>
+&lt;p>Esto es el sitio web de Amazon.com. Tengo abierta la pantalla de Chrome Developer Tools, que me muestra las solicitudes (o requests) que componen la página. Cuándo vamos a la página, el navegador (Chrome en este caso) envia estas solicitudes para nosotros, pero eso occure en el fondo. Un usuario normal no las ve.&lt;/p>
+&lt;h2 id="jmeter---creando-un-script">JMeter - Creando un script&lt;/h2>
+&lt;p>Lo que JMeter hace es grabar estas solicitudes y replicarlas. Aqui vemos una ejecución de un usuario virtual de un script en JMeter. Cada solicitud tiene la respuesta y el tiempo de respuesta. Pero eso no nos da una idea completa del rendimiento de la aplicación. ¿Por qué?&lt;/p>
+&lt;p>Por que JMeter, como otras herramientas de nivel protocolo, tiene unas limitaciónes. La primera es que si hay javascript o otros script que deben estar ejecutado por el navegador, JMeter no los ejecuta. JMeter solo los descarga. El tiempo de respuesta mide la descarga, no la duración de la ejecución. Entonces, siempre habrá una diferencia entre los tiempos de respuesta en una prueba de JMeter y los tiempos de respuesta en práctica.&lt;/p>
+&lt;p>A veces esta diferencia no es tan importante. Pero hay más y más aplicaciones hoy en día que se componen principalmente de estos javascript. Por esas aplicaciones, simplemente no es posible hacer un script en JMeter porque la mayoría de la lógica de la aplicación occure en el navegador, no en el servidor.&lt;/p>
+&lt;h2 id="flood-challenge">Flood Challenge&lt;/h2>
+&lt;p>La segunda razón es que el aumento de la seguridad de aplicaciones conduce a solicitudes más complejas que incluyen parámetros dinámicos. Estos parámetros hacen que sea más difícil para un intermediario lanzar un ataque, pero también hacen que sea más difícil para nosotros scripters, porque tenemos que extraer información desde la última respuesta y ponerla en la próxima solicitud. Es posible, pero es la pesadilla de cada performance tester.&lt;/p>
+&lt;p>Podemos verlo en la aplicación de muestra &lt;a href="https://challenge.flood.io">Flood Challenge&lt;/a>. Ya no trabajo para Flood, pero todavía es un buen ejemplo.&lt;/p>
+&lt;h2 id="correlación-en-jmeter---flood-challenge-script">Correlación en JMeter - Flood challenge script&lt;/h2>
+&lt;p>Esto es mi script en JMeter, y vemos que hay muchos parámetros que he tenido que correlacionar. La solicitud para simular hacer clic en el botón &amp;ldquo;Start&amp;rdquo; necesita los parámetros authenticity token, step ID, y step number, que son dinámicos. El contenido de los parámetros cambian cada vez que usamos esta aplicación.&lt;/p>
+&lt;h2 id="la-experiencia-del-usuario">La experiencia del usuario&lt;/h2>
+&lt;p>La tercera razón es que JMeter tampoco mide la verdadera experiencia del usuario. Solo mide la duración de la comunicación entre el navegador y el servidor, pero no mide cosas como la representación de elementos en la página web, ni el efecto de un script que dura mucho tiempo para terminar.&lt;/p>
+&lt;p>Eso es importante porque estas cosas afectan significativamente la experiencia del usuario. De hecho, Steve Souders, un conocido el la industría de performance, dice que &lt;a href="https://rigor.com/blog/80-90-of-load-times-are-spent-on-the-front-end-start-there/#:~:text=Start%20there.,-Written%20by%20Craig&amp;amp;text=Last%20month%2C%20Steve%20Souders%2C%20Google's,is%20spent%20on%20the%20frontend">hasta 90% del tiempo de respuesta&lt;/a> que experimenta el usuario está en la interfaz. Con este numero podemos estar ciertos que una prueba con una herramienta de nivel protocolo no va a poder encapsular el rendimiento final de una aplicación.&lt;/p>
+&lt;h2 id="developer-tools---lighthouse">Developer Tools - Lighthouse&lt;/h2>
+&lt;p>Entonces, ¿qué podemos hacer?&lt;/p>
+&lt;p>Lo más fácil es intentar de medir la interfaz durante una prueba de cargas. Mientras ejecutamos una prueba con JMeter, podemos ir manualmente a la aplicación web en Chrome para usar Developer Tools. Podemos usar la pestaña Lighthouse, que nos da más métricos del perspectivo del usuario y sugerencias para mejorar el rendimiento.&lt;/p>
+&lt;h2 id="webpagetest">WebPageTest&lt;/h2>
+&lt;p>También uso &lt;a href="https://webpagetest.org">WebPageTest&lt;/a> a veces. Eso tiene más opciones para ejecutar la prueba automáticamente varias veces desde un lugar que puedo elegir. Aún podemos elegir un dispositivo para simular la experiencia de un usuario en un iPad, por ejemplo.&lt;/p>
+&lt;h2 id="herramientas-alternativas-para-pruebas-de-carga">Herramientas alternativas para pruebas de carga&lt;/h2>
+&lt;p>Tambien podemos elegir herramientas alternativas para ejecutar nuestras pruebas de carga. Lo que tienen en común es que fueron diseñadas para pruebas de automatización, y utilizan un navegador real.&lt;/p>
+&lt;p>&lt;a href="https://www.selenium.dev/">Selenium&lt;/a> es probablemente la más popular de esas. Selenium WebDriver en particular. Es compatible con Ruby, Java, Python, C# y Javascript. El problema con Selenium es que puede ser muy pesada. En una machina probablamente podemos ejecutar cinco usuarios de Selenium, más o menos. Eso es importante si estamos tratando de simular miles de usuarios.&lt;/p>
+&lt;p>Hay muchas herramientas basadas en Javascript que también podemos usar. Hay varias framework que se utilizan para adaptar Javascript y nodeJS.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Puppeteer fue desarollado por Google. Tricentis Flood también ha diseñado Element que utiliza Puppeteer, pero con un enfoque en el rendimiento.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/microsoft/playwright">Playwright&lt;/a> es una creación de Microsoft.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://jest.io">Jest&lt;/a> fue desarrollado por Facebook&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mocha es otro framework que es la base para &lt;a href="https://cypress.io">Cypress&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Todos esas herramientas son open source y gratis. También hay alternativas propietarias, pero prefiero las soluciones open source porque en la mayoría de casos hacen la misma cosa y se actualizan con más frecuencia.&lt;/p>
+&lt;h2 id="element-script">Element script&lt;/h2>
+&lt;p>Esto es un ejemplo de la misma acción, hacer clic en el botón Start en la aplicación Flood Challenge.&lt;/p>
+&lt;p>Otra ventaja de simulando navegadores en vez de simulando las solicitudes es que es más simple crear un script. No tenemos que saber cada parámetro. Solo tenemos que describir lo que queremos que cada usuario virtual haga.&lt;/p>
+&lt;p>Podemos ejecutar scripts usando estas herramientas al mismo tiempo que un script de &lt;a href="https://jmeter.apache.org">JMeter&lt;/a> o &lt;a href="https://gatling.io">Gatling&lt;/a> o lo que sea, y también tenemos la opción de reemplazar los script de protocolo con estas.&lt;/p>
+&lt;h2 id="conclusión">Conclusión&lt;/h2>
+&lt;p>Para resumir, JMeter y otras herramientas de nivel protocolo tiene algunas limitaciones.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>No ejecutan scripts del lado del navegador&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pueden ser más complicado correlacionar parámetros dinámicos&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>No miden la experiencia final de un usuario&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Para solucionar estos problemas, podemos complementar pruebas de carga tradicionales, de nivel protocolo, como JMeter, con herramientas simulando navegadores. De este modo podremos tener una comprensión más completa del rendimiento total de la aplicación.&lt;/p>
+&lt;p>Bueno, se acabó el tiempo, entonces los dejo aquí. Gracias por escuchar, y me disculpo por mi español. Gracias a todos!&lt;/p></description></item></channel></rss>

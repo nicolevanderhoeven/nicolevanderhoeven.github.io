@@ -1,58 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>new relic on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/new-relic/</link>
-    <description>Recent content in new relic on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Fri, 14 May 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/new-relic/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Learning how to use k6 live with Nočnica Fee from New Relic (k6 Office Hours)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</link>
-      <pubDate>Fri, 14 May 2021 21:53:09 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</guid>
-      <description>&lt;p&gt;We were happy to welcome &lt;a href=&#34;https://www.twitch.tv/serverlessmom&#34;&gt;Nočnica Fee&lt;/a&gt; from &lt;a href=&#34;https://www.twitch.tv/new_relic&#34;&gt;New Relic&lt;/a&gt; to k6 Office Hours. She very bravely volunteered to learn how to use k6&amp;ndash; live! Talk about pressure. But she handled it like a champ!&lt;/p&gt;
-&lt;p&gt;We also talked about why observability is both particularly important and particularly difficult in serverless architecture. There will definitely be a part two at some point!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6oMmRiXzvFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to get started with chaos engineering (k6 Office Hours)</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</link>
-      <pubDate>Fri, 30 Apr 2021 21:53:09 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</guid>
-      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with &lt;a href=&#34;https://github.com/simskij/xk6-chaos&#34;&gt;xk6-chaos&lt;/a&gt; and k6, and observability with &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/gVwJZPo30rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>k6 Office Hours 02: Observability with New Relic</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</link>
-      <pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</guid>
-      <description>&lt;p&gt;For this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I invited &lt;a href=&#34;https://twitter.com/gspncr&#34;&gt;Gary Spencer&lt;/a&gt; from &lt;a href=&#34;https://newrelic.com&#34;&gt;New Relic&lt;/a&gt; to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/TbRVFTXGUPU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>New Relic on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/new-relic/</link><description>Recent content in New Relic on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 14 May 2021 21:53:09 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/new-relic/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning how to use k6 live with Nočnica Fee from New Relic (k6 Office Hours)</title><link>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</link><pubDate>Fri, 14 May 2021 21:53:09 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210515-koh-nica/</guid><description>&lt;p>We were happy to welcome &lt;a href="https://www.twitch.tv/serverlessmom">Nočnica Fee&lt;/a> from &lt;a href="https://www.twitch.tv/new_relic">New Relic&lt;/a> to k6 Office Hours. She very bravely volunteered to learn how to use k6&amp;ndash; live! Talk about pressure. But she handled it like a champ!&lt;/p>
+&lt;p>We also talked about why observability is both particularly important and particularly difficult in serverless architecture. There will definitely be a part two at some point!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6oMmRiXzvFc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>How to get started with chaos engineering (k6 Office Hours)</title><link>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</link><pubDate>Fri, 30 Apr 2021 21:53:09 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210430-koh-pokemon/</guid><description>&lt;p>Recently, I&amp;rsquo;ve been learning more about chaos engineering. In this week&amp;rsquo;s k6 Office Hours, I shared my experience as a tester getting started with Kubernetes, chaos engineering with &lt;a href="https://github.com/simskij/xk6-chaos">xk6-chaos&lt;/a> and k6, and observability with &lt;a href="https://newrelic.com">New Relic&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gVwJZPo30rk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item><item><title>k6 Office Hours 02: Observability with New Relic</title><link>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</link><pubDate>Fri, 19 Feb 2021 23:24:58 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20210219-office-hours-02/</guid><description>&lt;p>For this week&amp;rsquo;s Office Hours, &lt;a href="https://simme.dev">Simme&lt;/a> and I invited &lt;a href="https://twitter.com/gspncr">Gary Spencer&lt;/a> from &lt;a href="https://newrelic.com">New Relic&lt;/a> to talk to us about why he&amp;rsquo;s recently started using k6, and why an observability platform like New Relic is the perfect companion for performance testing and observability.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TbRVFTXGUPU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div></description></item></channel></rss>

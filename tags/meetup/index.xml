@@ -1,29 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>meetup on Nicole van der Hoeven</title>
-    <link>https://nicolevanderhoeven.github.io/tags/meetup/</link>
-    <description>Recent content in meetup on Nicole van der Hoeven</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Nicole van der Hoeven</copyright>
-    <lastBuildDate>Thu, 26 Mar 2026 19:30:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Let There Be Dashboards: Introducing Grafana Assistant</title>
-      <link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link>
-      <pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate>
-      
-      <guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid>
-      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/grafana-friends-lisboa/events/313572885/&#34;&gt;Grafana &amp;amp; Friends Lisbon Meetup&lt;/a&gt; in Lisbon, Portugal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-01-presenting.jpg&#34; alt=&#34;Demoing Grafana Assistant to the Lisbon meetup&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-dashboard.png&#34; alt=&#34;Dashboard created during the demo using Grafana Assistant&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-02-audience.jpg&#34; alt=&#34;The Grafana &amp;amp; Friends Lisbon crowd&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Thanks to everyone who came out! It was great to connect with the Lisbon tech community.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-03-group.jpg&#34; alt=&#34;Group photo with the meetup attendees&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Meetup on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/meetup/</link><description>Recent content in Meetup on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 26 Mar 2026 19:30:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Let There Be Dashboards: Introducing Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link><pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid><description>&lt;p>I gave this talk at the &lt;a href="https://www.meetup.com/grafana-friends-lisboa/events/313572885/">Grafana &amp;amp; Friends Lisbon Meetup&lt;/a> in Lisbon, Portugal.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-01-presenting.jpg" alt="Demoing Grafana Assistant to the Lisbon meetup">&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-dashboard.png" alt="Dashboard created during the demo using Grafana Assistant">&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-02-audience.jpg" alt="The Grafana &amp;amp; Friends Lisbon crowd">&lt;/p>
+&lt;p>Thanks to everyone who came out! It was great to connect with the Lisbon tech community.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-03-group.jpg" alt="Group photo with the meetup attendees">&lt;/p></description></item></channel></rss>

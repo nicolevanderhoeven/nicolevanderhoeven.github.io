@@ -79,7 +79,55 @@
 &lt;p>If you&amp;rsquo;re an engineer picking a model for production: stop picking by leaderboard. Find or build an eval that reflects your actual use case. A handful of representative examples, graded the way you&amp;rsquo;d grade them if you were doing the work yourself, will tell you more than a dozen public benchmarks.&lt;/p>
 &lt;p>If you&amp;rsquo;re a researcher thinking about what to build next: the interesting work is at the specific-and-grounded end of the spectrum, not the general-and-bigger end. Another harder general-knowledge benchmark will saturate in eighteen months. A well-designed domain benchmark, co-built with the people who actually do the work, can stay useful for years.&lt;/p>
 &lt;p>And if you&amp;rsquo;re anyone else watching this field from the outside: be skeptical of the headlines. When a new model scores 94% on a benchmark you&amp;rsquo;ve never heard of, ask what it measures and whether the thing it measures is the thing you actually care about. Usually the answer is &amp;ldquo;not really,&amp;rdquo; and that&amp;rsquo;s the most important thing a benchmark score won&amp;rsquo;t tell you.&lt;/p>
-&lt;p>The goal of a character sheet was never to produce one number that ranks the character. It was to give a DM enough information to run a meaningful encounter — and to give the player enough to know when to try, when to pass, and when to roll with advantage. LLM evaluation should work the same way. Not a ranking; a readiness check. Can this specific model clear this specific challenge? Roll for initiative.&lt;/p></description></item><item><title>Unlearnings from building Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</link><pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</guid><description>&lt;p>Originally posted &lt;a href="https://open.substack.com/pub/contexthorizon/p/unlearnings-from-building-grafana?r=7xe6zg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true">here&lt;/a>&lt;/p>
+&lt;p>The goal of a character sheet was never to produce one number that ranks the character. It was to give a DM enough information to run a meaningful encounter — and to give the player enough to know when to try, when to pass, and when to roll with advantage. LLM evaluation should work the same way. Not a ranking; a readiness check. Can this specific model clear this specific challenge? Roll for initiative.&lt;/p></description></item><item><title>All About AI Observability (The Context Window #03)</title><link>https://nicolevanderhoeven.github.io/blog/20260422-context-window-03-ai-observability/</link><pubDate>Wed, 22 Apr 2026 18:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260422-context-window-03-ai-observability/</guid><description>&lt;p>In this episode of &lt;em>The Context Window&lt;/em> — Grafana&amp;rsquo;s livestream series on AI in observability — I&amp;rsquo;m joined by &lt;a href="https://www.linkedin.com/in/tiffanyjerniganm/">Tiffany Jernigan&lt;/a> and the engineers behind the product, &lt;a href="https://www.linkedin.com/in/alexandersniffin/">Alexander Sniffin&lt;/a> and &lt;a href="https://www.linkedin.com/in/jack-gordley/">Jack Gordley&lt;/a>, for a deep dive into AI Observability in Grafana Cloud. We unpack what it actually is (a new way to instrument your AI apps and see canonical data about them, sitting alongside your existing telemetry), what an evaluation is in this context (and the difference between online evals on live traffic and offline evals on dataset conversations), and we walk through real demos: setting up AI Observability and evaluators, the analytics view, instrumenting a local coding agent, and Jack&amp;rsquo;s system prompt analysis tool. We also talk about the things nobody else is talking about — like LLM-as-judge as a method, evaluators that catch the most bugs, and the cheating-LLM phenomenon.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vzygCuuf7JQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="timestamps">Timestamps&lt;/h2>
+&lt;ul>
+&lt;li>00:00:00 — Introductions&lt;/li>
+&lt;li>00:02:00 — The last month in AI news&lt;/li>
+&lt;li>00:11:09 — What is AI Observability in Grafana Cloud?&lt;/li>
+&lt;li>00:19:20 — What is an evaluation?&lt;/li>
+&lt;li>00:21:05 — The origin of AI Observability&lt;/li>
+&lt;li>00:25:09 — Demo: Setting up AI Observability and evaluators&lt;/li>
+&lt;li>00:32:04 — What is LLM as judge?&lt;/li>
+&lt;li>00:38:43 — Demo: AI Observability Analytics&lt;/li>
+&lt;li>00:40:52 — AI O11y is based on OpenTelemetry&lt;/li>
+&lt;li>00:42:17 — Demo: Instrumenting a local coding agent&lt;/li>
+&lt;li>00:47:18 — Potential future agentic use cases&lt;/li>
+&lt;li>00:52:00 — Evaluators that catch the most bugs&lt;/li>
+&lt;li>01:02:23 — Demo: System prompt analysis&lt;/li>
+&lt;li>01:05:11 — Guess the prompt&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;h3 id="news-from-the-episode">News from the episode&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.anthropic.com/news/claude-opus-4-7">Claude Opus 4.7 release&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://deepmind.google/models/gemma/gemma-4/">Gemma 4&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qwen.ai/blog?id=qwen3.6">Qwen 3.6&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/blog/o11y-bench-open-benchmark-for-observability-agents/">Introducing o11y-bench: an open benchmark for observability agents&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/">Updates to GitHub Copilot interaction data usage policy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gra.fan/gcon26">GrafanaCON 2026 announcements&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="ai-observability">AI Observability&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/ai-observability/">AI Observability docs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/ai-observability/introduction/#online-evaluation">Online evaluations on Grafana Cloud&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/ai-observability/introduction/#opentelemetry-integration">OpenTelemetry integration with AI Observability&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/sigil-sdk">The Sigil SDK&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="mentioned">Mentioned&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://opencode.ai">OpenCode&lt;/a> — the open-source coding agent Jack instruments&lt;/li>
+&lt;li>&lt;a href="https://www.anthropic.com/research/emotion-concepts-function">Anthropic: Emotion concepts and their function in a large language model&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://openclaw.ai">OpenClaw&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="related-reading">Related reading&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/high-int-low-wis-what-llm-benchmarks">My Context Horizon piece on benchmarks: &lt;em>High INT, Low WIS — What LLM benchmarks miss&lt;/em>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">My Context Horizon piece on Grafana Assistant: &lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unlearnings from building Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</link><pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</guid><description>&lt;p>Originally posted &lt;a href="https://open.substack.com/pub/contexthorizon/p/unlearnings-from-building-grafana?r=7xe6zg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true">here&lt;/a>&lt;/p>
 &lt;p>Everyone&amp;rsquo;s talking about what you need to &lt;em>learn&lt;/em> to build AI agents: Prompt engineering. Tool calling. Retrieval strategies. The content ecosystem is full of it. But while I was watching Context Window Episode 1, it struck me that Mat Ryer, Cyril Tovena, and Sven Großmann&amp;ndash; some of the team behind Grafana Assistant&amp;ndash; spent most of their time on something different: what they had to &lt;em>unlearn&lt;/em>.&lt;/p>
 &lt;p>Grafana Assistant started as a weekend hackathon project. By the time it shipped, the team had thrown out a popular framework, flipped their assumptions about tool design, and discovered that some of the instincts you bring from conventional software development actively work against you when you&amp;rsquo;re building agents.&lt;/p>
 &lt;p>I pulled out the ten moments where received wisdom turned out to be wrong. If you&amp;rsquo;re building anything agentic right now, these are worth sitting with.&lt;/p>

@@ -1,4 +1,171 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/</link><description>Recent content on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 30 Apr 2026 16:30:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Grafana k6 Community Call — Secrets Management &amp; AI Script Authoring</title><link>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</link><pubDate>Thu, 30 Apr 2026 16:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</guid><description>&lt;p>The first k6 Community Call in over a year, and we packed it. I sat down with four of the people building k6 — &lt;strong>Bukola Ayodele&lt;/strong>, &lt;strong>Facundo Batista&lt;/strong> (Software Engineer), &lt;strong>Vicente Ortega&lt;/strong> (Senior Backend Engineer), and &lt;strong>Charlie Burnett&lt;/strong> (Product Manager) — to walk through two new pieces of work that have shipped recently, plus a look at what&amp;rsquo;s coming in k6 v2.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/</link><description>Recent content on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 07 May 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>The Architecture of Forgetting</title><link>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</link><pubDate>Thu, 07 May 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</guid><description>&lt;p>Originally posted &lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting">here&lt;/a> on Context Horizon.&lt;/p>
+&lt;p>In early April, &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.5">a new version of everyone&amp;rsquo;s favourite lobster, OpenClaw, was shipped&lt;/a> with an interesting new feature: &lt;a href="https://docs.openclaw.ai/concepts/dreaming">dreaming&lt;/a>. It&amp;rsquo;s a memory consolidation feature. But to understand why it matters, we need to back up.&lt;/p>
+&lt;p>Early AI chatbots, like the initial GPT wrappers, had zero memory. Every conversation started fresh. You asked a question, you got an answer, and you moved on: a glorified search engine.&lt;/p>
+&lt;p>Somewhere along the way we began to expect more and more of our chatbots. Models acquired context windows that became their de facto short-term memory. As the context window filled up, they remembered what had been said earlier in the conversation, making them better conversational partners. Still, it was ephemeral: close the tab, start fresh. And it had a hard ceiling: hit the limit, and the oldest things fall off. This felt like forgetting because &lt;em>it was&lt;/em>. But it was also, accidentally, a form of curation. Finite space forced priority.&lt;/p>
+&lt;p>Then came the push for real persistence. RAG pipelines, vector databases, memory files, agent frameworks that write notes to themselves. Now our agents can remember that we prefer the Oxford comma, that we just started a new project at work, that our D&amp;amp;D character is named Zuhri. This felt like the solution. More memory = better agent.&lt;/p>
+&lt;p>That mostly works— until it doesn&amp;rsquo;t.&lt;/p>
+&lt;p>As it turns out, the problem with AI memory isn&amp;rsquo;t that agents forget too much. It&amp;rsquo;s that &lt;strong>they forget too little&lt;/strong>.&lt;/p>
+&lt;h2 id="why-remembering-is-hard">Why remembering is hard&lt;/h2>
+&lt;p>It turns out that having a persistent memory, even for an agent like OpenClaw that has that as one of its defining features, doesn&amp;rsquo;t solve all the memory problems.&lt;/p>
+&lt;p>I happen to have an OpenClaw agent that named itself Iris.&lt;/p>
+&lt;p>Iris does a lot of things for me, including parsing my meeting notes to identify next actions, curating my tasks and projects, and generating a daily briefing. She also creates a summary of the day&amp;rsquo;s work based on my meetings, conversations, and notes. One day she was giving me the daily summary, and here&amp;rsquo;s that conversation:&lt;/p>
+&lt;blockquote>
+&lt;p>Iris: &amp;hellip;Tonsil is finally healed after weeks of pain&amp;hellip;
+Me: Wait what? Where did you get the tonsil stuff?
+Iris: From your memory file — it&amp;rsquo;s in the Apr 10 daily note context: &amp;ldquo;Tonsil finally healed — Nicole no longer in pain 🎉&amp;rdquo;. I&amp;rsquo;ve had that sitting in memory since the Apr 10 summary. Is that wrong? Was it something else that healed, or is the tonsil detail off?
+Me: I have no idea where you got that. I have never had issues with my tonsil.&lt;/p>&lt;/blockquote>
+&lt;p>Where did that come from? I&amp;rsquo;m still not sure, but I occasionally have meetings in cafés, and it&amp;rsquo;s possible that a meeting recording overheard the conversation of someone else in the café. That got faithfully transcribed, copied over into my notes, and written into Iris&amp;rsquo;s memory. Iris treated it as fact for days.&lt;/p>
+&lt;p>The problem isn&amp;rsquo;t that Iris forgot. It&amp;rsquo;s that she remembered the wrong thing&amp;hellip; and didn&amp;rsquo;t know how to forget it.&lt;/p>
+&lt;p>Imagine this at scale: not one wrong fact, but dozens, quietly shaping every summary, every recommendation, every task Iris surfaces for me. The signal-to-noise ratio degrades until it doesn&amp;rsquo;t matter if Iris remembers mostly accurate memories— I won&amp;rsquo;t trust it.&lt;/p>
+&lt;p>So how do you build a memory system that knows what to keep? Researchers have been working on this longer than you might think.&lt;/p>
+&lt;h2 id="meet-the-residents-of-smallville">Meet the residents of Smallville&lt;/h2>
+&lt;p>Stanford researchers Park et al. &lt;a href="https://arxiv.org/abs/2304.03442">released a charming study in 2023&lt;/a> called &lt;em>Generative Agents: Interactive Simulacra of Human Behavior&lt;/em> in which they talk about how they created a simulated environment called Smallville, populated it with 25 generative agents, and then watched.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-smallville.png" alt="Smallville, a simulated environment populated with 25 generative agents">
+&lt;em>Source: Park et al. (2023)&lt;/em>&lt;/p>
+&lt;p>The study was an attempt to simulate emergent social behavior, but the key insight I took from it isn&amp;rsquo;t the sim itself— it&amp;rsquo;s what they had to do to the inhabitants of Smallville to enable the rich social interactions they wanted to observe.&lt;/p>
+&lt;p>The researchers had to give the inhabitants a way to remember.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-smallville-memory-architecture.png" alt="The memory architecture of Smallville&amp;rsquo;s generative agents — observation, retrieval, action, and reflection">&lt;/p>
+&lt;p>Above is a diagram of the memory architecture of every generative agent.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Observation:&lt;/em> The agent perceives new information. The new information is saved into the &lt;em>memory stream&lt;/em>, a database that serves as the record of everything an agent has experienced.&lt;/li>
+&lt;li>&lt;em>Retrieval:&lt;/em> When the agent is looking for information, a retrieval function takes that information from the memory stream and passes it onto the agent.&lt;/li>
+&lt;li>&lt;em>Action:&lt;/em> The agent, armed with retrieved information, can decide to act.&lt;/li>
+&lt;li>&lt;em>Reflection:&lt;/em> Patterns are synthesized from the observations and written back to the memory stream.&lt;/li>
+&lt;/ul>
+&lt;p>To determine which memories to retrieve at any given point in time, the researchers scored memories according to three weighted factors:&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Recency:&lt;/em> when a memory was observed&lt;/li>
+&lt;li>&lt;em>Importance:&lt;/em> how significant the memory was&lt;/li>
+&lt;li>&lt;em>Relevance:&lt;/em> how closely related a memory is to the input memory (the agent&amp;rsquo;s current context)&lt;/li>
+&lt;/ul>
+&lt;p>The top-ranking memories that fit within the agent&amp;rsquo;s context window were selected to be retrieved and used with the prompt.&lt;/p>
+&lt;p>The researchers also introduced a second type of memory: reflection. Reflections were generated when a threshold of important scores was reached per day, which typically happened 2-3 times a day.&lt;/p>
+&lt;p>Crucially, reflection is a &lt;em>compression&lt;/em> step — the agent doesn&amp;rsquo;t just accumulate observations, it periodically steps back and asks &amp;ldquo;what do these observations actually mean?&amp;rdquo; That reflection pass is where low-signal memories get subordinated to higher-order patterns. That&amp;rsquo;s the first instance of intelligent forgetting.&lt;/p>
+&lt;p>The Smallville paper was published in 2023. Three years later, the same insight shipped in a lobster.&lt;/p>
+&lt;h2 id="dreaming-of-electric-lobsters">Dreaming of electric lobsters&lt;/h2>
+&lt;p>Every system that has solved the memory problem has solved it the same way: not by storing more, but by knowing what to throw away.&lt;/p>
+&lt;p>Your brain does it while you sleep by consolidating important experiences into long-term memory, letting the rest dissolve. Some programming languages do it with garbage collection, periodically scanning for unused objects and reclaiming that space. Databases do it with compaction: Loki, Cassandra, and other LSM-tree-inspired systems periodically merge and discard obsolete data so reads stay fast.&lt;/p>
+&lt;p>In all cases, the architecture of good memory is really the architecture of intelligent forgetting. OpenClaw&amp;rsquo;s dreaming feature is the same insight applied to agents.&lt;/p>
+&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-architecture-of-forgetting-dreaming.svg" alt="Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;).">
+&lt;em>Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;).&lt;/em>&lt;/p>
+&lt;p>Note that without dreaming, there is no automatic promotion from the active context window to daily notes and then to long-term memory. When a new bit of information is mentioned, the agent has to decide whether it should be added to the daily note and/or the long-term memory file manually. Dreaming, by contrast, is an automated process.&lt;/p>
+&lt;p>It&amp;rsquo;s called &amp;ldquo;Dreaming&amp;rdquo; because the feature works similarly to the biological process, as if in three sleep phases:&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Light phase:&lt;/em> Creates a session corpus from session files and then succeeding sweeps tally how many times a chunk has been recalled in a session (a counter called &lt;code>lightHit&lt;/code>).&lt;/li>
+&lt;li>&lt;em>REM phase:&lt;/em> Spots patterns and themes from chunks and adds a reinforcement signal (&lt;code>remHits&lt;/code>).&lt;/li>
+&lt;li>&lt;em>Deep phase:&lt;/em> Ranks the candidates by several factors and promotes those that exceed a threshold score to long-term memory in &lt;code>MEMORY.md&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>Just like in the Smallville simulation, OpenClaw ranks information by several categories. Here&amp;rsquo;s the table of signals and weights from the &lt;a href="https://docs.openclaw.ai/concepts/dreaming#deep-ranking-signals">OpenClaw docs&lt;/a> at the time of writing:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Signal&lt;/th>
+&lt;th>Weight&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Frequency&lt;/td>
+&lt;td>0.24&lt;/td>
+&lt;td>How many short-term signals the entry accumulated&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Relevance&lt;/td>
+&lt;td>0.30&lt;/td>
+&lt;td>Average retrieval quality for the entry&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Query diversity&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;td>Distinct query/day contexts that surfaced it&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Recency&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;td>Time-decayed freshness score&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Consolidation&lt;/td>
+&lt;td>0.10&lt;/td>
+&lt;td>Multi-day recurrence strength&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conceptual richness&lt;/td>
+&lt;td>0.06&lt;/td>
+&lt;td>Concept-tag density from snippet/path&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Only candidates that have high scores according to these signals graduate to be part of &lt;code>MEMORY.md&lt;/code>.&lt;/p>
+&lt;h3 id="how-dreaming-helps-with-forgetting">How dreaming helps with forgetting&lt;/h3>
+&lt;p>The new dreaming architecture doesn&amp;rsquo;t ever &lt;em>delete&lt;/em> things, technically. The forgetting is more passive. However, it&amp;rsquo;s still an improvement in a few ways:&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Low-signal chunks don&amp;rsquo;t get promoted:&lt;/em> Anything that doesn&amp;rsquo;t cross the deep phase thresholds simply never reaches MEMORY.md. It exists, but it&amp;rsquo;s functionally invisible to future sessions.&lt;/li>
+&lt;li>&lt;em>Score competition:&lt;/em> The staging index has finite attention, so chunks compete against each other for recall signal. A high-frequency chunk that keeps getting surfaced crowds out low-frequency ones. Relative obscurity is functional forgetting.&lt;/li>
+&lt;li>&lt;em>Recency decay on scoring:&lt;/em> The deep phase ranking includes a recency signal. So something that was frequently recalled two weeks ago but hasn&amp;rsquo;t come up since will score lower than something with fewer total hits but recent activity. Time degrades relevance passively.&lt;/li>
+&lt;/ul>
+&lt;p>What&amp;rsquo;s notable: all three are selection mechanisms, not deletion mechanisms. The corpus files still exist. The staging index entries still exist. Nothing is removed&amp;hellip; it&amp;rsquo;s just progressively less likely to be chosen. This is forgetting as diminishing probability of retrieval, not erasure.&lt;/p>
+&lt;p>That&amp;rsquo;s the garbage collection analogy again: the objects are still in memory, they&amp;rsquo;re just unreachable.&lt;/p>
+&lt;h3 id="transparency">Transparency&lt;/h3>
+&lt;p>Dreaming also adds a layer of transparency. Aside from the session corpus and staging files, it also produces some output about its decisions. All three dreaming stages create files per day that live in &lt;code>.openclaw/workspace/memory/dreaming/{phase}/YYYY-MM-DD.md&lt;/code>.&lt;/p>
+&lt;p>Here&amp;rsquo;s an example of an entry in the &lt;code>light&lt;/code> directory:&lt;/p>
+&lt;pre tabindex="0">&lt;code># Light Sleep
+- Candidate: &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): `Dont Call It Eval - Blog Post Outline.md` — full outline with 7 open questions; `Dont Call It Eval - Draft.md` — 2,550-word draft, 6 sections; `Dont Call It Eval - Opening Research.md` — Tier 1/2/3 shortlist of popular AI eval po
+- confidence: 0.62
+- evidence: memory/2026-04-19.md:13-15
+- recalls: 0
+- status: staged
+- Candidate: &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Thesis (locked):** &amp;#34;AI eval community has rediscovered software testing and given it a new name. The testing world has been busy since.&amp;#34;
+- confidence: 0.62
+- evidence: memory/2026-04-19.md:17-17
+- recalls: 0
+- status: staged
+&lt;/code>&lt;/pre>&lt;p>This entry identified a blog draft I was working on.&lt;/p>
+&lt;p>REM sleep goes through these candidates and highlights when it spots themes:&lt;/p>
+&lt;pre tabindex="0">&lt;code># REM Sleep
+### Reflections
+- Theme: `assistant` kept surfacing across 532 memories.
+- confidence: 1.00
+- evidence: memory/2026-04-12.md:27-29, memory/.dreams/session-corpus/2026-04-17.txt:26-26, memory/.dreams/session-corpus/2026-04-17.txt:28-28
+- note: reflection
+### Possible Lasting Truths
+- &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Datadog Bits AI eval platform** (Apr 7, 2026) — &amp;#34;Bring the noise&amp;#34; = noise injection = production-like envs from 90s QA. SECTION HEADERS are gold (&amp;#34;When one improvement caused subtle regressions&amp;#34;, &amp;#34;Why tool-level testing and live [confidence=0.58 evidence=memory/2026-04-19.md:30-33]
+- &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Thesis (locked):** &amp;#34;AI eval community has rediscovered software testing and given it a new name. The testing world has been busy since.&amp;#34; [confidence=0.58 evidence=memory/2026-04-19.md:17-17]
+- &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Title:** &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; (Nicole&amp;#39;s original; I picked it over &amp;#34;Congratulations, you&amp;#39;ve invented testing&amp;#34;) [confidence=0.58 evidence=memory/2026-04-19.md:27-27]
+&lt;/code>&lt;/pre>&lt;p>In this case, REM sleep correctly identified that I&amp;rsquo;m currently working on the &lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/assistant/">Assistant&lt;/a> feature at work (which had already been promoted to long-term memory) and the blog post that the light sleep phase had identified.&lt;/p>
+&lt;p>Here&amp;rsquo;s the same day&amp;rsquo;s deep sleep file:&lt;/p>
+&lt;pre tabindex="0">&lt;code># Deep Sleep
+- Ranked 10 candidate(s) for durable promotion.
+- Promoted 3 candidate(s) into MEMORY.md.
+&lt;/code>&lt;/pre>&lt;p>And here&amp;rsquo;s the addition to &lt;code>MEMORY.md&lt;/code> for the same day:&lt;/p>
+&lt;pre tabindex="0">&lt;code>## Promoted From Short-Term Memory (2026-04-26)
+&amp;lt;!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:17:17 --&amp;gt;
+- **Thesis (locked):** &amp;#34;AI eval community has rediscovered software testing and given it a new name. The testing world has been busy since.&amp;#34; [score=0.926 recalls=0 avg=0.620 source=memory/2026-04-19.md:17-17]
+&amp;lt;!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:27:27 --&amp;gt;
+- **Title:** &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; (Nicole&amp;#39;s original; I picked it over &amp;#34;Congratulations, you&amp;#39;ve invented testing&amp;#34;) [score=0.926 recalls=0 avg=0.620 source=memory/2026-04-19.md:27-27]
+&amp;lt;!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:12:12 --&amp;gt;
+- Three files in openclaw-output: [score=0.894 recalls=0 avg=0.620 source=memory/2026-04-19.md:12-12]
+&lt;/code>&lt;/pre>&lt;p>There&amp;rsquo;s also an entry in &lt;code>DREAMS.md&lt;/code> for the entire sequence, which is more dreamlike and human-readable. The per-day Deep Sleep file is the structured internal audit trail; &lt;code>DREAMS.md&lt;/code> is the rolling, more narrative log for humans.&lt;/p>
+&lt;p>This level of transparency and reflection is a welcome change when you compare it to what I had before, which was nothing. Iris had to manually decide on the spot what had to be written where, and those decisions were not logged anywhere.&lt;/p>
+&lt;h2 id="the-tonsil-dilemma">The tonsil dilemma&lt;/h2>
+&lt;p>So dreaming could have prevented the tonsil hallucination, right? Well&amp;hellip; no.&lt;/p>
+&lt;p>In this case, the idea of my supposed tonsil pain had come from an external source: my meeting recordings. Iris had faithfully manually added that to the daily note for the day, then decided to call on it a few days later, unprompted, in conversation with me.&lt;/p>
+&lt;p>With dreaming, Iris still could have made those decisions. But in fact, even if she hadn&amp;rsquo;t, dreaming could have made it &lt;em>worse&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>Light phase sweeps it and scores it well since it&amp;rsquo;s recent and distinctive.&lt;/li>
+&lt;li>Tonsil pain could be included in queries about health, such as the daily health tracker that is part of Iris&amp;rsquo;s tasks. REM phase sees a pattern and increments &lt;code>remHits&lt;/code>.&lt;/li>
+&lt;li>Deep phase ranks it highly and it crosses the promotion threshold.&lt;/li>
+&lt;li>It gets written to &lt;code>MEMORY.md&lt;/code> and gets loaded &lt;em>every session&lt;/em>. And long-term memory is sticky. Only manual intervention (by me or by Iris) removes things from that file.&lt;/li>
+&lt;/ul>
+&lt;p>Even dreaming doesn&amp;rsquo;t solve everything. Dreaming adds a mechanism for forgetting. It doesn&amp;rsquo;t prevent OpenClaw from remembering the wrong things in the first place.&lt;/p>
+&lt;h3 id="the-residual-layer">The residual layer&lt;/h3>
+&lt;p>Every memory architecture we&amp;rsquo;ve looked at — biological sleep consolidation, garbage collection, LSM compaction, Smallville&amp;rsquo;s reflection pass, OpenClaw&amp;rsquo;s dreaming — has the same shape: automated compression plus a residual human layer. Your brain has you. GC has the programmer. Iris&amp;rsquo;s dreaming has me. The human in the loop isn&amp;rsquo;t a bug in the design; it&amp;rsquo;s load-bearing.&lt;/p>
+&lt;h2 id="whats-worth-keeping">What&amp;rsquo;s worth keeping&lt;/h2>
+&lt;p>Dreaming is a genuine step forward for OpenClaw&amp;rsquo;s memory architecture. The mechanism of passive forgetting isn&amp;rsquo;t perfect, but the automated promotion systems do add a necessary layer of periodic reflection.&lt;/p>
+&lt;p>But there are limitations. Dreaming can&amp;rsquo;t yet distinguish between a memory worth keeping and a hallucinated tonsil. It can only measure how often something gets recalled. The next frontier is &lt;em>active forgetting&lt;/em>: automated demotion from &lt;code>MEMORY.md&lt;/code>, weighted by signals like source provenance and trust. The provenance side of that work landed in &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.29-beta.2">v2026.4.29-beta.2&lt;/a> — memory now exposes evidence-kind drilldown and privacy/provenance reports, so you can at least &lt;em>see&lt;/em> where a memory came from. But the demotion half — automatically down-ranking memories based on a low-trust source like an audio transcript — still hasn&amp;rsquo;t been built.&lt;/p>
+&lt;p>What remains, for now, is the human layer. The transparency of the dreaming process becomes a checkpoint for the human in the loop by surfacing promotion decisions. I still read the summaries. I still catch the errors. I still decide what goes into long-term memory and what gets quietly corrected. That&amp;rsquo;s not a gap in the system — it&amp;rsquo;s probably the right design. The most important memories should require a human to notice them twice.&lt;/p>
+&lt;p>Good memory systems are defined by what they &lt;em>don&amp;rsquo;t&lt;/em> keep as much as by what they &lt;em>do&lt;/em> keep.&lt;/p></description></item><item><title>Grafana k6 Community Call — Secrets Management &amp; AI Script Authoring</title><link>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</link><pubDate>Thu, 30 Apr 2026 16:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</guid><description>&lt;p>The first k6 Community Call in over a year, and we packed it. I sat down with four of the people building k6 — &lt;strong>Bukola Ayodele&lt;/strong>, &lt;strong>Facundo Batista&lt;/strong> (Software Engineer), &lt;strong>Vicente Ortega&lt;/strong> (Senior Backend Engineer), and &lt;strong>Charlie Burnett&lt;/strong> (Product Manager) — to walk through two new pieces of work that have shipped recently, plus a look at what&amp;rsquo;s coming in k6 v2.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mYpnaE_J2lM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div>

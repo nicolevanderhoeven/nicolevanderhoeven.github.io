@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>English on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/english/</link><description>Recent content in English on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 07 May 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml"/><item><title>The Architecture of Forgetting</title><link>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</link><pubDate>Thu, 07 May 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</guid><description>&lt;p>Originally posted &lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting">here&lt;/a> on Context Horizon.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>English on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/english/</link><description>Recent content in English on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Mon, 18 May 2026 07:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/english/index.xml" rel="self" type="application/rss+xml"/><item><title>Do Androids Dream of Second Brains?</title><link>https://nicolevanderhoeven.github.io/blog/20260518-do-androids-dream-of-second-brains-video/</link><pubDate>Mon, 18 May 2026 07:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260518-do-androids-dream-of-second-brains-video/</guid><description>&lt;p>We often describe our personal knowledge management systems as &amp;ldquo;second brains&amp;rdquo; — but can we really say they think for themselves? In this video, I make the case for instrumenting your vault with an observability stack and layering AI on top, not because it&amp;rsquo;ll turn your notes into a brain, but because it might get us closer than anything else has.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BeuaPO0Ezuk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>This is the video version of the talk I gave at &lt;a href="https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/">PKM Summit 2026&lt;/a> in Utrecht earlier this year, with the live demos cleaner and the dashboards working without the conference wifi gods getting in the way.&lt;/p>
+&lt;h2 id="what-i-cover">What I cover&lt;/h2>
+&lt;h3 id="-why-second-brain-is-the-wrong-framing">🐑 Why &amp;ldquo;second brain&amp;rdquo; is the wrong framing&lt;/h3>
+&lt;p>I take a small detour through Philip K. Dick&amp;rsquo;s &lt;em>Do Androids Dream of Electric Sheep?&lt;/em> — the inspiration for &lt;em>Blade Runner&lt;/em> — and the Voigt-Kampff test, which measures empathy through observed responses to staged scenarios. It&amp;rsquo;s a useful lens for asking what we actually mean when we say a knowledge system &amp;ldquo;thinks&amp;rdquo;: we&amp;rsquo;re really asking whether it can respond to us in a way that surprises us. Most second-brain setups can&amp;rsquo;t, yet.&lt;/p>
+&lt;h3 id="-observability-for-pkm">📊 Observability for PKM&lt;/h3>
+&lt;p>Observability is a concept I&amp;rsquo;ve borrowed wholesale from how we monitor software systems — the idea that you can understand a complex system by what it emits, not by reading its internals. Three steps: instrumentation, analysis, improvement. I walk through what each one looks like for a personal vault:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Instrumentation&lt;/strong>: a small script that emits metrics about my Obsidian vault — note counts, link density, growth over time, what folders are loud and which are quiet&lt;/li>
+&lt;li>&lt;strong>Analysis&lt;/strong>: a Grafana dashboard sitting on top of Loki + Prometheus, surfacing things I genuinely didn&amp;rsquo;t know about my own vault&lt;/li>
+&lt;li>&lt;strong>Improvement&lt;/strong>: the part where seeing the data actually changes how you work&lt;/li>
+&lt;/ul>
+&lt;p>There&amp;rsquo;s a live dashboard tour, and a section where I ask &lt;strong>Grafana Assistant&lt;/strong> to edit the dashboard for me in natural language — including writing the PromQL queries I never want to write by hand.&lt;/p>
+&lt;h3 id="-meet-iris">👁️ Meet Iris&lt;/h3>
+&lt;p>About halfway through the video I introduce &lt;strong>Iris&lt;/strong> — the AI agent I built using &lt;a href="https://openclaw.ai">OpenClaw&lt;/a> that lives in my vault, reads my notes, and works alongside me. I walk through:&lt;/p>
+&lt;ul>
+&lt;li>What &amp;ldquo;agentic AI&amp;rdquo; actually means in practice (vs. just chatting with an LLM)&lt;/li>
+&lt;li>The OpenClaw setup — Docker sandbox, Syncthing, the whole pipeline&lt;/li>
+&lt;li>Iris rewriting my observability map of content&lt;/li>
+&lt;li>Iris doing talk-topic analysis on my vault&lt;/li>
+&lt;li>Iris running benchmark research for a blog post&lt;/li>
+&lt;li>Iris OCRing my reMarkable handwriting&lt;/li>
+&lt;/ul>
+&lt;h3 id="-dreaming">🌙 Dreaming&lt;/h3>
+&lt;p>The last section is the one I had the most fun with. I argue that the thing most second-brain setups are missing isn&amp;rsquo;t &lt;em>more notes&lt;/em> or &lt;em>better search&lt;/em> — it&amp;rsquo;s &lt;strong>synthesis&lt;/strong>. The capacity to take everything you&amp;rsquo;ve captured and surface patterns, contradictions, and ideas you hadn&amp;rsquo;t formed yet.&lt;/p>
+&lt;p>I introduce OpenClaw&amp;rsquo;s &lt;em>dreaming&lt;/em> feature: a memory consolidation process inspired by how sleep stages work in the brain. Light sleep, REM, and deep sleep each do different work — surfacing recent material, finding unexpected connections, and consolidating long-term memory. I show how each phase actually behaves in my own system.&lt;/p>
+&lt;p>And there&amp;rsquo;s a Zhuangzi reference. (You&amp;rsquo;ll see.)&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>🎤 &lt;a href="https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/">PKM Summit 2026 talk recap (with photos)&lt;/a>&lt;/li>
+&lt;li>🎞 &lt;a href="https://nicole.to/androids">Slides&lt;/a>&lt;/li>
+&lt;li>👁️ &lt;a href="https://openclaw.ai">OpenClaw&lt;/a>&lt;/li>
+&lt;li>📓 &lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/li>
+&lt;li>🔄 &lt;a href="https://syncthing.net">Syncthing&lt;/a>&lt;/li>
+&lt;li>📊 &lt;a href="https://grafana.com">Grafana&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="related-reading">Related reading&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting">&lt;em>The Architecture of Forgetting&lt;/em>&lt;/a> — the essay version of why memory consolidation matters&lt;/li>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">&lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>If you want to follow more of how Iris works and what I&amp;rsquo;m learning about AI + PKM, &lt;a href="https://contexthorizon.substack.com">Context Horizon&lt;/a> is where I write about it.&lt;/p></description></item><item><title>The Architecture of Forgetting</title><link>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</link><pubDate>Thu, 07 May 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</guid><description>&lt;p>Originally posted &lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting">here&lt;/a> on Context Horizon.&lt;/p>
 &lt;p>In early April, &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.5">a new version of everyone&amp;rsquo;s favourite lobster, OpenClaw, was shipped&lt;/a> with an interesting new feature: &lt;a href="https://docs.openclaw.ai/concepts/dreaming">dreaming&lt;/a>. It&amp;rsquo;s a memory consolidation feature. But to understand why it matters, we need to back up.&lt;/p>
 &lt;p>Early AI chatbots, like the initial GPT wrappers, had zero memory. Every conversation started fresh. You asked a question, you got an answer, and you moved on: a glorified search engine.&lt;/p>
 &lt;p>Somewhere along the way we began to expect more and more of our chatbots. Models acquired context windows that became their de facto short-term memory. As the context window filled up, they remembered what had been said earlier in the conversation, making them better conversational partners. Still, it was ephemeral: close the tab, start fresh. And it had a hard ceiling: hit the limit, and the oldest things fall off. This felt like forgetting because &lt;em>it was&lt;/em>. But it was also, accidentally, a form of curation. Finite space forced priority.&lt;/p>

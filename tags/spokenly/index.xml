@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spokenly on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/spokenly/</link><description>Recent content in Spokenly on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 29 May 2026 17:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/spokenly/index.xml" rel="self" type="application/rss+xml"/><item><title>My AI note-taking workflows</title><link>https://nicolevanderhoeven.github.io/blog/20260529-my-ai-notetaking-workflows/</link><pubDate>Fri, 29 May 2026 17:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260529-my-ai-notetaking-workflows/</guid><description>&lt;p>Just over a year ago, if you&amp;rsquo;d asked me how I felt about AI and note-taking, I would have told you I didn&amp;rsquo;t want AI anywhere near my notes. The world is different now, and so am I — I rely on AI in a lot of ways, and one of the easiest places to start is speech-to-text: using AI to convert my voice into something my &lt;a href="https://nicolevanderhoeven.github.io/blog/">PKM&lt;/a> system can actually work with.&lt;/p>
+&lt;p>In this video, I walk through &lt;strong>three tiers of AI note-taking workflows&lt;/strong> — free, paid, and (a little) overkill — and show what I&amp;rsquo;m using at each level.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2Jl6H9Ri8iI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="the-framing-note-taking-vs-note-making">The framing: note-taking vs. note-making&lt;/h2>
+&lt;p>&lt;a href="https://www.youtube.com/@LinkingYourThinking">Nick Milo&lt;/a> draws a useful distinction between note-&lt;em>taking&lt;/em> and note-&lt;em>making&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Note-taking&lt;/strong> is collecting — recording information, paraphrasing what an author said, highlighting.&lt;/li>
+&lt;li>&lt;strong>Note-making&lt;/strong> is connecting — active thinking, engaging with the information, linking it to other ideas, working out how it fits into your PKM system.&lt;/li>
+&lt;/ul>
+&lt;p>The best use of AI right now, for me, is to help with the note-taking part. I like to start with speech because speech used to be a form of input my PKM system couldn&amp;rsquo;t take very much of. Pre-AI, voice was lossy — you&amp;rsquo;d have to transcribe it yourself or lose the thought. Now: you speak, AI transcribes it, it lands in your notes, and the AI can keep working with it from there.&lt;/p>
+&lt;h2 id="tier-1--free">Tier 1 — Free&lt;/h2>
+&lt;p>Use your phone&amp;rsquo;s recording app. iOS Voice Memos transcribes recordings, and the Notes app does too on newer Apple devices. Samsung&amp;rsquo;s Voice Recorder app does the same on Galaxy devices. For desktop, I demo &lt;a href="https://spokenly.app/">Spokenly&lt;/a> (Mac, Windows, iOS) — drop audio in, get text out.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>The friction is manual:&lt;/strong> remember to record, remember to transcribe, remember to paste.&lt;/li>
+&lt;li>&lt;strong>What you get:&lt;/strong> quick notes to yourself, captured instantly.&lt;/li>
+&lt;li>&lt;strong>Best for:&lt;/strong> people who want to get started as easily as possible without paying for anything.&lt;/li>
+&lt;/ul>
+&lt;p>If you want to go local-first, I&amp;rsquo;d point you at &lt;a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2">NVIDIA Parakeet&lt;/a> and the &lt;a href="https://huggingface.co/Qwen">Qwen&lt;/a> models for offline transcription.&lt;/p>
+&lt;h2 id="tier-2--paid">Tier 2 — Paid&lt;/h2>
+&lt;p>The second tier is paying for the convenience layer. These tools collapse the first two steps — you record, the transcript appears, and you usually get extras like AI summaries or the ability to ask questions of the transcript (sometimes live).&lt;/p>
+&lt;p>Tools: &lt;a href="https://voicenotes.com">Voicenotes&lt;/a>, &lt;a href="https://otter.ai">Otter.ai&lt;/a>, &lt;a href="https://letterly.app">Letterly&lt;/a>, &lt;a href="https://www.granola.ai">Granola&lt;/a>, &lt;a href="https://gemini.google.com">Gemini&lt;/a> on Google Meet, &lt;a href="https://www.zoom.com/en/ai-assistant/">Zoom AI Companion&lt;/a>.&lt;/p>
+&lt;p>For Granola specifically, I use the &lt;a href="https://github.com/tomelliot/obsidian-granola-sync">Granola Sync Obsidian plugin&lt;/a> plus a &lt;a href="https://github.com/chhoumann/quickadd">QuickAdd&lt;/a> macro (&lt;code>QuickAdd: Macro - Link Granola&lt;/code>) to automatically link a transcript to the right note in my vault — in the video I link a &lt;a href="https://www.youtube.com/@Bookborn">Dungeon Crawler Carl&lt;/a> recap to its Granola transcript. &lt;em>(The linking script and macro are on my &lt;a href="https://patreon.com/nicolevdh">Patreon&lt;/a>.)&lt;/em>&lt;/p>
+&lt;p>&lt;strong>Tradeoffs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Your notes live in their system, not yours. Shutdowns, pricing changes, and acquisitions all take your archive with them.&lt;/li>
+&lt;li>The friction reduction is real, though — if it means you actually capture instead of &lt;em>intending&lt;/em> to capture, that&amp;rsquo;s worth a lot.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Best for:&lt;/strong> people who want to capture meetings, games, or lectures.&lt;/p>
+&lt;h2 id="tier-3--overkill">Tier 3 — Overkill&lt;/h2>
+&lt;p>This is my setup. It&amp;rsquo;s a little ridiculous; I&amp;rsquo;m going to show it anyway.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hardware:&lt;/strong> a &lt;a href="https://plaudus.sjv.io/MA4GQN">Plaud&lt;/a> AI recorder. Small, clips to my phone or sits in a pocket. Always running, or started deliberately for important conversations and walks. It can run entirely locally, or upload to Plaud&amp;rsquo;s servers.&lt;/li>
+&lt;li>&lt;strong>Plugin:&lt;/strong> &lt;a href="https://github.com/nicolevanderhoeven/plaud-sync-for-obsidian">my fork&lt;/a> of &lt;a href="https://github.com/leonardsellem/plaud-sync-for-obsidian">Leonard Sellem&amp;rsquo;s Plaud Sync plugin for Obsidian&lt;/a>, installed via &lt;a href="https://github.com/tfthacker/obsidian42-brat">BRAT&lt;/a>. The fork adds a couple of things I needed for my own daily workflow.&lt;/li>
+&lt;li>&lt;strong>AI layer:&lt;/strong> &lt;a href="https://openclaw.ai">Iris&lt;/a>, my &lt;a href="https://openclaw.ai">OpenClaw&lt;/a>-powered AI agent, watches the synced files. Every morning she reads the previous day&amp;rsquo;s transcripts, plus my calendar and daily notes, and outputs a daily summary, extracted tasks, and flags anything I&amp;rsquo;ve said I wanted to remember.&lt;/li>
+&lt;/ul>
+&lt;p>I also use &lt;strong>&amp;ldquo;Hey Iris&amp;rdquo; memos&lt;/strong> — voice notes I record into Plaud while I&amp;rsquo;m out, addressed to Iris, that she processes the next time she runs. &lt;em>&amp;ldquo;Hey Iris, remind me to follow up with X.&amp;rdquo;&lt;/em> &lt;em>&amp;ldquo;Hey Iris, add this restaurant to my places-to-try list.&amp;rdquo;&lt;/em> They land in my system without me opening anything.&lt;/p>
+&lt;p>&lt;strong>Benefits:&lt;/strong> I don&amp;rsquo;t think about capture at all. I just live and talk, and the relevant pieces land in my notes.&lt;/p>
+&lt;p>&lt;strong>Cons:&lt;/strong> the privacy of people around me. I&amp;rsquo;m careful about when this is on, and especially careful about explicit consent.&lt;/p>
+&lt;h2 id="why-three-tiers-not-one">Why three tiers, not one&lt;/h2>
+&lt;p>The slightly absurd thing is that I still use all three levels — in parallel, for different things:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Spokenly&lt;/strong> for dictating at my desk, sometimes straight into Obsidian, sometimes into a chat.&lt;/li>
+&lt;li>&lt;strong>Granola&lt;/strong> for meeting notes, and increasingly for transcribing videos I&amp;rsquo;m watching.&lt;/li>
+&lt;li>&lt;strong>Voicenotes&lt;/strong> for diary-style entries.&lt;/li>
+&lt;li>&lt;strong>Plaud&lt;/strong> when it&amp;rsquo;s ethical to (especially when I&amp;rsquo;m travelling with my partner and I want a clean record of conversations and ideas we had on the move).&lt;/li>
+&lt;/ul>
+&lt;p>For me, voice is the &lt;strong>lowest-friction capture method that exists&lt;/strong>. No stopping, no finding my phone, no opening an app, no typing. Just talk — and the system handles everything downstream.&lt;/p>
+&lt;p>That means the gap between &lt;em>thinking of something&lt;/em> and &lt;em>writing it down&lt;/em> is basically gone for me. Note-&lt;em>taking&lt;/em> — the tedious part — gets offloaded. So when I&amp;rsquo;m in a meeting I can be present, knowing the tool is faithfully tracking what&amp;rsquo;s said. Whatever notes I &lt;em>do&lt;/em> take are then what &lt;em>I&lt;/em> think about what I&amp;rsquo;m hearing, which lets me start synthesising a lot faster.&lt;/p>
+&lt;p>If you want more details about any of these workflows, let me know in the comments. &lt;em>Arigatō gozaimashita! Mata kondo ne~&lt;/em>&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>🎙️ &lt;a href="https://nicolevanderhoeven.github.io/blog/20250427-mechanics-of-knowledge-management-podcast/">The Mechanics of Knowledge Management podcast episode&lt;/a> where Malik interviewed me on this stuff&lt;/li>
+&lt;li>🧠 &lt;a href="https://notes.nicolevanderhoeven.com/OpenClaw">My notes on OpenClaw&lt;/a> — the agent runtime Iris runs on&lt;/li>
+&lt;li>🎤 &lt;a href="https://notes.nicolevanderhoeven.com/Voicenotes">My notes on Voicenotes&lt;/a>&lt;/li>
+&lt;li>💛 &lt;a href="https://patreon.com/nicolevdh">My Patreon&lt;/a>, where I share the QuickAdd linking scripts and macros&lt;/li>
+&lt;/ul></description></item></channel></rss>

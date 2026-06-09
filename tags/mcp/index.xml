@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mcp on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/mcp/</link><description>Recent content in Mcp on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 03 Jun 2026 18:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title>CLI and MCP Basics for AI Agents (The Context Window #04)</title><link>https://nicolevanderhoeven.github.io/blog/20260603-context-window-04-cli-mcp/</link><pubDate>Wed, 03 Jun 2026 18:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260603-context-window-04-cli-mcp/</guid><description>&lt;p>MCP vs CLI: which one should your AI agent actually use? In this episode of &lt;em>The Context Window&lt;/em> — Grafana&amp;rsquo;s livestream series on AI in observability — I&amp;rsquo;m joined by &lt;a href="https://www.linkedin.com/in/tiffanyjerniganm/">Tiffany Jernigan&lt;/a> and three of the engineers and PMs behind Grafana&amp;rsquo;s agent tooling: Ben Sully (who wrote the Grafana MCP server), and Ward Bekker and Dafydd Thomas from the team building &lt;code>gcx&lt;/code>. We get into the two main ways an AI agent can reach the outside world — the Model Context Protocol (MCP) and good old command-line interfaces — and look at when each one makes sense, the tradeoffs around context windows, tool sprawl, token cost, and reliability. We walk through Grafana&amp;rsquo;s cloud and open-source MCP servers along with &lt;code>gcx&lt;/code>, the Grafana Cloud CLI built for agents, do a live side-by-side demo of both creating an SLO, and talk about how we benchmark them against each other with o11y-bench.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZR6U4TN8-Cw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="timestamps">Timestamps&lt;/h2>
+&lt;ul>
+&lt;li>00:00:00 — Introductions&lt;/li>
+&lt;li>00:02:49 — The last month in AI news&lt;/li>
+&lt;li>00:10:19 — What is Grafana Assistant?&lt;/li>
+&lt;li>00:12:30 — What does it mean for Assistant to use tools?&lt;/li>
+&lt;li>00:13:30 — What is MCP?&lt;/li>
+&lt;li>00:16:56 — What is a CLI in an AI context?&lt;/li>
+&lt;li>00:19:17 — What are skills?&lt;/li>
+&lt;li>00:24:37 — Can you use a custom MCP server with Grafana Assistant?&lt;/li>
+&lt;li>00:25:55 — Why team MCP?&lt;/li>
+&lt;li>00:28:22 — The context-window cost of MCP tool definitions&lt;/li>
+&lt;li>00:31:50 — Tool discoverability&lt;/li>
+&lt;li>00:39:25 — What is gcx, and why a CLI?&lt;/li>
+&lt;li>00:46:13 — Demo: creating an SLO with MCP vs gcx&lt;/li>
+&lt;li>00:52:58 — Benchmarking MCP vs gcx with o11y-bench&lt;/li>
+&lt;li>00:58:10 — How MCP and gcx relate to Grafana Assistant&lt;/li>
+&lt;li>01:02:35 — k6 MCP vs Grafana MCP&lt;/li>
+&lt;li>01:03:00 — When to use which (decision guide)&lt;/li>
+&lt;li>01:04:29 — Adding the OSS Grafana MCP to Assistant&lt;/li>
+&lt;li>01:05:41 — Turtles all the way down&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;h3 id="mcp-and-cli-for-agents">MCP and CLI for agents&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://modelcontextprotocol.io">Model Context Protocol&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/mcp-grafana">Grafana MCP server (OSS)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/grafana/gcx">gcx — the Grafana Cloud CLI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://grafana.com/blog/o11y-bench-open-benchmark-for-observability-agents/">Introducing o11y-bench: an open benchmark for observability agents&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://slack.grafana.com">Grafana Community Slack&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="related-reading">Related reading&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">My Context Horizon piece: &lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="more-from-the-context-window">More from The Context Window&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20260422-context-window-03-ai-observability/">#03: All About AI Observability&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

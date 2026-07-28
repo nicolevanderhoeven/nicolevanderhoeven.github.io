@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/kubernetes/</link><description>Recent content in Kubernetes on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 05 Nov 2025 03:07:38 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link><pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://oredev.org/">Øredev 2025&lt;/a> in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/kubernetes/</link><description>Recent content in Kubernetes on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Tue, 28 Jul 2026 09:00:00 +0900</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>The Great Doubt: What Building an AI Agent Taught Us About Trust (KubeCon Japan 2026)</title><link>https://nicolevanderhoeven.github.io/blog/20260730-the-great-doubt-kubecon-japan/</link><pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260730-the-great-doubt-kubecon-japan/</guid><description>&lt;p>This week I spoke at &lt;a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/">KubeCon + CloudNativeCon Japan 2026&lt;/a> in Yokohama, Japan. I gave a talk called &lt;em>The Great Doubt: What Building an AI Agent Taught Us About Trust&lt;/em>. Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;blockquote>
+&lt;p>When we started building an AI assistant for observability, we thought the hard part would be making it smart. We were wrong. The hard part was knowing when to trust it.&lt;/p>
+&lt;p>AI agents hallucinate, forget context, and confidently give wrong answers. Traditional testing doesn&amp;rsquo;t catch these failures. What&amp;rsquo;s needed is evaluation grounded in systematic doubt.&lt;/p>
+&lt;p>This talk shares lessons from shipping an AI agent to production: how to build a golden dataset of use cases you must get right, how to use LLM-as-judge when there&amp;rsquo;s no ground truth, and how to use OpenTelemetry traces to debug eval failures. You&amp;rsquo;ll also hear what&amp;rsquo;s still unsolved: evaluating multi-agent handoffs and closing the feedback loop between what users ask and what your evals cover.&lt;/p>
+&lt;p>Kyoto School philosopher Nishitani Keiji called this &amp;ldquo;The Great Doubt&amp;rdquo; (大疑): questioning every assumption until only what survives is real. For AI agents, that&amp;rsquo;s not philosophy. It&amp;rsquo;s the job.&lt;/p>&lt;/blockquote>
+&lt;p>The talk walks through the layers of doubt we worked through while building &lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">Grafana Assistant&lt;/a>: doubting the agent itself, then doubting our tests, then the LLM-as-judge, then our own scores — and finally doubting whether the doubt was even justified. Each layer needed a different tool, from a golden dataset run in a fully synthetic observability environment, through online evals on live traffic, to per-conversation OpenTelemetry traces that link every eval score back to the exact LLM and tool calls that produced it.&lt;/p>
+&lt;p>You can find the slides at &lt;a href="https://nicole.to/doubtslides">nicole.to/doubtslides&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;ll update this post with the recording once KubeCon publishes it.&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;p>Grafana Assistant (generally available for Grafana OSS, Grafana Cloud, and Grafana Play):&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/assistant/">Docs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://play.grafana.org">Try it out on Grafana Play&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Assistant Investigations (Grafana Cloud):&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://gra.fan/investigations">Docs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Agent Observability (Grafana Cloud):&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://gra.fan/agento11y">Docs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>o11y-bench (OSS):&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://gra.fan/o11ybench">Site&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Investigations Arena:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://youtu.be/YPfqchw8LCo">Video&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="related-reading">Related reading&lt;/h2>
+&lt;ul>
+&lt;li>My notes on &lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">Grafana Assistant&lt;/a>&lt;/li>
+&lt;li>My Context Horizon piece &lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">&lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/4vZNlPD">&lt;em>The Way of Zen&lt;/em>&lt;/a> by Alan W. Watts&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/3RgXGIP">&lt;em>Zen Mind, Beginner&amp;rsquo;s Mind&lt;/em>&lt;/a> by Shunryu Suzuki&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/4vQW2eQ">&lt;em>Religion and Nothingness, Volume 1&lt;/em>&lt;/a> by Nishitani Keiji&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/4yFff6d">&lt;em>Philosophers of Nothingness: An Essay on the Kyoto School&lt;/em>&lt;/a> by James W. Heisig&lt;/li>
+&lt;/ul></description></item><item><title>The Spice Must Flow: The Fremen Guide to Sustainable Observability (Øredev 2025)</title><link>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</link><pubDate>Wed, 05 Nov 2025 03:07:38 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20251105-the-spice-must-flow/</guid><description>&lt;p>Today I gave a talk at &lt;a href="https://oredev.org/">Øredev 2025&lt;/a> in Malmö, Sweden, titled +The Spice Must Flow: The Fremen Guide to Sustainable Observability&amp;quot;_. The presentation focused on how to implement sustainable observability practices using open-source tools like Grafana, Prometheus, Loki, Tempo, KEDA, and Kepler. Here&amp;rsquo;s the abstract:&lt;/p>
 &lt;blockquote>
 &lt;p>Nobody wants to be wasteful. But how do you balance that with the need for enough data to fix things when they go wrong? After all, no matter how much it costs, there are SLOs to keep. The spice&amp;ndash; the telemetry&amp;ndash; must flow.&lt;/p>
 &lt;p>The Fremen are a people who live on the planet Arrakis, simultaneously rich in spice while poor in water. But the Fremen have managed to thrive, not just survive, on very little while continuing to produce spice. What would it take to apply this &amp;ldquo;desert planet thinking&amp;rdquo; to observability?&lt;/p>

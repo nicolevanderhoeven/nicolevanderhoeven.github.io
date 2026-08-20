@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/</link><description>Recent content on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Fri, 31 Jul 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Week Day 5: Collaborating (Grafana AI Week — Friday)</title><link>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</link><pubDate>Fri, 31 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</guid><description>&lt;p>The final day of AI Week is about &lt;strong>collaborating&lt;/strong> — using AI right where your team already works, no context switching required. &lt;strong>Grafana Assistant in Slack is now generally available&lt;/strong>: investigate issues, ask follow-up questions, and query your metrics and logs from the channel where the incident conversation is already happening. And that&amp;rsquo;s just one place Assistant now meets you — also announced: the &lt;strong>Grafana mobile app is GA&lt;/strong> (with Assistant on mobile in public preview), &lt;strong>Assistant Desktop&lt;/strong> in public preview, &lt;strong>Microsoft Teams&lt;/strong> support in private preview, and context-aware &lt;strong>Assistant Search&lt;/strong> in public preview. Add it all up and Assistant is now wherever you are: the Grafana UI, the API, your terminal, your coding agent, Slack, Teams, mobile, desktop, and search. That&amp;rsquo;s a wrap on five days of announcements.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/</link><description>Recent content on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 19 Aug 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>When to use Grafana Assistant vs MCP vs GCX: The Easy Hand (MCP)</title><link>https://nicolevanderhoeven.github.io/blog/20260819-when-to-use-grafana-mcp/</link><pubDate>Wed, 19 Aug 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260819-when-to-use-grafana-mcp/</guid><description>&lt;p>Three AI tools people confuse: Assistant, MCP, and GCX. &lt;a href="https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/">Last time&lt;/a> I talked about the brain — Assistant. Now hand number one: &lt;strong>the MCP server&lt;/strong>, the &lt;em>easy&lt;/em> hand.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/HDmJyo9cyf8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Grafana MCP — Model Context Protocol — lets &lt;em>any&lt;/em> AI client reach into Grafana. The magic part: &lt;strong>you bring your own brain.&lt;/strong>&lt;/p>
+&lt;p>Using MCP requires &lt;strong>two pieces&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>client&lt;/strong> is your AI app — the brain you bring: claude.ai, ChatGPT, Cursor.&lt;/li>
+&lt;li>The &lt;strong>server&lt;/strong> is the door into Grafana that exposes the tools.&lt;/li>
+&lt;/ul>
+&lt;p>There are two ways to get that server. The easiest is the &lt;strong>Grafana Cloud hosted&lt;/strong> one — already running, auth built in, just connect and go. But you can also &lt;strong>self-host&lt;/strong> the open-source one on your own infra.&lt;/p>
+&lt;p>So when do you reach for Grafana MCP?&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>When you&amp;rsquo;re using hosted chat tools with no terminal&lt;/strong> — claude.ai, ChatGPT, your phone. No shell means no CLI, so MCP is the only way in.&lt;/li>
+&lt;li>&lt;strong>When you want to bolt Grafana onto a tool you already use&lt;/strong> — already in Cursor or Claude? Just add the server. No new workflow.&lt;/li>
+&lt;li>&lt;strong>When you want the best discovery out of the box&lt;/strong> — the tools describe themselves up front, so even smaller or cheaper models just &lt;em>know&lt;/em> what&amp;rsquo;s available. No trial-and-error.&lt;/li>
+&lt;/ul>
+&lt;p>One honest catch: those tool definitions &lt;em>can&lt;/em> eat some context if you load everything — but modern hosts fix that with lazy tool search.&lt;/p>
+&lt;p>MCP is deliberately curated — it doesn&amp;rsquo;t expose &lt;em>every&lt;/em> corner of Grafana. So what do you do when you need the esoteric stuff? That&amp;rsquo;s exactly what the power hand, &lt;strong>GCX&lt;/strong>, is for — next up.&lt;/p>
+&lt;h2 id="transcript">Transcript&lt;/h2>
+&lt;p>Three AI tools people confuse: Assistant, MCP, GCX. Last time, I talked about the brain — Assistant. Now hand number one: &lt;strong>the MCP server,&lt;/strong> the &lt;em>easy&lt;/em> hand.&lt;/p>
+&lt;p>Grafana MCP — Model Context Protocol — lets &lt;em>any&lt;/em> AI client reach into Grafana. The magic part: &lt;strong>you bring that AI client - you bring your own brain.&lt;/strong>&lt;/p>
+&lt;p>Using MCP requires &lt;strong>two pieces.&lt;/strong> The &lt;strong>client&lt;/strong> is your AI app — the brain you bring: claude.ai, ChatGPT, Cursor. The &lt;strong>server&lt;/strong> is the door into Grafana that exposes the tools.&lt;/p>
+&lt;p>Two ways to get that server: the easiest way is to use the &lt;strong>Grafana Cloud hosted&lt;/strong> one — already running, auth built in, just connect and go. But you can also &lt;strong>self-host&lt;/strong> the open-source one on your own infra.&lt;/p>
+&lt;p>So when do you reach for Grafana MCP?&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>When you&amp;rsquo;re using hosted chat tools with no terminal&lt;/strong> — claude.ai, ChatGPT, your phone. No shell means no CLI, so MCP is the only way in.&lt;/li>
+&lt;li>&lt;strong>When you want to bolt Grafana onto a tool you already use&lt;/strong> — already in Cursor or Claude? Just add the server. No new workflow.&lt;/li>
+&lt;li>&lt;strong>When you want the best discovery out of the box&lt;/strong> — the tools describe themselves up front, so even smaller or cheaper models just &lt;em>know&lt;/em> what&amp;rsquo;s available. No trial-and-error.&lt;/li>
+&lt;/ul>
+&lt;p>One honest catch: those tool definitions &lt;em>can&lt;/em> eat some context if you load everything — but modern hosts fix that with lazy tool search.&lt;/p>
+&lt;p>But MCP is deliberately curated — it doesn&amp;rsquo;t expose &lt;em>every&lt;/em> corner of Grafana. So what do you do when you need the esoteric stuff? That&amp;rsquo;s exactly what the power hand is for. Next up is &lt;strong>GCX.&lt;/strong>&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/grafana/mcp-grafana">Grafana MCP server&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://modelcontextprotocol.io/">Model Context Protocol&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/GCX">My notes on GCX&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>When to use Grafana Assistant vs MCP vs GCX: The Brain</title><link>https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/</link><pubDate>Mon, 17 Aug 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/</guid><description>&lt;p>Grafana has three AI things people keep confusing — Assistant, MCP, and GCX. They&amp;rsquo;re not competitors. Think of it as &lt;strong>a brain and two hands.&lt;/strong> In this short, I start with the brain: &lt;strong>Grafana Assistant&lt;/strong>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xo7meD4Yn0k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
+&lt;p>Assistant isn&amp;rsquo;t just a chatbot — it&amp;rsquo;s the &lt;em>reasoning layer&lt;/em>. It manages context and knows your Grafana: your dashboards, your data sources, a knowledge graph of your infrastructure. Instead of clicking around, you tell Assistant &lt;em>what&lt;/em> you want to do and it figures out the &lt;em>how&lt;/em>.&lt;/p>
+&lt;p>Reach for the Assistant when the work is &lt;strong>visual or exploratory&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Building a dashboard?&lt;/strong> Assistant.&lt;/li>
+&lt;li>&lt;strong>&amp;ldquo;Teach me how to do this&amp;rdquo; or &amp;ldquo;where is this in the UI&amp;rdquo;?&lt;/strong> Assistant.&lt;/li>
+&lt;li>&lt;strong>A real incident that needs root-cause analysis across multiple data sources?&lt;/strong> Assistant. That&amp;rsquo;s its sweet spot — it forms a hypothesis, correlates your signals, and can even open a pull request with the fix.&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s the key thing though: Assistant is Grafana&amp;rsquo;s &lt;em>own&lt;/em> brain — but it&amp;rsquo;s &lt;strong>not the only brain that can drive Grafana.&lt;/strong> That&amp;rsquo;s where the two hands come in, and I&amp;rsquo;ll cover the first of those (the MCP server) next.&lt;/p>
+&lt;h2 id="transcript">Transcript&lt;/h2>
+&lt;p>Grafana has three AI things people keep confusing — Assistant, MCP, and GCX. I&amp;rsquo;m going to talk a bit about each one so you know which one is best for your use case.&lt;/p>
+&lt;p>Spoiler: They&amp;rsquo;re not competitors. Think of it as &lt;strong>a brain and two hands.&lt;/strong>&lt;/p>
+&lt;p>Let&amp;rsquo;s start with &lt;strong>Grafana Assistant&lt;/strong>, which is the brain.&lt;/p>
+&lt;p>It&amp;rsquo;s not just a chatbot — it&amp;rsquo;s the &lt;em>reasoning layer&lt;/em>. It manages context, it knows your Grafana: your dashboards, your data sources, a knowledge graph of your infrastructure. So instead of you clicking around to do something, you can say what you want to do to Assistant and it figures out the &lt;em>how.&lt;/em>&lt;/p>
+&lt;p>Reach for the Assistant when the work is &lt;strong>visual or exploratory.&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>If you&amp;rsquo;re building a dashboard? Assistant.&lt;/li>
+&lt;li>&amp;ldquo;Teach me how to do this&amp;rdquo; or &amp;ldquo;where is this in the UI&amp;rdquo;? Assistant.&lt;/li>
+&lt;li>You have a real incident where you need root-cause analysis across multiple data sources? Assistant.
+&lt;ul>
+&lt;li>That&amp;rsquo;s its sweet spot — it forms a hypothesis, correlates your signals, and can even open a pull request with the fix.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s the key thing though: Assistant is Grafana&amp;rsquo;s &lt;em>own&lt;/em> brain — but it&amp;rsquo;s &lt;strong>not the only brain that can drive Grafana.&lt;/strong> That&amp;rsquo;s where the two hands come in… and I&amp;rsquo;ll show you those next.&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a> (product page)&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">My notes on Grafana Assistant&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/GCX">My notes on GCX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">Unlearnings from building Grafana Assistant&lt;/a> — my Context Horizon piece&lt;/li>
+&lt;/ul></description></item><item><title>AI Week Day 5: Collaborating (Grafana AI Week — Friday)</title><link>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</link><pubDate>Fri, 31 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</guid><description>&lt;p>The final day of AI Week is about &lt;strong>collaborating&lt;/strong> — using AI right where your team already works, no context switching required. &lt;strong>Grafana Assistant in Slack is now generally available&lt;/strong>: investigate issues, ask follow-up questions, and query your metrics and logs from the channel where the incident conversation is already happening. And that&amp;rsquo;s just one place Assistant now meets you — also announced: the &lt;strong>Grafana mobile app is GA&lt;/strong> (with Assistant on mobile in public preview), &lt;strong>Assistant Desktop&lt;/strong> in public preview, &lt;strong>Microsoft Teams&lt;/strong> support in private preview, and context-aware &lt;strong>Assistant Search&lt;/strong> in public preview. Add it all up and Assistant is now wherever you are: the Grafana UI, the API, your terminal, your coding agent, Slack, Teams, mobile, desktop, and search. That&amp;rsquo;s a wrap on five days of announcements.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/obBh4pMrHCM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div>

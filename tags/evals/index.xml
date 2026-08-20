@@ -47,8 +47,10 @@ Yeah, I think, why not? I think we can go this way too. I&amp;rsquo;m sure it wo
 &lt;p>This talk shares lessons from shipping an AI agent to production: how to build a golden dataset of use cases you must get right, how to use LLM-as-judge when there&amp;rsquo;s no ground truth, and how to use OpenTelemetry traces to debug eval failures. You&amp;rsquo;ll also hear what&amp;rsquo;s still unsolved: evaluating multi-agent handoffs and closing the feedback loop between what users ask and what your evals cover.&lt;/p>
 &lt;p>Kyoto School philosopher Nishitani Keiji called this &amp;ldquo;The Great Doubt&amp;rdquo; (大疑): questioning every assumption until only what survives is real. For AI agents, that&amp;rsquo;s not philosophy. It&amp;rsquo;s the job.&lt;/p>&lt;/blockquote>
 &lt;p>The talk walks through the layers of doubt we worked through while building &lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">Grafana Assistant&lt;/a>: doubting the agent itself, then doubting our tests, then the LLM-as-judge, then our own scores — and finally doubting whether the doubt was even justified. Each layer needed a different tool, from a golden dataset run in a fully synthetic observability environment, through online evals on live traffic, to per-conversation OpenTelemetry traces that link every eval score back to the exact LLM and tool calls that produced it.&lt;/p>
-&lt;p>You can find the slides at &lt;a href="https://nicole.to/doubtslides">nicole.to/doubtslides&lt;/a>.&lt;/p>
-&lt;p>I&amp;rsquo;ll update this post with the recording once KubeCon publishes it.&lt;/p>
+&lt;p>You can find the slides at &lt;a href="https://nicole.to/doubtslides">nicole.to/doubtslides&lt;/a>, and you can watch the full talk below:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uW9Hlp3fT14?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/div>
 &lt;h2 id="resources">Resources&lt;/h2>
 &lt;p>Grafana Assistant (generally available for Grafana OSS, Grafana Cloud, and Grafana Play):&lt;/p>
 &lt;ul>

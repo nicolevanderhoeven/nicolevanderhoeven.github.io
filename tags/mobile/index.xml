@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/mobile/</link><description>Recent content in Mobile on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Tue, 28 Apr 2020 23:21:08 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Ask a Flooder 13: How do you do mobile load testing?</title><link>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</link><pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200428-aaf13/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.com/tags/mobile/</link><description>Recent content in Mobile on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Tue, 28 Apr 2020 23:21:08 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.com/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Ask a Flooder 13: How do you do mobile load testing?</title><link>https://nicolevanderhoeven.com/blog/20200428-aaf13/</link><pubDate>Tue, 28 Apr 2020 23:21:08 +0100</pubDate><guid>https://nicolevanderhoeven.com/blog/20200428-aaf13/</guid><description>
 &lt;link rel="canonical" href="https://www.flood.io/blog/ask-a-flooder-13-how-do-you-do-mobile-load-testing"&gt;
 &lt;p&gt;&lt;em&gt;Originally posted &lt;a href="https://www.flood.io/blog/ask-a-flooder-13-how-do-you-do-mobile-load-testing"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;How do you load test a native mobile app? I discuss the general approach to mobile load testing, what a device farm is, and why a device farm isn&amp;rsquo;t necessary for load testing. I also discuss the best mobile load testing tools to use.&lt;/p&gt;
@@ -17,7 +17,7 @@
 &lt;p&gt;And here are some other resources that will help you get started with mobile load testing. I also have another video about how to record network traffic from a native mobile app on JMeter, which sounds a little complicated, but I promise it&amp;rsquo;s not. In that video, I go over the steps with you, and I&amp;rsquo;m actually doing it in real-time with you as well. I show you the screen recording from my mobile and from JMeter on my laptop, so you can always pause and watch it at your own pace.&lt;/p&gt;
 &lt;p&gt;The second thing is that I already wrote a blog post, which is sort of a guide for mobile load testing, which goes into the steps into way more detail than I can here.&lt;/p&gt;
 &lt;p&gt;And lastly, I have written blog posts about two real-life examples of mobile load testing. The first one was the Iowa Caucus Reporter app. I ran through it from the workload modeling to the scripting and then the actual execution. More recently, I also wrote about the Robinhood app. Be sure to check out the links in the description to find out more.&lt;/p&gt;
-&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;</description></item><item><title>Mobile Load Testing on the Cloud</title><link>https://nicolevanderhoeven.github.io/blog/20200221-mobile-load-testing-on-the-cloud/</link><pubDate>Fri, 21 Feb 2020 18:44:58 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20200221-mobile-load-testing-on-the-cloud/</guid><description>
+&lt;p&gt;Until next time, happy flooding!&lt;/p&gt;</description></item><item><title>Mobile Load Testing on the Cloud</title><link>https://nicolevanderhoeven.com/blog/20200221-mobile-load-testing-on-the-cloud/</link><pubDate>Fri, 21 Feb 2020 18:44:58 +0100</pubDate><guid>https://nicolevanderhoeven.com/blog/20200221-mobile-load-testing-on-the-cloud/</guid><description>
 &lt;link rel="canonical" href="https://www.flood.io/blog/mobile-load-testing-on-the-cloud"&gt;
 &lt;p&gt;&lt;em&gt;Originally posted &lt;a href="https://www.flood.io/blog/mobile-load-testing-on-the-cloud"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="what-is-mobile-load-testing"&gt;What is mobile load testing?&lt;/h2&gt;
@@ -25,7 +25,7 @@
 &lt;h2 id="challenges-in-mobile-load-testing"&gt;Challenges in mobile load testing&lt;/h2&gt;
 &lt;p&gt;If you have a web app that is mobile first, and your users typically access your site through a browser on their mobile devices as well as on their laptops, you have more choices for optimizing mobile performance. You can use browser-based load testing tools as well as protocol-level load testing tools to generate load.&lt;/p&gt;
 &lt;p&gt;If you have a native mobile app that you&amp;rsquo;d like to load test, though, browser-based load testing tools are a little more complicated. One of the most common approaches to mobile load testing is to use some type of device farm. A device farm is a collection of mobile devices and a way to orchestrate and control them so that they access an application simultaneously. Here&amp;rsquo;s why they&amp;rsquo;re not the best choice for load testing.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-01.jpg" alt="Fragmentation can make mobile load testing difficult"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-01.jpg" alt="Fragmentation can make mobile load testing difficult"&gt;&lt;/p&gt;
 &lt;h3 id="device-fragmentation"&gt;Device fragmentation&lt;/h3&gt;
 &lt;p&gt;One of the biggest challenges is mobile device fragmentation. Not only are there a lot of mobile devices, but there are also many operating systems and versions. Even narrowing the pool to Android and ios leaves us with a large selection. A common mistake in mobile load testing is trying to account for these hundreds of combinations.&lt;/p&gt;
 &lt;h3 id="logistics"&gt;Logistics&lt;/h3&gt;
@@ -43,7 +43,7 @@
 &lt;h3 id="load-testing-for-back-end-performance"&gt;Load testing for back-end performance&lt;/h3&gt;
 &lt;p&gt;Load testing is about determining how your mobile application behaves in response to traffic, so it targets the back-end components of the application, not the front-end.&lt;/p&gt;
 &lt;p&gt;Both front-end and back-end performance are necessary to get a holistic view of mobile performance. Still, &lt;strong&gt;if you want to load test your mobile app, you need to generate traffic on your application &lt;em&gt;server&lt;/em&gt;, and not necessarily to drive the app on real devices&lt;/strong&gt;. Understanding this opens up options for mobile load testing.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-02.jpg" alt="A data center can be out of most testing teams&amp;rsquo; reach"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-02.jpg" alt="A data center can be out of most testing teams&amp;rsquo; reach"&gt;&lt;/p&gt;
 &lt;h2 id="api-load-testing"&gt;API load testing&lt;/h2&gt;
 &lt;p&gt;Most native mobile apps work by using a RESTful API to send instructions to the application server. Luckily for us, there&amp;rsquo;s no magic in sending these types of requests from a smartphone— we can simulate this easily by using an API load testing tool to send these requests on a non-mobile device too.&lt;/p&gt;
 &lt;p&gt;Here are some advantages of using API load testing tools to test your mobile app instead of using a device farm:&lt;/p&gt;
@@ -66,16 +66,16 @@
 &lt;p&gt;You&amp;rsquo;ll need to have JMeter set up already for this step.&lt;/p&gt;
 &lt;p&gt;Connect your laptop to a wi-fi network.&lt;/p&gt;
 &lt;p&gt;From a new test plan on JMeter, right-click on Test Plan and then click on Add &amp;gt; Non-Test Elements &amp;gt; HTTP(S) Test Script Recorder. Click on it and take note of the port it uses in Global Settings.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-03.png" alt="Checking the port in the JMeter HTTPS Test Script Recorder"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-03.png" alt="Checking the port in the JMeter HTTPS Test Script Recorder"&gt;&lt;/p&gt;
 &lt;p&gt;Next, right-click on the test recorder element you just created and click Add &amp;gt; Listener &amp;gt; View Results Tree. This element shows details of requests and responses when we run tests.&lt;/p&gt;
 &lt;p&gt;Then, right-click on Test Plan again and click Add &amp;gt; Threads &amp;gt; Thread Group.&lt;/p&gt;
 &lt;p&gt;Finally, right-click on Thread Group and click Add &amp;gt; Logic Controller &amp;gt; Recording Controller.&lt;/p&gt;
 &lt;p&gt;Your test plan should look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-04.png" alt="JMeter Test Plan containing a Recording Controller and an HTTPS Test Script Reocrder"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-04.png" alt="JMeter Test Plan containing a Recording Controller and an HTTPS Test Script Reocrder"&gt;&lt;/p&gt;
 &lt;h3 id="3-set-up-your-mobile-to-use-a-proxy"&gt;3. Set up your mobile to use a proxy.&lt;/h3&gt;
 &lt;p&gt;On your mobile, connect to the same wireless network that your laptop is connected to.&lt;/p&gt;
 &lt;p&gt;Go back to your laptop and find out its local IP address. On a Mac, you can see this by clicking on the Apple logo &amp;gt; System Preferences &amp;gt; Network &amp;gt; Advanced &amp;gt; TCP/IP. The IPv4 Address is what you&amp;rsquo;re looking for, and it might look something like 192.168.86.125.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-05.png" alt="Getting your local IP address on a Mac"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-05.png" alt="Getting your local IP address on a Mac"&gt;&lt;/p&gt;
 &lt;p&gt;On your mobile, go to Settings &amp;gt; Connections &amp;gt; Wi-Fi. Under Current network, click on the settings wheel next to your wireless network. Click on Advanced.&lt;/p&gt;
 &lt;p&gt;Enter your computer&amp;rsquo;s local IP address in the Proxy host name field.&lt;/p&gt;
 &lt;p&gt;In the Proxy port field, enter 8888, or the port that was displayed in the HTTP(S) Test Script Recorder on JMeter.&lt;/p&gt;
@@ -84,9 +84,9 @@
 &lt;p&gt;On JMeter, click on the HTTP(s) Test Script Recorder element and click Start.&lt;/p&gt;
 &lt;p&gt;On your mobile, open the app and log in or perform the action that you&amp;rsquo;d like to record.&lt;/p&gt;
 &lt;p&gt;As you use the app, you should be able to see the requests coming in on JMeter in the View Results Tree:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-06.png" alt="View Results Tree listener view of traffic coming from the proxy"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-06.png" alt="View Results Tree listener view of traffic coming from the proxy"&gt;&lt;/p&gt;
 &lt;p&gt;If you click on the Recording Controller, you&amp;rsquo;ll also see the exact format of the requests that the app made:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-07.png" alt="Seeing parameters sent with a recorded request in JMeter"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-07.png" alt="Seeing parameters sent with a recorded request in JMeter"&gt;&lt;/p&gt;
 &lt;h2 id="scripting-and-troubleshooting-your-mobile-load-testing-script"&gt;Scripting and troubleshooting your mobile load testing script&lt;/h2&gt;
 &lt;p&gt;What you now have is a recording of the mobile traffic you need to simulate. If you stop here and try to run it, you may find that it fails. That&amp;rsquo;s because you haven&amp;rsquo;t done any scripting yet.&lt;/p&gt;
 &lt;p&gt;Here are a few things you&amp;rsquo;ll need to do to turn a recording into a script.&lt;/p&gt;
@@ -108,15 +108,15 @@
 &lt;h4 id="number-of-concurrent-users-or-threads"&gt;Number of concurrent users or threads&lt;/h4&gt;
 &lt;p&gt;This is the most obvious way to increase load. The more instances of your script running, the more requests are executed.&lt;/p&gt;
 &lt;p&gt;You can change this in JMeter by clicking on your Thread Group and changing the “Number of Threads (users)” field:&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-08.png" alt="Changing the number of threads in JMeter"&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200221-08.png" alt="Changing the number of threads in JMeter"&gt;&lt;/p&gt;
 &lt;h4 id="ramp-up"&gt;Ramp-up&lt;/h4&gt;
 &lt;p&gt;In production, load on servers very rarely goes from 0 to 1000 in one second. Even for cases with a very definitive start time (such as an item going on sale at a particular time), the load generally increases gradually. You can simulate this gradual increase by adding ramp-up times in your script. A ramp-up is the amount of time during which new users are added at staggered intervals.&lt;/p&gt;
 &lt;p&gt;Here’s an example of what that might look like:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-09.png" alt="Changing the ramp-up of a test in JMeter"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-09.png" alt="Changing the ramp-up of a test in JMeter"&gt;&lt;/p&gt;
 &lt;h4 id="duration"&gt;Duration&lt;/h4&gt;
 &lt;p&gt;Duration is how long the whole test lasts.&lt;/p&gt;
 &lt;p&gt;The simplest way to set these values in JMeter is to use the basic Thread Group. You’ll need to change the fields highlighted below:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-10.png" alt="Changing test parameters in JMeter"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-10.png" alt="Changing test parameters in JMeter"&gt;&lt;/p&gt;
 &lt;p&gt;To use the duration, you’ll have to select “Forever” next to Loop Count and “Scheduler” and type in the number of seconds in the Duration field. Otherwise, you can also run the script according to the number of loops, or iterations, that you want to run. However, since response times vary, using the Loop Count as a proxy for duration yields different results from test to test.&lt;/p&gt;
 &lt;h2 id="running-a-shakeout-test-against-your-mobile-application"&gt;Running a shakeout test against your mobile application&lt;/h2&gt;
 &lt;p&gt;When you&amp;rsquo;re ready to run on your load generators, resist the urge to jump straight to the peak load you want. This is a great way to incur unnecessary costs. Instead, run a small test with dozens of users. Running locally is for debugging issues in the script. The purpose of running a shakeout test is to spot errors elsewhere, such as in your test environment and your test data.&lt;/p&gt;
@@ -148,6 +148,6 @@
 &lt;h3 id="3-use-a-load-testing-platform"&gt;3. Use a load testing platform.&lt;/h3&gt;
 &lt;p&gt;I&amp;rsquo;m admittedly biased, but if I were to go back to doing performance testing consulting work, I would choose Flood to run my tests. A platform like Flood that is built for distributed load testing is an excellent choice because it takes away all the setup considerations. This is the easiest option, especially for teams that are new to load testing or are perhaps less technical, because all the setup is done through a UI. Scaling out in this case just means uploading your script, choosing the number of nodes you want to run and in which region, and all the work is done for you in the background.&lt;/p&gt;
 &lt;p&gt;While you can run on-premises, I would consider running your test cloud-based infrastructure for greater flexibility and ease of scaling unless you already have a data center.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20200221-11.jpg" alt="Running a load test on the cloud is the easiest way to get started with mobile load testing"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200221-11.jpg" alt="Running a load test on the cloud is the easiest way to get started with mobile load testing"&gt;&lt;/p&gt;
 &lt;h2 id="what-happens-next"&gt;What happens next?&lt;/h2&gt;
 &lt;p&gt;Running your test is just the beginning of mobile performance testing— there&amp;rsquo;s still metrics collection, results analysis, and resolving performance bottlenecks that you uncover. After all, it&amp;rsquo;s what you do with the test results that counts. Remember that performance and load testing, whether for web-based applications or mobile ones, are iterative. The real value comes from building the app performance testing principles discussed here into your release cycles, so that load testing becomes a habit rather than just a one-off exercise.&lt;/p&gt;</description></item></channel></rss>

@@ -1,347 +1,348 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Grafana Assistant on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</link><description>Recent content in Grafana Assistant on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Mon, 17 Aug 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-assistant/index.xml" rel="self" type="application/rss+xml"/><item><title>When to use Grafana Assistant vs MCP vs GCX: Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/</link><pubDate>Mon, 17 Aug 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/</guid><description>&lt;p>Grafana has three AI things people keep confusing — Assistant, MCP, and GCX. They&amp;rsquo;re not competitors. Think of it as &lt;strong>a brain and two hands.&lt;/strong> In this short, I start with the brain: &lt;strong>Grafana Assistant&lt;/strong>.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xo7meD4Yn0k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>Assistant isn&amp;rsquo;t just a chatbot — it&amp;rsquo;s the &lt;em>reasoning layer&lt;/em>. It manages context and knows your Grafana: your dashboards, your data sources, a knowledge graph of your infrastructure. Instead of clicking around, you tell Assistant &lt;em>what&lt;/em> you want to do and it figures out the &lt;em>how&lt;/em>.&lt;/p>
-&lt;p>Reach for the Assistant when the work is &lt;strong>visual or exploratory&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Building a dashboard?&lt;/strong> Assistant.&lt;/li>
-&lt;li>&lt;strong>&amp;ldquo;Teach me how to do this&amp;rdquo; or &amp;ldquo;where is this in the UI&amp;rdquo;?&lt;/strong> Assistant.&lt;/li>
-&lt;li>&lt;strong>A real incident that needs root-cause analysis across multiple data sources?&lt;/strong> Assistant. That&amp;rsquo;s its sweet spot — it forms a hypothesis, correlates your signals, and can even open a pull request with the fix.&lt;/li>
-&lt;/ul>
-&lt;p>Here&amp;rsquo;s the key thing though: Assistant is Grafana&amp;rsquo;s &lt;em>own&lt;/em> brain — but it&amp;rsquo;s &lt;strong>not the only brain that can drive Grafana.&lt;/strong> That&amp;rsquo;s where the two hands come in, and I&amp;rsquo;ll cover the first of those (the MCP server) next.&lt;/p>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>Grafana has three AI things people keep confusing — Assistant, MCP, and GCX. I&amp;rsquo;m going to talk a bit about each one so you know which one is best for your use case.&lt;/p>
-&lt;p>Spoiler: They&amp;rsquo;re not competitors. Think of it as &lt;strong>a brain and two hands.&lt;/strong>&lt;/p>
-&lt;p>Let&amp;rsquo;s start with &lt;strong>Grafana Assistant&lt;/strong>, which is the brain.&lt;/p>
-&lt;p>It&amp;rsquo;s not just a chatbot — it&amp;rsquo;s the &lt;em>reasoning layer&lt;/em>. It manages context, it knows your Grafana: your dashboards, your data sources, a knowledge graph of your infrastructure. So instead of you clicking around to do something, you can say what you want to do to Assistant and it figures out the &lt;em>how.&lt;/em>&lt;/p>
-&lt;p>Reach for the Assistant when the work is &lt;strong>visual or exploratory.&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>If you&amp;rsquo;re building a dashboard? Assistant.&lt;/li>
-&lt;li>&amp;ldquo;Teach me how to do this&amp;rdquo; or &amp;ldquo;where is this in the UI&amp;rdquo;? Assistant.&lt;/li>
-&lt;li>You have a real incident where you need root-cause analysis across multiple data sources? Assistant.
-&lt;ul>
-&lt;li>That&amp;rsquo;s its sweet spot — it forms a hypothesis, correlates your signals, and can even open a pull request with the fix.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>Here&amp;rsquo;s the key thing though: Assistant is Grafana&amp;rsquo;s &lt;em>own&lt;/em> brain — but it&amp;rsquo;s &lt;strong>not the only brain that can drive Grafana.&lt;/strong> That&amp;rsquo;s where the two hands come in… and I&amp;rsquo;ll show you those next.&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a> (product page)&lt;/li>
-&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">My notes on Grafana Assistant&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/GCX">My notes on GCX&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">Unlearnings from building Grafana Assistant&lt;/a> — my Context Horizon piece&lt;/li>
-&lt;/ul></description></item><item><title>AI Week Day 5: Collaborating (Grafana AI Week — Friday)</title><link>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</link><pubDate>Fri, 31 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</guid><description>&lt;p>The final day of AI Week is about &lt;strong>collaborating&lt;/strong> — using AI right where your team already works, no context switching required. &lt;strong>Grafana Assistant in Slack is now generally available&lt;/strong>: investigate issues, ask follow-up questions, and query your metrics and logs from the channel where the incident conversation is already happening. And that&amp;rsquo;s just one place Assistant now meets you — also announced: the &lt;strong>Grafana mobile app is GA&lt;/strong> (with Assistant on mobile in public preview), &lt;strong>Assistant Desktop&lt;/strong> in public preview, &lt;strong>Microsoft Teams&lt;/strong> support in private preview, and context-aware &lt;strong>Assistant Search&lt;/strong> in public preview. Add it all up and Assistant is now wherever you are: the Grafana UI, the API, your terminal, your coding agent, Slack, Teams, mobile, desktop, and search. That&amp;rsquo;s a wrap on five days of announcements.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/obBh4pMrHCM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>It&amp;rsquo;s the final day of Grafana Labs&amp;rsquo; AI Week, and Friday is all about &lt;strong>collaborating&lt;/strong> — using AI right where your team already works, no context switching required.&lt;/p>
-&lt;p>Today, &lt;strong>Grafana Assistant in Slack is generally available.&lt;/strong> Investigate issues, ask follow-up questions, query your metrics and logs — all from the channel where your incident conversation is already happening.&lt;/p>
-&lt;p>And that&amp;rsquo;s just one place Assistant now meets you. Today we also announced: the &lt;strong>Grafana mobile app is GA&lt;/strong>, with Assistant on mobile in public preview. &lt;strong>Assistant Desktop&lt;/strong> is in public preview. &lt;strong>Microsoft Teams&lt;/strong> support is in private preview. And &lt;strong>Assistant Search&lt;/strong> — deeper, context-aware search — is in public preview too.&lt;/p>
-&lt;p>Add it all up, and Assistant is now wherever you are: the Grafana UI, the API, your terminal, your coding agent, Slack, Teams, mobile, desktop, and search.&lt;/p>
-&lt;p>That&amp;rsquo;s a wrap on five days of announcements — and I know it was a &lt;em>lot&lt;/em>. So if you missed a day, or you just want the full picture of where AI at Grafana stands today, I made a video for exactly that: everything you can do with AI in Grafana Cloud, including everything we shipped this week. It&amp;rsquo;s linked below and pinned in the comments.&lt;/p>
-&lt;p>One last time: &lt;strong>grafana.ai&lt;/strong> for all of it. Thanks for spending AI Week with me.&lt;/p></description></item><item><title>Observability and AI explained</title><link>https://nicolevanderhoeven.github.io/blog/20260731-observability-and-ai-explained/</link><pubDate>Fri, 31 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260731-observability-and-ai-explained/</guid><description>&lt;p>&amp;ldquo;AI observability&amp;rdquo; gets thrown around a lot, and it can mean one of two very different things. So in this video I map out the whole landscape of AI-related work at Grafana across the entire software development lifecycle — and show how AI and observability come together in two directions: &lt;strong>AI for observability&lt;/strong> (AI that helps you observe your systems) and &lt;strong>observability for AI&lt;/strong> (observing the AI itself).&lt;/p>
-&lt;p>The framing is deliberate: AI in observability isn&amp;rsquo;t about replacing engineers. It&amp;rsquo;s about handing back the exhausting parts of the job — the 3am triage, the repetitive queries, the report nobody wanted to write — so you can spend your energy on the work only humans can do.&lt;/p>
-&lt;p>I walk through each phase of the lifecycle and where the tools fit:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Planning&lt;/strong> — clarity about what&amp;rsquo;s really going on, with &lt;a href="https://notes.nicolevanderhoeven.com/Grafana%20Assistant">Grafana Assistant&lt;/a>: not just a chatbot, but an agent that knows your telemetry, writes your queries, and builds your dashboards.&lt;/li>
-&lt;li>&lt;strong>Building&lt;/strong> — momentum without losing control: Assistant, the open-source &lt;a href="https://notes.nicolevanderhoeven.com/GCX">GCX&lt;/a> CLI, the Grafana MCP server, the specialized Loki/Tempo/k6 MCP servers, and the AI SDK for building your own agents in Go.&lt;/li>
-&lt;li>&lt;strong>Operating&lt;/strong> — staying calm under load: Investigations for agentic incident triage, Assistant Automations and the Watcher Agent for staying proactive, plus &lt;a href="https://notes.nicolevanderhoeven.com/Grafana%20Machine%20Learning">Grafana Machine Learning&lt;/a> (Metrics Forecasting, Outlier Detection) and Adaptive Telemetry.&lt;/li>
-&lt;li>&lt;strong>Testing &amp;amp; evaluating&lt;/strong> — &lt;a href="https://notes.nicolevanderhoeven.com/Doubt%20is%20a%20form%20of%20care">doubt is a form of care&lt;/a>: &lt;a href="https://notes.nicolevanderhoeven.com/k6%20%28tool%29">k6&lt;/a> and agentic testing on the systems side, and Agent Observability plus the open-source o11y-bench benchmark on the &amp;ldquo;observing your AI&amp;rdquo; side.&lt;/li>
-&lt;li>&lt;strong>Collaborating&lt;/strong> — bringing it all to where your team already works: Assistant in Slack (and coming to Teams), on mobile, on the desktop, and via API/MCP, plus Assistant Search across your Grafana artifacts.&lt;/li>
-&lt;/ul>
-&lt;p>If you&amp;rsquo;re new to the Grafana stack itself, start with my open source observability video for the non-AI foundations that all of this builds on.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OTmgMF6gD1k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>My notes on &lt;a href="https://notes.nicolevanderhoeven.com/Grafana%20Assistant">Grafana Assistant&lt;/a>&lt;/li>
-&lt;li>My notes on &lt;a href="https://notes.nicolevanderhoeven.com/GCX">GCX&lt;/a>&lt;/li>
-&lt;li>My notes on &lt;a href="https://notes.nicolevanderhoeven.com/k6%20%28tool%29">k6&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://o11ybench.ai">o11ybench.ai&lt;/a> — the open leaderboard for AI agents doing observability work&lt;/li>
-&lt;/ul></description></item><item><title>Investigations Arena: how we test Assistant investigations</title><link>https://nicolevanderhoeven.github.io/blog/20260730-investigations-arena/</link><pubDate>Thu, 30 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260730-investigations-arena/</guid><description>&lt;p>How do you test an AI agent whose whole job is to investigate incidents — when every investigation is different and &amp;ldquo;correct&amp;rdquo; isn&amp;rsquo;t a single deterministic answer? In this interview I sit down with &lt;strong>Will&lt;/strong>, a software engineer at Grafana who&amp;rsquo;s spent the last year focused on AI: the Grafana Assistant, investigations, and memory features.&lt;/p>
-&lt;p>The story here is how the team got from Investigations V1 to a much better V2. V1 hit a ceiling, and the demo environment they&amp;rsquo;d been testing against turned out to be the problem — the cases were too easy and too far from the messy reality of a production cluster. So they built an &lt;strong>arena&lt;/strong>: think competitive bot programming, but the &amp;ldquo;game&amp;rdquo; is investigating real incidents in Grafana&amp;rsquo;s own production environment. Different AI agents, each with its own strategy and tools, all take a swing at the same incident, and an LLM-as-judge scores their answers against a human-verified root cause.&lt;/p>
-&lt;p>What&amp;rsquo;s interesting is that the &lt;em>score&lt;/em> wasn&amp;rsquo;t even the most valuable output at first — the &lt;strong>insights&lt;/strong> were. Watching which strategies worked, which tools returned so much noise that they poisoned the context, and which agents wandered off is what let the team optimize bit by bit into the V2 release. The arena also compares more than models: different harnesses running Sonnet vs. Opus, Claude Code with the Grafana MCP, even just hitting the public API directly with &lt;code>curl&lt;/code>.&lt;/p>
-&lt;p>A couple of my favorite moments: Will explains the &lt;strong>guardrails&lt;/strong> that stop agents from &amp;ldquo;cheating&amp;rdquo; (they can only look at data from within the incident&amp;rsquo;s time window, so they can&amp;rsquo;t peek at the fix commit that resolved it) — and how the models mostly play fair because they treat it like a game. And there&amp;rsquo;s a lovely example of emergent creativity: an agent reached for tools the team hadn&amp;rsquo;t even considered, they turned out to be genuinely useful for investigation, and those tools got promoted into the real harness. Will&amp;rsquo;s hope for the future is to open this up — an OliBench-style shared benchmark where the community can throw their own investigation agents into the arena and raise quality across the board.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YPfqchw8LCo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>&lt;strong>Will:&lt;/strong>
-Hey, my name is Will. I&amp;rsquo;m a software engineer at Grafana. I&amp;rsquo;ve been there for three years, and for the last year I&amp;rsquo;ve been focusing on AI — the Grafana Assistant, investigations, and memory features.&lt;/p>
-&lt;p>&lt;strong>Nicole:&lt;/strong>
-And what&amp;rsquo;s the latest thing you&amp;rsquo;ve been working on?&lt;/p>
-&lt;p>&lt;strong>Will:&lt;/strong>
-So we developed Investigations V1, and we saw that we hit a ceiling at some point. We came up with a different approach, but this time we needed a good evaluation environment — the demo environment wasn&amp;rsquo;t enough, because those cases were too easy and too far from the reality of a production environment. So we decided to build an arena.&lt;/p>
-&lt;p>It&amp;rsquo;s a little bit like the idea of competitive bot programming, where bots fight against each other on specific tasks or games. In this case, the topic was investigations in our production cluster — real incidents. We started building bots that had different strategies and different tools; these were AI agents. Comparing a diversity of strategies let us surface the best approaches, and from there we could iterate, bring in more test cases from more incidents, and reach higher and higher quality.&lt;/p>
-&lt;p>The idea is that the bots try to solve the same case, and we use an LLM as a judge to compare the different approaches. We have different criteria, because for each incident we have a root cause that&amp;rsquo;s been verified by a human. That gives us our ground truth, and the LLM-as-judge compares that ground truth against the answers the agents came up with.&lt;/p>
-&lt;p>The important part at first wasn&amp;rsquo;t even the score — it was the insights. This tool was better with this strategy; this one had noise in the results that poisoned the context; the results returned from this specific tool were just too much. So we managed to really optimize bit by bit and come up with Investigations V2, which we just released. It&amp;rsquo;s a massive improvement compared to our V1 approach.&lt;/p>
-&lt;p>&lt;strong>Nicole:&lt;/strong>
-So is it comparing just different models for investigations, or is it also comparing things like Claude Code and the Grafana MCP versus Assistant?&lt;/p>
-&lt;p>&lt;strong>Will:&lt;/strong>
-Both, actually. We have different versions of our harness for investigations that we run with Sonnet and with Opus, but we also use the Claude Code harness with the Grafana MCP — and even just using &lt;code>curl&lt;/code> to directly hit our public API.&lt;/p>
-&lt;p>&lt;strong>Nicole:&lt;/strong>
-Do the models ever cheat?&lt;/p>
-&lt;p>&lt;strong>Will:&lt;/strong>
-So far it&amp;rsquo;s been quite good. We have guardrails. Because we investigate past incidents, we need to make sure the LLM only looks at a specific time window — only from when the incident started — otherwise it would be able to find the pull request that was used to solve the incident. But they&amp;rsquo;re pretty good at following the rules; they take it as a game a little bit. We even have an agent that checks afterward, with the judge, to make sure they followed every rule.&lt;/p>
-&lt;p>It&amp;rsquo;s funny, actually — we had a case using Claude Code where it started to use some tools we hadn&amp;rsquo;t thought about in the first place, and they turned out to be very useful for investigation. We&amp;rsquo;d never considered them, so we brought them into our investigation harness and it helped a lot. Giving the agents freedom and creativity in this kind of environment is really useful. That diversity sponsors new ideas that we can put into our own work.&lt;/p>
-&lt;p>&lt;strong>Nicole:&lt;/strong>
-Cool. Do you have any plans to publish this and share it so that other people can do it too — kind of like OliBench?&lt;/p>
-&lt;p>&lt;strong>Will:&lt;/strong>
-Yeah, I think, why not? I think we can go this way too. I&amp;rsquo;m sure it would be useful for other agents. And it would be very nice if we could compare agents from other people and other companies — maybe with different harnesses, maybe even different tools — because right now it&amp;rsquo;s mostly about our MCP, our CLI, and our investigation harness. But if the community comes up with their own investigation agents — and I think I&amp;rsquo;ve seen a few — it would be fun to put them in the arena and help not just our product, but any product improve in quality.&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>My notes on &lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">Grafana Assistant&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI Week Day 3: Operations &amp; Maintenance (Grafana AI Week — Wednesday)</title><link>https://nicolevanderhoeven.github.io/blog/20260729-ai-week-wednesday-operations/</link><pubDate>Wed, 29 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260729-ai-week-wednesday-operations/</guid><description>&lt;p>Day three of AI Week is about &lt;strong>operations and maintenance&lt;/strong> — because once code reaches production, the operational work is still surprisingly manual: someone&amp;rsquo;s watching dashboards, deciding whether an error spike is real, and writing up what happened, every single day. Two Grafana Assistant features went GA to take that off your plate. &lt;strong>Assistant Automations&lt;/strong> handle recurring work — save a prompt and run it on a schedule (like a morning brief on your service&amp;rsquo;s health), each run keeping its own history and able to notify you in Slack. &lt;strong>Assistant Investigations&lt;/strong> is for when something actually breaks: it digs across metrics, logs, traces, and profiles, develops and tests hypotheses, and hands you a structured report you can follow along with in a Workspace. You&amp;rsquo;re offloading vigilance, not accountability — the evidence is always there to review, and you still make the call.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5P7qSKIRSek?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>It&amp;rsquo;s day three of AI Week, and Wednesday is all about &lt;strong>operations and maintenance&lt;/strong>. Because here&amp;rsquo;s the thing: once your code reaches production, the operational work is still surprisingly manual. Someone&amp;rsquo;s watching dashboards, someone&amp;rsquo;s deciding whether that error spike is real, and someone&amp;rsquo;s writing up what happened — every single day.&lt;/p>
-&lt;p>Today, two features of Grafana Assistant are now generally available to take that burden off your plate: &lt;strong>Investigations&lt;/strong> and &lt;strong>Automations&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Assistant Automations&lt;/strong> handle the recurring work of operating a system. Save an Assistant prompt and run it on a schedule — like a morning brief that summarizes the operational health of your service over the last 24 hours. Every run keeps its own conversation and history, and it can notify you in Slack when it&amp;rsquo;s done or needs approval.&lt;/p>
-&lt;p>&lt;strong>Assistant Investigations&lt;/strong> is for when something actually breaks. Investigations digs into issues across your metrics, logs, traces, and profiles, develops and tests hypotheses, and hands you a structured report. You can follow along in a Workspace, see what&amp;rsquo;s been ruled out, and add guidance while it works.&lt;/p>
-&lt;p>You&amp;rsquo;re offloading vigilance, not accountability — the evidence and reasoning are always there to review, and you still make the call.&lt;/p>
-&lt;p>Everything&amp;rsquo;s at &lt;strong>grafana.ai&lt;/strong> — see you tomorrow for day four: evaluating your agents.&lt;/p></description></item><item><title>AI Week Day 1: Planning (Grafana AI Week — Monday)</title><link>https://nicolevanderhoeven.github.io/blog/20260727-ai-week-monday-planning/</link><pubDate>Mon, 27 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260727-ai-week-monday-planning/</guid><description>&lt;p>It&amp;rsquo;s day one of Grafana Labs&amp;rsquo; AI Week, and Monday is all about &lt;strong>planning&lt;/strong> — getting the clarity you need on what&amp;rsquo;s going on in your system so you can figure out what to build. Kicking things off is &lt;strong>Workspace for Grafana Assistant&lt;/strong>: a full-page view of Assistant so your conversations and generated graphs aren&amp;rsquo;t crammed into the little right-hand sidebar. It&amp;rsquo;s a much less cluttered place to run investigations and to be agent-first. On top of that, Assistant is now easier to try — enable it in Grafana 13 for OSS without linking a Grafana Cloud account, or try it with no signup or download at all on &lt;a href="https://play.grafana.org">Grafana Play&lt;/a>.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AEU73mjeh0c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>Hi everyone! I&amp;rsquo;m Nicole van der Hoeven and I&amp;rsquo;m really excited to welcome you to AI Week. Today is Monday, which is planning day, where we give you the tools you need to get clarity on what even is going on in your system so that you can figure out what to build.&lt;/p>
-&lt;p>Now we&amp;rsquo;re kicking things off with a feature called Workspace for Grafana Assistant. Now if you&amp;rsquo;ve used Assistant before, you&amp;rsquo;ll know that it comes up on the little sidebar on the right side of Grafana. Well, that can start to get cramped if you have multiple conversations or if you&amp;rsquo;ve asked Assistant to generate multiple graphs for you. Well, we&amp;rsquo;ve heard you, and now we&amp;rsquo;re giving you a full page view of Assistant. So you&amp;rsquo;ll have all of your conversations on the left, and this is also an excellent place to run investigations from. You can also zoom in on any of those graphs, and it&amp;rsquo;s just a much less cluttered view if you want to be agent-first.&lt;/p>
-&lt;p>Speaking of Assistant, the second thing I want to tell you is that you know, Assistant was already available everywhere. But now, Assistant is available&amp;hellip; in more places than everywhere? And also more easily. So Assistant was already available for OSS, but you had to link your Grafana Cloud account, which was not so handy if you wanted to try it out. But not anymore. Now if you download Grafana 13 and enable Assistant, then you&amp;rsquo;ll just be able to go and try it out and chat with Assistant without doing anything else. It&amp;rsquo;s still not free or open source, but it IS a lot easier to try it out.&lt;/p>
-&lt;p>And if you don&amp;rsquo;t want to download anything, that&amp;rsquo;s what Grafana Play is for. Grafana Assistant is now available to try out on Grafana Play without any signup or any download required. Try it out at play.grafana.org. I really love seeing it there. Tune in tomorrow where we&amp;rsquo;re going to talk about everything we&amp;rsquo;re announcing to help you start to build.&lt;/p></description></item><item><title>Zero to Dashboard with Grafana Assistant and the Infinity datasource plugin</title><link>https://nicolevanderhoeven.github.io/blog/20260522-zero-to-dashboard-infinity-assistant/</link><pubDate>Fri, 22 May 2026 17:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260522-zero-to-dashboard-infinity-assistant/</guid><description>&lt;p>What if you didn&amp;rsquo;t have to write a single query to get a useful dashboard?&lt;/p>
-&lt;p>In this short video, I go from nothing to a working dashboard in a few minutes — no queries — using &lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a> and the &lt;a href="https://grafana.com/docs/plugins/yesoreyeram-infinity-datasource/">Infinity datasource plugin&lt;/a>. The data I&amp;rsquo;m visualising is the &lt;a href="https://rawg.io/apidocs">RAWG video game database API&lt;/a>, so I end up with a dashboard that helps me decide what to play next.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/X3TZk_qywlo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="why-infinity-is-fun-here">Why Infinity is fun here&lt;/h2>
-&lt;p>Most Grafana data sources are scoped to a specific kind of backend — Prometheus, Loki, a SQL database. &lt;strong>Infinity&lt;/strong> is different: it lets you treat &lt;em>any&lt;/em> REST/JSON/CSV/HTML endpoint as a data source. That means anything with an API can become a dashboard, which is exactly the right shape for goofing around with a games API on a Friday afternoon.&lt;/p>
-&lt;p>Pair Infinity with Assistant and you don&amp;rsquo;t even have to know what queries to write — Assistant configures the data source, asks the API the right questions, and builds the panels for you.&lt;/p>
-&lt;h2 id="timestamps">Timestamps&lt;/h2>
-&lt;ul>
-&lt;li>00:00 — Intro&lt;/li>
-&lt;li>00:35 — The RAWG video game database&lt;/li>
-&lt;li>01:01 — Setting up the Infinity datasource&lt;/li>
-&lt;li>05:10 — Customising the dashboard with Assistant&lt;/li>
-&lt;li>09:31 — Closing thoughts&lt;/li>
-&lt;/ul>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://grafana.com/blog/use-ai-to-turn-any-api-into-a-grafana-dashboard/">Step-by-step blog post: using Assistant with the Infinity datasource&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/alerting-and-irm/machine-learning/assistant/">Grafana Assistant documentation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/docs/plugins/yesoreyeram-infinity-datasource/">Infinity datasource plugin&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://rawg.io/apidocs">RAWG video game database API&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/g/cloud">Get started with Grafana Cloud (free tier)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">My notes on Grafana Assistant&lt;/a> — everything I&amp;rsquo;m learning as I work on it&lt;/li>
-&lt;/ul></description></item><item><title>Do Androids Dream of Second Brains?</title><link>https://nicolevanderhoeven.github.io/blog/20260518-do-androids-dream-of-second-brains-video/</link><pubDate>Mon, 18 May 2026 07:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260518-do-androids-dream-of-second-brains-video/</guid><description>&lt;p>We often describe our personal knowledge management systems as &amp;ldquo;second brains&amp;rdquo; — but can we really say they think for themselves? In this video, I make the case for instrumenting your vault with an observability stack and layering AI on top, not because it&amp;rsquo;ll turn your notes into a brain, but because it might get us closer than anything else has.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BeuaPO0Ezuk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>This is the video version of the talk I gave at &lt;a href="https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/">PKM Summit 2026&lt;/a> in Utrecht earlier this year, with the live demos cleaner and the dashboards working without the conference wifi gods getting in the way.&lt;/p>
-&lt;h2 id="what-i-cover">What I cover&lt;/h2>
-&lt;h3 id="-why-second-brain-is-the-wrong-framing">🐑 Why &amp;ldquo;second brain&amp;rdquo; is the wrong framing&lt;/h3>
-&lt;p>I take a small detour through Philip K. Dick&amp;rsquo;s &lt;em>Do Androids Dream of Electric Sheep?&lt;/em> — the inspiration for &lt;em>Blade Runner&lt;/em> — and the Voigt-Kampff test, which measures empathy through observed responses to staged scenarios. It&amp;rsquo;s a useful lens for asking what we actually mean when we say a knowledge system &amp;ldquo;thinks&amp;rdquo;: we&amp;rsquo;re really asking whether it can respond to us in a way that surprises us. Most second-brain setups can&amp;rsquo;t, yet.&lt;/p>
-&lt;h3 id="-observability-for-pkm">📊 Observability for PKM&lt;/h3>
-&lt;p>Observability is a concept I&amp;rsquo;ve borrowed wholesale from how we monitor software systems — the idea that you can understand a complex system by what it emits, not by reading its internals. Three steps: instrumentation, analysis, improvement. I walk through what each one looks like for a personal vault:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Instrumentation&lt;/strong>: a small script that emits metrics about my Obsidian vault — note counts, link density, growth over time, what folders are loud and which are quiet&lt;/li>
-&lt;li>&lt;strong>Analysis&lt;/strong>: a Grafana dashboard sitting on top of Loki + Prometheus, surfacing things I genuinely didn&amp;rsquo;t know about my own vault&lt;/li>
-&lt;li>&lt;strong>Improvement&lt;/strong>: the part where seeing the data actually changes how you work&lt;/li>
-&lt;/ul>
-&lt;p>There&amp;rsquo;s a live dashboard tour, and a section where I ask &lt;strong>Grafana Assistant&lt;/strong> to edit the dashboard for me in natural language — including writing the PromQL queries I never want to write by hand.&lt;/p>
-&lt;h3 id="-meet-iris">👁️ Meet Iris&lt;/h3>
-&lt;p>About halfway through the video I introduce &lt;strong>Iris&lt;/strong> — the AI agent I built using &lt;a href="https://openclaw.ai">OpenClaw&lt;/a> that lives in my vault, reads my notes, and works alongside me. I walk through:&lt;/p>
-&lt;ul>
-&lt;li>What &amp;ldquo;agentic AI&amp;rdquo; actually means in practice (vs. just chatting with an LLM)&lt;/li>
-&lt;li>The OpenClaw setup — Docker sandbox, Syncthing, the whole pipeline&lt;/li>
-&lt;li>Iris rewriting my observability map of content&lt;/li>
-&lt;li>Iris doing talk-topic analysis on my vault&lt;/li>
-&lt;li>Iris running benchmark research for a blog post&lt;/li>
-&lt;li>Iris OCRing my reMarkable handwriting&lt;/li>
-&lt;/ul>
-&lt;h3 id="-dreaming">🌙 Dreaming&lt;/h3>
-&lt;p>The last section is the one I had the most fun with. I argue that the thing most second-brain setups are missing isn&amp;rsquo;t &lt;em>more notes&lt;/em> or &lt;em>better search&lt;/em> — it&amp;rsquo;s &lt;strong>synthesis&lt;/strong>. The capacity to take everything you&amp;rsquo;ve captured and surface patterns, contradictions, and ideas you hadn&amp;rsquo;t formed yet.&lt;/p>
-&lt;p>I introduce OpenClaw&amp;rsquo;s &lt;em>dreaming&lt;/em> feature: a memory consolidation process inspired by how sleep stages work in the brain. Light sleep, REM, and deep sleep each do different work — surfacing recent material, finding unexpected connections, and consolidating long-term memory. I show how each phase actually behaves in my own system.&lt;/p>
-&lt;p>And there&amp;rsquo;s a Zhuangzi reference. (You&amp;rsquo;ll see.)&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>🎤 &lt;a href="https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/">PKM Summit 2026 talk recap (with photos)&lt;/a>&lt;/li>
-&lt;li>🎞 &lt;a href="https://nicole.to/androids">Slides&lt;/a>&lt;/li>
-&lt;li>👁️ &lt;a href="https://openclaw.ai">OpenClaw&lt;/a>&lt;/li>
-&lt;li>📓 &lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/li>
-&lt;li>🔄 &lt;a href="https://syncthing.net">Syncthing&lt;/a>&lt;/li>
-&lt;li>📊 &lt;a href="https://grafana.com">Grafana&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="related-reading">Related reading&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting">&lt;em>The Architecture of Forgetting&lt;/em>&lt;/a> — the essay version of why memory consolidation matters&lt;/li>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">&lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>If you want to follow more of how Iris works and what I&amp;rsquo;m learning about AI + PKM, &lt;a href="https://contexthorizon.substack.com">Context Horizon&lt;/a> is where I write about it.&lt;/p></description></item><item><title>Grafana k6 Community Call — Secrets Management &amp; AI Script Authoring</title><link>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</link><pubDate>Thu, 30 Apr 2026 16:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</guid><description>&lt;p>The first k6 Community Call in over a year, and we packed it. I sat down with four of the people building k6 — &lt;strong>Bukola Ayodele&lt;/strong>, &lt;strong>Facundo Batista&lt;/strong> (Software Engineer), &lt;strong>Vicente Ortega&lt;/strong> (Senior Backend Engineer), and &lt;strong>Charlie Burnett&lt;/strong> (Product Manager) — to walk through two new pieces of work that have shipped recently, plus a look at what&amp;rsquo;s coming in k6 v2.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mYpnaE_J2lM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="what-we-covered">What we covered&lt;/h2>
-&lt;h3 id="-secrets-management-in-k6-cloud-facundo">🔐 Secrets management in k6 Cloud (Facundo)&lt;/h3>
-&lt;p>A new way to store API tokens, passwords, and other sensitive values for your tests — centralized in Grafana&amp;rsquo;s secrets manager, encrypted at rest, and never visible in the UI or API once written. Your scripts reference secrets by name, and at runtime the values are injected and &lt;strong>automatically redacted from logs&lt;/strong>.&lt;/p>
-&lt;p>Why this matters for load testers:&lt;/p>
-&lt;ul>
-&lt;li>No more hardcoded credentials sitting in scripts or in Git&lt;/li>
-&lt;li>Easy rotation — change the secret value, every script that uses it picks up the new value, no script edits needed&lt;/li>
-&lt;li>Same script works across dev/staging/prod by just swapping which secrets are scoped to which environment&lt;/li>
-&lt;li>Works with k6 OSS locally too — your local runs can pull cloud-managed secrets when you want them&lt;/li>
-&lt;/ul>
-&lt;p>Facundo Batista demoed the full flow: creating a secret in the Grafana Cloud UI (name, description, labels — up to 10 per secret, all write-only), and using it in a script with one line. There&amp;rsquo;s also an API for programmatic management.&lt;/p>
-&lt;h3 id="-grafana-assistant-k6-script-authoring-mode-vicente">🤖 Grafana Assistant k6 script authoring mode (Vicente)&lt;/h3>
-&lt;p>This is the AI-powered script generation that&amp;rsquo;s been in the works for a while — fine-tuned specifically for k6 best practices, not a generic &amp;ldquo;ask an LLM to write you a load test&amp;rdquo; workflow. The interesting bit is the &lt;strong>context sources&lt;/strong> Assistant can pull from when generating a script:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>A service name&lt;/strong> — Assistant analyzes the existing telemetry data to discover endpoints and shapes&lt;/li>
-&lt;li>&lt;strong>A GitHub repository URL&lt;/strong> — pulls the code to understand the API&lt;/li>
-&lt;li>&lt;strong>An OpenAPI specification&lt;/strong> — generates tests that exercise every endpoint with realistic request shapes&lt;/li>
-&lt;li>&lt;strong>Existing observability data&lt;/strong> — metrics, logs, traces from your actual production traffic&lt;/li>
-&lt;/ul>
-&lt;p>Generated scripts come with proper structure, error handling, checks, and &lt;code>TODO&lt;/code> comments where the model genuinely doesn&amp;rsquo;t know what to write (e.g. for auth tokens, request bodies, or anything that needs your secrets — by design, Assistant won&amp;rsquo;t fabricate those). You can also point it at an existing script and ask it to refactor or extend.&lt;/p>
-&lt;h3 id="-k6-v2-charlie">🚀 k6 v2 (Charlie)&lt;/h3>
-&lt;p>Release candidate 1 is out, GA is &lt;em>very&lt;/em> soon. The headline changes:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Extensions marketplace&lt;/strong> — community protocols and integrations&lt;/li>
-&lt;li>&lt;strong>Enhanced Playwright browser support&lt;/strong> with compatible syntax&lt;/li>
-&lt;li>&lt;strong>New assertions library&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>MCP / agent connectivity&lt;/strong> for AI-driven workflows&lt;/li>
-&lt;li>&lt;strong>DNS, MQTT, and other network protocols&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>Migration advice from Charlie Burnett: pin your script versions, test your existing scripts against the RC before GA hits, and don&amp;rsquo;t rush.&lt;/p>
-&lt;h3 id="-whats-next-on-the-ai-roadmap-next-12-months">🔮 What&amp;rsquo;s next on the AI roadmap (next 1–2 months)&lt;/h3>
-&lt;ul>
-&lt;li>Visual browser-based testing experience&lt;/li>
-&lt;li>Enhanced observability workflow automation&lt;/li>
-&lt;li>Improved user-journey creation across both personal and enterprise apps&lt;/li>
-&lt;li>Integration with autonomous monitoring systems&lt;/li>
-&lt;/ul>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://grafana.com/docs/k6/">k6 documentation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/grafana-assistant/">Grafana Assistant docs&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/grafana/k6/releases">k6 v2 release candidate&lt;/a> (GA very soon)&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/docs/grafana-cloud/k6/secrets/">Secrets management in k6 Cloud&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="related-context-horizon-pieces">Related Context Horizon pieces&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">&lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/high-int-low-wis-what-llm-benchmarks">&lt;em>High INT, Low WIS — what LLM benchmarks miss&lt;/em>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Thanks to Bukola, Facundo, Vicente, and Charlie for joining, and to everyone who showed up live.&lt;/p></description></item><item><title>How to use Grafana Assistant with self-hosted Grafana</title><link>https://nicolevanderhoeven.github.io/blog/20260420-grafana-assistant-self-hosted/</link><pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260420-grafana-assistant-self-hosted/</guid><description>&lt;p>In case you missed it, possibly the biggest news to come from GrafanaCON this year is that if you&amp;rsquo;re running self-hosted or open-source Grafana, you can now connect it through your Grafana Cloud account to &lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a>, the purpose-built AI tool for all things Grafana.&lt;/p>
-&lt;p>In this short tutorial, I show you how to enable Assistant on a self-hosted Grafana instance and go from &lt;em>nothing&lt;/em> to a working server-health dashboard with a single prompt.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0O0ZqrruGns?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="a-quick-note-on-what-for-open-source-actually-means">A quick note on what &amp;ldquo;for open source&amp;rdquo; actually means&lt;/h2>
-&lt;p>Assistant itself isn&amp;rsquo;t open source. But you can now use it &lt;em>with&lt;/em> your self-hosted or open-source Grafana instance. The way it works is:&lt;/p>
-&lt;ul>
-&lt;li>You still need a Grafana Cloud account (the free tier has &lt;a href="https://grafana.com/pricing/">generous inclusions&lt;/a> for Assistant).&lt;/li>
-&lt;li>You link your self-hosted Grafana to that Cloud account.&lt;/li>
-&lt;li>Assistant then lights up inside your OSS instance.&lt;/li>
-&lt;/ul>
-&lt;p>Think of the Grafana Cloud account as the key that unlocks Assistant wherever your Grafana lives.&lt;/p>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Grafana OSS v13 or later&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>A Grafana Cloud account&lt;/strong> (&lt;a href="https://grafana.com/pricing/">pricing here&lt;/a>)&lt;/li>
-&lt;/ul>
-&lt;h2 id="enabling-assistant">Enabling Assistant&lt;/h2>
-&lt;ol>
-&lt;li>Go to &lt;strong>Administration → Plugins&lt;/strong>, search for &lt;strong>Assistant&lt;/strong>, and click &lt;strong>Install&lt;/strong>.&lt;/li>
-&lt;li>Refresh the page, then open the &lt;strong>Connection&lt;/strong> tab.&lt;/li>
-&lt;li>Click &lt;strong>Start Connection&lt;/strong>. You&amp;rsquo;ll be prompted to log into Grafana Cloud.&lt;/li>
-&lt;li>Select the organization and stack you want, then click &lt;strong>Authorize connection&lt;/strong>.&lt;/li>
-&lt;li>Close the tab. Your self-hosted Grafana is now linked to Assistant.&lt;/li>
-&lt;/ol>
-&lt;h2 id="a-first-dashboard-from-nothing">A first dashboard from nothing&lt;/h2>
-&lt;p>Every Grafana instance ships with a &lt;strong>TestData&lt;/strong> data source — perfect for a first run when you don&amp;rsquo;t yet have real data wired up. Enable it from Data Sources, then open Assistant (the new icon on the top right).&lt;/p>
-&lt;p>Switch Assistant&amp;rsquo;s mode from &lt;strong>General&lt;/strong> to &lt;strong>Dashboarding&lt;/strong> — this mode is tuned for creating and managing dashboards — and ask in plain English, for example:&lt;/p>
-&lt;blockquote>
-&lt;p>Hi Assistant, could you create a server health dashboard for me using the TestData data source?&lt;/p>&lt;/blockquote>
-&lt;p>What comes back is a starting dashboard with CPU, memory, disk, and network panels already wired up. From there you can tweak panels, edit queries, or ask Assistant to iterate. You&amp;rsquo;re not starting from scratch — you&amp;rsquo;re starting from 80%.&lt;/p>
-&lt;h2 id="what-else-assistant-can-do">What else Assistant can do&lt;/h2>
-&lt;p>I only showed dashboarding in this video, but Assistant can also:&lt;/p>
-&lt;ul>
-&lt;li>Answer questions about the data already in your Grafana&lt;/li>
-&lt;li>Run investigations to troubleshoot production incidents&lt;/li>
-&lt;li>Learn new skills&lt;/li>
-&lt;li>Manage alerts&lt;/li>
-&lt;li>Teach you Grafana&lt;/li>
-&lt;/ul>
-&lt;p>That list keeps growing, so stay tuned.&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://grafana.com/products/cloud/ai-tools/">Grafana Assistant&lt;/a> (product page)&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/pricing/">Grafana Cloud pricing&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/legal/grafana-cloud-data-processing/">How Grafana Labs handles your data&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant">My notes on Grafana Assistant&lt;/a> — everything I&amp;rsquo;m learning as I work on it&lt;/li>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">Unlearnings from building Grafana Assistant&lt;/a> — my Context Horizon piece on what the team had to unlearn&lt;/li>
-&lt;/ul></description></item><item><title>Unlearnings from building Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</link><pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</guid><description>&lt;p>Originally posted &lt;a href="https://open.substack.com/pub/contexthorizon/p/unlearnings-from-building-grafana?r=7xe6zg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true">here&lt;/a>&lt;/p>
-&lt;p>Everyone&amp;rsquo;s talking about what you need to &lt;em>learn&lt;/em> to build AI agents: Prompt engineering. Tool calling. Retrieval strategies. The content ecosystem is full of it. But while I was watching Context Window Episode 1, it struck me that Mat Ryer, Cyril Tovena, and Sven Großmann&amp;ndash; some of the team behind Grafana Assistant&amp;ndash; spent most of their time on something different: what they had to &lt;em>unlearn&lt;/em>.&lt;/p>
-&lt;p>Grafana Assistant started as a weekend hackathon project. By the time it shipped, the team had thrown out a popular framework, flipped their assumptions about tool design, and discovered that some of the instincts you bring from conventional software development actively work against you when you&amp;rsquo;re building agents.&lt;/p>
-&lt;p>I pulled out the ten moments where received wisdom turned out to be wrong. If you&amp;rsquo;re building anything agentic right now, these are worth sitting with.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TGWVqBAeIzI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="-langchain-will-help-us-build-faster">❌ LangChain will help us build faster&lt;/h2>
-&lt;p>&lt;a href="https://github.com/langchain-ai/langchain">LangChain&lt;/a> is an opensource framework for building applications that use LLMs. It provides structured components that can be used for rapid prototyping.&lt;/p>
-&lt;p>In the video, Tovena talks about how they started with LangChain during the initial hackathon because they thought it would help them build more quickly, but instead it became obvious fairly early on that the opposite was true. They didn&amp;rsquo;t end up using a lot of the features that LangChain provided and felt they needed more flexibility and speed.&lt;/p>
-&lt;h3 id="abstraction-overhead">Abstraction overhead&lt;/h3>
-&lt;p>One possible reason for their troubles with LangChain is that LangChain has standard abstractions for prompts, tool use, and orchestration&amp;ndash; things that sound good in theory. But sometimes abstractions lend themselves to creating a sort of black box in your stack, where you don&amp;rsquo;t know what&amp;rsquo;s happening inside it. It sounds like the Assistant team missed the oversight and control of what was happening.&lt;/p>
-&lt;h2 id="-use-the-same-prompt-for-every-model">❌ Use the same prompt for every model&lt;/h2>
-&lt;p>They also talked about how for the sake of simplicity and consistency, they initially used the same prompt for every model. However, they found out that this actually led to worse results. They found more success in creating slightly different prompts for different models, playing to their strengths and weaknesses a bit more.&lt;/p>
-&lt;p>There is even an argument (&lt;a href="https://arxiv.org/abs/2401.00595">Mizrahi et al.&amp;rsquo;s &amp;ldquo;State of What Art? A Call for Multi-Prompt LLM Evaluation&lt;/a>) that AI benchmarks that involve sending multiple LLMs the same prompt is a brittle and unreliable way to assess LLM capabilities. Different models respond differently to prompt variations.&lt;/p>
-&lt;p>In practice, what this means is that switching models isn&amp;rsquo;t a drop-in replacement. Even if a new model scores better on benchmarks, your prompts were written with a specific model&amp;rsquo;s tendencies in mind. The unlearning here is letting go of the idea that a prompt is model-agnostic — it&amp;rsquo;s more like a conversation style, and different models have different conversational defaults.&lt;/p>
-&lt;h2 id="-treat-errors-as-failures">❌ Treat errors as failures&lt;/h2>
-&lt;p>Traditionally in software, you catch errors and hide them from the user: you log them, handle them, but treat that transaction as a failed one.&lt;/p>
-&lt;p>The Assistant team had to unlearn this habit when dealing with an LLM, because with agents, error messages &lt;em>are&lt;/em> useful data. Feeding it back to the LLM often results in it learning from its own mistake and trying again. It&amp;rsquo;s basically letting the agent debug itself, in a manner that Ryer noted was remarkably similar to how we humans debug errors too.&lt;/p>
-&lt;h2 id="-return-errors-in-structured-json">❌ Return errors in structured JSON&lt;/h2>
-&lt;p>On the subject of error messages, Großmann mentioned that at one point they were trying to format the errors in JSON or stringified JSON. This practice shows solid engineer intuition because usually, structuring information helps machines process it faster and more accurately. What they found here was the reverse: it was easier and yielded better results when the LLM was just passed the entire error in natural language.&lt;/p>
-&lt;h2 id="-build-as-many-tools-as-possible">❌ Build as many tools as possible&lt;/h2>
-&lt;p>The team mentioned that at the start, they were inclined to create as many tools/skills for Assistant: one for everything that could be done in Grafana. This made sense until they saw LLMs struggle to determine which tool to use in which context.&lt;/p>
-&lt;p>To help LLMs identify the correct tool, they added tool descriptions and also experimented with combining multiple tools into fewer, parameterized, tools. These helped, although the team still observed that allowing users to create their own tools (with potentially very general tool descriptions) could potentially confuse LLMs.&lt;/p>
-&lt;h2 id="-bigger-context-window--better">❌ Bigger context window = better&lt;/h2>
-&lt;p>&lt;a href="https://developers.googleblog.com/en/new-features-for-the-gemini-api-and-google-ai-studio/">Gemini 1.5 Pro announced&lt;/a> it had a 2M context window back in 2024, and it might seem that other providers had lagged behind: &lt;a href="https://openai.com/index/gpt-4-1/">OpenAI&lt;/a> only announced support for 1M tokens in 2025 and &lt;a href="https://www.anthropic.com/news/claude-opus-4-6">Anthropic&lt;/a> followed in 2026. However, the Assistant team pointed out that context wasn&amp;rsquo;t everything. They said that they noticed that bigger wasn&amp;rsquo;t necessarily better, also pointing out that the chat summarization feature on IDEs like &lt;a href="https://cursor.com/">Cursor&lt;/a> could still sometimes lose important details when summarizing.&lt;/p>
-&lt;p>This finding seems to coincide with a 2023 Stanford study (&lt;a href="https://arxiv.org/abs/2307.03172">Lost in the Middle: How Language Models Use Long Contexts&lt;/a>) that found there was a performance degradation when models access information within a very large context. In the video, they talked about how their system prompts were often 40k tokens long (half for the prompt itself and then the other half for tools).&lt;/p>
-&lt;h2 id="-start-with-a-multi-agent-architecture">❌ Start with a multi-agent architecture&lt;/h2>
-&lt;p>Tovena mentioned that creating a multi-agent architecture for Assistant yielded more mixed results than he expected. He said that passing context between agents is difficult, outputs were inconsistent, and there was a bit of a &amp;ldquo;telephone game&amp;rdquo; problem where agents didn&amp;rsquo;t always perfectly understand the intent or output of other agents.&lt;/p>
-&lt;p>In early 2026, &lt;a href="https://arxiv.org/abs/2601.13295">Khatua et al. released a study&lt;/a> called &amp;ldquo;CooperBench: Why Coding Agents Cannot Be Your Teammates Yet&amp;rdquo; that showed that AI agents aren&amp;rsquo;t great at collaboration. The study suggests, surprisingly, that this might be because AI agents lack human social habits that help us collaborate better, such as feeling obliged to do what we say and having a good understanding of what others&amp;rsquo; plans are.&lt;/p>
-&lt;p>The Assistant team&amp;rsquo;s experience is also a perfect example of &lt;a href="https://www.laws-of-software.com/laws/gall/">Gall&amp;rsquo;s Law&lt;/a>, which states that it&amp;rsquo;s easier to start with simplicity and build complexity than the other way around.&lt;/p>
-&lt;h2 id="-plan-around-models-as-they-are-now">❌ Plan around models as they are now&lt;/h2>
-&lt;p>Software has always moved quickly, but it feels like AI models are moving faster. &lt;a href="https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf">Stanford&amp;rsquo;s AI Index Report 2025&lt;/a> reported that models went from having a 50% chance to near-human performance in roughly 2 years (2021-2023). In fact, benchmarks keep getting retired as AI saturates them&amp;ndash; meaning that benchmarks can&amp;rsquo;t reliably be used to distinguish between good and bad models because all the models are testing near the ceiling.&lt;/p>
-&lt;p>The rapid pace of development around AI requires us to not be so attached to our work: Großmann recalled an incident where someone wrote a joke prompt that spoke like a dog that shockingly did better than their other system prompts. Ryer also mentioned that at one point someone deleted all the system prompts and Assistant weirdly became more accurate.&lt;/p>
-&lt;p>The lesson is clear: plan for models to improve, and plan to redo a lot of your work when they do.&lt;/p>
-&lt;h2 id="-we-dont-need-evals">❌ We don&amp;rsquo;t need evals&lt;/h2>
-&lt;p>The Assistant team said that they went from having no evals to employing several types of evals:&lt;/p>
-&lt;ul>
-&lt;li>integration-style evals that exercise whole workflows&lt;/li>
-&lt;li>unit-style evals that feed inputs plus a system prompt and check the output&lt;/li>
-&lt;li>LLM-as-judge, where they pass conversations to an LLM to ask it to judge whether it answered the user&amp;rsquo;s questions.&lt;/li>
-&lt;li>user feedback in the form of thumbs during conversations with Assistant&lt;/li>
-&lt;/ul>
-&lt;p>Beyond evaluation, they talked about how important it was to be able to observe AI. At the very minimum, showing what Assistant is doing at all times (thinking out loud) is very important to them because it builds users&amp;rsquo; trust in the thinking process and, eventually, in the result.&lt;/p>
-&lt;p>Evals aren&amp;rsquo;t a sign that you don&amp;rsquo;t trust your product. They&amp;rsquo;re how you build the confidence to keep shipping it.&lt;/p>
-&lt;h2 id="-assume-people-already-know-how-to-work-with-ai">❌ Assume people already know how to work with AI&lt;/h2>
-&lt;p>When you ship an AI feature, it&amp;rsquo;s tempting to assume the hard work is done. You&amp;rsquo;ve built the thing. Users will figure it out.&lt;/p>
-&lt;p>What the Grafana Assistant team found was that this assumption doesn&amp;rsquo;t hold. Users came in with wildly different mental models of what an AI assistant could or should do — some treating it like a search box, others expecting it to read their minds, most not yet sure how to prompt it effectively.&lt;/p>
-&lt;p>Their insight was that this isn&amp;rsquo;t just a UX problem to solve on your end. It&amp;rsquo;s a shared responsibility: AI should try to help the user, but the user also needs to learn how to work with AI. And building an assistant that teaches people how to use it well (through good responses, gentle corrections, showing its work) is part of building the product.&lt;/p>
-&lt;p>There&amp;rsquo;s also a deeper point here specific to observability. Grafana Assistant isn&amp;rsquo;t just an AI feature; it&amp;rsquo;s a way of interacting with your own infrastructure. Every good interaction teaches you something about what questions to ask, what signals to look for, what it means to understand a system. In other words: learning to use AI well makes you a better engineer. The tool and the skill co-evolve.&lt;/p>
-&lt;p>This is the unlearning that sits furthest from the code. It&amp;rsquo;s not about prompts or architectures or frameworks. It&amp;rsquo;s about recognising that you&amp;rsquo;re not just shipping a feature&amp;ndash; you&amp;rsquo;re introducing a new way of working. That takes time. And it&amp;rsquo;s worth designing for explicitly.&lt;/p>
-&lt;h2 id="summary">Summary&lt;/h2>
-&lt;p>What strikes me most about this list isn&amp;rsquo;t any single item — it&amp;rsquo;s the pattern. Most of these unlearnings point in the same direction: &lt;em>less is more, and messiness is the point.&lt;/em>&lt;/p>
-&lt;p>Less abstraction. Fewer tools. Smaller context. Simpler architecture. And rather than hiding the mess — the errors, the reasoning, the uncertainty — let it show. That&amp;rsquo;s where the trust gets built.&lt;/p>
-&lt;p>We&amp;rsquo;re all still early with this. The team that built one of the most thoughtful AI products I&amp;rsquo;ve seen up close still didn&amp;rsquo;t have evals when they launched. That&amp;rsquo;s not a criticism — it&amp;rsquo;s a reminder. You don&amp;rsquo;t need to have it all figured out before you ship. You just need to commit to keep unlearning.&lt;/p></description></item><item><title>Let There Be Dashboards: Introducing Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link><pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid><description>&lt;p>I gave this talk at the &lt;a href="https://www.meetup.com/grafana-friends-lisboa/events/313572885/">Grafana &amp;amp; Friends Lisbon Meetup&lt;/a> in Lisbon, Portugal.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-01-presenting.jpg" alt="Demoing Grafana Assistant to the Lisbon meetup">&lt;/p>
-&lt;h2 id="abstract">Abstract&lt;/h2>
-&lt;p>This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-dashboard.png" alt="Dashboard created during the demo using Grafana Assistant">&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-02-audience.jpg" alt="The Grafana &amp;amp; Friends Lisbon crowd">&lt;/p>
-&lt;p>Thanks to everyone who came out! It was great to connect with the Lisbon tech community.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-03-group.jpg" alt="Group photo with the meetup attendees">&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Grafana Assistant on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/grafana-assistant/</link><description>Recent content in Grafana Assistant on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Mon, 17 Aug 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana-assistant/index.xml" rel="self" type="application/rss+xml"/><item><title>When to use Grafana Assistant vs MCP vs GCX: Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/</link><pubDate>Mon, 17 Aug 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/</guid><description>&lt;p&gt;Grafana has three AI things people keep confusing — Assistant, MCP, and GCX. They&amp;rsquo;re not competitors. Think of it as &lt;strong&gt;a brain and two hands.&lt;/strong&gt; In this short, I start with the brain: &lt;strong&gt;Grafana Assistant&lt;/strong&gt;.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xo7meD4Yn0k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Assistant isn&amp;rsquo;t just a chatbot — it&amp;rsquo;s the &lt;em&gt;reasoning layer&lt;/em&gt;. It manages context and knows your Grafana: your dashboards, your data sources, a knowledge graph of your infrastructure. Instead of clicking around, you tell Assistant &lt;em&gt;what&lt;/em&gt; you want to do and it figures out the &lt;em&gt;how&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Reach for the Assistant when the work is &lt;strong&gt;visual or exploratory&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Building a dashboard?&lt;/strong&gt; Assistant.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Teach me how to do this&amp;rdquo; or &amp;ldquo;where is this in the UI&amp;rdquo;?&lt;/strong&gt; Assistant.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A real incident that needs root-cause analysis across multiple data sources?&lt;/strong&gt; Assistant. That&amp;rsquo;s its sweet spot — it forms a hypothesis, correlates your signals, and can even open a pull request with the fix.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the key thing though: Assistant is Grafana&amp;rsquo;s &lt;em&gt;own&lt;/em&gt; brain — but it&amp;rsquo;s &lt;strong&gt;not the only brain that can drive Grafana.&lt;/strong&gt; That&amp;rsquo;s where the two hands come in, and I&amp;rsquo;ll cover the first of those (the MCP server) next.&lt;/p&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;Grafana has three AI things people keep confusing — Assistant, MCP, and GCX. I&amp;rsquo;m going to talk a bit about each one so you know which one is best for your use case.&lt;/p&gt;
+&lt;p&gt;Spoiler: They&amp;rsquo;re not competitors. Think of it as &lt;strong&gt;a brain and two hands.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with &lt;strong&gt;Grafana Assistant&lt;/strong&gt;, which is the brain.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s not just a chatbot — it&amp;rsquo;s the &lt;em&gt;reasoning layer&lt;/em&gt;. It manages context, it knows your Grafana: your dashboards, your data sources, a knowledge graph of your infrastructure. So instead of you clicking around to do something, you can say what you want to do to Assistant and it figures out the &lt;em&gt;how.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Reach for the Assistant when the work is &lt;strong&gt;visual or exploratory.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you&amp;rsquo;re building a dashboard? Assistant.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Teach me how to do this&amp;rdquo; or &amp;ldquo;where is this in the UI&amp;rdquo;? Assistant.&lt;/li&gt;
+&lt;li&gt;You have a real incident where you need root-cause analysis across multiple data sources? Assistant.
+&lt;ul&gt;
+&lt;li&gt;That&amp;rsquo;s its sweet spot — it forms a hypothesis, correlates your signals, and can even open a pull request with the fix.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the key thing though: Assistant is Grafana&amp;rsquo;s &lt;em&gt;own&lt;/em&gt; brain — but it&amp;rsquo;s &lt;strong&gt;not the only brain that can drive Grafana.&lt;/strong&gt; That&amp;rsquo;s where the two hands come in… and I&amp;rsquo;ll show you those next.&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/products/cloud/ai-tools/"&gt;Grafana Assistant&lt;/a&gt; (product page)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant"&gt;My notes on Grafana Assistant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/GCX"&gt;My notes on GCX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana"&gt;Unlearnings from building Grafana Assistant&lt;/a&gt; — my Context Horizon piece&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Week Day 5: Collaborating (Grafana AI Week — Friday)</title><link>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</link><pubDate>Fri, 31 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260731-ai-week-friday-collaborating/</guid><description>&lt;p&gt;The final day of AI Week is about &lt;strong&gt;collaborating&lt;/strong&gt; — using AI right where your team already works, no context switching required. &lt;strong&gt;Grafana Assistant in Slack is now generally available&lt;/strong&gt;: investigate issues, ask follow-up questions, and query your metrics and logs from the channel where the incident conversation is already happening. And that&amp;rsquo;s just one place Assistant now meets you — also announced: the &lt;strong&gt;Grafana mobile app is GA&lt;/strong&gt; (with Assistant on mobile in public preview), &lt;strong&gt;Assistant Desktop&lt;/strong&gt; in public preview, &lt;strong&gt;Microsoft Teams&lt;/strong&gt; support in private preview, and context-aware &lt;strong&gt;Assistant Search&lt;/strong&gt; in public preview. Add it all up and Assistant is now wherever you are: the Grafana UI, the API, your terminal, your coding agent, Slack, Teams, mobile, desktop, and search. That&amp;rsquo;s a wrap on five days of announcements.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/obBh4pMrHCM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s the final day of Grafana Labs&amp;rsquo; AI Week, and Friday is all about &lt;strong&gt;collaborating&lt;/strong&gt; — using AI right where your team already works, no context switching required.&lt;/p&gt;
+&lt;p&gt;Today, &lt;strong&gt;Grafana Assistant in Slack is generally available.&lt;/strong&gt; Investigate issues, ask follow-up questions, query your metrics and logs — all from the channel where your incident conversation is already happening.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s just one place Assistant now meets you. Today we also announced: the &lt;strong&gt;Grafana mobile app is GA&lt;/strong&gt;, with Assistant on mobile in public preview. &lt;strong&gt;Assistant Desktop&lt;/strong&gt; is in public preview. &lt;strong&gt;Microsoft Teams&lt;/strong&gt; support is in private preview. And &lt;strong&gt;Assistant Search&lt;/strong&gt; — deeper, context-aware search — is in public preview too.&lt;/p&gt;
+&lt;p&gt;Add it all up, and Assistant is now wherever you are: the Grafana UI, the API, your terminal, your coding agent, Slack, Teams, mobile, desktop, and search.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s a wrap on five days of announcements — and I know it was a &lt;em&gt;lot&lt;/em&gt;. So if you missed a day, or you just want the full picture of where AI at Grafana stands today, I made a video for exactly that: everything you can do with AI in Grafana Cloud, including everything we shipped this week. It&amp;rsquo;s linked below and pinned in the comments.&lt;/p&gt;
+&lt;p&gt;One last time: &lt;strong&gt;grafana.ai&lt;/strong&gt; for all of it. Thanks for spending AI Week with me.&lt;/p&gt;</description></item><item><title>Observability and AI explained</title><link>https://nicolevanderhoeven.github.io/blog/20260731-observability-and-ai-explained/</link><pubDate>Fri, 31 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260731-observability-and-ai-explained/</guid><description>&lt;p&gt;&amp;ldquo;AI observability&amp;rdquo; gets thrown around a lot, and it can mean one of two very different things. So in this video I map out the whole landscape of AI-related work at Grafana across the entire software development lifecycle — and show how AI and observability come together in two directions: &lt;strong&gt;AI for observability&lt;/strong&gt; (AI that helps you observe your systems) and &lt;strong&gt;observability for AI&lt;/strong&gt; (observing the AI itself).&lt;/p&gt;
+&lt;p&gt;The framing is deliberate: AI in observability isn&amp;rsquo;t about replacing engineers. It&amp;rsquo;s about handing back the exhausting parts of the job — the 3am triage, the repetitive queries, the report nobody wanted to write — so you can spend your energy on the work only humans can do.&lt;/p&gt;
+&lt;p&gt;I walk through each phase of the lifecycle and where the tools fit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Planning&lt;/strong&gt; — clarity about what&amp;rsquo;s really going on, with &lt;a href="https://notes.nicolevanderhoeven.com/Grafana%20Assistant"&gt;Grafana Assistant&lt;/a&gt;: not just a chatbot, but an agent that knows your telemetry, writes your queries, and builds your dashboards.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Building&lt;/strong&gt; — momentum without losing control: Assistant, the open-source &lt;a href="https://notes.nicolevanderhoeven.com/GCX"&gt;GCX&lt;/a&gt; CLI, the Grafana MCP server, the specialized Loki/Tempo/k6 MCP servers, and the AI SDK for building your own agents in Go.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operating&lt;/strong&gt; — staying calm under load: Investigations for agentic incident triage, Assistant Automations and the Watcher Agent for staying proactive, plus &lt;a href="https://notes.nicolevanderhoeven.com/Grafana%20Machine%20Learning"&gt;Grafana Machine Learning&lt;/a&gt; (Metrics Forecasting, Outlier Detection) and Adaptive Telemetry.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Testing &amp;amp; evaluating&lt;/strong&gt; — &lt;a href="https://notes.nicolevanderhoeven.com/Doubt%20is%20a%20form%20of%20care"&gt;doubt is a form of care&lt;/a&gt;: &lt;a href="https://notes.nicolevanderhoeven.com/k6%20%28tool%29"&gt;k6&lt;/a&gt; and agentic testing on the systems side, and Agent Observability plus the open-source o11y-bench benchmark on the &amp;ldquo;observing your AI&amp;rdquo; side.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collaborating&lt;/strong&gt; — bringing it all to where your team already works: Assistant in Slack (and coming to Teams), on mobile, on the desktop, and via API/MCP, plus Assistant Search across your Grafana artifacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&amp;rsquo;re new to the Grafana stack itself, start with my open source observability video for the non-AI foundations that all of this builds on.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OTmgMF6gD1k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;My notes on &lt;a href="https://notes.nicolevanderhoeven.com/Grafana%20Assistant"&gt;Grafana Assistant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;My notes on &lt;a href="https://notes.nicolevanderhoeven.com/GCX"&gt;GCX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;My notes on &lt;a href="https://notes.nicolevanderhoeven.com/k6%20%28tool%29"&gt;k6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://o11ybench.ai"&gt;o11ybench.ai&lt;/a&gt; — the open leaderboard for AI agents doing observability work&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Investigations Arena: how we test Assistant investigations</title><link>https://nicolevanderhoeven.github.io/blog/20260730-investigations-arena/</link><pubDate>Thu, 30 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260730-investigations-arena/</guid><description>&lt;p&gt;How do you test an AI agent whose whole job is to investigate incidents — when every investigation is different and &amp;ldquo;correct&amp;rdquo; isn&amp;rsquo;t a single deterministic answer? In this interview I sit down with &lt;strong&gt;Will&lt;/strong&gt;, a software engineer at Grafana who&amp;rsquo;s spent the last year focused on AI: the Grafana Assistant, investigations, and memory features.&lt;/p&gt;
+&lt;p&gt;The story here is how the team got from Investigations V1 to a much better V2. V1 hit a ceiling, and the demo environment they&amp;rsquo;d been testing against turned out to be the problem — the cases were too easy and too far from the messy reality of a production cluster. So they built an &lt;strong&gt;arena&lt;/strong&gt;: think competitive bot programming, but the &amp;ldquo;game&amp;rdquo; is investigating real incidents in Grafana&amp;rsquo;s own production environment. Different AI agents, each with its own strategy and tools, all take a swing at the same incident, and an LLM-as-judge scores their answers against a human-verified root cause.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s interesting is that the &lt;em&gt;score&lt;/em&gt; wasn&amp;rsquo;t even the most valuable output at first — the &lt;strong&gt;insights&lt;/strong&gt; were. Watching which strategies worked, which tools returned so much noise that they poisoned the context, and which agents wandered off is what let the team optimize bit by bit into the V2 release. The arena also compares more than models: different harnesses running Sonnet vs. Opus, Claude Code with the Grafana MCP, even just hitting the public API directly with &lt;code&gt;curl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A couple of my favorite moments: Will explains the &lt;strong&gt;guardrails&lt;/strong&gt; that stop agents from &amp;ldquo;cheating&amp;rdquo; (they can only look at data from within the incident&amp;rsquo;s time window, so they can&amp;rsquo;t peek at the fix commit that resolved it) — and how the models mostly play fair because they treat it like a game. And there&amp;rsquo;s a lovely example of emergent creativity: an agent reached for tools the team hadn&amp;rsquo;t even considered, they turned out to be genuinely useful for investigation, and those tools got promoted into the real harness. Will&amp;rsquo;s hope for the future is to open this up — an OliBench-style shared benchmark where the community can throw their own investigation agents into the arena and raise quality across the board.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YPfqchw8LCo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Will:&lt;/strong&gt;
+Hey, my name is Will. I&amp;rsquo;m a software engineer at Grafana. I&amp;rsquo;ve been there for three years, and for the last year I&amp;rsquo;ve been focusing on AI — the Grafana Assistant, investigations, and memory features.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nicole:&lt;/strong&gt;
+And what&amp;rsquo;s the latest thing you&amp;rsquo;ve been working on?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Will:&lt;/strong&gt;
+So we developed Investigations V1, and we saw that we hit a ceiling at some point. We came up with a different approach, but this time we needed a good evaluation environment — the demo environment wasn&amp;rsquo;t enough, because those cases were too easy and too far from the reality of a production environment. So we decided to build an arena.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a little bit like the idea of competitive bot programming, where bots fight against each other on specific tasks or games. In this case, the topic was investigations in our production cluster — real incidents. We started building bots that had different strategies and different tools; these were AI agents. Comparing a diversity of strategies let us surface the best approaches, and from there we could iterate, bring in more test cases from more incidents, and reach higher and higher quality.&lt;/p&gt;
+&lt;p&gt;The idea is that the bots try to solve the same case, and we use an LLM as a judge to compare the different approaches. We have different criteria, because for each incident we have a root cause that&amp;rsquo;s been verified by a human. That gives us our ground truth, and the LLM-as-judge compares that ground truth against the answers the agents came up with.&lt;/p&gt;
+&lt;p&gt;The important part at first wasn&amp;rsquo;t even the score — it was the insights. This tool was better with this strategy; this one had noise in the results that poisoned the context; the results returned from this specific tool were just too much. So we managed to really optimize bit by bit and come up with Investigations V2, which we just released. It&amp;rsquo;s a massive improvement compared to our V1 approach.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nicole:&lt;/strong&gt;
+So is it comparing just different models for investigations, or is it also comparing things like Claude Code and the Grafana MCP versus Assistant?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Will:&lt;/strong&gt;
+Both, actually. We have different versions of our harness for investigations that we run with Sonnet and with Opus, but we also use the Claude Code harness with the Grafana MCP — and even just using &lt;code&gt;curl&lt;/code&gt; to directly hit our public API.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nicole:&lt;/strong&gt;
+Do the models ever cheat?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Will:&lt;/strong&gt;
+So far it&amp;rsquo;s been quite good. We have guardrails. Because we investigate past incidents, we need to make sure the LLM only looks at a specific time window — only from when the incident started — otherwise it would be able to find the pull request that was used to solve the incident. But they&amp;rsquo;re pretty good at following the rules; they take it as a game a little bit. We even have an agent that checks afterward, with the judge, to make sure they followed every rule.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s funny, actually — we had a case using Claude Code where it started to use some tools we hadn&amp;rsquo;t thought about in the first place, and they turned out to be very useful for investigation. We&amp;rsquo;d never considered them, so we brought them into our investigation harness and it helped a lot. Giving the agents freedom and creativity in this kind of environment is really useful. That diversity sponsors new ideas that we can put into our own work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nicole:&lt;/strong&gt;
+Cool. Do you have any plans to publish this and share it so that other people can do it too — kind of like OliBench?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Will:&lt;/strong&gt;
+Yeah, I think, why not? I think we can go this way too. I&amp;rsquo;m sure it would be useful for other agents. And it would be very nice if we could compare agents from other people and other companies — maybe with different harnesses, maybe even different tools — because right now it&amp;rsquo;s mostly about our MCP, our CLI, and our investigation harness. But if the community comes up with their own investigation agents — and I think I&amp;rsquo;ve seen a few — it would be fun to put them in the arena and help not just our product, but any product improve in quality.&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;My notes on &lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant"&gt;Grafana Assistant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Week Day 3: Operations &amp; Maintenance (Grafana AI Week — Wednesday)</title><link>https://nicolevanderhoeven.github.io/blog/20260729-ai-week-wednesday-operations/</link><pubDate>Wed, 29 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260729-ai-week-wednesday-operations/</guid><description>&lt;p&gt;Day three of AI Week is about &lt;strong&gt;operations and maintenance&lt;/strong&gt; — because once code reaches production, the operational work is still surprisingly manual: someone&amp;rsquo;s watching dashboards, deciding whether an error spike is real, and writing up what happened, every single day. Two Grafana Assistant features went GA to take that off your plate. &lt;strong&gt;Assistant Automations&lt;/strong&gt; handle recurring work — save a prompt and run it on a schedule (like a morning brief on your service&amp;rsquo;s health), each run keeping its own history and able to notify you in Slack. &lt;strong&gt;Assistant Investigations&lt;/strong&gt; is for when something actually breaks: it digs across metrics, logs, traces, and profiles, develops and tests hypotheses, and hands you a structured report you can follow along with in a Workspace. You&amp;rsquo;re offloading vigilance, not accountability — the evidence is always there to review, and you still make the call.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5P7qSKIRSek?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s day three of AI Week, and Wednesday is all about &lt;strong&gt;operations and maintenance&lt;/strong&gt;. Because here&amp;rsquo;s the thing: once your code reaches production, the operational work is still surprisingly manual. Someone&amp;rsquo;s watching dashboards, someone&amp;rsquo;s deciding whether that error spike is real, and someone&amp;rsquo;s writing up what happened — every single day.&lt;/p&gt;
+&lt;p&gt;Today, two features of Grafana Assistant are now generally available to take that burden off your plate: &lt;strong&gt;Investigations&lt;/strong&gt; and &lt;strong&gt;Automations&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant Automations&lt;/strong&gt; handle the recurring work of operating a system. Save an Assistant prompt and run it on a schedule — like a morning brief that summarizes the operational health of your service over the last 24 hours. Every run keeps its own conversation and history, and it can notify you in Slack when it&amp;rsquo;s done or needs approval.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant Investigations&lt;/strong&gt; is for when something actually breaks. Investigations digs into issues across your metrics, logs, traces, and profiles, develops and tests hypotheses, and hands you a structured report. You can follow along in a Workspace, see what&amp;rsquo;s been ruled out, and add guidance while it works.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re offloading vigilance, not accountability — the evidence and reasoning are always there to review, and you still make the call.&lt;/p&gt;
+&lt;p&gt;Everything&amp;rsquo;s at &lt;strong&gt;grafana.ai&lt;/strong&gt; — see you tomorrow for day four: evaluating your agents.&lt;/p&gt;</description></item><item><title>AI Week Day 1: Planning (Grafana AI Week — Monday)</title><link>https://nicolevanderhoeven.github.io/blog/20260727-ai-week-monday-planning/</link><pubDate>Mon, 27 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260727-ai-week-monday-planning/</guid><description>&lt;p&gt;It&amp;rsquo;s day one of Grafana Labs&amp;rsquo; AI Week, and Monday is all about &lt;strong&gt;planning&lt;/strong&gt; — getting the clarity you need on what&amp;rsquo;s going on in your system so you can figure out what to build. Kicking things off is &lt;strong&gt;Workspace for Grafana Assistant&lt;/strong&gt;: a full-page view of Assistant so your conversations and generated graphs aren&amp;rsquo;t crammed into the little right-hand sidebar. It&amp;rsquo;s a much less cluttered place to run investigations and to be agent-first. On top of that, Assistant is now easier to try — enable it in Grafana 13 for OSS without linking a Grafana Cloud account, or try it with no signup or download at all on &lt;a href="https://play.grafana.org"&gt;Grafana Play&lt;/a&gt;.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AEU73mjeh0c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;Hi everyone! I&amp;rsquo;m Nicole van der Hoeven and I&amp;rsquo;m really excited to welcome you to AI Week. Today is Monday, which is planning day, where we give you the tools you need to get clarity on what even is going on in your system so that you can figure out what to build.&lt;/p&gt;
+&lt;p&gt;Now we&amp;rsquo;re kicking things off with a feature called Workspace for Grafana Assistant. Now if you&amp;rsquo;ve used Assistant before, you&amp;rsquo;ll know that it comes up on the little sidebar on the right side of Grafana. Well, that can start to get cramped if you have multiple conversations or if you&amp;rsquo;ve asked Assistant to generate multiple graphs for you. Well, we&amp;rsquo;ve heard you, and now we&amp;rsquo;re giving you a full page view of Assistant. So you&amp;rsquo;ll have all of your conversations on the left, and this is also an excellent place to run investigations from. You can also zoom in on any of those graphs, and it&amp;rsquo;s just a much less cluttered view if you want to be agent-first.&lt;/p&gt;
+&lt;p&gt;Speaking of Assistant, the second thing I want to tell you is that you know, Assistant was already available everywhere. But now, Assistant is available&amp;hellip; in more places than everywhere? And also more easily. So Assistant was already available for OSS, but you had to link your Grafana Cloud account, which was not so handy if you wanted to try it out. But not anymore. Now if you download Grafana 13 and enable Assistant, then you&amp;rsquo;ll just be able to go and try it out and chat with Assistant without doing anything else. It&amp;rsquo;s still not free or open source, but it IS a lot easier to try it out.&lt;/p&gt;
+&lt;p&gt;And if you don&amp;rsquo;t want to download anything, that&amp;rsquo;s what Grafana Play is for. Grafana Assistant is now available to try out on Grafana Play without any signup or any download required. Try it out at play.grafana.org. I really love seeing it there. Tune in tomorrow where we&amp;rsquo;re going to talk about everything we&amp;rsquo;re announcing to help you start to build.&lt;/p&gt;</description></item><item><title>Zero to Dashboard with Grafana Assistant and the Infinity datasource plugin</title><link>https://nicolevanderhoeven.github.io/blog/20260522-zero-to-dashboard-infinity-assistant/</link><pubDate>Fri, 22 May 2026 17:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260522-zero-to-dashboard-infinity-assistant/</guid><description>&lt;p&gt;What if you didn&amp;rsquo;t have to write a single query to get a useful dashboard?&lt;/p&gt;
+&lt;p&gt;In this short video, I go from nothing to a working dashboard in a few minutes — no queries — using &lt;a href="https://grafana.com/products/cloud/ai-tools/"&gt;Grafana Assistant&lt;/a&gt; and the &lt;a href="https://grafana.com/docs/plugins/yesoreyeram-infinity-datasource/"&gt;Infinity datasource plugin&lt;/a&gt;. The data I&amp;rsquo;m visualising is the &lt;a href="https://rawg.io/apidocs"&gt;RAWG video game database API&lt;/a&gt;, so I end up with a dashboard that helps me decide what to play next.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/X3TZk_qywlo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="why-infinity-is-fun-here"&gt;Why Infinity is fun here&lt;/h2&gt;
+&lt;p&gt;Most Grafana data sources are scoped to a specific kind of backend — Prometheus, Loki, a SQL database. &lt;strong&gt;Infinity&lt;/strong&gt; is different: it lets you treat &lt;em&gt;any&lt;/em&gt; REST/JSON/CSV/HTML endpoint as a data source. That means anything with an API can become a dashboard, which is exactly the right shape for goofing around with a games API on a Friday afternoon.&lt;/p&gt;
+&lt;p&gt;Pair Infinity with Assistant and you don&amp;rsquo;t even have to know what queries to write — Assistant configures the data source, asks the API the right questions, and builds the panels for you.&lt;/p&gt;
+&lt;h2 id="timestamps"&gt;Timestamps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 — Intro&lt;/li&gt;
+&lt;li&gt;00:35 — The RAWG video game database&lt;/li&gt;
+&lt;li&gt;01:01 — Setting up the Infinity datasource&lt;/li&gt;
+&lt;li&gt;05:10 — Customising the dashboard with Assistant&lt;/li&gt;
+&lt;li&gt;09:31 — Closing thoughts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/blog/use-ai-to-turn-any-api-into-a-grafana-dashboard/"&gt;Step-by-step blog post: using Assistant with the Infinity datasource&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/docs/grafana-cloud/alerting-and-irm/machine-learning/assistant/"&gt;Grafana Assistant documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/docs/plugins/yesoreyeram-infinity-datasource/"&gt;Infinity datasource plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rawg.io/apidocs"&gt;RAWG video game database API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/g/cloud"&gt;Get started with Grafana Cloud (free tier)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant"&gt;My notes on Grafana Assistant&lt;/a&gt; — everything I&amp;rsquo;m learning as I work on it&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Do Androids Dream of Second Brains?</title><link>https://nicolevanderhoeven.github.io/blog/20260518-do-androids-dream-of-second-brains-video/</link><pubDate>Mon, 18 May 2026 07:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260518-do-androids-dream-of-second-brains-video/</guid><description>&lt;p&gt;We often describe our personal knowledge management systems as &amp;ldquo;second brains&amp;rdquo; — but can we really say they think for themselves? In this video, I make the case for instrumenting your vault with an observability stack and layering AI on top, not because it&amp;rsquo;ll turn your notes into a brain, but because it might get us closer than anything else has.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BeuaPO0Ezuk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;This is the video version of the talk I gave at &lt;a href="https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/"&gt;PKM Summit 2026&lt;/a&gt; in Utrecht earlier this year, with the live demos cleaner and the dashboards working without the conference wifi gods getting in the way.&lt;/p&gt;
+&lt;h2 id="what-i-cover"&gt;What I cover&lt;/h2&gt;
+&lt;h3 id="-why-second-brain-is-the-wrong-framing"&gt;🐑 Why &amp;ldquo;second brain&amp;rdquo; is the wrong framing&lt;/h3&gt;
+&lt;p&gt;I take a small detour through Philip K. Dick&amp;rsquo;s &lt;em&gt;Do Androids Dream of Electric Sheep?&lt;/em&gt; — the inspiration for &lt;em&gt;Blade Runner&lt;/em&gt; — and the Voigt-Kampff test, which measures empathy through observed responses to staged scenarios. It&amp;rsquo;s a useful lens for asking what we actually mean when we say a knowledge system &amp;ldquo;thinks&amp;rdquo;: we&amp;rsquo;re really asking whether it can respond to us in a way that surprises us. Most second-brain setups can&amp;rsquo;t, yet.&lt;/p&gt;
+&lt;h3 id="-observability-for-pkm"&gt;📊 Observability for PKM&lt;/h3&gt;
+&lt;p&gt;Observability is a concept I&amp;rsquo;ve borrowed wholesale from how we monitor software systems — the idea that you can understand a complex system by what it emits, not by reading its internals. Three steps: instrumentation, analysis, improvement. I walk through what each one looks like for a personal vault:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Instrumentation&lt;/strong&gt;: a small script that emits metrics about my Obsidian vault — note counts, link density, growth over time, what folders are loud and which are quiet&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Analysis&lt;/strong&gt;: a Grafana dashboard sitting on top of Loki + Prometheus, surfacing things I genuinely didn&amp;rsquo;t know about my own vault&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improvement&lt;/strong&gt;: the part where seeing the data actually changes how you work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&amp;rsquo;s a live dashboard tour, and a section where I ask &lt;strong&gt;Grafana Assistant&lt;/strong&gt; to edit the dashboard for me in natural language — including writing the PromQL queries I never want to write by hand.&lt;/p&gt;
+&lt;h3 id="-meet-iris"&gt;👁️ Meet Iris&lt;/h3&gt;
+&lt;p&gt;About halfway through the video I introduce &lt;strong&gt;Iris&lt;/strong&gt; — the AI agent I built using &lt;a href="https://openclaw.ai"&gt;OpenClaw&lt;/a&gt; that lives in my vault, reads my notes, and works alongside me. I walk through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What &amp;ldquo;agentic AI&amp;rdquo; actually means in practice (vs. just chatting with an LLM)&lt;/li&gt;
+&lt;li&gt;The OpenClaw setup — Docker sandbox, Syncthing, the whole pipeline&lt;/li&gt;
+&lt;li&gt;Iris rewriting my observability map of content&lt;/li&gt;
+&lt;li&gt;Iris doing talk-topic analysis on my vault&lt;/li&gt;
+&lt;li&gt;Iris running benchmark research for a blog post&lt;/li&gt;
+&lt;li&gt;Iris OCRing my reMarkable handwriting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="-dreaming"&gt;🌙 Dreaming&lt;/h3&gt;
+&lt;p&gt;The last section is the one I had the most fun with. I argue that the thing most second-brain setups are missing isn&amp;rsquo;t &lt;em&gt;more notes&lt;/em&gt; or &lt;em&gt;better search&lt;/em&gt; — it&amp;rsquo;s &lt;strong&gt;synthesis&lt;/strong&gt;. The capacity to take everything you&amp;rsquo;ve captured and surface patterns, contradictions, and ideas you hadn&amp;rsquo;t formed yet.&lt;/p&gt;
+&lt;p&gt;I introduce OpenClaw&amp;rsquo;s &lt;em&gt;dreaming&lt;/em&gt; feature: a memory consolidation process inspired by how sleep stages work in the brain. Light sleep, REM, and deep sleep each do different work — surfacing recent material, finding unexpected connections, and consolidating long-term memory. I show how each phase actually behaves in my own system.&lt;/p&gt;
+&lt;p&gt;And there&amp;rsquo;s a Zhuangzi reference. (You&amp;rsquo;ll see.)&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🎤 &lt;a href="https://nicolevanderhoeven.github.io/blog/20260321-do-androids-dream-of-second-brains/"&gt;PKM Summit 2026 talk recap (with photos)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🎞 &lt;a href="https://nicole.to/androids"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👁️ &lt;a href="https://openclaw.ai"&gt;OpenClaw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📓 &lt;a href="https://obsidian.md"&gt;Obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔄 &lt;a href="https://syncthing.net"&gt;Syncthing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📊 &lt;a href="https://grafana.com"&gt;Grafana&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="related-reading"&gt;Related reading&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting"&gt;&lt;em&gt;The Architecture of Forgetting&lt;/em&gt;&lt;/a&gt; — the essay version of why memory consolidation matters&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana"&gt;&lt;em&gt;Unlearnings from building Grafana Assistant&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to follow more of how Iris works and what I&amp;rsquo;m learning about AI + PKM, &lt;a href="https://contexthorizon.substack.com"&gt;Context Horizon&lt;/a&gt; is where I write about it.&lt;/p&gt;</description></item><item><title>Grafana k6 Community Call — Secrets Management &amp; AI Script Authoring</title><link>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</link><pubDate>Thu, 30 Apr 2026 16:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260430-k6-community-call-secrets-and-ai-script-authoring/</guid><description>&lt;p&gt;The first k6 Community Call in over a year, and we packed it. I sat down with four of the people building k6 — &lt;strong&gt;Bukola Ayodele&lt;/strong&gt;, &lt;strong&gt;Facundo Batista&lt;/strong&gt; (Software Engineer), &lt;strong&gt;Vicente Ortega&lt;/strong&gt; (Senior Backend Engineer), and &lt;strong&gt;Charlie Burnett&lt;/strong&gt; (Product Manager) — to walk through two new pieces of work that have shipped recently, plus a look at what&amp;rsquo;s coming in k6 v2.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mYpnaE_J2lM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="what-we-covered"&gt;What we covered&lt;/h2&gt;
+&lt;h3 id="-secrets-management-in-k6-cloud-facundo"&gt;🔐 Secrets management in k6 Cloud (Facundo)&lt;/h3&gt;
+&lt;p&gt;A new way to store API tokens, passwords, and other sensitive values for your tests — centralized in Grafana&amp;rsquo;s secrets manager, encrypted at rest, and never visible in the UI or API once written. Your scripts reference secrets by name, and at runtime the values are injected and &lt;strong&gt;automatically redacted from logs&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Why this matters for load testers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No more hardcoded credentials sitting in scripts or in Git&lt;/li&gt;
+&lt;li&gt;Easy rotation — change the secret value, every script that uses it picks up the new value, no script edits needed&lt;/li&gt;
+&lt;li&gt;Same script works across dev/staging/prod by just swapping which secrets are scoped to which environment&lt;/li&gt;
+&lt;li&gt;Works with k6 OSS locally too — your local runs can pull cloud-managed secrets when you want them&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Facundo Batista demoed the full flow: creating a secret in the Grafana Cloud UI (name, description, labels — up to 10 per secret, all write-only), and using it in a script with one line. There&amp;rsquo;s also an API for programmatic management.&lt;/p&gt;
+&lt;h3 id="-grafana-assistant-k6-script-authoring-mode-vicente"&gt;🤖 Grafana Assistant k6 script authoring mode (Vicente)&lt;/h3&gt;
+&lt;p&gt;This is the AI-powered script generation that&amp;rsquo;s been in the works for a while — fine-tuned specifically for k6 best practices, not a generic &amp;ldquo;ask an LLM to write you a load test&amp;rdquo; workflow. The interesting bit is the &lt;strong&gt;context sources&lt;/strong&gt; Assistant can pull from when generating a script:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A service name&lt;/strong&gt; — Assistant analyzes the existing telemetry data to discover endpoints and shapes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A GitHub repository URL&lt;/strong&gt; — pulls the code to understand the API&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;An OpenAPI specification&lt;/strong&gt; — generates tests that exercise every endpoint with realistic request shapes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Existing observability data&lt;/strong&gt; — metrics, logs, traces from your actual production traffic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Generated scripts come with proper structure, error handling, checks, and &lt;code&gt;TODO&lt;/code&gt; comments where the model genuinely doesn&amp;rsquo;t know what to write (e.g. for auth tokens, request bodies, or anything that needs your secrets — by design, Assistant won&amp;rsquo;t fabricate those). You can also point it at an existing script and ask it to refactor or extend.&lt;/p&gt;
+&lt;h3 id="-k6-v2-charlie"&gt;🚀 k6 v2 (Charlie)&lt;/h3&gt;
+&lt;p&gt;Release candidate 1 is out, GA is &lt;em&gt;very&lt;/em&gt; soon. The headline changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Extensions marketplace&lt;/strong&gt; — community protocols and integrations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enhanced Playwright browser support&lt;/strong&gt; with compatible syntax&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New assertions library&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCP / agent connectivity&lt;/strong&gt; for AI-driven workflows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNS, MQTT, and other network protocols&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Migration advice from Charlie Burnett: pin your script versions, test your existing scripts against the RC before GA hits, and don&amp;rsquo;t rush.&lt;/p&gt;
+&lt;h3 id="-whats-next-on-the-ai-roadmap-next-12-months"&gt;🔮 What&amp;rsquo;s next on the AI roadmap (next 1–2 months)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual browser-based testing experience&lt;/li&gt;
+&lt;li&gt;Enhanced observability workflow automation&lt;/li&gt;
+&lt;li&gt;Improved user-journey creation across both personal and enterprise apps&lt;/li&gt;
+&lt;li&gt;Integration with autonomous monitoring systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/docs/k6/"&gt;k6 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/docs/grafana-cloud/grafana-assistant/"&gt;Grafana Assistant docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/grafana/k6/releases"&gt;k6 v2 release candidate&lt;/a&gt; (GA very soon)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/docs/grafana-cloud/k6/secrets/"&gt;Secrets management in k6 Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="related-context-horizon-pieces"&gt;Related Context Horizon pieces&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana"&gt;&lt;em&gt;Unlearnings from building Grafana Assistant&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/high-int-low-wis-what-llm-benchmarks"&gt;&lt;em&gt;High INT, Low WIS — what LLM benchmarks miss&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to Bukola, Facundo, Vicente, and Charlie for joining, and to everyone who showed up live.&lt;/p&gt;</description></item><item><title>How to use Grafana Assistant with self-hosted Grafana</title><link>https://nicolevanderhoeven.github.io/blog/20260420-grafana-assistant-self-hosted/</link><pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260420-grafana-assistant-self-hosted/</guid><description>&lt;p&gt;In case you missed it, possibly the biggest news to come from GrafanaCON this year is that if you&amp;rsquo;re running self-hosted or open-source Grafana, you can now connect it through your Grafana Cloud account to &lt;a href="https://grafana.com/products/cloud/ai-tools/"&gt;Grafana Assistant&lt;/a&gt;, the purpose-built AI tool for all things Grafana.&lt;/p&gt;
+&lt;p&gt;In this short tutorial, I show you how to enable Assistant on a self-hosted Grafana instance and go from &lt;em&gt;nothing&lt;/em&gt; to a working server-health dashboard with a single prompt.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0O0ZqrruGns?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="a-quick-note-on-what-for-open-source-actually-means"&gt;A quick note on what &amp;ldquo;for open source&amp;rdquo; actually means&lt;/h2&gt;
+&lt;p&gt;Assistant itself isn&amp;rsquo;t open source. But you can now use it &lt;em&gt;with&lt;/em&gt; your self-hosted or open-source Grafana instance. The way it works is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You still need a Grafana Cloud account (the free tier has &lt;a href="https://grafana.com/pricing/"&gt;generous inclusions&lt;/a&gt; for Assistant).&lt;/li&gt;
+&lt;li&gt;You link your self-hosted Grafana to that Cloud account.&lt;/li&gt;
+&lt;li&gt;Assistant then lights up inside your OSS instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Think of the Grafana Cloud account as the key that unlocks Assistant wherever your Grafana lives.&lt;/p&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Grafana OSS v13 or later&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A Grafana Cloud account&lt;/strong&gt; (&lt;a href="https://grafana.com/pricing/"&gt;pricing here&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="enabling-assistant"&gt;Enabling Assistant&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;Administration → Plugins&lt;/strong&gt;, search for &lt;strong&gt;Assistant&lt;/strong&gt;, and click &lt;strong&gt;Install&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Refresh the page, then open the &lt;strong&gt;Connection&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Start Connection&lt;/strong&gt;. You&amp;rsquo;ll be prompted to log into Grafana Cloud.&lt;/li&gt;
+&lt;li&gt;Select the organization and stack you want, then click &lt;strong&gt;Authorize connection&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Close the tab. Your self-hosted Grafana is now linked to Assistant.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="a-first-dashboard-from-nothing"&gt;A first dashboard from nothing&lt;/h2&gt;
+&lt;p&gt;Every Grafana instance ships with a &lt;strong&gt;TestData&lt;/strong&gt; data source — perfect for a first run when you don&amp;rsquo;t yet have real data wired up. Enable it from Data Sources, then open Assistant (the new icon on the top right).&lt;/p&gt;
+&lt;p&gt;Switch Assistant&amp;rsquo;s mode from &lt;strong&gt;General&lt;/strong&gt; to &lt;strong&gt;Dashboarding&lt;/strong&gt; — this mode is tuned for creating and managing dashboards — and ask in plain English, for example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi Assistant, could you create a server health dashboard for me using the TestData data source?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What comes back is a starting dashboard with CPU, memory, disk, and network panels already wired up. From there you can tweak panels, edit queries, or ask Assistant to iterate. You&amp;rsquo;re not starting from scratch — you&amp;rsquo;re starting from 80%.&lt;/p&gt;
+&lt;h2 id="what-else-assistant-can-do"&gt;What else Assistant can do&lt;/h2&gt;
+&lt;p&gt;I only showed dashboarding in this video, but Assistant can also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Answer questions about the data already in your Grafana&lt;/li&gt;
+&lt;li&gt;Run investigations to troubleshoot production incidents&lt;/li&gt;
+&lt;li&gt;Learn new skills&lt;/li&gt;
+&lt;li&gt;Manage alerts&lt;/li&gt;
+&lt;li&gt;Teach you Grafana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That list keeps growing, so stay tuned.&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/products/cloud/ai-tools/"&gt;Grafana Assistant&lt;/a&gt; (product page)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/pricing/"&gt;Grafana Cloud pricing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/legal/grafana-cloud-data-processing/"&gt;How Grafana Labs handles your data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Assistant"&gt;My notes on Grafana Assistant&lt;/a&gt; — everything I&amp;rsquo;m learning as I work on it&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana"&gt;Unlearnings from building Grafana Assistant&lt;/a&gt; — my Context Horizon piece on what the team had to unlearn&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Unlearnings from building Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</link><pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260409-unlearnings-from-building-grafana-assistant/</guid><description>&lt;p&gt;Originally posted &lt;a href="https://open.substack.com/pub/contexthorizon/p/unlearnings-from-building-grafana?r=7xe6zg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Everyone&amp;rsquo;s talking about what you need to &lt;em&gt;learn&lt;/em&gt; to build AI agents: Prompt engineering. Tool calling. Retrieval strategies. The content ecosystem is full of it. But while I was watching Context Window Episode 1, it struck me that Mat Ryer, Cyril Tovena, and Sven Großmann&amp;ndash; some of the team behind Grafana Assistant&amp;ndash; spent most of their time on something different: what they had to &lt;em&gt;unlearn&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Grafana Assistant started as a weekend hackathon project. By the time it shipped, the team had thrown out a popular framework, flipped their assumptions about tool design, and discovered that some of the instincts you bring from conventional software development actively work against you when you&amp;rsquo;re building agents.&lt;/p&gt;
+&lt;p&gt;I pulled out the ten moments where received wisdom turned out to be wrong. If you&amp;rsquo;re building anything agentic right now, these are worth sitting with.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TGWVqBAeIzI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="-langchain-will-help-us-build-faster"&gt;❌ LangChain will help us build faster&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/langchain-ai/langchain"&gt;LangChain&lt;/a&gt; is an opensource framework for building applications that use LLMs. It provides structured components that can be used for rapid prototyping.&lt;/p&gt;
+&lt;p&gt;In the video, Tovena talks about how they started with LangChain during the initial hackathon because they thought it would help them build more quickly, but instead it became obvious fairly early on that the opposite was true. They didn&amp;rsquo;t end up using a lot of the features that LangChain provided and felt they needed more flexibility and speed.&lt;/p&gt;
+&lt;h3 id="abstraction-overhead"&gt;Abstraction overhead&lt;/h3&gt;
+&lt;p&gt;One possible reason for their troubles with LangChain is that LangChain has standard abstractions for prompts, tool use, and orchestration&amp;ndash; things that sound good in theory. But sometimes abstractions lend themselves to creating a sort of black box in your stack, where you don&amp;rsquo;t know what&amp;rsquo;s happening inside it. It sounds like the Assistant team missed the oversight and control of what was happening.&lt;/p&gt;
+&lt;h2 id="-use-the-same-prompt-for-every-model"&gt;❌ Use the same prompt for every model&lt;/h2&gt;
+&lt;p&gt;They also talked about how for the sake of simplicity and consistency, they initially used the same prompt for every model. However, they found out that this actually led to worse results. They found more success in creating slightly different prompts for different models, playing to their strengths and weaknesses a bit more.&lt;/p&gt;
+&lt;p&gt;There is even an argument (&lt;a href="https://arxiv.org/abs/2401.00595"&gt;Mizrahi et al.&amp;rsquo;s &amp;ldquo;State of What Art? A Call for Multi-Prompt LLM Evaluation&lt;/a&gt;) that AI benchmarks that involve sending multiple LLMs the same prompt is a brittle and unreliable way to assess LLM capabilities. Different models respond differently to prompt variations.&lt;/p&gt;
+&lt;p&gt;In practice, what this means is that switching models isn&amp;rsquo;t a drop-in replacement. Even if a new model scores better on benchmarks, your prompts were written with a specific model&amp;rsquo;s tendencies in mind. The unlearning here is letting go of the idea that a prompt is model-agnostic — it&amp;rsquo;s more like a conversation style, and different models have different conversational defaults.&lt;/p&gt;
+&lt;h2 id="-treat-errors-as-failures"&gt;❌ Treat errors as failures&lt;/h2&gt;
+&lt;p&gt;Traditionally in software, you catch errors and hide them from the user: you log them, handle them, but treat that transaction as a failed one.&lt;/p&gt;
+&lt;p&gt;The Assistant team had to unlearn this habit when dealing with an LLM, because with agents, error messages &lt;em&gt;are&lt;/em&gt; useful data. Feeding it back to the LLM often results in it learning from its own mistake and trying again. It&amp;rsquo;s basically letting the agent debug itself, in a manner that Ryer noted was remarkably similar to how we humans debug errors too.&lt;/p&gt;
+&lt;h2 id="-return-errors-in-structured-json"&gt;❌ Return errors in structured JSON&lt;/h2&gt;
+&lt;p&gt;On the subject of error messages, Großmann mentioned that at one point they were trying to format the errors in JSON or stringified JSON. This practice shows solid engineer intuition because usually, structuring information helps machines process it faster and more accurately. What they found here was the reverse: it was easier and yielded better results when the LLM was just passed the entire error in natural language.&lt;/p&gt;
+&lt;h2 id="-build-as-many-tools-as-possible"&gt;❌ Build as many tools as possible&lt;/h2&gt;
+&lt;p&gt;The team mentioned that at the start, they were inclined to create as many tools/skills for Assistant: one for everything that could be done in Grafana. This made sense until they saw LLMs struggle to determine which tool to use in which context.&lt;/p&gt;
+&lt;p&gt;To help LLMs identify the correct tool, they added tool descriptions and also experimented with combining multiple tools into fewer, parameterized, tools. These helped, although the team still observed that allowing users to create their own tools (with potentially very general tool descriptions) could potentially confuse LLMs.&lt;/p&gt;
+&lt;h2 id="-bigger-context-window--better"&gt;❌ Bigger context window = better&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://developers.googleblog.com/en/new-features-for-the-gemini-api-and-google-ai-studio/"&gt;Gemini 1.5 Pro announced&lt;/a&gt; it had a 2M context window back in 2024, and it might seem that other providers had lagged behind: &lt;a href="https://openai.com/index/gpt-4-1/"&gt;OpenAI&lt;/a&gt; only announced support for 1M tokens in 2025 and &lt;a href="https://www.anthropic.com/news/claude-opus-4-6"&gt;Anthropic&lt;/a&gt; followed in 2026. However, the Assistant team pointed out that context wasn&amp;rsquo;t everything. They said that they noticed that bigger wasn&amp;rsquo;t necessarily better, also pointing out that the chat summarization feature on IDEs like &lt;a href="https://cursor.com/"&gt;Cursor&lt;/a&gt; could still sometimes lose important details when summarizing.&lt;/p&gt;
+&lt;p&gt;This finding seems to coincide with a 2023 Stanford study (&lt;a href="https://arxiv.org/abs/2307.03172"&gt;Lost in the Middle: How Language Models Use Long Contexts&lt;/a&gt;) that found there was a performance degradation when models access information within a very large context. In the video, they talked about how their system prompts were often 40k tokens long (half for the prompt itself and then the other half for tools).&lt;/p&gt;
+&lt;h2 id="-start-with-a-multi-agent-architecture"&gt;❌ Start with a multi-agent architecture&lt;/h2&gt;
+&lt;p&gt;Tovena mentioned that creating a multi-agent architecture for Assistant yielded more mixed results than he expected. He said that passing context between agents is difficult, outputs were inconsistent, and there was a bit of a &amp;ldquo;telephone game&amp;rdquo; problem where agents didn&amp;rsquo;t always perfectly understand the intent or output of other agents.&lt;/p&gt;
+&lt;p&gt;In early 2026, &lt;a href="https://arxiv.org/abs/2601.13295"&gt;Khatua et al. released a study&lt;/a&gt; called &amp;ldquo;CooperBench: Why Coding Agents Cannot Be Your Teammates Yet&amp;rdquo; that showed that AI agents aren&amp;rsquo;t great at collaboration. The study suggests, surprisingly, that this might be because AI agents lack human social habits that help us collaborate better, such as feeling obliged to do what we say and having a good understanding of what others&amp;rsquo; plans are.&lt;/p&gt;
+&lt;p&gt;The Assistant team&amp;rsquo;s experience is also a perfect example of &lt;a href="https://www.laws-of-software.com/laws/gall/"&gt;Gall&amp;rsquo;s Law&lt;/a&gt;, which states that it&amp;rsquo;s easier to start with simplicity and build complexity than the other way around.&lt;/p&gt;
+&lt;h2 id="-plan-around-models-as-they-are-now"&gt;❌ Plan around models as they are now&lt;/h2&gt;
+&lt;p&gt;Software has always moved quickly, but it feels like AI models are moving faster. &lt;a href="https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf"&gt;Stanford&amp;rsquo;s AI Index Report 2025&lt;/a&gt; reported that models went from having a 50% chance to near-human performance in roughly 2 years (2021-2023). In fact, benchmarks keep getting retired as AI saturates them&amp;ndash; meaning that benchmarks can&amp;rsquo;t reliably be used to distinguish between good and bad models because all the models are testing near the ceiling.&lt;/p&gt;
+&lt;p&gt;The rapid pace of development around AI requires us to not be so attached to our work: Großmann recalled an incident where someone wrote a joke prompt that spoke like a dog that shockingly did better than their other system prompts. Ryer also mentioned that at one point someone deleted all the system prompts and Assistant weirdly became more accurate.&lt;/p&gt;
+&lt;p&gt;The lesson is clear: plan for models to improve, and plan to redo a lot of your work when they do.&lt;/p&gt;
+&lt;h2 id="-we-dont-need-evals"&gt;❌ We don&amp;rsquo;t need evals&lt;/h2&gt;
+&lt;p&gt;The Assistant team said that they went from having no evals to employing several types of evals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;integration-style evals that exercise whole workflows&lt;/li&gt;
+&lt;li&gt;unit-style evals that feed inputs plus a system prompt and check the output&lt;/li&gt;
+&lt;li&gt;LLM-as-judge, where they pass conversations to an LLM to ask it to judge whether it answered the user&amp;rsquo;s questions.&lt;/li&gt;
+&lt;li&gt;user feedback in the form of thumbs during conversations with Assistant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beyond evaluation, they talked about how important it was to be able to observe AI. At the very minimum, showing what Assistant is doing at all times (thinking out loud) is very important to them because it builds users&amp;rsquo; trust in the thinking process and, eventually, in the result.&lt;/p&gt;
+&lt;p&gt;Evals aren&amp;rsquo;t a sign that you don&amp;rsquo;t trust your product. They&amp;rsquo;re how you build the confidence to keep shipping it.&lt;/p&gt;
+&lt;h2 id="-assume-people-already-know-how-to-work-with-ai"&gt;❌ Assume people already know how to work with AI&lt;/h2&gt;
+&lt;p&gt;When you ship an AI feature, it&amp;rsquo;s tempting to assume the hard work is done. You&amp;rsquo;ve built the thing. Users will figure it out.&lt;/p&gt;
+&lt;p&gt;What the Grafana Assistant team found was that this assumption doesn&amp;rsquo;t hold. Users came in with wildly different mental models of what an AI assistant could or should do — some treating it like a search box, others expecting it to read their minds, most not yet sure how to prompt it effectively.&lt;/p&gt;
+&lt;p&gt;Their insight was that this isn&amp;rsquo;t just a UX problem to solve on your end. It&amp;rsquo;s a shared responsibility: AI should try to help the user, but the user also needs to learn how to work with AI. And building an assistant that teaches people how to use it well (through good responses, gentle corrections, showing its work) is part of building the product.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s also a deeper point here specific to observability. Grafana Assistant isn&amp;rsquo;t just an AI feature; it&amp;rsquo;s a way of interacting with your own infrastructure. Every good interaction teaches you something about what questions to ask, what signals to look for, what it means to understand a system. In other words: learning to use AI well makes you a better engineer. The tool and the skill co-evolve.&lt;/p&gt;
+&lt;p&gt;This is the unlearning that sits furthest from the code. It&amp;rsquo;s not about prompts or architectures or frameworks. It&amp;rsquo;s about recognising that you&amp;rsquo;re not just shipping a feature&amp;ndash; you&amp;rsquo;re introducing a new way of working. That takes time. And it&amp;rsquo;s worth designing for explicitly.&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;/h2&gt;
+&lt;p&gt;What strikes me most about this list isn&amp;rsquo;t any single item — it&amp;rsquo;s the pattern. Most of these unlearnings point in the same direction: &lt;em&gt;less is more, and messiness is the point.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Less abstraction. Fewer tools. Smaller context. Simpler architecture. And rather than hiding the mess — the errors, the reasoning, the uncertainty — let it show. That&amp;rsquo;s where the trust gets built.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re all still early with this. The team that built one of the most thoughtful AI products I&amp;rsquo;ve seen up close still didn&amp;rsquo;t have evals when they launched. That&amp;rsquo;s not a criticism — it&amp;rsquo;s a reminder. You don&amp;rsquo;t need to have it all figured out before you ship. You just need to commit to keep unlearning.&lt;/p&gt;</description></item><item><title>Let There Be Dashboards: Introducing Grafana Assistant</title><link>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</link><pubDate>Thu, 26 Mar 2026 19:30:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260326-let-there-be-dashboards/</guid><description>&lt;p&gt;I gave this talk at the &lt;a href="https://www.meetup.com/grafana-friends-lisboa/events/313572885/"&gt;Grafana &amp;amp; Friends Lisbon Meetup&lt;/a&gt; in Lisbon, Portugal.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-01-presenting.jpg" alt="Demoing Grafana Assistant to the Lisbon meetup"&gt;&lt;/p&gt;
+&lt;h2 id="abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This is a live demo of how to go from zero to a working Grafana dashboard using Assistant. Starting with a blank slate, we&amp;rsquo;ll use natural language to explore data and generate meaningful visualizations in minutes. Along the way, you&amp;rsquo;ll see how AI can accelerate dashboard creation without sacrificing control or understanding.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-dashboard.png" alt="Dashboard created during the demo using Grafana Assistant"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-02-audience.jpg" alt="The Grafana &amp;amp; Friends Lisbon crowd"&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who came out! It was great to connect with the Lisbon tech community.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260326-lisbon-meetup-03-group.jpg" alt="Group photo with the meetup attendees"&gt;&lt;/p&gt;</description></item></channel></rss>

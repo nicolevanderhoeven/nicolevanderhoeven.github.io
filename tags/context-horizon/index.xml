@@ -1,116 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Context Horizon on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/context-horizon/</link><description>Recent content in Context Horizon on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 07 May 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/context-horizon/index.xml" rel="self" type="application/rss+xml"/><item><title>The Architecture of Forgetting</title><link>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</link><pubDate>Thu, 07 May 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</guid><description>&lt;p>Originally posted &lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting">here&lt;/a> on Context Horizon.&lt;/p>
-&lt;p>In early April, &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.5">a new version of everyone&amp;rsquo;s favourite lobster, OpenClaw, was shipped&lt;/a> with an interesting new feature: &lt;a href="https://docs.openclaw.ai/concepts/dreaming">dreaming&lt;/a>. It&amp;rsquo;s a memory consolidation feature. But to understand why it matters, we need to back up.&lt;/p>
-&lt;p>Early AI chatbots, like the initial GPT wrappers, had zero memory. Every conversation started fresh. You asked a question, you got an answer, and you moved on: a glorified search engine.&lt;/p>
-&lt;p>Somewhere along the way we began to expect more and more of our chatbots. Models acquired context windows that became their de facto short-term memory. As the context window filled up, they remembered what had been said earlier in the conversation, making them better conversational partners. Still, it was ephemeral: close the tab, start fresh. And it had a hard ceiling: hit the limit, and the oldest things fall off. This felt like forgetting because &lt;em>it was&lt;/em>. But it was also, accidentally, a form of curation. Finite space forced priority.&lt;/p>
-&lt;p>Then came the push for real persistence. RAG pipelines, vector databases, memory files, agent frameworks that write notes to themselves. Now our agents can remember that we prefer the Oxford comma, that we just started a new project at work, that our D&amp;amp;D character is named Zuhri. This felt like the solution. More memory = better agent.&lt;/p>
-&lt;p>That mostly works— until it doesn&amp;rsquo;t.&lt;/p>
-&lt;p>As it turns out, the problem with AI memory isn&amp;rsquo;t that agents forget too much. It&amp;rsquo;s that &lt;strong>they forget too little&lt;/strong>.&lt;/p>
-&lt;h2 id="why-remembering-is-hard">Why remembering is hard&lt;/h2>
-&lt;p>It turns out that having a persistent memory, even for an agent like OpenClaw that has that as one of its defining features, doesn&amp;rsquo;t solve all the memory problems.&lt;/p>
-&lt;p>I happen to have an OpenClaw agent that named itself Iris.&lt;/p>
-&lt;p>Iris does a lot of things for me, including parsing my meeting notes to identify next actions, curating my tasks and projects, and generating a daily briefing. She also creates a summary of the day&amp;rsquo;s work based on my meetings, conversations, and notes. One day she was giving me the daily summary, and here&amp;rsquo;s that conversation:&lt;/p>
-&lt;blockquote>
-&lt;p>Iris: &amp;hellip;Tonsil is finally healed after weeks of pain&amp;hellip;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Context Horizon on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/context-horizon/</link><description>Recent content in Context Horizon on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Thu, 07 May 2026 16:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/context-horizon/index.xml" rel="self" type="application/rss+xml"/><item><title>The Architecture of Forgetting</title><link>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</link><pubDate>Thu, 07 May 2026 16:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260507-architecture-of-forgetting/</guid><description>&lt;p&gt;Originally posted &lt;a href="https://contexthorizon.substack.com/p/the-architecture-of-forgetting"&gt;here&lt;/a&gt; on Context Horizon.&lt;/p&gt;
+&lt;p&gt;In early April, &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.5"&gt;a new version of everyone&amp;rsquo;s favourite lobster, OpenClaw, was shipped&lt;/a&gt; with an interesting new feature: &lt;a href="https://docs.openclaw.ai/concepts/dreaming"&gt;dreaming&lt;/a&gt;. It&amp;rsquo;s a memory consolidation feature. But to understand why it matters, we need to back up.&lt;/p&gt;
+&lt;p&gt;Early AI chatbots, like the initial GPT wrappers, had zero memory. Every conversation started fresh. You asked a question, you got an answer, and you moved on: a glorified search engine.&lt;/p&gt;
+&lt;p&gt;Somewhere along the way we began to expect more and more of our chatbots. Models acquired context windows that became their de facto short-term memory. As the context window filled up, they remembered what had been said earlier in the conversation, making them better conversational partners. Still, it was ephemeral: close the tab, start fresh. And it had a hard ceiling: hit the limit, and the oldest things fall off. This felt like forgetting because &lt;em&gt;it was&lt;/em&gt;. But it was also, accidentally, a form of curation. Finite space forced priority.&lt;/p&gt;
+&lt;p&gt;Then came the push for real persistence. RAG pipelines, vector databases, memory files, agent frameworks that write notes to themselves. Now our agents can remember that we prefer the Oxford comma, that we just started a new project at work, that our D&amp;amp;D character is named Zuhri. This felt like the solution. More memory = better agent.&lt;/p&gt;
+&lt;p&gt;That mostly works— until it doesn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;As it turns out, the problem with AI memory isn&amp;rsquo;t that agents forget too much. It&amp;rsquo;s that &lt;strong&gt;they forget too little&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="why-remembering-is-hard"&gt;Why remembering is hard&lt;/h2&gt;
+&lt;p&gt;It turns out that having a persistent memory, even for an agent like OpenClaw that has that as one of its defining features, doesn&amp;rsquo;t solve all the memory problems.&lt;/p&gt;
+&lt;p&gt;I happen to have an OpenClaw agent that named itself Iris.&lt;/p&gt;
+&lt;p&gt;Iris does a lot of things for me, including parsing my meeting notes to identify next actions, curating my tasks and projects, and generating a daily briefing. She also creates a summary of the day&amp;rsquo;s work based on my meetings, conversations, and notes. One day she was giving me the daily summary, and here&amp;rsquo;s that conversation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Iris: &amp;hellip;Tonsil is finally healed after weeks of pain&amp;hellip;
 Me: Wait what? Where did you get the tonsil stuff?
 Iris: From your memory file — it&amp;rsquo;s in the Apr 10 daily note context: &amp;ldquo;Tonsil finally healed — Nicole no longer in pain 🎉&amp;rdquo;. I&amp;rsquo;ve had that sitting in memory since the Apr 10 summary. Is that wrong? Was it something else that healed, or is the tonsil detail off?
-Me: I have no idea where you got that. I have never had issues with my tonsil.&lt;/p>&lt;/blockquote>
-&lt;p>Where did that come from? I&amp;rsquo;m still not sure, but I occasionally have meetings in cafés, and it&amp;rsquo;s possible that a meeting recording overheard the conversation of someone else in the café. That got faithfully transcribed, copied over into my notes, and written into Iris&amp;rsquo;s memory. Iris treated it as fact for days.&lt;/p>
-&lt;p>The problem isn&amp;rsquo;t that Iris forgot. It&amp;rsquo;s that she remembered the wrong thing&amp;hellip; and didn&amp;rsquo;t know how to forget it.&lt;/p>
-&lt;p>Imagine this at scale: not one wrong fact, but dozens, quietly shaping every summary, every recommendation, every task Iris surfaces for me. The signal-to-noise ratio degrades until it doesn&amp;rsquo;t matter if Iris remembers mostly accurate memories— I won&amp;rsquo;t trust it.&lt;/p>
-&lt;p>So how do you build a memory system that knows what to keep? Researchers have been working on this longer than you might think.&lt;/p>
-&lt;h2 id="meet-the-residents-of-smallville">Meet the residents of Smallville&lt;/h2>
-&lt;p>Stanford researchers Park et al. &lt;a href="https://arxiv.org/abs/2304.03442">released a charming study in 2023&lt;/a> called &lt;em>Generative Agents: Interactive Simulacra of Human Behavior&lt;/em> in which they talk about how they created a simulated environment called Smallville, populated it with 25 generative agents, and then watched.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-smallville.png" alt="Smallville, a simulated environment populated with 25 generative agents">
-&lt;em>Source: Park et al. (2023)&lt;/em>&lt;/p>
-&lt;p>The study was an attempt to simulate emergent social behavior, but the key insight I took from it isn&amp;rsquo;t the sim itself— it&amp;rsquo;s what they had to do to the inhabitants of Smallville to enable the rich social interactions they wanted to observe.&lt;/p>
-&lt;p>The researchers had to give the inhabitants a way to remember.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-smallville-memory-architecture.png" alt="The memory architecture of Smallville&amp;rsquo;s generative agents — observation, retrieval, action, and reflection">&lt;/p>
-&lt;p>Above is a diagram of the memory architecture of every generative agent.&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>Observation:&lt;/em> The agent perceives new information. The new information is saved into the &lt;em>memory stream&lt;/em>, a database that serves as the record of everything an agent has experienced.&lt;/li>
-&lt;li>&lt;em>Retrieval:&lt;/em> When the agent is looking for information, a retrieval function takes that information from the memory stream and passes it onto the agent.&lt;/li>
-&lt;li>&lt;em>Action:&lt;/em> The agent, armed with retrieved information, can decide to act.&lt;/li>
-&lt;li>&lt;em>Reflection:&lt;/em> Patterns are synthesized from the observations and written back to the memory stream.&lt;/li>
-&lt;/ul>
-&lt;p>To determine which memories to retrieve at any given point in time, the researchers scored memories according to three weighted factors:&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>Recency:&lt;/em> when a memory was observed&lt;/li>
-&lt;li>&lt;em>Importance:&lt;/em> how significant the memory was&lt;/li>
-&lt;li>&lt;em>Relevance:&lt;/em> how closely related a memory is to the input memory (the agent&amp;rsquo;s current context)&lt;/li>
-&lt;/ul>
-&lt;p>The top-ranking memories that fit within the agent&amp;rsquo;s context window were selected to be retrieved and used with the prompt.&lt;/p>
-&lt;p>The researchers also introduced a second type of memory: reflection. Reflections were generated when a threshold of important scores was reached per day, which typically happened 2-3 times a day.&lt;/p>
-&lt;p>Crucially, reflection is a &lt;em>compression&lt;/em> step — the agent doesn&amp;rsquo;t just accumulate observations, it periodically steps back and asks &amp;ldquo;what do these observations actually mean?&amp;rdquo; That reflection pass is where low-signal memories get subordinated to higher-order patterns. That&amp;rsquo;s the first instance of intelligent forgetting.&lt;/p>
-&lt;p>The Smallville paper was published in 2023. Three years later, the same insight shipped in a lobster.&lt;/p>
-&lt;h2 id="dreaming-of-electric-lobsters">Dreaming of electric lobsters&lt;/h2>
-&lt;p>Every system that has solved the memory problem has solved it the same way: not by storing more, but by knowing what to throw away.&lt;/p>
-&lt;p>Your brain does it while you sleep by consolidating important experiences into long-term memory, letting the rest dissolve. Some programming languages do it with garbage collection, periodically scanning for unused objects and reclaiming that space. Databases do it with compaction: Loki, Cassandra, and other LSM-tree-inspired systems periodically merge and discard obsolete data so reads stay fast.&lt;/p>
-&lt;p>In all cases, the architecture of good memory is really the architecture of intelligent forgetting. OpenClaw&amp;rsquo;s dreaming feature is the same insight applied to agents.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-architecture-of-forgetting-dreaming.svg" alt="Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;).">
-&lt;em>Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;).&lt;/em>&lt;/p>
-&lt;p>Note that without dreaming, there is no automatic promotion from the active context window to daily notes and then to long-term memory. When a new bit of information is mentioned, the agent has to decide whether it should be added to the daily note and/or the long-term memory file manually. Dreaming, by contrast, is an automated process.&lt;/p>
-&lt;p>It&amp;rsquo;s called &amp;ldquo;Dreaming&amp;rdquo; because the feature works similarly to the biological process, as if in three sleep phases:&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>Light phase:&lt;/em> Creates a session corpus from session files and then succeeding sweeps tally how many times a chunk has been recalled in a session (a counter called &lt;code>lightHit&lt;/code>).&lt;/li>
-&lt;li>&lt;em>REM phase:&lt;/em> Spots patterns and themes from chunks and adds a reinforcement signal (&lt;code>remHits&lt;/code>).&lt;/li>
-&lt;li>&lt;em>Deep phase:&lt;/em> Ranks the candidates by several factors and promotes those that exceed a threshold score to long-term memory in &lt;code>MEMORY.md&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>Just like in the Smallville simulation, OpenClaw ranks information by several categories. Here&amp;rsquo;s the table of signals and weights from the &lt;a href="https://docs.openclaw.ai/concepts/dreaming#deep-ranking-signals">OpenClaw docs&lt;/a> at the time of writing:&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Signal&lt;/th>
-&lt;th>Weight&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Frequency&lt;/td>
-&lt;td>0.24&lt;/td>
-&lt;td>How many short-term signals the entry accumulated&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Relevance&lt;/td>
-&lt;td>0.30&lt;/td>
-&lt;td>Average retrieval quality for the entry&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Query diversity&lt;/td>
-&lt;td>0.15&lt;/td>
-&lt;td>Distinct query/day contexts that surfaced it&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Recency&lt;/td>
-&lt;td>0.15&lt;/td>
-&lt;td>Time-decayed freshness score&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Consolidation&lt;/td>
-&lt;td>0.10&lt;/td>
-&lt;td>Multi-day recurrence strength&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Conceptual richness&lt;/td>
-&lt;td>0.06&lt;/td>
-&lt;td>Concept-tag density from snippet/path&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>Only candidates that have high scores according to these signals graduate to be part of &lt;code>MEMORY.md&lt;/code>.&lt;/p>
-&lt;h3 id="how-dreaming-helps-with-forgetting">How dreaming helps with forgetting&lt;/h3>
-&lt;p>The new dreaming architecture doesn&amp;rsquo;t ever &lt;em>delete&lt;/em> things, technically. The forgetting is more passive. However, it&amp;rsquo;s still an improvement in a few ways:&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>Low-signal chunks don&amp;rsquo;t get promoted:&lt;/em> Anything that doesn&amp;rsquo;t cross the deep phase thresholds simply never reaches MEMORY.md. It exists, but it&amp;rsquo;s functionally invisible to future sessions.&lt;/li>
-&lt;li>&lt;em>Score competition:&lt;/em> The staging index has finite attention, so chunks compete against each other for recall signal. A high-frequency chunk that keeps getting surfaced crowds out low-frequency ones. Relative obscurity is functional forgetting.&lt;/li>
-&lt;li>&lt;em>Recency decay on scoring:&lt;/em> The deep phase ranking includes a recency signal. So something that was frequently recalled two weeks ago but hasn&amp;rsquo;t come up since will score lower than something with fewer total hits but recent activity. Time degrades relevance passively.&lt;/li>
-&lt;/ul>
-&lt;p>What&amp;rsquo;s notable: all three are selection mechanisms, not deletion mechanisms. The corpus files still exist. The staging index entries still exist. Nothing is removed&amp;hellip; it&amp;rsquo;s just progressively less likely to be chosen. This is forgetting as diminishing probability of retrieval, not erasure.&lt;/p>
-&lt;p>That&amp;rsquo;s the garbage collection analogy again: the objects are still in memory, they&amp;rsquo;re just unreachable.&lt;/p>
-&lt;h3 id="transparency">Transparency&lt;/h3>
-&lt;p>Dreaming also adds a layer of transparency. Aside from the session corpus and staging files, it also produces some output about its decisions. All three dreaming stages create files per day that live in &lt;code>.openclaw/workspace/memory/dreaming/{phase}/YYYY-MM-DD.md&lt;/code>.&lt;/p>
-&lt;p>Here&amp;rsquo;s an example of an entry in the &lt;code>light&lt;/code> directory:&lt;/p>
-&lt;pre tabindex="0">&lt;code># Light Sleep
+Me: I have no idea where you got that. I have never had issues with my tonsil.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Where did that come from? I&amp;rsquo;m still not sure, but I occasionally have meetings in cafés, and it&amp;rsquo;s possible that a meeting recording overheard the conversation of someone else in the café. That got faithfully transcribed, copied over into my notes, and written into Iris&amp;rsquo;s memory. Iris treated it as fact for days.&lt;/p&gt;
+&lt;p&gt;The problem isn&amp;rsquo;t that Iris forgot. It&amp;rsquo;s that she remembered the wrong thing&amp;hellip; and didn&amp;rsquo;t know how to forget it.&lt;/p&gt;
+&lt;p&gt;Imagine this at scale: not one wrong fact, but dozens, quietly shaping every summary, every recommendation, every task Iris surfaces for me. The signal-to-noise ratio degrades until it doesn&amp;rsquo;t matter if Iris remembers mostly accurate memories— I won&amp;rsquo;t trust it.&lt;/p&gt;
+&lt;p&gt;So how do you build a memory system that knows what to keep? Researchers have been working on this longer than you might think.&lt;/p&gt;
+&lt;h2 id="meet-the-residents-of-smallville"&gt;Meet the residents of Smallville&lt;/h2&gt;
+&lt;p&gt;Stanford researchers Park et al. &lt;a href="https://arxiv.org/abs/2304.03442"&gt;released a charming study in 2023&lt;/a&gt; called &lt;em&gt;Generative Agents: Interactive Simulacra of Human Behavior&lt;/em&gt; in which they talk about how they created a simulated environment called Smallville, populated it with 25 generative agents, and then watched.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-smallville.png" alt="Smallville, a simulated environment populated with 25 generative agents"&gt;
+&lt;em&gt;Source: Park et al. (2023)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The study was an attempt to simulate emergent social behavior, but the key insight I took from it isn&amp;rsquo;t the sim itself— it&amp;rsquo;s what they had to do to the inhabitants of Smallville to enable the rich social interactions they wanted to observe.&lt;/p&gt;
+&lt;p&gt;The researchers had to give the inhabitants a way to remember.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-smallville-memory-architecture.png" alt="The memory architecture of Smallville&amp;rsquo;s generative agents — observation, retrieval, action, and reflection"&gt;&lt;/p&gt;
+&lt;p&gt;Above is a diagram of the memory architecture of every generative agent.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Observation:&lt;/em&gt; The agent perceives new information. The new information is saved into the &lt;em&gt;memory stream&lt;/em&gt;, a database that serves as the record of everything an agent has experienced.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Retrieval:&lt;/em&gt; When the agent is looking for information, a retrieval function takes that information from the memory stream and passes it onto the agent.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Action:&lt;/em&gt; The agent, armed with retrieved information, can decide to act.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Reflection:&lt;/em&gt; Patterns are synthesized from the observations and written back to the memory stream.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To determine which memories to retrieve at any given point in time, the researchers scored memories according to three weighted factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Recency:&lt;/em&gt; when a memory was observed&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Importance:&lt;/em&gt; how significant the memory was&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Relevance:&lt;/em&gt; how closely related a memory is to the input memory (the agent&amp;rsquo;s current context)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The top-ranking memories that fit within the agent&amp;rsquo;s context window were selected to be retrieved and used with the prompt.&lt;/p&gt;
+&lt;p&gt;The researchers also introduced a second type of memory: reflection. Reflections were generated when a threshold of important scores was reached per day, which typically happened 2-3 times a day.&lt;/p&gt;
+&lt;p&gt;Crucially, reflection is a &lt;em&gt;compression&lt;/em&gt; step — the agent doesn&amp;rsquo;t just accumulate observations, it periodically steps back and asks &amp;ldquo;what do these observations actually mean?&amp;rdquo; That reflection pass is where low-signal memories get subordinated to higher-order patterns. That&amp;rsquo;s the first instance of intelligent forgetting.&lt;/p&gt;
+&lt;p&gt;The Smallville paper was published in 2023. Three years later, the same insight shipped in a lobster.&lt;/p&gt;
+&lt;h2 id="dreaming-of-electric-lobsters"&gt;Dreaming of electric lobsters&lt;/h2&gt;
+&lt;p&gt;Every system that has solved the memory problem has solved it the same way: not by storing more, but by knowing what to throw away.&lt;/p&gt;
+&lt;p&gt;Your brain does it while you sleep by consolidating important experiences into long-term memory, letting the rest dissolve. Some programming languages do it with garbage collection, periodically scanning for unused objects and reclaiming that space. Databases do it with compaction: Loki, Cassandra, and other LSM-tree-inspired systems periodically merge and discard obsolete data so reads stay fast.&lt;/p&gt;
+&lt;p&gt;In all cases, the architecture of good memory is really the architecture of intelligent forgetting. OpenClaw&amp;rsquo;s dreaming feature is the same insight applied to agents.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260507-architecture-of-forgetting-dreaming.svg" alt="Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;)."&gt;
+&lt;em&gt;Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Note that without dreaming, there is no automatic promotion from the active context window to daily notes and then to long-term memory. When a new bit of information is mentioned, the agent has to decide whether it should be added to the daily note and/or the long-term memory file manually. Dreaming, by contrast, is an automated process.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s called &amp;ldquo;Dreaming&amp;rdquo; because the feature works similarly to the biological process, as if in three sleep phases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Light phase:&lt;/em&gt; Creates a session corpus from session files and then succeeding sweeps tally how many times a chunk has been recalled in a session (a counter called &lt;code&gt;lightHit&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;REM phase:&lt;/em&gt; Spots patterns and themes from chunks and adds a reinforcement signal (&lt;code&gt;remHits&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Deep phase:&lt;/em&gt; Ranks the candidates by several factors and promotes those that exceed a threshold score to long-term memory in &lt;code&gt;MEMORY.md&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just like in the Smallville simulation, OpenClaw ranks information by several categories. Here&amp;rsquo;s the table of signals and weights from the &lt;a href="https://docs.openclaw.ai/concepts/dreaming#deep-ranking-signals"&gt;OpenClaw docs&lt;/a&gt; at the time of writing:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Signal&lt;/th&gt;
+&lt;th&gt;Weight&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Frequency&lt;/td&gt;
+&lt;td&gt;0.24&lt;/td&gt;
+&lt;td&gt;How many short-term signals the entry accumulated&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Relevance&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;td&gt;Average retrieval quality for the entry&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Query diversity&lt;/td&gt;
+&lt;td&gt;0.15&lt;/td&gt;
+&lt;td&gt;Distinct query/day contexts that surfaced it&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Recency&lt;/td&gt;
+&lt;td&gt;0.15&lt;/td&gt;
+&lt;td&gt;Time-decayed freshness score&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Consolidation&lt;/td&gt;
+&lt;td&gt;0.10&lt;/td&gt;
+&lt;td&gt;Multi-day recurrence strength&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conceptual richness&lt;/td&gt;
+&lt;td&gt;0.06&lt;/td&gt;
+&lt;td&gt;Concept-tag density from snippet/path&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Only candidates that have high scores according to these signals graduate to be part of &lt;code&gt;MEMORY.md&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="how-dreaming-helps-with-forgetting"&gt;How dreaming helps with forgetting&lt;/h3&gt;
+&lt;p&gt;The new dreaming architecture doesn&amp;rsquo;t ever &lt;em&gt;delete&lt;/em&gt; things, technically. The forgetting is more passive. However, it&amp;rsquo;s still an improvement in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Low-signal chunks don&amp;rsquo;t get promoted:&lt;/em&gt; Anything that doesn&amp;rsquo;t cross the deep phase thresholds simply never reaches MEMORY.md. It exists, but it&amp;rsquo;s functionally invisible to future sessions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Score competition:&lt;/em&gt; The staging index has finite attention, so chunks compete against each other for recall signal. A high-frequency chunk that keeps getting surfaced crowds out low-frequency ones. Relative obscurity is functional forgetting.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Recency decay on scoring:&lt;/em&gt; The deep phase ranking includes a recency signal. So something that was frequently recalled two weeks ago but hasn&amp;rsquo;t come up since will score lower than something with fewer total hits but recent activity. Time degrades relevance passively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What&amp;rsquo;s notable: all three are selection mechanisms, not deletion mechanisms. The corpus files still exist. The staging index entries still exist. Nothing is removed&amp;hellip; it&amp;rsquo;s just progressively less likely to be chosen. This is forgetting as diminishing probability of retrieval, not erasure.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the garbage collection analogy again: the objects are still in memory, they&amp;rsquo;re just unreachable.&lt;/p&gt;
+&lt;h3 id="transparency"&gt;Transparency&lt;/h3&gt;
+&lt;p&gt;Dreaming also adds a layer of transparency. Aside from the session corpus and staging files, it also produces some output about its decisions. All three dreaming stages create files per day that live in &lt;code&gt;.openclaw/workspace/memory/dreaming/{phase}/YYYY-MM-DD.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of an entry in the &lt;code&gt;light&lt;/code&gt; directory:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# Light Sleep
 - Candidate: &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): `Dont Call It Eval - Blog Post Outline.md` — full outline with 7 open questions; `Dont Call It Eval - Draft.md` — 2,550-word draft, 6 sections; `Dont Call It Eval - Opening Research.md` — Tier 1/2/3 shortlist of popular AI eval po
 - confidence: 0.62
 - evidence: memory/2026-04-19.md:13-15
@@ -121,9 +122,9 @@ Me: I have no idea where you got that. I have never had issues with my tonsil.&l
 - evidence: memory/2026-04-19.md:17-17
 - recalls: 0
 - status: staged
-&lt;/code>&lt;/pre>&lt;p>This entry identified a blog draft I was working on.&lt;/p>
-&lt;p>REM sleep goes through these candidates and highlights when it spots themes:&lt;/p>
-&lt;pre tabindex="0">&lt;code># REM Sleep
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This entry identified a blog draft I was working on.&lt;/p&gt;
+&lt;p&gt;REM sleep goes through these candidates and highlights when it spots themes:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# REM Sleep
 ### Reflections
 - Theme: `assistant` kept surfacing across 532 memories.
 - confidence: 1.00
@@ -133,117 +134,118 @@ Me: I have no idea where you got that. I have never had issues with my tonsil.&l
 - &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Datadog Bits AI eval platform** (Apr 7, 2026) — &amp;#34;Bring the noise&amp;#34; = noise injection = production-like envs from 90s QA. SECTION HEADERS are gold (&amp;#34;When one improvement caused subtle regressions&amp;#34;, &amp;#34;Why tool-level testing and live [confidence=0.58 evidence=memory/2026-04-19.md:30-33]
 - &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Thesis (locked):** &amp;#34;AI eval community has rediscovered software testing and given it a new name. The testing world has been busy since.&amp;#34; [confidence=0.58 evidence=memory/2026-04-19.md:17-17]
 - &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; blog post (Context Horizon): **Title:** &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; (Nicole&amp;#39;s original; I picked it over &amp;#34;Congratulations, you&amp;#39;ve invented testing&amp;#34;) [confidence=0.58 evidence=memory/2026-04-19.md:27-27]
-&lt;/code>&lt;/pre>&lt;p>In this case, REM sleep correctly identified that I&amp;rsquo;m currently working on the &lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/assistant/">Assistant&lt;/a> feature at work (which had already been promoted to long-term memory) and the blog post that the light sleep phase had identified.&lt;/p>
-&lt;p>Here&amp;rsquo;s the same day&amp;rsquo;s deep sleep file:&lt;/p>
-&lt;pre tabindex="0">&lt;code># Deep Sleep
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this case, REM sleep correctly identified that I&amp;rsquo;m currently working on the &lt;a href="https://grafana.com/docs/grafana-cloud/machine-learning/assistant/"&gt;Assistant&lt;/a&gt; feature at work (which had already been promoted to long-term memory) and the blog post that the light sleep phase had identified.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the same day&amp;rsquo;s deep sleep file:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# Deep Sleep
 - Ranked 10 candidate(s) for durable promotion.
 - Promoted 3 candidate(s) into MEMORY.md.
-&lt;/code>&lt;/pre>&lt;p>And here&amp;rsquo;s the addition to &lt;code>MEMORY.md&lt;/code> for the same day:&lt;/p>
-&lt;pre tabindex="0">&lt;code>## Promoted From Short-Term Memory (2026-04-26)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And here&amp;rsquo;s the addition to &lt;code&gt;MEMORY.md&lt;/code&gt; for the same day:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;## Promoted From Short-Term Memory (2026-04-26)
 &amp;lt;!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:17:17 --&amp;gt;
 - **Thesis (locked):** &amp;#34;AI eval community has rediscovered software testing and given it a new name. The testing world has been busy since.&amp;#34; [score=0.926 recalls=0 avg=0.620 source=memory/2026-04-19.md:17-17]
 &amp;lt;!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:27:27 --&amp;gt;
 - **Title:** &amp;#34;Don&amp;#39;t Call It Eval&amp;#34; (Nicole&amp;#39;s original; I picked it over &amp;#34;Congratulations, you&amp;#39;ve invented testing&amp;#34;) [score=0.926 recalls=0 avg=0.620 source=memory/2026-04-19.md:27-27]
 &amp;lt;!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:12:12 --&amp;gt;
 - Three files in openclaw-output: [score=0.894 recalls=0 avg=0.620 source=memory/2026-04-19.md:12-12]
-&lt;/code>&lt;/pre>&lt;p>There&amp;rsquo;s also an entry in &lt;code>DREAMS.md&lt;/code> for the entire sequence, which is more dreamlike and human-readable. The per-day Deep Sleep file is the structured internal audit trail; &lt;code>DREAMS.md&lt;/code> is the rolling, more narrative log for humans.&lt;/p>
-&lt;p>This level of transparency and reflection is a welcome change when you compare it to what I had before, which was nothing. Iris had to manually decide on the spot what had to be written where, and those decisions were not logged anywhere.&lt;/p>
-&lt;h2 id="the-tonsil-dilemma">The tonsil dilemma&lt;/h2>
-&lt;p>So dreaming could have prevented the tonsil hallucination, right? Well&amp;hellip; no.&lt;/p>
-&lt;p>In this case, the idea of my supposed tonsil pain had come from an external source: my meeting recordings. Iris had faithfully manually added that to the daily note for the day, then decided to call on it a few days later, unprompted, in conversation with me.&lt;/p>
-&lt;p>With dreaming, Iris still could have made those decisions. But in fact, even if she hadn&amp;rsquo;t, dreaming could have made it &lt;em>worse&lt;/em>:&lt;/p>
-&lt;ul>
-&lt;li>Light phase sweeps it and scores it well since it&amp;rsquo;s recent and distinctive.&lt;/li>
-&lt;li>Tonsil pain could be included in queries about health, such as the daily health tracker that is part of Iris&amp;rsquo;s tasks. REM phase sees a pattern and increments &lt;code>remHits&lt;/code>.&lt;/li>
-&lt;li>Deep phase ranks it highly and it crosses the promotion threshold.&lt;/li>
-&lt;li>It gets written to &lt;code>MEMORY.md&lt;/code> and gets loaded &lt;em>every session&lt;/em>. And long-term memory is sticky. Only manual intervention (by me or by Iris) removes things from that file.&lt;/li>
-&lt;/ul>
-&lt;p>Even dreaming doesn&amp;rsquo;t solve everything. Dreaming adds a mechanism for forgetting. It doesn&amp;rsquo;t prevent OpenClaw from remembering the wrong things in the first place.&lt;/p>
-&lt;h3 id="the-residual-layer">The residual layer&lt;/h3>
-&lt;p>Every memory architecture we&amp;rsquo;ve looked at — biological sleep consolidation, garbage collection, LSM compaction, Smallville&amp;rsquo;s reflection pass, OpenClaw&amp;rsquo;s dreaming — has the same shape: automated compression plus a residual human layer. Your brain has you. GC has the programmer. Iris&amp;rsquo;s dreaming has me. The human in the loop isn&amp;rsquo;t a bug in the design; it&amp;rsquo;s load-bearing.&lt;/p>
-&lt;h2 id="whats-worth-keeping">What&amp;rsquo;s worth keeping&lt;/h2>
-&lt;p>Dreaming is a genuine step forward for OpenClaw&amp;rsquo;s memory architecture. The mechanism of passive forgetting isn&amp;rsquo;t perfect, but the automated promotion systems do add a necessary layer of periodic reflection.&lt;/p>
-&lt;p>But there are limitations. Dreaming can&amp;rsquo;t yet distinguish between a memory worth keeping and a hallucinated tonsil. It can only measure how often something gets recalled. The next frontier is &lt;em>active forgetting&lt;/em>: automated demotion from &lt;code>MEMORY.md&lt;/code>, weighted by signals like source provenance and trust. The provenance side of that work landed in &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.29-beta.2">v2026.4.29-beta.2&lt;/a> — memory now exposes evidence-kind drilldown and privacy/provenance reports, so you can at least &lt;em>see&lt;/em> where a memory came from. But the demotion half — automatically down-ranking memories based on a low-trust source like an audio transcript — still hasn&amp;rsquo;t been built.&lt;/p>
-&lt;p>What remains, for now, is the human layer. The transparency of the dreaming process becomes a checkpoint for the human in the loop by surfacing promotion decisions. I still read the summaries. I still catch the errors. I still decide what goes into long-term memory and what gets quietly corrected. That&amp;rsquo;s not a gap in the system — it&amp;rsquo;s probably the right design. The most important memories should require a human to notice them twice.&lt;/p>
-&lt;p>Good memory systems are defined by what they &lt;em>don&amp;rsquo;t&lt;/em> keep as much as by what they &lt;em>do&lt;/em> keep.&lt;/p></description></item><item><title>High INT, Low WIS: What LLM Benchmarks Miss</title><link>https://nicolevanderhoeven.github.io/blog/20260423-high-int-low-wis-llm-benchmarks/</link><pubDate>Thu, 23 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260423-high-int-low-wis-llm-benchmarks/</guid><description>&lt;p>Originally posted &lt;a href="https://contexthorizon.substack.com/p/high-int-low-wis-what-llm-benchmarks">here&lt;/a> on Context Horizon.&lt;/p>
-&lt;p>In the tabletop roleplaying game Dungeons &amp;amp; Dragons (D&amp;amp;D), the very first thing you do when you create a character is to choose ability scores. Ability scores are numbers that determine how good you are at the game&amp;rsquo;s main characteristics: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). 20 is the default maximum that a character can have in any ability, though some in-game events/items can increase that.&lt;/p>
-&lt;p>Here&amp;rsquo;s the thing, though: every D&amp;amp;D player knows that a 20 Intelligence doesn&amp;rsquo;t mean your wizard aces every check. Whether you have proficiency in the specific skill still matters. That 20 INT wizard, for all their raw cognitive horsepower, can absolutely still fail to identify a magical rune. The ability score is a starting point, not a verdict.&lt;/p>
-&lt;p>This is exactly what&amp;rsquo;s happening to LLM benchmarks. All the general LLM/AI model benchmarks are ability scores. They tell you something real about a model&amp;rsquo;s general capabilities, the same way a 20 INT tells you something real about a wizard. But as frontier models crowd toward the top of every leaderboard, we&amp;rsquo;re running into a problem D&amp;amp;D solved decades ago: the stat block isn&amp;rsquo;t the character. And it was never supposed to be.&lt;/p>
-&lt;p>&lt;img src="https://nicolevanderhoeven.github.io/assets/20260423-safira-l10-stats.png" alt="A screenshot of the stats of my Level 10 bard. Low INT, but look at that CHA!">&lt;/p>
-&lt;p>&lt;em>A screenshot of the stats of my Level 10 bard. Low INT, but look at that CHA!&lt;/em>&lt;/p>
-&lt;h2 id="the-stat-block-a-tour-of-the-ability-scores-everyones-maxing-out">The stat block: A tour of the ability scores everyone&amp;rsquo;s maxing out&lt;/h2>
-&lt;p>There are so many new models and model versions out there that it&amp;rsquo;s hard to keep up with what we&amp;rsquo;re supposed to be using for which tasks. LLM benchmarks have come to be relied on to give a somewhat objective assessment of each model&amp;rsquo;s capability. Here are a few big ones that exist.&lt;/p>
-&lt;h3 id="general-knowledgereasoning">General knowledge/reasoning&lt;/h3>
-&lt;h4 id="mmlu-measuring-massive-multitask-language-understanding-2020">MMLU (Measuring Massive Multitask Language Understanding, 2020)&lt;/h4>
-&lt;p>MMLU is the classic &amp;ldquo;general knowledge&amp;rdquo; INT check. It was &lt;a href="https://arxiv.org/abs/2009.03300">released in September 2020 by Hendrycks et al.&lt;/a> and contains 15,908 multiple-choice questions across 57 subjects (humanities, social science, STEM, other). However, there were a few issues with it:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://arxiv.org/abs/2406.04127">a study in 2024&lt;/a> showed that 6.49% of those questions contained errors&lt;/li>
-&lt;li>&lt;a href="https://www.nytimes.com/2024/04/15/technology/ai-models-measurement.html">The New York Times reported&lt;/a> (2024) that data contamination was an issue — models could be trained on the MMLU questions (and answers) to inflate their MMLU scores&lt;/li>
-&lt;li>many frontier LLMs soon consistently achieved high scores&lt;/li>
-&lt;/ul>
-&lt;p>In response, a new benchmark called &lt;a href="https://github.com/TIGER-AI-Lab/MMLU-Pro">MMLU-Pro&lt;/a> was created with 12,000 questions that each have 10 options. The increase in options theoretically required more reasoning capability than the original benchmark, but frontier models are already knocking at 90% on the MMLU-Pro.&lt;/p>
-&lt;h4 id="humanitys-last-exam-hle-2025">Humanity&amp;rsquo;s Last Exam (HLE, 2025)&lt;/h4>
-&lt;p>HLE was developed specifically to address the fact that LLMs &amp;ldquo;now achieve over 90% accuracy on popular benchmarks like MMLU&amp;rdquo; (from &lt;a href="https://lastexam.ai">the HLE site&lt;/a>). The &lt;a href="https://arxiv.org/abs/2501.14249">paper by Phan et al&lt;/a> explains the lengths they took to make it hard enough to be meaningful:&lt;/p>
-&lt;ul>
-&lt;li>they solicited high-quality questions from nearly 1000 subject matter experts, even going as far as paying them for successful submissions (with a total prize pool of US $500,000)&lt;/li>
-&lt;li>they included graduate-level classics (one of the questions includes translating Palmyrene script)&lt;/li>
-&lt;li>they reviewed potential submissions using current LLMs and only proceeded with submissions if the LLMs are unable to answer correctly&lt;/li>
-&lt;li>experts then reviewed the submissions further&lt;/li>
-&lt;/ul>
-&lt;p>As a result, HLE scores are low — intentionally so:&lt;/p>
-&lt;blockquote>
-&lt;p>While current LLMs achieve very low accuracy on HLE, recent history shows benchmarks are quickly saturated – with models dramatically progressing from near-zero to near-perfect performance in a short timeframe [13, 45]. Given the rapid pace of AI development, it is plausible that models could exceed 50% accuracy on HLE by the end of 2025. (&lt;a href="https://arxiv.org/abs/2501.14249">Phan et al., 2025&lt;/a>)&lt;/p>&lt;/blockquote>
-&lt;h3 id="software-engineering">Software engineering&lt;/h3>
-&lt;h4 id="humaneval-openai-2021">HumanEval (OpenAI, 2021)&lt;/h4>
-&lt;p>In 2021, OpenAI released &lt;a href="https://arxiv.org/abs/2107.03374">a paper&lt;/a> and &lt;a href="https://github.com/openai/human-eval">an evaluation harness&lt;/a> for a benchmark consisting of 164 Python programming problems based on publicly available code on GitHub. It was developed to test coding in particular.&lt;/p>
-&lt;p>Eventually, though, experts found that the problem sets in HumanEval were insufficient and ambiguous (&lt;a href="https://arxiv.org/abs/2305.01210">Liu et al., 2023&lt;/a>). HumanEval+ was released to include more tests, but the next benchmark&amp;rsquo;s authors &lt;a href="https://arxiv.org/abs/2403.07974">suggested that models might be overfitting&lt;/a> to HumanEval+ as well, memorizing the dataset and answers rather than genuinely demonstrating reasoning ability.&lt;/p>
-&lt;h4 id="livecodebench-2024">LiveCodeBench (2024)&lt;/h4>
-&lt;p>&lt;a href="https://arxiv.org/abs/2403.07974">Jain et al.&lt;/a> tried a different approach to HumanEval to avoid data contamination: it was released with a continuously-updated coding benchmark. Problems have release dates and models can only be evaluated using problems released &lt;em>after&lt;/em> their training data cutoff dates.&lt;/p>
-&lt;p>LiveCodeBench represents a shift in benchmarks towards a more continuous, dynamic measure. However, the last submission to the benchmark was &lt;a href="https://github.com/LiveCodeBench/submissions">9 months ago&lt;/a> at the time of this writing, and &lt;a href="https://livecodebench.github.io/">the leaderboard&lt;/a> has not been updated since then either, suggesting the benchmark is no longer being actively maintained.&lt;/p>
-&lt;h4 id="swe-bench-2024">SWE-bench (2024)&lt;/h4>
-&lt;p>This benchmark was created by &lt;a href="https://openreview.net/pdf?id=VTF8yNQM66">Jimenez et al.&lt;/a> to include 2,294 actual GitHub issues from 12 Python projects. When it launched, it was a much harder benchmark than predecessors, with models scoring 2-4%. Today, models are scoring around 70-80% on the original benchmark. There were enough issues with the original&amp;rsquo;s dataset quality that variants were introduced, including &lt;a href="https://openai.com/index/introducing-swe-bench-verified/">OpenAI&amp;rsquo;s SWE-bench Verified&lt;/a>. Today, &lt;a href="https://www.swebench.com/">the SWE-bench website&lt;/a> shows these variants:&lt;/p>
-&lt;ul>
-&lt;li>SWE-bench&lt;/li>
-&lt;li>SWE-bench Verified&lt;/li>
-&lt;li>SWE-bench Multilingual&lt;/li>
-&lt;li>SWE-bench Multimodal&lt;/li>
-&lt;li>SWE-bench Lite&lt;/li>
-&lt;/ul>
-&lt;h3 id="agents-and-tool-use">Agents and tool use&lt;/h3>
-&lt;p>This last category is a preview of where I think the field should go: benchmarks that measure &lt;em>what a model does&lt;/em> rather than just &lt;em>what a model knows&lt;/em>. Here are some of them:&lt;/p>
-&lt;ul>
-&lt;li>GAIA (&lt;a href="https://arxiv.org/abs/2311.12983">Mialon et al., 2023&lt;/a>) — 466 real-world assistant tasks that combine web browsing, file reading, and multi-step reasoning. Easy for humans (92% success), hard for models (15% success for GPT-4), at least at launch.&lt;/li>
-&lt;li>&lt;a href="https://www.tbench.ai/">Terminal-Bench&lt;/a> — agents working in actual Linux terminals. Tasks include &amp;ldquo;build the Linux kernel from source&amp;rdquo; and &amp;ldquo;configure a git server plus a webserver on port 8080.&amp;rdquo; No mocks; if it doesn&amp;rsquo;t actually build, it fails.&lt;/li>
-&lt;li>WebArena (&lt;a href="https://arxiv.org/abs/2307.13854">Zhou et al., 2023&lt;/a>) — realistic simulated websites (Reddit, GitLab, e-commerce) where agents complete actual user goals like &amp;ldquo;filter the last six months of orders by refund status.&amp;rdquo;&lt;/li>
-&lt;/ul>
-&lt;p>These benchmarks are harder to saturate than general-knowledge ones, because passing means the thing actually has to work in the real world. A model can memorise a question; it can&amp;rsquo;t memorise a Linux kernel that isn&amp;rsquo;t there until it builds it.&lt;/p>
-&lt;h2 id="the-wrong-answer-build-a-harder-general-benchmark">The wrong answer: Build a harder general benchmark&lt;/h2>
-&lt;p>By now, you probably see that benchmarks tend to go the same way: A benchmark is created, models get too good at it and perform too well to be useful, and then a variant benchmark is created to address the problem.&lt;/p>
-&lt;p>This is the &lt;em>saturation problem&lt;/em> in a nutshell: a benchmark that once provided meaningful information to help distinguish models eventually fails to do so because all the models&amp;rsquo; scores cluster at the top.&lt;/p>
-&lt;p>Saturation occurs for two reasons:&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>Contamination&lt;/em>: Many benchmarks publish their problem sets online, and models train on data scraped from the web. The benchmark now measures memorization, not capability.&lt;/li>
-&lt;li>&lt;em>Overfitting&lt;/em>: Model providers are incentivized to optimize specifically for gaming performance on benchmarks. Scores go up without corresponding capability improvements.&lt;/li>
-&lt;/ul>
-&lt;p>When you have a party of wizards with 20 INT, &amp;ldquo;What&amp;rsquo;s your INT score?&amp;rdquo; stops being an interesting question because any wizard&amp;rsquo;s Fireball will hit the same. Building harder benchmarks is like an arms race for ability scores, when what you actually want to know is whether your wizard can kill a dragon.&lt;/p>
-&lt;p>Harder benchmarks don&amp;rsquo;t tell us what we want to know: &lt;em>can this model do my specific job?&lt;/em>&lt;/p>
-&lt;h2 id="the-right-answer-skill-checks-with-real-dcs">The right answer: skill checks with real DCs&lt;/h2>
-&lt;p>The fix isn&amp;rsquo;t a harder ability check. It&amp;rsquo;s a different kind of check altogether. In D&amp;amp;D, straight ability checks are rare compared to skill checks. There are 18 official skills that break down the six ability scores into more granular activities. For example, your wizard is much more likely to roll one of these instead of a straight INT check:&lt;/p>
-&lt;ul>
-&lt;li>Arcana&lt;/li>
-&lt;li>History&lt;/li>
-&lt;li>Investigation&lt;/li>
-&lt;li>Nature&lt;/li>
-&lt;li>Religion&lt;/li>
-&lt;/ul>
-&lt;p>All of these are still based on INT, but test narrow &lt;em>types of intelligence&lt;/em> rather than general intelligence.&lt;/p>
-&lt;p>Specific, domain-grounded benchmarks are what the field actually needs. The evaluations that actually help practitioners share a structure: they test a specific skill in a specific context, and they&amp;rsquo;re judged by the people who have to live with the results.&lt;/p>
-&lt;p>&lt;a href="https://arxiv.org/abs/2009.13081">MedQA&lt;/a> tests whether a model can answer the kind of clinical question a physician might face. &lt;a href="https://arxiv.org/abs/2308.11462">LegalBench&lt;/a> tests whether a model can correctly identify enforceability clauses, classify contract language, and apply legal reasoning. &lt;a href="https://arxiv.org/abs/2311.11944">FinanceBench&lt;/a> tests whether a model can answer the kind of question a financial analyst would actually ask about a real 10-K filing. None of these are trying to rank models on general intelligence. They&amp;rsquo;re asking the only question that matters downstream: &lt;em>can this model do this specific job well enough?&lt;/em>&lt;/p>
-&lt;p>This week, Grafana released &lt;a href="https://github.com/grafana/o11y-bench">o11y-bench&lt;/a>, an open benchmark for observability-specific agent tasks. I&amp;rsquo;m biased — I work there — but it&amp;rsquo;s a useful illustration of the shape I&amp;rsquo;m describing. o11y-bench doesn&amp;rsquo;t ask whether a model is smart in general. It asks whether an agent can do the things observability engineers actually do: read production traces, correlate logs with metrics, figure out why the thing that&amp;rsquo;s supposed to be working isn&amp;rsquo;t. &lt;a href="https://o11ybench.ai/">Its leaderboard&lt;/a> shows models&amp;rsquo; performance for each activity.&lt;/p>
-&lt;p>Does that mean that more specific benchmarks won&amp;rsquo;t get saturated? No. We&amp;rsquo;ve already seen this play out with SWE-bench. But they&amp;rsquo;ll get saturated more slowly and remain more meaningful measures along the way.&lt;/p>
-&lt;p>These are skill checks with DCs that matter to someone. They&amp;rsquo;re not trying to produce a single scalar ranking of &amp;ldquo;which model is smartest.&amp;rdquo; They&amp;rsquo;re asking whether the wizard recognizes the family crest belonging to a political faction or knows this specific cult&amp;rsquo;s practices, not whether the wizard is good at &amp;ldquo;wizarding&amp;rdquo; in the abstract.&lt;/p>
-&lt;h2 id="roll-for-initiative-what-this-means-in-practice">Roll for initiative: What this means in practice&lt;/h2>
-&lt;p>If you&amp;rsquo;re an engineer picking a model for production: stop picking by leaderboard. Find or build an eval that reflects your actual use case. A handful of representative examples, graded the way you&amp;rsquo;d grade them if you were doing the work yourself, will tell you more than a dozen public benchmarks.&lt;/p>
-&lt;p>If you&amp;rsquo;re a researcher thinking about what to build next: the interesting work is at the specific-and-grounded end of the spectrum, not the general-and-bigger end. Another harder general-knowledge benchmark will saturate in eighteen months. A well-designed domain benchmark, co-built with the people who actually do the work, can stay useful for years.&lt;/p>
-&lt;p>And if you&amp;rsquo;re anyone else watching this field from the outside: be skeptical of the headlines. When a new model scores 94% on a benchmark you&amp;rsquo;ve never heard of, ask what it measures and whether the thing it measures is the thing you actually care about. Usually the answer is &amp;ldquo;not really,&amp;rdquo; and that&amp;rsquo;s the most important thing a benchmark score won&amp;rsquo;t tell you.&lt;/p>
-&lt;p>The goal of a character sheet was never to produce one number that ranks the character. It was to give a DM enough information to run a meaningful encounter — and to give the player enough to know when to try, when to pass, and when to roll with advantage. LLM evaluation should work the same way. Not a ranking; a readiness check. Can this specific model clear this specific challenge? Roll for initiative.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There&amp;rsquo;s also an entry in &lt;code&gt;DREAMS.md&lt;/code&gt; for the entire sequence, which is more dreamlike and human-readable. The per-day Deep Sleep file is the structured internal audit trail; &lt;code&gt;DREAMS.md&lt;/code&gt; is the rolling, more narrative log for humans.&lt;/p&gt;
+&lt;p&gt;This level of transparency and reflection is a welcome change when you compare it to what I had before, which was nothing. Iris had to manually decide on the spot what had to be written where, and those decisions were not logged anywhere.&lt;/p&gt;
+&lt;h2 id="the-tonsil-dilemma"&gt;The tonsil dilemma&lt;/h2&gt;
+&lt;p&gt;So dreaming could have prevented the tonsil hallucination, right? Well&amp;hellip; no.&lt;/p&gt;
+&lt;p&gt;In this case, the idea of my supposed tonsil pain had come from an external source: my meeting recordings. Iris had faithfully manually added that to the daily note for the day, then decided to call on it a few days later, unprompted, in conversation with me.&lt;/p&gt;
+&lt;p&gt;With dreaming, Iris still could have made those decisions. But in fact, even if she hadn&amp;rsquo;t, dreaming could have made it &lt;em&gt;worse&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Light phase sweeps it and scores it well since it&amp;rsquo;s recent and distinctive.&lt;/li&gt;
+&lt;li&gt;Tonsil pain could be included in queries about health, such as the daily health tracker that is part of Iris&amp;rsquo;s tasks. REM phase sees a pattern and increments &lt;code&gt;remHits&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Deep phase ranks it highly and it crosses the promotion threshold.&lt;/li&gt;
+&lt;li&gt;It gets written to &lt;code&gt;MEMORY.md&lt;/code&gt; and gets loaded &lt;em&gt;every session&lt;/em&gt;. And long-term memory is sticky. Only manual intervention (by me or by Iris) removes things from that file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even dreaming doesn&amp;rsquo;t solve everything. Dreaming adds a mechanism for forgetting. It doesn&amp;rsquo;t prevent OpenClaw from remembering the wrong things in the first place.&lt;/p&gt;
+&lt;h3 id="the-residual-layer"&gt;The residual layer&lt;/h3&gt;
+&lt;p&gt;Every memory architecture we&amp;rsquo;ve looked at — biological sleep consolidation, garbage collection, LSM compaction, Smallville&amp;rsquo;s reflection pass, OpenClaw&amp;rsquo;s dreaming — has the same shape: automated compression plus a residual human layer. Your brain has you. GC has the programmer. Iris&amp;rsquo;s dreaming has me. The human in the loop isn&amp;rsquo;t a bug in the design; it&amp;rsquo;s load-bearing.&lt;/p&gt;
+&lt;h2 id="whats-worth-keeping"&gt;What&amp;rsquo;s worth keeping&lt;/h2&gt;
+&lt;p&gt;Dreaming is a genuine step forward for OpenClaw&amp;rsquo;s memory architecture. The mechanism of passive forgetting isn&amp;rsquo;t perfect, but the automated promotion systems do add a necessary layer of periodic reflection.&lt;/p&gt;
+&lt;p&gt;But there are limitations. Dreaming can&amp;rsquo;t yet distinguish between a memory worth keeping and a hallucinated tonsil. It can only measure how often something gets recalled. The next frontier is &lt;em&gt;active forgetting&lt;/em&gt;: automated demotion from &lt;code&gt;MEMORY.md&lt;/code&gt;, weighted by signals like source provenance and trust. The provenance side of that work landed in &lt;a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.29-beta.2"&gt;v2026.4.29-beta.2&lt;/a&gt; — memory now exposes evidence-kind drilldown and privacy/provenance reports, so you can at least &lt;em&gt;see&lt;/em&gt; where a memory came from. But the demotion half — automatically down-ranking memories based on a low-trust source like an audio transcript — still hasn&amp;rsquo;t been built.&lt;/p&gt;
+&lt;p&gt;What remains, for now, is the human layer. The transparency of the dreaming process becomes a checkpoint for the human in the loop by surfacing promotion decisions. I still read the summaries. I still catch the errors. I still decide what goes into long-term memory and what gets quietly corrected. That&amp;rsquo;s not a gap in the system — it&amp;rsquo;s probably the right design. The most important memories should require a human to notice them twice.&lt;/p&gt;
+&lt;p&gt;Good memory systems are defined by what they &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; keep as much as by what they &lt;em&gt;do&lt;/em&gt; keep.&lt;/p&gt;</description></item><item><title>High INT, Low WIS: What LLM Benchmarks Miss</title><link>https://nicolevanderhoeven.github.io/blog/20260423-high-int-low-wis-llm-benchmarks/</link><pubDate>Thu, 23 Apr 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260423-high-int-low-wis-llm-benchmarks/</guid><description>&lt;p&gt;Originally posted &lt;a href="https://contexthorizon.substack.com/p/high-int-low-wis-what-llm-benchmarks"&gt;here&lt;/a&gt; on Context Horizon.&lt;/p&gt;
+&lt;p&gt;In the tabletop roleplaying game Dungeons &amp;amp; Dragons (D&amp;amp;D), the very first thing you do when you create a character is to choose ability scores. Ability scores are numbers that determine how good you are at the game&amp;rsquo;s main characteristics: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). 20 is the default maximum that a character can have in any ability, though some in-game events/items can increase that.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the thing, though: every D&amp;amp;D player knows that a 20 Intelligence doesn&amp;rsquo;t mean your wizard aces every check. Whether you have proficiency in the specific skill still matters. That 20 INT wizard, for all their raw cognitive horsepower, can absolutely still fail to identify a magical rune. The ability score is a starting point, not a verdict.&lt;/p&gt;
+&lt;p&gt;This is exactly what&amp;rsquo;s happening to LLM benchmarks. All the general LLM/AI model benchmarks are ability scores. They tell you something real about a model&amp;rsquo;s general capabilities, the same way a 20 INT tells you something real about a wizard. But as frontier models crowd toward the top of every leaderboard, we&amp;rsquo;re running into a problem D&amp;amp;D solved decades ago: the stat block isn&amp;rsquo;t the character. And it was never supposed to be.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.github.io/assets/20260423-safira-l10-stats.png" alt="A screenshot of the stats of my Level 10 bard. Low INT, but look at that CHA!"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A screenshot of the stats of my Level 10 bard. Low INT, but look at that CHA!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="the-stat-block-a-tour-of-the-ability-scores-everyones-maxing-out"&gt;The stat block: A tour of the ability scores everyone&amp;rsquo;s maxing out&lt;/h2&gt;
+&lt;p&gt;There are so many new models and model versions out there that it&amp;rsquo;s hard to keep up with what we&amp;rsquo;re supposed to be using for which tasks. LLM benchmarks have come to be relied on to give a somewhat objective assessment of each model&amp;rsquo;s capability. Here are a few big ones that exist.&lt;/p&gt;
+&lt;h3 id="general-knowledgereasoning"&gt;General knowledge/reasoning&lt;/h3&gt;
+&lt;h4 id="mmlu-measuring-massive-multitask-language-understanding-2020"&gt;MMLU (Measuring Massive Multitask Language Understanding, 2020)&lt;/h4&gt;
+&lt;p&gt;MMLU is the classic &amp;ldquo;general knowledge&amp;rdquo; INT check. It was &lt;a href="https://arxiv.org/abs/2009.03300"&gt;released in September 2020 by Hendrycks et al.&lt;/a&gt; and contains 15,908 multiple-choice questions across 57 subjects (humanities, social science, STEM, other). However, there were a few issues with it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://arxiv.org/abs/2406.04127"&gt;a study in 2024&lt;/a&gt; showed that 6.49% of those questions contained errors&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nytimes.com/2024/04/15/technology/ai-models-measurement.html"&gt;The New York Times reported&lt;/a&gt; (2024) that data contamination was an issue — models could be trained on the MMLU questions (and answers) to inflate their MMLU scores&lt;/li&gt;
+&lt;li&gt;many frontier LLMs soon consistently achieved high scores&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In response, a new benchmark called &lt;a href="https://github.com/TIGER-AI-Lab/MMLU-Pro"&gt;MMLU-Pro&lt;/a&gt; was created with 12,000 questions that each have 10 options. The increase in options theoretically required more reasoning capability than the original benchmark, but frontier models are already knocking at 90% on the MMLU-Pro.&lt;/p&gt;
+&lt;h4 id="humanitys-last-exam-hle-2025"&gt;Humanity&amp;rsquo;s Last Exam (HLE, 2025)&lt;/h4&gt;
+&lt;p&gt;HLE was developed specifically to address the fact that LLMs &amp;ldquo;now achieve over 90% accuracy on popular benchmarks like MMLU&amp;rdquo; (from &lt;a href="https://lastexam.ai"&gt;the HLE site&lt;/a&gt;). The &lt;a href="https://arxiv.org/abs/2501.14249"&gt;paper by Phan et al&lt;/a&gt; explains the lengths they took to make it hard enough to be meaningful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;they solicited high-quality questions from nearly 1000 subject matter experts, even going as far as paying them for successful submissions (with a total prize pool of US $500,000)&lt;/li&gt;
+&lt;li&gt;they included graduate-level classics (one of the questions includes translating Palmyrene script)&lt;/li&gt;
+&lt;li&gt;they reviewed potential submissions using current LLMs and only proceeded with submissions if the LLMs are unable to answer correctly&lt;/li&gt;
+&lt;li&gt;experts then reviewed the submissions further&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a result, HLE scores are low — intentionally so:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While current LLMs achieve very low accuracy on HLE, recent history shows benchmarks are quickly saturated – with models dramatically progressing from near-zero to near-perfect performance in a short timeframe [13, 45]. Given the rapid pace of AI development, it is plausible that models could exceed 50% accuracy on HLE by the end of 2025. (&lt;a href="https://arxiv.org/abs/2501.14249"&gt;Phan et al., 2025&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="software-engineering"&gt;Software engineering&lt;/h3&gt;
+&lt;h4 id="humaneval-openai-2021"&gt;HumanEval (OpenAI, 2021)&lt;/h4&gt;
+&lt;p&gt;In 2021, OpenAI released &lt;a href="https://arxiv.org/abs/2107.03374"&gt;a paper&lt;/a&gt; and &lt;a href="https://github.com/openai/human-eval"&gt;an evaluation harness&lt;/a&gt; for a benchmark consisting of 164 Python programming problems based on publicly available code on GitHub. It was developed to test coding in particular.&lt;/p&gt;
+&lt;p&gt;Eventually, though, experts found that the problem sets in HumanEval were insufficient and ambiguous (&lt;a href="https://arxiv.org/abs/2305.01210"&gt;Liu et al., 2023&lt;/a&gt;). HumanEval+ was released to include more tests, but the next benchmark&amp;rsquo;s authors &lt;a href="https://arxiv.org/abs/2403.07974"&gt;suggested that models might be overfitting&lt;/a&gt; to HumanEval+ as well, memorizing the dataset and answers rather than genuinely demonstrating reasoning ability.&lt;/p&gt;
+&lt;h4 id="livecodebench-2024"&gt;LiveCodeBench (2024)&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/abs/2403.07974"&gt;Jain et al.&lt;/a&gt; tried a different approach to HumanEval to avoid data contamination: it was released with a continuously-updated coding benchmark. Problems have release dates and models can only be evaluated using problems released &lt;em&gt;after&lt;/em&gt; their training data cutoff dates.&lt;/p&gt;
+&lt;p&gt;LiveCodeBench represents a shift in benchmarks towards a more continuous, dynamic measure. However, the last submission to the benchmark was &lt;a href="https://github.com/LiveCodeBench/submissions"&gt;9 months ago&lt;/a&gt; at the time of this writing, and &lt;a href="https://livecodebench.github.io/"&gt;the leaderboard&lt;/a&gt; has not been updated since then either, suggesting the benchmark is no longer being actively maintained.&lt;/p&gt;
+&lt;h4 id="swe-bench-2024"&gt;SWE-bench (2024)&lt;/h4&gt;
+&lt;p&gt;This benchmark was created by &lt;a href="https://openreview.net/pdf?id=VTF8yNQM66"&gt;Jimenez et al.&lt;/a&gt; to include 2,294 actual GitHub issues from 12 Python projects. When it launched, it was a much harder benchmark than predecessors, with models scoring 2-4%. Today, models are scoring around 70-80% on the original benchmark. There were enough issues with the original&amp;rsquo;s dataset quality that variants were introduced, including &lt;a href="https://openai.com/index/introducing-swe-bench-verified/"&gt;OpenAI&amp;rsquo;s SWE-bench Verified&lt;/a&gt;. Today, &lt;a href="https://www.swebench.com/"&gt;the SWE-bench website&lt;/a&gt; shows these variants:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SWE-bench&lt;/li&gt;
+&lt;li&gt;SWE-bench Verified&lt;/li&gt;
+&lt;li&gt;SWE-bench Multilingual&lt;/li&gt;
+&lt;li&gt;SWE-bench Multimodal&lt;/li&gt;
+&lt;li&gt;SWE-bench Lite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="agents-and-tool-use"&gt;Agents and tool use&lt;/h3&gt;
+&lt;p&gt;This last category is a preview of where I think the field should go: benchmarks that measure &lt;em&gt;what a model does&lt;/em&gt; rather than just &lt;em&gt;what a model knows&lt;/em&gt;. Here are some of them:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GAIA (&lt;a href="https://arxiv.org/abs/2311.12983"&gt;Mialon et al., 2023&lt;/a&gt;) — 466 real-world assistant tasks that combine web browsing, file reading, and multi-step reasoning. Easy for humans (92% success), hard for models (15% success for GPT-4), at least at launch.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tbench.ai/"&gt;Terminal-Bench&lt;/a&gt; — agents working in actual Linux terminals. Tasks include &amp;ldquo;build the Linux kernel from source&amp;rdquo; and &amp;ldquo;configure a git server plus a webserver on port 8080.&amp;rdquo; No mocks; if it doesn&amp;rsquo;t actually build, it fails.&lt;/li&gt;
+&lt;li&gt;WebArena (&lt;a href="https://arxiv.org/abs/2307.13854"&gt;Zhou et al., 2023&lt;/a&gt;) — realistic simulated websites (Reddit, GitLab, e-commerce) where agents complete actual user goals like &amp;ldquo;filter the last six months of orders by refund status.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These benchmarks are harder to saturate than general-knowledge ones, because passing means the thing actually has to work in the real world. A model can memorise a question; it can&amp;rsquo;t memorise a Linux kernel that isn&amp;rsquo;t there until it builds it.&lt;/p&gt;
+&lt;h2 id="the-wrong-answer-build-a-harder-general-benchmark"&gt;The wrong answer: Build a harder general benchmark&lt;/h2&gt;
+&lt;p&gt;By now, you probably see that benchmarks tend to go the same way: A benchmark is created, models get too good at it and perform too well to be useful, and then a variant benchmark is created to address the problem.&lt;/p&gt;
+&lt;p&gt;This is the &lt;em&gt;saturation problem&lt;/em&gt; in a nutshell: a benchmark that once provided meaningful information to help distinguish models eventually fails to do so because all the models&amp;rsquo; scores cluster at the top.&lt;/p&gt;
+&lt;p&gt;Saturation occurs for two reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Contamination&lt;/em&gt;: Many benchmarks publish their problem sets online, and models train on data scraped from the web. The benchmark now measures memorization, not capability.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Overfitting&lt;/em&gt;: Model providers are incentivized to optimize specifically for gaming performance on benchmarks. Scores go up without corresponding capability improvements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you have a party of wizards with 20 INT, &amp;ldquo;What&amp;rsquo;s your INT score?&amp;rdquo; stops being an interesting question because any wizard&amp;rsquo;s Fireball will hit the same. Building harder benchmarks is like an arms race for ability scores, when what you actually want to know is whether your wizard can kill a dragon.&lt;/p&gt;
+&lt;p&gt;Harder benchmarks don&amp;rsquo;t tell us what we want to know: &lt;em&gt;can this model do my specific job?&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="the-right-answer-skill-checks-with-real-dcs"&gt;The right answer: skill checks with real DCs&lt;/h2&gt;
+&lt;p&gt;The fix isn&amp;rsquo;t a harder ability check. It&amp;rsquo;s a different kind of check altogether. In D&amp;amp;D, straight ability checks are rare compared to skill checks. There are 18 official skills that break down the six ability scores into more granular activities. For example, your wizard is much more likely to roll one of these instead of a straight INT check:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Arcana&lt;/li&gt;
+&lt;li&gt;History&lt;/li&gt;
+&lt;li&gt;Investigation&lt;/li&gt;
+&lt;li&gt;Nature&lt;/li&gt;
+&lt;li&gt;Religion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these are still based on INT, but test narrow &lt;em&gt;types of intelligence&lt;/em&gt; rather than general intelligence.&lt;/p&gt;
+&lt;p&gt;Specific, domain-grounded benchmarks are what the field actually needs. The evaluations that actually help practitioners share a structure: they test a specific skill in a specific context, and they&amp;rsquo;re judged by the people who have to live with the results.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/abs/2009.13081"&gt;MedQA&lt;/a&gt; tests whether a model can answer the kind of clinical question a physician might face. &lt;a href="https://arxiv.org/abs/2308.11462"&gt;LegalBench&lt;/a&gt; tests whether a model can correctly identify enforceability clauses, classify contract language, and apply legal reasoning. &lt;a href="https://arxiv.org/abs/2311.11944"&gt;FinanceBench&lt;/a&gt; tests whether a model can answer the kind of question a financial analyst would actually ask about a real 10-K filing. None of these are trying to rank models on general intelligence. They&amp;rsquo;re asking the only question that matters downstream: &lt;em&gt;can this model do this specific job well enough?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This week, Grafana released &lt;a href="https://github.com/grafana/o11y-bench"&gt;o11y-bench&lt;/a&gt;, an open benchmark for observability-specific agent tasks. I&amp;rsquo;m biased — I work there — but it&amp;rsquo;s a useful illustration of the shape I&amp;rsquo;m describing. o11y-bench doesn&amp;rsquo;t ask whether a model is smart in general. It asks whether an agent can do the things observability engineers actually do: read production traces, correlate logs with metrics, figure out why the thing that&amp;rsquo;s supposed to be working isn&amp;rsquo;t. &lt;a href="https://o11ybench.ai/"&gt;Its leaderboard&lt;/a&gt; shows models&amp;rsquo; performance for each activity.&lt;/p&gt;
+&lt;p&gt;Does that mean that more specific benchmarks won&amp;rsquo;t get saturated? No. We&amp;rsquo;ve already seen this play out with SWE-bench. But they&amp;rsquo;ll get saturated more slowly and remain more meaningful measures along the way.&lt;/p&gt;
+&lt;p&gt;These are skill checks with DCs that matter to someone. They&amp;rsquo;re not trying to produce a single scalar ranking of &amp;ldquo;which model is smartest.&amp;rdquo; They&amp;rsquo;re asking whether the wizard recognizes the family crest belonging to a political faction or knows this specific cult&amp;rsquo;s practices, not whether the wizard is good at &amp;ldquo;wizarding&amp;rdquo; in the abstract.&lt;/p&gt;
+&lt;h2 id="roll-for-initiative-what-this-means-in-practice"&gt;Roll for initiative: What this means in practice&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re an engineer picking a model for production: stop picking by leaderboard. Find or build an eval that reflects your actual use case. A handful of representative examples, graded the way you&amp;rsquo;d grade them if you were doing the work yourself, will tell you more than a dozen public benchmarks.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re a researcher thinking about what to build next: the interesting work is at the specific-and-grounded end of the spectrum, not the general-and-bigger end. Another harder general-knowledge benchmark will saturate in eighteen months. A well-designed domain benchmark, co-built with the people who actually do the work, can stay useful for years.&lt;/p&gt;
+&lt;p&gt;And if you&amp;rsquo;re anyone else watching this field from the outside: be skeptical of the headlines. When a new model scores 94% on a benchmark you&amp;rsquo;ve never heard of, ask what it measures and whether the thing it measures is the thing you actually care about. Usually the answer is &amp;ldquo;not really,&amp;rdquo; and that&amp;rsquo;s the most important thing a benchmark score won&amp;rsquo;t tell you.&lt;/p&gt;
+&lt;p&gt;The goal of a character sheet was never to produce one number that ranks the character. It was to give a DM enough information to run a meaningful encounter — and to give the player enough to know when to try, when to pass, and when to roll with advantage. LLM evaluation should work the same way. Not a ranking; a readiness check. Can this specific model clear this specific challenge? Roll for initiative.&lt;/p&gt;</description></item></channel></rss>

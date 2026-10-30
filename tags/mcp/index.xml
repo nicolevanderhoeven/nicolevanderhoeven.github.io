@@ -1,91 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mcp on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/mcp/</link><description>Recent content in Mcp on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 19 Aug 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title>When to use Grafana Assistant vs MCP vs GCX: Grafana MCP</title><link>https://nicolevanderhoeven.github.io/blog/20260819-when-to-use-grafana-mcp/</link><pubDate>Wed, 19 Aug 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260819-when-to-use-grafana-mcp/</guid><description>&lt;p>Three AI tools people confuse: Assistant, MCP, and GCX. &lt;a href="https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/">Last time&lt;/a> I talked about the brain — Assistant. Now hand number one: &lt;strong>the MCP server&lt;/strong>, the &lt;em>easy&lt;/em> hand.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/HDmJyo9cyf8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>Grafana MCP — Model Context Protocol — lets &lt;em>any&lt;/em> AI client reach into Grafana. The magic part: &lt;strong>you bring your own brain.&lt;/strong>&lt;/p>
-&lt;p>Using MCP requires &lt;strong>two pieces&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>The &lt;strong>client&lt;/strong> is your AI app — the brain you bring: claude.ai, ChatGPT, Cursor.&lt;/li>
-&lt;li>The &lt;strong>server&lt;/strong> is the door into Grafana that exposes the tools.&lt;/li>
-&lt;/ul>
-&lt;p>There are two ways to get that server. The easiest is the &lt;strong>Grafana Cloud hosted&lt;/strong> one — already running, auth built in, just connect and go. But you can also &lt;strong>self-host&lt;/strong> the open-source one on your own infra.&lt;/p>
-&lt;p>So when do you reach for Grafana MCP?&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>When you&amp;rsquo;re using hosted chat tools with no terminal&lt;/strong> — claude.ai, ChatGPT, your phone. No shell means no CLI, so MCP is the only way in.&lt;/li>
-&lt;li>&lt;strong>When you want to bolt Grafana onto a tool you already use&lt;/strong> — already in Cursor or Claude? Just add the server. No new workflow.&lt;/li>
-&lt;li>&lt;strong>When you want the best discovery out of the box&lt;/strong> — the tools describe themselves up front, so even smaller or cheaper models just &lt;em>know&lt;/em> what&amp;rsquo;s available. No trial-and-error.&lt;/li>
-&lt;/ul>
-&lt;p>One honest catch: those tool definitions &lt;em>can&lt;/em> eat some context if you load everything — but modern hosts fix that with lazy tool search.&lt;/p>
-&lt;p>MCP is deliberately curated — it doesn&amp;rsquo;t expose &lt;em>every&lt;/em> corner of Grafana. So what do you do when you need the esoteric stuff? That&amp;rsquo;s exactly what the power hand, &lt;strong>GCX&lt;/strong>, is for — next up.&lt;/p>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>Three AI tools people confuse: Assistant, MCP, GCX. Last time, I talked about the brain — Assistant. Now hand number one: &lt;strong>the MCP server,&lt;/strong> the &lt;em>easy&lt;/em> hand.&lt;/p>
-&lt;p>Grafana MCP — Model Context Protocol — lets &lt;em>any&lt;/em> AI client reach into Grafana. The magic part: &lt;strong>you bring that AI client - you bring your own brain.&lt;/strong>&lt;/p>
-&lt;p>Using MCP requires &lt;strong>two pieces.&lt;/strong> The &lt;strong>client&lt;/strong> is your AI app — the brain you bring: claude.ai, ChatGPT, Cursor. The &lt;strong>server&lt;/strong> is the door into Grafana that exposes the tools.&lt;/p>
-&lt;p>Two ways to get that server: the easiest way is to use the &lt;strong>Grafana Cloud hosted&lt;/strong> one — already running, auth built in, just connect and go. But you can also &lt;strong>self-host&lt;/strong> the open-source one on your own infra.&lt;/p>
-&lt;p>So when do you reach for Grafana MCP?&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>When you&amp;rsquo;re using hosted chat tools with no terminal&lt;/strong> — claude.ai, ChatGPT, your phone. No shell means no CLI, so MCP is the only way in.&lt;/li>
-&lt;li>&lt;strong>When you want to bolt Grafana onto a tool you already use&lt;/strong> — already in Cursor or Claude? Just add the server. No new workflow.&lt;/li>
-&lt;li>&lt;strong>When you want the best discovery out of the box&lt;/strong> — the tools describe themselves up front, so even smaller or cheaper models just &lt;em>know&lt;/em> what&amp;rsquo;s available. No trial-and-error.&lt;/li>
-&lt;/ul>
-&lt;p>One honest catch: those tool definitions &lt;em>can&lt;/em> eat some context if you load everything — but modern hosts fix that with lazy tool search.&lt;/p>
-&lt;p>But MCP is deliberately curated — it doesn&amp;rsquo;t expose &lt;em>every&lt;/em> corner of Grafana. So what do you do when you need the esoteric stuff? That&amp;rsquo;s exactly what the power hand is for. Next up is &lt;strong>GCX.&lt;/strong>&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/grafana/mcp-grafana">Grafana MCP server&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://modelcontextprotocol.io/">Model Context Protocol&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://notes.nicolevanderhoeven.com/GCX">My notes on GCX&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI Week Day 2: Building (Grafana AI Week — Tuesday)</title><link>https://nicolevanderhoeven.github.io/blog/20260728-ai-week-tuesday-building/</link><pubDate>Tue, 28 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260728-ai-week-tuesday-building/</guid><description>&lt;p>Day two of AI Week is all about &lt;strong>building&lt;/strong> — the AI tools that help you write software with confidence. Two big announcements went generally available: &lt;strong>gcx&lt;/strong> (the Grafana CLI) and the &lt;strong>Grafana MCP server&lt;/strong>. Both connect your coding agents — Claude Code, Cursor, and friends — to your Grafana telemetry. The MCP server gives agents opinionated, ready-made tools for the common cases (querying metrics and logs, reading and updating dashboards); gcx is the more flexible, less opinionated option, built for agents from the ground up with read-only guardrails and its own bundle of agent skills. Both work for OSS and Grafana Cloud. The point: when an agent writes your code, it shouldn&amp;rsquo;t be guessing — it should be looking at how your system &lt;em>actually&lt;/em> behaves in production. That&amp;rsquo;s telemetry-driven development.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Y3QtH94f77U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="transcript">Transcript&lt;/h2>
-&lt;p>It&amp;rsquo;s day two of Grafana Labs&amp;rsquo; AI Week, and Tuesday is all about &lt;strong>building&lt;/strong> — the AI tools that help you build software with confidence.&lt;/p>
-&lt;p>Today we have two big announcements: &lt;strong>gcx&lt;/strong> and the &lt;strong>Grafana MCP server&lt;/strong> are both now generally available.&lt;/p>
-&lt;p>Both of them connect your coding agents — think Claude Code or Cursor — to your Grafana telemetry. So what&amp;rsquo;s the difference?&lt;/p>
-&lt;p>The &lt;strong>Grafana MCP server&lt;/strong> gives your agent opinionated, ready-made tools for the most common use cases: querying your metrics and logs, reading and updating dashboards, that kind of thing. You can run it yourself, or use the hosted MCP server with your Grafana Cloud stack — so yes, it works for both &lt;strong>OSS and Grafana Cloud&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>gcx&lt;/strong> is the Grafana CLI, and it&amp;rsquo;s the more flexible, less opinionated option. Agents can explore it and build their own workflows, and it was designed for agents from the ground up, with read-only guardrails so your agent can&amp;rsquo;t touch anything you didn&amp;rsquo;t approve. It works with Cloud stacks and self-managed instances, and it even ships with its own bundle of agent skills.&lt;/p>
-&lt;p>Why does this matter? Because when an agent writes your code, it shouldn&amp;rsquo;t be guessing — it should be looking at how your system &lt;em>actually&lt;/em> behaves in production. That&amp;rsquo;s telemetry-driven development.&lt;/p>
-&lt;p>Head to &lt;strong>grafana.ai&lt;/strong> for everything we&amp;rsquo;re shipping this week, and I&amp;rsquo;ll see you tomorrow for day three.&lt;/p></description></item><item><title>CLI and MCP Basics for AI Agents (The Context Window #04)</title><link>https://nicolevanderhoeven.github.io/blog/20260603-context-window-04-cli-mcp/</link><pubDate>Wed, 03 Jun 2026 18:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260603-context-window-04-cli-mcp/</guid><description>&lt;p>MCP vs CLI: which one should your AI agent actually use? In this episode of &lt;em>The Context Window&lt;/em> — Grafana&amp;rsquo;s livestream series on AI in observability — I&amp;rsquo;m joined by &lt;a href="https://www.linkedin.com/in/tiffanyjerniganm/">Tiffany Jernigan&lt;/a> and three of the engineers and PMs behind Grafana&amp;rsquo;s agent tooling: Ben Sully (who wrote the Grafana MCP server), and Ward Bekker and Dafydd Thomas from the team building &lt;code>gcx&lt;/code>. We get into the two main ways an AI agent can reach the outside world — the Model Context Protocol (MCP) and good old command-line interfaces — and look at when each one makes sense, the tradeoffs around context windows, tool sprawl, token cost, and reliability. We walk through Grafana&amp;rsquo;s cloud and open-source MCP servers along with &lt;code>gcx&lt;/code>, the Grafana Cloud CLI built for agents, do a live side-by-side demo of both creating an SLO, and talk about how we benchmark them against each other with o11y-bench.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZR6U4TN8-Cw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="timestamps">Timestamps&lt;/h2>
-&lt;ul>
-&lt;li>00:00:00 — Introductions&lt;/li>
-&lt;li>00:02:49 — The last month in AI news&lt;/li>
-&lt;li>00:10:19 — What is Grafana Assistant?&lt;/li>
-&lt;li>00:12:30 — What does it mean for Assistant to use tools?&lt;/li>
-&lt;li>00:13:30 — What is MCP?&lt;/li>
-&lt;li>00:16:56 — What is a CLI in an AI context?&lt;/li>
-&lt;li>00:19:17 — What are skills?&lt;/li>
-&lt;li>00:24:37 — Can you use a custom MCP server with Grafana Assistant?&lt;/li>
-&lt;li>00:25:55 — Why team MCP?&lt;/li>
-&lt;li>00:28:22 — The context-window cost of MCP tool definitions&lt;/li>
-&lt;li>00:31:50 — Tool discoverability&lt;/li>
-&lt;li>00:39:25 — What is gcx, and why a CLI?&lt;/li>
-&lt;li>00:46:13 — Demo: creating an SLO with MCP vs gcx&lt;/li>
-&lt;li>00:52:58 — Benchmarking MCP vs gcx with o11y-bench&lt;/li>
-&lt;li>00:58:10 — How MCP and gcx relate to Grafana Assistant&lt;/li>
-&lt;li>01:02:35 — k6 MCP vs Grafana MCP&lt;/li>
-&lt;li>01:03:00 — When to use which (decision guide)&lt;/li>
-&lt;li>01:04:29 — Adding the OSS Grafana MCP to Assistant&lt;/li>
-&lt;li>01:05:41 — Turtles all the way down&lt;/li>
-&lt;/ul>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;h3 id="mcp-and-cli-for-agents">MCP and CLI for agents&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://modelcontextprotocol.io">Model Context Protocol&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/grafana/mcp-grafana">Grafana MCP server (OSS)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/grafana/gcx">gcx — the Grafana Cloud CLI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://grafana.com/blog/o11y-bench-open-benchmark-for-observability-agents/">Introducing o11y-bench: an open benchmark for observability agents&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://slack.grafana.com">Grafana Community Slack&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="related-reading">Related reading&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana">My Context Horizon piece: &lt;em>Unlearnings from building Grafana Assistant&lt;/em>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="more-from-the-context-window">More from The Context Window&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://nicolevanderhoeven.github.io/blog/20260422-context-window-03-ai-observability/">#03: All About AI Observability&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mcp on Nicole van der Hoeven</title><link>https://nicolevanderhoeven.github.io/tags/mcp/</link><description>Recent content in Mcp on Nicole van der Hoeven</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nicole van der Hoeven</copyright><lastBuildDate>Wed, 19 Aug 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title>When to use Grafana Assistant vs MCP vs GCX: Grafana MCP</title><link>https://nicolevanderhoeven.github.io/blog/20260819-when-to-use-grafana-mcp/</link><pubDate>Wed, 19 Aug 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260819-when-to-use-grafana-mcp/</guid><description>&lt;p&gt;Three AI tools people confuse: Assistant, MCP, and GCX. &lt;a href="https://nicolevanderhoeven.github.io/blog/20260817-when-to-use-grafana-assistant/"&gt;Last time&lt;/a&gt; I talked about the brain — Assistant. Now hand number one: &lt;strong&gt;the MCP server&lt;/strong&gt;, the &lt;em&gt;easy&lt;/em&gt; hand.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/HDmJyo9cyf8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Grafana MCP — Model Context Protocol — lets &lt;em&gt;any&lt;/em&gt; AI client reach into Grafana. The magic part: &lt;strong&gt;you bring your own brain.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using MCP requires &lt;strong&gt;two pieces&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;client&lt;/strong&gt; is your AI app — the brain you bring: claude.ai, ChatGPT, Cursor.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;server&lt;/strong&gt; is the door into Grafana that exposes the tools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are two ways to get that server. The easiest is the &lt;strong&gt;Grafana Cloud hosted&lt;/strong&gt; one — already running, auth built in, just connect and go. But you can also &lt;strong&gt;self-host&lt;/strong&gt; the open-source one on your own infra.&lt;/p&gt;
+&lt;p&gt;So when do you reach for Grafana MCP?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;When you&amp;rsquo;re using hosted chat tools with no terminal&lt;/strong&gt; — claude.ai, ChatGPT, your phone. No shell means no CLI, so MCP is the only way in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you want to bolt Grafana onto a tool you already use&lt;/strong&gt; — already in Cursor or Claude? Just add the server. No new workflow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you want the best discovery out of the box&lt;/strong&gt; — the tools describe themselves up front, so even smaller or cheaper models just &lt;em&gt;know&lt;/em&gt; what&amp;rsquo;s available. No trial-and-error.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One honest catch: those tool definitions &lt;em&gt;can&lt;/em&gt; eat some context if you load everything — but modern hosts fix that with lazy tool search.&lt;/p&gt;
+&lt;p&gt;MCP is deliberately curated — it doesn&amp;rsquo;t expose &lt;em&gt;every&lt;/em&gt; corner of Grafana. So what do you do when you need the esoteric stuff? That&amp;rsquo;s exactly what the power hand, &lt;strong&gt;GCX&lt;/strong&gt;, is for — next up.&lt;/p&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;Three AI tools people confuse: Assistant, MCP, GCX. Last time, I talked about the brain — Assistant. Now hand number one: &lt;strong&gt;the MCP server,&lt;/strong&gt; the &lt;em&gt;easy&lt;/em&gt; hand.&lt;/p&gt;
+&lt;p&gt;Grafana MCP — Model Context Protocol — lets &lt;em&gt;any&lt;/em&gt; AI client reach into Grafana. The magic part: &lt;strong&gt;you bring that AI client - you bring your own brain.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using MCP requires &lt;strong&gt;two pieces.&lt;/strong&gt; The &lt;strong&gt;client&lt;/strong&gt; is your AI app — the brain you bring: claude.ai, ChatGPT, Cursor. The &lt;strong&gt;server&lt;/strong&gt; is the door into Grafana that exposes the tools.&lt;/p&gt;
+&lt;p&gt;Two ways to get that server: the easiest way is to use the &lt;strong&gt;Grafana Cloud hosted&lt;/strong&gt; one — already running, auth built in, just connect and go. But you can also &lt;strong&gt;self-host&lt;/strong&gt; the open-source one on your own infra.&lt;/p&gt;
+&lt;p&gt;So when do you reach for Grafana MCP?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;When you&amp;rsquo;re using hosted chat tools with no terminal&lt;/strong&gt; — claude.ai, ChatGPT, your phone. No shell means no CLI, so MCP is the only way in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you want to bolt Grafana onto a tool you already use&lt;/strong&gt; — already in Cursor or Claude? Just add the server. No new workflow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you want the best discovery out of the box&lt;/strong&gt; — the tools describe themselves up front, so even smaller or cheaper models just &lt;em&gt;know&lt;/em&gt; what&amp;rsquo;s available. No trial-and-error.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One honest catch: those tool definitions &lt;em&gt;can&lt;/em&gt; eat some context if you load everything — but modern hosts fix that with lazy tool search.&lt;/p&gt;
+&lt;p&gt;But MCP is deliberately curated — it doesn&amp;rsquo;t expose &lt;em&gt;every&lt;/em&gt; corner of Grafana. So what do you do when you need the esoteric stuff? That&amp;rsquo;s exactly what the power hand is for. Next up is &lt;strong&gt;GCX.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/grafana/mcp-grafana"&gt;Grafana MCP server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://modelcontextprotocol.io/"&gt;Model Context Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/GCX"&gt;My notes on GCX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Week Day 2: Building (Grafana AI Week — Tuesday)</title><link>https://nicolevanderhoeven.github.io/blog/20260728-ai-week-tuesday-building/</link><pubDate>Tue, 28 Jul 2026 09:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260728-ai-week-tuesday-building/</guid><description>&lt;p&gt;Day two of AI Week is all about &lt;strong&gt;building&lt;/strong&gt; — the AI tools that help you write software with confidence. Two big announcements went generally available: &lt;strong&gt;gcx&lt;/strong&gt; (the Grafana CLI) and the &lt;strong&gt;Grafana MCP server&lt;/strong&gt;. Both connect your coding agents — Claude Code, Cursor, and friends — to your Grafana telemetry. The MCP server gives agents opinionated, ready-made tools for the common cases (querying metrics and logs, reading and updating dashboards); gcx is the more flexible, less opinionated option, built for agents from the ground up with read-only guardrails and its own bundle of agent skills. Both work for OSS and Grafana Cloud. The point: when an agent writes your code, it shouldn&amp;rsquo;t be guessing — it should be looking at how your system &lt;em&gt;actually&lt;/em&gt; behaves in production. That&amp;rsquo;s telemetry-driven development.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Y3QtH94f77U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="transcript"&gt;Transcript&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s day two of Grafana Labs&amp;rsquo; AI Week, and Tuesday is all about &lt;strong&gt;building&lt;/strong&gt; — the AI tools that help you build software with confidence.&lt;/p&gt;
+&lt;p&gt;Today we have two big announcements: &lt;strong&gt;gcx&lt;/strong&gt; and the &lt;strong&gt;Grafana MCP server&lt;/strong&gt; are both now generally available.&lt;/p&gt;
+&lt;p&gt;Both of them connect your coding agents — think Claude Code or Cursor — to your Grafana telemetry. So what&amp;rsquo;s the difference?&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Grafana MCP server&lt;/strong&gt; gives your agent opinionated, ready-made tools for the most common use cases: querying your metrics and logs, reading and updating dashboards, that kind of thing. You can run it yourself, or use the hosted MCP server with your Grafana Cloud stack — so yes, it works for both &lt;strong&gt;OSS and Grafana Cloud&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;gcx&lt;/strong&gt; is the Grafana CLI, and it&amp;rsquo;s the more flexible, less opinionated option. Agents can explore it and build their own workflows, and it was designed for agents from the ground up, with read-only guardrails so your agent can&amp;rsquo;t touch anything you didn&amp;rsquo;t approve. It works with Cloud stacks and self-managed instances, and it even ships with its own bundle of agent skills.&lt;/p&gt;
+&lt;p&gt;Why does this matter? Because when an agent writes your code, it shouldn&amp;rsquo;t be guessing — it should be looking at how your system &lt;em&gt;actually&lt;/em&gt; behaves in production. That&amp;rsquo;s telemetry-driven development.&lt;/p&gt;
+&lt;p&gt;Head to &lt;strong&gt;grafana.ai&lt;/strong&gt; for everything we&amp;rsquo;re shipping this week, and I&amp;rsquo;ll see you tomorrow for day three.&lt;/p&gt;</description></item><item><title>CLI and MCP Basics for AI Agents (The Context Window #04)</title><link>https://nicolevanderhoeven.github.io/blog/20260603-context-window-04-cli-mcp/</link><pubDate>Wed, 03 Jun 2026 18:00:00 +0100</pubDate><guid>https://nicolevanderhoeven.github.io/blog/20260603-context-window-04-cli-mcp/</guid><description>&lt;p&gt;MCP vs CLI: which one should your AI agent actually use? In this episode of &lt;em&gt;The Context Window&lt;/em&gt; — Grafana&amp;rsquo;s livestream series on AI in observability — I&amp;rsquo;m joined by &lt;a href="https://www.linkedin.com/in/tiffanyjerniganm/"&gt;Tiffany Jernigan&lt;/a&gt; and three of the engineers and PMs behind Grafana&amp;rsquo;s agent tooling: Ben Sully (who wrote the Grafana MCP server), and Ward Bekker and Dafydd Thomas from the team building &lt;code&gt;gcx&lt;/code&gt;. We get into the two main ways an AI agent can reach the outside world — the Model Context Protocol (MCP) and good old command-line interfaces — and look at when each one makes sense, the tradeoffs around context windows, tool sprawl, token cost, and reliability. We walk through Grafana&amp;rsquo;s cloud and open-source MCP servers along with &lt;code&gt;gcx&lt;/code&gt;, the Grafana Cloud CLI built for agents, do a live side-by-side demo of both creating an SLO, and talk about how we benchmark them against each other with o11y-bench.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZR6U4TN8-Cw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="timestamps"&gt;Timestamps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00:00 — Introductions&lt;/li&gt;
+&lt;li&gt;00:02:49 — The last month in AI news&lt;/li&gt;
+&lt;li&gt;00:10:19 — What is Grafana Assistant?&lt;/li&gt;
+&lt;li&gt;00:12:30 — What does it mean for Assistant to use tools?&lt;/li&gt;
+&lt;li&gt;00:13:30 — What is MCP?&lt;/li&gt;
+&lt;li&gt;00:16:56 — What is a CLI in an AI context?&lt;/li&gt;
+&lt;li&gt;00:19:17 — What are skills?&lt;/li&gt;
+&lt;li&gt;00:24:37 — Can you use a custom MCP server with Grafana Assistant?&lt;/li&gt;
+&lt;li&gt;00:25:55 — Why team MCP?&lt;/li&gt;
+&lt;li&gt;00:28:22 — The context-window cost of MCP tool definitions&lt;/li&gt;
+&lt;li&gt;00:31:50 — Tool discoverability&lt;/li&gt;
+&lt;li&gt;00:39:25 — What is gcx, and why a CLI?&lt;/li&gt;
+&lt;li&gt;00:46:13 — Demo: creating an SLO with MCP vs gcx&lt;/li&gt;
+&lt;li&gt;00:52:58 — Benchmarking MCP vs gcx with o11y-bench&lt;/li&gt;
+&lt;li&gt;00:58:10 — How MCP and gcx relate to Grafana Assistant&lt;/li&gt;
+&lt;li&gt;01:02:35 — k6 MCP vs Grafana MCP&lt;/li&gt;
+&lt;li&gt;01:03:00 — When to use which (decision guide)&lt;/li&gt;
+&lt;li&gt;01:04:29 — Adding the OSS Grafana MCP to Assistant&lt;/li&gt;
+&lt;li&gt;01:05:41 — Turtles all the way down&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;h3 id="mcp-and-cli-for-agents"&gt;MCP and CLI for agents&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://modelcontextprotocol.io"&gt;Model Context Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/grafana/mcp-grafana"&gt;Grafana MCP server (OSS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/grafana/gcx"&gt;gcx — the Grafana Cloud CLI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grafana.com/blog/o11y-bench-open-benchmark-for-observability-agents/"&gt;Introducing o11y-bench: an open benchmark for observability agents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://slack.grafana.com"&gt;Grafana Community Slack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="related-reading"&gt;Related reading&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://contexthorizon.substack.com/p/unlearnings-from-building-grafana"&gt;My Context Horizon piece: &lt;em&gt;Unlearnings from building Grafana Assistant&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="more-from-the-context-window"&gt;More from The Context Window&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://nicolevanderhoeven.github.io/blog/20260422-context-window-03-ai-observability/"&gt;#03: All About AI Observability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

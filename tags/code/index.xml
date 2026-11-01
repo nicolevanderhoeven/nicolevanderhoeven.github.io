@@ -7,9 +7,11 @@
 &lt;p&gt;I wanted the same setup for Mastodon.&lt;/p&gt;
 &lt;h2 id="the-result"&gt;The result&lt;/h2&gt;
 &lt;p&gt;First, the end result: I managed to get Mastodon posts I send to my bot to be sent to my Readwise account. Here are some early posts in the &amp;ldquo;Tweets&amp;rdquo; section of my Readwise Library:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-on-readwise.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-on-readwise.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;And here are the resulting notes in Obsidian, also automatically synced and formatted:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-in-obsidian.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-in-obsidian.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;h2 id="the-solution"&gt;The solution&lt;/h2&gt;
 &lt;p&gt;Next, here&amp;rsquo;s how to set it up.&lt;/p&gt;
 &lt;h3 id="pre-requisites"&gt;Pre-requisites&lt;/h3&gt;
@@ -65,7 +67,8 @@
 &lt;/div&gt;</description></item><item><title>How to use Dataview and Templater to run JavaScript in Obsidian for automating task management</title><link>https://nicolevanderhoeven.com/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</link><pubDate>Sun, 16 Jan 2022 16:30:22 +0100</pubDate><guid>https://nicolevanderhoeven.com/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</guid><description>&lt;p&gt;TIL how to run JavaScript in @obsdmd. A friend of mine had an interesting use case: He had a long reading list from his studies, and wanted to use Obsidian to decide what he could read given a certain amount of time.&lt;/p&gt;
 &lt;p&gt;TL;DR: &lt;a href="https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244"&gt;Here&amp;rsquo;s the script&lt;/a&gt;.
 And here&amp;rsquo;s the end result:
-&lt;img src="https://nicolevanderhoeven.com/assets/templater-demo.gif" alt="Gif of the full setup working"&gt;&lt;/p&gt;
+&lt;img src="https://nicolevanderhoeven.com/assets/templater-demo.gif" alt="Gif of the full setup working" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;Requires: Obsidian. The Dataview and Templater plugins. Also requires a separate markdown page for every chapter or bite-sized section of the book or course, with the metadata &lt;code&gt;time_required&lt;/code&gt; in the YAML frontmatter.&lt;/p&gt;
 &lt;p&gt;Why Dataview? Dataview can parse that frontmatter, grab the value for &lt;code&gt;time_required&lt;/code&gt;, and return a list of pages and links. There is a Dataview Query Language, but dataviewjs is more extensible.&lt;/p&gt;
 &lt;p&gt;Why Templater? I initially wanted to write a script within a dataviewjs block, but:&lt;/p&gt;
@@ -76,5 +79,6 @@ And here&amp;rsquo;s the end result:
 &lt;p&gt;Instead, I created a folder &lt;code&gt;scripts&lt;/code&gt; within my vault and selected it as the &amp;ldquo;user scripts folder&amp;rdquo; in Templater settings. Then, I created a script, &lt;code&gt;returnStudyOptions.js&lt;/code&gt;. &lt;a href="https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244"&gt;Here&amp;rsquo;s the gist for that&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In a new note, I typed &lt;code&gt;&amp;lt;% tp.user.returnStudyOptions(tp, 60) %&amp;gt;&lt;/code&gt;. This line calls the script I created and also passes 60 minutes as the time available.&lt;/p&gt;
 &lt;p&gt;I selected &amp;ldquo;Templater: Replace templates in the active file&amp;rdquo; from the Command Pane, which runs the script and replaces the line with the script&amp;rsquo;s returned value, which looks something like this:
-&lt;img src="https://nicolevanderhoeven.com/assets/templater-result.png" alt="Screenshot of the notes returned by the script"&gt;&lt;/p&gt;
+&lt;img src="https://nicolevanderhoeven.com/assets/templater-result.png" alt="Screenshot of the notes returned by the script" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;I also assigned a hotkey to for replacing the template, for ease of use. That&amp;rsquo;s it! I thought this was a fun way to learn how to use JavaScript in Obsidian. Thanks to &lt;a href="https://twitter.com/ealameda"&gt;@ealameda&lt;/a&gt; for the use case!&lt;/p&gt;</description></item></channel></rss>

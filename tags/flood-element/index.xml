@@ -75,7 +75,7 @@
 &lt;h3 id="api-load-testing-does-not-simulate-real-users-interacting-with-elements-of-your-webpage"&gt;API load testing does not simulate real users interacting with elements of your webpage.&lt;/h3&gt;
 &lt;p&gt;‌In contrast to a customer opening up a browser and filling out forms on your site, an API load testing script will consist only of the underlying requests to the server that are made by clicking on those on-screen elements. Exactly how the customer triggers those requests, and what buttons they’ve pressed, is irrelevant. It’s all about the raw requests.‌&lt;/p&gt;
 &lt;p&gt;The format of these requests will be dictated by the type of API your application uses, and it may take some technical knowledge or expertise to be able to formulate requests correctly. However, a RESTful API is one of the most common types, and it is considered to be relatively simple to use.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200818-01.png" alt=""&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200818-01.png" alt="" loading="lazy" decoding="async"&gt;
 &lt;em&gt;HTTPS requests for amazon.com. This is what an API load testing script would need to replicate.&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id="it-doesnt-give-you-an-idea-of-how-user-friendly-your-application-is"&gt;It doesn’t give you an idea of how user-friendly your application is.&lt;/h3&gt;
 &lt;p&gt;‌API load testing tools don’t give you feedback on how long your pictures took to render on your users’ browsers or whether that “SUBMIT” button is in an obvious spot.&lt;/p&gt;
@@ -85,7 +85,8 @@
 &lt;p&gt;‌It isn’t what you’re looking for if your application is a single-page web app that relies heavily on JavaScript or AJAX to dynamically populate and update the page. Your load testing tool will download the scripts, but not execute them.‌&lt;/p&gt;
 &lt;p&gt;‌This includes scripts like those required to trigger Google Analytics, which prompts many an engineer to question the results of an API load test due to the inability to see the traffic come in on Google Analytics. API load testing won’t help you with that. Running browser-level load tests using tools like &lt;a href="https://element.flood.io"&gt;Flood Element&lt;/a&gt; or &lt;a href="https://selenium.dev"&gt;Selenium&lt;/a&gt; may be more useful.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;ve decided that API load testing is not the best way to load test your application, you can look at browser-based load testing as an alternative.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200818-02.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200818-02.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Executing a browser-based load testing script using Flood Element.&lt;/em&gt;
 ‌&lt;/p&gt;
 &lt;h2 id="advantages-of-api-load-testing"&gt;‌Advantages of API load testing&lt;/h2&gt;
@@ -94,7 +95,7 @@
 &lt;p&gt;‌API load testing allows you to tailor your load testing by applying load only on particular servers. This is particularly useful in more complicated applications that involve several components and would require substantial effort to reproduce in a test environment. Using APIs, you can test only the functions you want to test.&lt;/p&gt;
 &lt;h3 id="it-is-well-supported-"&gt;It is well-supported. ‌&lt;/h3&gt;
 &lt;p&gt;API load testing has been around for decades. There are lots of robust tools you can choose from, both commercial and open-source, and many of these tools have large communities and extensive documentation around how to script the most common cases. It’s a far cry from the browser-level testing space, which is relatively new and sparsely populated by comparison.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200818-03.png" alt=""&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200818-03.png" alt="" loading="lazy" decoding="async"&gt;
 &lt;em&gt;The &lt;a href="https://jmeter.apache.org/usermanual/index.html"&gt;JMeter site&lt;/a&gt; contains a wealth of information, including a User&amp;rsquo;s Manual&lt;/em&gt;
 ‍&lt;/p&gt;
 &lt;h3 id="its-not-as-resource-intensive-as-browser-level-testing"&gt;It’s not as resource-intensive as browser-level testing.&lt;/h3&gt;
@@ -298,7 +299,8 @@ Gatling: 1000 users&lt;/p&gt;
 &lt;h2 id="what-is-robinhood"&gt;What is Robinhood?&lt;/h2&gt;
 &lt;p&gt;Robinhood is an app I&amp;rsquo;ve personally had my eye on since it opened a waiting list about five years ago for Australians wanting to see the American company come to our shores. It &lt;a href="https://australianfintech.com.au/local-start-stake-beats-us-giant-robinhood-bring-australians-free-share-trading/"&gt;doesn&amp;rsquo;t look like it&amp;rsquo;s happening&lt;/a&gt; now, but if that waiting list still exists, I&amp;rsquo;m on it.&lt;/p&gt;
 &lt;p&gt;Robinhood is a brokerage app that takes inspiration from the legend it was named after to &amp;ldquo;give to the poor,&amp;rdquo; bring zero-commission trading to its customers. Instead of earning from commissions, Robinhood makes its money from &lt;a href="https://www.investopedia.com/articles/active-trading/020515/how-robinhood-makes-money.asp"&gt;a variety of other methods&lt;/a&gt;, including premium platform fees, interest on customers&amp;rsquo; uninvested capital, and payments received in exchange for coursing customers&amp;rsquo; orders through third-party market-makers. It&amp;rsquo;s an enticing premise, and one that the company has used in conjunction with mobile apps to appeal to millennials and technophiles.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-01.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-01.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: From &lt;a href="https://robinhood.com/us/en/"&gt;Robinhood&amp;rsquo;s homepage&lt;/a&gt;&lt;/em&gt;
 ‍&lt;/p&gt;
 &lt;h2 id="what-caused-the-robinhood-app-to-fail"&gt;What caused the Robinhood app to fail?&lt;/h2&gt;
@@ -308,7 +310,8 @@ Gatling: 1000 users&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Bhatt and Tenev went on to explain that the load on their servers had caused a &amp;ldquo;thundering herd&amp;rdquo; effect. This effect describes a situation in which a backend server receives a large number of concurrent requests and, instead of different threads processing these requests simultaneously, all threads attempt to process the same request.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;ve ever played four-player Overcooked, it&amp;rsquo;s like having everyone sprint to a fire extinguisher to try to put out a fire from overcooked pasta, but instead, the constant button mashing means you just pass the extinguisher around and yell at each other while the fire rages on. Before you know it, the entire kitchen is on fire.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-02.jpeg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-02.jpeg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: From &lt;a href="https://twitter.com/csac0425/status/963053160259510277"&gt;Twitter user @csac0425&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;So the technical cause of the outage was an infrastructure problem.&lt;/p&gt;
 &lt;p&gt;But I think the REAL cause was FOMO.&lt;/p&gt;
@@ -316,7 +319,8 @@ Gatling: 1000 users&lt;/p&gt;
 &lt;p&gt;FOMO is the Fear Of Missing Out, and it&amp;rsquo;s a phenomenon that&amp;rsquo;s been particularly exacerbated by social media. Instead of only hearing news from people you interact with in the physical world, it just takes a few seconds to open up Twitter on your smartphone and see what thousands of people are talking about. Twitter will even helpfully tell you what&amp;rsquo;s &amp;ldquo;trending&amp;rdquo; in your country, and other social networks also employ algorithms to determine what messages to show you.&lt;/p&gt;
 &lt;h2 id="how-does-fomo-affect-application-performance"&gt;How does FOMO affect application performance?&lt;/h2&gt;
 &lt;p&gt;We can see FOMO in how people have reacted to the coronavirus COVID-19. Despite pleas to leave masks for medical professionals at real risk, people have bought out the stock for these masks despite living in countries with little to no sign of the coronavirus. In Sydney, Australia, residents are stockpiling toilet paper (of all things) in large quantities, clearing out shelves from supermarkets, and &lt;a href="https://www.bbc.com/news/world-australia-51731422"&gt;getting into knife fights over toilet paper&lt;/a&gt; due to their panic at the thought of doing without.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-03.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-03.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This photo of an empty toilet paper aisle was taken by our Principal Engineer, &lt;a href="https://github.com/lachie"&gt;Lachie Cox&lt;/a&gt;, in a supermarket in Sydney last week.&lt;/em&gt;
 ‍
 FOMO of this magnitude ultimately also manifests itself in the stock market. The Dow Jones Industrial Average, which represents the performance of the top 30 largest companies in the US, dropped by 3,500 points last week amidst fears that the coronavirus would stall production in countries most affected by COVID-19, leading to lower returns across the board.&lt;/p&gt;
@@ -371,13 +375,15 @@ FOMO of this magnitude ultimately also manifests itself in the stock market. The
 &lt;p&gt;We should ideally test both, but let&amp;rsquo;s focus on signups here because it&amp;rsquo;s easier to test without access to the actual app (which requires a US social security number).&lt;/p&gt;
 &lt;h4 id="number-of-virtual-users-at-peak-load"&gt;Number of virtual users at peak load&lt;/h4&gt;
 &lt;p&gt;Let&amp;rsquo;s try to come up with a number of users that we can use as Robinhood&amp;rsquo;s peak hourly load. This task would be easier if Robinhood shared their analytics, but we can still make some educated guesses with what &lt;em&gt;has&lt;/em&gt; been made public.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-04.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-04.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: Image from &lt;a href="https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined"&gt;Apptopia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.apptopia.com/robinhood-now-has-more-mobile-monthly-active-users-than-the-top-legacy-providers-combined"&gt;According to Apptopia&lt;/a&gt;, Robinhood&amp;rsquo;s highest number of mobile installations was in 2018, when it saw 2 million downloads of its mobile app in a quarter. This period coincides with when Robinhood released cryptocurrency trading support, which looks like increased signups—in the third quarter of 2019, this figure was about 1.5 million. 2 million quarterly downloads translates to about 666,666 downloads per month. Let&amp;rsquo;s call that 700,000 and take this number of mobile downloads as a starting figure.&lt;/p&gt;
 &lt;p&gt;The stock market is only open on the weekdays, so we can divide 700,000 signups a month by 20 days, and we get 35,000 signups a day. The markets are also only open for about 7 hours a day, but the load probably isn&amp;rsquo;t evenly spread out across the 7 hours— I would expect that people would have more time during lunch to sign up for Robinhood. So let&amp;rsquo;s say that the majority of those signups would happen within three hours (from 11 am to 2 pm, for example). By dividing 35,000 signups per day by 3 hours, we get about 11,667 users per hour. Let&amp;rsquo;s round that up to 12,000.&lt;/p&gt;
 &lt;p&gt;How do we translate this to the number of virtual users we need to run? Let&amp;rsquo;s think about how long each user stays on the app. The signup process does require approval, so that&amp;rsquo;s a hard stop— new users won&amp;rsquo;t be able to sign up and then start trading immediately afterwards. &lt;a href="https://robinhood.com/us/en/support/articles/360001213123/open-my-account/"&gt;This approval could take up to a day&lt;/a&gt;, or up to seven days if documents are required.&lt;/p&gt;
 &lt;p&gt;Looking at the application form itself, we can see it is relatively standard and requires only information that most people are likely to have handy (social security number and contact details). I timed how long it took me to go through the part of it I could access, and I estimated that 10 minutes would be sufficient time to go through all the tabs.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-05.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-05.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: &lt;a href="https://signup.robinhood.com/?"&gt;Robinhood&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;We want to spread out users evenly across the hour— that is, we don&amp;rsquo;t want 12,000 users to sign up and leave, all within 10 minutes. We want equal portions of those users to be signing up throughout the entire hour. Dividing 12,000 by 6 (the number of 10-minute intervals in an hour), we get 2,000. 2,000 is the number of threads we need active at any one point of time. Each of those threads signs up one user for 10 minutes, then signs up 5 more users until the hour is up.&lt;/p&gt;
 &lt;p&gt;So we have our figure: we need 2,000 &lt;em&gt;virtual&lt;/em&gt; users per hour to simulate 12,000 signups in an hour.&lt;/p&gt;
@@ -391,7 +397,8 @@ FOMO of this magnitude ultimately also manifests itself in the stock market. The
 &lt;p&gt;&lt;strong&gt;Stress testing&lt;/strong&gt;. ‍Stress testing means increasing the number of users on an application at regular increments until the application crashes. We can start with 2,000 virtual users per hour, and then add 500 users every 30 minutes to see how the application handles it. This test helps determine how much room there is for growth.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-06.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-06.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: Stepped load profile for stress testing, generated in JMeter&lt;/em&gt;
 ‍&lt;/p&gt;
 &lt;ul&gt;
@@ -401,7 +408,8 @@ FOMO of this magnitude ultimately also manifests itself in the stock market. The
 &lt;h2 id="scripting-for-fomo"&gt;Scripting for FOMO&lt;/h2&gt;
 &lt;h3 id="tool-selection"&gt;Tool selection&lt;/h3&gt;
 &lt;p&gt;To test mobile as well as web apps, I would typically use a protocol-level load testing tool like JMeter to simulate the load. However, &lt;a href="https://thenewstack.io/how-id-load-test-the-iowa-caucus-app/"&gt;I&amp;rsquo;ve already done that&lt;/a&gt;. I also noticed that Robinhood makes use of some dynamic parameters, such as a csrf token:&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-07.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-07.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: Chrome Developer Tools on &lt;a href="https://signup.robinhood.com/?"&gt;Robinhood&lt;/a&gt;&lt;/em&gt;
 ‍
 We can usually find the value of this token in the response of the previous page. It is a security feature to allow Robinhood to verify that the same users make all requests in the same session. Tokens can be scripted around in a tool like JMeter, but it can be time-consuming. So for this article, I decided to show another tool that makes this problem go away. I used &lt;a href="https://element.flood.io/"&gt;Flood Element&lt;/a&gt;, which is an open-source tool we created based on Puppeteer. One of its advantages is that it runs on the browser level. Instead of diving into HTTP requests and tokens, I just told Element which buttons to click.&lt;/p&gt;
@@ -422,9 +430,11 @@ We can usually find the value of this token in the response of the previous page
 &lt;/ol&gt;
 &lt;p&gt;Note that I stopped short of actually submitting the form because I don&amp;rsquo;t want to create dummy accounts on Robinhood&amp;rsquo;s database— I just want to show how this flow can be scripted with Element.&lt;/p&gt;
 &lt;p&gt;To help me identify the elements on the page that I wanted the script to interact with, I used Chrome&amp;rsquo;s built-in Developer Tools. Specifically, I used the Inspect Element button (in orange below) to click on a field and find where it was in the code.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-08.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-08.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;For instance, to find out how to identify the email field, I right-clicked on the code on the right, hovered over Copy, and then clicked Copy selector.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-09.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-09.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;This gave me the value &lt;code&gt;#signup_email_field&lt;/code&gt;, which I then used in the script like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;//Type Email address
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;await&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;browser&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;type&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;By&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;id&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#39;signup_email_field&amp;#39;&lt;/span&gt;),&lt;span style="color:#e6db74"&gt;&amp;#39;nicole@flood.io&amp;#39;&lt;/span&gt;)
@@ -491,24 +501,29 @@ We can usually find the value of this token in the response of the previous page
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; })
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In every step, I also added a &lt;code&gt;takeScreenshot()&lt;/code&gt; , which is one of my very favorite features of Element. It&amp;rsquo;s so useful to be able to save these screenshots and use them to determine exactly what&amp;rsquo;s happening in the script. Here&amp;rsquo;s what it looks like running my Element script locally. The automated browser is on the left, and my terminal (iTerm) is on the right, running Element.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-10.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-10.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;h2 id="running-a-fomo-test"&gt;Running a FOMO test&lt;/h2&gt;
 &lt;p&gt;Now we&amp;rsquo;ve got a script that runs locally. How do we run it at scale? Additionally, Robinhood won&amp;rsquo;t allow users outside the US to sign up. How do we make sure that our virtual users are allowed to sign up?&lt;/p&gt;
 &lt;p&gt;The answer is a load testing platform like &lt;a href="https://flood.io/"&gt;Flood&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;With Flood, running our script is a matter of uploading the script and selecting some options.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-11.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-11.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The Flood test design interface&lt;/em&gt;
 ‍
 Flood also lets us choose which regions to generate load from. Below I&amp;rsquo;ve got it set up to run for an hour from four different US cities, with each one starting 500 users. This configuration gives us our 2,000 virtual user figure.&lt;/p&gt;
-&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-12.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;‍&lt;img src="https://nicolevanderhoeven.com/assets/20200309-12.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;If this peak load test goes well, we could then go on to run the other test scenarios that we described earlier. Each one puts pressure on application servers in different ways, identifying performance bottlenecks.&lt;/p&gt;
 &lt;h2 id="results-and-reruns"&gt;Results and reruns&lt;/h2&gt;
 &lt;p&gt;Since Robinhood is a live application, I didn&amp;rsquo;t run the test— it&amp;rsquo;s never a good idea to load test a domain you don&amp;rsquo;t own when you&amp;rsquo;re talking about thousands of users. However, &lt;a href="https://api.flood.io/pfQuAGz3"&gt;here&amp;rsquo;s a shareable link&lt;/a&gt; to another small Element test I ran previously.&lt;/p&gt;
 &lt;p&gt;Real-time dashboards like that one on Flood allow you to get a quick look into how the load test is running and to make any changes if necessary. When testing for FOMO, I think they&amp;rsquo;re invaluable. For example, during a stress test where users are added at regular intervals, a real-time dashboard would help you identify increases in response time as a result of the increased number of users. It would also let you monitor the test and stop it when necessary.&lt;/p&gt;
 &lt;p&gt;From the link above, click on the right arrow on the lone transaction.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-13.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-13.jpg" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;That will take you to the Transaction Detail page. Remember those screenshots from Element? If you have any in your script, you&amp;rsquo;ll see them here, arranged according to time.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-14.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200309-14.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;This lets you troubleshoot issues during FOMO testing and react quickly.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Even with sound load testing strategies in place, it&amp;rsquo;s challenging to plan for the massive spike in traffic that FOMO can bring, yet it&amp;rsquo;s necessary to do so. FOMO, as a phenomenon, is only going to increase in magnitude as social networks make it easier to spread fear, uncertainty, and doubt as well as information.&lt;/p&gt;

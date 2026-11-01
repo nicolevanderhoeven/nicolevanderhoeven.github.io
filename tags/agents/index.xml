@@ -21,11 +21,12 @@ Me: I have no idea where you got that. I have never had issues with my tonsil.&l
 &lt;p&gt;So how do you build a memory system that knows what to keep? Researchers have been working on this longer than you might think.&lt;/p&gt;
 &lt;h2 id="meet-the-residents-of-smallville"&gt;Meet the residents of Smallville&lt;/h2&gt;
 &lt;p&gt;Stanford researchers Park et al. &lt;a href="https://arxiv.org/abs/2304.03442"&gt;released a charming study in 2023&lt;/a&gt; called &lt;em&gt;Generative Agents: Interactive Simulacra of Human Behavior&lt;/em&gt; in which they talk about how they created a simulated environment called Smallville, populated it with 25 generative agents, and then watched.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20260507-smallville.png" alt="Smallville, a simulated environment populated with 25 generative agents"&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20260507-smallville.png" alt="Smallville, a simulated environment populated with 25 generative agents" loading="lazy" decoding="async"&gt;
 &lt;em&gt;Source: Park et al. (2023)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The study was an attempt to simulate emergent social behavior, but the key insight I took from it isn&amp;rsquo;t the sim itself— it&amp;rsquo;s what they had to do to the inhabitants of Smallville to enable the rich social interactions they wanted to observe.&lt;/p&gt;
 &lt;p&gt;The researchers had to give the inhabitants a way to remember.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20260507-smallville-memory-architecture.png" alt="The memory architecture of Smallville&amp;rsquo;s generative agents — observation, retrieval, action, and reflection"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20260507-smallville-memory-architecture.png" alt="The memory architecture of Smallville’s generative agents — observation, retrieval, action, and reflection" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;Above is a diagram of the memory architecture of every generative agent.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Observation:&lt;/em&gt; The agent perceives new information. The new information is saved into the &lt;em&gt;memory stream&lt;/em&gt;, a database that serves as the record of everything an agent has experienced.&lt;/li&gt;
@@ -47,7 +48,7 @@ Me: I have no idea where you got that. I have never had issues with my tonsil.&l
 &lt;p&gt;Every system that has solved the memory problem has solved it the same way: not by storing more, but by knowing what to throw away.&lt;/p&gt;
 &lt;p&gt;Your brain does it while you sleep by consolidating important experiences into long-term memory, letting the rest dissolve. Some programming languages do it with garbage collection, periodically scanning for unused objects and reclaiming that space. Databases do it with compaction: Loki, Cassandra, and other LSM-tree-inspired systems periodically merge and discard obsolete data so reads stay fast.&lt;/p&gt;
 &lt;p&gt;In all cases, the architecture of good memory is really the architecture of intelligent forgetting. OpenClaw&amp;rsquo;s dreaming feature is the same insight applied to agents.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20260507-architecture-of-forgetting-dreaming.svg" alt="Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;)."&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20260507-architecture-of-forgetting-dreaming.svg" alt="Diagram of OpenClaw’s internal memory architecture. The default components (“Awake”) are in black, and the new components are in blue (“Dreaming”)." loading="lazy" decoding="async"&gt;
 &lt;em&gt;Diagram of OpenClaw&amp;rsquo;s internal memory architecture. The default components (&amp;ldquo;Awake&amp;rdquo;) are in black, and the new components are in blue (&amp;ldquo;Dreaming&amp;rdquo;).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Note that without dreaming, there is no automatic promotion from the active context window to daily notes and then to long-term memory. When a new bit of information is mentioned, the agent has to decide whether it should be added to the daily note and/or the long-term memory file manually. Dreaming, by contrast, is an automated process.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s called &amp;ldquo;Dreaming&amp;rdquo; because the feature works similarly to the biological process, as if in three sleep phases:&lt;/p&gt;

@@ -10,7 +10,8 @@
 &lt;/ul&gt;
 &lt;p&gt;Check out the final product here:
 &lt;a href="https://slides.nicolevanderhoeven.com/sample"&gt;https://slides.nicolevanderhoeven.com/sample&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20210302-reveal-hugo-sample.png" alt="A screenshot of the title presentation slide"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20210302-reveal-hugo-sample.png" alt="A screenshot of the title presentation slide" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;h2 id="the-setup"&gt;The setup&lt;/h2&gt;
 &lt;h3 id="prerequisites"&gt;Prerequisites&lt;/h3&gt;
 &lt;ul&gt;

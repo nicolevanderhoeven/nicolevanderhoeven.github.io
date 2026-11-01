@@ -5,11 +5,13 @@
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3_DtwTOppiI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</description></item><item><title>How to Avoid the Most Common Kubernetes Monitoring Mistakes</title><link>https://nicolevanderhoeven.com/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</link><pubDate>Tue, 16 May 2023 22:41:16 +1000</pubDate><guid>https://nicolevanderhoeven.com/blog/20230516-how-to-avoid-the-most-common-kubernetes-monitoring-mistakes/</guid><description>&lt;p&gt;For &lt;a href="https://grafana.com/about/events/observabilitycon/2023/singapore/"&gt;ObservabilityCON on the Road Singapore 2023&lt;/a&gt;, I talked about some mistakes people make when monitoring applications within Kubernetes clusters. I also demonstrated Grafana&amp;rsquo;s Kubernetes Monitoring solution and how it can be a shortcut for engineers looking to get started quickly.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/ocr-2023-sin-01.jpg" alt="Photo of me speaking at OCR Singapore 2023"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/ocr-2023-sin-01.jpg" alt="Photo of me speaking at OCR Singapore 2023" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.google.com/presentation/d/1rC8kifF6X1ZSH8jgh-yUp6NfgK_UaLiOG8TWLa5dQBQ/edit?usp=sharing"&gt;Slides here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/Monitoring+Kubernetes"&gt;Monitoring Kubernetes in general&lt;/a&gt; (notes)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.nicolevanderhoeven.com/Grafana+Kubernetes+Monitoring"&gt;The Grafana Kubernetes Monitoring feature&lt;/a&gt; (notes)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/ocr-2023-sin-02.jpg" alt="Photo of the crowd at OCR Singapore 2023"&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/ocr-2023-sin-02.jpg" alt="Photo of the crowd at OCR Singapore 2023" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;</description></item></channel></rss>

@@ -341,7 +341,8 @@
 ‍&lt;/p&gt;
 &lt;p&gt;Transcript:&lt;/p&gt;
 &lt;p&gt;Hi everyone! Nicole here again for another Ask a Flooder, except this time it&amp;rsquo;s not really a question&amp;ndash; it&amp;rsquo;s just something I want to talk about.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200326-01.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200326-01.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Source: The &lt;a href="https://twitter.com/flood_io/status/1224284942932332544"&gt;Flood Twitter account&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;So I&amp;rsquo;m going to put the tweet up here, but last month I actually tweeted about something that somebody else posted. Netflix actually reported some of their viewership figures, and one thing that they reported was that 76 million households watched their new show, The Witcher, which is a large amount of people. So I posted something about why concurrent users is actually an ambiguous way to measure throughput, and I want to expound a little bit more on that.&lt;/p&gt;
 &lt;h2 id="concurrent-users-in-performance-testing---limitations"&gt;&amp;ldquo;Concurrent users&amp;rdquo; in performance testing - limitations&lt;/h2&gt;

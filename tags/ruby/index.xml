@@ -32,7 +32,8 @@
 &lt;p&gt;In the recent RubyConf 2020 held in Melbourne, Australia, Nancy Cai from AirTasker talked about how they built a performance testing framework using Ruby JMeter and Flood. Luckily, we had some pleasantly surprised Flooders in attendance to take notes during this fantastic talk!&lt;/p&gt;
 &lt;p&gt;AirTasker is a platform allowing the outsourcing of everyday tasks. When discussing the reasons that AirTasker decided they wanted to carry out performance and load testing, Nancy told a fascinating story about an overly successful marketing campaign—a good problem to have, but a problem nonetheless. The Sydney Cats and Dogs Home, an animal shelter, teamed up with AirTasker to pay one lucky person $500 to spend the day playing with the resident animals. The prospect of this dream job created an enormous surge in AirTasker&amp;rsquo;s traffic that caused alarm bells to go off on the underlying application servers, resulting in an end-user experience that was less than desired.&lt;/p&gt;
 &lt;p&gt;Nancy included this hilarious slide about some common feelings regarding application performance.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200224-01.png" alt="A common feeling when application performance is brought up"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200224-01.png" alt="A common feeling when application performance is brought up" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;h2 id="steps-for-running-a-performance-test-the-airtasker-way"&gt;Steps for running a performance test, the AirTasker way&lt;/h2&gt;
 &lt;p&gt;To avoid repeating that mistake, Nancy and her team set out to run performance testing by using the following simple steps:&lt;/p&gt;
 &lt;ol&gt;
@@ -56,13 +57,15 @@
 &lt;p&gt;Nancy&amp;rsquo;s team compared several load testing tools and found they enjoyed using the Apache JMeter tool, which is a popular open source load testing software. However, they quickly ran into an &amp;ldquo;out of memory&amp;rdquo; error after attempting to run about 400-800 concurrent users on a single machine. She and her team decided to use a distributed load testing platform to run the load they required to scale up more effectively.&lt;/p&gt;
 &lt;p&gt;Enter Flood.&lt;/p&gt;
 &lt;h2 id="why-airtasker-chose-flood"&gt;Why AirTasker chose Flood&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200224-02.png" alt="JMeter, Flood, and the Ruby JMeter gem combination is a winner"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200224-02.png" alt="JMeter, Flood, and the Ruby JMeter gem combination is a winner" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;We also chose Flood.io [&amp;hellip;] because it comes in with a really good open-source gem called Ruby JMeter. It is a Ruby-based DSL for building JMeter test plans. - Nancy Cai, AirTasker&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Nancy and her team enjoyed the benefits of being able to write load tests natively in Ruby and then using Flood&amp;rsquo;s Ruby JMeter gem, which is a Domain-Specific Language (DSL). Flood allowed them to turn their Ruby scripts into .jmx files, which is the native XML format that JMeter uses.&lt;/p&gt;
 &lt;p&gt;When they were ready to scale up, AirTasker ran the same JMeter script in Flood.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200224-03.png" alt="Sample of a report on Flood from a JMeter test"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/20200224-03.png" alt="Sample of a report on Flood from a JMeter test" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;The real-time Flood dashboard allowed them to see that there was a problem on one of the API endpoints, called &amp;ldquo;Get pet reviews.&amp;rdquo; Further investigations revealed a performance issue due to a long-running query against a database server in the code, which AirTasker&amp;rsquo;s developers could fix.&lt;/p&gt;
 &lt;h2 id="best-practices"&gt;Best practices&lt;/h2&gt;
 &lt;p&gt;Nancy gives some great advice for anyone running a performance test, including:&lt;/p&gt;

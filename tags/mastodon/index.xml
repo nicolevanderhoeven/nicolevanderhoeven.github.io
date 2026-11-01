@@ -7,9 +7,11 @@
 &lt;p&gt;I wanted the same setup for Mastodon.&lt;/p&gt;
 &lt;h2 id="the-result"&gt;The result&lt;/h2&gt;
 &lt;p&gt;First, the end result: I managed to get Mastodon posts I send to my bot to be sent to my Readwise account. Here are some early posts in the &amp;ldquo;Tweets&amp;rdquo; section of my Readwise Library:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-on-readwise.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-on-readwise.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;p&gt;And here are the resulting notes in Obsidian, also automatically synced and formatted:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-in-obsidian.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://nicolevanderhoeven.com/assets/mastodon-in-obsidian.png" alt="" loading="lazy" decoding="async"&gt;
+&lt;/p&gt;
 &lt;h2 id="the-solution"&gt;The solution&lt;/h2&gt;
 &lt;p&gt;Next, here&amp;rsquo;s how to set it up.&lt;/p&gt;
 &lt;h3 id="pre-requisites"&gt;Pre-requisites&lt;/h3&gt;

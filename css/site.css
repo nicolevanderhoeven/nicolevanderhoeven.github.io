@@ -1,0 +1,17 @@
+/*
+ * Site-level overrides on top of the (precompiled) cactus theme CSS.
+ *
+ * On blog posts, #header-post is a fixed box in the top right corner. Its
+ * menu is hidden below 1440px wide, but the box itself still sits over the
+ * main nav and swallows clicks (GitHub issue #1). Let clicks fall through the
+ * box and keep only its real controls clickable.
+ */
+#header-post {
+  pointer-events: none;
+}
+
+#header-post a,
+#header-post #menu,
+#header-post #toc {
+  pointer-events: auto;
+}
